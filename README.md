@@ -1,7 +1,7 @@
 # elife-article-json
 
 This repository contains the JSON data derived from the XML in the
-[elife-articles-xml](https://github.com/elifesciences/elife-articles).
+[elife-article-xml](https://github.com/elifesciences/elife-article-xml).
 
 This JSON is referred to as 'article-json' and it's specification can be found
 here: [https://github.com/elifesciences/api-raml](https://github.com/elifesciences/api-raml)
