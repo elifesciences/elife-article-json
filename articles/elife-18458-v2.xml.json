@@ -1,0 +1,2535 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "18458", 
+        "version": 2, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.18458", 
+        "authorLine": "Zohreh AkhavanAghdam et al", 
+        "title": "Dynamic control of gene regulatory logic by seemingly redundant transcription factors", 
+        "published": "2016-09-30T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e18458", 
+        "pdf": "https://publishing-cdn.elifesciences.org/18458/elife-18458-v2.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.18458.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Many transcription factors co-express with their homologs to regulate identical target genes, however the advantages of such redundancies remain elusive. Using single-cell imaging and microfluidics, we study the yeast general stress response transcription factor Msn2 and its seemingly redundant homolog Msn4. We find that gene regulation by these two factors is analogous to logic gate systems. Target genes with fast activation kinetics can be fully induced by either factor, behaving as an 'OR' gate. In contrast, target genes with slow activation kinetics behave as an 'AND' gate, requiring distinct contributions from both factors, upon transient stimulation. Furthermore, such genes become an 'OR' gate when the input duration is prolonged, suggesting that the logic gate scheme is not static but rather dependent on the input dynamics. Therefore, Msn2 and Msn4 enable a time-based mode of combinatorial gene regulation that might be applicable to homologous transcription factors in other organisms."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "AkhavanAghdam et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Zohreh AkhavanAghdam", 
+                    "index": "AkhavanAghdam, Zohreh"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "ZA, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist.", 
+                "equalContributionGroups": [
+                    1
+                ]
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Joydeb Sinha", 
+                    "index": "Sinha, Joydeb"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist.", 
+                "equalContributionGroups": [
+                    1
+                ]
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Omar P Tabbaa", 
+                    "index": "Tabbaa, Omar P"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "OPT, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist.", 
+                "equalContributionGroups": [
+                    1
+                ]
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Nan Hao", 
+                    "index": "Hao, Nan"
+                }, 
+                "orcid": "0000-0003-2857-4789", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "nhao@ucsd.edu"
+                ], 
+                "contribution": "NH, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Seemingly redundant homologous transcription factors play distinct and cooperative roles in time-dependent combinatorial gene regulation and enable dynamic control of heterogeneity in the gene responses to environmental stresses."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "18458", 
+        "version": 2, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.18458", 
+        "authorLine": "Zohreh AkhavanAghdam et al", 
+        "title": "Dynamic control of gene regulatory logic by seemingly redundant transcription factors", 
+        "published": "2016-09-30T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e18458", 
+        "pdf": "https://publishing-cdn.elifesciences.org/18458/elife-18458-v2.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.18458.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Many transcription factors co-express with their homologs to regulate identical target genes, however the advantages of such redundancies remain elusive. Using single-cell imaging and microfluidics, we study the yeast general stress response transcription factor Msn2 and its seemingly redundant homolog Msn4. We find that gene regulation by these two factors is analogous to logic gate systems. Target genes with fast activation kinetics can be fully induced by either factor, behaving as an 'OR' gate. In contrast, target genes with slow activation kinetics behave as an 'AND' gate, requiring distinct contributions from both factors, upon transient stimulation. Furthermore, such genes become an 'OR' gate when the input duration is prolonged, suggesting that the logic gate scheme is not static but rather dependent on the input dynamics. Therefore, Msn2 and Msn4 enable a time-based mode of combinatorial gene regulation that might be applicable to homologous transcription factors in other organisms."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "AkhavanAghdam et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Zohreh AkhavanAghdam", 
+                    "index": "AkhavanAghdam, Zohreh"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "ZA, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist.", 
+                "equalContributionGroups": [
+                    1
+                ]
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Joydeb Sinha", 
+                    "index": "Sinha, Joydeb"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist.", 
+                "equalContributionGroups": [
+                    1
+                ]
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Omar P Tabbaa", 
+                    "index": "Tabbaa, Omar P"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "OPT, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist.", 
+                "equalContributionGroups": [
+                    1
+                ]
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Nan Hao", 
+                    "index": "Hao, Nan"
+                }, 
+                "orcid": "0000-0003-2857-4789", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Section of Molecular Biology, Division of Biological Sciences", 
+                            "University of California, San Diego"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "La Jolla", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "La Jolla"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "nhao@ucsd.edu"
+                ], 
+                "contribution": "NH, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Seemingly redundant homologous transcription factors play distinct and cooperative roles in time-dependent combinatorial gene regulation and enable dynamic control of heterogeneity in the gene responses to environmental stresses.", 
+        "keywords": [
+            "homologous transcription factors", 
+            "single-cell analysis", 
+            "gene regulatory logic", 
+            "signal dynamics", 
+            "quantitative microscopy", 
+            "microfluidics"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.18458.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Cells respond to environmental signals by activating proteins called transcription factors. These bind to the DNA that is stored in the cell nucleus and turn on specific genes to make gene products. Many of these transcription factors move in and out of the nucleus once activated. Different environmental signals affect the amount of transcription factor that appears in the nucleus in different ways, and this is important in determining which genes should be turned on and how many copies of gene products should be made."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Many transcription factors co-exist with a similar version of themselves in the same cell. These closely related proteins, called homologous transcription factors, respond to the same signals and bind to the same place on the DNA to turn on the same genes. It was not clear what advantages the cells gain from having two molecules that perform the same roles."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Two homologous transcription factors called Msn2 and Msn4 are found in baker's yeast. These transcription factors respond to a wide variety of environmental stresses by moving rapidly into the nucleus, where they remain for a short time to turn on hundreds of target genes that are needed for the cell to survive."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "AkhavanAghdam, Sinha, Tabbaa et al. investigated the roles of Msn2 and Msn4 by tracking where the proteins localized to and which genes they switched on inside the same single cell. Genes that can be turned on quickly could be activated by either Msn2 or Msn4, and both factors activated the genes to a similar extent. By contrast, both Msn2 and Msn4 were required to activate those genes that take a long time to be turned on. In these cases, Msn2 served as a 'switch' that governed the 'on' and 'off' state of the genes, while Msn4 behaved as a 'rheostat' to tune how much gene product was made. This cooperation between the two transcription factors is equivalent to a design commonly found in electrical circuits and may help the cell to survive in rapidly changing environments."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Further studies are now needed to investigate the mechanisms that provide Msn2 and Msn4 with distinct roles in gene regulation. Technological advances that allow the full genetic material of a single cell to be analyzed could also determine whether other homologous transcription factors regulate their target genes in similar ways."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Homologous transcription factors (TFs) often co-exist in eukaryotic cells, resulting in seemingly redundant regulation of their target genes. Although a large number of TF homologs have diversified over time to obtain distinct target genes from their partners, others have remained relatively conserved and share the same DNA binding motif, which limits their downstream interactions to identical target genes. Recent studies suggest that some closely related TF homologs or isoforms, which regulate a shared set of target genes, might have diverged expression patterns, dynamic responses or gene regulatory functions. For example, the yeast transcriptional regulator Dig1 inhibits the expression of mating response genes to pheromone stimulation, whereas its homolog Dig2 exhibits both negative and positive regulation depending on the conditions (<a href=\"#bib3\">Chou et al., 2008</a>; <a href=\"#bib15\">Houser et al., 2012</a>). In mammalian cells, two TF isoforms NFAT1 and NFAT4 display distinct nuclear translocation dynamics in response to stimuli. It has been suggested that this dynamic diversity of isoforms might enhance the\u00a0temporal signal processing function of the cell (<a href=\"#bib27\">Yissachar et al., 2013</a>). In addition, a very recent study showed that the TF homologs STAT5A and STAT5B differentially contribute to the immune transcriptional response due to their different expression levels (<a href=\"#bib25\">Villarino et al., 2016</a>). Here we use the yeast homologous stress responsive TFs Msn2 and Msn4 as a model to quantitatively study the functional relevance of closely related TFs in the same single cells."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Msn2 and Msn4 are C<sub>2</sub>H<sub>2</sub> zinc-finger TFs that regulate cellular responses to a wide range of environmental stresses (<a href=\"#bib21\">Schmitt and McEntee, 1996</a>). Upon stress stimulation, both TFs rapidly translocate from the cytoplasm to the nucleus where they bind to the same DNA recognition sequence and induce the expression of a common set of stress responsive genes (<a href=\"#bib17\">Martinez-Pastor et al., 1996</a>). Their nucleocytoplasmic translocation is controlled by phosphorylation and is directly regulated by protein kinase A (PKA) and phosphatases (<a href=\"#bib6\">Gorner et al., 1998</a>) (<a href=\"#fig1\">Figure 1A</a>, left). Therefore, it has been long believed that Msn2 and Msn4 are functionally redundant in regulating gene expression response. In fact, since Msn2 is assumed to play a more pronounced role in gene regulation, many previous studies focused only on Msn2, deleting the <i>MSN4</i> gene to simplify analysis (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>, <a href=\"#bib10\">2015b</a>, <a href=\"#bib11\">2016</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>; <a href=\"#bib16\">Lin et al., 2015</a>; <a href=\"#bib18\">Petrenko et al., 2013</a>). A microarray analysis, however, suggested that Msn2 and Msn4 might have different contributions to gene induction at individual promoters (<a href=\"#bib2\">Berry and Gasch, 2008</a>), but the mechanism underlying these differences remains unknown."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.18458.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Msn4 is required for the induction of target genes with slow promoter kinetics.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Homologous TFs Msn2 and Msn4 are regulated by the same upstream PKA signals in response to natural stresses or chemical inhibitors and control a common set of target genes with stress response elements (STREs) in their promoters. In the same strain, Msn2 and Msn4 are fused with RFP and YFP respectively, at their native loci; a CFP reporter under the Msn2/4 specific promoter is introduced to monitor gene expression responses. Middle: Translocation of Msn2-RFP and Msn4-YFP and reporter gene expression can be monitored in the same single cells over time. Right: In response to stimulation, time traces of Msn2 and Msn4 translocation and reporter gene expression can be quantified for each single cell. For each condition, single-cell data are collected from at least three independent experiments. (<b>B</b>) Violin plots showing the distributions of reporter expression under (left) the fast kinetics promoter P<i><sub>DCS2</sub></i> or (right) the slow kinetics promoter P<i><sub>SIP18</sub></i> in single cells in response to 3 \u03bcM inhibitor inputs with 30-min pulse duration (illustrated by the top inset) in wild-type, <i>msn2\u0394</i>, and <i>msn4\u0394</i> strains, respectively (n: ~300 cells per condition per strain). The mean value of single cell responses was labeled using the black bar for each condition. The expression of the\u00a0reporter gene was tracked in single cells over a 3-hr period in which the reporter fluorescence in most cells has already reached the plateau. The last point of each single-cell time trace was used in the plots (a.u.: arbitrary units). (<b>C</b>) Violin plots showing the distributions of reporter expression under the slow kinetics promoter P<i><sub>SIP18</sub></i> in response to a 60 min pulse of inhibitor input. (<b>D</b>) Violin plots showing the distributions of reporter expression under the faster mutant promoter P<i><sub>SIP18-A4</sub></i> in wild-type and <i>msn4\u0394</i> strains, respectively, in response to 30-min inhibitor input. (<b>E</b>) Violin plots showing the distributions of reporter expression under (left) the fast kinetics promoter P<i><sub>DCS2</sub></i> or (right) the slow kinetics promoter P<i><sub>SIP18</sub></i> in response to 0.5 M KCl in wild-type and <i>msn4\u0394</i> strains, respectively. The sustained KCl stimulation leads to a transient pulse of TF activation, as illustrated in the top cartoon panel."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-18458-fig1-v2", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.004", 
+                                "id": "fig1s1", 
+                                "label": "Figure 1\u2014figure supplement 1.", 
+                                "title": "Dynamic profiles of reporter gene expression.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Averaged single-cell time traces of reporter gene expression under (<b>A</b>) the fast kinetics promoter P<i><sub>DCS2</sub></i> and (<b>B</b>) the slow kinetics promoter P<i><sub>SIP18</sub></i>, in response to 30-min inhibitor inputs, (<b>C</b>) the slow kinetics promoter P<i><sub>SIP18</sub></i>, in response to 60-min inhibitor inputs, and (<b>D</b>) under no inhibitor condition. The single-cell data are the same data used to generate <a href=\"#fig1\">Figure 1B and C</a>. The solid curves represent the averaged single-cell time traces; the shaded regions represent the standard deviations of single cell responses. For each condition, single-cell responses have been measured over a 3-hr period, which is sufficient for the fluorescent gene expression reporter to reach the plateau in most cells."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig1-figsupp1-v2"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.005", 
+                                "id": "fig1s2", 
+                                "label": "Figure 1\u2014figure supplement 2.", 
+                                "title": "The dependence on Msn4 might expand generally to slow kinetics promoters.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Violin plots showing the distributions of reporter expression under (<b>A</b>) the fast kinetics promoter P<i><sub>DDR2</sub></i> and (<b>B</b>) the slow kinetics promoter P<i><sub>TKL2</sub></i>, respectively. In (<b>B</b>), the inset shows the distributions of P<i><sub>TKL2</sub></i> reporter expression in response to 60 min pulse of inhibitor input."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig1-figsupp2-v2"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Here, we combine quantitative single-cell imaging and high-throughput microfluidics to monitor and compare the dynamic responses and gene regulatory functions of Msn2 and Msn4 in single cells. We find that Msn2 and Msn4 have non-redundant and distinct functions in the\u00a0combinatorial gene regulation. We have previously demonstrated that Msn2/4 target genes differ significantly in their promoter activation kinetics, which dramatically influences their responses to dynamic inputs (such as transient versus sustained inputs) (<a href=\"#bib12\">Hao and O'Shea, 2012</a>). In this work, we show that, in response to a transient input, either Msn2 or Msn4 alone is sufficient to induce the expression of target genes with fast kinetics promoters, constituting what is essentially a biological 'OR' logic gate. In contrast, the induction of target genes with slow kinetics promoters requires activation of both factors, forming an 'AND' gate. At the single-cell level, even though Msn2 and Msn4 show similar nuclear translocation dynamics, they exhibit different levels of heterogeneity in nuclear localization and distinct gene regulatory functions. Msn2 is activated in a relatively homogeneous manner and functions as a low threshold 'switch' essential for turning on slow kinetics promoters. In contrast, Msn4 activation is highly heterogeneous and it serves as a 'rheostat' to effectively tune the induction level of target genes with slow kinetics promoters in individual cells. Therefore, while target genes with fast kinetics promoters are uniformly expressed in most cells, those with slow promoters are more likely to be fully induced in only a fraction of cells with high Msn4 activity. Our work reveals that the seemingly redundant TF Msn4 has a distinct gene regulatory role from its homolog Msn2 and enables diversified gene expression responses within a cell population, which might be beneficial for survival under rapidly changing environments."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Msn4 is required for the induction of target genes with slow promoter kinetics", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To investigate gene regulation by Msn2 and Msn4 in single cells, we fused Msn4 with a yellow fluorescent protein (YFP) and Msn2 with a red fluorescent protein (RFP) at their native loci. A cyan fluorescent protein (CFP) reporter under Msn2/4 specific target promoters was introduced into the same strain to monitor downstream gene expression. To understand gene responses to dynamic TF activation, we have previously developed a chemical genetics method for controlling the\u00a0Msn2/4 nuclear localization using a small molecule 1-NM-PP1 that specifically inhibits protein kinase A (PKA) activity (<a href=\"#bib13\">Hao et al., 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>). Here, we combine this method with quantitative time-lapse microscopy and microfluidics (<a href=\"#bib8\">Hansen et al., 2015</a>; <a href=\"#bib13\">Hao et al., 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>) to simultaneously track Msn2 and Msn4 localization and target gene expression in a large number of individual cells in response to dynamic inputs (<a href=\"#fig1\">Figure 1A</a>). In each experiment, we measure single-cell responses over a 3-hr period, which is sufficient for the fluorescent gene expression reporter to reach the plateau in most cells (<a href=\"#fig1\">Figure 1A</a>, right)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Our previous studies revealed that Msn2/4 target promoters can be characterized as having fast or slow activation kinetics relative to one another based on the time needed for their activation (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>). While target genes with fast kinetics promoters respond strongly to transient TF inputs, slow kinetics promoters, due to their long activation delay, filter out inputs with short durations. The activation kinetics of target promoters depends on their promoter architectures, in particular, the organization of TF binding sites and nucleosomes (<a href=\"#bib9\">Hansen and O'Shea, 2015a</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>). To analyze dynamic gene regulation by Msn2 and Msn4, we focus here on two well-characterized promoters \u2013 P<i><sub>DCS2</sub></i> and P<i><sub>SIP18</sub></i>, which are Msn2/4 specific (not induced in a <i>msn2</i>\u0394 <i>msn4</i>\u0394 strain)\u00a0(<a href=\"#bib7\">Hansen and O'Shea, 2013</a>), and have been routinely used to represent Msn2/4 target promoters with fast (P<i><sub>DCS2</sub></i>) or slow (P<i><sub>SIP18</sub></i>) activation kinetics, respectively (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>, <a href=\"#bib9\">2015a</a>, <a href=\"#bib2\">2015b</a>, <a href=\"#bib11\">2016</a>). The <i>DCS2</i> promoter can be activated 5 times faster than the <i>SIP18</i> promoter for a given TF input (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To first determine the dependence of target gene expression on Msn2 and Msn4, we measure the induction of Msn2/4 target promoters in response to TF inputs with various durations in wild-type cells and cells lacking <i>MSN2</i> or <i>MSN4</i> and plotted the distributions of single-cell expression responses (<a href=\"#fig1\">Figure 1</a>; The dynamic profiles of reporter gene expression are shown in <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>). We find that, in response to a transient inhibitor input (30\u2009min), activation of either Msn2 or Msn4 is sufficient to fully induce the fast kinetics promoter P<i><sub>DCS2</sub></i> (<a href=\"#fig1\">Figure 1B</a>, left). In contrast, the induction of slow kinetics promoter P<i><sub>SIP18</sub></i> requires activation of both Msn2 and Msn4: the absence of either factor abolishes the expression of reporter gene (<a href=\"#fig1\">Figure 1B</a>, right). Interestingly, in response to a prolonged input pulse (60\u2009min), while Msn2 is still needed for the induction of the slow gene promoter, Msn4 is no longer required (<a href=\"#fig1\">Figure 1C</a>). These results suggest that Msn4 functions to shift the activation time-scales of slow kinetics promoters and thereby enables the induction of such promoters by transient inputs."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine whether the requirement of Msn4 for gene induction is specific to slow promoter kinetics, we employed a mutant of the P<i><sub>SIP18</sub></i> promoter (P<i><sub>SIP18</sub></i>-A4), which has been converted to a fast kinetics promoter by moving the Msn2/4 binding sites more adjacent to the TATA box (<a href=\"#bib9\">Hansen and O'Shea, 2015a</a>). In accordance with the fast kinetics promoter P<i><sub>DCS2</sub></i>, Msn4 is not needed for the expression of reporter gene under the P<i><sub>SIP18</sub></i> mutant promoter (<a href=\"#fig1\">Figure 1D</a>). To further examine whether other target gene promoters have similar dependence to Msn4, we analyzed the responses of fast kinetics promoter P<i><sub>DDR2</sub></i> and slow kinetics promoter P<i><sub>TKL2</sub></i>. Similar to the fast kinetics promoter P<i><sub>DCS2</sub></i>, the expression of the P<i><sub>DDR2</sub></i> reporter gene does not require Msn4. In contrast, Msn4 is needed for the full induction of P<i><sub>TKL2</sub></i> in response to a transient input (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>). These results suggest that the dependence on Msn4 might be a general feature of slow kinetics promoters. Finally, to determine whether target promoters would respond similarly when cells are faced with natural stressors, we monitored the reporter expression of P<i><sub>DCS2</sub></i> and P<i><sub>SIP18</sub></i>, respectively, in response to osmotic stress, which leads to a transient pulse of TF activation (<a href=\"#bib13\">Hao et al., 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>). Consistent with the inhibitor experiments, while Msn4 is not critical for the expression of fast kinetics promoter P<i><sub>DCS2</sub></i>, it is required for the full induction of slow kinetics promoter P<i><sub>SIP18</sub></i> (<a href=\"#fig1\">Figure 1E</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Therefore, our work reveals that, contrary to what has been previously believed, Msn4 is not redundant to its homolog Msn2 in regulating gene expression. In particular, while activation of either Msn2 or Msn4 is sufficient to trigger the expression of target genes with fast promoter kinetics, target genes with slow promoter kinetics depend on both Msn2 and Msn4 for their full induction in response to biologically relevant transient inputs."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Msn4 displays heterogeneous nuclear translocation in single cells", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Having established that Msn4 is not redundant to its homolog Msn2, we next investigate the dynamic and functional differences between the two factors at the single cell level that can account for their specific contributions to gene regulation. We first focus on the dynamics of Msn2 and Msn4 nuclear translocation. We observe that Msn2 and Msn4 show similar temporal dynamics of translocation in the same single cells in response to a transient inhibitor input (<a href=\"#fig2\">Figure 2A</a>). However, we find that the level of Msn4 nuclear translocation is highly heterogeneous across single cells: some cells show high level of nuclear translocation, while other cells have very low localization levels. In contrast, the translocation levels of Msn2 are relatively homogeneous amongst individual cells. To illustrate the noise levels of Msn2 and Msn4 translocation, we plotted the standard deviation of their single-cell time traces scaled by the mean and reported the coefficient of variation (CV: standard deviation scaled by the mean) for the peak point of time traces. As shown in <a href=\"#fig2\">Figure 2A(ii)</a>, Msn4 nuclear translocation exhibits a higher level of cell-cell variability than that of Msn2. To investigate the dynamics of Msn2 and Msn4 translocation in response to natural stresses, we subject yeast cells to osmotic stress and ethanol stress treatments. As shown in <a href=\"#fig2\">Figure 2B and C</a>, osmotic stress elicits a transient pulse of Msn2 and Msn4 translocation, while ethanol stress induces sustained nuclear localization of Msn2 and Msn4. In response to either stress, Msn4 exhibits similar temporal dynamics of nuclear translocation to Msn2 in single cells, consistent with the inhibitor treatments. In addition, the level of Msn4 nuclear localization shows a higher degree of cell-cell heterogeneity than that of Msn2 under natural stress conditions, in accordance with the inhibitor treatments."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.006", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Msn2 and Msn4 show different levels of heterogeneity in single cells.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Time traces of Msn2 and Msn4 nuclear translocation in the same single cells in response to (<b>A</b>) 20-min 1 \u03bcM inhibitor pulse, (<b>B</b>) 0.5M KCl, or (<b>C</b>) 3% ethanol. In each panel, (i) representative single-cell time traces of Msn2 and Msn4 nuclear translocation in the same single cells; (ii) standard deviation of single-cell time traces. For each condition, the single-cell time traces and standard deviations of single cell responses are scaled by the peak value of the averaged time traces (% max of mean). In (ii), the solid curve represents the averaged time trace; the shaded region represents the scaled standard deviation of single cell responses. The coefficient of variation (CV; the standard deviation divided by the mean) is calculated for the peak time point of time traces for each condition and displayed above each time trace."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig2-v2", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.007", 
+                                        "id": "fig2s1", 
+                                        "label": "Figure 2\u2014figure supplement 1.", 
+                                        "title": "A direct comparison of the levels of Msn2 and Msn4 nuclear localization in the same cells.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) To directly compare the nuclear level of Msn2-RFP relative to that of Msn4-YFP in the same single cells (<a href=\"#fig1\">Figure 1A</a>), a scaling factor between RFP and YFP is needed to account for unique microscope settings used in each channel as well as inherent emission differences between each fluorophore. This was determined by creating two yeast strains in which Msn2 was C-terminally tagged with either florescent protein RFP or YFP, respectively (illustrated in the top panel). Left: Sustained nuclear translocation of Msn2 was induced in both stains with an identical stimulus and the averaged single-cell time traces of Msn2 translocation were generated for both strains (n: ~100 cells per strain). Right: The scaling factor (1.52) was determined by taking the ratio between the maximal fluorescence intensity of each averaged trace. The time trace of Msn2-RFP, when times the scaling factor (dashed curve), overlaps with the time trace of Msn2-YFP. Therefore, this factor normalizes the fluorescence arbitrary unit of RFP with the fluorescence arbitrary unit of YFP and enables the direct comparison of the nuclear level of Msn2-RFP with that of Msn4-YFP in the same single cells (in the unit of 'normalized a.u.'). (<b>B</b>) Averaged time traces of Msn2 and Msn4 nuclear translocation in the same single cells in response to 20-min 1 \u03bcM inhibitor pulse, 0.5M KCl, or 3% ethanol, as indicated. The top left panel illustrates that Msn2-YFP and Msn4-RFP are expressed in the same strain. The averaged traces were normalized by the scaling factor to allow a direct comparison of Msn2 and Msn4 in the same cells. (<b>C</b>) Averaged time traces of Msn2 and Msn4 nuclear translocation from the same cells were normalized as% of max. The traces were plotted together and zoomed in to the early time period of the response to demonstrate the small time delay of Msn4 translocation."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig2-figsupp1-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.008", 
+                                        "id": "fig2s2", 
+                                        "label": "Figure 2\u2014figure supplement 2.", 
+                                        "title": "Single-cell time traces of Msn2 and Msn4 after normalization of YFP and RFP fluorescence.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "After the YFP and RFP normalization as shown in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>, time traces of Msn2 and Msn4 nuclear translocation are plotted in the same single cells in response to (<b>A</b>) 20-min 1 \u03bcM inhibitor pulse, (<b>B</b>) 0.5M KCl, (<b>C</b>) 3% ethanol, or (<b>D</b>) no stress. Each panel shows (i) representative single-cell time traces of Msn2 and Msn4 nuclear translocation in the same single cells; (ii) standard deviation of single-cell time traces. For each condition, the single-cell time traces and standard deviations of single cell responses are normalized so that the levels of Msn2 and Msn4 can be compared directly. In (ii), the solid curve represents the averaged time trace; the shaded region represents the standard deviation of single cell responses. The standard deviation is calculated for the peak time point of time traces for each condition and displayed above each time trace. For the condition without stress, the standard deviation is calculated for the time point used in the inhibitor condition."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig2-figsupp2-v2"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine the relative nuclear concentrations of Msn2-RFP and Msn4-YFP molecules at the single cell level, we performed a control experiment to obtain a scaling factor that normalizes the nuclear fluorescence intensities of YFP and RFP into 'normalized a.u.' (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1A</a>). We observe that the nuclear localization level of Msn4 is generally lower (~3-fold lower) than that of Msn2 in the same cells under inhibitor or natural stress conditions (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a>, yellow curves versus red curves). In addition, although Msn4 has a higher coefficient of variation, the standard deviation of Msn4 nuclear localization in single cells (without being scaled by the mean) is lower than that of Msn2 (<a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>). These results suggest that the high degree of cell\u2013cell variability of Msn4 might be largely due to its relatively low nuclear levels compared to that of Msn2."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Thus, our single-cell imaging analysis shows that, in response to various stimuli, nuclear translocation of Msn4 temporally correlates with that of Msn2 in the same cells; however, the level of Msn4 nuclear localization in individual cells is more heterogeneous than that of its homolog."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Msn4 exhibits distinct gene regulatory functions from Msn2 in single cells", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Given that Msn2 and Msn4 show different levels of cell-cell variability in nuclear translocation, we speculate that they may play different regulatory roles in controlling heterogeneous gene expression at the single cell level. Using the deletion strains, we have revealed that target genes with different promoter activation kinetics exhibit different dependence to Msn2 and Msn4 (<a href=\"#fig1\">Figure 1</a>). To further determine the dependence of gene regulation specifically on Msn2 or Msn4 in single cells when both factors are present, we simultaneously monitored nuclear localization of Msn2 and Msn4 and reporter gene expression under the fast kinetics promoter P<i><sub>DCS2</sub></i> or the slow kinetics promoter P<i><sub>SIP18</sub></i> in the same wild-type cells. We then quantified and plotted the maximal level of reporter expression versus the peak nuclear localization level of Msn2 and/or Msn4 of each single cell to analyze the relationship between gene expression and the activity of Msn2 and Msn4, respectively. To cover a full range of TF translocation levels, we combined the single cell responses to 30-min inhibitor inputs with various doses."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We find that, for the fast kinetics promoter P<i><sub>DCS2</sub></i>, gene expression can be induced in the majority of cells in which either Msn2 or Msn4 is adequately activated (<a href=\"#fig3\">Figure 3A,i</a>). The level of reporter expression shows a similar graded relationship with both Msn2 and Msn4, reaching the saturation when either factor is activated over a low threshold level (<a href=\"#fig3\">Figure 3Aii</a>; Single-cell distributions of gene expression versus Msn2 or Msn4 are shown in <a href=\"#fig3s1\">Figure 3\u2014figure supplement 1A</a>; The probabilities of gene induction versus Msn2 or Msn4 are shown in <a href=\"#fig3s2\">Figure 3\u2014figure supplement 2A</a>). These results are consistent with our observation by deletion analysis that Msn2 and Msn4 play largely redundant roles in regulating target genes with fast kinetics promoters (<a href=\"#fig1\">Figure 1</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.009", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Msn2 and Msn4 exhibit distinct gene regulatory functions in single cells in response to 30-min inhibitor inputs.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) (i) A scatter plot showing the relationship of the fast kinetics promoter P<i><sub>DCS2</sub></i> reporter expression with Msn2 and Msn4 activation at the single cell level. Each dot represents a single cell. Single-cell time traces were tracked over a 3-hr period in which the reporter fluorescence in most cells has already reached the plateau. The x and y axes represent the peak values of Msn4 and Msn2 nuclear translocation (the maximal values in the first 30 min of translocation time traces), respectively; and the dot color represents the maximal level of gene expression as indicated in the color bar. To cover the full dynamic range of TF translocation, the data from the experiments using 30 min inhibitor pulses with 0.1, 0.25, 0.5, 0.75 and 1 \u03bcM doses have been combined (n: 444 cells). (ii) Plots show the relationships between P<i><sub>DCS2</sub></i> reporter expression and (left) Msn2 or (right) Msn4, respectively. Single cells are binned based on their Msn2 or Msn4 nuclear level as indicated in the x-axis and the average of reporter expression is calculated for each binned groups of single cells and shown in the bar graphs. (<b>B</b>) Scatter plots and bar graphs showing the relationship of the slow kinetics promoter P<i><sub>SIP18</sub></i> reporter expression with Msn2 and Msn4 activation at the single cell level. The data analysis and presentation schemes are consistent with those in (<b>A</b>) (n: 595 cells). Single-cell data used in these plots are provided in the source data files."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig3-v2", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.18458.010", 
+                                        "id": "SD1-data", 
+                                        "label": "Figure 3\u2014source data 1.", 
+                                        "title": "Source data for Figure 3A.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig3-data1-v2.csv", 
+                                        "filename": "elife-18458-fig3-data1-v2.csv"
+                                    }, 
+                                    {
+                                        "doi": "10.7554/eLife.18458.011", 
+                                        "id": "SD2-data", 
+                                        "label": "Figure 3\u2014source data 2.", 
+                                        "title": "Source data for Figure 3B.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig3-data2-v2.csv", 
+                                        "filename": "elife-18458-fig3-data2-v2.csv"
+                                    }
+                                ], 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.012", 
+                                        "id": "fig3s1", 
+                                        "label": "Figure 3\u2014figure supplement 1.", 
+                                        "title": "Single-cell distributions of reporter gene expression versus nuclear TF levels in response to 30-min inhibitor inputs.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Single-cell scatter plots showing the relationships between P<i><sub>DCS2</sub></i> reporter expression with (left) Msn2 or (right) Msn4 nuclear level, respectively. Single-cell data are from <a href=\"#fig3\">Figure 3A</a>. (<b>B</b>) Single-cell scatter plots showing the relationships between P<i><sub>SIP18</sub></i> reporter expression with (left) Msn2 or (right) Msn4 nuclear level, respectively. Single-cell data are from <a href=\"#fig3\">Figure 3B</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig3-figsupp1-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.013", 
+                                        "id": "fig3s2", 
+                                        "label": "Figure 3\u2014figure supplement 2.", 
+                                        "title": "The relationship between the probability of reporter gene expression and nuclear TF levels in response to 30-min inhibitor inputs.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Bar graphs showing the relationships between the probability of P<i><sub>DCS2</sub></i> reporter expression with (left) Msn2 or (right) Msn4 nuclear level, respectively. Single-cell data are from <a href=\"#fig3\">Figure 3A</a>. Single cells are binned based on their Msn2 or Msn4 nuclear level as indicated in the x-axis and the proportion of 'responder' cells (green and red cells in <a href=\"#fig3\">Figure 3</a>), instead of the average of reporter expression, is calculated for each binned groups of single cells and shown in the bar graphs. (<b>B</b>) Bar graphs showing the relationships between the probability of P<i><sub>SIP18</sub></i> reporter expression with (left) Msn2 or (right) Msn4 nuclear level, respectively. Single-cell data are from <a href=\"#fig3\">Figure 3B</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig3-figsupp2-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.014", 
+                                        "id": "fig3s3", 
+                                        "label": "Figure 3\u2014figure supplement 3.", 
+                                        "title": "Relationship between P<i><sub>SIP18</sub></i> reporter gene expression and the ratio of nuclear Msn2 versus Msn4 in response to 30-min inhibitor inputs.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Scatter plot showing the single-cell distribution of P<i><sub>SIP18</sub></i> reporter expression with the ratio of nuclear Msn2 versus Msn4. Single-cell data are from <a href=\"#fig3\">Figure 3B</a>. (<b>B</b>) Bar graph shows the relationship between P<i><sub>SIP18</sub></i> reporter expression and the ratio of nuclear Msn2 versus Msn4. Single cells are binned based on their ratio of nuclear Msn2 versus Msn4 as indicated in the x-axis and the average of reporter expression is calculated for each binned groups of single cells and shown in the bar graphs."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig3-figsupp3-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.015", 
+                                        "id": "fig3s4", 
+                                        "label": "Figure 3\u2014figure supplement 4.", 
+                                        "title": "Msn2 and Msn4 exhibit similar gene regulatory functions in single cells in response to 60-min inhibitor inputs.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) (i) A scatter plot showing the relationship of the slow kinetics promoter P<i><sub>SIP18</sub></i> reporter expression with Msn2 and Msn4 activation at the single cell level. To cover the full dynamic range of TF translocation, the data from the experiments using 60 min inhibitor pulses with 0.1, 0.25, 0.5, 0.75 and 1 \u03bcM doses have been combined (n: 702 cells). (ii) Single-cell scatter plots showing the relationships between P<i><sub>SIP18</sub></i> reporter expression with (left) Msn2 or (right) Msn4 nuclear level, respectively. Single-cell data are from (i). (<b>B</b>) Plots show the relationships between P<i><sub>SIP18</sub></i> reporter expression and (left) Msn2 or (right) Msn4, respectively. Single cells are binned based on their Msn2 or Msn4 nuclear level as indicated in the x-axis and the average of reporter expression is calculated for each binned groups of single cells and shown in the bar graphs."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig3-figsupp4-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.016", 
+                                        "id": "fig3s5", 
+                                        "label": "Figure 3\u2014figure supplement 5.", 
+                                        "title": "Relationship between reporter gene expression and the area-under-the-curve (AUC) of nuclear TF levels in response to 30-min inhibitor inputs.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Single-cell data from <a href=\"#fig3\">Figure 3</a> were analyzed to show the relationship of (<b>A</b>) the fast kinetics promoter P<i><sub>DCS2</sub></i> or (<b>B</b>) the slow kinetics promoter P<i><sub>SIP18</sub></i> reporter expression with the AUC of Msn2 and Msn4 nuclear translocation. The AUC is calculated as the sum of TF nuclear levels for each single-cell time trace (data points taken every two minutes). (i) Scatter plots showing single-cell distributions; (ii) Bar graphs showing the\u00a0average level of gene expression in single cells binned based on their TF AUCs."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig3-figsupp5-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.017", 
+                                        "id": "fig3s6", 
+                                        "label": "Figure 3\u2014figure supplement 6.", 
+                                        "title": "Single-cell distributions of reporter gene expression versus the speed of TF nuclear import or export.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Scatter plots showing single-cell distributions of P<i><sub>DCS2</sub></i> reporter expression versus (i) the speed of nuclear import or (ii) the speed of nuclear export of Msn2 and Msn4. The speed of nuclear translocation is quantified by the time needed to reach half maximum of nuclear translocation of Msn2 or Msn4 in response to stimulation (nuclear import speed) or upon the removal of stimulation (nuclear export speed). Single-cell data are from <a href=\"#fig3\">Figure 3A</a>. The means of reporter expression are calculated for grouped single cells and shown using black solid lines. The mean and standard deviation of nuclear translocation times in single cells are calculated and shown above each plot. (<b>B</b>) Scatter plots showing single-cell distributions of P<i><sub>SIP18</sub></i> reporter expression versus (i) the speed of nuclear import or (ii) the speed of nuclear export of Msn2 and Msn4. Single-cell data are from <a href=\"#fig3\">Figure 3B</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig3-figsupp6-v2"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In contrast, for the slow kinetics promoter P<i><sub>SIP18</sub></i>, gene expression is highly heterogeneous among single cells, consistent with previous results (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>). Furthermore, the reporter gene is fully induced predominantly in the fraction of cells in which Msn4 is highly activated (<a href=\"#fig3\">Figure 3B,i</a>, red solid circles). In individual cells with a fixed level of Msn2 activity, a higher level of Msn4 activation results in an increase in both the probability and the level of gene induction (<a href=\"#fig3\">Figure 3B,i</a>, with a fixed y-axis value and an increasing x-axis value). However, in single cells with a fixed level of Msn4 activity, higher Msn2 activation does not necessarily lead to higher gene induction; in fact, too much Msn2 activation will suppress gene induction in the same cell, suggesting a competing role of Msn2 for binding to the promoter (<a href=\"#fig3\">Figure 3B,i</a>, with a fixed x-axis value and an increasing y-axis value). To quantitatively demonstrate this competing role of Msn2 against Msn4, we plotted the relationship between gene expression and the ratio of Msn2 versus Msn4 in single cells. As shown in <a href=\"#fig3s3\">Figure 3\u2014figure supplement 3</a>, gene expression decreases dramatically when the ratio of Msn2 versus Msn4 increases. We further analyzed the relationship between reporter gene expression with Msn2 or Msn4 activity, individually. Gene expression shows a switch-like relationship to Msn2 activation with a low threshold (~10 normalized a.u.: ~25% of maximal Msn2 localization): while a low level of Msn2 activity is required for turning the gene on, the induction level is independent of Msn2 activity (<a href=\"#fig3\">Figure 3B,ii</a>, left, averaged response of single cells binned based on their TF levels). In contrast, gene expression exhibits a linear relationship with Msn4 activity in which both the probability and the level of gene induction increase with the level of Msn4 activity in single cells (<a href=\"#fig3\">Figure 3B,ii</a>, right; Single-cell distributions of gene expression versus Msn2 or Msn4 are shown in <a href=\"#fig3s1\">Figure 3\u2014figure supplement 1B</a>; The probabilities of gene induction versus Msn2 or Msn4 are shown in <a href=\"#fig3s2\">Figure 3\u2014figure supplement 2B</a>). In accordance with the deletion analysis in <a href=\"#fig1\">Figure 1C</a>,\u00a0in response to prolonged (60-min) input pulses, the reporter expression of P<i><sub>SIP18</sub></i> no longer specifically depends on Msn4 and the level of reporter expression shows graded relationships with both Msn2 and Msn4 (<a href=\"#fig3s4\">Figure 3\u2014figure supplement 4</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "These results demonstrate that Msn2 and Msn4 play distinct and cooperative regulatory roles in controlling target genes with slow promoter kinetics. In response to transient inputs, consistent with the required role of Msn2 for slow promoter induction shown in <a href=\"#fig1\">Figure 1</a>, Msn2 in single cells serves as a low threshold 'switch' for gene induction: it is required to be activated above a certain threshold (~25% of its maximal level) to turn on transcription in the cell; once its activity is above that threshold, a further increase in Msn2 activity cannot positively contribute to the extent of gene induction. In contrast, despite of its low expression level, Msn4 is a highly potent activator of slow target promoters and thus is also required the full induction of slow promoters (<a href=\"#fig1\">Figure 1</a>). Once Msn2 turns on gene transcription in a cell, Msn4 functions as a 'rheostat' in the same cell to effectively fine-tune the probability and level of gene induction. Furthermore, high levels of Msn2 in the nucleus may compete with Msn4 for binding to the same target promoters and can thus suppress gene induction. This possible inhibitory role of Msn2 against Msn4 counteracts its modest positive contribution to gene expression. Therefore, the expression level of target genes with slow promoter kinetics depends specifically on the Msn4 activity in individual cells. Furthermore, the homolog-specific gene regulation depends on the transient dynamics of TF inputs. In response to sustained inputs, the slow kinetics promoters no longer exhibit the specific dependence on Msn4 and behave like fast kinetics promoters upon transient inputs."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Finally, to evaluate the influence of other dynamic characteristics (such as nuclear import rate or export rate) of Msn2 or Msn4 translocation, we also plotted the level of gene expression versus the area under the curve (AUC) of Msn2 or Msn4 nuclear localization. As shown in <a href=\"#fig3s5\">Figure 3\u2014figure supplement 5</a>, the relationship between gene expression and AUC are similar to those shown in <a href=\"#fig3\">Figure 3</a>. In accordance, because the time differences in nuclear import or export for Msn2 or Msn4 among single cells (~1\u20132 min) are relatively small comparing to the total duration of inputs (30 min), we observed modest influence on gene expression from the variations in these characteristics under our experimental conditions (<a href=\"#fig3s6\">Figure 3\u2014figure supplement 6</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Msn4 controls the induction level of slow kinetics promoters in single cells under natural stress conditions", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine whether Msn4 functions differently from Msn2 under natural stress conditions, we treated yeast cells with osmotic stress (0.5\u00a0M KCl) or ethanol stress (4% ethanol), respectively, and measured nuclear localization of Msn2 and Msn4 and reporter gene expression under the slow kinetics promoter P<i><sub>SIP18</sub></i> in the same cells. In response to 0.5\u2009M KCl treatment, we find that the reporter gene is fully induced specifically in the cells with high Msn4 activity (<a href=\"#fig4\">Figure 4A,i and ii</a>), in accordance with the inhibitor experiments. In addition, the probability and the level of gene induction are independent of Msn2 activity, but increase linearly with Msn4 activity in single cells (Single-cell distributions of gene expression versus Msn2 or Msn4 are shown in <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1A</a>; the relationship between gene expression and AUC are shown in <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2A</a>). Because the osmotic stress treatment elicits Msn2 nuclear translocation above the threshold required for gene induction (~10 normalized a.u.: ~25% of maximal Msn2 localization; determined from the inhibitor experiments in <a href=\"#fig3\">Figure 3</a>) in almost all of the cells, we could not observe the basal 'off' state of gene expression when we binned the cells with their Msn2 levels (<a href=\"#fig4\">Figure 4A, ii</a>, left). This result indicates that, in response to the stress condition, Msn2 is 'switched on' in all of the cells and the induction level of slow kinetics promoters in individual cells is primarily controlled by Msn4 activity."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.018", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Msn2 and Msn4 exhibit distinct gene regulatory functions in single cells in response to natural stresses.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) (i) A scatter plot showing the relationship of the slow kinetics promoter P<i><sub>SIP18</sub></i> reporter expression with Msn2 and Msn4 activation at the single cell level in response to 0.5M KCl. Each dot represents a single cell. The x and y axes represent the peak values of Msn4 and Msn2 nuclear translocation (the maximal values in the first 30 min of translocation time traces), respectively; and the dot color represents the peak level of gene expression as indicated in the color bar (n: 182 cells). (ii) Plots show the relationships between P<i><sub>SIP18</sub></i> reporter expression and (left) Msn2 or (right) Msn4, respectively. Single cells are binned based on their Msn2 or Msn4 nuclear level as indicated in the x-axis and the average of reporter expression is calculated for each binned groups of single cells and shown in the bar graphs. (<b>B</b>) Scatter plots and bar graphs showing the relationship of the slow kinetics promoter P<i><sub>SIP18</sub></i> reporter expression with Msn2 and Msn4 activation at the single cell level in response to 4% ethanol. The data analysis and presentation schemes are consistent with those in (<b>A</b>). Because the majority of cells are not able to express the reporter gene, the proportion of 'responder' cells (green and red cells) is quantified and shown in the bar graphs, instead of the average of reporter expression. Data from a large number of single cells are collected to obtain enough responders (n: 924 cells). Single-cell data used in these plots are provided in the source data files."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig4-v2", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.18458.019", 
+                                        "id": "SD3-data", 
+                                        "label": "Figure 4\u2014source data 1.", 
+                                        "title": "Source data for Figure 4A.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig4-data1-v2.csv", 
+                                        "filename": "elife-18458-fig4-data1-v2.csv"
+                                    }, 
+                                    {
+                                        "doi": "10.7554/eLife.18458.020", 
+                                        "id": "SD4-data", 
+                                        "label": "Figure 4\u2014source data 2.", 
+                                        "title": "Source data for Figure 4B.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig4-data2-v2.csv", 
+                                        "filename": "elife-18458-fig4-data2-v2.csv"
+                                    }
+                                ], 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.021", 
+                                        "id": "fig4s1", 
+                                        "label": "Figure 4\u2014figure supplement 1.", 
+                                        "title": "Single-cell distributions of reporter gene expression versus nuclear TF levels in response to natural stresses.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Single-cell scatter plots showing the relationships between P<i><sub>SIP18</sub></i> reporter expression and (left) Msn2 or (right) Msn4 nuclear level, respectively, in response to 0.5 M KCl. Single-cell data are from <a href=\"#fig4\">Figure 4A</a>. (<b>B</b>) Single-cell scatter plots showing the relationships between P<i><sub>SIP18</sub></i> reporter expression and (left) Msn2 or (right) Msn4 nuclear level, respectively, in response to 4% ethanol. Single-cell data are from <a href=\"#fig4\">Figure 4B</a>. Because the majority of cells are not able to express the reporter gene, scatter plots, instead of boxplots, are used here to show the distributions of responder cells (green and red) and non-responder cells (blue) with different TF levels."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig4-figsupp1-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18458.022", 
+                                        "id": "fig4s2", 
+                                        "label": "Figure 4\u2014figure supplement 2.", 
+                                        "title": "Relationship between reporter gene expression and the area-under-the-curve (AUC) of nuclear TF levels in response to natural stresses.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Single-cell data in <a href=\"#fig4\">Figure 4</a> were analyzed show the relationship of the slow kinetics promoter P<i><sub>SIP18</sub></i> reporter expression with the AUC of Msn2 and Msn4 nuclear translocation in response to (<b>A</b>) 0.5 M KCl and (<b>B</b>) 4% ethanol. For the ethanol treatment, the AUC is calculated as the sum of TF nuclear levels for the first 30 min of stress treatment for each single-cell time trace (data points taken every two minutes). Due to the translational arrest induced by ethanol stress, TF nuclear localization at the later time points would not be able to contribute significantly to gene expression."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18458-fig4-figsupp2-v2"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Similarly, in response to 4% ethanol treatment, the reporter gene is also induced specifically in cells with high Msn4 activity. The treatment of ethanol stress is a relatively harsh stress condition that leads to a global translational arrest (<a href=\"#bib5\">Ding et al., 2009</a>; <a href=\"#bib22\">Stanley et al., 2010</a>). As a result, the majority of cells are not able to express the reporter gene under the slow kinetics promoter; however, the cells that do express the reporter gene are those with high Msn4 activity (<a href=\"#fig4\">Figure 4B,i</a>). Similar to the osmotic stress condition, Msn2 is activated above the threshold required for gene induction in most cells; therefore, the probability of gene expression does not show any dependence on Msn2 activity in single cells (<a href=\"#fig4\">Figure 4B,ii</a>, left). In contrast, the probability of gene expression shows a linear relationship with Msn4 activity in single cells (<a href=\"#fig4\">Figure 4B,ii</a>, right; Single-cell distributions of gene expression versus Msn2 or Msn4 are shown in <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1B</a>; the relationship between gene expression and AUC are shown in <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2B</a>), consistent with the inhibitor and osmotic stress experiments."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Taken together, these results show that, under natural stress conditions, Msn4 plays a distinct regulatory role from Msn2 in controlling target genes with slow kinetics promoters. Similar to inhibitor treatments, expression of these genes depends specifically on the\u00a0Msn4 activity in a linear fashion at the single-cell level. Given its heterogeneous activity in single cells and its critical role in gene regulation, Msn4, working in parallel with its homolog Msn2, can diversify the expression of a specific group of target genes within a cell population in response to natural stresses."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Distinct gene regulatory functions of Msn2 and Msn4 might extend more generally to other target promoters", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine whether Msn2 and Msn4 exhibit distinct regulatory functions on promoters other than P<i><sub>DCS2</sub></i> and P<i><sub>SIP18</sub></i>, we measured the nuclear localization of Msn2 and Msn4 and reporter gene expression under fast kinetics promoter P<i><sub>DDR2</sub></i> and slow kinetics promoter P<i><sub>TKL2</sub></i>. We find that, similar to the fast kinetics promoter P<i><sub>DCS2</sub></i>, expression of the P<i><sub>DDR2</sub></i> reporter gene can be induced in most cells in which either Msn2 or Msn4 is activated over a low threshold level and the level of reporter expression shows a similar graded relationship with both Msn2 and Msn4 (<a href=\"#fig5\">Figure 5A</a>). In contrast, the slow kinetics promoter P<i><sub>TKL2</sub></i> shows a similar response to that of P<i><sub>SIP18</sub></i>, in which reporter expression is specifically induced in the fraction of cells with high Msn4 activity. The level of reporter expression shows a switch-like relationship to Msn2 activity, but a linear relationship with Msn4 activity (<a href=\"#fig5\">Figure 5B</a>). These results suggest that the distinct functions of Msn2 and Msn4 in combinatorial gene regulation might be applicable to other target genes."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.023", 
+                                "id": "fig5", 
+                                "label": "Figure 5.", 
+                                "title": "Gene regulatory functions of Msn2 and Msn4 on other fast or slow kinetics promoters.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) (i) A scatter plot showing the relationship of the fast kinetics promoter P<i><sub>DDR2</sub></i> reporter expression with Msn2 and Msn4 activation at the single cell level. Each dot represents a single cell. Single-cell time traces were tracked over a 3-hr period in which the reporter fluorescence in most cells has already reached the plateau. The x and y axes represent the peak values of Msn4 and Msn2 nuclear translocation (the maximal values in the first 30 min of translocation time traces), respectively; and the dot color represents the maximal level of gene expression as indicated in the color bar. To cover the full dynamic range of TF translocation, the data from the experiments using 30 min inhibitor pulses with 0.1, 0.25, 0.5, 0.75 and 1 \u03bcM doses have been combined (n: 407 cells). (ii) Plots show the relationships between P<i><sub>DDR2</sub></i> reporter expression and (left) Msn2 or (right) Msn4, respectively. Single cells are binned based on their Msn2 or Msn4 nuclear level as indicated in the x-axis and the average of reporter expression is calculated for each binned groups of single cells and shown in the bar graphs. Scatter plots and bar graphs showing the relationship between gene expression and Msn2 and Msn4 activation for (<b>B</b>) the slow kinetics promoter P<i><sub>TKL2</sub></i> (n: 476 cells), (<b>C</b>) the promoter mutant P<i><sub>SIP18-A4</sub></i> (n: 553 cells), and (<b>D</b>) the promoter P<i><sub>DCS2</sub></i> in <i>snf6\u0394</i> (n: 352 cells). The data analysis and presentation schemes are consistent with those in (<b>A</b>)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig5-v2", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.18458.024", 
+                                        "id": "SD5-data", 
+                                        "label": "Figure 5\u2014source data 1.", 
+                                        "title": "Source data for Figure 5A.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig5-data1-v2.csv", 
+                                        "filename": "elife-18458-fig5-data1-v2.csv"
+                                    }, 
+                                    {
+                                        "doi": "10.7554/eLife.18458.025", 
+                                        "id": "SD6-data", 
+                                        "label": "Figure 5\u2014source data 2.", 
+                                        "title": "Source data for Figure 5B.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig5-data2-v2.csv", 
+                                        "filename": "elife-18458-fig5-data2-v2.csv"
+                                    }, 
+                                    {
+                                        "doi": "10.7554/eLife.18458.026", 
+                                        "id": "SD7-data", 
+                                        "label": "Figure 5\u2014source data 3.", 
+                                        "title": "Source data for Figure 5C.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig5-data3-v2.csv", 
+                                        "filename": "elife-18458-fig5-data3-v2.csv"
+                                    }, 
+                                    {
+                                        "doi": "10.7554/eLife.18458.027", 
+                                        "id": "SD8-data", 
+                                        "label": "Figure 5\u2014source data 4.", 
+                                        "title": "Source data for Figure 5D.", 
+                                        "mediaType": "application/octet-stream", 
+                                        "uri": "elife-18458-fig5-data4-v2.csv", 
+                                        "filename": "elife-18458-fig5-data4-v2.csv"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To further examine the generality of distinct regulatory functions of Msn2 and Msn4, we analyzed the gene expression response under the mutated P<i><sub>SIP18</sub></i> promoter (P<i><sub>SIP18</sub></i>-A4), which, by incorporating a few mutations, has been converted from a slow kinetics promoter to a fast kinetics promoter (<a href=\"#bib9\">Hansen and O'Shea, 2015a</a>). As shown in <a href=\"#fig5\">Figure 5C</a>,\u00a0in accordance with other fast kinetics promoters, gene expression under this mutant promoter is induced in most cells and displays a similar graded relationship with both Msn2 and Msn4. Therefore, Msn2 and Msn4 no longer show distinct regulatory functions when the P<i><sub>SIP18</sub></i> promoter, with the majority of the promoter sequence intact, is mutated to obtain fast activation kinetics. We next tested the opposite situation in which we slow down a fast kinetics promoter. To this end, we monitored the gene expression response under the P<i><sub>DCS2</sub></i> promoter in cells lacking the SWI/SNF chromatin remodeling complex (<i>snf6\u0394</i>). It has been shown previously that this mutant significantly slows down the activation kinetics of fast promoters (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>). Consequently, we observe that gene expression under the P<i><sub>DCS2</sub></i> promoter in this mutant exhibits switch-like versus linear relationships with Msn2 and Msn4, respectively (<a href=\"#fig5\">Figure 5D</a>), consistent with the responses of other slow kinetics promoters. In summary, these results suggest that the distinct regulatory functions of Msn2 and Msn4 might depend more generally on the kinetics of promoter activation, but not on specific target promoters."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In this study, we have focused on a few representative promoters because our single-cell analysis requires live-cell time-lapse experiments, the throughput of which hinders the examination of gene regulation at a more global level. However, we anticipate that, in near future, the technological advances will allow us to track single-cell gene regulation at the whole genome level. Such technologies will undoubtedly provide further insights into combinatorial gene regulation by Msn2 and Msn4. For example, we previously grouped target genes with fast versus slow promoter kinetics based on a population-level assay using cells with the <i>msn4\u0394</i> background (<a href=\"#bib12\">Hao and O'Shea, 2012</a>). Given the newly identified role of Msn4 in shifting the promoter activation timescales in a subpopulation of cells, we suspect that its presence might alter the classification of some target genes with intermediate promoter kinetics. A genome-wide single-cell analysis will enable a more accurate classification of target genes and, more importantly, will lead to a comprehensive understanding about dynamic regulation of global transcriptional responses to environmental stimuli."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Here we show that the homologous TFs Msn2 and Msn4, which have long been assumed to be functionally redundant, play distinct roles in coordinating differential expression of target genes depending on their promoter kinetics. For target genes with fast promoter kinetics, both factors can contribute to gene expression in a graded manner. In contrast, for target genes with slow promoter kinetics, Msn2 and Msn4 play distinct and cooperative roles, in which Msn2 functions as a low threshold 'switch' governing the 'ON' and 'OFF' state of promoter activation, while Msn4 serves as a 'rheostat' to effectively tune the induction level of gene expression (<a href=\"#fig6\">Figure 6A</a>). Further biochemical analysis is needed to elucidate the mechanistic details underlying these distinct regulatory functions of Msn2 and Msn4 at slow target promoters. One possible mechanism could involve the recruitment of distinct chromatin remodeling factors by Msn2 and Msn4 to target gene promoters. For example, to function as a low threshold 'switch', Msn2 might first recruit some initiation factors critical for opening up the tightly packed nucleosomes, characteristic of slow kinetics promoters (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>, <a href=\"#bib9\">2015a</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>). This could be followed by the subsequent promoter binding of Msn4, leading to the recruitment of Msn4-specific chromatin remodelers or modifiers to effectively promote and stabilize chromatin disassembly. In accordance with this mechanism, we observe that Msn4 always follows Msn2 in nuclear translocation with a short delay (~2\u20133\u2009min) under the inhibitor or natural stress conditions (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1C</a> and <a href=\"#fig3s6\">Figure 3\u2014figure supplement 6</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.18458.028", 
+                        "id": "fig6", 
+                        "label": "Figure 6.", 
+                        "title": "Schematics of the gene regulatory logic by Msn2 and Msn4.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Diagrams illustrating the gene regulatory schemes of Msn2 and Msn4 in controlling (left) fast or (right) slow kinetics promoters. Left: Either Msn2 or Msn4 is sufficient for the induction of fast promoters, constituting an 'OR' logic gate. At the single cell level, gene expression shows a similar graded dependence on both Msn2 and Msn4 and reaches saturation upon a low TF activity. Right: Msn2 and Msn4 are both required for the induction of slow promoters, constituting an 'AND' logic gate. At the single cell level, Msn2 serves as a low threshold 'switch' turning transcription ON or OFF depending on its activity. In contrast, Msn4 functions as a 'rheostat', tuning the gene induction level in a linear fashion. (<b>B</b>) Diagrams illustrating how the gene regulatory schemes of Msn2 and Msn4 contribute to the heterogeneity in gene expression at the population level. Left: an 'OR' logic gate will lead to homogeneous gene expression in a cell population. Right: an 'AND' logic gate with the 'rheostat' TF Msn4 produces a heterogeneous response in a population of cells."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-18458-fig6-v2", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18458.029", 
+                                "id": "fig6s1", 
+                                "label": "Figure 6\u2014figure supplement 1.", 
+                                "title": "Biological functions of target genes with fast or slow kinetics promoters.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Pie charts are used to illustrate the functional enrichments for target genes with (<b>A</b>) fast and (<b>B</b>) slow kinetics promoters. Detailed functional classification for each gene in the two gene groups are shown below the pie charts. Only genes with known functions are included in the pie charts. 'Early stress response' includes the genes that are important for early transcriptional response during stresses. The groups of target genes are from <a href=\"#bib12\">Hao and O\u2019Shea (2012)</a>."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18458-fig6-figsupp1-v2"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Target genes with fast and slow promoter activation kinetics are regulated differently and hence might have distinct physiological functions. In support of this, we find a close correlation between gene functions and promoter kinetics for previously identified target gene groups with fast or slow kinetics promoters (<a href=\"#fig6s1\">Figure 6\u2014figure supplement 1</a>; target gene groups are from <a href=\"#bib12\">Hao and O\u2019Shea, 2012</a>). Target genes with fast kinetics promoters are primarily involved in metabolic and cellular adaptation to glucose starvation (carbohydrate metabolism and autophagy), whereas the majority of target genes with slow kinetics promoters are involved in cellular protection against chronic stresses. These results suggest that, in response to carbon source changes that might require an\u00a0immediate adaptive response, cells could quickly modulate their metabolism via activating those genes with fast kinetics promoters. In contrast, the induction of genes with slow kinetics promoters is more tightly controlled. These genes are important for preparing cells to survive under chronic stress conditions, the response to which might be less time-sensitive and the occurrence of which might be less frequent in natural habitats. Cells would only activate these genes upon a sustained presence of stresses. This temporal separation of target genes with different functions could avoid initiating resource-intensive cell protection processes in response to minor environmental fluctuations and thereby optimize resource allocation under rapidly changing environments. Furthermore, cells may use Msn4 to control the level of heterogeneity at the population level (<a href=\"#fig6\">Figure 6B</a>), as part of a bet hedging strategy against unpredictable environmental conditions. During the first onset of stresses, a subpopulation of cells with high Msn4 activity induce the expression of stress resistance genes with slow kinetics promoters, preparing for upcoming severe or chronic stresses; meanwhile, other cells with low Msn4 activity cannot induce these genes and therefore may consequently obtain a better fitness advantage if the subsequent stress is minor or short term. In this way, cells can be divided into two subpopulations, each of which is specialized at coping with one of the possible environmental scenarios. Cells lacking Msn4, however, are not able to induce the slow target genes within the whole population, and hence might be more likely to go extinct in the face of extreme stresses. Therefore, the Msn4-dependent gene regulation may represent a strategy that enables a homolog-'controlled' form of heterogeneity within a cell population."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The coupling of the homologous factors Msn2 and Msn4 in combinatorial gene regulation is analogous to logic gate systems commonly found in digital circuits: fast kinetics promoters behave as an 'OR' gate, becoming fully induced with adequate amount of either factor, while slow kinetics promoters behave as an 'AND' gate, requiring the activation of both Msn2 and Msn4 (<a href=\"#fig6\">Figure 6</a>). Interestingly, this logic gate scheme is not fixed, but rather dependent on the upstream dynamics of TF input \u2013 an 'AND' gate upon a transient input can become an 'OR' gate when the input duration is prolonged. As shown in <a href=\"#fig1\">Figure 1B and C</a>,\u00a0in response to a 30-min input pulse, the slow kinetics promoter P<i><sub>SIP18</sub></i> is an 'AND' gate, requiring both Msn2 and Msn4 for gene induction; But it becomes an 'OR' gate in response to a 60-min input pulse, in which Msn4 is no longer required. Therefore, given enough amount of time in the nucleus, Msn2 can also function as a 'rheostat' to compensate the absence of Msn4 and tune the induction level of slow target promoters, consistent with a previous study showing that increasing the steady-state expression level of Msn2 leads to a graded induction of its target genes (<a href=\"#bib23\">Stewart-Ornstein et al., 2013</a>). Our results suggest that the architectures of gene regulatory networks are not static and could be rewired by various upstream dynamics of TF inputs. In yeast, a recent proteomic analysis found that most proteins that exhibit transient pulsatile dynamics to environmental changes are members of paralogous or closely related TFs (<a href=\"#bib4\">Dalal et al., 2014</a>). For example, Msn2 and a related transcriptional repressor Mig1, both having pulsatile dynamics, regulate their common target genes by modulating their relative pulse timing (<a href=\"#bib16\">Lin et al., 2015</a>). Moreover, in mammalian systems, an increasing number of TFs, including some closely related TF pairs such as NFAT1 and NFAT4 (<a href=\"#bib27\">Yissachar et al., 2013</a>), have been identified to possess highly diverse activation dynamics that contribute to gene expression responses (<a href=\"#bib1\">Behar and Hoffmann, 2010</a>; <a href=\"#bib19\">Purvis et al., 2012</a>; <a href=\"#bib20\">Purvis and Lahav, 2013</a>; <a href=\"#bib24\">Tay et al., 2010</a>; <a href=\"#bib26\">Werner et al., 2005</a>). Given the prevalence of seemingly redundant TFs in eukaryotes, we anticipate that the time-dependent combinatorial gene regulation revealed here for Msn2 and Msn4 will be widely applicable to homologous or closely related TFs that are controlled dynamically in other organisms including mammals."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Yeast strain construction", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Standard methods for the growth, maintenance and transformation of yeast and bacteria and for manipulation of DNA were used throughout. All <i>Saccharomyces cerevisiae</i> strains used in this study are derived from the W303 background (<i>ADE+ MATa trp1 leu2 ura3 his3 can1 GAL+ psi+</i>). A list of strains is provided in <a href=\"#tbl1\">Table 1</a>."
+                            }, 
+                            {
+                                "type": "table", 
+                                "doi": "10.7554/eLife.18458.030", 
+                                "id": "tbl1", 
+                                "label": "Table 1.", 
+                                "title": "Yeast strains used in this work.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Yeast strains used in this work."
+                                    }
+                                ], 
+                                "tables": [
+                                    "<table><thead><tr><th valign=\"top\">Strain Name</th><th valign=\"top\">Description</th></tr></thead><tbody><tr><td valign=\"top\">NH0084</td><td valign=\"top\"><i>NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0094</td><td valign=\"top\"><i>MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0095</td><td valign=\"top\"><i>msn4\u0394::TRP1, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0108</td><td valign=\"top\"><i>MSN4-mCitrineV163A, msn2\u0394::natMX, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0096</td><td valign=\"top\"><i>msn4\u0394::TRP1, msn2\u0394::natMX, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0116</td><td valign=\"top\"><i>P<sub>SIP18</sub>-mTurqouise2-HIS, MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0117</td><td valign=\"top\"><i>P<sub>SIP18</sub>- mTurqouise2-HIS, msn4\u0394::TRP1, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0119</td><td valign=\"top\"><i>P<sub>SIP18</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, msn2\u0394::natMX, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0120</td><td valign=\"top\"><i>P<sub>DCS2</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0121</td><td valign=\"top\"><i>P<sub>DCS2</sub>- mTurqouise2-HIS, msn4\u0394::TRP1, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0110</td><td valign=\"top\"><i>P<sub>DCS2</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, msn2\u0394::natMX,, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0333</td><td valign=\"top\"><i>P<sub>SIP18--A4</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0334</td><td valign=\"top\"><i>P<sub>SIP18--A4</sub>- mTurqouise2-HIS, msn4\u0394::TRP1, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0335</td><td valign=\"top\"><i>P<sub>SIP18-A4</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, msn2\u0394::natMX, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0425</td><td valign=\"top\"><i>P<sub>TKL2</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0426</td><td valign=\"top\"><i>P<sub>TKL2</sub>- mTurqouise2-HIS, msn4\u0394::TRP1, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0427</td><td valign=\"top\"><i>P<sub>DDR2</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0428</td><td valign=\"top\"><i>P<sub>DDR2</sub>- mTurqouise2-HIS, msn4\u0394::TRP1, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup></i></td></tr><tr><td valign=\"top\">NH0459</td><td valign=\"top\"><i>P<sub>DCS2</sub>- mTurqouise2-HIS, MSN4-mCitrineV163A, MSN2-mCherry, NHP6a-IRFP:kanMX, TPK1<sup>M164G</sup>, TPK2<sup>M147G</sup>, TPK3<sup>M165G</sup>,\u00a0snf6::cgURA3</i></td></tr><tr><td valign=\"top\">NH0237</td><td valign=\"top\"><i>MSN2- mCitrineV163A -HIS, NHP6a-IRFP:kanMX</i></td></tr><tr><td valign=\"top\">NH0267</td><td valign=\"top\"><i>MSN2- mCherry \u2013TRP1, NHP6a-IRFP:kanMX</i></td></tr></tbody></table>"
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Msn2 was C-terminally tagged with a yeast codon-optimized mCherry by replacing the endogenous stop codon of the <i>MSN2</i> locus with <i>URA3</i> and then replacing the <i>URA3</i> with a linker-mCherry PCR fragment from a pKT vector using 5-FOA. Msn4 was C-terminally tagged with a linker-mCitrineV163A PCR fragment generated from a pKT vector containing yeast codon-optimized mCitrine with the V163A mutation to allow for fast maturation. The endogenous <i>MSN2</i> and <i>MSN4</i> terminators were left unchanged. <i>MSN2</i> and <i>MSN4</i> deletion strains (<i>msn2\u0394</i> and <i>msn4\u0394</i>, respectively) were made by replacing the endogenous <i>MSN2</i> or <i>MSN4</i> ORF with <i>TRP1</i>. The introduction of gene expression reporters into yeast was performed as described previously (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>). The fluorescence reporter gene used is a yeast codon-optimized mTurqouise2."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Microfluidics", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The microfluidics device used in this study is modified from a previously reported device (<a href=\"#bib14\">Hersen et al., 2008</a>). The mask was designed to allow for bonding of two antiparallel Y-shaped devices on a single microfluidics chip using standard methods of soft lithography and replica molding. The device fabrication and the setup of microfluidic experiments were performed as described previously (<a href=\"#bib8\">Hansen et al., 2015</a>; <a href=\"#bib13\">Hao et al., 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Time-lapse microscopy", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "All time-lapse microscopy experiments were performed using a Nikon Ti-E inverted fluorescence microscope with Perfect Focus, coupled with an EMCCD camera (Andor iXon X3 DU897). The light source is a Spectra X LED system. Images were taken using a CFI Plan Apochromat Lambda DM 60X Oil Immersion Objective (NA 1.40 WD 0.13MM). During experiments, the microfluidic device was taped to a customized device holder inserted onto the motorized stage (with encoders) of the microscope. For the experiments only tracking TF dynamics, three positions were chosen for each channel and the microscope was programmed to acquire Phase, YFP, mCherry, and iRFP images every two minutes. For the experiments measuring reporter gene expression, six positions were chosen for each experiment and the microscope was programmed to take iRFP and YFP or mCherry images every two minutes and both Phase and CFP images every 14 min for a total of three hours. In all experiments, cells in the device were first exposed to SD media for at least 30 min. When the image acquisition started, cells were maintained in SD media for the first five minutes to obtain a baseline for each fluorescence channel prior to the introduction of any stressor or 1-NM-PP1. The exposure and intensity settings for each channel were set as follows: CFP 300\u00a0ms at 9% lamp intensity, YFP 400\u00a0ms at 20% lamp intensity, mCherry 300\u00a0ms at 10% lamp intensity, and iRFP 200\u00a0ms at 15% lamp intensity. The camera was set to an EM Gain of 300 (within the linear range) for all four fluorescence channels."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-4", 
+                        "title": "Image analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Fluorescence microscopy image stacks were pre-processed using ImageJ for background subtraction. The\u00a0images were then processed using a custom MATLAB code for single-cell tracking and fluorescence quantification as described previously (<a href=\"#bib13\">Hao et al., 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>). We determine the sample size of our single-cell data based on similar studies published previously (<a href=\"#bib7\">Hansen and O'Shea, 2013</a>; <a href=\"#bib13\">Hao et al., 2013</a>; <a href=\"#bib12\">Hao and O'Shea, 2012</a>)."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Behar", 
+                            "index": "Behar, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Hoffmann", 
+                            "index": "Hoffmann, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Understanding the temporal codes of intra-cellular signals", 
+                "journal": {
+                    "name": [
+                        "Current Opinion in Genetics & Development"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "684", 
+                    "last": "693", 
+                    "range": "684\u2013693"
+                }, 
+                "doi": "10.1016/j.gde.2010.09.007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DB Berry", 
+                            "index": "Berry, DB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Gasch", 
+                            "index": "Gasch, AP"
+                        }
+                    }
+                ], 
+                "articleTitle": "Stress-activated genomic expression changes serve a preparative role for impending stress in yeast", 
+                "journal": {
+                    "name": [
+                        "Molecular Biology of the Cell"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "4580", 
+                    "last": "4587", 
+                    "range": "4580\u20134587"
+                }, 
+                "doi": "10.1091/mbc.E07-07-0680"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Chou", 
+                            "index": "Chou, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Zhao", 
+                            "index": "Zhao, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Song", 
+                            "index": "Song, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Liu", 
+                            "index": "Liu, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Nie", 
+                            "index": "Nie, Q"
+                        }
+                    }
+                ], 
+                "articleTitle": "Fus3-triggered Tec1 degradation modulates mating transcriptional output during the pheromone response", 
+                "journal": {
+                    "name": [
+                        "Molecular Systems Biology"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "212", 
+                "doi": "10.1038/msb.2008.47"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CK Dalal", 
+                            "index": "Dalal, CK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Cai", 
+                            "index": "Cai, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Lin", 
+                            "index": "Lin, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Rahbar", 
+                            "index": "Rahbar, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Elowitz", 
+                            "index": "Elowitz, MB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Pulsatile dynamics in the yeast proteome", 
+                "journal": {
+                    "name": [
+                        "Current Biology"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "2189", 
+                    "last": "2194", 
+                    "range": "2189\u20132194"
+                }, 
+                "doi": "10.1016/j.cub.2014.07.076"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ding", 
+                            "index": "Ding, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Huang", 
+                            "index": "Huang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Zhang", 
+                            "index": "Zhang, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Zhao", 
+                            "index": "Zhao, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Yang", 
+                            "index": "Yang, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Zhang", 
+                            "index": "Zhang, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Tolerance and stress response to ethanol in the yeast Saccharomyces cerevisiae", 
+                "journal": {
+                    "name": [
+                        "Applied Microbiology and Biotechnology"
+                    ]
+                }, 
+                "volume": "85", 
+                "pages": {
+                    "first": "253", 
+                    "last": "263", 
+                    "range": "253\u2013263"
+                }, 
+                "doi": "10.1007/s00253-009-2223-1"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W G\u00f6rner", 
+                            "index": "G\u00f6rner, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Durchschlag", 
+                            "index": "Durchschlag, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MT Martinez-Pastor", 
+                            "index": "Martinez-Pastor, MT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Estruch", 
+                            "index": "Estruch, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Ammerer", 
+                            "index": "Ammerer, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Hamilton", 
+                            "index": "Hamilton, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Ruis", 
+                            "index": "Ruis, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sch\u00fcller", 
+                            "index": "Sch\u00fcller, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nuclear localization of the C2H2 zinc finger protein Msn2p is regulated by stress and protein kinase A activity", 
+                "journal": {
+                    "name": [
+                        "Genes & Development"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "586", 
+                    "last": "597", 
+                    "range": "586\u2013597"
+                }, 
+                "doi": "10.1101/gad.12.4.586"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Hansen", 
+                            "index": "Hansen, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Promoter decoding of transcription factor dynamics involves a trade-off between noise and control of gene expression", 
+                "journal": {
+                    "name": [
+                        "Molecular Systems Biology"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": "704", 
+                "doi": "10.1038/msb.2013.56"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Hansen", 
+                            "index": "Hansen, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Hao", 
+                            "index": "Hao, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "High-throughput microfluidics to control and measure signaling dynamics in single yeast cells", 
+                "journal": {
+                    "name": [
+                        "Nature Protocols"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "1181", 
+                    "last": "1197", 
+                    "range": "1181\u20131197"
+                }, 
+                "doi": "10.1038/nprot.2015.079"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2015", 
+                "discriminator": "a", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Hansen", 
+                            "index": "Hansen, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "cis Determinants of promoter threshold and activation timescale", 
+                "journal": {
+                    "name": [
+                        "Cell Reports"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "1226", 
+                    "last": "1233", 
+                    "range": "1226\u20131233"
+                }, 
+                "doi": "10.1016/j.celrep.2015.07.035"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2015", 
+                "discriminator": "b", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Hansen", 
+                            "index": "Hansen, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Limits on information transduction through amplitude and frequency regulation of transcription factor activity", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "\u00a0e06559", 
+                "doi": "10.7554/eLife.06559"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Hansen", 
+                            "index": "Hansen, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Encoding four gene expression programs in the activation dynamics of a single transcription factor", 
+                "journal": {
+                    "name": [
+                        "Current Biology"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "R269", 
+                    "last": "271", 
+                    "range": "R269\u2013271"
+                }, 
+                "doi": "10.1016/j.cub.2016.02.058"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Hao", 
+                            "index": "Hao, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Signal-dependent dynamics of transcription factor translocation controls gene expression", 
+                "journal": {
+                    "name": [
+                        "Nature Structural & Molecular Biology"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "31", 
+                    "last": "39", 
+                    "range": "31\u201339"
+                }, 
+                "doi": "10.1038/nsmb.2192"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Hao", 
+                            "index": "Hao, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BA Budnik", 
+                            "index": "Budnik, BA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gunawardena", 
+                            "index": "Gunawardena, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Tunable signal processing through modular control of transcription factor translocation", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "339", 
+                "pages": {
+                    "first": "460", 
+                    "last": "464", 
+                    "range": "460\u2013464"
+                }, 
+                "doi": "10.1126/science.1227299"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Hersen", 
+                            "index": "Hersen, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MN McClean", 
+                            "index": "McClean, MN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Mahadevan", 
+                            "index": "Mahadevan, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ramanathan", 
+                            "index": "Ramanathan, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Signal processing by the HOG MAP kinase pathway", 
+                "journal": {
+                    "name": [
+                        "PNAS"
+                    ]
+                }, 
+                "volume": "105", 
+                "pages": {
+                    "first": "7165", 
+                    "last": "7170", 
+                    "range": "7165\u20137170"
+                }, 
+                "doi": "10.1073/pnas.0710770105"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Houser", 
+                            "index": "Houser, JR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Ford", 
+                            "index": "Ford, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Nagiec", 
+                            "index": "Nagiec, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Errede", 
+                            "index": "Errede, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TC Elston", 
+                            "index": "Elston, TC"
+                        }
+                    }
+                ], 
+                "articleTitle": "Positive roles for negative regulators in the mating response of yeast", 
+                "journal": {
+                    "name": [
+                        "Molecular Systems Biology"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": "586", 
+                "doi": "10.1038/msb.2012.18"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Lin", 
+                            "index": "Lin, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CH Sohn", 
+                            "index": "Sohn, CH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CK Dalal", 
+                            "index": "Dalal, CK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Cai", 
+                            "index": "Cai, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Elowitz", 
+                            "index": "Elowitz, MB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Combinatorial gene regulation by modulation of relative pulse timing", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "527", 
+                "pages": {
+                    "first": "54", 
+                    "last": "58", 
+                    "range": "54\u201358"
+                }, 
+                "doi": "10.1038/nature15710"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MT Mart\u00ednez-Pastor", 
+                            "index": "Mart\u00ednez-Pastor, MT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Marchler", 
+                            "index": "Marchler, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sch\u00fcller", 
+                            "index": "Sch\u00fcller, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Marchler-Bauer", 
+                            "index": "Marchler-Bauer, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Ruis", 
+                            "index": "Ruis, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Estruch", 
+                            "index": "Estruch, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "The Saccharomyces cerevisiae zinc finger proteins Msn2p and Msn4p are required for transcriptional induction through the stress response element (STRE)", 
+                "journal": {
+                    "name": [
+                        "The EMBO Journal"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "2227", 
+                    "last": "2235", 
+                    "range": "2227\u20132235"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Petrenko", 
+                            "index": "Petrenko, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RV Chereji", 
+                            "index": "Chereji, RV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MN McClean", 
+                            "index": "McClean, MN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AV Morozov", 
+                            "index": "Morozov, AV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Broach", 
+                            "index": "Broach, JR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Noise and interlocking signaling pathways promote distinct transcription factor dynamics in response to different stresses", 
+                "journal": {
+                    "name": [
+                        "Molecular Biology of the Cell"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "2045", 
+                    "last": "2057", 
+                    "range": "2045\u20132057"
+                }, 
+                "doi": "10.1091/mbc.E12-12-0870"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Purvis", 
+                            "index": "Purvis, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KW Karhohs", 
+                            "index": "Karhohs, KW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Mock", 
+                            "index": "Mock, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Batchelor", 
+                            "index": "Batchelor, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Loewer", 
+                            "index": "Loewer, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Lahav", 
+                            "index": "Lahav, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "p53 dynamics control cell fate", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "336", 
+                "pages": {
+                    "first": "1440", 
+                    "last": "1444", 
+                    "range": "1440\u20131444"
+                }, 
+                "doi": "10.1126/science.1218351"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Purvis", 
+                            "index": "Purvis, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Lahav", 
+                            "index": "Lahav, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Encoding and decoding cellular information through signaling dynamics", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "152", 
+                "pages": {
+                    "first": "945", 
+                    "last": "956", 
+                    "range": "945\u2013956"
+                }, 
+                "doi": "10.1016/j.cell.2013.02.005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Schmitt", 
+                            "index": "Schmitt, AP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K McEntee", 
+                            "index": "McEntee, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Msn2p, a zinc finger DNA-binding protein, is the transcriptional activator of the multistress response in Saccharomyces cerevisiae", 
+                "journal": {
+                    "name": [
+                        "PNAS"
+                    ]
+                }, 
+                "volume": "93", 
+                "pages": {
+                    "first": "5777", 
+                    "last": "5782", 
+                    "range": "5777\u20135782"
+                }, 
+                "doi": "10.1073/pnas.93.12.5777"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Stanley", 
+                            "index": "Stanley, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bandara", 
+                            "index": "Bandara, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Fraser", 
+                            "index": "Fraser, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PJ Chambers", 
+                            "index": "Chambers, PJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GA Stanley", 
+                            "index": "Stanley, GA"
+                        }
+                    }
+                ], 
+                "articleTitle": "The ethanol stress response and ethanol tolerance of Saccharomyces cerevisiae", 
+                "journal": {
+                    "name": [
+                        "Journal of Applied Microbiology"
+                    ]
+                }, 
+                "volume": "109", 
+                "pages": {
+                    "first": "13", 
+                    "last": "24", 
+                    "range": "13\u201324"
+                }, 
+                "doi": "10.1111/j.1365-2672.2009.04657.x"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Stewart-Ornstein", 
+                            "index": "Stewart-Ornstein, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Nelson", 
+                            "index": "Nelson, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J DeRisi", 
+                            "index": "DeRisi, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Weissman", 
+                            "index": "Weissman, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H El-Samad", 
+                            "index": "El-Samad, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Msn2 coordinates a stoichiometric gene expression program", 
+                "journal": {
+                    "name": [
+                        "Current Biology"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "2336", 
+                    "last": "2345", 
+                    "range": "2336\u20132345"
+                }, 
+                "doi": "10.1016/j.cub.2013.09.043"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Tay", 
+                            "index": "Tay, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Hughey", 
+                            "index": "Hughey, JJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TK Lee", 
+                            "index": "Lee, TK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Lipniacki", 
+                            "index": "Lipniacki, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SR Quake", 
+                            "index": "Quake, SR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MW Covert", 
+                            "index": "Covert, MW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "466", 
+                "pages": {
+                    "first": "267", 
+                    "last": "71", 
+                    "range": "267\u201371"
+                }, 
+                "doi": "10.1038/nature09145"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Villarino", 
+                            "index": "Villarino, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Laurence", 
+                            "index": "Laurence, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GW Robinson", 
+                            "index": "Robinson, GW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Bonelli", 
+                            "index": "Bonelli, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Dema", 
+                            "index": "Dema, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Afzali", 
+                            "index": "Afzali, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HY Shih", 
+                            "index": "Shih, HY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HW Sun", 
+                            "index": "Sun, HW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SR Brooks", 
+                            "index": "Brooks, SR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Hennighausen", 
+                            "index": "Hennighausen, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Kanno", 
+                            "index": "Kanno, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ O'Shea", 
+                            "index": "O'Shea, JJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HW Brooks", 
+                            "index": "Brooks, HW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Signal transducer and activator of transcription 5 (STAT5) paralog dose governs T cell effector and regulatory functions", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "\u00a0e08384", 
+                "doi": "10.7554/eLife.08384"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SL Werner", 
+                            "index": "Werner, SL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Barken", 
+                            "index": "Barken, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Hoffmann", 
+                            "index": "Hoffmann, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Stimulus specificity of gene expression programs determined by temporal control of IKK activity", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "309", 
+                "pages": {
+                    "first": "1857", 
+                    "last": "1861", 
+                    "range": "1857\u20131861"
+                }, 
+                "doi": "10.1126/science.1113319"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Yissachar", 
+                            "index": "Yissachar, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Sharar Fischler", 
+                            "index": "Sharar Fischler, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Cohen", 
+                            "index": "Cohen, AA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Reich-Zeliger", 
+                            "index": "Reich-Zeliger, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Russ", 
+                            "index": "Russ, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Shifrut", 
+                            "index": "Shifrut, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Porat", 
+                            "index": "Porat, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Friedman", 
+                            "index": "Friedman, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamic response diversity of NFAT isoforms in individual living cells", 
+                "journal": {
+                    "name": [
+                        "Molecular Cell"
+                    ]
+                }, 
+                "volume": "49", 
+                "pages": {
+                    "first": "322", 
+                    "last": "330", 
+                    "range": "322\u2013330"
+                }, 
+                "doi": "10.1016/j.molcel.2012.11.003"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Anders S Hansen, Jeff Hasty, Roy Wollman and Gurol M S\u00fcel for insightful suggestions and critical comments on the manuscript. This work was supported by NIH R01 GM111458."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.18458.031", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your article \"Dynamic Control of Gene Regulatory Logic by Seemingly Redundant Transcription Factors\" for consideration by <i>eLife</i>. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aviv Regev as the Senior Editor. The reviewers have opted to remain anonymous."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Summary:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Paralogous transcription factors are ubiquitous in many gene regulatory systems. However, how paralogous TFs quantitatively and specifically influence gene expression remains largely unexplored. Using single-cell time-lapse microscopy, this manuscript analyzes the regulation of genes by a pair of dynamic paralogous TFs, Msn2 and Msn4, in budding yeast. The authors use artificial induction and natural stress signals to transiently induce the system. They then measure TF dynamics and target gene outputs in the same cell, and analyze the quantitative roles of Msn2 and Msn4 in target gene expression levels. The data indicate that under certain conditions Msn2 acts as a switch while Ms4 behaves like a rheostat, and in other conditions Msn2/Msn4 function as an OR gate. These results suggest that dynamic control of these two stress response regulators may provide important physiological benefits for budding yeast in response to environmental signals."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Essential revisions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Influence of the choice of metrics of Msn2/4 on \"switch\" versus \"rheostat\" behavior: In <a href=\"#fig3\">Figures 3</a>\u2013<a href=\"#fig4\">4</a>, the authors plotted the relationship between target expression level vs. Msn2/Msn4 levels. In doing so, they chose \"peak values of Msn4 and Msn2 nuclear translocation\" as the \"nuclear Msn2/Msn4 levels\". This is not the most obvious or reasonable choice, since there are many characteristics of the Msn2/4 pulse that can be influencing gene expression downstream. For example, since the authors used total reporter output (i.e., peak CFP level) as expression level, shouldn't the corresponding input variable be the integrated area under the Msn2 or Msn4 nuclear localization curve? Therefore, the authors should report analysis with area under curve as \"nuclear Msn2/Msn4 levels\" and make sure that the switch or rheostat behavior for Msn2 or Msn4 remains unchanged. Also, the speed of Msn2/Msn4 nuclear translocation or exit could be influential, and the authors should report relationship for this characteristic of the pulse."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Generality of different regulatory functions of Msn2/4: The authors argue that the regulatory functions of Msn2 and Msn4 are different in different promoters (fast vs. slow). And in <a href=\"#fig3\">Figure 3</a>, they show such differences by using one fast promoter (DSC2) and one slow promoter (SIP18). Since this is an essential data for the paper, other promoters should be reported. It seems like authors already have data with one other slow promoter (TKL2) as well as one other fast promoter (SIP18-A4). If so, these data should also be reported. The authors should also consider reporting a more global view of gene expression to support this important claim. Related to this point is that fact that the choice of fast and slow genes is based on classification made in a previous work of the author (Hao and O'Shea 2011), where it was done on the background of msn4 deletion. Given the critical role of Msn4 found here, it is possible that this classification can change. The authors should address this point, either through data analysis/reanalysis or discussion of relevant caveats."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) Static versus dynamic profiles of gene expression: The authors only report the final level of the target genes (at 30 or 60 minutes) but not the target genes dynamic profiles (as demonstrated in <a href=\"#fig1\">Figure 1A</a>, right, blue trace). With these data, the msn4 mutant has a non-responsive Sip18 after 30 minutes, yet responsive at 60 minutes. Previous data from the \u03c0 (Hao &amp; O'Shea 2012, Supplementary Figure 12) suggests Sip18 does respond and climb steadily in this strain, albeit more weakly/slowly. Is it possible then that the msn4 mutant kinetics of Sip18 (and other \"slow\" targets) is simply slower/weaker, rather than qualitatively different (\"AND\" gate becoming an \"OR\" gate at prolonged inputs, as suggested by the authors)? The authors should therefore report target gene single cell trace, and use it to provide a more holistic interpretation of the results shown in <a href=\"#fig1\">Figure 1B,C</a>, and <a href=\"#fig3\">Figure 3</a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) Lack of quantitative data for some claims: Given the quantitative nature of this paper, some claims that could be made quantitatively are reported qualitatively. Results: \"suggesting a competing role of Msn2 for binding to the promoter\". The authors should make a plot to show the difference quantitatively. Similarly Results: \"probability and the level of gene induction increase [\u2026]\". There is no data pointing to the \"probability\" (or at least it is close to impossible to figure out the probability from the distribution data). Results: \"much more heterogeneous\". The authors should put numbers to the claim and probe whether this due to the relative small copy number of Msn4 compared to Msn2. Lastly, Discussion: \"2-3min\". If one normalizes the data (min to max) in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a>, Msn2 and Msn4 traces may simply overlay on top of each other (i.e., no time difference)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) Functional analysis of promoters: Based on the authors' analysis, it seems like slow and fast promoters are regulated differently and can have distinct physiological functions. To link these mechanistic findings to potential functional and physiological implications, the authors should provide analyses supporting such roles, for example, showing correlation between induction dynamics and regulation by Msn2/4 to functional classification. If no such relationship exists, authors should also indicate so. Related to this point, promoters with fast and slow activation kinetics have their own advantages during adaptation upon stress stimulation. The authors should include an introduction or conclusion discussing in some detail \"how the two mechanisms mediated by the two kinds of promoters are important for adaptation\u2026\"."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "6) Connection to osmotic stress: The reduced resistance of primed msn4 mutant cells to osmotic stress is intriguing, but the connection to the main story is not entirely clear. Should the authors opt to include this data, they should also include msn2 cells also respond to this stress under the same experimental conditions/protocols in order to probe whether this effect is Msn4 specific."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.18458.032", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Essential revisions:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) Influence of the choice of metrics of Msn2/4 on \"switch\" versus \"rheostat\" behavior: In <a href=\"#fig3\">Figures 3</a>\u2013<a href=\"#fig4\">4</a>, the authors plotted the relationship between target expression level vs. Msn2/Msn4 levels. In doing so, they chose \"peak values of Msn4 and Msn2 nuclear translocation\" as the \"nuclear Msn2/Msn4 levels\". This is not the most obvious or reasonable choice, since there are many characteristics of the Msn2/4 pulse that can be influencing gene expression downstream. For example, since the authors used total reporter output (i.e., peak CFP level) as expression level, shouldn't the corresponding input variable be the integrated area under the Msn2 or Msn4 nuclear localization curve? Therefore, the authors should report analysis with area under curve as \"nuclear Msn2/Msn4 levels\" and make sure that the switch or rheostat behavior for Msn2 or Msn4 remains unchanged. Also, the speed of Msn2/Msn4 nuclear translocation or exit could be influential, and the authors should report relationship for this characteristic of the pulse.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We now include new <a href=\"#fig3s5\">Figure 3\u2014figure supplement 5</a> and <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a> to show the relationship between gene expression and the AUC of TF nuclear translocation. As shown in these figures, we observed similar switch or rheostat behavior for Msn2 or Msn4 using AUC to represent the nuclear localization. We also include new <a href=\"#fig3s6\">Figure 3 \u2014figure supplement 6</a> to show the relationship between gene expression and the speed of nuclear import and export. Because the time differences in nuclear import or export for Msn2 or Msn4 among single cells (calculated and shown in <a href=\"#fig3s6\">Figure 3\u2014figure supplement 6</a>) are relatively small comparing to the total duration of inputs, we observed modest influence on gene expression from the variations in these characteristics."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the main text, we add a new paragraph describing the results:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cFinally, to evaluate the influence of other dynamic characteristics (such as nuclear import rate or export rate) of Msn2 or Msn4 translocation, we also plotted the level of gene expression versus the area under the curve (AUC) of Msn2 or Msn4 nuclear localization. As shown in <a href=\"#fig3s5\">Figure 3\u2014figure supplement 5</a>, the relationships between gene expression and AUC are similar to those shown in <a href=\"#fig3\">Figure 3</a>. In accordance, because the time differences in nuclear import or export for Msn2 or Msn4 among single cells (~1 \u2013 2 minutes) are relatively small comparing to the total duration of inputs (30 minutes), we observed modest influence on gene expression from the variations in these characteristics under our experimental conditions (<a href=\"#fig3s6\">Figure 3\u2014figure supplement 6</a>).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Generality of different regulatory functions of Msn2/4: The authors argue that the regulatory functions of Msn2 and Msn4 are different in different promoters (fast vs. slow). And in <a href=\"#fig3\">Figure 3</a>, they show such differences by using one fast promoter (DSC2) and one slow promoter (SIP18). Since this is an essential data for the paper, other promoters should be reported. It seems like authors already have data with one other slow promoter (TKL2) as well as one other fast promoter (SIP18-A4). If so, these data should also be reported. The authors should also consider reporting a more global view of gene expression to support this important claim. Related to this point is that fact that the choice of fast and slow genes is based on classification made in a previous work of the author (Hao and O'Shea 2011), where it was done on the background of msn4 deletion. Given the critical role of Msn4 found here, it is possible that this classification can change. The authors should address this point, either through data analysis/reanalysis or discussion of relevant caveats.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We now include new <a href=\"#fig5\">Figure 5</a> to show single-cell gene regulation for other fast or slow promoters. To determine whether Msn2 and Msn4 exhibit distinct regulatory functions on promoters other than P<i><sub>DCS2</sub></i> and P<i><sub>SIP18</sub></i>, we examined fast kinetics promoter P<i><sub>DDR2</sub></i> and slow kinetics promoter P<i><sub>TKL2</sub></i>. As shown in <a href=\"#fig5\">Figure 5A and B</a>, P<i><sub>DDR2</sub></i> behaviors similar to P<i><sub>DCS2</sub></i> and P<i><sub>TKL2</sub></i> shows a similar response to that of P<i><sub>SIP18</sub></i>. In addition, to further examine the generality of distinct regulatory functions of Msn2 and Msn4, we analyzed gene expression under the mutated P<i><sub>SIP18</sub></i> promoter P<i><sub>SIP18</sub></i>-A4 (a slow promoter becomes a fast promoter; Hansen and O\u2019Shea 2015) and the P<i><sub>DCS2</sub></i> promoter in cells lacking the SWI/SNF chromatin remodeling complex <i>(snf6\u25b3</i>) (a fast promoter becomes a slow promoter; Hansen and O\u2019Shea 2013). As shown in <a href=\"#fig5\">Figure 5C and D</a>, P<i><sub>SIP18</sub></i>-A4 behaviors similar to P<i><sub>DCS2</sub></i>; P<i><sub>DCS2</sub></i> in <i>snf6\u25b3</i> shows a similar response to that of P<i><sub>SIP18</sub></i>. In summary, these results suggest that the distinct regulatory functions of Msn2 and Msn4 might depend more generally on the kinetics of promoter activation, but not on specific target promoters."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the main text, we include a new section with two paragraphs describing the results:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cTo determine whether Msn2 and Msn4 exhibit distinct regulatory functions on promoters other than P<sub>DCS2</sub> and P<sub>SIP18</sub>, we measured the nuclear localization of Msn2 and Msn4 and reporter gene expression under fast kinetics promoter P<sub>DDR2</sub> and slow kinetics promoter P<sub>TKL2</sub>. [\u2026] In summary, these results suggest that the distinct regulatory functions of Msn2 and Msn4 might depend more generally on the kinetics of promoter activation, but not on specific target promoters.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Regarding a global view of gene regulation, we note that our single-cell analysis requires microfluidics-based live-cell time-lapse experiments, the throughput of which hinders the examination of gene regulation at a more global level. We include a paragraph discussing this limitation and also the influence of Msn4 on target gene classification in the main text:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cIn this study, we have focused on a few representative promoters because our single-cell analysis requires live-cell time-lapse experiments, the throughput of which hinders the examination of gene regulation at a more global level. [\u2026] A genome-wide single-cell analysis will enable a more accurate classification of target genes and, more importantly, will lead to a comprehensive understanding about dynamic regulation of global transcriptional responses to environmental stimuli.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) Static versus dynamic profiles of gene expression: The authors only report the final level of the target genes (at 30 or 60 minutes) but not the target genes dynamic profiles (as demonstrated in <a href=\"#fig1\">Figure 1A</a>, right, blue trace). With these data, the msn4 mutant has a non-responsive Sip18 after 30 minutes, yet responsive at 60 minutes. Previous data from the \u03c0 (Hao &amp; O'Shea 2012, Supplementary Figure 12) suggests Sip18 does respond and climb steadily in this strain, albeit more weakly/slowly. Is it possible then that the msn4 mutant kinetics of Sip18 (and other \"slow\" targets) is simply slower/weaker, rather than qualitatively different (\"AND\" gate becoming an \"OR\" gate at prolonged inputs, as suggested by the authors)? The authors should therefore report target gene single cell trace, and use it to provide a more holistic interpretation of the results shown in <a href=\"#fig1\">Figure 1B,C</a>, and <a href=\"#fig3\">Figure 3</a>.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We now include new <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> to show the dynamic profiles of reporter gene expression in wild-type and mutants in response to 30 or 60-min inputs (old <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> now becomes <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>). Because the dynamics of reporter expression are dominated by the timescales of translation and maturation of the reporter protein, we observed a similar time-dependent trend of reporter expression in wild-type and mutants; the difference is primarily on the final level of reporter expression, which represents the accumulated transcriptional activity."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would also like to clarify that, as noted in the legend of <a href=\"#fig1\">Figure 1</a>, we monitored single-cell gene expression responses over a 3-hour period, which is sufficient for the reporter to reach the plateau under all the conditions tested. We used the final level of gene expression at the end of the 3-hour experiment (not the level at the 30 or 60-minute time point; 30 or 60 minutes are the input durations) to represent the reporter responses in <a href=\"#fig1\">Figures 1</a>, <a href=\"#fig3\">3</a> and <a href=\"#fig4\">4</a>. The same quantification has been commonly used in previous papers (<a href=\"#fig4\">Figure 4</a> in Hao and O\u2019Shea 2012, Hansen and O\u2019Shea, 2013, 2015, 2016)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) Lack of quantitative data for some claims: Given the quantitative nature of this paper, some claims that could be made quantitatively are reported qualitatively. Results: \"suggesting a competing role of Msn2 for binding to the promoter\". The authors should make a plot to show the difference quantitatively.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We include new <a href=\"#fig3s3\">Figure 3\u2014figure supplement 3</a> to show the competing (or inhibitory) role of Msn2 against Msn4 quantitatively. In the figure, we quantified and plotted the relationships between gene expression and the ratio of Msn2 versus Msn4. We showed that gene expression decreases dramatically when the ratio of Msn2 versus Msn4 increases."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the main text, we added \u201cTo quantitatively demonstrate this competing role of Msn2 against Msn4, we plotted the relationship between gene expression and the ratio of Msn2 versus Msn4 in single cells. As shown in <a href=\"#fig3s3\">Figure 3\u2014figure supplement 3</a>, gene expression decreases dramatically when the ratio of Msn2 versus Msn4 increases.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Similarly Results: \"probability and the level of gene induction increase\u2026\". There is no data pointing to the \"probability\" (or at least it is close to impossible to figure out the probability from the distribution data).</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We include new <a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a> to show the probability of gene induction (old <a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a> now becomes <a href=\"#fig3s4\">Figure 3\u2014figure supplement 4</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Results: \"much more heterogeneous\". The authors should put numbers to the claim and probe whether this due to the relative small copy number of Msn4 compared to Msn2.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To quantify the heterogeneity, we calculated the coefficient of variation (CV; standard deviation divided by mean) for the peak point of time traces and include these numbers above the plots in <a href=\"#fig2\">Figure 2</a>. In addition, in the new <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>, we plotted single-cell time traces and averaged time traces with single-cell standard deviation after normalization of YFP and RFP. We also calculated the standard deviations of single cells for the peak time points (without being scaled by the means) and showed that although Msn4 has a higher CV, it has a lower standard deviation than Msn2. This suggests that the high degree of cell-cell variability can be largely accounted by the low mean level of Msn4."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the main text we add: \u201cand reported the coefficient of variation (CV: standard deviation scaled by the mean) for the peak point of time traces\u201d."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We also add: \u201cIn addition, although Msn4 has a higher coefficient of variation, the standard deviation of Msn4 nuclear localization in single cells (without being scaled by the mean) is lower than that of Msn2 (<a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>). These results suggest that the high degree of cell-cell variability of Msn4 might be largely due to its relatively low nuclear levels compared to that of Msn2.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We removed \u201cmuch\u201d."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Lastly, Discussion: \"2-3min\". If one normalizes the data (min to max) in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a>, Msn2 and Msn4 traces may simply overlay on top of each other (i.e., no time difference).</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We include new <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1C</a>, in which we normalize and overlay the time traces in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a> (inhibitor input) as suggested and zoom in at the first 10 min of the response to show the time difference."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>5) Functional analysis of promoters: Based on the authors' analysis, it seems like slow and fast promoters are regulated differently and can have distinct physiological functions. To link these mechanistic findings to potential functional and physiological implications, the authors should provide analyses supporting such roles, for example, showing correlation between induction dynamics and regulation by Msn2/4 to functional classification. If no such relationship exists, authors should also indicate so. Related to this point, promoters with fast and slow activation kinetics have their own advantages during adaptation upon stress stimulation. The authors should include an introduction or conclusion discussing in some detail \"how the two mechanisms mediated by the two kinds of promoters are important for adaptation\u2026\".</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We thank the reviewers for this suggestion. This is actually an analysis that we should have done years ago. Now we have performed the analysis and show the results in new <a href=\"#fig6s1\">Figure 6\u2014figure supplement 1</a>. We find a close correlation between gene functions and promoter kinetics for the target gene groups with fast or slow kinetics promoters (the gene groups are from Hao and O\u2019Shea, 2012). We add a discussion of these results and the physiological implications (including the advantages of fast and slow kinetics) in the main text:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cTarget genes with fast and slow promoter activation kinetics are regulated differently and hence might have distinct physiological functions. [\u2026] This temporal separation of target genes with different functions could avoid initiating resource-intensive cell protection processes in response to minor environmental fluctuations and thereby optimize resource allocation under rapidly changing environments.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>6) Connection to osmotic stress: The reduced resistance of primed msn4 mutant cells to osmotic stress is intriguing, but the connection to the main story is not entirely clear. Should the authors opt to include this data, they should also include msn2 cells also respond to this stress under the same experimental conditions/protocols in order to probe whether this effect is Msn4 specific.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We performed the priming experiments in msn2 cells and showed that, similar to msn4 cells, the effect of priming is also diminished in msn2 cells. This is an expected result in accordance with the gene expression data in <a href=\"#fig1\">Figure 1</a>, in which both Msn2 and Msn4 are required for induction of slow kinetics genes. We add the msn2 data in the original figure (orange curves and boxes). These results demonstrate that the homologous TFs Msn2 and Msn4 are not redundant physiologically; instead they are both important for adaptive stress resistance."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Although these priming results clearly show that Msn2 and Msn4 are not physiologically redundant (one step further than gene expression), we do agree with the reviewers that these experiments are not very smoothly connected to the main story (which focuses primarily on single-cell gene regulation) in terms of experimental protocols and data presentation. Therefore, we deleted the paragraphs describing the results in the revised main text."
+                }
+            ]
+        }
+    }
+}

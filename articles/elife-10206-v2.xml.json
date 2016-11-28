@@ -1,0 +1,2202 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "10206", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.10206", 
+        "authorLine": "Yunlei Yang et al", 
+        "title": "Cell type-specific pharmacology of NMDA receptors using masked MK801", 
+        "published": "2015-09-11T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e10206", 
+        "pdf": "https://publishing-cdn.elifesciences.org/10206/elife-10206-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biochemistry", 
+                "name": "Biochemistry"
+            }, 
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.10206.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>N</i>-Methyl-D-aspartate receptors (NMDA-Rs) are ion channels that are important for synaptic plasticity, which is involved in learning and drug addiction. We show enzymatic targeting of an NMDA-R antagonist, MK801, to a molecularly defined neuronal population with the cell-type-selectivity of genetic methods and the temporal control of pharmacology. We find that NMDA-Rs on dopamine neurons are necessary for cocaine-induced synaptic potentiation, demonstrating that cell type-specific pharmacology can be used to dissect signaling pathways within complex brain circuits."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Yang et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Yunlei Yang", 
+                    "index": "Yang, Yunlei"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Janelia Research Campus, Howard Hughes Medical Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Ashburn", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Ashburn"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "YY, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Peter Lee", 
+                    "index": "Lee, Peter"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Janelia Research Campus, Howard Hughes Medical Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Ashburn", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Ashburn"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "PL, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Scott M Sternson", 
+                    "index": "Sternson, Scott M"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Janelia Research Campus, Howard Hughes Medical Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Ashburn", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Ashburn"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "sternsons@janelia.hhmi.org"
+                ], 
+                "contribution": "SMS, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: All experimental protocols were conducted according to United States National Institutes of Health guidelines for animal research and were approved by the Institutional Animal Care and Use Committee at Janelia Research Campus (protocol 13-92)."
+            }
+        ], 
+        "impactStatement": "The small molecule NMDA-receptor antagonist MK801 has been genetically targeted to specific cell types in brain tissue to examine the role of NMDA receptors in cocaine-induced synaptic plasticity."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "10206", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.10206", 
+        "authorLine": "Yunlei Yang et al", 
+        "title": "Cell type-specific pharmacology of NMDA receptors using masked MK801", 
+        "published": "2015-09-11T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e10206", 
+        "pdf": "https://publishing-cdn.elifesciences.org/10206/elife-10206-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biochemistry", 
+                "name": "Biochemistry"
+            }, 
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.10206.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>N</i>-Methyl-D-aspartate receptors (NMDA-Rs) are ion channels that are important for synaptic plasticity, which is involved in learning and drug addiction. We show enzymatic targeting of an NMDA-R antagonist, MK801, to a molecularly defined neuronal population with the cell-type-selectivity of genetic methods and the temporal control of pharmacology. We find that NMDA-Rs on dopamine neurons are necessary for cocaine-induced synaptic potentiation, demonstrating that cell type-specific pharmacology can be used to dissect signaling pathways within complex brain circuits."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Yang et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Yunlei Yang", 
+                    "index": "Yang, Yunlei"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Janelia Research Campus, Howard Hughes Medical Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Ashburn", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Ashburn"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "YY, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Peter Lee", 
+                    "index": "Lee, Peter"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Janelia Research Campus, Howard Hughes Medical Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Ashburn", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Ashburn"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "PL, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Scott M Sternson", 
+                    "index": "Sternson, Scott M"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Janelia Research Campus, Howard Hughes Medical Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Ashburn", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Ashburn"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "sternsons@janelia.hhmi.org"
+                ], 
+                "contribution": "SMS, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: All experimental protocols were conducted according to United States National Institutes of Health guidelines for animal research and were approved by the Institutional Animal Care and Use Committee at Janelia Research Campus (protocol 13-92)."
+            }
+        ], 
+        "impactStatement": "The small molecule NMDA-receptor antagonist MK801 has been genetically targeted to specific cell types in brain tissue to examine the role of NMDA receptors in cocaine-induced synaptic plasticity.", 
+        "keywords": [
+            "NMDA receptor", 
+            "cell type-specific pharmacology", 
+            "dopamine", 
+            "cocaine", 
+            "synaptic plasticity"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.10206.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Learning is critical to survival for humans and other animals. The learning process is regulated by receptors on the surface of brain cells called N-Methyl-D-aspartate receptors (or NMDA receptors for short). These receptors help to strengthen signals between brain cells, which allows a new concept or action to be learned. However, it has been difficult to pin down how the role of NMDA receptors selectively in specific types of brain cells. While drugs can be used to quickly block NMDA receptors throughout the brain, it is hard to target drugs to a specific cell type. Also, genetic engineering can be used to selectively knock out NMDA receptors in certain types of brain cells, but these techniques are too slow, and can take weeks or even a lifetime to work."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Now, Yang et al. have developed a clever way to combine an NMDA-blocking drug and genetic engineering to study NMDA receptors' responses to cocaine in specific brain cells. This approach involved first creating an inactive form of an NMDA-blocking drug that can only becomes active when it is processed by an enzyme that is normally produced in pigs' livers. Next, living mouse brain cells, including some that were engineered to express the pig enzyme, were exposed to the drug in the laboratory. The drug blocked the NMDA receptors on brain cells that expressed the enzyme, but not the receptors on nearby brain cells that lacked the enzyme. This occurred even though all the cells produced NMDA receptors and all were exposed to the drug."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "NMDA receptors have been known to play an important role in cocaine addiction for more than 20 years. Drugs like cocaine can co-opt the normally healthy learning process involving NMDA receptors and lead to a maladaptive form of learning that is commonly called addiction. Cocaine strengthens signals between brain cells causing the behaviors associated with using cocaine to become deeply ingrained and difficult to change. Yang et al. used cell type-specific targeting of a drug that blocks NMDA receptors to observe what happened in cocaine-exposed brain cells with, or without, working NMDA receptors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "As expected, the experiments showed that cocaine didn't strengthen brain signals in cells without working NMDA receptors. Specifically, the experiments showed that NMDA receptors on a type of brain cell that release a pleasure-inducing chemical called dopamine are necessary for cocaine\u2013induced synaptic plasticity. The combination technique developed by Yang et al. will likely be used by other scientists to further study the role of NMDA receptors in specific brain cells during addiction and normal brain activity."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "N-Methyl-D-aspartate receptors (NMDA-Rs) are glutamate-gated ion channels that are critical for the regulation of synaptic functions in the central nervous system, such as synaptic plasticity (<a href=\"#bib14\">Malenka and Nicoll, 1993</a>; <a href=\"#bib5\">Collingridge et al., 2004</a>). NMDA-R dependent synaptic plasticity plays an important role in learning. This includes learning that can also have maladaptive consequences, for example sensitization of drug-related behaviors (<a href=\"#bib12\">Kalivas and Alesdatter, 1993</a>; <a href=\"#bib20\">Ungless et al., 2001</a>). However, because NMDA-Rs are expressed in most cell types in the brain (<a href=\"#bib6\">Conti et al., 1997</a>; <a href=\"#bib21\">Verkhratsky and Kirchhoff, 2007</a>), it is a considerable challenge to selectively assess the importance of NMDA-R mediated synaptic plasticity in specific cell types."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The functional contribution of NMDA-Rs to physiology and behavior can be examined using either genetic or pharmacological methods. Small molecule antagonists allow rapid blockade of NMDA-Rs, which has been critical for analyzing synaptic plasticity processes that operate over short timescales. However, existing pharmacological agents are not cell type-selective. Alternatively, genetic methods can be used, typically involving Cre-recombinase (Cre)-mediated excision of a loxP flanked exon in <i>Grin1</i>, which encodes a critical NMDA-R subunit that is required for channel function. This allows cell type-specific ablation of NMDA-R function by crossing to a mouse line with cell type-selective expression of Cre or by spatially targeted injection of Cre-expressing viral vectors. A major limitation is that genetic methods are not fast; they typically disrupt NMDA-Rs over timescales ranging from a week to the lifetime of an animal, during which time substantial compensatory effects in circuit function are observed (<a href=\"#bib9\">Engblom et al., 2008</a>; <a href=\"#bib26\">Zweifel et al., 2008</a>). Here, we describe an approach to combine the cell type-selectivity of genetic methods with the temporal control of pharmacology by targeting a small molecule NMDA-R antagonist to molecularly defined neuronal cell types (<a href=\"#fig1\">Figure 1A</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.10206.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Cell type specific pharmacology for NMDA-R inhibition.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>, <b>B</b>) Strategy for cell type-specific targeting of a masked MK801 molecule to a defined subpopulation of neurons in brain tissue that transgenically express an unmasking enzyme. The masked MK801 enters every cell but MK801 is unmasked in only those cells that transgenically express the enzyme porcine liver esterase (PLE). (<b>B</b>) The intracellularly liberated MK801 can block NMDA-Rs in the PLE-expressing neurons. Yellow triangle, glutamate. (<b>C</b>) Synthesis of CM-MK801. (a) chloromethylchlorosulfate; (b) NaI; (c) 4-hydroxy-3-nitrobenzaldehyde, 44% for a-c; (d) NaBH<sub>4</sub>, 48%; (e) 4-nitrophenyl chloroformate, 65%; (f) MK801, 32%. (<b>D</b>) Enzymatic hydrolysis of CM-MK801 by PLE is followed by spontaneous 1,6-elimination to liberate MK801."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-10206-fig1-v2.tif"
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Masked MK-801", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "MK801 is a potent non-competitive antagonist of NMDA-Rs that use-dependently blocks the channel in the open (glutamate-bound) state (<a href=\"#bib22\">Wong et al., 1986</a>; <a href=\"#bib23\">Woodruff et al., 1987</a>). Furthermore, MK801 can bind and block the NMDA-R channel ion conductance pore from the intracellular compartment (<a href=\"#bib4\">Berretta and Jones, 1996</a>; <a href=\"#bib3\">Bender et al., 2006</a>). To develop a cell type-specific pharmacological strategy to rapidly block NMDA-Rs in subpopulations of neurons within brain tissue, we synthesized an inert masked MK801 derivative that could be unmasked inside cells by transgenically expressed porcine liver esterase (PLE) (<a href=\"#fig1\">Figure 1B</a>) (<a href=\"#bib19\">Tian et al., 2012</a>) . A carboxymethylpropyl ester group has been used previously in brain tissue to mask a fluorophore and a kinesin inhibitor, and extensive analysis showed that this group was stable to endogenous neuronal esterases but was cleaved in neurons transgenically expressing PLE (<a href=\"#bib19\">Tian et al., 2012</a>). Because MK801 contains a secondary amine that is critical for NMDA-R antagonism, we used a 4-hydroxy-3-nitrobenzyl carbamate (<a href=\"#bib10\">Gesson et al., 1994</a>) to link MK801 and a carboxymethylpropyl ester to generate CM-MK801 (<a href=\"#fig1\">Figure 1C</a>). Enzymatic cleavage of the CM ester inside neurons expressing PLE leads to spontaneous 1,6-elimination of the vinylogous hemiaminal, liberating MK801 (<a href=\"#fig1\">Figure 1D</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Cell type-specific NMDA-R blockade", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Three critical properties of the CM-MK801/PLE system must be evaluated for cell type-specific pharmacology: 1) CM-MK801 should be efficacious and completely block NMDA-Rs in PLE<sup>+</sup> neurons, 2) PLE<sup>\u2212</sup> neurons should not unmask CM-MK801, and 3) unmasked MK801 should be confined to PLE<sup>+</sup> neurons without affecting adjacent PLE<sup>\u2212</sup> neurons. To examine the cell type selectivity of this reagent, we measured NMDA-R excitatory postsynaptic currents (EPSCs) in brain slices from the mouse cerebral cortex. In utero electroporation (IUE) of the bicistronic plasmid <i>pCAG::PLE-IRES-mCherry</i> into the developing mouse brain allowed PLE and mCherry co-expression in only a subset of cortical layer 2/3 pyramidal neurons. Consistent with previous work, PLE expression was well tolerated in cortical neurons (<a href=\"#bib19\">Tian et al., 2012</a>). We isolated NMDA-R EPSC responses for cortical layer 4\u2192layer 2/3 (L4\u2192L2/3) projections by recording neurons in L2/3 while electrically stimulating presynaptic neurons in L4 during constitutive pharmacological block of other ionotropic glutamate receptors (AMPA and kainate receptors) and GABA receptors. Brain slices were incubated with CM-MK801 (5 \u00b5M), and L4\u2192L2/3 NMDA-R EPSCs were recorded using the perforated patch configuration (necessary to avoid dilution of enzyme-liberated MK801 by diffusion into the patch pipette that was observed with whole cell recordings) in mCherry-expressing (PLE<sup>+</sup>) and adjacent non-expressing (PLE<sup>\u2212</sup>) neurons (<a href=\"#fig2\">Figure 2A,B</a>). The NMDA-R EPSC amplitude (<a href=\"#fig2\">Figure 2C</a>) and mean NMDA-R charge transfer (Q<sub>NMDA</sub>: mean integrated current, <a href=\"#fig2\">Figure 2E</a>) decreased in a use-dependent manner in PLE<sup>+</sup> neurons to a level similar to treatment with the competitive NMDA-R antagonist D-(\u2212)-2-amino-5-phosphonopentanoic acid (AP5, 100 \u00b5M) (<a href=\"#fig2\">Figure 2E\u2013G</a>; Q<sub>NMDA</sub> inhibition: CM-MK801, 82% \u00b1 4; AP5, 84% \u00b1 4; n = 11; unpaired t test, p = 0.75). This shows that CM-MK801 can completely block NMDA-R currents in neurons expressing the PLE transgene. In contrast, in the presence of CM-MK801, PLE<sup>\u2212</sup> neurons that were adjacent to PLE<sup>+</sup> neurons showed scant reduction of Q<sub>NMDA</sub> (<a href=\"#fig2\">Figure 2D,F</a>). The slight Q<sub>NMDA</sub> reduction in PLE<sup>\u2212</sup> neurons exposed to CM-MK801 was not significantly different than Q<sub>NMDA</sub> in neurons in the absence of CM-MK801 (Q<sub>NMDA</sub> inhibition: PLE<sup>\u2212</sup>/CM-MK801: 16% \u00b1 8.9, n = 6; PLE<sup>+</sup>: 33% \u00b1 8.6, n = 4; PLE<sup>\u2212</sup>: 21% \u00b1 6.3; ANOVA, <i>F</i><sub>2,13</sub> = 2.3, p = 0.15), thus Q<sub>NMDA</sub> reduction in PLE<sup>\u2212</sup> neurons was due to modest NMDA-R synaptic rundown (<a href=\"#bib16\">Rosenmund and Westbrook, 1993</a>) and not an effect of MK801 in PLE<sup>\u2212</sup> neurons. These results show that CM-MK801 can be targeted specifically to neurons expressing a transgenic esterase and that CM-MK801 is selective, where MK801, once liberated, is confined to the PLE-expressing cell population."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10206.004", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Cellular selectivity of CM-MK801/PLE ester/esterase pair.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>, <b>B</b>) Schematic diagrams of the experimental procedure. Perforated patch voltage clamp recordings of NMDA-R synaptic currents were made on both (<b>A</b>) PLE/mCherry-expressing (PLE<sup>+</sup>, red) layer 2/3 (L2/3) cortical neurons and (<b>B</b>) adjacent neurons lacking PLE (PLE<sup>\u2212</sup>, gray) while electrically stimulating presynaptic neurons in layer 4 (L4) in the presence of CM-MK801. (<b>C</b>, <b>D</b>) Treatment of the brain slices with CM-MK801 (5 \u00b5M) during L4\u2192L2/3 synaptic stimulation showed gradual use-dependent reduction of the NMDA-R EPSC amplitude in (<b>C</b>) PLE<sup>+</sup> but not in (<b>D</b>) PLE<sup>\u2212</sup> neurons, indicating that the CM-MK801 was converted to MK801 selectively in PLE<sup>+</sup> neurons without spilling over to adjacent PLE<sup>\u2212</sup> neurons. Subsequent addition of the competitive NMDA-R antagonist, AP5, suppressed the NMDA-R EPSC in PLE<sup>\u2212</sup> neurons but not in PLE<sup>+</sup> neurons, which were fully blocked by CM-MK801. Electrical stimuli were delivered every 15 s. (<b>E</b>, <b>F</b>) Overlaid NMDA-R averaged excitatory postsynaptic currents (EPSCs) from (<b>E</b>) PLE<sup>+</sup> and (<b>F</b>) PLE<sup>\u2212</sup> neurons showing the initial response (black), responses after electrical stimulation (late, blue) and the response in the presence of AP5 (green). Electrical stimulation artifact reduced for clarity. (<b>G</b>) Grouped data for NMDA-R EPSC charge transfer (Q<sub>NMDA</sub>) inhibition for PLE<sup>+</sup> (n = 14) and PLE<sup>\u2212</sup> (n = 17) neurons during CM-MK801 treatment and subsequent exposure to AP5. For comparison, dotted line shows Q<sub>NMDA</sub> inhibition in PLE<sup>+</sup> and PLE<sup>\u2212</sup> neurons in the absence of CM-MK801, which is due to modest synaptic rundown. Data is represented as mean and error bars indicate s.e.m."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-10206-fig2-v2.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Cell type-specific NMDA-R pharmacology in cocaine-induced synaptic plasticity", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "An application of cell type-specific pharmacology for NMDA-R is to examine synaptic plasticity in molecularly defined neurons. One problem that has been difficult to address with existing tools is the role of NMDA-Rs in cocaine-induced synaptic plasticity. Cocaine blocks dopamine reuptake, which elevates extracellular concentrations. Earlier work demonstrated that cocaine and elevated dopamine leads to long-term synaptic potentiation of AMPA receptor-type (AMPA-R) synaptic currents in dopamine (DA) neurons in the ventral tegmental area (VTA) (<a href=\"#bib20\">Ungless et al., 2001</a>; <a href=\"#bib1\">Argilli et al., 2008</a>) (<a href=\"#fig3\">Figure 3A</a>), a key neuronal cell type associated with reward and addiction. Further analysis demonstrated that synaptic potentiation involved signaling through dopamine receptor 5, new protein synthesis, and insertion of AMPA-R subunits (<a href=\"#bib1\">Argilli et al., 2008</a>). These experiments also showed that NMDA-R blockade, by systemic application of MK801, prevented synaptic potentiation in DA neurons (<a href=\"#bib20\">Ungless et al., 2001</a>) (<a href=\"#fig3\">Figure 3A</a>). However, it has been challenging to establish the functional importance of NMDA-Rs specifically in DA neurons for cocaine-induced synaptic AMPA-R potentiation, as opposed to a possible indirect process involving NMDA-Rs on other cell types. To disrupt this process specifically in DA neurons, studies using dopamine neuron-specific knockout of <i>Grin1</i> were performed but, in several instances, these were confounded by compensatory effects in which synaptic AMPA-Rs were constitutively potentiated in DA neurons in the absence of cocaine (<a href=\"#bib9\">Engblom et al., 2008</a>; <a href=\"#bib26\">Zweifel et al., 2008</a>). Even virally mediated deletion of <i>Grin1</i> showed these compensatory effects within 1 week (<a href=\"#bib26\">Zweifel et al., 2008</a>). In contrast, another study found that use of tamoxifen-activiated Cre-ER for selective <i>Grin1</i> ablation in DA neurons prevented a cocaine-induced shift in the rectification of AMPA-Rs after 1 week (<a href=\"#bib9\">Engblom et al., 2008</a>), which indicated that dopamine neuron NMDA-Rs were required for cocaine-induced plasticity."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10206.005", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Cell type-selective blockade of cocaine-induced synaptic plasticity in dopamine neurons.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Schematic diagram of cocaine-induced synaptic plasticity. Cocaine increases extracellular dopamine which leads to NMDA-R dependent upregulation of synaptic AMPA (\u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid) receptors. It is unclear if this is through NMDA receptors on DA neurons or through NMDA-R on other cell types that may have a subsequent effect on AMPA-R activity in DA neurons. (<b>B</b>) Confocal images of ventral tegmental area (VTA) brain slices from dopamine transporter Cre (<i>Slc6a3</i><sup><i>Cre</i></sup>) mice transduced with Cre-dependent viruses expressing either PLE and mCherry (left) or EGFP (right) on opposite sides of the VTA. Scale, 50 \u03bcm. (<b>C</b>) Experimental protocol where VTA-containing brain slices were incubated with CM-MK801 for 40 min, followed by addition of cocaine for 10 min and washout. 3\u20135 hr later, miniature excitatory postsynaptic AMPA-R currents (mEPSCs) in DA neurons expressing either GFP (PLE<sup>\u2212</sup>) or mCherry (PLE<sup>+</sup>) were recorded. Inset, images of (left) patch pipette recording from dopamine neuron (right) expressing mCherry and PLE. Scale, 5 \u03bcm. (<b>D</b>) For brain slices treated with CM-MK801, AMPAR-mediated mEPSC amplitude was increased in PLE<sup>\u2212</sup> VTA DA neurons following cocaine treatment. Synaptic potentiation was blocked in PLE<sup>+</sup> neurons treated with cocaine, and the mEPSC amplitude was similar to that in PLE<sup>+</sup> or PLE<sup>\u2212</sup> neurons that were not exposed to cocaine. (<b>E</b>) mEPSC frequency was unaffected by cocaine or CM-MK801. (<b>F</b>) Resting neuronal membrane potential (<i>V</i><sub><i>m</i></sub>), input resistance (<i>R</i><sub><i>in</i></sub>), and membrane capacitance (<i>C</i><sub><i>m</i></sub>) were not changed by expression of PLE, or exposure to cocaine and CM-MK801. Data is represented as mean and error bars indicate s.e.m."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-10206-fig3-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We sought to investigate cocaine-induced synaptic plasticity by rapid blockade of NMDA-Rs with the temporal control of pharmacology and the cell-type selectivity of genetics by directing MK801 to DA neurons using cell type-specific pharmacology. For this, we co-expressed PLE and the fluorescent protein mCherry in DA neurons using a Cre-dependent recombinant adeno-associated viral vector, <i>rAAV2/1-Synapsin::FLEX-rev-PLE-2a-mCherry</i> (2a: ribosomal skip sequence [<a href=\"#bib8\">Donnelly et al., 2001</a>]) that was targeted unilaterally into the VTA of <i>Slc6a3</i><sup><i>Cre</i></sup> mice, a mouse line that selectively expresses Cre-recombinase in DA neurons (<a href=\"#bib25\">Zhuang et al., 2005</a>). In the same mice, control (PLE<sup>\u2212</sup>) DA neurons were labeled using a Cre-dependent virus expressing EGFP that was targeted to DA neurons in the VTA on the other side of the brain. To investigate the involvement of dopamine neuron NMDA receptors, we adopted a previously described brain slice model that was sufficient to recapitulate the processes underlying cocaine-mediated synaptic AMPA-R potentiation in DA neurons ex vivo (<a href=\"#bib1\">Argilli et al., 2008</a>). VTA brain slices containing DA neurons expressing PLE/mCherry and EGFP on opposite sides of the brain (<a href=\"#fig3\">Figure 3B</a>) were incubated with CM-MK801 (5 \u00b5M) in artificial cerebrospinal fluid (ACSF) followed by a short exposure to cocaine (5 \u00b5M in ACSF, 10 min) or vehicle and afterwards the brain slices were transferred to ACSF with CM-MK801 for 3\u20135 more hours. After this induction period, miniature excitatory postsynaptic AMPA-R currents (mEPSCs) were recorded from DA neurons, which could be isolated by blocking inhibitory GABA-Rs and voltage gated sodium channels. As shown previously in VTA-containing brain slices exposed to cocaine (<a href=\"#bib1\">Argilli et al., 2008</a>), DA neurons showed significantly elevated potentiation of mEPSC amplitudes in PLE<sup>\u2212</sup>/GFP<sup>+</sup> DA neurons in the presence of CM-MK801, which further demonstrates the lack of activity for CM-MK801 in PLE<sup>\u2212</sup> neurons. Strikingly though, for PLE<sup>+</sup>/mCherry<sup>+</sup> DA neurons in CM-MK801 and cocaine, mEPSC amplitudes were not elevated and were similar to PLE<sup>+</sup> or PLE<sup>\u2212</sup> DA neurons in CM-MK801 that had not been exposed to cocaine. (<a href=\"#fig3\">Figure 3D</a>; Coc<sup>+</sup>/PLE<sup>\u2212</sup>, 19.9 \u00b1 0.9 pA, n = 17; Coc<sup>+</sup>/PLE<sup>+</sup>, 12.7 \u00b1 0.8 pA, n = 14; Coc<sup>\u2212</sup>/PLE<sup>\u2212</sup>, 13.9 \u00b1 0.6 pA, n = 12; Coc<sup>\u2212</sup>/PLE<sup>+</sup>, 12.8 \u00b1 0.7 pA, n = 15; ANOVA <i>F</i><sub>3,57</sub> = 19.0, p &lt; 0.001). The frequency of mEPSCs in DA neurons was not affected by CM-MK801 or cocaine (<a href=\"#fig3\">Figure 3E</a>, ANOVA <i>F</i><sub>3,57</sub> = 0.30, p = 0.82). In addition, the membrane properties of DA neurons after CM-MK801 exposure were indistinguishable in PLE<sup>+</sup> or PLE<sup>\u2212</sup> cells treated or untreated with cocaine, further indicating that CM-MK801 is not perturbative to resting neuronal properties. Therefore, using cell type-specific pharmacology in an ex vivo preparation, these experiments demonstrate that NMDA-Rs in DA neurons are necessary for cocaine-induced potentiation of synaptic AMPA-R currents in this cell type ex vivo, which is consistent with a prior report that examined this problem using Cre-ER in vivo (<a href=\"#bib9\">Engblom et al., 2008</a>)."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Taken together, these experiments demonstrate the effectiveness of a cell type-specific pharmacology approach to selectively block NMDA-Rs in a molecularly defined neuron population using an esterase\u2013ester pair. Cell type-specific pharmacology for activating genetically engineered ion channels has been described (<a href=\"#bib18\">Slimko et al., 2002</a>; <a href=\"#bib13\">Magnus et al., 2011</a>), and here we demonstrate rapid cell type-specific blockade of a native ion channel with a small molecule. Our data indicates that MK801 was liberated only in PLE<sup>+</sup> but not in neighboring PLE<sup>\u2212</sup> neurons, showing that this approach can be used to block NMDARs with cellular specificity. The absence of a neighbor effect with CM-MK801/PLE is consistent with experiments targeting MK801 to individual neurons in a patch pipette (<a href=\"#bib3\">Bender et al., 2006</a>). We applied this to DA neurons to further examine the role for NMDA-Rs in cocaine-induced synaptic potentiation, which has been investigated in several pharmacological (<a href=\"#bib20\">Ungless et al., 2001</a>; <a href=\"#bib1\">Argilli et al., 2008</a>) and genetic studies (<a href=\"#bib9\">Engblom et al., 2008</a>; <a href=\"#bib26\">Zweifel et al., 2008</a>). Our experiments using cell type-specific pharmacology provide additional evidence for the necessity of NMDA-Rs in cocaine-induced long-term synaptic potentiation in DA neurons ex vivo. One limitation of the approach presented here is that the aqueous solubility of CM-MK801 (5\u201310 \u03bcM) make it less suitable for direct injection into the brain because of the requirement for elevated levels of co-solvents, such as dimethyl sulfoxide (DMSO) (&gt;0.1%), which resulted in VTA-containing brain slices that were unsuitable for recordings. Because of this, it was not possible for us to determine if AMPA-R potentiation occurs after inactivation of NMDA-R in vivo using the chemogenetic method described here. Therefore, additional improvements to cell type-specific pharmacological techniques are needed to facilitate manipulations in mammalian brains in vivo."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "However, because functional NMDA receptors are widely expressed throughout the mammalian nervous system, ex vivo approaches to rapidly disrupt NMDA-R signaling with cell type specificity have broad utility. NMDA-Rs are expressed in both neurons and glia (<a href=\"#bib6\">Conti et al., 1997</a>; <a href=\"#bib21\">Verkhratsky and Kirchhoff, 2007</a>), and selective genetic access to these cell classes in the brain could allow for dissection of their relative role in synaptic function. Moreover, neurons have been classified into many different molecularly defined cell types, which are accessible through a growing resource of Cre-expressing mouse lines (<a href=\"#bib11\">Gong et al., 2007</a>). In combination with Cre-dependent viral approaches (<a href=\"#bib2\">Atasoy et al., 2008</a>), this will allow the role of NMDA-Rs to be selectively evaluated in any molecularly defined neuron population in manner similar to what we demonstrated for DA neurons. In addition, the relative roles of presynaptic and postsynaptic NMDA-Rs has been extensively analyzed in brain slices (<a href=\"#bib7\">Corlew et al., 2008</a>; <a href=\"#bib15\">Rodriguez-Moreno and Paulsen, 2008</a>), which PLE/CM-MK801 may facilitate because it offers a new method for selectively blocking NMDA-Rs in defined subpopulations of neurons. Finally, the strategy applied here for selective delivery of MK801 can be extended to other small molecules for use in brain tissue (<a href=\"#bib19\">Tian et al., 2012</a>), allowing for an approach that combines chemistry, molecular genetics, and neurobiology to dissect cell signaling pathways in specific cell types in the central nervous system."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "All experimental protocols were conducted according to United States National Institutes of Health guidelines for animal research and were approved by the Institutional Animal Care and Use Committee at Janelia Research Campus. Animals were housed on a 12 hr light (06:00)/dark (18:00) cycle with ad libitum access to water and mouse chow (PicoLab Rodent Diet 20, 5053 tablet, TestDiet, St. Louis, MO, United States). Experiments with cocaine-mediated synaptic plasticity (<a href=\"#fig3\">Figure 3</a>) were done with the experimenter blind as to whether a cocaine solution or vehicle was being applied to the brain slice."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "IUE procedures", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "As previously described (<a href=\"#bib17\">Saito and Nakatsuji, 2001</a>), timed pregnant female C57Bl/6NCrl mice were purchased from Charles River laboratories and E15 embryos were electroporated following pressure microinjection (Picrospritzer) into the right lateral ventricle of a DNA mixture (0.5 \u00b5g/\u00b5l, approximately 200 nl; <i>pCAG::PLE-IRES-mCherry</i>) encoding PLE and a mCherry signal marker. Postoperative analgesia was provided (buprenorphine was administrated intraperitoneally at a dose of 0.1 mg/kg along with ketoprofen administrated subcutaneously at a dose of 5 mg/kg)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Electrophysiology of layer 2/3 neurons in cortical brain slices", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Electroporated mice were sacrificed between postnatal days 14\u201321 for brain slice recordings from transfected layer 2/3 cortical pyramidal neurons. As previously described (<a href=\"#bib24\">Yang et al., 2011</a>), animals were deeply anesthetized with isofluorane, decapitated and the brains removed in ice cold sectioning solution. The brains were then mounted on a stage using Krazy Glue, and coronal brain slices (300 \u00b5m thickness) were cut using a cooled tissue slicer (Vibratome, 2000). Slices were prepared in chilled cutting solution containing the following (in mM): 110 choline chloride, 2.5 KCl, 1.25 mM NaH<sub>2</sub>PO<sub>4</sub> , 2 CaCl<sub>2</sub>, 7 MgSO<sub>4</sub>, 25 D-glucose, 3.1 Na-pyruvate, and 11.6 Na-L-ascorbate, aerated with 95% O<sub>2</sub> / 5% CO<sub>2</sub>. Brain slices were transferred to the chamber containing (in mM): 119 NaCl, 25 NaHCO<sub>3</sub>, 11 D-glucose, 2.5 KCl, 1.25 MgCl<sub>2</sub>, 2 CaCl<sub>2</sub>, and 1.25 NaH<sub>2</sub>PO<sub>4</sub>, aerated with 95% O<sub>2</sub>/5% CO<sub>2</sub> at 34 <sup>\u00b0</sup>C for 30 min and moved to room temperature until transferred to a recording chamber on the stage of an Olympus (Tokyo, Japan) BW51XI microscope."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Electrophysiological recordings were performed as described previously (<a href=\"#bib24\">Yang et al., 2011</a>) using a multiple 700B amplifier (Molecular Devices). Slices were transferred to the recording chamber on the stage of an Olympus BW51XI microscope and perfused at a rate of 1\u20132 ml/min with ACSF (28\u201330\u00b0C) containing the following (in mM): 119 NaCl, 25 NaHCO<sub>3</sub>, 11 D-glucose, 2.5 KCl, 1.25 MgCl<sub>2</sub>, 2 CaCl<sub>2</sub>, and 1.25 NaH<sub>2</sub>PO<sub>4</sub>, aerated with 95% O<sub>2</sub>/5% CO<sub>2,</sub> also 5 \u00b5M MK-801. Perforated patch recordings were made on either PLE/mCherry expressing neurons expressing neurons or adjacent non-expressing neurons using electrodes with tip resistances of 4\u20135 M\u2126 immediately after circulating the ACSF with CM-MK801. 40 to 50 min later, ACSF was switched to 0 Mg<sup>2+</sup> in the presence of picrotoxin (50 \u00b5M) and CNQX (10 \u00b5M). The intracellular solution for voltage-camp recordings contained the following (in mM): 125 CsCl, 5 NaCl, 10 HEPES, 0.6 EGTA, 4 Mg-ATP, 0.3 Na<sub>2</sub>GTP, 10 lidocaine N-ethyl bromide (QX-314) and Gramicidin, pH 7.35 and adjusted to 290 mOsm. Gramicidin (Sigma, St. Louis, MO, United States) was dissolved in dimethylsulfoxide (Sigma) (1\u20132 mg/ml) then diluted in the pipette filling solution to a final concentration of 0.2\u20135 \u00b5g/ml. The holding potential for voltage-clamp recordings was\u201470 mV, and responses were digitized at 10 kHz. NMDAR-EPSCs were elicited by 0.1 ms electrical stimuli (100\u2013300 \u00b5A) every 15 s with an isolated pulse stimulator (WPI) using a concentric bipolar electrode (FHC, CBAEC75) placed at layer 4 of cortex. 2-amino-5-phosphonovaleric acid (100 \u00b5M, AP5) was added in the end of most experiments."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Electrophysiology of VTA DA neurons", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Experimental techniques were similar to those reported previously (<a href=\"#bib1\">Argilli et al., 2008</a>). 9\u201310 days after viral injection, mice expressing Cre recombinase in DA neurons (<i>Slc6a3</i><sup><i>Cre</i></sup> mice) were deeply anaesthetized with isofluorane and decapitated. Coronal brain slices (200 \u00b5m) containing VTA were prepared in chilled cutting solution containing (in mM): 110 choline chloride, 2.5 KCl, 1.25 mM NaH<sub>2</sub>PO<sub>4</sub> , 2 CaCl<sub>2</sub>, 7 MgSO<sub>4</sub>, 25 D-glucose, 3.1 Na-pyruvate, and 11.6 Na-L-ascorbate, aerated with 95% O<sub>2</sub> / 5% CO<sub>2</sub>. Brain slices were incubated at 34 <sup>\u00b0</sup>C for 30 min in ACSF containing (in mM): 119 NaCl, 25 NaHCO<sub>3</sub>, 11 D-glucose, 2.5 KCl, 1.25 MgCl<sub>2</sub>, 2 CaCl<sub>2</sub>, and 1.25 NaH<sub>2</sub>PO<sub>4</sub>, aerated with 95% O<sub>2</sub>/5% CO<sub>2</sub> and then transferred to the chamber at room temperature containing ACSF with CM-MK801 (5 \u00b5M) for 40 min. Cocaine (5 \u00b5M) dissolved in ACSF or ACSF alone were added to the chamber. After 10 min, the brain slices were rinsed twice and transferred to another chamber containing ACSF and CM-MK801. Electrophysiological recordings were performed 3\u20135 hr later. The brain slices were transferred to a recording chamber on the stage of an Olympus (Tokyo, Japan) BW51XI microscope. Dopamine neurons were identified by fluorescence of either mCherry (<i>via</i> rAAV-<i>Synapsin</i>::FLEX-<i>rev</i>-PLE-2a-mCherry virus) or EGFP (<i>via</i> rAAV-<i>CAG</i>::FLEX-<i>rev</i>-EGFP virus) and hyperpolarization-induced currents (<i>I</i><sub>h</sub>), and then visually targeted with infrared gradient contrast optics Whole-cell recordings were made on DA neurons using a Multiclamp 700B amplifer (Molecular Devices, Sunnyvale, CA, United States). Neurons were voltage-clamped at \u221270 mV. mEPSCs were recorded from DA neurons in the presence of picrotoxin (50 \u00b5M) and tetrodotoxin (TTX, 1 \u00b5M). Responses were digitized at 10 kHz. Series resistances were less than 30 MOhm. The intracellular solution for voltage-clamp recordings contained the following (in mM): 125 CsCl, 5 NaCl, 10 HEPES, 0.6 EGTA, 4 Mg-ATP, 0.3 Na<sub>2</sub>GTP, and 10 lidocaine N-ethyl bromide (QX-314), pH 7.35 and 290 mOsm."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-4", 
+                        "title": "Data analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "For detection of mEPSCs, we used template matching (Clampfit, Molecular Devices) followed by visual inspection. Statistical tests were performed in Microsoft Excel or SigmaPlot. Data is represented as mean \u00b1 s.e.m., and error bars indicate s.e.m."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-5", 
+                        "title": "Viral injections", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Mice expressing Cre recombinase in DA neurons (<i>Slc6a3</i><sup><i>Cre</i></sup> mice) (P21-P24) were anaesthetized with isoflurane and placed into a stereotaxic apparatus (David Kopf Instruments, Tujunga, CA, United States). The skull was exposed via a small incision and two small holes were drilled on either side of the midline for viral injection. A pulled-glass pipette with 20\u201340 \u00b5m tip diameter was inserted into the brain and two injections (60 nl) of the rAAV2/1-<i>Synapsin</i>::FLEX-<i>rev-</i>PLE-2a-mCherry or rAAV-<i>CAG</i>::FLEX-<i>rev</i>-EGFP virus were made at coordinates around the VTA (coordinates, bregma: \u22122.5 mm; midline: \u00b10.5 mm; skull surface: \u22124.5 mm and \u22125.0 mm). Mice were returned to their home cage typically for 9 or 10 days to recover and for expression of PLE and mCherry or EGFP. A micromanipulator (Narishige) was used to control injection speed at 30 nl/min, and the pipette was withdrawn 15 min after the final injection."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-6", 
+                        "title": "Chemical synthesis", 
+                        "content": [
+                            {
+                                "type": "image", 
+                                "id": "fig4", 
+                                "alt": "", 
+                                "uri": "elife-10206-fig4-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Preparation of chloromethyl 1-methylcyclopropanecarboxylate (1); 1-methyl cyclopropane-1-carboxylic acid (4.0 g, 40.0 mmol) was added to mixture of potassium carbonate (22.1 g, 160 mmol), tetra butyl ammonium hydrogen sulfate (1.36 g, 4.0 mmol), water (50 ml), and dichloromethane (DCM) (40 ml) at room temperature. After stirred for 10 min, solution of chloromethyl chlorosulfate in DCM (40 ml) was slowly added and stirred for 5 hr. The reaction mixture was diluted with 150 ml of water and extracted with DCM (3 \u00d7 100 ml), combined organic layer was washed with saturated brine (100 ml), dried over MgSO<sub>4</sub>, filtered, and concentrated to an oil. The oil was filtered through a pad of silica gel with 150 ml of DCM and concentrated to give crude chloromethyl 1-methylcyclopropanecarboxylate (3.8 g, 64%). <sup>1</sup>H NMR, \u03b4<sub>H</sub> (CDCl<sub>3</sub>, 400 MHz) 5.70 (2H, s), 1.33 (3H, s), 1.33 (2H, dd), 0.79 (2H, dd, J = 5.46,); m/z(ES<sup>+</sup>) found: [M + H]<sup>+</sup>, 149."
+                            }, 
+                            {
+                                "type": "image", 
+                                "id": "fig5", 
+                                "alt": "", 
+                                "uri": "elife-10206-fig5-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Preparation of iodomethyl 1-methylcyclopropanecarboxylate (2); sodium iodide (11.5 g, 77.0 mmol) was added to solution of chloromethyl 1-methylcyclopropanecarboxylate (3.8 g, 25.7 mmol) in acetone (25 ml) and stirred for 3 hr at 45\u00b0C. Reaction mixture was filtered, washed with acetone, and concentrated under vacuum. The residual oil was dissolved in diethyl ether (100 ml), washed with aqueous sodium bicarbonate and aqueous sodium thiosulfate, dried over MgSO<sub>4</sub>, filtered, and concentrated to give crude iodomethyl 1-methylcyclopropanecarboxylate (4.6 g, 75%) <sup>1</sup>H NMR, \u03b4<sub>H</sub> (CDCl<sub>3</sub>, 400 MHz) 5.92 (2H, s), 1.31 (3H, s), 1.29 (2H, dd, J = 7.10), 0.74 (2H, dd, J = 6.88,) ; m/z(ES<sup>+</sup>) found: [M + H]<sup>+</sup>, 240."
+                            }, 
+                            {
+                                "type": "image", 
+                                "id": "fig6", 
+                                "alt": "", 
+                                "uri": "elife-10206-fig6-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Preparation of (4-formyl-2-nitrophenoxy)methyl 1-methylcyclopropanecarboxylate (3); added solution of iodomethyl 1-methylcyclopropanecarboxylate (4.6 g,19.2 mmol) in acetonitrile (50 ml) to silver oxide (13.7 g, 57.5 mmol) in acetonitrile (100 ml.) After stirring for 10 min at 0\u00b0C, solution of 4-hydroxy-3-nitro-benzaldehyde (4.0 g, 24.0 mmol) in acetonitrile (100 ml) was added dropwise and stirred over night at 0\u00b0C. The reaction mixture was filtered through Celite then concentrated under vacuum to give crude (4-formyl-2-nitrophenoxy)methyl 1-methylcyclopropanecarboxylate (4.9 g, 91%) <sup>1</sup>H NMR, \u03b4<sub>H</sub> (CDCl<sub>3</sub>, 400 MHz) 9.98 (1H, s), 8.35 (1H, d, J = 2.04), 8.10 (1H, dd, J = 8.68), 7.42 (1H, d, J = 8.68), 5.92 (2H, s), 1.29 (3H, s), 1.30 (2H, m), 0.79 (2H, t, J = 3.76,) ; m/z(ES<sup>+</sup>) found: [M + H]<sup>+</sup>, 280."
+                            }, 
+                            {
+                                "type": "image", 
+                                "id": "fig7", 
+                                "alt": "", 
+                                "uri": "elife-10206-fig7-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Preparation of (4-(hydroxymethyl)-2-nitrophenoxy)methyl 1-methylcyclopropanecarboxylate (4); NaBH<sub>4</sub> was added to a stirred solution of (4-formyl-2-nitrophenoxy)methyl 1-methylcyclopropanecarboxylate (4.9 g, 17.5 mmol) in chloroform (60 ml) and isopropanol (30 ml) at 0\u00b0C. Mixture was stirred at 0\u00b0C for an hour then at room temperature overnight. The reaction mixture was diluted with 150 ml of water and extracted with DCM (3 \u00d7 100 ml). The combined organic layer was washed with saturated brine (100 ml), dried over MgSO<sub>4</sub>, filtered, and concentrated to residue oil. Purified by column chromatography (50% Ethyl acetate: hexane) to afford (4-(hydroxymethyl)-2-nitrophenoxy)methyl 1-methylcyclopropanecarboxylate (2.35 g, 48%) <sup>1</sup>H NMR, \u03b4<sub>H</sub> (CDCl<sub>3</sub>, 400 MHz) 7.85 (1H, d, J = 2.12), 7.55 (1H, dd, J = 7.92), 7.42 (1H, d, J = 7.00), 5.82 (1H, s), 4.73 (2H, s), 1.31 (3H, s), 1.27 (2H, dd,J = 6.86), 0.76 (2H, dd, J = 6.9,); m/z(ES<sup>+</sup>) found: [M + H]<sup>+</sup>, 282."
+                            }, 
+                            {
+                                "type": "image", 
+                                "id": "fig8", 
+                                "alt": "", 
+                                "uri": "elife-10206-fig8-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Preparation of (2-nitro-4-((((4-nitrophenoxy)carbonyl)oxy)methyl)phenoxy)methyl 1-methylcyclopropanecarboxylate (5); A solution of 4-nitrophenyl chloroformate (3.4 g, 16.7 mmol) in THF (10 ml) was added to a mixture of (4-(hydroxymethyl)-2-nitrophenoxy)methyl 1-methylcyclopropanecarboxylate (2.35 g, 8.35 mmol) and triethylamine (4.7 ml, 33.4 mmol) in THF (40 ml) and was stirred at 0\u00b0C. The reaction mixture was stirred in the dark at room temperature overnight. The reaction mixture was diluted with 150 ml of water and extracted with ethyl acetate (3 \u00d7 100 ml), the combined organic layer was washed with saturated brine (100 ml), dried over MgSO<sub>4</sub>, filtered, and concentrated to residue oil. Purified by column chromatography (50% ethyl acetate: hexane) to afford (2-nitro-4-((((4-nitrophenoxy)carbonyl)oxy)methyl)phenoxy)methyl 1-methylcyclopropanecarboxylate (4.8 g, 65%) <sup>1</sup>H NMR, \u03b4<sub>H</sub> (CDCl<sub>3</sub>, 400 MHz) 8.26 (2H, d, J = 9.24), 7.92 (1H, d, J = 2.20), 7.62 (1H, dd, J = 8.6), 7.36 (2H, d, J = 9.24), 7.28 (1H, d, J = 8.6) 5.82 (2H, s), 5.26 (2H, s), 1.29 (3H, s), 1.26 (2H, dd, J = 6.92), 0.75 (2H, dd, J = 6.74) ; m/z(ES<sup>+</sup>) found: [M + H]<sup>+</sup>, 447."
+                            }, 
+                            {
+                                "type": "image", 
+                                "id": "fig9", 
+                                "alt": "", 
+                                "uri": "elife-10206-fig9-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Preparation of CM-MK-801 (6); added and N,N-diisopropylethylamine (13 \u03bcl, 72 nmol) to mixture of (2-nitro-4-((((4-nitrophenoxy)carbonyl)oxy)methyl)phenoxy)methyl 1-methylcyclopropanecarboxylate (10 mg, 22 nmol) and (+)-MK 801 hydrogen maleate (8 mg, 24 nmol) in DMF (0.5 ml) at room temperature and stirred overnight. The reaction mixture was diluted with 100 ml of water and extracted with ethyl acetate (3 \u00d7 100 ml), combined organic layer was washed with saturated brine (100 ml), dried over MgSO<sub>4</sub>, filtered, and concentrated. Purified by prep-HPLC (water: acetonitrile) to afford CM-MK-801 (4 mg, 32%) <sup>1</sup>H NMR, \u03b4<sub>H</sub> (CDCl<sub>3</sub>, 400 MHz, temperature: 330K) 7.52 (1H, br s), 7.20 (1H, br d, J = 7.44), 7.15 (2H, m), 7.02 (3H, m), 6.94 (2H, m), 6.90 (2H, m), 6.73 (1H, m), 5.63 (2H, s), 5.30 (1H, d, J = 5.52), 4.96(2H, dd, J = 33.8), 3.46 (1H, d, J = 16.86), 2.13 (3H, s), 1.17 (3H, s), 1.27 (2H, dd,J = 6.84), 0.59 (2H, dd, J = 6.7,); m/z(ES<sup>+</sup>) found: [M + H]<sup>+</sup>, 529."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Argilli", 
+                            "index": "Argilli, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DR Sibley", 
+                            "index": "Sibley, DR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Malenka", 
+                            "index": "Malenka, RC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PM England", 
+                            "index": "England, PM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bonci", 
+                            "index": "Bonci, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mechanism and time course of cocaine-induced long-term potentiation in the ventral tegmental area", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "9092", 
+                    "last": "9100", 
+                    "range": "9092\u20139100"
+                }, 
+                "doi": "10.1523/JNEUROSCI.1001-08.2008"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Atasoy", 
+                            "index": "Atasoy, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Aponte", 
+                            "index": "Aponte, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HH Su", 
+                            "index": "Su, HH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Sternson", 
+                            "index": "Sternson, SM"
+                        }
+                    }
+                ], 
+                "articleTitle": "A FLEX switch targets Channelrhodopsin-2 to multiple cell types for imaging and long-range circuit mapping", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "7025", 
+                    "last": "7030", 
+                    "range": "7025\u20137030"
+                }, 
+                "doi": "10.1523/JNEUROSCI.1954-08.2008"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VA Bender", 
+                            "index": "Bender, VA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KJ Bender", 
+                            "index": "Bender, KJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Brasier", 
+                            "index": "Brasier, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DE Feldman", 
+                            "index": "Feldman, DE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Two coincidence detectors for spike timing-dependent plasticity in somatosensory cortex", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "4166", 
+                    "last": "4177", 
+                    "range": "4166\u20134177"
+                }, 
+                "doi": "10.1523/JNEUROSCI.0176-06.2006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Berretta", 
+                            "index": "Berretta, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Jones", 
+                            "index": "Jones, RS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Tonic facilitation of glutamate release by presynaptic N-methyl-D-aspartate autoreceptors in the entorhinal cortex", 
+                "journal": {
+                    "name": [
+                        "Neuroscience"
+                    ]
+                }, 
+                "volume": "75", 
+                "pages": {
+                    "first": "339", 
+                    "last": "344", 
+                    "range": "339\u2013344"
+                }, 
+                "doi": "10.1016/0306-4522(96)00301-6"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GL Collingridge", 
+                            "index": "Collingridge, GL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JT Isaac", 
+                            "index": "Isaac, JT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YT Wang", 
+                            "index": "Wang, YT"
+                        }
+                    }
+                ], 
+                "articleTitle": "Receptor trafficking and synaptic plasticity", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Neuroscience"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": {
+                    "first": "952", 
+                    "last": "962", 
+                    "range": "952\u2013962"
+                }, 
+                "doi": "10.1038/nrn1556"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Conti", 
+                            "index": "Conti, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Minelli", 
+                            "index": "Minelli, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S DeBiasi", 
+                            "index": "DeBiasi, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Melone", 
+                            "index": "Melone, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Neuronal and glial localization of NMDA receptors in the cerebral cortex", 
+                "journal": {
+                    "name": [
+                        "Molecular Neurobiology"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "1", 
+                    "last": "18", 
+                    "range": "1\u201318"
+                }, 
+                "doi": "10.1007/BF02740618"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Corlew", 
+                            "index": "Corlew, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Brasier", 
+                            "index": "Brasier, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DE Feldman", 
+                            "index": "Feldman, DE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BD Philpot", 
+                            "index": "Philpot, BD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Presynaptic NMDA receptors: newly appreciated roles in cortical synaptic function and plasticity", 
+                "journal": {
+                    "name": [
+                        "The Neuroscientist"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "609", 
+                    "last": "625", 
+                    "range": "609\u2013625"
+                }, 
+                "doi": "10.1177/1073858408322675"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Donnelly", 
+                            "index": "Donnelly, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LE Hughes", 
+                            "index": "Hughes, LE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Luke", 
+                            "index": "Luke, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Mendoza", 
+                            "index": "Mendoza, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E ten Dam", 
+                            "index": "ten Dam, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Gani", 
+                            "index": "Gani, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MD Ryan", 
+                            "index": "Ryan, MD"
+                        }
+                    }
+                ], 
+                "articleTitle": "The 'cleavage' activities of foot-and-mouth disease virus 2A site-directed mutants and naturally occurring '2A-like' sequences", 
+                "journal": {
+                    "name": [
+                        "The Journal of General Virology"
+                    ]
+                }, 
+                "volume": "82", 
+                "pages": {
+                    "first": "1027", 
+                    "last": "1041", 
+                    "range": "1027\u20131041"
+                }, 
+                "doi": "10.1099/0022-1317-82-5-1027"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Engblom", 
+                            "index": "Engblom, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bilbao", 
+                            "index": "Bilbao, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sanchis-Segura", 
+                            "index": "Sanchis-Segura, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Dahan", 
+                            "index": "Dahan, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Perreau-Lenz", 
+                            "index": "Perreau-Lenz, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Balland", 
+                            "index": "Balland, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Parkitna", 
+                            "index": "Parkitna, JR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Luj\u00e1n", 
+                            "index": "Luj\u00e1n, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Halbout", 
+                            "index": "Halbout, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Mameli", 
+                            "index": "Mameli, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Parlato", 
+                            "index": "Parlato, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Sprengel", 
+                            "index": "Sprengel, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C L\u00fcscher", 
+                            "index": "L\u00fcscher, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Sch\u00fctz", 
+                            "index": "Sch\u00fctz, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Spanagel", 
+                            "index": "Spanagel, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Glutamate receptors on dopamine neurons control the persistence of cocaine seeking", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "59", 
+                "pages": {
+                    "first": "497", 
+                    "last": "508", 
+                    "range": "497\u2013508"
+                }, 
+                "doi": "10.1016/j.neuron.2008.07.010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "1994", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JP Gesson", 
+                            "index": "Gesson, JP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Jacquesy", 
+                            "index": "Jacquesy, JC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Mondon", 
+                            "index": "Mondon, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Petit", 
+                            "index": "Petit, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Renoux", 
+                            "index": "Renoux, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Andrianomenjanahary", 
+                            "index": "Andrianomenjanahary, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Dufat-Trinh Van", 
+                            "index": "Dufat-Trinh Van, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Koch", 
+                            "index": "Koch, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Michel", 
+                            "index": "Michel, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Tillequin", 
+                            "index": "Tillequin, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J-C Florent ", 
+                            "index": "Florent , J-C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Monnert", 
+                            "index": "Monnert, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Bosslet", 
+                            "index": "Bosslet, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Czech", 
+                            "index": "Czech, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Hoffman", 
+                            "index": "Hoffman, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Prodrugs of anthracyclines for chemotherapy via enzyme-monoclonal antibody conjugates", 
+                "journal": {
+                    "name": [
+                        "Anti-Cancer Drug Design"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": {
+                    "first": "409", 
+                    "last": "423", 
+                    "range": "409\u2013423"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Gong", 
+                            "index": "Gong, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Doughty", 
+                            "index": "Doughty, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CR Harbaugh", 
+                            "index": "Harbaugh, CR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Cummins", 
+                            "index": "Cummins, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ME Hatten", 
+                            "index": "Hatten, ME"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Heintz", 
+                            "index": "Heintz, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CR Gerfen", 
+                            "index": "Gerfen, CR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Targeting Cre recombinase to specific neuron populations with bacterial artificial chromosome constructs", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "27", 
+                "pages": {
+                    "first": "9817", 
+                    "last": "9823", 
+                    "range": "9817\u20139823"
+                }, 
+                "doi": "10.1523/JNEUROSCI.2707-07.2007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "1993", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PW Kalivas", 
+                            "index": "Kalivas, PW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Alesdatter", 
+                            "index": "Alesdatter, JE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Involvement of N-methyl-D-aspartate receptor stimulation in the ventral tegmental area and amygdala in behavioral sensitization to cocaine", 
+                "journal": {
+                    "name": [
+                        "The Journal of Pharmacology and Experimental Therapeutics"
+                    ]
+                }, 
+                "volume": "267", 
+                "pages": {
+                    "first": "486", 
+                    "last": "495", 
+                    "range": "486\u2013495"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CJ Magnus", 
+                            "index": "Magnus, CJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PH Lee", 
+                            "index": "Lee, PH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Atasoy", 
+                            "index": "Atasoy, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HH Su", 
+                            "index": "Su, HH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LL Looger", 
+                            "index": "Looger, LL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Sternson", 
+                            "index": "Sternson, SM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Chemical and genetic engineering of selective ion channel-ligand interactions", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "333", 
+                "pages": {
+                    "first": "1292", 
+                    "last": "1296", 
+                    "range": "1292\u20131296"
+                }, 
+                "doi": "10.1126/science.1206606"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "1993", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Malenka", 
+                            "index": "Malenka, RC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Nicoll", 
+                            "index": "Nicoll, RA"
+                        }
+                    }
+                ], 
+                "articleTitle": "NMDA-receptor-dependent synaptic plasticity: multiple forms and mechanisms", 
+                "journal": {
+                    "name": [
+                        "Trends in Neurosciences"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "521", 
+                    "last": "527", 
+                    "range": "521\u2013527"
+                }, 
+                "doi": "10.1016/0166-2236(93)90197-T"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Rodriguez-Moreno", 
+                            "index": "Rodriguez-Moreno, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Paulsen", 
+                            "index": "Paulsen, O"
+                        }
+                    }
+                ], 
+                "articleTitle": "Spike timing-dependent long-term depression requires presynaptic NMDA receptors", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": {
+                    "first": "744", 
+                    "last": "745", 
+                    "range": "744\u2013745"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "1993", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Rosenmund", 
+                            "index": "Rosenmund, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GL Westbrook", 
+                            "index": "Westbrook, GL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rundown of N-methyl-D-aspartate channels during whole-cell recording in rat hippocampal neurons: role of Ca2+ and ATP", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "470", 
+                "pages": {
+                    "first": "705", 
+                    "last": "729", 
+                    "range": "705\u2013729"
+                }, 
+                "doi": "10.1113/jphysiol.1993.sp019884"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Saito", 
+                            "index": "Saito, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Nakatsuji", 
+                            "index": "Nakatsuji, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "Efficient gene transfer into the embryonic mouse brain using in vivo electroporation", 
+                "journal": {
+                    "name": [
+                        "Developmental Biology"
+                    ]
+                }, 
+                "volume": "240", 
+                "pages": {
+                    "first": "237", 
+                    "last": "246", 
+                    "range": "237\u2013246"
+                }, 
+                "doi": "10.1006/dbio.2001.0439"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EM Slimko", 
+                            "index": "Slimko, EM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S McKinney", 
+                            "index": "McKinney, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Anderson", 
+                            "index": "Anderson, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Davidson", 
+                            "index": "Davidson, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HA Lester", 
+                            "index": "Lester, HA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Selective electrical silencing of mammalian neurons in vitro by the use of invertebrate ligand-gated chloride channels", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "7373", 
+                    "last": "7379", 
+                    "range": "7373\u20137379"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Tian", 
+                            "index": "Tian, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Yang", 
+                            "index": "Yang, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LM Wysocki", 
+                            "index": "Wysocki, LM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AC Arnold", 
+                            "index": "Arnold, AC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Hu", 
+                            "index": "Hu, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Ravichandran", 
+                            "index": "Ravichandran, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Sternson", 
+                            "index": "Sternson, SM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LL Looger", 
+                            "index": "Looger, LL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LD Lavis", 
+                            "index": "Lavis, LD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Selective esterase-ester pair for targeting small molecules with cellular specificity", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "109", 
+                "pages": {
+                    "first": "4756", 
+                    "last": "4761", 
+                    "range": "4756\u20134761"
+                }, 
+                "doi": "10.1073/pnas.1111943109"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Ungless", 
+                            "index": "Ungless, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Whistler", 
+                            "index": "Whistler, JL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Malenka", 
+                            "index": "Malenka, RC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bonci", 
+                            "index": "Bonci, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Single cocaine exposure in vivo induces long-term potentiation in dopamine neurons", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "411", 
+                "pages": {
+                    "first": "583", 
+                    "last": "587", 
+                    "range": "583\u2013587"
+                }, 
+                "doi": "10.1038/35079077"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Verkhratsky", 
+                            "index": "Verkhratsky, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Kirchhoff", 
+                            "index": "Kirchhoff, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "NMDA Receptors in glia", 
+                "journal": {
+                    "name": [
+                        "The Neuroscientist"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "28", 
+                    "last": "37", 
+                    "range": "28\u201337"
+                }, 
+                "doi": "10.1177/1073858406294270"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "1986", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EH Wong", 
+                            "index": "Wong, EH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Kemp", 
+                            "index": "Kemp, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Priestley", 
+                            "index": "Priestley, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AR Knight", 
+                            "index": "Knight, AR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GN Woodruff", 
+                            "index": "Woodruff, GN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LL Iversen", 
+                            "index": "Iversen, LL"
+                        }
+                    }
+                ], 
+                "articleTitle": "The anticonvulsant MK-801 is a potent N-methyl-D-aspartate antagonist", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "83", 
+                "pages": {
+                    "first": "7104", 
+                    "last": "7108", 
+                    "range": "7104\u20137108"
+                }, 
+                "doi": "10.1073/pnas.83.18.7104"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "1987", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GN Woodruff", 
+                            "index": "Woodruff, GN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AC Foster", 
+                            "index": "Foster, AC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Gill", 
+                            "index": "Gill, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Kemp", 
+                            "index": "Kemp, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EH Wong", 
+                            "index": "Wong, EH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LL Iversen", 
+                            "index": "Iversen, LL"
+                        }
+                    }
+                ], 
+                "articleTitle": "The interaction between MK-801 and receptors for N-methyl-D-aspartate: functional consequences", 
+                "journal": {
+                    "name": [
+                        "Neuropharmacology"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "903", 
+                    "last": "909", 
+                    "range": "903\u2013909"
+                }, 
+                "doi": "10.1016/0028-3908(87)90068-2"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Yang", 
+                            "index": "Yang, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Atasoy", 
+                            "index": "Atasoy, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HH Su", 
+                            "index": "Su, HH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Sternson", 
+                            "index": "Sternson, SM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Hunger states switch a flip-flop memory circuit via a synaptic AMPK-dependent positive feedback loop", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "146", 
+                "pages": {
+                    "first": "992", 
+                    "last": "1003", 
+                    "range": "992\u20131003"
+                }, 
+                "doi": "10.1016/j.cell.2011.07.039"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Zhuang", 
+                            "index": "Zhuang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Masson", 
+                            "index": "Masson, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Gingrich", 
+                            "index": "Gingrich, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Rayport", 
+                            "index": "Rayport, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Hen", 
+                            "index": "Hen, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Targeted gene expression in dopamine and serotonin neurons of the mouse brain", 
+                "journal": {
+                    "name": [
+                        "Journal of Neuroscience Methods"
+                    ]
+                }, 
+                "volume": "143", 
+                "pages": {
+                    "first": "27", 
+                    "last": "32", 
+                    "range": "27\u201332"
+                }, 
+                "doi": "10.1016/j.jneumeth.2004.09.020"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LS Zweifel", 
+                            "index": "Zweifel, LS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Argilli", 
+                            "index": "Argilli, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bonci", 
+                            "index": "Bonci, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RD Palmiter", 
+                            "index": "Palmiter, RD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Role of NMDA receptors in dopamine neurons for plasticity and addictive behaviors", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "59", 
+                "pages": {
+                    "first": "486", 
+                    "last": "496", 
+                    "range": "486\u2013496"
+                }, 
+                "doi": "10.1016/j.neuron.2008.05.028"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "This research was funded by the Howard Hughes Medical Institute. We thank C Magnus for assistance with electroporation; H Su for PLE plasmid construction. L Lavis provided technical advice from his earlier demonstration of the CM group for small molecule masking. YY performed the experiments. PL synthesized CM-MK801. YY and SMS designed the study. YY and SMS analyzed the data and wrote the paper."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.10206.006", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \u201cCell type-specific pharmacology of NMDA receptors using masked MK801\u201d for peer review at <i>eLife</i>. Your submission has been favorably evaluated by a Senior Editor, a Reviewing editor, and three reviewers."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following individuals responsible for the peer review of your submission have agreed to reveal their identity: Richard Palmiter (Reviewing editor) and Christian L\u00fcscher (peer reviewer)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This paper provides a new method for selective inactivation the NMDA receptors in specific cell types using a novel pharmacogenetic methodology."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "All three reviewers believe that this is an excellent study that introduces a very useful new tool for studying the role of NMDA receptors in synaptic plasticity. However, there was concern that the paper goes overboard in trying to demonstrate a clear resolution to the role of NMDA receptors in cocaine-induced synaptic plasticity in dopamine neurons. They recommend that the paper emphasize the technique in the Introduction and Discussion, rather than the resolution of a problem."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "For example, the conclusion related to dopamine neurons (Discussion) should be softened along the lines suggested below:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cThese experiments with cell type-specific pharmacology provide direct evidence for the necessity of NMDA-Rs in dopamine neurons for the synaptic plasticity observed 3-5 hours after exposure to cocaine in vitro, leaving open the molecular explanation for the potentiation AMPA-Rs that occurs after many days of NMDA-R inactivity in dopamine neurons in vivo. [\u2026] Thus, it was not possible for us to determine if (or when) AMPA-R potentiation occurs after inactivation of NMDA-R in vivo using pharmacogenetic method described here.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Reviewer #1:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This very interesting study by Yang et al. describes the use of enzymatic targeting of an NMDA-R antagonist (CM-MK801) achieved via neuronal cell-type-selectivity. The authors developed a new synthetic inert masked MK801 derivative that can be \u201cunmasked\u201d and activated inside the cells that have been previously successfully transfected with a virus that allowed the expression of the fundamental catalytic enzyme porcine liver esterase (PLE). Additionally, the authors tested for cellular specificity by using as a convenient experimental framework in utero electroporation of a plasmid that allowed co-expression of the PLE enzyme and of a fluorescent tag (mCherry). Subsequently, using brain slice electrophysiology from transfected mouse cerebral cortex the authors described convincing evidence of cellular specificity by showing a decreased in NMDA-R mediated excitatory postsynaptic current in a use-dependent manner in PLE<sup>+</sup> cells and almost no effect in adjacent PLE<sup>-</sup> cortical neurons. Moreover, the authors provided an additional experimental application of this new methodology. In fact, they used a brain slice model that is capable of recapitulating the cocaine mediated AMPA receptors potentiation in dopamine neurons, a phenomenon that is NMDA dependent. Elegantly, VTA brain slices from DATcre animals that have been infected with PLE and subsequently treated with CM-MK801 right before being incubated with cocaine are resistant to cocaine-induce plasticity. The study is thorough, very well done, and the data are both consistent and compelling."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Comments:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Citations should be provided for publications describing the generation of <i>Slc6a3</i><sup><i>cre</i></sup> animals."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Additionally, it would be nice to see a use-dependent blockade of the NMDA mediated currents elicited by the compound in the context of infected and non-infected dopamine cells residing into the VTA."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Reviewer #2:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This study by Yang, Lee, and Sternson investigates the viability of selective targeting of NMDA receptor inactivation by unmasking the antagonist MK-801. These investigators use a clever pharmacogenetic approach, combining cell-specific expression of the porcine liver esterase (PLE) with delivery of MK801 linked to 4-hydroxy-3-nitrobenzyl carbamate through a carboxymethylpropyl ester group. Using a cortical slice physiology preparation the authors demonstrate PLE/CM-MK801 blocks NMDAR-mediated synaptic currents. They also use this approach to show that NMDAR blockade in dopamine neurons prevents cocaine-evoked synaptic increases in AMPA receptors without causing the synaptic scaling previously shown to occur following genetic NMDAR inactivation. Overall the study is well written and logical. I believe this work is appropriate for publication in <i>eLife</i>, but would greatly benefit from the addition of a minor experiment to establish reversibility, or lack thereof."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) The investigators use bath application for the delivery of CM-MK801 and perfuse over the slice throughout recordings. It is clear from <a href=\"#fig2\">Figure 2</a> that the effects take only a few minutes to reach maximal suppression of evoked NMDAR currents. It is well established that MK801 does not readily reverse in slice. An important experiment for the characterization of this approach is to establish the reversibility of the unmasked CM-MK801 compound."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Reviewer #3:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This is a demonstration of the power of a very cool new tool, a masked version of the MK801 NMDA antagonist that is unmasked enzymatically in cells that express PE under Cre control."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The study is certainly of interest to the researchers in the field and the data of very high quality. The selling point that this technique now allows for the identification of the locus of the NMDA receptor required for the induction of cocaine-evoked synaptic plasticity is probably overstated, but the conclusion very firm, at least for slice application of the drug."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Comments:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Most of the literature on cocaine-evoked synaptic plasticity used an ex vivo protocol whereby the drug was experiment injected and slices prepared the day after. This should be repeated here as well, also to demonstrate whether the masked MK801 works when injected directly into the brain (using the mCherry to visualise and quantify the proportion of neurons infected). This would also be a much better demonstration of the selectivity of the compound."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) The description of <a href=\"#bib9\">Engblom et al., 2008</a>, in the subsection \u201cCell type-specific NMDA-R pharmacology in cocaine-induced synaptic plasticity\u201d is misleading. What the 2008 study by Engblom shows is that the ablation of GluN1 after completion of the postnatal development leads to a complete and selective loss of the NMDA currents in DA neurons. It also shows that when these animals were exposed to cocaine, no drug-evoked plasticity was observed (the IV curve of the AMPAR-EPSC remained linear and the amplitude of the spontaneous EPSCs remained unaffected. The conclusion of the paper thus was that the NMDA on DA neurons were required for the induction of the plasticity. This needs to be acknowledged in the Introduction. The present study is an important confirmation of the 2008 finding."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) The study should be extended by looking at the current voltage relationship of the AMPAR-EPSC in DA neurons. Does the blockade of NMDARs also prevent rectification?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) It is important to show that NMDA currents in non DA neurons of the VTA were unaffected."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "[Editors' note: further revisions were requested prior to acceptance, as described below.]"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for resubmitting your work entitled \u201cCell type-specific pharmacology of NMDA receptors using masked MK801\u201d for peer review at <i>eLife</i>. Your submission has been favorably evaluated by a Senior Editor and a Reviewing Editor."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The revised version of your manuscript addresses some of the issues raised by the reviewers but fails to address their primary concern \u2013 namely that the tone of the Discussion fails to acknowledge that the conclusions regarding the role of NMDA receptors in promoting cocaine-mediated synaptic plasticity within dopamine neurons only applies to the conditions tested, i.e., the 3-5 hours after cocaine treatment of midbrain slices in vitro. If the authors want to make conclusions regarding the role of NMDA receptors in vivo, then the authors need to administer cocaine and the drug in vivo."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.10206.007", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "We thank the reviewers for their positive assessment of this study. We have made adjustments based on what was suggested by the Reviewing Editor and reviewers to emphasize the technique rather than the resolution of a problem. This includes:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "a) In the subsection \u201cCell type-specific NMDA-R pharmacology in cocaine-induced synaptic plasticity\u201d we now more clearly introduce the Zweifel and Engblom studies as well as the differences between them: both of which used genetic ablation of <i>Grin1</i> over 1 week but showed different results with respect to DA neuron synaptic potentiation, which was due to methodological challenges with AMP-R compensation. We then conclude our Results section with: \u201cTherefore, using cell type-specific pharmacology, these experiments demonstrate that NMDA-Rs in dopamine neurons are necessary for cocaine-induced potentiation of synaptic AMPA-R currents in this cell type, <i>consistent with a prior report that examined this problem using Cre-ER</i> (<a href=\"#bib9\">Engblom, Bilbao et al. 2008</a>).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "b) In the Discussion with respect to our purpose for looking at NMDA-R in DA neurons, we changed the word <i>clarify</i> to <i>further examine</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "c) We added to the Discussion: \u201cBecause of this, it was not possible for us to determine if AMPA-R potentiation occurs after inactivation of NMDA-R in vivo using the chemogenetic method described here.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "d) The citation for the <i>Slc6a3</i><sup><i>cre</i></sup> mouse was added (<a href=\"#bib25\">Zhuang et al., 2005</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "[Editors' note: further revisions were requested prior to acceptance, as described below.]"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The revised version of your manuscript addresses some of the issues raised by the reviewers but fails to address their primary concern \u2013 namely that the tone of the Discussion fails to acknowledge that the conclusions regarding the role of NMDA receptors in promoting cocaine-mediated synaptic plasticity within dopamine neurons only applies to the conditions tested, i.e., the 3-5 hours after cocaine treatment of midbrain slices in vitro. If the authors want to make conclusions regarding the role of NMDA receptors in vivo, then the authors need to administer cocaine and the drug in vivo</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We agree with the reviewers that the focus should be on the cell type-specific pharmacology method. The choice to examine NMDA-R-mediated synaptic potentiation after cocaine administration was based on a desire to examine the utility of the system in a biological system. A nice example of the challenge with ion channel manipulations with genetic methods was the considerable difficulty that was reported by the Palmiter and L\u00fcscher groups in 2008 for DA neuron <i>Grin1</i> ablation. L\u00fcscher ultimately managed to avoid compensatory increases in AMPA-R rectification using Cre-ER in vivo. We thought that confirmation of this in vivo result, even with an ex vivo application of our tools would be a nice demonstration of the strengths of our method, and it also led to us discover an in vivo limitation of the current implementation of the method due to limited aqueous solubility. In our last revision, we made a number of changes to reflect this point. Now, we have made further modifications to emphasize the ex vivo aspects of our study and the confirmatory nature of it, relative to the Engblom study."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Additional changes include the final sentence of the Results, which now reads:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cTherefore, using cell type-specific pharmacology <i>in an ex vivo preparation</i>, these experiments demonstrate that NMDA-Rs in dopamine neurons are necessary for cocaine-induced potentiation of synaptic AMPA-R currents in this cell type ex vivo, which is consistent with a prior report that examined this problem using Cre-ER in vivo (<a href=\"#bib9\">Engblom et al., 2008</a>).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the first paragraph of the subsection \u201cCell type-specific NMDA-R pharmacology in cocaine-induced synaptic plasticity\u201d, the sentence has been changed to remove the word \u201cconcretely\u201d:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cHowever, it has been <i>challenging to establish</i> the functional importance of NMDA-Rs specifically in dopamine neurons for cocaine-induced synaptic AMPA-R potentiation, as opposed to a possible indirect process involving NMDA-Rs on other cell types.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The word \u201cconcretely\u201d was removed, and the sentence simply reflects the considerable difficulty that was reported in the L\u00fcscher and Palmiter papers to avoid compensatory effects for <i>Grin1</i> deletion."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the Discussion, we deleted a clause in the first sentence and we refer to our work as additional evidence for the necessity of NMDA-Rs for synaptic potentiation:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cWe applied this to dopamine neurons to further examine the role for NMDA-Rs in cocaine-induced synaptic potentiation, which has been investigated in several pharmacological (<a href=\"#bib20\">Ungless et al., 2001</a>; <a href=\"#bib1\">Argilli et al., 2008</a>) and genetic studies (<a href=\"#bib9\">Engblom et al., 2008</a>; <a href=\"#bib26\">Zweifel et al., 2008</a>). These experiments with cell type-specific pharmacology provide <i>additional</i> evidence for the necessity of NMDA-Rs in cocaine-induced long-term synaptic potentiation in dopamine neurons ex vivo.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "One sentence later we write:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cBecause of this, it was not possible for us to determine if AMPA-R potentiation occurs after inactivation of NMDA-R in vivo using the chemogenetic method described here. Therefore, additional improvements to cell type-specific pharmacological techniques are needed to facilitate manipulations in mammalian brains in vivo.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Moreover, the next paragraph is all about the utility of this tool as an ex vivo method for cell type-specific NMDA-R blockade. Based on these changes it seems that it would be difficult for the reader to now confuse our conclusions as referring to anything but an ex vivo finding and also as a confirmation of a prior in vivo finding by Engblom et al."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "=========="
+                }
+            ]
+        }
+    }
+}

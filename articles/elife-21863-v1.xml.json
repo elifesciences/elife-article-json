@@ -1,0 +1,1600 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "21863", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.21863", 
+        "authorLine": "Shiyou Zhu, Wensheng Wei", 
+        "title": "Making better CRISPR libraries", 
+        "titlePrefix": "Genetic screening", 
+        "published": "2016-11-03T00:00:00", 
+        "versionDate": "2016-11-03T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e21863", 
+        "pdf": "https://publishing-cdn.elifesciences.org/21863/elife-21863-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "genes-chromosomes", 
+                "name": "Genes and Chromosomes"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A new algorithm improves the performance of CRISPR-based genetic screens in mammals."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Zhu et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Shiyou Zhu", 
+                    "index": "Zhu, Shiyou"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biodynamic Optical Imaging Center, State Key Laboratory of Protein and Plant Gene Research", 
+                            "School of Life Sciences, Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Peking University-Tsinghua University-National Institute of Biological Sciences Joint Graduate Program", 
+                            "Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Wensheng Wei", 
+                    "index": "Wei, Wensheng"
+                }, 
+                "orcid": "0000-0002-8053-2423", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biodynamic Optical Imaging Center, State Key Laboratory of Protein and Plant Gene Research", 
+                            "School of Life Sciences, Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Beijing Advanced Innovation Center for Genomics", 
+                            "Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Peking-Tsinghua Center for Life Sciences", 
+                            "Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "wswei@pku.edu.cn"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "21863", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.21863", 
+        "authorLine": "Shiyou Zhu, Wensheng Wei", 
+        "title": "Making better CRISPR libraries", 
+        "titlePrefix": "Genetic screening", 
+        "published": "2016-11-03T00:00:00", 
+        "versionDate": "2016-11-03T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e21863", 
+        "pdf": "https://publishing-cdn.elifesciences.org/21863/elife-21863-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "genes-chromosomes", 
+                "name": "Genes and Chromosomes"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A new algorithm improves the performance of CRISPR-based genetic screens in mammals."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Zhu et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Shiyou Zhu", 
+                    "index": "Zhu, Shiyou"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biodynamic Optical Imaging Center, State Key Laboratory of Protein and Plant Gene Research", 
+                            "School of Life Sciences, Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Peking University-Tsinghua University-National Institute of Biological Sciences Joint Graduate Program", 
+                            "Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Wensheng Wei", 
+                    "index": "Wei, Wensheng"
+                }, 
+                "orcid": "0000-0002-8053-2423", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biodynamic Optical Imaging Center, State Key Laboratory of Protein and Plant Gene Research", 
+                            "School of Life Sciences, Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Beijing Advanced Innovation Center for Genomics", 
+                            "Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Peking-Tsinghua Center for Life Sciences", 
+                            "Peking University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Beijing", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Beijing"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "wswei@pku.edu.cn"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "CRISPR", 
+            "genetic screening", 
+            "nucleosomes"
+        ], 
+        "relatedArticles": [
+            "19760"
+        ], 
+        "body": [
+            {
+                "type": "paragraph", 
+                "text": "<b>Related research article</b> Horlbeck MA, Gilbert LA, Villalta JE, Adamson B, Pak RA, Chen Y, Fields AP, Park CY, Corn JE, Kampmann M, Weissman JS. 2016. Compact and highly active next-generation libraries for CRISPR-mediated gene repression and activation. <i>eLife</i> <b>5</b>:e19760. doi: <a href=\"http://dx.doi.org/10.7554/eLife.19760\">10.7554/eLife.19760</a>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Since the human genome sequence was completed in 2003, genome-wide screening has become a popular method for quickly associating specific genes with their roles in cells. More recently, the CRISPR-Cas9 system has become the dominant tool for genome-editing (<a href=\"#bib9\">Jinek et al., 2012</a>; <a href=\"#bib2\">Cong et al., 2013</a>; <a href=\"#bib11\">Mali et al., 2013</a>) and it has subsequently been adapted to make highly effective genetic screening platforms (<a href=\"#bib12\">Shalem et al., 2014</a>; <a href=\"#bib15\">Zhou et al., 2014</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "The CRISPR-Cas9 system is derived from the methods used by certain bacteria to identify and\u00a0cut up foreign genetic material (<a href=\"#bib1\">Barrangou et al., 2007</a>). To edit the genome, specially designed RNA molecules guide a nuclease enzyme called Cas9 to the location of interest in the DNA sequence; the Cas9 enzyme then cuts the DNA at this position. A mutant form of Cas9 that is unable to cut DNA can also be used to generate libraries of single guide RNAs (sgRNAs) that target regions around transcription start sites in the genome. By allowing researchers to either repress or activate gene expression \u2013 techniques that are known as CRISPR interference (CRISPRi) and CRISPR activation (CRISPRa), respectively \u2013 these sgRNAs make it possible to carry out powerful genetic screens in mammalian cells (<a href=\"#bib4\">Gilbert et al., 2014</a>; <a href=\"#bib10\">Konermann et al., 2015</a>). Now, in eLife, Jonathan Weissman and colleagues at the University of California, San Francisco \u2013 including Max Horlbeck as first author \u2013 report that a new algorithm can predict the activity of sgRNAs more accurately than existing algorithms (<a href=\"#bib6\">Horlbeck et al., 2016a</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Many factors affect the ability of sgRNAs to activate or repress genes including the sequence, length and secondary structure of the sgRNA (<a href=\"#bib3\">Doench et al., 2014</a>; <a href=\"#bib14\">Xu et al., 2015</a>). Furthermore, the DNA in mammalian cells (and also in other eukaryotic cells) is packaged inside structures called nucleosomes, which make it difficult for the Cas9 enzyme to access the DNA (<a href=\"#bib5\">Hinz et al., 2015</a>; <a href=\"#bib7\">Horlbeck et al., 2016b</a>; <a href=\"#bib8\">Isaac et al., 2016</a>). This is particularly important for CRISPRi and CRISPRa screens because the mutant Cas9 enzyme must stay bound to the DNA for extended periods of time. Horlbeck et al. therefore optimized the design of their sgRNAs to target DNA regions that were not packaged in nucleosomes and thus were more accessible to mutant Cas9."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "To improve the CRISPRi and CRISPRa libraries that they had made previously (<a href=\"#bib4\">Gilbert et al., 2014</a>), Horlbeck et al. analyzed data from 30 CRISPRi screens and 9 CRISPRa screens and defined \u201cactivity scores\u201d for every sgRNA relative to the sgRNA with the strongest activity for each gene. They then used this information to make new CRISPRi and CRISPRa libraries that contained the ten most active sgRNAs for each gene."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "The new human CRISPRi library was used to screen chronic myeloid leukemia K562 cells to identify genes that are essential for cell growth. Impressively, this library was able to identify about 10% more essential genes compared with the original CRISPRi library (<a href=\"#bib4\">Gilbert et al., 2014</a>). Furthermore, a half-sized version of the new human CRISPRi library (with only the top five sgRNAs per gene) performed similarly to the full-sized version. This is reassuring because smaller libraries are easier to construct and use in screens. Similarly, Horlbeck et al. also demonstrated that the new human CRISPRa library outperformed the original one."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Horlbeck et al. found that, when used with the mutant form of Cas9, none of the CRISPRi libraries had toxic side effects like those observed with other approaches that use the active enzyme (<a href=\"#bib13\">Wang et al., 2015</a>). This makes it possible to effectively identify genes, even if they show only slight differences in expression compared to negative controls."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "To summarize, this study established an effective algorithm to predict the activity of sgRNAs based on the location of nucleosomes in the genome. Horlbeck et al. used this algorithm to generate new CRISPRi and CRISPRa libraries with much improved performance in genetic screens in humans and mice. It remains to be seen if the algorithm could be used to optimize other types of CRISPR screens, especially ones that use the normal Cas9 enzyme."
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Barrangou", 
+                            "index": "Barrangou, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Fremaux", 
+                            "index": "Fremaux, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Deveau", 
+                            "index": "Deveau, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Richards", 
+                            "index": "Richards, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Boyaval", 
+                            "index": "Boyaval, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Moineau", 
+                            "index": "Moineau, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Romero", 
+                            "index": "Romero, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Horvath", 
+                            "index": "Horvath, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "CRISPR provides acquired resistance against viruses in prokaryotes", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "315", 
+                "pages": {
+                    "first": "1709", 
+                    "last": "1712", 
+                    "range": "1709\u20131712"
+                }, 
+                "doi": "10.1126/science.1138140"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Cong", 
+                            "index": "Cong, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Ran", 
+                            "index": "Ran, FA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Cox", 
+                            "index": "Cox, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Lin", 
+                            "index": "Lin, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Barretto", 
+                            "index": "Barretto, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Habib", 
+                            "index": "Habib, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PD Hsu", 
+                            "index": "Hsu, PD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Wu", 
+                            "index": "Wu, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Jiang", 
+                            "index": "Jiang, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Marraffini", 
+                            "index": "Marraffini, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Zhang", 
+                            "index": "Zhang, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Multiplex genome engineering using CRISPR/Cas systems", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "339", 
+                "pages": {
+                    "first": "819", 
+                    "last": "823", 
+                    "range": "819\u2013823"
+                }, 
+                "doi": "10.1126/science.1231143"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JG Doench", 
+                            "index": "Doench, JG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hartenian", 
+                            "index": "Hartenian, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DB Graham", 
+                            "index": "Graham, DB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Tothova", 
+                            "index": "Tothova, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hegde", 
+                            "index": "Hegde, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Smith", 
+                            "index": "Smith, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Sullender", 
+                            "index": "Sullender, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Ebert", 
+                            "index": "Ebert, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Xavier", 
+                            "index": "Xavier, RJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DE Root", 
+                            "index": "Root, DE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rational design of highly active sgRNAs for CRISPR-Cas9-mediated gene inactivation", 
+                "journal": {
+                    "name": [
+                        "Nature Biotechnology"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "1262", 
+                    "last": "1267", 
+                    "range": "1262\u20131267"
+                }, 
+                "doi": "10.1038/nbt.3026"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Gilbert", 
+                            "index": "Gilbert, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Horlbeck", 
+                            "index": "Horlbeck, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Adamson", 
+                            "index": "Adamson, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Villalta", 
+                            "index": "Villalta, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EH Whitehead", 
+                            "index": "Whitehead, EH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Guimaraes", 
+                            "index": "Guimaraes, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Panning", 
+                            "index": "Panning, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL Ploegh", 
+                            "index": "Ploegh, HL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MC Bassik", 
+                            "index": "Bassik, MC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LS Qi", 
+                            "index": "Qi, LS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kampmann", 
+                            "index": "Kampmann, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Weissman", 
+                            "index": "Weissman, JS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Genome-scale CRISPR-mediated control of gene repression and activation", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "159", 
+                "pages": {
+                    "first": "647", 
+                    "last": "661", 
+                    "range": "647\u2013661"
+                }, 
+                "doi": "10.1016/j.cell.2014.09.029"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Hinz", 
+                            "index": "Hinz, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MF Laughery", 
+                            "index": "Laughery, MF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Wyrick", 
+                            "index": "Wyrick, JJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nucleosomes inhibit Cas9 endonuclease activity in vitro", 
+                "journal": {
+                    "name": [
+                        "Biochemistry"
+                    ]
+                }, 
+                "volume": "54", 
+                "pages": {
+                    "first": "7063", 
+                    "last": "7066", 
+                    "range": "7063\u20137066"
+                }, 
+                "doi": "10.1021/acs.biochem.5b01108"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2016", 
+                "discriminator": "a", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Horlbeck", 
+                            "index": "Horlbeck, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Gilbert", 
+                            "index": "Gilbert, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Villalta", 
+                            "index": "Villalta, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Adamson", 
+                            "index": "Adamson, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Pak", 
+                            "index": "Pak, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Fields", 
+                            "index": "Fields, AP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CY Park", 
+                            "index": "Park, CY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Corn", 
+                            "index": "Corn, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kampmann", 
+                            "index": "Kampmann, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Weissman", 
+                            "index": "Weissman, JS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Compact and highly active next-generation libraries for CRISPR-mediated gene repression and activation", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e19760", 
+                "doi": "10.7554/eLife.19760"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2016", 
+                "discriminator": "b", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Horlbeck", 
+                            "index": "Horlbeck, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LB Witkowsky", 
+                            "index": "Witkowsky, LB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Guglielmi", 
+                            "index": "Guglielmi, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Replogle", 
+                            "index": "Replogle, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Gilbert", 
+                            "index": "Gilbert, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Villalta", 
+                            "index": "Villalta, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SE Torigoe", 
+                            "index": "Torigoe, SE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Tjian", 
+                            "index": "Tjian, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Weissman", 
+                            "index": "Weissman, JS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nucleosomes impede Cas9 access to DNA in vivo and in vitro", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e12677", 
+                "doi": "10.7554/eLife.12677"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Isaac", 
+                            "index": "Isaac, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Jiang", 
+                            "index": "Jiang, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Doudna", 
+                            "index": "Doudna, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WA Lim", 
+                            "index": "Lim, WA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Narlikar", 
+                            "index": "Narlikar, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Almeida", 
+                            "index": "Almeida, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nucleosome breathing and remodeling constrain CRISPR-Cas9 function", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "13450", 
+                "doi": "10.7554/eLife.13450"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Jinek", 
+                            "index": "Jinek, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Chylinski", 
+                            "index": "Chylinski, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Fonfara", 
+                            "index": "Fonfara, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hauer", 
+                            "index": "Hauer, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Doudna", 
+                            "index": "Doudna, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Charpentier", 
+                            "index": "Charpentier, E"
+                        }
+                    }
+                ], 
+                "articleTitle": "A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "337", 
+                "pages": {
+                    "first": "816", 
+                    "last": "821", 
+                    "range": "816\u2013821"
+                }, 
+                "doi": "10.1126/science.1225829"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Konermann", 
+                            "index": "Konermann, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MD Brigham", 
+                            "index": "Brigham, MD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AE Trevino", 
+                            "index": "Trevino, AE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Joung", 
+                            "index": "Joung, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "OO Abudayyeh", 
+                            "index": "Abudayyeh, OO"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Barcena", 
+                            "index": "Barcena, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PD Hsu", 
+                            "index": "Hsu, PD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Habib", 
+                            "index": "Habib, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Gootenberg", 
+                            "index": "Gootenberg, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Nishimasu", 
+                            "index": "Nishimasu, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Nureki", 
+                            "index": "Nureki, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Zhang", 
+                            "index": "Zhang, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Genome-scale transcriptional activation by an engineered CRISPR-Cas9 complex", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "517", 
+                "pages": {
+                    "first": "583", 
+                    "last": "588", 
+                    "range": "583\u2013588"
+                }, 
+                "doi": "10.1038/nature14136"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Mali", 
+                            "index": "Mali, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Yang", 
+                            "index": "Yang, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KM Esvelt", 
+                            "index": "Esvelt, KM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Aach", 
+                            "index": "Aach, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Guell", 
+                            "index": "Guell, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE DiCarlo", 
+                            "index": "DiCarlo, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Norville", 
+                            "index": "Norville, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GM Church", 
+                            "index": "Church, GM"
+                        }
+                    }
+                ], 
+                "articleTitle": "RNA-guided human genome engineering via Cas9", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "339", 
+                "pages": {
+                    "first": "823", 
+                    "last": "826", 
+                    "range": "823\u2013826"
+                }, 
+                "doi": "10.1126/science.1232033"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Shalem", 
+                            "index": "Shalem, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NE Sanjana", 
+                            "index": "Sanjana, NE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hartenian", 
+                            "index": "Hartenian, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Shi", 
+                            "index": "Shi, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Scott", 
+                            "index": "Scott, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TS Mikkelsen", 
+                            "index": "Mikkelsen, TS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Heckl", 
+                            "index": "Heckl, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Ebert", 
+                            "index": "Ebert, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DE Root", 
+                            "index": "Root, DE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JG Doench", 
+                            "index": "Doench, JG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Zhang", 
+                            "index": "Zhang, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Genome-scale CRISPR-Cas9 knockout screening in human cells", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "343", 
+                "pages": {
+                    "first": "84", 
+                    "last": "87", 
+                    "range": "84\u201387"
+                }, 
+                "doi": "10.1126/science.1247005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Wang", 
+                            "index": "Wang, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Birsoy", 
+                            "index": "Birsoy, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NW Hughes", 
+                            "index": "Hughes, NW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KM Krupczak", 
+                            "index": "Krupczak, KM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Post", 
+                            "index": "Post, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Wei", 
+                            "index": "Wei, JJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ES Lander", 
+                            "index": "Lander, ES"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DM Sabatini", 
+                            "index": "Sabatini, DM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Identification and characterization of essential genes in the human genome", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "350", 
+                "pages": {
+                    "first": "1096", 
+                    "last": "1101", 
+                    "range": "1096\u20131101"
+                }, 
+                "doi": "10.1126/science.aac7041"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Xu", 
+                            "index": "Xu, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Xiao", 
+                            "index": "Xiao, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CH Chen", 
+                            "index": "Chen, CH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Li", 
+                            "index": "Li, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CA Meyer", 
+                            "index": "Meyer, CA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Wu", 
+                            "index": "Wu, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Wu", 
+                            "index": "Wu, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Cong", 
+                            "index": "Cong, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Zhang", 
+                            "index": "Zhang, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Liu", 
+                            "index": "Liu, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Brown", 
+                            "index": "Brown, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "XS Liu", 
+                            "index": "Liu, XS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Sequence determinants of improved CRISPR sgRNA design", 
+                "journal": {
+                    "name": [
+                        "Genome Research"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "1147", 
+                    "last": "1157", 
+                    "range": "1147\u20131157"
+                }, 
+                "doi": "10.1101/gr.191452.115"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zhou", 
+                            "index": "Zhou, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Zhu", 
+                            "index": "Zhu, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Cai", 
+                            "index": "Cai, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Yuan", 
+                            "index": "Yuan, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Li", 
+                            "index": "Li, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Huang", 
+                            "index": "Huang, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Wei", 
+                            "index": "Wei, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "High-throughput screening of a CRISPR/Cas9 library for functional genomics in human cells", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "509", 
+                "pages": {
+                    "first": "487", 
+                    "last": "491", 
+                    "range": "487\u2013491"
+                }, 
+                "doi": "10.1038/nature13166"
+            }
+        ]
+    }
+}

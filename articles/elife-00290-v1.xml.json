@@ -1,0 +1,2634 @@
+{
+    "journal": {
+        "id": "elife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "00290", 
+        "version": 1, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.00290", 
+        "authorLine": "Jeremy D Wilbur, Rebecca Heald", 
+        "title": "Mitotic spindle scaling during <i>Xenopus</i> development by kif2a and importin \u03b1", 
+        "published": "2013-02-19T00:00:00", 
+        "versionDate": "2013-02-19T00:00:00", 
+        "volume": 2, 
+        "elocationId": "e00290", 
+        "pdf": "https://publishing-cdn.elifesciences.org/00290/elife-00290-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "developmental-biology-stem-cells", 
+                "name": "Developmental Biology and Stem Cells"
+            }
+        ], 
+        "researchOrganisms": [
+            "Xenopus"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.00290.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Early development of many animals is characterized by rapid cleavages that dramatically decrease cell size, but how the mitotic spindle adapts to changing cell dimensions is not understood. To identify mechanisms that scale the spindle during <i>Xenopus laevis</i> embryogenesis, we established an in vitro system using cytoplasmic extracts prepared from embryos that recapitulates in vivo spindle size differences between stage 3 (4 cells, 37 \u00b5m) and stage 8 (\u223c4000 cells, 18 \u00b5m). We identified the kinesin-13 kif2a as a driver of developmental spindle scaling whose microtubule-destabilizing activity is inhibited in stage 3 spindles by the transport receptor importin \u03b1, and activated in stage 8 when importin \u03b1 partitions to a membrane pool. Altering spindle size in developing embryos impaired spindle orientation during metaphase, but chromosome segregation remained robust. Thus, spindle size in <i>Xenopus</i> development is coupled to cell size through a ratiometric mechanism controlling microtubule destabilization."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-3.0", 
+            "holder": "Wilbur and Heald", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Jeremy D Wilbur", 
+                    "index": "Wilbur, Jeremy D"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cell Biology", 
+                            "University of California, Berkeley"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "jwilbur@berkeley.edu"
+                ], 
+                "contribution": "JDW, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist"
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Rebecca Heald", 
+                    "index": "Heald, Rebecca"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cell Biology", 
+                            "University of California, Berkeley"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "bheald@berkeley.edu"
+                ], 
+                "contribution": "RH, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist"
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All the animals were handled according to approved institutional animal care and use committee (IACUC) protocols of the University of California. The protocol was approved by the Animal Care and Use Committee (Permit Number: R238-1112). Every effort was made to minimize suffering."
+            }
+        ], 
+        "impactStatement": "An interaction between two proteins enables the spindle\u2014the structure that segregates chromosome pairs during mitosis\u2014to change size as cells divide."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "00290", 
+        "version": 1, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.00290", 
+        "authorLine": "Jeremy D Wilbur, Rebecca Heald", 
+        "title": "Mitotic spindle scaling during <i>Xenopus</i> development by kif2a and importin \u03b1", 
+        "published": "2013-02-19T00:00:00", 
+        "versionDate": "2013-02-19T00:00:00", 
+        "volume": 2, 
+        "elocationId": "e00290", 
+        "pdf": "https://publishing-cdn.elifesciences.org/00290/elife-00290-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "developmental-biology-stem-cells", 
+                "name": "Developmental Biology and Stem Cells"
+            }
+        ], 
+        "researchOrganisms": [
+            "Xenopus"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.00290.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Early development of many animals is characterized by rapid cleavages that dramatically decrease cell size, but how the mitotic spindle adapts to changing cell dimensions is not understood. To identify mechanisms that scale the spindle during <i>Xenopus laevis</i> embryogenesis, we established an in vitro system using cytoplasmic extracts prepared from embryos that recapitulates in vivo spindle size differences between stage 3 (4 cells, 37 \u00b5m) and stage 8 (\u223c4000 cells, 18 \u00b5m). We identified the kinesin-13 kif2a as a driver of developmental spindle scaling whose microtubule-destabilizing activity is inhibited in stage 3 spindles by the transport receptor importin \u03b1, and activated in stage 8 when importin \u03b1 partitions to a membrane pool. Altering spindle size in developing embryos impaired spindle orientation during metaphase, but chromosome segregation remained robust. Thus, spindle size in <i>Xenopus</i> development is coupled to cell size through a ratiometric mechanism controlling microtubule destabilization."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-3.0", 
+            "holder": "Wilbur and Heald", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Jeremy D Wilbur", 
+                    "index": "Wilbur, Jeremy D"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cell Biology", 
+                            "University of California, Berkeley"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "jwilbur@berkeley.edu"
+                ], 
+                "contribution": "JDW, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist"
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Rebecca Heald", 
+                    "index": "Heald, Rebecca"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cell Biology", 
+                            "University of California, Berkeley"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "bheald@berkeley.edu"
+                ], 
+                "contribution": "RH, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist"
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All the animals were handled according to approved institutional animal care and use committee (IACUC) protocols of the University of California. The protocol was approved by the Animal Care and Use Committee (Permit Number: R238-1112). Every effort was made to minimize suffering."
+            }
+        ], 
+        "impactStatement": "An interaction between two proteins enables the spindle\u2014the structure that segregates chromosome pairs during mitosis\u2014to change size as cells divide.", 
+        "keywords": [
+            "mitotic spindle", 
+            "embryogenesis", 
+            "microtubule", 
+            "kif2a", 
+            "intracellular scaling"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.00290.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "In the earliest stages of development, animal cells undergo multiple rounds of division without growth via a process known as mitosis. Over the course of just 12 rounds of cell division, a single fertilized egg is transformed into more than 4000 smaller cells."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Before dividing, the cell must first replicate its chromosomes. A structure called the mitotic spindle then separates the members of each chromosome pair and distributes them evenly between the two daughter cells. Given that the daughter cells become smaller with each round of division, the spindle must also become smaller to ensure that the chromosomes are pulled apart an appropriate distance. However, it has been unclear how the cell achieves this."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Now, Wilbur and Heald report insights into the mechanism by which spindle size is coordinated with cell size, using the model organism <i>Xenopus laevis\u2014</i>a frog that produces large embryos that are easy to manipulate. They began by preparing extracts of cytoplasm from <i>X. laevis</i> embryos at two different developmental stages: one set of embryos contained 4 cells each and the other set contained \u223c4000 cells. They found that the spindle, which is composed largely of microtubules\u2014hollow filaments that can become longer or shorter through the addition or removal of tubulin building blocks\u2014was almost twice as large in the four-cell embryos as in the more developed embryos."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Moreover, spindle size was determined by the actions of two proteins: kif2a and importin-\u03b1. Binding of kif2a destabilized microtubules and caused them to shorten; importin-\u03b1 blocked this process by binding to kif2a and preventing it from interacting with microtubules. Wilbur and Heald found that over the course of development, importin-\u03b1 became increasingly localized to the cell membrane, meaning that there was less available to bind to kif2a in the cytoplasm. This freed up kif2a to interact with and destabilize microtubules, and led ultimately to a reduction in spindle size."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Given that the overall ratio of cell surface membrane to cytoplasm increases as cells undergo division without growth, interaction between kif2a and importin-\u03b1 could be the long-sought mechanism by which spindle and cell sizes are coordinated early in development."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Cell size varies widely among different organisms and cell types, and changes rapidly during early animal development when cell division occurs in the absence of growth. The mitotic spindle, a dynamic bipolar structure composed primarily of microtubules (MTs) and organizing proteins (<a href=\"#bib32\">Walczak and Heald, 2008</a>), must adjust to cell size to segregate chromosomes the proper distance and signal to the cell cortex to specify orientation of the cleavage furrow (<a href=\"#bib18\">Levy and Heald, 2012</a>). However, the mechanisms coordinating cell and spindle size are poorly understood, and the functional consequences of altering these mechanisms during vertebrate development are unknown."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Embryogenesis of the frog <i>Xenopus laevis</i> typifies the developmental scaling problem, and both cell and spindle sizes have been measured (<a href=\"#bib37\">Wuhr et al., 2008</a>). Following fertilization, the \u223c1.2-mm-diameter egg synchronously divides 12 times at approximately 30-min intervals, leading to a \u223c100-fold decrease in cell volume and at least a 20-fold decrease in cell diameter by the midblastula transition (stage 8.5), when zygotic transcription starts. Initially, the cortically localized meiosis II spindle (\u223c35 \u00b5m) segregates chromosomes a short distance, generating a small polar body that preserves egg cytoplasm. During the early cleavages, there is an upper limit to spindle size (\u223c60 \u00b5m), and astral microtubules mediate movement of chromosomes long distances during anaphase (<a href=\"#bib37\">Wuhr et al., 2008</a>). At these stages, spindle size is small compared to cell size, and cytoplasmic mechanisms likely operate, since in vivo spindle size is maintained in extracts prepared from eggs or two-cell stage embryos (<a href=\"#bib23\">Mitchison et al., 2005</a>; <a href=\"#bib37\">Wuhr et al., 2008</a>; <a href=\"#bib20\">Loughlin et al., 2011</a>). As cell and spindle size converge, a constant ratio of \u223c2:1 cell diameter:spindle length is established, and spindle length reduces to \u223c20 \u00b5m by the end of the synchronous cleavage divisions. To what extent cell size influences spindle size or if changes in cytoplasmic activities contribute to spindle scaling at these later stages is unknown."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Experiment and simulation indicate that the balance of MT nucleation, transport, and destabilization are critical for setting spindle size in egg extracts (<a href=\"#bib19\">Loughlin et al., 2010</a>; <a href=\"#bib2\">Brugues et al., 2012</a>). By comparing two closely related <i>Xenopus</i> species, we showed previously that meiotic spindle size is partially controlled by activity of the MT severing protein katanin (<a href=\"#bib20\">Loughlin et al., 2011</a>). However, the genetically encoded differences that underpinned variation in katanin activity cannot play a role during early development in an embryo with a single genetic background and when transcription is repressed. In early <i>Caenorhabditis elegans</i> development, decreasing spindle length correlates with a decrease in centrosome size and a decay gradient of the protein of TPXL-1 along spindle MTs (<a href=\"#bib9\">Greenan et al., 2010</a>). In contrast, spindle assembly in <i>X. laevis</i> egg extracts does not require centrosomes and depends heavily on a chromatin-centered gradient of RanGTP, which locally releases spindle assembly factors from the nucleocytoplasmic transport protein importin \u03b2 and its adaptor importin \u03b1 that binds nuclear localization sequence (NLS)\u2013containing cargos (<a href=\"#bib10\">Gruss et al., 2001</a>; <a href=\"#bib13\">Kalab and Heald, 2008</a>). The respective contribution of gradients and centrosomes are expected to alter spindle architecture and size, and could be influenced by cell size through availability of components (<a href=\"#bib8\">Goehring and Hyman, 2012</a>). The gradual transition from meiotic to mitotic spindle architecture observed in mouse embryos supports this view (<a href=\"#bib4\">Courtois et al., 2012</a>). Collectively, these observations suggest that changes in gradients and spindle assembly pathways are likely to accompany cell size changes and could influence spindle size."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To address how spindle size is determined during vertebrate embryogenesis, we created an embryo extract system capable of assembling spindles in cytoplasmic extracts at any stage of <i>X. laevis</i> development up to the midblastula transition when cell divisions become asynchronous (<a href=\"#bib26\">Newport and Kirschner, 1982</a>). We compared stage 3 and stage 8, the two extremes of spindle size in our extract system, and found that MT dynamics are modified to reduce spindle size upon release of an inhibitory interaction between the MT depolymerizing kinesin kif2a and importin \u03b1. This occurs through redistribution of importin \u03b1 from the cytoplasm to a membrane fraction. Taking advantage of this mechanism to modify spindle size without functionally perturbing the spindle allowed us to uncover an important role for spindle size in maintaining spindle orientation in the large cells of early <i>Xenopus</i> development. This work suggests that the changing physical features of the cell can drive intracellular scaling through biochemical partitioning and steady-state redistribution of activities."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Reconstitution of spindle size differences in extracts of developing embryos", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To investigate how spindle size scales with cell size during development, we established a spindle reconstitution system utilizing cytoplasmic extracts from <i>X. laevis</i> embryos at different embryonic stages. This system is analogous to the cytostatic factor (CSF) arrested meiosis II extract derived from unfertilized <i>X. laevis</i> eggs, which has facilitated fundamental discoveries pertaining to the cell cycle and spindle assembly (<a href=\"#bib22\">Maresca and Heald, 2006</a>). However, embryo extracts form mitotic rather than meiotic spindles, and spindles assemble to varying sizes corresponding to their developmental stage in vivo (<a href=\"#fig1\">Figure 1A</a>). Since embryo extracts lack the natural metaphase arrest induced by CSF activity in egg extracts, it was necessary to artificially arrest them by adding a nondegradable form of cyclin B to maintain high cyclin-dependent kinase 1 activity together with a dominant negative inhibitor of the anaphase promoting complex, UbcH10 C114S (<a href=\"#bib28\">Rape et al., 2006</a>). Additionally, an empirically determined time point within each developmental stage was optimal for generating functional extracts. For example, to generate stage 3 extracts from embryos developing at 23\u00b0C, packing and crushing was initiated exactly 1 hr and 40 min after fertilization and completed 20 min later, just before the second embryonic cleavage would have occurred."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.003", 
+                                "id": "fig1", 
+                                "label": "Figure 1.", 
+                                "title": "Embryo extracts recapitulate spindle scaling during development.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Schematic of early embryonic developmental stages of <i>Xenopus laevis</i> used in this study and representative images of spindles formed in egg and embryo extracts and in fixed hemisected eggs or embryos. Tubulin fluorescence is red or gray and DNA is blue. (<b>B</b>) Length analysis of spindles in individual or mixed embryo extracts. Fixed spindles were centrifuged onto coverslips and pole-to-pole length was measured from 49 to 230 spindles in each condition sampled from three independent experiments. Mean \u00b1 SD, p&lt;0.0001 by Kruskal\u2013Wallis test. Representative images are shown for mixtures as indicated. The scale bars represent 10 \u00b5m. (<b>C</b>) Spindles from unfractionated stage 8 extract, stage 8 extract centrifuged at 3000\u00d7<i>g</i> for 10 min to remove nuclei or stage 8 extract filtered through a 1-\u00b5m filter with added demembranated sperm nuclei were sedimented onto coverslips, and pole-to-pole length was measured. Mean \u00b1 SD, n \u2265 29 spindles per condition. Differences were not considered statistically significant by an unpaired t-test. (<b>D</b>) Spindles were generated in stage 3 extract with nuclei purified from stage 8 extract. Spindles were processed and analyzed as above. Mean \u00b1 SD, n \u2265 40 spindles from two extracts. Differences were not statistically significant by an unpaired t-test."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig1-v1.tif", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.004", 
+                                        "id": "fig1s1", 
+                                        "label": "Figure 1\u2014figure supplement 1.", 
+                                        "title": "MT flux and severing are similar in embryo extracts.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Examples of MT length data used to calculate the dynamics of centrosome-nucleated MTs. One MT catastrophes during the time course and starts to shrink while a different MT is shrinking and undergoes rescue. (<b>B</b>) Examples of fluorescent speckle analysis of stage 3 and stage 8 spindles. Sparse labeling of MTs with rhodamine tubulin permitted tracking of individual speckles as they moved toward spindle poles. Kymograph analysis allowed quantification of flux rates within the spindles. Data are included in <a href=\"#tbl1\">Table 1</a>. (<b>C</b>) MT severing activity was measured and analyzed as in <a href=\"#bib20\">Loughlin et al. (2011)</a> with no significant difference between stage 3 and stage 8. Data are representative of two extracts at each stage."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig1-figsupp1-v1.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The morphology of embryo extract spindles resembled that of mitotic spindles in the embryo and frequently possessed astral MTs, unlike meiosis II spindles formed in egg extracts (<a href=\"#fig1\">Figure 1A,B</a>). Comparing the extracts that differed most, MTs typically appeared less dense in stage 8 spindles compared to stage 3 or meiosis II spindles, indicating different underlying MT architectures. In vivo spindle size can vary significantly within the different sized cells at a single developmental stage. For instance, stage 8 embryo spindles range from \u223c20 \u00b5m in smaller cells of the animal pole to \u223c50 \u00b5m in length in the large vegetal pole cells. Spindle size varied less within an embryo extract, and on average was slightly reduced compared to the equivalent stage in vivo. Stage 3 populations had average lengths ranging from \u223c35 to 40 \u00b5m and stage 8, \u223c17 to 20 \u00b5m, closer to the size of spindles in animal pole cells. The most common defect observed in embryo extract spindles was the failure of chromosomes to fully align at the metaphase plate, especially in stage 3 extracts, likely due to poor metaphase arrest (unpublished data). These observations indicate that embryo extracts do not entirely preserve spindle morphology and function. However, spindle scaling was apparent in vitro, with a \u223c20 \u00b5m decrease in length between stage 3 and stage 8 extract spindles, compared to \u223c30 \u00b5m in vivo."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine whether cytoplasmic mechanisms operate to control spindle size variation in the two extracts, we mixed them in different proportions before initiating spindle assembly. Altering the ratio of stage 3 and stage 8 extracts led to dose-dependent changes in spindle size (<a href=\"#fig1\">Figure 1B</a>). Since stage 8 extracts contain abundant endogenous nuclei whose chromosomes are incorporated into forming spindles, we wondered whether the ratio of nuclei to cytoplasm or the contents of endogenous nuclei were affecting spindle size in stage 8 extracts. We therefore compared reactions depleted of endogenous nuclei by centrifugation, or filtered to remove all nuclei, and then supplemented with exogenous sperm nuclei. Average spindle lengths were very similar in the presence of \u223c2000 nuclei per microliter in untreated stage 8 extract, \u223c1000 nuclei per microliter in centrifuged stage 8 extract, and \u223c500 sperm nuclei per microliter in filtered stage 8 extract (<a href=\"#fig1\">Figure 1C</a>). Furthermore, purified stage 8 nuclei added to stage 3 extracts yielded indistinguishable spindle lengths compared to sperm nuclei (<a href=\"#fig1\">Figure 1D</a>). These experiments indicate that the major spindle size controlling factors in embryo extracts are soluble cytoplasmic components."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Spindles assembly occurs through different pathways in stage 3 and stage 8 extracts", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To distinguish whether spindles assembled through different pathways in the two embryo extracts, we examined spindle assembly intermediates 15 min after reactions were initiated. Whereas MTs nucleated around chromatin in stage 3 extracts, and little interaction of centrosomal MTs with the forming spindle was observed, centrosomes provided most of the MT nucleation in stage 8 extracts and few MTs appeared around the chromosomes except when a centrosome was located nearby (<a href=\"#fig2\">Figure 2A,B</a>). These observations suggest that the spindle assembly pathway switches from chromatin-driven in stage 3 to centrosome-driven in stage 8 extracts. To test this idea, we compared the sensitivity of embryo extract spindle assembly to addition of Ran(T24N), a dominant negative inhibitor of the RanGEF RCC1 that destroys the chromatin-induced RanGTP and cargo gradients, severely disrupting spindle assembly in <i>X. laevis</i> egg extracts (<a href=\"#bib14\">Kalab et al., 2002</a>). Stage 3 spindles were similarly disrupted by this treatment, resulting in a significant (p&lt;0.001, comparing treated to control) loss of tubulin intensity in spindle center, while stage 8 extract spindles were unaffected under the same conditions (p&gt;0.01, <a href=\"#fig2\">Figure 2C,D</a>). Thus, stage 3 spindles assemble by a chromatin-driven mechanism requiring a RanGTP gradient, similar to the <i>Xenopus</i> meiotic spindle, whereas stage 8 spindle assembly more closely resembles the centrosome-dominated spindle pathway typical of somatic cell types."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.005", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Spindle assembly pathways change during development.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Spindle assembly intermediates 15 min after initiation exhibit different morphologies in stage 3 and stage 8 extracts. (<b>B</b>) Left panel: Line scan quantification of tubulin intensity in spindle intermediates starting at the centrosome and ending at chromatin with normalized lengths for statistical analysis. Right panel: t-test statistical analysis across discrete length bins of stage 3 and stage 8 intensities as described in the experimental procedures. Black dashed line is equivalent to a p value of 0.01 and red dashed line is equivalent to a p value of 0.001. (<b>C</b>) Inhibition of the RanGTP gradient by addition of 1 \u00b5M RanT24N disrupts steady-state spindles in stage 3 but not stage 8 extracts. (<b>D</b>) Upper panels: Line scan quantification of tubulin intensity with normalized spindle lengths for statistical analysis. Lower panels: t-test statistical analysis across discrete length bins of control vs 1 \u00b5M RanT24N addition as described in the experimental procedures. Black dashed line is equivalent to a p value of 0.01 and red dashed line is equivalent to a p value of 0.001. Mean \u00b1 SE from three extracts, tubulin is red and DNA is blue. The scale bars represent 10 \u00b5m."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig2-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Changes in MT dynamics and spindle recruitment of kif2a correlate with spindle size", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We have shown previously that changes in MT stability contribute to spindle length differences in a computational 2D meiotic spindle simulation (<a href=\"#bib19\">Loughlin et al., 2010</a>) and between <i>Xenopus tropicalis</i> and <i>Xenopus laevis</i> egg extracts (<a href=\"#bib20\">Loughlin et al., 2011</a>), and hypothesized that altered MT dynamics also underlie the different spindle sizes observed in stage 3 vs stage 8 embryo extracts. Therefore, we characterized the dynamic parameters of single MTs nucleated by centrosomes using time-lapse fluorescence microscopy, and found the primary difference between stage 3 and stage 8 extracts to be a threefold increase in MT catastrophe frequency (<a href=\"#tbl1\">Table 1</a>, <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1A</a>, and <a href=\"#media1\">Video 1</a>), a difference sufficient to reduce spindle length from \u223c35 to \u223c25 \u00b5m in the meiotic spindle model (<a href=\"#bib19\">Loughlin et al., 2010</a>). We measured centrosomal nucleation and MT growth rate by counting and tracking MT plus-ends bound to Alexa 488\u2013labeled EB1 (<a href=\"#media2\">Video 2</a>). Whereas growth rates were similar, a small increase in MT nucleation corrected for average rescue frequency was documented in stage 3 extracts, but whether this is relevant to nucleation in the spindle is unclear. The rate of poleward MT flux determined by fluorescent speckle microscopy was similar in stage 3 and stage 8 spindles and comparable to that of meiotic spindles (<a href=\"#tbl1\">Table 1</a> and <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1B</a>; <a href=\"#bib21\">Maddox et al., 2003</a>; <a href=\"#bib1\">Brown et al., 2007</a>; <a href=\"#bib27\">Ohi et al., 2007</a>). Finally, MT severing assayed with fluorescent, taxol-stabilized MTs was also very similar in stage 3 and stage 8 extracts (<a href=\"#fig1s1\">Figure 1\u2014figure supplement 1C</a>). These results suggest that an increased MT catastrophe frequency primarily drives developmental spindle scaling."
+                            }, 
+                            {
+                                "type": "table", 
+                                "doi": "10.7554/eLife.00290.006", 
+                                "id": "tbl1", 
+                                "label": "Table 1.", 
+                                "title": "Microtubule dynamics and spindle MT flux in embryo extracts", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Microtubule dynamics and spindle MT flux in embryo extracts"
+                                    }
+                                ], 
+                                "tables": [
+                                    "<table><thead><tr><td></td><td>Stage 3 extract</td><td>Stage 8 extract</td><td>Egg extract</td></tr></thead><tbody><tr><td>MT growth rate\u2014EB1 tracking (\u00b5m/min)</td><td align=\"char\" char=\"\u00b1\">20.6 \u00b1 2.9</td><td align=\"char\" char=\"\u00b1\">18.9 \u00b1 2.4</td><td align=\"char\" char=\"\u00b1\">12.4 \u00b1 2.4 (<i>11.5\u201318.5</i>)</td></tr><tr><td>Nucleation frequency (min<sup>\u22121</sup>)</td><td align=\"char\" char=\"\u00b1\">7.0 \u00b1 1.2</td><td align=\"char\" char=\"\u00b1\">5.1 \u00b1 0.78</td><td align=\"char\" char=\"\u00b1\">8.3 \u00b1 0.36</td></tr><tr><td>Catastrophe frequency** (min<sup>\u22121</sup>)</td><td align=\"char\" char=\"\u00b1\">0.54 \u00b1 0.3</td><td align=\"char\" char=\"\u00b1\">1.8 \u00b1 0.54</td><td align=\"char\" char=\"\u00b1\">0.72 \u00b1 0.54 (<i>0.9\u20135.82</i>)</td></tr><tr><td>Rescue frequency* (min<sup>\u22121</sup>)</td><td align=\"char\" char=\"\u00b1\">1.08 \u00b1 0.96</td><td align=\"char\" char=\"\u00b1\">0.48 \u00b1 0.3</td><td align=\"char\" char=\"\u00b1\">0.78 \u00b1 0.3 (<i>0.004\u20130.05</i>)</td></tr><tr><td>Spindle MT flux rate (\u00b5m/min)</td><td align=\"char\" char=\"\u00b1\">2.38 \u00b1 0.33</td><td align=\"char\" char=\"\u00b1\">2.17 \u00b1 0.28</td><td>N.D. (<i>1.79\u20132.3</i>)</td></tr></tbody></table>"
+                                ], 
+                                "footnotes": [
+                                    {
+                                        "text": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "*p&lt;0.01, **p&lt;0.001 between stage 3 and stage 8 extracts by t-test."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "text": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Values in italics indicate the range of previously made measurements in egg extracts."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "text": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "References for MT dynamics in egg extracts (<a href=\"#bib34\">Wilde et al., 2001</a>; <a href=\"#bib31\">Tournebize et al., 1997</a>; <a href=\"#bib3\">Carazo-Salas et al., 2001</a>; <a href=\"#bib21\">Maddox et al. 2003</a>; <a href=\"#bib30\">Tirnauer et al., 2004</a>; <a href=\"#bib1\">Brown et al., 2007</a>). N \u2265 30 microtubules in at least 3 extracts for dynamics and three to five spindles in three extracts for flux."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "video", 
+                                "doi": "10.7554/eLife.00290.007", 
+                                "id": "media1", 
+                                "label": "Video 1.", 
+                                "title": "Centrosomal MT dynamics in embryo extracts. Purified human centrosomes were added to either stage 3 or stage 8 extracts with Alexa 488\u2013labeled tubulin. After \u223c5-min equilibration, time-lapse images were collected every 5 s for 2 min.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Centrosomal MT dynamics in embryo extracts. Purified human centrosomes were added to either stage 3 or stage 8 extracts with Alexa 488\u2013labeled tubulin. After \u223c5-min equilibration, time-lapse images were collected every 5 s for 2 min."
+                                    }
+                                ], 
+                                "uri": "elife-00290-media1.avi"
+                            }, 
+                            {
+                                "type": "video", 
+                                "doi": "10.7554/eLife.00290.008", 
+                                "id": "media2", 
+                                "label": "Video 2.", 
+                                "title": "EB1 comets on MT plus ends emanating from centrosomes in stage 3 and stage 8 extracts. Purified human centrosomes were added to either stage 3 or stage 8 extracts together with Alexa 488\u2013labeled EB1. Time-lapse images were collected every 2 s for up to 1 min. Examples of tracking are shown for four EB1 comets.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "EB1 comets on MT plus ends emanating from centrosomes in stage 3 and stage 8 extracts. Purified human centrosomes were added to either stage 3 or stage 8 extracts together with Alexa 488\u2013labeled EB1. Time-lapse images were collected every 2 s for up to 1 min. Examples of tracking are shown for four EB1 comets."
+                                    }
+                                ], 
+                                "uri": "elife-00290-media2.avi"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine if the increased catastrophe frequency found in stage 8 extracts correlated with changes in the known catastrophe-causing enzymes, we examined spindle recruitment of the two kinesin-13 family members found in <i>Xenopus</i>, kif2a, and MCAK. Quantification of immunofluorescence intensity revealed that compared to stage 3 spindles in which kif2a localized weakly to kinetochores and spindle poles, increased amounts of kif2a homogeneously localized to stage 8 extract spindles, with a slight enrichment at spindle poles (<a href=\"#fig3\">Figure 3A,B</a>). The case was markedly different for MCAK, which displayed a similar localization in both spindle types and had higher overall intensity in stage 3 extract spindles, indicating that it is unlikely to be involved in developmental spindle scaling. Changes in kif2a spindle recruitment between stage 3 and stage 8 spindles occurred without significant changes in protein levels (<a href=\"#fig3\">Figure 3C</a>). Many spindle components implicated in regulation of catastrophe or nucleation were quantitatively similar in localization between stage 3 and stage 8 extracts. These include the MT minus-end protector patronin, the MT nucleator \u03b3-tubulin, and the mitotic kinase aurora B (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1A\u2013C</a>). Other spindle proteins including TPX2 and the kinetochore kinesin CENP-E were qualitatively similar and likewise were not selected for further analysis (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1D</a>). Thus, kif2a appeared to be the best candidate for a cytoplasmic developmental spindle scaling factor."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.009", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Stage 8 extract spindles recruit kif2a.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Kinesin-13s Kif2a and MCAK detected in stage 3 and stage 8 extract spindles. Top panels show microtubules (MTs) (red), chromatin (blue), and either Kif2a or MCAK as indicated (green). Bottom panels show just Kif2a or MCAK immunofluorescence within the spindle. (<b>B</b>) Upper panels: Line scan quantification of immunofluorescence intensity with normalized spindle lengths for statistical analysis. Lower panels: t-test analysis in each length bin. Black dashed line is equivalent to a p value of 0.01 and red dashed line is equivalent to a p value of 0.001. Mean \u00b1 SE from three extracts. (<b>C</b>) Immunoblot from three extracts each of stage 3 and stage 8 Kif2a indicate average levels of kif2a in each extract. (<b>D</b>) and (<b>E</b>) Inhibition of kif2a with 5 \u00b5g/ml inhibitory anti-kif2a antibody in stage 3, p=0.668 by unpaired t-test (<b>D</b>) and stage 8 p&lt;0.0001 by unpaired t-test (<b>E</b>). Representative images are show for each condition. Mean \u00b1 SE, n \u2265 65 spindles from three extracts for each condition."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig3-v1.tif", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.010", 
+                                        "id": "fig3s1", 
+                                        "label": "Figure 3\u2014figure supplement 1.", 
+                                        "title": "Fluorescence intensity analysis of MT dynamics modulators.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>), (<b>B</b>), and (<b>C</b>) Upper panels: Line scan quantification of patronin (<b>A</b>), gamma tubulin (<b>B</b>), and aurora B (<b>C</b>) fluorescence intensity with normalized spindle lengths for statistical analysis, blue line is stage 3 and red line is stage 8. Lower panels: t-test statistical analysis across discrete length bins as described in the experimental procedures. These modulators of MT dynamics show little to no difference in intensities. Black dashed line is equivalent to a p value of 0.01 and red dashed line is equivalent to a p value of 0.001. Mean \u00b1 SE from three extracts. (<b>D</b>) Immunofluorescence localization of CENP-E and TPX2 appear similar in stage 3 and stage 8 embryo extract spindles."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig3-figsupp1-v1.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "If kif2a functions in developmental spindle scaling, we predicted that its inhibition would differentially affect spindle size in the two extracts. Inhibitory anti-kif2a antibodies added to spindle assembly reactions had no effect on steady-state spindle morphology or size in stage 3 extracts (<a href=\"#fig3\">Figure 3D</a>), but caused a dramatic increase in spindle size and change in spindle morphology to a more round lantern shape in stage 8 extracts (<a href=\"#fig3\">Figure 3E</a>). These experiments identify MT destabilization by kif2a as an important activity to establish the smaller stage 8 spindle architecture in embryo extracts."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Importin \u03b1 levels regulate kif2a activity and spindle recruitment to set spindle size", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the absence of changes in kif2a levels (<a href=\"#fig3\">Figure 3C</a>), how is this microtubule-destabilizing factor inhibited in stage 3 extracts and recruited abundantly to stage 8 spindles? We reasoned that the observed shift in spindle assembly pathways might contribute. Regulation of spindle assembly factors by nuclear transport proteins is central to the chromatin-mediated spindle assembly pathway in meiosis and at stage 3 (<a href=\"#fig2\">Figure 2B</a>), but cytoplasmic levels of importin \u03b1 decrease by almost 50% at stage 8, a change that affects nuclear size during development (<a href=\"#bib17\">Levy and Heald, 2010</a>), raising the possibility that importin \u03b1 could impact spindle MT dynamics if it were able to regulate kif2a recruitment and activity."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Within the kif2a sequence, we identified a monopartite NLS in a surface-exposed loop of the motor domain that could potentially mediate importin \u03b1 binding (<a href=\"#fig4\">Figure 4A</a>), and determined that this NLS is necessary to drive nuclear import of the recombinant kif2a motor domain in interphase egg extract (<a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>). An interaction between kif2a and importin \u03b1 could be detected by co-immunoprecipitation (IP) from egg extracts. Since IP with kif2a antibodies could co-IP importin \u03b1, but IP with importin \u03b1 antibodies did not efficiently co-IP kif2a (<a href=\"#fig4\">Figure 4B</a>), this interaction appears to be weak compared to other known importin \u03b1 cargos, such TPX2 that can be co-depleted with importin \u03b1 (<a href=\"#bib10\">Gruss et al., 2001</a>). This indicates that the binding affinity between kif2a and importin \u03b1 may be in a regime that is sensitive to the levels of both proteins, as well as to cargos that compete for binding to importin \u03b1. In vitro, recombinant importin \u03b1 and kif2a formed a complex detected by size exclusion chromatography, as a significant fraction of importin \u03b1 shifted to a higher molecular weight and coeluted with kif2a (<a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>). To test whether importin \u03b1 directly regulates kif2a activity, the proteins were added to fluorescent taxol-stabilized MTs in a flow chamber in the presence of an ATP-regenerating system. Under these conditions, 0.5 \u00b5M kif2a depolymerized MTs at 1.2 \u00b5m/min in an ATP-dependent manner, while preincubation with 1.5 \u00b5M importin \u03b1 prevented MT depolymerization (<a href=\"#fig4\">Figure 4C,D</a>, <a href=\"#fig4s3\">Figure 4\u2014figure supplement 3</a>, and <a href=\"#media3\">Video 3</a>), indicating that importin \u03b1 directly regulates kif2a."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.011", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Kif2a is regulated by importin \u03b1.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Sequence alignment of region surrounding the nuclear localization signal (NLS) identified using PredictNLS program. The boxed NLS sequence is conserved within these species. (<b>B</b>) Immunoprecipitation with antibodies specific for kif2a, importin \u03b1, or control IgG from egg extract indicates an interaction between kif2a and importin \u03b1 that maybe subject to strong competition by other cargos. Immunoblot with the indicated antibodies detect components of the immunoprecipitation. (<b>C</b>) Time-lapse images and kymographs from a flow cell depolymerization assay using taxol-stabilized MTs and purified full-length kif2a or kif2a plus purified importin \u03b1. Kymographs are derived from individual MTs indicated in the time 0 frame by white arrows. The scale bar represents 5 \u00b5m in time-lapse frames. (<b>D</b>) Quantification of the in vitro depolymerization rate of kif2a with and without importin \u03b1. Mean \u00b1 SE, n \u2265 20 MTs from two independent experiments, p&lt;0.0001 by unpaired t-test."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig4-v1.tif", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.012", 
+                                        "id": "fig4s1", 
+                                        "label": "Figure 4\u2014figure supplement 1.", 
+                                        "title": "Kif2a is regulated by importin immunofluorescence detection of recombinant MBP or MBP fused to the motor domain of kif2a added at 250 nM to interphase egg extracts, showing kif2a nuclear import that is lost upon mutation of the NLS.", 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig4-figsupp1-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.013", 
+                                        "id": "fig4s2", 
+                                        "label": "Figure 4\u2014figure supplement 2.", 
+                                        "title": "Kif2a interacts with importin size exclusion chromatography of kif2a and importin \u03b1 or importin \u03b1 alone on a superdex 200 column.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In the presence of kif2a, a portion of importin \u03b1 elutes earlier and together with kif2a."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig4-figsupp2-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.014", 
+                                        "id": "fig4s3", 
+                                        "label": "Figure 4\u2014figure supplement 3.", 
+                                        "title": "Kif2a is regulated by importin.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In vitro depolymerization of taxol-stabilized MTs by kif2a requires ATP. MTs show no sign of depolymerization from the ends compared to <a href=\"#fig4\">Figure 4C</a> in the presence of ADP."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig4-figsupp3-v1.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "video", 
+                                "doi": "10.7554/eLife.00290.015", 
+                                "id": "media3", 
+                                "label": "Video 3.", 
+                                "title": "In vitro depolymerization of MTs by kif2a is inhibited by importin \u03b1, related to <a href=\"#fig4\">Figure 4</a>. Immobilized taxol-stabilized MTs were incubated with kif2a (500 nM) and an ATP-regenerating system or under the same condition with importin \u03b1 added to threefold the kif2a concentration. Images were collected every 20 s for 5\u201310 min.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In vitro depolymerization of MTs by kif2a is inhibited by importin \u03b1, related to <a href=\"#fig4\">Figure 4</a>. Immobilized taxol-stabilized MTs were incubated with kif2a (500 nM) and an ATP-regenerating system or under the same condition with importin \u03b1 added to threefold the kif2a concentration. Images were collected every 20 s for 5\u201310 min."
+                                    }
+                                ], 
+                                "uri": "elife-00290-media3.avi"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To investigate whether the balance of kif2a and importin \u03b1 could influence spindle size during development, we altered the levels of each protein in embryo extracts. Increasing the concentration of kif2a in stage 3 extracts decreased spindle size in a dose-dependent manner up to \u223c22% (<a href=\"#fig5\">Figure 5A</a>). Conversely, increasing importin \u03b1 levels in stage 8 extracts lengthened spindles by \u223c27%, and the intensity of kif2a immunofluorescence concomitantly decreased (<a href=\"#fig5\">Figure 5B,C</a>). The effects of importin \u03b1 could be reversed by increasing kif2a levels, and kif2a with a mutated NLS (kif2a \u0394NLS) was more effective at returning spindles to smaller sizes (<a href=\"#fig5\">Figure 5D</a>). Finally, one-cell embryos injected with importin \u03b1 mRNA for overexpression led to a \u223c20% increase in spindle length at stage 8, indicating that the interplay between importin \u03b1 and kif2a can occur in developing embryos (<a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.016", 
+                                "id": "fig5", 
+                                "label": "Figure 5.", 
+                                "title": "Regulation of kif2a by importin \u03b1 scales spindles size.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": " (<b>A</b>) Addition of recombinant kif2a to stage 3 extracts decreases spindle size in a dose-dependent manner. Mean \u00b1 SE, n \u2265 48 spindles from two extracts, p&lt;0.0001 by Kruskal\u2013Wallis test. Scale bars represent 10 \u00b5m. (<b>B</b>) Addition of recombinant importin \u03b1 to stage 8 extracts increases spindle size. Mean \u00b1 SE, n \u2265 86 spindles from three extracts, p&lt;0.0001 by Kruskal\u2013Wallis test. (<b>C</b>) Addition of 1 \u00b5M recombinant importin \u03b1 to steady-state spindles in stage 8 extracts decreases kif2a recruitment to spindles in addition to increasing spindle size. Left panel: Line scan quantification of immunofluorescence intensity with normalized spindle lengths for statistical analysis. Right panel: t-test analysis across each length bin. Black dashed line is equivalent to a p value of 0.01 and red dashed line is equivalent to a p value of 0.001. Mean \u00b1 SE, n \u2265 44 spindles from three extracts. (<b>D</b>) Addition of recombinant kif2a can rescue the increased spindle size caused by importin \u03b1 addition in stage 8 extracts. An NLS mutant of kif2a (kif2a \u0394NLS) is more robust at returning spindles to normal size. Mean \u00b1 SE, n \u2265 55 spindles from two extracts."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig5-v1.tif", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.017", 
+                                        "id": "fig5s1", 
+                                        "label": "Figure 5\u2014figure supplement 1.", 
+                                        "title": "Importin \u03b1 overexpression increases spindle size in stage 8 embryos.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Mean \u00b1 SE, n \u2265 65 spindles, p&lt;0.0001 by unpaired t-test."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig5-figsupp1-v1.tif"
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Importin \u03b1 is modified during development and partitions with lipid", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Since the ratio of kif2a to importin \u03b1 was critical for developmental spindle scaling, we investigated in more detail the mechanisms regulating importin \u03b1 levels. Although previous data showed that cytoplasmic importin \u03b1 levels decreased by stage 8 of <i>Xenopus</i> development (<a href=\"#bib17\">Levy and Heald, 2010</a>), immunoblotting of importin \u03b1 in whole-embryo lysates, rather than cytoplasmic extracts, revealed that importin \u03b1 partitions into multiple populations with no apparent decrease in total amount. The single bands present stage 3 and stage 5 embryos convert to multiple bands in stage 7 and stage 8 embryos (<a href=\"#fig6\">Figure 6A</a>) coincident with the initiation of spindle scaling. By examining different fractions generated by the crushing centrifugation of embryos during extract preparation, we identified a slower-migrating species of importin \u03b1 enriched in the lipid/membrane fraction at stage 8, thereby decreasing importin \u03b1 levels in the cytoplasmic fraction. Such a species was not detectable in whole-embryo immunoblots of stage 3 or stage 5 extracts (<a href=\"#fig6\">Figure 6A</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.018", 
+                                "id": "fig6", 
+                                "label": "Figure 6.", 
+                                "title": "Partitioning of importin \u03b1 to membrane decreases its cytoplasmic levels and binding to kif2a.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": " (<b>A</b>) Detection of importin \u03b1 in single whole embryos (two each) at different stages of development or in different fractions from a multiple embryo extract by immunoblotting with importin \u03b1 antisera. Arrows in the lower panel indicate the multiple populations of importin \u03b1 that partition into different fractions. (<b>B</b>) Immunofluorescence detection of importin \u03b1 in embryos at different stages and quantification of the spatial distribution by determining the relative fluorescence intensity of importin \u03b1 at the cell periphery vs the cytoplasm. Mean \u00b1 SD, n = 12 and 17 cells from more than nine embryos, p &lt;0.0001 by unpaired t-test. Scale bars represent 40 \u00b5m. (<b>C</b>) Pull down of importin \u03b1 from stage 3 or stage 8 embryo extracts by recombinant kif2a. Immunoblot of MBP indicates equivalent levels of kif2a retrieved, while immunoblot of importin \u03b1 shows amounts of extract importin \u03b1 interacting with the MBP control, kif2a or kif2a \u0394NLS. (<b>D</b>) Quantification of importin \u03b1 intensity in immunoblots from pull down experiments normalized to kif2a intensity. Mean \u00b1 SE, n = 3 extracts each."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig6-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Immunofluorescence of importin \u03b1 in stage 3 embryos showed a diffuse cytoplasmic localization with levels often increasing toward the animal pole, while in stage 7 embryos, where we first detect different populations of importin \u03b1 by immunoblotting, the protein was enriched at the cellular boundaries (<a href=\"#fig6\">Figure 6B</a>). Comparing the ratio of importin \u03b1 at the cell periphery to cytoplasm by immunofluorescence intensity revealed a significant redistribution to the outer membrane at stage 7 vs stage 3. These findings point to a mechanism by which levels of cytoplasmic importin \u03b1 available to regulate kif2a are sensitive to the surface area to volume ratio of plasma membrane and cytoplasm."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To examine whether the redistribution of importin \u03b1 to the membrane fraction was sufficient to reduce its interaction with kif2a in the cytoplasm, we measured the amount of importin \u03b1 capable of interacting with recombinant kif2a added to cytoplasmic extracts at stage 3 and stage 8 in quantitative pull-down experiments (<a href=\"#fig6\">Figure 6C,D</a>). Correcting for nonspecific binding and utilizing kif2a \u0394NLS as control, we found that kif2a could retrieve \u223c10 times more importin \u03b1 from stage 3 extracts than from stage 8 extracts. This result suggests that the amount of importin \u03b1 partitioning to membrane is sufficient to alter its interaction with kif2a (<a href=\"#fig6\">Figure 6C,D</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-6", 
+                        "title": "Metaphase spindle orientation in large blastomeres is sensitive to spindle size", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The identification of a mechanism contributing to spindle size control in embryos enabled us to test its functional significance during development. At the end of the four-cell stage (stage 3), the <i>X. laevis</i> embryo undergoes a synchronous asymmetric division with spindles aligned along the animal\u2013vegetal axis, but displaced toward the animal pole to generate an eight-cell embryo (stage 4) containing four smaller and four larger cells. By microinjecting recombinant kif2a just prior to this division, we could specifically alter spindle size and assess both chromosome segregation and spindle orientation defects."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As in embryo extracts, excess kif2a decreased spindle size and kif2a \u0394NLS possessed greater activity, reducing spindle length up to \u223c32% in the developing embryo (<a href=\"#fig7\">Figure 7A</a>). Despite this significant size decrease, we did not observe any obvious problems with mitotic timing, metaphase chromosome alignment, or defects during anaphase such as lagging chromosomes. These data suggest that although increasing levels of kif2a decrease spindle size, the mitotic apparatus remains architecturally functional and chromosome segregation is robust to spindle size changes, as might be expected if we were manipulating a physiological mechanism of spindle scaling. Interestingly, however, orientation of metaphase spindles was frequently randomized in the presence of excess kif2a compared to control spindles that were typically nearly aligned with the long animal\u2013vegetal axis of the cell (<a href=\"#fig7\">Figure 7A,B</a>). There was a clear correlation between metaphase spindle length and angle relative to the long axis, with shorter spindles less likely to be aligned even in unperturbed control embryos (<a href=\"#fig7\">Figure 7C</a>). This effect was specific to metaphase as prometaphase and anaphase spindles were aligned along the long axis whether exogenous kif2a was injected or not (<a href=\"#fig7s1\">Figure 7\u2014figure supplement 1A</a>). While we cannot rule out that orientation defects result in part from unknown pathways in which kif2a functions or from altered astral MT dynamics at metaphase, no effect was observed on prometaphase centrosome position and anaphase spindle orientation. Furthermore, spindle orientation in very large cells is established by orienting centrosomes during the previous telophase/interphase transition and not by astral MTs contacting the cell cortex hundreds of microns away (<a href=\"#bib35\">Wuhr et al., 2011</a>). Finally, astral MTs were clearly evident at metaphase and early anaphase following injection of kif2a or \u0394NLS kif2a (<a href=\"#fig7s1\">Figure 7\u2014figure supplement 1B</a>). Altogether, these data indicate that spindle length, which is controlled by regulation of MT-destabilizing activities within the spindle, impacts metaphase spindle orientation in the very large cells of the <i>Xenopus</i> embryo, but additional mechanisms operate to ensure properly positioned cleavage divisions."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00290.019", 
+                                "id": "fig7", 
+                                "label": "Figure 7.", 
+                                "title": "Metaphase spindle orientation in stage 3 embryos depends on spindle size.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Microinjection of kif2a into two-cell embryos just prior to cytokinesis decreases spindle size in the subsequent mitosis. Representative images of decreased spindle size in fixed hemisected embryos. Spindle orientation (pole-to-pole axis, red arrow, vs long axis of the cells, white arrow) is indicated in bottom left. The scale bar represents 40 \u00b5m. (<b>B</b>) Quantification of spindle orientation in stage 3 embryos after microinjection of kif2a or kif2a \u0394NLS at metaphase. Only metaphase spindle orientation is affected. Mean \u00b1 SD, n = 6\u201315 spindles, p&lt;0.01 by unpaired t-test for control vs kif2a injected and p&lt;0.0001 for control vs kif2a \u0394NLS injected. (<b>C</b>) Correlation plot of spindle length and spindle orientation in stage 3 embryos. Each point is a single spindle, and the line a linear regression of all the data. (<b>D</b>) Model of how kif2a regulation by importin \u03b1 regulates spindle size during development."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00290-fig7-v1.tif", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00290.020", 
+                                        "id": "fig7s1", 
+                                        "label": "Figure 7\u2014figure supplement 1.", 
+                                        "title": "Prophase and anaphase spindle orientation and astral MTs.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Quantification of spindle orientation in stage 3 embryos after microinjection of kif2a or kif2a \u0394NLS at prophase and anaphase. Mean \u00b1 SD, n = 8\u201315 spindles. Comparison between control and either kif2a or kif2a \u0394NLS was not significant by unpaired t-test in either prophase or anaphase. (<b>B</b>) Examples of spindles with astral MTs at different stages of mitosis found in stage 3 embryos microinjected with 100 nM kif2a or kif2a \u0394NLS as detected by immunofluorescence against \u03b1-tubulin."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00290-fig7-figsupp1-v1.tif"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Reconstituting spindle formation in embryo extracts enabled us to elucidate a mechanism that coordinates spindle size with cell size during <i>X. laevis</i> development through differential activation of the kinesin-13 kif2a. While a number of perturbations have been shown to alter spindle size, we have identified, out the hundreds of known spindle associated proteins, physiological effectors that operate to scale the spindle during embryogenesis. Considering our recent work identifying the microtubule severing enzyme katanin as an activity that scales spindle sized between related frog species, modulation of MT destabilization has now emerged as a general means of physiologically scaling spindle size in <i>Xenopus</i> (<a href=\"#bib20\">Loughlin et al., 2011</a>). In contrast to interspecies spindle scaling, which relied on a regulatory phosphorylation site, the developmental mechanism described here depends on decreasing cytoplasmic levels of an inhibitor, importin \u03b1, which may be directly linked to changes in the ratio of surface membrane to cell volume (<a href=\"#fig7\">Figure 7D</a>). Importantly, this mechanism functions cell autonomously and independent of developmental stage, thereby assuring that the spindle scales correctly over the range of cell sizes present in the embryo at each cleavage division. It is important to note that neither the interspecies nor developmental scaling mechanisms identified fully account for spindle size differences. Future research will tell whether many factors are involved and if there are other common themes."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In principle, any pathway containing factors that partition between the cytoplasm and membrane could have altered output with changing cell size during embryogenesis. Similarly, rounds of DNA, centrosome, or other organelle replication in the absence of cell growth could provide exponentially growing sinks for inhibitory factors or drive spatial redistribution of molecules that contribute to intracellular scaling. Structural components may also become limiting as the cytoplasmic volume decreases, or other aspects of changing cell geometry could alter spatial distributions and reaction rates. It is an open question how many of these processes function to modulate the size of the spindle and other organelles, compared to the contribution of zygotic transcription and other regulatory mechanisms that turn on later in development."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We have shown that developmental spindle scaling is coincident with a change in spindle assembly pathway from a chromatin-mediated mechanism to a centrosome-dominated mechanism. In egg extracts and large blastomeres, importin \u03b1 binds to cargo proteins and provides, in combination with importin \u03b2, functional regulation downstream of the RanGTP gradient (<a href=\"#bib25\">Nachury et al., 2001</a>; <a href=\"#bib33\">Wiese et al., 2001</a>). Although the mechanisms that regulate spindle assembly through the RanGTP gradient and downstream effectors are poorly understood (<a href=\"#bib15\">Kalab et al., 2006</a>), we show that the switch in spindle assembly to a more centrosome-mediated pathway occurs concomitantly with a decrease in cytoplasmic levels of importin \u03b1. This mechanism is consistent with the gradual change from meiotic to mitotic spindle morphology observed during early mouse development and suggests that the physical changes in embryonic cells size can impact biochemical reactions that alter spindle architecture (<a href=\"#bib4\">Courtois et al., 2012</a>). In egg extracts, importin \u03b1 phosphorylation is thought to liberate it from membrane stores into the cytoplasm, thereby promoting its transport activity (<a href=\"#bib11\">Hachet et al., 2004</a>). Whether the multiple importin \u03b1 bands in stage 7 and stage 8 embryos represent different phosphorylation states or some other posttranslational modification remains to be determined. Interestingly, nuclear size is also sensitive to importin \u03b1 levels, and in this way, nuclear and spindle size may be coordinated, positioning importin \u03b1 as a central molecule in controlling the size of multiple subcellular structures (<a href=\"#bib17\">Levy and Heald, 2010</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "While the RanGTP gradient is known to act through activation of MT stabilizers and motor proteins, we have identified kif2a as the first MT-destabilizing protein that could be regulated by this pathway (<a href=\"#bib32\">Walczak and Heald, 2008</a>). Consistent with a role for kif2a in spindle size control, either increasing its levels or disrupting its localization by inhibiting dynein can modulate meiotic spindle size in <i>Xenopus</i> egg extracts (<a href=\"#bib5\">Gaetz and Kapoor, 2004</a>; <a href=\"#bib27\">Ohi et al., 2007</a>). In contrast, inhibiting the other kinesin-13 family member MCAK dramatically affects global MT dynamics (<a href=\"#bib27\">Ohi et al., 2007</a>). This difference may be due to high importin \u03b1 levels limiting the activity of kif2a in egg extract spindles. Whether importin \u03b1 regulates kif2a in cultured cells, where it is necessary for bipolar spindle assembly and poleward flux of MTs (<a href=\"#bib6\">Ganem and Compton, 2004</a>; <a href=\"#bib7\">Ganem et al., 2005</a>), is unknown. Kif2a phosphorylation by aurora and polo kinases modulates its activity, which is also regulated through an interaction with inner centromere Kin-I stimulator (ICIS) (<a href=\"#bib12\">Jang et al., 2009</a>; <a href=\"#bib16\">Knowlton et al., 2009</a>). A comprehensive evaluation of kif2a's many interactions will help determine how layers of regulation are integrated to control developmental spindle scaling."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "By identifying a physiological mechanism that controls spindle size and then altering it, we have identified a role for spindle size in maintaining spindle orientation in very large cells of the early <i>X. laevis</i> embryo. However, chromosome segregation was robust to decreases in spindle size indicating that spindle architecture remained viable and a large spindle is not essential for division of large cells. Previous work has suggested that in contrast to the canonical spindle positioning pathways, astral MTs cannot reach the cortex of large cells to provide position cues and forces at metaphase (<a href=\"#bib24\">Mitchison et al., 2012</a>). Instead, centrosomes are likely positioned prior to spindle assembly through interactions with telophase MT asters of the previous division (<a href=\"#bib36\">Wuhr et al., 2010</a>, <a href=\"#bib35\">2011</a>), a mechanism that does not appear disrupted under conditions that reduce spindle size in our experiments. The randomized orientation of smaller spindles specifically at metaphase in stage 3 embryos suggests that in addition to initial positioning of centrosomes to define spindle orientation, there is a mechanism that maintains spindle orientation until anaphase onset, after which large anaphase asters may again provide orientation cues. Considering the spindle as a prolate ellipsoid in a viscous medium, the frictional resistance to rotation is nonlinearly related to length. A larger spindle may therefore resist rotation, especially given the highly viscous cytoplasm and the relatively short metaphase duration in blastomeres. While identifying the mechanisms that control spindle size revealed a cellular role in spindle orientation, in the future, it will be interesting to examine how changing spindle size affects the developmental program of the embryo. Overall, our embryo extract system, in combination with biochemical validation of regulatory interactions and experimental manipulation in developing embryos, allows the identification of physiologically relevant molecular mechanisms controlling spindle architecture and cell division."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Cytoplasmic extracts", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<i>Xenopus laevis</i> egg extracts were made as previously described (<a href=\"#bib22\">Maresca and Heald, 2006</a>). <i>Xenopus laevis</i> embryo extracts were generated by fertilizing eggs in vitro with crushed testes, dejellying with 3% cysteine in water pH 7.7, and allowing development to proceed at 23\u00b0C to a time point \u223c15 min prior to the desired stage for extracts or fully to the desired stage for embryos (<a href=\"#bib29\">Sive et al., 2000</a>). For stage 3 extracts, this was 1.75 hr at room temperature, and for stage 8, this was 5.5 hr. Embryos were then washed extensively in EmCSF-XB (5 mM EGTA, 100 mM KCl, 3 mM MgCl<sub>2</sub>, 0.1 mM CaCl<sub>2</sub>, 50 mM sucrose, and 10 mM HEPES pH 7.7) plus protease inhibitors (leupeptin, pepstatin, and chymostatin, 10 \u00b5g/ml each) and cytochalasin D (20 \u00b5g/ml), packed by centrifugation in a 2-ml microfuge tube at 1000\u00d7<i>g</i> for 1 min followed by 2000\u00d7<i>g</i> for 10 s. All buffer was removed, and embryos were crushed by centrifugation at 17,000\u00d7<i>g</i> in a swinging bucket rotor (Sorvall HB-6, Thermo Fisher Scientific, Waltham MA, USA). Concentrated cytoplasm was removed from the tube and immediately placed on ice. Protease inhibitors, cytochlasin D, and energy mix were added as for egg extracts and UbcH10 C114S was added at 0.2 mg/ml final concentration. Cyclin B delta 90 (0.05 mg/ml) was added at the start of spindle reactions or prior to utilizing the extract for biochemical analysis. Purified stage 8 nuclei were generated by pelleting endogenous nuclei from stage 8 extracts multiple times through ELB buffer (250 mM sucrose, 50 mM KCl, 2.5 mM MgCl<sub>2</sub>, and 10 mM HEPES pH 7.8)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Immunofluorescence analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The antibody to kif2a raised against the N-terminal domain was a gift from C. Walczak. Importin \u03b1 antisera were raised against full-length <i>Xenopus</i> importin \u03b1 (<a href=\"#bib17\">Levy and Heald, 2010</a>). Anti-MBP monoclonal antibody is commercially available from New England Biolabs. Immunofluorescence analysis was performed as previously described (<a href=\"#bib20\">Loughlin et al., 2011</a>). Briefly, spindles in extract were fixed with 3.7% formaldehyde, sedimented through a 40% glycerol cushion onto coverslips, post-fixed in 100% methanol, and blocked with PBS \u2212 1% BSA. Coverslips were incubated to equilibrium with 1:1000 dilution of primary antibody, washed extensively, and incubated with a 1:1000 dilution of secondary antibody (Alexa-labeled anti-rabbit or anti-mouse; Invitrogen)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Image collection was as previously described (<a href=\"#bib20\">Loughlin et al., 2011</a>) except the images in <a href=\"#fig5\">Figure 5F</a> and <a href=\"#fig7s1\">Figure 7\u2014figure supplement 1</a> utilized the same imaging system with an addition of a patterned illumination optigrid device (Qioptic, Rochester NY, USA) to decrease background autofluorescence in embryos. For quantification of immunofluorescence, photobleaching tests were performed on extra samples to identify the total exposure time a field could be illuminated without significantly changing the measured fluorescence intensity, and image collection was maintained within this time window. Lamp intensity variation was estimated by imaging of tetraspeck beads (Invitrogen/Life Technologies, Grand Island NY, USA) and maintained to within \u223c10% as judged by bead emission intensity."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Immunofluorescence quantification was performed by manually collecting 25-pixel-width linescans in ImageJ, locally correcting for background intensity if it was more that 10 intensity units above the camera offset. Data was then normalized to 100% spindle length, and intensity was averaged within each 1% length bin. Depending on the length of the spindle, \u223c2 to 6 pixels were averaged per length bin. Spindles from each condition were averaged under these normalized spindle length conditions with error propagation and intensity plotted as a function of 0\u2013100% spindle length. The t-test analysis was then used when comparing the significance of any differences within each 1% length bin, and the t value was plotted for each bin. The t values for each dataset with statistically significant p values of &lt;0.01 are indicated by a black dashed lines and &lt;0.001 are indicated by red dashed lines."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Immunofluorescence intensity ratios of importin \u03b1 in embryos were determined by calculating the integrated densities of a 6-pixel-width line along the cell periphery compared to the same line shifted \u223c20 pixels into the cytoplasm of the cell."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Protein purification", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Recombinant importin \u03b1 utilized for all extract and embryo experiments was a multiple phosphomimetic mutant proficient for nuclear import in egg extracts (<a href=\"#bib17\">Levy and Heald, 2010</a>). Recombinant importin \u03b1 used for in vitro biochemical experiments had the first 43 amino acids deleted to prevent known autoinhibitory interactions, but did not contain phosphomimetic mutations. Full-length kif2a and motor domain (amino acids 204\u2013538) were amplified by polymerase chain reaction, cloned in to pMAL-C5X (New England Biolabs, Ipswitch MA, USA), and expressed and purified as described for MBP fusion proteins (<a href=\"#bib20\">Loughlin et al., 2011</a>). The NLS mutant had three charge switch mutations, K427E, K428E, and K430E, introduced into the NLS sequence identified by Quikchange mutagenesis (Stratagene/Agilent Technologies, Santa Clara CA, USA)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-4", 
+                        "title": "Pull down experiments and immunoblotting", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "1 \u00b5M recombinant kif2a or kif2a \u0394NLS as an MBP fusion protein or MBP alone was added to extracts and incubated for 15 min. 75 \u00b5l of Amylose resin (New England Biolabs) was then incubated for 15 min to retrieved MBP or fusion proteins. Resin was washed with a total of 25 bed volumes of phosphate-buffered saline with 0.01% Tween and eluted in SDS-PAGE loading buffer. Immunoblotting utilized 1:1000 dilution of all antibodies or antisera and was performed as described (<a href=\"#bib20\">Loughlin et al., 2011</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-5", 
+                        "title": "Microinjection into embryos", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Embryos were injected at either the one-cell stage with in vitro transcribed RNA coding for importin \u03b1 or into one blastomere at the two-cell stage with recombinant protein in injection buffer (10 mM potassium glutamate, 1 mM MgCl<sub>2</sub>). A homemade pneumatic injection apparatus was utilized with microcapillary needles and calibrated by injecting dye into mineral oil. The total volume injected was approximately 10 nl."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KS Brown", 
+                            "index": "Brown, KS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MD Blower", 
+                            "index": "Blower, MD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Maresca", 
+                            "index": "Maresca, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TC Grammer", 
+                            "index": "Grammer, TC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Harland", 
+                            "index": "Harland, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "<i>Xenopus tropicalis</i> egg extracts provide insight into scaling of the mitotic spindle", 
+                "journal": {
+                    "name": [
+                        "J Cell Biol"
+                    ]
+                }, 
+                "volume": "176", 
+                "pages": {
+                    "first": "765", 
+                    "last": "770", 
+                    "range": "765\u2013770"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Brugues", 
+                            "index": "Brugues, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Nuzzo", 
+                            "index": "Nuzzo, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Mazur", 
+                            "index": "Mazur, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Needleman", 
+                            "index": "Needleman, DJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nucleation and transport organize microtubules in metaphase spindles", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "149", 
+                "pages": {
+                    "first": "554", 
+                    "last": "564", 
+                    "range": "554\u2013564"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RE Carazo-Salas", 
+                            "index": "Carazo-Salas, RE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "OJ Gruss", 
+                            "index": "Gruss, OJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IW Mattaj", 
+                            "index": "Mattaj, IW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Karsenti", 
+                            "index": "Karsenti, E"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ran-GTP coordinates regulation of microtubule nucleation and dynamics during mitotic-spindle assembly", 
+                "journal": {
+                    "name": [
+                        "Nat Cell Biol"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": {
+                    "first": "228", 
+                    "last": "234", 
+                    "range": "228\u2013234"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Courtois", 
+                            "index": "Courtois, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Schuh", 
+                            "index": "Schuh, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ellenberg", 
+                            "index": "Ellenberg, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Hiiragi", 
+                            "index": "Hiiragi, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "The transition from meiotic to mitotic spindle assembly is gradual during early mammalian development", 
+                "journal": {
+                    "name": [
+                        "J Cell Biol"
+                    ]
+                }, 
+                "volume": "198", 
+                "pages": {
+                    "first": "357", 
+                    "last": "370", 
+                    "range": "357\u2013370"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gaetz", 
+                            "index": "Gaetz, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TM Kapoor", 
+                            "index": "Kapoor, TM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynein/dynactin regulate metaphase spindle length by targeting depolymerizing activities to spindle poles", 
+                "journal": {
+                    "name": [
+                        "J Cell Biol"
+                    ]
+                }, 
+                "volume": "166", 
+                "pages": {
+                    "first": "465", 
+                    "last": "471", 
+                    "range": "465\u2013471"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NJ Ganem", 
+                            "index": "Ganem, NJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Compton", 
+                            "index": "Compton, DA"
+                        }
+                    }
+                ], 
+                "articleTitle": "The KinI kinesin Kif2a is required for bipolar spindle assembly through a functional relationship with MCAK", 
+                "journal": {
+                    "name": [
+                        "J Cell Biol"
+                    ]
+                }, 
+                "volume": "166", 
+                "pages": {
+                    "first": "473", 
+                    "last": "478", 
+                    "range": "473\u2013478"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NJ Ganem", 
+                            "index": "Ganem, NJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Upton", 
+                            "index": "Upton, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Compton", 
+                            "index": "Compton, DA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Efficient mitosis in human cells lacking poleward microtubule flux", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "1827", 
+                    "last": "1832", 
+                    "range": "1827\u20131832"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NW Goehring", 
+                            "index": "Goehring, NW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Hyman", 
+                            "index": "Hyman, AA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Organelle growth control through limiting pools of cytoplasmic components", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "R330", 
+                    "last": "R339", 
+                    "range": "R330\u2013R339"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Greenan", 
+                            "index": "Greenan, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CP Brangwynne", 
+                            "index": "Brangwynne, CP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Jaensch", 
+                            "index": "Jaensch, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gharakhani", 
+                            "index": "Gharakhani, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Julicher", 
+                            "index": "Julicher, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Hyman", 
+                            "index": "Hyman, AA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Centrosome size sets mitotic spindle length in <i>Caenorhabditis elegans</i> embryos", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "353", 
+                    "last": "358", 
+                    "range": "353\u2013358"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "OJ Gruss", 
+                            "index": "Gruss, OJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RE Carazo-Salas", 
+                            "index": "Carazo-Salas, RE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CA Schatz", 
+                            "index": "Schatz, CA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Guarguaglini", 
+                            "index": "Guarguaglini, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Kast", 
+                            "index": "Kast, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wilm", 
+                            "index": "Wilm, M"
+                        }
+                    }
+                ], 
+                "authorsEtAl": true, 
+                "articleTitle": "Ran induces spindle assembly by reversing the inhibitory effect of importin alpha on TPX2 activity", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "104", 
+                "pages": {
+                    "first": "83", 
+                    "last": "93", 
+                    "range": "83\u201393"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Hachet", 
+                            "index": "Hachet, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Kocher", 
+                            "index": "Kocher, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wilm", 
+                            "index": "Wilm, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IW Mattaj", 
+                            "index": "Mattaj, IW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Importin alpha associates with membranes and participates in nuclear envelope assembly in vitro", 
+                "journal": {
+                    "name": [
+                        "EMBO J"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "1526", 
+                    "last": "1535", 
+                    "range": "1526\u20131535"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CY Jang", 
+                            "index": "Jang, CY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Coppinger", 
+                            "index": "Coppinger, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Seki", 
+                            "index": "Seki, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Yates III", 
+                            "index": "Yates, JR, III"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Fang", 
+                            "index": "Fang, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Plk1 and Aurora A regulate the depolymerase activity and the cellular localization of Kif2a", 
+                "journal": {
+                    "name": [
+                        "J Cell Sci"
+                    ]
+                }, 
+                "volume": "122", 
+                "pages": {
+                    "first": "1334", 
+                    "last": "1341", 
+                    "range": "1334\u20131341"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Kalab", 
+                            "index": "Kalab, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "The RanGTP gradient\u2014a GPS for the mitotic spindle", 
+                "journal": {
+                    "name": [
+                        "J Cell Sci"
+                    ]
+                }, 
+                "volume": "121", 
+                "pages": {
+                    "first": "1577", 
+                    "last": "1586", 
+                    "range": "1577\u20131586"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Kalab", 
+                            "index": "Kalab, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Weis", 
+                            "index": "Weis, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Visualization of a Ran-GTP gradient in interphase and mitotic Xenopus egg extracts", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "295", 
+                "pages": {
+                    "first": "2452", 
+                    "last": "2456", 
+                    "range": "2452\u20132456"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Kalab", 
+                            "index": "Kalab, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Pralle", 
+                            "index": "Pralle, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EY Isacoff", 
+                            "index": "Isacoff, EY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Weis", 
+                            "index": "Weis, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Analysis of a RanGTP-regulated gradient in mitotic somatic cells", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "440", 
+                "pages": {
+                    "first": "697", 
+                    "last": "701", 
+                    "range": "697\u2013701"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AL Knowlton", 
+                            "index": "Knowlton, AL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VV Vorozhko", 
+                            "index": "Vorozhko, VV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Lan", 
+                            "index": "Lan, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Gorbsky", 
+                            "index": "Gorbsky, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PT Stukenberg", 
+                            "index": "Stukenberg, PT"
+                        }
+                    }
+                ], 
+                "articleTitle": "ICIS and Aurora B coregulate the microtubule depolymerase Kif2a", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "758", 
+                    "last": "763", 
+                    "range": "758\u2013763"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DL Levy", 
+                            "index": "Levy, DL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nuclear size is regulated by importin alpha and Ntf2 in <i>Xenopus</i>", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "143", 
+                "pages": {
+                    "first": "288", 
+                    "last": "298", 
+                    "range": "288\u2013298"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DL Levy", 
+                            "index": "Levy, DL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mechanisms of intracellular scaling", 
+                "journal": {
+                    "name": [
+                        "Annu Rev Cell Dev Biol"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "113", 
+                    "last": "135", 
+                    "range": "113\u2013135"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Loughlin", 
+                            "index": "Loughlin, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Nedelec", 
+                            "index": "Nedelec, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "A computational model predicts <i>Xenopus</i> meiotic spindle organization", 
+                "journal": {
+                    "name": [
+                        "J Cell Biol"
+                    ]
+                }, 
+                "volume": "191", 
+                "pages": {
+                    "first": "1239", 
+                    "last": "1249", 
+                    "range": "1239\u20131249"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Loughlin", 
+                            "index": "Loughlin, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JD Wilbur", 
+                            "index": "Wilbur, JD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FJ McNally", 
+                            "index": "McNally, FJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FJ Nedelec", 
+                            "index": "Nedelec, FJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Katanin contributes to interspecies spindle length scaling in <i>Xenopus</i>", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "147", 
+                "pages": {
+                    "first": "1397", 
+                    "last": "1407", 
+                    "range": "1397\u20131407"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Maddox", 
+                            "index": "Maddox, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Straight", 
+                            "index": "Straight, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Coughlin", 
+                            "index": "Coughlin, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Mitchison", 
+                            "index": "Mitchison, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ED Salmon", 
+                            "index": "Salmon, ED"
+                        }
+                    }
+                ], 
+                "articleTitle": "Direct observation of microtubule dynamics at kinetochores in <i>Xenopus</i> extract spindles: implications for spindle mechanics", 
+                "journal": {
+                    "name": [
+                        "J Cell Biol"
+                    ]
+                }, 
+                "volume": "162", 
+                "pages": {
+                    "first": "377", 
+                    "last": "382", 
+                    "range": "377\u2013382"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Maresca", 
+                            "index": "Maresca, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Methods for studying spindle assembly and chromosome condensation in <i>Xenopus</i> egg extracts", 
+                "journal": {
+                    "name": [
+                        "Methods Mol Biol"
+                    ]
+                }, 
+                "volume": "322", 
+                "pages": {
+                    "first": "459", 
+                    "last": "474", 
+                    "range": "459\u2013474"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Mitchison", 
+                            "index": "Mitchison, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Maddox", 
+                            "index": "Maddox, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gaetz", 
+                            "index": "Gaetz, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Groen", 
+                            "index": "Groen, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Shirasu", 
+                            "index": "Shirasu, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Desai", 
+                            "index": "Desai, A"
+                        }
+                    }
+                ], 
+                "authorsEtAl": true, 
+                "articleTitle": "Roles of polymerization dynamics, opposed motors, and a tensile element in governing the length of <i>Xenopus</i> extract meiotic spindles", 
+                "journal": {
+                    "name": [
+                        "Mol Biol Cell"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "3064", 
+                    "last": "3076", 
+                    "range": "3064\u20133076"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Mitchison", 
+                            "index": "Mitchison, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wuhr", 
+                            "index": "Wuhr, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Nguyen", 
+                            "index": "Nguyen, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Ishihara", 
+                            "index": "Ishihara, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Groen", 
+                            "index": "Groen, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Field", 
+                            "index": "Field, CM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Growth, interaction, and positioning of microtubule asters in extremely large vertebrate embryo cells", 
+                "journal": {
+                    "name": [
+                        "Cytoskeleton (Hoboken)"
+                    ]
+                }, 
+                "volume": "69", 
+                "pages": {
+                    "first": "738", 
+                    "last": "750", 
+                    "range": "738\u2013750"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MV Nachury", 
+                            "index": "Nachury, MV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Maresca", 
+                            "index": "Maresca, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WC Salmon", 
+                            "index": "Salmon, WC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Waterman-Storer", 
+                            "index": "Waterman-Storer, CM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Weis", 
+                            "index": "Weis, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Importin beta is a mitotic target of the small GTPase Ran in spindle assembly", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "104", 
+                "pages": {
+                    "first": "95", 
+                    "last": "106", 
+                    "range": "95\u2013106"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "1982", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Newport", 
+                            "index": "Newport, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kirschner", 
+                            "index": "Kirschner, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "A major developmental transition in early <i>Xenopus</i> embryos: I. characterization and timing of cellular changes at the midblastula stage", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "30", 
+                "pages": {
+                    "first": "675", 
+                    "last": "686", 
+                    "range": "675\u2013686"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Ohi", 
+                            "index": "Ohi, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Burbank", 
+                            "index": "Burbank, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Liu", 
+                            "index": "Liu, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Mitchison", 
+                            "index": "Mitchison, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nonredundant functions of kinesin-13s during meiotic spindle assembly", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "17", 
+                "pages": {
+                    "first": "953", 
+                    "last": "959", 
+                    "range": "953\u2013959"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Rape", 
+                            "index": "Rape, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SK Reddy", 
+                            "index": "Reddy, SK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MW Kirschner", 
+                            "index": "Kirschner, MW"
+                        }
+                    }
+                ], 
+                "articleTitle": "The processivity of multiubiquitination by the APC determines the order of substrate degradation", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "124", 
+                "pages": {
+                    "first": "89", 
+                    "last": "103", 
+                    "range": "89\u2013103"
+                }
+            }, 
+            {
+                "type": "book", 
+                "id": "bib29", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL Sive", 
+                            "index": "Sive, HL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Grainger", 
+                            "index": "Grainger, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Harland", 
+                            "index": "Harland, RM"
+                        }
+                    }
+                ], 
+                "bookTitle": "Early development of Xenopus laevis: a laboratory manual", 
+                "publisher": {
+                    "name": [
+                        "Cold Spring harbor Laboratory Press"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "Cold Spring Harbor"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "Cold Spring Harbor"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Tirnauer", 
+                            "index": "Tirnauer, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ED Salmon", 
+                            "index": "Salmon, ED"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Mitchison", 
+                            "index": "Mitchison, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Microtubule plus-end dynamics in Xenopus egg extract spindles", 
+                "journal": {
+                    "name": [
+                        "Mol Biol Cell"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "1776", 
+                    "last": "1784", 
+                    "range": "1776\u20131784"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Tournebize", 
+                            "index": "Tournebize, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SS Andersen", 
+                            "index": "Andersen, SS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Verde", 
+                            "index": "Verde, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Doree", 
+                            "index": "Doree, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Karsenti", 
+                            "index": "Karsenti, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Hyman", 
+                            "index": "Hyman, AA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Distinct roles of PP1 and PP2A-like phosphatases in control of microtubule dynamics during mitosis", 
+                "journal": {
+                    "name": [
+                        "EMBO J"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "5537", 
+                    "last": "5549", 
+                    "range": "5537\u20135549"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CE Walczak", 
+                            "index": "Walczak, CE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Heald", 
+                            "index": "Heald, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mechanisms of mitotic spindle assembly and function", 
+                "journal": {
+                    "name": [
+                        "Int Rev Cytol"
+                    ]
+                }, 
+                "volume": "265", 
+                "pages": {
+                    "first": "111", 
+                    "last": "158", 
+                    "range": "111\u2013158"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Wiese", 
+                            "index": "Wiese, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Wilde", 
+                            "index": "Wilde, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MS Moore", 
+                            "index": "Moore, MS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Adam", 
+                            "index": "Adam, SA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Merdes", 
+                            "index": "Merdes, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zheng", 
+                            "index": "Zheng, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Role of importin-beta in coupling Ran to downstream targets in microtubule assembly", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "291", 
+                "pages": {
+                    "first": "653", 
+                    "last": "656", 
+                    "range": "653\u2013656"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Wilde", 
+                            "index": "Wilde, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SB Lizarraga", 
+                            "index": "Lizarraga, SB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Zhang", 
+                            "index": "Zhang, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Wiese", 
+                            "index": "Wiese, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NR Gliksman", 
+                            "index": "Gliksman, NR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CE Walczak", 
+                            "index": "Walczak, CE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zheng", 
+                            "index": "Zheng, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ran stimulates spindle assembly by altering microtubule dynamics and the balance of motor activities", 
+                "journal": {
+                    "name": [
+                        "Nat Cell Biol"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": {
+                    "first": "221", 
+                    "last": "227", 
+                    "range": "221\u2013227"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wuhr", 
+                            "index": "Wuhr, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ND Obholzer", 
+                            "index": "Obholzer, ND"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SG Megason", 
+                            "index": "Megason, SG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HW Detrich III", 
+                            "index": "Detrich, HW, III"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Mitchison", 
+                            "index": "Mitchison, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Live imaging of the cytoskeleton in early cleavage-stage zebrafish embryos", 
+                "journal": {
+                    "name": [
+                        "Methods Cell Biol"
+                    ]
+                }, 
+                "volume": "101", 
+                "pages": {
+                    "first": "1", 
+                    "last": "18", 
+                    "range": "1\u201318"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib36", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wuhr", 
+                            "index": "Wuhr, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ES Tan", 
+                            "index": "Tan, ES"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SK Parker", 
+                            "index": "Parker, SK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HW Detrich III", 
+                            "index": "Detrich, HW, III"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Mitchison", 
+                            "index": "Mitchison, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "A model for cleavage plane determination in early amphibian and fish embryos", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "2040", 
+                    "last": "2045", 
+                    "range": "2040\u20132045"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib37", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wuhr", 
+                            "index": "Wuhr, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Dumont", 
+                            "index": "Dumont, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AC Groen", 
+                            "index": "Groen, AC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Needleman", 
+                            "index": "Needleman, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Salic", 
+                            "index": "Salic, A"
+                        }
+                    }
+                ], 
+                "authorsEtAl": true, 
+                "articleTitle": "Evidence for an upper limit to mitotic spindle length", 
+                "journal": {
+                    "name": [
+                        "Curr Biol"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "1256", 
+                    "last": "1261", 
+                    "range": "1256\u20131261"
+                }
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank members of the Heald laboratory for helpful discussions, and Karsten Weis for critical comments on the manuscript. Special thanks to Claire Walczak for Kif2a and MCAK antibodies, and to Ron Vale for patronin antibodies."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.00290.021", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://www.elifesciences.org/the-journal/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for choosing to send your work entitled \u201cMitotic spindle scaling during <i>Xenopus</i> development by kif2a and importin \u03b1\u201d for consideration at <i>eLife</i>. Your article has been evaluated by a Senior editor (Detlef Weigel) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments based on the reviewers' reports."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Your manuscript has been read and reviewed by two experts, who agree that your work is of general interest as scaling of cellular structures is a topic of foremost importance in modern cell biology. Both reviewers make the point that the first part of the paper (extract systems and the implications for changes in the spindle throughout development) is profound and very important, while the data presented in the second part (kif2a and importin \u03b1 are responsible for the difference between spindle length) are not strong enough to provide extensive, mechanistic insights. However, we do believe that your work is worth publishing but for resubmission you would have to improve the second part as proposed below."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A major claim in the paper is that at stage 8, spindle size is reduced upon release of an inhibitory interaction between the kinesin kif2a and importin \u03b1. This occurs through redistribution of importin \u03b1 from the cytoplasm to a membrane fraction. This point needs to be shown in a more direct and quantitative manner. We would ask you to measure the cytoplasmic levels of active importin \u03b1, data that can be collected either with (1) FCS, (2) FRET (sensors described in Sun et al., 2007, PNAS), or (3) quantitative pull downs. We suggest this because we expect that the reagents already exist in your lab, based on previous papers you have published."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.00290.022", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>A major claim in the paper is that at stage 8, spindle size is reduced upon release of an inhibitory interaction between the kinesin kif2a and importin \u03b1. This occurs through redistribution of importin \u03b1 from the cytoplasm to a membrane fraction. This point needs to be shown in a more direct and quantitative manner. We would ask you to measure the cytoplasmic levels of active importin \u03b1, data that can be collected either with (1) FCS, (2) FRET (sensors described in Sun et al., 2007, PNAS), or (3) quantitative pull downs. We suggest this because we expect that the reagents already exist in your lab, based on previous papers you have published</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have addressed the concern with a quantitative pull down experiment. Tagged recombinant kif2a was added to stage 3 or stage 8 extracts and then retrieved, revealing the amount of active importin \u03b1 in the each extract that is free to bind kif2a, using a kif2a NLS mutant as control (<a href=\"#fig6\">Figure 6C</a>). We found that in stage 3 extracts importin \u03b1 could bind kif2a while in stage 8 extracts approximately ten-fold less importin \u03b1 interacted with the added kif2a (quantified in <a href=\"#fig6\">Figure 6D</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In addition, we attempted to further quantify the kif2a-importin \u03b1 by other approaches suggested by the reviewers. FCS experiments were performed upon addition of fluorescently labeled kif2a motor domain to either stage 3 or stage 8 extract at low concentrations. Fluorescence intensity was measured at 500 frames/sec and processed as by the PACI method developed by Needleman et al. (Biophysics J. 2009). Correlation curves indicated slower diffusion of kif2a motor domain in stage 3 compared to stage 8 extracts, indicating the interaction with other proteins and consistent with the formation of importin \u03b1-containing complexes. However, curve fits to this data were underdetermined for some parameters and therefore, despite qualitatively supporting our pulldown results, we feel the data are not strong enough to warrant addition to the manuscript."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Experiments utilizing FRET or other methods that require a fluorescently labeled version of importin \u03b1 would require addition or overexpression of importin \u03b1 and therefore perturbation of its levels. Given the small changes in importin \u03b1 partitioning that affected spindle size, we were unable to interpret data from the system perturbed in this way since any additional importin \u03b1 protein is expected to affect its steady state distribution."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Overall, the addition of the quantitative pulldown data strongly supports our model that partitioning of importin \u03b1 out of the cytoplasm can decrease its interaction with kif2a, leading to a change in spindle size."
+                }
+            ]
+        }
+    }
+}

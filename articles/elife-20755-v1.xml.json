@@ -1,0 +1,704 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "20755", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.20755", 
+        "authorLine": "Ian Mohr", 
+        "title": "Closing in on the causes of host shutoff", 
+        "titlePrefix": "Virology", 
+        "published": "2016-09-19T00:00:00", 
+        "versionDate": "2016-09-19T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e20755", 
+        "pdf": "https://publishing-cdn.elifesciences.org/20755/elife-20755-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "microbiology-infectious-disease", 
+                "name": "Microbiology and Infectious Disease"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Influenza A virus suppresses the translation of host mRNA by selectively remodeling and dominating the pool of mRNA in infected cells."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Mohr", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ian Mohr", 
+                    "index": "Mohr, Ian"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Microbiology and the NYU Cancer Institute", 
+                            "NYU School of Medicine"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "Ian.Mohr@nyumc.org"
+                ], 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "20755", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.20755", 
+        "authorLine": "Ian Mohr", 
+        "title": "Closing in on the causes of host shutoff", 
+        "titlePrefix": "Virology", 
+        "published": "2016-09-19T00:00:00", 
+        "versionDate": "2016-09-19T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e20755", 
+        "pdf": "https://publishing-cdn.elifesciences.org/20755/elife-20755-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "microbiology-infectious-disease", 
+                "name": "Microbiology and Infectious Disease"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Influenza A virus suppresses the translation of host mRNA by selectively remodeling and dominating the pool of mRNA in infected cells."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Mohr", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ian Mohr", 
+                    "index": "Mohr, Ian"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Microbiology and the NYU Cancer Institute", 
+                            "NYU School of Medicine"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "Ian.Mohr@nyumc.org"
+                ], 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "virus infection", 
+            "host shutoff", 
+            "translation", 
+            "virology", 
+            "mRNA decay"
+        ], 
+        "relatedArticles": [
+            "18311"
+        ], 
+        "body": [
+            {
+                "type": "paragraph", 
+                "text": "<b>Related research article</b> Bercovich-Kinori A, Tai J, Gelbart IA, Shitrit A, Ben-Moshe S, Drori Y, Itzkovitz S, Mandelboim M, Stern-Ginossar N. 2016. A systematic view on influenza induced host shutoff. <i>eLife</i> <b>5</b>:e18311. doi: <a href=\"http://dx.doi.org/10.18311/eLife.18311\">10.7554/eLife.18311</a>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "When a virus enters a cell it relies on the molecular machinery of its host to help it replicate. In particular, the virus relies on the ribosomes in the host cell to translate viral messenger RNA (mRNA) into polypeptides. Many viruses also impair the translation of cellular mRNA, via a process termed \u201chost shutoff\u201d,\u00a0in\u00a0order to prevent the production of anti-viral, host defense proteins. For example, poliovirus does this by inactivating a translation factor that is required to load ribosomes onto host mRNAs, all of which have a type of \"cap\" called an \"m<sup>7</sup>G cap\". Moreover, while the translation of these mRNAs is being suppressed, host ribosomes are involved in the translation of poliovirus mRNA, which does not have a cap: this is possible without the translation factor because poliovirus mRNA has an internal entry site for ribosomes (<a href=\"#bib6\">Jan et al., 2016</a>). However, the mechanisms responsible for host shutoff in viruses that have mRNAs with m<sup>7</sup>G-caps, such as influenza A virus, have remained enigmatic."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Numerous mechanisms have been proposed to explain host shutoff by influenza A virus (IAV). One of these involves the viral mRNAs \u201cstealing\u201d capped fragments originally thought to be derived from cellular pre-mRNAs, followed by extension into mRNA (<a href=\"#bib8\">Koppstein et al., 2015</a>). Other mechanisms put forward include the preferential translation of viral mRNA (<a href=\"#bib10\">Park and Katze, 1995</a>), the degradation of cellular mRNA (<a href=\"#bib2\">Beloso et al., 1992</a>), inhibiting the formation of cellular pre-mRNA (<a href=\"#bib9\">Nemeroff et al., 1998</a>), the degradation of cellular RNA polymerase II (<a href=\"#bib11\">Rodriguez et al., 2007</a>), and the retention of host mRNA in the cell nucleus (<a href=\"#bib4\">Fortes et al., 1994</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Now, in eLife, Noam Stern-Ginossar of the Weizmann Institute of Science and colleagues \u2013 including Adi Bercovich-Kinori and Julie Tai as joint first authors \u2013 report how they have combined RNA sequencing (which measures the abundance of different mRNAs) with ribosome profiling (which gives a measure of mRNA translation or protein synthesis\u00a0(<a href=\"#bib5\">Ingolia, 2016</a>)) to produce a genome-wide map that illustrates changes in the abundance and translation of both host and viral mRNA across the IAV replication cycle (<a href=\"#bib3\">Bercovich-Kinori et al., 2016</a>). Unexpectedly they found that host and viral mRNAs were both translated with similar efficiencies, indicating that viral mRNAs were not preferentially translated relative to host mRNAs. Instead, IAV-induced host shutoff primarily originates from a reduced abundance of cellular mRNA and from the high levels of viral mRNA in both the nucleus and cytoplasm. Fluorescence-based measurements confirmed these findings and revealed that the reduced abundance of cellular mRNA has its origins in the nucleus. This likely involves an RNA endoribonuclease called PA-X, which is encoded in the genome of IAV, stimulating the decay of cellular mRNA (<a href=\"#bib7\">Khaperskyy</a> <a href=\"#bib7\">et al., 2016</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Significantly, Bercovich-Kinori et al. \u2013 who are based at the Weizmann Institute, the Chaim Sheba Medical Center and Tel-Aviv University \u2013 found that the sensitivity of host mRNAs to IAV-induced host shutoff was not uniform, and that certain host mRNAs resisted IAV-induced decay. For example, shorter and more GC-rich host mRNAs were less impacted by IAV-induced decay. Furthermore, host mRNAs encoding proteins that maintain vital cellular processes (such as the proteins that maintain oxidative phosphorylation) were less perturbed by IAV because such processes support the replication of the virus. Thus, IAV infection effectively sculpts the total pool of mRNA in virus-infected cells, allowing select host mRNAs that are important for virus replication to persist and be translated."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Exploring further Bercovich-Kinori et al. noticed that a number of host mRNAs \u2013 those that are translated when eIF2\u03b1, a subunit of eukaryotic initiation factor 2, is phosphorylated \u2013 were enriched on ribosomes in IAV-infected cells. The phosphorylation of eIF2\u03b1 is a response to physiological stress, including viral infection, that restricts overall protein synthesis (<a href=\"#bib6\">Jan et al., 2016</a>), while stimulating the translation of select mRNAs that are required for stress responses. The researchers found evidence for increased levels of eIF2\u03b1 phosphorylation at 4 hours post infection, and for much reduced levels at 8 hours post infection. Thus, while eIF2\u03b1 phosphorylation is traditionally antiviral, the changes observed during IAV infection illustrate how a virus might benefit from this stress-response program. It is conceivable, therefore, that other stress-responsive host mRNAs that encode antiviral functions might restrict the replication of IAV, albeit incompletely. We do not know how viral mRNAs are translated when the levels of eIF2\u03b1 phosphorylation transiently increase, but the overwhelming abundance of viral mRNAs may simply enhance the likelihood of capturing ribosomes carrying unphosphorylated eIF2\u03b1."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "The study by Bercovich-Kinori et al. has broad implications in infection biology. Host shutoff enforced by viral domination of the mRNA pool has the advantage of preserving the cellular machinery needed for the translation of mRNAs with m<sup>7</sup>G caps. Instead of inactivating cellular translation factors, or relying on the preferential translation of viral mRNA, the mRNA pool can be remodeled via mRNA decay. This could allow the virus to better take advantage of critical host processes. Strikingly, the genomes of herpesviruses, poxviruses and coronaviruses, which all produce m<sup>7</sup>G-capped mRNAs, also encode proteins that can stimulate mRNA decay and, therefore remodel the mRNA pool inside cells (<a href=\"#bib1\">Abernathy and Glaunsinger, 2015</a>; <a href=\"#bib6\">Jan et al., 2016</a>). The extent to which the domination of the mRNA pool by viral mRNA drives host shutoff, or if similar host mRNAs resist virus-induced mRNA decay in cells infected with these different viruses, remains to be explored. Likewise, the latest work also illustrates how remodeling of the mRNA pool by mRNA decay, coupled with new transcription, might rapidly reprogram gene expression, and therefore potentially impact the stress responses of uninfected cells to a range of physiological stimuli."
+            }, 
+            {
+                "type": "image", 
+                "id": "fig1", 
+                "label": "Figure 1.", 
+                "title": "How influenza virus A drives virus-induced host shutoff.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Top left: Pools of host mRNAs (green lines) in the nucleus (blue) and cytoplasm (grey) in uninfected cells. The 5' end of each mRNA has an m<sup>7</sup>G cap (light green filled). Lower right: Influenza virus A (IAV) mRNAs (<i>salmon lines</i>) dominate the mRNA pool in virus-infected cells. The 5\u2019-end of viral mRNAs contain m<sup>7</sup>G-caps and 5\u2019-proximal sequences derived from host RNAs. The abundance of host mRNAs within the nucleus is reduced by IAV: this is probably caused by an RNA endonuclease called PA-X. Some of the host mRNAs resistant to IAV-induced decay are shown within the cytoplasm (inside the dotted box): besides being shorter and more GC-rich than host mRNAs that are not resistant to IAV-induced decay, some of these mRNAs are stress-responsive and are translated when eIF2\u03b1 is phosphorylated (see text). m<sup>7</sup>G: methyl-7-guanosine."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-20755-fig1-v1"
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Abernathy", 
+                            "index": "Abernathy, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Glaunsinger", 
+                            "index": "Glaunsinger, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "Emerging roles for RNA degradation in viral replication and antiviral defense", 
+                "journal": {
+                    "name": [
+                        "Virology"
+                    ]
+                }, 
+                "volume": "479-480", 
+                "pages": {
+                    "first": "600", 
+                    "last": "608", 
+                    "range": "600\u2013608"
+                }, 
+                "doi": "10.1016/j.virol.2015.02.007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "1992", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Beloso", 
+                            "index": "Beloso, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Mart\u00ednez", 
+                            "index": "Mart\u00ednez, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Valc\u00e1rcel", 
+                            "index": "Valc\u00e1rcel, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JF Santar\u00e9n", 
+                            "index": "Santar\u00e9n, JF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ort\u00edn", 
+                            "index": "Ort\u00edn, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Degradation of cellular mRNA during influenza virus infection: its possible role in protein synthesis shutoff", 
+                "journal": {
+                    "name": [
+                        "Journal of General Virology"
+                    ]
+                }, 
+                "volume": "73", 
+                "pages": {
+                    "first": "575", 
+                    "last": "581", 
+                    "range": "575\u2013581"
+                }, 
+                "doi": "10.1099/0022-1317-73-3-575"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bercovich-Kinori", 
+                            "index": "Bercovich-Kinori, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Tai", 
+                            "index": "Tai, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IA Gelbart", 
+                            "index": "Gelbart, IA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Shitrit", 
+                            "index": "Shitrit, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ben-Moshe", 
+                            "index": "Ben-Moshe, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Drori", 
+                            "index": "Drori, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Itzkovitz", 
+                            "index": "Itzkovitz, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Mandelboim", 
+                            "index": "Mandelboim, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Stern-Ginossar", 
+                            "index": "Stern-Ginossar, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "A systematic view on Influenza induced host shutoff", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e18311", 
+                "doi": "10.7554/eLife.18311"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1994", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Fortes", 
+                            "index": "Fortes, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Beloso", 
+                            "index": "Beloso, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ort\u00edn", 
+                            "index": "Ort\u00edn, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Influenza virus NS1 protein inhibits pre-mRNA splicing and blocks mRNA nucleocytoplasmic transport", 
+                "journal": {
+                    "name": [
+                        "EMBO Journal"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "704", 
+                    "last": "712", 
+                    "range": "704\u2013712"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NT Ingolia", 
+                            "index": "Ingolia, NT"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ribosome footprint profiling of translation throughout the genome", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "165", 
+                "pages": {
+                    "first": "22", 
+                    "last": "33", 
+                    "range": "22\u201333"
+                }, 
+                "doi": "10.1016/j.cell.2016.02.066"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib6", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Jan", 
+                            "index": "Jan, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Mohr", 
+                            "index": "Mohr, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Walsh", 
+                            "index": "Walsh, D"
+                        }
+                    }
+                ], 
+                "title": "A cap-to-tail guide to mRNA translation strategies in virus-infected cells", 
+                "details": "Annual Review of Virology, 3, 10.1146/annurev-virology-100114-055014"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Khaperskyy", 
+                            "index": "Khaperskyy, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Schmaling", 
+                            "index": "Schmaling, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Larkins-Ford", 
+                            "index": "Larkins-Ford, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C McCormick", 
+                            "index": "McCormick, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MM Gaglia", 
+                            "index": "Gaglia, MM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Selective degradation of host RNA polymerase II transcripts by influenza A virus PA-X host shutoff protein", 
+                "journal": {
+                    "name": [
+                        "PLOS Pathogens"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": "e1005427", 
+                "doi": "10.1371/journal.ppat.1005427"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Koppstein", 
+                            "index": "Koppstein, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ashour", 
+                            "index": "Ashour, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DP Bartel", 
+                            "index": "Bartel, DP"
+                        }
+                    }
+                ], 
+                "articleTitle": "Sequencing the cap-snatching repertoire of H1N1 influenza provides insight into the mechanism of viral transcription initiation", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "43", 
+                "pages": {
+                    "first": "5052", 
+                    "last": "5064", 
+                    "range": "5052\u20135064"
+                }, 
+                "doi": "10.1093/nar/gkv333"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ME Nemeroff", 
+                            "index": "Nemeroff, ME"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Barabino", 
+                            "index": "Barabino, SM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Li", 
+                            "index": "Li, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Keller", 
+                            "index": "Keller, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Krug", 
+                            "index": "Krug, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KW Li Y", 
+                            "index": "Li Y, KW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Influenza virus NS1 protein interacts with the cellular 30 kDa subunit of CPSF and inhibits 3'end formation of cellular pre-mRNAs", 
+                "journal": {
+                    "name": [
+                        "Molecular Cell"
+                    ]
+                }, 
+                "volume": "1", 
+                "pages": {
+                    "first": "991", 
+                    "last": "1000", 
+                    "range": "991\u20131000"
+                }, 
+                "doi": "10.1016/S1097-2765(00)80099-4"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "1995", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YW Park", 
+                            "index": "Park, YW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MG Katze", 
+                            "index": "Katze, MG"
+                        }
+                    }
+                ], 
+                "articleTitle": "Translational control by influenza virus. Identification of cis-acting sequences and trans-acting factors which may regulate selective viral mRNA translation", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "270", 
+                "pages": {
+                    "first": "28433", 
+                    "last": "28439", 
+                    "range": "28433\u201328439"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Rodriguez", 
+                            "index": "Rodriguez, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A P\u00e9rez-Gonz\u00e1lez", 
+                            "index": "P\u00e9rez-Gonz\u00e1lez, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Nieto", 
+                            "index": "Nieto, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Influenza virus infection causes specific degradation of the largest subunit of cellular RNA polymerase II", 
+                "journal": {
+                    "name": [
+                        "Journal of Virology"
+                    ]
+                }, 
+                "volume": "81", 
+                "pages": {
+                    "first": "5315", 
+                    "last": "5324", 
+                    "range": "5315\u20135324"
+                }, 
+                "doi": "10.1128/JVI.02129-06"
+            }
+        ]
+    }
+}

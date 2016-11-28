@@ -1,0 +1,3361 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "18249", 
+        "version": 2, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.18249", 
+        "authorLine": "Jingjing Guo, Huan-Xiang Zhou", 
+        "title": "Allosteric activation of SENP1 by SUMO1 \u03b2-grasp domain involves a dock-and-coalesce mechanism", 
+        "published": "2016-08-31T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e18249", 
+        "pdf": "https://publishing-cdn.elifesciences.org/18249/elife-18249-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biophysics-structural-biology", 
+                "name": "Biophysics and Structural Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.18249.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Small ubiquitin-related modifiers (SUMOs) are conjugated to proteins to regulate a variety of cellular processes. SENPs are cysteine proteases with a catalytic center located within a channel between two subdomains that catalyzes SUMO C-terminal cleavage for processing of SUMO precursors and de-SUMOylation of target proteins. The \u03b2-grasp domain of SUMOs binds to an exosite cleft, and allosterically activates SENPs via an unknown mechanism. Our molecular dynamics simulations showed that binding of the \u03b2-grasp domain induces significant conformational and dynamic changes in SENP1, including widening of the exosite cleft and quenching of nanosecond dynamics in all but a distal region. A dock-and-coalesce mechanism emerges for SENP-catalyzed SUMO cleavage: the wedging of the \u03b2-grasp domain enables the docking of the proximal portion of the C-terminus and the strengthened cross-channel motional coupling initiates inter-subdomain correlated motions to allow for the distal portion to coalesce around the catalytic center."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Guo et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Jingjing Guo", 
+                    "index": "Guo, Jingjing"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Henan Engineering Research Center of Chiral Hydroxyl Pharmaceuticals, School of Chemistry and Chemical Engineering", 
+                            "Henan Normal University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Xinxiang", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Xinxiang"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JG, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Huan-Xiang Zhou", 
+                    "index": "Zhou, Huan-Xiang"
+                }, 
+                "orcid": "0000-0001-9020-0302", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physics", 
+                            "Institute of Molecular Biophysics, Florida State University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Tallahassee", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Tallahassee"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "hzhou4@fsu.edu"
+                ], 
+                "contribution": "H-XZ, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Simulations of molecular dynamics suggest how the binding of the \u03b2-grasp domain of SUMO1 induces conformational and dynamic effects to activate SENP1."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "18249", 
+        "version": 2, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.18249", 
+        "authorLine": "Jingjing Guo, Huan-Xiang Zhou", 
+        "title": "Allosteric activation of SENP1 by SUMO1 \u03b2-grasp domain involves a dock-and-coalesce mechanism", 
+        "published": "2016-08-31T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e18249", 
+        "pdf": "https://publishing-cdn.elifesciences.org/18249/elife-18249-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biophysics-structural-biology", 
+                "name": "Biophysics and Structural Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.18249.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Small ubiquitin-related modifiers (SUMOs) are conjugated to proteins to regulate a variety of cellular processes. SENPs are cysteine proteases with a catalytic center located within a channel between two subdomains that catalyzes SUMO C-terminal cleavage for processing of SUMO precursors and de-SUMOylation of target proteins. The \u03b2-grasp domain of SUMOs binds to an exosite cleft, and allosterically activates SENPs via an unknown mechanism. Our molecular dynamics simulations showed that binding of the \u03b2-grasp domain induces significant conformational and dynamic changes in SENP1, including widening of the exosite cleft and quenching of nanosecond dynamics in all but a distal region. A dock-and-coalesce mechanism emerges for SENP-catalyzed SUMO cleavage: the wedging of the \u03b2-grasp domain enables the docking of the proximal portion of the C-terminus and the strengthened cross-channel motional coupling initiates inter-subdomain correlated motions to allow for the distal portion to coalesce around the catalytic center."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Guo et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Jingjing Guo", 
+                    "index": "Guo, Jingjing"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Henan Engineering Research Center of Chiral Hydroxyl Pharmaceuticals, School of Chemistry and Chemical Engineering", 
+                            "Henan Normal University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Xinxiang", 
+                                "China"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Xinxiang"
+                                ], 
+                                "country": "China"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JG, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Huan-Xiang Zhou", 
+                    "index": "Zhou, Huan-Xiang"
+                }, 
+                "orcid": "0000-0001-9020-0302", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physics", 
+                            "Institute of Molecular Biophysics, Florida State University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Tallahassee", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Tallahassee"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "hzhou4@fsu.edu"
+                ], 
+                "contribution": "H-XZ, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Simulations of molecular dynamics suggest how the binding of the \u03b2-grasp domain of SUMO1 induces conformational and dynamic effects to activate SENP1.", 
+        "keywords": [
+            "allosteric activation", 
+            "SUMOylation", 
+            "protein dynamics", 
+            "dock-and-coalesce"
+        ], 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Whereas conjugation with ubiquitin targets proteins for degradation, conjugation with small ubiquitin-related modifiers (SUMOs), or SUMOylation, is involved in various cellular processes and required for normal growth and development in all eukaryotes (<a href=\"#bib21\">Johnson, 2004</a>). Although there is only 18% sequence identity between ubiquitin and SUMO1 (the founding member of the SUMO family [<a href=\"#bib27\">Okura et al., 1996</a>]), their structured domains share a common fold known as \u03b2-grasp, in which five \u03b2-strands wrap around an \u03b1-helix (<a href=\"#bib4\">Bayer et al., 1998</a>) (<a href=\"#fig1\">Figure 1</a>). SUMOylation, like ubiquitination, is through an isopeptide linkage between a conserved Gly-Gly motif at the C-terminus of SUMOs and a lysine sidechain on target proteins. All SUMOs are translated as precursors that are first processed by the SENP family of SUMO-specific proteases, whereby a short C-terminal extension is cleaved to expose the reactive Gly-Gly motif. Like the much better-known posttranslational modification phosphorylation, SUMOylation is reversible, and de-SUMOylation is also catalyzed by SENPs (<a href=\"#bib39\">Yeh, 2009</a>). The catalytic activity of SENPs on short peptide substrates is low, likely to avoid off-target cleavage, and is substantially enhanced by the \u03b2-grasp domain of SUMOs (<a href=\"#bib25\">Mikolajczyk et al., 2007</a>). The mechanism of this allosteric activation has remained poorly understood. The aim of the present study was to gain insight into the allosteric mechanism through extensive molecular dynamics (MD) simulations."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.18249.002", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Structure of the SENP1-SUMO1 complex (PDB entry 2IY1).", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "SENP1 is shown as gray surface and cartoon representations in the left and right panels, respectively, and the closed catalytic channel is boxed and enlarged in the middle panel. Sidechains of the catalytic triad and of two tryptophans shaping the catalytic channel are shown as sticks. Three channel-lining loops (residues 464\u2013466, 530\u2013533, and 599\u2013602) are shown in orange; two exosite interface regions (residues 443\u2013453 and 496\u2013514) are shown in mauve. SUMO1 is shown in green but with the conserved C-terminal Gly-Gly motif in red."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-18249-fig1-v2"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The human genome encodes three SUMOs (SUMO1, SUMO2, and SUMO3) and six SUMO-specific SENPs (SENP1, SENP2, SENP3, SENP5, SENP6, and SENP7). SENPs belong to the cysteine protease superfamily, and regulate both physiological and pathological processes mediated by SUMOylated proteins (<a href=\"#bib39\">Yeh, 2009</a>). As an example, hypoxia (i.e., low oxygen), a condition common to fetal development and tumorigenesis, induces the nuclear entry and SUMOylation of hypoxia-inducible factor 1\u03b1 (HIF1\u03b1) (<a href=\"#bib10\">Cheng et al., 2007</a>). SUMOylated HIF1\u03b1 is subject to ubiquitin-dependent degradation, and hence deSUMOylation of HIF1\u03b1 by SENP1 is central to hypoxia response. For this and other reasons SENP1 is overexpressed during the development of prostate cancer, and has emerged as a potential therapeutic target (<a href=\"#bib9\">Cheng et al., 2006</a>; <a href=\"#bib3\">Bawa-Khalfe et al., 2010</a>; <a href=\"#bib37\">Wang et al., 2013</a>). Several types of SENP inhibitors have been identified, including SUMO variants or C-terminal fragments tethered with electrophilic traps (<a href=\"#bib17\">Hemelaar et al., 2004</a>; <a href=\"#bib5\">Borodovsky et al., 2005</a>; <a href=\"#bib12\">Dobrota et al., 2012</a>) and small molecules (<a href=\"#bib1\">Albrow et al., 2011</a>; <a href=\"#bib29\">Ponder et al., 2011</a>; <a href=\"#bib8\">Chen et al., 2012</a>; <a href=\"#bib23\">Madu et al., 2013</a>). The therapeutic value of these inhibitors is limited by covalent linkage with the catalytic cysteine residue, low specificity, or low potency. Better understanding of the mechanism for the allosteric activation of SENPs may lead to new avenues for drug development."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Structural studies have shown that SENP catalytic domains only undergo localized conformational rearrangements upon binding SUMOs (as precursors, processed products, or SUMO conjugates), and that SENP-SUMO interactions are largely similar during precursor processing and deSUMOylation (<a href=\"#bib31\">Reverter and Lima, 2004</a>, <a href=\"#bib32\">2006</a>; <a href=\"#bib34\">Shen et al., 2006a</a>, <a href=\"#bib35\">2006b</a>; <a href=\"#bib38\">Xu et al., 2006</a>; <a href=\"#bib2\">Alegre and Reverter, 2014</a>). In SENP1, the catalytic triad comprises residues His533, Asp550, and Cys603 (<a href=\"#fig1\">Figure 1</a>). The catalytic domain (residues 419\u2013644) consists of eight \u03b1-helices and seven \u03b2-strands, divided into two subdomains. The lower subdomain contains the \u03b11, \u03b12, and \u03b18 helices and the \u03b21-\u03b22 hairpin, while the upper subdomain contains the \u03b14-\u03b16 helices and the \u03b23-\u03b27 sheet. The two remaining helices, \u03b13 and \u03b17, glue the two subdomains and also form the bottom of a channel where the extended C-terminus of SUMO1 lies and the catalytic triad is situated. Three loops, including residues 464\u2013466 between \u03b12 and \u03b13, residues 530\u2013533 between \u03b24 and \u03b25, and residues 599\u2013602 between \u03b27 and \u03b17, line the channel and likely undergo transient motions during the entrance of the SUMO C-terminus into the channel. Hereafter these loops are referred to as loopA, loopB, and loopC, respectively. One tryptophan residue, Trp534, floors the substrate while another, Trp465, forms a lid over its conserved Gly-Gly motif. The burial of the catalytic center in the channel and consequently the transient motions around the channel necessary for proper alignment of the substrate with respect to the catalytic center may contribute to the low catalytic activity of SENPs on short peptides."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The \u03b2-grasp domain of SUMO1 binds into a large cleft to the side (hereafter the exosite), and makes separate contacts with the two subdomains of SENP1: the \u03b21-\u03b22 hairpin in the lower subdomain and the \u03b14-\u03b15 helices in the upper subdomain (<a href=\"#fig1\">Figure 1</a>). An insertion in the \u03b21-\u03b22 hairpin of SENP2 that extended the interface with SUMO2 resulted in no other change in the structure of the catalytic domain but nevertheless increased its catalytic activity (<a href=\"#bib2\">Alegre and Reverter, 2014</a>). Given that SENPs generally lack major conformational changes upon binding SUMOs, there is no simple explanation for the allosteric activation of SENPs by the \u03b2-grasp domain of SUMOs. In this context, we note that, in addition to conformational changes, the possibility that changes in conformational dynamics can mediate allosteric effects has received attention in the recent literature (<a href=\"#bib15\">Guo and Zhou, 2016</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Similar to SENPs, deubiquitinating enzymes (DUBs) in the cysteine protease class also have very low catalytic activity on short peptide substrates (<a href=\"#bib11\">Dang et al., 1998</a>). Although the catalytic domains of DUBs in different families have different structural scaffolds, they all contain a catalytic channel that bears resemblance to that in SENPs (<a href=\"#bib20\">Hu et al., 2002</a>; <a href=\"#bib26\">Misaghi et al., 2005</a>; <a href=\"#bib24\">Messick et al., 2008</a>). The resemblance further extends to the positioning of the ubiquitin domain in the exosite. It may thus be expected that allosteric activation mechanisms of SENPs and DUBs share certain similarities."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "A major step toward elucidating the allosteric activation of SENP1 by the \u03b2-grasp domain of SUMO1 was taken in a recent study (<a href=\"#bib7\">Chen et al., 2014</a>). These authors confirmed the ability of a pre-bound \u03b2-grasp domain, as contained in a truncated SUMO1 construct (residues 1\u201392, hereafter referred to as trunSUMO1), to enhance the SENP1 catalytic activity on a short peptide substrate, and further traced the enhancement solely to an increase in <i>k</i><sub>cat</sub>. Their NMR data showed that trunSUMO1 binding yielded a gradient in backbone amide chemical shift perturbations (CSPs) emanating from the exosite cleft to the catalytic center. Significant sidechain methyl CSPs were also observed on six residues that dotted the region from the exosite cleft to the catalytic center, which indicated to the authors that the allosteric effect was propagated through the hydrophobic core. Their Carr-Purcell-Meiboom-Gill (CPMG) relaxation dispersion data showed that trunSUMO1 binding enhanced microsecond-millisecond (\u03bcs-ms) dynamics for residues around the catalytic center, suggesting a realignment of these residues. Chen et al.\u2019s NMR data provided residue-level information, but their sparseness precluded a full picture on how the allosteric communication occurred in SENP1 upon binding trunSUMO1."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Here we present an atomistic picture for the allosteric communication derived from MD simulations. The simulations showed that trunSUMO1 binding induces significant conformational and dynamic changes in SENP1, including widening of the exosite cleft and quenching of nanosecond (ns) dynamics in all but a distal region. Calculated backbone amide and sidechain methyl CSPs are in broad agreement with the experimental data of <a href=\"#bib7\">Chen et al. (2014)</a> but more pronounced, and our sidechain CSPs clearly identify two hydrophobic pathways, each within a subdomain, for allosteric communication from the exosite cleft to the catalytic center. The \u03b2-grasp domain, by serving as a bridge that links the two exosite interface regions, strengthens intra- and inter-subdomain motional coupling, which in turn may be the underlying reason for the quenching of ns dynamics and potentially may also be the instigator of inter-subdomain \u03bcs-ms dynamics (<a href=\"#bib13\">Guo et al., 2015</a>). The concerted action of the \u03b2-grasp induced conformational and dynamic changes is captured by a dock-and-coalesce mechanism for SENP-catalyzed SUMO cleavage, whereby the wedging of the \u03b2-grasp domain into the exosite cleft enables the docking of the proximal portion of the C-terminus, and the strengthened cross-channel coupling initiates inter-subdomain correlated motions to allow for the distal portion to coalesce around the catalytic center."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We carried out three replicate explicit-solvent MD simulations for apo SENP1, for SENP1 bound with trunSUMO1, and for SENP1 bound with the full-length SUMO1 precursor (referred to as preSUMO1 hereafter). For each system, the three simulations accumulated 1.7 \u03bcs of total time and are denoted as sim1, sim2, and sim3."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "\u03b2-Grasp binding induces wider exosite cleft and stronger inter-subdomain contact", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To compare the conformational sampling by the apo, trunSUMO1-bound, and preSUMO1-bound forms of SENP1, we carried out principal component analysis on the replicate simulations of the three systems. The distributions of conformations in the plane of the first two principal components (PC1 and PC2), translated to free energy surfaces according to the Boltzmann relation, are displayed in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1a</a>. The three systems cover overlapping as well as distinct regions in conformational space. The apo form samples disconnected free energy basins, in contrast to the two bound forms, indicating a decrease in flexibility upon \u03b2-grasp binding (see below)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Both PC1 and PC2 feature prominent displacements in the two exosite interface regions and in the loops lining the catalytic channel (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1b,c</a>). Relative to the apo form, the two bound forms move along positive PC1 and PC2, both of which involve the moving apart between the two interface regions and the opposite movements of loopA and loopB with respect to the \u03b2-grasp domain. We hence directly monitored the relative motions between the two interface regions and between the three channel-lining loops (<a href=\"#fig2\">Figure 2</a>). The distributions of the cleft distance, defined as between the centers of heavy atoms of the interface residues 448\u2013453 and 506\u2013513 (shown as mauve in <a href=\"#fig2\">Figure 2a</a>), are displayed in <a href=\"#fig2\">Figure 2b</a> for the three forms of SENP1. The mean and standard deviation of the cleft distance change from 22.4 \u00b1 1.5 \u00c5 for the apo form to 23.1 \u00b1 0.5 \u00c5 and 22.6 \u00b1 1.5 \u00c5 for the trunSUMO1-bound and preSUMO1-bound forms, respectively, indicating widening of the exosite cleft upon \u03b2-grasp binding (<a href=\"#fig2s2\">Figure 2\u2014figure supplement 2a,b</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18249.003", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "The displacements of the exosite interface regions and channel-lining loops upon SUMO1 binding.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>a</b>) The regions (displayed in mauve) used for defining cleft distance (indicated by double-headed arrow) and the coordinate system used for defining movements of the three channel-lining loops (displayed in orange) and the W465 sidechain (displayed with carbon atoms in cyan). (<b>b</b>) The distributions of the cleft distance in the simulations of the apo and trunSUMO1- and preSUMO1-bound forms of SENP1. The average value of each system is shown as dash with matching color. (<b>c</b>) Distributions of the C\u03b1 centers of the three loops in the <i>x-y</i> plane. The average positions of the loops in each system are shown as dots. (<b>d</b>) Corresponding results for the center of W465 sidechain heavy atoms."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18249-fig2-v2", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18249.004", 
+                                        "id": "fig2s1", 
+                                        "label": "Figure 2\u2014figure supplement 1.", 
+                                        "title": "Difference in conformational sampling among apo SENP1 and two SUMO1-bound forms.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>a</b>) Conformational probability densities in the plane of the first two principal components (PC1 and PC2), transformed into free energy surfaces according to the Boltzmann relation. (<b>b</b>\u2013<b>c</b>) Movements represented by PC1 and PC2, respectively."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18249-fig2-figsupp1-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18249.005", 
+                                        "id": "fig2s2", 
+                                        "label": "Figure 2\u2014figure supplement 2.", 
+                                        "title": "Comparison of representative structures from replicate simulations of different systems.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "A structure for apo SENP1 is overlaid with those for the (<b>a</b>) trunSUMO1-bound and (<b>b</b>) preSUMO1-bound forms, by superposition of the \u03b13 and \u03b17 helices. Apo SENP1 is shown in gray except with the three channel-lining loops in orange and the two interface regions in mauve. These portions are in red and green for the trunSUMO1-bound and preSUMO1-bound forms, respectively."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18249-fig2-figsupp2-v2"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To characterize the movements of the three channel-lining loops, we defined a coordinate system attached to the \u03b13 and \u03b17 helices, which form the bottom of the channel (<a href=\"#fig2\">Figure 2a</a>). In the coordinate system, the <i>z</i> axis is along the helical axis of \u03b17 (as defined by the vector from the C\u03b1 center of residues 612\u2013615 to the C\u03b1 center of residues 604\u2013607); the <i>x</i> axis goes through the C\u03b1 center of \u03b13 residues 469\u2013480 and hence points to the exosite cleft; and the <i>y</i> axis points into the upper subdomain. None of the three loops exhibits any overt movement along <i>z</i>, so we focus on the differences among the three forms of SENP1 in the distributions of the C\u03b1 center <i>x</i> and <i>y</i> coordinates of the three loops (<a href=\"#fig2\">Figure 2c</a> and <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2a,b</a>). Relative to the apo form, the two bound form show similar movements for both loopA and loopB, the former away from the exosite cleft (i.e., decreasing <i>x</i>) and toward the upper subdomain (i.e., increasing <i>y</i>) while the latter toward the cleft and away from the channel (i.e., increasing <i>x</i> and <i>y</i>); loopC moves in opposite directions in the two bound forms but perhaps that is accidental due to the long distance from the binding interface. The movement of loopA (toward \u03b17) leads to stronger inter-subdomain contact; the <i>x</i> component of loopB\u2019s movement has a similar effect, while the <i>y</i> component may create space for the docking of the proximal portion of a C-terminus when tethered to the \u03b2-grasp domain."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The stronger inter-subdomain contact induced by \u03b2-grasp binding can be further illustrated by the movement of the sidechain of the channel lid residue, W465 (<a href=\"#fig2\">Figure 2d</a>). In apo SENP1 this sidechain samples a broad range of positions, but in preSUMO1-bound SENP1 it stays stably near the top of \u03b17 (on the sub-\u03bcs timescale); the situation is intermediate in trunSUMO1-bound SENP1."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Nanosecond dynamics of SENP1 is quenched upon \u03b2-grasp binding", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "As noted above, the narrowing of accessible conformational regions upon \u03b2-grasp binding suggests a decrease in flexibility, i.e., quenching of ns dynamics. To compare the residue-specific flexibilities among the three forms of SENP1, we calculated their C\u03b1 root-mean-square fluctuations (RMSFs). Relative to apo SENP1, the two bound forms both show decreased flexibility throughout most of the amino acid sequence, except for the N- and C-terminal segments (<a href=\"#fig3\">Figure 3a</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18249.006", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Comparison of flexibility among the\u00a0three systems, as measured by C\u03b1 atom root-mean-square fluctuations (RMSFs).", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>a</b>) Variations of RMSF along the amino acid sequence for the apo, trunSUMO1- and preSUMO1-bound forms of SENP1. The two exosite interface regions and three channel-lining loops are highlighted by shading in mauve and orange, respectively. (<b>b</b>\u2013<b>c</b>) Changes in RMSF upon binding trunSUMO1 and preSUMO1, displayed on the bound structures according to a color scale (shown; red and blue corresponding to lower and higher flexibilities, respectively)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18249-fig3-v2"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To visualize how the changes in RMSF are distributed spatially, we display them according to a color scale on the structures of the two bound forms (<a href=\"#fig3\">Figure 3b,c</a>). In both systems, rigidification propagates from the exosite cleft to the entire upper subdomain and to most of the lower subdomain. The rigidification is compensated to some extent by higher flexibility in the distal region of the lower subdomain, comprising the N- and C-terminal segments. Therefore, the allosteric effects elicited by the \u03b2-grasp domain include both the stronger inter-subdomain contact and the quenching of ns dynamics in all but a distal region."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Calculated sidechain methyl CSPs identify two hydrophobic pathways for allosteric communication", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#bib7\">Chen et al. (2014)</a> measured the backbone amide CSPs of SENP1 upon trunSUMO1 binding. Their CSPs can be described as a gradient emanating from the exosite cleft to the catalytic center (<a href=\"#fig4\">Figure 4a</a>), a pattern that is somewhat similar to that of the changes in RMSF (<a href=\"#fig3\">Figure 3b</a>). In addition, they observed significant sidechain methyl CSPs on six residues, including Leu450, Val501, Val 509, V516, Val518, and ValV532, which sparsely occupy the region from the exosite cleft to the catalytic center (<a href=\"#fig4\">Figure 4a</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18249.007", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Comparison of experimental and calculated chemical shift perturbations (CSPs) of SENP1 upon trunSUMO1 binding.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>a</b>) NMR results of <a href=\"#bib7\">Chen et al. (2014)</a>. (<b>b</b>) Calculated results. Backbone amide CSPs are displayed according to a color scale (red to gray corresponding to high to low CSPs); sidechain methyls with significant CSPs (&gt;0.05 in panel <b>a</b> and &gt;0.08 in panel <b>b</b>) are shown as cyan sticks."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18249-fig4-v2"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To compare with these NMR results, we calculated the chemical shifts of backbone amides and sidechain methyls on the apo and trunSUMO1-bound SENP1 simulations. The resulting CSPs are displayed in <a href=\"#fig4\">Figure 4b</a>. Overall, they agree well with the experimental data, but are more pronounced. The calculated backbone amide CSPs spread all the way to the back, in both subdomains. The calculation identifies three of the six experimentally detected residues as well as 12 others as having significant sidechain methyl CSPs (&gt;0.08 ppm). Interestingly, with the 12 additional residues, two hydrophobic pathways emerge, each connecting an exosite interface region in one subdomain to the catalytic center. Chemical shifts are a measure of both conformational and dynamics effects. Hence the sidechain methyl CSPs are a manifestation of the conformational and dynamic changes induced by \u03b2-grasp binding, and the hydrophobic pathways may represent short paths over which allosteric effects are propagated from the exosite cleft to the catalytic center."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Strengthened intra- and inter-subdomain motional coupling underlies quenching of ns dynamics", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Community analysis is a way to reveal the pattern of motional coupling within a protein, based on residue-residue physical contact and positional correlation during an MD simulation (<a href=\"#bib33\">Sethi et al., 2009</a>). A protein structure is partitioned into communities, within which residues form dense contacts but between which residues form sparse contacts. The strength of coupling, or betweenness, between two communities is determined by the magnitudes of positional correlations within networks of contacting residues."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Results of our community analysis are displayed in <a href=\"#fig5\">Figure 5</a> for apo and trunSUMO1-bound sim1, and in <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a> and <a href=\"#fig5s2\">Figure 5\u2014figure supplement 2</a> for the other two replicate simulations. Very similar community structures are obtained from the replicate simulations of each system, so here we focus on sim1. In all cases, five major communities (numbered 1 to 5) can be recognized for SENP1, anchored by <b>\u03b21\u03b22</b> and <b>\u03b12; \u03b13; \u03b14\u03b15; \u03b16</b> and various parts of \u03b24\u2013\u03b27; and <b>\u03b17</b>, respectively, and possibly containing other segments. In the apo form, in addition to these five major communities, four minor communities (numbered 1\u2032, 2\u2032, 4\u2032, and 4\u2033) are also formed. In the trunSUMO1-SENP1 complex, SENP1 is partitioned only to the five major communities, with the minor communities absorbed. In particular, communities 4, 4\u2032, and 4\u2033 in apo SENP1 coalesce into a single community upon trunSUMO1 binding."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18249.008", 
+                                "id": "fig5", 
+                                "label": "Figure 5.", 
+                                "title": "Results of community analysis for apo and trunSUMO1-bound SENP1 sim1, displayed on the left and right panels, respectively.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Communities are displayed either by different colors on the structures (upper row) or as numbered ovals with matching colors (lower row). In the lower row, inter-community cumulative betweennesses are displayed by the thickness of the lines connecting communities. The community analysis was performed using the NetworkView plugin in VMD (<a href=\"#bib33\">Sethi et al., 2009</a>)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18249-fig5-v2", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18249.009", 
+                                        "id": "fig5s1", 
+                                        "label": "Figure 5\u2014figure supplement 1.", 
+                                        "title": "Results of community analysis for apo and trunSUMO1-bound SENP1 sim2.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For caption, see <a href=\"#fig5\">Figure 5</a>. Note that, for trunSUMO1-bound SENP1, \u03b2-grasp residues in the lower interface (and upper interface) are collected into community 3; hence the coupling between communities 1 and 6 seen in the other two replicate simulations is now part of the coupling between communities 1 and 3."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18249-fig5-figsupp1-v2"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18249.010", 
+                                        "id": "fig5s2", 
+                                        "label": "Figure 5\u2014figure supplement 2.", 
+                                        "title": "Results of community analysis for apo and trunSUMO1-bound SENP1 sim3.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For caption, see <a href=\"#fig5\">Figure 5</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18249-fig5-figsupp2-v2"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Moreover, the inter-community betweennesses are also strengthened, especially between the two communities, 2 and 5, anchored by the two central helices (<b>\u03b13</b> and <b>\u03b17</b>, respectively) and community 1 in the lower subdomain and community 4 in the upper subdomain. This strengthened inter-community coupling is in line with the stronger inter-subdomain contact noted above. It comes about because the \u03b2-grasp domain couples strongly to both subdomains. Therefore, the \u03b2-grasp domain, by serving as a bridge linking the two exosite interface regions, strengthens the motional coupling both within and between the subdomains of SENP1. A similar bridging role was identified for a peptide in inducing inter-domain allosteric communication in Pin1 (<a href=\"#bib13\">Guo et al., 2015</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "With the strengthened intra-subdomain coupling upon trunSUMO1 binding, it can be expected that allosteric communication from the exosite cleft to the catalytic center becomes more effective. The effectiveness of allosteric communication between two sites can be measured by the lengths, defined using the residue-residue positional correlations (i.e., stronger correlations correspond to shorter lengths), of paths connecting the sites. Indeed, the path lengths from the two exosite interface regions to the catalytic center are shorter in the trunSUMO1-bound form than in the apo form. This result is in line with the two hydrophobic pathways identified by sidechain methyl CSPs."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The simultaneous occurrence of strengthened intra- and inter-subdomain coupling and quenching of ns dynamics observed here on SENP1 upon binding an allosteric activator conforms to a pattern previously recognized from a number of other proteins (including Pin1) in which conformational dynamics plays a prominent role in mediating allosteric communication (<a href=\"#bib14\">Guo and Zhou, 2015</a>). This pattern was explained by a dynamic model of allostery. According to this model, fast motions (e.g., those on a ns timescale) are uncorrelated; an allosteric activator strengths inter-community coupling, which in turn leads to quenching of fast motions. The strengthened coupling here comes about because the \u03b2-grasp domain serves as a bridge that links the two interfacial regions. The model further predicts another dynamic effect, i.e., slower (e.g., \u03bcs-ms), cross-community correlated motions are initiated. Indeed, Chen et al.\u2019s CPMG data for residues around the catalytic center indicated enhanced \u03bcs-ms conformational exchange upon trunSUMO1 binding (<a href=\"#bib7\">Chen et al., 2014</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Allosteric effects can be reproduced by restraining the two exosite interface regions at an widened separation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The results presented above lead to the hypothesis that the conformational and dynamic effects of \u03b2-grasp binding are achieved through increasing the exosite cleft distance and then rigidly holding the two interface regions at the widened separation. As demonstrated previously for Pin1 (<a href=\"#bib13\">Guo et al., 2015</a>), this type of hypotheses can be tested by restrained MD simulations. Specifically, we ran an apo simulation but restrained the two exosite interface regions (i.e., the \u03b21\u03b22 hairpin in the lower subdomain and the \u03b14\u03b15 helices in the upper subdomain) to their conformation from a snapshot in trunSUMO1-bound sim1, in which the exosite cleft distance is at a widened 23.9 \u00c5 (<a href=\"#fig6\">Figure 6a</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18249.011", 
+                                "id": "fig6", 
+                                "label": "Figure 6.", 
+                                "title": "Reproduction of allosteric effects by restraining the exosite interface regions of apo SENP1 at a widened separation.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>a</b>) Illustration of the restraint. Blue arrows indicate the widening of the exosite cleft, and green dash indicates the subsequent restraint. (<b>b</b>) Comparison of RMSFs between apo sim1 and the restrained apo simulation. (<b>c</b>) Backbone amide and sidechain methyl CSPs of the restrained simulation (to be compared with <a href=\"#fig4\">Figure 4b</a>)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18249-fig6-v2", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.18249.012", 
+                                        "id": "fig6s1", 
+                                        "label": "Figure 6\u2014figure supplement 1.", 
+                                        "title": "The displacements of the channel-lining loops for a control simulation in which the exosite interface regions of apo SENP1 are restrained at a widened separation.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>a</b>) Distributions of the C\u03b1 centers of the three loops in the <i>x-y</i> plane. Results for apo sim1 and the restrained simulation are shown in black and blue, respectively. The average positions of the loops in each system are shown as dots. (<b>b</b>) Comparison of representative structures from apo sim1 and the restrained simulation. For caption, see <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-18249-fig6-figsupp1-v2"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The simulation of this control system reproduces the main conformational and dynamic effects of \u03b2-grasp binding. The three channel-lining loops in the control system move in essentially the same ways as those in the trunSUMO1-bound form (compare <a href=\"#fig6s1\">Figure 6\u2014figure supplement 1a,b</a> with <a href=\"#fig2\">Figure 2c</a> and <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2b</a>). The RMSF of the control system (<a href=\"#fig6\">Figure 6b</a>) also shows a similar albeit slightly more pronounced decrease, indicating quenching of ns dynamics, for most of the SENP1 structure, including all the three channel-lining loops. Lastly the calculated backbone amide CSPs of the control system have a similar gradient to that of the trunSUMO1-bound form, and the calculated sidechain methyl CSPs again identify two hydrophobic pathways that may propagate allosteric effects from the exosite cleft to the catalytic center (<a href=\"#fig6\">Figure 6c</a>)."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Through extensive MD simulations, we have found that SUMO1 \u03b2-grasp binding to SENP1 induces significant conformational and dynamic effects, including the widening of the exosite cleft and the quenching of ns dynamics in all but a distal region. The calculated CSPs are in broad agreement with the NMR data of <a href=\"#bib7\">Chen et al. (2014)</a> but our results overall present a deeper, atomistic picture for the allosteric communication from the exosite cleft to the catalytic center. We conclude that the wedging into the exosite cleft and the bridging between the two exosite interface regions by the \u03b2-grasp domain are the underlying reason for the widened exosite cleft and the quenched fast dynamics, and may also be the instigator of inter-subdomain slow motions. Enhanced \u03bcs-ms conformational exchange has indeed been observed in CPMG experiments on trunSUMO1-bound SENP1 (<a href=\"#bib7\">Chen et al., 2014</a>). Our findings have broad implications for the mechanism of allosteric activation of SENPs by SUMOs, the SUMO paralogue specificity of SENPs, and the development of drugs targeting SENPs."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-1", 
+                        "title": "A dock-and-coalescence mechanism for SENP-catalyzed SUMO cleavage", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The concerted action of the \u03b2-grasp induced conformational and dynamic changes is expected to help both the binding step and the subsequent catalytic step for trunSUMO1-bound SENP1 reacting with an isolated peptide substrate. First, widening of the exosite cleft may enhance the rate at which the substrate binds to the catalytic center, although this effect may not be detectable in an enzymatic assay if the binding does not rate-limit the overall enzymatic reaction. Second, initiation of slow conformational dynamics may facilitate the proper alignment of the substrate around the catalytic residues. These putative effects can explain the observation of <a href=\"#bib7\">Chen et al. (2014)</a> that trunSUMO1 enhances the SENP1 catalytic activity on a peptide substrate through increasing <i>k</i><sub>cat</sub>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In SENP-catalyzed SUMO cleavage for processing of SUMO precursors and de-SUMOylation of target proteins, the C-terminal substrate is tethered to the \u03b2-grasp domain via an extended linker. Tethering can also help both the binding step and the subsequent catalytic step. The binding of a substrate-containing SUMO (i.e., a precursor or SUMO conjugate) likely occurs in a sequential manner: the \u03b2-grasp domain first wedges into the exosite cleft and the C-terminus then docks into the catalytic channel. Tethering can facilitate this binding by correctly orienting the C-terminal substrate. This effect and the \u03b2-grasp induced widening of the exosite cleft together may speed up the docking of the C-terminus into the catalytic channel sufficiently as to make the full binding step rate-limited by the initial wedging of the \u03b2-grasp into the exosite. Tethering can also reinforce the motional coupling between the exosite interface regions and the channel-lining loops. This may in turn intensify the slow conformational dynamics that facilitates the proper alignment of the substrate around the catalytic residues, thereby accelerating the catalytic step."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In previous studies we have put forward a docking-and-coalesce mechanism to describe the binding of intrinsically disordered proteins, which, similar to the disordered SUMO C-terminus, usually form extended conformations on their targets (<a href=\"#bib30\">Qin et al., 2011</a>; <a href=\"#bib40\">Zhou et al., 2012</a>). Here we adapt this mechanism to describe the steps of SENP-catalyzed SUMO cleavage reaction just before the actual cut of the (iso)peptide bond (<a href=\"#fig7\">Figure 7</a>). The process starts with the wedging of the SUMO \u03b2-grasp domain into the SENP exosite cleft. This wedging widens the separation between and also tightly links the two exosite interface regions. The widening of the exosite cleft enables the docking of the proximal portion of the C-terminus into the catalytic channel. Moreover, the wedged \u03b2-grasp domain strengthens the motional coupling within and between the two subdomains of SENP, and the newly docked proximal portion of the SUMO C-terminus reinforces this coupling. According to a theoretical model (<a href=\"#bib14\">Guo and Zhou, 2015</a>), the strengthened coupling sets up the condition for the emergence of inter-subdomain correlated motions, which finally allow for the distal portion of the SUMO C-terminus to align properly around the catalytic center for bond cleavage."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.18249.013", 
+                                "id": "fig7", 
+                                "label": "Figure 7.", 
+                                "title": "Illustration of the dock-and-coalesce mechanism for SENP-catalyzed SUMO C-terminal cleavage.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "SENP is shown as two ovals (representing two subdomains) connected by two strings, with the three channel-lining loops highlighted as small circles; SUMO is shown as an oval (representing the \u03b2-grasp domain) with a tail (the C-terminus). In the docking step, as the \u03b2-grasp domain wedges into the exosite cleft, the cleft separation widens (indicated by red arrows), loopA and loopB move (cyan and blue arrows) to make stronger inter-subdomain contact and also to create space for docking the proximal portion of the SUMO C-terminus; the two SENP subdomains lose flexibility on the fast timescale except for a distal region (indicated by red to blue shading), and finally the proximal portion of the SUMO C-terminus docks into the catalytic channel. Two hydrophobic pathways (bundles of dashed arrows) propagate the allosteric effects from the exosite interface regions to the catalytic center. In the coalescence step, the wedged \u03b2-grasp domain and the docked C-terminus cooperate to reinforce allosteric effects, initiating inter-subdomain correlated slow motions to allow for proper alignment of the substrate around the catalytic center."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-18249-fig7-v2"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The preceding dock-and-coalesce mechanism differs from the previous generic version (<a href=\"#bib30\">Qin et al., 2011</a>; <a href=\"#bib40\">Zhou et al., 2012</a>) by the cooperation between a structure domain (i.e., the \u03b2-grasp domain) and a disordered region (i.e., the C-terminus) of the substrate protein and by the prominent role of allosteric communication within the target protein. In addition, the end result here is the transition-state complex for a catalytic reaction as opposed to a ground-state complex. Certain aspects of the mechanism presented here have been suggested previously by <a href=\"#bib34\">Shen et al. (2006a)</a>, including the stimulation of catalytic channel opening by SUMO binding and the facilitation of substrate alignment by cross-channel dynamics, without elaboration. Lastly the dock-and-coalesce mechanism may not only provide a qualitative description of the individual steps but also serve as a framework for quantitative calculations of kinetic rate constants (see next)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-2", 
+                        "title": "Contributions of exosite SENP-SUMO interactions to paralogue specificity", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The catalytic activities of a particular SENP can vary toward different SUMO paralogues (<a href=\"#bib32\">Reverter and Lima, 2006</a>; <a href=\"#bib34\">Shen et al., 2006a</a>; <a href=\"#bib18\">Hickey et al., 2012</a>). For example, SENP1 processes preSUMO1 and deconjugates SUMO1 and SUMO2 conjugates with similar rates, but processes the SUMO2 precursor with a 25-fold lower <i>k</i><sub>cat</sub> (<a href=\"#bib34\">Shen et al., 2006a</a>). The decrease in <i>k</i><sub>cat</sub> was attributed to a compromised fit between the C-terminal extension and the catalytic channel. On the other hand, in either processing or deconjugation, SENP2 discriminates between SUMO1 and SUMO2 not by <i>k</i><sub>cat</sub> but by <i>K</i><sub>M</sub> (<a href=\"#bib32\">Reverter and Lima, 2006</a>). An approximately 10-fold lower <i>K</i><sub>M</sub> for SUMO2 was attributed to an extended exosite interface."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The dock-and-coalesce mechanism presented above now allows us to more clearly delineate the contributions of exosite interactions to paralogue specificity. Two consequences can be expected of the more extensive exosite interactions of SENP2 with SUMO2 than with SUMO1. First, stronger electrostatic attraction across the exosite interface quickens the initial wedging of the SUMO2 \u03b2-grasp domain into the exosite and slows down the reverse process. Second, the more extensive exosite interactions likely cause stronger allosteric effects of the wedged \u03b2-grasp domain, resulting in faster docking of the SUMO2 C-terminus into the catalytic channel. These two consequences together may explain the lower <i>K</i><sub>M</sub> for SUMO2 than for SUMO1. A precedent of the second consequence occurred in Pin1, where peptides bound at an inter-domain exosite were identified to serve a bridging role similar to the one proposed here for the \u03b2-grasp domain; a peptide with more extensive across-domain interactions indeed induced stronger allosteric effects (<a href=\"#bib13\">Guo et al., 2015</a>; <a href=\"#bib14\">Guo and Zhou, 2015</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Here the expectation for stronger allosteric effects is specifically supported by the observation that a pre-bound SUMO2, but not SUMO1, \u03b2-grasp domain enhanced the SENP2 catalytic activity on a peptide substrate (<a href=\"#bib25\">Mikolajczyk et al., 2007</a>). A similar causal link between strengthened exosite interactions and strengthened allosteric effects may be at play for a SENP2 mutant that was designed by grafting an insertion in the \u03b21-\u03b22 hairpin from SENP6 (<a href=\"#bib2\">Alegre and Reverter, 2014</a>). The insertion extended the exosite lower interface and increased the proteolytic activity of SENP2 for some SUMO2 conjugates."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-3", 
+                        "title": "SENP exosite as target site for drug development", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Inhibitors that target the catalytic center of SENPs have limited therapeutic value due to covalent linkage with the catalytic cysteine residue, low specificity, or low potency. The foregoing discussion suggests that the exosite may be another potential target site for drug development. Suppression and elevation of SENP activities may both be desired (under different pathological conditions) and can be achieved by disrupting and strengthening exosite SENP-SUMO interactions, respectively. Small molecules that bind at sites deeply into the SENP-SUMO interface can have a disruptive effect (<a href=\"#bib22\">Kumar and Zhang, 2013</a>), whereas those bind over both SENP and SUMO can lock and strengthen their interactions."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Molecular dynamics simulation protocols", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "MD simulations were carried out for three systems: apo SENP1, SENP1-trunSUMO1 complex, and SENP1-preSUMO1 complex. The starting structures of the first and third systems were from PDB entries 2CKG (<a href=\"#bib35\">Shen et al., 2006b</a>) and 2IY1 (<a href=\"#bib34\">Shen et al., 2006a</a>), respectively; the latter upon removing the C-terminal 9 residues starting from Glu93 was used as the starting structure of the SENP1-trunSUMO1 complex."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Three replicate simulations were performed for each system. sim1 and sim2 were performed in NAMD 2.9 (<a href=\"#bib28\">Phillips et al., 2005</a>) using the CHARMM 36 force field (<a href=\"#bib6\">Brooks et al., 2009</a>; <a href=\"#bib36\">Vanommeslaeghe et al., 2010</a>), while sim3 was carried out in AMBER with the AMBER99SB force field (<a href=\"#bib19\">Hornak et al., 2006</a>). Each system was placed in a water box with a 10-\u00c5 buffer zone. Appropriate numbers of Na<sup>+</sup> and Cl<sup>\u2212</sup> were added to neutralize proteins and produce a NaCl concentration of 50 mM. For the NAMD simulations, the van der Waals cut-off distance was 12 \u00c5 with a switching distance of 10 \u00c5; for AMBER simulations, the cutoff distance for non-bonded interactions was 10 \u00c5. The particle mesh Ewald was used for computing the Coulomb interactions under the periodic boundary condition."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Before starting a simulation, the solvated system was energy minimized at three stages, first with either the whole protein molecule(s) or backbone atoms restrained and then without any restraint. After a 50-ps equilibration, the simulation was continued at constant pressure (1 bar) and constant temperature (300 K), at a 2-fs timestep."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The simulation times of sim1, sim2, and sim3 were 300, 400, and 1000 ns, respectively, for each system. sim2 and sim3 were performed using GPU acceleration. The last 150 ns (saved at 2-ps intervals) of sim1 and sim2 and last 300 ns (saved at 5-ps intervals) of sim3 were used for analyses."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "One more simulation, of a control system, was also carried out. This started from the snapshot at 200 ns of apo sim1, but with the heavy atoms of the interface regions, \u03b21\u03b22 (residues 443\u2013453) and \u03b14\u03b15 (residues 496\u2013514), restrained to their conformation in the snapshot at 200 ns of trunSUMO1-bound sim1. The force constant was 2 kcal/\u00c5<sup>2</sup> for each restrained atom."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Calculation of chemical shift perturbations", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The SHIFTX2 program (<a href=\"#bib16\">Han et al., 2011</a>) was used to calculate diamagnetic <sup>1</sup>H, <sup>13</sup>C and <sup>15</sup>N chemical shifts on SENP1 coordinates sampled from the replicate simulations for each system (see next). The CSPs of backbone amides and sidechain methyls were calculated as <math id=\"inf1\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msqrt><mo stretchy=\"false\">(</mo><mn>0.154</mn><mo>\u22c5</mo><mi mathvariant=\"normal\">\u0394</mi><msub><mi>\u03b4</mi><mi>N</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mtext>\u00a0</mtext><mo>+</mo><mtext>\u00a0</mtext><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">\u0394</mi><msub><mi>\u03b4</mi><mi>H</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></msqrt></mrow></mstyle></math> and <math id=\"inf2\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msqrt><msup><mrow><mo>(</mo><mn>0.341</mn><mo>\u22c5</mo><mi mathvariant=\"normal\">\u0394</mi><msub><mi>\u03b4</mi><mrow><mtext>C</mtext></mrow></msub><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mo>(</mo><mi mathvariant=\"normal\">\u0394</mi><msub><mi>\u03b4</mi><mrow><mtext>H</mtext></mrow></msub><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msup></msqrt></mrow></mstyle></math>, respectively (<a href=\"#bib7\">Chen et al., 2014</a>), where <math id=\"inf3\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi mathvariant=\"normal\">\u0394</mi><msub><mi>\u03b4</mi><mrow><mtext>X</mtext></mrow></msub></mrow></mstyle></math>, denotes the chemical shift differences between apo and SUMO1-bound SENP1 for nucleus X."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Combination of replicate simulations", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The three replicate simulations for each system were combined to ensure reproducibility of reported results. The principal component analysis was done after pooling the conformations (every other saved ones) from all the three simulations, using C\u03b1 coordinates of SENP1 residues 429\u2013637. For distributions of the cleft distance and loop movements, histograms were calculated using all the snapshots saved in the three replicate simulations. Chemical shifts were predicted separately for each simulation (using every 15th saved conformation in sim1 or sim2 or every 10th conformation in sim3), and the results from the three simulations were then averaged. For RMSF, analysis was done over non-overlapping 50-ns windows (of which there were 3, 3, and 6, respectively, in sim1, sim2, and sim3). The\u00a0results were first averaged over these windows in each simulation, and then averaged again over the three replicate simulations. Finally,\u00a0a community analysis was done separately for each replicate simulation."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VE Albrow", 
+                            "index": "Albrow, VE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EL Ponder", 
+                            "index": "Ponder, EL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Fasci", 
+                            "index": "Fasci, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M B\u00e9k\u00e9s", 
+                            "index": "B\u00e9k\u00e9s, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Deu", 
+                            "index": "Deu, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GS Salvesen", 
+                            "index": "Salvesen, GS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Bogyo", 
+                            "index": "Bogyo, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Development of small molecule inhibitors and probes of human SUMO deconjugating proteases", 
+                "journal": {
+                    "name": [
+                        "Chemistry & Biology"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "722", 
+                    "last": "732", 
+                    "range": "722\u2013732"
+                }, 
+                "doi": "10.1016/j.chembiol.2011.05.008"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KO Alegre", 
+                            "index": "Alegre, KO"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Reverter", 
+                            "index": "Reverter, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structural insights into the SENP6 Loop1 structure in complex with SUMO2", 
+                "journal": {
+                    "name": [
+                        "Protein Science"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "433", 
+                    "last": "441", 
+                    "range": "433\u2013441"
+                }, 
+                "doi": "10.1002/pro.2425"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Bawa-Khalfe", 
+                            "index": "Bawa-Khalfe, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Cheng", 
+                            "index": "Cheng, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Lin", 
+                            "index": "Lin, SH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MM Ittmann", 
+                            "index": "Ittmann, MM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ET Yeh", 
+                            "index": "Yeh, ET"
+                        }
+                    }
+                ], 
+                "articleTitle": "SENP1 induces prostatic intraepithelial neoplasia through multiple mechanisms", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "285", 
+                "pages": {
+                    "first": "25859", 
+                    "last": "25866", 
+                    "range": "25859\u201325866"
+                }, 
+                "doi": "10.1074/jbc.M110.134874"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Bayer", 
+                            "index": "Bayer, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Arndt", 
+                            "index": "Arndt, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Metzger", 
+                            "index": "Metzger, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Mahajan", 
+                            "index": "Mahajan, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Melchior", 
+                            "index": "Melchior, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Jaenicke", 
+                            "index": "Jaenicke, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Becker", 
+                            "index": "Becker, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structure determination of the small ubiquitin-related modifier SUMO-1", 
+                "journal": {
+                    "name": [
+                        "Journal of Molecular Biology"
+                    ]
+                }, 
+                "volume": "280", 
+                "pages": {
+                    "first": "275", 
+                    "last": "286", 
+                    "range": "275\u2013286"
+                }, 
+                "doi": "10.1006/jmbi.1998.1839"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Borodovsky", 
+                            "index": "Borodovsky, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Ovaa", 
+                            "index": "Ovaa, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WJ Meester", 
+                            "index": "Meester, WJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ES Venanzi", 
+                            "index": "Venanzi, ES"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MS Bogyo", 
+                            "index": "Bogyo, MS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BG Hekking", 
+                            "index": "Hekking, BG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL Ploegh", 
+                            "index": "Ploegh, HL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BM Kessler", 
+                            "index": "Kessler, BM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HS Overkleeft", 
+                            "index": "Overkleeft, HS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Small-molecule inhibitors and probes for ubiquitin- and ubiquitin-like-specific proteases", 
+                "journal": {
+                    "name": [
+                        "ChemBioChem"
+                    ]
+                }, 
+                "volume": "6", 
+                "pages": {
+                    "first": "287", 
+                    "last": "291", 
+                    "range": "287\u2013291"
+                }, 
+                "doi": "10.1002/cbic.200400236"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BR Brooks", 
+                            "index": "Brooks, BR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CL Brooks", 
+                            "index": "Brooks, CL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AD Mackerell", 
+                            "index": "Mackerell, AD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Nilsson", 
+                            "index": "Nilsson, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Petrella", 
+                            "index": "Petrella, RJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Roux", 
+                            "index": "Roux, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Won", 
+                            "index": "Won, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Archontis", 
+                            "index": "Archontis, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Bartels", 
+                            "index": "Bartels, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Boresch", 
+                            "index": "Boresch, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Caflisch", 
+                            "index": "Caflisch, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Caves", 
+                            "index": "Caves, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Cui", 
+                            "index": "Cui, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AR Dinner", 
+                            "index": "Dinner, AR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Feig", 
+                            "index": "Feig, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Fischer", 
+                            "index": "Fischer, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gao", 
+                            "index": "Gao, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hodoscek", 
+                            "index": "Hodoscek, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Im", 
+                            "index": "Im, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Kuczera", 
+                            "index": "Kuczera, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Lazaridis", 
+                            "index": "Lazaridis, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ma", 
+                            "index": "Ma, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Ovchinnikov", 
+                            "index": "Ovchinnikov, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Paci", 
+                            "index": "Paci, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RW Pastor", 
+                            "index": "Pastor, RW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CB Post", 
+                            "index": "Post, CB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JZ Pu", 
+                            "index": "Pu, JZ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Schaefer", 
+                            "index": "Schaefer, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Tidor", 
+                            "index": "Tidor, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Venable", 
+                            "index": "Venable, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL Woodcock", 
+                            "index": "Woodcock, HL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Wu", 
+                            "index": "Wu, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Yang", 
+                            "index": "Yang, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DM York", 
+                            "index": "York, DM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Karplus", 
+                            "index": "Karplus, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "CHARMM: the biomolecular simulation program", 
+                "journal": {
+                    "name": [
+                        "Journal of Computational Chemistry"
+                    ]
+                }, 
+                "volume": "30", 
+                "pages": {
+                    "first": "1545", 
+                    "last": "1614", 
+                    "range": "1545\u20131614"
+                }, 
+                "doi": "10.1002/jcc.21287"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CH Chen", 
+                            "index": "Chen, CH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AT Namanja", 
+                            "index": "Namanja, AT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Conformational flexibility and changes underlying activation of the SUMO-specific protease SENP1 by remote substrate binding", 
+                "journal": {
+                    "name": [
+                        "Nature Communications"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "4968", 
+                "doi": "10.1038/ncomms5968"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Wen", 
+                            "index": "Wen, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Huang", 
+                            "index": "Huang, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Huang", 
+                            "index": "Huang, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Luo", 
+                            "index": "Luo, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Liu", 
+                            "index": "Liu, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Lu", 
+                            "index": "Lu, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Wu", 
+                            "index": "Wu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Peng", 
+                            "index": "Peng, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Zhang", 
+                            "index": "Zhang, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "2-(4-Chlorophenyl)-2-oxoethyl 4-benzamidobenzoate derivatives, a novel class of SENP1 inhibitors: Virtual screening, synthesis and biological evaluation", 
+                "journal": {
+                    "name": [
+                        "Bioorganic & Medicinal Chemistry Letters"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "6867", 
+                    "last": "6870", 
+                    "range": "6867\u20136870"
+                }, 
+                "doi": "10.1016/j.bmcl.2012.09.037"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Cheng", 
+                            "index": "Cheng, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Bawa", 
+                            "index": "Bawa, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Lee", 
+                            "index": "Lee, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Gong", 
+                            "index": "Gong, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ET Yeh", 
+                            "index": "Yeh, ET"
+                        }
+                    }
+                ], 
+                "articleTitle": "Role of desumoylation in the development of prostate cancer", 
+                "journal": {
+                    "name": [
+                        "Neoplasia"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": {
+                    "first": "667", 
+                    "last": "676", 
+                    "range": "667\u2013676"
+                }, 
+                "doi": "10.1593/neo.06445"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Cheng", 
+                            "index": "Cheng, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Kang", 
+                            "index": "Kang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Zhang", 
+                            "index": "Zhang, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ET Yeh", 
+                            "index": "Yeh, ET"
+                        }
+                    }
+                ], 
+                "articleTitle": "SUMO-specific protease 1 is essential for stabilization of HIF1alpha during hypoxia", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "131", 
+                "pages": {
+                    "first": "584", 
+                    "last": "595", 
+                    "range": "584\u2013595"
+                }, 
+                "doi": "10.1016/j.cell.2007.08.045"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LC Dang", 
+                            "index": "Dang, LC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FD Melandri", 
+                            "index": "Melandri, FD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Stein", 
+                            "index": "Stein, RL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Kinetic and mechanistic studies on the hydrolysis of ubiquitin C-terminal 7-amido-4-methylcoumarin by deubiquitinating enzymes", 
+                "journal": {
+                    "name": [
+                        "Biochemistry"
+                    ]
+                }, 
+                "volume": "37", 
+                "pages": {
+                    "first": "1868", 
+                    "last": "1879", 
+                    "range": "1868\u20131879"
+                }, 
+                "doi": "10.1021/bi9723360"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Dobrot\u0103", 
+                            "index": "Dobrot\u0103, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Fasci", 
+                            "index": "Fasci, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ND H\u0103dade", 
+                            "index": "H\u0103dade, ND"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GD Roiban", 
+                            "index": "Roiban, GD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Pop", 
+                            "index": "Pop, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VM Meier", 
+                            "index": "Meier, VM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Dumitru", 
+                            "index": "Dumitru, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Matache", 
+                            "index": "Matache, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GS Salvesen", 
+                            "index": "Salvesen, GS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DP Funeriu", 
+                            "index": "Funeriu, DP"
+                        }
+                    }
+                ], 
+                "articleTitle": "Glycine fluoromethylketones as SENP-specific activity based probes", 
+                "journal": {
+                    "name": [
+                        "ChemBioChem"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "80", 
+                    "last": "84", 
+                    "range": "80\u201384"
+                }, 
+                "doi": "10.1002/cbic.201100645"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Guo", 
+                            "index": "Guo, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Pang", 
+                            "index": "Pang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HX Zhou", 
+                            "index": "Zhou, HX"
+                        }
+                    }
+                ], 
+                "articleTitle": "Two pathways mediate interdomain allosteric regulation in pin1", 
+                "journal": {
+                    "name": [
+                        "Structure"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "237", 
+                    "last": "247", 
+                    "range": "237\u2013247"
+                }, 
+                "doi": "10.1016/j.str.2014.11.009"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Guo", 
+                            "index": "Guo, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HX Zhou", 
+                            "index": "Zhou, HX"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamically driven protein allostery exhibits disparate responses for fast and slow motions", 
+                "journal": {
+                    "name": [
+                        "Biophysical Journal"
+                    ]
+                }, 
+                "volume": "108", 
+                "pages": {
+                    "first": "2771", 
+                    "last": "2774", 
+                    "range": "2771\u20132774"
+                }, 
+                "doi": "10.1016/j.bpj.2015.04.035"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Guo", 
+                            "index": "Guo, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HX Zhou", 
+                            "index": "Zhou, HX"
+                        }
+                    }
+                ], 
+                "articleTitle": "Protein allostery and conformational dynamics", 
+                "journal": {
+                    "name": [
+                        "Chemical Reviews"
+                    ]
+                }, 
+                "volume": "116", 
+                "pages": {
+                    "first": "6503", 
+                    "last": "6515", 
+                    "range": "6503\u20136515"
+                }, 
+                "doi": "10.1021/acs.chemrev.5b00590"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Han", 
+                            "index": "Han, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Liu", 
+                            "index": "Liu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SW Ginzinger", 
+                            "index": "Ginzinger, SW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DS Wishart", 
+                            "index": "Wishart, DS"
+                        }
+                    }
+                ], 
+                "articleTitle": "SHIFTX2: significantly improved protein chemical shift prediction", 
+                "journal": {
+                    "name": [
+                        "Journal of Biomolecular NMR"
+                    ]
+                }, 
+                "volume": "50", 
+                "pages": {
+                    "first": "43", 
+                    "last": "57", 
+                    "range": "43\u201357"
+                }, 
+                "doi": "10.1007/s10858-011-9478-4"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Hemelaar", 
+                            "index": "Hemelaar, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Borodovsky", 
+                            "index": "Borodovsky, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BM Kessler", 
+                            "index": "Kessler, BM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Reverter", 
+                            "index": "Reverter, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Cook", 
+                            "index": "Cook, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Kolli", 
+                            "index": "Kolli, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Gan-Erdene", 
+                            "index": "Gan-Erdene, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KD Wilkinson", 
+                            "index": "Wilkinson, KD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Gill", 
+                            "index": "Gill, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CD Lima", 
+                            "index": "Lima, CD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL Ploegh", 
+                            "index": "Ploegh, HL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Ovaa", 
+                            "index": "Ovaa, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Specific and covalent targeting of conjugating and deconjugating enzymes of ubiquitin-like proteins", 
+                "journal": {
+                    "name": [
+                        "Molecular and Cellular Biology"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "84", 
+                    "last": "95", 
+                    "range": "84\u201395"
+                }, 
+                "doi": "10.1128/MCB.24.1.84-95.2004"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Hickey", 
+                            "index": "Hickey, CM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NR Wilson", 
+                            "index": "Wilson, NR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hochstrasser", 
+                            "index": "Hochstrasser, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Function and regulation of SUMO proteases", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Molecular Cell Biology"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "755", 
+                    "last": "766", 
+                    "range": "755\u2013766"
+                }, 
+                "doi": "10.1038/nrm3478"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Hornak", 
+                            "index": "Hornak, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Abel", 
+                            "index": "Abel, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Okur", 
+                            "index": "Okur, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Strockbine", 
+                            "index": "Strockbine, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Roitberg", 
+                            "index": "Roitberg, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Simmerling", 
+                            "index": "Simmerling, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Comparison of multiple Amber force fields and development of improved protein backbone parameters", 
+                "journal": {
+                    "name": [
+                        "Proteins"
+                    ]
+                }, 
+                "volume": "65", 
+                "pages": {
+                    "first": "712", 
+                    "last": "725", 
+                    "range": "712\u2013725"
+                }, 
+                "doi": "10.1002/prot.21123"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hu", 
+                            "index": "Hu, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Li", 
+                            "index": "Li, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Li", 
+                            "index": "Li, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Li", 
+                            "index": "Li, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Yao", 
+                            "index": "Yao, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JW Wu", 
+                            "index": "Wu, JW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Gu", 
+                            "index": "Gu, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RE Cohen", 
+                            "index": "Cohen, RE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Shi", 
+                            "index": "Shi, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Crystal structure of a UBP-family deubiquitinating enzyme in isolation and in complex with ubiquitin aldehyde", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "111", 
+                "pages": {
+                    "first": "1041", 
+                    "last": "1054", 
+                    "range": "1041\u20131054"
+                }, 
+                "doi": "10.1016/S0092-8674(02)01199-6"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ES Johnson", 
+                            "index": "Johnson, ES"
+                        }
+                    }
+                ], 
+                "articleTitle": "Protein modification by SUMO", 
+                "journal": {
+                    "name": [
+                        "Annual Review of Biochemistry"
+                    ]
+                }, 
+                "volume": "73", 
+                "pages": {
+                    "first": "355", 
+                    "last": "382", 
+                    "range": "355\u2013382"
+                }, 
+                "doi": "10.1146/annurev.biochem.73.011303.074118"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kumar", 
+                            "index": "Kumar, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KY Zhang", 
+                            "index": "Zhang, KY"
+                        }
+                    }
+                ], 
+                "articleTitle": "Computational investigation of SENP:SUMO protein-protein interaction for structure based drug design", 
+                "journal": {
+                    "name": [
+                        "Molecular Informatics"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "267", 
+                    "last": "280", 
+                    "range": "267\u2013280"
+                }, 
+                "doi": "10.1002/minf.201200124"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IG Madu", 
+                            "index": "Madu, IG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AT Namanja", 
+                            "index": "Namanja, AT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Su", 
+                            "index": "Su, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Wong", 
+                            "index": "Wong, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YJ Li", 
+                            "index": "Li, YJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Identification and characterization of a new chemotype of noncovalent SENP inhibitors", 
+                "journal": {
+                    "name": [
+                        "ACS Chemical Biology"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": {
+                    "first": "1435", 
+                    "last": "1441", 
+                    "range": "1435\u20131441"
+                }, 
+                "doi": "10.1021/cb400177q"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TE Messick", 
+                            "index": "Messick, TE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NS Russell", 
+                            "index": "Russell, NS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJ Iwata", 
+                            "index": "Iwata, AJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KL Sarachan", 
+                            "index": "Sarachan, KL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Shiekhattar", 
+                            "index": "Shiekhattar, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Shanks", 
+                            "index": "Shanks, JR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FE Reyes-Turcu", 
+                            "index": "Reyes-Turcu, FE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KD Wilkinson", 
+                            "index": "Wilkinson, KD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Marmorstein", 
+                            "index": "Marmorstein, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structural basis for ubiquitin recognition by the Otu1 ovarian tumor domain protein", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "283", 
+                "pages": {
+                    "first": "11038", 
+                    "last": "11049", 
+                    "range": "11038\u201311049"
+                }, 
+                "doi": "10.1074/jbc.M704398200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Mikolajczyk", 
+                            "index": "Mikolajczyk, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Drag", 
+                            "index": "Drag, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M B\u00e9k\u00e9s", 
+                            "index": "B\u00e9k\u00e9s, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JT Cao", 
+                            "index": "Cao, JT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Ronai", 
+                            "index": "Ronai, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GS Salvesen", 
+                            "index": "Salvesen, GS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Small ubiquitin-related modifier (SUMO)-specific proteases: profiling the specificities and activities of human SENPs", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "282", 
+                "pages": {
+                    "first": "26217", 
+                    "last": "26224", 
+                    "range": "26217\u201326224"
+                }, 
+                "doi": "10.1074/jbc.M702444200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Misaghi", 
+                            "index": "Misaghi, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PJ Galardy", 
+                            "index": "Galardy, PJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WJ Meester", 
+                            "index": "Meester, WJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Ovaa", 
+                            "index": "Ovaa, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL Ploegh", 
+                            "index": "Ploegh, HL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Gaudet", 
+                            "index": "Gaudet, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structure of the ubiquitin hydrolase UCH-L3 complexed with a suicide substrate", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "280", 
+                "pages": {
+                    "first": "1512", 
+                    "last": "1520", 
+                    "range": "1512\u20131520"
+                }, 
+                "doi": "10.1074/jbc.M410770200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Okura", 
+                            "index": "Okura, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Gong", 
+                            "index": "Gong, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Kamitani", 
+                            "index": "Kamitani, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Wada", 
+                            "index": "Wada, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Okura", 
+                            "index": "Okura, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CF Wei", 
+                            "index": "Wei, CF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HM Chang", 
+                            "index": "Chang, HM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ET Yeh", 
+                            "index": "Yeh, ET"
+                        }
+                    }
+                ], 
+                "articleTitle": "Protection against Fas/APO-1- and tumor necrosis factor-mediated cell death by a novel protein, sentrin", 
+                "journal": {
+                    "name": [
+                        "Journal of Immunology"
+                    ]
+                }, 
+                "volume": "157", 
+                "pages": {
+                    "first": "4277", 
+                    "last": "4281", 
+                    "range": "4277\u20134281"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Phillips", 
+                            "index": "Phillips, JC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Braun", 
+                            "index": "Braun, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Wang", 
+                            "index": "Wang, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gumbart", 
+                            "index": "Gumbart, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Tajkhorshid", 
+                            "index": "Tajkhorshid, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Villa", 
+                            "index": "Villa, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Chipot", 
+                            "index": "Chipot, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RD Skeel", 
+                            "index": "Skeel, RD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Kal\u00e9", 
+                            "index": "Kal\u00e9, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Schulten", 
+                            "index": "Schulten, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Scalable molecular dynamics with NAMD", 
+                "journal": {
+                    "name": [
+                        "Journal of Computational Chemistry"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "1781", 
+                    "last": "1802", 
+                    "range": "1781\u20131802"
+                }, 
+                "doi": "10.1002/jcc.20289"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EL Ponder", 
+                            "index": "Ponder, EL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VE Albrow", 
+                            "index": "Albrow, VE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BA Leader", 
+                            "index": "Leader, BA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M B\u00e9k\u00e9s", 
+                            "index": "B\u00e9k\u00e9s, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Mikolajczyk", 
+                            "index": "Mikolajczyk, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "UP Fonovi\u0107", 
+                            "index": "Fonovi\u0107, UP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Shen", 
+                            "index": "Shen, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Drag", 
+                            "index": "Drag, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Xiao", 
+                            "index": "Xiao, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Deu", 
+                            "index": "Deu, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJ Campbell", 
+                            "index": "Campbell, AJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Powers", 
+                            "index": "Powers, JC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GS Salvesen", 
+                            "index": "Salvesen, GS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Bogyo", 
+                            "index": "Bogyo, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Functional characterization of a SUMO deconjugating protease of Plasmodium falciparum using newly identified small molecule inhibitors", 
+                "journal": {
+                    "name": [
+                        "Chemistry & Biology"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "711", 
+                    "last": "721", 
+                    "range": "711\u2013721"
+                }, 
+                "doi": "10.1016/j.chembiol.2011.04.010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Qin", 
+                            "index": "Qin, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Pang", 
+                            "index": "Pang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HX Zhou", 
+                            "index": "Zhou, HX"
+                        }
+                    }
+                ], 
+                "articleTitle": "Automated prediction of protein association rate constants", 
+                "journal": {
+                    "name": [
+                        "Structure"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "1744", 
+                    "last": "1751", 
+                    "range": "1744\u20131751"
+                }, 
+                "doi": "10.1016/j.str.2011.10.015"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Reverter", 
+                            "index": "Reverter, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CD Lima", 
+                            "index": "Lima, CD"
+                        }
+                    }
+                ], 
+                "articleTitle": "A basis for SUMO protease specificity provided by analysis of human Senp2 and a Senp2-SUMO complex", 
+                "journal": {
+                    "name": [
+                        "Structure"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "1519", 
+                    "last": "1531", 
+                    "range": "1519\u20131531"
+                }, 
+                "doi": "10.1016/j.str.2004.05.023"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Reverter", 
+                            "index": "Reverter, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CD Lima", 
+                            "index": "Lima, CD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structural basis for SENP2 protease interactions with SUMO precursors and conjugated substrates", 
+                "journal": {
+                    "name": [
+                        "Nature Structural & Molecular Biology"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "1060", 
+                    "last": "1068", 
+                    "range": "1060\u20131068"
+                }, 
+                "doi": "10.1038/nsmb1168"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Sethi", 
+                            "index": "Sethi, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Eargle", 
+                            "index": "Eargle, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Black", 
+                            "index": "Black, AA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Luthey-Schulten", 
+                            "index": "Luthey-Schulten, Z"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamical networks in tRNA:protein complexes", 
+                "journal": {
+                    "name": [
+                        "PNAS"
+                    ]
+                }, 
+                "volume": "106", 
+                "pages": {
+                    "first": "6620", 
+                    "last": "6625", 
+                    "range": "6620\u20136625"
+                }, 
+                "doi": "10.1073/pnas.0810961106"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "2006", 
+                "discriminator": "a", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Shen", 
+                            "index": "Shen, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MH Tatham", 
+                            "index": "Tatham, MH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Dong", 
+                            "index": "Dong, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Zag\u00f3rska", 
+                            "index": "Zag\u00f3rska, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JH Naismith", 
+                            "index": "Naismith, JH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RT Hay", 
+                            "index": "Hay, RT"
+                        }
+                    }
+                ], 
+                "articleTitle": "SUMO protease SENP1 induces isomerization of the scissile peptide bond", 
+                "journal": {
+                    "name": [
+                        "Nature Structural & Molecular Biology"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "1069", 
+                    "last": "1077", 
+                    "range": "1069\u20131077"
+                }, 
+                "doi": "10.1038/nsmb1172"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "2006", 
+                "discriminator": "b", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LN Shen", 
+                            "index": "Shen, LN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Dong", 
+                            "index": "Dong, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Liu", 
+                            "index": "Liu, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JH Naismith", 
+                            "index": "Naismith, JH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RT Hay", 
+                            "index": "Hay, RT"
+                        }
+                    }
+                ], 
+                "articleTitle": "The structure of SENP1-SUMO-2 complex suggests a structural basis for discrimination between SUMO paralogues during processing", 
+                "journal": {
+                    "name": [
+                        "Biochemical Journal"
+                    ]
+                }, 
+                "volume": "397", 
+                "pages": {
+                    "first": "279", 
+                    "last": "288", 
+                    "range": "279\u2013288"
+                }, 
+                "doi": "10.1042/BJ20052030"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib36", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Vanommeslaeghe", 
+                            "index": "Vanommeslaeghe, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hatcher", 
+                            "index": "Hatcher, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Acharya", 
+                            "index": "Acharya, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Kundu", 
+                            "index": "Kundu, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Zhong", 
+                            "index": "Zhong, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Shim", 
+                            "index": "Shim, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Darian", 
+                            "index": "Darian, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Guvench", 
+                            "index": "Guvench, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Lopes", 
+                            "index": "Lopes, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Vorobyov", 
+                            "index": "Vorobyov, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AD Mackerell", 
+                            "index": "Mackerell, AD"
+                        }
+                    }
+                ], 
+                "articleTitle": "CHARMM general force field: A force field for drug-like molecules compatible with the CHARMM all-atom additive biological force fields", 
+                "journal": {
+                    "name": [
+                        "Journal of Computational Chemistry"
+                    ]
+                }, 
+                "volume": "31", 
+                "pages": {
+                    "first": "671", 
+                    "last": "690", 
+                    "range": "671\u2013690"
+                }, 
+                "doi": "10.1002/jcc.21367"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib37", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Wang", 
+                            "index": "Wang, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Xia", 
+                            "index": "Xia, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Li", 
+                            "index": "Li, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Xu", 
+                            "index": "Xu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zou", 
+                            "index": "Zou, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zuo", 
+                            "index": "Zuo, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Fan", 
+                            "index": "Fan, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Bawa-Khalfe", 
+                            "index": "Bawa-Khalfe, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ET Yeh", 
+                            "index": "Yeh, ET"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Cheng", 
+                            "index": "Cheng, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "SUMO-specific protease 1 promotes prostate cancer progression and metastasis", 
+                "journal": {
+                    "name": [
+                        "Oncogene"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "2493", 
+                    "last": "2498", 
+                    "range": "2493\u20132498"
+                }, 
+                "doi": "10.1038/onc.2012.250"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib38", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Xu", 
+                            "index": "Xu, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SF Chau", 
+                            "index": "Chau, SF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KH Lam", 
+                            "index": "Lam, KH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HY Chan", 
+                            "index": "Chan, HY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TB Ng", 
+                            "index": "Ng, TB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SW Au", 
+                            "index": "Au, SW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Crystal structure of the SENP1 mutant C603S-SUMO complex reveals the hydrolytic mechanism of SUMO-specific protease", 
+                "journal": {
+                    "name": [
+                        "Biochemical Journal"
+                    ]
+                }, 
+                "volume": "398", 
+                "pages": {
+                    "first": "345", 
+                    "last": "352", 
+                    "range": "345\u2013352"
+                }, 
+                "doi": "10.1042/BJ20060526"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib39", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ET Yeh", 
+                            "index": "Yeh, ET"
+                        }
+                    }
+                ], 
+                "articleTitle": "SUMOylation and De-SUMOylation: wrestling with life's processes", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "284", 
+                "pages": {
+                    "first": "8223", 
+                    "last": "8227", 
+                    "range": "8223\u20138227"
+                }, 
+                "doi": "10.1074/jbc.R800050200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib40", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HX Zhou", 
+                            "index": "Zhou, HX"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Pang", 
+                            "index": "Pang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Lu", 
+                            "index": "Lu, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rate constants and mechanisms of intrinsically disordered proteins binding to structured targets", 
+                "journal": {
+                    "name": [
+                        "Physical Chemistry Chemical Physics"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "10466", 
+                    "last": "10476", 
+                    "range": "10466\u201310476"
+                }, 
+                "doi": "10.1039/c2cp41196b"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Dr. Yuan Chen for introducing the SENP1 allostery problem to us. This work was supported by National Institutes of Health Grants GM058187 and GM118091."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.18249.014", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your article \"Allosteric Activation of SENP1 by SUMO1 \u03b2-Grasp Domain Involves a Dock-and-Coalesce Mechanism\" for consideration by <i>eLife</i>. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom, Volker D\u00f6tsch, is a member of our Board of Reviewing Editors.."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Summary:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The authors report molecular dynamics simulations to study the mechanism of allosteric activation of SENP1 by SUMO1 \u03b2-Grasp domain. The design of the simulations was motivated in part by previous NMR studies and in part by previous simulation study by the authors of a different system (PIN1). The mechanism that emerged from the simulations, referred to as a \"dock-and-coalesce\" mechanism, suggests that the binding of SUMO1 quenches fast (nanosecond) dynamics while stimulates slow (microsecond-millisecond) collective motions that couple distal regions together. In particular, the collective motion may facilitate structural rearrangements in the active site, therefore impacting the catalytic efficiency of SENP1."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Overall, the study is well motivated by a problem (allostery) of general significance. The proposed mechanism is qualitatively consistent with reported experimental data (distinct effects on fast and slow dynamics), and it provides novel physical insights into the allosteric activation of SENP1 and related systems (e.g., DUB). The mechanism also provides new clues to the design of small molecules that target SENP1 activation."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Essential revisions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) It is now becoming relatively easy to reach microsecond time scales in MD simulations, even for relatively large systems, and one should make an argument for why 200 ns were deemed appropriate to address the questions posed here since modern computational resources would allow simulations in excess of what is presented here."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) It is also now common practice to reach statistical redundancy by running replicate simulations. To obtain statistical significance of the results a replication of the simulation would be important."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) The figure caption of <a href=\"#fig2\">Figure 2</a> should mention that 2C maps the sampling onto the principal components. Otherwise, the figure is confusing."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) It would help to indicate in <a href=\"#fig2\">Figure 2A</a> where exactly the cleft distance was measured."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) The comparison with the experimental chemical shift perturbations validates the simulations but doesn't quite help with the mechanistic picture. It would be useful to discuss a mechanistic model that explains the observed effects. In particular, how does triggering slow motions lead to reorganization of the active site that favors catalysis. Additional discussion that further clarifies this important aspect of activation would be beneficial to the clarity of the proposed mechanism."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.18249.015", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) It is now becoming relatively easy to reach microsecond time scales in MD simulations, even for relatively large systems, and one should make an argument for why 200 ns were deemed appropriate to address the questions posed here since modern computational resources would allow simulations in excess of what is presented here.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We now report results from three replicate simulations for each of the three systems. The lengths of these simulations were 0.3, 0.4, and 1.0 microseconds, accumulating a total of 5.1 microseconds for the three systems."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) It is also now common practice to reach statistical redundancy by running replicate simulations. To obtain statistical significance of the results a replication of the simulation would be important.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "As stated in the preceding reply, we have now run three replicate simulations for each system. The conformational and dynamic results reported in the revision are those reproduced in all the three independent simulations, and hence are statistically significant."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) The figure caption of <a href=\"#fig2\">Figure 2</a> should mention that 2C maps the sampling onto the principal components. Otherwise, the figure is confusing.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We now explain how the distributions in <a href=\"#fig2\">Figure 2C</a> were calculated to avoid confusion (subsection \u201cCombination of Replicate Simulations\u201d)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) It would help to indicate in <a href=\"#fig2\">Figure 2A</a> where exactly the cleft distance was measured.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Done."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>5) The comparison with the experimental chemical shift perturbations validates the simulations but doesn't quite help with the mechanistic picture. It would be useful to discuss a mechanistic model that explains the observed effects. In particular, how does triggering slow motions lead to reorganization of the active site that favors catalysis. Additional discussion that further clarifies this important aspect of activation would be beneficial to the clarity of the proposed mechanism.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We agree that chemical shift perturbations, from either experiments or simulations, are only indicators of allosteric effects and by themselves do not provide mechanistic insight. That\u2019s why the analyses of conformational and dynamic properties in the simulations are useful \u2013 they potentially lead to mechanistic explanations. As for the link between slow motions and catalytic activation, we have now made the discussion of our proposed mechanism somewhat tighter and more to the point (subsection \u201cA dock-and-coalescence mechanism for SENP-catalyzed SUMO cleavage\u201d, third paragraph and <a href=\"#fig7\">Figure 7</a> caption), but we feel a more detailed discussion of this link would be too speculative at this time."
+                }
+            ]
+        }
+    }
+}

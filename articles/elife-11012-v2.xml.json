@@ -1,0 +1,2970 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "11012", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.11012", 
+        "authorLine": "Indigo Chris King et al", 
+        "title": "Precise assembly of complex beta sheet topologies from de novo designed building blocks", 
+        "published": "2015-12-09T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e11012", 
+        "pdf": "https://publishing-cdn.elifesciences.org/11012/elife-11012-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biophysics-structural-biology", 
+                "name": "Biophysics and Structural Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "E. coli"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.11012.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Design of complex alpha-beta protein topologies poses a challenge because of the large number of alternative packing arrangements. A similar challenge presumably limited the emergence of large and complex protein topologies in evolution. Here, we demonstrate that protein topologies with six and seven-stranded beta sheets can be designed by insertion of one de novo designed beta sheet containing protein into another such that the two beta sheets are merged to form a single extended sheet, followed by amino acid sequence optimization at the newly formed strand-strand, strand-helix, and helix-helix interfaces. Crystal structures of two such designs closely match the computational design models. Searches for similar structures in the SCOP protein domain database yield only weak matches with different beta sheet connectivities. A similar beta sheet fusion mechanism may have contributed to the emergence of complex beta sheets during natural protein evolution."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "King et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Indigo Chris King", 
+                    "index": "King, Indigo Chris"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "chrisk1@uw.edu"
+                ], 
+                "contribution": "ICK, wrote code for simulations, performed simulations, and wrote the paper; commented on the manuscript, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "James Gleixner", 
+                    "index": "Gleixner, James"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JG, performed simulations, performed experiments, and analyzed data; commented on the manuscript, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Lindsey Doyle", 
+                    "index": "Doyle, Lindsey"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Basic Sciences", 
+                            "Fred Hutchinson Cancer Research Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "LD, participated in crystallization of the Fd-Fd construct and subsequent data collection and data processing; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Alexandre Kuzin", 
+                    "index": "Kuzin, Alexandre"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biological Sciences, Northeast Structural Genomics Consortium", 
+                            "Columbia University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AK, solved the Fd-Top7 crystal structure; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "John F Hunt", 
+                    "index": "Hunt, John F"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biological Sciences, Northeast Structural Genomics Consortium", 
+                            "Columbia University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JFH, solved the Fd-Top7 crystal structure; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Rong Xiao", 
+                    "index": "Xiao, Rong"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Advanced Biotechnology and Medicine, Department of Molecular Biology and Biochemistry, Northeast Structural Genomics Consortium", 
+                            "Rutgers, The State University of New Jersey"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Piscataway", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Piscataway"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "RX, expressed and purified protein samples; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Gaetano T Montelione", 
+                    "index": "Montelione, Gaetano T"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Advanced Biotechnology and Medicine, Department of Molecular Biology and Biochemistry, Northeast Structural Genomics Consortium", 
+                            "Rutgers, The State University of New Jersey"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Piscataway", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Piscataway"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "GTM, expressed and purified protein samples; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Barry L Stoddard", 
+                    "index": "Stoddard, Barry L"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Basic Sciences", 
+                            "Fred Hutchinson Cancer Research Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BLS, participated in crystallization of the Fd-Fd construct and subsequent data collection and data processing; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Frank DiMaio", 
+                    "index": "DiMaio, Frank"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "FDiM, conducted molecular replacement analyses and subsequent refinement for the Fd-Fd crystal structure using an ensemble of molecular search models produced by RosettaDesign; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "David Baker", 
+                    "index": "Baker, David"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "DB, wrote code for simulations, performed simulations, and wrote the paper; commented on the manuscript, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.11012.012", 
+                "id": "SD1-data", 
+                "label": "Supplementary file 1.", 
+                "title": "Crystallographic data.", 
+                "mediaType": "application/xlsx", 
+                "uri": "elife-11012-supp1-v2.xlsx", 
+                "filename": "elife-11012-supp1-v2.xlsx"
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2015", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "DiMaio F"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "King IC"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Gleixner J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Doyle L"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Stoddard B"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Baker D"
+                        }
+                    ], 
+                    "title": "Crystal structure of De novo designed ferredoxin-ferredoxin domain insertion protein", 
+                    "details": "Publicly available at the RCSB Protein Data Bank (Accession no: 5CW9).", 
+                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=5CW9"
+                }, 
+                {
+                    "id": "dataro2", 
+                    "date": "2013", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Kuzin A"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Su M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Seetharaman J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Maglaqui M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Xiao R"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Lee D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Gleixner J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Baker D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Everett JK"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Acton TB"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Kornhaber G"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Montelione GT"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Hunt JF"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Tong L"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Northeast Structural Genomics Consortium"
+                        }
+                    ], 
+                    "title": "Three-dimensional Structure of the orthorhombic crystal of computationally designed insertion domain , Northeast Structural Genomics Consortium (NESG) Target OR327", 
+                    "details": "Publicly available at the RCSB Protein Data Bank (Accession no: 4KYZ).", 
+                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=4KYZ"
+                }, 
+                {
+                    "id": "dataro3", 
+                    "date": "2013", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Kuzin A"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Su M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Seetharaman J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Maglaqui M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Xiao R"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Lee D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Gleixner J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Baker D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Everett JK"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Acton TB"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Montelione GT"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Tong L"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Hunt JF"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Northeast Structural Genomics Consortium"
+                        }
+                    ], 
+                    "title": "Three-dimensional Structure of the orthorhombic crystal of computationally designed insertion domain , Northeast Structural Genomics Consortium (NESG) Target OR327", 
+                    "details": "Publicly available at the RCSB Protein Data Bank (Accession no: 4KY3).", 
+                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=4KY3"
+                }
+            ]
+        }, 
+        "impactStatement": "Protein structures with complex topologies can be designed by recombining small independently folded domains."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "11012", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.11012", 
+        "authorLine": "Indigo Chris King et al", 
+        "title": "Precise assembly of complex beta sheet topologies from de novo designed building blocks", 
+        "published": "2015-12-09T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e11012", 
+        "pdf": "https://publishing-cdn.elifesciences.org/11012/elife-11012-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biophysics-structural-biology", 
+                "name": "Biophysics and Structural Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "E. coli"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.11012.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Design of complex alpha-beta protein topologies poses a challenge because of the large number of alternative packing arrangements. A similar challenge presumably limited the emergence of large and complex protein topologies in evolution. Here, we demonstrate that protein topologies with six and seven-stranded beta sheets can be designed by insertion of one de novo designed beta sheet containing protein into another such that the two beta sheets are merged to form a single extended sheet, followed by amino acid sequence optimization at the newly formed strand-strand, strand-helix, and helix-helix interfaces. Crystal structures of two such designs closely match the computational design models. Searches for similar structures in the SCOP protein domain database yield only weak matches with different beta sheet connectivities. A similar beta sheet fusion mechanism may have contributed to the emergence of complex beta sheets during natural protein evolution."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "King et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Indigo Chris King", 
+                    "index": "King, Indigo Chris"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "chrisk1@uw.edu"
+                ], 
+                "contribution": "ICK, wrote code for simulations, performed simulations, and wrote the paper; commented on the manuscript, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "James Gleixner", 
+                    "index": "Gleixner, James"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JG, performed simulations, performed experiments, and analyzed data; commented on the manuscript, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Lindsey Doyle", 
+                    "index": "Doyle, Lindsey"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Basic Sciences", 
+                            "Fred Hutchinson Cancer Research Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "LD, participated in crystallization of the Fd-Fd construct and subsequent data collection and data processing; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Alexandre Kuzin", 
+                    "index": "Kuzin, Alexandre"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biological Sciences, Northeast Structural Genomics Consortium", 
+                            "Columbia University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AK, solved the Fd-Top7 crystal structure; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "John F Hunt", 
+                    "index": "Hunt, John F"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Biological Sciences, Northeast Structural Genomics Consortium", 
+                            "Columbia University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JFH, solved the Fd-Top7 crystal structure; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Rong Xiao", 
+                    "index": "Xiao, Rong"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Advanced Biotechnology and Medicine, Department of Molecular Biology and Biochemistry, Northeast Structural Genomics Consortium", 
+                            "Rutgers, The State University of New Jersey"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Piscataway", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Piscataway"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "RX, expressed and purified protein samples; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Gaetano T Montelione", 
+                    "index": "Montelione, Gaetano T"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Advanced Biotechnology and Medicine, Department of Molecular Biology and Biochemistry, Northeast Structural Genomics Consortium", 
+                            "Rutgers, The State University of New Jersey"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Piscataway", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Piscataway"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "GTM, expressed and purified protein samples; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Barry L Stoddard", 
+                    "index": "Stoddard, Barry L"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Basic Sciences", 
+                            "Fred Hutchinson Cancer Research Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BLS, participated in crystallization of the Fd-Fd construct and subsequent data collection and data processing; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Frank DiMaio", 
+                    "index": "DiMaio, Frank"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "FDiM, conducted molecular replacement analyses and subsequent refinement for the Fd-Fd crystal structure using an ensemble of molecular search models produced by RosettaDesign; commented on the manuscript, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "David Baker", 
+                    "index": "Baker, David"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute for Protein Design", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "DB, wrote code for simulations, performed simulations, and wrote the paper; commented on the manuscript, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.11012.012", 
+                "id": "SD1-data", 
+                "label": "Supplementary file 1.", 
+                "title": "Crystallographic data.", 
+                "mediaType": "application/xlsx", 
+                "uri": "elife-11012-supp1-v2.xlsx", 
+                "filename": "elife-11012-supp1-v2.xlsx"
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2015", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "DiMaio F"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "King IC"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Gleixner J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Doyle L"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Stoddard B"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Baker D"
+                        }
+                    ], 
+                    "title": "Crystal structure of De novo designed ferredoxin-ferredoxin domain insertion protein", 
+                    "details": "Publicly available at the RCSB Protein Data Bank (Accession no: 5CW9).", 
+                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=5CW9"
+                }, 
+                {
+                    "id": "dataro2", 
+                    "date": "2013", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Kuzin A"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Su M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Seetharaman J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Maglaqui M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Xiao R"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Lee D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Gleixner J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Baker D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Everett JK"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Acton TB"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Kornhaber G"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Montelione GT"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Hunt JF"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Tong L"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Northeast Structural Genomics Consortium"
+                        }
+                    ], 
+                    "title": "Three-dimensional Structure of the orthorhombic crystal of computationally designed insertion domain , Northeast Structural Genomics Consortium (NESG) Target OR327", 
+                    "details": "Publicly available at the RCSB Protein Data Bank (Accession no: 4KYZ).", 
+                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=4KYZ"
+                }, 
+                {
+                    "id": "dataro3", 
+                    "date": "2013", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Kuzin A"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Su M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Seetharaman J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Maglaqui M"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Xiao R"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Lee D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Gleixner J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Baker D"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Everett JK"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Acton TB"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Montelione GT"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Tong L"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Hunt JF"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Northeast Structural Genomics Consortium"
+                        }
+                    ], 
+                    "title": "Three-dimensional Structure of the orthorhombic crystal of computationally designed insertion domain , Northeast Structural Genomics Consortium (NESG) Target OR327", 
+                    "details": "Publicly available at the RCSB Protein Data Bank (Accession no: 4KY3).", 
+                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=4KY3"
+                }
+            ]
+        }, 
+        "impactStatement": "Protein structures with complex topologies can be designed by recombining small independently folded domains.", 
+        "keywords": [
+            "protein design", 
+            "protein folding", 
+            "beta sheets"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.11012.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A protein is made up of a sequence of amino acids and must fold into a specific three-dimensional structure if it is to work correctly. The structure is formed by segments of the protein adopting specific shapes, the two most common shapes being alpha helices and beta strands. Beta strands commonly interact with each other to form regions called beta sheets."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Researchers trying to design proteins with new abilities have managed to create proteins that contain up to five beta strands and four alpha helices. Larger and more complex proteins are more challenging to make because there are many different ways that a protein can fold. It is also difficult to understand how complex structures such as large beta sheets emerged naturally, over the course of evolution."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "King et al. have now used computer modeling to explore how a large, complex beta sheet might form. In the model, one small, newly designed protein was inserted into another so that their beta sheets merged to form a single extended sheet. The model then stabilized this structure by changing the amino acids found at the points where the two proteins met."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "King et al. were then able to synthesize these new proteins in bacteria and use a technique called X-ray crystallography to determine the structure of two of them. The structures closely matched the computer models; one protein contained a six-stranded beta sheet, and the other had a seven-stranded beta sheet. The folds of the two designed proteins were then compared with those found in a database that classifies proteins on the basis of their structure. The beta sheets in the designed proteins did not match the protein structures in the database, which suggests that the designed proteins contained new types of folds."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the future, the technique used by King et al. could be used to design other large and complex beta sheet structures. Furthermore, the results suggest that such large structures could have evolved naturally through the combination of smaller, less complex proteins."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Modular domains constitute the primary structural and functional units of natural proteins. Multi-domain proteins likely evolved through simple linear concatenation of successive domains onto the polypeptide chain or through the insertion of one or more continuous sequences into the middle of another, now discontinuous domain (<a href=\"#bib1\">Aroul-Selvam et al., 2004</a>; <a href=\"#bib4\">Berrondo et al., 2008</a>; <a href=\"#bib18\">Lupas et al., 2001</a>; <a href=\"#bib21\">Pandya et al., 2013</a>). By analogy, new proteins have been engineered from existing domains by simple linear concatenation or insertion of one domain into another (<a href=\"#bib2\">Ay et al., 1998</a>; <a href=\"#bib5\">Collinet et al., 2000</a>; <a href=\"#bib6\">Cutler et al., 2009</a>; <a href=\"#bib8\">Doi and Yanagawa, 1999</a>; <a href=\"#bib9\">Edwards et al., 2008</a>; <a href=\"#bib12\">Guntas and Ostermeier, 2004</a>; <a href=\"#bib20\">Ostermeier, 2005</a>).\u00a0How individual domains evolved, in contrast, is much less clear. Both experimental and computational analyses have suggested that new folds can evolve by insertion of one fold into another (<a href=\"#bib18\">Lupas et al., 2001</a>; <a href=\"#bib11\">Grishin, 2001</a>; <a href=\"#bib26\">S\u00f6ding and Lupas, 2003</a>; <a href=\"#bib16\">Krishna and Grishin, 2005</a>; <a href=\"#bib10\">Friedberg and Godzik, 2005</a>; <a href=\"#bib3\">Ben-Tal and Kolodny, 2014</a>), but to our knowledge, there is no evidence that complex beta sheet topologies can be formed in this manner. On the protein design front, there has been progress in de novo design of idealized helical bundles (<a href=\"#bib22\">Park et al., 2015</a>) and alpha beta protein structures with up to 5 strands (<a href=\"#bib15\">Koga et al., 2012</a>), and although new folds have been generated by tandem fusion of natural protein domains followed by introduction of additional stabilizing mutations\u00a0(<a href=\"#bib13\">Hocker et al., 2004</a>; <a href=\"#bib23\">Shanmugaratnam et al., 2012</a>), assembly of large and complex beta sheets poses a challenge for de novo protein design."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "One possible route to the large and complex beta sheet topologies found in many native protein domains is recombination of two smaller beta sheet domains. Here, we explore the viability of such a mechanism by inserting one de novo designed alpha beta protein into another such that the two beta sheets are combined into one. The backbone geometry at the junctions between the original domains is regularized, and the sequence at the newly formed interface is optimized to stabilize the single integrated domain structure. Crystal structures of two such proteins demonstrate that complex beta sheet structures can be designed with considerable accuracy using this approach and provide a proof-of-concept for the hypothesis that complex beta topologies in natural proteins may have evolved from simpler beta sheet structures in a similar manner."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "A first extended sheet protein was created by inserting a designed ferredoxin domain into a beta turn of the designed TOP7 protein to create a half-barrel structure, with the two sheets fused into a single seven strand sheet flanked by four helices (<a href=\"#fig1\">Figure 1A</a>). The CD spectra show both alpha and beta structures (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>). Two crystal structures (NESG target OR327) were solved by molecular replacement and refined to 2.49 \u00c5 (PDB entry 4KYZ) and 2.96 \u00c5 (PDB entry 4KY3) resolutions. Further analysis refers only to the higher resolution structure (4KYZ). The structure shows excellent agreement with the design model (<a href=\"#fig2\">Figure 2A</a>), particularly in low B-factor regions, with C-alpha RMSD ranging from 1.76\u00a0to\u00a01.85 \u00c5 among the four protomers in the crystal. The relative orientation of the strands packed against the helices is close to that in the design model, and core sidechains at the designed interfaces are in very similar conformations in the design model and crystal (<a href=\"#fig2\">Figure 2B,C</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.11012.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Generation of protein domains with single extended beta sheets by inserting one beta sheet containing protein into another.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Insertion of a ferrrodoxin domain (purple) into TOP7 (red). (<b>B</b>) Insertion of one ferrodoxin domain into another. In both cases, two beta strands from each partner (red and purple) are concatenated to form the central strand pair of the fusion protein (pink)."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-11012-fig1-v2.tif"
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.11012.004", 
+                        "id": "fig2", 
+                        "label": "Figure 2.", 
+                        "title": "Comparison of the crystal structure of ferredoxin-TOP7 fusion to design model.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Backbone superposition of the crystal structure of ferredoxin-TOP7 (4KYZ, chain A) with the design model. The backbones of the two proteins are nearly identical. (<b><b>B</b>,\u00a0C</b>) The core sidechain packing in the ferrodoxin-TOP7 fusion is very similar in the crystal structure and design model both in the insert (<b>B</b>) and host (<b>C</b>) domains. The crystal structure is colored by B-factor and the design model is in gray."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-11012-fig2-v2.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.11012.005", 
+                                "id": "fig2s1", 
+                                "label": "Figure 2\u2014figure supplement 1.", 
+                                "title": "The circular dichroism spectrum of ferrodoxin-TOP7 has the shape expected for an alpha/beta protein.", 
+                                "alt": "", 
+                                "uri": "elife-11012-fig2-figsupp1-v2.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "A second extended sheet protein was created by inserting one designed ferredoxin domain into another to create a half-barrel structure with four alpha helices and six beta strands (<a href=\"#fig1\">Figure 1B</a>). A beta turn segment between two beta strands of the host ferredoxin was removed and the resulting cut-points in the host beta strands were linked to two beta strand cut-points in the insert, fusing the two strand pairs into a single, longer pair at the center of a six-stranded beta sheet. CD spectra show that the protein contains both alpha and beta structures (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). Crystals were obtained which diffracted to 3.3\u00c5 resolution. Molecular replacement using the computational design models (<a href=\"#bib7\">DiMaio et al., 2013</a>) yielded a solution for which the refinement statistics are shown in <a href=\"#SD1-data\">Supplementary file 1</a> (PDB entry 5CW9). Attempts to improve these statistics by rebuilding portions of the model proved unsuccessful, possibly due to a register shift or dynamic fluctuations in the structure (perhaps corresponding to slightly 'molten-globule'-like behavior) that are difficult to computationally model. However, unbiased low-resolution omit maps suggest that the overall topology is correct (<a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a>). In the model that displays the best refinement statistics, the protein backbone was similar to the design model with a C-alpha RMSD value of 2 \u00c5 (<a href=\"#fig3\">Figure 3A,B</a>). The fused beta sheet aligns with the design model, while the inter-domain helices shift slightly to accommodate the inter-domain interface. The sidechain packing between the newly juxtaposed beta strands succeeded in anchoring the secondary structure elements in their intended orientations, but the low resolution of the crystal structure prevents evaluation of the atomic-level accuracy of the design (<a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.11012.006", 
+                        "id": "fig3", 
+                        "label": "Figure 3.", 
+                        "title": "Comparison of the crystal structure of the ferredoxin-ferredoxin fusion to the design model.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The crystal structure (5CW9) aligns well with the design model over both the helices (<b>A</b>) and the fused beta sheet (<b>B</b>)."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-11012-fig3-v2.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.11012.007", 
+                                "id": "fig3s1", 
+                                "label": "Figure 3\u2014figure supplement 1.", 
+                                "title": "Circular dichroism spectra of ferrrodoxin-ferrodoxin at 25\u00b0C.", 
+                                "alt": "", 
+                                "uri": "elife-11012-fig3-figsupp1-v2.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.11012.008", 
+                                "id": "fig3s2", 
+                                "label": "Figure 3\u2014figure supplement 2.", 
+                                "title": "Ferredoxin-Ferredoxin 2Fo-Fc omit map superimposed with crystal structure shows core packing of host\u00a0(<b>A</b>) and insert (<b>B</b>) domains.", 
+                                "alt": "", 
+                                "uri": "elife-11012-fig3-figsupp2-v2.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To compare the folds of these designed proteins to those in the SCOP v.1.75 domain database (<a href=\"#bib19\">Murzin et al., 1995</a>), the TMalign structure-structure comparison method was used to search a 70% sequence non-redundant set of SCOP domains (<a href=\"#bib3\">Ben-Tal and Kolodny, 2014</a>) for structure alignments containing a minimum 75% overlap with the designed proteins. The most similar SCOP domains had weak TM-align scores (0.54 and 0.51), and the sheets in these matched structures have different connectivities than those of the designs, suggesting that the two designed proteins have novel folds (<a href=\"#fig4\">Figure 4</a>). While there are no domains with globally similar folds, both designed proteins are similar to a number of SCOP domains over the ferrodoxin-like substructure(s) (maps of the proteins to the domain network of Nepomnyachiy et al. (<a href=\"#bib3\">Ben-Tal and Kolodny, 2014</a>) are shown in <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>). The mutations introduced at the redesign stage of the domain insertion design protocol are compatible with the parent fold structures with minimal perturbation of the protein backbone (<a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>) suggesting the designed folds would have the potential to evolve from insertion followed by neutral mutational drift of the parent structures."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.11012.009", 
+                        "id": "fig4", 
+                        "label": "Figure 4.", 
+                        "title": "Top two SCOP domain structural homologues for Fd-Top7\u00a0(<b>A</b>) and Fd-Fd (<b>B</b>) designed domain found in TM-align searches.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Ribbon diagrams are shown on left, the strand connectivity, at the right. The beta strand connectivity is quite different in the designs than in these closest structural matches."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-11012-fig4-v2.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.11012.010", 
+                                "id": "fig4s1", 
+                                "label": "Figure 4\u2014figure supplement 1.", 
+                                "title": "Parent domain PDB structures (2KL8, 1QYS) and daughter designed folds (5CW9,4KYZ) (pink) mapped into the \u03b1+\u03b2 region of the SCOP domains network of Nepomnyachi et al. (<b>A</b>) and zoomed region (<b>B</b>) highlighting parent, designed, and first neighbor folds.", 
+                                "alt": "", 
+                                "uri": "elife-11012-fig4-figsupp1-v2.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.11012.011", 
+                                "id": "fig4s2", 
+                                "label": "Figure 4\u2014figure supplement 2.", 
+                                "title": "Neutral drift mutant models, relative changes to predicted free energy of folding in REU (Rosetta Energy Units), and multiple sequence alignment of parent and designed sequences, showing mutations in ferredoxin-top7 (<b>A</b>) and ferredoxin-ferredoxin (<b>B</b>).", 
+                                "alt": "", 
+                                "uri": "elife-11012-fig4-figsupp2-v2.tif"
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We have shown that single designed protein domains can be combined into larger domains with complex beta sheet topologies. This mechanism provides a straightforward route to designing large and complex beta sheet structures capable of scaffolding the pockets and cavities essential for future design of protein functions. Our success in designing larger beta sheet domains by recombining smaller independently folded beta sheet proteins suggests a similar mechanism could have played a role in the evolution of naturally occurring complex beta sheet proteins."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Our design strategy began with selection of three previously characterized de novo designed protein domains to serve as building blocks for recombination through domain insertion: ferredoxin, rossman 2x2, and top7 (<a href=\"#bib15\">Koga et al., 2012</a>). These three domains were chosen because they were the only Rosetta de\u00a0novo designed protein domains with both alpha and beta secondary structures for which high-resolution experimental structures had been obtained at the time of this work. Each chimeric domain consists of a parent host domain and a parent insert domain. In the insert domain, three residues from from the N-terminus were paired with three residue from the C-terminus to create nine residue pairs. Each residue pair was then aligned against all pairs of residues in the host domain to search for possible insertion points. Insertion points were accepted for residue pair alignment distances of 1 angstrom RMSD or less, replacing host domain segments of less than 5 residues. For every insertion point, a structure is generated by removing the residues between the insertion residues of the host domain and adding linkers between the aligned host and insert domain residues (<a href=\"#fig1\">Figure 1</a>). Host and insert were connected by addition of 1\u20133 residues at the domain junctions using Rosetta Remodel (<a href=\"#bib14\">Huang et al., 2011</a>), and 12 models in which this junction formed a continuous beta strand were identified. The sequences of these chimeras were optimized using Rosetta Design calculations around the junction regions and the new interface between the former domains. During the design simulation, all amino acid positions within 5 \u00c5 of the inter-domain junction interface were redesigned to minimize the predicted free energy of folding with the Rosetta all-atom energy function and a flexible backbone protein design protocol described previously (<a href=\"#bib14\">Huang et al., 2011</a>). Final designs were selected based on Rosetta energy, packing metrics, and similarity of the junction backbone geometry to local backbone geometry in the PDB. Twelve final domain insertion designs were chosen for expression in <i>Escherichia coli</i> as 6xHis-tag fusions and purified on a Ni-NTA column. Purified proteins were evaluated for the presence of alpha/beta secondary structures via circular dichroism spectroscopy (CD), and three with levels of secondary structure content consistent with the design model were subjected to crystallographic analysis. One design based on Rossman 2x2 expressed as soluble protein, but no crystal structure could be obtained. Crystal structures were obtained for two designed proteins: a ferredoxin-top7 chimera and a ferredoxin-ferredoxin chimera. The design and characterization of these two proteins is described in the Results."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Crystal structures were used to search for structural homologs in the SCOP database. First, crystal structures (ferredoxin-top7: 4KYZ chain A, ferredoxin-ferredoxin: 5CW9 chain A) were used as search queries using TMalign (<a href=\"#bib28\">Zhang, 2005</a>). Hits were saved only if the alignment covered 75% or more of the query structure. Results were sorted by TM-score to identify the most similar structures in the SCOP database. Secondary structure topology cartoons were created with the Pro Origami server (<a href=\"#bib25\">Stivala et al., 2011</a>). To map designed protein crystal structures into the protein domains network, the structures were aligned to all domain structures in the protein domains network using the PDBeFold server (<a href=\"#bib17\">Krissinel and Henrick, 2004</a>). PDBeFold structural alignment hits were filtered for RMSD \u22642.5\u00a0\u00c5 and aligned sequence length of \u226575 residues. In contrast to the methods of Nepomnyachi et al., sequence similarity thresholds were ignored. Including sequence similarity thresholds eliminates matching hits in the domains network. This is not surprising because the proteins were designed de novo and did not evolve from natural proteins. Filtered alignment hits were mapped into the protein domains network using Cytoscape (<a href=\"#bib24\">Shannon, 2003</a>). To evaluate neutral drift models of the parent folds, then crystal structures of de novo ferredoxin and Top7 proteins (2KL8 and 1QYS) were obtained and corresponding mutations from the final design proteins were modeled using a flexible backbone protein design algorithm described previously (<a href=\"#bib14\">Huang et al., 2011</a>). Final Rosetta energies were calculated and subtracted from the Rosetta energies of the original parent protein structures to obtain predictions of the change in free energy of folding."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The ferredoxin \u2013 TOP7 protein (NESF ID OR327) was expressed and purified following standard protocols developed by the NESG for production of selenomethionine-labeled protein samples (<a href=\"#bib27\">Xiao et al., 2010</a>). Briefly, <i>E. coli</i> BL21 (DE3) pMGK cells, a rare-codon enhanced strain, were transformed with the DNA sequence-verified OR327-21.1 plasmid. A single isolate was cultured in MJ9 minimal media supplemented with selenomethionine, lysine, phenylalanine, threonine, isoleucine, leucine, and valine for the production of selenomethionine-labeled OR327. Initial growth was carried out at 37\u00b0C until the OD600 of the culture reached \u223c0.8 units. The incubation temperature was then decreased to 17\u00b0C, and protein expression was induced by the addition of isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) at a final concentration of 1 mM. Following overnight incubation at 17\u00b0C, the cells were harvested by centrifugation and resuspended in Lysis Buffer [50 mM Tris, pH 7.5, 500 mM NaCl, 1 mM tris (2-carboxyethyl)phosphine, 40 mM imidazole]. After sonication, the supernatant was collected by centrifugation for 40 min at 30,000 <i>g</i>. The supernatant was loaded first onto a Ni affinity column (HisTrap HP; GE Healthcare,\u00a0Marlborough,\u00a0MA) and the eluate loaded into a gel filtration column (Superdex 75 26/60; GE Healthcare). Yields were 60-\u201390 mg/L. The purified 6His-OR327 construct in buffer containing 10 mM Tris\u00b7HCl, 100 mM NaCl, 5 mM DTT, pH 7.5, was then concentrated to \u223c10.6 mg/mL. The sample was flash-frozen in 50-\u03bcL aliquots using liquid nitrogen and stored at \u221280\u00b0C before crystallization trials. The sample purity (&gt;98%), molecular weight, and oligomerization state were verified by SDS/PAGE, MALDI-TOF mass spectrometry, and analytic gel filtration followed by static light scattering, respectively. For static light scattering, selenomethionine-labeled ferredoxin \u2013 TOP7 protein (30 \u03bcL at 10 mM Tris\u00b7HCl, pH 7.5, 100 mM NaCl, 5 mM DTT) was injected onto an analytical gel filtration column (Shodex KW-802.5; Shodex, New York, NY) with the effluent monitored by refractive index (Optilab rEX; Wyatt Technology, Santa Barbara, CA) and 90\u00b0 static light-scattering (miniDAWN TREOS; Wyatt Technology) detectors."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Accession codes", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Structures have been deposited in the Protein Data Bank as entries 5CW9, 4KYZ, and 4KY3."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Aroul-Selvam", 
+                            "index": "Aroul-Selvam, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Hubbard", 
+                            "index": "Hubbard, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Sasidharan", 
+                            "index": "Sasidharan, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Domain insertions in protein structures", 
+                "journal": {
+                    "name": [
+                        "Journal of Molecular Biology"
+                    ]
+                }, 
+                "volume": "338", 
+                "pages": {
+                    "first": "633", 
+                    "last": "641", 
+                    "range": "633\u2013641"
+                }, 
+                "doi": "10.1016/j.jmb.2004.03.039"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ay", 
+                            "index": "Ay, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Gotz", 
+                            "index": "Gotz, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Borriss", 
+                            "index": "Borriss, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Heinemann", 
+                            "index": "Heinemann, U"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structure and function of the bacillus hybrid enzyme GluXyn-1: native-like jellyroll fold preserved after insertion of autonomous globular domain", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "95", 
+                "pages": {
+                    "first": "6613", 
+                    "last": "6618", 
+                    "range": "6613\u20136618"
+                }, 
+                "doi": "10.1073/pnas.95.12.6613"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Ben-Tal", 
+                            "index": "Ben-Tal, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Kolodny", 
+                            "index": "Kolodny, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Representation of the protein universe using classifications, maps, and networks", 
+                "journal": {
+                    "name": [
+                        "Israel Journal of Chemistry"
+                    ]
+                }, 
+                "volume": "54", 
+                "pages": {
+                    "first": "1286", 
+                    "last": "1292", 
+                    "range": "1286\u20131292"
+                }, 
+                "doi": "10.1002/ijch.201400001"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Berrondo", 
+                            "index": "Berrondo, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ostermeier", 
+                            "index": "Ostermeier, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Gray", 
+                            "index": "Gray, JJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structure prediction of domain insertion proteins from structures of individual domains", 
+                "journal": {
+                    "name": [
+                        "Structure"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "513", 
+                    "last": "527", 
+                    "range": "513\u2013527"
+                }, 
+                "doi": "10.1016/j.str.2008.01.012"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Collinet", 
+                            "index": "Collinet, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Herve", 
+                            "index": "Herve, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Pecorari", 
+                            "index": "Pecorari, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Minard", 
+                            "index": "Minard, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Eder", 
+                            "index": "Eder, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Desmadril", 
+                            "index": "Desmadril, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Functionally accepted insertions of proteins within protein domains", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "275", 
+                "pages": {
+                    "first": "17428", 
+                    "last": "17433", 
+                    "range": "17428\u201317433"
+                }, 
+                "doi": "10.1074/jbc.M000666200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TA Cutler", 
+                            "index": "Cutler, TA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BM Mills", 
+                            "index": "Mills, BM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Lubin", 
+                            "index": "Lubin, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LT Chong", 
+                            "index": "Chong, LT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SN Loh", 
+                            "index": "Loh, SN"
+                        }
+                    }
+                ], 
+                "articleTitle": "Effect of interdomain linker length on an antagonistic folding\u2013unfolding equilibrium between two protein domains", 
+                "journal": {
+                    "name": [
+                        "Journal of Molecular Biology"
+                    ]
+                }, 
+                "volume": "386", 
+                "pages": {
+                    "first": "854", 
+                    "last": "868", 
+                    "range": "854\u2013868"
+                }, 
+                "doi": "10.1016/j.jmb.2008.10.090"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F DiMaio", 
+                            "index": "DiMaio, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Echols", 
+                            "index": "Echols, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Headd", 
+                            "index": "Headd, JJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TC Terwilliger", 
+                            "index": "Terwilliger, TC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PD Adams", 
+                            "index": "Adams, PD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Baker", 
+                            "index": "Baker, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Improved low-resolution crystallographic refinement with phenix and rosetta", 
+                "journal": {
+                    "name": [
+                        "Nature Methods"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "1102", 
+                    "last": "1104", 
+                    "range": "1102\u20131104"
+                }, 
+                "doi": "10.1038/nmeth.2648"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Doi", 
+                            "index": "Doi, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Yanagawa", 
+                            "index": "Yanagawa, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Design of generic biosensors based on green fluorescent proteins with allosteric sites by directed evolution", 
+                "journal": {
+                    "name": [
+                        "FEBS Letters"
+                    ]
+                }, 
+                "volume": "453", 
+                "pages": {
+                    "first": "305", 
+                    "last": "307", 
+                    "range": "305\u2013307"
+                }, 
+                "doi": "10.1016/S0014-5793(99)00732-2"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Edwards", 
+                            "index": "Edwards, WR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Busse", 
+                            "index": "Busse, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RK Allemann", 
+                            "index": "Allemann, RK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DD Jones", 
+                            "index": "Jones, DD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Linking the functions of unrelated proteins using a novel directed evolution domain insertion method", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "36", 
+                "pages": "e78", 
+                "doi": "10.1093/nar/gkn363"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Friedberg", 
+                            "index": "Friedberg, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Godzik", 
+                            "index": "Godzik, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Connecting the protein structure universe by using sparse recurring fragments", 
+                "journal": {
+                    "name": [
+                        "Structure"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "1213", 
+                    "last": "1224", 
+                    "range": "1213\u20131224"
+                }, 
+                "doi": "10.1016/j.str.2005.05.009"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NV Grishin", 
+                            "index": "Grishin, NV"
+                        }
+                    }
+                ], 
+                "articleTitle": "Fold change in evolution of protein structures", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "134", 
+                "pages": {
+                    "first": "167", 
+                    "last": "185", 
+                    "range": "167\u2013185"
+                }, 
+                "doi": "10.1006/jsbi.2001.4335"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Guntas", 
+                            "index": "Guntas, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ostermeier", 
+                            "index": "Ostermeier, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Creation of an allosteric enzyme by domain insertion", 
+                "journal": {
+                    "name": [
+                        "Journal of Molecular Biology"
+                    ]
+                }, 
+                "volume": "336", 
+                "pages": {
+                    "first": "263", 
+                    "last": "273", 
+                    "range": "263\u2013273"
+                }, 
+                "doi": "10.1016/j.jmb.2003.12.016"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Hocker", 
+                            "index": "Hocker, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Claren", 
+                            "index": "Claren, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Sterner", 
+                            "index": "Sterner, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mimicking enzyme evolution by generating new (beta-alpha)(8)-barrels from\u00a0(beta-alpha)(4)-half-barrels", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of Ameria"
+                    ]
+                }, 
+                "volume": "101", 
+                "pages": {
+                    "first": "16448", 
+                    "last": "16453", 
+                    "range": "16448\u201316453"
+                }, 
+                "doi": "10.1073/pnas.0405832101"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P-S Huang", 
+                            "index": "Huang, P-S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y-EA Ban", 
+                            "index": "Ban, Y-EA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Richter", 
+                            "index": "Richter, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Andre", 
+                            "index": "Andre, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Vernon", 
+                            "index": "Vernon, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Schief", 
+                            "index": "Schief, WR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Baker", 
+                            "index": "Baker, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VN Uversky", 
+                            "index": "Uversky, VN"
+                        }
+                    }
+                ], 
+                "articleTitle": "RosettaRemodel: a generalized framework for flexible backbone protein design", 
+                "journal": {
+                    "name": [
+                        "PLoS One"
+                    ]
+                }, 
+                "volume": "6", 
+                "pages": "e24109", 
+                "doi": "10.1371/journal.pone.0024109"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Koga", 
+                            "index": "Koga, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Tatsumi-Koga", 
+                            "index": "Tatsumi-Koga, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Liu", 
+                            "index": "Liu, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Xiao", 
+                            "index": "Xiao, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TB Acton", 
+                            "index": "Acton, TB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GT Montelione", 
+                            "index": "Montelione, GT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Baker", 
+                            "index": "Baker, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Principles for designing ideal protein structures", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "491", 
+                "pages": {
+                    "first": "222", 
+                    "last": "227", 
+                    "range": "222\u2013227"
+                }, 
+                "doi": "10.1038/nature11600"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SS Krishna", 
+                            "index": "Krishna, SS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NV Grishin", 
+                            "index": "Grishin, NV"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structural drift: a possible path to protein fold change", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "21", 
+                "pages": {
+                    "first": "1308", 
+                    "last": "1310", 
+                    "range": "1308\u20131310"
+                }, 
+                "doi": "10.1093/bioinformatics/bti227"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Krissinel", 
+                            "index": "Krissinel, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Henrick", 
+                            "index": "Henrick, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Secondary-structure matching (sSM), a new tool for fast protein structure alignment in three dimensions", 
+                "journal": {
+                    "name": [
+                        "Acta Crystallographica Section D Biological Crystallography"
+                    ]
+                }, 
+                "volume": "60", 
+                "pages": {
+                    "first": "2256", 
+                    "last": "2268", 
+                    "range": "2256\u20132268"
+                }, 
+                "doi": "10.1107/S0907444904026460"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AN Lupas", 
+                            "index": "Lupas, AN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CP Ponting", 
+                            "index": "Ponting, CP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RB Russell", 
+                            "index": "Russell, RB"
+                        }
+                    }
+                ], 
+                "articleTitle": "On the evolution of protein folds: are similar motifs in different protein folds the result of convergence, insertion, or relics of an ancient peptide world?", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "134", 
+                "pages": {
+                    "first": "191", 
+                    "last": "203", 
+                    "range": "191\u2013203"
+                }, 
+                "doi": "10.1006/jsbi.2001.4393"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "1995", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AG Murzin", 
+                            "index": "Murzin, AG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SE Brenner", 
+                            "index": "Brenner, SE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Hubbard", 
+                            "index": "Hubbard, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Chothia", 
+                            "index": "Chothia, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "SCOP: a structural classification of proteins database for the investigation of sequences and structures", 
+                "journal": {
+                    "name": [
+                        "Journal of Molecular Biology"
+                    ]
+                }, 
+                "volume": "247", 
+                "pages": {
+                    "first": "536", 
+                    "last": "540", 
+                    "range": "536\u2013540"
+                }, 
+                "doi": "10.1016/S0022-2836(05)80134-2"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ostermeier", 
+                            "index": "Ostermeier, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Engineering allosteric protein switches by domain insertion", 
+                "journal": {
+                    "name": [
+                        "Protein Engineering Design and Selection"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "359", 
+                    "last": "364", 
+                    "range": "359\u2013364"
+                }, 
+                "doi": "10.1093/protein/gzi048"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Pandya", 
+                            "index": "Pandya, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Brown", 
+                            "index": "Brown, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Pieper", 
+                            "index": "Pieper, U"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Sali", 
+                            "index": "Sali, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Dunaway-Mariano", 
+                            "index": "Dunaway-Mariano, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PC Babbitt", 
+                            "index": "Babbitt, PC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Xia", 
+                            "index": "Xia, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KN Allen", 
+                            "index": "Allen, KN"
+                        }
+                    }
+                ], 
+                "articleTitle": "Consequences of domain insertion on sequence-structure divergence in a superfold", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "110", 
+                "pages": "E3381", 
+                "doi": "10.1073/pnas.1305519110"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Park", 
+                            "index": "Park, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BW Shen", 
+                            "index": "Shen, BW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Parmeggiani", 
+                            "index": "Parmeggiani, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P-S Huang", 
+                            "index": "Huang, P-S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Stoddard", 
+                            "index": "Stoddard, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Baker", 
+                            "index": "Baker, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Control of repeat-protein curvature by computational protein design", 
+                "journal": {
+                    "name": [
+                        "Nature Structural & Molecular Biology"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "167", 
+                    "last": "174", 
+                    "range": "167\u2013174"
+                }, 
+                "doi": "10.1038/nsmb.2938"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Shanmugaratnam", 
+                            "index": "Shanmugaratnam, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Eisenbeis", 
+                            "index": "Eisenbeis, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Hocker", 
+                            "index": "Hocker, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "A highly stable protein chimera built from fragments of different folds", 
+                "journal": {
+                    "name": [
+                        "Protein Engineering Design and Selection"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "699", 
+                    "last": "703", 
+                    "range": "699\u2013703"
+                }, 
+                "doi": "10.1093/protein/gzs074"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Shannon", 
+                            "index": "Shannon, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cytoscape: a software environment for integrated models of biomolecular interaction networks", 
+                "journal": {
+                    "name": [
+                        "Genome Research"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "2498", 
+                    "last": "2504", 
+                    "range": "2498\u20132504"
+                }, 
+                "doi": "10.1101/gr.1239303"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Stivala", 
+                            "index": "Stivala, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wybrow", 
+                            "index": "Wybrow, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Wirth", 
+                            "index": "Wirth, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Whisstock", 
+                            "index": "Whisstock, JC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PJ Stuckey", 
+                            "index": "Stuckey, PJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Automatic generation of protein structure cartoons with pro-origami", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "27", 
+                "pages": {
+                    "first": "3315", 
+                    "last": "3316", 
+                    "range": "3315\u20133316"
+                }, 
+                "doi": "10.1093/bioinformatics/btr575"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J S\u00f6ding", 
+                            "index": "S\u00f6ding, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AN Lupas", 
+                            "index": "Lupas, AN"
+                        }
+                    }
+                ], 
+                "articleTitle": "More than the sum of their parts: on the evolution of proteins from peptides", 
+                "journal": {
+                    "name": [
+                        "BioEssays"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "837", 
+                    "last": "846", 
+                    "range": "837\u2013846"
+                }, 
+                "doi": "10.1002/bies.10321"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Xiao", 
+                            "index": "Xiao, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Anderson", 
+                            "index": "Anderson, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Aramini", 
+                            "index": "Aramini, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Belote", 
+                            "index": "Belote, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WA Buchwald", 
+                            "index": "Buchwald, WA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Ciccosanti", 
+                            "index": "Ciccosanti, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Conover", 
+                            "index": "Conover, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JK Everett", 
+                            "index": "Everett, JK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Hamilton", 
+                            "index": "Hamilton, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YJ Huang", 
+                            "index": "Huang, YJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Janjua", 
+                            "index": "Janjua, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Jiang", 
+                            "index": "Jiang, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Kornhaber", 
+                            "index": "Kornhaber, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DY Lee", 
+                            "index": "Lee, DY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JY Locke", 
+                            "index": "Locke, JY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L-C Ma", 
+                            "index": "Ma, L-C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Maglaqui", 
+                            "index": "Maglaqui, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Mao", 
+                            "index": "Mao, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Mitra", 
+                            "index": "Mitra, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Patel", 
+                            "index": "Patel, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Rossi", 
+                            "index": "Rossi, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Sahdev", 
+                            "index": "Sahdev, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Sharma", 
+                            "index": "Sharma, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Shastry", 
+                            "index": "Shastry, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GVT Swapna", 
+                            "index": "Swapna, GVT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SN Tong", 
+                            "index": "Tong, SN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Wang", 
+                            "index": "Wang, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Wang", 
+                            "index": "Wang, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Zhao", 
+                            "index": "Zhao, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GT Montelione", 
+                            "index": "Montelione, GT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TB Acton", 
+                            "index": "Acton, TB"
+                        }
+                    }
+                ], 
+                "articleTitle": "The high-throughput protein sample production platform of the northeast structural genomics consortium", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "172", 
+                "pages": {
+                    "first": "21", 
+                    "last": "33", 
+                    "range": "21\u201333"
+                }, 
+                "doi": "10.1016/j.jsb.2010.07.011"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zhang", 
+                            "index": "Zhang, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "TM-align: a protein structure alignment algorithm based on the TM-score", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "33", 
+                "pages": {
+                    "first": "2302", 
+                    "last": "2309", 
+                    "range": "2302\u20132309"
+                }, 
+                "doi": "10.1093/nar/gki524"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Rie Koga and Nobuyasu Koga for data analyses and technical assistance. We thank Lei Mao for technical assistance. This work was supported by the Defense Threat Reduction Agency and by a grant from the National Institute of General Medical Sciences Protein Structure Initiative U54-GM094597 (to GTM, JH)."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.11012.019", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \"Precise Assembly of Complex Beta Sheet Topologies from de novo Designed Building Blocks\" for peer review at <i>eLife</i>. Your submission has been evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom, Nir Ben-Tal, served as guest Reviewing editor."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision that summarizes the discussion."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Summary:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The manuscript describes the design of large alpha/beta domains by fusion of two smaller domains. Crystal structures of two of the designed proteins showed agreement with the design. The successful design supports the suggestion that proteins may evolve by cut-and-paste, where complex domains emerge by the assembly of shorter fragments."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Based on the current draft of the manuscript it is difficult to decide whether the work is novel enough to justify publication in <i>eLife</i>. This letter reflects a long discussion among the reviewers in an effort to realize possible novelties. The authors should submit a revised draft only if they are certain that they can address all the issues that were raised."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Essential revisions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Novelty here could be related to the successful design, as well as the implications to protein evolution. Regarding design, the authors claim in the Introduction that \"while protein domains with larger and more complex beta sheets occur frequently in nature, such topologies have not been successfully created by de novo protein design\". However, this statement is wrong. For example, Birte H\u00f6cker has made a nine-stranded alpha-beta barrel by fusing half of a TIM barrel with most of a response regulator domain, then used design to revert this barrel to the dominant eight-stranded form with five mutations, which could have been sampled by neutral drift (PNAS 2008, JACS 2012). This statement should be corrected accordingly (maybe there are more examples?)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "However, there are three other possible novelties here:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) The fusion of two full, independent domains into a single new domain. Previous efforts have fused fragments of domains. Here it is essential to know more about the new domains. Are the new domains folding cooperatively? Where are they in the list of twelve top ranked constructs (and how was that ranking done)? Near the top, or is there little correlation between ranking and success? What are the biophysical properties of the ten constructs that did not yield structures? A multiple alignment of the twelve experimentally tried constructs compared to the parent proteins would be really useful."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Fusion as an insertion of one domain into another. To the best of our knowledge, other cases are all consecutive, N-to-C fusions (but please check)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) Generation of a fold that is different from that of the parent proteins. To the best of our knowledge, previous examples, like Riechmann and Winter's cold-shock protein fusions, Tawfik's tachylectin propellers, Blaber's beta-trefoils, ended up at or near the parent fold (in fact, most were intended to). The folds in this paper are clearly different from the starting folds. How different are they from other folds in the database? Do they occur in any of the 60 odd SCOP superfamilies that have a ferredoxin-like core (often with elaborate decorations)? The authors should discuss the folds they have generated. Perhaps map the parent and designed folds into the domains network of Nepomnyachiy et al. PNAS 111, 1691-11696, 2014."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Of these 3 novelties, only the third justifies publication in <i>eLife</i>, provided that the new fold differs significantly from the original ones."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) Another source of novelty may come from the implications of the successful design to evolution. The manuscript tries to sell this view, but much more effort is required to substantiate it. The question that emerges is whether evolution can follow the path taken by the design approach. Two issues are outstanding here: first, only 2 of 12 designs have been successful. Second, interface redesign was required and it is unclear whether the normal evolutionary drift would suffice for that. So the question is whether evolution uses the possibility of fusion and the authors need to address this issue. Specifically, they should:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A) Identify examples where a new fold has arisen from the seamless merger of two simpler folds."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "B) Add a lucid explanation of the mutations introduced at the redesign stage (with a multiple alignment figure). Nature does not do redesign, so the question is how many changes are needed to make the daughter protein viable and are these changes neutral for the viability of the parent proteins (i.e. could these mutations have been sampled by neutral drift)?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "C) Cite related publications by Godzik, Grishin, Soding, Lupas, Ben-Tal, Kolodny, and others."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In addition, the revised draft should address the following issues:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) The crystallographic information concerning the accuracy of the solutions seems inadequate to judge whether the structures were in fact correctly determined. The revised manuscript should provide additional information concerning the structure determinations and refinements to let the informed reader judge that the solutions are robust."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "6) Discussion: \"This mechanism provides a straightforward route to designing large and complex beta sheet structures capable of hosting functions such as catalysis difficult to achieve in previously designed small protein domains which lack cavities for potential active sites, etc.\" The connection between the data shown here and design for function is not obvious. The authors need to elaborate on this. Anyway, this speculation should be tuned down significantly."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "7) The manuscript clarifies the design approach, but details about the methodology used are missing. For example, what were the considerations for selecting the ferredoxin and top7 as starting points? There should be a section that explains the computational methodology. Among other things this section should address the following questions and concerns:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A) The description says that also Rossman 2x2 was used in addition to ferredoxin and top7. What happened to designs based on Rossman 2x2?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "B) \"Positions within two residues of each of the termini of each domain were aligned with all pairs of residues separated by fewer than 5 residues in each domain\". The authors should elaborate on this. Maybe add a figure?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "C) \"The sequences of these chimeras were optimized using Rosetta Design calculations around the junction regions\". Optimized for what?"
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.11012.020", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Essential revisions:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Novelty here could be related to the successful design, as well as the implications to protein evolution. Regarding design, the authors claim in the Introduction that \"while protein domains with larger and more complex beta sheets occur frequently in nature, such topologies have not been successfully created by de novo protein design\". However, this statement is wrong. For example, Birte H\u00f6cker has made a nine-stranded alpha-beta barrel by fusing half of a TIM barrel with most of a response regulator domain, then used design to revert this barrel to the dominant eight-stranded form with five mutations, which could have been sampled by neutral drift (PNAS 2008, JACS 2012). This statement should be corrected accordingly (maybe there are more examples?).</i> The claim has been modified in the text with related citations of H\u00f6cker et al:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cOn the protein design front, there has been progress in de novo design of idealized helical bundles (Park et al., 2015) and alpha beta protein structures with up to 5 strands (Koga et al., 2012), and though new folds have been generated by tandem fusion of natural protein domains followed by introduction of additional stabilizing mutations (Hocker, Claren and Sterner, 2004; Shanmugaratnam, Eisenbeis and Hocker, 2012), assembly of large and complex beta sheets poses a challenge for de novo protein design.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>However, there are three other possible novelties here:</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) The fusion of two full, independent domains into a single new domain. Previous efforts have fused fragments of domains. Here it is essential to know more about the new domains. Are the new domains folding cooperatively? Where are they in the list of twelve top ranked constructs (and how was that ranking done)? Near the top, or is there little correlation between ranking and success? What are the biophysical properties of the ten constructs that did not yield structures? A multiple alignment of the twelve experimentally tried constructs compared to the parent proteins would be really useful.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Fusion as an insertion of one domain into another. To the best of our knowledge, other cases are all consecutive, N-to-C fusions (but please check). 3) Generation of a fold that is different from that of the parent proteins. To the best of our knowledge, previous examples, like Riechmann and Winter's cold-shock protein fusions, Tawfik's tachylectin propellers, Blaber's beta-trefoils, ended up at or near the parent fold (in fact, most were intended to). The folds in this paper are clearly different from the starting folds. How different are they from other folds in the database? Do they occur in any of the 60 odd SCOP superfamilies that have a ferredoxin-like core (often with elaborate decorations)? The authors should discuss the folds they have generated. Perhaps map the parent and designed folds into the domains network of Nepomnyachiy et al. PNAS 111, 1691-11696, 2014. Of these 3 novelties, only the third justifies publication in</i> eLife<i>, provided that the new fold differs significantly from the original ones.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "As the reviewers have suggested, we have focused on novelty (3) above in the manuscript and elaborated on the uniqueness of the designed fold in the new third section of the Results text and in two additional figures (<a href=\"#fig4\">Figure 4</a> and <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>). We have included an analysis of the similarity of the designed protein to those in SCOP in <a href=\"#fig4\">Figure 4</a> (TM-align hits across the entire new fold) and mapped the designed protein domains and their parent folds into the protein domains network in <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cTo compare the folds of these designed proteins to those in the SCOP v.1.75 domain database (Murzin et al., 1995), the TMalign structure-structure comparison method was used to search a 70% sequence non-redundant set of SCOP domains for structure alignments containing a minimum 75% overlap with the designed proteins. [\u2026] While there are no domains with globally similar folds, both designed proteins are similar to a number of SCOP domains over the ferrodoxin-like substructure(s) as is made evident by mapping the proteins to the domains network of Nepomnyachiy et al. (Ben-Tal and Kolodny, 2014) (<a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) Another source of novelty may come from the implications of the successful design to evolution. The manuscript tries to sell this view, but much more effort is required to substantiate it. The question that emerges is whether evolution can follow the path taken by the design approach. Two issues are outstanding here: first, only 2 of 12 designs have been successful. Second, interface redesign was required and it is unclear whether the normal evolutionary drift would suffice for that. So the question is whether evolution uses the possibility of fusion and the authors need to address this issue. Specifically, they should:</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>A) Identify examples where a new fold has arisen from the seamless merger of two simpler folds.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Previous studies identifying the evolution of new folds from the combination of multiple simple folds have been cited in the Introduction:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cBy analogy, new proteins have been engineered from existing domains by simple linear concatenation or insertion of one domain into another (Ay et al., 1998; Collinet et al., 2000; Cutler et al., 2009; Doi and Yanagawa, 1999; Edwards et al., 2008; Guntas and Ostermeier, 2004; Ostermeier, 2005). How individual domains evolved, in contrast, is much less clear. Both experimental and computational analyses have suggested that new folds can evolve by insertion of one fold into another (Lupas, Ponting and Russell, 2001; Grishin, 2001; Soding and Lupas, 2003; Krishna and Griffin, 2005; Friedberg and Godzik, 2005; Bel-Tal and Kolodny, 2014), but to our knowledge there is no evidence that complex beta sheet topologies can be formed in this manner.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>B) Add a lucid explanation of the mutations introduced at the redesign stage (with a multiple alignment figure). Nature does not do redesign, so the question is how many changes are needed to make the daughter protein viable and are these changes neutral for the viability of the parent proteins (i.e. could these mutations have been sampled by neutral drift)?</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have added a third section to the Results and an additional figure (<a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>) showing a multiple sequence alignment, computational models of the putative neutral drift parent fold mutants, and calculations predicting the energetic effects of these neutral drift mutations on the parent folds:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cThe mutations introduced at the redesign stage of the domain insertion design protocol are compatible with the parent fold structures with minimal perturbation of the protein backbone (<a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>) suggesting the designed folds would have the potential to evolve from insertion followed by neutral mutational drift of the parent structures.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have elaborated the explanation of the mutations introduced at the design stage in the Methods, and the location of the redesign mutations are shown in <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cDuring the design simulation, all amino acid positions within 5 \u00c5 of the inter-domain junction interface were redesigned to minimize the predicted free energy of folding with a flexible backbone protein design protocol described previously (Friedberg and Godzik, 2005).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>C) Cite related publications by Godzik, Grishin, Soding, Lupas, Ben-Tal, Kolodny, and others.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The above publications have been cited in the Introduction."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>In addition, the revised draft should address the following issues:</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>5) The crystallographic information concerning the accuracy of the solutions seems inadequate to judge whether the structures were in fact correctly determined. The revised manuscript should provide additional information concerning the structure determinations and refinements to let the informed reader judge that the solutions are robust.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Key structure quality assessment statistics for the crystal structures are presented in the table of <a href=\"#SD1-data\">Supplementary file 1</a>. In addition, we attach in these responses to reviewers wwPDB Structure Validation Reports. These reports, generated by the wwPDB, follow recommendations of the wwPDB X-ray Crystallography Structure Validation Task Force. The evolving standard of the field is to provide these reports to reviewers to address exactly the concerned raised by Reviewer 1."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have added additional clarifications in the Results section to address the crystal structure accuracy, and have made it more clear that in the ferredoxin-ferredoxin structure, the fine details of the structure difficult to model, but the overall topology is not in doubt. Conversely, in the ferredoxin-top7 crystal (ferredoxin-top7), structure refinement was well-behaved."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cAttempts to improve these statistics by rebuilding portions of the model proved unsuccessful, possibly due to a register shift or dynamic fluctuations in the structure (perhaps corresponding to slightly 'molten-globule'-like behavior) that are difficult to computationally model. However, unbiased low-resolution omit maps suggest that the overall topology is correct (Figure 2\u2014figure supplement 2).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>6) Discussion: \"This mechanism provides a straightforward route to designing large and complex beta sheet structures capable of hosting functions such as catalysis difficult to achieve in previously designed small protein domains which lack cavities for potential active sites, etc.\" The connection between the data shown here and design for function is not obvious. The authors need to elaborate on this. Anyway, this speculation should be tuned down significantly.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The speculation has been changed to:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cThis mechanism provides a straightforward route to designing large and complex beta sheet structures capable of scaffolding the pockets and cavities essential for future design of protein functions.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>7) The manuscript clarifies the design approach, but details about the methodology used are missing. For example, what were the considerations for selecting the ferredoxin and top7 as starting points? There should be a section that explains the computational methodology. Among other things this section should address the following questions and concerns:</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following sentence has been added to the Methods:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cThese three domains were chosen because they were the only Rosetta de novo designed protein domains with both alpha and beta secondary structure for which high resolution experimental structures had been obtained.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>A) The description says that also Rossman 2x2 was used in addition to ferredoxin and top7. What happened to designs based on Rossman 2x2?</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following sentence has been added to the Methods:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cOne design based on Rossman 2x2 expressed as soluble protein, but no crystal structure could be obtained at the time of this work.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>B) \"Positions within two residues of each of the termini of each domain were aligned with all pairs of residues separated by fewer than 5 residues in each domain\". The authors should elaborate on this. Maybe add a figure?</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The insertion point and design protocols have been clarified and elaborated in the Methods:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cEach chimeric domain consists of a parent host domain and a parent insert domain. [\u2026] During the design simulation, all amino acid positions within 5 \u00c5 of the inter-domain junction interface were redesigned to minimize the predicted free energy of folding with the Rosetta all-atom energy function and a flexible backbone protein design protocol described previously (Friedberg and Godzik, 2005).\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>C) \"The sequences of these chimeras were optimized using Rosetta Design calculations around the junction regions\". Optimized for what?</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following sentence has been added to the Methods:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u201cThe sequences of these chimeras were optimized using Rosetta Design calculations around the junction regions and the new interface between the former domains. During the design simulation, all amino acid positions within 5 \u00c5 of the inter-domain junction interface were redesigned to minimize the predicted free energy of folding with the Rosetta all-atom energy function and a flexible backbone protein design protocol described previously (Friedberg and Godzik, 2005).\u201d"
+                }
+            ]
+        }
+    }
+}

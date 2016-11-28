@@ -1,0 +1,2763 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "04250", 
+        "version": 1, 
+        "type": "tools-resources", 
+        "doi": "10.7554/eLife.04250", 
+        "authorLine": "Eric Jonas, Konrad Kording", 
+        "title": "Automatic discovery of cell types and microcircuitry from neural connectomics", 
+        "published": "2015-04-30T00:00:00", 
+        "versionDate": "2015-04-30T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e04250", 
+        "pdf": "https://publishing-cdn.elifesciences.org/04250/elife-04250-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "C. elegans", 
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.04250.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Neural connectomics has begun producing massive amounts of data, necessitating new analysis methods to discover the biological and computational structure. It has long been assumed that discovering neuron types and their relation to microcircuitry is crucial to understanding neural function. Here we developed a non-parametric Bayesian technique that identifies neuron types and microcircuitry patterns in connectomics data. It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses. We show that the approach recovers known neuron types in the retina and enables predictions of connectivity, better than simpler algorithms. It also can reveal interesting structure in the nervous system of <i>Caenorhabditis elegans</i> and an old man-made microprocessor. Our approach extracts structural meaning from connectomics, enabling new approaches of automatically deriving anatomical insights from these emerging datasets."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Jonas and Kording", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Eric Jonas", 
+                    "index": "Jonas, Eric"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Electrical Engineering and Computer Science", 
+                            "University of California, Berkeley"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "jonas@eecs.berkeley.edu"
+                ], 
+                "contribution": "EJ, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Konrad Kording", 
+                    "index": "Kording, Konrad"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physical Medicine and Rehabilitation", 
+                            "Northwestern University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chicago", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chicago"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Department of Physical Medicine and Rehabilitation", 
+                            "Rehabilitation Institute of Chicago"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chicago", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chicago"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Department of Physiology", 
+                            "Northwestern University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chicago", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chicago"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "KK, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2015", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Jonas E"
+                        }
+                    ], 
+                    "title": "Connectomics datasets", 
+                    "details": "Canonical, cleaned-up datasets, publicly available at GitHub, originally published in <a href=\"#bib33\">Varshney et al., 2011</a> (<a href=\"http://dx.doi.org/10.1371/journal.pcbi.1001066\">http://dx.doi.org/10.1371/journal.pcbi.1001066</a>) and <a href=\"#bib12\">Helmstaedter et al., 2013</a> (<a href=\"http://dx.doi.org/10.1038/nature12346\">http://dx.doi.org/10.1038/nature12346</a>).", 
+                    "uri": "https://github.com/ericmjonas/circuitdata"
+                }
+            ]
+        }, 
+        "impactStatement": "An algorithm for analysing brain connectivity data identifies cell types and connections in simple (<i>C. elegans</i>) and complex (mouse) nervous systems, and can even resolve structure and connectivity in a man-made microprocessor."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "04250", 
+        "version": 1, 
+        "type": "tools-resources", 
+        "doi": "10.7554/eLife.04250", 
+        "authorLine": "Eric Jonas, Konrad Kording", 
+        "title": "Automatic discovery of cell types and microcircuitry from neural connectomics", 
+        "published": "2015-04-30T00:00:00", 
+        "versionDate": "2015-04-30T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e04250", 
+        "pdf": "https://publishing-cdn.elifesciences.org/04250/elife-04250-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "C. elegans", 
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.04250.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Neural connectomics has begun producing massive amounts of data, necessitating new analysis methods to discover the biological and computational structure. It has long been assumed that discovering neuron types and their relation to microcircuitry is crucial to understanding neural function. Here we developed a non-parametric Bayesian technique that identifies neuron types and microcircuitry patterns in connectomics data. It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses. We show that the approach recovers known neuron types in the retina and enables predictions of connectivity, better than simpler algorithms. It also can reveal interesting structure in the nervous system of <i>Caenorhabditis elegans</i> and an old man-made microprocessor. Our approach extracts structural meaning from connectomics, enabling new approaches of automatically deriving anatomical insights from these emerging datasets."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Jonas and Kording", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Eric Jonas", 
+                    "index": "Jonas, Eric"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Electrical Engineering and Computer Science", 
+                            "University of California, Berkeley"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "jonas@eecs.berkeley.edu"
+                ], 
+                "contribution": "EJ, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Konrad Kording", 
+                    "index": "Kording, Konrad"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physical Medicine and Rehabilitation", 
+                            "Northwestern University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chicago", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chicago"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Department of Physical Medicine and Rehabilitation", 
+                            "Rehabilitation Institute of Chicago"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chicago", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chicago"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Department of Physiology", 
+                            "Northwestern University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chicago", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chicago"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "KK, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2015", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Jonas E"
+                        }
+                    ], 
+                    "title": "Connectomics datasets", 
+                    "details": "Canonical, cleaned-up datasets, publicly available at GitHub, originally published in <a href=\"#bib33\">Varshney et al., 2011</a> (<a href=\"http://dx.doi.org/10.1371/journal.pcbi.1001066\">http://dx.doi.org/10.1371/journal.pcbi.1001066</a>) and <a href=\"#bib12\">Helmstaedter et al., 2013</a> (<a href=\"http://dx.doi.org/10.1038/nature12346\">http://dx.doi.org/10.1038/nature12346</a>).", 
+                    "uri": "https://github.com/ericmjonas/circuitdata"
+                }
+            ]
+        }, 
+        "impactStatement": "An algorithm for analysing brain connectivity data identifies cell types and connections in simple (<i>C. elegans</i>) and complex (mouse) nervous systems, and can even resolve structure and connectivity in a man-made microprocessor.", 
+        "keywords": [
+            "connectomics", 
+            "computation", 
+            "microcircuitry"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.04250.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The human brain is made up of billions of neurons, which are organised into networks via trillions of connections. The study of the nature of these connections will be central to understanding how the brain works. In recent years, a number of new methods for imaging the brain have made it possible to visualise and map these connections, generating striking images and creating an additional field of neuroscience known as \u2018connectomics\u2019."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "However, the sheer volume of data generated by connectomics is now beginning to exceed the capacity of researchers to analyse it. Just as the advent of genome sequencing required the development of statistical techniques to analyse the resulting data, so the emergence of connectomics has created a need for similarly powerful mathematical models in neuroscience."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Jonas and Kording have developed one such algorithm that can classify the component units of circuits, both biological and man-made, and identify the connections between them. When applied to connectomics data for 950 neurons in the mouse retina, the algorithm generated predictions regarding cell types and patterns of connectivity. The predicted cell types agreed closely with those identified by human neuroanatomists. Results were similarly convincing when the algorithm was applied to the nervous system of the nematode worm and genetic model organism, <i>Caenorhabditis elegans</i>, and even when it was asked to classify electronic components and connectivity patterns in a man-made microprocessor."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Algorithms such as that developed by Jonas and Kording will soon be essential for making sense of the vast quantities of data generated by connectomic studies of the human brain. At present, an analysis of 950 neurons requires several hours, thus refinements that make the process faster will likely be required prior to the analysis of larger human datasets. Such algorithms will open up a range of possibilities for examining the structure of the healthy brain, as well as the changes triggered by developmental abnormalities and disease."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Emerging connectomics techniques (<a href=\"#bib37\">Zador et al., 2012</a>; <a href=\"#bib22\">Morgan and Lichtman, 2013</a>) promise to quantify the location and connectivity of each neuron within a tissue volume. These massive datasets will far exceed the capacity of neuroanatomists to manually trace small circuits, thus necessitating computational, quantitative, and automatic methods for understanding neural circuit structure. The impact of this kind of high-throughput transition has been seen before\u2014the rise of sequencing techniques necessitated the development of novel computational methods to understand genomic structure, ushering in bioinformatics as an independent discipline (<a href=\"#bib18\">Koboldt et al., 2013</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The brain consists of multiple kinds of neurons, each of which is hypothesized to have a specific role in overall computation. Neuron types differ in many ways, for example, chemical or morphological, but they also differ in the way they connect to one another (<a href=\"#bib31\">Seung and S\u00fcmb\u00fcl, 2014</a>). In fact, the idea of well defined, type-dependent local connectivity patterns (microcircuits) has a long history (<a href=\"#bib29\">Passingham, 2002</a>), and is prominent in many areas, from sensory (e.g., retina; <a href=\"#bib20\">Masland, 2001</a>) to processing (e.g., neocortex; <a href=\"#bib24\">Mountcastle, 1997</a>) to movement (e.g., spinal cord; <a href=\"#bib10\">Grillner et al., 2005</a>). These types of repeated computing patterns are a common feature of computing systems, even occurring in man-made computing circuits. It remains an important challenge to develop algorithms to use connectivity-based anatomical data (connectomics) to automatically back out underlying microcircuitry."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The discovery of structure is a crucial aspect of network science. Early approaches focused on global graph properties, such as the types of scaling present in the network (<a href=\"#bib34\">Watts and Strogatz, 1998</a>). While this approach leads to an understanding of the global network, more recent work aims at identifying very small-scale repeat patterns, or motifs, in networks (<a href=\"#bib21\">Milo et al., 2002</a>). These motifs are defined not between different node types, but rather represent repeated patterns of topology."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The discovery of structure in probabilistic graphs is a well-known problem in machine learning. Commonly used algorithms include community-based detection methods (<a href=\"#bib8\">Girvan and Newman, 2002</a>) and stochastic block models (<a href=\"#bib28\">Nowicki and Snijders, 2001</a>). While these approaches can incorporate the probabilistic nature of neural connections (<a href=\"#bib13\">Hill et al., 2012</a>), they do not incorporate the additional richer structure present in connectomics data\u2014the location of cell bodies, the spatial distribution of synapses, and the distances between neurons. It is of particular importance that the probability of connections has a strong spatial component, a factor that is hard to reconcile with many other methods. A model attempting to fully capture the variation in the nervous system should take into account the broad set of available features."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "When it comes to neuroscience and other computing systems, we expect patterns of connectivity much more complex than traditional motifs, exhibiting a strong spatial dependence arising from the complex genetic, chemical, and activity-based neural development processes."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To address these challenges, here we describe a Bayesian non-parametric model that can discover circuit structure automatically from connectomics data: the cell types, their spatial patterns of interconnection, and the locations of somata and synapses. We show that by incorporating this additional information, our model both accurately predicts the connection as well as agrees with human neuroanatomists as to the identification of cell types. We take as inspiration previous work on identifying cell types automatically from morphology (<a href=\"#bib11\">Guerra et al., 2011</a>) and electrophysiology (<a href=\"#bib6\">Druckmann et al., 2013</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We primarily focus on the recently released mouse retina connectome (<a href=\"#bib12\">Helmstaedter et al., 2013</a>), but additionally examine the <i>Caenorhabditis elegans</i> connectome (<a href=\"#bib35\">White et al., 1986</a>). Comparing the cell types discovered by the algorithms with those obtained manually by human anatomists reveals a high degree of agreement. We thus present a scalable probabilistic approach to infer microcircuitry from connectomics data available today and in the future."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Model", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We build a structured probabilistic model which begins with the generic notion of a cell being a member of a single type\u2014and these types affect soma depth, distribution of synapses, as well as a cell type and distance-dependent connection probability. For example, retinal ganglion cells may synapse on nearby, but not far away, amacrine cells, with bipolar cells clearly tessellating space and synapsing on both. In machine learning parlance, our method is unsupervised\u2014it seeks to discover structure in data and make predictions in the absence of training data. Rather than taking in examples of types annotated by human neuroanatomists, we instead start with the weakest possible assumption in an attempt to algorithmically discover this structure. We contrast this with the supervised approaches taken in <a href=\"#bib11\">Guerra et al. (2011</a>), where there is high confidence in the (morphologically defined) types and then a supervised classifier is built, as our goal here is explicit discovery of types."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "From these assumptions (priors) we develop a generative Bayesian model that estimates the underlying cell types and how they connect. We take as input (<a href=\"#fig1\">Figure 1A</a>) the connectivity matrix of cells (<a href=\"#fig1\">Figure 1B</a>), a matrix of the distance between cells (<a href=\"#fig1\">Figure 1C</a>), the per-cell soma depth (<a href=\"#fig1\">Figure 1D</a>), and the depth profile of the cell's synapses (<a href=\"#fig1\">Figure 1E</a>). We perform joint probabilistic inference to automatically learn the number of cell types, which cells belong to which type, their type-specific connectivity, and how connections between types vary with distance. We also simultaneously learn the soma depth associated with each type and the typical synaptic density profile (<a href=\"#fig1\">Figure 1F\u2013H</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.04250.010", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Deriving circuitry and cell types from connectomics data.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) As input we take the connectivity between cells (<b>B</b>), the distance between them (<b>C</b>), the depth of the cell bodies (<b>D</b>), and the depth profile of the synapses (<b>E</b>). (<b>F</b>) Our algorithm discovers hidden cell types in this connectivity data by assuming all cells of a type share a distance-dependent connectivity profile, similar depth, and a similar synaptic density profile, with cells of other types. This results in a clustering of the cells by those hidden types. (<b>F</b>) Shows the cell connectivity matrix with cells of the same type grouped together. (<b>G</b>) Shows the learned probability of connection (p(conn)) between our different types at various distances\u2014in this case, the cells are likely to connect when they are close. (<b>H</b>) Shows the probability of connection (p(conn)) between two cell types that very rarely connect\u2014there is a background \u2018base\u2019 connection rate to account for errors in data, but the probability is very low. (<b>I</b>) Shows that we also recover the expected laminarity of types and the depth-specific (<b>J</b>) synaptic connectivity. (<b>K</b>) We then plot how the connectivity between these types changes as a function of distance between the cell bodies to better understand short-range and long-range connectivity patterns."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-04250-fig1-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We start with a model for connectivity, the iSBM (<a href=\"#bib17\">Kemp et al., 2006</a>; <a href=\"#bib36\">Xu et al., 2006</a>), which has been shown to meaningfully cluster connection graphs while learning the number of hidden groups, or types. We extend this approach by adding distance dependence to model salient aspects of microcircuitry via logistic and exponential distance-link functions. We form a unimodial model of cell body depth and a multimodal synapse density profile model (see \u2018Materials and methods\u2019 for mathematical details)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "As an illustrative example, consider a network with only three cell types, labeled A, B, and C. Assume these cells are uniformly distributed in space, and that the probability of connection between any two cells, <i>c</i><sub><i>i</i></sub> and <i>c</i><sub><i>j</i></sub>, depends only on their type and their distance, according to a logistic (sigmoidal) function. Let A connect only to nearby B and C cells, but B connect to any C regardless of distance. This is the prior intuition our model is designed to capture."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "For the basic link-distance model, we take as input a connectivity matrix <i>R</i> defining the connections between cell <i>e</i><sub><i>i</i></sub> and <i>e</i><sub><i>j</i></sub>, as well as a distance function <i>d</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>) representing a (physical) distance between adjacent cells. See the supplemental material for extension to multiple connectivity matrices. We assume there exist an unknown number <i>K</i> of latent (unobserved) cell types, <math id=\"inf1\"><mrow><mi>k</mi><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><mi>K</mi></mrow><mo>}</mo></mrow></mrow></math>, and that each cell <i>e</i><sub><i>i</i></sub> belongs to a single cell type. We indicate a cell <i>e</i><sub><i>i</i></sub> is of type <i>k</i> using the assignment vector (<i>c</i>), so <i>c</i><sub><i>i</i></sub> = <i>k</i>. The observed connectivity between two cells <i>R</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>) then depends only on their latent type and their distance through a link function <i>f</i>(\u22c5, <i>d</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>)). We assume <i>f</i> is parameterized based on the latent type, <i>c</i><sub><i>i</i></sub> = <i>m</i> and <i>c</i><sub><i>j</i></sub> = <i>n</i>, via a parameter <i>\u03b7</i><sub><i>mn</i></sub>, as well as a set of global hyperparameters <i>\u03b8</i>, such that the link function is <i>f</i>(<i>d</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>)|<i>\u03b7</i><sub><i>mn</i></sub>, <i>\u03b8</i>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We then jointly infer the posterior distribution of the class assignment vector (<i>c</i>) = {<i>c</i><sub><i>i</i></sub>}, the parameter matrix <i>\u03b7</i><sub><i>mn</i></sub>, and the global model hyperparameters <i>\u03b8</i>:"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ1", 
+                        "label": "(1)", 
+                        "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">c</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>\u03b8</mi><mo>|</mo><mi>R</mi></mrow><mo>)</mo></mrow><mo>\u221d</mo><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mi>p</mi><mrow><mo>(</mo><mrow><mi>R</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>|</mo><mi>f</mi><mrow><mo>(</mo><mrow><mi>d</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>|</mo><msub><mi>\u03b7</mi><mrow><msub><mi>c</mi><mi>i</mi></msub><msub><mi>c</mi><mi>j</mi></msub></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo><mi>\u03b8</mi></mrow><mo>)</mo></mrow><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></munder><mi>p</mi><mrow><mo>(</mo><mrow><msub><mi>\u03b7</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>|</mo><mi>\u03b8</mi></mrow><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b8</mi><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">c</mi><mo>|</mo><mi>\u03b1</mi></mrow><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b1</mi><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b8</mi><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Our subsequent analysis uses both the full posterior distribution over these parameters as well as the most probable, or maximum a posteriori (MAP), estimate."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "For the retina data, we then extend the model with the additional features indicated. Cell soma depth is modeled as a cell-type-dependent Gaussian distribution with latent (unknown) per-type mean and variance. Similarly, each cell has some number <i>N</i><sub><i>i</i></sub> of synapses, each of which is drawn from a cell-type-specific density profile with up to three modes."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Inference is performed via MCMC via three composable transition kernels\u2014one for structural, one for per-type parameters, and one for global parameters and hyperparameters. Details of data preprocessing, inference parameters, and runtime can be found in the 'Methods section."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Metrics", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To evaluate the quality of the model fit, we need to use information that quantifies aspects of the data for which we have ground truth information. We focus on two aspects of performance. First, if the model works well, then the probability that a pair of neurons is of the same type should be high if the neurons actually are of the same type. Second, the model should assign a high probability of connection between two cells if they have a connection in the underlying data. We term these two factors clustering accuracy and link-prediction accuracy."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To assess the accuracy of a clustering compared to that determined by neuroanatomists, we employ three metrics\u2014clustering homogeneity, clustering completeness, and the ARI. All metrics equal 1.0 when two clusterings completely agree. Homogeneity reflects the degree to which a found cluster or type contains only a single true type. Completeness measures how much of a true type is contained within a single identified type\u2014a completeness of 1.0 means no true type is split into multiple subtypes. ARI is a metric that reflects both measures (see the supplemental material for more information)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To assess the accuracy of the model for connections, we use link prediction accuracy. If our model accurately captures the true structure of the data, it should be good at predicting if a link exists. We thus train the model on the data with a subset of the links marked as unobserved and thus compute our predictive accuracy. We perform 10-way cross-validation on a given dataset (<a href=\"#bib11\">Guerra et al., 2011</a>), learn the resulting model, and use that model to predict the missing synapses. Each potential link between cells is assigned a probability, and we compute the AUC for the resulting ROC curve. An AUC of 1.0 means that we perfectly predict the presence and absence of the missing synapses. We use link prediction accuracy to quantify how good the model is at discovering the underlying connectivity."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We will first establish that our algorithm works properly and try to understand its properties using simulated data. Subsequently, we will analyze in detail a dataset on the retina. Lastly, we will briefly discuss the analysis of data from the worm <i>C. elegans</i> and from an old man-made microprocessor."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-1", 
+                        "title": "Validation with simulated data where ground truth is known", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To validate our model, we performed a series of simulations to test if the model can accurately recover the true underlying network structure and cell type identity. We thus simulate data for which we know the correct structure and compare the estimated structure based on the algorithm (see \u2018Materials and methods\u2019) with the one we used for simulation. We find that the model does a good job of recovering the correct number of cell types (<a href=\"#fig2\">Figure 2A</a>), the cell identities (<a href=\"#fig2\">Figure 2B</a>), and the spatial extent of each type (<a href=\"#fig2\">Figure 2C</a>). For comparison, we show the results using the infinite stochastic block model (iSBM) instead (<a href=\"#fig2\">Figure 2A\u2013C</a>, black line) which assumes that only cell type matters, and thus finds small neighborhoods of connected nodes (instead of global connectivity patterns). This contrast shows that while the regular block model can not correctly deal with distance-dependent connectivity, our model can. Our model converges relatively quickly (see 'Mixing of Markov chains') to an estimate of the most probable values for the cell types, which is enabled by using a combination of simulated annealing and parallelized Markov-chain Monte Carlo (MCMC) (see \u2018Materials and methods\u2019 for details). Thus our model at least is promising for application to biological datasets."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.003", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Correct recovery of true numbers of hidden types in synthetic data when incorporating spatial information.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) The infinite stochastic block model (which only uses connectivity information) over-estimates the number of classes as it fails to take distance into account, whereas our modeling of the combination of distance and connectivity finds close to the true number of classes. Conn: connectivity; dist: distance. (<b>B</b>) As we increase the true number of types, our method continues to find the correct clustering (as measured by the adjusted Rand index, ARI) whereas the infinite stochastic block model (iSBM) overclusters and thus poorly matches ground truth. (<b>C</b>) We examine the spatial extent (size) of the discovered types (clusters) by measuring the two-dimensional standard deviation of the cell locations. The y-axis indicates what fraction of the discovered types had a given spatial extent. Without incorporating distance, we identify a large number of small, spatially-localized types. With distance, we see a correct recovery of the spatial extent of each type."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig2-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-2", 
+                        "title": "Model mismatch", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We next analyze how our model performs in cases where the data are generated with assumptions different from ours. To understand the properties of our model, we attempt connectivity inference on four sets of synthetic data. This helps us understand what our model would do if the data do not obey our assumptions."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We thus generate 10 sets of synthetic data from each of four existing models. The distance-dependent stochastic block model assumes type depends on distance, the traditional stochastic block model has no notion of distance, the mixed membership block model assumes type is combinatorial, and the latent position cluster model assumes that type is clustered-but-continuous."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "If the data are sampled from our model, inference according to our model, unsurprisingly, is good by all measures. It correctly estimates the number of cell types, it is good at predicting connectivity (high area under the curve, AUC), it agrees with human classification (Rand index), it discovers all types, and leads to homogeneous estimates (<a href=\"#fig3\">Figure 3</a>, first row). If the data come from a block model without distance dependence, we see that it still does well on all meaningful measures (<a href=\"#fig3\">Figure 3</a>, second row). This is unsurprising, as our model learns the distance dependence, even its absence. For the mixed membership model (<a href=\"#fig3\">Figure 3</a>, third row), the model grossly overestimates the number of types, by basically allocating a type for each combination of memberships. Otherwise, it still performs relatively well. Lastly, for the latent position clustering model (<a href=\"#fig3\">Figure 3</a>, fourth row), the model does poorly. If type is continuous instead of discrete, then our model is basically trying to cover a continuous set with a discrete scenario leading to rather poor performance. However, as we do expect cell types to have a discrete biological basis, we might expect our model to do well with real data."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.004", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Model inferences when the true generating model differs from our distance-block-model prior.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Horizontal columns show results with synthetic data generated according to the distance-dependent stochastic block model, the non-distance-dependent stochastic block model, the mixed membership block model, and the latent position cluster model. In all cases histograms represent posterior distribution over the indicated metric. (<b>A</b>) The number of types found by the model; the vertical dashed line indicates the \u2018true\u2019 type number (not applicable to the mixed membership model). (<b>B</b>) The area under the receiver operating characteristic (ROC) curve, indicating link prediction accuracy. (<b>C</b>, <b>D</b>, <b>E</b>) Clustering metrics quantifying degree of type agreement with known ground truth."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig3-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-3", 
+                        "title": "Sensitivity to edge effects", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Connectomic efforts so far have reconstructed only small sections of neural tissue. Consequently, many connections to cells outside that tissue volume will be lost. We are concerned that this selective elimination of connectivity along the boundary might give the appearance of distance-dependent connectivity when there is none. We thus performed simulations to check if edge effects could destroy spatial structure and if edge effects could introduce artificial, spurious spatial structure. We measure the degree to which distance-dependent effects can arise from selecting regions that are smaller than the \u2018scale\u2019 of connectivity (<a href=\"#fig4\">Figure 4</a>). We do this by generating two collections of synthetic datasets\u2014one with distance-dependent connectivity and one without. We then in each dataset randomly examine contiguous circular regions with area varying from zero to the entire volume, and empirically calculate the spatial variance in type-dependent connectivity. We find that, if there is no distance dependence, edge effects do not artificially introduce distance dependence. However, if the section we are examining is too small, our model can miss the distance dependence. Thus with respect to distance-dependent connectivity inference, our model errs on the side of caution. But we also find that for spatial extent that is similar to the currently available datasets, the effects of this are quite limited."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.005", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Two sets of generated synthetic data, one with spatially dependent connectivity and one without.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We measure the variance in the connectivity-distance plot for randomly selected regions of each dataset, ranging from single cells to the entire volume. We see that while selecting too small a region can destroy the appearance of distance-dependent connectivity, it does not create it in non-spatial data."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig4-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-4", 
+                        "title": "Learning types and circuitry in the retina", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The mouse retina (<a href=\"#bib20\">Masland, 2001</a>) is a neural circuit which we expect to have connectivity patterns that are well approximated by our generative model. It is known that there are multiple classes of cells that can be broadly grouped into: ganglion cells that transmit information to the rest of the brain; bipolar cells that connect between different cells; and amacrine cells that feed into the ganglion cells. Recent research (<a href=\"#bib12\">Helmstaedter et al., 2013</a>) has produced a large dataset containing both the types of cells from orthogonal approaches, and also the connectivity matrix between all reconstructed cells (<a href=\"#fig5\">Figure 5A</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.006", 
+                                "id": "fig5", 
+                                "label": "Figure 5.", 
+                                "title": "Discovering cell classes in the mouse retina connectome.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here we show the maximum a posteriori (MAP) estimate for the types in the mouse retina data. (<b>A</b>) Input connectivity data for 950 cells for which soma positions were known. (<b>B</b>) Clustered connectivity matrix; each arbitrary color corresponds to a single type and will be used to identify that type in the remainder of the plot. (<b>C</b>) The spatial distribution of our cell types\u2014each cell type tessellates space. Colors correspond to those in (<b>B</b>). (<b>D</b>) Connectivity between our clusters as a function of distance\u2014the cluster consisting primarily of retinal ganglion cells (brown nodes on the graph) exhibits the expected near and far connectivity. Conn prob: probability of connection."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig5-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The algorithm took 8 hr to perform inference, dividing neurons into a set of cell types which reflect known neuroanatomical distinctions (<a href=\"#fig5\">Figure 5</a> shows the MAP result). For each pair of neurons there is a specific distance-dependent connection probability (<a href=\"#fig5\">Figure 5D</a>), which is well approximated by the model fit. Moreover, each type of cell is rather isotropically distributed across space (<a href=\"#fig5\">Figure 5C</a>) as should be expected for true cell types."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Comparing the results of the algorithm to other information sources allows evaluation of the quality of the type determination. Our types closely reflect the (anatomist-determined) segmentation of cells into retinal ganglion, narrow amacrine, medium/wide amacrine, and bipolar cells (<a href=\"#fig6\">Figure 6B</a>). We find that the types we find tend to reflect the known laminar distribution in the retina (<a href=\"#fig6\">Figure 6C</a>) as well as the known synaptic density profiles."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.007", 
+                                "id": "fig6", 
+                                "label": "Figure 6.", 
+                                "title": "Visualizing type inference uncertainty.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Our fully Bayesian model gives a confidence estimate (posterior probability) that any two given cells are of the same type. In (<b>A</b>) we visualize that cell\u2013cell coassignment matrix, showing the probability that cell i is of the same type as cell j on a range from 0.0 to 1.0. The block structure shows subsets of cells which are believed to all belong to the same type. For comparison, (<b>B</b>) shows the anatomist-defined type for each cell, grouped broadly into the coarse types identified in the previous panel. (<b>C</b>) Link versus cluster accuracy. (<b>D</b>) The posterior distribution of receiver operating characteristic (ROC) curves from 10-fold cross-validation when predicting connectivity, as well as (<b>E</b>) the area under the curve (AUC) and (<b>F</b>) the type agreements with known neuroanatomist types. ARI: adjusted Rand index. Model comparison, showing using human-discovered types with and without distance information, as well as our model incorporating just connectivity, connectivity and distance, or connectivity, distance, and synaptic depth (as well as the alternative latent position cluster model, see text). (<b>G</b>) A comparison of the predictive accuracy (AUC) for hand-labeled anatomical data, versus inclusion of additional sources of information, as well as the clustering accuracy. Note that our model sacrifices very little predictive accuracy for additional clustering accuracy. By comparison, conventional methods fail at one or both. ARI: adjusted Rand index. (<b>H</b>) The spatial extent (in depth and area) of the types identified by humans and our various algorithmic approaches."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig6-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The algorithm yields a separation of neurons into a smaller number of types than the fully granular listing of 71 types found by the original authors of the paper (<a href=\"#bib12\">Helmstaedter et al., 2013</a>), although it is still highly correlated with those finer type distinctions (see section \u2018Mouse retina\u2019). It is our expectation that, with larger datasets, even closer agreement would be found."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Our fully Bayesian model produces a distribution over probable clusterings. <a href=\"#fig6\">Figure 6</a> shows this posterior distribution as a cell\u2013cell coassignment matrix, sorted to find maximum block structure. Each large, dark block represents a collection of cells believed with strong probability to be of the same type. When we plot (<a href=\"#fig6\">Figure 6B</a>) the anatomist-derived cell types along the left, we can see that each block consists of a roughly homogeneous collection of types."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We evaluate our model along three sets of parameters (<a href=\"#fig6\">Figure 6</a>): how closely does our clustering agree with neuroanatomists' knowledge? Given two cells, how accurately can our model predict the link between them? And how closely does the spatial extent (within a layer) of our identified types agree with the spatial extent of types identified by neuroanatomists?"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For our model we show the receiver operating characteristic (ROC) curve (<a href=\"#fig6\">Figure 6D</a>) which shows how the true and false positive rates trade off. We plot the posterior distribution of the area under this curve in <a href=\"#fig6\">Figure 6E</a>. We then plot the posterior distribution for cluster agreement metrics\u2014completeness, homogeneity, and adjusted Rand index (ARI) (<a href=\"#fig6\">Figure 6F</a>). We see that our model tends to over-cluster\u2014cells which are of distinct type (at the finest granularity of neuroanatomist-identified type) are grouped as a single type by our model."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We compare link-prediction accuracy across the methods, including our own (<a href=\"#fig6\">Figure 6G</a>, AUC, red). We find that given the dataset, many techniques allow for good link-predictive accuracy. All the methods allow decent link prediction with an AUC in the 0.9 range. However, our algorithm clearly outperforms the simple statistical models that only use connectivity."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As a second measure we compare link-prediction accuracy across the methods (<a href=\"#fig6\">Figure 6G</a>, ARI, blue). We find that our algorithm far outperforms the controls. We also find that when it is based on more of the same information used by anatomists, then it gets better at agreeing with these anatomists. In particular, using connectivity, distance, synapse distribution, and soma depth leads to the highest ARI. When using the available information, the algorithm produces a good fit to human anatomist judgments."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Finally we look at the spatial extent of the discovered types both within a layer and between layers (<a href=\"#fig6\">Figure 6H</a>). We see that, in the absence of distance information, mere connectivity information results in types which only span a small region of space\u2014essentially local cliques. Incorporation of distance information results in types which span the entire extent of the layer. The depth variance of all models continues to be substantially larger than that predicted by human anatomists\u2014future directions of work include attempting to more strongly encode this prior belief of laminarity."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-5", 
+                        "title": "Recovering spatial connectivity in multiple graphs simultaneously", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Having shown our model to work on the repeating tessellated, laminar structure of the mammalian retina, we then apply our model to a structurally very different connectome\u2014the whole body of a small roundworm: <i>C. elegans</i> is a model system in developmental neuroscience (<a href=\"#bib35\">White et al., 1986</a>), with the location and connectivity of each of 302 neurons developmentally determined, leading to early measurement of the connectome. Unlike the retina, only the motor neurons in <i>C. elegans</i> exhibit regular distribution in space\u2014along the body axis. Most interneurons are concentrated in various ganglia that project throughout the entire animal, and the sensory neurons are primarily located in a small number of anterior ganglia. <i>C. elegans</i> also differs from the retina in that the measured connectome is actually two separate graphs\u2014one of directed chemical synapses and another of undirected electrical synapses. As this is a very different connectome, it allows an interesting generalization test: how well will our model work on such a distinct dataset?"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Using both the chemical and electrical connectivity (see \u2018Materials and methods\u2019), we determined the underlying cell types explained by connectivity and distance (<a href=\"#fig7\">Figure 7A</a>). A superficial inspection of the results shows clustering into groups consisting roughly homogeneously of motor neurons, sensory neurons, and interneurons. Closer examination reveals agreement with the classifications originally outlined by White in 1986 (<a href=\"#bib35\">White et al., 1986</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.008", 
+                                "id": "fig7", 
+                                "label": "Figure 7.", 
+                                "title": "Discovering connectivity and type in <i>C</i><i>. elegans</i>.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Posterior distribution on cell connectivity as a function of discovered type, similar to <a href=\"#fig6\">Figure 6</a>. In (<b>B</b>) we plot neuroanatomist-derived types along with their labels. Our model shows a high probability of motor neurons, sensory neurons, and various interneuron classes being of the same type. Soma positions along the body axis are plotted in (<b>C</b>) where we see that we cluster spatially distributed motor neurons together, whereas head sensory neurons are more likely to be grouped together as well. (<b>D</b>) The receiver operating characteristic (ROC) curves for held-out link probability for both the electrical synapses (gap junctions) and chemical synapses in <i>C. elegans</i>. (<b>E</b>) The posterior distribution of the area under the ROC curve (AUC) for the curves in (<b>D</b>). (<b>F</b>) Measurements of the agreement of our identified cell types compared to neuroanatomists. The high completeness but low homogeneity (and corresponding low adjusted Rand index, ARI) reflects our model's tendency to group multiple types into a single type."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig7-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Note our clustering does not perfectly reflect known divisions\u2014several combinations of head and sensory neurons are combined, and a difficult-to-explain group of mostly VB and DB motor neuron types, with VC split between various groups. Our identified cell types thus reflect a \u2018coarsening\u2019 of known types, based entirely on connectivity and distance information, even when the organism exhibits substantially less spatial regularity than the retina."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-6", 
+                        "title": "Types and connectivity in artificial structures", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To show the applicability of our method to other connectome-style datasets, we obtained the spatial location and interconnectivity of the transistors in a classic microprocessor, the MOS Technology 6502 (used in the Apple II) (<a href=\"#bib16\">James et al., 2010</a>). Computer architects use common patterns of transistors when designing circuits, with each transistor having a \u2018type\u2019 in the circuit. We identified a region of the processor with complex but known structure containing the primary 8-bit registers X, Y, and S (<a href=\"#fig8\">Figure 8</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.009", 
+                                "id": "fig8", 
+                                "label": "Figure 8.", 
+                                "title": "Discovering connectivity and type in the MOS 6502 microprocessor.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) The micrograph of the original microprocessor, with the region containing the registers under study highlighted. (<b>B</b>) Our graph consists of the interconnections of MOS field-effect transistors with three terminals, Gate, C1, and C2. The reconstruction technique did not permit resolution of C1 and C2 into source and drain. (<b>C</b>) The spatial distribution of the transistors in each cluster show a clear pattern. (<b>D</b>) The clusters and connectivity versus distance for connections between Gate and C1, Gate and C2, and C1 and C2 terminals on a transistor. Purple and yellow types have a terminal pulled down to ground and mostly function as inverters. The blue types are clocked, stateful transistors, green control the ALU and orange control the special data bus (SDB)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04250-fig8-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Our algorithm identifies areas of spatial homogeneity that mirror the known structure in the underlying architecture of the circuit, segmenting transistor types recognizable to computer architects. Using the original schematics, we see that one identified type contains the \u2018clocked\u2019 transistors, which retain digital state. Two other types contain transistors with pins C1 or C2 connected to ground, mostly serving as inverters. An additional identified type controls the behavior of the three registers of interest (X, Y, and S) with respect to the SB data bus, either allowing them to latch or drive data from the bus. The repeat patterns of spatial connectivity are visible in <a href=\"#fig8\">Figure 8C</a>, showing the man-made horizontal and vertical layout of the same types of transistors."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We have presented a machine learning technique that allows cell types and microcircuitry to be discovered from connectomics data. We have shown its applicability to regularly structured laminar neural circuits like the retina, as well as a less structured whole neuronal organism (<i>C. elegans</i>) and a classic processor. When compared to existing methods, we show how the incorporation of all of this data yields results that combine both high link-prediction accuracy and high agreement with human anatomists. We have found that combining the available data types allows us to discover cell types and microcircuitry that were known to exist in the systems based on decades of previous research and allows good prediction of connectivity."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "For our probabilistic models, no known solution exists to exactly find the most probable parsing of the neurons into cell types and connectivity patterns. We employ a collection of MCMC techniques (see \u2018Materials and methods\u2019), but while different initializations converge to similar ultimate values, we can never realistically obtain the global optimum. There are a broad range of techniques that may offer good approximations to the global optimum and future work could adapt them to find more precise solutions to our problem."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "For our probabilistic model, inference becomes slower as the amount of data increases. Our algorithm required several hours for 1000 neurons. Scaling this class of probabilistic model is an active area of research, and recent results in both variational methods (<a href=\"#bib14\">Hoffman et al., 2013</a>) and spectral learning (<a href=\"#bib1\">Anandkumar et al., 2012</a>) and future work could adapt them to find faster approximate solutions to our problem."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Larger datasets will allow algorithms to distinguish more distinct types and we expect closer agreement with existing anatomical knowledge as more data become available. Moreover, in general, for such problems precision increases with the size of the dataset and the cells that we have are not sufficient to statistically distinguish all the cell types known in anatomy (such as the \u223c70 in the retina). Still, using only connectivity and distance, it is possible to meaningfully divide neurons into types."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Our small collection of hand-selected distance-dependent likelihood functions is clearly non-exhaustive, and assumes monotonicity of connectivity probability\u2014for a given class, closer cells are never less likely to connect. This is known to be insufficient for various neural systems. Future models could incorporate a wider variety of likelihood functions, or even learn the global functional form from the data."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "There are a range of previous approaches to the discovery of neural microcircuitry (<a href=\"#bib23\">Mountcastle, 1957</a>; <a href=\"#bib5\">Douglas and Martin, 1991</a>; <a href=\"#bib7\">Freund and Buzs\u00e1ki, 1998</a>; <a href=\"#bib2\">Barth\u00f3 et al., 2004</a>). These generally involve a great deal of manual labor and ad hoc determination of what constitutes a type of cell\u2014to this day there are disagreements in the literature as to the true types in the mammalian retina. Much as phylogenomics has changed our understanding of animal ontologies, modern large scale data will allow the efficient unbiased discovery of cell types and circuits. The sheer amount of available data demands the introduction of algorithmic approaches."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The development of automatic identification and quantification of cell type may also provide a new computational phenotype for quantifying the effect of disease, genetic interventions, and developmentally experienced neural activity. Our method can in principle identify neuron types across non-connected graphs, for example, across animals. For example, the types of neurons in one animal can be associated with the types of neurons in another animal, in the same way as this is already possible through molecular markers (<a href=\"#bib3\">Brown and Hestrin, 2009</a>). This could be particularly important if cell types appear that are due to properties of the stimuli and experience as opposed to just the molecular properties of cells, such as color and orientation selective types in primary visual cortex (<a href=\"#bib19\">Lennie and Movshon, 2005</a>; <a href=\"#bib32\">Sincich and Horton, 2005</a>). This would allow comparative quantitative anatomy across animals, and aid the search for the ultimate causes of connectivity."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Our model combines connectivity, cellular and synaptic properties, and suggests the way towards combining even richer data. Distinct cell types differ in morphology, connectivity, transcriptomics, relation to behavior or stimuli, and many other ways. Algorithms combining these data and type information may allow us to synthesize all the available information from one experiment or even across experiments into a joint model of brain structure and function."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Our work shows how rich probabilistic models can contribute to computational neuroanatomy. Eventually, algorithms will have to become a central tool for anatomists, as it will progressively become impossible for humans to parse the huge datasets. This transition may follow a similar transition to that of molecular biology (with gene-finding algorithms) and evolutionary biology (with computational phylogenetics). Ultimately, computational approaches may help resolve the significant disagreements across human anatomists."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s5", 
+                "title": "Methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s5-1", 
+                        "title": "Probabilistic model", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Our model is a extension of the iSBM (<a href=\"#bib17\">Kemp et al., 2006</a>; <a href=\"#bib36\">Xu et al., 2006</a>) to incorporate spatial relations between entities, inspired by attempts to extend these models with arbitrary discriminative functions (<a href=\"#bib25\">Murphy, 2012</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We take as input a connectivity matrix <i>R</i> defining the connections between cell <i>e</i><sub><i>i</i></sub> and <i>e</i><sub><i>j</i></sub>, as well as a distance function <i>d</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>) representing a (physical) distance between adjacent cells. See the supplemental material for extension to multiple connectivity matrices. We assume there exist an unknown number <i>K</i> of latent (unobserved) cell types, <math id=\"inf3\"><mrow><mi>k</mi><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><mi>K</mi></mrow><mo>}</mo></mrow></mrow></math>, and that each cell <i>e</i><sub><i>i</i></sub> belongs to a single cell type. We indicate a cell <i>e</i><sub><i>i</i></sub> is of type <i>k</i> using the assignment vector (<i>c</i>), so <i>c</i><sub><i>i</i></sub> = <i>k</i>. The observed connectivity between two cells <i>R</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>) then depends only on their latent type and their distance through a link function <i>f</i>(\u22c5, <i>d</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>)). We assume <i>f</i> is parameterized based on the latent type, <i>c</i><sub><i>i</i></sub> = <i>m</i> and <i>c</i><sub><i>j</i></sub> = <i>n</i>, via a parameter <i>\u03b7</i><sub><i>mn</i></sub>, as well as a set of global hyperparameters <i>\u03b8</i>, such that the link function is <i>f</i>(<i>d</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>)|<i>\u03b7</i><sub><i>mn</i></sub>, <i>\u03b8</i>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We then jointly infer the MAP estimate of the class assignment vector (<i>c</i>) = {<i>c</i><sub><i>i</i></sub>}, the parameter matrix <i>\u03b7</i><sub><i>mn</i></sub>, and the global model hyperparameters <i>\u03b8</i>:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ3", 
+                                "label": "(2)", 
+                                "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">c</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>\u03b8</mi><mo>|</mo><mi>R</mi></mrow><mo>)</mo></mrow><mo>\u221d</mo><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mi>p</mi><mrow><mo>(</mo><mrow><mi>R</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>|</mo><mi>f</mi><mrow><mo>(</mo><mrow><mi>d</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>|</mo><msub><mi>\u03b7</mi><mrow><msub><mi>c</mi><mi>i</mi></msub><msub><mi>c</mi><mi>j</mi></msub></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo><mi>\u03b8</mi></mrow><mo>)</mo></mrow><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></munder><mi>p</mi><mrow><mo>(</mo><mrow><msub><mi>\u03b7</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>|</mo><mi>\u03b8</mi></mrow><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b8</mi><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">c</mi><mo>|</mo><mi>\u03b1</mi></mrow><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b1</mi><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b8</mi><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We describe the spatial \u2018logistic-distance Bernoulli\u2019 function here, and others in the supplemental material."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The \u2018logistic-distance Bernoulli\u2019 spatial model assumes that, if cell <i>e</i><sub><i>i</i></sub> is of type <i>m</i> and cell <i>e</i><sub><i>j</i></sub> is of type <i>n</i>, then <i>\u03b7</i><sub><i>mn</i></sub> = (<i>\u03bc</i><sub><i>mn</i></sub>, <i>\u03bb</i><sub><i>mn</i></sub>), and the probability that two cells <i>e</i><sub><i>i</i></sub> and <i>e</i><sub><i>j</i></sub> are connected is given by"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ4", 
+                                "label": "(3)", 
+                                "mathml": "<math><mrow><msup><mi>p</mi><mtext>*</mtext></msup><mo>=</mo><mfrac><mrow><mn>1.0</mn></mrow><mrow><mn>1</mn><mo>+</mo><mtext>exp</mtext><mfrac><mrow><mi>d</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>\u03bc</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub></mrow><mrow><msub><mi>\u03bb</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub></mrow></mfrac></mrow></mfrac><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ5", 
+                                "label": "(4)", 
+                                "mathml": "<math><mrow><mi>p</mi><mo>=</mo><msup><mi>p</mi><mtext>*</mtext></msup><mo>\u22c5</mo><mrow><mo>(</mo><mrow><msub><mi>p</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msub><mi>p</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>p</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>p</i><sub><i>max</i></sub> and <i>p</i><sub><i>min</i></sub> are global per-graph parameters."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We place exponential priors on the latent parameters:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ6", 
+                                "label": "(5)", 
+                                "mathml": "<math><mrow><msub><mi>\u03bc</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>\u223c</mo><mtext>exp</mtext><mrow><mo>(</mo><mrow><mi>\u03bc</mi><mo>|</mo><msup><mi>\u03bc</mi><mrow><mi>h</mi><mi>p</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ7", 
+                                "label": "(6)", 
+                                "mathml": "<math><mrow><msub><mi>\u03bb</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>\u223c</mo><mtext>exp</mtext><mrow><mo>(</mo><mrow><mi>\u03bb</mi><mo>|</mo><msup><mi>\u03bb</mi><mrow><mi>h</mi><mi>p</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "using <i>\u03bb</i><sup><i>hp</i></sup> and <i>\u03bc</i><sup><i>hp</i></sup> as global per-graph hyperparameters."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We use a Dirichlet-process prior on class assignments, which allows the number of classes to be determined automatically. In brief, for <i>N</i> total cells, the probability of a cell belonging to a class is proportional to the number of data points already in that class, <i>N</i><sub><i>k</i></sub>, such that <math id=\"inf4\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>c</mi><mi>i</mi></msub><mo>=</mo><mi>k</mi><mo>)</mo></mrow><mo>\u221d</mo><mfrac><mrow><msub><mi>m</mi><mi>k</mi></msub></mrow><mrow><mi>N</mi><mo>+</mo><mi>\u03b1</mi></mrow></mfrac></mrow></math> and the probability of the cell belonging to a new class <i>k</i>\u2032 is <math id=\"inf5\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>c</mi><mi>i</mi></msub><mo>=</mo><mi>k</mi><mo>\u2032</mo><mo>)</mo></mrow><mo>\u221d</mo><mfrac><mi>\u03b1</mi><mrow><mi>N</mi><mo>+</mo><mi>\u03b1</mi></mrow></mfrac></mrow></math>. <i>\u03b1</i> is the global concentration parameter\u2014larger values of <i>\u03b1</i> make the model more likely to propose new classes. We grid the parameter <i>\u03b1</i> and allow the best value to be learned from the data."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Where we model cell depth, we assume that each cell type has a typical depth, and thus a Gaussian distribution of <i>s</i><sub><i>i</i></sub>. We assume <math id=\"inf6\"><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>\u223c</mo><mi>N</mi><mrow><mo>(</mo><mrow><msubsup><mi>\u03bc</mi><mi>k</mi><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>\u03c3</mi><mi>k</mi><mrow><mn>2</mn><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup></mrow><mo>)</mo></mrow></mrow></math>, where the (<i>s</i>) superscript indicates these model parameters are associated with the soma-depth portion of our model. We use a conjugate prior for <math id=\"inf7\"><mrow><mrow><mo>(</mo><mrow><msubsup><mi>\u03bc</mi><mi>k</mi><mrow><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup><mo>,</mo><msubsup><mi>\u03c3</mi><mi>k</mi><mrow><mn>2</mn><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup></mrow><mo>)</mo></mrow></mrow></math> with <math id=\"inf8\"><mrow><msubsup><mi>\u03bc</mi><mi>k</mi><mrow><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup><mo>\u223c</mo><mi>N</mi><mrow><mo>(</mo><mrow><msubsup><mi>\u03bc</mi><mrow><mi>h</mi><mi>p</mi></mrow><mrow><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup><mo>,</mo><msubsup><mi>\u03c3</mi><mi>k</mi><mrow><mn>2</mn><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup><mo>/</mo><msubsup><mi>\u03ba</mi><mrow><mi>h</mi><mi>p</mi></mrow><mrow><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup></mrow><mo>)</mo></mrow></mrow></math> and <math id=\"inf9\"><mrow><msubsup><mi>\u03c3</mi><mi>k</mi><mrow><mn>2</mn><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup><mo>\u223c</mo><msup><mi>\u03c7</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo></mrow><msubsup><mi>\u03c3</mi><mrow><mi>h</mi><mi>p</mi></mrow><mrow><mn>2</mn><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup><mo>,</mo><msubsup><mi>\u03bd</mi><mrow><mi>h</mi><mi>p</mi></mrow><mrow><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow></msubsup></mrow></math>. The use of conjugacy simplifies inference while allowing for each cell type to have its own depth mean and distribution."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We model synapse depth profile that each cell type has a characteristic depth distribution of synaptic contact points, and mixture of Gaussian distributions over cell is <i>N</i><sub><i>i</i></sub> contact points, <b>g</b><sup><b>i</b></sup>. We do this by assuming the <math id=\"inf10\"><mrow><msubsup><mi>g</mi><mi>j</mi><mi>i</mi></msubsup></mrow></math> are drawn from an <i>M</i> = 3-component mixture of Gaussians. Thus associated with each cell type <i>k</i> is a vector of <i>M</i> Gaussian means <math id=\"inf11\"><mrow><mrow><mo>(</mo><mrow><msubsup><mi>\u03bc</mi><mrow><mi>k</mi><mo>,</mo><mn>1</mn></mrow><mi>g</mi></msubsup><mo>,</mo><mo>\u22ef</mo><mo>,</mo><msubsup><mi>\u03bc</mi><mrow><mi>k</mi><mo>,</mo><mi>M</mi></mrow><mi>g</mi></msubsup></mrow><mo>)</mo></mrow></mrow></math>, and a mixture vector <i>\u03c0</i><sub><i>k</i></sub>. This representation can thus model depth distributions of contact points that have up to three modes, an assumption that is well matched in the bulk of anatomical studies of cell-type-dependent connectivity."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-2", 
+                        "title": "Inference", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We perform posterior inference via MCMC, annealing on the global likelihood during the traditional burn-in phase. MCMC transition kernels for different parts of the state space can be chained together to construct a kernel whose ergodic distribution is the target ergodic distribution over the entire state space."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Our first transition kernel (\u2018structural\u2019) performs Gibbs sampling of the assignment vector <math id=\"inf12\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">c</mi><mo>|</mo><mi>\u03b7</mi><mo>,</mo><mi>\u03b8</mi><mo>,</mo><mi>\u03b1</mi></mrow><mo>)</mo></mrow></mrow></math>. The lack of conjugacy in our likelihood model makes an explicit evaluation of the conditional assignment probabilities impossible, motivating us to use an auxiliary variable method (<a href=\"#bib26\">Neal, 2000</a>) in which a collection of ephemeral classes is explicitly represented for the duration of the Gibbs scan."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We then employ a transition kernel to update the per-component parameter values <i>\u03b7</i><sub><i>mn</i></sub>. Conditioned on the assignment vector <b>c</b> and the model hyperparameters <i>\u03b8</i>, <i>\u03b1</i> the individual <i>\u03b7</i><sub><i>mn</i></sub> are independent. We slice sample (<a href=\"#bib27\">Neal, 2003</a>) each component's parameters, choosing the slice width as a function of the global hyperparameter range."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The global hyperparameters, both <i>\u03b1</i> and <i>\u03b8</i>, are allowed to take on a discrete set of possible values. As <i>\u03b8</i> is often a tuple of possible values, we explore the Cartesian product of all possible values. We then Gibbs sample (our final transition kernel), which is always possible in a small, finite, discrete state space."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We chain these three kernels together, and then globally anneal on the likelihood from a temperature of <i>T</i> = 64 down to <i>T</i> = 1 over 900 iterations unless otherwise indicated, and then run the chain for another 100 iterations. We then generate at least 20 samples, each taken from the end of a single Markov chain initialized from different random initial points in the state space. For visualization we pick the chain with the highest log likelihood, but for all numerical comparisons (including link probability and cluster accuracy) we use this full collection of samples from the posterior distribution to estimate the resulting statistics."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-3", 
+                        "title": "Link prediction", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To compute link-prediction accuracy, we compute the probability of a link between two cells using each model, trained via 10-fold cross-validation. We use a full collection of posterior samples when computing the link probability, and then compute the area under the ROC curve for each."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We compare our model with a standard network clustering model, the latent-position clustering model. This model assumes each cell belongs to one of <i>K</i> clusters, and each cluster is associated with a <i>d</i>-dimensional Gaussian distribution. The probability of a link is then a function of the distance between the data points in this continuous space. We use a variational implementation provided in R (<a href=\"#bib30\">Salter-Townshend and Murphy, 2013</a>), parametrically varying the number of latent dimensions and the number of requested groups. While this model provides reasonable link-predictive accuracy, the clusterings dramatically disagree with those from human anatomists."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-4", 
+                        "title": "Parameters", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Hierarchical generative models can be sensitive to hyperparameter settings, thus for most hyperparameters we perform inference. In cases where we cannot, we run separate collections of Markov chains at separate settings and show the results across all pooled parameters. For the case of the mouse retina data, we consider maximum link probability <math id=\"inf13\"><mrow><msub><mi>p</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>0.95</mn><mo>,</mo><mn>0.9</mn><mo>,</mo><mn>0.7</mn></mrow><mo>}</mo></mrow></mrow></math>, variance scales for the synapse density profile of <math id=\"inf14\"><mrow><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>0.01</mn><mo>,</mo><mn>0.1</mn><mo>,</mo><mn>1.0</mn></mrow><mo>}</mo></mrow></mrow></math> (of normalized depth), and <math id=\"inf15\"><mrow><mi>K</mi><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow><mo>}</mo></mrow></mrow></math> possible synapse density profile mixture components. For the connectivity-distance-only model we actually perform inference over both <i>p</i><sub><i>max</i></sub> and <i>p</i><sub><i>min</i></sub>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-5", 
+                        "title": "Mixing of our Markov chains", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Evaluating whether or not approximate inference methods, such as MCMC, produce samples which are valid approximations of the posterior distribution is an ongoing area of research in the computational statistics community. We use a rough proxy here\u2014synthetic likelihood evaluation. For synthetic datasets of sizes comparable to our real data size, do we recover known ground truth information after running our Markov chains for the appropriate amount of time?"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig9\">Figures 9</a> and <a href=\"#fig10\">10</a> show the cluster accuracy (ARI) to ground truth and the total log score as a function of runtime. We see dramatic changes in log score initially as we vary the temperature, stabilizing as runtime progresses, for each chain. Then we see the characteristic jumps between nearby modes towards the end of the run, in both log score and ARI. Importantly, regardless of whether our model over- or under-estimates the exact posterior variance about the network, we find points in the latent variable space that are both predictive <i>and</i> parsimonious, largely agreeing with the human anatomists and predicting existing connections."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.011", 
+                                "id": "fig9", 
+                                "label": "Figure 9.", 
+                                "title": "Adjusted Rand index (ARI) for synthetic data as a function of run iteration.", 
+                                "alt": "", 
+                                "uri": "elife-04250-fig9-v1.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.012", 
+                                "id": "fig10", 
+                                "label": "Figure 10.", 
+                                "title": "Total model score (log score) versus wall clock time. ", 
+                                "alt": "", 
+                                "uri": "elife-04250-fig10-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-6", 
+                        "title": "Dataset details", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s5-6-1", 
+                                "title": "Mouse retina", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Dense serial electron microscopy of a 114 \u03bcm \u00d7 80 \u03bcm area in the mouse retina by <a href=\"#bib12\">Helmstaedter et al. (2013</a>) yielded a listing of places where neurons come into contact. There were over 1000 cells originally, and we selected the 950 for which the location of the soma could be reconstructed from the provided cell plots (soma locations were not provided by the study's authors in machine-readable form). The result was a matrix of the total synapse-like contact area between all pairs of 950 cells. Area was thresholded at 0.1 \u03bcm, determined by hand, to yield a 950 \u00d7 950 entry matrix that served as input to our algorithm. We measured the distance between cells using the reconstructed soma centers, and used the logistic-distance spatial relation. Hyperprior griddings are shown in the \u2018Hyperprior grids and hyperprior inference\u2019 section."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s5-6-2", 
+                                "title": "C. elegans", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We obtained the connectome of <i>C. elegans</i> from data published previously (<a href=\"#bib33\">Varshney et al., 2011</a>), and isolated the 279 non-pharyngeal neurons, with a total of 6393 chemical synapses and 890 gap junctions originally cleaned up in <a href=\"#bib4\">Chen et al. (2006</a>). A cell's position was its distance along the anterior\u2013posterior axis normalized between 0 and 1. We used both networks, the chemical network as a directed graph and the electrical network as an undirected graph. We use the synapse counts with the logistic-distance Poisson likelihood, scaling the counts by 4.0 to compensate for the Poisson's overdispersion."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s5-6-3", 
+                                "title": "Microprocessor", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We extracted the connection graph for the transistors in the MOS 6502 (<a href=\"#bib16\">James et al., 2010</a>). Each transistor has three terminals (gate, source, drain), but the methods of the original dataset were unable to consistently resolve which of the C1 and C2 terminals were source and drain, leading to ambiguity in our encoding. We identified a region consisting of three registers X, Y, and S via visual inspection and focused our efforts there. We created a total of six connectivity matrices by examining possible terminal pairings. For example, one graph encodes the connectivity between pins <math id=\"inf17a\"><mrow><mtext>g</mtext></mrow></math> and <math id=\"inf17b\"><mrow><msub><mtext>c</mtext><mo>1</mo></msub><mo>.</mo></mrow></math> We then have, <math id=\"inf16\"><mrow><msup><mi>R</mi><mrow><mi>g</mi><msub><mi>c</mi><mn>1</mn></msub></mrow></msup><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math> if transistor <i>e</i><sub><i>j</i></sub> and <i>e</i><sub><i>j</i></sub> are connected via pins <i>g</i> and <i>c</i><sub>1</sub>."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-7", 
+                        "title": "Other likelihoods", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We reparameterized the logistic-distance Bernoulli likelihood to better capture the microprocessor data structure. We are explicitly setting the maximum probability <i>p</i> of the logistic function on a per-component basis, drawing from a global <math id=\"inf17\"><mrow><mi>p</mi><mo>\u223c</mo><mtext>Beta</mtext><mrow><mo>(</mo><mrow><msub><mi>\u03b1</mi><mrow><mi>h</mi><mi>p</mi></mrow></msub><mo>,</mo><msub><mi>\u03b2</mi><mrow><mi>h</mi><mi>p</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></math>. Then <i>\u03bb</i> is set for each component as a global hyperparameter, <i>\u03bb</i>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The \u2018logistic-distance Poisson\u2019 spatial model is used to explicitly model the count of synapses, <i>c</i>, between two neurons. The probability of <i>c</i> synapses between two neurons is distributed <math id=\"inf18\"><mrow><mi>c</mi><mo>\u223c</mo><mtext>Poisson</mtext><mrow><mo>(</mo><mrow><mi>c</mi><mo>|</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math>, where <i>r</i> (the \u2018rate\u2019) is generated by a scaled logistic function (the logistic function has range [0, 1]). For each component <i>\u03b7</i><sub><i>mn</i></sub> we learn both the threshold <i>\u03bc</i><sub><i>mn</i></sub> and the rate scaling factor <i>r</i><sub><i>mn</i></sub>. Thus if cells <i>m</i> and <i>n</i> are likely to have on average 20 synapses if they are closer than 5 \u03bcm, then <i>\u03bc</i><sub><i>mn</i></sub> = 5 and <i>r</i><sub><i>mn</i></sub> = 20."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Thus the probability of <i>R</i>(<i>e</i><sub><i>i</i></sub>, <i>e</i><sub><i>j</i></sub>) = <i>c</i> synapses between two cells <i>e</i><sub><i>i</i></sub> and <i>e</i><sub><i>j</i></sub> is given by:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ8", 
+                                "label": "(7)", 
+                                "mathml": "<math><mrow><msup><mi>r</mi><mtext>*</mtext></msup><mo>=</mo><mfrac><mrow><mn>1.0</mn></mrow><mrow><mn>1</mn><mo>+</mo><mtext>exp</mtext><mfrac><mrow><mi>d</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>\u03bc</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub></mrow><mi>\u03bb</mi></mfrac></mrow></mfrac><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ9", 
+                                "label": "(8)", 
+                                "mathml": "<math><mrow><mi>r</mi><mo>=</mo><msup><mi>r</mi><mtext>*</mtext></msup><mo>\u22c5</mo><mrow><mo>(</mo><mrow><msub><mi>r</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><msub><mi>r</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>r</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ10", 
+                                "label": "(9)", 
+                                "mathml": "<math><mrow><mi>R</mi><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>\u223c</mo><mtext>Poisson</mtext><mrow><mo>(</mo><mrow><mi>c</mi><mo>|</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>\u03bb</i> and <i>r</i><sub><i>min</i></sub> are per-graph parameters and we have per-component parameters <math id=\"inf19\"><mrow><msub><mi>\u03bc</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>\u223c</mo><mtext>Exp</mtext><mrow><mo>(</mo><mrow><mi>\u03bc</mi><mo>|</mo><msup><mi>\u03bc</mi><mrow><mi>h</mi><mi>p</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow></math> and <math id=\"inf20\"><mrow><msub><mi>r</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>\u223c</mo><mtext>Exp</mtext><mrow><mo>(</mo><mrow><msub><mi>r</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>|</mo><msubsup><mi>r</mi><mrow><mi>s</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>e</mi></mrow><mrow><mi>h</mi><mi>p</mi></mrow></msubsup></mrow><mo>)</mo></mrow></mrow></math>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-8", 
+                        "title": "Source code and data", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "All source code and materials for running experiments can be obtained from the project website, at <a href=\"http://ericmjonas.github.io/connectodiscovery/\">http://ericmjonas.github.io/connectodiscovery/</a>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "All preprocessed data has been made publically available as well."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-9", 
+                        "title": "Extension to multiple graphs", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The model can handle multiple graphs <i>R</i><sup><i>q</i></sup> simultaneously with a shared clustering by extending the likelihood to include the product of the likelihoods of the individual graphs."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ11", 
+                                "label": "(10)", 
+                                "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo></mrow><mi mathvariant=\"bold\">c</mi><mo>,</mo><mrow><mo></mo><msup><mi>\u03b7</mi><mi>q</mi></msup><mo></mo></mrow><mo>,</mo><mrow><mo></mo><msup><mi>\u03b8</mi><mi>q</mi></msup><mo></mo></mrow><mo>|</mo><mrow><mo></mo><msup><mi>R</mi><mi>q</mi></msup><mo></mo></mrow><mrow><mo>)</mo></mrow><mo>\u221d</mo><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mi>q</mi></munder><mrow><mo>(</mo><mrow><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mi>p</mi><mrow><mo>(</mo></mrow><msup><mi>R</mi><mi>q</mi></msup><mrow><mo>(</mo><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow><mo>|</mo><mi>f</mi><mrow><mo>(</mo></mrow><mi>d</mi><mrow><mo>(</mo><msub><mi>e</mi><mi>i</mi></msub><mo>,</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow><mo>|</mo><msubsup><mi>\u03b7</mi><mrow><msub><mi>c</mi><mi>i</mi></msub><msub><mi>c</mi><mi>j</mi></msub></mrow><mi>q</mi></msubsup><mo>,</mo><msup><mi>\u03b8</mi><mi>q</mi></msup><mrow><mo>)</mo></mrow><munder><mstyle displaystyle=\"true\"><mo>\u220f</mo></mstyle><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></munder><mi>p</mi><mrow><mo>(</mo><msubsup><mi>\u03b7</mi><mrow><mi>m</mi><mi>n</mi></mrow><mi>q</mi></msubsup><mo>|</mo><msup><mi>\u03b8</mi><mi>q</mi></msup><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><msup><mi>\u03b8</mi><mi>q</mi></msup><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi mathvariant=\"bold\">c</mi><mo>|</mo><mi>\u03b1</mi><mo>)</mo></mrow><mi>p</mi><mrow><mo>(</mo><mi>\u03b1</mi><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-10", 
+                        "title": "Hyperprior grids and hyperprior inference", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "For the mouse retina logistic-distance Bernoulli model, we gridded <i>\u03bc</i><sup><i>hp</i></sup> and <i>\u03bb</i><sup><i>hp</i></sup> into 40 log<sub>10</sub>-spaced points 1.0 and 80."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For the <i>C. elegans</i> data with the logistic-distance Poisson model, we gridded <i>\u03bc</i><sub><i>hp</i></sub> and <i>\u03bb</i> into 20 log<sub>10</sub>-spaced points between 0.2 and 2.0, and the <i>ratescale</i><sup><i>hp</i></sup> parameter into 20 log<sub>10</sub>-spaced points between 2.0 and 20.0. We globally set <i>rate</i><sub><i>min</i></sub> = 0.01."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For the microprocessor with the logistic-distance with fixed lambda parameter and Bernoulli likelihood, we gridded <i>mu</i><sub><i>hp</i></sub> into 50 log<sub>10</sub>-spaced points between 10 and 500 and set <i>\u03bb</i> = <i>\u03bc</i><sub><i>hp</i></sub>/10. <math id=\"inf21\"><mrow><msub><mi>p</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>0.001</mn><mo>,</mo><mn>0.01</mn><mo>,</mo><mn>0.02</mn></mrow><mo>}</mo></mrow></mrow></math> and both <i>p</i><sub><i>\u03b1</i></sub> and <math id=\"inf22\"><mrow><msub><mi>p</mi><mi>\u03b2</mi></msub><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>0.1</mn><mo>,</mo><mn>1.0</mn><mo>,</mo><mn>2.0</mn></mrow><mo>}</mo></mrow></mrow></math>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s5-11", 
+                        "title": "Measuring clustering similarity", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We compare discovered types to known types via cluster comparison metrics: cluster homogeneity, cluster completeness, and the ARI. Homogeneity measures how many true types are in a given found type. If every cell type is split into two types, each subtype is still completely homogeneous. Completeness measures how many members of a given true type are split across found types."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "ARI takes into account both effects (<a href=\"#bib15\">Hubert and Arabie, 1985</a>)\u2014two identical clusterings have an ARI of 1.0, while progressively more dissimilar clusters have lower ARIs, becoming slightly negative as the clustering gets anti-correlated."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig11\">Figure 11</a> shows the result of taking 20 different clusters and moving data points between them according to the following operations."
+                            }, 
+                            {
+                                "type": "list", 
+                                "prefix": "bullet", 
+                                "items": [
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "\u2022<b>distribute</b>: take a class and distribute its elements uniformly among the remaining types."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "\u2022<b>merge</b>: take a type and merge it into another existing type."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "\u2022<b>split</b>: take a type and split it into two distinct types."
+                                        }
+                                    ]
+                                ]
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04250.013", 
+                                "id": "fig11", 
+                                "label": "Figure 11.", 
+                                "title": "Type agreement evaluation metrics as a function of splitting types, merging types, and randomly distributing cells between types.", 
+                                "alt": "", 
+                                "uri": "elife-04250-fig11-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We can see the impact on ARI, completeness, and homogeneity as we perform these operations on more of the original 20 types. In all cases, \u2018distribution\u2019 of one type among the others is detrimental to the metric. Splitting impacts completeness but not homogeneity, and merging impacts homogeneity but not completeness."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Anandkumar", 
+                            "index": "Anandkumar, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Ge", 
+                            "index": "Ge, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Hsu", 
+                            "index": "Hsu, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Kakade", 
+                            "index": "Kakade, SM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Telgarsky", 
+                            "index": "Telgarsky, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Tensor decompositions for learning latent variable models", 
+                "journal": {
+                    "name": [
+                        "Journal of Machine Learning Research"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "1", 
+                    "last": "55", 
+                    "range": "1\u201355"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Barth\u00f3", 
+                            "index": "Barth\u00f3, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Hirase", 
+                            "index": "Hirase, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Monconduit", 
+                            "index": "Monconduit, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Zugaro", 
+                            "index": "Zugaro, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KD Harris", 
+                            "index": "Harris, KD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Buzs\u00e1ki", 
+                            "index": "Buzs\u00e1ki, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Characterization of neocortical principal cells and interneurons by network interactions and extracellular features", 
+                "journal": {
+                    "name": [
+                        "Journal of Neurophysiology"
+                    ]
+                }, 
+                "volume": "92", 
+                "pages": {
+                    "first": "600", 
+                    "last": "608", 
+                    "range": "600\u2013608"
+                }, 
+                "doi": "10.1152/jn.01170.2003"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SP Brown", 
+                            "index": "Brown, SP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hestrin", 
+                            "index": "Hestrin, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cell-type identity: a key to unlocking the function of neocortical circuits", 
+                "journal": {
+                    "name": [
+                        "Current Opinion in Neurobiology"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "415", 
+                    "last": "421", 
+                    "range": "415\u2013421"
+                }, 
+                "doi": "10.1016/j.conb.2009.07.011"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Chen", 
+                            "index": "Chen, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DH Hall", 
+                            "index": "Hall, DH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DB Chklovskii", 
+                            "index": "Chklovskii, DB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Wiring optimization can relate neuronal structure and function", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "103", 
+                "pages": {
+                    "first": "4723", 
+                    "last": "4728", 
+                    "range": "4723\u20134728"
+                }, 
+                "doi": "10.1073/pnas.0506806103"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "1991", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Douglas", 
+                            "index": "Douglas, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Martin", 
+                            "index": "Martin, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "A functional microcircuit for cat visual cortex", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "440", 
+                "pages": {
+                    "first": "735", 
+                    "last": "769", 
+                    "range": "735\u2013769"
+                }, 
+                "doi": "10.1113/jphysiol.1991.sp018733"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Druckmann", 
+                            "index": "Druckmann, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hill", 
+                            "index": "Hill, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Sch\u00fcrmann", 
+                            "index": "Sch\u00fcrmann, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Markram", 
+                            "index": "Markram, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Segev", 
+                            "index": "Segev, I"
+                        }
+                    }
+                ], 
+                "articleTitle": "A hierarchical structure of cortical interneuron electrical diversity revealed by automated statistical analysis", 
+                "journal": {
+                    "name": [
+                        "Cerebral Cortex"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "2994", 
+                    "last": "3006", 
+                    "range": "2994\u20133006"
+                }, 
+                "doi": "10.1093/cercor/bhs290"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Freund", 
+                            "index": "Freund, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Buzs\u00e1ki", 
+                            "index": "Buzs\u00e1ki, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Interneurons of the hippocampus", 
+                "journal": {
+                    "name": [
+                        "Hippocampus"
+                    ]
+                }, 
+                "volume": "6", 
+                "pages": {
+                    "first": "347", 
+                    "last": "470", 
+                    "range": "347\u2013470"
+                }, 
+                "doi": "10.1002/(SICI)1098-1063(1996)6:4<347::AID-HIPO1>3.0.CO;2-I"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Girvan", 
+                            "index": "Girvan, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ME Newman", 
+                            "index": "Newman, ME"
+                        }
+                    }
+                ], 
+                "articleTitle": "Community structure in social and biological networks", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "99", 
+                "pages": {
+                    "first": "7821", 
+                    "last": "7826", 
+                    "range": "7821\u20137826"
+                }, 
+                "doi": "10.1073/pnas.122653799"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Grillner", 
+                            "index": "Grillner, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Markram", 
+                            "index": "Markram, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E De Schutter", 
+                            "index": "De Schutter, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Silberberg", 
+                            "index": "Silberberg, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FE LeBeau", 
+                            "index": "LeBeau, FE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Microcircuits in action from CPGs to neocortex", 
+                "journal": {
+                    "name": [
+                        "Trends in Neurosciences"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "525", 
+                    "last": "533", 
+                    "range": "525\u2013533"
+                }, 
+                "doi": "10.1016/j.tins.2005.08.003"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Guerra", 
+                            "index": "Guerra, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LM McGarry", 
+                            "index": "McGarry, LM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Robles", 
+                            "index": "Robles, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Bielza", 
+                            "index": "Bielza, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Larra\u00f1aga", 
+                            "index": "Larra\u00f1aga, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Yuste", 
+                            "index": "Yuste, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Comparison between supervised and unsupervised classifications of neuronal cell types: a case study", 
+                "journal": {
+                    "name": [
+                        "Developmental Neurobiology"
+                    ]
+                }, 
+                "volume": "71", 
+                "pages": {
+                    "first": "71", 
+                    "last": "82", 
+                    "range": "71\u201382"
+                }, 
+                "doi": "10.1002/dneu.20809"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Helmstaedter", 
+                            "index": "Helmstaedter, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KL Briggman", 
+                            "index": "Briggman, KL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SC Turaga", 
+                            "index": "Turaga, SC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Jain", 
+                            "index": "Jain, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HS Seung", 
+                            "index": "Seung, HS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Denk", 
+                            "index": "Denk, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "Connectomic reconstruction of the inner plexiform layer in the mouse retina", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "500", 
+                "pages": {
+                    "first": "168", 
+                    "last": "174", 
+                    "range": "168\u2013174"
+                }, 
+                "doi": "10.1038/nature12346"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SL Hill", 
+                            "index": "Hill, SL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Wang", 
+                            "index": "Wang, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Riachi", 
+                            "index": "Riachi, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Sch\u00fcrmann", 
+                            "index": "Sch\u00fcrmann, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Markram", 
+                            "index": "Markram, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Statistical connectivity provides a sufficient foundation for specific functional connectivity in neocortical neural microcircuits", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "109", 
+                "pages": {
+                    "first": "E2885", 
+                    "last": "E2894", 
+                    "range": "E2885\u2013E2894"
+                }, 
+                "doi": "10.1073/pnas.1202128109"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MD Hoffman", 
+                            "index": "Hoffman, MD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DM Blei", 
+                            "index": "Blei, DM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Wang", 
+                            "index": "Wang, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Paisley", 
+                            "index": "Paisley, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Stochastic variational inference", 
+                "journal": {
+                    "name": [
+                        "Journal of Machine Learning Research"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "1303", 
+                    "last": "1347", 
+                    "range": "1303\u20131347"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "1985", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Hubert", 
+                            "index": "Hubert, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Arabie", 
+                            "index": "Arabie, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Comparing partitions", 
+                "journal": {
+                    "name": [
+                        "Journal of Classification"
+                    ]
+                }, 
+                "volume": "2", 
+                "pages": {
+                    "first": "193", 
+                    "last": "218", 
+                    "range": "193\u2013218"
+                }, 
+                "doi": "10.1007/BF01908075"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib16", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G James", 
+                            "index": "James, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Silverman", 
+                            "index": "Silverman, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Silverman", 
+                            "index": "Silverman, B"
+                        }
+                    }
+                ], 
+                "title": "ACM SIGGRAPH 2010 Talks", 
+                "details": "1, ACM SIGGRAPH 2010 Talks, New York, USA, ACM Press, 10.1145/1837026.1837061"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib17", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Kemp", 
+                            "index": "Kemp, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Tenenbaum", 
+                            "index": "Tenenbaum, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Griffiths", 
+                            "index": "Griffiths, T"
+                        }
+                    }
+                ], 
+                "title": "Proceedings of the 21st National Conference on Artificial Intelligence", 
+                "details": "381\u2013388, Proceedings of the 21st National Conference on Artificial Intelligence, volume 1, Palo Alto, California, AAAI Press, 10.1145/1837026.1837061"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DC Koboldt", 
+                            "index": "Koboldt, DC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KM Steinberg", 
+                            "index": "Steinberg, KM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DE Larson", 
+                            "index": "Larson, DE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RK Wilson", 
+                            "index": "Wilson, RK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ER Mardis", 
+                            "index": "Mardis, ER"
+                        }
+                    }
+                ], 
+                "articleTitle": "The next-generation sequencing revolution and its impact on genomics", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "155", 
+                "pages": {
+                    "first": "27", 
+                    "last": "38", 
+                    "range": "27\u201338"
+                }, 
+                "doi": "10.1016/j.cell.2013.09.006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Lennie", 
+                            "index": "Lennie, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Movshon", 
+                            "index": "Movshon, JA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Coding of color and form in the geniculostriate visual pathway (invited review)", 
+                "journal": {
+                    "name": [
+                        "Journal of the Optical Society of America. A, Optics, Image Science, and Vision"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "2013", 
+                    "last": "2033", 
+                    "range": "2013\u20132033"
+                }, 
+                "doi": "10.1364/JOSAA.22.002013"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RH Masland", 
+                            "index": "Masland, RH"
+                        }
+                    }
+                ], 
+                "articleTitle": "The fundamental plan of the retina", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": {
+                    "first": "877", 
+                    "last": "886", 
+                    "range": "877\u2013886"
+                }, 
+                "doi": "10.1038/nn0901-877"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Milo", 
+                            "index": "Milo, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Shen-Orr", 
+                            "index": "Shen-Orr, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Itzkovitz", 
+                            "index": "Itzkovitz, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Kashtan", 
+                            "index": "Kashtan, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Chklovskii", 
+                            "index": "Chklovskii, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Alon", 
+                            "index": "Alon, U"
+                        }
+                    }
+                ], 
+                "articleTitle": "Network motifs: simple building blocks of complex networks", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "298", 
+                "pages": {
+                    "first": "824", 
+                    "last": "827", 
+                    "range": "824\u2013827"
+                }, 
+                "doi": "10.1126/science.298.5594.824"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Morgan", 
+                            "index": "Morgan, JL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JW Lichtman", 
+                            "index": "Lichtman, JW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Why not connectomics?", 
+                "journal": {
+                    "name": [
+                        "Nature Methods"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "494", 
+                    "last": "500", 
+                    "range": "494\u2013500"
+                }, 
+                "doi": "10.1038/nmeth.2480"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "1957", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VB Mountcastle", 
+                            "index": "Mountcastle, VB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Modality and topographic properties of single neurons of cat's somatic sensory cortex", 
+                "journal": {
+                    "name": [
+                        "Journal of Neurophysiology"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "408", 
+                    "last": "434", 
+                    "range": "408\u2013434"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VB Mountcastle", 
+                            "index": "Mountcastle, VB"
+                        }
+                    }
+                ], 
+                "articleTitle": "The columnar organization of the neocortex", 
+                "journal": {
+                    "name": [
+                        "Brain"
+                    ]
+                }, 
+                "volume": "120", 
+                "pages": {
+                    "first": "701", 
+                    "last": "722", 
+                    "range": "701\u2013722"
+                }
+            }, 
+            {
+                "type": "book", 
+                "id": "bib25", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KP Murphy", 
+                            "index": "Murphy, KP"
+                        }
+                    }
+                ], 
+                "bookTitle": "Machine learning: A probabilistic perspective", 
+                "publisher": {
+                    "name": [
+                        "The MIT Press"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "Cambridge"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "Cambridge"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Neal", 
+                            "index": "Neal, RM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Markov chain sampling methods for Dirichlet process mixture models", 
+                "journal": {
+                    "name": [
+                        "Journal of Computational and Graphical Statistics"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": "249"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Neal", 
+                            "index": "Neal, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Slice sampling", 
+                "journal": {
+                    "name": [
+                        "Annals of Statistics"
+                    ]
+                }, 
+                "volume": "31", 
+                "pages": {
+                    "first": "705", 
+                    "last": "741", 
+                    "range": "705\u2013741"
+                }, 
+                "doi": "10.1214/aos/1056562461"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Nowicki", 
+                            "index": "Nowicki, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TA Snijders", 
+                            "index": "Snijders, TA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Estimation and prediction for stochastic blockstructures", 
+                "journal": {
+                    "name": [
+                        "Journal of the American Statistical Association"
+                    ]
+                }, 
+                "volume": "96", 
+                "pages": {
+                    "first": "1077", 
+                    "last": "1087", 
+                    "range": "1077\u20131087"
+                }, 
+                "doi": "10.1198/016214501753208735"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RE Passingham", 
+                            "index": "Passingham, RE"
+                        }
+                    }
+                ], 
+                "articleTitle": "The frontal cortex: does size matter?", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": {
+                    "first": "190", 
+                    "last": "192", 
+                    "range": "190\u2013192"
+                }, 
+                "doi": "10.1038/nn0302-190"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Salter-Townshend", 
+                            "index": "Salter-Townshend, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TB Murphy", 
+                            "index": "Murphy, TB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Variational Bayesian inference for the latent position cluster model for network data", 
+                "journal": {
+                    "name": [
+                        "Computational Statistics & Data Analysis"
+                    ]
+                }, 
+                "volume": "57", 
+                "pages": {
+                    "first": "661", 
+                    "last": "671", 
+                    "range": "661\u2013671"
+                }, 
+                "doi": "10.1016/j.csda.2012.08.004"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HS Seung", 
+                            "index": "Seung, HS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U S\u00fcmb\u00fcl", 
+                            "index": "S\u00fcmb\u00fcl, U"
+                        }
+                    }
+                ], 
+                "articleTitle": "Neuronal cell types and connectivity: Lessons from the retina", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "83", 
+                "pages": {
+                    "first": "1262", 
+                    "last": "1272", 
+                    "range": "1262\u20131272"
+                }, 
+                "doi": "10.1016/j.neuron.2014.08.054"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LC Sincich", 
+                            "index": "Sincich, LC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Horton", 
+                            "index": "Horton, JC"
+                        }
+                    }
+                ], 
+                "articleTitle": "The circuitry of V1 and V2: integration of color, form, and motion", 
+                "journal": {
+                    "name": [
+                        "Annual Review of Neuroscience"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "303", 
+                    "last": "326", 
+                    "range": "303\u2013326"
+                }, 
+                "doi": "10.1146/annurev.neuro.28.061604.135731"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LR Varshney", 
+                            "index": "Varshney, LR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Chen", 
+                            "index": "Chen, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Paniagua", 
+                            "index": "Paniagua, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DH Hall", 
+                            "index": "Hall, DH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DB Chklovskii", 
+                            "index": "Chklovskii, DB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Structural properties of the <i>Caenorhabditis elegans</i> neuronal network", 
+                "journal": {
+                    "name": [
+                        "PLOS Computational Biology"
+                    ]
+                }, 
+                "volume": "7", 
+                "pages": "e1001066", 
+                "doi": "10.1371/journal.pcbi.1001066"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Watts", 
+                            "index": "Watts, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Strogatz", 
+                            "index": "Strogatz, SH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Collective dynamics of \u2018small-world\u2019 networks", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "393", 
+                "pages": {
+                    "first": "440", 
+                    "last": "442", 
+                    "range": "440\u2013442"
+                }, 
+                "doi": "10.1038/30918"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "1986", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J White", 
+                            "index": "White, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Southgate", 
+                            "index": "Southgate, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Thomson", 
+                            "index": "Thomson, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Brenner", 
+                            "index": "Brenner, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "The structure of the nervous system of the nematode <i>Caenorhabditis elegans</i>", 
+                "journal": {
+                    "name": [
+                        "Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences"
+                    ]
+                }, 
+                "volume": "314", 
+                "pages": {
+                    "first": "1", 
+                    "last": "340", 
+                    "range": "1\u2013340"
+                }, 
+                "doi": "10.1098/rstb.1986.0056"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib36", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Xu", 
+                            "index": "Xu, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Tresp", 
+                            "index": "Tresp, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Yu", 
+                            "index": "Yu, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HP Kriegel", 
+                            "index": "Kriegel, HP"
+                        }
+                    }
+                ], 
+                "title": "Proceedings of the Twenty-Second Conference on Uncertainty in Artificial Intelligence", 
+                "details": "Proceedings of the Twenty-Second Conference on Uncertainty in Artificial Intelligence, Arlington, Virginia, AUAI Press"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib37", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Zador", 
+                            "index": "Zador, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Dubnau", 
+                            "index": "Dubnau, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HK Oyibo", 
+                            "index": "Oyibo, HK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Zhan", 
+                            "index": "Zhan, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Cao", 
+                            "index": "Cao, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ID Peikon", 
+                            "index": "Peikon, ID"
+                        }
+                    }
+                ], 
+                "articleTitle": "Sequencing the connectome", 
+                "journal": {
+                    "name": [
+                        "PLOS Biology"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": "e1001411", 
+                "doi": "10.1371/journal.pbio.1001411"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Josh Vogelstein for discussions and reading of the manuscript, Finale Doshi-Velez for early discussions on the model, and Erica Peterson, Jonathan Glidden, and Yarden Katz for extensive manuscript review. Funding for compute time was provided by Amazon Web Services \u2018AWS in Education\u2019 grants."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.04250.014", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for sending your work entitled \u201cAutomatic discovery of cell types and microcircuitry from neural connectomics\u201d for consideration at <i>eLife</i>. Your article has been evaluated by a Senior editor, a Reviewing editor and three reviewers, and it was decided that a revised submission should be considered."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Overall, the reviewers felt that the work potentially presents a major advance, addressing the problem of automatic analysis of large, augmented connectomic data sets, a problem that is quickly growing in importance as these data sets become available. As such, the work is considered to be very timely. However, it was also felt that it is unclear how the algorithm works and what its limitations might be. A more careful description and presentation of the method with added discussions is strongly needed. In other words, does the method actually work? As presented, it seems magical and impressive, and there was some concern as to whether it was too good to be true. Data and methods need to be made available as well as having controls and showing ROC curves to allow further evaluation. More rigor in defining terms and labeling figures is also needed. It was also felt that the figures, while aesthetically pleasing, were not helpful for evaluation of the algorithm."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Specifically, the following aspects were raised:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Explain the algorithm limitations, i.e., where it breaks down (noting that the reviewers appreciate that no algorithm can solve every problem). This might be best done in the context of a toy problem. Any potential user of this algorithm would benefit from understanding its limitations better. Under what conditions does it break down? What are the pressure points? For example, what if the data set has structure, but there really aren't distinct classes (as has been proposed for cortex)? Is it particularly sensitive to some of the choices of priors? Etc. Perhaps other examples would provide better insight into potential failure modes."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Show cross-validation on the link prediction."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) As given, the cell type identity analysis is difficult to parse; the circos-style plots don't tell much and the other plots are often inadequately labelled. It is also unclear as to how validation was performed or was to be observed. Simply seeing ROC curves (or reported areas) or something similar is needed. The figures are of low informational value. How would some well-known supervised method do at this task in cross-validation? It would seem, intuitively, to be a natural choice for learning cell identity. See, for example, PMID: 21154911, for a well-defined analysis."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Show ROC style prediction on the cell types. This can be done by cross-validation i.e., do the clustering, then label all the cells using, e.g., 2/3 of the human-labelled data. Then assign each unknown cell a label based on its co-membership with cells of known labels. This would end up giving a ranked score, since probabilistic. The comparison method would be something like nearest-neighbor assignment. To avoid making this a multi-class prediction problem, one could do it one class at a time and not worry about overlapped assignments. This would set a good standard for methods comparison."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) Consideration and discussion about the edge effects in the retinal data."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The retina data set covers a relatively small volume of the retina (on the order of 100 microns in each direction) and most of the cells whose cell bodies are located within this volume have their neurites \u201ccut off\u201d, i.e. they are not fully contained within the volume. This will lead to edge effects that may impact or bias connection patterns, for example cells whose cell bodies are near the center of the field of view should have more synaptic contacts (more partners in the contact matrix) simply because they are more fully captured in the reconstruction. How have such potential edge effects been accounted for in the present analyses? Could there be improvement in the performance of the clustering algorithm by taking into account such biases?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) Chip example was considered less critical as compared to providing more testing and further details and discussion on the retinal and <i>C.elegans</i> examples."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "6) The use of connectivity information for characterizing nodes in a neural network has a long history in cognitive and systems neuroscience. It would be nice to point this out. A potential starting point is the review of Passingham et al. (2002) in Nature Reviews Neuroscience."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "7) Additional comments regarding unhelpful/unclear figure aspects for algorithm specifics:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Are there any known inherent biases in terms of preferences in cluster sizes? It appears, from <a href=\"#fig4\">Figure 4</a>, that there are a small number of fairly large (and quite uniform) clusters and a larger number of quite small ones (that seem quite noisy with respect to the anatomist's cell classification)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "It is difficult to judge just by visual inspection alone how \u201cgood\u201d the agreement between the automated cluster analysis and the anatomist's ordering scheme really is (<a href=\"#fig3\">Figure 3C</a>, outer ring). Is there a more quantitative way of determining the \u201cfit\u201d of the model with the a priori anatomical cell type assignments?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In a similar vein, the text claims (in the subsection headed \u201cRecovering spatial connectivity in multiple graphs simultaneously\u201d) that for <i>C. elegans</i> the clusters correspond roughly homogenously to moto, sensory and interneurons, but looking at <a href=\"#fig5\">Figure 5</a>, it is not so clear. Interneurons are found in almost all of the clusters, and very few are truly homogeneous with respect to these three types of neurons. Again, it would be good to think of a way to quantify \u201chomogeneity\u201d."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In the circular plots (e.g. <a href=\"#fig1\">Figure 1I</a>), it is not quite clear what the shaded arcs in the center refer to. Is the shading proportional to some sort of density (of what?), and what does the width of these arcs refer to?"
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.04250.015", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>However, it was also felt that it is unclear how the algorithm works and what its limitations might be \u2013 a more careful description and presentation of the method with added discussions is strongly needed. In other words, does the method actually work? As presented, it seems magical and impressive, and there was some concern as to whether it was too good to be true. Data and methods need to be made available as well as having controls and showing ROC curves to allow further evaluation. More rigor in defining terms and labeling figures is also needed. It was also felt that the figures, while aesthetically pleasing, were not helpful for evaluation of the algorithm</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have added a broad range of additional detailed analysis, added additional figures to directly address the usefulness of the algorithm. We have also added simulations to show under which circumstances the algorithm fails. Indeed, the fact that the reviewers ask for an analysis of failure modes instead of stating (as some high profile journals) that any of the (unavoidable) failure modes would be reasons for rejection, truly impressed us."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Specifically, the following aspects were raised</i>:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) Explain the algorithm limitations, i.e., where it breaks down (noting that the reviewers appreciate that no algorithm can solve every problem). This might be best done in the context of a toy problem. Any potential user of this algorithm would benefit from understanding its limitations better. Under what conditions does it break down? What are the pressure points? For example, what if the data set has structure, but there really aren't distinct classes (as has been proposed for cortex)? Is it particularly sensitive to some of the choices of priors? Etc. Perhaps other examples would provide better insight into potential failure modes</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have added simulations that show the failure modes of the algorithms. There are two kinds of failures: (1) the algorithm may not succeed at correctly solving the problem it is meant to solve, (2) the problem may not succeed at the problem we scientists want it to solve because it is really solving a different problem. We have added simulations to get at these two issues. In short, as we had already shown with respect to (1), the algorithm works worse and worse as the classes are made more and more similar as this slows down mixing. Such behavior is typical for MCMC algorithms. With respect to (2), we constructed cases where the algorithm infers cell-types where they are none, in the case of continuous distributions and cases where the algorithm does not find the cell-types because other aspects of the cell types (e.g. boundaries of reconstructed areas) make estimation impossible."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Show cross-validation on the link prediction</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Done."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) As given, the cell type identity analysis is difficult to parse; the circos-style plots don't tell much and the other plots are often inadequately labelled. It is also unclear as to how validation was performed or was to be observed. Simply seeing ROC curves (or reported areas) or something similar is needed. The figures are of low informational value. How would some well-known supervised method do at this task in cross-validation? It would seem, intuitively, to be a natural choice for learning cell identity</i>. <i>See, for example, PMID: 21154911, for a well-defined analysis</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have abandoned the Circos-style connectivity plots that, while visually appealing, failed to do an adequate job conveying type and distance-related connectivity. We instead now use a linear plot of connectivity as a function of distance. We feel this more clearly demonstrates the distance-dependent nature of connectivity. We now discuss the possibility and limitations of supervised methods."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Show ROC style prediction on the cell types. This can be done by cross-validation i.e., do the clustering, then label all the cells using, e.g., 2/3 of the human-labelled data. Then assign each unknown cell a label based on its co-membership with cells of known labels. This would end up giving a ranked score, since probabilistic. The comparison method would be something like nearest-neighbor assignment. To avoid making this a multi-class prediction problem, one could do it one class at a time and not worry about overlapped assignments. This would set a good standard for methods comparison</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To address this concern we have expanded the set of metrics we use to quantify clustering considering ARI, completeness, and homogeneity. ROC style predictions would be interesting and doable, if only the datasets were larger. As it stands there are only a very small number of examples of many types and removing more for analysis would weaken our power. We feel that this kind of concern is also well addressed by our new and much more comprehensive analysis of the properties of the algorithm."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) Consideration and discussion about the edge effects in the retinal data</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The retina data set covers a relatively small volume of the retina (on the order of 100 microns in each direction) and most of the cells whose cell bodies are located within this volume have their neurites \u201ccut off\u201d, i.e. they are not fully contained within the volume. This will lead to edge effects that may impact or bias connection patterns, for example cells whose cell bodies are near the center of the field of view should have more synaptic contacts (more partners in the contact matrix) simply because they are more fully captured in the reconstruction. How have such potential edge effects been accounted for in the present analyses? Could there be improvement in the performance of the clustering algorithm by taking into account such biases</i>?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Done."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>5) Chip example was considered less critical as compared to providing more testing and further details and discussion on the retinal and</i> C.elegans <i>examples</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We somewhat shortened the chip example. We feel it is still useful as it gets the reader to understand that this general class of algorithms could be useful beyond neuroscience."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>6) The use of connectivity information for characterizing nodes in a neural network has a long history in cognitive and systems neuroscience. It would be nice to point this out. A potential starting point is the review of Passingham et al. (2002) in Nature Reviews Neuroscience</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We added extensive citations to this part of the literature in a newly created Discussion paragraph."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>7) Additional comments regarding unhelpful/unclear figure aspects for algorithm specifics</i>:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Are there any known inherent biases in terms of preferences in cluster sizes? It appears, from</i> <a href=\"#fig4\"><i>Figure 4</i></a><i>, that there are a small number of fairly large (and quite uniform) clusters and a larger number of quite small ones (that seem quite noisy with respect to the anatomist's cell classification)</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Our model uses a nonparmetric prior which generally believes that a \u201csmall\u201d number of clusters can be used to predict the data, but (should the data support it) but is easily dominated by the likelihood of the data. The good agreement in both cluster size and type with synthetic data leads us to believe that this is not an effect of the prior. Additionally, we perform hyperparameter inference over the cluster concentration parameter alpha. This avoids over-biasing the model towards large clusters. Thus we believe the \u201cnoise\u201d present in the clusterings truly reflects uncertainty in the data."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>It is difficult to judge just by visual inspection alone how \u201cgood\u201d the agreement between the automated cluster analysis and the anatomist's ordering scheme really is (</i><a href=\"#fig3\"><i>Figure 3C</i></a><i>, outer ring). Is there a more quantitative way of determining the \u201cfit\u201d of the model with the a priori anatomical cell type assignments</i>?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "As mentioned above, we added additional fit metrics. We also expanded the discussion of this in the text to make it easier to digest for the readers."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>In a similar vein, the text claims (in the subsection headed \u201cRecovering spatial connectivity in multiple graphs simultaneously\u201d) that for</i> C. elegans <i>the clusters correspond roughly homogenously to moto, sensory and interneurons, but looking at</i> <a href=\"#fig5\"><i>Figure 5</i></a><i>, it is not so clear. Interneurons are found in almost all of the clusters, and very few are truly homogeneous with respect to these three types of neurons. Again, it would be good to think of a way to quantify \u201chomogeneity\u201d</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We added a quantification of homogeneity and toned down the discussion in the text."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>In the circular plots (e.g.</i> <a href=\"#fig1\"><i>Figure 1I</i></a><i>), it is not quite clear what the shaded arcs in the center refer to. Is the shading proportional to some sort of density (of what?), and what does the width of these arcs refer to</i>?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Per above, we have abandoned the circos-style plots, replacing them with (what we hope are) more intuitive and carefully-annotated linear figures."
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,2177 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "00467", 
+        "version": 1, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.00467", 
+        "authorLine": "Gregory W Schwartz, Fred Rieke", 
+        "title": "Controlling gain one photon at a time", 
+        "published": "2013-05-14T00:00:00", 
+        "versionDate": "2013-05-14T00:00:00", 
+        "volume": 2, 
+        "elocationId": "e00467", 
+        "pdf": "https://publishing-cdn.elifesciences.org/00467/elife-00467-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Other"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.00467.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Adaptation is a salient property of sensory processing. All adaptational or gain control mechanisms face the challenge of obtaining a reliable estimate of the property of the input to be adapted to and obtaining this estimate sufficiently rapidly to be useful. Here, we explore how the primate retina balances the need to change gain rapidly and reliably when photons arrive rarely at individual rod photoreceptors. We find that the weakest backgrounds that decrease the gain of the retinal output signals are similar to those that increase human behavioral threshold, and identify a novel site of gain control in the retinal circuitry. Thus, surprisingly, the gain of retinal signals begins to decrease essentially as soon as background lights are detectable; under these conditions, gain control does not rely on a highly averaged estimate of the photon count, but instead signals from individual photon absorptions trigger changes in gain."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-3.0", 
+            "holder": "Schwartz and Rieke", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Gregory W Schwartz", 
+                    "index": "Schwartz, Gregory W"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology and Biophysics", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Howard Hughes Medical Institute, University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "GWS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Fred Rieke", 
+                    "index": "Rieke, Fred"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology and Biophysics", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Howard Hughes Medical Institute, University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "rieke@u.washington.edu"
+                ], 
+                "contribution": "FR, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: Primate (<i>Macaca fascicularis, fascicularis</i> and <i>mulatta</i>) retinas were obtained through the Tissue Distribution Program of the Regional Primate Research Center at the University of Washington. All procedures were approved by the institutional animal care and use committee (protocol 4140-01)."
+            }
+        ], 
+        "impactStatement": "Single absorbed photons trigger adaptational mechanisms that help the retina maintain sensitivity across a wide range of background illumination."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "00467", 
+        "version": 1, 
+        "type": "research-article", 
+        "doi": "10.7554/eLife.00467", 
+        "authorLine": "Gregory W Schwartz, Fred Rieke", 
+        "title": "Controlling gain one photon at a time", 
+        "published": "2013-05-14T00:00:00", 
+        "versionDate": "2013-05-14T00:00:00", 
+        "volume": 2, 
+        "elocationId": "e00467", 
+        "pdf": "https://publishing-cdn.elifesciences.org/00467/elife-00467-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Other"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.00467.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Adaptation is a salient property of sensory processing. All adaptational or gain control mechanisms face the challenge of obtaining a reliable estimate of the property of the input to be adapted to and obtaining this estimate sufficiently rapidly to be useful. Here, we explore how the primate retina balances the need to change gain rapidly and reliably when photons arrive rarely at individual rod photoreceptors. We find that the weakest backgrounds that decrease the gain of the retinal output signals are similar to those that increase human behavioral threshold, and identify a novel site of gain control in the retinal circuitry. Thus, surprisingly, the gain of retinal signals begins to decrease essentially as soon as background lights are detectable; under these conditions, gain control does not rely on a highly averaged estimate of the photon count, but instead signals from individual photon absorptions trigger changes in gain."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-3.0", 
+            "holder": "Schwartz and Rieke", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Gregory W Schwartz", 
+                    "index": "Schwartz, Gregory W"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology and Biophysics", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Howard Hughes Medical Institute, University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "GWS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Fred Rieke", 
+                    "index": "Rieke, Fred"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology and Biophysics", 
+                            "University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Howard Hughes Medical Institute, University of Washington"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Seattle", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Seattle"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "rieke@u.washington.edu"
+                ], 
+                "contribution": "FR, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: Primate (<i>Macaca fascicularis, fascicularis</i> and <i>mulatta</i>) retinas were obtained through the Tissue Distribution Program of the Regional Primate Research Center at the University of Washington. All procedures were approved by the institutional animal care and use committee (protocol 4140-01)."
+            }
+        ], 
+        "impactStatement": "Single absorbed photons trigger adaptational mechanisms that help the retina maintain sensitivity across a wide range of background illumination.", 
+        "keywords": [
+            "macaque", 
+            "adaptation", 
+            "retinal signal processing", 
+            "neural computation"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.00467.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "To process the sights and sounds around us, our senses must be attuned to a huge range of signals: from barely audible whispers to deafening rock concerts, and from dim glimmers of light to bright spotlights. Sensory neurons face the challenge of encoding this huge range of inputs within their much more restricted response range. Thus, neurons in our eyes and ears must continually adjust their gain or sensitivity to match changes in the light and sound inputs. These gain control processes must operate rapidly to keep up with the ever-changing input signals, but must also operate accurately so as not to distort the inputs."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The trade-off between rapid and accurate gain control can be illustrated by considering how the retina processes information at low light levels. There are two main types of light-sensitive cells in the retina: rods and cones. Vision at night relies on the ability of the rods to detect single photons\u2014the smallest unit of light. In starlight, an individual rod will register photons only rarely, and most of the time, the majority of the rods will not register any photons. Neurons in the retinal circuits that read out the rod signals receive input from hundreds or thousands of rods, and those rod inputs are highly amplified to allow detection of the responses produced when a tiny fraction of the rods absorbs a photon. But this amplification is dangerous, as it could easily saturate retinal signals when light levels increase. Gain control mechanisms are needed to avoid such saturation."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Schwartz and Rieke now add to our understanding of this process by examining how the retinas of non-human primates behave in low light. They reveal that levels of background light that can only just be detected behaviorally trigger retinal gain controls; these gain controls operate when less than 1% of rods absorb a photon. Under these conditions, the physics of light itself will cause considerable variability in the stream of photons arriving at the retina, leading to high variability in the gain of retinal responses. Nonetheless, changes in gain occurred rapidly following changes in background, indicating that the underlying mechanisms spend little time averaging incident photons. Taken together, these findings will require revisiting our ideas about how adaptational mechanisms balance the competing demands of speed and reliability to help us see the world around us."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Sensory systems encode an enormous range of input signals\u2014for example, a rock concert is \u223c10<sup>12</sup> times louder than a just detectable whisper. Maintaining sensitivity as inputs change requires adaptational mechanisms that adjust the gain or amplification of neural signals to match their limited dynamic range to the range of the input signals a cell receives. Such gain control mechanisms operate under challenging conditions as the inputs they encounter can vary rapidly in time and locally in the space of possible stimuli. For example, visual neurons can experience &gt;1000-fold changes in input a few times a second as the eyes move to explore a typical scene (<a href=\"#bib23\">Frazor and Geisler, 2006</a>). Standard cameras fail to capture the full structure of such scenes because they employ a single global gain control in the form of an exposure setting, which is often poorly matched to the brightest and dimmest regions of a scene. Sensory gain controls are clearly more sophisticated."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Effective gain control requires balancing the need to be rapid and local with the need to be accurate (reviewed by <a href=\"#bib30\">Rieke and Rudd, 2009</a>). This is an example of the classic change detection problem: how many samples from a signal distribution are needed to determine whether or not the distribution has changed (<a href=\"#bib9\">Buracas et al., 1998</a>; <a href=\"#bib12\">Deneve, 2008</a>; <a href=\"#bib35\">Wark et al., 2009</a>)? Gain control mechanisms operating near absolute visual threshold exemplify this problem. Human behavioral threshold begins to increase for backgrounds producing \u223c0.01 isomerized rhodopsin molecules per rod per second (R*/rod/s) (reviewed by <a href=\"#bib13\">Donner, 1992</a>). Under these conditions, the number of photons absorbed in a small time window fluctuates widely due to the Poisson statistics that govern photon absorption. In principle, increases in behavioral threshold could solely reflect this increased noise without gain changes (<a href=\"#bib4\">Barlow, 1965</a>). However, several studies suggest that weak backgrounds decrease the gain of retinal signals (<a href=\"#bib13\">Donner, 1992</a>; <a href=\"#bib8\">Brown and Rudd, 1998</a>). Retinal gain control mechanisms operating at these low light levels must work in the presence of the irreducible noise associated with random photon arrivals."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "At low light levels, rod-mediated signals traverse the retina through the specialized rod bipolar pathway: rods \u2192 rod bipolar cells \u2192 AII amacrine cells \u2192 cone bipolar cells \u2192 ganglion cells (<a href=\"#fig1\">Figure 1A</a>; for review see <a href=\"#bib7\">Bloomfield and Dacheux, 2001</a>; <a href=\"#bib22\">Field et al., 2005</a>). The total number of rods that convey the signal increases at each stage of this pathway (<a href=\"#fig1\">Figure 1B</a>). This convergence, together with amplification of signals by cellular and synaptic mechanisms, permits fully dark-adapted ganglion cells to generate one or more spikes to flashes producing photon absorptions in only \u223c0.1% of the rods (<a href=\"#bib6\">Barlow et al., 1971</a>; <a href=\"#bib26\">Mastronarde, 1983</a>; P Ala-Laurila and F Rieke, unpublished). Left unchecked, this high gain would cause just detectable backgrounds to produce ganglion cell firing rates in excess of 100 spikes per second. Gain control mechanisms are needed to prevent such excessive firing."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.00467.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Gain control in the rod pathway.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Simplified diagram of the excitatory circuits that relay rod and cone signals to On ganglion cells. Elements exclusive to the cone pathway are shown in light colors. Chemical synapses are excitatory and are indicated by apposition of small circles or ellipses; chemical synapses in the rod bipolar circuit are found between rods and rod bipolar cells, between rod bipolar cells and AII amacrine cells, and between cone bipolar cells and ganglion cells. Electrical synapses are indicated by connected cells\u2014for example, between cone bipolar cells and AII amacrine cells and between neighboring AII amacrine cells. \u2018Gain knob\u2019 icons indicate known or potential sites of gain control (see \u2018Introduction\u2019 for details). (<b>B</b>) Table of convergence (number of rods providing input) and previously described gain control mechanisms at each circuit location. Convergence numbers are estimated for an On parasol ganglion cell in peripheral macaque retina."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-00467-fig1-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Mechanisms controlling the gain of rod-mediated signals have been identified within the phototransduction cascade in the rods themselves (<a href=\"#bib33\">Schneeweis and Schnapf, 2000</a>; <a href=\"#bib17\">Dunn and Rieke, 2006</a>), and at the synapse between rod bipolar cells and AII amacrine cells (<a href=\"#bib18\">Dunn and Rieke, 2008</a>). But the greater convergence at downstream locations in the rod bipolar pathway could provide a more reliable signal to control gain. Hence, we explored how the gain of retinal signals is controlled in dim backgrounds, with three main goals: (1) to determine if the gain of retinal signals is altered by backgrounds near the onset of changes in human behavioral threshold, (2) to determine how the retinal circuit averages over space and time to detect changes in the photon flux, and (3) to identify novel sites of gain control in the rod bipolar pathway."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We focus on responses of primate On parasol (magnocellular projecting) ganglion cells. On parasol ganglion cells provide information to cortical circuits about subtle changes in contrast (<a href=\"#bib25\">Kaplan and Shapley, 1982</a>) and receive abundant rod-mediated input at low light levels (<a href=\"#bib29\">Purpura et al., 1988</a>; <a href=\"#bib21\">Field et al., 2009</a>). Thus, these cells are likely to contribute critically to vision at low light levels. On parasol cells also provide a sensitive measure of the output of the rod bipolar pathway. This pathway dominates rod-mediated signaling across ganglion cell types at low light levels, and hence should provide shared steps in processing of rod signals. Indeed, as described below, we find that the gain of retinal signals at low light levels is controlled at a site located within the rod bipolar pathway."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Gain controls in the retinal circuitry operate near the onset of behavioral threshold changes", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We measured spike responses (<a href=\"#fig2\">Figure 2A</a>) and excitatory synaptic inputs (<a href=\"#fig2\">Figure 2B</a>) of On parasol ganglion cells in response to brief flashes superimposed on a range of backgrounds (see also \u2018Materials and methods\u2019 and <a href=\"#fig10 fig11\">Figures 10 and 11</a>). We focused specifically on backgrounds near the onset of changes in human behavioral threshold (0.01\u20130.2 isomerizations/rod/s or R*/rod/s). Flash strengths (0.001\u20130.006 R*/rod) were chosen to elicit responses well below saturation. Both individual responses (<a href=\"#fig2\">Figure 2A,B</a>) and averages (<a href=\"#fig2\">Figure 2C</a>) had a clear dependence on background. Furthermore, a cell\u2019s excitatory synaptic input and its spike response changed similarly with changes in background (<a href=\"#fig2\">Figure 2C</a>). To quantify the effect of background on a cell\u2019s response, we determined the response gain by dividing the response amplitude (spike count or integrated current) by the flash strength; the gain measures the response per R*/rod. The gain of spike responses and excitatory input had a similar dependence on background (<a href=\"#fig2\">Figure 2D</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.004", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Adaptation is engaged at dim backgrounds in both excitatory inputs and spike outputs from On parasol cells.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>)\u2013(<b>C</b>) responses from an individual On parasol ganglion cell to dim flashes at two different backgrounds. (<b>A</b><sub><b>1</b></sub>) Light stimulus (top, 20 ms flashes at 0 s) and raster of the cell\u2019s spike response to several stimulus trials. (<b>B</b><sub><b>1</b></sub>) Excitatory synaptic currents in response to the same stimulus. (<b>C</b><sub><b>1</b></sub>) Mean spike rate and excitatory conductance. (<b>A</b><sub><b>2</b></sub>)\u2013(<b>C</b><sub><b>2</b></sub>) responses to the same flash as in (A<sub>1</sub>\u2013C<sub>1</sub>) but delivered on a higher background. (<b>D</b>) Gain of the excitatory input current and spike output as a function of background for the cell in (A\u2013C). Gain of the excitatory currents was measured by integrating the current over time and dividing by the flash strength, and hence has units of nC/R*/rod/s. Gain of the spike responses was measured by integrating spikes over time. Error bars are SD (<i>n</i> = 20\u201330 trials). (<b>E</b>) Detection threshold (see \u2018Materials and methods\u2019) calculated from excitatory input current and spike output for three different cells (symbols) at three backgrounds each (gray scale). Dashed line represents unity."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig2-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig2\">Figure 2C,D</a> suggest that the effect of changes in background on a cell\u2019s spike output is dominated by the changes in excitatory input. To further test this conclusion, we defined a detection threshold as the strength of the flash (in R*/rod) eliciting a response with a signal-to-noise ratio of 1 (see \u2018Materials and methods\u2019). Noise was measured from sections of recording prior to the flash. Detection thresholds for spike responses and excitatory synaptic inputs measured in the same cell were near identical across a range of backgrounds (<a href=\"#fig2\">Figure 2E</a>). Consistent with the similarity of the spike responses and excitatory inputs, inhibitory synaptic inputs to the same stimuli were three to four times smaller than the excitatory inputs, and hence unlikely to contribute strongly to spike output (data not shown)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig2\">Figure 2</a> indicates the changes in the gain of an On parasol cell's spike output are dominated by changes in the cell's excitatory synaptic inputs. Below, we focus on how gain of the excitatory synaptic inputs is controlled."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Dependence of gain and noise on background", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Changes in human behavioral threshold with background show several characteristic regions (reviewed by <a href=\"#bib4\">Barlow, 1965</a>; <a href=\"#bib13\">Donner, 1992</a>; <a href=\"#bib30\">Rieke and Rudd, 2009</a>): (1) a \u2018dark light\u2019 region extending to \u223c0.01 R*/rod/s in which threshold is independent of background, (2) a \u2018Rose\u2013deVries\u2019 region in which threshold increases with the square root of the background (<a href=\"#bib10\">de Vries, 1943</a>; <a href=\"#bib31\">Rose, 1948</a>), and (3) a \u2018Weber\u2019 region in which threshold increases proportionally with the background. Since threshold depends on both signal and noise, the relationship between these behavioral measurements and gain control is unclear. Hence, the experiments below characterize gain, noise, and threshold of the On parasol responses across a range of background intensities spanning these behaviorally defined regions."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We extended experiments like those in <a href=\"#fig2\">Figure 2</a> to span a wide range of backgrounds (<a href=\"#fig3\">Figure 3</a>). In this and all subsequent experiments, we adjusted the flash strength to elicit similar responses across backgrounds because the change in gain exceeded the cell\u2019s linear response range (see \u2018Materials and methods\u2019 and <a href=\"#fig10 fig11\">Figures 10 and 11</a>). Adjusting flash strength (and dividing the response by the flash strength to measure gain) allowed us to probe a \u223c10,000-fold range of backgrounds. Across the entire range tested, the dependence of gain on background (<a href=\"#fig3\">Figure 3A</a>) was well described by a modified Weber function:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn1", 
+                                "mathml": "<math><mrow><mtext>G</mtext><mo>=</mo><mfrac><mrow><msub><mtext>G</mtext><mtext>D</mtext></msub></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mrow><msub><mtext>I</mtext><mtext>B</mtext></msub></mrow><mo>/</mo><mrow><msub><mtext>I</mtext><mtext>0</mtext></msub></mrow></mrow></mrow></mfrac><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where G is the gain and G<sub>D</sub> is its maximum value, I<sub>B</sub> is the background, and I<sub>0</sub> is the background required to reduce the gain by 50%. Gain in <a href=\"#eqn1\">Equation 1</a> is constant when I<sub>B</sub> &lt;&lt; I<sub>0</sub>, begins to decrease when I<sub>B</sub> nears I<sub>0</sub>, and scales inversely with background when I<sub>B</sub> &gt;&gt; I<sub>0</sub>. For the cell in <a href=\"#fig3\">Figure 3A</a>, I<sub>0</sub> was 0.076 R*/rod/s (marked by the arrowhead); across cells, I<sub>0</sub> was 0.08 \u00b1 0.03 R*/rod/s (mean \u00b1 SD, n = 6). We observed a small but consistent reduction in gain in darkness relative to its maximal value at backgrounds \u223c0.01 R*/rod/s. The reduced gain in darkness was highly dependent on the history of light exposure, and hence is only partially captured in <a href=\"#fig3\">Figure 3A</a> because we returned to the dark condition after exposure to several backgrounds (see \u2018Recordings and light stimulation\u2019). The low dark gain reflects a nonlinear processing step that is engaged in the dark but relieved for backgrounds producing 0.005\u20130.01 R*/rod/s; this nonlinearity and its impact on visual sensitivity is the subject of another study (P Ala-Laurila and F Rieke, unpublished)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.005", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Changes in gain, noise, and threshold with background.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>)\u2013(<b>C</b>) Example data from a single cell showing gain of the dim flash response (<b>A</b>), noise (<b>B</b>), and threshold (<b>C</b>) as a function of background (see \u2018Materials and methods\u2019). Error bars (<b>A</b> and <b>C</b>) are standard deviations across two flash strengths. Colored bars indicate background segments in which the slope was computed. Dotted line (<b>A</b>) represents the fit of a modified Weber function with the half-desensitizing background indicated by an arrowhead (see Equation 1). (<b>D</b>)\u2013(<b>F</b>) Population data reporting the slope of each parameter on a log\u2013log scale in three background regions. Error bars are SD (<i>n</i> = 4, 6, and 5 cells in each background segment)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig3-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Two features of <a href=\"#fig3\">Figure 3A</a> are notable. First, over a \u223c1000-fold range of backgrounds gain closely followed Weber law behavior, even though multiple mechanisms contribute to gain control across this range. This indicates an orderly coordination of gain control mechanisms (see \u2018Discussion\u2019). Second, gain began to decrease for backgrounds near 0.01 or 0.02 R*/rod/s\u2014close to the onset of changes in human behavioral threshold. We summarized the onset of gain changes across cells by choosing three regions spanning equal ranges of background intensities centered below, on, or above I<sub>0</sub> (horizontal colored lines in <a href=\"#fig3\">Figure 3A</a>). <a href=\"#fig3\">Figure 3D</a> plots the exponent describing the dependence of gain on background (i.e., the slope on a log\u2013log scale as in <a href=\"#fig3\">Figure 3A</a>) in each region. Gain scaled inversely with background above 0.3 R*/rod/s, and more gradually at lower background intensities. Consistent with the ability of <a href=\"#eqn1\">Equation 1</a> to describe the data, we did not see evidence for an extended region where gain scaled inversely with the square root of the background (see \u2018Discussion\u2019)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We quantified noise at each background by projecting the current prior to the flash along the same template used to measure signal (see \u2018Analysis\u2019). Noise also changed with background, but such changes were modest across those backgrounds near the onset of changes in behavioral threshold (<a href=\"#fig3\">Figure 3B,E</a>); specifically, noise changed &lt;10-fold over a range of backgrounds that produced an \u223c10,000-fold change in gain. These changes in noise with background were much less than expected from Poisson fluctuations in photon absorption and no changes in gain. If Poisson fluctuations dominated noise and gain remained constant, the standard deviation of the current should increase as the square root of the background\u2014that is, with slope 0.5\u2014since the variance of a Poisson process is proportional to the mean. Noise changed much less with background than this prediction (<a href=\"#fig3\">Figure 3B,E</a>). The largest increases in noise occurred between darkness and backgrounds &lt;0.01 R*/rod/s. These changes are produced by a nonlinear processing step that reduces gain in the dark (see above; P Ala-Laurila and F Rieke, unpublished). The reduction in noise at backgrounds higher than 0.1 R*/rod/s likely reflects the stronger decrease in gain at these backgrounds, which more than compensates the increase in Poisson fluctuations."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Changes in noise, although modest, had a noticeable effect on detection threshold\u2014defined as the strength of the flash eliciting a response with a signal-to-noise ratio of 1 (<a href=\"#fig3\">Figure 3C,F</a>; see \u2018Analysis\u2019). This measure of threshold assumes a linear scaling of response with flash strength, which fails in the dark but holds for backgrounds exceeding 0.01 R*/rod/s (P Ala-Laurila and F Rieke, preprint). The threshold in <a href=\"#fig3\">Figure 3C,F</a> corresponds to the threshold of an ideal observer of the ganglion cell's output, assuming that signal and noise are independent and additive. Thus, the threshold defined here provides a point of comparison to human behavioral threshold vs intensity curves. The threshold for On parasol responses increased for backgrounds as low as 0.02 R*/rod/s, in close correspondence with backgrounds that produce changes in behavioral threshold (<a href=\"#bib13\">Donner, 1992</a>). Threshold increased with a slope &lt;1 for backgrounds between 0.02 and 5 R*/rod/s (<a href=\"#fig3\">Figure 3F</a>). The extended region over which the slope was less than unity reflected the increase in noise at backgrounds lower than those required to produce gain changes, a region near the onset of gain changes where noise was near constant, and the decrease in noise at backgrounds where gain began to decrease proportionally with background."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Properties of gain control", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The experiments described above indicate that the gain of retinal signals begins to decline at backgrounds producing \u223c0.02 R*/rod/s. Gain control under these conditions is challenging because photons arrive rarely at individual rod photoreceptors; retinal responses at these backgrounds are noisy, and hence changes in background will be difficult to discern without a large degree of spatial and/or temporal averaging. At the same time, left unabated, the high gain associated with fully dark-adapted vision would cause a parasol ganglion cell to generate hundreds of spikes per second for backgrounds producing \u223c0.02 R*/rod/s. The experiments described in this section characterize several key properties of how gain is controlled\u2014particularly the statistical feature of the input that sets gain and how the mechanism integrates over space and time."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Gain is controlled by mean not fluctuations", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Changes in the mean background necessarily also change the magnitude of the fluctuations about the mean because of the division of light into discrete photons and the resulting statistical fluctuations in photon arrival. Such Poisson fluctuations in photon absorption are particularly large relative to the mean absorption rate at low backgrounds. Because these statistical fluctuations increase with the square root of the background, a gain control that directly depends on the magnitude of the noise would cause gain to scale inversely with the square root of the background (<a href=\"#bib8\">Brown and Rudd, 1998</a>). The experiments below, however, indicate that gain at low backgrounds is controlled by the mean photon absorption rate and not by the magnitude of the fluctuations about the mean rate."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To isolate the potential effects of fluctuations about the mean on gain, we delivered a series of flashes before, during, and after a high contrast fluctuating stimulus while maintaining a constant mean background (<a href=\"#fig4\">Figure 4A</a>). A Rose\u2013deVries gain control mechanism based on the fluctuations about the mean predicts that gain should decrease linearly with standard deviation (dashed line in <a href=\"#fig4\">Figure 4B</a>). Instead, contrast stimuli that substantially increased the variance of a ganglion cell\u2019s excitatory synaptic inputs tended to increase, rather than decrease, the gain of the flash response. In nine cells, stimuli that increased the standard deviation of the baseline excitatory synaptic inputs by 43 \u00b1 17% (mean \u00b1 SD) produced a 18 \u00b1 11% increase in gain (<a href=\"#fig4\">Figure 4B</a>). These data argue directly against noise controlling gain at low backgrounds, indicating instead that gain is controlled by the mean photon flux."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.006", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Gain is controlled by the mean not the variance of the background.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Fluctuating background experiment for an example cell. From top: background, probe flashes, mean excitatory input current, mean and SEM of each flash response (<i>n</i> = 10 trials), and standard deviation of the current. (<b>B</b>) Change in the mean of the flash response plotted against the change in the standard deviation of the baseline current caused by the fluctuating background for nine cells. Dashed line indicates the prediction for a gain control mechanism based on the noise of the background\u2014that is, if gain was inversely proportional to the standard deviation."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig4-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Gain changes rapidly", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Gain control at low backgrounds requires averaging across rods and/or time to obtain a sufficient photon count to determine that the mean background has changed (<a href=\"#bib32\">Rushton, 1965</a>). Too much spatial or temporal averaging could limit the effectiveness of gain control: spatial averaging across regions of a scene with different backgrounds could fail to protect retinal signals from local saturation, and temporal averaging could be ineffective if it introduces too long a delay between changes in input and changes in gain. What strategy, then, does the circuit adopt? We start by describing the kinetics of gain changes."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To test for slow changes in gain that would reflect extensive temporal averaging, we switched the background periodically between two levels while delivering flashes every second to monitor gain. The baseline firing rate and mean excitatory input changed slowly following a change in background, and had not reached an obvious steady-state level even after 200 s. Gain changes, however, occurred within a few seconds following a change in background\u2014for example, in <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a>, the \u223ctwofold change in gain between panels B and C is largely complete by the time of the first flash response (1 s after the background change). Gain did not change noticeably in the subsequent 60\u2013200 s (<a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a>; see also <a href=\"#fig10 fig11\">Figures 10 and 11</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To resolve the initial rapid change in gain, we delivered flashes at times ranging from 0.1 to 2 s following either an increase or a decrease in background while measuring a cell\u2019s excitatory synaptic inputs. We adjusted the flash strength to generate a near-constant response at the two backgrounds. Subtracting the response to the background step alone isolated responses to the flashes (<a href=\"#fig5\">Figure 5A</a>, bottom). Following an increase in background, gain fell with a time constant of 0.10 \u00b1 0.02 s (mean \u00b1 SEM, <i>n</i> = 5); following a decrease in background, gain increased with a time constant of 0.4 \u00b1 0.1 s (<i>n</i> = 6). The decrease in gain at light onset tracked the development of the step response, with apparently little delay due to the gain control mechanism itself. Recovery of gain following a decrease in background took more time, as indicated by the slower kinetics at light offset."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.007", 
+                                "id": "fig5", 
+                                "label": "Figure 5.", 
+                                "title": "Kinetics of gain control.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) From top: background, probe flashes, current traces for each probe flash set (see \u2018Materials and methods\u2019) and for the background alone (black), response obtained by subtracting the background step trace from each test response. Five test flashes where given in each epoch: two at variable times following background step onset and offset, and three at fixed times before the step, at the end of the step, and at the end of the epoch. (<b>B</b>) Gain change (on a logarithmic scale) as a function of the time of the probe flash following an increase or decrease in background. Lines are single exponential fits. (<b>C</b>) Time constant of the fit as in (<b>B</b>) across a population of cells. Error bars are SEM (<i>n</i> = 5)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig5-v1.tif", 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.00467.008", 
+                                        "id": "fig5s1", 
+                                        "label": "Figure 5\u2014figure supplement 1.", 
+                                        "title": "Kinetics of changes in baseline and gain differ.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Baseline spike rate (middle) and gain of response to a brief flash (bottom; as in <a href=\"#fig2\">Figure 2</a>). Black line (middle) is an exponential fit with a time constant of 97 s; lines (bottom) are mean gain value at each background. (<b>B</b>) and (<b>C</b>) Changes in the holding current (middle) and gain (bottom) following an increase (<b>B</b>) or decrease (<b>C</b>) in background from whole-cell recordings with a holding potential of \u221270 mV. Changes in holding current reflect changes in the tonic excitatory synaptic input to the cell. Gain changed within a few seconds of a change in background (i.e., the \u223ctwofold change in gain between the left and right panels is already present in the first few flash responses). Black lines are mean \u00b1 SEM across seven repeats of the background step."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-00467-fig5-figsupp1-v1.tif"
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-6", 
+                        "title": "The gain control mechanism has access to signals from many rods", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The rapid kinetics of gain changes at both light onset and offset indicate a need for considerable integration of signals across rods. For example, in the 0.1 s following an increase in background from 0.02 to 0.08 R*/rod/s, &lt;1 in 100 rods absorbs a photon. Thus, the observed gain changes cannot be explained by a mechanism operating on a small collection of rods; for example, a mechanism operating in single rods would only be engaged in 1 out of 100 rods, and hence could reduce overall gain at most by 1%. The halving of gain produced by this step in background requires a mechanism that integrates over at least 50 rods even if a single absorbed photon reduces gain to 0 (<a href=\"#fig6\">Figure 6</a>). In this section, we describe experiments that probed the spatial scale of the gain control mechanism by measuring the extent to which a decrease in gain in one region of space transferred to neighboring regions."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.009", 
+                                "id": "fig6", 
+                                "label": "Figure 6.", 
+                                "title": "The trade-off between rod convergence and integration time in gain control.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Rod convergence required for 50% of the neural elements to collect one or more photons is plotted as a function of background (see \u2018Materials and methods\u2019). Estimated convergence along the rod bipolar pathway is indicated along the y-axis. AII: AII amacrine cell; CB: On cone bipolar cell; RB: rod bipolar cell; RGC: peripheral parasol retinal ganglion cell."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig6-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We adapted subregions within the ganglion cell receptive field while probing the gain of responses elicited at distinct locations (<a href=\"#fig7\">Figure 7A</a>). In the \u2018baseline\u2019 phase of the experiment, we flashed two different probe patterns consisting of a set of bars on a weak spatially uniform adapting background (0.02 R*/rod/s). In the \u2018adaptation\u2019 phase of the experiment, we presented a steady adapting bar pattern (bar intensity = 0.2 R*/rod/s) that overlapped exactly with one of the probe patterns (\u2018adapted\u2019 location) and had no overlap with the other probe pattern (\u2018unadapted\u2019 location). We then repeated measurements of the responses to the two probe patterns to determine the extent to which the adapting pattern affected gain in the adapted and unadapted locations."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.010", 
+                                "id": "fig7", 
+                                "label": "Figure 7.", 
+                                "title": "Measuring the spatial scale of gain control.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Diagram of the experimental design. The baseline phase consisted of at least 20 trials each of two probe patterns flashed on a uniform dim background (0.02 R*/rod/s). In the adaptation phase, the same two probe patterns were presented superimposed on an adapting background of bars of higher intensity (0.2 R*/rod/s), again for at least 20 trials each. One probe location was aligned with the adapting bars (adapted location), whereas the other was out of phase (unadapted location). (<b>B</b>) Repeating the experiment with a variety of adapting bar sizes tests the spatial scale of adaptation. Bars up to half the diameter of the adapting subregion of the receptive field would be expected to cause a complete transfer of adaptation from the adapted to the unadapted location. Bars wider than the diameter of the adapting subregion would be expected to cause incomplete adaptation transfer."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig7-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "By exploring a range of widths for the adapting bars, we were able to measure the distance over which gain changes from the adapted location transferred to the unadapted location. <a href=\"#fig7\">Figure 7B</a> illustrates the logic of the experiment. Adapting bars that are narrow compared to the adapting subregions (circles in <a href=\"#fig7\">Figure 7B</a>) should produce near-identical gain changes in each subregion since the total adapting pattern will vary little between subregions. In this case, the ganglion cell should respond similarly to probes at the adapted and unadapted locations, indicating complete or near-complete transfer of gain changes. Adapting bars that are wide compared to the size of the adapting subregions should produce variable changes in gain across subregions; in this case, the ganglion cell should respond more strongly at the unadapted location, indicating incomplete transfer of gain changes."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig8\">Figure 8A</a> shows results from one such experiment. Gain changes at the adapted and unadapted location were measured by dividing responses to probes during the adaptation phase (gray traces) by those during the baseline phase (black traces). Adaptation transfer was defined as the gain change at the unadapted location divided by the gain change at the adapted location. For the cell in <a href=\"#fig8\">Figure 8A</a>, the narrow bars produced considerably greater adaptation transfer than the wide bars."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.011", 
+                                "id": "fig8", 
+                                "label": "Figure 8.", 
+                                "title": "The spatial scale of gain control.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Responses of an example cell to probes during the baseline phase (black) and the adapting phase (gray) of the experiment at both the adapted and unadapted locations. Adapting bars were 18 \u03bcm wide in (<b>A</b><sub><b>1</b></sub>) and 180 \u03bcm wide in (<b>A</b><sub><b>2</b></sub>). (<b>B</b>) Adaptation transfer as a function of the width of the adapting stripes. Gray symbols are individual cells and black points are mean and SEM (<i>n</i> = 7, 9, 7, and 8 for bar widths in ascending order)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig8-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig8\">Figure 8B</a> collects results across bar sizes and cells. Gain changes transferred completely or near completely for bar widths up to 50 \u00b5m. Near-complete adaptation transfer at this bar width requires that the receptive field of the adapting mechanism have a diameter of at least 100 \u00b5m\u2014so that the mechanism always samples both the bright and dark bars (see <a href=\"#fig7\">Figure 7B</a>). A receptive field of this size would contain at least 500 rods given the rod density of \u223c0.1/\u00b5m<sup>2</sup> (<a href=\"#bib28\">Osterberg, 1935</a>). Bar widths of 100 \u00b5m and larger produced incomplete adaptation transfer, proving an upper bound on the extent of spatial integration."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The experiments of <a href=\"#fig7 fig8\">Figures 7 and 8</a> indicate that gain control is mediated by a mechanism that has access to signals from hundreds of rods. This degree of spatial pooling is required to support the rapid kinetics described in <a href=\"#fig5\">Figure 5</a> and is present only downstream of the synapse between rod bipolar cells and AII amacrine cells (<a href=\"#fig1\">Figure 1</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-7", 
+                        "title": "Gain changes are mediated in rod bipolar pathway", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To further constrain the possible sites of gain control, we looked for transfer of gain changes from rod- to cone-mediated signals (<a href=\"#fig9\">Figure 9</a>). The rod bipolar pathway shares the cone bipolar cell and its synapse onto the ganglion cell with the pathways that convey signals transduced in cones to the ganglion cells (<a href=\"#fig1\">Figure 1A</a>). Transfer of gain changes from the rod bipolar pathway to the cone pathway would indicate that gain is controlled in a circuit element shared between the two pathways\u2014most likely the cone bipolar cell itself. Failure of gain changes to transfer would indicate that the mechanism is located at a circuit element providing input only to the rod bipolar pathway."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.012", 
+                                "id": "fig9", 
+                                "label": "Figure 9.", 
+                                "title": "Gain control in rod and cone pathways.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Response to long-wavelength light (purple) and matched response to short-wavelength light (blue) were used to derive the isolated cone response (red). (<b>B</b>) Rod responses to the same flash intensity at three different backgrounds. (<b>C</b>) Cone responses recorded in the same cell as in (<b>B</b>). (<b>D</b>) Gain of the rod and cone responses for the cell in (<b>B</b> and <b>C</b>) plotted against the background on a log\u2013log scale. Gain values have been normalized by the gain at the lowest background. (<b>E</b>) Slope of the background vs gain function on a log\u2013log scale for rod and cone responses in the same population of cells. Error bars are SEM (<i>n</i> = 7)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig9-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The spectral separation of the photopigments in rods and long-wavelength (L) cones and the considerably higher gain of rod-mediated signals allowed separation of rod- and cone-mediated inputs to a ganglion cell (<a href=\"#fig9\">Figure 9A</a>; <a href=\"#bib16\">Dunn et al., 2007</a>). Long-wavelength light stimuli produced a rapid L-cone\u2013mediated response superimposed on a slower rod-mediated response (purple trace in <a href=\"#fig9\">Figure 9A</a>). This reflects the \u223c600-fold greater sensitivity of the L-cones compared to the rods for long wavelength light and a roughly equal compensating factor for the higher gain of rod-mediated signals. Stimulation with dim short-wavelength light (&lt;0.1 R*/rod and &lt;0.03 R*/cone) generated a nearly pure rod-mediated response (blue trace in <a href=\"#fig9\">Figure 9A</a>). Appropriate scaling of the strengths of the two flashes produced matched rod responses to long- and short-wavelength stimuli. Subtracting the rod-mediated response from the mixed response isolated the cone-mediated response (red trace in <a href=\"#fig9\">Figure 9A</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We separated rod- and cone-mediated responses as in <a href=\"#fig9\">Figure 9A</a> across a range of dim backgrounds (<a href=\"#fig9\">Figure 9B,C</a>). Backgrounds that produced substantial reductions in gain of the rod-mediated signals failed to reduce the gain of the cone-mediated signals (<a href=\"#fig9\">Figure 9B\u2013E</a>). Thus, gain changes do not transfer from the rod pathway to the cone pathway, indicating that gain is controlled at a site prior to mixing of rod and cone signals in the cone bipolar cell. The lack of transfer from rod to cone pathways, together with the requirement that the gain control mechanism have access to signals from hundreds of rods (<a href=\"#fig8\">Figure 8</a>), makes the AII amacrine cell and/or its gap junction with On cone bipolar cells likely sites."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Statistical fluctuations in the stream of photons incident on the retina make controlling the gain of rod-mediated signals at low backgrounds challenging. Yet, such gain control is important because it protects retinal signals from saturating as backgrounds increase while permitting the high amplification required to detect absorption of a few photons under fully dark-adapted conditions. Here, we have explored the properties of retinal gain controls operating near visual threshold. Below, we relate our findings to the dependence of human behavioral threshold on background and to the general speed/accuracy trade-off associated with detecting a change in the statistics of a noisy signal."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-1", 
+                        "title": "Connection to behaviorally measured threshold", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "How do the properties of gain controls at low backgrounds in primate retina relate to human behavioral threshold verses intensity (TVI) measurements in humans? The region of the TVI curve in which threshold is unaffected by background light has long been associated with the intrinsic noise of the visual system (<a href=\"#bib20\">Fechner, 1860</a>; <a href=\"#bib2\">Barlow, 1956</a>). Threshold is increased only by backgrounds that produce a sufficient rate of photon absorption to exceed intrinsic noise. Human behavioral threshold begins to increase for backgrounds near 0.01 R*/rod/s, similar to the backgrounds (\u223c0.02 R*/rod/s) at which primate ganglion cell thresholds began to increase. Both of these are considerably higher than the rate at which spontaneous activation of rhodopsin generates photon-like noise events in primate rods (0.003\u20130.004 R*/rod/s) (GD Field and F Rieke, unpublished). They are, however, consistent with measures of the total noise (i.e., both discrete and continuous) generated by macaque rods (<a href=\"#bib33\">Schneeweis and Schnapf, 2000</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The Rose\u2013deVries region of the TVI curve has long been assumed to reflect an increase in noise without a reduction in gain (<a href=\"#bib3\">Barlow, 1957</a>). Consistent with this view, the gain of retinal signals measured via electroretinograms begins to decline only at backgrounds \u223cfivefold higher than those that increase behavioral threshold (<a href=\"#bib24\">Frishman et al., 1996</a>). Several other previous experiments, however, suggest that gain is reduced in the Rose\u2013deVries range. First, behavioral brightness matching experiments, which should be sensitive to changes in neural gain but not noise, show a robust Rose\u2013deVries region (<a href=\"#bib8\">Brown and Rudd, 1998</a>). Second, the spike responses of toad ganglion cells exhibit an \u223c10-fold range of backgrounds over which the threshold required to reach a criterion spike rate increases in proportion to the square root of the background (<a href=\"#bib14\">Donner et al., 1990</a>). Experiments in cat (<a href=\"#bib5\">Barlow and Levick, 1969</a>; <a href=\"#bib19\">Enroth-Cugell and Shapley, 1973</a>) and mouse (<a href=\"#bib15\">Dunn et al., 2006</a>) also find adaptation at dim backgrounds, but with an exponent &gt;0.5."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Our measurements of how gain control mechanisms affect both the signal and noise of the responses of On parasol ganglion cells provide a direct comparison to human psychophysics. The gain of signals in the rod pathway indeed decreased at low backgrounds, and noise increased much more slowly with increasing background than expected from Poisson fluctuations in photon absorption. The region of the ganglion cell TVI curve with slope 0.5 was limited to a narrow range of backgrounds. This suggests that post-retinal mechanisms contribute substantially to the more extended Rose\u2013deVries region measured in behavioral studies."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-2", 
+                        "title": "A panoply of gain control mechanisms", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Our results place a number of constraints on the neural gain control mechanism that is engaged at the lowest backgrounds\u2014for example, in starlight. The mechanism estimates the mean photon flux rather than its variance (<a href=\"#fig4\">Figure 4</a>), it is rapid (<a href=\"#fig5\">Figure 5</a>), it has access to signals from hundreds of rods (<a href=\"#fig8\">Figure 8</a>), and it acts on rod-mediated but not cone-mediated signals (<a href=\"#fig9\">Figure 9</a>). Previously described gain control mechanisms are sensitive to variance (reviewed by <a href=\"#bib11\">Demb, 2008</a>), act at locations with insufficient rod convergence (<a href=\"#bib15\">Dunn et al., 2006</a>; <a href=\"#bib18\">Dunn and Rieke, 2008</a>), or affect cone signals (<a href=\"#bib16\">Dunn et al., 2007</a>). The constraints above suggest a novel mechanism located in the AII amacrine cell or the synaptic connections it makes with cone bipolar cells (<a href=\"#fig5\">Figure 5</a>). Recordings from these cells as well as the On cone bipolar cells to which they make gap junctions could uncover more mechanistic details."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Although we focused on gain changes in the inputs to On parasol ganglion cells, a location of the site of adaptation in the rod bipolar pathway indicates that it should be shared across ganglion cell types. Consistent with this prediction, On midget ganglion cells adapted very similarly to On parasol ganglion cells (data not shown)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The mechanism we identify here adds to a long list of gain controls in the retinal circuitry. Considering luminance alone, retinal ganglion cells encode stimuli over 10 log units of background, far exceeding the dynamic range of any single mechanism. In the rod pathway, there are at least three gain control mechanisms engaged across backgrounds, each matched to the rod convergence at the adapting location. Backgrounds producing approximately 10\u201320 R*/rod/s halve the gain of the phototransduction cascade in primate rods (<a href=\"#bib33\">Schneeweis and Schnapf, 2000</a>). Backgrounds producing \u223c0.4 R*/rod/s halve the gain of the rod bipolar to AII synapse by reducing the number of releasable vesicles (<a href=\"#bib15\">Dunn et al., 2006</a>; <a href=\"#bib18\">Dunn and Rieke, 2008</a>; <a href=\"#bib27\">Oesch and Diamond, 2011</a>). And, as shown here, backgrounds \u223c0.08 R*/rod/s engage a mechanism located downstream of the rod bipolar\u2013AII synapse; the light levels at which this mechanism is engaged are consistent with backgrounds that are just detectable given the total noise generated by macaque rods (<a href=\"#bib33\">Schneeweis and Schnapf, 2000</a>). Impressively, these mechanisms act in concert to create a smooth dependence of gain on background in the ganglion cell (e.g., <a href=\"#fig3\">Figure 3A</a>), even extending to backgrounds at which signaling begins to switch from rods to cones and gain control mechanisms in the cone pathway become active (<a href=\"#bib16\">Dunn et al., 2007</a>). At least five separate gain control mechanisms that contribute to a single smooth function relating background to gain over &gt;5 log units on each axis (<a href=\"#fig3\">Figure 3A</a>) suggest that this particular functional form for adaptation was a target of selective pressure in primate evolution."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-3", 
+                        "title": "Adapting to a noisy signal", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Adapting at low backgrounds is inherently dangerous as statistical fluctuations in photon absorption introduce substantial noise into the neural signals accessible to a gain control mechanism; such noise would be expected to cause gain to vary widely. The impact of noise in the signals controlling gain could be mitigated by not adapting until backgrounds increase enough to make more photons available, or by integrating over time and/or rods to reduce noise. Surprisingly, retinal gain controls appear to operate at the lowest backgrounds physically possible\u2014that is, each absorbed photon within the pool of rods providing input to an adaptational mechanism lowers gain."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Adaptation at the rod bipolar to AII synapse approaches the sensitivity limit imposed by convergence and integration time (<a href=\"#bib18\">Dunn and Rieke, 2008</a>; see <a href=\"#fig1\">Figure 1B</a>). That is, a single absorbed photon reduces the gain of the next single photon response. Rod convergence onto AII amacrine cells is not known precisely in primate, but the onset of adaptation is consistent with a single photon absorption in the AII receptive field reducing gain. Assuming a 0.1 s integration time (<a href=\"#fig5\">Figure 5</a>), a mechanism operating on a pool of 200 rods would have to reduce gain by 40% for each photon absorbed for the gain to be halved at 0.08 R*/rod/s; a pool of 800 rods could achieve this level of gain control with a 11% gain reduction per photon (see \u2018Modeling\u2019)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Vision in the dark requires high gain of the retinal circuitry conveying rod-mediated signals to ganglion cells. This high gain could easily lead to saturation of retinal signals as backgrounds increase. Indeed, the onset of retinal gain control coincides with the dimmest detectable backgrounds given the intrinsic noise of the rods. These considerations help explain why retinal gain controls are engaged by each absorbed photon, even when adaptation under these conditions is necessarily noisy."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Recordings and light stimulation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "All recordings were from On parasol ganglion cells in peripheral (eccentricity typically &gt;30\u00b0; \u223c15\u00b0 to 20\u00b0 for the experiments of <a href=\"#fig9\">Figure 9</a>) primate retina (<i>Macaca nemestrina</i>, <i>fascicularis</i>, and <i>mulatta</i>). Retina was obtained through the Tissue Distribution Program of the Regional Primate Center at the University of Washington. The retina was dark adapted for 1 hr while attached to the pigment epithelium and stored for up to 24 hr in a light-tight container at 32\u00b0C in Ames solution equilibrated with 95% O<sub>2</sub>/5% CO<sub>2</sub>. All subsequent procedures were performed under infrared light (&gt;900 nm) using infrared-visible converters."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For recording, a roughly 4 \u00d7 4-mm piece of retina was removed from the pigment epithelium and mounted photoreceptor side down on a polylysine-coated glass coverslip forming the bottom of the recording chamber. The retina was secured by nylon wires stretched across a platinum ring. The retina was continuously superfused (8\u201310 ml/min) with warmed (32\u201334\u00b0C) Ames solution equilibrated with 95% O<sub>2</sub>/5% CO<sub>2</sub>. Calibrated light stimuli were delivered from LEDs focused on the retina by the microscope condenser. Spatial stimuli for <a href=\"#fig7 fig8\">Figures 7 and 8</a> were delivered using an OLED array (eMagin, Bellevue, WA). Stimulus intensities are given in terms of isomerizations per rod per second (R*/rod/s), based on the measured LED spectral output, the rod spectral sensitivity, and an assumed collecting area of 1 \u03bcm<sup>2</sup>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Spike responses were measured in the cell-attached configuration using pipettes filled with Ames solution. Whole-cell voltage clamp recordings were made using patch pipettes filled with 105 mM CsCH<sub>3</sub>SO<sub>3</sub>, 10 mM TEA-Cl, 20 mM HEPES, 10 mM EGTA, 5 mM Mg-ATP, 0.5 mM Tris-GTP, and 2 mM QX-314 (pH \u223c7.3 with CsOH, \u223c280 mOsm). Reported holding voltages have been corrected for the \u223c10 mV junction potential associated with this internal solution. Series resistance was typically 6\u201310 M\u2126, and was compensated 50%."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "All data came from parasol ganglion cells exhibiting high sensitivity when fully dark adapted. Recordings followed previous procedures (<a href=\"#bib34\">Trong and Rieke, 2008</a>). We first used cell-attached recordings to test the spike response to a brief flash producing 0.001\u20130.002 R*/rod, and collected data only from cells that responded to these flashes with an average of 4\u20135 spikes. During experiments monitoring adaptation across a range of light levels (e.g., <a href=\"#fig2 fig3 fig9\">Figures 2, 3 and 9</a>), we periodically returned to a \u2018reference\u2019 background near 0.05 R*/rod/s to check for slow changes in sensitivity. <a href=\"#fig10 fig11\">Figures 10 and 11</a> illustrate the basic timeline of such experiments for cell-attached recordings of spike responses (<a href=\"#fig10\">Figures 10</a>) and whole-cell recordings of excitatory synaptic inputs (<a href=\"#fig11\">Figures 11</a>). <a href=\"#fig10 fig11\">Figures 10B and 11B</a> show the changes in flash strength (gray line and right axes) used to generate near-equal responses across backgrounds. The figures also illustrate, based on raw data, some of the key features quantified in the \u2018Results\u2019: (1) the sensitivity of gain to weak backgrounds (<a href=\"#fig10 fig11\">Figures 10A\u2013C and 11A\u2013C</a>); (2) the rapid changes in gain following changes in background (<a href=\"#fig10 fig11\">Figure 10C and 11C</a>); (3) the slow changes in baseline firing rate (<a href=\"#fig10\">Figure 10D</a>) and excitatory synaptic input (<a href=\"#fig11\">Figure 11D</a>) following changes in background; and (4) the changes in noise following changes in background (<a href=\"#fig11\">Figure 11E</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.013", 
+                                "id": "fig10", 
+                                "label": "Figure 10.", 
+                                "title": "Gain control is stable and reproducible in spike responses. Spike responses from an example On parasol cell in primate retina.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Background light level. (<b>B</b>) Increase in spike count following a 10-ms flash (i.e., with the maintained spike rate before the flash subtracted). The test flash strength is indicated by the gray line and the right axis. Flashes were presented at 1-s intervals beginning 1 s after each background change. (<b>C</b>) Gain of the spike response in spikes per isomerization per rod (R*/rod). Gain was calculated by dividing the spike count in (<b>B</b>) by the flash strength. (<b>D</b>) Baseline spike rate measured prior to each flash."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig10-v1.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.00467.014", 
+                                "id": "fig11", 
+                                "label": "Figure 11.", 
+                                "title": "Gain control is stable and reproducible in excitatory input currents.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>)\u2013(<b>D</b>) Excitatory synaptic currents following the same format as <a href=\"#fig10\">Figure 10</a>. Data are from a different cell voltage clamped at \u221270 mV, the approximate reversal potential for inhibitory input. (<b>E</b>) Standard deviation of the current in the time interval preceding each flash."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-00467-fig11-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "A time window containing the flash response was chosen for each background and flash intensity by selecting the time points at which the average response exceeded 20% of its maximal value. The response amplitude was computed as the integrated current during this time window minus a baseline current recorded before the flash. Using a fixed time window across backgrounds and flash strengths yielded similar results. Gain values in <a href=\"#fig2 fig3 fig10 fig11\">Figures 2, 3, 10, and 11</a> and <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a> are the response amplitude divided by the flash strength."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We projected flash responses along a template to compute flash detection thresholds (<a href=\"#fig2 fig3\">Figures 2 and 3</a>). The template was the average current trace in the time window described above. For each trial, we defined the signal <i>\u03b3</i> as the projection of the measured current along the template divided by the flash strength, and the noise <i>\u03bd</i> as the projection of the current during a time window before the flash. Detection threshold <i>\u03b8</i> was defined as the flash strength required to give a signal-to-noise ratio of 1 according to the following equation:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn2", 
+                                "mathml": "<math><mrow><mi>\u03b8</mi><mo>=</mo><mi>\u03b3</mi><mo>/</mo><msub><mi>\u03c3</mi><mi>\u03bd</mi></msub><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Gain and threshold of spike responses were computed analogously using the peristimulus time histogram to define the response time window for spike counts (<a href=\"#fig2\">Figure 2</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Modeling", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Probabilities of photon absorptions depending on background, integration time, and rod convergence (<a href=\"#fig6\">Figure 6</a>) were computed from a Poisson distribution as follows. For a given background (<i>\u03bc</i>) in units of R*/rod/s, an integration time (<i>\u03c4</i>), and a rod convergence (<i>C</i>) per neural element, the probability of a neural element collecting a particular number (<i>k</i>) of photons follows Poisson statistics."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn3", 
+                                "mathml": "<math><mrow><mi>\u03bb</mi><mo>=</mo><mi>\u03bc</mi><mi>\u03c4</mi><mi>C</mi></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn4", 
+                                "mathml": "<math><mrow><mi>P</mi><mo>(</mo><mi>k</mi><mo>,</mo><mi>\u03bb</mi><mo>)</mo><mo>=</mo><mfrac><mrow><msup><mi>\u03bb</mi><mi>k</mi></msup><msup><mi>e</mi><mrow><mo>\u2212</mo><mi>\u03bb</mi></mrow></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig6\">Figure 6</a> plots the combination of values of <i>\u03bc</i>, <i>\u03c4</i>, and <i>C</i> required for half of the neural elements to collect at least one photon."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn5", 
+                                "mathml": "<math><mrow><mi>P</mi><mo>(</mo><mi>\u03bb</mi><mo>)</mo><mo>=</mo><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>\u221e</mn></munderover><mrow><mfrac><mrow><msup><mi>\u03bb</mi><mi>k</mi></msup><msup><mi>e</mi><mrow><mo>\u2212</mo><mi>\u03bb</mi></mrow></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>\u2265</mo><mn>0.5</mn></mrow></mstyle><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the \u2018Discussion\u2019, we compute the gain reduction achieved for several size pools of converging rods. If each photon (<i>k</i>) collected by a neural element reduces the gain for the next photon response by a constant factor (<i>\u03b1</i>), the gain as a function of <i>k</i> and <i>\u03b1</i> can be computed as follows."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn6", 
+                                "mathml": "<math><mrow><mi>\u03b3</mi><mo>(</mo><mi>k</mi><mo>,</mo><mi>\u03b1</mi><mo>)</mo><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>\u03b1</mi><mo>)</mo></mrow><mi>k</mi></msup><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Therefore, the gain of a collection of neural elements (\u0393) collecting photons according to Poisson statistics (normalized to \u0393 = 1 for maximal gain) is computed as follows."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "eqn7", 
+                                "mathml": "<math><mrow><mi>\u0393</mi><mo>=</mo><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>\u221e</mn></munderover><mrow><mi>P</mi><mo>(</mo><mi>k</mi><mo>,</mo><mi>\u03bb</mi><mo>)</mo><mi>\u03b3</mi><mo>(</mo><mi>k</mi><mo>,</mo><mi>\u03b1</mi><mo>)</mo></mrow></mstyle><mo>.</mo></mrow></math>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Ala-Laurila", 
+                            "index": "Ala-Laurila, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Greschner", 
+                            "index": "Greschner, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EJ Chichilnisky", 
+                            "index": "Chichilnisky, EJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cone photoreceptor contributions to noise and correlations in the retinal output", 
+                "journal": {
+                    "name": [
+                        "Nat Neurosci"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "1309", 
+                    "last": "1316", 
+                    "range": "1309\u20131316"
+                }, 
+                "doi": "10.1038/nn.2927"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "1956", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HB Barlow", 
+                            "index": "Barlow, HB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Retinal noise and absolute threshold", 
+                "journal": {
+                    "name": [
+                        "J Opt Soc Am"
+                    ]
+                }, 
+                "volume": "46", 
+                "pages": {
+                    "first": "634", 
+                    "last": "639", 
+                    "range": "634\u2013639"
+                }, 
+                "doi": "10.1364/JOSA.46.000634"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "1957", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HB Barlow", 
+                            "index": "Barlow, HB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Increment thresholds at low intensities considered as signal/noise discriminations", 
+                "journal": {
+                    "name": [
+                        "J Physiol"
+                    ]
+                }, 
+                "volume": "136", 
+                "pages": {
+                    "first": "469", 
+                    "last": "488", 
+                    "range": "469\u2013488"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1965", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HB Barlow", 
+                            "index": "Barlow, HB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Optic nerve impulses and Weber\u2019s law", 
+                "journal": {
+                    "name": [
+                        "Cold Spring Harb Symp Quant Biol"
+                    ]
+                }, 
+                "volume": "30", 
+                "pages": {
+                    "first": "539", 
+                    "last": "546", 
+                    "range": "539\u2013546"
+                }, 
+                "doi": "10.1101/SQB.1965.030.01.052"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "1969", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HB Barlow", 
+                            "index": "Barlow, HB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Levick", 
+                            "index": "Levick, WR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Three factors limiting the reliable detection of light by retinal ganglion cells of the cat", 
+                "journal": {
+                    "name": [
+                        "J Physiol"
+                    ]
+                }, 
+                "volume": "200", 
+                "pages": {
+                    "first": "1", 
+                    "last": "24", 
+                    "range": "1\u201324"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "1971", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HB Barlow", 
+                            "index": "Barlow, HB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Levick", 
+                            "index": "Levick, WR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Yoon", 
+                            "index": "Yoon, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Responses to single quanta of light in retinal ganglion cells of the cat", 
+                "journal": {
+                    "name": [
+                        "Vision Res"
+                    ]
+                }, 
+                "pages": {
+                    "first": "87", 
+                    "last": "101", 
+                    "range": "87\u2013101"
+                }, 
+                "doi": "10.1016/0042-6989(71)90033-2"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Bloomfield", 
+                            "index": "Bloomfield, SA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RF Dacheux", 
+                            "index": "Dacheux, RF"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rod vision: pathways and processing in the mammalian retina", 
+                "journal": {
+                    "name": [
+                        "Prog Retin Eye Res"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "351", 
+                    "last": "384", 
+                    "range": "351\u2013384"
+                }, 
+                "doi": "10.1016/S1350-9462(00)00031-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LG Brown", 
+                            "index": "Brown, LG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ME Rudd", 
+                            "index": "Rudd, ME"
+                        }
+                    }
+                ], 
+                "articleTitle": "Evidence for a noise gain control mechanism in human vision", 
+                "journal": {
+                    "name": [
+                        "Vision Res"
+                    ]
+                }, 
+                "volume": "38", 
+                "pages": {
+                    "first": "1925", 
+                    "last": "1933", 
+                    "range": "1925\u20131933"
+                }, 
+                "doi": "10.1016/S0042-6989(97)00400-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GT Buracas", 
+                            "index": "Buracas, GT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Zador", 
+                            "index": "Zador, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR DeWeese", 
+                            "index": "DeWeese, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TD Albright", 
+                            "index": "Albright, TD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Efficient discrimination of temporal patterns by motion-sensitive neurons in primate visual cortex", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "959", 
+                    "last": "969", 
+                    "range": "959\u2013969"
+                }, 
+                "doi": "10.1016/S0896-6273(00)80477-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "1943", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HL de Vries", 
+                            "index": "de Vries, HL"
+                        }
+                    }
+                ], 
+                "articleTitle": "The quantum character of light and its bearing upon threshold of vision, the differential sensitivity and visual acuity of the eye", 
+                "journal": {
+                    "name": [
+                        "Physica"
+                    ]
+                }, 
+                "volume": "7", 
+                "pages": {
+                    "first": "553", 
+                    "last": "564", 
+                    "range": "553\u2013564"
+                }, 
+                "doi": "10.1016/S0031-8914(43)90575-0"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JB Demb", 
+                            "index": "Demb, JB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Functional circuitry of visual adaptation in the retina", 
+                "journal": {
+                    "name": [
+                        "J Physiol"
+                    ]
+                }, 
+                "volume": "586", 
+                "pages": {
+                    "first": "4377", 
+                    "last": "4384", 
+                    "range": "4377\u20134384"
+                }, 
+                "doi": "10.1113/jphysiol.2008.156638"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Deneve", 
+                            "index": "Deneve, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Bayesian spiking neurons I: inference", 
+                "journal": {
+                    "name": [
+                        "Neural Comput"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "91", 
+                    "last": "117", 
+                    "range": "91\u2013117"
+                }, 
+                "doi": "10.1162/neco.2008.20.1.91"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "1992", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Donner", 
+                            "index": "Donner, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Noise and the absolute thresholds of cone and rod vision", 
+                "journal": {
+                    "name": [
+                        "Vision Res"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "853", 
+                    "last": "866", 
+                    "range": "853\u2013866"
+                }, 
+                "doi": "10.1016/0042-6989(92)90028-H"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "1990", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Donner", 
+                            "index": "Donner, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DR Copenhagen", 
+                            "index": "Copenhagen, DR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Reuter", 
+                            "index": "Reuter, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Weber and noise adaptation in the retina of the toad Bufo marinus", 
+                "journal": {
+                    "name": [
+                        "J Gen Physiol"
+                    ]
+                }, 
+                "volume": "95", 
+                "pages": {
+                    "first": "733", 
+                    "last": "753", 
+                    "range": "733\u2013753"
+                }, 
+                "doi": "10.1085/jgp.95.4.733"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Dunn", 
+                            "index": "Dunn, FA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Doan", 
+                            "index": "Doan, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Sampath", 
+                            "index": "Sampath, AP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Controlling the gain of rod-mediated signals in the Mammalian retina", 
+                "journal": {
+                    "name": [
+                        "J Neurosci"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "3959", 
+                    "last": "3970", 
+                    "range": "3959\u20133970"
+                }, 
+                "doi": "10.1523/JNEUROSCI.5148-05.2006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Dunn", 
+                            "index": "Dunn, FA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Lankheet", 
+                            "index": "Lankheet, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Light adaptation in cone vision involves switching between receptor and post-receptor sites", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "449", 
+                "pages": {
+                    "first": "603", 
+                    "last": "606", 
+                    "range": "603\u2013606"
+                }, 
+                "doi": "10.1038/nature06150"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Dunn", 
+                            "index": "Dunn, FA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "The impact of photoreceptor noise on retinal gain controls", 
+                "journal": {
+                    "name": [
+                        "Curr Opin Neurobiol"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "363", 
+                    "last": "370", 
+                    "range": "363\u2013370"
+                }, 
+                "doi": "10.1016/j.conb.2006.06.013"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Dunn", 
+                            "index": "Dunn, FA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Single-photon absorptions evoke synaptic depression in the retina to extend the operational range of rod vision", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "57", 
+                "pages": {
+                    "first": "894", 
+                    "last": "904", 
+                    "range": "894\u2013904"
+                }, 
+                "doi": "10.1016/j.neuron.2008.01.031"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "1973", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Enroth-Cugell", 
+                            "index": "Enroth-Cugell, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Shapley", 
+                            "index": "Shapley, RM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Flux, not retinal illumination, is what cat retinal ganglion cells really care about", 
+                "journal": {
+                    "name": [
+                        "J Physiol"
+                    ]
+                }, 
+                "volume": "233", 
+                "pages": {
+                    "first": "311", 
+                    "last": "326", 
+                    "range": "311\u2013326"
+                }
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib20", 
+                "date": "1860", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GT Fechner", 
+                            "index": "Fechner, GT"
+                        }
+                    }
+                ], 
+                "title": "Elemente dur psychophysik", 
+                "details": "Elemente dur psychophysik, Leipzig, Germany: Breitkopf and Hartel"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GD Field", 
+                            "index": "Field, GD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Greschner", 
+                            "index": "Greschner, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Gauthier", 
+                            "index": "Gauthier, JL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Rangel", 
+                            "index": "Rangel, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Shlens", 
+                            "index": "Shlens, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Sher", 
+                            "index": "Sher, A"
+                        }
+                    }
+                ], 
+                "authorsEtAl": true, 
+                "articleTitle": "High-sensitivity rod photoreceptor input to the blue-yellow color opponent pathway in macaque retina", 
+                "journal": {
+                    "name": [
+                        "Nat Neurosci"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "1159", 
+                    "last": "1164", 
+                    "range": "1159\u20131164"
+                }, 
+                "doi": "10.1038/nn.2353"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GD Field", 
+                            "index": "Field, GD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Sampath", 
+                            "index": "Sampath, AP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Retinal processing near absolute threshold: from behavior to mechanism", 
+                "journal": {
+                    "name": [
+                        "Annu Rev Physiol"
+                    ]
+                }, 
+                "volume": "67", 
+                "pages": {
+                    "first": "491", 
+                    "last": "514", 
+                    "range": "491\u2013514"
+                }, 
+                "doi": "10.1146/annurev.physiol.67.031103.151256"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Frazor", 
+                            "index": "Frazor, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WS Geisler", 
+                            "index": "Geisler, WS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Local luminance and contrast in natural images", 
+                "journal": {
+                    "name": [
+                        "Vision Res"
+                    ]
+                }, 
+                "volume": "46", 
+                "pages": {
+                    "first": "1585", 
+                    "last": "1598", 
+                    "range": "1585\u20131598"
+                }, 
+                "doi": "10.1016/j.visres.2005.06.038"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LJ Frishman", 
+                            "index": "Frishman, LJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MG Reddy", 
+                            "index": "Reddy, MG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JG Robson", 
+                            "index": "Robson, JG"
+                        }
+                    }
+                ], 
+                "articleTitle": "Effects of background light on the human dark-adapted electroretinogram and psychophysical threshold", 
+                "journal": {
+                    "name": [
+                        "J Opt Soc Am A"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "601", 
+                    "last": "612", 
+                    "range": "601\u2013612"
+                }, 
+                "doi": "10.1364/JOSAA.13.000601"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "1982", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Kaplan", 
+                            "index": "Kaplan, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Shapley", 
+                            "index": "Shapley, RM"
+                        }
+                    }
+                ], 
+                "articleTitle": "X and Y cells in the lateral geniculate nucleus of macaque monkeys", 
+                "journal": {
+                    "name": [
+                        "J Physiol"
+                    ]
+                }, 
+                "volume": "330", 
+                "pages": {
+                    "first": "125", 
+                    "last": "143", 
+                    "range": "125\u2013143"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "1983", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DN Mastronarde", 
+                            "index": "Mastronarde, DN"
+                        }
+                    }
+                ], 
+                "articleTitle": "Correlated firing of cat retinal ganglion cells. II. Responses of X- and Y-cells to single quantal events", 
+                "journal": {
+                    "name": [
+                        "J Neurophysiol"
+                    ]
+                }, 
+                "volume": "49", 
+                "pages": {
+                    "first": "325", 
+                    "last": "349", 
+                    "range": "325\u2013349"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NW Oesch", 
+                            "index": "Oesch, NW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Diamond", 
+                            "index": "Diamond, JS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ribbon synapses compute temporal contrast and encode luminance in retinal rod bipolar cells", 
+                "journal": {
+                    "name": [
+                        "Nat Neurosci"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "1555", 
+                    "last": "1561", 
+                    "range": "1555\u20131561"
+                }, 
+                "doi": "10.1038/nn.2945"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "1935", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Osterberg", 
+                            "index": "Osterberg, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Topography of the layer of rods and cones in the human retina", 
+                "journal": {
+                    "name": [
+                        "Acta Ophthalmol"
+                    ]
+                }, 
+                "pages": {
+                    "first": "1", 
+                    "last": "103", 
+                    "range": "1\u2013103"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "1988", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Purpura", 
+                            "index": "Purpura, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Kaplan", 
+                            "index": "Kaplan, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Shapley", 
+                            "index": "Shapley, RM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Background light and the contrast gain of primate P and M retinal ganglion cells", 
+                "journal": {
+                    "name": [
+                        "Proc Natl Acad Sci USA"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": {
+                    "first": "4534", 
+                    "last": "4537", 
+                    "range": "4534\u20134537"
+                }, 
+                "doi": "10.1073/pnas.85.12.4534"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ME Rudd", 
+                            "index": "Rudd, ME"
+                        }
+                    }
+                ], 
+                "articleTitle": "The challenges natural images pose for visual adaptation", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "64", 
+                "pages": {
+                    "first": "605", 
+                    "last": "616", 
+                    "range": "605\u2013616"
+                }, 
+                "doi": "10.1016/j.neuron.2009.11.028"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "1948", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Rose", 
+                            "index": "Rose, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "The sensitivity performance of the human eye on an absolute scale", 
+                "journal": {
+                    "name": [
+                        "J Opt Soc Am"
+                    ]
+                }, 
+                "volume": "38", 
+                "pages": {
+                    "first": "196", 
+                    "last": "208", 
+                    "range": "196\u2013208"
+                }, 
+                "doi": "10.1364/JOSA.38.000196"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "1965", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WA Rushton", 
+                            "index": "Rushton, WA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Visual adaptation", 
+                "journal": {
+                    "name": [
+                        "Proc R Soc Lond B Biol Sci"
+                    ]
+                }, 
+                "volume": "162", 
+                "pages": {
+                    "first": "20", 
+                    "last": "46", 
+                    "range": "20\u201346"
+                }, 
+                "doi": "10.1098/rspb.1965.0024"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DM Schneeweis", 
+                            "index": "Schneeweis, DM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Schnapf", 
+                            "index": "Schnapf, JL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Noise and light adaptation in rods of the macaque monkey", 
+                "journal": {
+                    "name": [
+                        "Vis Neurosci"
+                    ]
+                }, 
+                "volume": "17", 
+                "pages": {
+                    "first": "659", 
+                    "last": "666", 
+                    "range": "659\u2013666"
+                }, 
+                "doi": "10.1017/S0952523800175017"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PK Trong", 
+                            "index": "Trong, PK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Origin of correlated activity between parasol retinal ganglion cells", 
+                "journal": {
+                    "name": [
+                        "Nat Neurosci"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": {
+                    "first": "1343", 
+                    "last": "1351", 
+                    "range": "1343\u20131351"
+                }, 
+                "doi": "10.1038/nn.2199"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Wark", 
+                            "index": "Wark, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Fairhall", 
+                            "index": "Fairhall, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rieke", 
+                            "index": "Rieke, F"
+                        }
+                    }
+                ], 
+                "articleTitle": "Timescales of inference in visual adaptation", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "61", 
+                "pages": {
+                    "first": "750", 
+                    "last": "761", 
+                    "range": "750\u2013761"
+                }, 
+                "doi": "10.1016/j.neuron.2009.01.019"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Petri Ala-Laurila, Juan Angueyra, Jeff Diamond, and Michael Rudd for helpful comments, and Mark Cafaro and Paul Newman for technical assistance."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.00467.015", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://www.elifesciences.org/the-journal/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for choosing to send your work entitled \u201cControlling gain one photon at a time\u201d for consideration at <i>eLife</i>. Your article has been evaluated by a Senior editor and 2 reviewers, one of whom is a member of our Board of Reviewing Editors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following individuals responsible for the peer review of your submission want to reveal their identity: Eve Marder, Senior editor; Ronald L. Calabrese, Reviewing editor; Marla Feller, peer reviewer."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The authors describe electrophysiological experiments designed to determine if and how adaptation occurs at the level of ganglion cells at the lowest background light levels in macaque monkeys by recording spike output and EPSCs from parasol ganglion cells in isolated retinae. They show by systematic experiments that retinal adaptation begins at the dimmest detectable backgrounds given the intrinsic noise of the rods. Adaptation occurs rapidly at the level of AII Amacrine cells when as few as 1 or 2 photons are absorbed within a collection of several hundred rods. They successfully compare their experiments to human psychophysical experiments: human behavioral threshold begins to increase for backgrounds near 0.01 R*/rod/s, similar to the backgrounds (\u223c0.02 R*/rod/s) at which macaque ganglion cell thresholds began to increase."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers were enthusiastic about your work, found it exciting, and deemed its potential significance for the field quite high. Nonetheless, they felt that the manuscript itself did not do justice to the work, and that it made difficult reading. Therefore, as outlined below, it will require substantial editorial work before potential publication."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) A general reader interested in how we see and adapt at low light levels could use a lot more guidance by the authors. For example, Figure 5A could be more colorful and used as a guide in the Introduction. We could be given a succinct summary of relevant retinal circuitry in Introduction. What is provided may not be enough especially without reference to a figure and some explanation of how the signals are transmitted (e.g., excitation inhibition, electrical coupling). Similarly the choice of the On parasol ganglion cell could be better rationalized at the beginning of Results."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) The authors should provide clear definitions and use consistent language for describing \u201cgain\u201d, \u201cnoise\u201d, and \u201cbackground\u201d throughout the manuscript."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "* Background: the authors use \u201cbackground\u201d, \u201cbackground lights\u201d, or \u201cstimulus\u201d to describe changes in the background illumination. In the text describing Figure 6, this was particularly confusing, using terms like \u201ctest patterns\u201d, \u201cprobe patterns\u201d, and \u201cadapting stimulus\u201d. The authors should be explicit that changes in background illumination are what they are using for inducing adaptation."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "* Gain: Is it really necessary to use so many measures of gain? Is the \u201csignal gain\u201d plotted in Figure 2A the same as the \u201cgain\u201d in Figure 4? Is the y-axis of Figure 4\u2014figure supplement 1A the same as Figure 4\u2014figure supplement 1B (where the units of the Gain are different, one using /flash and the other rods/sec). How does it differ from \u201cgain factor\u201d in Figure 4B? Why is gain sometimes computed as \u201cGain slope\u201d? We realize that different definitions are more appropriate for comparing to different models, but it is tough on the reader. In addition, the authors need to make clear that the gain changes in the circuit affect both signal and noise."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) The list of \u201cqualitative features of adaptation\u201d was particularly lacking in precise language. \u201cInhibitory synaptic inputs were small\u201d (how small?), \u201c\u2026did not show obvious structure\u201d (what is meant by \u201cobvious structure\u201d?). We would strongly recommend the author forgo this format for the text and give a clear, quantitative description of the results, and clear definitions of the quantities signal, noise, and gain for both cell attached and whole cell recordings."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.00467.016", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "We certainly want our work to be broadly accessible, and we appreciate the feedback that the previous version of the paper did not do that. As detailed below we have made major changes to the text and figures. This includes a new Figure 1, reordering several of the other figures, and rewriting substantial parts of the text, including the Introduction."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) A general reader interested in how we see and adapt at low light levels could use a lot more guidance by the authors. For example, Figure 5A could be more colorful and used as a guide in the Introduction. We could be given a succinct summary of relevant retinal circuitry in Introduction. What is provided may not be enough especially without reference to a figure and some explanation of how the signals are transmitted (e.g., excitation inhibition, electrical coupling)</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for the suggestion. We have rewritten the Introduction to be more specific about the circuitry operating under the conditions of our experiments, and what is known from past work about gain control mechanisms operating in this circuitry. As part of that revision we created a new Figure 1 with a more detailed diagram of the retinal circuitry. The diagram and caption include details about the type of synapses and the rod convergence at each location, as well as the location of previously described sites of gain control. We feel that this figure, along with supporting changes in the Introduction, provides a nice graphical introduction to the retinal circuitry and the problem of gain control."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Similarly the choice of the On parasol ganglion cell could be better rationalized at the beginning of Results</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We revised this paragraph to emphasize that the On parasol cells provide a good readout of activity in the rod bipolar pathway. We now specifically make the point that this pathway is shared across ganglion cell types at low light levels, and hence gain control mechanisms located in shared components of the circuit should be conserved across ganglion cell types (as we observed in Midget ganglion cells, as noted in the Discussion). We also now anticipate in the text that the gain control mechanism we identify and characterize is indeed located at a shared location in the rod bipolar pathway. We believe this revised paragraph does a better job at emphasizing the key reasons that we chose to study On parasol cells."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) The authors should provide clear definitions and use consistent language for describing \u201cgain\u201d, \u201cnoise\u201d, and \u201cbackground\u201d throughout the manuscript</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>* Background: the authors use \u201cbackground\u201d, \u201cbackground lights\u201d, or \u201cstimulus\u201d to describe changes in the background illumination</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Indeed in the original paper we used these terms inconsistently. We have fixed this in the revised version. \u201cBackground\u201d is now used consistently and terms such as \u201cmean light level\u201d, \u201cmean luminance\u201d, and \u201cmean stimulus\u201d have been removed in favor of \u201cbackground\u201d. Similarly, we have consistently used \u201cgain control\u201d in place of adaptation, since it more directly relates to the measures of response gain shown throughout the results."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>In the text describing Figure 6, this was particularly confusing, using terms like \u201ctest patterns\u201d, \u201cprobe patterns\u201d, and \u201cadapting stimulus\u201d. The authors should be explicit that changes in background illumination are what they are using for inducing adaptation</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Figure 7 (previous Figure 6) has been substantially revised (new panels A and B) along with the text describing the logic behind the experiment. Terminology in the text now directly references elements of Figure 7A and B. We have also made the terminology used to describe this experiment more consistent with the rest of the Results section. We hope these changes clarify the logic behind the experiment and interpretation of the results."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>* Gain: Is it really necessary to use so many measures of gain? Is the \u201csignal gain\u201d plotted in Figure 2A the same as the \u201cgain\u201d in Figure 4? Is the y-axis of Figure 4\u2014figure supplement 1A the same as Figure 4\u2014figure supplement 1B (where the units of the Gain are different, one using /flash and the other rods/sec). How does it differ from \u201cgain factor\u201d in Figure 4B? Why is gain sometimes computed as \u201cGain slope\u201d? We realize that different definitions are more appropriate for comparing to different models, but it is tough on the reader. In addition, the authors need to make clear that the gain changes in the circuit affect both signal and noise</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Thanks very much for this suggestion. Many of the inconsistencies were oversights on our part rather than different analyses or measures. All figures now use either gain in appropriate units (nC/R*/rod for excitatory input currents or spikes/R*/rod for spike signals), or a normalized value, \u201cgain (norm.),\u201d if comparing across conditions where relative gain values are more appropriate than absolute values. Gain is clearly defined when it first comes up in the Results. We have replaced \u201cgain slope\u201d with \u201cslope,\u201d and we explain that this slope on a log-log plot is equivalent to \u201cthe exponent describing the dependence of gain on background\u201d in the third paragraph of the section, \u201cDependence of gain and noise on background\u201d. Also, the term \u201csignal gain\u201d has been removed as it was indeed confusing since signal and noise are both affected."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) The list of \u201cqualitative features of adaptation\u201d was particularly lacking in precise language. \u201cInhibitory synaptic inputs were small\u201d (how small?), \u201c\u2026did not show obvious structure\u201d (what is meant by \u201cobvious structure\u201d?). We would strongly recommend the author forgo this format for the text and give a clear, quantitative description of the results, and clear definitions of the quantities signal, noise, and gain for both cell attached and whole cell recordings</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Obviously our original approach to introducing the results did not work well. As suggested, we removed the \u201cqualitative features\u201d section and replaced it with a quantitative description of the results. In making this change, we moved Figure 1 from the previous draft into the Methods section and replaced it with a simpler figure (new Figure 2) showing raw data for excitatory input currents and spikes in the same cell, and quantifying the similarity of the spike response and excitatory input. This enabled us to introduce \u201cnoise\u201d with a precise definition in the next figure (Figure 3) after an initial characterization of the change in gain."
+                }
+            ]
+        }
+    }
+}

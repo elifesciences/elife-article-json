@@ -1,0 +1,1923 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "10167", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.10167", 
+        "authorLine": "C Jeremy Craven", 
+        "title": "Evaluation of predictions of the stochastic model of organelle production based on exact distributions", 
+        "published": "2016-01-14T00:00:00", 
+        "versionDate": "2016-01-14T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e10167", 
+        "pdf": "https://publishing-cdn.elifesciences.org/10167/elife-10167-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.10167.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "We present a reanalysis of the stochastic model of organelle production and show that the equilibrium distributions for the organelle numbers predicted by this model can be readily calculated in three different scenarios. These three distributions can be identified as standard distributions, and the corresponding exact formulae for their mean and variance can therefore be used in further analysis. This removes the need to rely on stochastic simulations or approximate formulae (derived using the fluctuation dissipation theorem). These calculations allow for further analysis of the predictions of the model. On the basis of this we question the extent to which the model can be used to conclude that peroxisome biogenesis is dominated by de novo production when <i>Saccharomyces cerevisiae</i> cells are grown on glucose medium."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Craven et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "C Jeremy Craven", 
+                    "index": "Craven, C Jeremy"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular Biology and Biotechnology", 
+                            "University of Sheffield"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Sheffield", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Sheffield"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "c.j.craven@sheffield.ac.uk"
+                ], 
+                "contribution": "CJC, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Wrote the Source code", 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.10167.007", 
+                "id": "SD1-data", 
+                "label": "Source code 1.", 
+                "title": "Code for calculating time courses via simulation.", 
+                "mediaType": "application/zip", 
+                "uri": "elife-10167-code1-v1.zip", 
+                "filename": "elife-10167-code1-v1.zip"
+            }, 
+            {
+                "doi": "10.7554/eLife.10167.008", 
+                "id": "SD2-data", 
+                "label": "Source code 2.", 
+                "title": "Code for calculating distributions via the recurrence relation.", 
+                "mediaType": "application/zip", 
+                "uri": "elife-10167-code2-v1.zip", 
+                "filename": "elife-10167-code2-v1.zip"
+            }
+        ], 
+        "impactStatement": "A reanalysis of the stochastic model of organelle production (Mukherji and O'Shea, 2014) suggests that this model requires significant further discussion."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "10167", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.10167", 
+        "authorLine": "C Jeremy Craven", 
+        "title": "Evaluation of predictions of the stochastic model of organelle production based on exact distributions", 
+        "published": "2016-01-14T00:00:00", 
+        "versionDate": "2016-01-14T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e10167", 
+        "pdf": "https://publishing-cdn.elifesciences.org/10167/elife-10167-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.10167.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "We present a reanalysis of the stochastic model of organelle production and show that the equilibrium distributions for the organelle numbers predicted by this model can be readily calculated in three different scenarios. These three distributions can be identified as standard distributions, and the corresponding exact formulae for their mean and variance can therefore be used in further analysis. This removes the need to rely on stochastic simulations or approximate formulae (derived using the fluctuation dissipation theorem). These calculations allow for further analysis of the predictions of the model. On the basis of this we question the extent to which the model can be used to conclude that peroxisome biogenesis is dominated by de novo production when <i>Saccharomyces cerevisiae</i> cells are grown on glucose medium."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Craven et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "C Jeremy Craven", 
+                    "index": "Craven, C Jeremy"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular Biology and Biotechnology", 
+                            "University of Sheffield"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Sheffield", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Sheffield"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "c.j.craven@sheffield.ac.uk"
+                ], 
+                "contribution": "CJC, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Wrote the Source code", 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.10167.007", 
+                "id": "SD1-data", 
+                "label": "Source code 1.", 
+                "title": "Code for calculating time courses via simulation.", 
+                "mediaType": "application/zip", 
+                "uri": "elife-10167-code1-v1.zip", 
+                "filename": "elife-10167-code1-v1.zip"
+            }, 
+            {
+                "doi": "10.7554/eLife.10167.008", 
+                "id": "SD2-data", 
+                "label": "Source code 2.", 
+                "title": "Code for calculating distributions via the recurrence relation.", 
+                "mediaType": "application/zip", 
+                "uri": "elife-10167-code2-v1.zip", 
+                "filename": "elife-10167-code2-v1.zip"
+            }
+        ], 
+        "impactStatement": "A reanalysis of the stochastic model of organelle production (Mukherji and O'Shea, 2014) suggests that this model requires significant further discussion.", 
+        "keywords": [
+            "cell modelling", 
+            "stochastic", 
+            "mathematical analysis", 
+            "peroxisome", 
+            "organelle biogenesis"
+        ], 
+        "relatedArticles": [
+            "02678"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.10167.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Any cell that has a nucleus also contains a number of subcellular structures called organelles. The number of organelles inside a cell increases when new organelles are made from scratch (a process known as de novo synthesis), or when an existing organelle divides to produce two organelles in a process called fission. And the number of organelles decreases when an existing organelle decays, or when two organelles fuse together to become one organelle. The actual number of organelles of a particular type inside a cell results from a balance between these creative and destructive processes."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Last year researchers at Harvard University developed a model that treats the processes of organelle creation and destruction as if they were chemical reactions, and then used their model to make predictions about the budding yeast <i>S. cerevisiae</i> in three scenarios. The Harvard researchers had to use a number of approximations to make these predictions."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Now Jeremy Craven has derived exact solutions to the model for these three scenarios. The exact solutions call into question some aspects of the model, notably the prediction that the production of new peroxisomes \u2013 organelles that are involved in breaking down fatty acids and other compounds \u2013 is dominated by fission when the yeast cells are grown on a substance called oleate, and by de novo synthesis when they are grown on glucose. Craven's analysis also highlights the need for quantitative time-course imaging data to test theoretical models of dynamic processes in cells."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Recently a model was presented in which the variation of numbers of a particular type of organelle (Golgi apparatus, vacuoles or peroxisomes) observed in cells was proposed as a diagnostic indicator of the relative importance of different processes by which organelles can be formed and destroyed (<a href=\"#bib11\">Mukherji and O\u2019Shea, 2014</a>; see <a href=\"#bib12\">Mukherji and O\u2019Shea, 2015</a> for a correction). Here we re-examine the mathematical analysis of this model and show that further insight can be gained from considering exact calculations of the equilibrium distributions. For conciseness we will refer to the model, and the analysis in the associated paper (<a href=\"#bib11\">Mukherji and O\u2019Shea, 2014</a>), by the abbreviation SMOP (stochastic model of organelle production)."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Analysis", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "The SMOP model in the context of \u201cbirth and death\u201d models", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the SMOP model, four processes are envisaged for the production and destruction of organelles: de novo synthesis, fission, fusion and decay. These four processes are characterised by one rate constant each, defined in the SMOP paper as <i>k<sub>de novo</sub>, k<sub>fission</sub>, k<sub>fusion</sub></i>, and <i>\u03b3</i>. Following the definitions in the SMOP paper, the probabilities of each of the four processes occurring in the next small time period <i>\u03b4t</i> are given in <a href=\"#tbl1\">Table 1</a>. We also include in this table the total rate of each process that would be observed instantaneously in a large population of <i>N</i> cells."
+                            }, 
+                            {
+                                "type": "table", 
+                                "doi": "10.7554/eLife.10167.003", 
+                                "id": "tbl1", 
+                                "label": "Table 1.", 
+                                "title": "Definition of terms in the SMOP model", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Definition of terms in the SMOP model"
+                                    }
+                                ], 
+                                "tables": [
+                                    "<table><thead><tr><th>Process</th><th>Probability of process occurring\u00a0in next <i>\u03b4t</i> in a particular cell containing <i>n</i> organelles<i><sup>1</sup></i></th><th>Process changes <i>n</i> by</th><th>Rate of process in sample of <i>N</i> cells<i><sup>2</sup></i></th></tr></thead><tbody><tr><td>De novo</td><td><i>k<sub>de\u00a0novo</sub>\u03b4t</i></td><td>1</td><td><i>k<sub>de novo</sub>f<sub>n</sub>N</i></td></tr><tr><td>Fission</td><td><i>k<sub>fission</sub>n\u03b4t</i></td><td>1</td><td><i>k<sub>fission</sub>nf<sub>n</sub>N</i></td></tr><tr><td>Decay</td><td><i>\u03b3n\u03b4t</i></td><td>-1</td><td><i>\u03b3nf<sub>n</sub>N</i></td></tr><tr><td>Fusion</td><td><i>k<sub>fusion</sub>n(n-1)\u03b4t</i></td><td>-1</td><td><i>k<sub>fusion</sub>n(n-1)f<sub>n</sub>N</i></td></tr></tbody></table>"
+                                ], 
+                                "footnotes": [
+                                    {
+                                        "text": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<i><sup>1</sup></i>For example, if <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.02 then the probability of a cell with <i>n</i>\u00a0=\u00a02 organelles undergoing a fission event in the next 0.1 time units = 0.02x2x0.1 = 0.004."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "text": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<i><sup>2</sup>f<sub>n</sub></i> is the fraction of cells having <i>n</i> organelles. For example, if 23% of the cells have 2 organelles then <i>f</i><sub><i>2</i>\u00a0</sub>=\u00a00.23. If, in a population of 1000 cells, <i>f</i><sub><i>2</i>\u00a0</sub>=\u00a00.23 and <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.02\u00a0then the rate of cells changing from having <i>n</i>\u00a0=\u00a02 to <i>n</i>\u00a0=\u00a03 organelles at any one moment due to fission would be 0.02x2x0.23x1000 = 9.2 cells per time unit."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Models involving processes of this type are generically termed \u201cbirth and death\u201d processes and have a very long history of analysis in the context both of the life sciences (e.g. evolution; <a href=\"#bib16\">Yule, 1924</a>) and in the context of physical processes (e.g. detection of cosmic rays; <a href=\"#bib2\">Furry, 1937</a>). Accessible discussions can be found in several books (<a href=\"#bib1\">Bailey, 1990</a>, which is a reissue of the classic text from 1964; <a href=\"#bib15\">Taylor and Karlin, 1998</a>). In such analyses, the three processes of de novo production, production by fission, and loss by first order decay are often termed immigration, birth and death, respectively. Immigration is used for a process that increases the number of individuals but does not require any other individuals already to be present. Birth is the process by which one individual gives rise to a second individual. Death is a process by which a particular individual is lost from a population with a probability that is independent of any other members of the population. Analyses including a fusion term are much less common."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As there are a considerable number of possible combinations of the four processes that might be active, we will use a notation here to define a model by listing in curly brackets the active production processes, followed by the active destruction processes, separated by a semi-colon. Any process that is not mentioned has a rate constant of zero. Thus the model with de novo, fission and decay terms would be denoted {de novo, fission; decay}."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "During single cell simulations based upon the equations in <a href=\"#tbl1\">Table 1</a> the number of organelles will fluctuate (<a href=\"#fig1\">Figure 1A</a>) and one can ask what fraction of time, <i>f<sub>n</sub></i>, does a cell spend having <i>n\u00a0</i>=\u00a00, <i>n\u00a0</i>=\u00a01, <i>n\u00a0</i>=\u00a02, etc. organelles. This is equivalent to asking what fraction of a large ensemble of cells have <i>n\u00a0</i>=\u00a00, <i>n\u00a0</i>=\u00a01, <i>n\u00a0</i>=\u00a02, etc. organelles at one moment in time. In treatments of stochastic systems, the values of <i>f<sub>n</sub></i> would normally be described as the probability distribution for a cell having <i>n</i> organelles. In terms of a population of cells it can be described as a population distribution."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10167.004", 
+                                "id": "fig1", 
+                                "label": "Figure 1.", 
+                                "title": "The concept of the limiting distribution in a stochastic system.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) The traces show simulations run with the parameters {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a02.0, <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.9; \u03b3\u00a0=\u00a01.0, <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00.02}, starting from <i>n</i>\u00a0=\u00a00 (black trace) and <i>n</i>\u00a0=\u00a050 (green trace). Both simulations \u201csettle down\u201d to stochastic fluctuations about a mean value of <n>\u00a0=\u00a07.1 (<b>B</b>) Schematic representation of a set of cells that are all initialised to <i>n\u00a0</i>=\u00a01 at time <i>t</i>\u00a0=\u00a00, and are observed at a time <i>t</i>\u00a0=\u00a0<i>\u03c4</i>. (<b>C</b>) Distributions calculated with the same parameters as in (<b>A</b>) for a set of 1000 cells as in (<b>B</b>), calculated for <i>\u03c4</i>\u00a0=\u00a00.2 (magenta), 0.4 (yellow), 1.0 (green), 2.0 (blue), 5.0 (black), 10.0 (cyan), 15.0 (red). The curves for <i>\u03c4</i> = 10.0 and <i>\u03c4</i> =\u00a015.0 become very similar as they approach the limiting distribution. These two curves match closely the result (filled black circles) of applying the recurrence relation (<a href=\"#equ2\">Equation 2</a>; Appendix 2). (<b>D</b>) The red trace is a time course for parameters {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a02.0, <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a01.1; <i>\u03b3</i>\u00a0=\u00a01.0, <i>k<sub>fusion\u00a0</sub></i>=\u00a00}. Since <i>k</i><sub><i>fission</i>\u00a0</sub>&gt;\u00a0<i>\u03b3</i>, and <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00, then <i>n</i> diverges; in such a case there is no limiting distribution.</n>"
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-10167-fig1-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The simulations in <a href=\"#fig1\">Figure 1A</a> illustrate the important point that a simulation is always started from some arbitrary starting point, and that a period of time must elapse before the simulations can be considered to be independent of this starting point. If the distribution <i>f<sub>n</sub></i> is evaluated at different times after the starting point of simulations (<a href=\"#fig1\">Figure 1C</a>) then different distributions are obtained; hence the distribution is \u201ctime dependent\u201d. As the probability (or population) distribution varies in time (and since the system can in principle be started from any state) then it is not strictly possible to talk of \u201cthe distribution\u201d for a stochastic system. However in many birth and death models the system will settle down to a limiting distribution, independent of the starting states of the cell(s) as in the cyan and red curves in <a href=\"#fig1\">Figure 1C</a>. Such a situation corresponds to a state of dynamic equilibrium that is familiar from chemical kinetics. Thus the terms limiting, equilibrium (or steady state) distributions can be used in this context interchangeably. The conditions for the models studied here to have limiting distributions is discussed further below; an example of a set of parameters for which a SMOP model does not yield a limiting distribution is shown in <a href=\"#fig1\">Figure 1D</a>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Assuming that a limiting probability distribution does exist there are two basic sampling methods by which it can be measured, irrespective of whether one is making experimental observations or performing simulations. One method is to note <i>n</i> at a set of time points for a single cell (such as points drawn from the trajectories in <a href=\"#fig1\">Figure 1A</a>), and the other is to take a large number of cells at one point in time, and measure <i>n</i> across this ensemble of cells (<a href=\"#fig1\">Figure 1B,C</a>). The former would require a time dependent set of observations that may be difficult to obtain experimentally. The latter approach is equivalent to making experimental observations on a large field of view of cells, or of making repeated simulations. However there is a large caveat that when the measurements are made one must be convinced that the cells have had \u201clong enough to reach equilibrium\u201d since the last significant perturbation to the system. If this is not the case then the distribution measured will be contaminated with contributions from non-equilibrium distributions (such as from the magenta, yellow, green and blue curves in <a href=\"#fig1\">Figure 1C</a>). Perturbations include the choice of an arbitrary starting point in simulations, and effects such as cell division and change of growth conditions in experimental data."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Does the SMOP analysis imply equilibrium distributions?", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "It is implicitly assumed in the SMOP paper that the populations are to be considered to be at equilibrium (or that the probability distributions are in their limiting form) for all three cases of the analysis via simulations, from experimental data, or via the fluctuation dissipation theorem; a comment has been added to the original articles to clarify this assumption for the simulations (see the comment dated November 23, 2015 on <a href=\"#bib11\">Mukherji and O'Shea, 2014</a>). For the experimental data this seems a reasonable assumption, although dynamic population data are really required to fully settle this issue. The fluctuation dissipation theorem method implicitly assumes a steady state (<a href=\"#bib13\">Paulsson, 2005</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Derivation of recurrence relation for the distribution of organelles in the {de novo, fission; decay, fusion} model", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "By applying an equilibrium condition it is straightforward to derive precise relations for the distributions in the three scenarios considered in the original SMOP paper, and hence avoid the approximations introduced by the use of the fluctuation dissipation theorem."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "At equilibrium, the rate at which the population gains cells with <i>n</i>\u00a0+\u00a01\u00a0organelles due to cells with <i>n</i> organelles gaining one organelle must equal the rate at which the cells with <i>n</i>\u00a0+ 1\u00a0organelles lose one organelle. The reasoning is the same as for standard treatments of dynamic equilibrium between two states (as in a chemical reaction), and the complete justification of this when there are multiple states (i.e. cells with <i>n\u00a0</i>=\u00a00, <i>n\u00a0</i>=\u00a01, <i>n\u00a0</i>=\u00a02, etc., organelles) is given in Appendix 1."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Thus at equilibrium"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ1", 
+                                "label": "(1)", 
+                                "mathml": "<math><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><mo>+</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mo></mo><msub><mi>f</mi><mi>n</mi></msub><mi>N</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mrow><mo>(</mo><mi>\u03b3</mi> <mo></mo><mo>+</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo><mn>1</mn><mo>)</mo></mrow><mo></mo><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mi>N</mi></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "which gives"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ2", 
+                                "label": "(2)", 
+                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><mo>+</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mi>\u03b3</mi> <mo></mo><mo>+</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mfenced><mrow><mi>n</mi> <mo></mo><mo>+</mo><mo>\u00a0</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "From <a href=\"#equ2\">Equation 2</a> the <i>exact</i> distribution of organelle numbers at equilibrium can be calculated for a model involving <i>any</i> combination of the four processes, without recourse to random number based simulations and the attendant issues of ensuring adequate sampling precision."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "An explicit numerical example of the use of <a href=\"#equ2\">Equation 2</a> to generate a distribution is given in Appendix 2. Briefly, an arbitrary value for <i>f<sub>0</sub> </i>is chosen; <i>f<sub>1</sub> </i>is then calculated from <i>f</i><sub><i>0</i></sub>;\u00a0<i>f<sub>2</sub></i> is calculated from <i>f<sub>1</sub>; f<sub>3</sub></i> is calculated from <i>f<sub>2</sub></i>; etc. Finally the entire distribution is normalised, which removes any dependence on the initial choice for <i>f<sub>0</sub></i>. <a href=\"#equ2\">Equation 2</a> is often termed a recurrence relation (or sometimes recursion relation or difference equation) as it allows successive terms in a distribution to be calculated from earlier terms."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Application of recurrence method to Golgi and vacuole models", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The recurrence relation readily allows the derivation of precise distributions for the case of the model applied to Golgi ({de novo; decay}, Appendix 3) and vacuoles ({fission; fusion}, Appendix 4). For the Golgi, a Poisson distribution is obtained as the limiting distribution in accord with the SMOP analysis. However for vacuoles a truncated Poisson distribution is obtained, and not the shifted Poisson distribution that is reported in the SMOP analysis. Although the difference between these distributions is quite subtle (Appendix 4), the variation of Fano factor with &lt;<i>n</i>&gt; is significantly different: the Fano factor for the truncated Poisson approaches 1 much more rapidly (<a href=\"#fig2\">Figure 2</a>, green curve) than for the shifted Poisson (<a href=\"#fig2\">Figure 2</a>, black curve)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10167.005", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Comparison of reported Fano factors for vacuole populations, compared to two different theoretical expectations.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Three data points quoted in the SMOP paper are plotted: \u25a1 Haploid (glucose); \u25cb Diploid (glucose); \u2206 Haploid (oleate). The solid black curve is the expectation from the shifted Poisson distribution (which is the incorrect distribution given the {fission; fusion} model) and the solid green curve is the expectation from the truncated Poisson distribution (which is the correct distribution given the model). The dashed line is for a Fano factor of 1. The solid curves were constructed by calculating a family of distributions and evaluating the mean and Fano factor."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-10167-fig2-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In <a href=\"#fig2\">Figure 2</a>, it can be seen that the experimental values quoted in the SMOP analysis are in excellent agreement with the <i>incorrect</i> prediction, whilst the agreement with the corrected theoretical prediction is much less good. This greatly weakens the argument that the SMOP model makes \u201cquantitatively accurate predictions\u201d or that it therefore correctly accounts for the behaviour of the vacuole population."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Application of recurrence method to peroxisome models", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Having established the value of analysing the SMOP model with the recurrence method, we move on to the case of peroxisomes."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s2-5-1", 
+                                "title": "Recurrence relation demonstrates that {de novo, fission; decay} yields a negative binomial distribution", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For peroxisomes, the primary model discussed in the SMOP analysis is a model in which peroxisomes can potentially form both de novo and by fission, and fusion is considered to be negligible. We show in Appendix 5 that such a {de novo, fission; decay} model has a limiting distribution that is a negative binomial distribution."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As a result, exact expressions (for all parameter values) are readily obtained (Appendix 5) for the mean and Fano factor for this model,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "label": "(4)", 
+                                        "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mi>\u03b3</mi><mrow><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Combining <a href=\"#equ3 equ4\">Equations 3,4</a> gives an alternative form for the Fano factor"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(5)", 
+                                        "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "This latter equation is the form given in the SMOP analysis as the <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00 limit of the approximate <a href=\"#equ1\">Equation 1</a> of the SMOP paper. By explicitly applying the equilibrium assumption we have therefore shown that this expression is exact in this case for all values of the parameters."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s2-5-2", 
+                                "title": "Evaluation of Fano factor for the boundary marking equal de novo and fission rates", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "An attractive claim made for the SMOP analysis is that the value for the Fano factor can be used to distinguish between different modes of organelle production."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In <a href=\"#fig3\">Figure 3D</a> of the original SMOP paper, a green dashed line was placed at <math id=\"inf1\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>/</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>=</mo><mn>1</mn></math> and stated as \u201cmarking the boundary between de novo synthesis and fission dominated organelle production\u201d. Thus, as presented in <a href=\"#fig3\">Figure 3D</a> of the original version of the SMOP paper, the Fano factor for cells grown on oleate (<math id=\"inf2\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>/</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>=</mo><mn>2.4</mn><mo></mo><mo>\u00b1</mo><mn>0.2</mn><mo>)</mo><mo></mo></math>\u00a0appears to lie significantly above the line where the rates are equal, and thus terms such as \u201cfission dominated biogenesis\u201d are used widely in the SMOP paper."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10167.006", 
+                                        "id": "fig3", 
+                                        "label": "Figure 3.", 
+                                        "title": "The percentage contribution to the total production rate from de novo production and from fission as a function of Fano factor in the {de novo, fission; decay} model.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For each value of the Fano factor shown, a bar is drawn to represent the total production rate. The filled part of the bar represents the contribution from de novo production inferred from the model and the open part of the bar represents the inferred rate from fission. Bars are shown for Fano factors of: 1.0 (100% de novo); 1.1 (experimentally observed for glucose growth (<b>G</b>) in SMOP paper; 9% de novo, 91% fission); 2.0 (boundary value, where de novo and fission contributions are equal); 2.4 (experimentally reported value for oleate growth (<b>O</b>) in SMOP paper; 42% de novo, 58% fission); 3.0 (value required for fission rate to be double the de novo rate). The total production rate from de novo processes is simply <i>k<sub>de novo</sub></i>. The total rate from fission processes is <i>k<sub>fission</sub></i>&lt;<i>n</i>&gt;. The relative proportions of the two processes were calculated using <a href=\"#equ5\">Equation 5</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-10167-fig3-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "However, according to <a href=\"#equ5\">Equation 5</a> the correct value with equal contributions from the two processes is <math id=\"inf3\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>/</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>=</mo><mn>2</mn></math>. A correction to this effect has now been issued. The value of <math id=\"inf4\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>/</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>=</mo><mn>1</mn></math> corresponds to the extreme case of <i>zero</i> fission and production <i>solely</i> by de novo production (<a href=\"#fig3\">Figure 3</a>). In the corrected version of <a href=\"#fig3\">Figure 3D</a> in the SMOP paper it is clear that the inferred fission rate for growth on oleate is <i>only barely greater</i> than the de novo synthesis rate and the term \u201cdominance\u201d does not seem to be appropriate. It is clear from <a href=\"#fig3\">Figure 3</a> that the inferred contribution from fission grows only rather slowly as the Fano factor increases above a value of two. In other words, for fission to be truly dominant a Fano factor would have to be observed that was far greater than any reported in the SMOP paper."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s2-5-3", 
+                                "title": "Restrictions on the relationships between parameters in order for limiting distributions to exist", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Since it is inherent in the SMOP analysis that the distributions are limiting/equilibrium distributions, it is important to consider whether a limiting distribution will ever be reached."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the case of the peroxisome model, {de novo, fission; decay}, for the system to have a limiting or equilibrium distribution there is a strong restriction on parameters, namely that <i>k<sub>fission</sub> &lt;\u00a0\u03b3.</i> To see why this restriction exists, consider first the more simple {de novo; decay} model. Considering a single cell, the number of organelles will be limited by the fact that as <i>n</i> grows larger then the decay process (whose rate increases proportionally to <i>n</i>) will become increasingly more likely than the de novo formation process (which is independent of <i>n</i>). If the fission process is introduced then there is now a <i>production</i> term that also increases proportionally to <i>n</i>. If <i>k<sub>fission</sub></i> exceeds <i>\u03b3</i> then the fission process will always exceed the decay process and the number of organelles will grow without limit."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The behaviour as <i>k<sub>fission</sub></i> becomes similar to <i>\u03b3</i> can also be seen from <a href=\"#equ3 equ4\">Equations 3,4</a> since if <i>k<sub>fission</sub></i> is increased from zero until it becomes equal to <i>\u03b3</i> then <i>&lt;n&gt;</i> and <math id=\"inf5\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>/</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math> both diverge. Thus at first sight there appear to be two different ways in which the Fano factor can become very large. One way, as extensively discussed in the SMOP analysis and above, is if the mean rate <i>k<sub>fission</sub></i>&lt;<i>n</i>&gt; becomes large compared to the mean rate <i>k<sub>de novo</sub></i>. The other way, that becomes clear from our analysis, is if the rate constant <i>k<sub>fission</sub></i> becomes similar to the rate constant <i>\u03b3</i>. The connection between these two relations is that &lt;<i>n</i>&gt; is a function of all three rate constants. This emphasises the hidden complexity of the interplay of the parameters in this model."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Our motivation for this in depth analysis of the SMOP method was sparked by the claim that it could differentiate between fission and fusion dominated mechanisms of peroxisome biogenesis. That the distribution of numbers of organelles can give a clue to the mechanisms by which organelles are formed is a very elegant idea, and the SMOP analysis combines this idea with a very simple kinetic model. As we explored the system further we realised that the fluctuation dissipation theorem result was not necessary for analysis of the system, and that enforcing the equilibrium condition, that was implicit in the work already, greatly simplified the analysis."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "There are a number of factors that cause us to question the utility of the SMOP model. A main piece of evidence for the correctness of the model was the agreement of the experimentally observed Fano factors for the vacuole data with those from the model. We have shown this agreement to be much less perfect than originally demonstrated. We have also shown that there is a strong interplay between different parameters in the model. This means that the agreement of experimental data with the model is not as compelling as originally presented and that the interpretation of experimental observations back to mechanistic conclusions is open to question. We hope that our analysis will stimulate discussion as to whether, for instance, the SMOP model captures the key features of the underlying processes and is just lacking some details; or whether the model fundamentally lacks key aspects of feedback. The assumption that observations of cells grown in batch culture faithfully report equilibrium distributions also requires further verification."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "A key conclusion of the SMOP analysis is that the contribution of fission to peroxisome biogenesis is negligible (&lt;10%) when yeast cells are grown on glucose, but \"dominant\" when they are grown on oleate. This is an area of some contention (<a href=\"#bib4\">Hoepfner et al, 2005</a>; <a href=\"#bib10\">Motley and Hettema, 2007</a>), and a recent model relied on fission of peroxisomes during organelle inheritance as the proliferation mechanism (<a href=\"#bib6\">Knoblach et al, 2013</a>). Our analysis has shown that the term \u201cdominant\u201d is misleading, and that the data reported for haploid cells grown on oleate indicates approximately equal contributions from the two processes."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Nevertheless the model does suggest that the proportion of production by fission increases by about a factor of five on switching to oleate growth. Supporting evidence for this was provided by the observation of the reduction in the inferred fission contribution in cells grown on oleate in which the fission factors Vps1 or Dnm1 (or Fis1, an accessory factor of Dnm1) were deleted. On the other hand, no data were shown for glucose grown cells harbouring the same deletions. On glucose the Fano factor is reported in the SMOP analysis as 1.1, with &lt;<i>n</i>&gt;\u00a0=\u00a03, and from <a href=\"#equ3 equ4\">Equations 3,4</a> one obtains <i>k</i><sub><i>de\u00a0novo</i>\u00a0</sub>=\u00a02.7<i>\u03b3</i> and <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.1<i>\u03b3</i>. The model then implies that on deletion of the fission pathway (i.e. setting <i>k<sub>fission\u00a0</sub></i>=\u00a00) then &lt;<i>n</i>&gt; would only drop by 10%. Peroxisome count data has been reported recently (Fig S4, <a href=\"#bib9\">Motley <i>et al.</i>, 2015</a>), with values of &lt;<i>n</i>&gt;\u00a0=\u00a04.9 in WT cells, &lt;<i>n</i>&gt;\u00a0=\u00a01.5 in <i>vps1\u0394</i> cells and &lt;<i>n</i>&gt;\u00a0=\u00a01.2 in <i>vps1\u0394dnm1\u0394</i> cells. The drops in peroxisome numbers in <i>vps1\u0394</i> and <i>vps1\u0394dnm1\u0394</i> cells are much greater than the 10% estimated above from the SMOP model. There is also peroxisome count data in <a href=\"#bib8\">Kuravi et al. (2006)</a>, which gives &lt;<i>n</i>&gt;\u00a0=\u00a01.6 (<i>WT</i>), &lt;<i>n</i>&gt;\u00a0=\u00a01.2 (<i>vps1\u0394</i>), &lt;<i>n</i>&gt;\u00a0=\u00a01.7 (<i>dnm1\u0394</i>), &lt;<i>n</i>&gt;\u00a0=\u00a00.9 (<i>dnm1\u0394vps1\u0394</i>). The drop in &lt;<i>n</i>&gt; for the <i>dnm1\u0394vps1\u0394</i> again conflicts with the idea that fission is such a small contributor to the biogenesis process. The discrepancies between these various data possibly arise from difficulties in quantifying peroxisome numbers, especially when cells contain a large number of small (and therefore low fluorescence) peroxisomes as may be the case when fission is a strong contributor to biogenesis. The problem of peroxisome counts depending on the brightness of fluorescent markers has been commented on by <a href=\"#bib5\">Jung <i>et al.</i> (2010)</a>."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "There is a continuing push for cell biology to become more quantitative, and to be subject to the use of rigorous models as are common in the physical sciences. Such a push raises significant challenges not only in terms of developing tractable models and justifying the underlying assumptions, but also in terms of the application of the model to complex experimental data. In particular this work highlights the need for greater accounting for detection limits and intensity distributions, as well of time dependent issues, in the reporting and analysis of organelle count data, if these are to be used to infer details of organelle biogenesis mechanisms."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "All calculations were performed in python 2.7, running either via Cygwin under Windows 8.1, or Linux Mint 17.0. The code used for running stochastic simulations and for calculating distributions via <a href=\"#equ2\">Equation 2</a> is given in <a href=\"#SD1-data\">Source code 1</a>,<a href=\"#SD2-data\">2</a>. Time units are arbitrary. The time step for the simulations in <a href=\"#fig1\">Figure 1</a> was 0.0001 units. <a href=\"#equ2\">Equation 2</a> can be reformulated in terms of three parameters, e.g. <i>k<sub>de novo</sub></i>/<i>\u03b3, k<sub>fission</sub></i>/<i>\u03b3, k<sub>fusion</sub></i>/<i>\u03b3</i>; thus for example the parameters {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a02.0, <i>k<sub>fission\u00a0</sub></i>= 0.9; <i>\u03b3</i>\u00a0=\u00a01.0, <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00.02} and any uniformly scaled set of parameters (e.g. {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a04.0, <i>k<sub>fission\u00a0</sub></i>= 1.8; <i>\u03b3</i>\u00a0=\u00a02.0, <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00.04}) yield the same limiting distribution. As in the SMOP paper, the Fano factor is defined here as <math id=\"inf6\"><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac></math>."
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "book", 
+                "id": "bib1", 
+                "date": "1990", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Bailey", 
+                            "index": "Bailey, N"
+                        }
+                    }
+                ], 
+                "bookTitle": "The Elements of Stochastic Processes with Applications to the Natural Sciences", 
+                "publisher": {
+                    "name": [
+                        "Wiley"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "New York"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "New York"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "1937", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WH Furry", 
+                            "index": "Furry, WH"
+                        }
+                    }
+                ], 
+                "articleTitle": "On fluctuation phenomena in the passage of high energy electrons through lead", 
+                "journal": {
+                    "name": [
+                        "Physical Review"
+                    ]
+                }, 
+                "volume": "52", 
+                "pages": {
+                    "first": "569", 
+                    "last": "581", 
+                    "range": "569\u2013581"
+                }, 
+                "doi": "10.1103/PhysRev.52.569"
+            }, 
+            {
+                "type": "book", 
+                "id": "bib3", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Grimmett", 
+                            "index": "Grimmett, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Stirzaker", 
+                            "index": "Stirzaker, D"
+                        }
+                    }
+                ], 
+                "bookTitle": "Probability and Random Processes", 
+                "publisher": {
+                    "name": [
+                        "Oxford University Press"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "Oxford"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "Oxford"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Hoepfner", 
+                            "index": "Hoepfner, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Schildknegt", 
+                            "index": "Schildknegt, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Braakman", 
+                            "index": "Braakman, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Philippsen", 
+                            "index": "Philippsen, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HF Tabak", 
+                            "index": "Tabak, HF"
+                        }
+                    }
+                ], 
+                "articleTitle": "Contribution of the endoplasmic reticulum to peroxisome formation", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "122", 
+                "pages": {
+                    "first": "85", 
+                    "last": "95", 
+                    "range": "85\u201395"
+                }, 
+                "doi": "10.1016/j.cell.2005.04.025"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Jung", 
+                            "index": "Jung, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Marelli", 
+                            "index": "Marelli, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Rachubinski", 
+                            "index": "Rachubinski, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DR Goodlett", 
+                            "index": "Goodlett, DR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JD Aitchison", 
+                            "index": "Aitchison, JD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamic changes in the subcellular distribution of Gpd1p in response to cell stress", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "285", 
+                "pages": {
+                    "first": "6739", 
+                    "last": "6749", 
+                    "range": "6739\u20136749"
+                }, 
+                "doi": "10.1074/jbc.M109.058552"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Knoblach", 
+                            "index": "Knoblach, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Sun", 
+                            "index": "Sun, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Coquelle", 
+                            "index": "Coquelle, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Fagarasanu", 
+                            "index": "Fagarasanu, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Poirier", 
+                            "index": "Poirier, RL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Rachubinski", 
+                            "index": "Rachubinski, RA"
+                        }
+                    }
+                ], 
+                "articleTitle": "An ER-peroxisome tether exerts peroxisome population control in yeast", 
+                "journal": {
+                    "name": [
+                        "The EMBO Journal"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "2439", 
+                    "last": "2453", 
+                    "range": "2439\u20132453"
+                }, 
+                "doi": "10.1038/emboj.2013.170"
+            }, 
+            {
+                "type": "book", 
+                "id": "bib7", 
+                "date": "1989", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Kotz", 
+                            "index": "Kotz, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Johnson", 
+                            "index": "Johnson, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Read", 
+                            "index": "Read, C"
+                        }
+                    }
+                ], 
+                "bookTitle": "Encyclopedia of Statistical Sciences", 
+                "publisher": {
+                    "name": [
+                        "Wiley"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "New York"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "New York"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Kuravi", 
+                            "index": "Kuravi, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamin-related proteins Vps1p and Dnm1p control peroxisome abundance in saccharomyces cerevisiae", 
+                "journal": {
+                    "name": [
+                        "Journal of Cell Science"
+                    ]
+                }, 
+                "volume": "119", 
+                "pages": {
+                    "first": "3994", 
+                    "last": "4001", 
+                    "range": "3994\u20134001"
+                }, 
+                "doi": "10.1242/jcs.03166"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Motley", 
+                            "index": "Motley, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PC Galvin", 
+                            "index": "Galvin, PC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Ekal", 
+                            "index": "Ekal, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Nuttall", 
+                            "index": "Nuttall, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EH Hettema", 
+                            "index": "Hettema, EH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Reevaluation of the role of Pex1 and dynamin-related proteins in peroxisome membrane biogenesis", 
+                "journal": {
+                    "name": [
+                        "The Journal of Cell Biology"
+                    ]
+                }, 
+                "volume": "211", 
+                "pages": {
+                    "first": "1041", 
+                    "last": "1056", 
+                    "range": "1041\u20131056"
+                }, 
+                "doi": "10.1083/jcb.201412066"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Motley", 
+                            "index": "Motley, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EH Hettema", 
+                            "index": "Hettema, EH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Yeast peroxisomes multiply by growth and division", 
+                "journal": {
+                    "name": [
+                        "The Journal of Cell Biology"
+                    ]
+                }, 
+                "volume": "178", 
+                "pages": {
+                    "first": "399", 
+                    "last": "410", 
+                    "range": "399\u2013410"
+                }, 
+                "doi": "10.1083/jcb.200702167"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Mukherji", 
+                            "index": "Mukherji, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mechanisms of organelle biogenesis govern stochastic fluctuations in organelle abundance", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "e02678", 
+                "doi": "10.7554/eLife.02678"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Mukherji", 
+                            "index": "Mukherji, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EK O'Shea", 
+                            "index": "O'Shea, EK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Correction: mechanisms of organelle biogenesis govern stochastic fluctuations in organelle abundance", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "e12522", 
+                "doi": "10.7554/eLife.12522"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Paulsson", 
+                            "index": "Paulsson, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Models of stochastic gene expression", 
+                "journal": {
+                    "name": [
+                        "Physics of Life Reviews"
+                    ]
+                }, 
+                "volume": "2", 
+                "pages": {
+                    "first": "157", 
+                    "last": "175", 
+                    "range": "157\u2013175"
+                }, 
+                "doi": "10.1016/j.plrev.2005.03.003"
+            }, 
+            {
+                "type": "book", 
+                "id": "bib14", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Scheaffer", 
+                            "index": "Scheaffer, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Young", 
+                            "index": "Young, L"
+                        }
+                    }
+                ], 
+                "bookTitle": "Introduction to Probability and Its Applications. Boston", 
+                "publisher": {
+                    "name": [
+                        "Brooks/Cole"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "MA"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "MA"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "book", 
+                "id": "bib15", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Taylor", 
+                            "index": "Taylor, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Karlin", 
+                            "index": "Karlin, S"
+                        }
+                    }
+                ], 
+                "bookTitle": "An Introduction to Stochastic Modeling", 
+                "publisher": {
+                    "name": [
+                        "Academic Press"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "San Diego"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "San Diego"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "1925", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GU Yule", 
+                            "index": "Yule, GU"
+                        }
+                    }
+                ], 
+                "articleTitle": "A mathematical theory of evolution, based on the conclusions of dr. j. c. willis, F.R.S", 
+                "journal": {
+                    "name": [
+                        "Philosophical Transactions of the Royal Society B: Biological Sciences"
+                    ]
+                }, 
+                "volume": "213", 
+                "pages": {
+                    "first": "21", 
+                    "last": "87", 
+                    "range": "21\u201387"
+                }, 
+                "doi": "10.1098/rstb.1925.0002"
+            }
+        ], 
+        "appendices": [
+            {
+                "id": "app1", 
+                "title": "Appendix 1: Detailed balance", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s15", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Consider an ensemble of cells, where cells with for example <i>n\u00a0</i>=\u00a03 organelles can only arise from cells with <i>n\u00a0</i>=\u00a02 or <i>n\u00a0</i>=\u00a04 organelles."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We can represent the kinetic processes thus"
+                            }, 
+                            {
+                                "type": "table", 
+                                "id": "tblu1", 
+                                "tables": [
+                                    "<table><tbody><tr><td></td><td align=\"center\"><i>R<sub>n=1</sub></i><sub>\u2192<i>n=0</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=2</sub></i><sub>\u2192<i>n=1</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=3</sub></i><sub>\u2192<i>n=2</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=4</sub></i><sub>\u2192<i>n=3</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=5</sub></i><sub>\u2192<i>n=4</i></sub></td><td align=\"center\"></td></tr><tr><td align=\"center\"><i>n\u00a0</i>=\u00a00</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a01</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a02</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a03</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a04</td><td align=\"center\">\u21c6</td><td align=\"center\">etc.</td></tr><tr><td></td><td align=\"center\"><i>R<sub>n=0</sub></i><sub>\u2192<i>n=1</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=1</sub></i><sub>\u2192<i>n=2</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=2</sub></i><sub>\u2192<i>n=3</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=3</sub></i><sub>\u2192<i>n=4</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=4</sub></i><sub>\u2192<i>n=5</i></sub></td><td align=\"center\"></td></tr></tbody></table>"
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Where for example <i>R</i><sub><i>n=2</i>\u2192<i>n=3</i></sub> is the rate of formation of cells with <i>n\u00a0=\u00a03</i> due to cells with <i>n\u00a0</i>=\u00a02 gaining one organelle, and <i>R</i><sub><i>n=3</i>\u2192<i>n=2</i></sub> is the rate of loss of cells with <i>n\u00a0=\u00a03</i> due to such cells losing one organelle."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "If the system is in equilibrium (<i>i.e.</i> the values of <i>f</i><sub>0</sub>, <i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, etc. are not changing) then a form of the principle of detailed balance applies. The principle of detailed balance asserts that for instance"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ6", 
+                                "label": "(6)", 
+                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>3</mn></mrow></msub></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To show this, consider first the state with <i>n\u00a0</i>=\u00a00. At equilibrium the rate of formation must equal the rate of loss,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ7", 
+                                "label": "(7)", 
+                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Now considering the state with <i>n\u00a0</i>=\u00a01, the equivalent relation contains more terms"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ8", 
+                                "label": "(8)", 
+                                "mathml": "<math><mo></mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>0</mn></mrow></msub> <mo></mo><mo>+</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "But, crucially, by substituting in from <a href=\"#equ7\">Equation 7</a> this simplifies to"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ9", 
+                                "label": "(9)", 
+                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "And by proceeding along the chain the general relationship emerges that"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ10", 
+                                "label": "(10)", 
+                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2192</mo><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mi>i</mi></mrow></msub></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For <i>i</i>\u00a0= 1, 2, 3, etc."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In other words at equilibrium every individual reversible process must have balancing rates. The full \u201cprinciple of detailed balance\u201d for molecular systems contains some greater subtleties related to thermodynamics, that allow the principle to be applied to more complex networks."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "id": "app2", 
+                "title": "Appendix 2: Recurrence example", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s16", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The recurrence relation can be applied in an algebraic form as in the analysis of the various models in the paper, but can also be used to rapidly calculate numerical distributions directly."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As an example, consider the model {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a02.0, <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.333; \u03b3\u00a0=\u00a01.0, <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00.0333}"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#equ2\">Equation 2</a> becomes"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ11", 
+                                "label": "(11)", 
+                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.333</mn><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0.0333</mn><mi>n</mi><mo>)</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We first calculate provisional (un-normalised) values for <i>f</i><sub>0</sub>, <i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, etc."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "First set <i>f</i><sub>0\u00a0</sub>=\u00a01. This is an arbitrary choice and the final results do not depend upon it."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a00,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ12", 
+                                "label": "(12)", 
+                                "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0</mn><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0</mn><mo>)</mo></mrow><mfenced><mn>1</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>1.0</mn><mo>=</mo><mn>2.0</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Then using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a01, and the above value for <i>f<sub>1</sub></i>,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ13", 
+                                "label": "(13)", 
+                                "mathml": "<math><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.333</mn><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0.0333</mn><mo>)</mo></mrow><mfenced><mn>2</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>2.0</mn><mo>=</mo><mn>2.26</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "And again using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a02, and the above value for <i>f<sub>2</sub></i>,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ14", 
+                                "label": "(14)", 
+                                "mathml": "<math><msub><mi>f</mi><mn>3</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.666</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>0666</mn><mo>)</mo><mfenced><mn>3</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>2.26</mn><mo>=</mo><mn>1.88</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "This procedure can be repeated to calculate any number of terms."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For a model with a limiting distribution then for large <i>n</i> the <i>f<sub>n</sub></i> will become very small, for instance here <i>f</i><sub><i>20</i>\u00a0</sub>=\u00a00.00000008, and so it is not necessary to calculate more terms."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The calculated terms are then summed to give a normalising factor (<i>NF</i>),"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ15", 
+                                "label": "(15)", 
+                                "mathml": "<math><mi>N</mi><mi>F</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1.0</mn><mo>+</mo><mn>2.0</mn><mo>+</mo><mn>2.26</mn><mo>+</mo><mn>1.88</mn><mo>+</mo><mo>\u22ef</mo><mo>+</mo><mn>0.00000008</mn><mo>=</mo><mn>9.89</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The provisional values of <i>f<sub>0</sub>, f<sub>1</sub>, f<sub>2</sub></i>, etc. are divided by <i>NF</i>, which ensures that the fractional populations sum to one, giving"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<i>f</i><sub>0\u00a0</sub>=\u00a00.10, <i>f</i><sub>1</sub>\u00a0=\u00a00.20, <i>f</i><sub>2\u00a0</sub>=\u00a00.23, <i>f</i><sub>3\u00a0</sub>=\u00a00.19,\u00a0<i>f</i><sub>4\u00a0</sub>=\u00a00.13, <i>f</i><sub>5\u00a0</sub>=\u00a00.08, <i>f</i><sub>6\u00a0</sub>=\u00a00.04, etc."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Ideally it should be checked with a longer sequence that, to sufficient precision, the results are independent of the number of terms calculated."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "id": "app3", 
+                "title": "Appendix 3: Application of recurrence relation to {de novo; decay} model", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s17", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the case of the Golgi, the model proposed in the SMOP analysis is a {de novo; decay} model. This model is also often termed an immigration death process. For this model <a href=\"#equ2\">Equation 2</a> becomes"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ16", 
+                                "label": "(16)", 
+                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "So we have"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ17", 
+                                "label": "(17)", 
+                                "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ18", 
+                                "label": "(18)", 
+                                "mathml": "<math><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mn>2</mn></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ19", 
+                                "label": "(19)", 
+                                "mathml": "<math><msub><mi>f</mi><mn>3</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mo>\u00a0</mo><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mn>3</mn></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "etc., and so in general"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ20", 
+                                "label": "(20)", 
+                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mi>n</mi></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To ensure that the sum of all <i>f<sub>n</sub> </i>equates to one, it is simple to show from the power law definition of the exponential function that <math id=\"inf7\"><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mtext>exp</mtext><mo>(</mo><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>/</mo><mi>\u03b3</mi><mo>)</mo></math>, and hence"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ21", 
+                                "label": "(21)", 
+                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mtext>exp</mtext><mo>(</mo><mo>\u2212</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac><mo>)</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mi>n</mi></msup></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Thus the limiting distribution is a Poisson distribution as stated without proof in the SMOP paper. The mean is given by\u00a0<math id=\"inf8\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math>\u00a0=<i>\u00a0k<sub>de\u00a0novo</sub></i>/<i>\u03b3</i>."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "id": "app4", 
+                "title": "Appendix 4: Application of recurrence relation to {fission; fusion} model", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s18", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the case of vacuoles, the model proposed in the SMOP analysis is a {fission, fusion} model. For this model <a href=\"#equ2\">Equation 2</a> becomes"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ22", 
+                                "label": "(22)", 
+                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#equ16 equ22\">Equations 16,22</a> are identical except for the replacement of the ratio <i>k<sub>de novo</sub></i>/<i>\u03b3</i> by <i>k<sub>fission</sub></i>/<i>k<sub>fusion</sub></i> and therefore <a href=\"#equ22\">Equation 22</a> yields a form of Poisson distribution. It is not a standard Poisson distribution since, as noted in the SMOP paper, such a model cannot reach a state with <i>n\u00a0=</i>\u00a00 from a state with <i>n\u00a0</i>&gt;\u00a00 since the fusion probability is zero when <i>n\u00a0=\u00a0</i>1. This means that <i>f</i><sub>0\u00a0</sub>=\u00a00. The rest of the distribution has the same form as for a regular Poisson distribution (<a href=\"#equ23\">Equation 23</a>), except for a slightly different overall normalising factor. This distribution is known as a <i>truncated</i> (or sometimes <i>zero-truncated</i>) Poisson distribution (<a href=\"#equ24\">Equation 24</a>). We have checked this analysis by direct calculation and simulation using the programs in <a href=\"#SD1-data\">Source code 1</a>,<a href=\"#SD2-data\">2</a>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The relevant distributions can be defined as (<a href=\"#fig4\">Appendix 4 Figure 1</a>)"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Poisson:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ23", 
+                                "label": "(23)", 
+                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Truncated Poisson:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ24", 
+                                "label": "(24)", 
+                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>\u2212</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mspace linebreak=\"newline\"></mspace><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "\u00a0Shifted Poisson:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ25", 
+                                "label": "(25)", 
+                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mi>exp</mi><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo><mfrac><mn>1</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mspace linebreak=\"newline\"></mspace><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn></math>"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10167.009", 
+                                "id": "fig4", 
+                                "label": "Appendix 4 Figure 1.", 
+                                "title": "Comparison of Poisson (black filled circles), shifted Poisson (red filled squares), and truncated Poisson (green open circles) distributions calculated for \u03bb = 2.5.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The values in a shifted Poisson distribution are the same as in the corresponding Poisson distribution, however the whole distribution is shifted to the right by one unit in <i>n</i>. The value at <i>n\u00a0=</i>\u00a00 is set to zero. In a truncated Poisson the value at <i>n\u00a0=\u00a0</i>0 is set to zero, and the rest of the distribution has the same functional form as the corresponding Poisson distribution. Due to the loss of the <i>n\u00a0=\u00a0</i>0 point then normalisation causes the remaining values to be slightly higher in the truncated Poisson distribution than in the corresponding Poisson distribution."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-10167-app4-fig1-v1.tif"
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "id": "app5", 
+                "title": "Appendix 5: Application of recurrence relation to {de novo, fission; decay} model", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s19", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the case of peroxisomes, the model proposed in the SMOP analysis is a {de novo, fission; decay} model. For this model <a href=\"#equ2\">Equation 2</a> becomes"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ26", 
+                                "label": "(26)", 
+                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>\u03b3</mi><mo>)</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "This has the same form as the recurrence relation for the negative binomial distribution. The negative binomial distribution is often expressed as the distribution for the number of successes in a set of trials (probability of success in each trial = <i>p</i>) before a certain number, <i>r</i>, of failures occurs, however the distribution arises in a wide variety of situations (<a href=\"#bib7\">Kotz et al, 1989</a>; <a href=\"#bib15\">Taylor and Karlin, 1998</a>; <a href=\"#bib14\">Scheaffer and Young, 2010</a>; <a href=\"#bib3\">Grimmett and Stirzaker, 2001</a>) and in general there is no restriction that <i>r</i> be an integer. The recurrence relation for the negative binomial distribution is,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ27", 
+                                "label": "(27)", 
+                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mi>p</mi><mi>r</mi><mo>+</mo><mi>p</mi><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "and the negative binomial distribution has mean <math id=\"inf9\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>p</mi><mi>r</mi></mrow><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>p</mi><mo>)</mo></mrow></mfrac></math> and variance <math id=\"inf10\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>p</mi><mi>r</mi></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>p</mi><mo>)</mo></mrow><mn>2</mn></msup></mfrac></math>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Comparing <a href=\"#equ26 equ27\">Equations 26,27</a> we can equate <math id=\"inf11\"><mrow><mi>p</mi><mo>=</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>/</mo><mi>\u03b3</mi></mrow></math> and <math id=\"inf12\"><mi>r</mi><mo>=</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>/</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></math>\u00a0"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Hence"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ28", 
+                                "label": "(28)", 
+                                "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mo>(</mo><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "and"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ29", 
+                                "label": "(29)", 
+                                "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mi>\u03b3</mi><mrow><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Combining <a href=\"#equ28 equ29\">Equations 28,29</a> gives an alternative form for the Fano factor,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ30", 
+                                "label": "(30)", 
+                                "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>)</mo></mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We also note that it is possible to derive an expression for the variance (and Fano factor) for the full {de novo, fission; decay, fusion} model as follows."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The total net rate of formation of organelles across the whole sample of cells, <i>R<sub>tot</sub></i>, is given by"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ31", 
+                                "label": "(31)", 
+                                "mathml": "<math><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>N</mi><mo>+</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>i</mi><mo>\u2212</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><mi>\u03b3</mi><mi>i</mi><mo>\u2212</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>i</mi><mrow><mo>(</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ32", 
+                                "label": "(32)", 
+                                "mathml": "<math><mo>=</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>N</mi><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mi>N</mi><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u2212</mo><mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>N</mi><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "At equilibrium <i>R<sub>tot</sub></i> is zero, hence we have"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ33", 
+                                "label": "(33)", 
+                                "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Making use of the relationship <math id=\"inf13\"><mfenced close=\"&gt;\" open=\"&lt;\"><mrow><mo>(</mo><mi>n</mi><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><msup><mo>)</mo><mn>2</mn></msup></mrow></mfenced><mo>=</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mn>2</mn></msup><mo>,</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "we have"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ34", 
+                                "label": "(34)", 
+                                "mathml": "<math><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>\u2212</mo><msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mn>2</mn></msup></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "And thus we have the <i>exact</i> result that"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ35", 
+                                "label": "(35)", 
+                                "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow></mfrac><mo>+</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>\u2212</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "This expression can only be applied when <i>k</i><sub>fusion</sub>\u00a0\u2260\u00a00, and it is not evident that it provides significant insight, however it is useful for cross checking other algebraic and computational results. We have been unable to find a useful closed expression for &lt;<i>n</i>&gt;."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "I thank Ewald Hettema, Paul Galvin and Ian Sudbery for helpful discussions, and Eleanor Stillman for pointing me towards helpful textbooks on stochastic processes."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.10167.010", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \"A reanalysis of the stochastic model of organelle production\" for peer review at <i>eLif</i>e. Your submission has been favorably evaluated by Vivek Malhotra (Senior Editor) and two reviewers."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Specifically, the reviewers have raised a concern that your arguments are too aggressive and it would be best to tone down your statements. For example, you refer to \"a number of errors\" in the previous paper. The reviewers feel that this is incorrect or at least overstates the case. The reviewers agree that there was a major error in the O'Shea paper, namely the use of the shifted rather than the truncated Poisson distribution. Other than this, the mathematical results reported in the previous paper are correct as far as they go. Your manuscript shows that certain expressions in the Mukherji and O'Shea paper are exact, even though O'Shea and colleagues had reported them as approximate. This cannot be considered an error. The use of the word \"dominant\" is misleading, but is not a mathematical error. An abbreviated summary of the reviews follows."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A) Assessment of the manuscript:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "First, I can find nothing mathematically incorrect about the present manuscript. The arguments are sound. Unlike the Mukherji and O'Shea paper, results are explicitly derived and all steps are detailed so readers are convinced of the correctness of these results. The paper is written in a rather pedagogical manner, the various results presented here are basically textbook material. For instance, deriving the detailed balance condition, explaining the stochastic simulation code, deriving the Poisson distribution, etc. would be standard graduate-level material typically not reported in a physics paper."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I do think a good point made in the present manuscript is the issue of identifiability, i.e. is it possible to identify an underlying microscopic model based on certain macroscopic measurements? It is clear from the new analysis that many combinations of parameter values can \"mix together\" to produce indistinguishable Fano factors, etc. However, on its own I don't think this analysis would have been considered a strong contribution. It is only as a critique of the Mukherji and O'Shea paper that this manuscript might be considered."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "B) The contribution of the Mukherji and O'Shea paper:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The Mukherji and O'Shea paper made three major contributions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) It put forward the idea that heterogeneity in organelle number could be used to distinguish competing models of organelle biogenesis."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) It made predictions from different models of biogenesis."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) It reported experiments and compared them with predictions."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "C) The critique of the Mukherji and O'Shea paper:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "There are two major concerns raised about the Mukherji and O'Shea paper:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Were the simulations and the experiments truly done so the equilibrium assumption is correct?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) The use of the shifted rather than the truncated Poisson distribution."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "There are also two minor concerns:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) What is the basis for various approximate Fano factors reported in the Mukherji and O'Shea paper?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) The use of the term \"dominance\" in many places gives the reader the wrong impression."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Let's analyse each of these in turn."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) During the review of the Mukherji and O'Shea paper, the issue of cell division as a confounding factor was explicitly raised. The authors' response was to provide more detailed simulations in which they showed that the Fano factors did not vary greatly when partitioning of organelles during division was taken into account, and was approximately as observed when the only mode of organelle reduction was a first-order decay term. This argument was convincing, assuming that equilibrium had truly been reached. I will add that the idea mentioned in the present manuscript (subsection \u201cDoes the SMOP analysis imply equilibrium distributions?\u201d) that only if the time to equilibrium is short compared to the cell cycle time will the limiting distribution be valid, is a matter of scope. If the model explicitly includes cell division as one of the processes, that larger model will itself reach a limiting distribution. I agree that Mukherji and O'Shea provided no evidence that equilibrium had been reached, either in the simulations or the experiments, and were not requested to by the reviewers. This condition is typically assumed to be correct, and rarely are authors asked for evidence."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Is there any evidence that the simulations of the Mukherji and O'Shea paper had not reached equilibrium? I would assume that Mukherji and O'Shea would have done the correct validation steps, and there is some evidence of that in their <a href=\"#fig1\">Figure 1</a> for example. However, it is then difficult to understand how the error about the truncated vs. the shifted Poisson distribution could have arisen. I admit that this point could have been discovered by the reviewers if they had explicitly repeated some of the reported calculations in the Mukherji and O'Shea paper, and I for one overlooked it. It is unclear how the exact stochastic simulations could be in agreement with an incorrect shifted Poisson prediction. In the Mukherji and O'Shea paper no simulation matching the shifted Poisson prediction is given. Perhaps this simulation was never done, otherwise Mukherji and O'Shea would have discovered the discrepancy."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) For certain expressions in the Mukherji and O'Shea paper, which arise out of an approximate calculation using the fluctuation-dissipation theorem (subsection \u201cIncorrect analysis of cases with <i>k<sub>fusion</sub></i> \u2260 0\u201d of this manuscript), it is not explained how they were derived. This is a valid but minor concern; Mukherji and O'Shea would likely be able to provide the derivation. The point that the approximations were not necessary given the existence of an exact result is worth reporting but does not on its own detract from the original findings. In particular, many expressions derived in the Mukherji and O'Shea paper are correct, as shown in the present manuscript."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) The misleading use of the word \"dominant\". There are scientific contexts where \"dominance\" is interchangeable with \"greater than\". E.g. in game theory, the word \"dominance\" is applied when the payoff from one strategy is just greater than from other strategy. Mukherji and O'Shea used the word \"dominance\" or \"dominates\" throughout their paper, but \"contributed greater than\" or some such term might have been more appropriate. I agree that this gives the reader the wrong impression, but does not, on its own, invalidate the results of Mukherji and O'Shea."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "D) Is the critique valid?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I had said in my original review and I reiterate there: the ideas in the Mukherji and O'Shea paper were worth reporting, and I had hoped the original Mukherji and O'Shea paper would stimulate discussion and be improved upon with new analyses and measurements. The present manuscript in a sense validates this hope: discussion has indeed been stimulated. However, it is true that the original paper contained one major error not caught in the review process: use of the shifted rather than the truncated Poisson distribution. The present author argues that this weakens the central attraction of the previous paper, which was the strong agreement of theory and experiment. I would argue that the agreement itself, which was admittedly a striking feature, was not the central point on which the Mukherji and O'Shea paper stood. If the original paper had reported the correct distribution and highlighted the discrepancy with measured data, that would have also been food for thought."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Overall, I feel this is a more accessible and comprehensive theoretical analysis than the Mukherji and O'Shea paper provided, and serves to continue the original discussion."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.10167.011", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Specifically, the reviewers have raised a concern that your arguments are too aggressive and it would be best to tone down your statements.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I have softened the language throughout the text. In addition, some of the references to parts of <a href=\"#fig1\">Figure 1</a> and <a href=\"#fig4\">Appendix 4 Figure 1</a> have also been improved."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I have also taken the opportunity to add one sentence where I explain how I hope this will stimulate discussion of the underlying premises of the model (Discussion: \u201cOur analysis has shown that the term [\u2026] contributions from the two processes\u201d)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>For example, you refer to \"a number of errors\" in the previous paper. The reviewers feel that this is incorrect or at least overstates the case. The reviewers agree that there was a major error in the O'Shea paper, namely the use of the shifted rather than the truncated Poisson distribution. Other than this, the mathematical results reported in the previous paper are correct as far as they go.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I have toned down some of these statements."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "However the fact that the value of the Fano factor given by the expression 1 k<sub>fission</sub><n>/k<sub>de novo</sub> is equal to 2 when the terms k<sub>fission</sub> <n> and k<sub>de novo</sub> are equal and <i>not</i> to 1 as stated in the SMOP paper is a clear second mathematical error and was the reason why the k<sub>fission</sub> term appeared so \u201cdominant\u201d in <a href=\"#fig3\">Figure 3D</a>, since the value for oleate growth is so close to 2 (almost within the stated error).</n></n>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Your manuscript shows that certain expressions in the Mukherji and O'Shea paper are exact, even though O'Shea and colleagues had reported them as approximate. This cannot be considered an error. The use of the word \"dominant\" is misleading, but is not a mathematical error. The detailed comments of the reviewers are pasted below.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I have used the term \u201cmisleading\u201d now so that I hope that will lead people to look more closely at the original arguments \u2013 and that that can lead to some of the healthy discussion that the reviewers refer to."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I am particularly keen to know the origin of the expression"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<math id=\"inf14\"><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mn>2</mn><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><mn>3</mn><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow><mrow><mn>3</mn><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow></mfrac></math>since I cannot find a way that it follows from their Equation 1 but maybe they have derived it via a different route. I am very happy to remove that comment if necessary, as the peroxisome model plus fusion does not seem to have much relevance given prevalent models of peroxisome biogenesis (detailed query is below)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>A) Assessment of the manuscript:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>First, I can find nothing mathematically incorrect about the present manuscript. The arguments are sound. Unlike the Mukherji and O'Shea paper, results are explicitly derived and all steps are detailed so readers are convinced of the correctness of these results. The paper is written in a rather pedagogical manner, the various results presented here are basically textbook material. For instance, deriving the detailed balance condition, explaining the stochastic simulation code, deriving the Poisson distribution, etc. would be standard graduate-level material typically not reported in a physics paper.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This area is so multi-disciplinary that I felt I should make the Discussion as accessible to as many workers in the field as possible. In addition, giving explicit examples help remove as much ambiguity as possible from definitions. I give the derivation of the Poisson distribution to show that it does arise from the recurrence relation: many people will be much more familiar with the Poisson distribution in the context of the number of successes of a large number of low-probability-of-success trials, which is really rather different from the birth-death type situation. I also give the Poisson (Golgi) case to show that my analysis does agree with the SMOP analysis in that case."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I give a full explanation of the principle of detailed balance as used here because the application here seems to me to be different from the thermodynamic principle of detailed balance. In a cellular system it seems there is no objection to a cycle having stable populations and yet sustaining a net flux round the cycle, whereas that is forbidden in closed thermodynamic systems. In the case of the present model it is the linear (and n&gt;=0) nature of the set of linked reversible processes that lead to detailed balance. If there are accessible presentations of this material readily available and couched in sufficiently identical terms then I am more than happy to direct readers to those instead."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>I do think a good point made in the present manuscript is the issue of identifiability, i.e. is it possible to identify an underlying microscopic model based on certain macroscopic measurements? It is clear from the new analysis that many combinations of parameter values can \"mix together\" to produce indistinguishable Fano factors, etc. However, on its own I don't think this analysis would have been considered a strong contribution. It is only as a critique of the MO paper that this manuscript might be considered.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In light of this comment, and the encouragement that this paper can form part of a healthy discussion, I have added a short paragraph discussing the implications of the underlying assumptions of the model (Discussion: \u201cOur analysis has shown that the term [\u2026] contributions from the two processes\u201d)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "[\u2026]"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>C) The critique of the Mukherji and O'Shea paper:There are two major concerns raised about the Mukherji and O'Shea paper: 1) Were the simulations and the experiments truly done so the equilibrium assumption is correct? 2) The use of the shifted rather than the truncated Poisson distribution. There are also two minor concerns: 3) What is the basis for various approximate Fano factors reported in the Mukherji and O'Shea paper? 4) The use of the term \"dominance\" in many places gives the reader the wrong impression.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I feel this list omits the crucial miscalculation of the value of the Fano factor for the case where the fission and de novo rates are equal in the peroxisome model, as I have discussed above."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Let's analyse each of these in turn.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) During the review of the Mukherji and O'Shea paper, the issue of cell division as a confounding factor was explicitly raised. The authors' response was to provide more detailed simulations in which they showed that the Fano factors did not vary greatly when partitioning of organelles during division was taken into account, and was approximately as observed when the only mode of organelle reduction was a first-order decay term. This argument was convincing, assuming that equilibrium had truly been reached. I will add that the idea mentioned in the present manuscript (subsection \u201cDoes the SMOP analysis imply equilibrium distributions?\u201d) that only if the time to equilibrium is short compared to the cell cycle time will the limiting distribution be valid, is a matter of scope.If the model explicitly includes cell division as one of the processes, that larger model will itself reach a limiting distribution. I agree that Mukherji and O'Shea provided no evidence that equilibrium had been reached, either in the simulations or the experiments, and were not requested to by the reviewers. This condition is typically assumed to be correct, and rarely are authors asked for evidence.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The cell division model is only included as a brief supplement to <a href=\"#fig1\">Figure 1</a> of the SMOP paper, and only for the Golgi ({de novo; fission}) model. Almost no details are given and that is significant because the issue of timescale becomes relevant in such a model. How does the \u201cregular time interval\u201d relate to the timescale of the various processes?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Is there any evidence that the simulations of the Mukherji and O'Shea paper had not reached equilibrium? I would assume that Mukherji and O'Shea would have done the correct validation steps, and there is some evidence of that in their <a href=\"#fig1\">Figure 1</a> for example. However, it is then difficult to understand how the error about the truncated vs. the shifted Poisson distribution could have arisen. I admit that this point could have been discovered by the reviewers if they had explicitly repeated some of the reported calculations in the Mukherji and O'Shea paper, and I for one overlooked it. It is unclear how the exact stochastic simulations could be in agreement with an incorrect shifted Poisson prediction. In the Mukherji and O'Shea paper no simulation matching the shifted Poisson prediction is given. Perhaps this simulation was never done, otherwise Mukherji and O'Shea would have discovered the discrepancy.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) For certain expressions in the Mukherji and O'Shea paper, which arise out of an approximate calculation using the fluctuation-dissipation theorem (subsection \u201cIncorrect analysis of cases with k<sub>fusion</sub> \u2260 0\u201d of this manuscript), it is not explained how they were derived.This is a valid but minor concern; Mukherji and O'Shea would likely be able to provide the derivation.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "If it can be obtained I am very happy to drop this point. However I cannot see that it can follow from Equation 1. Equation 1 is"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<math id=\"inf15\"><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mrow><mfrac><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><mo>(</mo><mn>2</mn><mi>n</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow> <mo></mo><mi>\u03b3</mi></mrow><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><mo>(</mo><mi>n</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow> <mo></mo><mi>\u03b3</mi></mrow></mfrac><mo>\u2212</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow></mfrac></mrow></mfrac></math>If the limit is looked for under the condition k<sub>fusion</sub>&lt;(n(n-1))&gt;) ~ \u03b3 <n>, it is not clear how to proceed because one immediately has terms in <n<sup>2</n<sup></n>&gt;. (It appears that one can make some progress by then using variance=<n<sup>2</n<sup>&gt;-<n><sup>2</sup> but that does not seem to lead to the quoted result).</n>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "If one instead writes the first fraction in the denominator of the left hand side of the above equation as X and try to solve simultaneously,"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<math id=\"inf16\"><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mi>X</mi><mo>\u2212</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow></mfrac></mrow></mfrac></math>along with the quoted result"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<math id=\"inf17\"><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><mn>3</mn><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow><mrow><mn>3</mn><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub> <mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi></mrow></mfrac></math>then one obtains an expression for X that depends on k<sub>fission</sub><n> and k<sub>de novo</sub> so again this route does not seem to lead to anywhere. However as <n> is inextricably linked to all parameters then maybe there is a hidden relationship that leads to the quoted result.</n></n>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The point that the approximations were not necessary given the existence of an exact result is worth reporting but does not on its own detract from the original findings. In particular, many expressions derived in the Mukherji and O'Shea paper are correct, as shown in the present manuscript.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I agree, but if quantitative methods are to be adopted more within the mainstream then I think it behoves the modelers to make sure they keep things as simple as possible, otherwise it becomes the preserve of applied mathematician \u201cwizards\u201d. The recurrence method is much simpler than the FDT approach and should be accessible to more of the community."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) The misleading use of the word \"dominant\". There are scientific contexts where \"dominance\" is interchangeable with \"greater than\". E.g. in game theory, the word \"dominance\" is applied when the payoff from one strategy is just greater than from other strategy. Mukherji and O'Shea used the word \"dominance\" or \"dominates\" throughout their paper, but \"contributed greater than\" or some such term might have been more appropriate. I agree that this gives the reader the wrong impression, but does not, on its own, invalidate the results of Mukherji and O'Shea.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I wrestled with this and sought the opinions of colleagues about what they would understand by \u201cdominant\u201d. If one rate were dominant over another then some people responded by saying it would imply a condition as extreme as differing by an order of magnitude. Personally I would want to see a factor of about three. Since the SMOP paper is a quantitative paper one would expect to see a statement of the ratio of the two rates, rather than the loose word dominant. In the present context the argument is made more complex by the use of a Fano factor of 1 rather than 2 as the boundary between equal rates. This is a significant difference when trying to evaluate the meaning of a Fano factor of 2.4 /-0.2. According to my analysis the rates are in the ratio 0.58:0.42, or roughly 1.4:1. Given the experimental and theoretical uncertainties this does not look to me like a secure case of dominance."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I agree that there are cases where dominant can mean \u201cone just greater than the other\u201d, and the game theory use is such a case. In politics an election vote distributed 0.58:0.42 would tend to be seen as indicating the dominance of a party."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Indeed if two rates act against each other then only a tiny \u201cdominance\u201d can lead to run away behaviour."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "But here we are evaluating the relative magnitude of two rates that act in the \u201csame direction\u201d so I think that the requirement that dominance indicates a clear cut difference is valid."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I have amended my wording to \u201cmisleading\u201d as suggested."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>D) Is the critique valid?</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>A4F1I had said in my original review and I reiterate there: the ideas in the Mukherji and O'Shea paper were worth reporting, and I had hoped the original Mukherji and O'Shea paper would stimulate discussion and be improved upon with new analyses and measurements. The present manuscript in a sense validates this hope: discussion has indeed been stimulated. However, it is true that the original paper contained one major error not caught in the review process: use of the shifted rather than the truncated Poisson distribution. The present author argues that this weakens the central attraction of the previous paper, which was the strong agreement of theory and experiment. I would argue that the agreement itself, which was admittedly a striking feature, was not the central point on which the Mukherji and O'Shea paper stood. If the original paper had reported the correct distribution and highlighted the discrepancy with measured data, that would have also been food for thought.</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The extremely close agreement of the observed and (incorrectly) predicted Fano factors seems to have provided a key link in the argument that the underlying model is a good one. That, in itself, is part of a fairly standard <i>inductive</i> scientific method with its attendant strengths and weaknesses. There was very little justification otherwise of the underlying model, and certain aspects of the model deserve more discussion."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "For instance the use of a rate for fusion proportional to n(n-1) would seem appropriate if the organelles could be considered to be freely moving and well mixed as the molecules within a liquid. But whether it is appropriate for objects such as vacuoles seems harder to justify. It implies that the likelihood (within the next small delta-t) of a vacuole fusing with another when <i>n = 3</i> is <i>double</i> that when <i>n = 2</i>. One could envisage that when <i>n = 2</i> there could be a very similar degree of <i>total</i> contact area with other vacuoles as when <i>n = 3</i>, and so the fusion probability would be very similar. It would depend on vacuole size, composition and \u201cpacking\u201d. I am not aware that sufficiently detailed analysis of such factors exists: it is certainly not quoted in the SMOP paper."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The observation of very good agreement with the model would reduce the impact of such an objection. However, in the absence of such agreement, then, such discussion is vital: is the model basically a good one but just lacking a little detail or is the model fundamentally lacking key aspects of feedback? I hope this will stimulate more discussion on these issues."
+                }
+            ]
+        }
+    }
+}

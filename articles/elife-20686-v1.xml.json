@@ -1,0 +1,698 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "20686", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.20686", 
+        "authorLine": "Meredith Corley, Alain Laderach", 
+        "title": "Selecting against accidental RNA interactions", 
+        "titlePrefix": "Bioinformatics", 
+        "published": "2016-09-20T00:00:00", 
+        "versionDate": "2016-09-20T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e20686", 
+        "pdf": "https://publishing-cdn.elifesciences.org/20686/elife-20686-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "genomics-evolutionary-biology", 
+                "name": "Genomics and Evolutionary Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "E. coli", 
+            "Other"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Random base-pairing interactions between messenger RNAs and noncoding RNAs can reduce translation efficiency."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Corley et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Meredith Corley", 
+                    "index": "Corley, Meredith"
+                }, 
+                "orcid": "0000-0002-4485-5663", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biology", 
+                            "University of North Carolina"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chapel Hill", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chapel Hill"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "mcorley@email.unc.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Alain Laderach", 
+                    "index": "Laderach, Alain"
+                }, 
+                "orcid": "0000-0002-5088-9907", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biology", 
+                            "University of North Carolina"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chapel Hill", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chapel Hill"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "alain@unc.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "20686", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.20686", 
+        "authorLine": "Meredith Corley, Alain Laderach", 
+        "title": "Selecting against accidental RNA interactions", 
+        "titlePrefix": "Bioinformatics", 
+        "published": "2016-09-20T00:00:00", 
+        "versionDate": "2016-09-20T00:00:00", 
+        "volume": 5, 
+        "elocationId": "e20686", 
+        "pdf": "https://publishing-cdn.elifesciences.org/20686/elife-20686-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "genomics-evolutionary-biology", 
+                "name": "Genomics and Evolutionary Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "E. coli", 
+            "Other"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Random base-pairing interactions between messenger RNAs and noncoding RNAs can reduce translation efficiency."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Corley et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Meredith Corley", 
+                    "index": "Corley, Meredith"
+                }, 
+                "orcid": "0000-0002-4485-5663", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biology", 
+                            "University of North Carolina"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chapel Hill", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chapel Hill"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "mcorley@email.unc.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Alain Laderach", 
+                    "index": "Laderach, Alain"
+                }, 
+                "orcid": "0000-0002-5088-9907", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biology", 
+                            "University of North Carolina"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Chapel Hill", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Chapel Hill"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "alain@unc.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "ncRNA", 
+            "Archaea", 
+            "Bacteria", 
+            "gene expression", 
+            "bioinformatics"
+        ], 
+        "relatedArticles": [
+            "13479"
+        ], 
+        "body": [
+            {
+                "type": "paragraph", 
+                "text": "<b>Related research article</b> Umu SU, Poole AM, Dobson RCJ, Gardner PP. 2016. Avoidance of stochastic RNA interactions can be harnessed to control protein expression levels in bacteria and archaea. <i>eLife</i> <b>5</b>:e13479. doi: <a href=\"http://dx.doi.org/10.7554/eLife.13479\">10.7554/eLife.13479</a>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Translation is the process by which the genetic information in a molecule of messenger RNA (mRNA) produces a protein, and the rate at which protein is produced from a given mRNA molecule is called the translation efficiency. This number is different for different mRNA molecules (<a href=\"#bib6\">Maier et al., 2009</a>; <a href=\"#bib3\">Guo et al., 2008</a>), which is why researchers are trying to determine which features of these molecules affect their translation efficiency (<a href=\"#bib7\">Tuller et al., 2010</a>; <a href=\"#bib1\">Ferreira et al., 2013</a>; <a href=\"#bib4\">Kozak, 2005</a>; <a href=\"#bib2\">Gingold and Pilpel, 2011</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Now, in eLife, Paul Gardner of the University of Canterbury and colleagues \u2013 including Sinan Umu (as first author), Anthony Poole and Renwick Dobson \u2013 report that the translation efficiency in bacteria and archaea is influenced by a phenomenon called \"avoidance\" (<a href=\"#bib8\">Umu et al., 2016</a>). Avoidance is the degree to which an mRNA molecule avoids random interactions with noncoding RNA molecules in the cell. Noncoding RNAs, as their name suggests, do not code for proteins, but they still make up a majority of the RNA in any given cell. Indeed, the researchers show that the levels of noncoding RNAs in bacterial cells are two orders of magnitude greater than the levels of mRNAs."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "To estimate the probability of random base-pairing interactions taking place between mRNAs and noncoding RNAs, consider a five-base region in a single mRNA. This region can have any one of a possible 4<sup>\u2227</sup>5=1024 sequences. If the total number of bases from all the noncoding RNAs in the cell is S, then the number of noncoding RNAs in the cell that\u00a0have\u00a0a perfectly complementary five-base region is approximately S/1024.\u00a0Umu et al. studied 325 noncoding RNAs so, assuming an average length of 200 bases for these, we have S \u2248 325*200 \u2248 65000. Therefore, on average, the number of these noncoding RNAs that have a five-base region that is perfectly complementary to the five-base region in the mRNA will be 65000/1024 \u2248 63. Given the number of mRNAs and noncoding RNAs that are found in cells, random interactions between the two are inevitable. However, if we find that a given mRNA has base-pairing interactions with fewer noncoding RNAs than expected, then this is avoidance (<a href=\"#fig1\">Figure 1A</a>)."
+            }, 
+            {
+                "type": "image", 
+                "id": "fig1", 
+                "label": "Figure 1.", 
+                "title": "Random interactions between mRNAs and noncoding RNAs.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(<b>A</b>) A given region of mRNA (pink) should undergo random base-pairing interactions with a certain number of noncoding RNAs (orange). However, a phenomenon called \"avoidance\" results in the number of observed pairings (right) being fewer than the number expected by chance (left). This simplified picture does not allow for the influence of binding energies and other effects. (<b>B</b>) The ability of RNA molecules to fold into complex structures means that mRNA-noncoding RNA interactions can have a range of binding energies (see color bar). \"Avoidance\" results in the observed binding energies (right) being, on average, weaker than the binding energies expected by chance (left). Umu et al. report a significant difference in binding energy distributions in 73% of bacterial and archeal species. (<b>C</b>) If a random base-pairing interaction results in a noncoding RNA pairing with part or all of a start codon in an mRNA, the ribosome will not be able to translate the mRNA."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-20686-fig1-v1"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Realistically, RNA binding interactions are governed by thermodynamics and do not always follow strict pairing rules. Furthermore, RNA molecules can pair with themselves in intra-molecular interactions and must \u201cunfold\u201d a given region in order to pair with another molecule. Thus it is important to quantify mRNA-noncoding RNA interactions with net \"binding energy\" calculations. The binding energy quantifies the thermodynamics of RNA base-pairing, with low binding energies indicating very stable interactions.\u00a0To explore the phenomenon of avoidance, Umu et al. used a computational RNA interaction model to estimate the binding energies for interactions between mRNAs and noncoding RNAs. The RNAs include a core set of 114 mRNAs that are well conserved across bacteria (including 40 that are also conserved across archaea) and 325 noncoding RNAs from six families of RNA that are also well conserved across bacterial and archaeal species."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "They found that, on average, the interactions between the core noncoding RNAs and mRNAs were weaker than the interactions between the noncoding RNAs and a control set. In other words, they found that the average mRNA \"avoids\" interactions due to less stable pairing with noncoding RNAs (<a href=\"#fig1\">Figure 1B</a>). This trend holds true for over 70% of the bacteria and archaea that they tested. There are, of course, noncoding RNAs whose primary function is to bind to mRNAs, but these were excluded from the study. Instead, the goal was to observe selection against <i>accidental</i> interactions between mRNAs and the large and diverse set of noncoding RNAs that are resident in the cell."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Umu et al. hypothesize that avoidance is due to the negative effect that the interactions between mRNAs and noncoding RNA could have on translation efficiency: for example, if a noncoding RNA pairs with a start codon in an mRNA, it will prevent translation from taking place because the ribosome will not be able to bind to that mRNA (<a href=\"#fig1\">Figure 1C</a>). To test this hypothesis, the researchers designed and synthesized a set of mRNAs with sequences that have high levels of avoidance, and a set of mRNAs with low levels of avoidance. When they measured the translation efficiency for both sets of mRNAs, they found that it was much higher for the highly-avoidant set."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Umu et al. also synthesized different sets of mRNAs to explore two other factors that are thought to influence translation efficiency: codon bias and the intra-mRNA folding energy (<a href=\"#bib5\">Kudla et al., 2009</a>; <a href=\"#bib7\">Tuller et al., 2010</a>). Both factors did cause some variation in the production of protein, but avoidance was responsible for the most variation. They also\u00a0found the same correlation with avoidance when\u00a0they\u00a0studied previously published measurements of bacterial translation efficiency. This suggests that the ability of an mRNA to avoid interactions with noncoding RNAs is a hitherto unknown, yet important factor affecting translation efficiency."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "One notable aspect of this study is that it relied almost entirely on publicly available data sets. This underscores the importance of open data for exploring basic biological questions that apply to many different organisms. Using this data, which no single lab could have collected alone, Umu et al. have shown that mRNA sequences are optimized to minimize interactions with noncoding RNAs and have demonstrated why such avoidance is so desirable. And the need to avoid spurious interactions is not unique to RNA: the emergence of complex life depends on optimizing molecular interactions that lead to reproduction in the midst of molecular chaos. Although networks of highly specific molecular interactions are a hallmark of evolution, in many cases it is just as important to avoid accidental interactions."
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JP Ferreira", 
+                            "index": "Ferreira, JP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KW Overton", 
+                            "index": "Overton, KW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CL Wang", 
+                            "index": "Wang, CL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Tuning gene expression with synthetic upstream open reading frames", 
+                "journal": {
+                    "name": [
+                        "PNAS"
+                    ]
+                }, 
+                "volume": "110", 
+                "pages": {
+                    "first": "11284", 
+                    "last": "11289", 
+                    "range": "11284\u201311289"
+                }, 
+                "doi": "10.1073/pnas.1305590110"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Gingold", 
+                            "index": "Gingold, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Pilpel", 
+                            "index": "Pilpel, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Determinants of translation efficiency and accuracy", 
+                "journal": {
+                    "name": [
+                        "Molecular Systems Biology"
+                    ]
+                }, 
+                "volume": "7", 
+                "pages": "481", 
+                "doi": "10.1038/msb.2011.14"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Guo", 
+                            "index": "Guo, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Xiao", 
+                            "index": "Xiao, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Lei", 
+                            "index": "Lei, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Deng", 
+                            "index": "Deng, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GG Xiao", 
+                            "index": "Xiao, GG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Liu", 
+                            "index": "Liu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Chen", 
+                            "index": "Chen, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Li", 
+                            "index": "Li, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Wu", 
+                            "index": "Wu, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Jiang", 
+                            "index": "Jiang, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Tan", 
+                            "index": "Tan, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Xie", 
+                            "index": "Xie, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Zhu", 
+                            "index": "Zhu, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Liang", 
+                            "index": "Liang, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Deng", 
+                            "index": "Deng, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "How is mRNA expression predictive for protein expression? A correlation study on human circulating monocytes", 
+                "journal": {
+                    "name": [
+                        "Acta Biochimica Et Biophysica Sinica"
+                    ]
+                }, 
+                "volume": "40", 
+                "pages": {
+                    "first": "426", 
+                    "last": "436", 
+                    "range": "426\u2013436"
+                }, 
+                "doi": "10.1111/j.1745-7270.2008.00418.x"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kozak", 
+                            "index": "Kozak, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of translation via mRNA structure in prokaryotes and eukaryotes", 
+                "journal": {
+                    "name": [
+                        "Gene"
+                    ]
+                }, 
+                "volume": "361", 
+                "pages": {
+                    "first": "13", 
+                    "last": "37", 
+                    "range": "13\u201337"
+                }, 
+                "doi": "10.1016/j.gene.2005.06.037"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Kudla", 
+                            "index": "Kudla, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AW Murray", 
+                            "index": "Murray, AW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Tollervey", 
+                            "index": "Tollervey, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JB Plotkin", 
+                            "index": "Plotkin, JB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Coding-sequence determinants of gene expression in Escherichia coli", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "324", 
+                "pages": {
+                    "first": "255", 
+                    "last": "258", 
+                    "range": "255\u2013258"
+                }, 
+                "doi": "10.1126/science.1170160"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Maier", 
+                            "index": "Maier, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M G\u00fcell", 
+                            "index": "G\u00fcell, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Serrano", 
+                            "index": "Serrano, L"
+                        }
+                    }
+                ], 
+                "articleTitle": "Correlation of mRNA and protein in complex biological samples", 
+                "journal": {
+                    "name": [
+                        "FEBS Letters"
+                    ]
+                }, 
+                "volume": "583", 
+                "pages": {
+                    "first": "3966", 
+                    "last": "3973", 
+                    "range": "3966\u20133973"
+                }, 
+                "doi": "10.1016/j.febslet.2009.10.036"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Tuller", 
+                            "index": "Tuller, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YY Waldman", 
+                            "index": "Waldman, YY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kupiec", 
+                            "index": "Kupiec, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Ruppin", 
+                            "index": "Ruppin, E"
+                        }
+                    }
+                ], 
+                "articleTitle": "Translation efficiency is determined by both codon bias and folding energy", 
+                "journal": {
+                    "name": [
+                        "PNAS"
+                    ]
+                }, 
+                "volume": "107", 
+                "pages": {
+                    "first": "3645", 
+                    "last": "3650", 
+                    "range": "3645\u20133650"
+                }, 
+                "doi": "10.1073/pnas.0909910107"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SU Umu", 
+                            "index": "Umu, SU"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Poole", 
+                            "index": "Poole, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RCJ Dobson", 
+                            "index": "Dobson, RCJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PP Gardner", 
+                            "index": "Gardner, PP"
+                        }
+                    }
+                ], 
+                "articleTitle": "Avoidance of stochastic RNA interactions can be harnessed to control protein expression levels in bacteria and archaea", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e13479", 
+                "doi": "10.7554/eLife.13479"
+            }
+        ]
+    }
+}

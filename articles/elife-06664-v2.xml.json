@@ -1,0 +1,2325 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "06664", 
+        "version": 2, 
+        "type": "tools-resources", 
+        "doi": "10.7554/eLife.06664", 
+        "authorLine": "Michael A Cianfrocco, Andres E Leschziner", 
+        "title": "Low cost, high performance processing of single particle cryo-electron microscopy data in the cloud", 
+        "published": "2015-05-08T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e06664", 
+        "pdf": "https://publishing-cdn.elifesciences.org/06664/elife-06664-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biophysics-structural-biology", 
+                "name": "Biophysics and Structural Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.06664.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The advent of a new generation of electron microscopes and direct electron detectors has realized the potential of single particle cryo-electron microscopy (cryo-EM) as a technique to generate high-resolution structures. Calculating these structures requires high performance computing clusters, a resource that may be limiting to many likely cryo-EM users. To address this limitation and facilitate the spread of cryo-EM, we developed a publicly available \u2018off-the-shelf\u2019 computing environment on Amazon's elastic cloud computing infrastructure. This environment provides users with single particle cryo-EM software packages and the ability to create computing clusters with 16\u2013480+ CPUs. We tested our computing environment using a publicly available 80S yeast ribosome dataset and estimate that laboratories could determine high-resolution cryo-EM structures for $50 to $1500 per structure within a timeframe comparable to local clusters. Our analysis shows that Amazon's cloud computing environment may offer a viable computing environment for cryo-EM."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Cianfrocco and Leschziner", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Michael A Cianfrocco", 
+                    "index": "Cianfrocco, Michael A"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cellular Biology", 
+                            "Harvard University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "Harvard Medical School"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Boston", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Boston"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "mcianfrocco@fas.harvard.edu"
+                ], 
+                "contribution": "MAC, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Andres E Leschziner", 
+                    "index": "Leschziner, Andres E"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cellular Biology", 
+                            "Harvard University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AEL, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.06664.010", 
+                "id": "SD3-data", 
+                "label": "Supplementary file 1.", 
+                "title": "Step-by-step tutorial describing how to use Amazon's EC2 environment to analyze cryo-EM data.", 
+                "mediaType": "application/pdf", 
+                "uri": "elife-06664-supp1-v2.pdf", 
+                "filename": "elife-06664-supp1-v2.pdf"
+            }, 
+            {
+                "doi": "10.7554/eLife.06664.011", 
+                "id": "SD4-data", 
+                "label": "Supplementary file 2.", 
+                "title": "Comparison of estimated processing times and costs for recent near-atomic cryo-EM structures on Amazon's EC2. Source data: <a href=\"#SD5-data\">Supplementary File 3</a>.", 
+                "mediaType": "application/docx", 
+                "uri": "elife-06664-supp2-v2.docx", 
+                "filename": "elife-06664-supp2-v2.docx"
+            }, 
+            {
+                "doi": "10.7554/eLife.06664.012", 
+                "id": "SD5-data", 
+                "label": "Supplementary file 3.", 
+                "title": "Source data for tables in <a href=\"#SD4-data\">Supplementary file 2</a>.", 
+                "mediaType": "application/xlsx", 
+                "uri": "elife-06664-supp3-v2.xlsx", 
+                "filename": "elife-06664-supp3-v2.xlsx"
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2014", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Cianfrocco MA"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Leschziner AE"
+                        }
+                    ], 
+                    "title": "Data from: Single particle cryo-electron microscopy image processing in the cloud: High performance at low cost", 
+                    "details": "Available at Dryad Digital Repository under a CC0 Public Domain Dedication.", 
+                    "uri": "http://dx.doi.org/10.5061/dryad.9mb54"
+                }
+            ], 
+            "used": [
+                {
+                    "id": "dataro2", 
+                    "date": "2013", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Bai XC"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Fernandez IS"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "McMullan G"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Scheres SH"
+                        }
+                    ], 
+                    "title": "S.cereviseae 80S ribosome direct electron detetector dataset", 
+                    "details": "Publicly available at Electron Microscopy Pilot Image Archive.", 
+                    "uri": "http://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10002/"
+                }
+            ]
+        }, 
+        "impactStatement": "A freely available software environment on Amazon's cloud computing network makes processing of cryo-EM data accessible and affordable."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "06664", 
+        "version": 2, 
+        "type": "tools-resources", 
+        "doi": "10.7554/eLife.06664", 
+        "authorLine": "Michael A Cianfrocco, Andres E Leschziner", 
+        "title": "Low cost, high performance processing of single particle cryo-electron microscopy data in the cloud", 
+        "published": "2015-05-08T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e06664", 
+        "pdf": "https://publishing-cdn.elifesciences.org/06664/elife-06664-v2.pdf", 
+        "subjects": [
+            {
+                "id": "biophysics-structural-biology", 
+                "name": "Biophysics and Structural Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.06664.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The advent of a new generation of electron microscopes and direct electron detectors has realized the potential of single particle cryo-electron microscopy (cryo-EM) as a technique to generate high-resolution structures. Calculating these structures requires high performance computing clusters, a resource that may be limiting to many likely cryo-EM users. To address this limitation and facilitate the spread of cryo-EM, we developed a publicly available \u2018off-the-shelf\u2019 computing environment on Amazon's elastic cloud computing infrastructure. This environment provides users with single particle cryo-EM software packages and the ability to create computing clusters with 16\u2013480+ CPUs. We tested our computing environment using a publicly available 80S yeast ribosome dataset and estimate that laboratories could determine high-resolution cryo-EM structures for $50 to $1500 per structure within a timeframe comparable to local clusters. Our analysis shows that Amazon's cloud computing environment may offer a viable computing environment for cryo-EM."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Cianfrocco and Leschziner", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Michael A Cianfrocco", 
+                    "index": "Cianfrocco, Michael A"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cellular Biology", 
+                            "Harvard University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "Harvard Medical School"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Boston", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Boston"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "mcianfrocco@fas.harvard.edu"
+                ], 
+                "contribution": "MAC, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Andres E Leschziner", 
+                    "index": "Leschziner, Andres E"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Molecular and Cellular Biology", 
+                            "Harvard University"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AEL, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.06664.010", 
+                "id": "SD3-data", 
+                "label": "Supplementary file 1.", 
+                "title": "Step-by-step tutorial describing how to use Amazon's EC2 environment to analyze cryo-EM data.", 
+                "mediaType": "application/pdf", 
+                "uri": "elife-06664-supp1-v2.pdf", 
+                "filename": "elife-06664-supp1-v2.pdf"
+            }, 
+            {
+                "doi": "10.7554/eLife.06664.011", 
+                "id": "SD4-data", 
+                "label": "Supplementary file 2.", 
+                "title": "Comparison of estimated processing times and costs for recent near-atomic cryo-EM structures on Amazon's EC2. Source data: <a href=\"#SD5-data\">Supplementary File 3</a>.", 
+                "mediaType": "application/docx", 
+                "uri": "elife-06664-supp2-v2.docx", 
+                "filename": "elife-06664-supp2-v2.docx"
+            }, 
+            {
+                "doi": "10.7554/eLife.06664.012", 
+                "id": "SD5-data", 
+                "label": "Supplementary file 3.", 
+                "title": "Source data for tables in <a href=\"#SD4-data\">Supplementary file 2</a>.", 
+                "mediaType": "application/xlsx", 
+                "uri": "elife-06664-supp3-v2.xlsx", 
+                "filename": "elife-06664-supp3-v2.xlsx"
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2014", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Cianfrocco MA"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Leschziner AE"
+                        }
+                    ], 
+                    "title": "Data from: Single particle cryo-electron microscopy image processing in the cloud: High performance at low cost", 
+                    "details": "Available at Dryad Digital Repository under a CC0 Public Domain Dedication.", 
+                    "uri": "http://dx.doi.org/10.5061/dryad.9mb54"
+                }
+            ], 
+            "used": [
+                {
+                    "id": "dataro2", 
+                    "date": "2013", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Bai XC"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Fernandez IS"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "McMullan G"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Scheres SH"
+                        }
+                    ], 
+                    "title": "S.cereviseae 80S ribosome direct electron detetector dataset", 
+                    "details": "Publicly available at Electron Microscopy Pilot Image Archive.", 
+                    "uri": "http://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10002/"
+                }
+            ]
+        }, 
+        "impactStatement": "A freely available software environment on Amazon's cloud computing network makes processing of cryo-EM data accessible and affordable.", 
+        "keywords": [
+            "cryo-EM", 
+            "cloud computing", 
+            "image analysis", 
+            "single-particle analysis", 
+            "Amazon EC2"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.06664.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Microscopes can be used to view objects or structural details that are not visible with the naked eye. A type of microscope called an electron microscope\u2014which uses beams of particles called electrons\u2014is particularly useful for examining tiny objects or structures because it can produce images with a higher level of detail than microscopes that use light."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "There are several ways to prepare biological samples for electron microscopy. One technique is called cryo-electron microscopy, or cryo-EM for short, where the sample is rapidly frozen and then viewed under the electron microscope. Using this technique it is possible to produce highly detailed images of viruses, individual compartments within cells and even single proteins."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To convert the images of proteins into three-dimensional models, high-performing clusters of computers are required. It can be difficult and expensive for many scientists to access these resources, which may limit the wider use of cryo-EM in research."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To address this problem and aid the spread of cryo-EM, Cianfrocco and Leschziner developed a publicly available \u2018off the shelf\u2019 system on Amazon's elastic cloud computing infrastructure. This provides users with software packages and the ability to create a cluster containing up to around 480 computers to analyze cryo-EM data."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Cianfrocco and Leschziner tested the system using a publicly available cryo-EM dataset of a structure in yeast cells called the 80S ribosome, which contains proteins and molecules of ribonucleic acid. This revealed that a highly detailed model of the 80S ribosome could be developed in a time frame similar to what it would have taken on a local high-performing computing cluster within a university. The cost of using this system was also competitive in price with that of maintaining a local computing cluster, with the added flexibility of its \u2018pay-as-you-go\u2019 structure."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "These findings show that Amazon's cloud computing infrastructure may be a useful alternative to using clusters of computers based within a research institute or university. This will help the spread of cryo-EM as a general tool to reveal the three-dimensional structures of large molecules. Further work is required to make this cloud-based computing tool easily accessible to researchers who may have limited experience with using Linux software and computing clusters."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Cryo-electron microscopy (cryo-EM) has long served as an important tool to provide structural insights into biological samples. Recent advances in cryo-EM data collection and analysis, however, have transformed single particle cryo-EM (<a href=\"#bib13\">Kuhlbrandt, 2014</a>; <a href=\"#bib4\">Bai et al., 2015</a>), allowing it to achieve resolutions better than 5 \u00c5 for samples ranging in molecular weight from the 4 MDa eukaryotic ribosome (<a href=\"#bib3\">Bai et al., 2013</a>) to the 170 kDa membrane protein \u03b3-secretase (<a href=\"#bib15\">Lu et al., 2014</a>). These high-resolution structures are the result of a new generation of cameras that detect electrons directly without the need of a scintillator, which results in a dramatic increase in the signal-to-noise ratio relative to CCD cameras, the previous most commonly used device (<a href=\"#bib17\">McMullan et al., 2009</a>). In addition to direct electron detection, the high frame rate of these cameras allows each image to be recorded as a \u2018movie\u2019, dividing it into multiple frames. These fractionated images can be used to correct for sample movement during the exposure, further increasing the quality of the cryo-EM images (<a href=\"#bib5\">Campbell et al., 2012</a>; <a href=\"#bib14\">Li et al., 2013</a>; <a href=\"#bib22\">Scheres, 2014</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In addition to these technological developments in the detectors, improvements in computer software packages have played an equally important role in moving cryo-EM into the high-resolution era. Atomic or near-atomic structures have been obtained with software packages such as EMAN2 (<a href=\"#bib24\">Tang et al., 2007</a>), Sparx (<a href=\"#bib9\">Hohn et al., 2007</a>), FREALIGN (<a href=\"#bib8\">Grigorieff, 2007</a>), Spider (<a href=\"#bib7\">Frank et al., 1996</a>), and Relion (<a href=\"#bib21\">Scheres, 2012</a>, <a href=\"#bib22\">2014</a>). In general, obtaining these structures involved computational approaches that sorted out the data into homogenous classes that could then be refined to high resolution."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "While these advances in microscopy and analysis have been essential for the recent breakthroughs in cryo-EM, their implementation is computationally intensive and requires high-performance computing clusters. A recent survey of high-resolution single particle cryo-EM structures showed that refinement of these structures required processing times in excess of 1000 CPU-hours (<a href=\"#bib22\">Scheres, 2014</a>). Therefore, computational time (i.e., access to high-performance clusters) may represent a bottleneck to determining high-resolution structures by single particle cryo-EM."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In order to address this limitation, we explored the possibility of using Amazon's elastic cloud computing (EC2) for processing cryo-EM data. To help others take advantage of this resource, we have created a publicly available \u2018off-the-shelf\u2019 software environment that allows new users to start up a cluster of Amazon CPUs preinstalled with cryo-EM software and we have used it to test the performance of Amazon's EC2 platform. We were able to determine a 4.6 \u00c5 structure of the 80S ribosome using a published dataset (<a href=\"#bib3\">Bai et al., 2013</a>) for an overall cost of $100 USD within a timeframe comparable to that of a local cluster. Given the range of prices for accessing Amazon CPUs (users can bid for significantly reduced costs) and the accessibility statistics, we estimate that typical cryo-EM structures can be determined for $50\u2013$1500 per structure."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-1", 
+                        "title": "EC2 through Amazon Web Services (AWS)", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "AWS is a division of Amazon that offers a variety of cloud-based solutions for website hosting and high-performance computing, amongst other services. Many different types of privately held companies take advantage of Amazon's computing infrastructure because of its affordability, flexibility, and security. Of note, global biotechnology companies such as Novartis (<a href=\"#bib1b\">AWS, 2014a</a>), Bristol-Myers-Squibb (<a href=\"#bib1a\">AWS, 2013</a>), and Pfizer (<a href=\"#bib2\">AWS, 2014b</a>) have utilized the computing power of Amazon for scientific data processing. Many academic researchers have also begun to use Amazon's EC2 resources for analyzing datasets from super-resolution light microscopy (<a href=\"#bib10\">Hu et al., 2013</a>), genomics (<a href=\"#bib12\">Krampis et al., 2012</a>; <a href=\"#bib26\">Yazar et al., 2014</a>), and proteomics (<a href=\"#bib19\">Mohammed et al., 2012</a>; <a href=\"#bib25\">Trudgian and Mirzaei, 2012</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The overall workflow starts with users logging into a virtual machine (\u2018instance\u2019) on AWS (<a href=\"#fig1\">Figure 1</a>). AWS offers a variety of instance types that have been configured for different computing tasks. For example, instances have been optimized for computing performance, GPU-based calculations, or memory-intensive calculations. After logging onto an instance, storage drives are mounted onto it, allowing data, which can be encrypted for security, to be transferred onto the storage drives (<a href=\"#fig1\">Figure 1</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.06664.003", 
+                                "id": "fig1", 
+                                "label": "Figure 1.", 
+                                "title": "Workflow for analyzing cryo-EM data on Amazon's cloud computing infrastructure.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After collecting cryo-EM data (Step 1), particles are extracted from the micrographs and prepared for further analysis (Step 2). After logging into an \u2018instance\u2019 (Step 3), data are uploaded to a storage server (elastic block storage) (Step 4). At this point, STARcluster can be configured to launch a cluster of 2\u201330 instances that is mounted with the data from the storage volume (Step 5). A detailed protocol can be found at an accompanying Google site: <a href=\"http://goo.gl/AIwZJz\">http://goo.gl/AIwZJz</a>."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-06664-fig1-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "While users can utilize a single instance for calculations, the maximum number of CPU cores per instance is 18. Therefore, creating a computing cluster with a larger number of CPUs on AWS requires additional steps. The Software Tools for Academics and Researchers (STAR) group at the Massachusetts Institute of Technology developed a straightforward package that allows users to group individual AWS instances into a cluster. The STARcluster program is a python-based, open source package that automatically creates a cluster preconfigured with the necessary software to manage a computer cluster (<a href=\"#bib11\">Ivica et al., 2009</a>). This package allows users to specify the number of instances to be included in the clusters as well as the instance type. By taking advantage of this tool, private clusters can be built with sizes ranging from 16 to 480 CPUs (<a href=\"#fig1\">Figure 1</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-2", 
+                        "title": "Global availability of spot instances on Amazon EC2", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "While Amazon provides dedicated access to instances through \u2018on-demand\u2019 reservations, there are \u2018spot instances\u2019 that are 80\u201390% cheaper than the on-demand price. Spot instances are unused instances within Amazon EC2 that are open for competitive bidding, where users gain access to them by making offers above the current minimum bid. This means that while the on-demand rate for high-memory, 16-CPU instances (called \u2018r3.8xlarge\u2019) is $2.80/hr, spot instance prices can be as low as $0.25\u2013$0.35/hr."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In order to determine if spot instances offer a consistent reduction in price, we analyzed the global availability of r3.8xlarge spot instances. Currently, Amazon has 9 regions worldwide within 7 countries: US-East-1 (United States), US-West-1 (United States), US-West-2 (United States), SA-East-1 (Brazil), EU-Central-1 (Germany), EU-West-1 (Ireland), AP-Northeast-1 (Japan), AP-Southeast-1 (Singapore), and AP-Southeast-2 (Australia). For each region, we retrieved spot instance prices for r3.8xlarge instances over the past 3 months and analyzed the time they spent at prices below $0.35\u2013$0.65/hr (corresponding to discounts of 87.5\u201376.8% over the full on-demand rate of $2.80/hr) (<a href=\"#fig2\">Figure 2</a> and <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>). This analysis revealed that, globally, 49.8% of r3.8xlarge instances were below $0.35/hr, 12.5% the on-demand price (<a href=\"#fig2\">Figure 2</a>). For $0.65/hr, 76.5% below full price, one could access 82.2% of the global r3.8xlarge spot instances. These data indicate that spot instances provide dependable, cost-effective access to Amazon's computing resources."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.06664.004", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Global availability of Amazon r3.8xlarge spot instances.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Shown is the average percentage time spent by the r3.8xlarge type of instance when the current spot instance price was less than the queried price. The data are averaged over all Amazon's regions worldwide (except for SA-East-1, which does not offer r3.8xlarge instances). Spot instance prices were calculated over a 90-day period from 1 January 2015\u20141 April 2015, where the average is shown \u00b1 the s.e. Source data: <a href=\"#SD1-data\">Figure 2\u2014source data 1</a>."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-06664-fig2-v2.tif", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.06664.005", 
+                                        "id": "SD1-data", 
+                                        "label": "Figure 2\u2014source data 1.", 
+                                        "title": "Global spot instance price data from 1 January 2015 to 1 April 2015.", 
+                                        "mediaType": "text/txt", 
+                                        "uri": "elife-06664-fig2-data1-v2.txt", 
+                                        "filename": "elife-06664-fig2-data1-v2.txt"
+                                    }
+                                ], 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.06664.006", 
+                                        "id": "fig2s1", 
+                                        "label": "Figure 2\u2014figure supplement 1.", 
+                                        "title": "Availability of virtual machines within regions at specified spot instance prices.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For each Amazon region (excluding SA-East-1, which does not offer r3.8xlarge instances), r3.8xlarge spot instance prices were retrieved for each availability zone, where separate availability zones are shown as separate data points for a given spot instance price. (Note: each region can have different number of availability zones). From the spot instance prices, the percentage time of the spot instances that were spent below the specified spot instance price were calculated. The average value is shown as a solid black line. Source data: <a href=\"#SD1-data\">Figure 2\u2014source data 1</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-06664-fig2-figsupp1-v2.tif"
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-3", 
+                        "title": "Performance analysis of Amazon's EC2 environment with a 80S yeast ribosome dataset", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To test the performance of Amazon's EC2 environment, we analyzed a previously published 80S <i>Saccharomyces cerevisiae</i> ribosome dataset (<a href=\"#bib3\">Bai et al., 2013</a>) (EMPIAR 10002) on a 128 CPU cluster (8 \u00d7 16 CPUs; using the r3.8xlarge instance). After extracting 62,022 particles, we performed 2D classification within Relion. Subsequent 3D classification of the particles into four classes revealed that two classes adopted a similar structural state. We merged those two classes and used the associated particles to carry out a 3D refinement in Relion\u2014we were able to obtain a structure with an overall resolution of 4.6 \u00c5 (<a href=\"#fig3\">Figure 3A\u2013C</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.06664.007", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Cryo-EM structure of 80S ribosome at an overall resolution of 4.6 \u00c5.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Overall view of 80S reconstruction filtered to 4.6 \u00c5 while applying a negative B-factor of \u2212116 \u00c5<sup>2</sup>. (<b>B</b>) Gold standard FSC curve. (<b>C</b>) Selected regions from the 60S subunit. Cryo-EM maps were visualized with UCSF Chimera (<a href=\"#bib20\">Pettersen et al., 2004</a>). Source data: Dryad Digital Repository dataset (<a href=\"http://datadryad.org/review?doi=doi:10.5061/dryad.9mb54\">http://datadryad.org/review?doi=doi:10.5061/dryad.9mb54</a>) (<a href=\"#bib6\">Cianfrocco and Leschziner</a>)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-06664-fig3-v2.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "This structure, whose generation included particle picking, CTF estimation, 2D and 3D classification, and refinement, cost us $99.64 on Amazon's EC2 environment. This cost was achieved by bidding on spot instances for particle picking (m1.small at $0.02/hr), 2D classification (STARcluster of r3.8xlarge instances at $0.65/hr), and 3D classification and refinement (STARcluster of r3.8xlarge instances at $0.65/hr). Thus, even though obtaining this structure required 1266 total CPU-hours, Amazon's EC2 computing infrastructure provided the necessary resources to calculate it to near-atomic resolution at a reasonable price."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To further test the performance of Amazon instances, we carried out 3D classification and refinement on a variety of STARcluster configurations using Relion. As before, we ran our tests on clusters of r3.8xlarge high-memory instances (256 GiB RAM and 16 CPUs per instance). Comparing performance across cluster sizes showed that 256 CPUs had the fastest overall time and the highest speedup relative to a single CPU for both 3D classification and refinement (<a href=\"#fig4\">Figure 4A,B</a>). However, cluster sizes of 128 and 64 CPUs were the most cost effective for 3D classification and refinement, respectively, as these were the cluster configurations where the speedup per dollar reached a maximum (<a href=\"#fig4\">Figure 4C</a>). Importantly, the average time required to boot up these STARclusters was \u2264 10 min for all cluster sizes (<a href=\"#fig4\">Figure 4D</a>) and, once booted up, the clusters do not have any associated job wait times. Therefore, these tests showed that Amazon's EC2 infrastructure was amenable to the analysis of single particle cryo-EM data using Relion over a range of STARcluster sizes."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.06664.008", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Relion performance on STARcluster configurations of Amazon instances.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Processing times (minutes) for Relion to perform 3D Classification or 3D refinement on 80S ribosome dataset. (<b>B</b>) Speedup for each cluster size relative to a single CPU (black line) shown alongside performance estimate for a perfectly parallel cluster using Amdahl's Law (curve labeled \u2018Theoretical limit\u2019). For cluster sizes \u2264 64 CPUs, Relion exhibits near-perfect performance on STARcluster configurations, while cluster sizes &gt; 64 show that Relion's performance reaches a maximum at 256 CPUs for both 3D classification and 3D refinement. (<b>C</b>) Speedup/Cost is plotted against cluster size, where Speedup/Cost is defined as the speedup observed divided by the cost associated with Amazon's pricing at $0.35/hr/16 CPUs. (<b>D</b>) Average STARcluster boot up time (\u00b1 s.d.) was measured for clusters of increasing size (n = 5). Source data: <a href=\"#SD2-data\">Figure 4\u2014source data 1</a>."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-06664-fig4-v2.tif", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.06664.009", 
+                                        "id": "SD2-data", 
+                                        "label": "Figure 4\u2014source data 1.", 
+                                        "title": "Performance analysis statistics for Relion 3D classification and 3D refinement on STARcluster configurations.", 
+                                        "mediaType": "application/xlsx", 
+                                        "uri": "elife-06664-fig4-data1-v2.xlsx", 
+                                        "filename": "elife-06664-fig4-data1-v2.xlsx"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "From our analysis of the 80S yeast ribosome, we extrapolated the processing times and combined them with previously published 3D refinement times to estimate typical costs on Amazon's EC2. First, we estimated the cost for 3D refinement in Relion for previously published structures (<a href=\"#SD4-data\">Supplementary file 2A</a>)\u2014these calculated costs ranged from $12.65 to $379.03 per structure, depending on the spot instance price and required CPU-hours. We then combined these data with conservative estimates for particle picking, CTF estimation, particle extraction, 2D and 3D classification to predict the overall cost of structure determination on Amazon's EC2 (<a href=\"#SD4-data\">Supplementary file 2B</a>). From these considerations, we estimated that published structures could be determined using Amazon's EC2 environment at costs of $50\u2013$1500 per structure (<a href=\"#SD4-data\">Supplementary file 2B</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-4", 
+                        "title": "EM-packages-in-the-Cloud: a pre-configured software environment for single-particle cryo-EM image analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Given the success we had in analyzing cryo-EM data on Amazon's EC2 at an affordable price and within a reasonable timeframe, we have made our software environment publicly available as an \u2018Amazon Machine Image\u2019 (AMI), under the name \u2018EM-packages-in-the-Cloud-v3.93.\u2019 The EM-packages-in-the-Cloud-v3.93 AMI provides the software environment necessary for analyzing data on a single instance, and is preconfigured with STARcluster software. The EM-packages-in-the-Cloud-v3.93 AMI has the following cryo-EM software packages installed: Relion (<a href=\"#bib21\">Scheres, 2012</a>, <a href=\"#bib22\">2014</a>), FREALIGN (<a href=\"#bib8\">Grigorieff, 2007</a>), EMAN2 (<a href=\"#bib24\">Tang et al., 2007</a>), Sparx (<a href=\"#bib9\">Hohn et al., 2007</a>), Spider (<a href=\"#bib7\">Frank et al., 1996</a>), EMAN (<a href=\"#bib16\">Ludtke et al., 1999</a>), and XMIPP (<a href=\"#bib23\">Sorzano et al., 2004</a>). In addition to this AMI that is capable of running on a single instance, we have also made available a second AMI\u2014EM-packages-in-the-Cloud-Node-v3.1\u2014that provides users with the same software packages as described above, but can set up and run within a cluster of multiple EC2 instances. These two publicly available AMIs allow users to boot up a cluster to analyze cryo-EM data in a few short steps. The protocols describing this can be found as a PDF (<a href=\"#SD3-data\">Supplementary file 1</a>) or on a Google site that is being launched in conjunction with this article: <a href=\"http://goo.gl/AIwZJz\">http://goo.gl/AIwZJz</a>. In addition to detailed instructions, the site includes a help forum to facilitate a conversation on cloud computing for single particle cryo-EM."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-5", 
+                        "title": "Cloud computing as a tool to facilitate high-resolution cryo-EM", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Recent advances in single particle cryo-EM have drawn the interest of the broader scientific community. In addition to technical advances in electron optics, the new direct electron detectors and data analysis software have dramatically improved the resolutions that can be achieved for a variety of structural targets. In contrast to the other high-resolution techniques (X-ray crystallography, NMR), structure determination by cryo-EM is extremely computationally intensive. The publicly available \u2018EM-packages-in-the-Cloud\u2019 environment we have presented and characterized here will help remove some of the limitations imposed by these computational requirements."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We believe that cloud-based approaches have the potential to impact the future of cryo-EM image processing in two fronts: (1) new cryo-EM users or laboratories will have immediate access to a high performance cluster, and (2) existing labs may use this resource to increase their productivity. As the number of laboratories using cryo-EM increases, and as existing laboratories begin to pursue high-resolution cryo-EM, gaining immediate access to a high performance cluster may become difficult. For instance, while there are government-funded high performance clusters in the United States (e.g., XSEDE STAMPEDE), it may take up to a month for a user application to be reviewed (Rogelio Hernandez-Lopez, personal communication). Assuming that the application is approved, these clusters may not have appropriate software installed, which further delays data processing. Finally, the user will have a set limit for the number of CPU hours available per project, requiring a new application to be submitted to access the cluster again. All of these problems can be circumvented by using Amazon's EC2 infrastructure, which provides immediate, cost-effective access to hundreds of CPUs with no geographic restrictions."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The power of cloud-based solutions to alleviate the computational burden associated with cryo-EM data processing stems from its high-degree of scalability and reasonable cost. By minimizing computational time and increasing global accessibility, high-performance cloud computing may help usher in the era when high-resolution cryo-EM becomes a routine structural biology tool."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Global availability of spot instances", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Global spot instance prices were retrieved from the 90-day period from 1 January 2015 to 1 April 2015 using the Amazon Command Line Tools command <i>ec2-describe-spot-price-history</i>. Retrieval of spot instance prices for all regions was implemented automatically in a custom python program <i>get_spot_histories_all_regions_all_zones.py</i>. From these spot instance prices, the percentage time spent below given prices was calculated using <i>measure_time_at_spotPrice.py</i>, where the cumulative time of spot instances below a given price divided by the total time (90 days). Both programs can be found in the Github repository mcianfrocco/Cianfrocco-and-Leschziner-EMCloudProcessing."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Setting up a cluster on Amazon EC2 with spot instances", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In order to minimize costs, STARclusters were assembled from \u2018spot instances,\u2019 which are unused instances that can be reserved through a bidding process. The spot instances are different from \u2018on-demand\u2019 instances: on-demand instances provide users with guaranteed access while spot instances are reserved until there is a higher bid, at which point the user is logged out of the spot instance. When this happens, the MPI-threaded Relion calculation will abort, requiring the user to resubmit the job to the STARcluster and start Relion from the previous iteration. Even if the user is logged out of all instances within a STARcluster, the data is automatically saved within the EBS-backed volumes on Amazon EC2."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "CPUs vs vCPUs", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In selecting an instance type, new users should be aware of the differences between CPUs and vCPUs on Amazon's EC2 network. Namely, that there are two vCPUs per physical CPU on Amazon. This means that while r3.8xlarge instances have 32 vCPUs, there are actually only 16 physical CPU cores in each instance, with each CPU having two hyperthreads. Practically, this means that Amazon's instances have higher performance than a 16 CPU machine and less performance than a 32 CPU machine. To account for this difference, all numbers reported here were CPU numbers that were converted from vCPUs: 1 CPU = 2 vCPUs."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Image processing", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Micrographs from the 80S <i>S. cerevisiae</i> ribosome dataset (<a href=\"#bib3\">Bai et al., 2013</a>) were downloaded from the EMPIAR database for electron microscopy data (EMPIAR 10002). The SWARM feature of EMAN2 (<a href=\"#bib24\">Tang et al., 2007</a>) was used to pick particles semi-automatically. Micrograph defocus was estimated using CTFFIND3 (<a href=\"#bib18\">Mindell and Grigorieff, 2003</a>). The resulting particle coordinates and defocus information were used for particle extraction by Relion-v1.3 (<a href=\"#bib21\">Scheres, 2012</a>, <a href=\"#bib22\">2014</a>). The particle stacks and associated data files were then uploaded to an elastic block storage volume on Amazon's EC2 processing environment at a speed of 10 MB/s (24 min total upload time)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "After 2D classification in Relion, 3D classification was performed on 62,022 80S Ribosome particles (1.77 \u00c5/pixel), also in Relion. These were classified into 4 groups (T = 4) for 13 iterations using a ribosome map downloaded from the Electron Microscopy Data Bank (EMDB-1780) that was low pass filtered to 60 \u00c5. Further 3D classification using a local search of 10\u00b0 and an angular sampling of 1.8\u00b0 continued for 13 iterations. At this point, two classes were identified as belonging to the same structural state and were selected for high-resolution refinement (32,533 particles). Refinement of these selected particles continued for 31 iterations using <i>3D auto-refine</i> in Relion. The final resolution was determined to be 4.6 \u00c5 using <i>Post process</i> in Relion, applying a mask to the merged half volumes and a negative B-factor of \u2212116 \u00c5<sup>2</sup>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Performance analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "80S ribosome data were reanalyzed on clusters of increasing size using both 3D classification and 3D refinement. The time points collected involved running 3D classification for 2 rounds and 3D refinement for 6 rounds, using the same number of particles and box sizes listed above: 62,022 particles for classification and 32,533 particles for refinement with box sizes of 240 \u00d7 240 pixels. The Relion commands were identical to the commands used above and the calculations were terminated after the specified iteration."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "From these time points, the speedup of each cluster size was calculated relative to a single CPU. Speedup (<i>S</i>) was calculated as:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ1", 
+                                "mathml": "<math><mrow><mi>S</mi><mo>=</mo><mfrac><mrow><mtext>Calculation\u2009time\u2009for\u2009</mtext><mn>1</mn><mtext>\u2009CPU</mtext></mrow><mrow><mtext>Calculation\u2009time\u2009for\u2009</mtext><mi>x</mi><mtext>\u2009CPUs</mtext></mrow></mfrac><mtext>.</mtext></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The measured speedup values were then compared to the speedup expected for a perfectly parallel algorithm (<i>P</i> = 1) using Amdahl's law (<a href=\"#bib1\">Amdahl, 1967</a>):"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ2", 
+                                "mathml": "<math><mrow><mi>S</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mi>\u2212</mi><mi>P</mi></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mrow><mo>(</mo><mi>P</mi><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mi>\u2212</mi><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mi>n</mi><mtext>,</mtext></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Where <i>P</i> is the fraction of an algorithm that is parallel and <i>n</i> is the number of processors. The calculation times for 3D classification on a single CPU were obtained by using 1 CPU on a 16 CPU r3.8xlarge instance. For calculating a 3D refinement on a single CPU, (or two vCPUs), the refinement was run on 4 vCPUs and then converted to a single CPU (or two vCPUs) by multiplying the calculation time by 2. For cost analysis, the measured speedup was divided by the cost to run the job on spot instances of r3.8xlarge at a price of $0.35/hr. Cluster boot up times were calculated from the elapsed time between submitting the STARcluster command and the STARcluster fully booting up."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-6", 
+                        "title": "Data accession information", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Further information regarding \u2018EM-Packages-in-the-Cloud\u2019 can be found in <a href=\"#SD3-data\">Supplementary file 1</a> and at an associated Google Site: <a href=\"http://goo.gl/AIwZJz\">http://goo.gl/AIwZJz</a>. The final 80S yeast ribosome structure at 4.6 \u00c5 has been submitted to the EM Databank as EMDB 2858. A detailed description of global spot instance price analyses and image processing is available at <a href=\"https://github.com/mcianfrocco/Cianfrocco-and-Leschziner-EMCloudProcessing/wiki\">https://github.com/mcianfrocco/Cianfrocco-and-Leschziner-EMCloudProcessing/wiki</a>. Associated computing scripts and data files have been uploaded to Github (<a href=\"https://github.com/mcianfrocco/Cianfrocco-and-Leschziner-EMCloudProcessing\">https://github.com/mcianfrocco/Cianfrocco-and-Leschziner-EMCloudProcessing</a>) and Dryad Digital Repository (<a href=\"http://dx.doi.org/10.5061/dryad.9mb54\">http://dx.doi.org/10.5061/dryad.9mb54</a>) (<a href=\"#bib6\">Cianfrocco and Leschziner, 2015</a>), respectively."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "unknown", 
+                "id": "bib1", 
+                "date": "1967", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GM Amdahl", 
+                            "index": "Amdahl, GM"
+                        }
+                    }
+                ], 
+                "title": "Proceedings of the April 18-20, 1967, spring joint computer conference", 
+                "details": "483\u2013485, Proceedings of the April 18-20, 1967, spring joint computer conference, Atlantic City, New Jersey, ACM"
+            }, 
+            {
+                "type": "web", 
+                "id": "bib1a", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "group", 
+                        "name": "AWS"
+                    }
+                ], 
+                "title": "Bristol-Myers Squibb on AWS", 
+                "uri": "http://aws.amazon.com/solutions/case-studies/bristol-myers-squibb/"
+            }, 
+            {
+                "type": "web", 
+                "id": "bib1b", 
+                "date": "2014", 
+                "discriminator": "a", 
+                "authors": [
+                    {
+                        "type": "group", 
+                        "name": "AWS"
+                    }
+                ], 
+                "title": "AWS case study: Novartis", 
+                "uri": "http://aws.amazon.com/solutions/case-studies/novartis/"
+            }, 
+            {
+                "type": "web", 
+                "id": "bib2", 
+                "date": "2014", 
+                "discriminator": "b", 
+                "authors": [
+                    {
+                        "type": "group", 
+                        "name": "AWS"
+                    }
+                ], 
+                "title": "AWS case study: Pfizer", 
+                "uri": "http://aws.amazon.com/solutions/case-studies/pfizer/"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "XC Bai", 
+                            "index": "Bai, XC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IS Fernandez", 
+                            "index": "Fernandez, IS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G McMullan", 
+                            "index": "McMullan, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Scheres", 
+                            "index": "Scheres, SH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ribosome structures to near-atomic resolution from thirty thousand cryo-EM particles", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "2", 
+                "pages": "e00461", 
+                "doi": "10.7554/eLife.00461"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "XC Bai", 
+                            "index": "Bai, XC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G McMullan", 
+                            "index": "McMullan, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Scheres", 
+                            "index": "Scheres, SH"
+                        }
+                    }
+                ], 
+                "articleTitle": "How cryo-EM is revolutionizing structural biology", 
+                "journal": {
+                    "name": [
+                        "Trends in Biochemical Sciences"
+                    ]
+                }, 
+                "volume": "40", 
+                "pages": {
+                    "first": "49", 
+                    "last": "57", 
+                    "range": "49\u201357"
+                }, 
+                "doi": "10.1016/j.tibs.2014.10.005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MG Campbell", 
+                            "index": "Campbell, MG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Cheng", 
+                            "index": "Cheng, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AF Brilot", 
+                            "index": "Brilot, AF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Moeller", 
+                            "index": "Moeller, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Lyumkis", 
+                            "index": "Lyumkis, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Veesler", 
+                            "index": "Veesler, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Pan", 
+                            "index": "Pan, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SC Harrison", 
+                            "index": "Harrison, SC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CS Potter", 
+                            "index": "Potter, CS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Carragher", 
+                            "index": "Carragher, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Grigorieff", 
+                            "index": "Grigorieff, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "Movies of ice-embedded particles enhance resolution in electron cryo-microscopy", 
+                "journal": {
+                    "name": [
+                        "Structure"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "1823", 
+                    "last": "1828", 
+                    "range": "1823\u20131828"
+                }, 
+                "doi": "10.1016/j.str.2012.08.026"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib6", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Cianfrocco", 
+                            "index": "Cianfrocco, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AE Leschziner", 
+                            "index": "Leschziner, AE"
+                        }
+                    }
+                ], 
+                "title": "Data from: single particle cryo-electron microscopy image processing in the cloud: high performance at low cost", 
+                "details": "Dryad Data Repository, 10.5061/dryad.9mb54"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Frank", 
+                            "index": "Frank, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Radermacher", 
+                            "index": "Radermacher, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Penczek", 
+                            "index": "Penczek, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Zhu", 
+                            "index": "Zhu, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Li", 
+                            "index": "Li, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ladjadj", 
+                            "index": "Ladjadj, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Leith", 
+                            "index": "Leith, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "SPIDER and WEB: processing and visualization of images in 3D electron microscopy and related fields", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "116", 
+                "pages": {
+                    "first": "190", 
+                    "last": "199", 
+                    "range": "190\u2013199"
+                }, 
+                "doi": "10.1006/jsbi.1996.0030"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Grigorieff", 
+                            "index": "Grigorieff, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "FREALIGN: high-resolution refinement of single particle structures", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "157", 
+                "pages": {
+                    "first": "117", 
+                    "last": "125", 
+                    "range": "117\u2013125"
+                }, 
+                "doi": "10.1016/j.jsb.2006.05.004"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hohn", 
+                            "index": "Hohn, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Tang", 
+                            "index": "Tang, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Goodyear", 
+                            "index": "Goodyear, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PR Baldwin", 
+                            "index": "Baldwin, PR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Huang", 
+                            "index": "Huang, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PA Penczek", 
+                            "index": "Penczek, PA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Yang", 
+                            "index": "Yang, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Glaeser", 
+                            "index": "Glaeser, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PD Adams", 
+                            "index": "Adams, PD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Ludtke", 
+                            "index": "Ludtke, SJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "SPARX, a new environment for Cryo-EM image processing", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "157", 
+                "pages": {
+                    "first": "47", 
+                    "last": "55", 
+                    "range": "47\u201355"
+                }, 
+                "doi": "10.1016/j.jsb.2006.07.003"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YS Hu", 
+                            "index": "Hu, YS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Nan", 
+                            "index": "Nan, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Sengupta", 
+                            "index": "Sengupta, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Lippincott-Schwartz", 
+                            "index": "Lippincott-Schwartz, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Cang", 
+                            "index": "Cang, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Accelerating 3B single-molecule super-resolution microscopy with cloud computing", 
+                "journal": {
+                    "name": [
+                        "Nature Methods"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "96", 
+                    "last": "97", 
+                    "range": "96\u201397"
+                }, 
+                "doi": "10.1038/nmeth.2335"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib11", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Ivica", 
+                            "index": "Ivica, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JT Riley", 
+                            "index": "Riley, JT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Shubert", 
+                            "index": "Shubert, C"
+                        }
+                    }
+                ], 
+                "title": "Paper presented at: information technology interfaces, 2009 ITI '09 proceedings of the ITI 2009 31st international conference on", 
+                "details": "Paper presented at: information technology interfaces, 2009 ITI '09 proceedings of the ITI 2009 31st international conference on"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Krampis", 
+                            "index": "Krampis, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Booth", 
+                            "index": "Booth, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Chapman", 
+                            "index": "Chapman, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Tiwari", 
+                            "index": "Tiwari, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Bicak", 
+                            "index": "Bicak, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Field", 
+                            "index": "Field, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KE Nelson", 
+                            "index": "Nelson, KE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cloud BioLinux: pre-configured and on-demand bioinformatics computing for the genomics community", 
+                "journal": {
+                    "name": [
+                        "BMC Bioinformatics"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": "42", 
+                "doi": "10.1186/1471-2105-13-42"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Kuhlbrandt", 
+                            "index": "Kuhlbrandt, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cryo-EM enters a new era", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "e03678", 
+                "doi": "10.7554/eLife.03678"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Li", 
+                            "index": "Li, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Mooney", 
+                            "index": "Mooney, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Zheng", 
+                            "index": "Zheng, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CR Booth", 
+                            "index": "Booth, CR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Braunfeld", 
+                            "index": "Braunfeld, MB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Gubbens", 
+                            "index": "Gubbens, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Agard", 
+                            "index": "Agard, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Cheng", 
+                            "index": "Cheng, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Electron counting and beam-induced motion correction enable near-atomic-resolution single-particle cryo-EM", 
+                "journal": {
+                    "name": [
+                        "Nature Methods"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "584", 
+                    "last": "590", 
+                    "range": "584\u2013590"
+                }, 
+                "doi": "10.1038/nmeth.2472"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Lu", 
+                            "index": "Lu, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "XC Bai", 
+                            "index": "Bai, XC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Ma", 
+                            "index": "Ma, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Xie", 
+                            "index": "Xie, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Yan", 
+                            "index": "Yan, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Sun", 
+                            "index": "Sun, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Yang", 
+                            "index": "Yang, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zhao", 
+                            "index": "Zhao, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Zhou", 
+                            "index": "Zhou, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Scheres", 
+                            "index": "Scheres, SH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Shi", 
+                            "index": "Shi, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Three-dimensional structure of human gamma-secretase", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "512", 
+                "pages": {
+                    "first": "166", 
+                    "last": "170", 
+                    "range": "166\u2013170"
+                }, 
+                "doi": "10.1038/nature13567"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Ludtke", 
+                            "index": "Ludtke, SJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PR Baldwin", 
+                            "index": "Baldwin, PR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Chiu", 
+                            "index": "Chiu, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "EMAN: semiautomated software for high-resolution single-particle reconstructions", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "128", 
+                "pages": {
+                    "first": "82", 
+                    "last": "97", 
+                    "range": "82\u201397"
+                }, 
+                "doi": "10.1006/jsbi.1999.4174"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G McMullan", 
+                            "index": "McMullan, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AR Faruqi", 
+                            "index": "Faruqi, AR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Henderson", 
+                            "index": "Henderson, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Guerrini", 
+                            "index": "Guerrini, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Turchetta", 
+                            "index": "Turchetta, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Jacobs", 
+                            "index": "Jacobs, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G van Hoften", 
+                            "index": "van Hoften, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Experimental observation of the improvement in MTF from backthinning a CMOS direct electron detector", 
+                "journal": {
+                    "name": [
+                        "Ultramicroscopy"
+                    ]
+                }, 
+                "volume": "109", 
+                "pages": {
+                    "first": "1144", 
+                    "last": "1147", 
+                    "range": "1144\u20131147"
+                }, 
+                "doi": "10.1016/j.ultramic.2009.05.005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Mindell", 
+                            "index": "Mindell, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Grigorieff", 
+                            "index": "Grigorieff, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "Accurate determination of local defocus and specimen tilt in electron microscopy", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "142", 
+                "pages": {
+                    "first": "334", 
+                    "last": "347", 
+                    "range": "334\u2013347"
+                }, 
+                "doi": "10.1016/S1047-8477(03)00069-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Mohammed", 
+                            "index": "Mohammed, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Mostovenko", 
+                            "index": "Mostovenko, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Henneman", 
+                            "index": "Henneman, AA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Marissen", 
+                            "index": "Marissen, RJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Deelder", 
+                            "index": "Deelder, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Palmblad", 
+                            "index": "Palmblad, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cloud parallel processing of tandem mass spectrometry based proteomics data", 
+                "journal": {
+                    "name": [
+                        "Journal of Proteome Research"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": {
+                    "first": "5101", 
+                    "last": "5108", 
+                    "range": "5101\u20135108"
+                }, 
+                "doi": "10.1021/pr300561q"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EF Pettersen", 
+                            "index": "Pettersen, EF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TD Goddard", 
+                            "index": "Goddard, TD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CC Huang", 
+                            "index": "Huang, CC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GS Couch", 
+                            "index": "Couch, GS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DM Greenblatt", 
+                            "index": "Greenblatt, DM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EC Meng", 
+                            "index": "Meng, EC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TE Ferrin", 
+                            "index": "Ferrin, TE"
+                        }
+                    }
+                ], 
+                "articleTitle": "UCSF Chimera\u2013a visualization system for exploratory research and analysis", 
+                "journal": {
+                    "name": [
+                        "Journal of Computational Chemistry"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "1605", 
+                    "last": "1612", 
+                    "range": "1605\u20131612"
+                }, 
+                "doi": "10.1002/jcc.20084"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Scheres", 
+                            "index": "Scheres, SH"
+                        }
+                    }
+                ], 
+                "articleTitle": "RELION: implementation of a Bayesian approach to cryo-EM structure determination", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "180", 
+                "pages": {
+                    "first": "519", 
+                    "last": "530", 
+                    "range": "519\u2013530"
+                }, 
+                "doi": "10.1016/j.jsb.2012.09.006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Scheres", 
+                            "index": "Scheres, SH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Beam-induced motion correction for sub-megadalton cryo-EM particles", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "e03665", 
+                "doi": "10.7554/eLife.03665"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CO Sorzano", 
+                            "index": "Sorzano, CO"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Marabini", 
+                            "index": "Marabini, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Velazquez-Muriel", 
+                            "index": "Velazquez-Muriel, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Bilbao-Castro", 
+                            "index": "Bilbao-Castro, JR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Scheres", 
+                            "index": "Scheres, SH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Carazo", 
+                            "index": "Carazo, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Pascual-Montano", 
+                            "index": "Pascual-Montano, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "XMIPP: a new generation of an open-source image processing package for electron microscopy", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "148", 
+                "pages": {
+                    "first": "194", 
+                    "last": "204", 
+                    "range": "194\u2013204"
+                }, 
+                "doi": "10.1016/j.jsb.2004.06.006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Tang", 
+                            "index": "Tang, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Peng", 
+                            "index": "Peng, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PR Baldwin", 
+                            "index": "Baldwin, PR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DS Mann", 
+                            "index": "Mann, DS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Jiang", 
+                            "index": "Jiang, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Rees", 
+                            "index": "Rees, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Ludtke", 
+                            "index": "Ludtke, SJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "EMAN2: an extensible image processing suite for electron microscopy", 
+                "journal": {
+                    "name": [
+                        "Journal of Structural Biology"
+                    ]
+                }, 
+                "volume": "157", 
+                "pages": {
+                    "first": "38", 
+                    "last": "46", 
+                    "range": "38\u201346"
+                }, 
+                "doi": "10.1016/j.jsb.2006.05.009"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DC Trudgian", 
+                            "index": "Trudgian, DC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Mirzaei", 
+                            "index": "Mirzaei, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cloud CPFP: a shotgun proteomics data analysis pipeline using cloud and high performance computing", 
+                "journal": {
+                    "name": [
+                        "Journal of Proteome Research"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": {
+                    "first": "6282", 
+                    "last": "6290", 
+                    "range": "6282\u20136290"
+                }, 
+                "doi": "10.1021/pr300694b"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Yazar", 
+                            "index": "Yazar, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GE Gooden", 
+                            "index": "Gooden, GE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Mackey", 
+                            "index": "Mackey, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AW Hewitt", 
+                            "index": "Hewitt, AW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Benchmarking undedicated cloud computing providers for analysis of genomic datasets", 
+                "journal": {
+                    "name": [
+                        "PLOS ONE"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": "e108490", 
+                "doi": "10.1371/journal.pone.0108490"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We would like to thank all the members of the Leschziner and Reck-Peterson labs for critical discussions. We would like to especially thank Rogelio Hernandez-Lopez, Anthony Roberts, and Daniel Cianfrocco for critical feedback on the development of this Amazon computing environment. We also would like to thank the Structural Biology Consortium (SBGrid) for pricing information on cluster and file server sizes. MAC is an HHMI fellow of the Damon Runyon Cancer Research Foundation and AEL is supported by NIH/NIGMS (R01 GM107214 and R01 GM092895A)."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.06664.013", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for sending your work entitled \u201cLow cost, high performance processing of single particle cryo-electron microscopy data in the cloud\u201d for consideration at <i>eLife</i>. Your Tools and Resources article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following individuals responsible for the peer review of your submission have agreed to reveal their identity: Sjors Scheres (Reviewing editor); Steven Ludtke (peer reviewer). A further reviewer remains anonymous."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "All three reviewers agreed that this paper represents a novel and original way of alleviating the high computational burdens that many cryo-EM labs face with the advent of huge amounts of data from new direct electron detectors. As this paper has the potential to accelerate discovery, and to change how many labs operate, publication was recommended by all three."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The following concerns (in order of importance) were raised:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Firstly, one of the reviewers had actually recently performed the EC2 cost analysis himself and was surprised to see the estimates in this paper less expensive than his own. He writes: \u201cThe first issue is an Amazon trick. The r3.8xlarge instances are marketed as \u201c32 vCPUs\u201d. Actually this is 32 threads running on 16 cores when you read the fine print. For image processing this is generally 18-20 \u201cCPUs\u201d worth of compute power for the \u201c32 vCPUs\u201d. CPU-hr/mo/yr normally measure core-hours, not thread hours. This is a factor of \u223c1.8. If the authors disagree, I would encourage them to run a scalability test on a small problem on a single 32 vCPU instance. Perusing the Amazon site, the cost of a single r3.8xlarge instance with 16 physical cores is currently $2.80 for on demand use, rather than the $0.35 quoted by this manuscript. While it is possible to reduce this by up to \u223c50% through contract prepurchase, the only mechanism I can see for getting the price anywhere close to the cited level is by bidding on unused hours, which can mean substantial delays. Currently the purchase price for an equivalent cluster is \u223c$350/core ($175/thread), or \u223c$7500 for a node almost identical to the $2.80/hr instance. Anyway, by my calculation, when you take all expenses into account, EC2 is about 3-5x more expensive than owning a cluster. However, if the Amazon price were suddenly 10x lower, this would be compelling. If my cost analysis is in error, I would be honestly grateful to see a correction, as it would substantially alter how we operate.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Secondly, in Table 1, the reported times for the other 3 cases are incorrect. They are merely the same of the values reported for the old and the new movie processing in the <a href=\"#bib22\">Scheres, 2014</a> <i>eLife</i> paper. There are no reported CPU costs for the entire processing procedures of these structures in the literature. However, on the RELION wiki (<a href=\"http://www2.mrc-lmb.cam.ac.uk/relion/index.php/FAQs#Computational_issues\">http://www2.mrc-lmb.cam.ac.uk/relion/index.php/FAQs#Computational_issues</a>) it is stated: \u201cWe do 3.x Angstrom ribosome reconstructions from say 100-200 thousand particles in approximately two weeks using around 200-300 cores in parallel\u201d. This would result (given current cost estimates) in about $800 per structure, which is still very reasonable."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Thirdly, the authors are encouraged to base their analysis on Amdahl's Law instead of the \u201cnear-linear increase\u201d stated in the paper. While I would normally consider this a minor concern, this analysis will yield numbers which will be interesting to consider."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "[Editors\u2019 note: the decision letter after resubmission follows.]"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for choosing to send your work entitled \u201cLow cost, high performance processing of single particle cryo-electron microscopy data in the cloud\u201d for consideration at <i>eLife</i>. Your revised submission has been evaluated by John Kuriyan (Senior editor) and Sjors Scheres (Reviewing editor). Based on our discussions and the individual reviews sent previously, we regret to inform you that your work will not be considered further for publication in <i>eLife</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "It is unfortunate that the standard prices for Amazon's cloud are so high. We feel that bidding on unused hours is likely to be unpredictable in the future and this lack of predictability makes it less appropriate as a means of evaluating the costs of the calculations described in the paper. The true cost of doing an entire structure determination project (not only a single refinement run) at standard Amazon prices would probably quite substantially higher than the value mentioned in the Abstract. We fear that this could more expensive than buying a local cluster. Although some smaller labs may still benefit from the cloud setup, this paper will not likely change the way cryo-EM labs work in general."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "[Editors\u2019 note: after an appeal against the decision, further revisions were requested before acceptance.]"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In order to give a fair and transparent view to the casual reader, we feel that the addition of a discussion on the costs of a \u201ctypical\u201d structure determination project would add value to the paper. The phrase \u201cas we illustrate here by determining a near-atomic resolution structure of the 80S yeast ribosome for $28.89 USD in \u223c10 hours\u201d in the current Abstract is not representative of a typical case. Many data sets will contain several hundreds of thousands of particles, and each 2D or 3D classification or refinement run will cost in the order of 100-200$ each (based on your estimates for gamma-secretase and mitoribosome). As in a typical project one would run multiple of these jobs, real costs will quickly reach more than a thousand dollars per structure, even when using the $0.35/hour bidding rate. This is perfectly well acceptable and still competitive with buying a local cluster. But discussing such values in the paper will prevent unpleasant surprises when PIs start receiving EC2 bills."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.06664.014", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The following concerns (in order of importance) were raised</i>:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Firstly, one of the reviewers had actually recently performed the EC2 cost analysis himself and was surprised to see the estimates in this paper less expensive than his own. He writes:</i> \u201c<i>The first issue is an Amazon trick. The r3.8xlarge instances are marketed as</i> \u201c<i>32 vCPUs</i>\u201d<i>. Actually this is 32 threads running on 16 cores when you read the fine print. For image processing this is generally 18-20</i> \u201c<i>CPUs</i>\u201d <i>worth of compute power for the</i> \u201c<i>32 vCPUs</i>\u201d<i>. CPU-hr/mo/yr normally measure core-hours, not thread hours. This is a factor of \u223c1.8. If the authors disagree, I would encourage them to run a scalability test on a small problem on a single 32 vCPU instance</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would like to thank the reviewers for pointing out the difference between vCPUs and CPUs. To make sure there is no confusion, we updated the text so that all analysis and discussion of Amazon EC2 involves a discussion of CPUs and CPU core-hours (instead of hyperthreads and hyperthread-hours). This will allow the manuscript to be readily compared to other published work that reports on CPUs and CPU core-hours. We also included a section within the Materials and methods where we discuss the differences between CPUs and vCPUs."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Perusing the Amazon site, the cost of a single r3.8xlarge instance with 16 physical cores is currently $2.80 for on demand use, rather than the $0.35 quoted by this manuscript. While it is possible to reduce this by up to \u223c50% through contract prepurchase, the only mechanism I can see for getting the price anywhere close to the cited level is by bidding on unused hours, which can mean substantial delays. Currently the purchase price for an equivalent cluster is \u223c$350/core ($175/thread), or \u223c$7500 for a node almost identical to the $2.80/hr instance. Anyway, by my calculation, when you take all expenses into account, EC2 is about 3-5x more expensive than owning a cluster. However, if the Amazon price were suddenly 10x lower, this would be compelling. If my cost analysis is in error, I would be honestly grateful to see a correction, as it would substantially alter how we operate</i>.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We agree that Amazon EC2 is not particularly cost effective for the scenarios presented by the reviewers. We were able to minimize costs by bidding on unused hours through spot instance requests. This allowed us to reserve instances at a price of $0.35/hr instead of the on-demand cost of the r3.8xlarge is $2.80/hr. Also, we have not seen any delays in getting access to these spot instances (<a href=\"#fig2\">Figure 2D</a>), which has made them reliable during our experience with EC2. To help convey these ideas to the reader, we have included a section within the Materials and methods section describing how we were able to reserve the spot instances, comparing them to the on-demand instances."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Secondly, in Table 1, the reported times for the other 3 cases are incorrect. They are merely the same of the values reported for the old and the new movie processing in the</i> <a href=\"#bib22\"><i>Scheres, 2014</i></a> eLife <i>paper. There are no reported CPU costs for the entire processing procedures of these structures in the literature. However, on the RELION wiki (</i><a href=\"http://www2.mrc-lmb.cam.ac.uk/relion/index.php/FAQs#Computational_issues\"><i>http://www2.mrc-lmb.cam.ac.uk/relion/index.php/FAQs#Computational_issues</i></a><i>) it is stated:</i> \u201c<i>We do 3.x Angstrom ribosome reconstructions from say 100-200 thousand particles in approximately two weeks using around 200-300 cores in parallel</i>\u201d<i>. This would result (given current cost estimates) in about $800 per structure, which is still very reasonable</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "During the preparation of the manuscript, we overlooked this incorrect comparison and we would like to thank the reviewers for raising this issue. We have updated the table to indicate that we are comparing 3D refinement processing times, not total processing times."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Thirdly, the authors are encouraged to base their analysis on Amdahl's Law instead of the</i> \u201c<i>near-linear increase</i>\u201d <i>stated in the paper. While I would normally consider this a minor concern, this analysis will yield numbers which will be interesting to consider</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We performed the suggested analysis and found it to be very helpful in providing a theoretical limit to increases expected by Amazon STARcluster configurations. The results have been included in <a href=\"#fig2\">Figure 2B</a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "[Editors\u2019 note: the author responses to the decision on the revised submission follows.]"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "While we understand the rationale behind your decision, we believe that some assumptions underlying this decision are not entirely correct. We realize we are at fault for not having presented enough data in our manuscript on the likelihood of being able to secure computational resources at the costs we quoted. We have included below these data, as part of a detailed response to the main points raised in your decision letter. We hope that this new information will more successfully make the point that cloud-based computing represents a cost-effective and general solution to the computational burden imposed by cryo-EM data analysis."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>It is unfortunate that the standard prices for Amazon's cloud are so high. We feel that bidding on unused hours is likely to be unpredictable in the future and this lack of predictability makes it less appropriate as a means of evaluating the costs of the calculations described in the paper</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would like to thank you for bringing this up because it is an important concern that we should have addressed more clearly. As pointed out, the prices of Amazon\u2019s instances can change. Despite this, the vast majority of spot instance prices have remained consistently low. This can be seen in an analysis of r3.8xlarge spot instance prices over the past three months in both the United States (Virginia) and European Union (Ireland) (<a href=\"#fig5\">Author response image 1</a>). This analysis showed that users can gain access to &gt; 90% of instances at a price of $0.65/hr, which is 25% of the standard rate of $2.80/hr. Even at a price of $0.65/hr, the cost of 3D classification and refinement of the 80S ribosome would have been $53.64 (<a href=\"#tbl1\">Author response table 1</a>)."
+                }, 
+                {
+                    "type": "image", 
+                    "doi": "10.7554/eLife.06664.015", 
+                    "id": "fig5", 
+                    "label": "Author response image 1.", 
+                    "title": "Percentage of instances below bid price over last 90 days", 
+                    "caption": [
+                        {
+                            "type": "paragraph", 
+                            "text": "Percentage of instances below bid price over last 90 days. Shown are the percentages of r3.8xlarge instances that are below the spot instance price across different regions and zones."
+                        }
+                    ], 
+                    "alt": "", 
+                    "uri": "elife-06664-resp-fig1-v2.tif"
+                }, 
+                {
+                    "type": "table", 
+                    "doi": "10.7554/eLife.06664.016", 
+                    "id": "tbl1", 
+                    "label": "Author response table 1.", 
+                    "title": "Cost of 80S ribosome 3D classification and refinement on a 128 CPU STARcluster configuration at increasing spot instance price.", 
+                    "caption": [
+                        {
+                            "type": "paragraph", 
+                            "text": "Cost of 80S ribosome 3D classification and refinement on a 128 CPU STARcluster configuration at increasing spot instance price."
+                        }
+                    ], 
+                    "tables": [
+                        "<table><tbody><tr><td><p><i>Spot instance bid price</i></p></td><td><p><i>$0.35</i></p></td><td><p><i>$0.45</i></p></td><td><p><i>$0.55</i></p></td><td><p><i>$0.65</i></p></td></tr><tr><td><p>80S ribosome 3D classification and refinement cost</p></td><td><p>$28.89</p></td><td><p>$37.14</p></td><td><p>$45.39</p></td><td><p>$53.64</p></td></tr></tbody></table>"
+                    ]
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would also like to make two final points regarding the future of prices for Amazon instances:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Competition: Multiple cloud-based service providers (e.g. Google, Microsoft, Alibaba) already provide virtual machines for users across the world. These providers are vying to supply large privately held companies with computing resources. This will translate into stabilizing market forces that will help keep the price of cloud computing stable (if not lower it)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Moore\u2019s law: Further development of CPU processing power will make the most \u2018powerful\u2019 generation of CPUs on Amazon cheaper within 2 years, further driving down cost."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The true cost of doing an entire structure determination project (not only a single refinement run) at standard Amazon prices would probably quite substantially higher than the value mentioned in the Abstract. We fear that this could more expensive than buying a local cluster</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would also like to thank the reviewers for raising the issue of the \u2018true cost\u2019 of single particle analysis on Amazon EC2. The estimates outlined below will highlight the cost-effectiveness of Amazon\u2019s EC2 infrastructure; individual virtual machines can be used at rates as low as $0.003/hr. The following is an estimate for the entire processing of a single dataset:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Picking particles and CTF estimation: Estimated cost $2.00 (100 hrs at $0.02/hr)"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "For this estimate, we used a spot instance price of $0.02/hr on an m1.small instance, which has had an average spot instance price of $0.0103 +/- 0.0038 over the last 90 days in US-Virginia. At this rate, a user could select particles and estimate the CTF over the course of 100 hours (2.5 x 40 hr. work weeks) for $2.00."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Particle extraction: $0.20 (10 hrs at 0.02/hr)"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The particle extraction of the 80S ribosome presented in our manuscript required \u223c10 hrs."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) 2D classification using Relion: $23.29 (8.32 hrs at $2.80/hr)"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "For the 80S ribosome dataset presented in <a href=\"#bib3\">Bai et al. 2013</a>, we performed 2D classification using Relion on a STARcluster of 128 CPUs at price of $0.35/instance/hr on 8 instances at a total cost of $2.80/hr. The final cost for classification was $23.29 to classify 62,022 at a pixel size 3.54 and a box size of 120 x 120 pixels into 250 classes (T=2) over 25 iterations."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) 3D classification & refinement using Relion: $28.89 (10.32 hrs at $2.80/hr)"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This cost reflects of price of $0.35/hr/instance on a 128 CPU STARcluster, which comprises eight r3.8xlarge instances."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In summary:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Particle picking & CTF estimation $2.00"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Particle extraction $0.20"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2D classification using Relion $23.29"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3D classification & refinement using Relion $28.89"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Total cost $54.38"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Although some smaller labs may still benefit from the cloud setup, this paper will not likely change the way cryo-EM labs work in general</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The spread of cryo-EM as a common structural biology tool necessitates the spread of a cryo-EM computing software platform. Unlike X-ray crystallography, which can be used to solve atomic structures on a single workstation, cryo-EM data analysis inherently requires access to hundreds of CPUs for 3D structure determination. Currently, major universities have invested heavily in computing infrastructures, which are absent from many universities around the world. Therefore, as more labs begin to use cryo-EM software, they will need access to larger computing resources. Inherently, many of those newcomers may be small, or there may only be limited numbers of members within a laboratory that need high performance computing. We believe cloud-based computing will provide a solution to these challenges."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "While cloud computing is continuing to mature, we have created a tool that will immediately address the computational burden imposed by cryo-EM data analysis. Cloud-based computing is a tool that could and would scale rapidly with the spread of cryo-EM."
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,1993 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "10279", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.10279", 
+        "authorLine": "Dmitriy Sonkin", 
+        "title": "Expression signature based on TP53 target genes doesn't predict response to TP53-MDM2 inhibitor in wild type TP53 tumors", 
+        "published": "2015-10-22T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e10279", 
+        "pdf": "https://publishing-cdn.elifesciences.org/10279/elife-10279-v2.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "human-biology-medicine", 
+                "name": "Human Biology and Medicine"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.10279.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors. Not all wild type TP53 tumors are sensitive to such inhibitors. In an attempt to improve selection of patients with TP53 wild type tumors, an mRNA expression signature based on 13 TP53 transcriptional target genes was recently developed (Jeay et al. 2015). Careful reanalysis of TP53 status in the study validation data set of cancer cell lines considered to be TP53 wild type detected TP53 inactivating alterations in 23% of cell lines. The subsequent reanalysis of the remaining TP53 wild type cell lines clearly demonstrated that unfortunately the 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC0-1.0", 
+            "statement": "This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Dmitriy Sonkin", 
+                    "index": "Sonkin, Dmitriy"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Division of Cancer Treatment and Diagnosis", 
+                            "National Cancer Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Rockville", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Rockville"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "dmitriy.sonkin@nih.gov"
+                ], 
+                "contribution": "DS, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.10279.006", 
+                "id": "SD1-data", 
+                "label": "Supplementary file 1.", 
+                "title": "(<b>A</b>) 40 likely TP53 WT cancer cell lines from Jeay et al. (2015) validation set. (<b>B</b>Performance of Jeay et al. (2015) 13-gene Signature Prediction in validation set of 28 likely TP53 WT cancer cell lines with sensitivity defined by NVP-CFC218. (NVP-CFC218 data was available for 28 out of 40 likely TP53 WT cancer cell lines.) (<b>C</b>List of 29 cell lines with inactivated TP53 in the set of 113 cancer cell lines considered to be TP53 wild type by Jeay et al. (2015). (<b>D</b>) 84 likely TP53 WT cancer cell lines from Jeay et al. (2015). (<b>E</b>) COSMIC information on mutations in cell lines listed in the Table 1.", 
+                "mediaType": "application/excel", 
+                "uri": "elife-10279-supp1-v2.xls", 
+                "filename": "elife-10279-supp1-v2.xls"
+            }
+        ], 
+        "dataSets": {
+            "used": [
+                {
+                    "id": "dataro1", 
+                    "date": "2012", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Barretina J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Caponigro G"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Stransky N"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Venkatesan K"
+                        }
+                    ], 
+                    "title": "SNP and Expression data from the Cancer Cell Line Encyclopedia (CCLE)", 
+                    "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE36139).", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36139"
+                }
+            ]
+        }, 
+        "impactStatement": "A previously suggested expression signature based on thirteen TP53 transcriptional target genes does not predict the response of wild type TP53 tumors to TP53-MDM2 inhibitors."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "10279", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.10279", 
+        "authorLine": "Dmitriy Sonkin", 
+        "title": "Expression signature based on TP53 target genes doesn't predict response to TP53-MDM2 inhibitor in wild type TP53 tumors", 
+        "published": "2015-10-22T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e10279", 
+        "pdf": "https://publishing-cdn.elifesciences.org/10279/elife-10279-v2.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "human-biology-medicine", 
+                "name": "Human Biology and Medicine"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.10279.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors. Not all wild type TP53 tumors are sensitive to such inhibitors. In an attempt to improve selection of patients with TP53 wild type tumors, an mRNA expression signature based on 13 TP53 transcriptional target genes was recently developed (Jeay et al. 2015). Careful reanalysis of TP53 status in the study validation data set of cancer cell lines considered to be TP53 wild type detected TP53 inactivating alterations in 23% of cell lines. The subsequent reanalysis of the remaining TP53 wild type cell lines clearly demonstrated that unfortunately the 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC0-1.0", 
+            "statement": "This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Dmitriy Sonkin", 
+                    "index": "Sonkin, Dmitriy"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Division of Cancer Treatment and Diagnosis", 
+                            "National Cancer Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Rockville", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Rockville"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "dmitriy.sonkin@nih.gov"
+                ], 
+                "contribution": "DS, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "additionalFiles": [
+            {
+                "doi": "10.7554/eLife.10279.006", 
+                "id": "SD1-data", 
+                "label": "Supplementary file 1.", 
+                "title": "(<b>A</b>) 40 likely TP53 WT cancer cell lines from Jeay et al. (2015) validation set. (<b>B</b>Performance of Jeay et al. (2015) 13-gene Signature Prediction in validation set of 28 likely TP53 WT cancer cell lines with sensitivity defined by NVP-CFC218. (NVP-CFC218 data was available for 28 out of 40 likely TP53 WT cancer cell lines.) (<b>C</b>List of 29 cell lines with inactivated TP53 in the set of 113 cancer cell lines considered to be TP53 wild type by Jeay et al. (2015). (<b>D</b>) 84 likely TP53 WT cancer cell lines from Jeay et al. (2015). (<b>E</b>) COSMIC information on mutations in cell lines listed in the Table 1.", 
+                "mediaType": "application/excel", 
+                "uri": "elife-10279-supp1-v2.xls", 
+                "filename": "elife-10279-supp1-v2.xls"
+            }
+        ], 
+        "dataSets": {
+            "used": [
+                {
+                    "id": "dataro1", 
+                    "date": "2012", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Barretina J"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Caponigro G"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Stransky N"
+                        }, 
+                        {
+                            "type": "group", 
+                            "name": "Venkatesan K"
+                        }
+                    ], 
+                    "title": "SNP and Expression data from the Cancer Cell Line Encyclopedia (CCLE)", 
+                    "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE36139).", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36139"
+                }
+            ]
+        }, 
+        "impactStatement": "A previously suggested expression signature based on thirteen TP53 transcriptional target genes does not predict the response of wild type TP53 tumors to TP53-MDM2 inhibitors.", 
+        "keywords": [
+            "TP53", 
+            "MDM2", 
+            "pharmacogenomics", 
+            "inhibitor sensitivity", 
+            "predictive signature", 
+            "translational oncology"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.10279.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Damaged cells in the human body can develop into tumors if left unchecked. TP53 (also called p53) is a protein that normally helps to repair or eliminate these damaged cells and prevent tumors from forming. About half of all cancerous tumors have mutations that prevent TP53 from working. In tumors with normal TP53 (called TP53 wild type tumors), another protein that acts to keep TP53 in check is often overly active. This overactive protein (called MDM2) prevents TP53 from suppressing tumor development. Many scientists are developing anticancer drugs called TP53-MDM2 inhibitors to target the potentially overactive protein in TP53 wild type tumors, and importantly only a tumor with working TP53 would have a chance of responding to this kind of inhibitor."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Earlier in 2015, a team of researchers at the Novartis Institutes for BioMedical Research reported the results of a screen of hundreds of cancer cell lines that investigated which ones were sensitive to TP53-MDM2 inhibitors. Using mix of TP53 mutant and TP53 wild type cancer cell lines, the Novartis team identified a set of 13 genes that were highly expressed in cell lines that were sensitive to one of these inhibitors. This 13-gene signature was then suggested as a way to identify which cancer patients with TP53 wild type tumors would be the most likely to benefit from treatment with TP53-MDM2 inhibitors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "However, now Dmitriy Sonkin has reanalyzed the validation set of TP53 wild type cancer cell lines used by the Norvartis team and found that many of them had been mistakenly identified as TP53 wild type. That is to say around a quarter of the cell lines thought to have normal TP53 actually had mutations in the gene for TP53. Sonkin then repeated the analysis using only those cell lines that were from TP53 wild type tumors. This revealed that the 13-gene signature cannot predict how cancer cells from a TP53 wild type tumor will respond to a TP53-MDM2 inhibitor. Further work would be beneficial in order to find an accurate test to determine which cancer patients will benefit the most from treatment with TP53-MDM2 inhibitors."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials across multiple tumor types. Mechanistically, only tumors with wild-type (WT) TP53 can potentially be sensitive to TP53-MDM2 inhibitors as confirmed in part by sensitivity of WT MEFs \u00a0cells and by the loss of sensitivity in TP53 knockout MEFs (<a href=\"#bib2\">Efeyan et al., 2007</a>). Therefore, clinical trials of TP53-MDM2 inhibitors only include patients with WT TP53 tumors. Based on pre-clinical work, it is clear that not all WT TP53 tumors are sensitive to TP53-MDM2 inhibitors. Multiple attempts have been made to try to predict sensitivity to TP53-MDM2 inhibitors in WT TP53 tumors. Unfortunately, despite these efforts, there is currently no clinically validated and FDA-approved assay to identify WT TP53 tumors most likely to respond to TP53-MDM2 inhibitors."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Recently, <a href=\"#bib6\">Jeay et al., (2015)</a> attempted to find a messenger RNA (mRNA) predictive expression signature to selective TP53-MDM2 inhibitor NVP-CGM097 using a panel of cell lines from the Cancer Cell Line Encyclopedia (CCLE) (<a href=\"#bib1\">Barretina et al., 2012</a>) with corresponding genetic and genomic datasets. As a result of this work, <a href=\"#bib6\">Jeay et al., (2015)</a> described the mRNA signature based on 13 TP53 transcriptional target genes. The signature was generated using TP53-MDM2 inhibitor\u00a0sensitive versus insensitive cell lines without regard to the TP53 status. As a critical part of the validation work, <a href=\"#bib6\">Jeay et al., (2015)</a> used an independent set of 52 cancer cell lines that were considered to be TP53 WT. Since the signature was generated without considering TP53 status and the fact that TP53-MDM2 inhibitors can only be effective in WT TP53 tumors, the signature is likely to represent a proxy for TP53 status. Therefore, it would not be expected to enhance the ability to predict sensitivity to TP53-MDM2 inhibitors in TP53 WT tumors, so the reported predictive ability of the <a href=\"#bib6\">Jeay et al., (2015)</a> signature in the set of 52 cancer cell lines considered by authors as TP53 WT is surprising."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results and discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "One potential explanation for the reported predictive ability of the <a href=\"#bib6\">Jeay et al., (2015)</a> signature in a validation set of 52 cancer cell lines that were considered TP53 WT is the possibility that some of these cell lines have TP53 inactivating alterations that were missed during cell lines selection. TP53 could be inactivated by a variety of mechanisms including inactivating mutations, DNA loss and loss of mRNA expression. The CCLE provides sequencing, copy number and mRNA expression data, enabling careful examination of TP53 status in the set of 52 cancer cell lines used for validation by <a href=\"#bib6\">Jeay et al., (2015)</a>. Careful examination of TP53 status using publicly available CCLE mutation calls, copy number and mRNA expression (described in Materials and methods) identified 12 out of 52 cancer cell lines containing inactivating TP53 alterations, which are summarized in <a href=\"#tbl1\">Table 1</a>."
+                    }, 
+                    {
+                        "type": "table", 
+                        "doi": "10.7554/eLife.10279.003", 
+                        "id": "tbl1", 
+                        "label": "Table 1.", 
+                        "title": "List of 12 cell lines with inactivated TP53 in the validation set of 52 cancer cell lines considered to be TP53 wild-type by <a href=\"#bib6\">Jeay et al., (2015)</a>.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "List of 12 cell lines with inactivated TP53 in the validation set of 52 cancer cell lines considered to be TP53 wild-type by <a href=\"#bib6\">Jeay et al., (2015)</a>."
+                            }
+                        ], 
+                        "tables": [
+                            "<table><thead><tr><th>Cell line name</th><th>TP53 inactivating mutation(s)</th><th>Alternative reads/reference reads</th><th>TP53 mRNA (MAS5-150 201746_at)</th><th>TP53 CN ratio</th><th>Jeay et al. 13-gene signature prediction</th><th>NVP-CGM097 sensitivity</th></tr></thead><tbody><tr><td>KASUMI-1</td><td><b>p. R248Q</b></td> <td>52/0</td><td>265</td><td>0.54</td><td>insensitive</td><td>insensitive</td></tr><tr><td>COLO-818</td><td><b>p. C135R</b></td> <td>34/0</td><td>257</td><td>1.14</td><td>insensitive</td><td>insensitive</td></tr><tr><td>IGR-37</td><td><b>p. C229fs</b></td> <td>110/11</td><td><b>9</b></td> <td>0.59</td><td>insensitive</td><td>insensitive</td></tr><tr><td>HCC202</td><td><b>p. T284fs</b></td> <td>35/4</td><td><b>14</b></td> <td>0.8</td><td>insensitive</td><td>insensitive</td></tr><tr><td>EFM-192A</td><td><b>p. F270fs</b></td> <td>7/1</td><td><b>10</b></td> <td>0.74</td><td>insensitive</td><td>insensitive</td></tr><tr><td>NCI-H1568</td><td><b>p. H179R</b></td> <td>89/1</td><td>202</td><td>0.82</td><td>insensitive</td><td>insensitive</td></tr><tr><td>COLO-783</td><td><b>p. P27L</b></td> <td>38/0</td><td>304</td><td>1.05</td><td>sensitive</td><td>insensitive</td></tr><tr><td>GA-10</td><td><b>p. I232N, p. P152L</b></td> <td>94/50, 52/76</td><td>493</td><td>0.81</td><td>insensitive</td><td>insensitive</td></tr><tr><td>VMRC-RCW</td><td><b>p. I332_splice</b></td> <td>192/68</td><td>63</td><td>1.65</td><td>insensitive</td><td>insensitive</td></tr><tr><td>JHH-5</td><td><b>p. PPQH190del</b></td> <td>107/41</td><td>272</td><td>1.03</td><td>insensitive</td><td>insensitive</td></tr><tr><td>HDLM-2</td><td></td><td></td><td><b>1</b></td> <td>0.94</td><td>insensitive</td><td>insensitive</td></tr><tr><td>RERF-LC-KJ</td><td></td><td></td><td><b>25</b></td> <td>1.3</td><td>insensitive</td><td>insensitive</td></tr></tbody></table>"
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "As can be seen in <a href=\"#tbl1\">Table 1</a>, the majority of 12 cell lines have inactivating TP53 point mutations, three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay, two other cell lines also have loss of TP53 mRNA expression. (Gene expression and Copy Number (CN) cutoffs are defined in Materials and methods). Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 12 cell lines are insensitive to NVP-CGM097."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In order to re-evaluate the performance of the signature in TP53 WT settings, the 12 cancer cell lines with inactivated TP53 listed in <a href=\"#tbl1\">Table 1</a> have been removed from the <a href=\"#bib6\">Jeay et al., (2015)</a> validation list of cell lines, resulting in set of 40 likely WT cancer cell lines listed in <a href=\"#SD1-data\">Supplementary file 1A</a> with information on sensitivity to NVP-CGM097 and <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature prediction. Results of reevaluation of signature performance are listed in <a href=\"#tbl2\">Table 2</a>."
+                    }, 
+                    {
+                        "type": "table", 
+                        "doi": "10.7554/eLife.10279.004", 
+                        "id": "tbl2", 
+                        "label": "Table 2.", 
+                        "title": "Performance of <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature prediction in validation set of 40 likely TP53 wild-type cancer cell lines.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Performance of <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature prediction in validation set of 40 likely TP53 wild-type cancer cell lines."
+                            }
+                        ], 
+                        "tables": [
+                            "<table><thead><tr><th>Performance measure</th><th>Cell sensitivity defined by NVP-CGM097</th></tr></thead><tbody><tr><td>Sensitivity</td><td>89% (24/27)</td></tr><tr><td>Specificity</td><td>15% (2/13) {DAN-G removal 8% (1/12) *}</td></tr><tr><td>PPV</td><td><b>68.6%</b> (24/35)</td></tr><tr><td>NPV</td><td>40% (2/5) {DAN-G removal 25% (1/4) *}</td></tr><tr><th>Response rate</th><th><b>67.5%</b> (27/40)</th></tr></tbody></table>"
+                        ], 
+                        "footnotes": [
+                            {
+                                "text": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "* DAN-G has TP53 mRNA expression of 33 (MAS5-150 201746_at) indicating the probable loss of TP53 mRNA."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "text": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(Stringent TP53 mRNA expression cutoff is set at 32 (MAS5-150 201746_at) to indicate loss of TP53 mRNA)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "text": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "NPV - negative predicted value; PPV - positive predicted value."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "As can be seen from <a href=\"#tbl2\">Table 2</a>, the 13-gene signature positive predicted value for NVP-CGM097 does not noticeably differ from the response rate to the inhibitor. Also the specificity and negative predicted value (NPV) are low and it is likely that the actual specificity and NPV are even lower considering that DAN-G cell line has TP53 mRNA expression just above cutoff for TP53 mRNA loss. (NVP-CFC218 is another TP53-MDM2 inhibitor used by <a href=\"#bib6\">Jeay et al., (2015)</a> that is structurally and biochemically very similar to NVP-CGM097 and, as can be seen from <a href=\"#SD1-data\">Supplementary file 1B</a>, signature has the same pattern of performance for NVP-CFC218 as for NVP-CGM097)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "<a href=\"#fig1\">Figure 1</a> provides a visual overview of data used for evaluating the 13-gene signature performance for NVP-CGM097 in the validation set of 40 likely TP53 WT cancer cell lines. <a href=\"#fig1\">Figure 1</a> clearly illustrates that the <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature cannot differentiate between sensitive and insensitive cell lines. Keeping in mind that DAN-G cell line may have TP53 mRNA loss, there is only one cell line, HCC-95, that is correctly predicted to be insensitive. The presented reanalysis of signature performance in this article strongly suggests that 13-gene signature is a proxy for TP53 status. In such case, one can put forward the hypothesis that HCC-95 may harbor an inactivating alteration(s) that has been missed. If this is the case, the <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature has zero specificity and zero NPV in the validation set of TP53 WT cancer cell lines."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.10279.005", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Cell lines sensitivity to NVP-CGM097 in validation set of 40 likely TP53 WT cell lines.", 
+                        "alt": "", 
+                        "uri": "elife-10279-fig1-v2.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In clinical sequencing, special care is taken to make sure sufficient coverage is obtained across all target regions in order to reliably detect point mutations, insertions/deletions, fusions and copy number aberrations (<a href=\"#bib3\">Frampton et al., 2013</a>). Often the additional step of manual review of sequencing analysis results is added to the workflow to detect false positive/negative calls due to particular sequence composition or computational pipeline artifacts. In preclinical sequencing, such detailed workflow is often too expensive to obtain. In the CCLE, RainDance technology (<a href=\"#bib8\">Mazutis et al., 2009</a>) was used to fill some blind spots in the hybrid capture process, but such a process does not necessarily mitigate all problematic regions. This may explain the potentially missed TP53 inactivating alteration(s) in HCC-95."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In addition to providing sensitivity to NVP-CGM097 in the validation set, <a href=\"#bib6\">Jeay et al., (2015)</a> also provided sensitivity data to NVP-CFC218 in the set of 356 CCLE cancer cell lines. In this set, <a href=\"#bib6\">Jeay et al., (2015)</a> reported the presence of 113 cell lines with WT TP53 with response rate of 38% to NVP-CFC218. Based on the detection of 12 cell lines with inactivated TP53 in the validation set of 52 cell lines considered to be TP53 WT by <a href=\"#bib6\">Jeay et al., (2015)</a>,\u00a0a careful examination of TP53 status in the set of 113 cell lines considered to be TP53 WT resulted in identification of 29 cancer cell lines containing inactivating TP53 alterations, which are summarized in <a href=\"#SD1-data\">Supplementary file 1C</a>. Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 29 cell lines are insensitive to NVP-CFC218. Sensitivity to NVP-CFC218 in the remaining 84 likely TP53 WT cell lines is summarized in <a href=\"#SD1-data\">Supplementary file 1D</a>. Analysis of this data indicates the response rate of 51% (43/84)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Based on the current analysis, it is clear that the <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature is a proxy for TP53 status. It has a good, but of course not perfect, ability to detect cell lines with inactivated TP53 and this ability could be useful in some of the preclinical work. For example, it could be useful to look at the cell lines that are insensitive to TP53-MDM2 inhibitor(s) and also predicted by <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature to be insensitive, but not annotated as TP53 inactivated; it is likely that significant fraction of such cell lines harbor undetected TP53 inactivating alterations."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In summary, it is clear that <a href=\"#bib6\">Jeay et al., (2015)</a> 13-gene signature unfortunately cannot predict response to TP53-MDM2 inhibitor in TP53 WT tumors. Therefore the ability to predict sensitivity to TP53-MDM2 inhibitors in WT TP53 tumors is still out of reach. The development of such prediction capacity would be clinically beneficial and also may provide valuable insights into the understanding of some of important areas of cancer biology."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "NVP-CGM097 and NVP-CFC218 pharmacologic cell line profiling data, 13-gene signature predictions have been obtained from (<a href=\"#bib6\">Jeay et al., 2015</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Affymetrix U133Plus2 mRNA expression, Affymetrix SNP 6.0 data, OncoMap mutation calls (<a href=\"#bib7\">MacConaill et al., 2009</a>), exome sequencing data (<a href=\"#bib4\">Hodges et al., 2007</a>) have been obtained from CCLE website (<a href=\"http://www.broadinstitute.org/ccle/home\">http://www.broadinstitute.org/ccle/home</a>). TP53 mutation calls have been obtained from the following two files: CCLE_hybrid_capture1650_hg19_NoCommonSNPs_NoNeutralVariants_CDS_2012.05.07.maf (22-May-2012) and 1650_HC_plus_RD_muts.maf.annotated (24-Nov-2014), both files are available for download from CCLE website. Genomic characterization section in Supplementary methods (<a href=\"#bib1\">Barretina et al., 2012</a>) provides a detailed description of sequencing data generation and variant calling pipeline. <a href=\"#SD1-data\">Supplementary file 1E</a> provides COSMIC information on TP53 mutations in cell lines listed in the <a href=\"#tbl1\">Table 1</a> and also includes COSMIC sample ID for each of the cell lines."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Copy number (CN) ratio is the ratio of signal intensity in a tumor sample versus normal reference samples normalized to total DNA quantity; thus a CN ratio of 1 corresponds to a diploid locus. CN ratio &lt;0.6 indicates \u2018allelic loss\u2019. CN ratio &lt;0.25 indicates \u2018bi-allelic loss\u2019."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "All mRNA expression values are MAS5 normalized, with a 2% trimmed mean of 150 (<a href=\"#bib5\">Hubbell, Liu, and Mei 2002</a>). TP53 Affymetrix (201746_at) mRNA MAS5-150 normalized expression values below 32 are considered to be indicative of TP53 \u2018mRNA loss\u2019."
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Barretina", 
+                            "index": "Barretina, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Caponigro", 
+                            "index": "Caponigro, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Stransky", 
+                            "index": "Stransky, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Venkatesan", 
+                            "index": "Venkatesan, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Margolin", 
+                            "index": "Margolin, AA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Kim", 
+                            "index": "Kim, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CJ Wilson", 
+                            "index": "Wilson, CJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Leh\u00e1r", 
+                            "index": "Leh\u00e1r, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GV Kryukov", 
+                            "index": "Kryukov, GV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Sonkin", 
+                            "index": "Sonkin, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Reddy", 
+                            "index": "Reddy, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Liu", 
+                            "index": "Liu, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Murray", 
+                            "index": "Murray, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MF Berger", 
+                            "index": "Berger, MF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Monahan", 
+                            "index": "Monahan, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Morais", 
+                            "index": "Morais, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Meltzer", 
+                            "index": "Meltzer, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Korejwa", 
+                            "index": "Korejwa, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Jan\u00e9-Valbuena", 
+                            "index": "Jan\u00e9-Valbuena, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Mapa", 
+                            "index": "Mapa, FA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Thibault", 
+                            "index": "Thibault, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Bric-Furlong", 
+                            "index": "Bric-Furlong, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Raman", 
+                            "index": "Raman, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Shipway", 
+                            "index": "Shipway, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IH Engels", 
+                            "index": "Engels, IH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Cheng", 
+                            "index": "Cheng, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GK Yu", 
+                            "index": "Yu, GK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Yu", 
+                            "index": "Yu, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Aspesi", 
+                            "index": "Aspesi, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M de Silva", 
+                            "index": "de Silva, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Jagtap", 
+                            "index": "Jagtap, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MD Jones", 
+                            "index": "Jones, MD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Wang", 
+                            "index": "Wang, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Hatton", 
+                            "index": "Hatton, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Palescandolo", 
+                            "index": "Palescandolo, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Gupta", 
+                            "index": "Gupta, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Mahan", 
+                            "index": "Mahan, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sougnez", 
+                            "index": "Sougnez, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Onofrio", 
+                            "index": "Onofrio, RC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Liefeld", 
+                            "index": "Liefeld, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Macconaill", 
+                            "index": "Macconaill, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Winckler", 
+                            "index": "Winckler, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Reich", 
+                            "index": "Reich, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Li", 
+                            "index": "Li, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JP Mesirov", 
+                            "index": "Mesirov, JP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SB Gabriel", 
+                            "index": "Gabriel, SB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Getz", 
+                            "index": "Getz, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Ardlie", 
+                            "index": "Ardlie, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Chan", 
+                            "index": "Chan, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VE Myer", 
+                            "index": "Myer, VE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Weber", 
+                            "index": "Weber, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Porter", 
+                            "index": "Porter, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Warmuth", 
+                            "index": "Warmuth, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Finan", 
+                            "index": "Finan, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Harris", 
+                            "index": "Harris, JL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Meyerson", 
+                            "index": "Meyerson, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TR Golub", 
+                            "index": "Golub, TR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MP Morrissey", 
+                            "index": "Morrissey, MP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Sellers", 
+                            "index": "Sellers, WR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Schlegel", 
+                            "index": "Schlegel, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Garraway", 
+                            "index": "Garraway, LA"
+                        }
+                    }
+                ], 
+                "articleTitle": "The cancer cell line encyclopedia enables predictive modelling of anticancer drug sensitivity", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "483", 
+                "pages": {
+                    "first": "603", 
+                    "last": "307", 
+                    "range": "603\u2013307"
+                }, 
+                "doi": "10.1038/nature11003"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Efeyan", 
+                            "index": "Efeyan, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Ortega-Molina", 
+                            "index": "Ortega-Molina, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Velasco-Miguel", 
+                            "index": "Velasco-Miguel, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Herranz", 
+                            "index": "Herranz, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LT Vassilev", 
+                            "index": "Vassilev, LT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Serrano", 
+                            "index": "Serrano, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Induction of p53-dependent senescence by the MDM2 antagonist nutlin-3a in mouse cells of fibroblast origin", 
+                "journal": {
+                    "name": [
+                        "Cancer Research"
+                    ]
+                }, 
+                "volume": "67", 
+                "pages": {
+                    "first": "7350", 
+                    "last": "7357", 
+                    "range": "7350\u20137357"
+                }, 
+                "doi": "10.1158/0008-5472.CAN-07-0200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GM Frampton", 
+                            "index": "Frampton, GM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Fichtenholtz", 
+                            "index": "Fichtenholtz, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GA Otto", 
+                            "index": "Otto, GA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Wang", 
+                            "index": "Wang, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SR Downing", 
+                            "index": "Downing, SR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J He", 
+                            "index": "He, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Schnall-Levin", 
+                            "index": "Schnall-Levin, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J White", 
+                            "index": "White, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EM Sanford", 
+                            "index": "Sanford, EM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P An", 
+                            "index": "An, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Sun", 
+                            "index": "Sun, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Juhn", 
+                            "index": "Juhn, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Brennan", 
+                            "index": "Brennan, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Iwanik", 
+                            "index": "Iwanik, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Maillet", 
+                            "index": "Maillet, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Buell", 
+                            "index": "Buell, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E White", 
+                            "index": "White, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Zhao", 
+                            "index": "Zhao, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Balasubramanian", 
+                            "index": "Balasubramanian, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Terzic", 
+                            "index": "Terzic, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Richards", 
+                            "index": "Richards, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Banning", 
+                            "index": "Banning, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Garcia", 
+                            "index": "Garcia, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Mahoney", 
+                            "index": "Mahoney, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Zwirko", 
+                            "index": "Zwirko, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Donahue", 
+                            "index": "Donahue, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Beltran", 
+                            "index": "Beltran, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Mosquera", 
+                            "index": "Mosquera, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Rubin", 
+                            "index": "Rubin, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Dogan", 
+                            "index": "Dogan, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CV Hedvat", 
+                            "index": "Hedvat, CV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MF Berger", 
+                            "index": "Berger, MF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Pusztai", 
+                            "index": "Pusztai, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Lechner", 
+                            "index": "Lechner, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Boshoff", 
+                            "index": "Boshoff, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Jarosz", 
+                            "index": "Jarosz, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Vietz", 
+                            "index": "Vietz, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Parker", 
+                            "index": "Parker, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VA Miller", 
+                            "index": "Miller, VA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Ross", 
+                            "index": "Ross, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Curran", 
+                            "index": "Curran, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MT Cronin", 
+                            "index": "Cronin, MT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PJ Stephens", 
+                            "index": "Stephens, PJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Lipson", 
+                            "index": "Lipson, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Yelensky", 
+                            "index": "Yelensky, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Development and validation of a clinical cancer genomic profiling test based on massively parallel DNA sequencing", 
+                "journal": {
+                    "name": [
+                        "Nature Biotechnology"
+                    ]
+                }, 
+                "volume": "31", 
+                "pages": {
+                    "first": "1023", 
+                    "last": "1031", 
+                    "range": "1023\u20131031"
+                }, 
+                "doi": "10.1038/nbt.2696"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hodges", 
+                            "index": "Hodges, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Xuan", 
+                            "index": "Xuan, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Balija", 
+                            "index": "Balija, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kramer", 
+                            "index": "Kramer, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MN Molla", 
+                            "index": "Molla, MN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SW Smith", 
+                            "index": "Smith, SW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Middle", 
+                            "index": "Middle, CM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Rodesch", 
+                            "index": "Rodesch, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Albert", 
+                            "index": "Albert, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Hannon", 
+                            "index": "Hannon, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Mccombie", 
+                            "index": "Mccombie, WR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Genome-wide in situ exon capture for selective resequencing", 
+                "journal": {
+                    "name": [
+                        "Nature Genetics"
+                    ]
+                }, 
+                "volume": "39", 
+                "pages": {
+                    "first": "1522", 
+                    "last": "1527", 
+                    "range": "1522\u20131527"
+                }, 
+                "doi": "10.1038/ng.2007.42"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hubbell", 
+                            "index": "Hubbell, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W-M Liu", 
+                            "index": "Liu, W-M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Mei", 
+                            "index": "Mei, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hubbell", 
+                            "index": "Hubbell, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W-M Liu", 
+                            "index": "Liu, W-M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Mei", 
+                            "index": "Mei, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Robust estimators for expression analysis", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "1585", 
+                    "last": "1592", 
+                    "range": "1585\u20131592"
+                }, 
+                "doi": "10.1093/bioinformatics/18.12.1585"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S\u00e9bastien Jeay", 
+                            "index": "Jeay, S\u00e9bastien"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Gaulis", 
+                            "index": "Gaulis, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "St\u00e9phane Ferretti", 
+                            "index": "Ferretti, St\u00e9phane"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Bitter", 
+                            "index": "Bitter, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ito", 
+                            "index": "Ito, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Th\u00e9r\u00e8se Valat", 
+                            "index": "Valat, Th\u00e9r\u00e8se"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Murakami", 
+                            "index": "Murakami, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ruetz", 
+                            "index": "Ruetz, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Guthy", 
+                            "index": "Guthy, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Rynn", 
+                            "index": "Rynn, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Jensen", 
+                            "index": "Jensen, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wiesmann", 
+                            "index": "Wiesmann, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Kallen", 
+                            "index": "Kallen, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Furet", 
+                            "index": "Furet, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Fran\u00e7ois Gessier", 
+                            "index": "Gessier, Fran\u00e7ois"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Holzer", 
+                            "index": "Holzer, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Masuya", 
+                            "index": "Masuya, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J W\u00fcrthner", 
+                            "index": "W\u00fcrthner, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Halilovic", 
+                            "index": "Halilovic, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Hofmann", 
+                            "index": "Hofmann, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WR Sellers", 
+                            "index": "Sellers, WR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Graus Porta", 
+                            "index": "Graus Porta, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "A distinct p53 target gene set predicts for response to the selective p53\u2013HDM2 inhibitor NVP-CGM097", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "12985", 
+                "doi": "10.7554/eLife.06498"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LE MacConaill", 
+                            "index": "MacConaill, LE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CD Campbell", 
+                            "index": "Campbell, CD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Kehoe", 
+                            "index": "Kehoe, SM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJ Bass", 
+                            "index": "Bass, AJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Hatton", 
+                            "index": "Hatton, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Niu", 
+                            "index": "Niu, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Davis", 
+                            "index": "Davis, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Yao", 
+                            "index": "Yao, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hanna", 
+                            "index": "Hanna, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Mondal", 
+                            "index": "Mondal, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Luongo", 
+                            "index": "Luongo, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Emery", 
+                            "index": "Emery, CM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AC Baker", 
+                            "index": "Baker, AC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Philips", 
+                            "index": "Philips, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DJ Goff", 
+                            "index": "Goff, DJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Fiorentino", 
+                            "index": "Fiorentino, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Rubin", 
+                            "index": "Rubin, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Polyak", 
+                            "index": "Polyak, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Chan", 
+                            "index": "Chan, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Wang", 
+                            "index": "Wang, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Fletcher", 
+                            "index": "Fletcher, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Santagata", 
+                            "index": "Santagata, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Corso", 
+                            "index": "Corso, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Roviello", 
+                            "index": "Roviello, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Shivdasani", 
+                            "index": "Shivdasani, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MW Kieran", 
+                            "index": "Kieran, MW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KL Ligon", 
+                            "index": "Ligon, KL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CD Stiles", 
+                            "index": "Stiles, CD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WC Hahn", 
+                            "index": "Hahn, WC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Meyerson", 
+                            "index": "Meyerson, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Garraway", 
+                            "index": "Garraway, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Jones", 
+                            "index": "Jones, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Profiling critical cancer gene mutations in clinical tumor samples", 
+                "journal": {
+                    "name": [
+                        "PLoS ONE"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "e7887", 
+                "doi": "10.1371/journal.pone.0007887"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Mazutis", 
+                            "index": "Mazutis, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AF Araghi", 
+                            "index": "Araghi, AF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "OJ Miller", 
+                            "index": "Miller, OJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J-C Baret", 
+                            "index": "Baret, J-C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Frenz", 
+                            "index": "Frenz, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Janoshazi", 
+                            "index": "Janoshazi, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Vale\u0301rie Taly", 
+                            "index": "Taly, Vale\u0301rie"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BJ Miller", 
+                            "index": "Miller, BJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JB Hutchison", 
+                            "index": "Hutchison, JB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Link", 
+                            "index": "Link, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AD Griffiths", 
+                            "index": "Griffiths, AD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ryckelynck", 
+                            "index": "Ryckelynck, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Droplet-based microfluidic systems for high-throughput single DNA molecule isothermal amplification and analysis", 
+                "journal": {
+                    "name": [
+                        "Analytical Chemistry"
+                    ]
+                }, 
+                "volume": "81", 
+                "pages": {
+                    "first": "4813", 
+                    "last": "4821", 
+                    "range": "4813\u20134821"
+                }, 
+                "doi": "10.1021/ac900403z"
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.10279.009", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \"Expression signature based on TP53 target genes doesn't predict response to TP53-MDM2 inhibitor in wild type TP53 tumors\" for consideration by <i>eLife</i>. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tony Hunter as the Senior Editor."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The current report by Sonkin challenges the conclusions of a recent paper by Jeay et al. reporting the discovery of a gene signature that could potentially predict the efficacy of small molecule inhibitors of the p53-MDM2 interaction in the treatment of tumors expressing wild-type p53. Upon reanalysis of the p53 mutational status of the cell lines employed, Sonkin determined that Jeay et al. had not assessed the mutational status of p53 correctly for a number of cell lines. When the analysis is repeated with the annotation by Sonkin, the gene signature no longer predicts drug efficacy, simply discriminating between wild-type and mutant cell lines. In this regard, the report by Sonkin is important, as it challenges some of the main conclusions in the report by Jeay et al. about the utility of the gene signature."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Having said that, it is surprising and unfortunate that neither the original nor the present paper has a clear description of how the variants were called. The original paper says, in the Materials and methods that \"gene level genetic alterations [\u2026] were compiled from the Sanger center COSMIC data and internal sources including Exome Capture Sequencing of 1600 cancer related genes\", but it does not say exactly what methods were used to call and/or validate variants. Likewise, the present paper simply states: \"Careful examination of TP53 status identified 12 out of 52 cancer cell lines containing TP53 alterations\u2026\"."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "It is then necessary for Sonkin to provide additional evidence for the mutations he found, just so that the reader can better understand why Jeay et al. missed them. Based on <a href=\"#tbl1\">Table 1</a>, these mutations have a lot of reads with alternative alleles, meaning that most algorithms should have caught them. Why did Jeay et al. miss them? Are they in hard-to-capture regions? Perhaps IGV screenshots could be provided in the supplement (along with GC content or read density map from some exomes to show hard-to-capture areas?). What exactly is the 'careful examination' performed by Sonkin? Also, is Sonkin proposing that the information in the Sanger Center and COSMIC databases about p53 mutational status of these cell lines is wrong? Is the method by Sonkin challenging the annotation in these databases and should these repositories be notified about these potential mistakes?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In brief, a more thorough discussion of the various methodologies employed for variant calling and an effort to explain why Jeay et al. and the public databases are producing different results from those obtained by Sonkin would be required to advance publication of this work, whose potential impact is very high, as it would not only challenge the paper by Jeay et al., but also public databases employed by thousands of researchers around the world."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.10279.010", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>[\u2026] Having said that, it is surprising and unfortunate that neither the original nor the present paper has a clear description of how the variants were called. The original paper says, in the Materials and methods that \"gene level genetic alterations [\u2026] were compiled from the Sanger center COSMIC data and internal sources including Exome Capture Sequencing of 1600 cancer related genes\", but it does not say exactly what methods were used to call and/or validate variants. Likewise, the present paper simply states: \"Careful examination of TP53 status identified 12 out of 52 cancer cell lines containing TP53 alterations\u2026\".</i> "
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "All cell lines referenced in the manuscript were part of Cancer Cell Line Encyclopedia (CCLE) and therefore I used publicly available CCLE mutation calls (Barretina et al., 2012). The manuscript was modified to make it clear that publicly available TP53 CCLE mutation calls have been used (Results and Discussion). I\u2019ve modified the Materials and methods to reference exact two CCLE files from CCLE website which were used as source of TP53 mutation calls and also provided reference to genomic characterization section provided by Barretina et al., which includes detailed description of sequencing data generation and variant calling pipeline."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>It is then necessary for Sonkin to provide additional evidence for the mutations he found, just so that the reader can better understand why Jeay et al. missed them. Based on <a href=\"#tbl1\">Table 1</a>, these mutations have a lot of reads with alternative alleles, meaning that most algorithms should have caught them. Why did Jeay et al. miss them? Are they in hard-to-capture regions? Perhaps IGV screenshots could be provided in the supplement (along with GC content or read density map from some exomes to show hard-to-capture areas?). What exactly is the 'careful examination' performed by Sonkin? Also, is Sonkin proposing that the information in the Sanger Center and COSMIC databases about p53 mutational status of these cell lines is wrong? Is the method by Sonkin challenging the annotation in these databases and should these repositories be notified about these potential mistakes?</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Indeed Sanger Institute COSMIC databases are extremely valuable resource and used by thousands of researchers around the world. COSMIC database contains sequencing data for 8 out of 10 cell lines with TP53 mutations listed in <a href=\"#tbl1\">Table 1</a> of my manuscript containing cell lines with inactivated TP53 in the validation set of cell lines considered to be TP53 wild type by Jeay et al. COSMIC database contains identical TP53 mutation(s) to the ones listed in <a href=\"#tbl1\">Table 1</a> for each of these 8 cell lines. Therefore TP53 mutations listed in <a href=\"#tbl1\">Table 1</a> of my manuscript are in complete agreement with corresponding entries in COSMIC. I\u2019ve added <a href=\"#SD1-data\">Supplementary file 1E</a> which contains COSMIC information on mutations in cell lines listed in the <a href=\"#tbl1\">Table 1</a> and also includes COSMIC sample ID for each of the 8 cell lines. COLO-818 is one of the two cell lines from <a href=\"#tbl1\">Table 1</a> which does not have sequencing data in COSMIC, this cell line mRNA was sequenced by (Klijn et al., 2015) and it was found to contain C135R TP53 mutation, this is exactly the same mutation as listed for COLO-818 in <a href=\"#tbl1\">Table 1</a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "References:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Klijn, C., Durinck, S., Stawiski, E.W., Haverty, P.M., Jiang, Z., Liu, H., Degenhardt, J., Mayba, O., Gnad, F., Liu, J., et al. (2015). A comprehensive transcriptional portrait of human cancer cell lines. Nat. Biotechnol. 33, 306\u2013312."
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,2613 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "09945", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.09945", 
+        "authorLine": "Lucas B Carey", 
+        "title": "RNA polymerase errors cause splicing defects and can be regulated by differential expression of RNA polymerase subunits", 
+        "published": "2015-12-10T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e09945", 
+        "pdf": "https://publishing-cdn.elifesciences.org/09945/elife-09945-v2.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and systems biology"
+            }, 
+            {
+                "id": "genomics-evolutionary-biology", 
+                "name": "Genomics and evolutionary biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human", 
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.09945.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Errors during transcription may play an important role in determining cellular phenotypes: the RNA polymerase error rate is &gt;4 orders of magnitude higher than that of DNA polymerase and errors are amplified &gt;1000-fold due to translation. However, current methods to measure RNA polymerase fidelity are low-throughout, technically challenging, and organism specific. Here I show that changes in RNA polymerase fidelity can be measured using standard RNA sequencing protocols. I find that RNA polymerase is error-prone, and these errors can result in splicing defects. Furthermore, I find that differential expression of RNA polymerase subunits causes changes in RNA polymerase fidelity, and that coding sequences may have evolved to minimize the effect of these errors. These results suggest that errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Carey et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Lucas B Carey", 
+                    "index": "Carey, Lucas B"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Experimental and Health Sciences", 
+                            "Universitat Pompeu Fabra"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Barcelona", 
+                                "Spain"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Barcelona"
+                                ], 
+                                "country": "Spain"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "lucas.carey@upf.edu"
+                ], 
+                "contribution": "LBC, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2015", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Carey LB"
+                        }
+                    ], 
+                    "title": "PRJNA289596", 
+                    "details": "Publicly available at the NCBI BioProject database (Accession no: PRJNA289596).", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/bioproject/289596"
+                }
+            ], 
+            "used": [
+                {
+                    "id": "dataro3", 
+                    "date": "2008", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "The ENCODE Consortium"
+                        }
+                    ], 
+                    "title": "Home sapiens (human)", 
+                    "details": "Publicly available at the NCBI BioProject database (Accession no: PRJNA30709)", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/bioproject/30709"
+                }
+            ]
+        }, 
+        "impactStatement": "A single human cell makes 10-100 transcriptional errors per second; these errors affect splicing and may influence the evolution of coding sequences."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "09945", 
+        "version": 2, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.09945", 
+        "authorLine": "Lucas B Carey", 
+        "title": "RNA polymerase errors cause splicing defects and can be regulated by differential expression of RNA polymerase subunits", 
+        "published": "2015-12-10T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e09945", 
+        "pdf": "https://publishing-cdn.elifesciences.org/09945/elife-09945-v2.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and systems biology"
+            }, 
+            {
+                "id": "genomics-evolutionary-biology", 
+                "name": "Genomics and evolutionary biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human", 
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.09945.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Errors during transcription may play an important role in determining cellular phenotypes: the RNA polymerase error rate is &gt;4 orders of magnitude higher than that of DNA polymerase and errors are amplified &gt;1000-fold due to translation. However, current methods to measure RNA polymerase fidelity are low-throughout, technically challenging, and organism specific. Here I show that changes in RNA polymerase fidelity can be measured using standard RNA sequencing protocols. I find that RNA polymerase is error-prone, and these errors can result in splicing defects. Furthermore, I find that differential expression of RNA polymerase subunits causes changes in RNA polymerase fidelity, and that coding sequences may have evolved to minimize the effect of these errors. These results suggest that errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Carey et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Lucas B Carey", 
+                    "index": "Carey, Lucas B"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Experimental and Health Sciences", 
+                            "Universitat Pompeu Fabra"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Barcelona", 
+                                "Spain"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Barcelona"
+                                ], 
+                                "country": "Spain"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "lucas.carey@upf.edu"
+                ], 
+                "contribution": "LBC, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "dataSets": {
+            "generated": [
+                {
+                    "id": "dataro1", 
+                    "date": "2015", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "Carey LB"
+                        }
+                    ], 
+                    "title": "PRJNA289596", 
+                    "details": "Publicly available at the NCBI BioProject database (Accession no: PRJNA289596).", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/bioproject/289596"
+                }
+            ], 
+            "used": [
+                {
+                    "id": "dataro3", 
+                    "date": "2008", 
+                    "authors": [
+                        {
+                            "type": "group", 
+                            "name": "The ENCODE Consortium"
+                        }
+                    ], 
+                    "title": "Home sapiens (human)", 
+                    "details": "Publicly available at the NCBI BioProject database (Accession no: PRJNA30709)", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/bioproject/30709"
+                }
+            ]
+        }, 
+        "impactStatement": "A single human cell makes 10-100 transcriptional errors per second; these errors affect splicing and may influence the evolution of coding sequences.", 
+        "keywords": [
+            "RNA-seq", 
+            "RNA polymerase", 
+            "biological errors", 
+            "splicing"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.09945.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Genes encode instructions to make proteins and other molecules. To issue an instruction, a gene is first used as a template to make molecules of ribonucleic acid (called mRNAs for short) in a process called transcription. An enzyme called RNA polymerase \u2013 which comprises several protein subunits that all work together \u2013 is responsible for making the mRNA molecules. Occasionally, this enzyme makes mistakes that lead to small changes in the instruction that is produced. These mistakes are rare, but because cells make thousands of mRNAs, a single human cell can make 10-100 transcription errors per second."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "It has been difficult to study how often RNA polymerase makes mistakes and what effect these mistakes have on organisms because the techniques available for research are labour-intensive and technically challenging. Here, Lucas Carey demonstrates that it is possible to use a technique called RNA sequencing to study the accuracy of RNA polymerase in human and yeast cells."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The experiments show that altering the levels of the different subunits of RNA polymerase in cells can change how many mistakes are made during transcription. This suggests that cells may be able regulate number of mistakes by controlling the production of specific subunits. Carey found that the severity of the mistakes made by RNA polymerase depends on where the mistake is in the mRNA. For example, errors in specific parts of the mRNA can alter how the whole instruction is edited later, while others might make only a tiny change to the protein encoded by the gene. Carey also found evidence that the instructions encoded by genes may have evolved in such a way to minimise the effect of any errors on their roles in cells."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "RNA sequencing is less labour-intensive than other methods used to study the accuracy of RNA polymerase and is already used to address other research questions on a wide variety of different organisms. Therefore, Carey\u2019s findings will make it easier to study what genes or environmental factors influence the number of errors made during transcription. A major challenge for the future is to find out if the mistakes made by RNA polymerase can lead to cancer and other human diseases."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "paragraph", 
+                "text": "The information that determines protein sequence is stored in the genome, but that information must be transcribed by RNA polymerase and translated by the ribosome before reaching its final form. DNA polymerase error rates have been well characterized in a variety of species and environmental conditions, and are low\u00a0\u2013 on the order of one mutation per 10<sup>8</sup>\u201310<sup>10</sup> bases per generation (<a href=\"#bib23\">Lynch, 2011</a>;\u00a0<a href=\"#bib17\">Lang and Murray, 2008</a>;\u00a0<a href=\"#bib38\">Zhu et al., 2014</a>). In contrast, RNA polymerase errors are uniquely positioned to generate phenotypic diversity. Error rates are high (10<sup>-6</sup>\u201310<sup>-5</sup>) <a href=\"#bib7\">(Gout et al., 2013</a>; <a href=\"#bib22\">Lynch, 2010</a>; <a href=\"#bib34\">Shaw et al., 2002</a>; <a href=\"#bib28\">de Mercoyrol et al., 1992</a>), and each mRNA molecule is translated into 2000\u20134000 molecules of protein (<a href=\"#bib33\">Schwanh\u00e4usser et al., 2011</a>; <a href=\"#bib4\">Futcher et al., 1999</a>), resulting in the\u00a0amplification of any errors. Likewise, because many RNAs are present at\u00a0an\u00a0average\u00a0of less than one molecule per cell in microbes (<a href=\"#bib30\">Pelechano et al., 2010</a>) and in embryonic stem cells (<a href=\"#bib11\">Islam et al., 2011</a>), an RNA with an error may be the only RNA for that gene; all newly translated protein will contain this error. Despite the fact that transient errors can result in altered phenotypes (<a href=\"#bib5\">Gordon et al., 2013</a><a href=\"#bib12\">, 2015</a>), the genetics and environmental factors that affect RNA polymerase fidelity are poorly understood. This is because current methods for measuring polymerase fidelity are technically challenging (<a href=\"#bib7\">Gout et al., 2013</a>), require specialized organism-specific genetic constructs (<a href=\"#bib10\">Irvin et al., 2014</a>), and can only measure error rates at specific loci (<a href=\"#bib9\">Imashimizu et al., 2013</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "To overcome these obstacles I developed MORPhEUS (Measurement Of RNA Polymerase Errors Using Sequencing), which enables measurement of differential RNA polymerase fidelity using existing RNA-seq data (<a href=\"#fig1\">Figure 1</a>). The input is a set of RNA-seq fastq files and a reference genome, and the output is the error rate at each position in the genome. I find that RNA polymerase errors result in intron retention and that cellular mRNA quality control may reduce the effective RNA polymerase error rate. Moreover, my analyses suggest that the expression\u00a0level of the RPB9 Pol II subunits\u00a0Rpb9\u00a0and\u00a0Dst1\u00a0(TFIIS) determines RNA polymerase fidelity in\u00a0vivo. Because it can be run on any existing RNA-seq data, MORPhEUS enables the exploration of a previously unexplored source of biological diversity in microbes and mammals."
+            }, 
+            {
+                "type": "image", 
+                "doi": "10.7554/eLife.09945.003", 
+                "id": "fig1", 
+                "label": "Figure 1.", 
+                "title": "A computational framework to measure relative changes in RNA polymerase fidelity.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "<b>(a)</b> Pipeline to identify potential RNA polymerase errors in RNA-seq data. High quality full-length RNA-seq reads are mapped to the reference genome or transcriptome using bwa, and only reads that map completely with two or fewer mismatches are kept. <b>(b)</b> Then 10\u00a0bp from the front and 10\u00a0bp from the end of the read are discarded as these regions have high error rates and are prone to poor quality local alignments. <b>(c)</b> Errors that occur multiple times (purple boxes) are discarded, as these are likely due to subclonal DNA mutations or motifs that sequence poorly on the HiSeq. Unique errors in the middle of reads (cyan box) are kept and counted."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-09945-fig1-v2.tif", 
+                "supplements": [
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.004", 
+                        "id": "fig1s1", 
+                        "label": "Figure 1\u2014figure supplement 1.", 
+                        "title": "Cycle-specific error rates and better differentiation of genetically determined error rates using base quality value cutoffs.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Six yeast RNA-cDNA libraries were sequenced on the same lane in a HiSeq. <b>(a)</b> The average mismatch rate (across the six cDNA libraries) to the reference genome at each position was determined using different minimum base-quality thresholds using GATK ErrorRatePerCycle. Independent of the quality threshold, cycles at the ends, as well as some cycles in the middle, have high error rates. <b>(b)</b> The measured error rate for each sample using a minimum base quality of 10. <b>(c)</b> The measured error rate for each sample using a minimum base quality of 39."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09945-fig1-figsupp1-v2.tif"
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.005", 
+                        "id": "fig1s2", 
+                        "label": "Figure 1\u2014figure supplement 2.", 
+                        "title": "RNA-seq data are enriched for mismatches to the reference genome that occur far more often than expected.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>(a)</b> At each coverage (x-axis), a point is shown if there is any position in the genome with the observed number of errors (y-axis) (small black dots). The diagonal lines show mismatch frequencies of 100%, 10%, 1%, and 0.1% \u2013 any point falling on these lines has the given mismatch frequency. With large grey circles are shown simulated data in which the same coverage as the yeast RNA-seq data are used, but with a mismatch frequency identical to the measured overall mismatch frequency of the yeast data. Locations in the graph in which a black point occurs but there is no grey point are locations in which there are more mismatches than expected by change. Note that at a coverage of &lt;100, we expect to see no mismatches more than twice, and 0.5% of positions with two observances of identical mismatches. <b>(b)</b> Identical to (a) but with the simulated mismatch frequency five times the observed. <b>(c)</b> Shown are measured mismatch frequencies for the yeast RPB9 and DST1 induction data at different \u03b2-estradiol\u00a0concentrations, at different filters for the maximal allowed number of observed identical mismatches. The dashed lines show the average mismatch frequency for the 0\u00a0nM condition. For all filters, low \u03b2-estradiol conditions have higher RNA-seq mismatch frequencies. <b>(d)</b> The coverage of the yeast RNA-seq data; ~95% of the genome is covered by &lt;100 reads. <b>(e)</b> Shown are the fraction of positions in the genome (y-axis) with X errors (x-axis) for the yeast RNA-seq data (cyan) and simulated data (blue). Also shown are the same data for positions of the genome with different coverage. For positions covered by &lt;1000 reads (95% of the genome) the expectation is 0 or 1 sequence mismatch (blue and orange lines). Positions with far greater numbers of mismatches are likely due to subclonal mutations and technical bias."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09945-fig1-figsupp2-v2.tif"
+                    }
+                ]
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Technical errors from reverse transcription and sequencing, and biological errors from RNA polymerase look identical (single-nucleotide differences from the reference genome). Therefore, a major challenge in identifying single-nucleotide polymorphisms (SNPs) and in measuring changes in polymerase fidelity is the reduction of technical errors (<a href=\"#bib15\">Kleinman and Majewski, 2012</a>;\u00a0<a href=\"#bib31\">Pickrell et al., 2012</a>; <a href=\"#bib20\">Li et al., 2011</a>) (<a href=\"#fig1\">Figure 1</a>). First, I map full-length (untrimmed) reads to the genome and discard reads with indels, with more than two mismatches, that map to multiple locations in the genome, and that do not map end\u00a0to\u00a0end along the full length of the read. Next, I trim the ends of the mapped reads, as alignments are of lower quality along the ends, and the mismatch rate is higher, especially at splice junctions. I also discard any cycles within the run with abnormally high error rates, and bases with low Illumina quality scores (<a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>). Finally, using the remaining bases, I count the number of matches and mismatches to the reference genome at each position in the genome. I discard positions with identical mismatches that are present more than once, as these are likely due to subclonal DNA polymorphisms or sequences that Illumina miscalls in a systematic manner (<a href=\"#bib27\">Meacham et al., 2011</a>) (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>). The result is a set of mismatches, many of which are technical errors and some of which are RNA polymerase errors. In order to determine if RNA-seq mismatches are due to RNA polymerase errors, it is necessary to identify sequence locations in which RNA polymerase errors are expected to have a measurable effect, or situations in which RNA polymerase fidelity is expected to vary."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "I reasoned that RNA polymerase errors that alter positions necessary for splicing should result in intron retention, while sequencing errors should not affect the final structure of the mRNA (<a href=\"#fig2\">Figure 2a</a>). However, mutations in the donor and acceptor splice sites also result in decreased expression (<a href=\"#bib12\">Jung et al., 2015</a>), and therefore are difficult to measure using RNA-seq. Therefore, I used chromatin-associated and nuclear RNA from Hela and Huh7 cells (<a href=\"#bib1\">Dhir et al., 2015</a>), and extracted all reads that span an exon\u2013intron junction for introns with canonical GT and AG splice sites, and measured the RNA-seq mismatch rate at each position. I find that errors at the G and U in the 5\u2019 donor site and at the A in the acceptor site are significantly enriched relative to errors at other positions (<a href=\"#fig2\">Figure 2b</a>), and to errors in\u00a0exonic\u00a0trinucleotides at splicing motifs in the human genome (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>) suggesting that RNA polymerase mismatches can result in changes in transcript isoforms. The ability of RNA polymerase errors to significantly affect splicing has been proposed (<a href=\"#bib3\">Fox-Walsh and Hertel, 2009</a>) but never previously measured."
+            }, 
+            {
+                "type": "image", 
+                "doi": "10.7554/eLife.09945.006", 
+                "id": "fig2", 
+                "label": "Figure 2.", 
+                "title": "RNA polymerase errors cause intron retention and error rates are correlated with RPB9 expression.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "<b>(a)</b> RNA polymerase errors at the splice junction should result in intron retention, as DNA mutations at the 5\u2019 donor site are known to cause intron retention. <b>(b)</b> Shown are the RNA-seq mismatch rates at each position relative to the 5\u2019 donor splice site, for sequencing reads that span an exon\u2013intron junction. Mismatch rates from chromatin-associated and nuclear RNAs are higher at the 5\u2019 and 3\u2019 splice sites, suggesting that RNA polymerase errors at this site result in intron retention. <b>(c)</b> For all ENCODE cell lines, RPB9 expression was determined from whole-cell RNA-seq data, and the RNA-seq error rate was measured separately for the cytoplasmic and nuclear fractions. <b>(d)</b> The RNA-seq error rate is higher (paired t-test, p=0.0019) in the nuclear than the cytoplasmic fraction, suggesting that quality-control mechanism may block nuclear export of low quality mRNAs."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-09945-fig2-v2.tif", 
+                "supplements": [
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.007", 
+                        "id": "fig2s1", 
+                        "label": "Figure 2\u2014figure supplement 1.", 
+                        "title": "RNA-seq mismatch rates for all trinucleotides in chromatin-associated and nuclear RNAs.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>(a,b)</b> The 5\u2019 and 3\u2019 splicing motifs in the human genome. <b>(c)</b> The RNA-seq mismatch frequencies for all single nucleotides. <b>(d)</b> The RNA-seq mismatch rate to the reference genome for each trinucleotide, normalized to the average mismatch rate across all trinucleotides. For each trinucleotide, red shows the mismatch frequency at the first base, blue at the second, and green at the third. Error bars are standard deviation across all samples."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09945-fig2-figsupp1-v2.tif"
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.008", 
+                        "id": "fig2s2", 
+                        "label": "Figure 2\u2014figure supplement 2.", 
+                        "title": "RBP9 expression negatively correlates with RNA-seq mismatch rates.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The mismatch frequency is shown across all cells lines. <b>(a)</b> RPB9 mRNA expression is normalized by the median expression level of all subunits. <b>(b)</b> RPB9 mRNA expression is normalized by RBP3 (POLR2C) expression."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09945-fig2-figsupp2-v2.tif"
+                    }
+                ]
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "RPB9 is known to be involved in RNA polymerase fidelity in vitro and in vivo (<a href=\"#bib10\">Irvin et al., 2014</a>; <a href=\"#bib16\">Knippa and Peterson, 2013</a>). Therefore, I reasoned that cell lines expressing low levels of RPB9 would have higher RNA polymerase error rates. Consistent with this, I find that RPB9 expression varies eightfold across the ENCODE cell lines, and this expression variation is correlated with the RNA-seq error rate (<a href=\"#fig2\">Figure 2c</a>, <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>). This suggests that low RPB9 expression may cause decreased polymerase fidelity in\u00a0vivo."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "In addition, export of mRNAs from the nucleus involves a quality-control mechanism that checks if mRNAs are fully spliced and have properly formed 5\u2019 and 3\u2019 ends (<a href=\"#bib21\">Lykke-Andersen, 2001</a>). I hypothesized that mRNA export may involve a quality control that removes mRNAs with errors. I used the ENCODE dataset in which nuclear and cytoplasmic poly-A + mRNAs were sequenced; thus I can compare nuclear and cytoplasmic fractions from the same cell line grown in the same conditions and processed in the same manner. I find that the nuclear fraction has a higher RNA polymerase error rate than does the cytoplasmic fraction (<a href=\"#fig2\">Figure 2c,d</a>), suggesting that either that nuclear RNA-seq has a higher technical error rate or that the cell has mechanisms for reducing the effective polymerase error rate by preventing the export of mRNAs that contain errors."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Rpb9 and Dst1 are known to be involved in RNA polymerase fidelity in\u00a0vitro, yet there is conflicting evidence as to the role of Dst1 in\u00a0vivo(<a href=\"#bib34\">Shaw et al., 2002</a>; <a href=\"#bib10\">Irvin et al., 2014</a>; <a href=\"#bib16\">Knippa and Peterson, 2013</a>;\u00a0<a href=\"#bib29\">Nesser et al., 2006</a>; <a href=\"#bib37\">Walmacq et al., 2009</a>; <a href=\"#bib14\">Kireeva et al., 2008</a>). Part of these conflicts may result from the fact that the only available assays for RNA polymerase fidelity are special reporter strains that rely on DNA sequences known to increase the frequency of RNA polymerase errors. While I found that RPB9 expression correlates with RNA-seq error rates in mammalian cells, correlation is not causation. Furthermore, differences in RNA levels do not necessitate differences in stoichiometry among the subunits in active Pol II complexes. In order to determine if differential expression of RPB9 or DST1 are causative for differences in RNA polymerase fidelity in\u00a0vivo, I constructed two yeast strains in which I can alter the expression of either RPB9 or DST1 using \u03b2-estradiol and a synthetic transcription factor that has no effect on growth rate or the expression of any other genes (<a href=\"#bib26\">Mcisaac et al., 2014</a><a href=\"#bib25\">, 2013</a>). I grew these two strains (Z<sub>3</sub>EV<sub>pr</sub>-RPB9 and Z<sub>3</sub>EV<sub>pr</sub>-DST1) in different concentrations of \u03b2-estradiol and performed RNA-seq. I find that cells expressing low levels of RPB9 have high RNA polymerase error rates (<a href=\"#fig3\">Figure 3a</a>). Likewise, cells with low DST1 have high error rates (<a href=\"#fig3\">Figure 3a</a>). The increase in errors rate is not a property of cells defective for transcription elongation (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). The increase in error rates due to mutations in Rpb9 and Dst1 have not been robustly measured, however, there are some rough numbers. Here, the measured increase in error rate is 13%, while the measured effect of Rpb9 deletion in\u00a0vitro is fivefold (<a href=\"#bib37\">Walmacq et al., 2009</a>) and in\u00a0vivo following reverse transcription is 30% (<a href=\"#bib29\">Nesser et al., 2006</a>). If 2% of the observed mismatches are due to RNA polymerase errors, a fivefold increase in polymerase error rate results in a 10% increase in measured mismatch frequency; this is consistent with RNA polymerase fidelity of 10<sup>-6</sup>\u201310<sup>-5</sup> and overall RNA-seq error rates of 10<sup>-4</sup>. Note that in our assay cells still express low levels or RPB9, and we therefore expect the increase in error rate to be lower, suggesting that RNA polymerase errors constitute 5\u201310% of the measured mismatches. Our ability to genetically control the expression of DST1 and RPB9, and measure changes in RNA-seq error rates is consistent with MORPhEUS measuring RNA polymerase fidelity. In addition, we observe more single-nucleotide insertions in the RNA-seq data from the high error rate samples, suggesting that depletion of RPB9 and DST1 results in increased insertions in transcripts, but not increased deletions (<a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a>). Finally, genetic reduction in RNA polymerase fidelity results in increased intron retention, consistent with RNA polymerase errors causing reduced splicing efficiency (<a href=\"#fig3\">Figure 3b</a>)."
+            }, 
+            {
+                "type": "image", 
+                "doi": "10.7554/eLife.09945.009", 
+                "id": "fig3", 
+                "label": "Figure 3.", 
+                "title": "RNA polymerase error rate is determined by the expression level of RPB9 and DST1.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "<b>(a)</b> RNA-seq error rates I re-measured for two strains (Z<sub>3</sub>EVpr-RPB9, black points, Z<sub>3</sub>EVpr-DST1, blue points) grown at different concentrations of \u03b2-estradiol. The points show the relationship between RPB9 expression levels (determined by RNA-seq) and RNA-seq error rates. The blue points show RPB9 expression levels for the Z<sub>3</sub>EVpr-DST1 strain, in which DST1 expression ranges from 16 fragments per kilobase per million (FPKM) at 0\u00a0nM \u03b2-estradiol to 120 FPKM native expression to 756 FPKM at 25\u00a0nM \u03b2-estradiol. Low induction of both DST1 or RPB9 results in high RNA-seq error rates (red box), while wild-type and higher induction levels result in low RNA-seq error rates (black box). <b>(b)</b> Across all genes, the intron retention rate is higher in conditions with low RNA polymerase fidelity (t-test between high and low error rate samples, p=0.029), consistent with the hypothesis that RNA polymerase errors result in splicing defects. <b>(c)</b> The error rate for each of the 12 single base changes are shown for induction experiments that gave high (red) or low (black) RNA-seq error rates. Transitions (G&lt;\u2013&gt;A, C&lt;\u2013&gt;U) are marked with green boxes and transversions (A&lt;\u2013&gt;C,\u00a0G&lt;\u2013&gt;U) with purple."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-09945-fig3-v2.tif", 
+                "supplements": [
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.010", 
+                        "id": "fig3s1", 
+                        "label": "Figure 3\u2014figure supplement 1.", 
+                        "title": "Mutations that affect transcription elongation do not affect measured RNA-seq mismatch frequencies.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Two separate experiments were performed with wild-type controls and mutants involved in transcription elongation. Individual bars show the RNA-seq mismatch frequency of biological replicates."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09945-fig3-figsupp1-v2.tif"
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.011", 
+                        "id": "fig3s2", 
+                        "label": "Figure 3\u2014figure supplement 2.", 
+                        "title": "Decreases in RPB9 and DST1 expression in yeast results in more single base insertions in RNA-seq data.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "For each RNA-seq dataset, the number of inserts (+N) or deletions (\u2013N) in the mpileup output (N is the number of\u00a0bases in the indel) were counted, and this number divided by the total number of mapped reads in each sample. On the right are the same data but zoomed in on each metric to better show the comparison between the two sets of samples."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09945-fig3-figsupp2-v2.tif"
+                    }
+                ]
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "A unique advantage of MORPhEUS is that it measures thousands of RNA polymerase errors across the entire transcriptome in a single experiment, and thus enables he complete characterization of the mutation spectrum and biases of RNA polymerase. I asked how altered RPB9 and DST1 expression levels affect each type of single-nucleotide change. I find that, with decreasing polymerase fidelity, transitions increase more than transversions, and that C\u2192U errors are the most common (<a href=\"#fig3\">Figure 3c</a>). This result, along with other sequencing based results (<a href=\"#bib7\">Gout et al., 2013</a>), have shown that DNA and RNA polymerase have broadly similar error profiles (<a href=\"#bib38\">Zhu et al., 2014</a>); it will be interesting to see if all polymerases share the same mutation spectra, and if this is due to deamination of the template base, or is a structural property of the polymerase itself. Interestingly, I find that coding sequences have evolved so that errors are less likely to produce in-frame stop codons than out-of-frame stop codons, suggesting that natural selection may act to minimize the effect of polymerase errors (<a href=\"#fig4\">Figure 4</a>)."
+            }, 
+            {
+                "type": "image", 
+                "doi": "10.7554/eLife.09945.012", 
+                "id": "fig4", 
+                "label": "Figure 4.", 
+                "title": "In-frame stop codons are less likely to be created by polymerase errors.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "For all genes in yeast, I calculated the number of codons which are one polymerase error from a stop codon. <b>(a)</b> Fewer in-frame codons can be turned into a stop codon by a single-nucleotide change, compared to out-of-frame codons. <b>(b)</b> Codons that are one error away from generating an in-frame stop codon are more likely to be found at the ends of the open reading frames (ORFs), compared to the beginning of the ORF."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-09945-fig4-v2.tif"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Here I have presented proof that relative changes in RNA polymerase error rates can be measured using standard Illumina RNA-seq data. Consistent with previous work in\u00a0vivo and in\u00a0vitro, I find that depletion of RPB9 or Dst1 results in higher RNA polymerase error rates. Furthermore, I find that expression of RPB9 negatively correlates with RNA-seq error rates in human cell lines, suggesting that differential expression of RPB9 may regulate RNA polymerase fidelity in\u00a0vivo in humans. In addition, consistent with the errors detected by MORPhEUS being due to RNA polymerase and not technical errors, in reads spanning an exon\u2013intron junction, the measured error rate is higher at the 5\u2019 donor splice site, suggesting that RNA polymerase errors result in intron retention. Because it can be run on existing RNA-seq data, I expect MORPhEUS to enable many future discoveries regarding both the molecular determinants of RNA polymerase error rates and the relationship between RNA polymerase fidelity and phenotype."
+            }, 
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s1-1", 
+                        "title": "Counting RNA polymerase errors in already aligned ENCODE data", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Much existing RNA-seq data is available as bam files aligned to the human genome. In order to bypass alignment, which\u00a0is\u00a0the most computationally expensive step of the pipeline, I developed a method capable of using RNA-seq reads aligned with spliced aligners. First, in order to avoid increased mismatch rates at splice junctions due to alignment problems with both spliced and unspliced reads, I used SAMtools (<a href=\"#bib18\">Li et al., 2009</a>) and awk to remove all alignments that do\u00a0not align along the full length of the genome (e.g., for 76\u00a0bp reads, only reads with a CIGAR flag of 76\u00a0M). The remaining reads weretrimmed (bamUtil, trimBam) to convert the first and last 10\u00a0bp of each read to Ns and set the quality strings to \u2018!\u2019. I then used samtools mpileup (-q30 \u2013C50 \u2013Q30) and custom perl code to count the number of reads and number of errors at each position in genome. Positions with too many errors (e.g., more than one read of the same nonreference base) were not counted."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-2", 
+                        "title": "Measurement of error rates at splice junctions", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "I used the University of California Santa Cruz (UCSC) table browser (<a href=\"#bib13\">Karolchik, 2004</a>) to download two bed files: hg19 EnsemblGenes introns with -10\u00a0bp flanking from each side, and another file with the introns and +10\u00a0bp flanking on either side. I then used bedtools (<a href=\"#bib32\">Quinlan and Hall, 2010</a>) (bedtools flank -b 20 -l 0 and bedtools flank -l 20 -b 0) to generate bed files with intervals that contain the splicing donor and acceptor sites, respectively. In addition, I used bedtools getfasta on the +10\u00a0bp flanking bed file to keep only introns flanked by GT and AG donor and acceptor sites. The final result is a pair of bam files with intervals centered on the splicing donor or acceptor sites. I used this new bed file to count error rates around each splice junction. The error rate at each position (e.g., -10, -9, -8, etc. from the G at the 5\u2019 donor site) is the sum of all errors at that position, divided by the sum of all reads. Positions are relative to the splicing feature, not to the genome, as error rates at any single genomic position are dominated by sampling bias. Per mono-, di-, and trinucleotide background error rates were-calculated using the same scripts, but without limiting mpileup to the splice junctions."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-3", 
+                        "title": "Strain construction and RNA sequencing for RPB9 and DST1 strains", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The parental strain DBY12394 (<a href=\"#bib25\">Mcisaac et al., 2013</a>) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX) was transformed with a polymerase chain reaction (PCR) product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143) or DST1 (LCY142). To induce various levels of expression, strains were re-grown in YPD + 0-,\u00a03-,\u00a06-,\u00a012-, or 25-nM \u03b2-estradiol (Sigma,\u00a0St.\u00a0Louis,\u00a0MO,\u00a0USA, E4389) for more than 12 hr to a final OD<sub>600</sub> of 0.1 \u2013 0.4. Cellular RNA was extracted using the Epicenter MasterPure RNA Purification Kit, and Illumina sequencing libraries were prepared using the Truseq Stranded mRNA kit, and sequenced on an HiSeq2000 with at least 20,000,000 50\u00a0bp sequencing reads per sample."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "I used bwa (<a href=\"#bib19\">Li and Durbin, 2009</a>) (-n 2, to permit no more than two mismatches in a read) to align the yeast RNA-seq reads to the reference genome, and trimBam from bamUtil to mask the first and last 10\u00a0bp of each read. I used samtools mpileup (<a href=\"#bib18\">Li et al., 2009</a>) (-q 30 -d 100000 -C50 \u2013Q39) to count the number of reads and mismatches at each position in the genome, discarding low confidence mapping, reads that map to multiple positions, and low quality reads. Duplicate reads can be removed from the fastq file if the coverage is low enough so that all reads\u00a0that\u00a0map\u00a0to\u00a0identical\u00a0\u00a0genome\u00a0coordinates\u00a0are expected be\u00a0PCR\u00a0duplicates\u00a0from\u00a0the same RNA fragment. This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1-4", 
+                        "title": "Pre-existing RNA-seq datasets", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "For the intron retention analysis in human cells, data are from NCBI SRA PRJNA253670. Data for the elc4 and spt4 analysis are from PRJNA167772 and PRJNA148851, respectively. For RPB9 correlation, undefined data (SRA PRJNA30709) are all from the Gingeras lab at CSHL."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Dhir", 
+                            "index": "Dhir, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Dhir", 
+                            "index": "Dhir, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NJ Proudfoot", 
+                            "index": "Proudfoot, NJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CL Jopling", 
+                            "index": "Jopling, CL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Microprocessor mediates transcriptional termination of long noncoding RNA transcripts hosting microRNAs", 
+                "journal": {
+                    "name": [
+                        "Nature Structural & Molecular Biology"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "319", 
+                    "last": "327", 
+                    "range": "319\u2013327"
+                }, 
+                "doi": "10.1038/nsmb.2982"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "group", 
+                        "name": "ENCODE Project Consortium"
+                    }
+                ], 
+                "articleTitle": "An integrated encyclopedia of DNA elements in the human genome", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "489", 
+                "pages": {
+                    "first": "57", 
+                    "last": "74", 
+                    "range": "57\u201374"
+                }, 
+                "doi": "10.1038/nature11247"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KL Fox-Walsh", 
+                            "index": "Fox-Walsh, KL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KJ Hertel", 
+                            "index": "Hertel, KJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Splice-site pairing is an intrinsically high fidelity process", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "106", 
+                "pages": {
+                    "first": "1766", 
+                    "last": "1771", 
+                    "range": "1766\u20131771"
+                }, 
+                "doi": "10.1073/pnas.0813128106"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Futcher", 
+                            "index": "Futcher, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GI Latter", 
+                            "index": "Latter, GI"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Monardo", 
+                            "index": "Monardo, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CS Mclaughlin", 
+                            "index": "Mclaughlin, CS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JI Garrels", 
+                            "index": "Garrels, JI"
+                        }
+                    }
+                ], 
+                "articleTitle": "A sampling of the yeast proteome mol", 
+                "journal": {
+                    "name": [
+                        "Cellular Biology"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "7357", 
+                    "last": "7368", 
+                    "range": "7357\u20137368"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJE Gordon", 
+                            "index": "Gordon, AJE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Satory", 
+                            "index": "Satory, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Halliday", 
+                            "index": "Halliday, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Herman", 
+                            "index": "Herman, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Casades\u00fas", 
+                            "index": "Casades\u00fas, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Heritable change caused by transient transcription errors", 
+                "journal": {
+                    "name": [
+                        "PLoS Genetics"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": "e1003595", 
+                "doi": "10.1371/journal.pgen.1003595"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJE Gordon", 
+                            "index": "Gordon, AJE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Satory", 
+                            "index": "Satory, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Halliday", 
+                            "index": "Halliday, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Herman", 
+                            "index": "Herman, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Herman", 
+                            "index": "Herman"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Lost In Transcription", 
+                            "index": "Lost In Transcription, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Lost in transcription: transient errors in information transfer", 
+                "journal": {
+                    "name": [
+                        "Current Opinion in Microbiology"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "80", 
+                    "last": "87", 
+                    "range": "80\u201387"
+                }, 
+                "doi": "10.1016/j.mib.2015.01.010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J-F Gout", 
+                            "index": "Gout, J-F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WK Thomas", 
+                            "index": "Thomas, WK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Z Smith", 
+                            "index": "Smith, Z"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Okamoto", 
+                            "index": "Okamoto, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Lynch", 
+                            "index": "Lynch, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Large-scale detection of in vivo transcription errors", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "110", 
+                "pages": {
+                    "first": "18584", 
+                    "last": "18589", 
+                    "range": "18584\u201318589"
+                }, 
+                "doi": "10.1073/pnas.1309843110"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "1977", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LM Hereford", 
+                            "index": "Hereford, LM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Rosbash", 
+                            "index": "Rosbash, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Number and distribution of polyadenylated RNA sequences in yeast", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "453", 
+                    "last": "462", 
+                    "range": "453\u2013462"
+                }, 
+                "doi": "10.1016/0092-8674(77)90032-0"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Imashimizu", 
+                            "index": "Imashimizu, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Oshima", 
+                            "index": "Oshima, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Lubkowska", 
+                            "index": "Lubkowska, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kashlev", 
+                            "index": "Kashlev, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Direct assessment of transcription fidelity by high-resolution RNA sequencing", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "41", 
+                "pages": {
+                    "first": "9090", 
+                    "last": "9104", 
+                    "range": "9090\u20139104"
+                }, 
+                "doi": "10.1093/nar/gkt698"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JD Irvin", 
+                            "index": "Irvin, JD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Kireeva", 
+                            "index": "Kireeva, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DR Gotte", 
+                            "index": "Gotte, DR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BK Shafer", 
+                            "index": "Shafer, BK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Huang", 
+                            "index": "Huang, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kashlev", 
+                            "index": "Kashlev, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JN Strathern", 
+                            "index": "Strathern, JN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Landick", 
+                            "index": "Landick, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "A genetic assay for transcription errors reveals multilayer control of RNA polymerase II fidelity", 
+                "journal": {
+                    "name": [
+                        "PLoS Genetics"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": "e1004532", 
+                "doi": "10.1371/journal.pgen.1004532"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Islam", 
+                            "index": "Islam, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Kjallquist", 
+                            "index": "Kjallquist, U"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Moliner", 
+                            "index": "Moliner, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Zajac", 
+                            "index": "Zajac, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J-B Fan", 
+                            "index": "Fan, J-B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Lonnerberg", 
+                            "index": "Lonnerberg, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Linnarsson", 
+                            "index": "Linnarsson, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Characterization of the single-cell transcriptional landscape by highly multiplex RNA-seq", 
+                "journal": {
+                    "name": [
+                        "Genome Research"
+                    ]
+                }, 
+                "volume": "21", 
+                "pages": {
+                    "first": "1160", 
+                    "last": "1167", 
+                    "range": "1160\u20131167"
+                }, 
+                "doi": "10.1101/gr.110882.110"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Jung", 
+                            "index": "Jung, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Lee", 
+                            "index": "Lee, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Lee", 
+                            "index": "Lee, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Park", 
+                            "index": "Park, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YJ Kim", 
+                            "index": "Kim, YJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W-Y Park", 
+                            "index": "Park, W-Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Hong", 
+                            "index": "Hong, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PJ Park", 
+                            "index": "Park, PJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Lee", 
+                            "index": "Lee, E"
+                        }
+                    }
+                ], 
+                "articleTitle": "Intron retention is a widespread mechanism of tumor-suppressor inactivation", 
+                "journal": {
+                    "name": [
+                        "Nature Genetics"
+                    ]
+                }, 
+                "volume": "47", 
+                "pages": {
+                    "first": "1242", 
+                    "last": "1248", 
+                    "range": "1242\u20131248"
+                }, 
+                "doi": "10.1038/ng.3414"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Karolchik", 
+                            "index": "Karolchik, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "The UCSC table browser data retrieval tool", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "493D", 
+                    "last": "496", 
+                    "range": "493D\u2013496"
+                }, 
+                "doi": "10.1093/nar/gkh103"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Kireeva", 
+                            "index": "Kireeva, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YA Nedialkov", 
+                            "index": "Nedialkov, YA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GH Cremona", 
+                            "index": "Cremona, GH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YA Purtov", 
+                            "index": "Purtov, YA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Lubkowska", 
+                            "index": "Lubkowska, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Malagon", 
+                            "index": "Malagon, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ZF Burton", 
+                            "index": "Burton, ZF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JN Strathern", 
+                            "index": "Strathern, JN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kashlev", 
+                            "index": "Kashlev, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Transient reversal of RNA polymerase II active site closing controls fidelity of transcription elongation", 
+                "journal": {
+                    "name": [
+                        "Molecular Cell"
+                    ]
+                }, 
+                "volume": "30", 
+                "pages": {
+                    "first": "557", 
+                    "last": "566", 
+                    "range": "557\u2013566"
+                }, 
+                "doi": "10.1016/j.molcel.2008.04.017"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CL Kleinman", 
+                            "index": "Kleinman, CL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Majewski", 
+                            "index": "Majewski, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Comment on \"widespread RNA and DNA sequence differences in the human transcriptome\"", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "335", 
+                "pages": "1302", 
+                "doi": "10.1126/science.1209658"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Knippa", 
+                            "index": "Knippa, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DO Peterson", 
+                            "index": "Peterson, DO"
+                        }
+                    }
+                ], 
+                "articleTitle": "Fidelity of RNA polymerase II transcription: role of Rbp9 in error detection and proofreading", 
+                "journal": {
+                    "name": [
+                        "Biochemistry"
+                    ]
+                }, 
+                "volume": "52", 
+                "pages": {
+                    "first": "7807", 
+                    "last": "7817", 
+                    "range": "7807\u20137817"
+                }, 
+                "doi": "10.1021/bi4009566"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GI Lang", 
+                            "index": "Lang, GI"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AW Murray", 
+                            "index": "Murray, AW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Estimating the per-base-pair mutation rate in the yeast saccharomyces cerevisiae", 
+                "journal": {
+                    "name": [
+                        "Genetics"
+                    ]
+                }, 
+                "volume": "178", 
+                "pages": {
+                    "first": "67", 
+                    "last": "82", 
+                    "range": "67\u201382"
+                }, 
+                "doi": "10.1534/genetics.107.071506"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Li", 
+                            "index": "Li, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Handsaker", 
+                            "index": "Handsaker, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Wysoker", 
+                            "index": "Wysoker, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Fennell", 
+                            "index": "Fennell, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ruan", 
+                            "index": "Ruan, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Homer", 
+                            "index": "Homer, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Marth", 
+                            "index": "Marth, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Abecasis", 
+                            "index": "Abecasis, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Durbin", 
+                            "index": "Durbin, R"
+                        }
+                    }, 
+                    {
+                        "type": "group", 
+                        "name": "1000 Genome Project Data Processing Subgroup"
+                    }, 
+                    {
+                        "type": "group", 
+                        "name": "1000 Genome Project Data Processing Subgroup"
+                    }
+                ], 
+                "articleTitle": "The sequence Alignment/Map format and SAMtools", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "2078", 
+                    "last": "2079", 
+                    "range": "2078\u20132079"
+                }, 
+                "doi": "10.1093/bioinformatics/btp352"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Li", 
+                            "index": "Li, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Durbin", 
+                            "index": "Durbin, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Fast and accurate short read alignment with burrows-wheeler transform", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "1754", 
+                    "last": "1760", 
+                    "range": "1754\u20131760"
+                }, 
+                "doi": "10.1093/bioinformatics/btp324"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Li", 
+                            "index": "Li, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IX Wang", 
+                            "index": "Wang, IX"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Li", 
+                            "index": "Li, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Bruzel", 
+                            "index": "Bruzel, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AL Richards", 
+                            "index": "Richards, AL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Toung", 
+                            "index": "Toung, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VG Cheung", 
+                            "index": "Cheung, VG"
+                        }
+                    }
+                ], 
+                "articleTitle": "Widespread RNA and DNA sequence differences in the human transcriptome", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "333", 
+                "pages": {
+                    "first": "53", 
+                    "last": "58", 
+                    "range": "53\u201358"
+                }, 
+                "doi": "10.1126/science.1207018"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Lykke-Andersen", 
+                            "index": "Lykke-Andersen, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "MRNA quality control: marking the message for life or death", 
+                "journal": {
+                    "name": [
+                        "Current Biology"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": {
+                    "first": "R88", 
+                    "last": "R91", 
+                    "range": "R88\u2013R91"
+                }, 
+                "doi": "10.1016/S0960-9822(01)00036-7"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Lynch", 
+                            "index": "Lynch, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Evolution of the mutation rate", 
+                "journal": {
+                    "name": [
+                        "Trends in Genetics"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "345", 
+                    "last": "352", 
+                    "range": "345\u2013352"
+                }, 
+                "doi": "10.1016/j.tig.2010.05.003"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Lynch", 
+                            "index": "Lynch, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "The lower bound to the evolution of mutation rates", 
+                "journal": {
+                    "name": [
+                        "Genome Biology and Evolution"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": {
+                    "first": "1107", 
+                    "last": "1118", 
+                    "range": "1107\u20131118"
+                }, 
+                "doi": "10.1093/gbe/evr066"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS McIsaac", 
+                            "index": "McIsaac, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Oakes", 
+                            "index": "Oakes, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Botstein", 
+                            "index": "Botstein, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Noyes", 
+                            "index": "Noyes, MB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rapid synthesis and screening of chemically activated transcription factors with GFP-based reporters", 
+                "journal": {
+                    "name": [
+                        "Journal of Visualized Experiments"
+                    ]
+                }, 
+                "pages": "e51153", 
+                "doi": "10.3791/51153"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS McIsaac", 
+                            "index": "McIsaac, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Oakes", 
+                            "index": "Oakes, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Wang", 
+                            "index": "Wang, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KA Dummit", 
+                            "index": "Dummit, KA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Botstein", 
+                            "index": "Botstein, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Noyes", 
+                            "index": "Noyes, MB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Synthetic gene expression perturbation systems with rapid, tunable, single-gene specificity in yeast", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "41", 
+                "pages": "e57", 
+                "doi": "10.1093/nar/gks1313"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS McIsaac", 
+                            "index": "McIsaac, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PA Gibney", 
+                            "index": "Gibney, PA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SS Chandran", 
+                            "index": "Chandran, SS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KR Benjamin", 
+                            "index": "Benjamin, KR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Botstein", 
+                            "index": "Botstein, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Synthetic biology tools for programming gene expression without nutritional perturbations in saccharomyces cerevisiae", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "42", 
+                "pages": "e48", 
+                "doi": "10.1093/nar/gkt1402"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Meacham", 
+                            "index": "Meacham, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Boffelli", 
+                            "index": "Boffelli, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Dhahbi", 
+                            "index": "Dhahbi, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DIK Martin", 
+                            "index": "Martin, DIK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Singer", 
+                            "index": "Singer, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Pachter", 
+                            "index": "Pachter, L"
+                        }
+                    }
+                ], 
+                "articleTitle": "Identification and correction of systematic error in high-throughput sequence data", 
+                "journal": {
+                    "name": [
+                        "BMC Bioinformatics"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": "451", 
+                "doi": "10.1186/1471-2105-12-451"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "1992", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L de Mercoyrol", 
+                            "index": "de Mercoyrol, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Corda", 
+                            "index": "Corda, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Job", 
+                            "index": "Job, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Job", 
+                            "index": "Job, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Accuracy of wheat-germ RNA polymerase II. general enzymatic properties and effect of template conformational transition from right-handed b-DNA to left-handed z-DNA", 
+                "journal": {
+                    "name": [
+                        "European Journal of Biochemistry"
+                    ]
+                }, 
+                "volume": "206", 
+                "pages": {
+                    "first": "49", 
+                    "last": "58", 
+                    "range": "49\u201358"
+                }, 
+                "doi": "10.1111/j.1432-1033.1992.tb16900.x"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NK Nesser", 
+                            "index": "Nesser, NK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DO Peterson", 
+                            "index": "Peterson, DO"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DK Hawley", 
+                            "index": "Hawley, DK"
+                        }
+                    }
+                ], 
+                "articleTitle": "RNA polymerase II subunit Rpb9 is important for transcriptional fidelity in vivo", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "103", 
+                "pages": {
+                    "first": "3268", 
+                    "last": "3273", 
+                    "range": "3268\u20133273"
+                }, 
+                "doi": "10.1073/pnas.0511330103"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Pelechano", 
+                            "index": "Pelechano, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ch\u00e1vez", 
+                            "index": "Ch\u00e1vez, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE P\u00e9rez-Ort\u00edn", 
+                            "index": "P\u00e9rez-Ort\u00edn, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Santos", 
+                            "index": "Santos, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "A complete set of nascent transcription rates for yeast genes", 
+                "journal": {
+                    "name": [
+                        "PLoS One"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e15442", 
+                "doi": "10.1371/journal.pone.0015442"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JK Pickrell", 
+                            "index": "Pickrell, JK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Gilad", 
+                            "index": "Gilad, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JK Pritchard", 
+                            "index": "Pritchard, JK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Comment on \"widespread RNA and DNA sequence differences in the human transcriptome\"", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "335", 
+                "pages": "1302", 
+                "doi": "10.1126/science.1210484"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AR Quinlan", 
+                            "index": "Quinlan, AR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IM Hall", 
+                            "index": "Hall, IM"
+                        }
+                    }
+                ], 
+                "articleTitle": "BEDTools: a flexible suite of utilities for comparing genomic features", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "26", 
+                "pages": {
+                    "first": "841", 
+                    "last": "842", 
+                    "range": "841\u2013842"
+                }, 
+                "doi": "10.1093/bioinformatics/btq033"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Schwanh\u00e4usser", 
+                            "index": "Schwanh\u00e4usser, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Busse", 
+                            "index": "Busse, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Li", 
+                            "index": "Li, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Dittmar", 
+                            "index": "Dittmar, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Schuchhardt", 
+                            "index": "Schuchhardt, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Wolf", 
+                            "index": "Wolf, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Chen", 
+                            "index": "Chen, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Selbach", 
+                            "index": "Selbach, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Global quantification of mammalian gene expression control", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "473", 
+                "pages": {
+                    "first": "337", 
+                    "last": "342", 
+                    "range": "337\u2013342"
+                }, 
+                "doi": "10.1038/nature10098"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Shaw", 
+                            "index": "Shaw, RJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ND Bonawitz", 
+                            "index": "Bonawitz, ND"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Reines", 
+                            "index": "Reines, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Use of an in vivo reporter assay to test for transcriptional and translational fidelity in yeast", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "277", 
+                "pages": {
+                    "first": "24420", 
+                    "last": "24426", 
+                    "range": "24420\u201324426"
+                }, 
+                "doi": "10.1074/jbc.M202059200"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Tilgner", 
+                            "index": "Tilgner, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DG Knowles", 
+                            "index": "Knowles, DG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Johnson", 
+                            "index": "Johnson, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CA Davis", 
+                            "index": "Davis, CA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Chakrabortty", 
+                            "index": "Chakrabortty, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Djebali", 
+                            "index": "Djebali, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Curado", 
+                            "index": "Curado, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Snyder", 
+                            "index": "Snyder, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TR Gingeras", 
+                            "index": "Gingeras, TR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Guigo", 
+                            "index": "Guigo, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Deep sequencing of subcellular RNA fractions shows splicing to be predominantly co-transcriptional in the human genome but inefficient for lncRNAs", 
+                "journal": {
+                    "name": [
+                        "Genome Research"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "1616", 
+                    "last": "1625", 
+                    "range": "1616\u20131625"
+                }, 
+                "doi": "10.1101/gr.134445.111"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib36", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Walmacq", 
+                            "index": "Walmacq, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Kireeva", 
+                            "index": "Kireeva, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Irvin", 
+                            "index": "Irvin, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Nedialkov", 
+                            "index": "Nedialkov, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Lubkowska", 
+                            "index": "Lubkowska, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Malagon", 
+                            "index": "Malagon, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JN Strathern", 
+                            "index": "Strathern, JN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kashlev", 
+                            "index": "Kashlev, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rpb9 subunit controls transcription fidelity by delaying NTP sequestration in RNA polymerase II", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "284", 
+                "pages": {
+                    "first": "19601", 
+                    "last": "19612", 
+                    "range": "19601\u201319612"
+                }, 
+                "doi": "10.1074/jbc.M109.006908"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib37", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Walmacq", 
+                            "index": "Walmacq, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Kireeva", 
+                            "index": "Kireeva, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Irvin", 
+                            "index": "Irvin, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Nedialkov", 
+                            "index": "Nedialkov, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Lubkowska", 
+                            "index": "Lubkowska, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Malagon", 
+                            "index": "Malagon, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JN Strathern", 
+                            "index": "Strathern, JN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kashlev", 
+                            "index": "Kashlev, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rpb9 subunit controls transcription fidelity by delaying NTP sequestration in RNA polymerase II", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "284", 
+                "pages": {
+                    "first": "19601", 
+                    "last": "19612", 
+                    "range": "19601\u201319612"
+                }, 
+                "doi": "10.1074/jbc.M109.006908"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib38", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "YO Zhu", 
+                            "index": "Zhu, YO"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ML Siegal", 
+                            "index": "Siegal, ML"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DW Hall", 
+                            "index": "Hall, DW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Petrov", 
+                            "index": "Petrov, DA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Precise estimates of mutation rate and spectrum in yeast", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "111", 
+                "pages": "E2310", 
+                "doi": "10.1073/pnas.1323011111"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "I thank members of the Carey lab and the computational genomics groups in the PRBB for thoughtful discussions."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.09945.017", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \"RNA polymerase errors cause splicing defects and can be regulated by differential expression of RNA polymerase subunits\" for peer review at <i>eLife</i>. Your submission has been evaluated by James Manley (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In this manuscript, Carey describes a computational method called MORPhEUS that allows measuring RNA polymerase error rates using published RNA-seq data. By counting the number of matches and mismatches to the reference genome after technical errors are minimized, MORPhEUS enables the author to estimate the error rate at each position of the genome. Using chromatin-associated RNA from RNA-seq data in K562 cells, the author calculates error rates at splice site junctions and demonstrates that these are higher at 5` splice sites, suggesting that this could affect intron retention. Using ENCODE RNA-seq data, the author further investigates if the expression level of the Pol II subunit Rpb9, known to be required in Pol II fidelity, affects RNA polymerase error rates in different cell lines. Furthermore, the author measures RNA-seq error rates using two yeast strains in which it is possible to modulate the expression of Rpb9 or Dst1, finding that cells with low expression of Rpb9 or Dst1 possess higher error rates, consistent with known biochemical and genetic data. The idea is intriguing and the explanations for observations in terms of Pol II error rates make sense. The proposed method MORPhEUS is appropriate to perform comparative analysis of RNApol induced transcription errors between two or more samples or to identify RNApol errors leading to intron retention. Other than currently available methods this approach is able to identify errors transcriptome-wide and does not \"require specialised organism-specific genetic constructs\", therefore it seems to be highly useful. The method presented here is interesting and it is a valuable tool for estimating RNA Pol II error rates from RNA-seq data, although several points need to be addressed before publication can be considered."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Essential revisions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Possible alternative explanations for the observations"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A main issue with this manuscript is that alternative explanations could also make sense. The author has to show that his explanations are the only or at least most plausible ones. <a href=\"#fig2\">Figure 2b</a> is central to the proposed method. It shows an elevated rate of errors at the uracil in the 5' splice site of the canonical GU-AG introns selected by the author. The explanation given is that Pol II errors in the U lead to intron retention. Why then is the error rate of the guanine not similarly elevated? One would then also expect to see elevated error rates for the conserved AG motif of the 3' splice site and in the well conserved branch point motif. The analysis of these motifs should confirm the interpretation by the author. Because this data is not shown, does that mean no elevated signal has been observed? How can this be explained in the light of the author's interpretation of Pol II errors at splicing motifs leading to retained introns? Since the only position with elevated error rate seems to be the U at the 5' SS, an alternative explanation (probably not the only possible one) could be that some factor strongly binds to the uracil in such a way that the reverse transcription in the RNA-seq protocol causes the uracil to be misread. Note that U-&gt;C mutations are also observed in PAR-CLIP and are known to originate during reverse transcription of the RNA."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Choice of null model"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Figure 2b shows <i>relative</i> error rates on the y-axis. The error rates observed around 5' splice sites are normalized by the error rates seen for the same dinucleotides, GT, at other places in the transcriptome. The 4-fold elevated error rate therefore depends on the null model. It would be important to compute the relative error rate at the uracil with more refined trimer null models to see if the 4-fold increase holds up. Two versions, one with the mutated nucleotide at the first position and another model with the mutated nucleotide at the last of the three trimer positions, should be used. The latter version could model sequence-dependent effects during reverse transcription. For each trimer in the transcriptome one can compute the error rate at the first and third nucleotide. Then, the total mutations for each position around the 5' splice site (and the 3' splice site and branch point) are divided by expected numbers of mutations, which is simply the sum of error rates for each of the trimer contexts for the position."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) Effects of Rpb9"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The author demonstrates that expression of Rpb9 negatively correlates with error rates in human cell lines, suggesting that the differential expression of Rpb9 affects RNA polymerase fidelity in vivo. The level of mRNA expression does not necessarily correlate with protein level and, more importantly, the author should normalize the expression of Rpb9 with another subunit of Pol II (e.g. Rpb3) in each cell line used for the analysis (<a href=\"#fig2\">Figure 2c</a>). An alternative explanation for <a href=\"#fig2\">Figure 2c</a> and <a href=\"#fig3\">Figure 3b</a> would be that changing Rpb9 and TFIIS concentration from its finely regulated value impairs elongation, which in turn can influence splicing rates and splicing efficiency. (See e.g., Lacadie et al., In vivo commitment to yeast cotranscriptional splicing is sensitive to transcription elongation mutants, Genes Dev. 2006.) Can such alternative explanations be excluded? Further, in <a href=\"#fig3\">Figure 3b</a> the author shows that intron retention is higher under conditions of low Rpb9/Dst1 induction. Is the low induction of Rpb9 or Dst1 affecting the same introns? Does the author find a higher error rate in GT 5\u00b4 donor site in the mRNAs that show intron retention?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) Possible bias resulting from conservation"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To measure the error rates at splicing junctions, the author counts errors at each position relative to 5\u00b4 donor sites, using reads spanning intron-exon junctions centered on GT donor sites. As a result, the errors at the T nucleotide are more enriched compared to other positions. It is not clear if the analysis is performed measuring the average GT error rate comparing all the reads at intron-exon junctions or single mRNAs (<a href=\"#fig2\">Figure 2a, 2b</a>). If the analysis is made using all genes, since GT at intron-exon is a conserved sequence and the flanking regions are not, this could lead to a bias. This must be clarified."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) Suggestions for additional controls"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A positive control would be to analyse RNA-seq data of an organism with a mutated polymerase known to have an elevated mutation rate and to show that this mutation rate leads to higher relative error rates at conserved splicing motifs. A negative control would be to analyse RNA-seq data of a mutant organism with a known transcription elongation defect and to show that the elongation defect does not affect the putative Pol II error rate in a similar way as Rbp9 and TFIIs overexpression. If possible we encourage the author to conduct these controls."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "6) Repetitive reads"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In paragraph four the alignment quality filter procedure is explained. However it is not mentioned how repetitive reads (or potentially repetitive reads in e.g. unknown duplications of genes) are handled and might affect the result. This must be clarified."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "7) Possible bias from coverage"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Not counting identical mismatches occurring twice or more at the same position (paragraph four) is problematic, because:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u2013 This needs to be adjusted by depth-of-coverage at each position. Positions with high coverage are much more likely to have the same 'real' RNApol error twice, than positions with low coverage. (This seems to be so obvious that we might have overlooked the explanation of the normalization procedure)"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "\u2013 RNA polymerase errors seem to be biased to e.g. C-&gt;T (see <a href=\"#fig3\">Figure 3c</a>), making it quite a bit more likely to see exactly the same RNApol error twice at a position for C-&gt;T/G-&gt;A."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In general the uncertainty of RNApol error estimates at low coverage positions (i.e. lowly expressed genes) should be much worse than for high coverage (highly expressed genes). Is this addressed in the algorithm? (Maybe this problem has been discussed but missed by reviewers.) If not it needs some clarification, how different depth-of-coverage and mutation bias is considered when estimating the errors or removing mismatches of the same type."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.09945.018", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) Possible alternative explanations for the observationsA main issue with this manuscript is that alternative explanations could also make sense. The author has to show that his explanations are the only or at least most plausible ones. <a href=\"#fig2\">Figure 2b</a> is central to the proposed method. It shows an elevated rate of errors at the uracil in the 5' splice site of the canonical GU-AG introns selected by the author. The explanation given is that Pol II errors in the U lead to intron retention. Why then is the error rate of the guanine not similarly elevated? One would then also expect to see elevated error rates for the conserved AG motif of the 3' splice site and in the well conserved branch point motif. The analysis of these motifs should confirm the interpretation by the author. Because this data is not shown, does that mean no elevated signal has been observed? How can this be explained in the light of the author's interpretation of Pol II errors at splicing motifs leading to retained introns? Since the only position with elevated error rate seems to be the U at the 5' SS, an alternative explanation (probably not the only possible one) could be that some factor strongly binds to the uracil in such a way that the reverse transcription in the RNA-seq protocol causes the uracil to be misread. Note that U-&gt;C mutations are also observed in PAR-CLIP and are known to originate during reverse transcription of the RNA.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I agree that is was strange that only mutations at the U were enriched in reads spanning intron-exon junctions. Using a newer dataset with a far lower overall mismatch frequency, I find that both the G and U in the 5\u2019 site, and the A in the 3\u2019 site, have higher observed mismatch rates in exon-intron spanning reads (<a href=\"#fig2\">Figure 2B</a> and <a href=\"#fig2s1\">Figure 2\u2013figure supplement 1</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Choice of null modelFigure 2b shows</i> relative <i>error rates on the y-axis. The error rates observed around 5' splice sites are normalized by the error rates seen for the same dinucleotides, GT, at other places in the transcriptome. The 4-fold elevated error rate therefore depends on the null model. It would be important to compute the relative error rate at the uracil with more refined trimer null models to see if the 4-fold increase holds up. Two versions, one with the mutated nucleotide at the first position and another model with the mutated nucleotide at the last of the three trimer positions, should be used. The latter version could model sequence-dependent effects during reverse transcription. For each trimer in the transcriptome one can compute the error rate at the first and third nucleotide. Then, the total mutations for each position around the 5' splice site (and the 3' splice site and branch point) are divided by expected numbers of mutations, which is simply the sum of error rates for each of the trimer contexts for the position.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<a href=\"#fig2s1\">Figure 2\u2013figure supplement 1</a> shows the 3mer error rates for each base in each 3mer. Using this new experiment with higher quality RNA-seq data, only highly elevated error rates are on both the C and G in CG dinucleotides. This suggests that the elevated error rates at the donor and acceptor sites are biological signal and not technical error."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) Effects of Rpb9The author demonstrates that expression of Rpb9 negatively correlates with error rates in human cell lines, suggesting that the differential expression of Rpb9 affects RNA polymerase fidelity in vivo. The level of mRNA expression does not necessarily correlate with protein level and, more importantly, the author should normalize the expression of Rpb9 with another subunit of Pol II (e.g. Rpb3) in each cell line used for the analysis (<a href=\"#fig2\">Figure 2c</a>).</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I agree that RNA levels do not necessarily determine protein levels. This is a common caveat with interpreting RNA-seq results. In addition, RNA polymerase complex assembly is highly regulated; knowing the cellular concentration of a specific subunit doesn\u2019t tell you about its phosphorylation status nor how much of that subunit is incorporated into polymerase. I have added text regarding this to the Discussion."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The normalization by the expression of other subunits is a good idea. I have added a figure (<a href=\"#fig2s2\">Figure 2\u2013figure supplement 2</a>) showing that RPB9 expression negatively correlates with RNA-seq mismatch rates when normalized by either RPB3 or by the median expression of all subunits."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>An alternative explanation for <a href=\"#fig2\">Figure 2c</a> and <a href=\"#fig3\">Figure 3b</a> would be that changing Rpb9 and TFIIS concentration from its finely regulated value impairs elongation, which in turn can influence splicing rates and splicing efficiency. (See e.g., Lacadie et al., In vivo commitment to yeast cotranscriptional splicing is sensitive to transcription elongation mutants, Genes Dev. 2006.) Can such alternative explanations be excluded?</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I cannot think of a good experiment to determine if the difference in splicing due to RBP9 and DST1 underexpression (<a href=\"#fig3\">Figure 3b</a>) are due to a change in elongation rates, error rates, or both. I believe that the new data showing elevated mismatch frequencies at both 5\u2019 and 3\u2019 splice sites lends further support to RNA polymerase errors being responsible for at least some of the difference in splicing."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Further, in <a href=\"#fig3\">Figure 3b</a> the author shows that intron retention is higher under conditions of low Rpb9/Dst1 induction. Is the low induction of Rpb9 or Dst1 affecting the same introns? Does the author find a higher error rate in GT 5\u00b4 donor site in the mRNAs that show intron retention?</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Unfortunately, because the error rates are lower than the coverage at any one position, the error rate at any particular exon is dominated by sampling bias. We are in the process of developing combining single-molecule unique IDs with targeted sequencing to ask this very question, but cannot do so using standard RNA-sequencing data.<i>4) Possible bias resulting from conservationTo measure the error rates at splicing junctions, the author counts errors at each position relative to 5\u00b4 donor sites, using reads spanning intron-exon junctions centered on GT donor sites. As a result, the errors at the T nucleotide are more enriched compared to other positions. It is not clear if the analysis is performed measuring the average GT error rate comparing all the reads at intron-exon junctions or single mRNAs (<a href=\"#fig2\">Figure 2a, 2b</a>). If the analysis is made using all genes, since GT at intron-exon is a conserved sequence and the flanking regions are not, this could lead to a bias. This must be clarified.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The error rates at exon-intron junctions (<a href=\"#fig2\">Figure 2b</a>) are compared to error rates within exons (<a href=\"#fig2s1\">Figure 2\u2013figure supplement 1</a>). I agree that this was not clear, and have clarified it in the Materials and methods section.<i>5) Suggestions for additional controlsA positive control would be to analyse RNA-seq data of an organism with a mutated polymerase known to have an elevated mutation rate and to show that this mutation rate leads to higher relative error rates at conserved splicing motifs.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I don\u2019t have reason to believe that an RNA polymerase fidelity mutant will have a larger increase in error rates at conserved splicing motifs relative to the increase at other positions. In the mutants, the increase in error rates at splice junctions should be the same as at other similar sequences context. The greater error rate at splice junctions is because these errors can result in intron retention."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>A negative control would be to analyse RNA-seq data of a mutant organism with a known transcription elongation defect and to show that the elongation defect does not affect the putative Pol II error rate in a similar way as Rbp9 and TFIIs overexpression. If possible we encourage the author to conduct these controls.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This was a very nice suggestion. I\u2019ve done it (<a href=\"#fig3s1\">Figure 3\u2013figure supplement 1</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To determine if defects in elongation result in increased RNA-seq mismatch frequencies, I analyzed RNA-seq data from spt4 and elc1 strains, which as shown in Lacadie et al., do not have fidelity defects. I see no difference in RNA-seq mismatch frequencies, suggesting that perturbations that affect elongation would not results in an increase in RNA-seq mismatches.<i>6) Repetitive readsIn paragraph four the alignment quality filter procedure is explained. However it is not mentioned how repetitive reads (or potentially repetitive reads in e.g. unknown duplications of genes) are handled and might affect the result. This must be clarified.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Reads that map to multiple locations in the genome are discarded. I\u2019ve clarified this in the text.<i>7) Possible bias from coverageNot counting identical mismatches occurring twice or more at the same position (paragraph four) is problematic, because:\u2013 This needs to be adjusted by depth-of-coverage at each position. Positions with high coverage are much more likely to have the same 'real' RNApol error twice, than positions with low coverage. (This seems to be so obvious that we might have overlooked the explanation of the normalization procedure)\u2013 RNA polymerase errors seem to be biased to e.g. C-&gt;T (see <a href=\"#fig3\">Figure 3c</a>), making it quite a bit more likely to see exactly the same RNApol error twice at a position for C-&gt;T/G-&gt;A.In general the uncertainty of RNApol error estimates at low coverage positions (i.e. lowly expressed genes) should be much worse than for high coverage (highly expressed genes). Is this addressed in the algorithm? (Maybe this problem has been discussed but missed by reviewers.) If not it needs some clarification, how different depth-of-coverage and mutation bias is considered when estimating the errors or removing mismatches of the same type.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "I have added a supplementary figure showing both (1) this filtering does not affect the results, and (2) the statistical reasoning for this filter (<a href=\"#fig1s2\">Figure 1\u2013figure supplement 2</a>). Briefly, the error rate of RNA polymerase is on the order of 10<sup>-5</sup>, while 90% of positions have a coverage of &lt;10<sup>2</sup>. Therefore, while many positions in the genome exhibit multiple identical errors the likelihood of observing multiple identical errors is very low."
+                }
+            ]
+        }
+    }
+}

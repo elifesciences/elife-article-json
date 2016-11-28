@@ -1,0 +1,2906 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "08501", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.08501", 
+        "authorLine": "Susumu Hirabayashi, Ross L Cagan", 
+        "title": "Salt-inducible kinases mediate nutrient-sensing to link dietary sugar and tumorigenesis in <i>Drosophila</i>", 
+        "published": "2015-11-17T00:00:00", 
+        "versionDate": "2015-11-17T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e08501", 
+        "pdf": "https://publishing-cdn.elifesciences.org/08501/elife-08501-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "D. melanogaster"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.08501.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Cancer cells demand excessive nutrients to support their proliferation but how cancer cells sense and promote growth in the nutrient favorable conditions remain incompletely understood. Epidemiological studies have indicated that obesity is a risk factor for various types of cancers. Feeding <i>Drosophila</i> a high dietary sugar was previously demonstrated to not only direct metabolic defects including obesity and organismal insulin resistance, but also transform Ras/Src-activated cells into aggressive tumors. Here we demonstrate that Ras/Src-activated cells are sensitive to perturbations in the Hippo signaling pathway. We provide evidence that nutritional cues activate Salt-inducible kinase, leading to Hippo pathway downregulation in Ras/Src-activated cells. The result is Yorkie-dependent increase in Wingless signaling, a key mediator that promotes diet-enhanced Ras/Src-tumorigenesis in an otherwise insulin-resistant environment. Through this mechanism, Ras/Src-activated cells are positioned to efficiently respond to nutritional signals and ensure tumor growth upon nutrient rich condition including obesity."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Hirabayashi and Cagan", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Susumu Hirabayashi", 
+                    "index": "Hirabayashi, Susumu"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Metabolism and Cell Growth Group, MRC Clinical Sciences Centre", 
+                            "Imperial College London"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "London", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "London"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "PRESTO", 
+                            "Japan Science and Technology Agency"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Kawaguchi", 
+                                "Japan"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Kawaguchi"
+                                ], 
+                                "country": "Japan"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "susumu.hirabayashi@csc.mrc.ac.uk"
+                ], 
+                "contribution": "SH, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ross L Cagan", 
+                    "index": "Cagan, Ross L"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Developmental and Regenerative Biology", 
+                            "Icahn School of Medicine at Mount Sinai"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "RLC, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "The ability of tumors to respond to nutritional signals is mediated by Salt-inducible kinases, which ensure tumor growth under nutrient-rich conditions including obesity."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "08501", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.08501", 
+        "authorLine": "Susumu Hirabayashi, Ross L Cagan", 
+        "title": "Salt-inducible kinases mediate nutrient-sensing to link dietary sugar and tumorigenesis in <i>Drosophila</i>", 
+        "published": "2015-11-17T00:00:00", 
+        "versionDate": "2015-11-17T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e08501", 
+        "pdf": "https://publishing-cdn.elifesciences.org/08501/elife-08501-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "D. melanogaster"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.08501.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Cancer cells demand excessive nutrients to support their proliferation but how cancer cells sense and promote growth in the nutrient favorable conditions remain incompletely understood. Epidemiological studies have indicated that obesity is a risk factor for various types of cancers. Feeding <i>Drosophila</i> a high dietary sugar was previously demonstrated to not only direct metabolic defects including obesity and organismal insulin resistance, but also transform Ras/Src-activated cells into aggressive tumors. Here we demonstrate that Ras/Src-activated cells are sensitive to perturbations in the Hippo signaling pathway. We provide evidence that nutritional cues activate Salt-inducible kinase, leading to Hippo pathway downregulation in Ras/Src-activated cells. The result is Yorkie-dependent increase in Wingless signaling, a key mediator that promotes diet-enhanced Ras/Src-tumorigenesis in an otherwise insulin-resistant environment. Through this mechanism, Ras/Src-activated cells are positioned to efficiently respond to nutritional signals and ensure tumor growth upon nutrient rich condition including obesity."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Hirabayashi and Cagan", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Susumu Hirabayashi", 
+                    "index": "Hirabayashi, Susumu"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Metabolism and Cell Growth Group, MRC Clinical Sciences Centre", 
+                            "Imperial College London"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "London", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "London"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "PRESTO", 
+                            "Japan Science and Technology Agency"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Kawaguchi", 
+                                "Japan"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Kawaguchi"
+                                ], 
+                                "country": "Japan"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "susumu.hirabayashi@csc.mrc.ac.uk"
+                ], 
+                "contribution": "SH, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ross L Cagan", 
+                    "index": "Cagan, Ross L"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Developmental and Regenerative Biology", 
+                            "Icahn School of Medicine at Mount Sinai"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "New York", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "New York"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "RLC, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "The ability of tumors to respond to nutritional signals is mediated by Salt-inducible kinases, which ensure tumor growth under nutrient-rich conditions including obesity.", 
+        "keywords": [
+            "Drosophila", 
+            "salt-inducible kinase", 
+            "Hippo pathway", 
+            "cancer"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.08501.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Around the world, obesity has become a much more common condition. It is a serious health concern, which can increase a person's risk of developing type 2 diabetes, heart disease and certain types of cancer. People who develop type 2 diabetes become insensitive to a hormone called insulin. This hormone normally helps the body to process sugar, and so insensitivity to insulin causes excess sugar to build up in the blood. The excess sugar may provide the extra nutrients cancer cells need to grow."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In 2013, researchers fed a high sugar diet to fruit flies that had been genetically engineered to develop eye tumors to study how obesity caused by a high sugar diet affects tumor growth. The high sugar diet caused the tumors to grow more aggressively. This happened because normal cells became insensitive to insulin, but the tumor cells didn't. This allowed the tumor cells to use the extra sugar to fuel their growth. The experiments showed that the tumor cells had more insulin receptors than normal cells because a molecular switch that controls the receptors was turned on. But it wasn't exactly clear how the cancer genes and excess sugar flipped that switch."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Now, Hirabayashi and Cagan\u2014who were both involved in the 2013 work\u2014show that together cancer genes and excess sugar turn on a protein in the flies that senses sugar. This protein, called Salt-inducible kinase, blocks a cellular mechanism that normally limits the growth of cells. With this check on cellular growth blocked, the molecular switch that boosts the number of insulin receptor turns on. This in turn allows the excess sugar to fuel rapid growth of the tumor. In this way, tumor cells know when the sugars are available and make sure they grow in a nutrient-rich condition such as obesity. In the future, scientists may use this new information to develop treatments that help stop the growth of obesity-linked tumors. But first it must be confirmed whether excess sugar and cancer genes behave the same way in humans."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The prevalence of obesity is increasing globally. Obesity impacts whole-body homeostasis and is a risk factor for severe health complications including type 2 diabetes and cardiovascular disease. Accumulating epidemiological evidence indicates that obesity also leads to elevated risk of developing several types of cancers (<a href=\"#bib3\">Calle et al., 2003</a>; <a href=\"#bib26\">Renehan et al., 2008</a>; <a href=\"#bib1\">Arnold et al., 2014</a>). However, the mechanisms that link obesity and cancer remain incompletely understood. Using <i>Drosophila</i>, we recently developed a whole-animal model system to study the link between diet-induced obesity and cancer and provided a potential explanation for how obese and insulin resistant animals are at increased risk for tumor progression (<a href=\"#bib15\">Hirabayashi et al., 2013</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "<i>Drosophila</i> fed a diet containing high levels of sucrose (high dietary sucrose or \u2018HDS\u2019) developed sugar-dependent metabolic defects including accumulation of fat (obesity), organismal insulin resistance, hyperglycemia, hyperinsulinemia, heart defects and liver (fat body) dysfunctions (<a href=\"#bib18\">Musselman et al., 2011</a>, <a href=\"#bib19\">2013</a>; <a href=\"#bib20\">Na et al., 2013</a>; <a href=\"#bib21\">Na et al., 2015</a>). Inducing activation of oncogenic Ras and Src together in the <i>Drosophila</i> eye epithelia led to development of small benign tumors within the eye epithelia. Feeding animals HDS transformed Ras/Src-activated cells from benign tumor growths to aggressive tumor overgrowth with tumors spread into other regions of the body (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). While most tissues of animals fed HDS displayed insulin resistance, Ras/Src-activated tumors retained insulin pathway sensitivity and exhibited an increased ability to import glucose. This is reflected by increased expression of the Insulin Receptor (InR), which was activated through an increase in canonical Wingless (Wg)/dWnt signaling that resulted in evasion of diet-mediated insulin resistance in Ras/Src-activated cells. Conversely, expressing a constitutively active isoform of the Insulin Receptor in Ras/Src-activated cells (InR/Ras/Src) was sufficient to elevate Wg signaling, promoting tumor overgrowth in animals fed a control diet. These results revealed a circuit with a feed-forward mechanism that directs elevated Wg signaling and InR expression specifically in Ras/Src-activated cells. Through this circuit, mitogenic effects of insulin are not only preserved but are enhanced in Ras/Src-activated cells in the presence of organismal insulin resistance."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "These studies provide an outline for a new mechanism by which tumors evade insulin resistance, but several questions remain: (i) how Ras/Src-activated cells sense the organism's increased insulin levels, (ii) how nutrient availability is converted into growth signals, and (iii) the trigger for increased Wg protein levels, a key mediator that promotes evasion of insulin resistance and enhanced Ras/Src-tumorigenesis consequent to HDS. In this manuscript, we identify the Hippo pathway effector Yorkie (Yki) as a primary source of increased Wg expression in diet-enhanced Ras/Src-tumors. We demonstrate that Ras/Src-activated cells are sensitized to Hippo signaling, and even a mild perturbation in upstream Hippo pathway is sufficient to dominantly promote Ras/Src-tumor growth. We provide functional evidence that increased insulin signaling promotes Salt-inducible kinases (SIKs) activity in Ras/Src-activated cells, revealing a SIKs-Yki-Wg axis as a key mediator of diet-enhanced Ras/Src-tumorigenesis. Through this pathway, Hippo-sensitized Ras/Src-activated cells are positioned to efficiently respond to insulin signals and promote tumor overgrowth. These mechanisms act as a feed-forward cassette that promotes tumor progression in dietary rich conditions, evading an otherwise insulin resistant state."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s2-1", 
+                        "title": "Yorkie mediates increased Wg expression in diet-enhanced Ras/Src-tumors", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Ras/Src tumors were generated in the developing <i>Drosophila</i> eye epithelium by pairing targeted expression of the activated <i>dRas1</i> isoform <i>ras1</i><sup><i>G12V</i></sup> with targeted knockout (<a href=\"#bib17\">Lee and Luo, 1999</a>) of the negative regulator of Src, C-terminal src kinase (<i>csk<sup>\u2212/\u2212</sup></i>). Feeding animals a diet containing 1.0 M sucrose (high dietary sucrose or \u2018HDS\u2019) transformed these Ras/Src-activated cells from benign growths to aggressive tumors associated with emergent tumor spread to other parts of the body (<a href=\"#fig1\">Figure 1A,B</a>) (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). In HDS-fed animals, Ras/Src-activated cells promoted gene expression of InR through increased canonical Wg-dependent signaling, leading to increased insulin sensitivity in Ras/Src-activated cells in otherwise insulin resistant animals. Expression of a constitutive active isoform of Insulin Receptor (<i>inr</i><sup><i>CA</i></sup>) in Ras/Src-activated cells (<i>inr</i> <sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>) was sufficient to promote elevation of Wg levels and tumor growth even in a control diet, establishing an InR-Wg-InR amplification circuit that promotes aggressive tumorigenesis (<a href=\"#fig1\">Figure 1E</a>) (<a href=\"#bib15\">Hirabayashi et al., 2013</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.08501.003", 
+                                "id": "fig1", 
+                                "label": "Figure 1.", 
+                                "title": "Yorkie Activity is Required for Increased Wg Expression in Diet-enhanced Ras/Src-tumors.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>\u2013<b>G</b>) Developmental stage matched third instar larvae with the genotype, (<b>A</b>, <b>B</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>, (<b>C</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wg</i><sup><i>RNAi</i></sup>, (<b>D</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wts</i>, (<b>E</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>, (<b>F</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wg</i><sup><i>RNAi</i></sup>, and (<b>G</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wts,</i> raised on indicated diets. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>A\u2032</b>\u2013<b>G\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>H</b>) Percent pupariation of animals from indicated genotypes and diets. Column bars represent the mean of three independent experiments. Error bars denote s.e.m. Total <i>n</i> was 166, 431, 309, 291, 204, 200, and 251 from left to right. Asterisks indicate statistically significant difference (*p &lt; 0.01 t-test). Numerical data are available in <a href=\"#SD1-data\">Figure 1\u2014source data 1</a>. (<b>I</b>\u2013<b>L</b>) Wg staining (red) of eye tissue from (<b>I</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>, (<b>J</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wts</i>, (<b>K</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>, and (<b>L</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wts</i> animals raised on indicated diets. Scale bars, 50 \u03bcm."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-08501-fig1-v1.tif", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.08501.004", 
+                                        "id": "SD1-data", 
+                                        "label": "Figure 1\u2014source data 1.", 
+                                        "title": "Percent pupariation of animals from indicated genotypes and diets.", 
+                                        "mediaType": "application/xlsx", 
+                                        "uri": "elife-08501-fig1-data1-v1.xlsx", 
+                                        "filename": "elife-08501-fig1-data1-v1.xlsx"
+                                    }
+                                ], 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.08501.005", 
+                                        "id": "fig1s1", 
+                                        "label": "Figure 1\u2014figure supplement 1.", 
+                                        "title": "Effect of reducing Wg or over-expressing Wts in the eye tissue.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>, <b>B</b>) Reducing Wg by RNAi (<i>wg</i><sup><i>RNAi</i></sup>) did not affect normal eye tissue growth of the late third instar larvae. Developmental stage matched <i>wg</i><sup><i>RNAi</i></sup> third instar larvae raised on (<b>A</b>) control diet, and (<b>B</b>) HDS. (<b>C</b>, <b>D</b>) Over-expression of Warts kinase led to small clones. Developmental stage matched <i>wts</i> third instar larvae raised on (<b>C</b>) control diet, and (<b>D</b>) HDS. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>A\u2032</b>\u2013<b>D\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-08501-fig1-figsupp1-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.08501.006", 
+                                        "id": "fig1s2", 
+                                        "label": "Figure 1\u2014figure supplement 2.", 
+                                        "title": "Yorkie target genes are upregulated in diet-enhanced Ras/Src-tumors.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>\u2013<b>C</b>) Myc staining (red) of (<b>A</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> in control diet, (<b>B</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> in HDS, and (<b>C</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> in control diet. (<b>D</b>\u2013<b>F</b>) Cyclin E staining (red) of (<b>D</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> in control diet, (<b>E</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> in HDS, and (<b>F</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> in control diet. Images were taken at the same magnification. Scale bar, 50 \u03bcm."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-08501-fig1-figsupp2-v1.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Reducing Wg by RNAi (<i>wg</i><sup><i>RNAi</i></sup>) did not affect normal eye tissue growth of the late third instar larvae (<a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>). However, reducing Wg in Ras/Src-activated cells (<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wg</i><sup><i>RNAi</i></sup>) fed HDS or in InR/Ras/Src-activated cells (<i>inr</i> <sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wg</i><sup><i>RNAi</i></sup>) fed a control diet significantly suppressed tumor growth (<a href=\"#fig1\">Figure 1C,F</a>). As a result, whereas only 35.9% of <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals in HDS and 42.6% of <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals in control diet initiated pupariation, most <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wg</i><sup><i>RNAi</i></sup> animals and <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wg</i><sup><i>RNAi</i></sup> animals successfully pupariated (<a href=\"#fig1\">Figure 1H</a>). These observations identify Wg as an essential mediator of diet-enhanced Ras/Src-tumors or InR/Ras/Src-tumors. However, the factors that elevate Wg expression in diet- or InR-activated Ras/Src-tumors has not been identified."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The Hippo pathway is an evolutionarily conserved signaling pathway that regulates tissue growth and cell fate (<a href=\"#bib14\">Harvey and Tapon, 2007</a>; <a href=\"#bib12\">Halder and Johnson, 2011</a>). The Hippo pathway regulates growth through the transcriptional co-activator Yki, a <i>Drosophila</i> homolog of mammalian YAP/TAZ (<a href=\"#bib16\">Huang et al., 2005</a>). The core pathway kinase effector Warts (Wts) phosphorylates Yki and inhibits its activity by sequestering Yki in the cytoplasm (<a href=\"#bib8\">Dong et al., 2007</a>; <a href=\"#bib34\">Zhao et al., 2007</a>; <a href=\"#bib23\">Oh and Irvine, 2008</a>). Conversely, loss of components in the core Hippo complex results in translocation of Yki into the nucleus where it regulates factors that promote proliferation and inhibit cell death (<a href=\"#bib11\">Goulev et al., 2008</a>; <a href=\"#bib32\">Wu et al., 2008</a>; <a href=\"#bib33\">Zhang et al., 2008</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Yki activation has been previously associated with increased expression of Wg (<a href=\"#bib4\">Cho et al., 2006</a>). Inhibition of Yki activity by over-expressing Wts led to small clones (<a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>). Similarly, over-expression of Wts in Ras/Src-activated cells (<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wts</i>) fed HDS or in InR/Ras/Src-activated cells (<i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,wts</i>) fed a control diet led to a strong suppression of tumor growth and animal lethality (<a href=\"#fig1\">Figure 1D,G and H</a>). Importantly, increased Wg expression was lost in these clones, indicating that Yki is required for the increased Wg expression observed in diet- or InR-activated Ras/Src-tumors (<a href=\"#fig1\">Figure 1I\u2013L</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-2", 
+                        "title": "Yorkie target genes are upregulated in diet-enhanced Ras/Src-tumors", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Myc and cyclin E are well-established transcriptional targets of Yki in <i>Drosophila</i> (<a href=\"#bib27\">Tapon et al., 2002</a>; <a href=\"#bib28\">Udan et al., 2003</a>; <a href=\"#bib22\">Neto-Silva et al., 2010</a>). Myc and cyclin E were strongly elevated in eye clones of <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed HDS and in <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed a control diet (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>) compared to controls. As previously reported, <i>diap1</i> gene expression\u2014assessed by the Yki transcriptional reporter <i>diap1-lacZ</i>\u2014was strongly increased in the <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> clones of animals raised in HDS compared to animals fed a control diet ((<a href=\"#bib15\">Hirabayashi et al., 2013</a>) <a href=\"#fig2\">Figure 2A,B</a>). Upon closer examination, <i>diap1</i> gene expression was at most mildly increased in most <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> clones in animals fed a control diet (<a href=\"#fig2\">Figure 2A</a>, arrowheads). This increase in Yki activity was not sufficient to promote tumor overgrowth: <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> clones of animals raised in a control diet were progressively eliminated from the tissue by apoptotic cell death (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). Activation of insulin signaling pathway alone (<i>inr</i><sup><i>CA</i></sup>) failed to elevate <i>diap1</i> expression in a control diet (<a href=\"#fig2\">Figure 2C</a>). However, the triple combination (<i>inr</i> <sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>) led to strongly elevated <i>diap1</i> gene expression, including in animals fed a control diet (<a href=\"#fig2\">Figure 2D</a>). These results indicate that activation of Yki is an emergent property of Ras and Src co-activation, and increased insulin signaling further promotes Yki activity in Ras/Src-activated cells."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.08501.007", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Ras/Src-activated Cells are Sensitive to Perturbations in the Hippo Signaling.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>\u2013<b>D</b>) \u03b2-galactosidase (\u03b2-gal) staining (red) of eye tissue from (<b>A</b>, <b>B</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,diap1-lacZ</i>, (<b>C</b>) <i>inr</i><sup><i>CA</i></sup><i>;diap1-lacZ,</i> (<b>D</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,diap1-lacZ</i> animals raised on indicated diets. Scale bars, 50 \u03bcm. (<b>E</b>\u2013<b>H</b>) Developmental stage matched third instar larvae raised on control diet with the genotype, (<b>E</b>) <i>ex</i><sup><i>+/\u2212</i></sup>, (<b>F</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,</i> (<b>G</b>, <b>H</b>) <i>ex</i><sup><i>+/\u2212</i></sup>,<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>E\u2032</b>\u2013<b>H\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>I</b>) Percent pupariation of animals from indicated genotypes. Column bars represent the mean of three independent experiments. Error bars denote s.e.m. Total <i>n</i> of 389, 238, and 206 from left to right. Asterisks indicate statistically significant difference (*p &lt; 0.01 t-test). Numerical data are available in <a href=\"#SD2-data\">Figure 2\u2014source data 1</a> (<b>J</b>) \u03b2-galactosidase (\u03b2-gal) staining (red) of <i>ex</i><sup><i>+/\u2212</i></sup>, <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals raised on control diet. Scale bar, 50 \u03bcm."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-08501-fig2-v1.tif", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.08501.008", 
+                                        "id": "SD2-data", 
+                                        "label": "Figure 2\u2014source data 1.", 
+                                        "title": "Percent pupariation of animals from indicated genotypes.", 
+                                        "mediaType": "application/xlsx", 
+                                        "uri": "elife-08501-fig2-data1-v1.xlsx", 
+                                        "filename": "elife-08501-fig2-data1-v1.xlsx"
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-3", 
+                        "title": "Ras/src-activated cells are sensitized to upstream Hippo signals", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The FERM domain protein Expanded (Ex) is both an upstream regulator of the Hippo pathway and a transcriptional target of Yki, forming a negative feedback loop (<a href=\"#bib13\">Hamaratoglu et al., 2006</a>). An enhancer trap fly line in which a <i>lacZ</i> gene is inserted in the <i>ex</i> locus (<i>ex</i><sup><i>674</i></sup>; [<a href=\"#bib2\">Boedigheimer and Laughon, 1993</a>]) can therefore be used to reduce <i>ex</i> activity as well as a readout of Yki transcriptional activity. Removing a functional genomic copy of <i>ex</i> (<i>ex</i><sup><i>+/\u2212</i></sup>) did not affect normal eye tissue growth (<a href=\"#fig2\">Figure 2E</a>). Surprisingly, reducing <i>ex</i> in <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals (<i>ex</i><sup><i>+/\u2212</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>) dominantly promoted growth of Ras/Src-activated cells in a control diet (<a href=\"#fig2\">Figure 2F-H</a>). As a consequence, 40% of <i>ex</i><sup><i>+/\u2212</i></sup>,<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals in control diet failed to initiate pupariation, dying as larvae with overgrown eye tissue (<a href=\"#fig2\">Figure 2I</a>). Immunostaining using anti-\u03b2-galactosidase antibody indicated that <i>ex</i> gene expression was strongly increased in <i>ex</i><sup><i>+/\u2212</i></sup>,<i> ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> clones of animals raised in a control diet, demonstrating Yki activation in these clones (<a href=\"#fig2\">Figure 2J</a>). Together these results provide compelling evidence that Ras/Src-activated cells are functionally linked to Hippo pathway activity, as even a subtle perturbation of upstream Hippo signaling is sufficient to dominantly promote tumor Ras/Src-tumor overgrowth."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-4", 
+                        "title": "Warts kinase activity is downregulated in diet-enhanced Ras/Src-tumors", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine whether diet-enhanced Ras/Src-tumors promote Yki activity through the core Hippo signaling pathway, we performed Western-blot analysis using an antibody to the phosphorylated Serine-168 residue of Yki, a standard indication of Wts kinase activity. As anticipated, phosphorylation of Yki was significantly reduced in genotypically <i>wts</i><sup><i>\u2212/\u2212</i></sup> eye tissues. Dietary sucrose did not alter Yki phosphorylation in <i>lacZ</i>-expressing control clones (<a href=\"#fig3\">Figure 3A</a>). In <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals, however, HDS led to a reduction in Yki phosphorylation to a level comparable to loss of <i>wts</i> (<a href=\"#fig3\">Figure 3A</a>). Phosphorylation was similarly reduced in eye tissues of <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed a control diet, indicating that increased insulin signaling is sufficient to suppress Wts kinase activity in Ras/Src-activated cells (<a href=\"#fig3\">Figure 3A</a>). We did not observe significant changes in total Yki levels (<a href=\"#fig3\">Figure 3A</a>). Our results indicate that (i) Ras/Src-tumors in the presence of HDS or (ii) InR/Ras/Src-tumors in a control diet promote Yki activity through inhibition of Wts kinase activity."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.08501.009", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Salt-inducible Kinases are Required for Diet-enhanced Ras/Src-tumorigenesis.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Extracts from dissected eye tissues of third instar larvae were examined by immunoblotting using antibodies against phospho-Sav (p-Sav; * indicates p-Sav specific band; the upper band is a non-specific band showed as an internal loading control), phospho-Yki (p-Yki), total Yki (Yki), and Syntaxin (Syt). (<b>B</b>, <b>C</b>) Developmental stage matched third instar larvae raised on HDS with the genotype, (<b>B</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>, and (<b>C</b>) <i>sik2/3</i><sup><i>RNAi</i></sup><i>,ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>. (<b>D</b>, <b>E</b>) Developmental stage matched third instar larvae raised on control diet with the genotype, (<b>D</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>, and (<b>E</b>) <i>sik2/3</i><sup><i>RNAi</i></sup><i>,ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>F</b>, <b>G</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i> animals raised on HDS containing (<b>F</b>) 0.05% DMSO, or (<b>G</b>) 25 \u03bc\u039c HG-9-91-01. (<b>H</b>, <b>I</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i> animals raised on control diet containing (<b>H</b>) 0.05% DMSO, or (<b>I</b>) 25 \u03bc\u039c HG-9-91-01. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>B\u2032</b>\u2013<b>I\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>J</b>) Percent pupariation of DMSO or HG-9-91-01 treated animals from indicated genotypes and diets. Column bars represent the mean of three independent experiments. Error bars denote s.e.m. Total <i>n</i> of 139, 76, 123, and 72 from left to right. Asterisks indicate statistically significant difference (*p &lt; 0.01 t-test). Numerical data are available in <a href=\"#SD3-data\">Figure 3\u2014source data 1</a>."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-08501-fig3-v1.tif", 
+                                "sourceData": [
+                                    {
+                                        "doi": "10.7554/eLife.08501.010", 
+                                        "id": "SD3-data", 
+                                        "label": "Figure 3\u2014source data 1.", 
+                                        "title": "Percent pupariation of animals from indicated genotypes and diets.", 
+                                        "mediaType": "application/xlsx", 
+                                        "uri": "elife-08501-fig3-data1-v1.xlsx", 
+                                        "filename": "elife-08501-fig3-data1-v1.xlsx"
+                                    }
+                                ], 
+                                "supplements": [
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.08501.011", 
+                                        "id": "fig3s1", 
+                                        "label": "Figure 3\u2014figure supplement 1.", 
+                                        "title": "Akt mediates activation of SIKs in Ras/Src-tumors.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>, <b>B</b>) Developmental stage matched third instar larvae raised on HDS with the genotype, (<b>A</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>, and (<b>B</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>,<i>akt</i><sup><i>hypo/hypo</i></sup>. (<b>C</b>, <b>D</b>) Developmental stage matched third instar larvae raised on control diet with the genotype, (<b>C</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>, and (<b>D</b>) <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>,<i>akt</i><sup><i>hypo/hypo</i></sup>. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>A\u2032</b>\u2013<b>D\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>E</b>) Extracts from dissected eye tissues of third instar larvae were examined by immunoblotting using antibodies against phospho-Sav (p-Sav; * indicates p-Sav specific band; the upper band is a non-specific band showed as an internal loading control) and Syntaxin (Syt)."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-08501-fig3-figsupp1-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.08501.012", 
+                                        "id": "fig3s2", 
+                                        "label": "Figure 3\u2014figure supplement 2.", 
+                                        "title": "Reducing SIK2/3 by RNAi did not affect normal eye tissue growth.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>, <b>B</b>) Developmental stage matched third instar larvae raised on HDS with genotypes, (<b>A</b>) <i>lacZ</i>, and (<b>B</b>) <i>sik2/3</i><sup><i>RNAi</i></sup>. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>A\u2032</b>, <b>B\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "elife-08501-fig3-figsupp2-v1.tif"
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s2-5", 
+                        "title": "Salt-inducible kinases mediate diet-enhanced ras/src-tumor overgrowth", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Salt-inducible kinases (SIKs) were recently shown to regulate wing tissue growth through Hippo pathway activity in <i>Drosophila</i> (<a href=\"#bib31\">Wehr et al., 2013</a>). Phosphorylation of Salvador (Sav) at Serine-413 by SIK led to dissociation of the Hippo complex and activation of Yki (<a href=\"#bib31\">Wehr et al., 2013</a>). In the eye tissue of <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> larvae fed HDS, Serine-413 phosphorylation of Sav was strongly upregulated (<a href=\"#fig3\">Figure 3A</a>). Similarly, phosphorylation of Sav was strongly elevated in <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed a control diet, demonstrating that increased insulin signaling in Ras/Src-activated cells promotes SIK activity (<a href=\"#fig3\">Figure 3A</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Previous studies in mammals and <i>Drosophila</i> have shown that SIKs are activated by Akt (<a href=\"#bib7\">Dentin et al., 2007</a>; <a href=\"#bib30\">Wang et al., 2011</a>; <a href=\"#bib5\">Choi et al., 2015</a>). Reducing Akt activity through a hypomorphic allele of <i>akt</i> (<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,akt</i><sup><i>hypo/hypo</i></sup>) suppressed Ras/Src-tumor growth and reduced phosphorylation of Sav in animals raised on HDS (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). Similarly, tumor growth and phosphorylation of Sav was suppressed in <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,akt</i><sup><i>hypo/hypo</i></sup> animals fed a control diet (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). These results demonstrate that\u2014in <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> larval eye tissue fed HDS and <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed a control diet\u2014activation of SIKs are mediated by Akt."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To examine whether the SIKs are required for diet-enhanced Ras/Src-tumorigenesis, we used a transgenic RNA-interference line that targets both <i>sik2</i> and <i>sik3</i> transcripts for knockdown (<a href=\"#bib31\">Wehr et al., 2013</a>). Reducing SIK2/3 in <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals (<i>sik2</i><sup><i>RNAi</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>) suppressed diet-enhanced Ras/Src-tumor growth (<a href=\"#fig3\">Figure 3B,C</a>). Importantly, reducing SIK2/3 by itself did not significantly affect normal eye tissue growth of animals fed HDS (<a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a>), indicating that SIK2/3 is functionally required for Ras/Src-tumor growth in the presence of HDS. Feeding HG-9-91-01, a potent inhibitor of SIKs (<a href=\"#bib6\">Clark et al., 2012</a>), led to suppression of tumor growth and animal lethality in both <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed HDS and in <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> animals fed a control diet (<a href=\"#fig3\">Figure 3F-J</a>). We conclude that activation of SIKs is functionally required for diet-enhanced Ras/Src-tumorigenesis."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Conversely, expression of a constitutive active isoform of SIK2 (<i>sik2</i><sup><i>CA</i></sup> (<a href=\"#bib31\">Wehr et al., 2013</a>)) in Ras/Src-activated cells (<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,sik2</i><sup><i>CA</i></sup>) was sufficient to promote Ras/Src-dependent tumor overgrowth even in a control diet (<a href=\"#fig4\">Figure 4A,B</a>). Western blot analysis confirmed increased phosphorylation of Sav and reduced phosphorylation of Yki in <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,sik2</i><sup><i>CA</i></sup> tumors (<a href=\"#fig4\">Figure 4C</a>). Wg expression was strongly upregulated in <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,sik2</i><sup><i>CA</i></sup> tumors in animals raised on a control diet (<a href=\"#fig4\">Figure 4D,E</a>), further linking SIKs to Hippo pathway activity. Taken together, these results demonstrate that SIKs provide the upstream Hippo signal that mediates Ras/Src-tumorigenesis in diet-induced obese animals."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.08501.013", 
+                                "id": "fig4", 
+                                "label": "Figure 4.", 
+                                "title": "Activation of Salt-inducible Kinase Promotes Ras/Src-tumor Growth.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>, <b>B</b>) Developmental stage matched third instar larvae raised on control diet with the genotype, (<b>A</b>) <i>ras1</i><sup><i>G12V</i></sup>;<i>csk<sup>\u2212/\u2212</sup></i>, and (<b>B</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,sik2</i><sup><i>CA</i></sup>. Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>A\u2032</b>, <b>B\u2032</b>) Matching dissected eye epithelial tissue stained with DAPI (red). Images were taken at the same magnification. Scale bar, 500 \u03bcm. (<b>C</b>) Extracts from dissected eye tissues of <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> and <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup>,sik2</i><sup><i>CA</i></sup> animals fed a control diet were examined by immunoblotting using antibodies against phospho-Sav (p-Sav; * indicates p-Sav specific band; the upper band is a non-specific band showed as an internal loading control), phospho-Yki (p-Yki), total Yki (Yki), and Syntaxin (Syt). (<b>D</b>, <b>E</b>) Wg staining (red) of eye tissue from (<b>D</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>, and (<b>E</b>) <i>ras1</i><sup><i>G12V</i></sup><i>;csk</i><i><sup>\u2212/\u2212</sup></i><i>,sik2</i><sup><i>CA</i></sup> animals raised on control diet. Scale bars, 50 \u03bcm. (<b>F</b>) Model of diet-enhanced tumorigenesis of Ras/Src-activated cells."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-08501-fig4-v1.tif"
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We previously demonstrated that Ras/Src-activated cells preserve mitogenic effects of insulin under the systemic insulin resistance induced by HDS-feeding of <i>Drosophila</i> (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). Evasion of insulin resistance in Ras/Src-activated cells is a consequence of a Wg-dependent increase in InR gene expression (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). In this study, we identify the Hippo pathway effector Yki as a primary source of the Wnt ortholog Wg in diet-enhanced Ras/Src-tumors. Mechanistically, we provide functional evidence that activation of SIKs promotes Yki-dependent Wg-activation and reveal a SIK-Yki-Wg-InR axis as a key feed-forward signaling pathway that underlies evasion of insulin resistance and promotion of tumor growth in diet-enhanced Ras/Src-tumors (<a href=\"#fig4\">Figure 4F</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In animals fed a control diet, we observed at most a mild increase in Yki reporter activity within <i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i> cells (<a href=\"#fig2\">Figure 2A</a>). A previous report indicates that activation of oncogenic Ras (<i>ras1</i><sup><i>G12V</i></sup>) led to slight activation of Yki in eye tissue (<a href=\"#bib24\">Ohsawa et al., 2012</a>; <a href=\"#bib9\">Enomoto and Igaki, 2013</a>; <a href=\"#bib10\">Enomoto et al., 2015</a>). Activation of Src through over-expression of the <i>Drosophila</i> Src ortholog Src64B has been shown to induce autonomous and non-autonomous activation of Yki (<a href=\"#bib9\">Enomoto and Igaki, 2013</a>). In contrast, inducing activation of Src through loss of <i>csk</i> (<i>csk<sup>\u2212/\u2212</sup></i>) failed to elevate <i>diap1</i> expression (data not shown). Our results indicate that activation of Yki is an emergent property of activating Ras plus Src (<i>ras1</i><sup><i>G12V</i></sup><i>;csk<sup>\u2212/\u2212</sup></i>). However, this level of Yki-activation was not sufficient to promote stable tumor growth of Ras/Src-activated cells in the context of a control diet: Ras/Src-activated cells were progressively eliminated from the eye tissue (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). It was, however, sufficient to sensitize Ras/Src-activated cells to upstream Hippo pathway signals: loss of a genetic copy of <i>ex</i>\u2014which was not sufficient to promote growth by itself\u2014dominantly promoted tumor growth of Ras/Src-activated cells even in animals fed a control diet (<a href=\"#fig2\">Figure 2G-I</a>). These data provide compelling evidence that Ras/Src-transformed cells are sensitive to upstream Hippo signals."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "SIK was recently demonstrated to phosphorylate Sav at Serine-413, resulting in dissociation of the Hippo complex and activation of Yki (<a href=\"#bib31\">Wehr et al., 2013</a>). SIKs are required for diet-enhanced Ras/Src-tumor growth in HDS (<a href=\"#fig3\">Figure 3C</a>). Conversely, expression of a constitutively activated isoform of SIK was sufficient to promote Ras/Src-tumor overgrowth even in a control diet (<a href=\"#fig4\">Figure 4B</a>). Mammalian SIKs are regulated by glucose and by insulin signaling (<a href=\"#bib29\">Wang et al., 2008</a>, <a href=\"#bib30\">2011</a>). However, a more recent report indicated that glucagon but not insulin regulates SIK2 activity in the liver (<a href=\"#bib25\">Patel et al., 2014</a>). Our data demonstrate that increased insulin signaling is sufficient to promote SIK activity through Akt in Ras/Src-activated cells (<a href=\"#fig3\">Figure 3A</a>, <a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). We conclude that SIKs couple nutrient (insulin) availability to Yki-mediated evasion of insulin resistance and tumor growth, ensuring Ras/Src-tumor growth under nutrient favorable conditions."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Our results place SIKs as key sensors of nutrient and energy availability in Ras/Src-tumors through increased insulin signaling and, hence, increased glucose availability. SIK activity promotes Ras/Src-activated cells to efficiently respond to upstream Hippo signals, ensuring tumor overgrowth in organisms that are otherwise insulin resistant. One interesting question is whether this mechanism is relevant beyond the context of an obesity-cancer connection: both Ras and Src have pleiotropic effects on developmental processes including survival, proliferation, morphogenesis, differentiation, and invasion, and these mechanisms may facilitate these processes under nutrient favorable conditions. From a treatment perspective our data highlight SIKs as potential therapeutic targets. Limiting SIK activity through compounds such as HG-9-91-01 may break the connection between oncogenes and diet, targeting key aspects of tumor progression that are enhanced in obese individuals."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Fly stocks", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<i>UAS-ras1</i><sup><i>G12V</i></sup><i>, UAS-inr</i><sup><i>A1325D</i></sup> <i>(inr</i><sup><i>CA</i></sup><i>), UAS-wts, ex</i><sup><i>697</i></sup><i>(ex-lacZ) , Diap1</i><sup><i>j5C8</i></sup> <i>(diap1-lacZ), akt</i><sup><i>04226</i></sup> flies were obtained from the Bloomington <i>Drosophila</i> Stock Center. <i>UAS-wg</i><sup><i>RNAi</i></sup> and <i>UAS-sik2</i><sup><i>RNAi</i></sup> flies were obtained from Vienna <i>Drosophila</i> RNAi Center. The following stocks were kindly provided to us: <i>FRT82B, csk</i><sup><i>Q156Stop</i></sup> by A. O'Reilly and M. Simon; <i>ey(3.5)-FLP1</i> by G. Halder; <i>UAS-sik2</i><sup><i>S1032A</i></sup> (<i>sik2</i><sup><i>CA</i></sup>) by N. Tapon; <i>wts</i><sup><i>X1</i></sup> by C. Pfleger."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To create eyeless-driven green fluorescent protein (GFP)\u2013labeled clones, flies with the genotype <i>ey(3.5)-FLP1; act &gt; y+&gt;gal4,UAS-GFP; FRT82B,tub-gal80</i> were crossed with flies with the following genotypes: (a) <i>UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/TM6b</i>; (b) <i>UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>, UAS-wg</i><sup><i>RNAi</i></sup><i>/TM6b</i>; (c) <i>UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>, UAS-wts/TM6b</i>; (d) <i>UAS-inr</i><sup><i>A1325D</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/TM6b</i>; (e) <i>UAS-inr</i><sup><i>A1325D</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>, UAS-wg</i><sup><i>RNAi</i></sup><i>/TM6b</i>; (f) <i>UAS-inr</i><sup><i>A1325D</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>, UAS-wts/TM6b</i>; (g) <i>FRT82B, UAS-wg</i><sup><i>RNAi</i></sup>; (h) <i>FRT82B, UAS-wts</i>; (i) <i>UAS-ras1</i><sup><i>G12V</i></sup><i>; diap1-lacZ, FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/TM6b</i>; (j) <i>UAS-inr</i><sup><i>A1325D</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; diap1-lacZ, FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/TM6b</i>; (k) <i>UAS-inr</i><sup><i>A1325D</i></sup><i>; diap1-lacZ, FRT82B/TM6b</i>; (l) <i>ex</i><sup><i>697</i></sup><i>; FRT82B/SM6-TM6b</i>; (m) <i>ex</i><sup><i>697</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/SM6-TM6b</i>; (n) <i>FRT82B, wts</i><sup><i>X1</i></sup><i>/TM6b</i>; (o) <i>UAS-lacZ; FRT82B</i>; (p) <i>UAS-sik2</i><sup><i>RNAi</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/TM6b</i>; (q) <i>UAS-ras1</i><sup><i>G12V</i></sup><i>; UAS-sik2</i><sup><i>CA</i></sup><i>, FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>/TM6b</i>; (r) <i>UAS-sik2</i><sup><i>RNAi</i></sup><i>; FRT82B</i>; (s) <i>UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>, akt</i><sup><i>04226</i></sup> <i>/TM6b</i>; (t) <i>UAS-inr</i><sup><i>A1325D</i></sup><i>, UAS-ras1</i><sup><i>G12V</i></sup><i>; FRT82B, csk</i><sup><i>Q156Stop</i></sup><i>, akt</i><sup><i>04226</i></sup> <i>/TM6b</i>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Cultures", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Cultures were carried out on Bloomington semi-defined medium (described by the Bloomington <i>Drosophila</i> stock center) with modifications. Detailed recipes for control diet and HDS is previously described (<a href=\"#bib18\">Musselman et al., 2011</a>). The following final concentrations of carbohydrates were included: 0.15 M sucrose (control diet) and 1.0 M sucrose (HDS). Cultures were performed at 25\u00b0C."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Immunofluorescence, western blotting", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "These procedures were performed as previously described (<a href=\"#bib15\">Hirabayashi et al., 2013</a>). Primary antibodies used for immunofluorescence were: mouse anti-Wingless (DSHB: Developmental Studies Hybridoma Bank, Iowa City, IA, United States), mouse anti-Cyclin E (DSHB), mouse anti-\u03b2-galactosidase (DSHB), rabbit anti-Myc (Santa Cruz Biotechnology, Dallas, TX, United States). Western blots were probed with antibodies against Yki (gift from K Irvine) (<a href=\"#bib23\">Oh and Irvine, 2008</a>), phospho-Yki (pS168) (gift from D. <i>Pan</i>) (<a href=\"#bib8\">Dong et al., 2007</a>), phospho-Sav (pS413) (gift from N Tapon) (<a href=\"#bib31\">Wehr et al., 2013</a>), and Syntaxin (DSHB)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-4", 
+                        "title": "Drugs", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "HG-9-91-01 (MedChem Express, Princeton, NJ, United States) was solubilized in DMSO and diluted directly into the fly medium and vortexed extensively to obtain a homogeneous culture."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Arnold", 
+                            "index": "Arnold, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Pandeya", 
+                            "index": "Pandeya, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Byrnes", 
+                            "index": "Byrnes, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AG Renehan", 
+                            "index": "Renehan, AG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GA Stevens", 
+                            "index": "Stevens, GA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ezzati", 
+                            "index": "Ezzati, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ferlay", 
+                            "index": "Ferlay, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Miranda", 
+                            "index": "Miranda, JJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Romieu", 
+                            "index": "Romieu, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Dikshit", 
+                            "index": "Dikshit, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Forman", 
+                            "index": "Forman, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Soerjomataram", 
+                            "index": "Soerjomataram, I"
+                        }
+                    }
+                ], 
+                "articleTitle": "Global burden of cancer attributable to high body-mass index in 2012: a population-based study", 
+                "journal": {
+                    "name": [
+                        "The Lancet Oncology"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "36", 
+                    "last": "46", 
+                    "range": "36\u201346"
+                }, 
+                "doi": "10.1016/S1470-2045(14)71123-4"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "1993", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Boedigheimer", 
+                            "index": "Boedigheimer, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Laughon", 
+                            "index": "Laughon, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Expanded: a gene involved in the control of cell proliferation in imaginal discs", 
+                "journal": {
+                    "name": [
+                        "Development"
+                    ]
+                }, 
+                "volume": "118", 
+                "pages": {
+                    "first": "1291", 
+                    "last": "1301", 
+                    "range": "1291\u20131301"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EE Calle", 
+                            "index": "Calle, EE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Rodriguez", 
+                            "index": "Rodriguez, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Walker-Thurmond", 
+                            "index": "Walker-Thurmond, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Thun", 
+                            "index": "Thun, MJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Overweight, obesity, and mortality from cancer in a prospectively studied cohort of U.S. adults", 
+                "journal": {
+                    "name": [
+                        "The New England Journal of Medicine"
+                    ]
+                }, 
+                "volume": "348", 
+                "pages": {
+                    "first": "1625", 
+                    "last": "1638", 
+                    "range": "1625\u20131638"
+                }, 
+                "doi": "10.1056/NEJMoa021423"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Cho", 
+                            "index": "Cho, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Feng", 
+                            "index": "Feng, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Rauskolb", 
+                            "index": "Rauskolb, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Maitra", 
+                            "index": "Maitra, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Fehon", 
+                            "index": "Fehon, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KD Irvine", 
+                            "index": "Irvine, KD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Delineation of a Fat tumor suppressor pathway", 
+                "journal": {
+                    "name": [
+                        "Nature Genetics"
+                    ]
+                }, 
+                "volume": "38", 
+                "pages": {
+                    "first": "1142", 
+                    "last": "1150", 
+                    "range": "1142\u20131150"
+                }, 
+                "doi": "10.1038/ng1887"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Choi", 
+                            "index": "Choi, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DS Lim", 
+                            "index": "Lim, DS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Chung", 
+                            "index": "Chung, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Feeding and fasting signals converge on the LKB1-sik3 pathway to regulate lipid metabolism in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "PLOS Genetics"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": "e1005263", 
+                "doi": "10.1371/journal.pgen.1005263"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Clark", 
+                            "index": "Clark, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KF MacKenzie", 
+                            "index": "MacKenzie, KF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Petkevicius", 
+                            "index": "Petkevicius, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Kristariyanto", 
+                            "index": "Kristariyanto, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Zhang", 
+                            "index": "Zhang, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HG Choi", 
+                            "index": "Choi, HG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Peggie", 
+                            "index": "Peggie, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Plater", 
+                            "index": "Plater, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PG Pedrioli", 
+                            "index": "Pedrioli, PG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E McIver", 
+                            "index": "McIver, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NS Gray", 
+                            "index": "Gray, NS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Arthur", 
+                            "index": "Arthur, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Cohen", 
+                            "index": "Cohen, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Phosphorylation of CRTC3 by the salt-inducible kinases controls the interconversion of classically activated and regulatory macrophages", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "109", 
+                "pages": {
+                    "first": "16986", 
+                    "last": "16991", 
+                    "range": "16986\u201316991"
+                }, 
+                "doi": "10.1073/pnas.1215450109"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Dentin", 
+                            "index": "Dentin, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Liu", 
+                            "index": "Liu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Koo", 
+                            "index": "Koo, SH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hedrick", 
+                            "index": "Hedrick, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Vargas", 
+                            "index": "Vargas, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Heredia", 
+                            "index": "Heredia, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Yates III", 
+                            "index": "Yates, J, III"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Montminy", 
+                            "index": "Montminy, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Insulin modulates gluconeogenesis by inhibition of the coactivator TORC2", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "449", 
+                "pages": {
+                    "first": "366", 
+                    "last": "369", 
+                    "range": "366\u2013369"
+                }, 
+                "doi": "10.1038/nature06128"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Dong", 
+                            "index": "Dong, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Feldmann", 
+                            "index": "Feldmann, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Huang", 
+                            "index": "Huang, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Wu", 
+                            "index": "Wu, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Zhang", 
+                            "index": "Zhang, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Comerford", 
+                            "index": "Comerford, SA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MF Gayyed", 
+                            "index": "Gayyed, MF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Anders", 
+                            "index": "Anders, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Maitra", 
+                            "index": "Maitra, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Pan", 
+                            "index": "Pan, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Elucidation of a universal size-control mechanism in <i>Drosophila</i> and mammals", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "130", 
+                "pages": {
+                    "first": "1120", 
+                    "last": "1133", 
+                    "range": "1120\u20131133"
+                }, 
+                "doi": "10.1016/j.cell.2007.07.019"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Enomoto", 
+                            "index": "Enomoto, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Igaki", 
+                            "index": "Igaki, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Src controls tumorigenesis via JNK-dependent regulation of the Hippo pathway in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "EMBO Reports"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "65", 
+                    "last": "72", 
+                    "range": "65\u201372"
+                }, 
+                "doi": "10.1038/embor.2012.185"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Enomoto", 
+                            "index": "Enomoto, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Kizawa", 
+                            "index": "Kizawa, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ohsawa", 
+                            "index": "Ohsawa, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Igaki", 
+                            "index": "Igaki, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "JNK signaling is converted from anti- to pro-tumor pathway by Ras-mediated switch of Warts activity", 
+                "journal": {
+                    "name": [
+                        "Developmental Biology"
+                    ]
+                }, 
+                "volume": "403", 
+                "pages": {
+                    "first": "162", 
+                    "last": "171", 
+                    "range": "162\u2013171"
+                }, 
+                "doi": "10.1016/j.ydbio.2015.05.001"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Goulev", 
+                            "index": "Goulev, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JD Fauny", 
+                            "index": "Fauny, JD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Gonzalez-Marti", 
+                            "index": "Gonzalez-Marti, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Flagiello", 
+                            "index": "Flagiello, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Silber", 
+                            "index": "Silber, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Zider", 
+                            "index": "Zider, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "SCALLOPED interacts with YORKIE, the nuclear effector of the Hippo tumor-suppressor pathway in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "Current Biology"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "435", 
+                    "last": "441", 
+                    "range": "435\u2013441"
+                }, 
+                "doi": "10.1016/j.cub.2008.02.034"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Halder", 
+                            "index": "Halder, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Johnson", 
+                            "index": "Johnson, RL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Hippo signaling: growth control and beyond", 
+                "journal": {
+                    "name": [
+                        "Development"
+                    ]
+                }, 
+                "volume": "138", 
+                "pages": {
+                    "first": "9", 
+                    "last": "22", 
+                    "range": "9\u201322"
+                }, 
+                "doi": "10.1242/dev.045500"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Hamaratoglu", 
+                            "index": "Hamaratoglu, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Willecke", 
+                            "index": "Willecke, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kango-Singh", 
+                            "index": "Kango-Singh, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Nolo", 
+                            "index": "Nolo, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hyun", 
+                            "index": "Hyun, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Tao", 
+                            "index": "Tao, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Jafar-Nejad", 
+                            "index": "Jafar-Nejad, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Halder", 
+                            "index": "Halder, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "The tumour-suppressor genes NF2/Merlin and expanded act through Hippo signalling to regulate cell proliferation and apoptosis", 
+                "journal": {
+                    "name": [
+                        "Nature Cell Biology"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": {
+                    "first": "27", 
+                    "last": "36", 
+                    "range": "27\u201336"
+                }, 
+                "doi": "10.1038/ncb1339"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Harvey", 
+                            "index": "Harvey, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Tapon", 
+                            "index": "Tapon, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "The Salvador-Warts-Hippo pathway\u2014an emerging tumour-suppressor network", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Cancer"
+                    ]
+                }, 
+                "volume": "7", 
+                "pages": {
+                    "first": "182", 
+                    "last": "191", 
+                    "range": "182\u2013191"
+                }, 
+                "doi": "10.1038/nrc2070"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hirabayashi", 
+                            "index": "Hirabayashi, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Baranski", 
+                            "index": "Baranski, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Cagan", 
+                            "index": "Cagan, RL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Transformed <i>Drosophila</i> cells evade diet-mediated insulin resistance through wingless signaling", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "154", 
+                "pages": {
+                    "first": "664", 
+                    "last": "675", 
+                    "range": "664\u2013675"
+                }, 
+                "doi": "10.1016/j.cell.2013.06.030"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Huang", 
+                            "index": "Huang, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Wu", 
+                            "index": "Wu, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Barrera", 
+                            "index": "Barrera, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Matthews", 
+                            "index": "Matthews, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Pan", 
+                            "index": "Pan, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "The Hippo signaling pathway coordinately regulates cell proliferation and apoptosis by inactivating Yorkie, the <i>Drosophila</i> Homolog of YAP", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "122", 
+                "pages": {
+                    "first": "421", 
+                    "last": "434", 
+                    "range": "421\u2013434"
+                }, 
+                "doi": "10.1016/j.cell.2005.06.007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Lee", 
+                            "index": "Lee, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Luo", 
+                            "index": "Luo, L"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mosaic analysis with a repressible cell marker for studies of gene function in neuronal morphogenesis", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "451", 
+                    "last": "461", 
+                    "range": "451\u2013461"
+                }, 
+                "doi": "10.1016/S0896-6273(00)80701-1"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LP Musselman", 
+                            "index": "Musselman, LP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Fink", 
+                            "index": "Fink, JL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Narzinski", 
+                            "index": "Narzinski, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PV Ramachandran", 
+                            "index": "Ramachandran, PV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SS Hathiramani", 
+                            "index": "Hathiramani, SS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Cagan", 
+                            "index": "Cagan, RL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Baranski", 
+                            "index": "Baranski, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "A high-sugar diet produces obesity and insulin resistance in wild-type <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "Disease Models & Mechanisms"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": {
+                    "first": "842", 
+                    "last": "849", 
+                    "range": "842\u2013849"
+                }, 
+                "doi": "10.1242/dmm.007948"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LP Musselman", 
+                            "index": "Musselman, LP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JL Fink", 
+                            "index": "Fink, JL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PV Ramachandran", 
+                            "index": "Ramachandran, PV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BW Patterson", 
+                            "index": "Patterson, BW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AL Okunade", 
+                            "index": "Okunade, AL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Maier", 
+                            "index": "Maier, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Brent", 
+                            "index": "Brent, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Turk", 
+                            "index": "Turk, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Baranski", 
+                            "index": "Baranski, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Role of fat body lipogenesis in protection against the effects of caloric overload in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "The Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "288", 
+                "pages": {
+                    "first": "8028", 
+                    "last": "8042", 
+                    "range": "8028\u20138042"
+                }, 
+                "doi": "10.1074/jbc.M112.371047"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Na", 
+                            "index": "Na, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LP Musselman", 
+                            "index": "Musselman, LP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Pendse", 
+                            "index": "Pendse, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Baranski", 
+                            "index": "Baranski, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Bodmer", 
+                            "index": "Bodmer, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Ocorr", 
+                            "index": "Ocorr, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Cagan", 
+                            "index": "Cagan, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "A <i>Drosophila</i> model of high sugar diet-induced cardiomyopathy", 
+                "journal": {
+                    "name": [
+                        "PLOS Genetics"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": "e1003175", 
+                "doi": "10.1371/journal.pgen.1003175"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Na", 
+                            "index": "Na, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MT Sweetwyne", 
+                            "index": "Sweetwyne, MT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Park", 
+                            "index": "Park, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Susztak", 
+                            "index": "Susztak, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Cagan", 
+                            "index": "Cagan, RL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Diet-induced podocyte dysfunction in <i>Drosophila</i> and mammals", 
+                "journal": {
+                    "name": [
+                        "Cell Reports"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "636", 
+                    "last": "647", 
+                    "range": "636\u2013647"
+                }, 
+                "doi": "10.1016/j.celrep.2015.06.056"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Neto-Silva", 
+                            "index": "Neto-Silva, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S de Beco", 
+                            "index": "de Beco, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Johnston", 
+                            "index": "Johnston, LA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Evidence for a growth-stabilizing regulatory feedback mechanism between Myc and Yorkie, the <i>Drosophila</i> homolog of Yap", 
+                "journal": {
+                    "name": [
+                        "Developmental Cell"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "507", 
+                    "last": "520", 
+                    "range": "507\u2013520"
+                }, 
+                "doi": "10.1016/j.devcel.2010.09.009"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Oh", 
+                            "index": "Oh, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KD Irvine", 
+                            "index": "Irvine, KD"
+                        }
+                    }
+                ], 
+                "articleTitle": "In vivo regulation of Yorkie phosphorylation and localization", 
+                "journal": {
+                    "name": [
+                        "Development"
+                    ]
+                }, 
+                "volume": "135", 
+                "pages": {
+                    "first": "1081", 
+                    "last": "1088", 
+                    "range": "1081\u20131088"
+                }, 
+                "doi": "10.1242/dev.015255"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ohsawa", 
+                            "index": "Ohsawa, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Sato", 
+                            "index": "Sato, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Enomoto", 
+                            "index": "Enomoto, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Nakamura", 
+                            "index": "Nakamura, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Betsumiya", 
+                            "index": "Betsumiya, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Igaki", 
+                            "index": "Igaki, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Mitochondrial defect drives non-autonomous tumour progression through Hippo signalling in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "490", 
+                "pages": {
+                    "first": "547", 
+                    "last": "551", 
+                    "range": "547\u2013551"
+                }, 
+                "doi": "10.1038/nature11452"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Patel", 
+                            "index": "Patel, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Foretz", 
+                            "index": "Foretz, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Marion", 
+                            "index": "Marion, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DG Campbell", 
+                            "index": "Campbell, DG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Gourlay", 
+                            "index": "Gourlay, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Boudaba", 
+                            "index": "Boudaba, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Tournier", 
+                            "index": "Tournier, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Titchenell", 
+                            "index": "Titchenell, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Peggie", 
+                            "index": "Peggie, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Deak", 
+                            "index": "Deak, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wan", 
+                            "index": "Wan, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KH Kaestner", 
+                            "index": "Kaestner, KH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O G\u00f6ransson", 
+                            "index": "G\u00f6ransson, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Viollet", 
+                            "index": "Viollet, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NS Gray", 
+                            "index": "Gray, NS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Birnbaum", 
+                            "index": "Birnbaum, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sutherland", 
+                            "index": "Sutherland, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Sakamoto", 
+                            "index": "Sakamoto, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "The LKB1-salt-inducible kinase pathway functions as a key gluconeogenic suppressor in the liver", 
+                "journal": {
+                    "name": [
+                        "Nature Communications"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "4535", 
+                "doi": "10.1038/ncomms5535"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AG Renehan", 
+                            "index": "Renehan, AG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Tyson", 
+                            "index": "Tyson, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Egger", 
+                            "index": "Egger, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RF Heller", 
+                            "index": "Heller, RF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Zwahlen", 
+                            "index": "Zwahlen, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Body-mass index and incidence of cancer: a systematic review and meta-analysis of prospective observational studies", 
+                "journal": {
+                    "name": [
+                        "Lancet"
+                    ]
+                }, 
+                "volume": "371", 
+                "pages": {
+                    "first": "569", 
+                    "last": "578", 
+                    "range": "569\u2013578"
+                }, 
+                "doi": "10.1016/S0140-6736(08)60269-X"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Tapon", 
+                            "index": "Tapon, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KF Harvey", 
+                            "index": "Harvey, KF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DW Bell", 
+                            "index": "Bell, DW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DC Wahrer", 
+                            "index": "Wahrer, DC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TA Schiripo", 
+                            "index": "Schiripo, TA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Haber", 
+                            "index": "Haber, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IK Hariharan", 
+                            "index": "Hariharan, IK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Salvador promotes both cell cycle exit and apoptosis in <i>Drosophila</i> and is mutated in human cancer cell lines", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "110", 
+                "pages": {
+                    "first": "467", 
+                    "last": "478", 
+                    "range": "467\u2013478"
+                }, 
+                "doi": "10.1016/S0092-8674(02)00824-3"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Udan", 
+                            "index": "Udan, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Kango-Singh", 
+                            "index": "Kango-Singh, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Nolo", 
+                            "index": "Nolo, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Tao", 
+                            "index": "Tao, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Halder", 
+                            "index": "Halder, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Hippo promotes proliferation arrest and apoptosis in the Salvador/Warts pathway", 
+                "journal": {
+                    "name": [
+                        "Nature Cell Biology"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": {
+                    "first": "914", 
+                    "last": "920", 
+                    "range": "914\u2013920"
+                }, 
+                "doi": "10.1038/ncb1050"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Wang", 
+                            "index": "Wang, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Goode", 
+                            "index": "Goode, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Best", 
+                            "index": "Best, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Meltzer", 
+                            "index": "Meltzer, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PE Schilman", 
+                            "index": "Schilman, PE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Chen", 
+                            "index": "Chen, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Garza", 
+                            "index": "Garza, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JB Thomas", 
+                            "index": "Thomas, JB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Montminy", 
+                            "index": "Montminy, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "The insulin-regulated CREB coactivator TORC promotes stress resistance in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "Cell Metabolism"
+                    ]
+                }, 
+                "volume": "7", 
+                "pages": {
+                    "first": "434", 
+                    "last": "444", 
+                    "range": "434\u2013444"
+                }, 
+                "doi": "10.1016/j.cmet.2008.02.010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Wang", 
+                            "index": "Wang, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Moya", 
+                            "index": "Moya, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Niessen", 
+                            "index": "Niessen, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Hoover", 
+                            "index": "Hoover, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MM Mihaylova", 
+                            "index": "Mihaylova, MM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Shaw", 
+                            "index": "Shaw, RJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Yates III", 
+                            "index": "Yates, JR, III"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WH Fischer", 
+                            "index": "Fischer, WH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JB Thomas", 
+                            "index": "Thomas, JB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Montminy", 
+                            "index": "Montminy, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "A hormone-dependent module regulating energy balance", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "145", 
+                "pages": {
+                    "first": "596", 
+                    "last": "606", 
+                    "range": "596\u2013606"
+                }, 
+                "doi": "10.1016/j.cell.2011.04.013"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MC Wehr", 
+                            "index": "Wehr, MC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MV Holder", 
+                            "index": "Holder, MV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Gailite", 
+                            "index": "Gailite, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RE Saunders", 
+                            "index": "Saunders, RE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TM Maile", 
+                            "index": "Maile, TM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Ciirdaeva", 
+                            "index": "Ciirdaeva, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Instrell", 
+                            "index": "Instrell, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Jiang", 
+                            "index": "Jiang, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Howell", 
+                            "index": "Howell, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Rossner", 
+                            "index": "Rossner, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Tapon", 
+                            "index": "Tapon, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "Salt-inducible kinases regulate growth through the Hippo signalling pathway in <i>Drosophila</i>", 
+                "journal": {
+                    "name": [
+                        "Nature Cell Biology"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "61", 
+                    "last": "71", 
+                    "range": "61\u201371"
+                }, 
+                "doi": "10.1038/ncb2658"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Wu", 
+                            "index": "Wu, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Liu", 
+                            "index": "Liu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zheng", 
+                            "index": "Zheng, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Dong", 
+                            "index": "Dong, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Pan", 
+                            "index": "Pan, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "The TEAD/TEF family protein Scalloped mediates transcriptional output of the Hippo growth-regulatory pathway", 
+                "journal": {
+                    "name": [
+                        "Developmental Cell"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "388", 
+                    "last": "398", 
+                    "range": "388\u2013398"
+                }, 
+                "doi": "10.1016/j.devcel.2008.01.007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Zhang", 
+                            "index": "Zhang, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Ren", 
+                            "index": "Ren, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Zhang", 
+                            "index": "Zhang, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Chen", 
+                            "index": "Chen, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Wang", 
+                            "index": "Wang, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Jiang", 
+                            "index": "Jiang, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "The TEAD/TEF family of transcription factor scalloped mediates Hippo signaling in organ size control", 
+                "journal": {
+                    "name": [
+                        "Developmental Cell"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "377", 
+                    "last": "387", 
+                    "range": "377\u2013387"
+                }, 
+                "doi": "10.1016/j.devcel.2008.01.006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Zhao", 
+                            "index": "Zhao, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Wei", 
+                            "index": "Wei, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Li", 
+                            "index": "Li, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Udan", 
+                            "index": "Udan, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Q Yang", 
+                            "index": "Yang, Q"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Kim", 
+                            "index": "Kim, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Xie", 
+                            "index": "Xie, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Ikenoue", 
+                            "index": "Ikenoue, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Yu", 
+                            "index": "Yu, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Li", 
+                            "index": "Li, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Zheng", 
+                            "index": "Zheng, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Ye", 
+                            "index": "Ye, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Chinnaiyan", 
+                            "index": "Chinnaiyan, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Halder", 
+                            "index": "Halder, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ZC Lai", 
+                            "index": "Lai, ZC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KL Guan", 
+                            "index": "Guan, KL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Inactivation of YAP oncoprotein by the Hippo pathway is involved in cell contact inhibition and tissue growth control", 
+                "journal": {
+                    "name": [
+                        "Genes & Development"
+                    ]
+                }, 
+                "volume": "21", 
+                "pages": {
+                    "first": "2747", 
+                    "last": "2761", 
+                    "range": "2747\u20132761"
+                }, 
+                "doi": "10.1101/gad.1602907"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank C Pfleger, N Tapon, and members of Cagan, Pfleger and Tapon laboratories for helpful discussions, and C Pfleger, A O'Reilly, M Simon, D Pan, K Irvine, and N Tapon for kindly providing reagents. We also thank the Bloomington <i>Drosophila</i> Stock Center (NIH P40OD018537), Vienna RNAi Stock Center and Developmental Studies Hybridoma Bank for fly strains and antibodies. This research was supported by grants from the National Cancer Institute (R01CA170495, R01-CA109730; R L C), PRESTO, Japan Science and Technology Agency (SH) and intramural funding from Medical Research Council (SH)."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.08501.014", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \u201cSalt-Inducible Kinases Mediate Nutrient-Sensing To Link Dietary Sugar and Tumorigenesis in <i>Drosophila\u201d</i> for peer review at <i>eLife</i>. Your submission has been favorably evaluated by Tony Hunter (Senior Editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The work addresses the link between diabetes/obesity and increased tumour susceptibility. In previous work, the authors have established a <i>Drosophila</i> model in which a combination of dietary glucose and Ras + Src oncogenes can lead to enhanced tumorigenesis by inducing the expression of Wnt and Insulin Receptor. In the current manuscript, the authors identify the Hippo pathway effector Yorkie as an essential mediator of Wnt induction in the tumors. Mechanistically, the authors show that activation of Yki is due to activation of Salt Inducible Kinases (SIKs) by Ras + Src + dietary glucose. Overall, the study is well conducted and clearly presented, and will be of broad interest to the cancer, diabetes and developmental growth control communities. The authors have identified a potentially important mechanism by which nutrients cooperate oncogenes to drive tumorigenesis. Furthermore, this represents the first clear demonstration that the Hippo pathway is regulated by metabolism."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Essential revisions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Some additional insight into how SIK is activated in response to HDS would strengthen the study. Is it Akt-dependent, as is suggested by the strong activation of Akt by HDS in their previous study (Hirabayashi et al., Cell 2013)? This could be addressed by activating Akt in normal diet or RNAi depletion of Akt in HDS."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Please include statistics (Reviewer 1), the molecular weight markers and scale bars (Reviewer 2) in the revision."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.08501.015", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Essential revisions:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) Some additional insight into how SIK is activated in response to HDS would strengthen the study. Is it Akt-dependent, as is suggested by the strong activation of Akt by HDS in their previous study (Hirabayashi et al., Cell 2013)? This could be addressed by activating Akt in normal diet or RNAi depletion of Akt in HDS.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Previous studies in mammals and <i>Drosophila</i> have shown that SIKs are activated by Akt. To assess the role of Akt in activation of SIKs in our model, we used a hypomorphic allele of <i>akt</i> (<i>akt</i><sup><i>04226</i></sup>) and established <i>ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup>,<i>akt</i><sup><i>hypo/hypo</i></sup> and <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup>,<i>akt</i><sup><i>hypo/hypo</i></sup> lines. Reducing Akt-activity in <i>ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup> animals raised on a HDS or in <i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup> animals raised on a control diet both suppressed tumor growth and activation of SIKs as assessed by Western-blot analysis using anti-phospho Sav antibody (<a href=\"#fig3s1\">Figure 3\u2013figure supplement 1</a>). Therefore, together with the evidence that increased insulin signaling in Ras/Src-activated cells (<i>inr</i><sup><i>CA</i></sup><i>,ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup>) promotes SIK activity (<a href=\"#fig3\">Figure 3A</a>), we now clearly demonstrate that the activation of SIKs in the eye tissues of <i>ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup> larvae fed HDS and in <i>inr</i><sup><i>CA</i></sup><i>, ras1</i><sup><i>G12V</i></sup><i>;csk</i><sup><i>\u2212/\u2212</i></sup> animals fed a control diet are mediated by Akt."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Please include statistics (Reviewer 1), the molecular weight markers and scale bars (Reviewer 2) in the revision.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have provided statistics for the quantification in <a href=\"#fig1 fig2 fig3\">Figures 1H, 2I and 3J</a>, molecular weight markers in all Western-blot data and scale bars in all immunofluorescence data."
+                }
+            ]
+        }
+    }
+}

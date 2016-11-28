@@ -1,0 +1,3067 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "09685", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.09685", 
+        "authorLine": "Zuzanna Brzosko et al", 
+        "title": "Retroactive modulation of spike timing-dependent plasticity by dopamine", 
+        "published": "2015-10-30T00:00:00", 
+        "versionDate": "2015-10-30T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e09685", 
+        "pdf": "https://publishing-cdn.elifesciences.org/09685/elife-09685-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.09685.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Most reinforcement learning models assume that the reward signal arrives after the activity that led to the reward, placing constraints on the possible underlying cellular mechanisms. Here we show that dopamine, a positive reinforcement signal, can retroactively convert hippocampal timing-dependent synaptic depression into potentiation. This effect requires functional NMDA receptors and is mediated in part through the activation of the cAMP/PKA cascade. Collectively, our results support the idea that reward-related signaling can act on a pre-established synaptic eligibility trace, thereby associating specific experiences with behaviorally distant, rewarding outcomes. This finding identifies a biologically plausible mechanism for solving the \u2018distal reward problem\u2019."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Brzosko et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Zuzanna Brzosko", 
+                    "index": "Brzosko, Zuzanna"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology, Development and Neuroscience, Physiological Laboratory", 
+                            "University of Cambridge"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "ZB, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The other authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Wolfram Schultz", 
+                    "index": "Schultz, Wolfram"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology, Development and Neuroscience, Physiological Laboratory", 
+                            "University of Cambridge"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "WS, Conception and design, Drafting or revising the article", 
+                "competingInterests": "WS: Reviewing editor, <i>eLife</i>."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ole Paulsen", 
+                    "index": "Paulsen, Ole"
+                }, 
+                "orcid": "0000-0002-2258-5455", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology, Development and Neuroscience, Physiological Laboratory", 
+                            "University of Cambridge"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "op210@cam.ac.uk"
+                ], 
+                "contribution": "OP, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The other authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: Experimental procedures and animal use were in accordance with the animal care guidelines of the UK Animals (Scientific Procedures) Act 1986 under Home Office personal license PIL- ICB486697 and project license PPL80/2440 held by the authors. Caution was taken to minimize stress and the number of animals used in experiments."
+            }
+        ], 
+        "impactStatement": "Dopamine, a reward signal in the brain, can retroactively convert hippocampal synaptic depression into potentiation, suggesting an elegant biological solution to the distal reward problem."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "09685", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.09685", 
+        "authorLine": "Zuzanna Brzosko et al", 
+        "title": "Retroactive modulation of spike timing-dependent plasticity by dopamine", 
+        "published": "2015-10-30T00:00:00", 
+        "versionDate": "2015-10-30T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e09685", 
+        "pdf": "https://publishing-cdn.elifesciences.org/09685/elife-09685-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.09685.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Most reinforcement learning models assume that the reward signal arrives after the activity that led to the reward, placing constraints on the possible underlying cellular mechanisms. Here we show that dopamine, a positive reinforcement signal, can retroactively convert hippocampal timing-dependent synaptic depression into potentiation. This effect requires functional NMDA receptors and is mediated in part through the activation of the cAMP/PKA cascade. Collectively, our results support the idea that reward-related signaling can act on a pre-established synaptic eligibility trace, thereby associating specific experiences with behaviorally distant, rewarding outcomes. This finding identifies a biologically plausible mechanism for solving the \u2018distal reward problem\u2019."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Brzosko et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Zuzanna Brzosko", 
+                    "index": "Brzosko, Zuzanna"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology, Development and Neuroscience, Physiological Laboratory", 
+                            "University of Cambridge"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "ZB, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The other authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Wolfram Schultz", 
+                    "index": "Schultz, Wolfram"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology, Development and Neuroscience, Physiological Laboratory", 
+                            "University of Cambridge"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "WS, Conception and design, Drafting or revising the article", 
+                "competingInterests": "WS: Reviewing editor, <i>eLife</i>."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ole Paulsen", 
+                    "index": "Paulsen, Ole"
+                }, 
+                "orcid": "0000-0002-2258-5455", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Physiology, Development and Neuroscience, Physiological Laboratory", 
+                            "University of Cambridge"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "op210@cam.ac.uk"
+                ], 
+                "contribution": "OP, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The other authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: Experimental procedures and animal use were in accordance with the animal care guidelines of the UK Animals (Scientific Procedures) Act 1986 under Home Office personal license PIL- ICB486697 and project license PPL80/2440 held by the authors. Caution was taken to minimize stress and the number of animals used in experiments."
+            }
+        ], 
+        "impactStatement": "Dopamine, a reward signal in the brain, can retroactively convert hippocampal synaptic depression into potentiation, suggesting an elegant biological solution to the distal reward problem.", 
+        "keywords": [
+            "synaptic plasticity", 
+            "dopamine", 
+            "reward"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.09685.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "To help someone learn a new task, we might give them a reward after they have performed well. However, these rewards tend to be given several seconds or minutes after the behavior they are supposed to promote. Therefore, it is unclear how the rewards affect the brain and help accelerate the learning process."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Information is processed and sent around the brain by networks of cells called neurons. These networks are constantly remodeled because learning changes the connections\u2014called synapses\u2014that neighboring neurons signal across. Synapses can be strengthened so that signals are sent across them more easily in the future. Synapses can also be weakened, making it harder for the neurons to subsequently communicate."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "A chemical called dopamine is often produced in the brain when a reward is received. If dopamine is present in a synapse whilst a neuron is signaling to its neighbor, it can affect how effectively this communication occurs. Brzosko et al. have now investigated whether dopamine can also change the synapses if it is applied after signaling has already happened."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The strengthening or weakening of synapses can be triggered by electrically stimulating the neurons on either side of a synapse at particular times. Brzosko et al. did this to neurons in slices of mouse brain, and then applied dopamine to the neurons. The results suggest that dopamine can reverse synaptic weakening and can even cause the synapses to strengthen. However, the dopamine had to be applied immediately after stimulation to be able to strengthen the synapse. The next challenge is to establish whether this change in synaptic strength is responsible for the change in behavior."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Spike timing-dependent plasticity (STDP) is a physiologically relevant form of Hebbian learning (<a href=\"#bib5\">Caporale and Dan, 2008</a>). In its classic form, STDP depends on the order and precise timing of presynaptic and postsynaptic spikes: pre-before-post spike pairings induce timing-dependent long-term potentiation (t-LTP), whereas post-before-pre pairings induce timing-dependent long-term depression (t-LTD) (<a href=\"#bib28\">Markram et al., 1997</a>; <a href=\"#bib3\">Bi and Poo, 1998</a>). However, the quantitative rules of STDP are profoundly influenced by neuromodulators (<a href=\"#bib41\">Seol et al., 2007</a>; <a href=\"#bib38\">Pawlak et al., 2010</a>), including dopamine (DA) (<a href=\"#bib53\">Zhang et al., 2009</a>; <a href=\"#bib11\">Edelmann and Lessmann, 2011</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>). Although it is well established that reward-motivated behavior depends on the activity of DA neurons (<a href=\"#bib40\">Schultz et al., 1997</a>; <a href=\"#bib45\">Suri and Schultz, 1999</a>; <a href=\"#bib37\">Pan et al., 2005</a>), the mechanisms that associate specific experiences with rewarding outcomes, which typically occur after a delay, are not well understood. This is referred to as the <i>distal reward problem</i> (<a href=\"#bib20\">Hull, 1943</a>). To address this problem, here, we examined whether DA modulates STDP not only when applied during, but also\u2014more importantly\u2014when applied <i>after</i> the pairing event."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results and discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We first sought to corroborate the shape of the STDP induction curve by varying the time interval between the presynaptic and postsynaptic activity (\u0394t; <a href=\"#fig1\">Figure 1A,B,G</a>). To this end, we monitored excitatory postsynaptic potentials (EPSPs) that were evoked by extracellular stimulation of the Schaffer-collateral-CA1 pathway during whole-cell recordings of CA1 pyramidal cells in mouse horizontal slices (postnatal days 12\u201318; \u2018Materials and methods\u2019). Plasticity was induced in current clamp mode using an induction protocol that involved 100 pairings of a single EPSP followed by a single postsynaptic spike (t-LTP; <a href=\"#fig1\">Figure 1A</a>) or a single postsynaptic spike followed by a single EPSP (t-LTD; <a href=\"#fig1\">Figure 1B</a>) at 0.2 Hz. Consistent with previous studies (<a href=\"#bib3\">Bi and Poo, 1998</a>; <a href=\"#bib53\">Zhang et al., 2009</a>; <a href=\"#bib11\">Edelmann and Lessmann, 2011</a>), the pre-before-post pairing protocol with \u0394t = +10 ms induced t-LTP (182 \u00b1 14%; <i>t</i>(4) = 5.6, p = 0.0049 vs 100%, <i>n</i> = 5; <a href=\"#fig1\">Figure 1A</a>) and the post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTD (61 \u00b1 9%; <i>t</i>(4) = 4.4, p = 0.0121 vs 100%, <i>n</i> = 5; <a href=\"#fig1\">Figure 1B</a>). Surprisingly, however, we found that the post-before-pre pairing protocol with \u0394t = \u221210 ms instead of inducing t-LTD, elicited robust t-LTP (202 \u00b1 21%; <i>t</i>(6) = 5.0, p = 0.0025 vs 100%, <i>n</i> = 7; <a href=\"#fig1\">Figure 1C,D,G</a>). This conflicts with previous reports from hippocampal cultures (<a href=\"#bib3\">Bi and Poo, 1998</a>; <a href=\"#bib53\">Zhang et al., 2009</a>) and acute slices (<a href=\"#bib11\">Edelmann and Lessmann, 2011</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), where post-before-pre pairing protocols never elicited synaptic potentiation in baseline conditions. Given that DA has been found to widen the time window for the induction of t-LTP (<a href=\"#bib53\">Zhang et al., 2009</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), we wanted to assess whether endogenous DA could be responsible for the potentiation observed with the post-before-pre pairing under our experimental conditions. Therefore, we repeated this set of experiments using the post-before-pre pairing protocol with \u0394t = \u221210 ms in the presence of DA receptor (DAR) antagonists. Indeed, combined application of the D1/D5 receptor antagonist SCH23390 (10 \u03bcM) and D2-like receptor antagonist sulpiride (50 \u03bcM) from the start of the recordings prevented t-LTP and enabled t-LTD instead (72 \u00b1 8%; <i>t</i>(5) = 3.6, p = 0.0160 vs 100%, <i>n</i> = 6; <a href=\"#fig1\">Figure 1C,D,G</a>), rendering the STDP induction curve similar to that observed in hippocampal cultures (<a href=\"#bib3\">Bi and Poo, 1998</a>; <a href=\"#bib53\">Zhang et al., 2009</a>). These results suggest a modulatory action of endogenous DA, presumably released during the pairing protocol (<a href=\"#bib13\">Frey et al., 1990</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), which resulted in the changed polarity of plasticity at narrow negative spike-timing intervals."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09685.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Dopamine widens the time window for induction of t-LTP.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Example plots of normalized EPSP slopes demonstrating that (<b>A</b>) pre-before-post pairing protocol with \u0394t = +10 ms induced t-LTP, whereas (<b>B</b>) post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTD. Insets, pairing protocols. Traces show an excitatory postsynaptic potential (EPSP) before (1) and 40 min after (2) pairing. (<b>C</b>) Endogenous DA widens the spike time window for induction of t-LTP. In the absence of DA receptor antagonists, the post-before-pre pairing protocol with \u0394t = \u221210 ms induced t-LTP (red), whereas application of SCH23390 and sulpiride at the start of the recordings prevented this t-LTP and enabled t-LTD instead (black). Traces are presented as in <b>A</b>. (<b>D</b>) Summary of results. (<b>E</b>) Exogenous DA widens the spike time window for induction of t-LTP. In the presence of 20 \u03bcM DA, the post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTP (red), whereas in control condition the same pairing protocol induced t-LTD (black). Traces are presented as in <b>A</b>. (<b>F</b>) Summary of results. (<b>G</b>) Summary of the spike timing-dependent plasticity (STDP) induction with various spike-timing intervals (\u0394t in ms) in control condition (green; data point at \u221220 ms represents data combined from <b>B</b> and <b>E</b>), in the presence of DA receptor antagonists (SCH23390 and sulpiride; black), or DA (red). Each data point is the group average EPSP slope percentage change from baseline. Error bars represent s.e.m. Significant difference (*p &lt; 0.05, **p &lt; 0.01, ***p &lt; 0.001) compared with the baseline (one-sample two-tailed Student's <i>t</i>-test) or between the indicated two groups (paired two-tailed Student's <i>t</i>-test). The numbers of cells are shown in parentheses."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09685-fig1-v1.tif", 
+                        "sourceData": [
+                            {
+                                "doi": "10.7554/eLife.09685.004", 
+                                "id": "SD1-data", 
+                                "label": "Figure 1\u2014source data 1.", 
+                                "title": "Source data for <a href=\"#fig1\">Figure 1</a>.", 
+                                "mediaType": "application/xlsx", 
+                                "uri": "elife-09685-fig1-data1-v1.xlsx", 
+                                "filename": "elife-09685-fig1-data1-v1.xlsx"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Next, we wanted to examine whether the application of exogenous DA during pairing at negative spike-timing intervals facilitates synaptic potentiation. Indeed, the post-before-pre pairing protocol with \u0394t = \u221220 ms, which elicited robust t-LTD in control condition (74 \u00b1 9%, <i>t</i>(8) = 3.0, p = 0.0165 vs 100%, <i>n</i> = 9; <a href=\"#fig1\">Figure 1E\u2013G</a>), induced significant t-LTP when exogenous DA (20 \u03bcM) was bath-applied for 10\u201312 min from 2 min before and during the post-before-pre pairings in interleaved experiments (144 \u00b1 12%; <i>t</i>(5) = 3.7, p = 0.0148 vs 100%, <i>n</i> = 6; <a href=\"#fig1\">Figure 1E\u2013G</a>). Therefore, in accordance with previous findings (<a href=\"#bib53\">Zhang et al., 2009</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), the presence of DA during the coordinated spiking activity widens the spike time interval for induction of t-LTP."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "A crucial aspect of reinforcement learning models is the ability of the reinforcing signal (DA) to strengthen active synapses, even when it arrives after the activity (<a href=\"#bib47\">Sutton and Barto, 1981</a>; <a href=\"#bib22\">Izhikevich, 2007</a>). To test this hypothesis experimentally, we applied DA <i>after</i> the t-LTD induction protocol. Exogenous DA (100 \u03bcM) added to the perfusion system for 10\u201312 min starting within 1 min after the post-before-pre pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP (169 \u00b1 16%, <i>t</i>(5) = 4.3, p = 0.0078 vs 100%, <i>n</i> = 6; <a href=\"#fig2\">Figure 2A,B</a>). This implies that DA can have a retroactive effect allowing negative spike pairings to induce t-LTP. The specificity of this DAergic conversion of STDP was assessed using DAR antagonists. Indeed, combined application of DAR antagonists, SCH23390 (10 \u03bcM) and sulpiride (50 \u03bcM), prevented DA-induced conversion of t-LTD into t-LTP, resulting in significant t-LTD instead (63 \u00b1 12%, <i>t</i>(5) = 3.0, p = 0.0289 vs 100%, <i>n</i> = 6, \u0394t = \u221220 ms). Thus, the conversion of t-LTD into t-LTP was due to specific DAR activation. Importantly, when the test pathway was not stimulated following the pairing protocol until after DA washout (stimulation resumed 15 min after pairing), robust t-LTD was induced (61 \u00b1 5%, <i>t</i>(5) = 8.1, p = 0.0005 vs 100%, <i>n</i> = 6; <a href=\"#fig2\">Figure 2A,B</a>). The effect of DA was, therefore, activity dependent, demonstrating that the reinforcing signal is capable of acting specifically on the active inputs. To exclude the possibility that DA by itself could potentiate the test pathway, control experiments with ongoing synaptic stimulation over 60 min at 0.2 Hz, but without pairing with postsynaptic action potentials, were performed. Consistent with earlier reports (<a href=\"#bib36\">Otmakhova and Lisman, 1999</a>), DA had no significant effect on the basal Schaffer-collateral transmission (110 \u00b1 7%, <i>t</i>(7) = 1.4, p = 0.2169 vs 100%, <i>n</i> = 8; <a href=\"#fig2\">Figure 2A,B</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09685.005", 
+                        "id": "fig2", 
+                        "label": "Figure 2.", 
+                        "title": "Dopamine retroactively converts t-LTD into t-LTP.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) DA applied immediately after the pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP (+Pairing +Stim; red). If the pathway was not stimulated following the pairing protocol until after DA washout, t-LTD was induced (+Pairing \u2212Stim; black). In the absence of the pairing protocol, DA had no effect on baseline EPSPs (\u2212Pairing +Stim; blue). Traces show an EPSP before (1) and 40 min after (2) pairing. (<b>B</b>) Summary of results. Error bars represent s.e.m. Significant difference (**p &lt; 0.01, ***p &lt; 0.001) compared with the baseline (one-sample two-tailed Student's <i>t</i>-test). The number of cells is shown in parentheses."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09685-fig2-v1.tif", 
+                        "sourceData": [
+                            {
+                                "doi": "10.7554/eLife.09685.006", 
+                                "id": "SD2-data", 
+                                "label": "Figure 2\u2014source data 1.", 
+                                "title": "Source data for <a href=\"#fig2\">Figure 2</a>.", 
+                                "mediaType": "application/xlsx", 
+                                "uri": "elife-09685-fig2-data1-v1.xlsx", 
+                                "filename": "elife-09685-fig2-data1-v1.xlsx"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Subsequently, we wanted to determine whether the observed DA-induced conversion of t-LTD into t-LTP depends on the timing of DA application following the post-before-pre protocol (<a href=\"#fig3\">Figure 3A\u2013D</a>). We found that delayed application of DA (10 or 30 min after t-LTD pairing protocol) failed to convert t-LTD into t-LTP. Application of DA 10 min after the post-before-pre pairing caused a reversal of t-LTD back to baseline (94 \u00b1 9%, <i>t</i>(11) = 0.7, p = 0.5230 vs 100%, <i>n</i> = 12; <a href=\"#fig3\">Figure 3B,D</a>), whereas application of DA 30 min after the post-before-pre pairing failed to influence t-LTD altogether (59 \u00b1 12%, <i>t</i>(5) = 3.4, p = 0.0200 vs 100%, <i>n</i> = 6; <a href=\"#fig3\">Figure 3C,D</a>). Whilst it has previously been reported that DA applied after the induction of low frequency stimulation-induced LTD can reduce the magnitude of synaptic depression (<a href=\"#bib31\">Mockett et al., 2007</a>), our data demonstrate, for the first time to our knowledge, that DA can change the polarity of STDP when acting within a short time window following the induction protocol."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09685.007", 
+                        "id": "fig3", 
+                        "label": "Figure 3.", 
+                        "title": "Time dependence of the DA-induced conversion of t-LTD into t-LTP.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) DA applied immediately after the pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP, whereas delayed application of DA failed to convert t-LTD into t-LTP and either (<b>B</b>) resulted in a reversal of t-LTD back to baseline (10 min after pairing) or (<b>C</b>) failed to affect t-LTD altogether (30 min after pairing). Traces show an EPSP before (1) and 40 min (<b>A</b>, <b>B</b>) or 60 min (<b>C</b>) after pairing (2). (<b>D</b>) Summary of results. Error bars represent s.e.m. Significant difference (*p &lt; 0.05, **p &lt; 0.01) compared with the baseline (one-sample two-tailed Student's <i>t</i>-test). The number of cells is shown in parentheses."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09685-fig3-v1.tif", 
+                        "sourceData": [
+                            {
+                                "doi": "10.7554/eLife.09685.008", 
+                                "id": "SD3-data", 
+                                "label": "Figure 3\u2014source data 1.", 
+                                "title": "Source data for <a href=\"#fig3\">Figure 3</a>.", 
+                                "mediaType": "application/xlsx", 
+                                "uri": "elife-09685-fig3-data1-v1.xlsx", 
+                                "filename": "elife-09685-fig3-data1-v1.xlsx"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Finally, we aimed to explore the possible mechanisms underlying the DA-induced conversion of t-LTD into t-LTP. Both hippocampal t-LTP and t-LTD (<a href=\"#bib11\">Edelmann and Lessmann, 2011</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), as well as the modulation of STDP by DA (<a href=\"#bib53\">Zhang et al., 2009</a>), require functional NMDA receptors. We, therefore, asked whether the DA-induced conversion of t-LTD into t-LTP is also NMDA receptor dependent. Application of the NMDA receptor antagonist <span class=\"small-caps\">d</span>-2-amino-5-phosphonopentanoic acid (<span class=\"small-caps\">d</span>-AP5, 50 \u03bcM) after the post-before-pre pairing protocol did not by itself affect the development of t-LTD (57 \u00b1 12%, <i>t</i>(5) = 3.6, p = 0.0156 vs 100%, <i>n</i> = 6, \u0394t = \u221220 ms; <a href=\"#fig4\">Figure 4A,D</a>). Nevertheless, DA in the presence of <span class=\"small-caps\">d</span>-AP5 reversed t-LTD back to baseline albeit failing to convert t-LTD into t-LTP (105 \u00b1 12%, <i>t</i>(5) = 0.4, p = 0.6898 vs 100%, <i>n</i> = 6, \u0394t = \u221220 ms; <a href=\"#fig4\">Figure 4A,D</a>). This suggests an important dissociation between two mechanisms involved in the DA-induced conversion of t-LTD into t-LTD, namely a reversal of synaptic depression (de-depression) and synaptic potentiation, one of which is NMDA receptor dependent."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09685.009", 
+                        "id": "fig4", 
+                        "label": "Figure 4.", 
+                        "title": "Cellular mechanisms involved in the DA-induced conversion of t-LTD into t-LTP.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) DA applied immediately after the pairing protocol (\u0394t = \u221220 ms) converted t-LTD into t-LTP (red; data combined from <a href=\"#fig2 fig3\">Figures 2A, 3A</a>). This effect requires NMDA receptors as application of <span class=\"small-caps\">d</span>-AP5 1 min before the DA application partially blocked the conversion of t-LTD into t-LTP (blue), whereas application of <span class=\"small-caps\">d</span>-AP5 alone failed to influence the development of t-LTD (black). Traces show an EPSP before (1) and 40 min after pairing (2). (<b>B</b>) The DA-induced conversion of t-LTD into t-LTP involves the activation of cAMP/PKA signaling cascade, which closely mimics the effect of DA. Forskolin, an AC activator, applied immediately after the pairing protocol (\u0394t = \u221220 ms) converted t-LTD into t-LTP (red). This effect requires NMDA receptors as application of <span class=\"small-caps\">d</span>-AP5 1 min before forskolin application partially blocked the forskolin-induced conversion of t-LTD into t-LTP (blue), whereas application of <span class=\"small-caps\">d</span>-AP5 alone failed to influence the development of t-LTD (black; data same as in <b>A</b>). (<b>C</b>) Downstream of cAMP, PKA is involved in the conversion of t-LTD into t-LTP as application of the PKA inhibitor, H-89, completely prevented the conversion of t-LTD into t-LTP. Traces are presented as in <b>A</b>. (<b>D</b>) Summary of results. Error bars represent s.e.m. Significant difference (*p &lt; 0.05, **p &lt; 0.01, ***p &lt; 0.001) compared with the baseline (one-sample two-tailed Student's <i>t</i>-test) or between the indicated two groups (paired two-tailed Student's <i>t</i>-test). The number of cells is shown in parentheses."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09685-fig4-v1.tif", 
+                        "sourceData": [
+                            {
+                                "doi": "10.7554/eLife.09685.010", 
+                                "id": "SD4-data", 
+                                "label": "Figure 4\u2014source data 1.", 
+                                "title": "Source data for <a href=\"#fig4\">Figure 4</a>.", 
+                                "mediaType": "application/xlsx", 
+                                "uri": "elife-09685-fig4-data1-v1.xlsx", 
+                                "filename": "elife-09685-fig4-data1-v1.xlsx"
+                            }, 
+                            {
+                                "doi": "10.7554/eLife.09685.011", 
+                                "id": "SD5-data", 
+                                "label": "Figure 4\u2014source data 2.", 
+                                "title": "Source data for <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>.", 
+                                "mediaType": "application/xlsx", 
+                                "uri": "elife-09685-fig4-data2-v1.xlsx", 
+                                "filename": "elife-09685-fig4-data2-v1.xlsx"
+                            }, 
+                            {
+                                "doi": "10.7554/eLife.09685.012", 
+                                "id": "SD6-data", 
+                                "label": "Figure 4\u2014source data 3.", 
+                                "title": "Source data for <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>.", 
+                                "mediaType": "application/xlsx", 
+                                "uri": "elife-09685-fig4-data3-v1.xlsx", 
+                                "filename": "elife-09685-fig4-data3-v1.xlsx"
+                            }
+                        ], 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09685.013", 
+                                "id": "fig4s1", 
+                                "label": "Figure 4\u2014figure supplement 1.", 
+                                "title": "The retroactive conversion of t-LTP into t-LTD is due to specific DA receptor activation.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Plot of normalized EPSP slopes demonstrating that (<b>A</b>) application of 10 \u03bcM SCH23390 and 50 \u03bcM sulpiride prevented DA-induced conversion of t-LTD into t-LTP, which resulted in significant t-LTD, whereas (<b>B</b>) neither SCH23390 nor (<b>C</b>) sulpiride alone was able to completely block the DA effect. Traces show an EPSP before (1) and 40 min after (2) pairing. (<b>D</b>) Summary of results. Error bars represent s.e.m. Significant difference (*p &lt; 0.05, **p &lt; 0.01, ***p &lt; 0.001) compared with the baseline (one-sample two-tailed Student's <i>t</i>-test) or between the indicated two groups (paired two-tailed Student's <i>t</i>-test). The number of cells is shown in parentheses."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-09685-fig4-figsupp1-v1.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09685.014", 
+                                "id": "fig4s2", 
+                                "label": "Figure 4\u2014figure supplement 2.", 
+                                "title": "Forskolin had no effect on baseline EPSPs.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Plot of normalized EPSP slopes showing that in the absence of a pairing protocol, application of 50 \u03bcM forskolin does not result in significant synaptic modification (n = 7). Traces show an EPSP at 10 min (1) and 58 min (2) of a recording. Error bars represent s.e.m."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-09685-fig4-figsupp2-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To investigate the intracellular signaling mechanisms involved, we initially set out to establish the DAR subtype associated with the DA-induced conversion of t-LTD into t-LTP. Even though combined application of D1-like and D2-like receptor antagonist completely blocked the DA effect (<a href=\"#fig4s1\">Figure 4\u2014figure supplement 1A,D</a>), application of either D1-like or D2-like receptor antagonist alone only partially prevented the conversion of t-LTD into t-LTP (SCH 23390: 131 \u00b1 16%; <i>t</i>(6) = 1.4, p = 0.0113 vs DA (t-LTP); <i>t</i>(6) = 3.6, p = 0.2277 vs control (t-LTD); <i>t</i>(6) = 1.9, p = 0.0994 vs 100%; <i>n</i> = 7. Sulpiride: 94 \u00b1 13%; <i>t</i>(6) = 3.2, p = 0.0228 vs DA (t-LTP); <i>t</i>(6) = 1.5, p = 0.1932 vs control (t-LTD); <i>t</i>(6) = 0.5, p = 0.6435 vs 100%; <i>n</i> = 7; <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1B\u2013D</a>). This suggests that both receptor subtypes might mediate the retroactive effect of DA on STDP. Given the astounding complexity of D2-like receptor pharmacology (<a href=\"#bib32\">Neve et al., 2004</a>), we first wanted to evaluate the possible involvement of D1-like receptor-activated cAMP/PKA signaling cascade in the DA-induced conversion of t-LTD into t-LTP. D1/D5 receptor stimulation leads to the activation of adenylyl cyclase (AC) and subsequent increase in cyclic adenosine monophosphate (cAMP) and protein kinase A (PKA) activation (<a href=\"#bib17\">Greengard et al., 1999</a>; <a href=\"#bib32\">Neve et al., 2004</a>). We found that the general AC activator, forskolin (50 \u03bcM), applied for 10\u201312 min immediately after the pairing protocol with \u0394t = \u221220 ms resulted in robust conversion of t-LTD into t-LTP (167 \u00b1 17%, <i>t</i>(6) = 3.9, p = 0.0078 vs 100%, <i>n</i> = 7; <a href=\"#fig4\">Figure 4B,D</a>). Notably, forskolin (50 \u03bcM) applied in the absence of the pairing protocol had no significant effect on baseline EPSPs (83 \u00b1 12%, <i>t</i>(6) = 1.4, p = 0.2046 vs 100%, <i>n</i> = 7; <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>). The forskolin-induced conversion of t-LTD into t-LTP was also NMDA receptor dependent since bath application of <span class=\"small-caps\">d</span>-AP5 (50 \u03bcM) 1 min before forskolin treatment prevented synaptic potentiation from developing, although synaptic depression was reversed (102 \u00b1 11%, <i>t</i>(5) = 0.2, p = 0.8616 vs 100%, <i>n</i> = 6; <a href=\"#fig4\">Figure 4B,D</a>). This result suggests that the cAMP cascade works either upstream of or in parallel to NMDA receptor activation for the development of potentiation to occur. Downstream of cAMP, PKA is involved because the PKA inhibitor, H-89 (20 \u00b5M), blocked the DA-induced conversion of t-LTD into t-LTP, revealing significant t-LTD (76 \u00b1 5%, <i>t</i>(6) = 5.0, p = 0.0025 vs 100%, <i>n</i> = 7; <a href=\"#fig4\">Figure 4C,D</a>). Taken together, these results imply that the DA-induced conversion of t-LTD into t-LTP involves activation of the cAMP/PKA signaling cascade, which closely mimics the effects of DA (<a href=\"#fig4\">Figure 4A</a> vs <a href=\"#fig4\">Figure 4B</a>). Although, D2-like receptors are typically associated with the inhibition of AC (<a href=\"#bib32\">Neve et al., 2004</a>), interestingly, there is also evidence that D2-like receptor stimulation can potentiate AC activity (<a href=\"#bib16\">Glass and Felder, 1997</a>; <a href=\"#bib49\">Watts and Neve, 1997</a>). Therefore, while the possibility that D2-like receptors contribute to the conversion of t-LTD into t-LTP via a different signaling cascade cannot be excluded, it is tempting to suggest that the DA-induced conversion of t-LTD into t-LTP is mediated primarily via the cAMP/PKA pathway. Hence, based on our results, we propose that the stimulation of postsynaptic (<a href=\"#fig5\">Figure 5ai</a>) or presynaptic (<a href=\"#fig5\">Figure 5aii</a>) DARs activates the cAMP/PKA pathway, which\u2014via two cellular mechanisms (de-depression and potentiation)\u2014leads to the retroactive conversion of t-LTD into t-LTP."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09685.015", 
+                        "id": "fig5", 
+                        "label": "Figure 5.", 
+                        "title": "Proposed mechanisms underlying the DA-induced conversion of t-LTD into t-LTP.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Schematic diagram depicting core components of the proposed cellular mechanisms underlying the DA-induced conversion of t-LTD into t-LTP (de-depression and potentiation). (<b>Ai</b>) Model based on postsynaptic NMDAR-dependent potentiation (<a href=\"#bib3\">Bi and Poo, 1998</a>; <a href=\"#bib5\">Caporale and Dan, 2008</a>; <a href=\"#bib53\">Zhang et al., 2009</a>; <a href=\"#bib11\">Edelmann and Lessmann, 2011</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>) and metabotropic glutamate receptor-dependent (mGluRs) depression (<a href=\"#bib35\">Otani and Connor, 1998</a>; <a href=\"#bib24\">Kemp and Bashir, 1999</a>; <a href=\"#bib19\">Huber et al., 2000</a>). De-depression (red, left): Activation of G protein-coupled D1/D5 receptors stimulates AC, increasing cAMP and activating PKA (<a href=\"#bib17\">Greengard et al., 1999</a>; <a href=\"#bib32\">Neve et al., 2004</a>), which, via phosphorylation of I-1 (<a href=\"#bib21\">Ingebritsen and Cohen, 1983</a>), reverses the PP1-induced dephosphorylation of synaptic AMPARs (<a href=\"#bib26\">Lee et al., 2000</a>; <a href=\"#bib31\">Mockett et al., 2007</a>). Potentiation (red, right): PKA activation enhances NMDAR function (<a href=\"#bib50\">Westphal et al., 1999</a>; <a href=\"#bib9\">Chen and Roche, 2007</a>). (<b>Aii</b>) Model based on presynaptic depression (<a href=\"#bib4\">Bolshakov and Siegelbaum, 1994</a>; <a href=\"#bib42\">Siegel et al., 1994</a>; <a href=\"#bib34\">Oliet et al., 1997</a>; <a href=\"#bib8\">Charton et al., 1999</a>; <a href=\"#bib48\">Watabe et al., 2002</a>; <a href=\"#bib23\">Jourdain et al., 2007</a>). De-depression (red, left): Activation of presynaptic DA receptors stimulates AC, increasing cAMP and activating PKA (<a href=\"#bib17\">Greengard et al., 1999</a>; <a href=\"#bib32\">Neve et al., 2004</a>), which reverses the calcineurin-dependent presynaptic depression. Potentiation (red, right): as in <b>Ai</b>. Arrow indicates activation/phosphorylation, blunt-ended line indicates inhibition/dephosphorylation. Abbreviations: AMPAR, AMPA-type glutamate receptor; NMDAR, NMDA-type glutamate receptor; mGluR1/5, group I metabotropic glutamate receptor; DAR, dopamine receptor; AC, adenylate cyclase; cAMP, cyclic adenosine monophosphate; PKA, protein kinase A; I-1, inhibitor 1; PP1, protein phosphatase 1; PLC, phospholipase C; IP3, inositol 1,4,5-trisphosphate; ER, endoplasmic reticulum; DAG, diacylglycerol; eCB, endocannabinoid; CB1R, cannabinoid receptor type 1; CN, calcineurin; CaMKII, calcium-calmodulin-dependent protein kinase II. (<b>B</b>) Schematic diagram of synaptic and behavioral timescales in reward learning. During Exploration, the activity-dependent modification of synaptic strength due to spike timing-dependent plasticity (STDP) depends on the coordinated spiking between presynaptic and postsynaptic neurons on a millisecond time scale. Post-before-pre pairing leads to synaptic depression that develops gradually on a scale of minutes. When Reward, signaled via dopamine, follows Exploration with a Delay of seconds to minutes, synaptic depression is converted into potentiation."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-09685-fig5-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The functional implications of our finding depend on the presynaptic source of DA in the hippocampus, which remains controversial because of the apparent discrepancy between DAergic terminals and receptors (<a href=\"#bib39\">Scatton et al., 1980</a>; <a href=\"#bib15\">Gasbarri et al., 1997</a>; <a href=\"#bib27\">Lisman and Grace, 2005</a>). On one hand, it has been argued that noradrenergic terminals from the locus coeruleus, which mediates arousal and the optimization of behavioral performance (<a href=\"#bib1\">Aston-Jones and Cohen, 2005</a>; <a href=\"#bib7\">Chamberlain and Robbins, 2013</a>), may provide a major source of DA release (<a href=\"#bib44\">Smith and Greene, 2012</a>). On the other hand, hippocampal pyramidal cell assemblies are directly affected by concurrent activity in midbrain DAergic neurons (<a href=\"#bib29\">McNamara et al., 2014</a>), which have been linked to reward-seeking behavior (<a href=\"#bib40\">Schultz et al., 1997</a>) and appetitive stimuli (<a href=\"#bib30\">Mirenowicz and Schultz, 1996</a>; <a href=\"#bib12\">Fiorillo et al., 2013</a>). This latter finding (<a href=\"#bib29\">McNamara et al., 2014</a>) not only supports the hypothesis that hippocampal DA is relevant for reward processing, but is also consistent with our result that the activation of DAergic receptors <i>during</i> coordinated spiking activity changes the functional outcome of STDP (<a href=\"#fig1\">Figure 1C\u2013G</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Previous studies examining reinforcement learning at the level of synaptic plasticity have showed that neuromodulators can affect timing-dependent plasticity in locust (<a href=\"#bib6\">Cassenaer and Laurent, 2012</a>) and spine structural plasticity in striatal medium spiny neurons in mice (<a href=\"#bib51\">Yagishita et al., 2014</a>) when acting within a delay time window of 1 s. While this narrow temporal detection window may be important in the striatum, it cannot account for the experimental evidence from behavioral studies of response acquisition with an extended reinforcement delay in rats and pigeons (<a href=\"#bib25\">Lattal and Gleeson, 1990</a>; <a href=\"#bib46\">Sutphin et al., 1998</a>), rhesus monkeys (<a href=\"#bib14\">Galuska and Woods, 2005</a>), and humans (<a href=\"#bib33\">Okouchi, 2009</a>). Meanwhile, our finding demonstrates that DA can modulate STDP in the CA1 with a reinforcement delay of at least 1 min (<a href=\"#fig5\">Figure 5B</a>). Such extended reinforcement delay is likely to be particularly important in hippocampus-dependent learning during spatial exploration."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In conclusion, our work demonstrates a retroactive effect of DA on STDP\u2014converting t-LTD into t-LTP. This effect is mediated at least in part through the activation of the cAMP/PKA cascade and requires the activation of synaptic NMDA receptors. This in turn suggests that the conversion can only occur at synapses that are re-activated following the initial pairing event. Interestingly, it has been reported that hippocampal reactivation events (sharp wave ripples) increase in frequency following reward (<a href=\"#bib43\">Singer and Frank, 2009</a>; <a href=\"#bib2\">Atherton et al., 2015</a>). Thus, in behaving animals, the conditions for the conversion of depression into potentiation might occur during reward-related sharp wave ripple activity. Together, these findings support the concept of a slowly decaying synaptic <i>eligibility trace</i> that is committed to memory by the occurrence of reward and provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in animals (<a href=\"#bib47\">Sutton and Barto, 1981</a>; <a href=\"#bib45\">Suri and Schultz, 1999</a>; <a href=\"#bib37\">Pan et al., 2005</a>; <a href=\"#bib22\">Izhikevich, 2007</a>; <a href=\"#bib18\">Harnett et al., 2009</a>), including humans (<a href=\"#bib10\">Dunsmoor et al., 2015</a>)."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s3-1", 
+                        "title": "Animals", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Wild-type mice (C57BL/6; postnatal days 12\u201318; from Harlan, Bicester, UK or Central Animal Facility, Physiological Laboratory, Cambridge University) of both sexes were housed on a 12-hr light/dark cycle at 19\u201323 \u00b0C, with water and food ad libitum. Experimental procedures and animal use were in accordance with the animal care guidelines of the UK Animals (Scientific Procedures) Act 1986 under personal and project licenses held by the authors. Caution was taken to minimize stress and the number of animals used in the experiments."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-2", 
+                        "title": "Slice preparation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Mice were anesthetized with isoflurane and decapitated. The brain was rapidly removed, glued to the stage of a vibrating microtome (Leica VT 1200S, Leica Biosystems, Wetzlar, Germany) and immersed in ice-cold artificial cerebrospinal fluid (ACSF) containing the following (mM): 126 NaCl, 3 KCl, 26.4 NaH<sub>2</sub>CO<sub>3</sub>, 1.25 NaH<sub>2</sub>PO<sub>4</sub>, 2 MgSO<sub>4</sub>, 2 CaCl<sub>2</sub>, and 10 glucose. The ACSF solution, with pH adjusted to 7.2 and osmolarity to 270\u2013290 mOsm l<sup>\u22121</sup>, was continuously bubbled with carbogen gas (95% O<sub>2</sub>/5% CO<sub>2</sub>). The brain was sectioned into 350-\u03bcm-thick horizontal slices. The slices were incubated in ACSF at room temperature in a submerged-style storage chamber for at least 1 hr. For recordings (1\u20137 hr after slicing), individual slices were transferred to an immersion-type recording chamber, perfused with ACSF (2 ml min<sup>\u22121</sup>) at 24\u201326 \u00b0C."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-3", 
+                        "title": "Electrophysiology", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s3-3-1", 
+                                "title": "Whole-cell recordings", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Whole-cell patch-clamp recordings were performed on CA1 pyramidal neurons (located adjacent to the <i>stratum oriens</i>). For stimulation of Schaffer collaterals, a monopolar stimulation electrode was placed in the <i>stratum radiatum</i> of the CA1 subfield. The hippocampal subfields were visually identified using infrared differential interference contrast (DIC) microscopy. Patch pipettes (resistance: 4\u20138 M\u03a9) were made from borosilicate glass capillaries (0.68 mm inner diameter, 1.2 mm outer diameter), pulled using a P-97 Flaming/Brown micropipette puller (Sutter Instruments Co., Novato, California, USA). The internal solution of patch pipettes was (mM) 110 potassium gluconate, 4 NaCl, 40 HEPES, 2 ATP-Mg, 0.3 GTP (pH adjusted with 1 M KOH to 7.2, and osmolarity with ddH<sub>2</sub>O to 270 mOsm l<sup>\u22121</sup>). The liquid junction potential was not corrected for. Cells were accepted for experiment only if the resting membrane potential at the start of the recording was between \u221255 and \u221270 mV. Membrane potential was held at \u221270 mV throughout further recording by direct current application via the recording electrode. At the beginning of each recording all cells were tested for regular spiking responses to positive current steps\u2014characteristic of pyramidal neurons."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s3-3-2", 
+                                "title": "Stimulation protocol", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "EPSPs of amplitude between 3 and 8 mV were evoked at 0.2 Hz by adjusting the magnitude of direct current pulses (stimulus duration 50 \u03bcs, intensity 100 \u03bcA\u20131 mA). After a stable EPSP baseline period of at least 10 min, STDP was induced by repeated pairings of single presynaptic EPSP evoked by stimulation of Schaffer collaterals and single postsynaptic action potential elicited with the minimum somatic current pulse (1\u20131.8 nA, 3 ms) via the recording electrode. Pairings were repeated 100 times at 0.2 Hz. Spike-timing intervals (\u2206t in ms) were measured between the onset of the EPSP and the onset of the action potential. The EPSPs were monitored for at least 40 min after the end of the pairing protocol. Presynaptic stimulation frequency remained constant throughout the experiment."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-4", 
+                        "title": "Data acquisition and data analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Voltage signals were low-pass filtered at 2 kHz using an Axon Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, California, USA). Data were acquired at 5 kHz via an ITC18 interface board (Instrutech, Port Washington, New York, USA), transmitting to a Dell computer running the Igor Pro software (WaveMetrics, Lake Oswego, Oregon, USA). All experiments were carried out in the current clamp (\u2018bridge\u2019) mode. Series resistance was monitored (10\u201315 M\u03a9) and compensated for by adjusting the bridge balance. Data were discarded if series resistance changed by more than 30%. Data were analyzed using Igor Pro. EPSP slopes were measured on the rising phase of the EPSP as a linear fit between the time points corresponding to 25\u201330% and 70\u201375% of the peak amplitude. For statistical analysis, the mean EPSP slope per minute of the recording was calculated from 12 consecutive sweeps and normalized to the baseline. Normalized ESPS slopes from the last 5 min of the baseline (immediately before pairing) and from the last 5 min of the recording (35\u201340 min or 55\u201360 min after pairing) were averaged. The magnitude of plasticity, as an indicator of synaptic change, was defined as the average EPSP slope after pairing expressed as a percentage of the average EPSP slope during baseline."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-5", 
+                        "title": "Drugs", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The following drugs were used: dopamine hydrochloride 20 \u03bcM, forskolin 50 \u03bcM, <span class=\"small-caps\">d</span>-AP5 50 \u03bcM, SCH23390 hydrochloride 10 \u03bcM, sulpiride 50 \u03bcM, H-89 20 \u00b5M. All drugs (purchased from Sigma\u2013Aldrich, Dorset, United Kingdom; Tocris Bioscience, Bristol, United Kindgom; or Abcam, Cambridge, United Kingdom) were bath-applied through the perfusion system by dilution of concentrated stock solutions (prepared in water or DMSO) in ACSF."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-6", 
+                        "title": "Statistical analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Statistical comparisons were made using one-sample two-tailed or paired two-tailed Student's <i>t</i>-test, with a significance level of \u03b1 = 0.05. Data are presented as mean \u00b1 s.e.m. Significance levels are indicated by *p &lt; 0.05, **p &lt; 0.01, ***p &lt; 0.001."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Aston-Jones", 
+                            "index": "Aston-Jones, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JD Cohen", 
+                            "index": "Cohen, JD"
+                        }
+                    }
+                ], 
+                "articleTitle": "An integrative theory of locus coeruleus-norepinephrine function: adaptive gain and optimal performance", 
+                "journal": {
+                    "name": [
+                        "Annual Review of Neuroscience"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "403", 
+                    "last": "450", 
+                    "range": "403\u2013450"
+                }, 
+                "doi": "10.1146/annurev.neuro.28.061604.135709"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Atherton", 
+                            "index": "Atherton, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Dupret", 
+                            "index": "Dupret, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Mellor", 
+                            "index": "Mellor, JR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Memory trace replay: the shaping of memory consolidation by neuromodulation", 
+                "journal": {
+                    "name": [
+                        "Trends in Neurosciences"
+                    ]
+                }, 
+                "volume": "38", 
+                "pages": {
+                    "first": "560", 
+                    "last": "570", 
+                    "range": "560\u2013570"
+                }, 
+                "doi": "10.1016/j.tins.2015.07.004"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GQ Bi", 
+                            "index": "Bi, GQ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MM Poo", 
+                            "index": "Poo, MM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Synaptic modifications in cultured hippocampal neurons: dependence on spike timing, synaptic strength, and postsynaptic cell type", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "10464", 
+                    "last": "10472", 
+                    "range": "10464\u201310472"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1994", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VY Bolshakov", 
+                            "index": "Bolshakov, VY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Siegelbaum", 
+                            "index": "Siegelbaum, SA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Postsynaptic induction and presynaptic expression of hippocampal long-term depression", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "264", 
+                "pages": {
+                    "first": "1148", 
+                    "last": "1152", 
+                    "range": "1148\u20131152"
+                }, 
+                "doi": "10.1126/science.7909958"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Caporale", 
+                            "index": "Caporale, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Dan", 
+                            "index": "Dan, Y"
+                        }
+                    }
+                ], 
+                "articleTitle": "Spike timing-dependent plasticity: a Hebbian learning rule", 
+                "journal": {
+                    "name": [
+                        "Annual Review of Neuroscience"
+                    ]
+                }, 
+                "volume": "31", 
+                "pages": {
+                    "first": "25", 
+                    "last": "46", 
+                    "range": "25\u201346"
+                }, 
+                "doi": "10.1146/annurev.neuro.31.060407.125639"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Cassenaer", 
+                            "index": "Cassenaer, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Laurent", 
+                            "index": "Laurent, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Conditional modulation of spike-timing-dependent plasticity for olfactory learning", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "482", 
+                "pages": {
+                    "first": "47", 
+                    "last": "52", 
+                    "range": "47\u201352"
+                }, 
+                "doi": "10.1038/nature10776"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SR Chamberlain", 
+                            "index": "Chamberlain, SR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TW Robbins", 
+                            "index": "Robbins, TW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Noradrenergic modulation of cognition: therapeutic implications", 
+                "journal": {
+                    "name": [
+                        "Journal of Psychopharmacology / British Association for Psychopharmacology"
+                    ]
+                }, 
+                "volume": "27", 
+                "pages": {
+                    "first": "694", 
+                    "last": "718", 
+                    "range": "694\u2013718"
+                }, 
+                "doi": "10.1177/0269881113480988"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JP Charton", 
+                            "index": "Charton, JP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Herkert", 
+                            "index": "Herkert, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Becker", 
+                            "index": "Becker, CM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Schroder", 
+                            "index": "Schroder, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cellular and subcellular localization of the 2B-subunit of the NMDA receptor in the adult rat telencephalon", 
+                "journal": {
+                    "name": [
+                        "Brain Research"
+                    ]
+                }, 
+                "volume": "816", 
+                "pages": {
+                    "first": "609", 
+                    "last": "617", 
+                    "range": "609\u2013617"
+                }, 
+                "doi": "10.1016/S0006-8993(98)01243-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BS Chen", 
+                            "index": "Chen, BS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KW Roche", 
+                            "index": "Roche, KW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of NMDA receptors by phosphorylation", 
+                "journal": {
+                    "name": [
+                        "Neuropharmacology"
+                    ]
+                }, 
+                "volume": "53", 
+                "pages": {
+                    "first": "362", 
+                    "last": "368", 
+                    "range": "362\u2013368"
+                }, 
+                "doi": "10.1016/j.neuropharm.2007.05.018"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Dunsmoor", 
+                            "index": "Dunsmoor, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VP Murty", 
+                            "index": "Murty, VP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Davachi", 
+                            "index": "Davachi, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EA Phelps", 
+                            "index": "Phelps, EA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Emotional learning selectively and retroactively strengthens memories for related events", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "520", 
+                "pages": {
+                    "first": "345", 
+                    "last": "348", 
+                    "range": "345\u2013348"
+                }, 
+                "doi": "10.1038/nature14106"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Edelmann", 
+                            "index": "Edelmann, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Lessmann", 
+                            "index": "Lessmann, V"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopamine modulates spike timing-dependent plasticity and action potential properties in CA1 pyramidal neurons of acute rat hippocampal slices", 
+                "journal": {
+                    "name": [
+                        "Frontiers in Synaptic Neuroscience"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "6", 
+                "doi": "10.3389/fnsyn.2011.00006"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CD Fiorillo", 
+                            "index": "Fiorillo, CD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Song", 
+                            "index": "Song, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SR Yun", 
+                            "index": "Yun, SR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Multiphasic temporal dynamics in responses of midbrain dopamine neurons to appetitive and aversive stimuli", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "33", 
+                "pages": {
+                    "first": "4710", 
+                    "last": "4725", 
+                    "range": "4710\u20134725"
+                }, 
+                "doi": "10.1523/JNEUROSCI.3883-12.2013"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "1990", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Frey", 
+                            "index": "Frey, U"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Schroeder", 
+                            "index": "Schroeder, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Matthies", 
+                            "index": "Matthies, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopaminergic antagonists prevent long-term maintenance of posttetanic LTP in the CA1 region of rat hippocampal slices", 
+                "journal": {
+                    "name": [
+                        "Brain Research"
+                    ]
+                }, 
+                "volume": "522", 
+                "pages": {
+                    "first": "69", 
+                    "last": "75", 
+                    "range": "69\u201375"
+                }, 
+                "doi": "10.1016/0006-8993(90)91578-5"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CM Galuska", 
+                            "index": "Galuska, CM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JH Woods", 
+                            "index": "Woods, JH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Acquisition of cocaine self-administration with unsignaled delayed reinforcement in rhesus monkeys", 
+                "journal": {
+                    "name": [
+                        "Journal of the Experimental Analysis of Behavior"
+                    ]
+                }, 
+                "volume": "84", 
+                "pages": {
+                    "first": "269", 
+                    "last": "280", 
+                    "range": "269\u2013280"
+                }, 
+                "doi": "10.1901/jeab.2005.99-04"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Gasbarri", 
+                            "index": "Gasbarri, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Sulli", 
+                            "index": "Sulli, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MG Packard", 
+                            "index": "Packard, MG"
+                        }
+                    }
+                ], 
+                "articleTitle": "The dopaminergic mesencephalic projections to the hippocampal formation in the rat", 
+                "journal": {
+                    "name": [
+                        "Progress in Neuro-psychopharmacology & Biological Psychiatry"
+                    ]
+                }, 
+                "volume": "21", 
+                "pages": {
+                    "first": "1", 
+                    "last": "22", 
+                    "range": "1\u201322"
+                }, 
+                "doi": "10.1016/S0278-5846(96)00157-1"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Glass", 
+                            "index": "Glass, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CC Felder", 
+                            "index": "Felder, CC"
+                        }
+                    }
+                ], 
+                "articleTitle": "Concurrent stimulation of cannabinoid CB1 and dopamine D2 receptors augments cAMP accumulation in striatal neurons: evidence for a Gs linkage to the CB1 receptor", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "17", 
+                "pages": {
+                    "first": "5327", 
+                    "last": "5333", 
+                    "range": "5327\u20135333"
+                }, 
+                "doi": "10.1124/jpet.108.145425"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Greengard", 
+                            "index": "Greengard, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PB Allen", 
+                            "index": "Allen, PB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AC Nairn", 
+                            "index": "Nairn, AC"
+                        }
+                    }
+                ], 
+                "articleTitle": "Beyond the dopamine receptor: the DARPP-32/protein phosphatase-1 cascade", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "435", 
+                    "last": "447", 
+                    "range": "435\u2013447"
+                }, 
+                "doi": "10.1016/S0896-6273(00)80798-9"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MT Harnett", 
+                            "index": "Harnett, MT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BE Bernier", 
+                            "index": "Bernier, BE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KC Ahn", 
+                            "index": "Ahn, KC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Morikawa", 
+                            "index": "Morikawa, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Burst-timing-dependent plasticity of NMDA receptor-mediated transmission in midbrain dopamine neurons", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "62", 
+                "pages": {
+                    "first": "826", 
+                    "last": "838", 
+                    "range": "826\u2013838"
+                }, 
+                "doi": "10.1016/j.neuron.2009.05.011"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KM Huber", 
+                            "index": "Huber, KM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MS Kayser", 
+                            "index": "Kayser, MS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MF Bear", 
+                            "index": "Bear, MF"
+                        }
+                    }
+                ], 
+                "articleTitle": "Role for rapid dendritic protein synthesis in hippocampal mGluR-dependent long-term depression", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "288", 
+                "pages": {
+                    "first": "1254", 
+                    "last": "1256", 
+                    "range": "1254\u20131256"
+                }, 
+                "doi": "10.1126/science.288.5469.1254"
+            }, 
+            {
+                "type": "book", 
+                "id": "bib20", 
+                "date": "1943", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CL Hull", 
+                            "index": "Hull, CL"
+                        }
+                    }
+                ], 
+                "bookTitle": "Principles of behavior: an introduction to behavior theory", 
+                "publisher": {
+                    "name": [
+                        "Appleton Century"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "Oxford, England"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "Oxford, England"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "1983", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TS Ingebritsen", 
+                            "index": "Ingebritsen, TS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Cohen", 
+                            "index": "Cohen, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Protein phosphatases: properties and role in cellular regulation", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "221", 
+                "pages": {
+                    "first": "331", 
+                    "last": "338", 
+                    "range": "331\u2013338"
+                }, 
+                "doi": "10.1126/science.6306765"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EM Izhikevich", 
+                            "index": "Izhikevich, EM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Solving the distal reward problem through linkage of STDP and dopamine signalling", 
+                "journal": {
+                    "name": [
+                        "Cerebral Cortex"
+                    ]
+                }, 
+                "volume": "17", 
+                "pages": {
+                    "first": "2443", 
+                    "last": "2452", 
+                    "range": "2443\u20132452"
+                }, 
+                "doi": "10.1093/cercor/bhl152"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jourdain", 
+                            "index": "Jourdain, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LH Bergersen", 
+                            "index": "Bergersen, LH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Bhaukaurally", 
+                            "index": "Bhaukaurally, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Bezzi", 
+                            "index": "Bezzi, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Santello", 
+                            "index": "Santello, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Domercq", 
+                            "index": "Domercq, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Matute", 
+                            "index": "Matute, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Tonello", 
+                            "index": "Tonello, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Gundersen", 
+                            "index": "Gundersen, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Volterra", 
+                            "index": "Volterra, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Glutamate exocytosis from astrocytes controls synaptic strength", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "10", 
+                "pages": {
+                    "first": "331", 
+                    "last": "339", 
+                    "range": "331\u2013339"
+                }, 
+                "doi": "10.1038/nn1849"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Kemp", 
+                            "index": "Kemp, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ZI Bashir", 
+                            "index": "Bashir, ZI"
+                        }
+                    }
+                ], 
+                "articleTitle": "Induction of LTD in the adult hippocampus by the synaptic activation of AMPA/kainate and metabotropic glutamate receptors", 
+                "journal": {
+                    "name": [
+                        "Neuropharmacology"
+                    ]
+                }, 
+                "volume": "38", 
+                "pages": {
+                    "first": "495", 
+                    "last": "504", 
+                    "range": "495\u2013504"
+                }, 
+                "doi": "10.1016/S0028-3908(98)00222-6"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "1990", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KA Lattal", 
+                            "index": "Lattal, KA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Gleeson", 
+                            "index": "Gleeson, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Response acquisition with delayed reinforcement", 
+                "journal": {
+                    "name": [
+                        "Journal of Experimental Psychology"
+                    ]
+                }, 
+                "volume": "16", 
+                "pages": {
+                    "first": "27", 
+                    "last": "39", 
+                    "range": "27\u201339"
+                }, 
+                "doi": "10.1037/0097-7403.16.1.27"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HK Lee", 
+                            "index": "Lee, HK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Barbarosie", 
+                            "index": "Barbarosie, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Kameyama", 
+                            "index": "Kameyama, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MF Bear", 
+                            "index": "Bear, MF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Huganir", 
+                            "index": "Huganir, RL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of distinct AMPA receptor phosphorylation sites during bidirectional synaptic plasticity", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "405", 
+                "pages": {
+                    "first": "955", 
+                    "last": "959", 
+                    "range": "955\u2013959"
+                }, 
+                "doi": "10.1038/35016089"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Lisman", 
+                            "index": "Lisman, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Grace", 
+                            "index": "Grace, AA"
+                        }
+                    }
+                ], 
+                "articleTitle": "The hippocampal-VTA loop: controlling the entry of information into long- term memory", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "46", 
+                "pages": {
+                    "first": "703", 
+                    "last": "713", 
+                    "range": "703\u2013713"
+                }, 
+                "doi": "10.1016/j.neuron.2005.05.002"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Markram", 
+                            "index": "Markram, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Lubke", 
+                            "index": "Lubke, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Frotscher", 
+                            "index": "Frotscher, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Sakmann", 
+                            "index": "Sakmann, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of synaptic efficacy by coincidence of postsynaptic APs and EPSPs", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "275", 
+                "pages": {
+                    "first": "213", 
+                    "last": "215", 
+                    "range": "213\u2013215"
+                }, 
+                "doi": "10.1126/science.275.5297.213"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CG McNamara", 
+                            "index": "McNamara, CG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "\u00c1 Tejero-Cantero", 
+                            "index": "Tejero-Cantero, \u00c1"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Trouche", 
+                            "index": "Trouche, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Campo-Urriza", 
+                            "index": "Campo-Urriza, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Dupret", 
+                            "index": "Dupret, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopaminergic neurons promote hippocampal reactivation and spatial memory persistence", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "17", 
+                "pages": {
+                    "first": "1658", 
+                    "last": "1660", 
+                    "range": "1658\u20131660"
+                }, 
+                "doi": "10.1038/nn.3843"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Mirenowicz", 
+                            "index": "Mirenowicz, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Schultz", 
+                            "index": "Schultz, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "Preferential activation of midbrain dopamine neurons by appetitive rather than aversive stimuli", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "379", 
+                "pages": {
+                    "first": "449", 
+                    "last": "451", 
+                    "range": "449\u2013451"
+                }, 
+                "doi": "10.1038/379449a0"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BG Mockett", 
+                            "index": "Mockett, BG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Gu\u00e9vremont", 
+                            "index": "Gu\u00e9vremont, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Williams", 
+                            "index": "Williams, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WC Abraham", 
+                            "index": "Abraham, WC"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopamine D1/D5 receptor activation reverses NMDA receptor-dependent long-term depression in rat hippocampus", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "27", 
+                "pages": {
+                    "first": "2918", 
+                    "last": "2926", 
+                    "range": "2918\u20132926"
+                }, 
+                "doi": "10.1523/JNEUROSCI.0838-06.2007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2004", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KA Neve", 
+                            "index": "Neve, KA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JK Seamans", 
+                            "index": "Seamans, JK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Trantham-Davidson", 
+                            "index": "Trantham-Davidson, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopamine receptor signalling", 
+                "journal": {
+                    "name": [
+                        "Journal of Receptor and Signal Transduction Research"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "165", 
+                    "last": "205", 
+                    "range": "165\u2013205"
+                }, 
+                "doi": "10.1081/RRS-200029981"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Okouchi", 
+                            "index": "Okouchi, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Response acquisition by humans with delayed reinforcement", 
+                "journal": {
+                    "name": [
+                        "Journal of the Experimental Analysis of Behavior"
+                    ]
+                }, 
+                "volume": "91", 
+                "pages": {
+                    "first": "377", 
+                    "last": "390", 
+                    "range": "377\u2013390"
+                }, 
+                "doi": "10.1901/jeab.2009.91-377"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SHR Oliet", 
+                            "index": "Oliet, SHR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Malenka", 
+                            "index": "Malenka, RC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Nicoll", 
+                            "index": "Nicoll, RA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Two distinct forms of long-term depression coexist in CA1 hippocampal pyramidal cells", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "1294", 
+                    "last": "1297", 
+                    "range": "1294\u20131297"
+                }, 
+                "doi": "10.1016/S0896-6273(00)80336-0"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Otani", 
+                            "index": "Otani, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Connor", 
+                            "index": "Connor, JA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Requirement of rapid Ca<sup>2+</sup> entry and synaptic activation of metabotropic glutamate receptors for the induction of long-term depression in adult rat hippocampus", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "511", 
+                "pages": {
+                    "first": "761", 
+                    "last": "770", 
+                    "range": "761\u2013770"
+                }, 
+                "doi": "10.1111/j.1469-7793.1998.761bg.x"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib36", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NA Otmakhova", 
+                            "index": "Otmakhova, NA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Lisman", 
+                            "index": "Lisman, JE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopamine selectively inhibits the direct cortical pathway to the CA1 hippocampal region", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "1437", 
+                    "last": "1445", 
+                    "range": "1437\u20131445"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib37", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W-X Pan", 
+                            "index": "Pan, W-X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Schmidt", 
+                            "index": "Schmidt, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Wickens", 
+                            "index": "Wickens, JR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BI Hyland", 
+                            "index": "Hyland, BI"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopamine cells respond to predicted events during classical conditioning: evidence for eligibility traces in the reward-learning network", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "6235", 
+                    "last": "6242", 
+                    "range": "6235\u20136242"
+                }, 
+                "doi": "10.1523/JNEUROSCI.1478-05.2005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib38", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Pawlak", 
+                            "index": "Pawlak, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JR Wickens", 
+                            "index": "Wickens, JR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kirkwood", 
+                            "index": "Kirkwood, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JND Kerr", 
+                            "index": "Kerr, JND"
+                        }
+                    }
+                ], 
+                "articleTitle": "Timing is not everything: neuromodulation opens the STDP gate", 
+                "journal": {
+                    "name": [
+                        "Frontiers in Synaptic Neuroscience"
+                    ]
+                }, 
+                "volume": "2", 
+                "pages": "146", 
+                "doi": "10.3389/fnsyn.2010.00146"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib39", 
+                "date": "1980", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Scatton", 
+                            "index": "Scatton, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Simon", 
+                            "index": "Simon, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Le Moal", 
+                            "index": "Le Moal, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Bischoff", 
+                            "index": "Bischoff, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Origin of dopaminergic innervation of the rat hippocampal formation", 
+                "journal": {
+                    "name": [
+                        "Neuroscience Letters"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "125", 
+                    "last": "131", 
+                    "range": "125\u2013131"
+                }, 
+                "doi": "10.1016/0304-3940(80)90314-6"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib40", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Schultz", 
+                            "index": "Schultz, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Dayan", 
+                            "index": "Dayan, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RR Montague", 
+                            "index": "Montague, RR"
+                        }
+                    }
+                ], 
+                "articleTitle": "A neural substrate of prediction and reward", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "275", 
+                "pages": {
+                    "first": "1593", 
+                    "last": "1599", 
+                    "range": "1593\u20131599"
+                }, 
+                "doi": "10.1126/science.275.5306.1593"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib41", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GH Seol", 
+                            "index": "Seol, GH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ziburkus", 
+                            "index": "Ziburkus, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Huang", 
+                            "index": "Huang, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Song", 
+                            "index": "Song, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IT Kim", 
+                            "index": "Kim, IT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Takamiya", 
+                            "index": "Takamiya, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RL Huganir", 
+                            "index": "Huganir, RL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HK Lee", 
+                            "index": "Lee, HK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kirkwood", 
+                            "index": "Kirkwood, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Neuromodulators control the polarity of spike-timing-dependent synaptic plasticity", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "55", 
+                "pages": {
+                    "first": "919", 
+                    "last": "929", 
+                    "range": "919\u2013929"
+                }, 
+                "doi": "10.1016/j.neuron.2007.08.013"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib42", 
+                "date": "1994", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Siegel", 
+                            "index": "Siegel, SJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Brose", 
+                            "index": "Brose, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WG Janssen", 
+                            "index": "Janssen, WG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GP Gasic", 
+                            "index": "Gasic, GP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Jahn", 
+                            "index": "Jahn, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SF Heinemann", 
+                            "index": "Heinemann, SF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JH Morrison", 
+                            "index": "Morrison, JH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regional, cellular, and ultrastructural distribution of <i>N</i>-methyl-d-aspartate receptor subunit 1 in monkey hippocampus", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "91", 
+                "pages": {
+                    "first": "564", 
+                    "last": "568", 
+                    "range": "564\u2013568"
+                }, 
+                "doi": "10.1073/pnas.91.2.564"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib43", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Singer", 
+                            "index": "Singer, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LM Frank", 
+                            "index": "Frank, LM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rewarded outcomes enhance reactivation of experience in the hippocampus", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "64", 
+                "pages": {
+                    "first": "910", 
+                    "last": "921", 
+                    "range": "910\u2013921"
+                }, 
+                "doi": "10.1016/j.neuron.2009.11.016"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib44", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CC Smith", 
+                            "index": "Smith, CC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RW Greene", 
+                            "index": "Greene, RW"
+                        }
+                    }
+                ], 
+                "articleTitle": "CNS dopamine transmission mediated by noradrenergic innervation", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "6072", 
+                    "last": "6080", 
+                    "range": "6072\u20136080"
+                }, 
+                "doi": "10.1523/JNEUROSCI.6486-11.2012"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib45", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Suri", 
+                            "index": "Suri, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Schultz", 
+                            "index": "Schultz, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "A neural network model with dopamine-like reinforcement signal that learns a spatial delayed response task", 
+                "journal": {
+                    "name": [
+                        "Neuroscience"
+                    ]
+                }, 
+                "volume": "91", 
+                "pages": {
+                    "first": "871", 
+                    "last": "890", 
+                    "range": "871\u2013890"
+                }, 
+                "doi": "10.1016/S0306-4522(98)00697-6"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib46", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Sutphin", 
+                            "index": "Sutphin, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Byrne", 
+                            "index": "Byrne, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Poling", 
+                            "index": "Poling, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Response acquisition with delayed reinforcement: a comparison of two-lever procedures", 
+                "journal": {
+                    "name": [
+                        "Journal of the Experimental Analysis of Behavior"
+                    ]
+                }, 
+                "volume": "69", 
+                "pages": {
+                    "first": "17", 
+                    "last": "28", 
+                    "range": "17\u201328"
+                }, 
+                "doi": "10.1901/jeab.1998.69-17"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib47", 
+                "date": "1981", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Sutton", 
+                            "index": "Sutton, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AG Barto", 
+                            "index": "Barto, AG"
+                        }
+                    }
+                ], 
+                "articleTitle": "Toward a modern theory of adaptive networks: expectation and prediction", 
+                "journal": {
+                    "name": [
+                        "Psychological Review"
+                    ]
+                }, 
+                "volume": "88", 
+                "pages": {
+                    "first": "135", 
+                    "last": "170", 
+                    "range": "135\u2013170"
+                }, 
+                "doi": "10.1037/0033-295X.88.2.135"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib48", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AM Watabe", 
+                            "index": "Watabe, AM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HJ Carlisle", 
+                            "index": "Carlisle, HJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ O'Dell", 
+                            "index": "O'Dell, TJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Postsynaptic induction and presynaptic expression of group 1 mGluR-dependent LTD in the hippocampal CA1 region", 
+                "journal": {
+                    "name": [
+                        "Journal of Neurophysiology"
+                    ]
+                }, 
+                "volume": "87", 
+                "pages": {
+                    "first": "1395", 
+                    "last": "1403", 
+                    "range": "1395\u20131403"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib49", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "VJ Watts", 
+                            "index": "Watts, VJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KA Neve", 
+                            "index": "Neve, KA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Activation of type II adenylate cyclase by D2 and D4 but not D3 dopamine receptors", 
+                "journal": {
+                    "name": [
+                        "Molecular Pharmacology"
+                    ]
+                }, 
+                "volume": "52", 
+                "pages": {
+                    "first": "181", 
+                    "last": "186", 
+                    "range": "181\u2013186"
+                }, 
+                "doi": "10.1124/mol.52.2.181"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib50", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Westphal", 
+                            "index": "Westphal, RS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Tavalin", 
+                            "index": "Tavalin, SJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JW Lin", 
+                            "index": "Lin, JW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NM Alto", 
+                            "index": "Alto, NM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IDC Fraser", 
+                            "index": "Fraser, IDC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LK Langeberg", 
+                            "index": "Langeberg, LK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Sheng", 
+                            "index": "Sheng, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JD Scott", 
+                            "index": "Scott, JD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of NMDA receptors by an associated phosphatase-kinase signaling complex", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "285", 
+                "pages": {
+                    "first": "93", 
+                    "last": "96", 
+                    "range": "93\u201396"
+                }, 
+                "doi": "10.1126/science.285.5424.93"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib51", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Yagishita", 
+                            "index": "Yagishita, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Hayashi-Tkagi", 
+                            "index": "Hayashi-Tkagi, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GCR Ellis-Davies", 
+                            "index": "Ellis-Davies, GCR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Urakubo", 
+                            "index": "Urakubo, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ishii", 
+                            "index": "Ishii, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Kasai", 
+                            "index": "Kasai, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "A critical time window for dopamine actions on the structural plasticity of dendritic spines", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "345", 
+                "pages": {
+                    "first": "1616", 
+                    "last": "1620", 
+                    "range": "1616\u20131620"
+                }, 
+                "doi": "10.1126/science.1255514"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib52", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Yang", 
+                            "index": "Yang, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Dani", 
+                            "index": "Dani, JA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dopamine D1 and D5 receptors modulate spike timing-dependent plasticity at medial perforant path to dentate granule cell synapses", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "34", 
+                "pages": {
+                    "first": "15888", 
+                    "last": "15897", 
+                    "range": "15888\u201315897"
+                }, 
+                "doi": "10.1523/JNEUROSCI.2400-14.2014"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib53", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Zhang", 
+                            "index": "Zhang, JC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PM Lau", 
+                            "index": "Lau, PM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GQ Bi", 
+                            "index": "Bi, GQ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Gain in sensitivity and loss in temporal contrast of STDP by dopaminergic modulation at hippocampal synapses", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "106", 
+                "pages": {
+                    "first": "13028", 
+                    "last": "13033", 
+                    "range": "13028\u201313033"
+                }, 
+                "doi": "10.1073/pnas.0900546106"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "This research was supported by a studentship from the Medical Research Council (UK) to ZB, the School of Biological Sciences at the University of Cambridge, and the Wellcome Trust (WS)."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.09685.016", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for submitting your work entitled \u201cRetroactive effect of dopamine on spike timing-dependent plasticity\u201d for further consideration at <i>eLife</i>. Your article has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. One of the reviewers, Guoqiang Bi, has agreed to reveal his identity."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "All three reviewers viewed the study as valuable for the readership of <i>eLife</i>. The main observation that spike-time dependent LTD can be converted into LTP upon DA release 10 min after the initial LTP-pairing protocol, was viewed as interesting. However, major criticism was formulated in relation to the missing explanation on how the timing of bath-applied DA may relate to reward-based conditioning. The reviewers asked for diagrams describing the timing issues, in particular the possible linkages between the cAMP pathway and its relation to Ca<sup>2+</sup> signaling caused by action potentials and NMDAR activation. A stronger discussion of the data with existing literature is necessary. Moreover, one reviewer asked for additional experiments in which SCH23390 and sulpiride are separately applied. The reviewers were also curious for your thoughts about how the possible cAMP/PKA-mediated mechanism could be linked to Ca<sup>2+</sup> signals, NMDA receptor activation and finally the switch from LTD to LTP. The specific comments of the reviewers are attached below."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Reviewer #1:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The study by the Paulsen's group shows nicely that spike-time dependent LTD can be converted into LTP upon DA release 10 min after the initial LTP-pairing protocol. They propose and show good experimental evidence for their hypothesis that this is caused by activation of the cAMP/PKA pathway plus activation of NMDARs. The data fit very well with a recent study from McNamara et al. (Nature Neuroscience, 2014) showing that DA improves reactivation of cell assemblies in CA1 and memory persistence. I have mild concerns regarding the precise timing of bath-applied drugs in the bath. How fast does the drug get to the DA receptors located at the recorded cell? This is important in defining the time window during which the DA effect can take place and induce the observed conversion of synaptic plasticity. The difference in the finding presented here to the one by the McNamara group should be emphasized."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Reviewer #2:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This study by Brzosko et al. addressed how dopamine (DA) retroactively regulates spike timing-dependent plasticity (STDP) in order to account for the distal reward problem, where rewards promote learning of experiences preceding rewards. The main result is that DA applied after the delivery of the post-before-pre pairing protocol converted LTD into LTP."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) DA was bath applied for 10-12 min starting within 1 min after the delivery of the post-before-pre pairing protocol, which took \u223c8 min. It is not clear how this relates to behaviorally relevant timing during reward-based conditioning, as described in <a href=\"#bib40\">Schultz, Dayan and Montague (1997)</a>, <a href=\"#bib45\">Suri and Schultz (1999)</a>, and <a href=\"#bib37\">Pan, Schmidt, Wickens and Hyland (2005)</a>. Furthermore, how does the millisecond order timing dependence in STDP relate to the second order timing dependence during reward-based learning (for example, see Drew and Abbott, PNAS, 2006, \u201cExtending the effects of spike-timing-dependent plasticity to behavioral timescales\u201d)? A schematic diagram on this timing issue (from millisecond to second to min in the current study) should be provided to account for the behavioral relevance."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) In terms of the cellular mechanism, it is not clear how DA-induced activation of cAMP/PKA pathway relates to Ca signals caused by spikes and NMDA receptor activation. A schematic diagram describing the possible linkage should be provided with the timing diagram mentioned above. The authors may want to compare their data with a recent paper that addressed this issue on DA/spike timing dependent plasticity of dendritic spines (Yagishita et al., Science, 2015, A critical time window for dopamine actions on the structural plasticity of dendritic spines)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) In the bar graphs, it is not clear what the significance mark on each bar means. I do understand the significance marks between bars."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) It should be stated if any of the treatments (plasticity induction, DA/forskolin application, etc.) affected the amount of current necessary to hold the membrane potential at -70 mV, preferably with actual data."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) According to the description in the Results section, LTP induced with -10 ms post-before-pre timing was \u201csurprising\u201d. This effect is ascribed to the release of endogenous DA by the stimulating electrode. It should be discussed in further detail how this observation compares to previous studies in brain slices and cultures."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Reviewer #3:</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In this manuscript, the authors investigated the temporal specificity of dopaminergic modulation of STDP. They found that dopamine application within 10 minutes after STDP pairing could retroactively convert t-LTD into t-LTP. This conversion is apparently mediated by cAMP/PKA signaling, and requires synaptic activation as well as functional NMDA receptors. Together, the results provide an elegant cellular mechanism for the delayed effect of dopamine in reinforcement learning."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Overall I think the experiments were well designed and carried out. The results are important and intriguing, and should be of interests for both cellular and systems neuroscientists. I do have several questions:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) Throughout the study, the authors used combined SCH23390+sulpiride to block both D1/D5-like receptors and D2-like receptors. Can the authors test differential roles of the two receptor types in STDP conversion by using the two antagonists separately, as has been done in previous studies?"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Regarding the cellular signaling mechanisms, the authors argue that since AP-5 blocks the effect of DA and forskolin in t-LTD/LTP conversion, the cAMP/PKA signaling works either upstream of, or in parallel to NMDA receptor activation. Can the authors further allude to a potential mechanism(s) how such signaling interaction could happen?"
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.09685.017", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Reviewer #1:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The study by the Paulsen's group shows nicely that spike-time dependent LTD can be converted into LTP upon DA release 10 min after the initial LTP-pairing protocol. They propose and show good experimental evidence for their hypothesis that this is caused by activation of the cAMP/PKA pathway plus activation of NMDARs. The data fit very well with a recent study from McNamara et al. (Nature Neuroscience, 2014) showing that DA improves reactivation of cell assemblies in CA1 and memory persistence. I have mild concerns regarding the precise timing of bath-applied drugs in the bath. How fast does the drug get to the DA receptors located at the recorded cell? This is important in defining the time window during which the DA effect can take place and induce the observed conversion of synaptic plasticity. The difference in the finding presented here to the one by the McNamara group should be emphasized.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The study by <a href=\"#bib29\">McNamara et al. (2014)</a> shows that optogenetic activation of midbrain dopaminergic neurons <i>during</i> spatial exploration and learning enhances reactivation of newly encoded hippocampal representations and improves memory performance. This is consistent with our results demonstrating that the activation of DAergic receptors <i>during</i> coordinated spiking activity changes the functional outcome of STDP such that negative time pairings induce potentiation and not depression (<a href=\"#fig1\">Figure 1C-F</a>). Please note, however, that the main finding of our study is significantly extending that of McNamara et al. in showing that dopamine can convert hippocampal timing-dependent synaptic depression into potentiation even when applied <i>after</i> the pairing event (as relevant for addressing the distal reward problem in the field of reinforcement learning). This effect was seen when dopamine was applied within one minute after the end of the pairing event. This has now been emphasized in the Results and Discussion section."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Reviewer #2:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) DA was bath applied for 10-12 min starting within 1 min after the delivery of the post-before-pre pairing protocol, which took \u223c8 min. It is not clear how this relates to behaviorally relevant timing during reward-based conditioning, as described in</i> <a href=\"#bib40\"><i>Schultz, Dayan and Montague (1997)</i></a><i>,</i> <a href=\"#bib45\"><i>Suri and Schultz (1999)</i></a><i>, and</i> <a href=\"#bib37\"><i>Pan, Schmidt, Wickens and Hyland (2005)</i></a><i>.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Our data show that DA can modulate STDP in the CA1 with a reinforcement delay of at least one minute (<a href=\"#fig5\">Figure 5B</a>). This extended reinforcement delay is likely to be important in hippocampus-dependent memory tasks during spatial exploration."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Although behavioral evidence from hippocampus-based tasks is still lacking, our results are consistent with behavioral conditioning as demonstrated in multiple studies of response acquisition with delayed reinforcement in other brain areas: in rats and pigeons (<a href=\"#bib25\">Lattal and Gleeson, 1990</a>; <a href=\"#bib46\">Sutphin, Byrne and Poling, 1998</a>), rhesus monkeys (<a href=\"#bib14\">Galuska and Woods, 2005</a>) and humans (<a href=\"#bib33\">Okouchi, 2009</a>). This has now been emphasized in the manuscript (Results and Discussion section)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Please note that the duration of DA application (i.e. 10-12 minutes) mirrors the slow time profile of the gradually developing synaptic depression, where the synaptic weights reach their maximum depressed state after \u223c10-15 minutes."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>Furthermore, how does the millisecond order timing dependence in STDP relate to the second order timing dependence during reward-based learning (for example, see Drew and Abbott, PNAS, 2006, \u201cExtending the effects of spike-timing-dependent plasticity to behavioral timescales\u201d)? A schematic diagram on this timing issue (from millisecond to second to min in the current study) should be provided to account for the behavioral relevance.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would like to thank for the suggestion of incorporating such a schematic, which is now presented in <a href=\"#fig5\">Figure 5B</a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) In terms of the cellular mechanism, it is not clear how DA-induced activation of cAMP/PKA pathway relates to Ca signals caused by spikes and NMDA receptor activation. A schematic diagram describing the possible linkage should be provided with the timing diagram mentioned above.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Again, we would like to thank you for this suggestion, and we have incorporated a figure to illustrate the links between the cAMP/PKA signaling cascade and the consensus signaling events underlying the induction of LTP and LTD at hippocampal synapses (<a href=\"#fig5\">Figure 5Ai and ii</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>The authors may want to compare their data with a recent paper that addressed this issue on DA/spike timing dependent plasticity of dendritic spines (Yagishita et al., Science, 2015, A critical time window for dopamine actions on the structural plasticity of dendritic spines).</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To address this request, we have incorporated the following paragraph to the Results and Discussion: \u201cPrevious studies examining reinforcement learning at the level of synaptic plasticity have showed that neuromodulators can affect timing-dependent plasticity in locust [\u2026]. Such extended reinforcement delay is likely to be particularly important in hippocampus-dependent learning during spatial exploration.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We would like to emphasize that the timing rules for reinforcement are likely to be variable across different systems, ranging from 0.5-1.0 sec time delays for dopamine learning (<a href=\"#bib18\">Harnett, Bernier, Ahn and Morikawa, 2009</a>) and fast striatal processing (<a href=\"#bib51\">Yagishita et al., 2014</a>), via 1-40 sec for more complex behavioral tasks (<a href=\"#bib25\">Lattal and Gleeson, 1990</a>; <a href=\"#bib46\">Sutphin, Byrne and Poling, 1998</a>; <a href=\"#bib14\">Galuska and Woods, 2005</a>; <a href=\"#bib33\">Okouchi, 2009</a>) and aversive stimuli (Dickinson, Contemporary animal learning theory. Cambridge, UK: Cambridge University Press, 1980), to delays in the order of at least one minute for hippocampus-dependent learning as observed in our study."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) In the bar graphs, it is not clear what the significance mark on each bar means. I do understand the significance marks between bars.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The significance mark on each bar indicates significant difference (*<i>P</i> &lt; 0.05, **<i>P</i> &lt; 0.01, ***<i>P</i> &lt; 0.001) compared with the baseline (one-sample two-tailed Student\u2019s <i>t</i>-test) or between the indicated two groups (paired two-tailed Student\u2019s <i>t</i>-test). This has now been explicitly stated in each figure legend."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) It should be stated if any of the treatments (plasticity induction, DA/forskolin application, etc.) affected the amount of current necessary to hold the membrane potential at -70 mV, preferably with actual data.</i>"
+                }, 
+                {
+                    "type": "image", 
+                    "doi": "10.7554/eLife.09685.018", 
+                    "id": "fig6", 
+                    "label": "Author response image 1.", 
+                    "title": "Example plot showing changes in the holding current over time for post-before-pre pairing protocol with \u0394t = \u221220 ms in control t-LTD (n = 9) and with DA added after pairing (n = 11)", 
+                    "caption": [
+                        {
+                            "type": "paragraph", 
+                            "text": "Example plot showing changes in the holding current over time for post-before-pre pairing protocol with \u0394t = \u221220 ms in control t-LTD (n = 9) and with DA added after pairing (n = 11). Error bars represent s.e.m."
+                        }
+                    ], 
+                    "alt": "", 
+                    "uri": "elife-09685-resp-fig1-v1.tif"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>While there was a small difference in holding current between Control t-LTD and DA condition</i>, a similar difference was not seen with Forskolin, suggesting that the change in holding current is not likely to be related to the effect on synaptic efficacy. We believe that this figure does not contribute to explaining our finding and, if possible, we would prefer not to include it in the manuscript."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>5) According to the description in the Results section, LTP induced with -10 ms post-before-pre timing was \u201csurprising\u201d. This effect is ascribed to the release of endogenous DA by the stimulating electrode. It should be discussed in further detail how this observation compares to previous studies in brain slices and cultures.</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In view of the conventional presentation of STDP, we found this finding surprising. We now explicitly state that \u201cThis conflicts with previous reports from hippocampal cultures (<a href=\"#bib3\">Bi and Poo, 1998</a>; <a href=\"#bib53\">Zhang, Lau and Bi, 2009</a>) and acute slices (<a href=\"#bib11\">Edelmann and Lessmann, 2011</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), where post-before-pre pairing protocols never elicited synaptic potentiation in baseline condition.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "However, it has been shown earlier that DA widens the time window for the induction of t-LTP (<a href=\"#bib53\">Zhang, Lau and Bi, 2009</a>; <a href=\"#bib52\">Yang and Dani, 2014</a>), and this has now been discussed in the same paragraph."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Reviewer #3:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) Throughout the study, the authors used combined SCH23390+sulpiride to block both D1/D5-like receptors and D2-like receptors. Can the authors test differential roles of the two receptor types in STDP conversion by using the two antagonists separately, as has been done in previous studies?</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "In response to this comment, we have carried out a new set of experiments, applying D1-like or D2-like receptor antagonist separately. Even though combined application of D1-like and D2-like receptor antagonist completely blocked the DA effect (<a href=\"#fig4s1\">Figure 4\u2013figure supplement 1A, D</a>), application of either D1-like or D2-like receptor antagonist alone only partially prevented the conversion of t-LTD into t-LTP (SCH 23390: 131 \u00b1 16%; <i>t</i>(6) = 1.4, <i>P</i> = 0.0113 vs. DA (t-LTP); <i>t</i>(6) = 3.6, <i>P</i> = 0.2277 vs. control (t-LTD); <i>t</i>(6) = 1.9, <i>P</i> = 0.0994 vs. 100%; <i>n</i> = 7. Sulpiride: 94 \u00b1 13%; <i>t</i>(6) = 3.2, <i>P</i> = 0.0228 vs. DA (t-LTP); <i>t</i>(6) = 1.5, <i>P</i> = 0.1932 vs. control (t-LTD); <i>t</i>(6) = 0.5, <i>P</i> = 0.6435 vs. 100%; <i>n</i> = 7; <a href=\"#fig4s1\">Figure 4\u2013figure supplement 1B-D</a>). This suggests that both receptor sub-types might mediate the retroactive effect of DA on STDP. This is now reported in the text (in the sixth paragraph of the Results and Discussion section), and presented in <a href=\"#fig4s1\">Figure 4\u2013figure supplement 1</a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We further discuss the implications of this in the same paragraph as follows: \u201cD1/D5-receptor stimulation leads to the activation of adenylyl cyclase (AC) and subsequent increase in cyclic adenosine monophosphate (cAMP) [\u2026] to the retroactive conversion of t-LTD into t-LTP.\u201d"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Regarding the cellular signaling mechanisms, the authors argues that since AP-5 blocks the effect of DA and forskolin in t-LTD/LTP conversion, the cAMP/PKA signaling works either upstream of, or in parallel to NMDA receptor activation. Can the authors further allude to a potential mechanism(s) how such signaling interaction could happen?</i>"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Please see the response to Reviewer 2, point 1 above."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Additional changes to the manuscript:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To clarify the presentation in accordance to the reviewers\u2019 comments, we have also updated <a href=\"#fig1\">Figure 1</a> and <a href=\"#fig4\">Figure 4</a>, and expanded and moved Figure 2\u2013figure supplement 1 to <a href=\"#fig4s1\">Figure 4\u2013figure supplement 1</a>."
+                }
+            ]
+        }
+    }
+}

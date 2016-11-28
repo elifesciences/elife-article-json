@@ -1,0 +1,3986 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "07009", 
+        "version": 1, 
+        "type": "feature", 
+        "doi": "10.7554/eLife.07009", 
+        "authorLine": "Guy Yachdav et al", 
+        "title": "Anatomy of BioJS, an open source community for the life sciences", 
+        "titlePrefix": "Cutting Edge", 
+        "published": "2015-07-08T00:00:00", 
+        "versionDate": "2015-07-08T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e07009", 
+        "pdf": "https://publishing-cdn.elifesciences.org/07009/elife-07009-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "None"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.07009.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "BioJS is an open source software project that develops visualization tools for different types of biological data. Here we report on the factors that influenced the growth of the BioJS user and developer community, and outline our strategy for building on this growth. The lessons we have learned on BioJS may also be relevant to other open source software projects."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC0-1.0", 
+            "statement": "This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Guy Yachdav", 
+                    "index": "Yachdav, Guy"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "gyachdav@bio-sof.com"
+                ], 
+                "contribution": "GY, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Tatyana Goldberg", 
+                    "index": "Goldberg, Tatyana"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "TG, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Sebastian Wilzbach", 
+                    "index": "Wilzbach, Sebastian"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SW, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "David Dao", 
+                    "index": "Dao, David"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "DD, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Iris Shih", 
+                    "index": "Shih, Iris"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "IS, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Saket Choudhary", 
+                    "index": "Choudhary, Saket"
+                }, 
+                "orcid": "0000-0001-5202-7633", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Molecular and Computational Biology", 
+                            "University of Southern California"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Los Angeles", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Los Angeles"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SC, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Steve Crouch", 
+                    "index": "Crouch, Steve"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Web and Internet Science", 
+                            "University of Southampton"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Southampton", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Southampton"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SC, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Max Franz", 
+                    "index": "Franz, Max"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Banting and Best Department of Medical Research, Donnelly Centre for Cellular and Biomolecular Research", 
+                            "University of Toronto"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Toronto", 
+                                "Canada"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Toronto"
+                                ], 
+                                "country": "Canada"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "MF, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Alexander Garc\u00eda", 
+                    "index": "Garc\u00eda, Alexander"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Linkingdata I/O LLC"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Austin", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Austin"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AG, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Leyla J Garc\u00eda", 
+                    "index": "Garc\u00eda, Leyla J"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "European Molecular Biology Laboratory-European Bioinformatics Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "LJG, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Bj\u00f6rn A Gr\u00fcning", 
+                    "index": "Gr\u00fcning, Bj\u00f6rn A"
+                }, 
+                "orcid": "0000-0002-3079-6586", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatics Group, Department of Computer Science and Centre for Biological Systems Analysis", 
+                            "University of Freiburg"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Freiburg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Freiburg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BAG, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Devasena Inupakutika", 
+                    "index": "Inupakutika, Devasena"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Web and Internet Science", 
+                            "University of Southampton"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Southampton", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Southampton"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "DI, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ian Sillitoe", 
+                    "index": "Sillitoe, Ian"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute of Structure and Molecular Biology", 
+                            "University College London"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "London", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "London"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "IS, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Anil S Thanki", 
+                    "index": "Thanki, Anil S"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "The Genome Analysis Centre"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Norwich", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Norwich"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AST, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Bruno Vieira", 
+                    "index": "Vieira, Bruno"
+                }, 
+                "orcid": "0000-0002-4878-6431", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "School of Biological and Chemical Sciences", 
+                            "Queen Mary University of London"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "London", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "London"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BV, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Jos\u00e9 M Villaveces", 
+                    "index": "Villaveces, Jos\u00e9 M"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Max Planck Institute of Biochemistry"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Planegg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Planegg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JMV, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Maria V Schneider", 
+                    "index": "Schneider, Maria V"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "The Genome Analysis Centre"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Norwich", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Norwich"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "MVS, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Suzanna Lewis", 
+                    "index": "Lewis, Suzanna"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Lawrence Berkeley National Laboratory"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SL, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Steve Pettifer", 
+                    "index": "Pettifer, Steve"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "School of Computer Science", 
+                            "The University of Manchester"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Manchester", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Manchester"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SP, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Burkhard Rost", 
+                    "index": "Rost, Burkhard"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BR, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Manuel Corpas", 
+                    "index": "Corpas, Manuel"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "The Genome Analysis Centre"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Norwich", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Norwich"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "manuel.corpas@tgac.ac.uk"
+                ], 
+                "contribution": "MC, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Community nurturing is the single most important factor in determining the sustainability of an open source project such as BioJS."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "07009", 
+        "version": 1, 
+        "type": "feature", 
+        "doi": "10.7554/eLife.07009", 
+        "authorLine": "Guy Yachdav et al", 
+        "title": "Anatomy of BioJS, an open source community for the life sciences", 
+        "titlePrefix": "Cutting Edge", 
+        "published": "2015-07-08T00:00:00", 
+        "versionDate": "2015-07-08T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e07009", 
+        "pdf": "https://publishing-cdn.elifesciences.org/07009/elife-07009-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "None"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.07009.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "BioJS is an open source software project that develops visualization tools for different types of biological data. Here we report on the factors that influenced the growth of the BioJS user and developer community, and outline our strategy for building on this growth. The lessons we have learned on BioJS may also be relevant to other open source software projects."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC0-1.0", 
+            "statement": "This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Guy Yachdav", 
+                    "index": "Yachdav, Guy"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "gyachdav@bio-sof.com"
+                ], 
+                "contribution": "GY, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Tatyana Goldberg", 
+                    "index": "Goldberg, Tatyana"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "TG, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Sebastian Wilzbach", 
+                    "index": "Wilzbach, Sebastian"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SW, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "David Dao", 
+                    "index": "Dao, David"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "DD, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Iris Shih", 
+                    "index": "Shih, Iris"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "IS, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Saket Choudhary", 
+                    "index": "Choudhary, Saket"
+                }, 
+                "orcid": "0000-0001-5202-7633", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Molecular and Computational Biology", 
+                            "University of Southern California"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Los Angeles", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Los Angeles"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SC, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Steve Crouch", 
+                    "index": "Crouch, Steve"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Web and Internet Science", 
+                            "University of Southampton"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Southampton", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Southampton"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SC, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Max Franz", 
+                    "index": "Franz, Max"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Banting and Best Department of Medical Research, Donnelly Centre for Cellular and Biomolecular Research", 
+                            "University of Toronto"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Toronto", 
+                                "Canada"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Toronto"
+                                ], 
+                                "country": "Canada"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "MF, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Alexander Garc\u00eda", 
+                    "index": "Garc\u00eda, Alexander"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Linkingdata I/O LLC"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Austin", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Austin"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AG, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Leyla J Garc\u00eda", 
+                    "index": "Garc\u00eda, Leyla J"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "European Molecular Biology Laboratory-European Bioinformatics Institute"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "LJG, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Bj\u00f6rn A Gr\u00fcning", 
+                    "index": "Gr\u00fcning, Bj\u00f6rn A"
+                }, 
+                "orcid": "0000-0002-3079-6586", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatics Group, Department of Computer Science and Centre for Biological Systems Analysis", 
+                            "University of Freiburg"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Freiburg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Freiburg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BAG, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Devasena Inupakutika", 
+                    "index": "Inupakutika, Devasena"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Web and Internet Science", 
+                            "University of Southampton"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Southampton", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Southampton"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "DI, Drafting or revising the article, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Ian Sillitoe", 
+                    "index": "Sillitoe, Ian"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Institute of Structure and Molecular Biology", 
+                            "University College London"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "London", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "London"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "IS, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Anil S Thanki", 
+                    "index": "Thanki, Anil S"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "The Genome Analysis Centre"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Norwich", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Norwich"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "AST, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Bruno Vieira", 
+                    "index": "Vieira, Bruno"
+                }, 
+                "orcid": "0000-0002-4878-6431", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "School of Biological and Chemical Sciences", 
+                            "Queen Mary University of London"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "London", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "London"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BV, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Jos\u00e9 M Villaveces", 
+                    "index": "Villaveces, Jos\u00e9 M"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Max Planck Institute of Biochemistry"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Planegg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Planegg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "JMV, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Maria V Schneider", 
+                    "index": "Schneider, Maria V"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "The Genome Analysis Centre"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Norwich", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Norwich"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "MVS, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Suzanna Lewis", 
+                    "index": "Lewis, Suzanna"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Lawrence Berkeley National Laboratory"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SL, Contributed unpublished essential data or reagents", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Steve Pettifer", 
+                    "index": "Pettifer, Steve"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "School of Computer Science", 
+                            "The University of Manchester"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Manchester", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Manchester"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "SP, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Burkhard Rost", 
+                    "index": "Rost, Burkhard"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Bioinformatik", 
+                            "Technische Universit\u00e4t M\u00fcnchen"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Garching", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Garching"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "BR, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Manuel Corpas", 
+                    "index": "Corpas, Manuel"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "The Genome Analysis Centre"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Norwich", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Norwich"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "manuel.corpas@tgac.ac.uk"
+                ], 
+                "contribution": "MC, Conception and design, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Community nurturing is the single most important factor in determining the sustainability of an open source project such as BioJS.", 
+        "keywords": [
+            "cutting edge", 
+            "open source", 
+            "JavaScript", 
+            "community", 
+            "bioinformatic", 
+            "visualization"
+        ], 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "BioJavaScript (BioJS; <a href=\"http://biojs.net/\">http://biojs.net/</a>) was set up to meet a need for an open source library of reusable components to visualize and analyse biological data on the web (<a href=\"#fig1\">Figure 1</a>; <a href=\"#bib5\">Corpas et al., 2014</a>). These components are discrete modules that can be reused, extended and combined to meet a particular visualization need. Unlike proprietary (or closed-source) systems, which are typically distributed as \u2018executable\u2019 files under restrictive licenses, open source software projects make their source code freely available under a permissive license (<a href=\"#bib14\">Millington, 2012</a>; <a href=\"#bib1\">Balch, et al., 2015</a>). This allows other users to modify, extend and re-distribute the software with few restrictions and at no cost to other users."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.07009.002", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Examples of BioJS tools.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Tree Viewer (visualization of phylogeny data in a tree-like graph); MSA Viewer (visualization and analysis of multiple sequence alignments); Proteome (multilevel visualization of proteomes in UniProt; <a href=\"#bib21\">The UniProt Consortium, 2015</a>); 3D structures (visualization of protein structures); Dot-bracket (visualization of RNA secondary structures); Muts-needle plot (presentation of mutation distribution across protein sequences). Protein Feature Viewer (visualization of position-based annotations in protein sequences); Plasmids (visualization of DNA plasmids); Pathway visualization (visualization of data from Pathway Commons; <a href=\"#bib4\">Cerami et al., 2011</a>). Note that all visualization tools are native to the browser and do not require any specialized software (such as Adobe flash, Java Virtual Machine or Microsoft Silverlight) to be installed or loaded."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-07009-fig1-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "However, the fact that the community is allowed and encouraged to contribute to an open source software project is no guarantee that they will contribute. It is certainly not a sufficient condition for ensuring sustainability: repositories of open source software such as GitHub (<a href=\"https://github.com/\">https://github.com</a>) and SourceForge (<a href=\"http://sourceforge.net/\">http://sourceforge.net</a>) are littered with abandoned projects that have failed to gain the support needed to survive beyond the originator's initial enthusiasm and/or funding."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In the case of BioJS we were acutely aware of the need to gain buy-in from the community for two reasons:"
+                    }, 
+                    {
+                        "type": "list", 
+                        "prefix": "number", 
+                        "items": [
+                            [
+                                {
+                                    "type": "paragraph", 
+                                    "text": "To fulfil the vision of a suite of tools capable of displaying diverse biological data requires expertise and capacity that is well beyond that of any individual group of developers working in isolation."
+                                }
+                            ], 
+                            [
+                                {
+                                    "type": "paragraph", 
+                                    "text": "To encourage users to spend time integrating BioJS tools into their websites and applications, the project has to have, and be seen to have, a potential lifespan far beyond that of its initial funding."
+                                }
+                            ]
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Predicting the success of projects is hard, and there is nothing in the nature of open source initiatives that makes this any easier. There have been attempts to quantify success in open source software (see, e.g., the metrics proposed by <a href=\"#bib7\">Crowston et al., 2003</a>), but these have gained little traction. More useful, we feel, have been articles that provide pragmatic advice to would-be open software developers, such as \u2018Ten simple rules for the open development of scientific software\u2019 (<a href=\"#bib16\">Prlic and Procter, 2012</a>). Rather than repeating or re-working the general-purpose recommendations of others, here we describe what we have learned from the BioJS project."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Project evolution", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "BioJS was initially developed in 2012 through a collaboration between the European Bioinformatics Institute (EMBL-EBI) and The Genome Analysis Centre (TGAC). The project began as a set of individual graphical components deposited in a bespoke online registry. Since then it has expanded into a community of 41 code contributors spread across four continents, a Google Group forum with more than 150 members (<a href=\"https://groups.google.com/forum/#!forum/biojs\">https://groups.google.com/forum/#!forum/biojs</a>), and 15 published papers (as of May 2015). The project's first paper, published in 2013 (<a href=\"#bib11\">Gomez, et al., 2013</a>), has been cited 31 times to date."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The BioJS registry (<a href=\"http://biojs.io/\">http://biojs.io</a>) offers a modern platform for fast and customizable access to components. The registry provides a centralized resource where deposited components can be discovered, tested and downloaded at the push of a button. BioJS components are organized as packages. This modular approach reduces duplication of effort and has been used by other projects, such as BioGem (<a href=\"#bib3\">Bonnal, et al., 2012</a>). Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (<a href=\"#bib22\">Yachdav et al., 2014</a>), CATH (<a href=\"#bib19\">Sillitoe et al., 2013</a>), Genome3D (<a href=\"#bib13\">Lewis et al., 2013</a>), Reactome (<a href=\"#bib6\">Croft et al., 2014</a>), Expression Atlas (<a href=\"#bib15\">Petryszak et al., 2014</a>), Ensembl (<a href=\"#bib8\">Cunningham et al., 2015</a>), InterMine (<a href=\"#bib20\">Smith et al., 2012</a>), PolyMarker (<a href=\"#bib17\">Ramirez-Gonzalez et al., 2015</a>) and the TGAC Browser (<a href=\"http://browser.tgac.ac.uk/\">http://browser.tgac.ac.uk</a>)."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Building and growing an open source community", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "In this section we discuss the factors that, we believe, have played an important role in the growth of the BioJS open source community."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-1", 
+                        "title": "Clear mission and vision statements for the project", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "A vision is an ambitious aim that clearly states the value that the project adds. BioJS's vision is that \u2018every online biological dataset in the world should be visualized with BioJS tools\u2019. This vision statement communicates the way that BioJS aims to \u2018change the world\u2019. The members of our community are energized and motivated to contribute to this worthy cause. We also have a mission statement that describes what we do in order to achieve the our vision: \u2018we develop an open-source library of JavaScript components to visualize biological data\u2019. Whereas the vision is broad, ambitious and overarching, the mission statement is more practical and actionable. Having both a mission statement and a vision helps the BioJS community define what to do and who we are."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-2", 
+                        "title": "Aligning interests with the wider community", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "BioJS aims to create the largest, most comprehensive repository of JavaScript-based tools that visualize online biological data. Many research groups that generate and make their data available will benefit if we are successful. Groups developing new components will now find that a host of core JavaScript functionality (I/O, parsers, basic visualization) is already available as part of the BioJS library. This creates an ecosystem where new contributors can plug into and extend existing components according to their needs and preferences. Furthermore, developers can leverage the visibility of the BioJS registry to increase the exposure of their own tools, and attract community adoption and feedback. Creating incentives for developers to add their tools into BioJS aligns the interest of many groups with our own project. This in turn has many benefits: (1) group leaders are more inclined to expend scarce resources that advance both their own and BioJS's goals; (2) the BioJS community grows as more participants find that their own goals are aligned with those of BioJS; and (3) some people who join the project may become long-term participants or even become evangelists who promote the project to others. Aligning interests with the community is crucial to grow contribution for projects that lack funding: indeed, the development of 27 components was done by groups that are not directly affiliated with BioJS, but who appreciated the value of contributing to BioJS and decided to integrate the components they had developed into the registry."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-3", 
+                        "title": "Low technological barriers", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Shared interests and goals may not be enough if contributing to a project involves significant and costly technical effort, so we have designed BioJS such that a potential contributor is faced with a relatively small set of technical requirements: s/he needs to know JavaScript, to ensure that their component conforms to the NPM package manager (<a href=\"https://www.npmjs.com/\">https://www.npmjs.com</a>), and to follow some simple naming conventions; contributors are not required to understand the core system. Moreover, multiple parallel contributions can be worked on at once, eliminating cross-development dependencies and affording contributors independence in creating their own components."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-4", 
+                        "title": "Detailed and complete documentation and tutorials", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The educational section of the BioJS website (<a href=\"http://edu.biojs.net/\">http://edu.biojs.net</a>) includes a comprehensive tutorial tailored for different types and levels of developers. Newcomers will find that the \u2018getting started\u2019 section sheds light on what the project is about and how core concepts (such as packaging) help to achieve modularity. Tutorials offer a step-by-step set of instructions on how to create a new BioJS component and detail the two-step process for publishing components. Contributors can then \u2018graduate\u2019 to the more advanced and detailed sections of the tutorial to explore the nuances of BioJS packages, components, the registry and the JavaScript technologies development stack. Good documentation is crucial for an open source project such as BioJS as it helps to \u2018flatten\u2019 the learning curve and thus promote participation, contribution and ultimately adoption."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-5", 
+                        "title": "An open, fair and inclusive recognition strategy", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "BioJS's recognition strategy aims to be as inclusive and fair as possible. In 2013 we published an \u2018Application Note\u2019 in <i>Bioinformatics</i> including all contributing members, and in 2014 we published a collection of 14 articles in <i>F1000RESEARCH</i> that provided an update on the project at the time (<a href=\"#bib5\">Corpas, et al., 2014</a>). By allowing publication of independent BioJS components as separate \u2018Application Note\u2019-type articles, we have enabled contributors who spend most of their time on voluntary basis to claim ownership and gain recognition for the work they do."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-6", 
+                        "title": "Prompt and unfailingly positive communication", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We have created several channels of communication to respond to needs of different project stakeholders. Our Gitter channel (<a href=\"https://gitter.im/biojs\">https://gitter.im/biojs</a>), which currently includes 47 members, is a public chat-room that is directly linked to our GitHub repository. Developers use the Gitter channel to announce new commits, bug fixes, patches and forks. Questions and answers about source code are posted to the room on a daily basis and, as a matter of principle, the core development team attempts to provide immediate responses on the Gitter channel. A timely response is crucial for keeping volunteers engaged and demonstrating the vitality of the project. The positive tone and friendly conduct on the chat room and mailing list also exemplify the inclusive ethos of the BioJS community."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-7", 
+                        "title": "Early decentralization of responsibilities", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Since its early days the BioJS community has adopted a culture that encourages and supports members who wish to assume direct responsibility for parts of the project. As a result, we do not have one central \u2018benevolent dictator\u2019, but rather a core group of motivated and committed community members."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-8", 
+                        "title": "Promotion of the project through outreach and education", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Time spent on promoting, evangelizing and networking is one of the most fruitful investments in the community. We regularly schedule tutorials, talks and meetings at events such as VizBi, ECCB, ISMB and its satellite meeting BOSC, as these are natural venues to connect with our target audience. BioJS first organized a half-day tutorial at the 2014 VizBi conference (held in Heidelberg, Germany) where 12 participants got hands-on experience in creating and adding new components to the registry. Later that year five coders travelled to Munich, Germany, to participate in the first ever BioJS hackathon, an event that gave birth to BioJS 2.0. Other hackathons, workshops and tutorials have been held in different venues across Europe and the US, aimed at increasing the visibility of the project and promoting contribution. During the winter semester of 2015 the Technical University of Munich ran an undergraduate level biological data visualization course in which 24 students were introduced to BioJS and contributed 11 components to the registry."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s3-9", 
+                        "title": "Being \u2018cool\u2019 by joining community development programs", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "While many in science would prefer to just focus on traditional research activities, we discovered that joining high-profile programs, such as the Google Summer of Code (GSoC) program, was a highly effective way to advance the project goals. Such programs offer outstanding opportunities to interact with the best and the brightest students. The GSoC program offers student developers stipends to write code for various open source software projects, and BioJS received sponsorship for five GSoC internship positions in 2014. The impact of entering this program was immediate: we saw a sharp increase in the number of subscriptions to our community mailing list (from \u223c40 members to nearly 100) in less than a month. The impact is also long lasting as we now have five peer-reviewed articles underway, describing projects that broaden the scope of the BioJS library and make it more useful for our community. Moreover, two of the students from the GSoC program (SW, DD) have now become members of the core group and, led by SW, have themselves orchestrated a series of hackathons in which BioJS was transitioned to version 2.0. The PhyloWidget project has also benefitted from the GSoC program (<a href=\"#bib12\">Jordan and Piel, 2008</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The BioJS project has also received support from the UK Software Sustainability Institute (<a href=\"http://www.software.ac.uk/open-call\">http://www.software.ac.uk/open-call</a>) to assess and help improve BioJS (by, e.g., evaluating documentation, code maintainability and the ease of development)."
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Comparable approaches from other open-source communities", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "None of the points raised above are unique to BioJS as there are a number of other open source software projects in the life sciences. For instance, Cytoscape.js (<a href=\"http://js.cytoscape.org/\">http://js.cytoscape.org</a>), an open source community developing a web-based viewer for the Cytoscape network viewer (<a href=\"#bib18\">Shannon, et al., 2003</a>), is also mostly decentralized, being organized through some simple rules and with a community of contributors from both the public and private sectors. These contributors add new features to the library and discuss new feature ideas and bug reports. However, code contributions (i.e., pull requests) do require centralized review before merging into the main codebase."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The Galaxy project (<a href=\"#bib9\">Giardine, et al., 2005</a>; <a href=\"#bib2\">Blankenberg, et al., 2010</a>; <a href=\"#bib10\">Goecks, et al., 2010</a>) is making advanced bioinformatics software accessible to biologists by directly providing an intuitive web interface to these applications. The Galaxy software enables the reproduction of computational research workflows by capturing and organizing the pipeline's layout and components into re-runnable protocols. The project also makes use of public collaboration tools to coordinate code contributions with the development community, and it maintains a dedicated portal (<a href=\"https://biostar.usegalaxy.org/\">https://biostar.usegalaxy.org/</a>) to communicate and support its user base. Like BioJS, the Galaxy core framework can be easily extended by plugins of all kinds, and the Galaxy core team offers the Galaxy ToolShed to distribute and share all these extensions in an App-Store like fashion. The annual Galaxy Community Conference (GCC) also attracts more than 200 participants and offers a variety of workshops and a hackathon."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The Bionode project (<a href=\"http://www.bionode.io/\">http://www.bionode.io</a>) aims to provide modular, scalable and highly reusable tools for bioinformatics analysis. The community that surrounds this project is mainly composed of bioinformaticians and JavaScript (Node.js) developers who dedicate their time either as a hobby or because they need to add a feature (or fix a bug) for their own projects. Bionode is very open to any kind of contribution and does not enforce too many rules or governance to the community."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s5", 
+                "title": "Conclusions", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Life science open source communities have their own special peculiarities and motivations. We have presented a compilation of experiences that, in our view, have helped BioJS to become a robust international project within a relatively short period of time. Apart from fostering the right skills and technical experience to develop BioJS, we have established formal means to reward contributors, to keep the community members motivated, and to increase our impact. If used with care and fairness, recognition can be a powerful lever with which to build communities. We believe that some of the lessons we have learned and the practices we have established will help others to build similarly robust open source projects and communities."
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Balch", 
+                            "index": "Balch, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Arias-Pulido", 
+                            "index": "Arias-Pulido, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Banerjee", 
+                            "index": "Banerjee, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AK Lancaster", 
+                            "index": "Lancaster, AK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KB Clark", 
+                            "index": "Clark, KB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Perilstein", 
+                            "index": "Perilstein, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Hawkins", 
+                            "index": "Hawkins, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Rhodes", 
+                            "index": "Rhodes, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Sliz", 
+                            "index": "Sliz, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Wilkins", 
+                            "index": "Wilkins, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TW Chittenden", 
+                            "index": "Chittenden, TW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Science and technology consortia in U.S. biomedical research: a paradigm shift in response to unsustainable academic growth", 
+                "journal": {
+                    "name": [
+                        "BioEssays"
+                    ]
+                }, 
+                "volume": "37", 
+                "pages": {
+                    "first": "119", 
+                    "last": "122", 
+                    "range": "119\u2013122"
+                }, 
+                "doi": "10.1002/bies.201400167"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Blankenberg", 
+                            "index": "Blankenberg, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Von Kuster", 
+                            "index": "Von Kuster, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Coraor", 
+                            "index": "Coraor, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Ananda", 
+                            "index": "Ananda, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Lazarus", 
+                            "index": "Lazarus, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Mangan", 
+                            "index": "Mangan, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Nekrutenko", 
+                            "index": "Nekrutenko, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Taylor", 
+                            "index": "Taylor, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Galaxy: a web-based genome analysis tool for experimentalists", 
+                "journal": {
+                    "name": [
+                        "Current Protocols in Molecular Biology"
+                    ]
+                }, 
+                "volume": "19", 
+                "pages": {
+                    "first": "19", 
+                    "last": "21", 
+                    "range": "19\u201321"
+                }, 
+                "doi": "10.1002/0471142727.mb1910s89"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2102", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Bonnal", 
+                            "index": "Bonnal, RJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Aerts", 
+                            "index": "Aerts, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Githinji", 
+                            "index": "Githinji, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Goto", 
+                            "index": "Goto, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D MacLean", 
+                            "index": "MacLean, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CA Miller", 
+                            "index": "Miller, CA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Mishima", 
+                            "index": "Mishima, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Pagani", 
+                            "index": "Pagani, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Ramirez-Gonzalez", 
+                            "index": "Ramirez-Gonzalez, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Smant", 
+                            "index": "Smant, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Strozzi", 
+                            "index": "Strozzi, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Syme", 
+                            "index": "Syme, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Vos", 
+                            "index": "Vos, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Wennblom", 
+                            "index": "Wennblom, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BJ Woodcroft", 
+                            "index": "Woodcroft, BJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Katayama", 
+                            "index": "Katayama, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Prins", 
+                            "index": "Prins, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Biogem: an effective tool-based approach for scaling up open source software development in bioinformatics", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "1035", 
+                    "last": "1037", 
+                    "range": "1035\u20131037"
+                }, 
+                "doi": "10.1093/bioinformatics/bts080"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EG Cerami", 
+                            "index": "Cerami, EG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BE Gross", 
+                            "index": "Gross, BE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Demir", 
+                            "index": "Demir, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Rodchenkov", 
+                            "index": "Rodchenkov, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Babur", 
+                            "index": "Babur, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Anwar", 
+                            "index": "Anwar, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Schultz", 
+                            "index": "Schultz, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GD Bader", 
+                            "index": "Bader, GD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sander", 
+                            "index": "Sander, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Pathway commons, a web resource for biological pathway data", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "39", 
+                "pages": {
+                    "first": "D685", 
+                    "last": "D690", 
+                    "range": "D685\u2013D690"
+                }, 
+                "doi": "10.1093/nar/gkq1039"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Corpas", 
+                            "index": "Corpas, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Jimenez", 
+                            "index": "Jimenez, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Carbon", 
+                            "index": "Carbon, SJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Garc\u00eda", 
+                            "index": "Garc\u00eda, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Garcia", 
+                            "index": "Garcia, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Goldberg", 
+                            "index": "Goldberg, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gomez", 
+                            "index": "Gomez, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kalderimis", 
+                            "index": "Kalderimis, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SE Lewis", 
+                            "index": "Lewis, SE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Mulvany", 
+                            "index": "Mulvany, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Pawlik", 
+                            "index": "Pawlik, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Rowland", 
+                            "index": "Rowland, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Salazar", 
+                            "index": "Salazar, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Schreiber", 
+                            "index": "Schreiber, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Sillitoe", 
+                            "index": "Sillitoe, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WH Spooner", 
+                            "index": "Spooner, WH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Thanki", 
+                            "index": "Thanki, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Villaveces", 
+                            "index": "Villaveces, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Yachdav", 
+                            "index": "Yachdav, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Hermjakob", 
+                            "index": "Hermjakob, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "BioJS: an open source standard for biological visualisation\u2014its status in 2014", 
+                "journal": {
+                    "name": [
+                        "F1000Research"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "55", 
+                "doi": "10.12688/f1000research.3-55.v1"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Croft", 
+                            "index": "Croft, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AF Mundo", 
+                            "index": "Mundo, AF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Haw", 
+                            "index": "Haw, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Milacic", 
+                            "index": "Milacic, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Weiser", 
+                            "index": "Weiser, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Wu", 
+                            "index": "Wu, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Caudy", 
+                            "index": "Caudy, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Garapati", 
+                            "index": "Garapati, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Gillespie", 
+                            "index": "Gillespie, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Kamdar", 
+                            "index": "Kamdar, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Jassal", 
+                            "index": "Jassal, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Jupe", 
+                            "index": "Jupe, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Matthews", 
+                            "index": "Matthews, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B May", 
+                            "index": "May, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Palatnik", 
+                            "index": "Palatnik, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Rothfels", 
+                            "index": "Rothfels, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Shamovsky", 
+                            "index": "Shamovsky, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Song", 
+                            "index": "Song, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Williams", 
+                            "index": "Williams, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Birney", 
+                            "index": "Birney, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Hermjakob", 
+                            "index": "Hermjakob, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Stein", 
+                            "index": "Stein, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P D'Eustachio", 
+                            "index": "D'Eustachio, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "The Reactome pathway knowledgebase", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "42", 
+                "pages": {
+                    "first": "D472", 
+                    "last": "D477", 
+                    "range": "D472\u2013D477"
+                }, 
+                "doi": "10.1093/nar/gkt1102"
+            }, 
+            {
+                "type": "unknown", 
+                "id": "bib7", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Crowston", 
+                            "index": "Crowston, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Annabi", 
+                            "index": "Annabi, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Howison", 
+                            "index": "Howison, J"
+                        }
+                    }
+                ], 
+                "title": "Proceedings of the International Conference on Information Systems", 
+                "details": "Proceedings of the International Conference on Information Systems"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Cunningham", 
+                            "index": "Cunningham, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Amode", 
+                            "index": "Amode, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Barrell", 
+                            "index": "Barrell, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Beal", 
+                            "index": "Beal, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Billis", 
+                            "index": "Billis, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Brent", 
+                            "index": "Brent, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Carvalho-Silva", 
+                            "index": "Carvalho-Silva, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Clapham", 
+                            "index": "Clapham, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Coates", 
+                            "index": "Coates, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Fitzgerald", 
+                            "index": "Fitzgerald, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Gil", 
+                            "index": "Gil, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CG Gir\u00f3n", 
+                            "index": "Gir\u00f3n, CG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Gordon", 
+                            "index": "Gordon, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Hourlier", 
+                            "index": "Hourlier, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SE Hunt", 
+                            "index": "Hunt, SE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Janacek", 
+                            "index": "Janacek, SH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Johnson", 
+                            "index": "Johnson, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Juettemann", 
+                            "index": "Juettemann, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AK K\u00e4h\u00e4ri", 
+                            "index": "K\u00e4h\u00e4ri, AK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Keenan", 
+                            "index": "Keenan, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FJ Martin", 
+                            "index": "Martin, FJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Maurel", 
+                            "index": "Maurel, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W McLaren", 
+                            "index": "McLaren, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DN Murphy", 
+                            "index": "Murphy, DN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Nag", 
+                            "index": "Nag, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Overduin", 
+                            "index": "Overduin, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Parker", 
+                            "index": "Parker, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Patricio", 
+                            "index": "Patricio, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Perry", 
+                            "index": "Perry, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Pignatelli", 
+                            "index": "Pignatelli, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HS Riat", 
+                            "index": "Riat, HS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Sheppard", 
+                            "index": "Sheppard, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Taylor", 
+                            "index": "Taylor, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Thormann", 
+                            "index": "Thormann, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Vullo", 
+                            "index": "Vullo, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SP Wilder", 
+                            "index": "Wilder, SP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Zadissa", 
+                            "index": "Zadissa, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Aken", 
+                            "index": "Aken, BL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Birney", 
+                            "index": "Birney, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Harrow", 
+                            "index": "Harrow, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Kinsella", 
+                            "index": "Kinsella, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Muffato", 
+                            "index": "Muffato, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ruffier", 
+                            "index": "Ruffier, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SM Searle", 
+                            "index": "Searle, SM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Spudich", 
+                            "index": "Spudich, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Trevanion", 
+                            "index": "Trevanion, SJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Yates", 
+                            "index": "Yates, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DR Zerbino", 
+                            "index": "Zerbino, DR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Flicek", 
+                            "index": "Flicek, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ensembl", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "43", 
+                "pages": {
+                    "first": "D662", 
+                    "last": "D669", 
+                    "range": "D662\u2013D669"
+                }, 
+                "doi": "10.1093/nar/gku1010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Giardine", 
+                            "index": "Giardine, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Riemer", 
+                            "index": "Riemer, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Hardison", 
+                            "index": "Hardison, RC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Burhans", 
+                            "index": "Burhans, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Elnitski", 
+                            "index": "Elnitski, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Shah", 
+                            "index": "Shah, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zhang", 
+                            "index": "Zhang, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Blankenberg", 
+                            "index": "Blankenberg, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Albert", 
+                            "index": "Albert, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Taylor", 
+                            "index": "Taylor, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Miller", 
+                            "index": "Miller, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WJ Kent", 
+                            "index": "Kent, WJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Nekrutenko", 
+                            "index": "Nekrutenko, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Galaxy: a platform for interactive large-scale genome analysis", 
+                "journal": {
+                    "name": [
+                        "Genome Research"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "1451", 
+                    "last": "1455", 
+                    "range": "1451\u20131455"
+                }, 
+                "doi": "10.1101/gr.4086505"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Goecks", 
+                            "index": "Goecks, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Nekrutenko", 
+                            "index": "Nekrutenko, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Taylor", 
+                            "index": "Taylor, J"
+                        }
+                    }, 
+                    {
+                        "type": "group", 
+                        "name": "Galaxy Team"
+                    }
+                ], 
+                "articleTitle": "Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences", 
+                "journal": {
+                    "name": [
+                        "Genome Biology"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": "R86", 
+                "doi": "10.1186/gb-2010-11-8-r86"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gomez", 
+                            "index": "Gomez, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LJ Garc\u00eda", 
+                            "index": "Garc\u00eda, LJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GA Salazar", 
+                            "index": "Salazar, GA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Villaveces", 
+                            "index": "Villaveces, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Gore", 
+                            "index": "Gore, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Garc\u00eda", 
+                            "index": "Garc\u00eda, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Mart\u00edn", 
+                            "index": "Mart\u00edn, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Launay", 
+                            "index": "Launay, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Alc\u00e1ntara", 
+                            "index": "Alc\u00e1ntara, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Del-Toro", 
+                            "index": "Del-Toro, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Dumousseau", 
+                            "index": "Dumousseau, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Orchard", 
+                            "index": "Orchard, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Velankar", 
+                            "index": "Velankar, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Hermjakob", 
+                            "index": "Hermjakob, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Zong", 
+                            "index": "Zong, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Ping", 
+                            "index": "Ping, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Corpas", 
+                            "index": "Corpas, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RC Jim\u00e9nez", 
+                            "index": "Jim\u00e9nez, RC"
+                        }
+                    }
+                ], 
+                "articleTitle": "BioJS: an open source JavaScript framework for biological data visualization", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "29", 
+                "pages": {
+                    "first": "1103", 
+                    "last": "1104", 
+                    "range": "1103\u20131104"
+                }, 
+                "doi": "10.1093/bioinformatics/btt100"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GE Jordan", 
+                            "index": "Jordan, GE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WH Piel", 
+                            "index": "Piel, WH"
+                        }
+                    }
+                ], 
+                "articleTitle": "PhyloWidget: web-based visualizations for the tree of life", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "1641", 
+                    "last": "1642", 
+                    "range": "1641\u20131642"
+                }, 
+                "doi": "10.1093/bioinformatics/btn235"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TE Lewis", 
+                            "index": "Lewis, TE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Sillitoe", 
+                            "index": "Sillitoe, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Andreeva", 
+                            "index": "Andreeva, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TL Blundell", 
+                            "index": "Blundell, TL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DW Buchan", 
+                            "index": "Buchan, DW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Chothia", 
+                            "index": "Chothia, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Cuff", 
+                            "index": "Cuff, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Dana", 
+                            "index": "Dana, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Filippis", 
+                            "index": "Filippis, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Gough", 
+                            "index": "Gough, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hunter", 
+                            "index": "Hunter, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DT Jones", 
+                            "index": "Jones, DT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Kelley", 
+                            "index": "Kelley, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Kleywegt", 
+                            "index": "Kleywegt, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Minneci", 
+                            "index": "Minneci, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Mitchell", 
+                            "index": "Mitchell, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AG Murzin", 
+                            "index": "Murzin, AG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Ochoa-Monta\u00f1o", 
+                            "index": "Ochoa-Monta\u00f1o, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "OJ Rackham", 
+                            "index": "Rackham, OJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Smith", 
+                            "index": "Smith, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Sternberg", 
+                            "index": "Sternberg, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Velankar", 
+                            "index": "Velankar, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Yeats", 
+                            "index": "Yeats, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Orengo", 
+                            "index": "Orengo, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Genome3D: a UK collaborative project to annotate genomic sequences with predicted 3D structures based on SCOP and CATH domains", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "41", 
+                "pages": {
+                    "first": "D499", 
+                    "last": "D507", 
+                    "range": "D499\u2013D507"
+                }, 
+                "doi": "10.1093/nar/gks1266"
+            }, 
+            {
+                "type": "web", 
+                "id": "bib14", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Millington", 
+                            "index": "Millington, R"
+                        }
+                    }
+                ], 
+                "title": "Buzzing communities: how to build bigger, better, and more active online communities", 
+                "uri": "http://www.FeverBee.com"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Petryszak", 
+                            "index": "Petryszak, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Burdett", 
+                            "index": "Burdett, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Fiorelli", 
+                            "index": "Fiorelli, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NA Fonseca", 
+                            "index": "Fonseca, NA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Gonzalez-Porta", 
+                            "index": "Gonzalez-Porta, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Hastings", 
+                            "index": "Hastings, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Huber", 
+                            "index": "Huber, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Jupp", 
+                            "index": "Jupp, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Keays", 
+                            "index": "Keays, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Kryvych", 
+                            "index": "Kryvych, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J McMurry", 
+                            "index": "McMurry, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JC Marioni", 
+                            "index": "Marioni, JC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Malone", 
+                            "index": "Malone, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Megy", 
+                            "index": "Megy, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Rustici", 
+                            "index": "Rustici, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AY Tang", 
+                            "index": "Tang, AY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Taubert", 
+                            "index": "Taubert, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Williams", 
+                            "index": "Williams, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Mannion", 
+                            "index": "Mannion, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HE Parkinson", 
+                            "index": "Parkinson, HE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Brazma", 
+                            "index": "Brazma, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Expression Atlas update\u2014a database of gene and transcript expression from microarray- and sequencing-based functional genomics experiments", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "42", 
+                "pages": {
+                    "first": "D926", 
+                    "last": "D932", 
+                    "range": "D926\u2013D932"
+                }, 
+                "doi": "10.1093/nar/gkt1270"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Prlic", 
+                            "index": "Prlic, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JB Procter", 
+                            "index": "Procter, JB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ten simple rules for the open development of scientific software", 
+                "journal": {
+                    "name": [
+                        "PLOS Computational Biology"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": "e1002802", 
+                "doi": "10.1371/journal.pcbi.1002802"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RH Ramirez-Gonzalez", 
+                            "index": "Ramirez-Gonzalez, RH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Segovia", 
+                            "index": "Segovia, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Bird", 
+                            "index": "Bird, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Fenwick", 
+                            "index": "Fenwick, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Holdgate", 
+                            "index": "Holdgate, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Berry", 
+                            "index": "Berry, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jack", 
+                            "index": "Jack, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Caccamo", 
+                            "index": "Caccamo, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Uauy", 
+                            "index": "Uauy, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "RNA-Seq bulked segregant analysis enables the identification of high-resolution genetic markers for breeding in hexaploid wheat", 
+                "journal": {
+                    "name": [
+                        "Plant Biotechnology Journal"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "613", 
+                    "last": "624", 
+                    "range": "613\u2013624"
+                }, 
+                "doi": "10.1111/pbi.12281"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Shannon", 
+                            "index": "Shannon, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Markiel", 
+                            "index": "Markiel, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Ozier", 
+                            "index": "Ozier, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NS Baliga", 
+                            "index": "Baliga, NS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JT Wang", 
+                            "index": "Wang, JT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Ramage", 
+                            "index": "Ramage, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Amin", 
+                            "index": "Amin, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Schwikowski", 
+                            "index": "Schwikowski, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Ideker", 
+                            "index": "Ideker, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cytoscape: a software environment for integrated models of biomolecular interaction networks", 
+                "journal": {
+                    "name": [
+                        "Genome Research"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "2498", 
+                    "last": "2504", 
+                    "range": "2498\u20132504"
+                }, 
+                "doi": "10.1101/gr.1239303"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Sillitoe", 
+                            "index": "Sillitoe, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AL Cuff", 
+                            "index": "Cuff, AL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BH Dessailly", 
+                            "index": "Dessailly, BH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NL Dawson", 
+                            "index": "Dawson, NL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Furnham", 
+                            "index": "Furnham, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Lee", 
+                            "index": "Lee, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JG Lees", 
+                            "index": "Lees, JG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TE Lewis", 
+                            "index": "Lewis, TE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Studer", 
+                            "index": "Studer, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Rentzsch", 
+                            "index": "Rentzsch, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Yeats", 
+                            "index": "Yeats, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Thornton", 
+                            "index": "Thornton, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CA Orengo", 
+                            "index": "Orengo, CA"
+                        }
+                    }
+                ], 
+                "articleTitle": "New functional families (FunFams) in CATH to improve the mapping of conserved functional sites to 3D structures", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "41", 
+                "pages": {
+                    "first": "D490", 
+                    "last": "D498", 
+                    "range": "D490\u2013D498"
+                }, 
+                "doi": "10.1093/nar/gks1211"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RN Smith", 
+                            "index": "Smith, RN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Aleksic", 
+                            "index": "Aleksic, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Butano", 
+                            "index": "Butano, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Carr", 
+                            "index": "Carr, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Contrino", 
+                            "index": "Contrino, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Hu", 
+                            "index": "Hu, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Lyne", 
+                            "index": "Lyne, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Lyne", 
+                            "index": "Lyne, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kalderimis", 
+                            "index": "Kalderimis, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Rutherford", 
+                            "index": "Rutherford, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Stepan", 
+                            "index": "Stepan, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Sullivan", 
+                            "index": "Sullivan, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Wakeling", 
+                            "index": "Wakeling, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Watkins", 
+                            "index": "Watkins, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Micklem", 
+                            "index": "Micklem, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "InterMine: a flexible data warehouse system for the integration and analysis of heterogeneous biological data", 
+                "journal": {
+                    "name": [
+                        "Bioinformatics"
+                    ]
+                }, 
+                "volume": "28", 
+                "pages": {
+                    "first": "3163", 
+                    "last": "3165", 
+                    "range": "3163\u20133165"
+                }, 
+                "doi": "10.1093/bioinformatics/bts577"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "group", 
+                        "name": "The UniProt Consortium"
+                    }
+                ], 
+                "articleTitle": "UniProt: a hub for protein information", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "43", 
+                "pages": {
+                    "first": "D204", 
+                    "last": "D212", 
+                    "range": "D204\u2013D212"
+                }, 
+                "doi": "10.1093/nar/gku989"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Yachdav", 
+                            "index": "Yachdav, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Kloppmann", 
+                            "index": "Kloppmann, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Kajan", 
+                            "index": "Kajan, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Hecht", 
+                            "index": "Hecht, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Goldberg", 
+                            "index": "Goldberg, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Hamp", 
+                            "index": "Hamp, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P H\u00f6nigschmid", 
+                            "index": "H\u00f6nigschmid, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Schafferhans", 
+                            "index": "Schafferhans, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Roos", 
+                            "index": "Roos, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Bernhofer", 
+                            "index": "Bernhofer, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Richter", 
+                            "index": "Richter, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Ashkenazy", 
+                            "index": "Ashkenazy, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Punta", 
+                            "index": "Punta, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Schlessinger", 
+                            "index": "Schlessinger, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Bromberg", 
+                            "index": "Bromberg, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Schneider", 
+                            "index": "Schneider, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Vriend", 
+                            "index": "Vriend, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Sander", 
+                            "index": "Sander, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Ben-Tal", 
+                            "index": "Ben-Tal, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Rost", 
+                            "index": "Rost, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "PredictProtein\u2013an open resource for online prediction of protein structural and functional features", 
+                "journal": {
+                    "name": [
+                        "Nucleic Acids Research"
+                    ]
+                }, 
+                "volume": "42", 
+                "pages": {
+                    "first": "W337", 
+                    "last": "W343", 
+                    "range": "W337\u2013W343"
+                }, 
+                "doi": "10.1093/nar/gku366"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Henning Hermjakob and Rafael Jimenez, who founded and supported BioJS through its early days, and John G\u00f3mez, who developed the first release of the BioJS library. We also thank Ian Mulvany for helping us to define and refine our vision."
+            }
+        ]
+    }
+}

@@ -1,0 +1,817 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "12260", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.12260", 
+        "authorLine": "Bas JHM Rosier, Tom FA de Greef", 
+        "title": "How to make an oscillator", 
+        "titlePrefix": "Synthetic Biology", 
+        "published": "2015-12-10T00:00:00", 
+        "versionDate": "2015-12-10T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e12260", 
+        "pdf": "https://publishing-cdn.elifesciences.org/12260/elife-12260-v1.pdf", 
+        "subjects": [
+            {
+                "id": "biochemistry", 
+                "name": "Biochemistry"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "E. coli"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A cell-free approach reveals how genetic circuits can produce robust oscillations of proteins and other components."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Rosier et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Bas JHM Rosier", 
+                    "index": "Rosier, Bas JHM"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biomedical Engineering and Institute for Complex Molecular Systems", 
+                            "Eindhoven University of Technology"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Eindhoven", 
+                                "The Netherlands"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Eindhoven"
+                                ], 
+                                "country": "The Netherlands"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Tom FA de Greef", 
+                    "index": "de Greef, Tom FA"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biomedical Engineering and Institute for Complex Molecular Systems", 
+                            "Eindhoven University of Technology"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Eindhoven", 
+                                "The Netherlands"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Eindhoven"
+                                ], 
+                                "country": "The Netherlands"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "t.f.a.d.greef@tue.nl"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "12260", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.12260", 
+        "authorLine": "Bas JHM Rosier, Tom FA de Greef", 
+        "title": "How to make an oscillator", 
+        "titlePrefix": "Synthetic Biology", 
+        "published": "2015-12-10T00:00:00", 
+        "versionDate": "2015-12-10T00:00:00", 
+        "volume": 4, 
+        "elocationId": "e12260", 
+        "pdf": "https://publishing-cdn.elifesciences.org/12260/elife-12260-v1.pdf", 
+        "subjects": [
+            {
+                "id": "biochemistry", 
+                "name": "Biochemistry"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "E. coli"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A cell-free approach reveals how genetic circuits can produce robust oscillations of proteins and other components."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Rosier et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Bas JHM Rosier", 
+                    "index": "Rosier, Bas JHM"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biomedical Engineering and Institute for Complex Molecular Systems", 
+                            "Eindhoven University of Technology"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Eindhoven", 
+                                "The Netherlands"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Eindhoven"
+                                ], 
+                                "country": "The Netherlands"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Tom FA de Greef", 
+                    "index": "de Greef, Tom FA"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Biomedical Engineering and Institute for Complex Molecular Systems", 
+                            "Eindhoven University of Technology"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Eindhoven", 
+                                "The Netherlands"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Eindhoven"
+                                ], 
+                                "country": "The Netherlands"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "t.f.a.d.greef@tue.nl"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "synthetic biology", 
+            "genetic networks", 
+            "oscillators", 
+            "cell-free prototyping"
+        ], 
+        "relatedArticles": [
+            "09771"
+        ], 
+        "body": [
+            {
+                "type": "paragraph", 
+                "text": "<b>Related research article</b> Niederholtmeyer H, Sun ZZ, Hori Y, Yeung E, Verpoorte A, Murray RM, Maerkl SJ. 2015. Rapid cell-free forward engineering of novel genetic ring oscillators. <i>eLife</i> <b>4</b>: e09771. <a href=\"http://dx.doi.org/10.7554/eLife.09771\">doi: 10.7554/eLife.09771</a>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "<b>Image</b> Circuits made of three or five genes can generate robust oscillations in the fluorescence of bacteria cells."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "<inline-graphic xlink:href=\"elife-12260-inf1-v1\"></inline-graphic>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Ever since it was discovered that the level of calcium ions inside a cell can oscillate (<a href=\"#bib13\">Woods et al., 1986</a>), biologists have been intrigued by the periodic nature of many cellular signals. While we are slowly starting to grasp the many and varied roles that these periodic oscillations play in cellular communication, an open question remains: how are networks of genes able to generate sustained oscillations? Now, in eLife, Sebastian Maerkl and co-workers \u2013 including Henrike Niederholtmeyer and Zachary Sun as joint first authors \u2013 report that they have used a synthetic biology approach to reveal how simple gene circuits can produce robust oscillations in cells (<a href=\"#bib5\">Niederholtmeyer et al., 2015</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Initially, it was argued that periodic oscillations in the level of calcium ions and other cellular components had no role in signaling, but decades of research has revealed that periodic signals are better at relaying information than non-periodic signals (<a href=\"#bib10\">Rapp, 1987</a>; <a href=\"#bib1\">Behar and Hoffman, 2010</a>; <a href=\"#bib9\">Purvis and Lahav, 2013</a>; <a href=\"#bib3\">Levine et al., 2013</a>). Both types of signal can encode information in the size (amplitude) of the signal, but the frequency and phase of periodic signals can also encode information. As a result, periodic signals may be able to regulate complex cell processes more precisely than non-periodic signals. Importantly, recent advances in single-cell analysis and optogenetics have resulted in numerous in-depth studies that reveal how critical events, such as the determination of cell fate and multicellular communication, are controlled by periodic signals (the review by <a href=\"#bib11\">Sonnen and Auleha, 2014</a> describes other examples)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Mathematical analysis shows that an essential element of an oscillating circuit is an inhibitory feedback loop: if the activity of one gene in such a feedback loop increases, it activates other genes in the circuit that ultimately inhibit it (<a href=\"#bib10\">Rapp, 1987</a>; <a href=\"#bib7\">Novak and Tyson, 2008</a>; <a href=\"#bib8\">Purcell et al., 2010</a>). This feedback loop needs to have an in-built time delay to enable the activities of the genes in the circuit to fluctuate in regular cycles."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "The rise of synthetic biology has made it possible to design and construct synthetic networks in living cells that perform a specific role. In an early example of this, researchers at Princeton reported that they had constructed an oscillatory gene network in <i>E. coli</i> based on a cyclic network of three genes called the repressilator (<a href=\"#bib2\">Elowitz and Leibler, 2000</a>; <a href=\"#fig1\">Figure 1</a>). Theory predicts that the repressilator and other ring oscillators that have an odd number of genes (nodes) should be capable of producing sustained oscillations. However, since designing, building and testing new gene networks in living cells is a lengthy process, ring oscillators with more than three nodes have not been reported."
+            }, 
+            {
+                "type": "image", 
+                "id": "fig1", 
+                "label": "Figure 1.", 
+                "title": "Synthetic gene networks containing three, four and five genes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The genes in each circuit (top) are translated into protein products, with each protein product repressing the activity of another gene in the network (as indicated by the arrows). Theory predicts that cyclic networks of genes display oscillatory behavior when the number of nodes in the network is odd. Niederholtmeyer et al. found that a circuit consisting of three genes gave rise to well-defined oscillations with a period of up to 8\u2009hr, and that a circuit containing five genes oscillated with a period of 19\u2009hours. In contrast, and in line with theoretical predictions, a network consisting of four nodes did not oscillate: instead it reached a steady state where the activity of all the genes was constant over time."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-12260-fig1-v1.tif"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Now Maerkl and co-workers \u2013 who are based at the\u00a0\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne and the\u00a0California Institute of Technology \u2013 have made ring architectures containing three, four and five genes (<a href=\"#fig1\">Figure 1</a>). They built their prototype genetic circuits in a cell-free system by combining microfluidic flow reactors with extracts from <i>E. coli bacteria</i> (<a href=\"#bib4\">Niederholtmeyer et al, 2013</a>; <a href=\"#bib6\">Noireaux et al., 2003</a>). The major advantage of this approach is that it significantly decreases the time taken for each design-build-test cycle because it removes the need for various laborious tasks, such as molecular cloning and collecting measurements from individual cells."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Using this strategy Niederholtmeyer, Sun et al. were able to confirm the prediction that oscillators with three or five nodes are able to\u00a0generate oscillations, whereas oscillators with four nodes are not. The period of the five-node oscillator is about twice as long as the three-node oscillator, indicating that cells can tune the periodicity of signals by increasing the complexity of their genetic circuits. Next, the researchers transferred their prototyped designs to living <i>E. coli</i> cells and showed that the oscillation period in cells matched the oscillation period in the cell-free systems. This is an important result as it shows that cell-free systems can be used to accurately capture the behavior of cells, which paves the way for researchers to use synthetic biology approaches in cell-free systems to explore the complex regulatory mechanisms that operate inside cells (<a href=\"#bib12\">van Roekel et al., 2015</a>). The latest work should also greatly speed up the construction of complex new gene networks in bacteria, which could have applications in biofuel production, medical diagnosis and experiments to explore the ways that cells process information."
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Behar", 
+                            "index": "Behar, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Hoffmann", 
+                            "index": "Hoffmann, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Understanding the temporal codes of intra-cellular signals", 
+                "journal": {
+                    "name": [
+                        "Current Opinion in Genetics & Development"
+                    ]
+                }, 
+                "volume": "20", 
+                "pages": {
+                    "first": "684", 
+                    "last": "693", 
+                    "range": "684\u2013693"
+                }, 
+                "doi": "10.1016/j.gde.2010.09.007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Elowitz", 
+                            "index": "Elowitz, MB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Leibler", 
+                            "index": "Leibler, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "A synthetic oscillatory network of transcriptional regulators", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "403", 
+                "pages": {
+                    "first": "335", 
+                    "last": "338", 
+                    "range": "335\u2013338"
+                }, 
+                "doi": "10.1038/35002125"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JH Levine", 
+                            "index": "Levine, JH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Lin", 
+                            "index": "Lin, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Elowitz", 
+                            "index": "Elowitz, MB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Functional roles of pulsing in genetic circuits", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "342", 
+                "pages": {
+                    "first": "1193", 
+                    "last": "1200", 
+                    "range": "1193\u20131200"
+                }, 
+                "doi": "10.1126/science.1239999"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Niederholtmeyer", 
+                            "index": "Niederholtmeyer, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Stepanova", 
+                            "index": "Stepanova, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Maerkl", 
+                            "index": "Maerkl, SJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Implementation of cell-free biological networks at steady state", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "110", 
+                "pages": {
+                    "first": "15985", 
+                    "last": "15990", 
+                    "range": "15985\u201315990"
+                }, 
+                "doi": "10.1073/pnas.1311166110"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Niederholtmeyer", 
+                            "index": "Niederholtmeyer, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ZZ Sun", 
+                            "index": "Sun, ZZ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Hori", 
+                            "index": "Hori, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Yeung", 
+                            "index": "Yeung, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Verpoorte", 
+                            "index": "Verpoorte, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RM Murray", 
+                            "index": "Murray, RM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SJ Maerkl", 
+                            "index": "Maerkl, SJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rapid cell-free forward engineering of novel genetic ring oscillators", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "e09771", 
+                "doi": "10.7554/eLife.09771"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Noireaux", 
+                            "index": "Noireaux, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Bar-Ziv", 
+                            "index": "Bar-Ziv, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Libchaber", 
+                            "index": "Libchaber, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Principles of cell-free genetic circuit assembly", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of the United States of America"
+                    ]
+                }, 
+                "volume": "100", 
+                "pages": {
+                    "first": "12672", 
+                    "last": "12677", 
+                    "range": "12672\u201312677"
+                }, 
+                "doi": "10.1073/pnas.2135496100"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Nov\u00e1k", 
+                            "index": "Nov\u00e1k, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JJ Tyson", 
+                            "index": "Tyson, JJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Design principles of biochemical oscillators", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Molecular Cell Biology"
+                    ]
+                }, 
+                "volume": "9", 
+                "pages": {
+                    "first": "981", 
+                    "last": "991", 
+                    "range": "981\u2013991"
+                }, 
+                "doi": "10.1038/nrm2530"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Purcell", 
+                            "index": "Purcell, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NJ Savery", 
+                            "index": "Savery, NJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CS Grierson", 
+                            "index": "Grierson, CS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M di Bernardo", 
+                            "index": "di Bernardo, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "A comparative analysis of synthetic genetic oscillators", 
+                "journal": {
+                    "name": [
+                        "Journal of the Royal Society Interface"
+                    ]
+                }, 
+                "volume": "7", 
+                "pages": {
+                    "first": "1503", 
+                    "last": "1524", 
+                    "range": "1503\u20131524"
+                }, 
+                "doi": "10.1063/1.2978183"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JE Purvis", 
+                            "index": "Purvis, JE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Lahav", 
+                            "index": "Lahav, G"
+                        }
+                    }
+                ], 
+                "articleTitle": "Encoding and decoding cellular information through signaling dynamics", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "152", 
+                "pages": {
+                    "first": "945", 
+                    "last": "956", 
+                    "range": "945\u2013956"
+                }, 
+                "doi": "10.1016/j.cell.2013.02.005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "1987", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PE Rapp", 
+                            "index": "Rapp, PE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Why are so many biological systems periodic?", 
+                "journal": {
+                    "name": [
+                        "Progress in Neurobiology"
+                    ]
+                }, 
+                "volume": "29", 
+                "pages": {
+                    "first": "261", 
+                    "last": "273", 
+                    "range": "261\u2013273"
+                }, 
+                "doi": "10.1016/0301-0082(87)90023-2"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KF Sonnen", 
+                            "index": "Sonnen, KF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Aulehla", 
+                            "index": "Aulehla, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamic signal encoding\u2014from cells to organisms", 
+                "journal": {
+                    "name": [
+                        "Seminars in Cell & Developmental Biology"
+                    ]
+                }, 
+                "volume": "34", 
+                "pages": {
+                    "first": "91", 
+                    "last": "98", 
+                    "range": "91\u201398"
+                }, 
+                "doi": "10.1016/j.semcdb.2014.06.019"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HWH van Roekel", 
+                            "index": "van Roekel, HWH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BJHM Rosier", 
+                            "index": "Rosier, BJHM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LHH Meijer", 
+                            "index": "Meijer, LHH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PAJ Hilbers", 
+                            "index": "Hilbers, PAJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJ Markvoort", 
+                            "index": "Markvoort, AJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WTS Huck", 
+                            "index": "Huck, WTS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TFA de Greef", 
+                            "index": "de Greef, TFA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Programmable chemical reaction networks: emulating regulatory functions in living cells using a bottom-up approach", 
+                "journal": {
+                    "name": [
+                        "Chemical Society Reviews"
+                    ]
+                }, 
+                "volume": "44", 
+                "pages": {
+                    "first": "7465", 
+                    "last": "7483", 
+                    "range": "7465\u20137483"
+                }, 
+                "doi": "10.1039/C5CS00361J"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "1986", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NM Woods", 
+                            "index": "Woods, NM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KSR Cuthbertson", 
+                            "index": "Cuthbertson, KSR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PH Cobbold", 
+                            "index": "Cobbold, PH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Repetitive transient rises in cytoplasmic free calcium in hormone-stimulated hepatocytes", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "319", 
+                "pages": {
+                    "first": "600", 
+                    "last": "602", 
+                    "range": "600\u2013602"
+                }, 
+                "doi": "10.1038/319600a0"
+            }
+        ]
+    }
+}

@@ -1,0 +1,724 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "03068", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.03068", 
+        "authorLine": "Samuel H Wilson", 
+        "title": "The dark side of DNA repair", 
+        "titlePrefix": "Mutations", 
+        "published": "2014-05-20T00:00:00", 
+        "versionDate": "2014-05-20T00:00:00", 
+        "volume": 3, 
+        "elocationId": "e03068", 
+        "pdf": "https://publishing-cdn.elifesciences.org/03068/elife-03068-v1.pdf", 
+        "subjects": [
+            {
+                "id": "biochemistry", 
+                "name": "Biochemistry"
+            }, 
+            {
+                "id": "genes-chromosomes", 
+                "name": "Genes and Chromosomes"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The BER pathway is widely used to repair DNA damage in cells, but it can also introduce unwanted mutations and is sometimes hijacked by other pathways."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-3.0", 
+            "holder": "Wilson", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Samuel H Wilson", 
+                    "index": "Wilson, Samuel H"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Laboratory of Structural Biology, National Institute of Environmental Health Sciences", 
+                            "National Institutes of Health"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Research Triangle Park", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Research Triangle Park"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "wilson5@niehs.nih.gov"
+                ], 
+                "competingInterests": "<label>Competing interests:</label>The author declares that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "03068", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.03068", 
+        "authorLine": "Samuel H Wilson", 
+        "title": "The dark side of DNA repair", 
+        "titlePrefix": "Mutations", 
+        "published": "2014-05-20T00:00:00", 
+        "versionDate": "2014-05-20T00:00:00", 
+        "volume": 3, 
+        "elocationId": "e03068", 
+        "pdf": "https://publishing-cdn.elifesciences.org/03068/elife-03068-v1.pdf", 
+        "subjects": [
+            {
+                "id": "biochemistry", 
+                "name": "Biochemistry"
+            }, 
+            {
+                "id": "genes-chromosomes", 
+                "name": "Genes and Chromosomes"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The BER pathway is widely used to repair DNA damage in cells, but it can also introduce unwanted mutations and is sometimes hijacked by other pathways."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-3.0", 
+            "holder": "Wilson", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Samuel H Wilson", 
+                    "index": "Wilson, Samuel H"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Laboratory of Structural Biology, National Institute of Environmental Health Sciences", 
+                            "National Institutes of Health"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Research Triangle Park", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Research Triangle Park"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "wilson5@niehs.nih.gov"
+                ], 
+                "competingInterests": "<label>Competing interests:</label>The author declares that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "DNA repair", 
+            "mutagenesis", 
+            "APOBEC deaminase", 
+            "mutation"
+        ], 
+        "relatedArticles": [
+            "02001"
+        ], 
+        "body": [
+            {
+                "type": "paragraph", 
+                "text": "<b>Related research article</b> Chen J, Miller BF, Furano AV. 2014. Repair of naturally occurring mismatches can induce mutations in flanking DNA. <i>eLife</i> <b>3</b>:e02001. doi: <a href=\"http://dx.doi.org/10.7554/eLife.02001\">10.7554/eLife.02001</a>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "<b>Image</b> Deliberately introducing lesions into circular DNA molecules called episomes allows DNA repair pathways to be studied in detail"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "<inline-graphic xlink:href=\"elife-03068-inf1-v1\"></inline-graphic>"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "DNA can be damaged in many ways\u2014bases can, for example, be oxidized, alkylated or deaminated\u2014so cells need a way to repair DNA damage. Sometimes it is possible to reverse the process that caused these \u2018base lesions\u2019, but cells tend to employ a more complex approach that is called the base excision repair (BER) pathway. This process involves three basic steps: first, enzymes called nucleases break the DNA strand that is damaged on either side of the lesion so that the section containing the lesion can be removed; second, DNA polymerases make a new stretch of DNA to replace the section that has been removed, using the undamaged strand as a template; third, DNA ligases join this new stretch to the existing DNA."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "However, there is a \u2018dark side\u2019 to DNA repair because the process by which the replacement DNA is synthesized is inherently error-prone. Moreover, DNA is normally tightly packaged inside the nucleus to protect it from damage: however, the BER pathway involves regions of DNA being unpackaged, and this provides other enzymes and repair pathways with access to the DNA, which can lead to lesions and mutations. The overall result is that DNA repair can sometimes lead to more rather than less damage and, in some cases, this damage can ultimately kill the cell (<a href=\"#bib2\">Fu et al., 2012</a>)."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Large-scale DNA sequencing has revealed a complex pattern of lesions and mutations that includes mutational hotspots and mutations that are linked to specific sequences of bases. In some cases the mutations appear to be linked to enzymes belonging to the APOBEC family\u2014which change the cytosine bases in DNA into uracil bases\u2014being able to access the DNA (<a href=\"#bib5\">Roberts et al., 2013</a>; <a href=\"#bib3\">Nik-Zainal et al., 2014</a>). Finally, some seemingly random mutations occur with high frequency."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Now, in <i>eLife</i>, Jia Chen, Brendan Miller and Anthony Furano\u2014who all are based at the National Institute of Diabetes and Digestive and Kidney Diseases\u2014have used DNA sequencing to explore the accuracy of the BER pathway in mammalian cells (<a href=\"#bib1\">Chen et al., 2014</a>). They used genetic techniques to deliberately introduce lesions associated with different sub-pathways of the BER pathway. These lesions included: a simple strand break between two neighbouring bases (which is known as a nick); replacing the cytosine base opposite a guanine base with an abasic site; and various types of base mismatches (such as thymine/guanine, uracil/guanine or hydroxymethyl-uracil/guanine instead of cytosine/guanine). The lesions were individually engineered into episomal DNA, and the episomes were allowed to undergo repair in mammalian cells and then isolated. After passage through <i>E. coli</i>, mutants were selected, and the DNA was subjected to sequence analysis."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "As expected, most of the lesions were repaired by the BER pathway (<a href=\"#fig1\">Figure 1</a>), but there were interesting differences in the repair of the different types of lesions. In some cases, for example, there were mutations in the template strand, rather than the strand containing the lesion, which suggests that various enzymes had been able to access the template strand during the repair process."
+            }, 
+            {
+                "type": "image", 
+                "id": "fig1", 
+                "label": "Figure 1.", 
+                "title": "The BER pathway can repair DNA damage, but it can also induce mutations.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Cells rely on the base excision repair (BER) pathway to repair base lesions in DNA. A single lesion (X) in one of the strands in double-stranded DNA can be repaired by removing the damaged base (and some neighbouring bases) and replacing it with a new stretch of DNA (shown by a rectangle): this process is called long-patch BER (left). However, the process used to synthesize the new DNA is prone to error, which can lead to the introduction of mutations (symbol). FEN1 is the nuclease that removes the flap of single-stranded DNA (ssDNA); Pol \u00df is the polymerase that synthesises the new DNA. It is also possible to replace just the damaged base (middle), but this single-nucleotide BER pathway can also introduce mutations. Sometimes, however, the BER pathway is hijacked by a DNA repair pathway called the mismatch repair (MMR) system that exposes a stretch of ssDNA on the 5\u2032side of the lesion: this ssDNA then becomes a substrate for APOBEC enzymes that remove amine groups from cytosine bases, which introduces even more mutations (right). Note: figure not drawn to scale; the orientation of strands is shown."
+                    }
+                ], 
+                "alt": "", 
+                "uri": "elife-03068-fig1-v1.tif"
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Moreover, mutations were observed in the bases on one side of the base lesion (distal to the lesion). These \u2018flanking mutations\u2019 were shown to depend on the initial steps of the BER pathway in most cases. A number of enzymes are known to be capable of exposing single-stranded DNA on either side of a nick, but it seems surprising that the molecular machinery responsible for the BER pathway allowed these enzymes to have access to the lesions. Previously it was thought that each enzyme in the BER pathway \u2018handed over\u2019 to the next enzyme in a highly coordinated process that left little scope for third parties to have access to the DNA (<a href=\"#bib4\">Prasad et al., 2010</a>), but the presence of the flanking mutations suggests that the lesion recognition and hand-over process is not always able to keep third parties away from the lesion."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "So what actually causes the flanking mutations? Chen, Miller and Furano suggest that the BER pathway is \u2018hijacked\u2019 by another DNA repair pathway called the mismatch repair system (which, as its name suggests, repairs base mismatches). They provided evidence for this by showing that depleting factors involved in the mismatch repair system results in a reduction in flanking mutations."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Chen et al. also noticed that many of the flanking mutations involved cytosine bases that were preceded by thymine bases, with the cytosine bases changing to uracil bases. This pattern suggested that certain APOBEC enzymes\u2014those that have a preference for the TpC sequence in single-stranded DNA\u2014were involved. To test this idea Chen et al. depleted the level of APOBEC enzymes and, as they predicted, there was a drop in the number of flanking mutations. Taken together, the results point to the idea that the mismatch repair machinery exposes single-stranded DNA that serves as a substrate for the APOBEC enzymes, which remove amine groups from the cytosine bases to leave uracil bases (<a href=\"#bib6\">Roberts et al., 2012</a>, <a href=\"#bib5\">2013</a>). DNA synthesis to copy the single-stranded DNA then leads to mutations."
+            }, 
+            {
+                "type": "paragraph", 
+                "text": "Overall, the results reported by Chen, Miller and Furano open up a whole new range of questions about the introduction of mutations during DNA repair."
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Chen", 
+                            "index": "Chen, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BF Miller", 
+                            "index": "Miller, BF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AV Furano", 
+                            "index": "Furano, AV"
+                        }
+                    }
+                ], 
+                "articleTitle": "Repair of naturally occurring mismatches can induce mutations in flanking DNA", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "e02001", 
+                "doi": "10.7554/eLife.02001"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Fu", 
+                            "index": "Fu, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JA Calvo", 
+                            "index": "Calvo, JA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LD Samson", 
+                            "index": "Samson, LD"
+                        }
+                    }
+                ], 
+                "articleTitle": "Balancing repair and tolerance of DNA damage caused by alkylating agents", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Cancer"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "104", 
+                    "last": "120", 
+                    "range": "104\u2013120"
+                }, 
+                "doi": "10.1038/nrc3185"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Nik-Zainal", 
+                            "index": "Nik-Zainal, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DC Wedge", 
+                            "index": "Wedge, DC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LB Alexandrov", 
+                            "index": "Alexandrov, LB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Petljak", 
+                            "index": "Petljak, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Butler", 
+                            "index": "Butler, AP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Bolli", 
+                            "index": "Bolli, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HR Davies", 
+                            "index": "Davies, HR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Knappskog", 
+                            "index": "Knappskog, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Martin", 
+                            "index": "Martin, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Papaemmanuil", 
+                            "index": "Papaemmanuil, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Ramakrishna", 
+                            "index": "Ramakrishna, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Shlien", 
+                            "index": "Shlien, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Simonic", 
+                            "index": "Simonic, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Xue", 
+                            "index": "Xue, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Tyler-Smith", 
+                            "index": "Tyler-Smith, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PJ Campbell", 
+                            "index": "Campbell, PJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Stratton", 
+                            "index": "Stratton, MR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Association of a germline copy number polymorphism of APOBEC3A and APOBEC3B with burden of putative APOBEC-dependent mutations in breast cancer", 
+                "journal": {
+                    "name": [
+                        "Nature Genetics"
+                    ]
+                }, 
+                "volume": "46", 
+                "pages": {
+                    "first": "487", 
+                    "last": "491", 
+                    "range": "487\u2013491"
+                }, 
+                "doi": "10.1038/ng.2955"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Prasad", 
+                            "index": "Prasad, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DD Shock", 
+                            "index": "Shock, DD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WA Beard", 
+                            "index": "Beard, WA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SH Wilson", 
+                            "index": "Wilson, SH"
+                        }
+                    }
+                ], 
+                "articleTitle": "Substrate channeling in mammalian base excision repair pathways: passing the baton", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "285", 
+                "pages": {
+                    "first": "40479", 
+                    "last": "40488", 
+                    "range": "40479\u201340488"
+                }, 
+                "doi": "10.1074/jbc.M110.155267"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Roberts", 
+                            "index": "Roberts, SA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MS Lawrence", 
+                            "index": "Lawrence, MS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LJ Klimczak", 
+                            "index": "Klimczak, LJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Grimm", 
+                            "index": "Grimm, SA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Fargo", 
+                            "index": "Fargo, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Stojanov", 
+                            "index": "Stojanov, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kiezun", 
+                            "index": "Kiezun, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GV Kryukov", 
+                            "index": "Kryukov, GV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SL Carter", 
+                            "index": "Carter, SL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Saksena", 
+                            "index": "Saksena, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Harris", 
+                            "index": "Harris, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RR Shah", 
+                            "index": "Shah, RR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Resnick", 
+                            "index": "Resnick, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Getz", 
+                            "index": "Getz, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Gordenin", 
+                            "index": "Gordenin, DA"
+                        }
+                    }
+                ], 
+                "articleTitle": "An APOBEC cytidine deaminase mutagenesis pattern is widespread in human cancers", 
+                "journal": {
+                    "name": [
+                        "Nature Genetics"
+                    ]
+                }, 
+                "volume": "45", 
+                "pages": {
+                    "first": "970", 
+                    "last": "976", 
+                    "range": "970\u2013976"
+                }, 
+                "doi": "10.1038/ng.2702"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SA Roberts", 
+                            "index": "Roberts, SA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Sterling", 
+                            "index": "Sterling, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Thompson", 
+                            "index": "Thompson, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Harris", 
+                            "index": "Harris, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Mav", 
+                            "index": "Mav, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Shah", 
+                            "index": "Shah, R"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LJ Klimczak", 
+                            "index": "Klimczak, LJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GV Kryukov", 
+                            "index": "Kryukov, GV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Malc", 
+                            "index": "Malc, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PA Mieczkowski", 
+                            "index": "Mieczkowski, PA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Resnick", 
+                            "index": "Resnick, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Gordenin", 
+                            "index": "Gordenin, DA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Clustered mutations in yeast and in human cancers can arise from damaged long single-strand DNA regions", 
+                "journal": {
+                    "name": [
+                        "Molecular Cell"
+                    ]
+                }, 
+                "volume": "46", 
+                "pages": {
+                    "first": "424", 
+                    "last": "435", 
+                    "range": "424\u2013435"
+                }, 
+                "doi": "10.1016/j.molcel.2012.03.030"
+            }
+        ]
+    }
+}

@@ -1,0 +1,2432 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "04057", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.04057", 
+        "authorLine": "Itaru Arai, Peter Jonas", 
+        "title": "Nanodomain coupling explains Ca<sup>2+</sup> independence of transmitter release time course at a fast central synapse", 
+        "published": "2014-12-09T00:00:00", 
+        "versionDate": "2014-12-09T00:00:00", 
+        "volume": 3, 
+        "elocationId": "e04057", 
+        "pdf": "https://publishing-cdn.elifesciences.org/04057/elife-04057-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.04057.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A puzzling property of synaptic transmission, originally established at the neuromuscular junction, is that the time course of transmitter release is independent of the extracellular Ca<sup>2+</sup> concentration ([Ca<sup>2+</sup>]<sub>o</sub>), whereas the rate of release is highly [Ca<sup>2+</sup>]<sub>o</sub>-dependent. Here, we examine the time course of release at inhibitory basket cell-Purkinje cell synapses and show that it is independent of [Ca<sup>2+</sup>]<sub>o</sub>. Modeling of Ca<sup>2+</sup>-dependent transmitter release suggests that the invariant time course of release critically depends on tight coupling between Ca<sup>2+</sup> channels and release sensors. Experiments with exogenous Ca<sup>2+</sup> chelators reveal that channel-sensor coupling at basket cell-Purkinje cell synapses is very tight, with a mean distance of 10\u201320 nm. Thus, tight channel-sensor coupling provides a mechanistic explanation for the apparent [Ca<sup>2+</sup>]<sub>o</sub> independence of the time course of release."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Arai and Jonas", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Itaru Arai", 
+                    "index": "Arai, Itaru"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "IST Austria (Institute of Science and Technology Austria)"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Klosterneuburg", 
+                                "Austria"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Klosterneuburg"
+                                ], 
+                                "country": "Austria"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "IA, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Peter Jonas", 
+                    "index": "Jonas, Peter"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "IST Austria (Institute of Science and Technology Austria)"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Klosterneuburg", 
+                                "Austria"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Klosterneuburg"
+                                ], 
+                                "country": "Austria"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "peter.jonas@ist.ac.at"
+                ], 
+                "contribution": "PJ, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: Experiments were performed in strict accordance with institutional, national, and European guidelines for animal experimentation and were approved by the Bundesministerium f\u00fcr Wissenschaft, Forschung und Wirtschaft (A Haslinger, Vienna). Mice were maintained under light (7 am\u20137 pm) and dark cycle (7 pm\u20137 am) conditions and were kept in a litter of eight animals together with the mother in a single cage. Animals were lightly anesthetized using isoflurane (Forane, AbbVie, Austria) and sacrificed by rapid decapitation."
+            }
+        ], 
+        "impactStatement": "Ca<sup>2+</sup> channels and release sensors at a fast central synapse are tightly coupled, which minimizes the effect of extracellular Ca<sup>2+</sup> concentration on the timing of transmitter release."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "04057", 
+        "version": 1, 
+        "type": "short-report", 
+        "doi": "10.7554/eLife.04057", 
+        "authorLine": "Itaru Arai, Peter Jonas", 
+        "title": "Nanodomain coupling explains Ca<sup>2+</sup> independence of transmitter release time course at a fast central synapse", 
+        "published": "2014-12-09T00:00:00", 
+        "versionDate": "2014-12-09T00:00:00", 
+        "volume": 3, 
+        "elocationId": "e04057", 
+        "pdf": "https://publishing-cdn.elifesciences.org/04057/elife-04057-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Mouse"
+        ], 
+        "abstract": {
+            "doi": "10.7554/eLife.04057.001", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A puzzling property of synaptic transmission, originally established at the neuromuscular junction, is that the time course of transmitter release is independent of the extracellular Ca<sup>2+</sup> concentration ([Ca<sup>2+</sup>]<sub>o</sub>), whereas the rate of release is highly [Ca<sup>2+</sup>]<sub>o</sub>-dependent. Here, we examine the time course of release at inhibitory basket cell-Purkinje cell synapses and show that it is independent of [Ca<sup>2+</sup>]<sub>o</sub>. Modeling of Ca<sup>2+</sup>-dependent transmitter release suggests that the invariant time course of release critically depends on tight coupling between Ca<sup>2+</sup> channels and release sensors. Experiments with exogenous Ca<sup>2+</sup> chelators reveal that channel-sensor coupling at basket cell-Purkinje cell synapses is very tight, with a mean distance of 10\u201320 nm. Thus, tight channel-sensor coupling provides a mechanistic explanation for the apparent [Ca<sup>2+</sup>]<sub>o</sub> independence of the time course of release."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Arai and Jonas", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Itaru Arai", 
+                    "index": "Arai, Itaru"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "IST Austria (Institute of Science and Technology Austria)"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Klosterneuburg", 
+                                "Austria"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Klosterneuburg"
+                                ], 
+                                "country": "Austria"
+                            }
+                        }
+                    }
+                ], 
+                "contribution": "IA, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Peter Jonas", 
+                    "index": "Jonas, Peter"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "IST Austria (Institute of Science and Technology Austria)"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Klosterneuburg", 
+                                "Austria"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Klosterneuburg"
+                                ], 
+                                "country": "Austria"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "peter.jonas@ist.ac.at"
+                ], 
+                "contribution": "PJ, Conception and design, Analysis and interpretation of data, Drafting or revising the article", 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "ethics": [
+            {
+                "type": "paragraph", 
+                "text": "Animal experimentation: Experiments were performed in strict accordance with institutional, national, and European guidelines for animal experimentation and were approved by the Bundesministerium f\u00fcr Wissenschaft, Forschung und Wirtschaft (A Haslinger, Vienna). Mice were maintained under light (7 am\u20137 pm) and dark cycle (7 pm\u20137 am) conditions and were kept in a litter of eight animals together with the mother in a single cage. Animals were lightly anesthetized using isoflurane (Forane, AbbVie, Austria) and sacrificed by rapid decapitation."
+            }
+        ], 
+        "impactStatement": "Ca<sup>2+</sup> channels and release sensors at a fast central synapse are tightly coupled, which minimizes the effect of extracellular Ca<sup>2+</sup> concentration on the timing of transmitter release.", 
+        "keywords": [
+            "cerebellar basket cell", 
+            "time course of transmitter release", 
+            "nanodomain coupling", 
+            "GABAergic synapse", 
+            "Ca2+ channel", 
+            "release sensor"
+        ], 
+        "digest": {
+            "doi": "10.7554/eLife.04057.002", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The nervous system sends information around the body in the form of electrical signals that travel through cells called neurons. However, these electrical signals cannot cross the synapses between neurons. Instead, the information is carried across the synapse by molecules called neurotransmitters."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Calcium ions control the release of neurotransmitters. There is a high concentration of calcium ions outside the neuron but they are not able to pass through the cell membrane under normal conditions. However, when an electrical impulse reaches the synapse, ion channels in the membrane open and allow calcium ions to enter the cell. Once inside, the ions activate the release of neurotransmitters by binding to proteins called release sensors."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Several experiments on the release of neurotransmitters have studied the synapses between neurons and muscle fibers. These studies found that the higher the concentration of ions outside the neuron, the higher the rate at which the neurotransmitters were released. However, the timing of release\u2014the length of time over which the neurotransmitters were released\u2014did not depend on the concentration of calcium ions."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Arai and Jonas have now studied neurotransmitter release at a synapse in a region of the brain called the cerebellum. These experiments also found that the timing of the release did not depend on the ion concentration, suggesting that this may be a general property of neurotransmitter release."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To find out more, Arai and Jonas created a mathematical model of neurotransmitter release. This model suggests that for the timing of release to remain the same, the ion channel and the release sensor must be located close together in the presynaptic terminal. If they are not close together, the timing of release becomes blurred and more dependent on the external calcium concentration."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Further experiments confirm the prediction of the model by showing that the calcium channels and the release sensors in these synapses are very close together. The next challenge will be to find out whether the conclusions are also valid for other synapses where the calcium channels and release sensors are further apart."
+                }
+            ]
+        }, 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s1", 
+                "title": "Introduction", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Calcium plays a key role in the control of transmitter release at chemical synapses (<a href=\"#bib27\">Neher, 1998</a>; <a href=\"#bib38\">S\u00fcdhof, 2013</a>). As transmitter release is a Ca<sup>2+</sup>-dependent biochemical process, one would expect that both the extent and kinetics of release will depend on Ca<sup>2+</sup> concentration. In contrast to this expectation, the time course of release (TCR) at the neuromuscular junction is independent of the extracellular Ca<sup>2+</sup> concentration ([Ca<sup>2+</sup>]<sub>o</sub>) (<a href=\"#bib10\">Datyner and Gage, 1980</a>; <a href=\"#bib40\">Van der Kloot, 1988</a>; <a href=\"#bib29\">Parnas et al., 1989</a>). However, the apparent [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR is less well established at central synapses (<a href=\"#bib34\">Sargent et al., 2005</a>). Furthermore, the underlying mechanisms remain elusive. Several potential explanations were proposed, including adaptation of transmitter release (<a href=\"#bib20\">Hsu et al., 1996</a>) and additional voltage sensors that control the timing of release (<a href=\"#bib30\">Parnas et al., 2000</a>; See; <a href=\"#bib16\">Felmy et al., 2003</a>). Recent results suggested that in several central synapses presynaptic Ca<sup>2+</sup> channels and release sensors are tightly coupled (<a href=\"#bib5\">Bucurenciu et al., 2008</a>; <a href=\"#bib14\">Eggermann et al., 2012</a>; <a href=\"#bib36\">Scimemi and Diamond, 2012</a>; <a href=\"#bib35\">Schmidt et al., 2013</a>). Tight coupling might be another factor contributing to the apparent [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR (<a href=\"#bib42\">Yamada and Zucker, 1992</a>). However, this possibility has not been directly examined."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s2", 
+                "title": "Results", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "We studied the [Ca<sup>2+</sup>]<sub>o</sub> dependence of transmitter release at GABAergic synapses between cerebellar basket cells (BCs) and Purkinje cells (PCs), using paired whole-cell recordings from synaptically connected neurons in mouse brain slices (<a href=\"#bib6\">Caillard et al., 2000</a>; <a href=\"#bib33\">Sakaba, 2008</a>; <a href=\"#bib15\">Eggermann and Jonas, 2012</a>; <a href=\"#fig1\">Figure 1A\u2013D</a>). Action potentials were evoked in the presynaptic BC in whole-cell current-clamp or cell-attached voltage-clamp configurations, whereas IPSCs were recorded in the postsynaptic PC under whole-cell voltage-clamp conditions (series resistance 3.8 \u00b1 0.1 M\u03a9; mean \u00b1 SEM; 92 cells; \u2018Materials and methods\u2019). Unitary IPSCs were initiated with short latency and high temporal precision. Synaptic latency was 1.20 \u00b1 0.03 ms at \u223c22\u00b0C (24 pairs) and 0.47 \u00b1 0.02 ms at \u223c34\u00b0C (5 pairs; <a href=\"#fig1\">Figure 1C,D</a>). Synaptic transmission was entirely blocked by bath application of the selective P/Q-type Ca<sup>2+</sup> channel blocker \u03c9-agatoxin IVa (1 \u00b5M), whereas the N-type Ca<sup>2+</sup> channel blocker \u03c9-conotoxin GVIa (1 \u00b5M) had no detectable effect (<a href=\"#fig1\">Figure 1E\u2013H</a>). Thus, transmitter release at this synapse is selectively mediated by P/Q-type Ca<sup>2+</sup> channels."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.04057.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Fast and synchronous transmitter release at BC\u2013PC synapses in the cerebellum is exclusively mediated by P/Q-type Ca<sup>2+</sup> channels.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Light micrograph of a cerebellar basket cell filled with biocytin during recording and labeled using 3,3\u2032-diaminobenzidine as chromogen. Similar morphological properties were obtained in 29 other biocytin-labeled cerebellar BCs. (<b>B</b>) Plot of IPSC peak amplitude (top) and corresponding series resistance (bottom) against time during recording. Action potentials were evoked in the presynaptic cell at time intervals of 4 s. Note that evoked IPSC shows only little rundown for more than 40 min with stable series resistance. (<b>C</b>) Presynaptic action potentials evoked in the whole-cell current clamp configuration (top) and evoked IPSCs (bottom) recorded at \u223c22\u00b0C (left) and \u223c34\u00b0C (right). 10 consecutive individual traces (gray) and the corresponding average trace (black) are shown superimposed. (<b>D</b>) Summary bar graph. Left, latency (time between steepest point in the rising phase of the presynaptic action potential and IPSC onset) at \u223c22\u00b0C and \u223c34\u00b0C. Right, standard deviation of latency, a measure of synchrony of transmitter release. Bars indicate mean \u00b1 SEM; solid circles represent data from individual experiments (\u223c22\u00b0C: 24 pairs; \u223c34\u00b0C: 5 pairs). (<b>E</b>) IPSCs in a BC\u2013PC pair before (left) and after (right) application of 1 \u00b5M of the selective P/Q-type Ca<sup>2+</sup> channel blocker \u03c9-agatoxin IVa. Synaptic transmission was almost completely blocked. Top, presynaptic action currents evoked in the cell-attached voltage-clamp configuration; bottom, corresponding IPSCs. 10 consecutive individual traces (gray) and the corresponding average trace (red) are shown superimposed. (<b>F</b>) Similar recording as shown in (<b>E</b>), but with 1 \u00b5M of the selective N-type Ca<sup>2+</sup> channel blocker \u03c9-conotoxin GVIa. (<b>G</b>) Plot of IPSC peak amplitude against time during application of 1 \u00b5M of \u03c9-agatoxin IVa (red) or \u03c9-conotoxin GVIa (blue). The time of application of the different extracellular solutions is represented by horizontal bars. Black: mock application of control solution. Symbols indicate mean; error bars represent SEM. (<b>H</b>) Summary bar graph of the effects of Ca<sup>2+</sup> channel blockers. Bars indicate mean \u00b1 SEM; solid circles represent data from individual experiments (control: 4 pairs; \u03c9-agatoxin IVa: 4 pairs; \u03c9-conotoxin GVIa: 5 pairs). To achieve maximal stability, presynaptic BCs were noninvasively stimulated in the cell-attached configuration in all experiments. * and ** indicate p &lt; 0.05 and 0.01, respectively. All experiments except subsets in (<b>C</b>), (<b>D</b>) were performed at \u223c22\u00b0C."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-04057-fig1-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Exploiting the technical advantages of this synapse (including ideal voltage-clamp conditions conveyed by perisomatic synapse location, presynaptic accessibility due to short axon trajectories, and optimal signal-to-noise ratio because of large quantal size), we first examined the [Ca<sup>2+</sup>]<sub>o</sub> dependence of release efficacy. Analysis of the dependence of evoked IPSC peak amplitude on [Ca<sup>2+</sup>]<sub>o</sub> revealed that the amount of transmitter release was steeply [Ca<sup>2+</sup>]<sub>o</sub>-dependent, with a high power coefficient (n = 3.02 in the low-concentration limit; <a href=\"#fig2\">Figure 2A,B</a>). Thus, release at the BC\u2013PC synapse was highly cooperative (<a href=\"#bib12\">Dodge and Rahamimoff, 1967</a>). We next measured the [Ca<sup>2+</sup>]<sub>o</sub> dependence of release kinetics. To determine the TCR, we first recorded unitary IPSCs at a given [Ca<sup>2+</sup>]<sub>o</sub>, and subsequently in reduced [Ca<sup>2+</sup>]<sub>o</sub> to isolate quantal IPSCs (<a href=\"#fig2\">Figure 2C</a>). We then computed the TCR by deconvolution of unitary and quantal IPSC waveforms (<a href=\"#bib11\">Diamond and Jahr, 1995</a>; <a href=\"#bib28\">Neher and Sakaba, 2001</a>; <a href=\"#bib33\">Sakaba, 2008</a>; <a href=\"#fig2\">Figure 2D</a>). When [Ca<sup>2+</sup>]<sub>o</sub> was changed in the range from 0.7\u20134 mM, peak release rate changed by a factor of 34.4. In contrast, the half-duration of the TCR was only minimally affected (0.49 \u00b1 0.05 ms at 0.7 mM; 0.43 \u00b1 0.05 ms at 1 mM; 0.47 \u00b1 0.01 ms at 2 mM; 0.47 \u00b1 0.02 ms at 4 mM; 5\u201311 pairs; p = 0.56; <a href=\"#fig2\">Figure 2D,E</a>). Furthermore, the decay time constant of the TCR was similar in the different conditions (p = 0.38; <a href=\"#fig2\">Figure 2D,E</a>). These results show that the TCR is largely [Ca<sup>2+</sup>]<sub>o</sub>-independent at a central synapse. Similar conclusions were reached at lower recording temperature, which would be expected to markedly slow down the kinetic rates of channels and sensors, but to only minimally change the rates of diffusional processes. At \u223c12\u00b0C, changes in [Ca<sup>2+</sup>]<sub>o</sub> had no detectable effects on the half-duration of the TCR (2.84 \u00b1 0.42 ms at 1 mM, 2.97 \u00b1 0.24 ms at 2 mM, and 2.79 \u00b1 0.25 ms at 4 mM [Ca<sup>2+</sup>]<sub>o</sub>; 5 pairs; p = 0.93) (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.04057.004", 
+                        "id": "fig2", 
+                        "label": "Figure 2.", 
+                        "title": "Changes in [Ca<sup>2+</sup>]<sub>o</sub> affect peak release rate, but leave the TCR unaffected at the cerebellar BC\u2013PC synapse.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Presynaptic action potential (top) and evoked IPSCs (bottom) in different [Ca<sup>2+</sup>]<sub>o</sub>. 10 consecutive individual traces (gray) and the corresponding average trace (red, 1 mM [Ca<sup>2+</sup>]<sub>o</sub>; black, 2 mM; blue, 4 mM) are shown superimposed. Inset shows quantal IPSCs; 10 individual IPSCs recorded in 0.7 mM [Ca<sup>2+</sup>]<sub>o</sub> (gray) and the corresponding average trace (green) are shown superimposed. (<b>B</b>) Relationship between IPSC peak amplitude and [Ca<sup>2+</sup>]<sub>o</sub>. IPSC amplitudes were normalized to the value at 2 mM [Ca<sup>2+</sup>]<sub>o</sub> and averaged across pairs. Top, linear\u2013logarithmic representation. Data were fit with a Hill equation, yielding a maximal value (a) of 3.73, a half-maximal effective concentration (EC<sub>50</sub>) of 3.09 mM, and an average Hill coefficient (n) of 2.39. Bottom, double-logarithmic plot; data points for [Ca<sup>2+</sup>]<sub>o</sub> \u2264 2 mM were analyzed by linear regression, yielding a Hill coefficient of 3.02 in the low concentration limit. (<b>C</b>) Relationship between peak amplitude of IPSC successes and [Ca<sup>2+</sup>]<sub>o</sub>. Symbols indicate mean, error bars represent SEM. The peak amplitude of the successes reaches a constant level below 1 mM [Ca<sup>2+</sup>]<sub>o</sub>, suggesting that the level of quantal IPSCs was reached. (<b>D</b>) TCR in different [Ca<sup>2+</sup>]<sub>o</sub> obtained by deconvolution. Top, presynaptic action potential. Middle, average evoked IPSCs in different [Ca<sup>2+</sup>]<sub>o</sub>. Bottom, TCR in different [Ca<sup>2+</sup>]<sub>o</sub>. Inset, expanded waveforms of the TCR (red, 1 mM [Ca<sup>2+</sup>]<sub>o</sub>; black, 2 mM; blue, 4 mM; gray, fit Gaussian curves). Data in (<b>A</b>) and (<b>D</b>) are from the same pair. (<b>E</b>) Peak release rate (top), half-duration (middle), and decay time course of release period (bottom) plotted vs [Ca<sup>2+</sup>]<sub>o</sub>. Open circles connected by lines indicate mean \u00b1 SEM; solid circles indicate data from individual experiments (0.7 mM: 5 pairs; 1 mM: 7 pairs; 2 mM: 11 pairs; 4 mM: 5 pairs). All experiments were performed at \u223c22\u00b0C. (Also see <a href=\"#fig2s1 fig2s2\">Figure 2\u2014figure supplement 1,2</a>)."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-04057-fig2-v1.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04057.005", 
+                                "id": "fig2s1", 
+                                "label": "Figure 2\u2014figure supplement 1.", 
+                                "title": "Lowering temperature slows TCR, but leaves its [Ca<sup>2+</sup>]<sub>o</sub> independence unaffected.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Presynaptic action potential (top) and evoked IPSCs (bottom) in different [Ca<sup>2+</sup>]<sub>o</sub> at \u223c12\u00b0C. 10 consecutive individual traces (gray) and the corresponding average trace (red, 1 mM [Ca<sup>2+</sup>]<sub>o</sub>; black, 2 mM; blue, 4 mM) are shown superimposed. (<b>B</b>) Quantal IPSCs at \u223c12\u00b0C. 10 individual IPSCs recorded in 1 mM [Ca<sup>2+</sup>]<sub>o</sub> (gray) and the corresponding average trace (green) are shown superimposed. Note that the action potentials, evoked IPSCs, and quantal IPSCs are markedly slower than those obtained at \u223c22\u00b0C (compare with <a href=\"#fig2\">Figure 2A,C</a>). (<b>C</b>) TCR in different [Ca<sup>2+</sup>]<sub>o</sub> obtained by deconvolution at \u223c12\u00b0C. Top, presynaptic action potential. Middle, average evoked IPSCs in different [Ca<sup>2+</sup>]<sub>o</sub>. Bottom, TCR in different [Ca<sup>2+</sup>]<sub>o</sub> (red, 1 mM [Ca<sup>2+</sup>]<sub>o</sub>; black, 2 mM; blue, 4 mM). Data in (<b>A</b>)\u2013(<b>C</b>) are from the same pair. (<b>D</b>) Summary bar graph of half-duration of TCR in different [Ca<sup>2+</sup>]<sub>o</sub> at \u223c12\u00b0C. Bars indicate mean \u00b1 SEM; solid circles represent data from individual experiments (5 pairs)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04057-fig2-figsupp1-v1.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04057.006", 
+                                "id": "fig2s2", 
+                                "label": "Figure 2\u2014figure supplement 2.", 
+                                "title": "TCR is unlikely to be distorted by postsynaptic receptor saturation or desensitization.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Presynaptic action potential (top) and evoked IPSCs in 4 mM [Ca<sup>2+</sup>]<sub>o</sub> (bottom) before and after application of 300 \u00b5M of the low-affinity GABA<sub>A</sub> receptor antagonist TPMPA. 2 \u00b5M CGP55845 were added during the entire experiment to block GABA<sub>B</sub> receptors. 10 consecutive individual traces (gray) and the corresponding average trace (black, control; red, TPMPA) are shown superimposed. (<b>B</b>) Summary bar graph of IPSC peak amplitude in control and 300 \u00b5M TPMPA. Bars indicate mean \u00b1 SEM; solid circles represent data from individual experiments; lines indicate measurements taken from the same experiment (control: 12 pairs; TPMPA: 6 pairs). (<b>C</b>) TCR in 300 \u00b5M TPMPA obtained by deconvolution. Top, presynaptic action potential. Middle, average evoked IPSC. Bottom, TCR. Inset, average quantal IPSC obtained in 300 \u00b5M TPMPA. Data in (<b>A</b>) and (<b>B</b>) were obtained from different pairs. (<b>D</b>) Summary bar graph of half-duration of TCR in control and 300 \u00b5M TPMPA. Bars indicate mean \u00b1 SEM; solid circles represent data from individual experiments (control: 8 pairs; TPMPA: 6 pairs; p = 0.38). In all experiments, [Ca<sup>2+</sup>]<sub>o</sub> was 4 mM (presumably maximizing the confounding effects of postsynaptic factors) and the recording temperature was \u223c22\u00b0C."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04057-fig2-figsupp2-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To explore the mechanisms underlying the paradoxical [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR, we used a realistic model of action potential-dependent transmitter release (<a href=\"#bib15\">Eggermann and Jonas, 2012</a>; <a href=\"#fig3\">Figure 3</a>). Ca<sup>2+</sup> diffusion and buffering were computed by solving the full set of partial differential diffusion and reaction equations, and the TCR was simulated using a previously established release sensor model (<a href=\"#bib23\">Lou et al., 2005</a>; <a href=\"#fig3\">Figure 3A,B</a>). Finally, the half-duration of the TCR was plotted against the peak release rate (PRR). Computational analysis revealed that the TCR was markedly dependent on the PRR in both low and high PRR limit. In the low PRR limit, the half-duration of the TCR decreased with PRR in a model with fixed coupling distance (<a href=\"#fig3\">Figure 3C</a>). This dependence was accentuated after slowing of release sensor rates (<a href=\"#fig3\">Figure 3D</a>, top), indicating that rate-limiting sensor kinetics are responsible. Furthermore, this dependence was inverted in a model with variable coupling distance (<a href=\"#fig3\">Figure 3E</a>). In such a configuration, small Ca<sup>2+</sup> inflow may selectively release proximal vesicles, whereas large Ca<sup>2+</sup> inflow may recruit all vesicles, resulting in a broadening of the TCR. In the high PRR limit, the half-duration of the TCR increased with PRR (<a href=\"#fig3\">Figure 3C</a>). This behavior was particularly prominent in small boutons (<a href=\"#fig3\">Figure 3F</a>, bottom), suggesting that saturation of the endogenous buffers leads to broadening of the TCR. In all configurations, the dependence of the TCR on the PRR was substantially more prominent in loose (200 nm, blue colors) than in tight coupling configurations (20 nm, red colors). Similar conclusions were reached when the concentration and unbinding rate of fixed buffers were altered (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>; <a href=\"#bib17\">Gilmanov et al., 2008</a>). Thus, whereas several factors influence the shape of the TCR\u2013PRR relation, the coupling distance plays a key role in all conditions examined."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.04057.007", 
+                        "id": "fig3", 
+                        "label": "Figure 3.", 
+                        "title": "Tight Ca<sup>2+</sup> channel\u2013release sensor coupling reduces the [Ca<sup>2+</sup>]<sub>o</sub> dependence of the TCR in a release model.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Schematic illustration of the release model. Top, location of Ca<sup>2+</sup> source and release sensor within a schematic presynaptic terminal; bottom left, Ca<sup>2+</sup> sensor model; bottom right, color code indicating coupling distance in subsequent plots (<b>C</b>\u2013<b>F</b>). The presynaptic terminal was modeled as a hemisphere. Ca<sup>2+</sup> inflow was generated by a point source in the center (red square and surrounding shaded area). The release sensor was placed at variable distance from the source (red line). Ca<sup>2+</sup> transients were calculated as the numerical solution to the full set of partial differential reaction-diffusion equations (<a href=\"#bib37\">Smith, 2001</a>). Transmitter release was computed using a modified version of a previously described sensor model (<a href=\"#bib23\">Lou et al., 2005</a>). k<sub>on</sub> and k<sub>off</sub> are Ca<sup>2+</sup>-binding and unbinding rates, l<sub>+</sub> is basal release rate, and f and b are the cooperativity factors for release and Ca<sup>2+</sup> unbinding, respectively. (<b>B</b>) Left, [Ca<sup>2+</sup>]<sub>i</sub> plotted vs time. Right, corresponding release rate. Top, tight coupling (20 nm); bottom, loose coupling (200 nm distance). Black: default Ca<sup>2+</sup> inflow (3.5 and 104.4 Ca<sup>2+</sup> channel equivalents, leading to a vesicular release rate of \u223c2000 s<sup>\u22121</sup> in both cases); red: reduced Ca<sup>2+</sup> inflow (x 0.25); blue: increased Ca<sup>2+</sup> inflow (x 2). Bottom, contour plots of peak release rate (left) and half-duration of the TCR (right), plotted vs coupling distance (horizontal axis) and Ca<sup>2+</sup> inflow (vertical axis, normalized to that of single Ca<sup>2+</sup> channel). Numbers right-adjacent to the contour lines indicate peak release rate and half-duration of the TCR, respectively. Bouton diameter 1.0 \u00b5m. (<b>C</b>) Plot of half-duration of the TCR vs peak release rate for different coupling distances (individual curves for 10 to 200 nm in 5 nm steps; scale bar for color in (<b>A</b>)). Bottom graph shows expansion. Bouton diameter 1.0 \u00b5m. Red arrowheads indicate peak release rates at 0.7, 1, 2, and 4 mM [Ca<sup>2+</sup>]<sub>o</sub>, estimated from the IPSC\u2013[Ca<sup>2+</sup>]<sub>o</sub> curve in <a href=\"#fig2\">Figure 2B</a>. (<b>D</b>) Half-duration of TCR\u2013peak release rate relations for different sensor rates. Default sensor rates were slowed (x 0.5) or accelerated (x 20, to make the kinetics of the release sensor very fast in comparison to all other processes). (<b>E</b>) Half-duration of TCR\u2013peak release rate relations for variable coupling distance (CV of 0.3). Bottom graph shows expansion. (<b>F</b>) Half-duration of TCR\u2013peak release rate relations for different bouton diameters. Dashed lines and points in (<b>C</b>) and (<b>E</b>) indicate the slope of the TCR\u2013peak release rate relations for 20 nm and 200 nm coupling distance at a release rate of 200 quanta s<sup>\u22121</sup>. Note that the absolute value of the slope is \u223c12 times and \u223c7 times higher, respectively, for loose than for tight coupling. Also see <a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-04057-fig3-v1.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.04057.008", 
+                                "id": "fig3s1", 
+                                "label": "Figure 3\u2014figure supplement 1.", 
+                                "title": "Effects of concentration and affinity of the endogenous fixed buffer on the [Ca<sup>2+</sup>]<sub>o</sub> dependence of the TCR in the release model.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) Plot of half-duration of the TCR vs peak release rate for different coupling distances in a model with increased concentration of the endogenous fixed buffer (0.5 mM). Red arrowheads indicate peak release rates at 0.7, 1, 2, and 4 mM [Ca<sup>2+</sup>]<sub>o</sub>, estimated from the IPSC\u2013[Ca<sup>2+</sup>]<sub>o</sub> curve in <a href=\"#fig2\">Figure 2B</a>. (<b>B</b>) Plot of half-duration of the TCR vs peak release rate for different coupling distances in a model with reduced Ca<sup>2+</sup>-unbinding rate of the fixed buffer (k<sub>off</sub>, 40 s<sup>\u22121</sup>; <a href=\"#bib15\">Eggermann and Jonas, 2012</a>). Individual curves were drawn for coupling distances ranging from 10 to 200 nm in 5 nm steps; scale bar for color shown in <a href=\"#fig3\">Figure 3A</a>. Bouton diameter 1.0 \u00b5m in all simulations. Bottom graph shows expansion. Dashed lines and points indicate the slope of the TCR\u2013peak release rate relations for 20 nm and 200 nm coupling distance at a release rate of 200 quanta s<sup>\u22121</sup>. Note that the absolute value of the slope is higher for loose than for tight coupling in all cases."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "elife-04057-fig3-figsupp1-v1.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Our modeling results suggest the intriguing possibility that tight coupling between Ca<sup>2+</sup> channels and release sensors (<a href=\"#bib7\">Christie et al., 2011</a>) might be a main reason for the apparent [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR at the cerebellar BC\u2013PC synapse. To test this hypothesis quantitatively, we probed the distance between Ca<sup>2+</sup> channels and release sensors, using exogenous Ca<sup>2+</sup> chelators (<a href=\"#bib1\">Adler et al., 1991</a>; <a href=\"#bib27\">Neher, 1998</a>; <a href=\"#bib14\">Eggermann et al., 2012</a>; <a href=\"#fig4\">Figure 4</a>). Ca<sup>2+</sup> chelators were loaded into presynaptic BC terminals through the somatic patch pipette, and the reversibility of their effects was tested by obtaining a second recording from the same presynaptic BC at later times. Whereas the fast Ca<sup>2+</sup> chelator ethylenedioxybis-(o-phenylenenitrilo)-N,N,N',N'-tetraacetic acid (BAPTA) markedly suppressed transmitter release (<a href=\"#fig4\">Figure 4A,B</a>), the slow Ca<sup>2+</sup> chelator ethyleneglycol-bis(2-aminoethylether)-N,N,N',N'-tetraacetic acid (EGTA) was much less effective (<a href=\"#fig4\">Figure 4C,D</a>). Analysis of concentration\u2013effect data revealed that the half-maximal inhibitory concentration (IC<sub>50</sub>) for the steady-state effect was 0.6 mM for BAPTA (14 pairs total) and 16.0 mM for EGTA (11 pairs total; <a href=\"#fig4\">Figure 4E</a>). Thus, the IC<sub>50</sub> value was \u223c27-fold higher for EGTA than for BAPTA."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.04057.009", 
+                        "id": "fig4", 
+                        "label": "Figure 4.", 
+                        "title": "Nanodomain coupling between Ca<sup>2+</sup> channels and release sensors at the cerebellar BC\u2013PC synapse.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Presynaptic action potentials and evoked IPSCs recorded immediately after presynaptic BC break-in (left), 20 min after break-in to load 3 mM BAPTA into presynaptic terminals (middle), and after the presynaptic recoding pipette was changed to one containing control solution (right). 10 consecutive individual traces (gray) and the corresponding average trace (red) are shown superimposed. (<b>B</b>) Time course of the effect of 1 mM (\u25cb, 5 pairs), 3 mM (\u25b3, 4 pairs) and 10 mM (\u25bf, 5 pairs) BAPTA. Data from each pair were normalized to the average amplitude obtained from the first 20 consecutive traces and averaged across pairs. (<b>C</b>) Similar recording as shown in (<b>A</b>), except that the internal solution for the presynaptic BC contained 30 mM EGTA. (<b>D</b>) Time course of the effect of 0.1 mM (\u25cb, control, 4 pairs), 10 mM (\u25b3, 5 pairs) and 30 mM (\u25bf, 6 pairs) EGTA. In all experiments included in (<b>B</b>) and (<b>D</b>), the presynaptic BC was patched twice to demonstrate recovery. Symbols indicate mean, error bars represent SEM. (<b>E</b>) Plot of steady-state effects of chelators on IPSC peak amplitude against chelator concentration for BAPTA (red circles) and EGTA (blue circles). Curves represent Hill equations fit to the data points. IC<sub>50</sub> values were 0.6 mM and 16.0 mM, Hill coefficients were 0.96 and 1.51, respectively. (<b>F</b>) Same data, fit with linearized models of Ca<sup>2+</sup> diffusion and buffering (continuous curve, constant coupling distance; small dashing, half-normally distributed coupling distance; large dashing, skewed-normally distributed coupling distance; corresponding distributions shown as insets on the right). For the single-channel model, the coupling distance was estimated as 11.4 nm. For the half-normal distribution, the standard deviation was 10.5 nm (expectation value 13.9 nm; skewness 1.0). For the skewed-normal distribution, location, scale, and shape parameter were 13.7 nm, 8.6 nm, and \u22121.11, respectively (expectation value 10.1 nm; skewness 0.40). (<b>G</b>) Statistical errors. Histogram of coupling distance estimates in 1000 bootstrap replications. (<b>H</b>) Systematic errors. Plot of coupling distance against resting Ca<sup>2+</sup> concentration and endogenous buffer product. Red point indicates default parameter values. In (<b>G</b>) and (<b>H</b>), the model with constant coupling distance was used. All experiments were performed at \u223c22\u00b0C."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "elife-04057-fig4-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To estimate the coupling distance, we fit the concentration\u2013effect data for BAPTA and EGTA with a model of Ca<sup>2+</sup> diffusion and buffering based on linear approximations (<a href=\"#bib27\">Neher, 1998</a>; <a href=\"#fig4\">Figure 4F</a>). The main free parameter in the model was the distance between Ca<sup>2+</sup> channels and release sensors, while several other parameters (e.g. the physicochemical properties of the Ca<sup>2+</sup> chelators and the cooperativity of transmitter release) were well constrained. Analysis of the entire data set revealed a coupling distance of 10\u201320 nm (11.4 nm for constant coupling distance; 13.9 nm for half-normally distributed coupling distance; 10.1 nm for skewed-normally distributed coupling distance; <a href=\"#fig4\">Figure 4F</a>). Statistical errors, as assessed by bootstrap analysis, were minimal (1.2 nm; <a href=\"#fig4\">Figure 4G</a>). Furthermore, systematic errors were small, as indicated by the robustness of the estimate against variations in resting Ca<sup>2+</sup> concentration and endogenous buffer product (<a href=\"#fig4\">Figure 4H</a>). These results reveal that the coupling between Ca<sup>2+</sup> channels and release sensors at the cerebellar BC\u2013PC synapse is tight."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s3", 
+                "title": "Discussion", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Our results address a long-standing question in the field of synaptic transmission (<a href=\"#bib42\">Yamada and Zucker, 1992</a>; <a href=\"#bib30\">Parnas et al., 2000</a>): If release probability is highly dependent on extracellular Ca<sup>2+</sup> concentration (<a href=\"#bib12\">Dodge and Rahamimoff, 1967</a>), how is it possible that the timing of release is [Ca<sup>2+</sup>]<sub>o</sub>-independent (<a href=\"#bib10\">Datyner and Gage, 1980</a>; <a href=\"#bib40\">Van der Kloot, 1988</a>; <a href=\"#bib29\">Parnas et al., 1989</a>)?"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To address this question, we measured the [Ca<sup>2+</sup>]<sub>o</sub> dependence of both the amount and the time course of transmitter release at the cerebellar BC\u2013PC synapse, a central synapse in which the TCR can be precisely quantified. Our results demonstrate that while the amount of release is highly [Ca<sup>2+</sup>]<sub>o</sub>-dependent with a power coefficient of \u223c3, the TCR is largely [Ca<sup>2+</sup>]<sub>o</sub>-independent. Although the apparent [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR has been well established at the neuromuscular junction (<a href=\"#bib10\">Datyner and Gage, 1980</a>; <a href=\"#bib40\">Van der Kloot, 1988</a>; <a href=\"#bib29\">Parnas et al., 1989</a>), this phenomenon is less well documented at central synapses (see <a href=\"#bib34\">Sargent et al., 2005</a> for a notable exception). Thus, our results demonstrate that the [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR is a general phenomenon characteristic for synaptic transmission in both peripheral and central nervous system."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We further measured the coupling distance between Ca<sup>2+</sup> channels and release sensors at BC\u2013PC synapses. Our results show that coupling is tight, with a coupling distance of 10\u201320 nm. Although several previous studies measured the coupling distance, the rules that define the coupling configuration remain elusive (<a href=\"#bib18\">Hefft and Jonas, 2005</a>; <a href=\"#bib5\">Bucurenciu et al., 2008</a>; <a href=\"#bib7\">Christie et al., 2011</a>; <a href=\"#bib26\">Nadkarni et al., 2012</a>; <a href=\"#bib36\">Scimemi and Diamond, 2012</a>; <a href=\"#bib35\">Schmidt et al., 2013</a>; <a href=\"#bib41\">Vyleta and Jonas, 2014</a>). It has been suggested that tight coupling is primarily used at synapses designed for fast, reliable transmission, whereas loose coupling is utilized at synapses specialized on presynaptic plasticity (<a href=\"#bib5\">Bucurenciu et al., 2008</a>; <a href=\"#bib14\">Eggermann et al., 2012</a>; <a href=\"#bib26\">Nadkarni et al., 2012</a>; <a href=\"#bib41\">Vyleta and Jonas, 2014</a>). The present results are fully consistent with this hypothesis, since GABAergic BC\u2013PC synapses show fast transmitter release following single action potentials and reliable transmission during trains of spikes (<a href=\"#bib6\">Caillard et al., 2000</a>; <a href=\"#bib33\">Sakaba, 2008</a>; <a href=\"#bib15\">Eggermann and Jonas, 2012</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The present results identify novel links between the [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR and nanodomain coupling. Our model reveals that the [Ca<sup>2+</sup>]<sub>o</sub> dependence is substantially more prominent in loose than in tight coupling regimes in a variety of conditions. These include different Ca<sup>2+</sup> sensor rates, different bouton diameters, various concentrations and affinity values of endogenous buffers, and uniform vs non-uniform coupling. Specifically, our model predicts that slowing of sensor rates should markedly enhance the [Ca<sup>2+</sup>]<sub>o</sub> dependence of the TCR in a microdomain, but not in a nanodomain coupling regime. We tested this prediction by lowering the temperature, which, among other potential effects, is expected to slow sensor rates. Whereas lowering the temperature had large effects on the absolute value of the half-duration of the TCR, its [Ca<sup>2+</sup>]<sub>o</sub> independence was unchanged. These findings provide experimental evidence that tight source\u2013sensor coupling is a key factor that ensures the [Ca<sup>2+</sup>]<sub>o</sub> independence of the TCR."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Previous studies highlighted several functional advantages of nanodomain coupling, including efficacy, speed, temporal precision, and energy efficiency of synaptic transmission (<a href=\"#bib5\">Bucurenciu et al., 2008</a>; <a href=\"#bib14\">Eggermann et al., 2012</a>). Our results suggest another functional benefit: conveying [Ca<sup>2+</sup>]<sub>o</sub> independence to the TCR. Is the invariance of the TCR relevant for microcircuit function under physiological conditions? Maintenance of speed and temporal precision at the GABAergic BC\u2013PC synapse is of critical importance for the operation of the cerebellum, since feedforward inhibition mediated by BCs sets the temporal window of signal integration in PCs (<a href=\"#bib25\">Mittmann et al., 2005</a>; <a href=\"#bib2\">Bao et al., 2010</a>). However, [Ca<sup>2+</sup>]<sub>o</sub> has been shown to fluctuate during repetitive activity, high-frequency network oscillations, and in pathophysiological conditions (<a href=\"#bib19\">Heinemann et al., 1977</a>; <a href=\"#bib4\">Borst and Sakmann, 1999</a>; <a href=\"#bib32\">Rusakov and Fine, 2003</a>). Furthermore, Ca<sup>2+</sup> inflow will be changed by neuromodulators, which often act via inhibition of presynaptic Ca<sup>2+</sup> channels (<a href=\"#bib39\">Takahashi et al., 1998</a>). Thus, nanodomain coupling at BC\u2013PC synapses may ensure constant timing of fast feedforward inhibition under a variety of network conditions."
+                    }
+                ]
+            }, 
+            {
+                "type": "section", 
+                "id": "s4", 
+                "title": "Materials and methods", 
+                "content": [
+                    {
+                        "type": "section", 
+                        "id": "s4-1", 
+                        "title": "Cerebellar slice preparation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Slices were cut from the cerebellum of 14- to 16-day-old C57/Bl6 wild-type mice of either sex. Experiments were performed in strict accordance with institutional, national, and European guidelines for animal experimentation. Mice were maintained under light (7 am\u20137 pm) and dark cycle (7 pm\u20137 am) conditions and were kept in a litter of 8 animals together with the mother in a single cage. Animals were lightly anesthetized using isoflurane (Forane, AbbVie, Austria) and sacrificed by rapid decapitation. The brain was rapidly dissected out and immersed in ice-cold slicing solution containing 87 mM NaCl, 25 mM NaHCO<sub>3</sub>, 2.5 mM KCl, 1.25 mM NaH<sub>2</sub>PO<sub>4</sub>, 10 mM D-glucose, 75 mM sucrose, 0.5 mM CaCl<sub>2</sub>, and 7 mM MgCl<sub>2</sub>, (pH 7.4 in 95% O<sub>2</sub> / 5% CO<sub>2</sub>, \u223c326 mOsm). Parasagittal 250-\u00b5m-thick cerebellar slices from the vermis region were cut using a custom-built vibratome. After \u223c20 min incubation at \u223c35\u00b0C, the slices were stored at room temperature. Experiments were performed at 21\u201323\u00b0C, unless specified differently, or at either 11\u201313\u00b0C or 32\u201335\u00b0C in subsets of experiments as indicated."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-2", 
+                        "title": "Paired recordings", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "During experiments, slices were superfused with a bath solution containing 125 mM NaCl, 2.5 mM KCl, 25 mM NaHCO<sub>3</sub>, 1.25 mM NaH<sub>2</sub>PO<sub>4</sub>, 25 mM D-glucose, 2 mM CaCl<sub>2</sub>, and 1 mM MgCl<sub>2</sub> (pH 7.4 in 95% O<sub>2</sub> / 5% CO<sub>2</sub>, \u223c316 mOsm). To investigate the relationship between IPSC peak amplitude and [Ca<sup>2+</sup>]<sub>o</sub>, different combinations of [Ca<sup>2+</sup>]<sub>o</sub> / [Mg<sup>2+</sup>]<sub>o</sub> were used (0.5 / 2.5, 0.6 / 2.4, 0.7 / 2.3, 0.8 / 2.2, 1 / 2, 3 / 1, 4 / 1, and 10 / 1 mM). Paired recordings from synaptically connected BCs and PCs were performed as previously described (<a href=\"#bib6\">Caillard et al., 2000</a>; <a href=\"#bib33\">Sakaba, 2008</a>; <a href=\"#bib15\">Eggermann and Jonas, 2012</a>). Intracellular solution used for presynaptic BCs contained 125 mM K-gluconate, 20 mM KCl, 10 mM HEPES, 10 mM phosphocreatine, 2 mM MgCl<sub>2</sub>, 0.1 mM EGTA, 2 mM ATP, 0.4 mM GTP (pH adjusted to 7.3 with KOH, \u223c310 mOsm). In a subset of experiments, 0.2% biocytin was added. For experiments using Ca<sup>2+</sup> chelators, 0.1 mM EGTA was replaced with different concentrations of BAPTA (1, 3, or 10 mM) or EGTA (10 or 30 mM); the concentration of K-gluconate was reduced accordingly to maintain osmolarity. Presynaptic pipettes were fabricated from borosilicate glass tubing. Presynaptic pipette resistance was 12\u201315 M\u03a9. Intracellular solution for postsynaptic PCs contained 140 mM KCl, 10 mM HEPES, 2 mM MgCl<sub>2</sub>, 10 mM EGTA, 2 mM ATP, and 2 mM QX-314 (pH adjusted to 7.3 with KOH, \u223c310 mOsm). To achieve small postsynaptic series resistance, leaded glass (PG10165-4, WPI, Sarasota, FL) was used to fabricate large tip-sized recording pipettes. To minimize capacitance, pipettes were coated with dental wax. Postsynaptic pipette resistance was 0.8\u20131.5 M\u03a9, resulting in a mean series resistance of 3.8 \u00b1 0.1 M\u03a9 (range: 2.5\u20137.5 M\u03a9, 92 cells). Postsynaptic series resistance was not compensated, but continuously monitored using 5-mV test pulses. Experiments were only analyzed if changes in series resistance in the entire recording period were less than 2 M\u03a9. Similarly, experiments were discarded if there was a detectable rundown of IPSC peak amplitude during the control period."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For intracellular stimulation of BCs in the whole-cell configuration under current-clamp conditions, single pulses (400 pA, 4 ms at \u223c22\u00b0C and \u223c34\u00b0C; 500 pA, 5 ms at \u223c12\u00b0C) were injected into the BC every 4 s (\u223c22\u00b0C and \u223c34\u00b0C) or 15 s (\u223c12\u00b0C). A holding current of \u223c \u201350 pA was applied to maintain the resting membrane potential at \u223c\u201365 mV and to avoid spontaneous action potential generation. For cell-attached stimulation under voltage-clamp conditions (<a href=\"#bib31\">Perkins, 2006</a>; <a href=\"#bib41\">Vyleta and Jonas, 2014</a>), the presynaptic pipette contained a K<sup>+</sup>-based intracellular solution. Action potentials were evoked by brief voltage pulses (amplitude &lt;1 V, duration 0.1\u20130.2 ms). Pipette holding potential was set to \u221260 or \u221280 mV to minimize the holding current and to avoid spontaneous action potential generation. Above a threshold value, action currents in BCs and IPSCs in PCs were evoked, demonstrating reliable all-or-none activation of the synapse. Experiments in which presynaptic seal resistance went below 1 G\u03a9 during recording were discarded. In all experiments, PCs were recorded under voltage-clamp conditions at a holding potential of \u221270 mV. Membrane potentials given were not corrected for liquid junction potentials."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Temperature control of bath solution was achieved using a temperature controller (Sigmann, Germany) in combination with a high precision electronic thermometer (GHM, Germany) placed near the specimen. For cooling, the inflow tubing was placed in an ice reservoir."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Peptide toxins were applied using a recirculation system with a peristaltic pump (Ismatec, Germany). The total volume of the system was \u223c4 ml, and the solution was equilibrated with 95% O<sub>2</sub> / 5% CO<sub>2</sub>. Bovine serum albumin (Sigma-Aldrich, St. Louis, MI) was added at a concentration of 1 mg ml<sup>\u22121</sup> to prevent adsorption of peptides to the surfaces of the perfusion system. \u03c9-agatoxin IVa and \u03c9-conotoxin GVIa were from Bachem (Switzerland), (1,2,5,6-tetrahydropyridine-4-yl)-methylphosphinic acid (TPMPA) and CGP55845 hydrochloride were from Tocris (UK), other chemicals were obtained from Sigma\u2013Aldrich or Merck (Germany), unless specified differently."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-3", 
+                        "title": "Biocytin labeling", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "For analysis of neuron morphology, slices were fixed &gt;24 hr in 2.5% paraformaldehyde, 1.25% glutaraldehyde, and 15% saturated picric acid in 100 mM phosphate buffer (PB; pH 7.35). After fixation, slices were washed, incubated in 2% hydrogen peroxide, and shock-frozen in liquid nitrogen. Subsequently, the tissue was treated with PB containing 1% avidin\u2013biotinylated horseradish peroxidase complex (ABC; Vector Laboratories, Burlingame, CA) overnight at 4\u00b0C. Excess ABC was removed by several rinses with PB, before development with 0.05% 3,3\u2032-diaminobenzidine tetrahydrochloride and 0.01% hydrogen peroxide. Subsequently, slices were rinsed in PB several times and embedded in Mowiol (Roth, Germany)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-4", 
+                        "title": "Data acquisition and analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Data were acquired with a Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, CA). Signals were filtered at 6 kHz (4-pole low-pass Bessel filter) and digitized at 20 or 50 kHz using a CED 1401plus interface (Cambridge Electronic Design, UK). Pulse generation and data acquisition were performed using FPulse 3.33 (U. Fr\u00f6be, Physiological Institute Freiburg, Germany) running under Igor Pro 6.3.2 (Wavemetrics, Portland, OR) on a PC. Data were analyzed with Igor Pro 6.3.2 and Mathematica 8.0.1 or 9.01 (Wolfram Research, Champaign, IL). Synaptic latency (the steepest point of the rise phase of the presynaptic action potential to the onset of the IPSC), and proportion of failures were determined from 50 to 800 single traces. To quantify the block of transmitter release by BAPTA and EGTA, the peak amplitude of the evoked IPSCs against experimental time was fit with an exponential or sigmoidal function, and the amount of suppression was quantified as the ratio of steady-state to initial values of the fit curve. Concentration\u2013effect curves (IPSC vs [Ca<sup>2+</sup>]<sub>o</sub> or [chelator]) were fit with a Hill equation of the form f(c) = a [1 + (c<sub>50</sub> / c)<sup>n</sup>]<sup>\u22121</sup>, where c is concentration, a is maximal amplitude, c<sub>50</sub> is half-maximal effective (EC<sub>50</sub>) or inhibitory concentration (IC<sub>50</sub>), and n is Hill coefficient."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-5", 
+                        "title": "Deconvolution analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The time course of release (TCR) was determined by deconvolution (<a href=\"#bib11\">Diamond and Jahr, 1995</a>; <a href=\"#bib28\">Neher and Sakaba, 2001</a>; <a href=\"#bib33\">Sakaba, 2008</a>). Average unitary IPSCs (IPSC<sub>unitary</sub>) were deconvolved from average quantal IPSCs (IPSC<sub>quantal</sub>) as F<sup>\u22121</sup>[F(IPSC<sub>unitary</sub>) / F(IPSC<sub>quantal</sub>)], where F is the discrete Fourier transform and F<sup>\u22121</sup> is the inverse. Unitary IPSCs were aligned to the steepest point in the rising phase of the corresponding presynaptic action potentials (to account for minimal jitter in the timing of action potential initiation). Quantal IPSCs recorded in conditions of reduced [Ca<sup>2+</sup>]<sub>o</sub> were aligned by the rising phase of the individual events and then averaged. For subsequent analysis and display, the TCR was filtered at 5 kHz (for recordings at \u223c22\u00b0C or \u223c34\u00b0C) or 0.5 kHz (for measurements at \u223c12\u00b0C) using a digital filter. Finally, the filtered TCR was fit with a Gaussian function. The effects of filtering were corrected by subtracting the variance of an impulse response of a Gaussian filter (<a href=\"#bib9\">Colquhoun and Sigworth, 1995</a>). At 2 mM [Ca<sup>2+</sup>]<sub>o</sub>, the quantal content, estimated as the integral under the TCR, was 10.4 \u00b1 1.8. Analysis was performed using Mathematica 8.0.1 running under Windows 7 on a PC."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To test the possibility that postsynaptic factors, such as receptor desensitization, receptor saturation, or GABA spillover affected our measurements, we measured the TCR in the presence of the low-affinity competitive antagonist 300 \u00b5M TPMPA (<a href=\"#bib21\">Jones et al., 2001</a>) and 2 \u00b5M CGP55845 to avoid effects of TPMPA on GABA<sub>B</sub> receptors. In 4 mM [Ca<sup>2+</sup>]<sub>o</sub> (presumably maximizing the confounding effects of postsynaptic factors), the half-duration of the TCR was 0.51 \u00b1 0.04 in the presence (<a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>; 6 pairs) vs 0.47 \u00b1 0.02 in the absence of TPMPA (<a href=\"#fig2\">Figure 2E</a>; p = 0.38)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-6", 
+                        "title": "Estimation of distance between Ca<sup>2+</sup> channels and release sensors", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To quantify the coupling distance between Ca<sup>2+</sup> channels and release sensors, concentration\u2013effect data for both BAPTA and EGTA were first fit with a Hill equation. Next, data were analyzed with a model of Ca<sup>2+</sup> diffusion and buffering based on linear approximations (<a href=\"#bib27\">Neher, 1998</a>; <a href=\"#bib5\">Bucurenciu et al., 2008</a>). The ratio of Ca<sup>2+</sup> transients in the presence and absence of chelators was converted into the ratio of release probabilities, using a power function with the Hill coefficient set according to the slope of the double-logarithmic IPSC\u2013[Ca<sup>2+</sup>]<sub>o</sub> relation in the low-concentration limit (<a href=\"#fig2\">Figure 2B</a>, bottom). Three different model variants were used: (1) a model with a constant coupling distance, (2) a model with a half-normally distributed coupling distance, and (3) a model with skewed-normally distributed coupling distance. In the two latter cases, the average coupling distance was specified as the expectation value of the distribution. For BAPTA, the Ca<sup>2+</sup> binding and unbinding rates were assumed as k<sub>on</sub> = 4 10<sup>8</sup> M<sup>-1</sup>s<sup>\u22121</sup> and k<sub>off</sub> = 88 s<sup>\u22121</sup> (affinity 220 nM). For EGTA, the rates were taken as k<sub>on</sub> = 1 10<sup>7</sup> M<sup>-1</sup>s<sup>\u22121</sup> and k<sub>off</sub> = 0.7 s<sup>\u22121</sup> (affinity 70 nM). The diffusion coefficients for Ca<sup>2+</sup>, EGTA, and BAPTA were assumed to be 220 \u00b5m<sup>2</sup> s<sup>\u22121</sup> (<a href=\"#bib27\">Neher, 1998</a>). The endogenous buffer product was set to 5500 s<sup>\u22121</sup> and the resting Ca<sup>2+</sup> concentration was assumed as 40 nM (<a href=\"#bib8\">Collin et al., 2005</a>). Confidence intervals of coupling distance were obtained by bootstrap procedures. 1000 artificial data sets were generated from the means and SEMs of the original data set and analyzed as the original (<a href=\"#bib13\">Efron and Tibshirani, 1998</a>). Error estimates were given as half of the 15.9\u201384.1 percentile range. All simulations were performed using Mathematica 8.0.1 running under Windows 7 on a PC."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-7", 
+                        "title": "Statistics", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "All values are given as mean \u00b1 SEM. Error bars in the figures also indicate SEM (shown only if larger than symbol size). Statistical significance was tested using a two-sided Wilcoxon signed rank test for paired data, a two-sided Wilcoxon rank sum test for unpaired data, and a Kruskal\u2013Wallis test for multiple comparisons (Igor Pro 6.3.2). Differences with p &lt; 0.05 were considered significant."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4-8", 
+                        "title": "Modeling of transmitter release", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Ca<sup>2+</sup> diffusion and binding to mobile and fixed buffers were modeled using the full set of partial differential equations (PDEs) of the reaction\u2013diffusion problem, including all necessary boundary and initial conditions (<a href=\"#bib37\">Smith, 2001</a>; <a href=\"#bib5\">Bucurenciu et al., 2008</a>; <a href=\"#bib15\">Eggermann and Jonas, 2012</a>; <a href=\"#bib41\">Vyleta and Jonas, 2014</a>). PDEs were solved numerically with NDSolve of Mathematica 8.01 running under Windows 7 on a PC. A release unit was implemented as a hemisphere (<a href=\"#fig3\">Figure 3A</a>). The diameter was assumed to be 1 \u00b5m, approximately corresponding to the radius of inhibitory boutons, unless specified differently. PDEs were integrated over the radial coordinate (2000 grid points) and solved at a concentration accuracy of 0.01 nM."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Brief single action potentials were applied as stimuli. A cluster of Ca<sup>2+</sup> channels was represented as a point source. A previously published Hodgkin-Huxley-type gating model of P/Q-type Ca<sup>2+</sup> channels was used to calculate the Ca<sup>2+</sup> inflow (<a href=\"#bib3\">Borst and Sakmann, 1998</a>). The Ca<sup>2+</sup> inflow, relative to that of a single Ca<sup>2+</sup> channel, was varied between 1 and 100. The single-channel conductance was assumed as 2.2 pS (<a href=\"#bib22\">Li et al., 2007</a>). The coupling distance was varied between 10 and 200 nm."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The standard parameters of the model were as follows: For the fixed endogenous Ca<sup>2+</sup> buffer, the rates were chosen as k<sub>on</sub> = 5 10<sup>8</sup> M<sup>\u22121</sup> s<sup>\u22121</sup> and k<sub>off</sub> = 1000 s<sup>\u22121</sup> (affinity 2 \u00b5M). For standard simulations, both a fixed buffer (100 \u00b5M) and a mobile buffer with BAPTA-like properties (10 \u00b5M) were incorporated. Ca<sup>2+</sup> buffer concentrations were considered to be spatially uniform. The resting Ca<sup>2+</sup> concentration was set to 40 nM (<a href=\"#bib8\">Collin et al., 2005</a>). Vesicular release rate was computed using a model of transmitter release originally established at the calyx of Held (<a href=\"#bib23\">Lou et al., 2005</a>). This model was preferred over alternative models because it is based on the most extensive set of experimental data. The occupancies for the different states of the model were obtained by solving the corresponding first-order ordinary differential equations with a Q-matrix approach. Release rate was computed as the sum of the product of occupancy and release rate for each state; pool depletion was not considered."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To account for the rapid timing of transmitter release at BC\u2013PC synapses, the previously used presynaptic action potential (<a href=\"#bib24\">Meinrenken et al., 2002</a>; <a href=\"#bib5\">Bucurenciu et al., 2008</a>) was time-compressed by a factor of two, Ca<sup>2+</sup> channel gating rates were multiplied by a factor of two, and the binding and unbinding rates of the sensor were increased by a factor of two. The maximal release rate in the model was 6008 s<sup>\u22121</sup> (<a href=\"#bib23\">Lou et al., 2005</a>). In a subset of simulations, a distributed arrangement of release sensors was assumed, with a coefficient of variation for the coupling distance of 0.3 (<a href=\"#fig3\">Figure 3E</a>). In these cases, release rates were obtained at various distances, and the average release rate was computed as the weighted mean, with weight factors set according to a normal distribution."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "1991", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EM Adler", 
+                            "index": "Adler, EM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Augustine", 
+                            "index": "Augustine, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SN Duffy", 
+                            "index": "Duffy, SN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MP Charlton", 
+                            "index": "Charlton, MP"
+                        }
+                    }
+                ], 
+                "articleTitle": "Alien intracellular calcium chelators attenuate neurotransmitter release at the squid giant synapse", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "11", 
+                "pages": {
+                    "first": "1496", 
+                    "last": "1507", 
+                    "range": "1496\u20131507"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Bao", 
+                            "index": "Bao, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Reim", 
+                            "index": "Reim, K"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Sakaba", 
+                            "index": "Sakaba, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Target-dependent feedforward inhibition mediated by short-term synaptic plasticity in the cerebellum", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "30", 
+                "pages": {
+                    "first": "8171", 
+                    "last": "8179", 
+                    "range": "8171\u20138179"
+                }, 
+                "doi": "10.1523/JNEUROSCI.0276-10.2010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JGG Borst", 
+                            "index": "Borst, JGG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Sakmann", 
+                            "index": "Sakmann, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "Calcium current during a single action potential in a large presynaptic terminal of the rat brainstem", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "506", 
+                "pages": {
+                    "first": "143", 
+                    "last": "157", 
+                    "range": "143\u2013157"
+                }, 
+                "doi": "10.1111/j.1469-7793.1998.143bx.x"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "1999", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JGG Borst", 
+                            "index": "Borst, JGG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Sakmann", 
+                            "index": "Sakmann, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "Depletion of calcium in the synaptic cleft of a calyx-type synapse in the rat brainstem", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "521", 
+                "pages": {
+                    "first": "123", 
+                    "last": "133", 
+                    "range": "123\u2013133"
+                }, 
+                "doi": "10.1111/j.1469-7793.1999.00123.x"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Bucurenciu", 
+                            "index": "Bucurenciu, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Kulik", 
+                            "index": "Kulik, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Schwaller", 
+                            "index": "Schwaller, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Frotscher", 
+                            "index": "Frotscher, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nanodomain coupling between Ca<sup>2+</sup> channels and Ca<sup>2+</sup> sensors promotes fast and efficient transmitter release at a cortical GABAergic synapse", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "57", 
+                "pages": {
+                    "first": "536", 
+                    "last": "545", 
+                    "range": "536\u2013545"
+                }, 
+                "doi": "10.1016/j.neuron.2007.12.026"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Caillard", 
+                            "index": "Caillard, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Moreno", 
+                            "index": "Moreno, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Schwaller", 
+                            "index": "Schwaller, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Llano", 
+                            "index": "Llano, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MR Celio", 
+                            "index": "Celio, MR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Marty", 
+                            "index": "Marty, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Role of the calcium-binding protein parvalbumin in short-term synaptic plasticity", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "97", 
+                "pages": {
+                    "first": "13372", 
+                    "last": "13377", 
+                    "range": "13372\u201313377"
+                }, 
+                "doi": "10.1073/pnas.230362997"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JM Christie", 
+                            "index": "Christie, JM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DN Chiu", 
+                            "index": "Chiu, DN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CE Jahr", 
+                            "index": "Jahr, CE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Ca<sup>2+</sup>-dependent enhancement of release by subthreshold somatic depolarization", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "62", 
+                    "last": "68", 
+                    "range": "62\u201368"
+                }, 
+                "doi": "10.1038/nn.2718"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Collin", 
+                            "index": "Collin, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Chat", 
+                            "index": "Chat, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MG Lucas", 
+                            "index": "Lucas, MG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Moreno", 
+                            "index": "Moreno, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Racay", 
+                            "index": "Racay, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Schwaller", 
+                            "index": "Schwaller, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Marty", 
+                            "index": "Marty, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Llano", 
+                            "index": "Llano, I"
+                        }
+                    }
+                ], 
+                "articleTitle": "Developmental changes in parvalbumin regulate presynaptic Ca<sup>2+</sup> signaling", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "96", 
+                    "last": "107", 
+                    "range": "96\u2013107"
+                }, 
+                "doi": "10.1523/JNEUROSCI.3748-04.2005"
+            }, 
+            {
+                "type": "book-chapter", 
+                "id": "bib9", 
+                "date": "1995", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Colquhoun", 
+                            "index": "Colquhoun, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FJ Sigworth", 
+                            "index": "Sigworth, FJ"
+                        }
+                    }
+                ], 
+                "editors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Sakmann", 
+                            "index": "Sakmann, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Neher", 
+                            "index": "Neher, E"
+                        }
+                    }
+                ], 
+                "bookTitle": "Single-channel recording", 
+                "chapterTitle": "Fitting and statistical analysis of single-channel records", 
+                "pages": {
+                    "first": "483", 
+                    "last": "587", 
+                    "range": "483\u2013587"
+                }, 
+                "publisher": {
+                    "name": [
+                        "Plenum Press"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "New York"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "New York"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "1980", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NB Datyner", 
+                            "index": "Datyner, NB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PW Gage", 
+                            "index": "Gage, PW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Phasic secretion of acetylcholine at a mammalian neuromuscular junction", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "303", 
+                "pages": {
+                    "first": "299", 
+                    "last": "314", 
+                    "range": "299\u2013314"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "1995", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Diamond", 
+                            "index": "Diamond, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CE Jahr", 
+                            "index": "Jahr, CE"
+                        }
+                    }
+                ], 
+                "articleTitle": "Asynchronous release of synaptic vesicles determines the time course of the AMPA receptor-mediated EPSC", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "1097", 
+                    "last": "1107", 
+                    "range": "1097\u20131107"
+                }, 
+                "doi": "10.1016/0896-6273(95)90098-5"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "1967", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FA Dodge Jr", 
+                            "index": "Dodge, FA, Jr"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Rahamimoff", 
+                            "index": "Rahamimoff, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Co-operative action a calcium ions in transmitter release at the neuromuscular junction", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "193", 
+                "pages": {
+                    "first": "419", 
+                    "last": "432", 
+                    "range": "419\u2013432"
+                }
+            }, 
+            {
+                "type": "book", 
+                "id": "bib13", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Efron", 
+                            "index": "Efron, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RJ Tibshirani", 
+                            "index": "Tibshirani, RJ"
+                        }
+                    }
+                ], 
+                "bookTitle": "An Introduction to the Bootstrap", 
+                "publisher": {
+                    "name": [
+                        "Chapman and Hall/CRC"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "London"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "London"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib14", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Eggermann", 
+                            "index": "Eggermann, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Bucurenciu", 
+                            "index": "Bucurenciu, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SP Goswami", 
+                            "index": "Goswami, SP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nanodomain coupling between Ca<sup>2+</sup> channels and sensors of exocytosis at fast mammalian synapses", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Neuroscience"
+                    ]
+                }, 
+                "volume": "13", 
+                "pages": {
+                    "first": "7", 
+                    "last": "21", 
+                    "range": "7\u201321"
+                }, 
+                "doi": "10.1038/nrn3125"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib15", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Eggermann", 
+                            "index": "Eggermann, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "How the \u2018slow\u2019 Ca<sup>2+</sup> buffer parvalbumin affects transmitter release in nanodomain coupling regimes", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "20", 
+                    "last": "22", 
+                    "range": "20\u201322"
+                }, 
+                "doi": "10.1038/nn.3002"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib16", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Felmy", 
+                            "index": "Felmy, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Neher", 
+                            "index": "Neher, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Schneggenburger", 
+                            "index": "Schneggenburger, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "The timing of phasic transmitter release is Ca<sup>2+</sup>-dependent and lacks a direct influence of presynaptic membrane potential", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "100", 
+                "pages": {
+                    "first": "15200", 
+                    "last": "15205", 
+                    "range": "15200\u201315205"
+                }, 
+                "doi": "10.1073/pnas.2433276100"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib17", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "IR Gilmanov", 
+                            "index": "Gilmanov, IR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DV Samigullin", 
+                            "index": "Samigullin, DV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Vyskocil", 
+                            "index": "Vyskocil, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EE Nikolsky", 
+                            "index": "Nikolsky, EE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EA Bukharaeva", 
+                            "index": "Bukharaeva, EA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Modeling of quantal neurotransmitter release kinetics in the presence of fixed and mobile calcium buffers", 
+                "journal": {
+                    "name": [
+                        "Journal of Computational Neuroscience"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "296", 
+                    "last": "307", 
+                    "range": "296\u2013307"
+                }, 
+                "doi": "10.1007/s10827-008-0079-5"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib18", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hefft", 
+                            "index": "Hefft, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Asynchronous GABA release generates long-lasting inhibition at a hippocampal interneuron-principal neuron synapse", 
+                "journal": {
+                    "name": [
+                        "Nature Neuroscience"
+                    ]
+                }, 
+                "volume": "8", 
+                "pages": {
+                    "first": "1319", 
+                    "last": "1328", 
+                    "range": "1319\u20131328"
+                }, 
+                "doi": "10.1038/nn1542"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib19", 
+                "date": "1977", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Heinemann", 
+                            "index": "Heinemann, U"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HD Lux", 
+                            "index": "Lux, HD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Gutnick", 
+                            "index": "Gutnick, MJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Extracellular free calcium and potassium during paroxysmal activity in the cerebral cortex of the cat", 
+                "journal": {
+                    "name": [
+                        "Experimental Brain Research"
+                    ]
+                }, 
+                "volume": "27", 
+                "pages": {
+                    "first": "237", 
+                    "last": "243", 
+                    "range": "237\u2013243"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib20", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SF Hsu", 
+                            "index": "Hsu, SF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GJ Augustine", 
+                            "index": "Augustine, GJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Jackson", 
+                            "index": "Jackson, MB"
+                        }
+                    }
+                ], 
+                "articleTitle": "Adaptation of Ca<sup>2+</sup>-triggered exocytosis in presynaptic terminals", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "17", 
+                "pages": {
+                    "first": "501", 
+                    "last": "512", 
+                    "range": "501\u2013512"
+                }, 
+                "doi": "10.1016/S0896-6273(00)80182-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib21", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MV Jones", 
+                            "index": "Jones, MV"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Sahara", 
+                            "index": "Sahara, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GL Westbrook", 
+                            "index": "Westbrook, GL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Microscopic kinetics and energetics distinguish GABA<sub>A</sub> receptor agonists from antagonists", 
+                "journal": {
+                    "name": [
+                        "Biophysical Journal"
+                    ]
+                }, 
+                "volume": "81", 
+                "pages": {
+                    "first": "2660", 
+                    "last": "2670", 
+                    "range": "2660\u20132670"
+                }, 
+                "doi": "10.1016/S0006-3495(01)75909-7"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib22", 
+                "date": "2007", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Li", 
+                            "index": "Li, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Bischofberger", 
+                            "index": "Bischofberger, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Differential gating and recruitment of P/Q-, N-, and R-type Ca<sup>2+</sup> channels in hippocampal mossy fiber boutons", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "27", 
+                "pages": {
+                    "first": "13420", 
+                    "last": "13429", 
+                    "range": "13420\u201313429"
+                }, 
+                "doi": "10.1523/JNEUROSCI.1709-07.2007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib23", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Lou", 
+                            "index": "Lou, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Scheuss", 
+                            "index": "Scheuss, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Schneggenburger", 
+                            "index": "Schneggenburger, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Allosteric modulation of the presynaptic Ca<sup>2+</sup> sensor for vesicle fusion", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "435", 
+                "pages": {
+                    "first": "497", 
+                    "last": "501", 
+                    "range": "497\u2013501"
+                }, 
+                "doi": "10.1038/nature03568"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib24", 
+                "date": "2002", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CJ Meinrenken", 
+                            "index": "Meinrenken, CJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JGG Borst", 
+                            "index": "Borst, JGG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Sakmann", 
+                            "index": "Sakmann, B"
+                        }
+                    }
+                ], 
+                "articleTitle": "Calcium secretion coupling at calyx of Held governed by nonuniform channel-vesicle topography", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "22", 
+                "pages": {
+                    "first": "1648", 
+                    "last": "1667", 
+                    "range": "1648\u20131667"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib25", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Mittmann", 
+                            "index": "Mittmann, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "U Koch", 
+                            "index": "Koch, U"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M H\u00e4usser", 
+                            "index": "H\u00e4usser, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "Feed-forward inhibition shapes the spike output of cerebellar Purkinje cells", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "563", 
+                "pages": {
+                    "first": "369", 
+                    "last": "378", 
+                    "range": "369\u2013378"
+                }, 
+                "doi": "10.1113/jphysiol.2004.075028"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib26", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Nadkarni", 
+                            "index": "Nadkarni, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TM Bartol", 
+                            "index": "Bartol, TM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CF Stevens", 
+                            "index": "Stevens, CF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TJ Sejnowski", 
+                            "index": "Sejnowski, TJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Levine", 
+                            "index": "Levine, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Short-term plasticity constrains spatial organization of a hippocampal presynaptic terminal", 
+                "journal": {
+                    "name": [
+                        "Proceedings of the National Academy of Sciences of USA"
+                    ]
+                }, 
+                "volume": "109", 
+                "pages": {
+                    "first": "14657", 
+                    "last": "14662", 
+                    "range": "14657\u201314662"
+                }, 
+                "doi": "10.1073/pnas.1211971109"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib27", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Neher", 
+                            "index": "Neher, E"
+                        }
+                    }
+                ], 
+                "articleTitle": "Usefulness and limitations of linear approximations to the understanding of Ca<sup>++</sup> signals", 
+                "journal": {
+                    "name": [
+                        "Cell Calcium"
+                    ]
+                }, 
+                "volume": "24", 
+                "pages": {
+                    "first": "345", 
+                    "last": "357", 
+                    "range": "345\u2013357"
+                }, 
+                "doi": "10.1016/S0143-4160(98)90058-6"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib28", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Neher", 
+                            "index": "Neher, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Sakaba", 
+                            "index": "Sakaba, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Combining deconvolution and noise analysis for the estimation of transmitter release rates at the calyx of Held", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "21", 
+                "pages": {
+                    "first": "444", 
+                    "last": "461", 
+                    "range": "444\u2013461"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib29", 
+                "date": "1989", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Parnas", 
+                            "index": "Parnas, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Hovav", 
+                            "index": "Hovav, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Parnas", 
+                            "index": "Parnas, I"
+                        }
+                    }
+                ], 
+                "articleTitle": "Effect of Ca<sup>2+</sup> diffusion on the time course of neurotransmitter release", 
+                "journal": {
+                    "name": [
+                        "Biophysical Journal"
+                    ]
+                }, 
+                "volume": "55", 
+                "pages": {
+                    "first": "859", 
+                    "last": "874", 
+                    "range": "859\u2013874"
+                }, 
+                "doi": "10.1016/S0006-3495(89)82885-1"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib30", 
+                "date": "2000", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Parnas", 
+                            "index": "Parnas, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Segel", 
+                            "index": "Segel, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Dudel", 
+                            "index": "Dudel, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Parnas", 
+                            "index": "Parnas, I"
+                        }
+                    }
+                ], 
+                "articleTitle": "Autoreceptors, membrane potential and the regulation of transmitter release", 
+                "journal": {
+                    "name": [
+                        "Trends in Neurosciences"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "60", 
+                    "last": "68", 
+                    "range": "60\u201368"
+                }, 
+                "doi": "10.1016/S0166-2236(99)01498-8"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib31", 
+                "date": "2006", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KL Perkins", 
+                            "index": "Perkins, KL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cell-attached voltage-clamp and current-clamp recording and stimulation techniques in brain slices", 
+                "journal": {
+                    "name": [
+                        "Journal of Neuroscience Methods"
+                    ]
+                }, 
+                "volume": "154", 
+                "pages": {
+                    "first": "1", 
+                    "last": "18", 
+                    "range": "1\u201318"
+                }, 
+                "doi": "10.1016/j.jneumeth.2006.02.010"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib32", 
+                "date": "2003", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Rusakov", 
+                            "index": "Rusakov, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Fine", 
+                            "index": "Fine, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Extracellular Ca<sup>2+</sup> depletion contributes to fast activity-dependent modulation of synaptic transmission in the brain", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "37", 
+                "pages": {
+                    "first": "287", 
+                    "last": "297", 
+                    "range": "287\u2013297"
+                }, 
+                "doi": "10.1016/S0896-6273(03)00025-4"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib33", 
+                "date": "2008", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Sakaba", 
+                            "index": "Sakaba, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Two Ca<sup>2+</sup>-dependent steps controlling synaptic vesicle fusion and replenishment at the cerebellar basket cell terminal", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "57", 
+                "pages": {
+                    "first": "406", 
+                    "last": "419", 
+                    "range": "406\u2013419"
+                }, 
+                "doi": "10.1016/j.neuron.2007.11.029"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib34", 
+                "date": "2005", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PB Sargent", 
+                            "index": "Sargent, PB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Saviane", 
+                            "index": "Saviane, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TA Nielsen", 
+                            "index": "Nielsen, TA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA DiGregorio", 
+                            "index": "DiGregorio, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Silver", 
+                            "index": "Silver, RA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Rapid vesicular release, quantal variability, and spillover contribute to the precision and reliability of transmission at a glomerular synapse", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "25", 
+                "pages": {
+                    "first": "8173", 
+                    "last": "8187", 
+                    "range": "8173\u20138187"
+                }, 
+                "doi": "10.1523/JNEUROSCI.2051-05.2005"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib35", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Schmidt", 
+                            "index": "Schmidt, H"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Brachtendorf", 
+                            "index": "Brachtendorf, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "O Arendt", 
+                            "index": "Arendt, O"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Hallermann", 
+                            "index": "Hallermann, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ishiyama", 
+                            "index": "Ishiyama, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Bornschein", 
+                            "index": "Bornschein, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Gall", 
+                            "index": "Gall, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SN Schiffmann", 
+                            "index": "Schiffmann, SN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Heckmann", 
+                            "index": "Heckmann, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Eilers", 
+                            "index": "Eilers, J"
+                        }
+                    }
+                ], 
+                "articleTitle": "Nanodomain coupling at an excitatory cortical synapse", 
+                "journal": {
+                    "name": [
+                        "Current Biology"
+                    ]
+                }, 
+                "volume": "23", 
+                "pages": {
+                    "first": "244", 
+                    "last": "249", 
+                    "range": "244\u2013249"
+                }, 
+                "doi": "10.1016/j.cub.2012.12.007"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib36", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Scimemi", 
+                            "index": "Scimemi, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Diamond", 
+                            "index": "Diamond, JS"
+                        }
+                    }
+                ], 
+                "articleTitle": "The number and organization of Ca<sup>2+</sup> channels in the active zone shapes neurotransmitter release from Schaffer collateral synapses", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "32", 
+                "pages": {
+                    "first": "18157", 
+                    "last": "18176", 
+                    "range": "18157\u201318176"
+                }, 
+                "doi": "10.1523/JNEUROSCI.3827-12.2012"
+            }, 
+            {
+                "type": "book-chapter", 
+                "id": "bib37", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GD Smith", 
+                            "index": "Smith, GD"
+                        }
+                    }
+                ], 
+                "editors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E De Schutter", 
+                            "index": "De Schutter, E"
+                        }
+                    }
+                ], 
+                "bookTitle": "Computational Neuroscience", 
+                "chapterTitle": "Modelling local and global calcium signals using reaction-diffusion equations", 
+                "pages": {
+                    "first": "49", 
+                    "last": "85", 
+                    "range": "49\u201385"
+                }, 
+                "publisher": {
+                    "name": [
+                        "CRC Press"
+                    ], 
+                    "address": {
+                        "formatted": [
+                            "Boca Raton, Florida"
+                        ], 
+                        "components": {
+                            "locality": [
+                                "Boca Raton, Florida"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib38", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TC S\u00fcdhof", 
+                            "index": "S\u00fcdhof, TC"
+                        }
+                    }
+                ], 
+                "articleTitle": "Neurotransmitter release: the last millisecond in the life of a synaptic vesicle", 
+                "journal": {
+                    "name": [
+                        "Neuron"
+                    ]
+                }, 
+                "volume": "80", 
+                "pages": {
+                    "first": "675", 
+                    "last": "690", 
+                    "range": "675\u2013690"
+                }, 
+                "doi": "10.1016/j.neuron.2013.10.022"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib39", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Takahashi", 
+                            "index": "Takahashi, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Kajikawa", 
+                            "index": "Kajikawa, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Tsujimoto", 
+                            "index": "Tsujimoto, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "G-protein-coupled modulation of presynaptic calcium currents and transmitter release by a GABA<sub>B</sub> receptor", 
+                "journal": {
+                    "name": [
+                        "The Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "18", 
+                "pages": {
+                    "first": "3138", 
+                    "last": "3146", 
+                    "range": "3138\u20133146"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib40", 
+                "date": "1988", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Van der Kloot", 
+                            "index": "Van der Kloot, W"
+                        }
+                    }
+                ], 
+                "articleTitle": "The kinetics of quantal releases during end-plate currents at the frog neuromuscular junction", 
+                "journal": {
+                    "name": [
+                        "The Journal of Physiology"
+                    ]
+                }, 
+                "volume": "402", 
+                "pages": {
+                    "first": "605", 
+                    "last": "626", 
+                    "range": "605\u2013626"
+                }
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib41", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "NP Vyleta", 
+                            "index": "Vyleta, NP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Jonas", 
+                            "index": "Jonas, P"
+                        }
+                    }
+                ], 
+                "articleTitle": "Loose coupling between Ca<sup>2+</sup> channels and release sensors at a plastic hippocampal synapse", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "343", 
+                "pages": {
+                    "first": "665", 
+                    "last": "670", 
+                    "range": "665\u2013670"
+                }, 
+                "doi": "10.1126/science.1244811"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib42", 
+                "date": "1992", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WM Yamada", 
+                            "index": "Yamada, WM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RS Zucker", 
+                            "index": "Zucker, RS"
+                        }
+                    }
+                ], 
+                "articleTitle": "Time course of transmitter release calculated from simulations of a calcium diffusion model", 
+                "journal": {
+                    "name": [
+                        "Biophysical Journal"
+                    ]
+                }, 
+                "volume": "61", 
+                "pages": {
+                    "first": "671", 
+                    "last": "682", 
+                    "range": "671\u2013682"
+                }, 
+                "doi": "10.1016/S0006-3495(92)81872-6"
+            }
+        ], 
+        "acknowledgements": [
+            {
+                "type": "paragraph", 
+                "text": "We thank Drs Nicholas Vyleta and Ryuichi Shigemoto for critically reading the manuscript. We also thank F Marr and M Duggan for technical assistance, and A Solymosi for manuscript editing."
+            }
+        ], 
+        "decisionLetter": {
+            "doi": "10.7554/eLife.04057.010", 
+            "description": [
+                {
+                    "type": "paragraph", 
+                    "text": "eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see <a href=\"http://elifesciences.org/review-process\">review process</a>). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers."
+                }
+            ], 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Thank you for sending your work entitled \u201cNanodomain coupling explains Ca<sup>2+</sup> independence of transmitter release time course at a fast central synapse\u201d for consideration at <i>eLife.</i> Your article has been favorably evaluated by Eve Marder (Senior editor), Michael H\u00e4usser (Reviewing editor), and 2 reviewers."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "This manuscript examines an interesting and under-studied question, namely whether synaptic delays vary with external calcium concentrations and if not, why. To address this, the authors have performed paired recordings at basket cell Purkinje cell synapses, in combination with computational modelling. They include a study of latencies at two temperatures, a pharmacological analysis of synaptic calcium channel subtypes, a deconvolution-based analysis of release rate as a function of external calcium, and an investigation of the effects of added EGTA and BAPTA on synaptic efficacy. The results are then simulated using a variant of the previously published Eggermann-Jonas model at the same synapse."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "The experimental results, which are of high quality, clearly show that there is tight coupling between SVs and VDCCs and also, that the release rate does not vary significantly with external calcium at physiological temperature. While intuition suggests that a causal link between these two findings is likely, the simulation of <a href=\"#fig3\">Figure 3</a> brings disappointingly little to support this hypothesis, or to eliminate alternative explanations. As detailed below, the possibility remains open that other aspects of the synapse function such as width of the AP, speed of the release reactions, or effects of endogenous buffers, may play a key role as well. Repeating the experiments of <a href=\"#fig2\">Figure 2d</a> at room temperature should help to solve this problem. Therefore, we believe these experiments are essential for the resubmission, should not be very time-consuming, but will be very informative."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "Further detail is provided below:"
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "1) The figure describing the simulations (<a href=\"#fig3\">Figure 3</a>) is difficult to understand in detail. The main result is in panel c. But there seems little justification in using the slope ratio at 200 s-1 to evaluate the effect of coupling distance on calcium sensitivity. It would be better to use the slope calculated by joining together the points representing 1, 2 and 4 mM calcium (respectively near 200, 2000 and 4000 s-1). If this is done it appears that the changes in TCR duration are only near 15 or 20% for the loose coupling (roughly decreasing from 0.65 to 0.55). A similar analysis made on panel e (including a dispersion in coupling distances) leads to even smaller changes. Looking at these simulations, it does seem like the dependence on external calcium is less for tight coupling than for loose coupling. But in either case the dependence is modest, presumably because the model has been constrained to mimic a very fast synapse (fast AP, fast calcium channel, fast SV release). So at the end it is not clear whether the weak dependence of TCR on external calcium should be ascribed primarily to the tight coupling as proposed by the authors, or to other features of the model."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "2) Additional room temperature experiments would significantly strengthen the manuscript and should be carried out prior to resubmission. The results of <a href=\"#fig1\">Figure 1d</a> show a much broader distribution of latencies at 22<sup>\u00b0</sup>C than at 34<sup>\u00b0</sup>C. Likewise the previous deconvolution analysis by Sakaba at the same synapse (Neuron 57, 406, 2008), which was performed at room temperature, indicates a broader TCR than in <a href=\"#fig2\">Figure 2</a> here. This suggests an opportunity to test whether it is really the tight coupling that prevents latency changes with extracellular calcium, or whether other factors play a role as well. If in spite of the broader TCR, external calcium effects remain negligible at room temperature, then the case of tight coupling as a causal link will be much strengthened. If however significant changes occur at room temperature, then additional synaptic parameters will have to be considered as well."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "3) The SV release rates appear to be per synapse in <a href=\"#fig2\">Figure 2</a>, and per vesicle in <a href=\"#fig3\">Figure 3</a>, making the correspondence between the two figures difficult. The \u201cdefault\u201d rate in <a href=\"#fig3\">Figure 3</a> is 2000 s-1 presumably corresponding to the 15 quanta /ms of <a href=\"#fig2\">Figure 2</a> at 2mM calcium. How the 2000 s-1 rate was obtained is unclear. It may have been obtained by extrapolating the normalized IPSC data of <a href=\"#fig2\">Figure 2b</a> to very high calcium, and inferring that the release rate at 2mM is 1/3 of the maximum, that is a third of 6000 s-1, or 2 000 s-1. However the extrapolation cannot be considered as accurate because high calcium points are difficult to obtain at physiological temperatures, so that the asymptote is not well constrained in <a href=\"#fig2\">Figure 2b</a>. If true, the 2 000 s-1 value would indicate an RRP value of 15/2=7.5 per synapse, much smaller than the mean value of 110 found by <a href=\"#bib33\">Sakaba (2008)</a>. Overall vesicular release rates may have been seriously overestimated in the simulation of <a href=\"#fig3\">Figure 3</a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "4) This paper comes in a line of other works by the senior author and others measuring the channel sensor coupling in different synapses. A common conclusion is that at GABAergic synapses the coupling is 'tight'. In this context, some of the results presented here are not particularly surprising (e.g. all of <a href=\"#fig1\">Figure 1</a>, parts of <a href=\"#fig2\">Figure 2</a>, and all of <a href=\"#fig4\">Figure 4</a>). It would be helpful if the authors could emphasize more strongly which of the results they consider to be particularly novel and important, especially in light of the recent literature (see next comment)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "5) The discussion of the literature needs to be expanded. While it is true that latency variations have been little investigated in the CNS, the literature is not as empty as the manuscript would suggest. For example, Boudkkazi et al (Neuron 56, 1048, 2007) found that delays vary with release probability at cortical synapses, including when increasing the extracellular calcium concentration. Gilmanov IR et al 2008 also approached these issues at NMJ with similar conclusions. Furthermore, the Ca independence of release has long been noted at NMJ (as the authors acknowledge), but the authors don't refer to any studies of this in neurons, though there are several which could be cited and discussed, starting perhaps with Silver et al. 1996 in granule cells."
+                }
+            ]
+        }, 
+        "authorResponse": {
+            "doi": "10.7554/eLife.04057.011", 
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "<i>1) The figure describing the simulations (</i><a href=\"#fig3\"><i>Figure 3</i></a><i>) is difficult to understand in detail. The main result is in panel c. But there seems little justification in using the slope ratio at 200 s-1 to evaluate the effect of coupling distance on calcium sensitivity. It would be better to use the slope calculated by joining together the points representing 1, 2 and 4 mM calcium (respectively near 200, 2000 and 4000 s-1). If this is done it appears that the changes in TCR duration are only near 15 or 20% for the loose coupling (roughly decreasing from 0.65 to 0.55). A similar analysis made on panel e (including a dispersion in coupling distances) leads to even smaller changes. Looking at these simulations, it does seem like the dependence on external calcium is less for tight coupling than for loose coupling. But in either case the dependence is modest, presumably because the model has been constrained to mimic a very fast synapse (fast AP, fast calcium channel, fast SV release). So at the end it is not clear whether the weak dependence of TCR on external calcium should be ascribed primarily to the tight coupling as proposed by the authors, or to other features of the model</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have used the concentration\u2013effect curve in <a href=\"#fig2\">Figure 2b</a> to estimate the release rates for our experimental conditions (0.7, 1, 2, and 4 mM [Ca<sup>2+</sup>]<sub>o</sub>; we have included additional experiments to determine curve parameters more precisely, see point 3 below). We have estimated that the peak release rates at 0.7 and 1 mM [Ca<sup>2+</sup>]<sub>o</sub> are 168 and 379 s<sup>-1</sup>, respectively. We have therefore decided to maintain our original reference point (200 s<sup>-1</sup>), which is exactly in-between. Finally, we have indicated our experimental release rates with red arrows in the graphs of <a href=\"#fig3\">Figure 3c</a>. These data corroborate that if there were marked dependencies of TCR on release rate, as e.g. the case in a loose coupling regime, we would be able to detect this dependence in our experiments. We thank the editor / reviewers for raising this point."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>2) Additional room temperature experiments would significantly strengthen the manuscript and should be carried out prior to resubmission. The results of</i> <a href=\"#fig1\"><i>Figure 1d</i></a> <i>show a much broader distribution of latencies at 22</i><sup><i>\u00b0</i></sup><i>C than at 34</i><sup><i>\u00b0</i></sup><i>C. Likewise the previous deconvolution analysis by Sakaba at the same synapse (Neuron 57, 406, 2008), which was performed at room temperature, indicates a broader TCR than in</i> <a href=\"#fig2\"><i>Figure 2</i></a> <i>here. This suggests an opportunity to test whether it is really the tight coupling that prevents latency changes with extracellular calcium, or whether other factors play a role as well. If in spite of the broader TCR, external calcium effects remain negligible at room temperature, then the case of tight coupling as a causal link will be much strengthened. If however significant changes occur at room temperature, then additional synaptic parameters will have to be considered as well</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We thank the editors / reviewers for this excellent suggestion. We would like to point out that the results shown in the original submission (with the exception of <a href=\"#fig1\">Figure 1c, d</a>) had already been performed at room temperature. We have revised the Materials and methods section and the Figure legends to make this point more clear. We are aware that the TCR in our experiments (0.47 \u00b1 0.01 ms) is shorter than the approximate value reported by <a href=\"#bib33\">Sakaba, 2008</a> (\u223c1 ms) under seemingly identical conditions. However, because of the high Q<sub>10</sub> value of the TCR (see below), this may have been caused by relatively minor differences in temperature."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "To constructively pick up the key idea of the editors / reviewers, we performed additional experiments at lower temperature (\u223c12\u00b0C; 5 pairs). Under these experimental conditions, kinetic parameters (presynaptic action potential duration, presynaptic Ca<sup>2+</sup> channel gating, and release sensor kinetics) are expected to be slowed down, whereas tight coupling is likely to be maintained. These experiments turned out to be surprisingly difficult, because of lower stimulation frequencies required to ensure pool replenishment and several additional experimental issues related to low temperature. Interestingly, reduction in temperature markedly prolonged the TCR, whereas the dependence of TCR on [Ca<sup>2+</sup>]<sub>o</sub> remained minimal. These results (incorporated into <a href=\"#fig2s1\">Figure 2\u2013figure supplement 1</a>) corroborate our original conclusion that the tight coupling is the most important parameter in shaping the Ca<sup>2+</sup>-independence of transmitter release. Again, we thank the editor / reviewers for this suggestion."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>3) The SV release rates appear to be per synapse in</i> <a href=\"#fig2\"><i>Figure 2</i></a><i>, and per vesicle in</i> <a href=\"#fig3\"><i>Figure 3</i></a><i>, making the correspondence between the two figures difficult. The \u201cdefault\u201d rate in</i> <a href=\"#fig3\"><i>Figure 3</i></a> <i>is 2000 s-1 presumably corresponding to the 15 quanta /ms of</i> <a href=\"#fig2\"><i>Figure 2</i></a> <i>at 2mM calcium. How the 2000 s-1 rate was obtained is unclear. It may have been obtained by extrapolating the normalized IPSC data of</i> <a href=\"#fig2\"><i>Figure 2b</i></a> <i>to very high calcium, and inferring that the release rate at 2mM is 1/3 of the maximum, that is a third of 6000 s-1, or 2 000 s-1. However the extrapolation cannot be considered as accurate because high calcium points are difficult to obtain at physiological temperatures, so that the asymptote is not well constrained in</i> <a href=\"#fig2\"><i>Figure 2b</i></a><i>. If true, the 2 000 s-1 value would indicate an RRP value of 15/2=7.5 per synapse, much smaller than the mean value of 110 found by</i> <a href=\"#bib33\"><i>Sakaba (2008)</i></a><i>. Overall vesicular release rates may have been seriously overestimated in the simulation of</i> <a href=\"#fig3\"><i>Figure 3</i></a>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have performed additional experiments to better constrain the concentration\u2013effect curve in the saturation phase, as requested by the reviewer (5 pairs at 10 mM [Ca<sup>2+</sup>]<sub>o</sub>). The results are now included in <a href=\"#fig2\">Figure 2b</a>, and better constrain our estimates of release probability. The new results confirm that the \u201cphysiological\u201d release probability at 2 mM [Ca<sup>2+</sup>]<sub>o</sub> is 0.26, and that the corresponding peak release rate is close to 2000 s<sup>-1</sup>. Given that we extended the range of [Ca<sup>2+</sup>]<sub>o</sub>, we further decided to determine the Hill coefficient in the concentration range \u2264 2 mM rather than the entire concentration range. We have included a double-logarithmic representation to graphically illustrate this point (<a href=\"#fig2\">Figure 2b</a>, bottom of the revised version). Please note that this different (presumably more accurate) measurement of the Hill coefficient also slightly changed the results of our analysis of coupling distance (in the main text and legend of <a href=\"#fig4\">Figure 4</a>)."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We also thank the reviewers for reminding us of the paper by <a href=\"#bib33\">Sakaba (2008)</a>. We have cited this paper in the revised version. We are aware that our mean peak release rate and the relatively high release probability may suggest that the size of the releasable pool is small. Our simple quantitative estimation is pool size = quantal content (from deconvolution and integral of TCR) / release probability (from Ca<sup>2+</sup> dependence of release) = 10.4 / 0.26 = 40 at 2 mM [Ca<sup>2+</sup>]<sub>o</sub>. In apparent contrast, the cumulative release analysis during trains of action potentials and Ca<sup>2+</sup> uncaging suggested a larger pool size (110 \u00b1 28; <a href=\"#bib33\">Sakaba, 2008</a>). One possible explanation might be that the size of the pool accessed by single action potentials is smaller than that accessed by trains or Ca<sup>2+</sup> uncaging. Furthermore, there are many additional complications in the analysis of train data, including release-independent components of depression (Kraushaar and Jonas, 2000), Ca<sup>2+</sup>- and time-dependent changes in refilling rate (Wang and Kaczmarek, 1998, Nature), and nonlinearities in the extrapolation in cumulative release plots (Thanawala and Regehr, 2013, J. Neuroscience). Thus, whether or not there is a true discrepancy remains to be resolved."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>4) This paper comes in a line of other works by the senior author and others measuring the channel sensor coupling in different synapses. A common conclusion is that at GABAergic synapses the coupling is 'tight'. In this context, some of the results presented here are not particularly surprising (e.g. all of</i> <a href=\"#fig1\"><i>Figure 1</i></a><i>, parts of</i> <a href=\"#fig2\"><i>Figure 2</i></a><i>, and all of</i> <a href=\"#fig4\"><i>Figure 4</i></a><i>). It would be helpful if the authors could emphasize more strongly which of the results they consider to be particularly novel and important, especially in light of the recent literature (see next comment)</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We have completely changed the Discussion to indicate the novel aspects more clearly. We continue to think that the manuscript provides interesting data, as also stated by the editor\u2019s summary that the paper addresses an \u201cinteresting and under-studied question\u201d. Furthermore, not all papers converge on the conclusion that coupling is tight. For example, we have recently shown loose coupling in hippocampal mossy fiber synapses (<a href=\"#bib41\">Vyleta and Jonas, 2014</a>), and earlier papers suggested loose coupling at CA3\u2013CA1 cell synapses based on the properties of synaptic dynamics (<a href=\"#bib26\">Nadkarni et al., 2012</a>). Likewise, previous studies using membrane-permeant Ca<sup>2+</sup> chelators indicated loose coupling in CCK interneuron output synapses (<a href=\"#bib18\">Hefft and Jonas, 2005</a>). Finally, the suggestions of the editor / reviewers have helped to convey an additional novel aspect to the paper, because, to the best of our knowledge, nobody ever studied the [Ca<sup>2+</sup>]<sub>o</sub> dependence of the TCR at different temperatures."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "<i>5) The discussion of the literature needs to be expanded. While it is true that latency variations have been little investigated in the CNS, the literature is not as empty as the manuscript would suggest. For example, Boudkkazi et al (Neuron 56, 1048, 2007) found that delays vary with release probability at cortical synapses, including when increasing the extracellular calcium concentration. Gilmanov IR et al 2008 also approached these issues at NMJ with similar conclusions. Furthermore, the Ca independence of release has long been noted at NMJ (as the authors acknowledge), but the authors don't refer to any studies of this in neurons, though there are several which could be cited and discussed, starting perhaps with Silver et al. 1996 in granule cells</i>."
+                }, 
+                {
+                    "type": "paragraph", 
+                    "text": "We thank the reviewers for reminding us of the papers of <a href=\"#bib17\">Gilmanov et al., 2008</a>, Silver et al., 1996 (and <a href=\"#bib34\">Sargent et al., 2005</a>). Although the TCR is not directly reported in those studies, we agree that these papers are relevant to our work, because they report Ca<sup>2+</sup>-dependence of the EPSC time course. We have incorporated <a href=\"#bib17\">Gilmanov et al., 2008</a> and <a href=\"#bib34\">Sargent et al., 2005</a>, as suggested. However, we would like to add that latency and time course of release should not be confused. For example, Boudkkazi et al. studied latency variation rather than TCR (thus, those results will not be directly relevant to the present paper)."
+                }
+            ]
+        }
+    }
+}
