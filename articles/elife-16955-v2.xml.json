@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.16955", 
         "authorLine": "Stephen W Eichhorn et al", 
         "title": "mRNA poly(A)-tail changes specified by deadenylation broadly reshape translation in Drosophila oocytes and early embryos", 
-        "published": "2016-07-30T00:00:00", 
+        "published": "2016-07-30T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e16955", 
         "pdf": "https://publishing-cdn.elifesciences.org/16955/elife-16955-v2.pdf", 
@@ -346,14 +346,156 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "Medical Scientist Training Program fellowship T32GM007753", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Alexander Orest Subtelny", 
+                                "index": "Subtelny, Alexander Orest"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100005156", 
+                        "name": [
+                            "Alexander von Humboldt-Stiftung"
+                        ]
+                    }, 
+                    "awardId": "Feodor Lynen Postdoctoral Fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Iva Kronja", 
+                                "index": "Kronja, Iva"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000048", 
+                        "name": [
+                            "American Cancer Society"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Terry L Orr-Weaver", 
+                                "index": "Orr-Weaver, Terry L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM39341", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Terry L Orr-Weaver", 
+                                "index": "Orr-Weaver, Terry L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM118098", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Terry L Orr-Weaver", 
+                                "index": "Orr-Weaver, Terry L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "David P Bartel", 
+                                "index": "Bartel, David P"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-7", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM067031", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "David P Bartel", 
+                                "index": "Bartel, David P"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.16955.016", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Relationships between RNA-seq, ribosome profiling, and PAL-seq measurements for wild-type samples at different developmental stages.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The Spearman correlation coefficients for all unique pairwise combinations of stages are shown. For the RNA-seq or ribosome-profiling comparisons, all mRNAs with \u226510.0 RPM in both samples of the respective datasets being compared were included. For the PAL-seq comparisons, all mRNAs with \u2265100 poly(A) tags in both samples being compared were included."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16955-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-supp1-v2.xlsx", 
                 "filename": "elife-16955-supp1-v2.xlsx"
             }, 
             {
@@ -361,8 +503,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Processed RNA-seq, ribosome-profiling, and PAL-seq data.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Each of the 16 spreadsheets of this file reports the data for the indicated sample. Within each sheet, the initial Refseq ID is the dm6 Refseq ID that was selected for each gene on the basis of being the longest annotated isoform of that gene. For many genes, the 3' end of this gene model was extended to include the most distal isoform supported by PAL-seq data. RPKM is reads per kilobase per million mapped reads. Descriptions of the analyses include the measurement cutoffs applied to RNA-seq, ribosome profiling, and PAL-seq data, as applicable. The 8<sup>th</sup> and 9<sup>th</sup> columns specify whether a 10 RPM cutoff for RNA-seq or ribosome profiling data was met, and the 10<sup>th</sup> column specifies whether a 100 tag cutoff for PAL-seq data was met. All transcripts with a 3' UTR that overlapped a snoRNA or snRNA were excluded from analysis, as indicated in the final column."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16955-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-supp2-v2.xlsx", 
                 "filename": "elife-16955-supp2-v2.xlsx"
             }, 
             {
@@ -370,8 +518,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Lists of mRNAs highlighted in figures.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file lists mRNAs that are highlighted in <a href=\"#fig6\">Figures 6</a> and <a href=\"#fig7\">7</a>, and <a href=\"#fig2s1\">Figure 2\u2212figure supplement 1C</a>, <a href=\"#fig2s2\">Figure 2\u2212figure supplement 2</a>, <a href=\"#fig5s1\">Figure 5\u2212figure supplement 1</a>, and <a href=\"#fig7s1\">Figure 7\u2212figure supplement 1</a>."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16955-supp3-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-supp3-v2.xlsx", 
                 "filename": "elife-16955-supp3-v2.xlsx"
             }
         ], 
@@ -408,7 +562,8 @@
                     ], 
                     "title": "mRNA poly(A)-tail changes specified by deadenylation broadly reshape translation in Drosophila oocytes and early embryos", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (accession no. GSE83616)", 
-                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83616"
+                    "uri": "https://publishing-cdn.elifesciences.org/16955/https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83616", 
+                    "filename": "acc.cgi?acc=GSE83616"
                 }
             ], 
             "used": [
@@ -439,7 +594,8 @@
                     ], 
                     "title": "Polysome profiling and ribosome footprinting of Drosophila mature oocyte and activated egg", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (accession no. GSE52799)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52799"
+                    "uri": "https://publishing-cdn.elifesciences.org/16955/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52799", 
+                    "filename": "acc.cgi?acc=GSE52799"
                 }
             ]
         }, 
@@ -453,7 +609,7 @@
         "doi": "10.7554/eLife.16955", 
         "authorLine": "Stephen W Eichhorn et al", 
         "title": "mRNA poly(A)-tail changes specified by deadenylation broadly reshape translation in Drosophila oocytes and early embryos", 
-        "published": "2016-07-30T00:00:00", 
+        "published": "2016-07-30T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e16955", 
         "pdf": "https://publishing-cdn.elifesciences.org/16955/elife-16955-v2.pdf", 
@@ -787,14 +943,156 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "Medical Scientist Training Program fellowship T32GM007753", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Alexander Orest Subtelny", 
+                                "index": "Subtelny, Alexander Orest"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100005156", 
+                        "name": [
+                            "Alexander von Humboldt-Stiftung"
+                        ]
+                    }, 
+                    "awardId": "Feodor Lynen Postdoctoral Fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Iva Kronja", 
+                                "index": "Kronja, Iva"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000048", 
+                        "name": [
+                            "American Cancer Society"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Terry L Orr-Weaver", 
+                                "index": "Orr-Weaver, Terry L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM39341", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Terry L Orr-Weaver", 
+                                "index": "Orr-Weaver, Terry L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM118098", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Terry L Orr-Weaver", 
+                                "index": "Orr-Weaver, Terry L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "David P Bartel", 
+                                "index": "Bartel, David P"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-7", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM067031", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "David P Bartel", 
+                                "index": "Bartel, David P"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.16955.016", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Relationships between RNA-seq, ribosome profiling, and PAL-seq measurements for wild-type samples at different developmental stages.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The Spearman correlation coefficients for all unique pairwise combinations of stages are shown. For the RNA-seq or ribosome-profiling comparisons, all mRNAs with \u226510.0 RPM in both samples of the respective datasets being compared were included. For the PAL-seq comparisons, all mRNAs with \u2265100 poly(A) tags in both samples being compared were included."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16955-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-supp1-v2.xlsx", 
                 "filename": "elife-16955-supp1-v2.xlsx"
             }, 
             {
@@ -802,8 +1100,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Processed RNA-seq, ribosome-profiling, and PAL-seq data.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Each of the 16 spreadsheets of this file reports the data for the indicated sample. Within each sheet, the initial Refseq ID is the dm6 Refseq ID that was selected for each gene on the basis of being the longest annotated isoform of that gene. For many genes, the 3' end of this gene model was extended to include the most distal isoform supported by PAL-seq data. RPKM is reads per kilobase per million mapped reads. Descriptions of the analyses include the measurement cutoffs applied to RNA-seq, ribosome profiling, and PAL-seq data, as applicable. The 8<sup>th</sup> and 9<sup>th</sup> columns specify whether a 10 RPM cutoff for RNA-seq or ribosome profiling data was met, and the 10<sup>th</sup> column specifies whether a 100 tag cutoff for PAL-seq data was met. All transcripts with a 3' UTR that overlapped a snoRNA or snRNA were excluded from analysis, as indicated in the final column."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16955-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-supp2-v2.xlsx", 
                 "filename": "elife-16955-supp2-v2.xlsx"
             }, 
             {
@@ -811,8 +1115,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Lists of mRNAs highlighted in figures.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file lists mRNAs that are highlighted in <a href=\"#fig6\">Figures 6</a> and <a href=\"#fig7\">7</a>, and <a href=\"#fig2s1\">Figure 2\u2212figure supplement 1C</a>, <a href=\"#fig2s2\">Figure 2\u2212figure supplement 2</a>, <a href=\"#fig5s1\">Figure 5\u2212figure supplement 1</a>, and <a href=\"#fig7s1\">Figure 7\u2212figure supplement 1</a>."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16955-supp3-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-supp3-v2.xlsx", 
                 "filename": "elife-16955-supp3-v2.xlsx"
             }
         ], 
@@ -849,7 +1159,8 @@
                     ], 
                     "title": "mRNA poly(A)-tail changes specified by deadenylation broadly reshape translation in Drosophila oocytes and early embryos", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (accession no. GSE83616)", 
-                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83616"
+                    "uri": "https://publishing-cdn.elifesciences.org/16955/https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83616", 
+                    "filename": "acc.cgi?acc=GSE83616"
                 }
             ], 
             "used": [
@@ -880,7 +1191,8 @@
                     ], 
                     "title": "Polysome profiling and ribosome footprinting of Drosophila mature oocyte and activated egg", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (accession no. GSE52799)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52799"
+                    "uri": "https://publishing-cdn.elifesciences.org/16955/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52799", 
+                    "filename": "acc.cgi?acc=GSE52799"
                 }
             ]
         }, 
@@ -920,7 +1232,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-16955-fig1-v2", 
+                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig1-v2", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -935,9 +1247,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig1-figsupp1-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig1-figsupp1-v2", 
+                                "filename": "elife-16955-fig1-figsupp1-v2"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-16955-fig1-v2"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1027,7 +1341,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig2-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig2-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1042,7 +1356,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16955-fig2-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig2-figsupp1-v2", 
+                                        "filename": "elife-16955-fig2-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1057,9 +1372,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16955-fig2-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig2-figsupp2-v2", 
+                                        "filename": "elife-16955-fig2-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16955-fig2-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1078,7 +1395,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig3-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig3-v2", 
+                                "filename": "elife-16955-fig3-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1097,7 +1415,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig4-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig4-v2", 
+                                "filename": "elife-16955-fig4-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1154,7 +1473,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig5-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig5-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1169,9 +1488,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16955-fig5-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig5-figsupp1-v2", 
+                                        "filename": "elife-16955-fig5-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16955-fig5-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1213,7 +1534,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig6-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig6-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1228,9 +1549,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16955-fig6-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig6-figsupp1-v2", 
+                                        "filename": "elife-16955-fig6-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16955-fig6-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1260,7 +1583,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16955-fig7-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig7-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1275,7 +1598,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16955-fig7-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig7-figsupp1-v2", 
+                                        "filename": "elife-16955-fig7-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1290,9 +1614,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16955-fig7-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-fig7-figsupp2-v2", 
+                                        "filename": "elife-16955-fig7-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16955-fig7-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -4428,7 +4754,8 @@
                     "label": "Author response image 1.", 
                     "title": "Author response image 1.", 
                     "alt": "", 
-                    "uri": "elife-16955-resp-fig1-v2"
+                    "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-resp-fig1-v2", 
+                    "filename": "elife-16955-resp-fig1-v2"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4485,7 +4812,8 @@
                     "label": "Author response image 2.", 
                     "title": "Author response image 2.", 
                     "alt": "", 
-                    "uri": "elife-16955-resp-fig2-v2"
+                    "uri": "https://publishing-cdn.elifesciences.org/16955/elife-16955-resp-fig2-v2", 
+                    "filename": "elife-16955-resp-fig2-v2"
                 }, 
                 {
                     "type": "paragraph", 

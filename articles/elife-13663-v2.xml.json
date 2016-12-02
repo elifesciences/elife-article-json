@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.13663", 
         "authorLine": "Laura E Sanman et al", 
         "title": "Disruption of glycolytic flux is a signal for inflammasome signaling and pyroptotic cell death", 
-        "published": "2016-03-24T00:00:00", 
+        "published": "2016-03-24T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e13663", 
         "pdf": "https://publishing-cdn.elifesciences.org/13663/elife-13663-v2.pdf", 
@@ -324,14 +324,101 @@
                 "text": "Animal experimentation: This work was approved under ABP protocol 1331 (Entitled Chemical probes to study host responses to bacterial pathogens) and APLAC protocol 18026. Primary cells were isolated from mouse bone marrow following strict accordance with the NIH guide for the care and use of laboratory animals. These protocols were reviewed and approved by the Environmental Health and Safety Department of Stanford University and the Institutional Animal Care and Use Committee of Stanford University, respectively."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "R01 EB005011, R01 CA179253", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Matthew Bogyo", 
+                                "index": "Bogyo, Matthew"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "DGE-114747", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Laura E Sanman", 
+                                "index": "Sanman, Laura E"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100001021", 
+                        "name": [
+                            "Damon Runyon Cancer Research Foundation"
+                        ]
+                    }, 
+                    "awardId": "DRR-18-12", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Eranthie Weerapana", 
+                                "index": "Weerapana, Eranthie"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "R01 AI063302, R01 AI065359", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Denise M Monack", 
+                                "index": "Monack, Denise M"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.13663.035", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Complete MudPIT dataset.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "BMDM from four different treatment conditions (see <a href=\"#fig2\">Figure 2</a>) were lysed and lysates reacted with alkyne-biotin. Biotin-labeled proteins were enriched using streptavidin resin, digested off the resin, and bound proteins identified by mass spectrometry. Number of spectral counts from peptides from each identified protein are reported for each condition."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13663-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp1-v2.xlsx", 
                 "filename": "elife-13663-supp1-v2.xlsx"
             }, 
             {
@@ -339,8 +426,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Complete MudPIT dataset normalized to endogenously biotinylated proteins.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Data from <a href=\"#SD1-data\">Supplementary file 1</a> was normalized based on relative abundance of endogenously biotinylated proteins across conditions. This data reports normalized spectral counts."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13663-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp2-v2.xlsx", 
                 "filename": "elife-13663-supp2-v2.xlsx"
             }, 
             {
@@ -348,8 +441,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Hits from MudPIT analysis.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "A protein was selected as a 'hit' if, in <a href=\"#SD2-data\">Supplementary file 2</a>, it had over 30 spectral counts in Condition 1, showed 80% competition for az-GB binding by GB111 (Condition 2), and showed &lt;50% competition for az-GB binding by GB-IA (Condition 3). The proteins meeting these criteria and number of spectral counts in each condition are shown."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13663-supp3-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp3-v2.xlsx", 
                 "filename": "elife-13663-supp3-v2.xlsx"
             }, 
             {
@@ -358,7 +457,7 @@
                 "label": "Supplementary file 4.", 
                 "title": "Compound Characterization and Spectra.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-13663-supp4-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp4-v2.docx", 
                 "filename": "elife-13663-supp4-v2.docx"
             }
         ], 
@@ -372,7 +471,7 @@
         "doi": "10.7554/eLife.13663", 
         "authorLine": "Laura E Sanman et al", 
         "title": "Disruption of glycolytic flux is a signal for inflammasome signaling and pyroptotic cell death", 
-        "published": "2016-03-24T00:00:00", 
+        "published": "2016-03-24T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e13663", 
         "pdf": "https://publishing-cdn.elifesciences.org/13663/elife-13663-v2.pdf", 
@@ -684,14 +783,101 @@
                 "text": "Animal experimentation: This work was approved under ABP protocol 1331 (Entitled Chemical probes to study host responses to bacterial pathogens) and APLAC protocol 18026. Primary cells were isolated from mouse bone marrow following strict accordance with the NIH guide for the care and use of laboratory animals. These protocols were reviewed and approved by the Environmental Health and Safety Department of Stanford University and the Institutional Animal Care and Use Committee of Stanford University, respectively."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "R01 EB005011, R01 CA179253", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Matthew Bogyo", 
+                                "index": "Bogyo, Matthew"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "DGE-114747", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Laura E Sanman", 
+                                "index": "Sanman, Laura E"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100001021", 
+                        "name": [
+                            "Damon Runyon Cancer Research Foundation"
+                        ]
+                    }, 
+                    "awardId": "DRR-18-12", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Eranthie Weerapana", 
+                                "index": "Weerapana, Eranthie"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "R01 AI063302, R01 AI065359", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Denise M Monack", 
+                                "index": "Monack, Denise M"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.13663.035", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Complete MudPIT dataset.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "BMDM from four different treatment conditions (see <a href=\"#fig2\">Figure 2</a>) were lysed and lysates reacted with alkyne-biotin. Biotin-labeled proteins were enriched using streptavidin resin, digested off the resin, and bound proteins identified by mass spectrometry. Number of spectral counts from peptides from each identified protein are reported for each condition."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13663-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp1-v2.xlsx", 
                 "filename": "elife-13663-supp1-v2.xlsx"
             }, 
             {
@@ -699,8 +885,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Complete MudPIT dataset normalized to endogenously biotinylated proteins.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Data from <a href=\"#SD1-data\">Supplementary file 1</a> was normalized based on relative abundance of endogenously biotinylated proteins across conditions. This data reports normalized spectral counts."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13663-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp2-v2.xlsx", 
                 "filename": "elife-13663-supp2-v2.xlsx"
             }, 
             {
@@ -708,8 +900,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Hits from MudPIT analysis.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "A protein was selected as a 'hit' if, in <a href=\"#SD2-data\">Supplementary file 2</a>, it had over 30 spectral counts in Condition 1, showed 80% competition for az-GB binding by GB111 (Condition 2), and showed &lt;50% competition for az-GB binding by GB-IA (Condition 3). The proteins meeting these criteria and number of spectral counts in each condition are shown."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13663-supp3-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp3-v2.xlsx", 
                 "filename": "elife-13663-supp3-v2.xlsx"
             }, 
             {
@@ -718,7 +916,7 @@
                 "label": "Supplementary file 4.", 
                 "title": "Compound Characterization and Spectra.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-13663-supp4-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-supp4-v2.docx", 
                 "filename": "elife-13663-supp4-v2.docx"
             }
         ], 
@@ -803,7 +1001,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig1-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig1-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -818,7 +1016,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig1-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig1-figsupp1-v2", 
+                                        "filename": "elife-13663-fig1-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -833,9 +1032,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig1-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig1-figsupp2-v2", 
+                                        "filename": "elife-13663-fig1-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig1-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -873,7 +1074,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig2-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig2-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -888,9 +1089,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig2-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig2-figsupp1-v2", 
+                                        "filename": "elife-13663-fig2-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig2-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -920,7 +1123,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig3-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig3-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -935,7 +1138,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig3-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig3-figsupp1-v2", 
+                                        "filename": "elife-13663-fig3-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -950,9 +1154,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig3-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig3-figsupp2-v2", 
+                                        "filename": "elife-13663-fig3-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig3-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -975,7 +1181,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig4-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig4-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -990,9 +1196,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig4-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig4-figsupp1-v2", 
+                                        "filename": "elife-13663-fig4-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig4-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1019,7 +1227,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig5-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig5-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1034,7 +1242,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig5-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig5-figsupp1-v2", 
+                                        "filename": "elife-13663-fig5-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1049,9 +1258,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig5-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig5-figsupp2-v2", 
+                                        "filename": "elife-13663-fig5-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig5-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1070,7 +1281,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig6-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig6-v2", 
+                                "filename": "elife-13663-fig6-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1100,7 +1312,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig7-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig7-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1115,7 +1327,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig7-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig7-figsupp1-v2", 
+                                        "filename": "elife-13663-fig7-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1130,9 +1343,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig7-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig7-figsupp2-v2", 
+                                        "filename": "elife-13663-fig7-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig7-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1162,7 +1377,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig8-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig8-v2", 
+                                "filename": "elife-13663-fig8-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1185,7 +1401,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig9-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig9-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1200,7 +1416,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig9-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig9-figsupp1-v2", 
+                                        "filename": "elife-13663-fig9-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1215,9 +1432,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig9-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig9-figsupp2-v2", 
+                                        "filename": "elife-13663-fig9-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13663-fig9-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1253,7 +1472,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-13663-fig10-v2"
+                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig10-v2", 
+                        "filename": "elife-13663-fig10-v2"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1636,7 +1856,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13663-fig11-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig11-v2", 
+                                "filename": "elife-13663-fig11-v2"
                             }, 
                             {
                                 "type": "section", 
@@ -1665,7 +1886,8 @@
                                         "label": "Chemical structure 1.", 
                                         "title": "Carboxybenzyl-Phe-Lys-NH<sub>2</sub> (NR-GB11).", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig12-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig12-v2", 
+                                        "filename": "elife-13663-fig12-v2"
                                     }
                                 ]
                             }
@@ -1702,7 +1924,8 @@
                                 "label": "Chemical structure 2.", 
                                 "title": "pent-4-ynamido-Phe-Lys(Boc)-OH.", 
                                 "alt": "", 
-                                "uri": "elife-13663-fig13-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig13-v2", 
+                                "filename": "elife-13663-fig13-v2"
                             }, 
                             {
                                 "type": "section", 
@@ -1727,7 +1950,8 @@
                                         "label": "Chemical structure 3.", 
                                         "title": "pent-4-ynamido-Phe-Lys(Boc)-CMK.", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig14-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig14-v2", 
+                                        "filename": "elife-13663-fig14-v2"
                                     }, 
                                     {
                                         "type": "paragraph", 
@@ -1740,7 +1964,8 @@
                                         "label": "Chemical structure 4.", 
                                         "title": "pent-4-ynamido-Phe-Lys(Boc)-AOMK (GB-IA).", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig15-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig15-v2", 
+                                        "filename": "elife-13663-fig15-v2"
                                     }
                                 ]
                             }
@@ -1777,7 +2002,8 @@
                                 "label": "Chemical structure 5.", 
                                 "title": "Carboxybenzyl-Phe-Lys(Boc)-CMK.", 
                                 "alt": "", 
-                                "uri": "elife-13663-fig16-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig16-v2", 
+                                "filename": "elife-13663-fig16-v2"
                             }, 
                             {
                                 "type": "section", 
@@ -1795,7 +2021,8 @@
                                         "label": "Chemical structure 6.", 
                                         "title": "caboxybenzyl-Phe-Lys-AOMK (GB111-NH<sub>2</sub>).", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig17-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig17-v2", 
+                                        "filename": "elife-13663-fig17-v2"
                                     }
                                 ]
                             }, 
@@ -1815,7 +2042,8 @@
                                         "label": "Chemical structure 7.", 
                                         "title": "caboxybenzyl-Phe-Lys(Ac)-AOMK (ac-GB111).", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig18-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig18-v2", 
+                                        "filename": "elife-13663-fig18-v2"
                                     }
                                 ]
                             }, 
@@ -1843,7 +2071,8 @@
                                         "label": "Chemical structure 8.", 
                                         "title": "caboxybenzyl-Phe-Lys(Az)-AOMK (az-GB).", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig19-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig19-v2", 
+                                        "filename": "elife-13663-fig19-v2"
                                     }
                                 ]
                             }, 
@@ -1871,7 +2100,8 @@
                                         "label": "Chemical structure 9.", 
                                         "title": "caboxybenzyl-Phe-Lys-PMK (GB111-PMK).", 
                                         "alt": "", 
-                                        "uri": "elife-13663-fig20-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13663/elife-13663-fig20-v2", 
+                                        "filename": "elife-13663-fig20-v2"
                                     }
                                 ]
                             }, 

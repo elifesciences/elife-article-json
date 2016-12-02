@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.13479", 
         "authorLine": "Sinan U\u011fur Umu et al", 
         "title": "Avoidance of stochastic RNA interactions can be harnessed to control protein expression levels in bacteria and archaea", 
-        "published": "2016-09-20T00:00:00", 
-        "versionDate": "2016-09-20T00:00:00", 
+        "published": "2016-09-20T00:00:00Z", 
+        "versionDate": "2016-09-20T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e13479", 
         "pdf": "https://publishing-cdn.elifesciences.org/13479/elife-13479-v1.pdf", 
@@ -276,14 +276,127 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100001509", 
+                        "name": [
+                            "Royal Society of New Zealand"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Sinan U\u011fur Umu", 
+                                "index": "Umu, Sinan U\u011fur"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Anthony M Poole", 
+                                "index": "Poole, Anthony M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Renwick CJ Dobson", 
+                                "index": "Dobson, Renwick CJ"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Paul P Gardner", 
+                                "index": "Gardner, Paul P"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100008414", 
+                        "name": [
+                            "University of Canterbury"
+                        ]
+                    }, 
+                    "awardId": "Biomolecular Interaction Centre, Joint PhD Scholarship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Sinan U\u011fur Umu", 
+                                "index": "Umu, Sinan U\u011fur"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100001509", 
+                        "name": [
+                            "Royal Society of New Zealand"
+                        ]
+                    }, 
+                    "awardId": "RutherfordDiscovery Fellowships", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Anthony M Poole", 
+                                "index": "Poole, Anthony M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Paul P Gardner", 
+                                "index": "Gardner, Paul P"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000183", 
+                        "name": [
+                            "Army Research Office"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Renwick CJ Dobson", 
+                                "index": "Dobson, Renwick CJ"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.13479.017", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "The levels of extrinsic and intrinsic avoidance for each publicly available bacterial and archaeal genome sequence.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Column A contains the species and strain names; Column B contains the ENA accession; Column C contains the phylum name; Column D contains the extrinsic avoidance p-value (i.e. the difference between RNAup Gibbs\u2019 free-energy of interaction distributions between native and randomized sequences, one-tailed Mann-Whitney U test); Column E contains the genomic G+C content; Column F contains the genome size in nucleotides; Column G contains the average G+C content of the first 21 nucleotides of 114 \u2018core\u2019 (highly conserved) mRNAs; Column F contains the average G+C content of six core highly expressed ncRNAs (tRNA, rRNA, RNase P RNA, SRP RNA, tmRNA and 6S RNA); Column F contains the intrinsic avoidance p-value (i.e. the difference in G+C content between core mRNAs and ncRNAs, two-tailed Mann- Whitney U test). Table A contains the data for bacterial species, Table B contains the data for archaeal species."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp1-v1.xlsx", 
                 "filename": "elife-13479-supp1-v1.xlsx"
             }, 
             {
@@ -291,8 +404,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Data for the extreme GFP transformations, including fluorescence levels and RT-qPCR analyses.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Table <b>A</b>: Column A contains a unique identifier for each mRNA sequence; Column B contains a unique numeric code for each mRNA sequence; Column C contains a colour used for visualizing the datasets; Column D contains the sum of RNAup Gibbs\u2019 free-energy of interactions between nucleotides 1 to 21 of the GFP mRNA and the core ncRNAs of <i>E. coli</i> BL21(DE3); Column E contains the RNAfold Gibbs\u2019 free-energy of folding for nucleotides 1 to 37; Column F contains the CAI for each GFP mRNA, using codon distribution patterns acquired from the core protein coding genes of <i>E. coli</i> BL21(DE3); Column G contains the GFP flourescence values (four replicates for each mRNA); Column H contains \u0394\u0394C<sub>T</sub> values from RT-qPCR results, these can be used to quantify mRNA concentrations; Column I contains mean GFP fluorescence values; Column J contains mRNA abundances; Table <b>B</b>: contains the oligonucleotide sequences used to gather RT-qPCR results."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp2-v1.xlsx", 
                 "filename": "elife-13479-supp2-v1.xlsx"
             }, 
             {
@@ -300,8 +419,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Data corresponding to the heatmap in <a href=\"#fig2\">Figure 2A</a>.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Each row corresponds to a different dataset containing protein and mRNA expression levels. Column A contains a brief summary of the type of dataset; Column B contains Spearman correlation coefficients (and corresponding p-values) between avoidance measurements and protein abundance; Column C contains Spearman correlation coefficients (and corresponding p-values) between mRNA secondary structure measurements measurements and protein abundance; Column D contains Spearman correlation coefficients (and corresponding p-values) between codon adaptation index measurements and protein abundance; Column E contains Spearman correlation coefficients (and corresponding p-values) between mRNA and protein abundances; Column F contains the species names of the organism each dataset was collected in; Column G contains the size of the dataset; Column H contains a reference to the manuscript each dataset was first published in; Column H contains a link to the Pubmed entry for each manuscript;"
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp3-v1.xlsx", 
                 "filename": "elife-13479-supp3-v1.xlsx"
             }, 
             {
@@ -309,8 +434,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Data corresponding to <a href=\"#fig3\">Figure 3</a>.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "&lt;3.4\u00a0For each position in the SSU rRNA sequence provided in PDB structure 4WZO, in Column A the accessibility of the region is evaluated (i.e. \u20191\u2019 if the residue is Angstroms from another nucleotide or aminoacid residue and \u20190\u2019 otherwise). Column B contains local SSU:mRNA avoidance p-values corresponding to differences in RNAup Gibbs\u2019 free-energy of interaction distributions between native and randomized sequences using Mann-Whitney U tests."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp4-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp4-v1.xlsx", 
                 "filename": "elife-13479-supp4-v1.xlsx"
             }, 
             {
@@ -318,8 +449,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "This table contains the results of R<sup>2</sup> values for linear regression models between protein levels and the different predictors of expression level that are illustrated in <a href=\"#fig2s3\">Figure 2\u2014figure supplement 3</a>.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Column A contains the model (e.g. \u201dProtein abundance Avoidance + Folding Energy + CAI + mRNA abundance\u201d corresponds to the relationship between protein abundance, mRNA avoidance, mRNA folding, codon usage and mRNA abundance; Column B contains the R<sup>2</sup> value for the relationship; Column C contains the reference the corresponding protein and mRNA data came from; Column D contains the type of data and the size of the dataset;"
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp5-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp5-v1.xlsx", 
                 "filename": "elife-13479-supp5-v1.xlsx"
             }
         ], 
@@ -333,8 +470,8 @@
         "doi": "10.7554/eLife.13479", 
         "authorLine": "Sinan U\u011fur Umu et al", 
         "title": "Avoidance of stochastic RNA interactions can be harnessed to control protein expression levels in bacteria and archaea", 
-        "published": "2016-09-20T00:00:00", 
-        "versionDate": "2016-09-20T00:00:00", 
+        "published": "2016-09-20T00:00:00Z", 
+        "versionDate": "2016-09-20T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e13479", 
         "pdf": "https://publishing-cdn.elifesciences.org/13479/elife-13479-v1.pdf", 
@@ -597,14 +734,127 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100001509", 
+                        "name": [
+                            "Royal Society of New Zealand"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Sinan U\u011fur Umu", 
+                                "index": "Umu, Sinan U\u011fur"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Anthony M Poole", 
+                                "index": "Poole, Anthony M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Renwick CJ Dobson", 
+                                "index": "Dobson, Renwick CJ"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Paul P Gardner", 
+                                "index": "Gardner, Paul P"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100008414", 
+                        "name": [
+                            "University of Canterbury"
+                        ]
+                    }, 
+                    "awardId": "Biomolecular Interaction Centre, Joint PhD Scholarship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Sinan U\u011fur Umu", 
+                                "index": "Umu, Sinan U\u011fur"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100001509", 
+                        "name": [
+                            "Royal Society of New Zealand"
+                        ]
+                    }, 
+                    "awardId": "RutherfordDiscovery Fellowships", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Anthony M Poole", 
+                                "index": "Poole, Anthony M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Paul P Gardner", 
+                                "index": "Gardner, Paul P"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000183", 
+                        "name": [
+                            "Army Research Office"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Renwick CJ Dobson", 
+                                "index": "Dobson, Renwick CJ"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.13479.017", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "The levels of extrinsic and intrinsic avoidance for each publicly available bacterial and archaeal genome sequence.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Column A contains the species and strain names; Column B contains the ENA accession; Column C contains the phylum name; Column D contains the extrinsic avoidance p-value (i.e. the difference between RNAup Gibbs\u2019 free-energy of interaction distributions between native and randomized sequences, one-tailed Mann-Whitney U test); Column E contains the genomic G+C content; Column F contains the genome size in nucleotides; Column G contains the average G+C content of the first 21 nucleotides of 114 \u2018core\u2019 (highly conserved) mRNAs; Column F contains the average G+C content of six core highly expressed ncRNAs (tRNA, rRNA, RNase P RNA, SRP RNA, tmRNA and 6S RNA); Column F contains the intrinsic avoidance p-value (i.e. the difference in G+C content between core mRNAs and ncRNAs, two-tailed Mann- Whitney U test). Table A contains the data for bacterial species, Table B contains the data for archaeal species."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp1-v1.xlsx", 
                 "filename": "elife-13479-supp1-v1.xlsx"
             }, 
             {
@@ -612,8 +862,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Data for the extreme GFP transformations, including fluorescence levels and RT-qPCR analyses.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Table <b>A</b>: Column A contains a unique identifier for each mRNA sequence; Column B contains a unique numeric code for each mRNA sequence; Column C contains a colour used for visualizing the datasets; Column D contains the sum of RNAup Gibbs\u2019 free-energy of interactions between nucleotides 1 to 21 of the GFP mRNA and the core ncRNAs of <i>E. coli</i> BL21(DE3); Column E contains the RNAfold Gibbs\u2019 free-energy of folding for nucleotides 1 to 37; Column F contains the CAI for each GFP mRNA, using codon distribution patterns acquired from the core protein coding genes of <i>E. coli</i> BL21(DE3); Column G contains the GFP flourescence values (four replicates for each mRNA); Column H contains \u0394\u0394C<sub>T</sub> values from RT-qPCR results, these can be used to quantify mRNA concentrations; Column I contains mean GFP fluorescence values; Column J contains mRNA abundances; Table <b>B</b>: contains the oligonucleotide sequences used to gather RT-qPCR results."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp2-v1.xlsx", 
                 "filename": "elife-13479-supp2-v1.xlsx"
             }, 
             {
@@ -621,8 +877,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Data corresponding to the heatmap in <a href=\"#fig2\">Figure 2A</a>.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Each row corresponds to a different dataset containing protein and mRNA expression levels. Column A contains a brief summary of the type of dataset; Column B contains Spearman correlation coefficients (and corresponding p-values) between avoidance measurements and protein abundance; Column C contains Spearman correlation coefficients (and corresponding p-values) between mRNA secondary structure measurements measurements and protein abundance; Column D contains Spearman correlation coefficients (and corresponding p-values) between codon adaptation index measurements and protein abundance; Column E contains Spearman correlation coefficients (and corresponding p-values) between mRNA and protein abundances; Column F contains the species names of the organism each dataset was collected in; Column G contains the size of the dataset; Column H contains a reference to the manuscript each dataset was first published in; Column H contains a link to the Pubmed entry for each manuscript;"
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp3-v1.xlsx", 
                 "filename": "elife-13479-supp3-v1.xlsx"
             }, 
             {
@@ -630,8 +892,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Data corresponding to <a href=\"#fig3\">Figure 3</a>.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "&lt;3.4\u00a0For each position in the SSU rRNA sequence provided in PDB structure 4WZO, in Column A the accessibility of the region is evaluated (i.e. \u20191\u2019 if the residue is Angstroms from another nucleotide or aminoacid residue and \u20190\u2019 otherwise). Column B contains local SSU:mRNA avoidance p-values corresponding to differences in RNAup Gibbs\u2019 free-energy of interaction distributions between native and randomized sequences using Mann-Whitney U tests."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp4-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp4-v1.xlsx", 
                 "filename": "elife-13479-supp4-v1.xlsx"
             }, 
             {
@@ -639,8 +907,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "This table contains the results of R<sup>2</sup> values for linear regression models between protein levels and the different predictors of expression level that are illustrated in <a href=\"#fig2s3\">Figure 2\u2014figure supplement 3</a>.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Column A contains the model (e.g. \u201dProtein abundance Avoidance + Folding Energy + CAI + mRNA abundance\u201d corresponds to the relationship between protein abundance, mRNA avoidance, mRNA folding, codon usage and mRNA abundance; Column B contains the R<sup>2</sup> value for the relationship; Column C contains the reference the corresponding protein and mRNA data came from; Column D contains the type of data and the size of the dataset;"
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13479-supp5-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-supp5-v1.xlsx", 
                 "filename": "elife-13479-supp5-v1.xlsx"
             }
         ], 
@@ -718,7 +992,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-13479-fig1-v1", 
+                        "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig1-v1", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -733,7 +1007,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig1-figsupp1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig1-figsupp1-v1", 
+                                "filename": "elife-13479-fig1-figsupp1-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -748,9 +1023,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig1-figsupp2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig1-figsupp2-v1", 
+                                "filename": "elife-13479-fig1-figsupp2-v1"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-13479-fig1-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -781,7 +1058,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-13479-fig2-v1", 
+                        "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig2-v1", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -796,7 +1073,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig2-figsupp1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig2-figsupp1-v1", 
+                                "filename": "elife-13479-fig2-figsupp1-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -811,7 +1089,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig2-figsupp2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig2-figsupp2-v1", 
+                                "filename": "elife-13479-fig2-figsupp2-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -826,7 +1105,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig2-figsupp3-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig2-figsupp3-v1", 
+                                "filename": "elife-13479-fig2-figsupp3-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -841,7 +1121,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig2-figsupp4-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig2-figsupp4-v1", 
+                                "filename": "elife-13479-fig2-figsupp4-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -856,9 +1137,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig2-figsupp5-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig2-figsupp5-v1", 
+                                "filename": "elife-13479-fig2-figsupp5-v1"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-13479-fig2-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -889,7 +1172,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-13479-fig3-v1", 
+                        "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig3-v1", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -904,7 +1187,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig3-figsupp1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig3-figsupp1-v1", 
+                                "filename": "elife-13479-fig3-figsupp1-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -919,7 +1203,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig3-figsupp2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig3-figsupp2-v1", 
+                                "filename": "elife-13479-fig3-figsupp2-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -934,9 +1219,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig3-figsupp3-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig3-figsupp3-v1", 
+                                "filename": "elife-13479-fig3-figsupp3-v1"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-13479-fig3-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1093,7 +1380,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13479-fig4-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13479/elife-13479-fig4-v1", 
+                                "filename": "elife-13479-fig4-v1"
                             }
                         ]
                     }, 
@@ -1268,7 +1556,7 @@
             {
                 "type": "journal", 
                 "id": "bib5", 
-                "date": "2016-21", 
+                "date": "2016", 
                 "authors": [
                     {
                         "type": "person", 

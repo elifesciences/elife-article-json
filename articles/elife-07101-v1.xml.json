@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.07101", 
         "authorLine": "Shi Yun Yeo et al", 
         "title": "Transglutaminase 2 contributes to a TP53-induced autophagy program to prevent oncogenic transformation", 
-        "published": "2016-03-09T00:00:00", 
-        "versionDate": "2016-03-09T00:00:00", 
+        "published": "2016-03-09T00:00:00Z", 
+        "versionDate": "2016-03-09T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e07101", 
         "pdf": "https://publishing-cdn.elifesciences.org/07101/elife-07101-v1.pdf", 
@@ -366,14 +366,132 @@
                 "text": "Animal experimentation: This study was performed in strict accordance with the recommendations of the Institutional Animal Care and Use Committee at the SingHealth, Singapore under an approved animal protocol (IACUC#2013/SHS/815)."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100001349", 
+                        "name": [
+                            "National Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "NMRC/GMS/1303/2011", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/501100001349", 
+                        "name": [
+                            "National Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "NMRC/GMS/1250/2010", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Mathijs Voorhoeve", 
+                                "index": "Voorhoeve, Mathijs"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100001349", 
+                        "name": [
+                            "National Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "NMRC/CBRG/003\u00bd013", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Mathijs Voorhoeve", 
+                                "index": "Voorhoeve, Mathijs"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/501100001350", 
+                        "name": [
+                            "Ministry of Health -Singapore"
+                        ]
+                    }, 
+                    "awardId": "MOE2013-T2-1-123", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "name": [
+                            "Duke-NUS core grant"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Mathijs Voorhoeve", 
+                                "index": "Voorhoeve, Mathijs"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.07101.038", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1A.", 
                 "title": "Primary creen.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Gene symbol,\u00a0% of number of colonies formed in knockdown cells compared to control cells, and shRNA sequences used are shown for 122 of selected target genes. 4 candidate genes identified in primary screen are shown in red. <i>CDKN1A</i> and <i>TP53</i> shRNAs were used as positive controls and shown in blue."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-07101-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-supp1-v1.xlsx", 
                 "filename": "elife-07101-supp1-v1.xlsx"
             }, 
             {
@@ -381,8 +499,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 1B.", 
                 "title": "Secondary screen.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "To exclude off-target effects, additional shRNAs against the 4 genes were constructed in a secondary screen. Knockdown of only one, <i>TGM2</i>, produced colonies in soft agar with at least 2 independent shRNAs."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-07101-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-supp1-v1.xlsx", 
                 "filename": "elife-07101-supp1-v1.xlsx"
             }
         ], 
@@ -439,7 +563,8 @@
                     ], 
                     "title": "An expression signature for p53 in breast cancer predicts mutation status, transcriptional effects, and patient survival", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE3494)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE3494"
+                    "uri": "https://publishing-cdn.elifesciences.org/07101/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE3494", 
+                    "filename": "acc.cgi?acc=GSE3494"
                 }, 
                 {
                     "id": "dataro2", 
@@ -460,7 +585,8 @@
                     ], 
                     "title": "BRD7 is a candidate tumour suppressor gene required for p53 function", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE20076)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20076"
+                    "uri": "https://publishing-cdn.elifesciences.org/07101/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20076", 
+                    "filename": "acc.cgi?acc=GSE20076"
                 }
             ]
         }, 
@@ -474,8 +600,8 @@
         "doi": "10.7554/eLife.07101", 
         "authorLine": "Shi Yun Yeo et al", 
         "title": "Transglutaminase 2 contributes to a TP53-induced autophagy program to prevent oncogenic transformation", 
-        "published": "2016-03-09T00:00:00", 
-        "versionDate": "2016-03-09T00:00:00", 
+        "published": "2016-03-09T00:00:00Z", 
+        "versionDate": "2016-03-09T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e07101", 
         "pdf": "https://publishing-cdn.elifesciences.org/07101/elife-07101-v1.pdf", 
@@ -828,14 +954,132 @@
                 "text": "Animal experimentation: This study was performed in strict accordance with the recommendations of the Institutional Animal Care and Use Committee at the SingHealth, Singapore under an approved animal protocol (IACUC#2013/SHS/815)."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100001349", 
+                        "name": [
+                            "National Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "NMRC/GMS/1303/2011", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/501100001349", 
+                        "name": [
+                            "National Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "NMRC/GMS/1250/2010", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Mathijs Voorhoeve", 
+                                "index": "Voorhoeve, Mathijs"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100001349", 
+                        "name": [
+                            "National Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "NMRC/CBRG/003\u00bd013", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Mathijs Voorhoeve", 
+                                "index": "Voorhoeve, Mathijs"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/501100001350", 
+                        "name": [
+                            "Ministry of Health -Singapore"
+                        ]
+                    }, 
+                    "awardId": "MOE2013-T2-1-123", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "name": [
+                            "Duke-NUS core grant"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Mathijs Voorhoeve", 
+                                "index": "Voorhoeve, Mathijs"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Koji Itahana", 
+                                "index": "Itahana, Koji"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.07101.038", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1A.", 
                 "title": "Primary creen.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Gene symbol,\u00a0% of number of colonies formed in knockdown cells compared to control cells, and shRNA sequences used are shown for 122 of selected target genes. 4 candidate genes identified in primary screen are shown in red. <i>CDKN1A</i> and <i>TP53</i> shRNAs were used as positive controls and shown in blue."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-07101-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-supp1-v1.xlsx", 
                 "filename": "elife-07101-supp1-v1.xlsx"
             }, 
             {
@@ -843,8 +1087,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 1B.", 
                 "title": "Secondary screen.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "To exclude off-target effects, additional shRNAs against the 4 genes were constructed in a secondary screen. Knockdown of only one, <i>TGM2</i>, produced colonies in soft agar with at least 2 independent shRNAs."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-07101-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-supp1-v1.xlsx", 
                 "filename": "elife-07101-supp1-v1.xlsx"
             }
         ], 
@@ -901,7 +1151,8 @@
                     ], 
                     "title": "An expression signature for p53 in breast cancer predicts mutation status, transcriptional effects, and patient survival", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE3494)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE3494"
+                    "uri": "https://publishing-cdn.elifesciences.org/07101/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE3494", 
+                    "filename": "acc.cgi?acc=GSE3494"
                 }, 
                 {
                     "id": "dataro2", 
@@ -922,7 +1173,8 @@
                     ], 
                     "title": "BRD7 is a candidate tumour suppressor gene required for p53 function", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE20076)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20076"
+                    "uri": "https://publishing-cdn.elifesciences.org/07101/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20076", 
+                    "filename": "acc.cgi?acc=GSE20076"
                 }
             ]
         }, 
@@ -1014,7 +1266,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07101-fig1-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1029,7 +1281,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp1-v1", 
+                                        "filename": "elife-07101-fig1-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1044,7 +1297,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp2-v1", 
+                                        "filename": "elife-07101-fig1-figsupp2-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1059,7 +1313,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp3-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp3-v1", 
+                                        "filename": "elife-07101-fig1-figsupp3-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1074,7 +1329,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp4-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp4-v1", 
+                                        "filename": "elife-07101-fig1-figsupp4-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1089,7 +1345,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp5-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp5-v1", 
+                                        "filename": "elife-07101-fig1-figsupp5-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1104,7 +1361,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp6-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp6-v1", 
+                                        "filename": "elife-07101-fig1-figsupp6-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1119,7 +1377,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp7-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp7-v1", 
+                                        "filename": "elife-07101-fig1-figsupp7-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1134,7 +1393,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp8-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp8-v1", 
+                                        "filename": "elife-07101-fig1-figsupp8-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1149,7 +1409,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp9-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp9-v1", 
+                                        "filename": "elife-07101-fig1-figsupp9-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1164,7 +1425,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp10-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp10-v1", 
+                                        "filename": "elife-07101-fig1-figsupp10-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1179,7 +1441,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp11-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp11-v1", 
+                                        "filename": "elife-07101-fig1-figsupp11-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1194,9 +1457,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig1-figsupp12-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig1-figsupp12-v1", 
+                                        "filename": "elife-07101-fig1-figsupp12-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-07101-fig1-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1234,7 +1499,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07101-fig2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig2-v1", 
+                                "filename": "elife-07101-fig2-v1"
                             }
                         ]
                     }, 
@@ -1260,7 +1526,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07101-fig3-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig3-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1275,7 +1541,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig3-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig3-figsupp1-v1", 
+                                        "filename": "elife-07101-fig3-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1290,9 +1557,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig3-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig3-figsupp2-v1", 
+                                        "filename": "elife-07101-fig3-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-07101-fig3-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1330,7 +1599,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07101-fig4-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig4-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1345,9 +1614,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig4-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig4-figsupp1-v1", 
+                                        "filename": "elife-07101-fig4-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-07101-fig4-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1388,7 +1659,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07101-fig5-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig5-v1", 
+                                "filename": "elife-07101-fig5-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1430,7 +1702,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07101-fig6-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1445,7 +1717,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp1-v1", 
+                                        "filename": "elife-07101-fig6-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1460,7 +1733,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp2-v1", 
+                                        "filename": "elife-07101-fig6-figsupp2-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1475,7 +1749,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp3-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp3-v1", 
+                                        "filename": "elife-07101-fig6-figsupp3-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1490,7 +1765,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp4-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp4-v1", 
+                                        "filename": "elife-07101-fig6-figsupp4-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1505,7 +1781,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp5-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp5-v1", 
+                                        "filename": "elife-07101-fig6-figsupp5-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1520,7 +1797,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp6-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp6-v1", 
+                                        "filename": "elife-07101-fig6-figsupp6-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1535,7 +1813,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp7-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp7-v1", 
+                                        "filename": "elife-07101-fig6-figsupp7-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1550,7 +1829,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp8-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp8-v1", 
+                                        "filename": "elife-07101-fig6-figsupp8-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1565,7 +1845,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp9-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp9-v1", 
+                                        "filename": "elife-07101-fig6-figsupp9-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1580,7 +1861,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp10-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp10-v1", 
+                                        "filename": "elife-07101-fig6-figsupp10-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1595,7 +1877,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp11-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp11-v1", 
+                                        "filename": "elife-07101-fig6-figsupp11-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1610,7 +1893,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp12-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp12-v1", 
+                                        "filename": "elife-07101-fig6-figsupp12-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1625,9 +1909,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07101-fig6-figsupp13-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig6-figsupp13-v1", 
+                                        "filename": "elife-07101-fig6-figsupp13-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-07101-fig6-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1724,7 +2010,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-07101-fig7-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/07101/elife-07101-fig7-v1", 
+                        "filename": "elife-07101-fig7-v1"
                     }, 
                     {
                         "type": "paragraph", 

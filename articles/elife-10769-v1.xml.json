@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.10769", 
         "authorLine": "Ed Reznik et al", 
         "title": "Mitochondrial DNA copy number variation across human cancers", 
-        "published": "2016-02-22T00:00:00", 
-        "versionDate": "2016-02-22T00:00:00", 
+        "published": "2016-02-22T00:00:00Z", 
+        "versionDate": "2016-02-22T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e10769", 
         "pdf": "https://publishing-cdn.elifesciences.org/10769/elife-10769-v1.pdf", 
@@ -406,14 +406,147 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "5U24 CA143840-05 (Sander)", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Eduard Reznik", 
+                                "index": "Reznik, Eduard"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasin \u015eenbabao\u011flu", 
+                                "index": "\u015eenbabao\u011flu, Yasin"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Chris Sander", 
+                                "index": "Sander, Chris"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P30 CA008748", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Ed Reznik", 
+                                "index": "Reznik, Ed"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Martin L Miller", 
+                                "index": "Miller, Martin L"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasin \u015eenbabao\u011flu", 
+                                "index": "\u015eenbabao\u011flu, Yasin"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nadeem Riaz", 
+                                "index": "Riaz, Nadeem"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Judy Sarungbam", 
+                                "index": "Sarungbam, Judy"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Satish K Tickoo", 
+                                "index": "Tickoo, Satish K"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "William Lee", 
+                                "index": "Lee, William"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Venkatraman E Seshan", 
+                                "index": "Seshan, Venkatraman E"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "A Ari Hakimi", 
+                                "index": "Hakimi, A Ari"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Chris Sander", 
+                                "index": "Sander, Chris"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Hikmat A Al-Ahmadie", 
+                                "index": "Al-Ahmadie, Hikmat A"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10769.021", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Summary table of mtDNA copy number in tumor, adjacent-normal, and blood samples from the TCGA.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Data for a patient is included if and only if a tumor sample was sequenced. Normal tissue/blood data without a matching tumor sample is not included, but was used for batch-correction calculations."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-10769-supp1-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp1-v1.zip", 
                 "filename": "elife-10769-supp1-v1.zip"
             }, 
             {
@@ -421,8 +554,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Results of gene set analysis.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Enrichment scores for each cancer type are negative log10 p-values.First column indicates enrichment score for positive correlations between mtDNA copy number and gene expression, second column indicates enrichment score for negative correlations between mtDNA copy number and gene expression."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-10769-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp2-v1.xlsx", 
                 "filename": "elife-10769-supp2-v1.xlsx"
             }, 
             {
@@ -430,8 +569,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Results of association analysis with copy number alterations.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "As mentioned in the main text, associations with the UCEC cancer type are removed."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-10769-supp3-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp3-v1.zip", 
                 "filename": "elife-10769-supp3-v1.zip"
             }, 
             {
@@ -440,7 +585,7 @@
                 "label": "Supplementary file 4.", 
                 "title": "Results of association analysis with mutations.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-10769-supp4-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp4-v1.zip", 
                 "filename": "elife-10769-supp4-v1.zip"
             }
         ], 
@@ -454,8 +599,8 @@
         "doi": "10.7554/eLife.10769", 
         "authorLine": "Ed Reznik et al", 
         "title": "Mitochondrial DNA copy number variation across human cancers", 
-        "published": "2016-02-22T00:00:00", 
-        "versionDate": "2016-02-22T00:00:00", 
+        "published": "2016-02-22T00:00:00Z", 
+        "versionDate": "2016-02-22T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e10769", 
         "pdf": "https://publishing-cdn.elifesciences.org/10769/elife-10769-v1.pdf", 
@@ -848,14 +993,147 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "5U24 CA143840-05 (Sander)", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Eduard Reznik", 
+                                "index": "Reznik, Eduard"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasin \u015eenbabao\u011flu", 
+                                "index": "\u015eenbabao\u011flu, Yasin"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Chris Sander", 
+                                "index": "Sander, Chris"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P30 CA008748", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Ed Reznik", 
+                                "index": "Reznik, Ed"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Martin L Miller", 
+                                "index": "Miller, Martin L"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasin \u015eenbabao\u011flu", 
+                                "index": "\u015eenbabao\u011flu, Yasin"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nadeem Riaz", 
+                                "index": "Riaz, Nadeem"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Judy Sarungbam", 
+                                "index": "Sarungbam, Judy"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Satish K Tickoo", 
+                                "index": "Tickoo, Satish K"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "William Lee", 
+                                "index": "Lee, William"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Venkatraman E Seshan", 
+                                "index": "Seshan, Venkatraman E"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "A Ari Hakimi", 
+                                "index": "Hakimi, A Ari"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Chris Sander", 
+                                "index": "Sander, Chris"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Hikmat A Al-Ahmadie", 
+                                "index": "Al-Ahmadie, Hikmat A"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10769.021", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Summary table of mtDNA copy number in tumor, adjacent-normal, and blood samples from the TCGA.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Data for a patient is included if and only if a tumor sample was sequenced. Normal tissue/blood data without a matching tumor sample is not included, but was used for batch-correction calculations."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-10769-supp1-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp1-v1.zip", 
                 "filename": "elife-10769-supp1-v1.zip"
             }, 
             {
@@ -863,8 +1141,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Results of gene set analysis.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Enrichment scores for each cancer type are negative log10 p-values.First column indicates enrichment score for positive correlations between mtDNA copy number and gene expression, second column indicates enrichment score for negative correlations between mtDNA copy number and gene expression."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-10769-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp2-v1.xlsx", 
                 "filename": "elife-10769-supp2-v1.xlsx"
             }, 
             {
@@ -872,8 +1156,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Results of association analysis with copy number alterations.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "As mentioned in the main text, associations with the UCEC cancer type are removed."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-10769-supp3-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp3-v1.zip", 
                 "filename": "elife-10769-supp3-v1.zip"
             }, 
             {
@@ -882,7 +1172,7 @@
                 "label": "Supplementary file 4.", 
                 "title": "Results of association analysis with mutations.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-10769-supp4-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-supp4-v1.zip", 
                 "filename": "elife-10769-supp4-v1.zip"
             }
         ], 
@@ -947,7 +1237,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-10769-fig1-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig1-v1", 
+                        "filename": "elife-10769-fig1-v1"
                     }
                 ]
             }, 
@@ -992,7 +1283,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10769-fig2-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig2-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1007,9 +1298,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig2-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig2-figsupp1-v1", 
+                                        "filename": "elife-10769-fig2-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10769-fig2-v1"
                             }
                         ]
                     }, 
@@ -1049,7 +1342,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10769-fig3-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1064,7 +1357,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig3-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-figsupp1-v1", 
+                                        "filename": "elife-10769-fig3-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1073,7 +1367,8 @@
                                         "label": "Figure 3\u2014figure supplement 2.", 
                                         "title": "Correlation between tumor mtDNA copy number and ESTIMATE immune scores.", 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig3-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-figsupp2-v1", 
+                                        "filename": "elife-10769-fig3-figsupp2-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1082,7 +1377,8 @@
                                         "label": "Figure 3\u2014figure supplement 3.", 
                                         "title": "Correlation between tumor mtDNA copy number and ESTIMATE stromal scores.", 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig3-figsupp3-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-figsupp3-v1", 
+                                        "filename": "elife-10769-fig3-figsupp3-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1097,7 +1393,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig3-figsupp4-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-figsupp4-v1", 
+                                        "filename": "elife-10769-fig3-figsupp4-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1112,7 +1409,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig3-figsupp5-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-figsupp5-v1", 
+                                        "filename": "elife-10769-fig3-figsupp5-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1127,9 +1425,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig3-figsupp6-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig3-figsupp6-v1", 
+                                        "filename": "elife-10769-fig3-figsupp6-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10769-fig3-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1152,7 +1452,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10769-fig4-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig4-v1", 
+                                "filename": "elife-10769-fig4-v1"
                             }
                         ]
                     }, 
@@ -1186,7 +1487,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10769-fig5-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig5-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1201,7 +1502,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig5-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig5-figsupp1-v1", 
+                                        "filename": "elife-10769-fig5-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1216,9 +1518,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig5-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig5-figsupp2-v1", 
+                                        "filename": "elife-10769-fig5-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10769-fig5-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1256,7 +1560,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10769-fig6-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig6-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1271,9 +1575,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig6-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig6-figsupp1-v1", 
+                                        "filename": "elife-10769-fig6-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10769-fig6-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1315,7 +1621,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10769-fig7-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig7-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1330,9 +1636,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10769-fig7-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-fig7-figsupp1-v1", 
+                                        "filename": "elife-10769-fig7-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10769-fig7-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -6967,7 +7275,8 @@
                     "label": "Author response image 1.", 
                     "title": "Author response image 1.", 
                     "alt": "", 
-                    "uri": "elife-10769-resp-fig1-v1"
+                    "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-resp-fig1-v1", 
+                    "filename": "elife-10769-resp-fig1-v1"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7026,7 +7335,8 @@
                         }
                     ], 
                     "alt": "", 
-                    "uri": "elife-10769-resp-fig2-v1"
+                    "uri": "https://publishing-cdn.elifesciences.org/10769/elife-10769-resp-fig2-v1", 
+                    "filename": "elife-10769-resp-fig2-v1"
                 }, 
                 {
                     "type": "paragraph", 

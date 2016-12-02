@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.17219", 
         "authorLine": "Ray Yu-Ruei Wang et al", 
         "title": "Automated structure refinement of macromolecular assemblies from cryo-EM maps using Rosetta", 
-        "published": "2016-09-26T00:00:00", 
+        "published": "2016-09-26T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e17219", 
         "pdf": "https://publishing-cdn.elifesciences.org/17219/elife-17219-v2.pdf", 
@@ -298,14 +298,120 @@
                 "competingInterests": "The other authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "R01GM098672", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yifan Cheng", 
+                                "index": "Cheng, Yifan"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P50GM082250", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yifan Cheng", 
+                                "index": "Cheng, Yifan"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "1P01GM111126", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yifan Cheng", 
+                                "index": "Cheng, Yifan"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM110580", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "James S Fraser", 
+                                "index": "Fraser, James S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "STC-1231306", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "James S Fraser", 
+                                "index": "Fraser, James S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.17219.019", 
                 "id": "SD2-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Input files to carry out the TRPV1 structure refinement described in the manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Structure refinement of TRPV1 using Rosetta involves two steps: (1) refinement of only the transmembrane regions, and (2) refinement of the full system, including the Ankyrin repeat domains. The package includes two folders, one for each of the two steps with the command lines and input files necessary to run TRPV1 structure refinement."
+                    }
+                ], 
                 "mediaType": "application/x-gzip", 
-                "uri": "elife-17219-supp1-v2.gz", 
+                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-supp1-v2.gz", 
                 "filename": "elife-17219-supp1-v2.gz"
             }, 
             {
@@ -313,8 +419,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Input files to carry out the Frh structure refinement described in the manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Structure refinement of Frh using Rosetta involves three steps: (1) refinement of the asymmetric unit without ligands present, (2) local refinement of the asymmetric unit with the ligands present, and (3) local refinement the full symmetric complex with ligands present. The package includes three folders, one for each of the three steps with the command lines and input files necessary to run Frh structure refinement."
+                    }
+                ], 
                 "mediaType": "application/x-gzip", 
-                "uri": "elife-17219-supp2-v2.gz", 
+                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-supp2-v2.gz", 
                 "filename": "elife-17219-supp2-v2.gz"
             }, 
             {
@@ -322,8 +434,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Input files to carry out the Mitoribosome structure refinement described in the manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Structure refinement of the case of Mitoribosome using Rosetta involves in two steps: (1) refinement of individual chains, and (2) local refinement the whole assembly. The package includes two folders, one for each of the two steps with the command lines and input files necessary to run Mitoribosome structure refinement."
+                    }
+                ], 
                 "mediaType": "application/x-gzip", 
-                "uri": "elife-17219-supp3-v2.gz", 
+                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-supp3-v2.gz", 
                 "filename": "elife-17219-supp3-v2.gz"
             }
         ], 
@@ -352,7 +470,8 @@
                     ], 
                     "title": "Structure of the capsaicin receptor, TRPV1, determined by single particle electron cryo-microscopy", 
                     "details": "Publicly available at EBI Protein Data Bank in Europe (accession no: EMD-5778)", 
-                    "uri": "https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-5778"
+                    "uri": "https://publishing-cdn.elifesciences.org/17219/https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-5778", 
+                    "filename": "EMD-5778"
                 }, 
                 {
                     "id": "data-ro2", 
@@ -381,7 +500,8 @@
                     ], 
                     "title": "Electron cryo-microscopy of F420-reducing [NiFe] hydrogenase Frh", 
                     "details": "Publicly available at EBI Protein Data Bank in Europe (accession no: EMD-2513)", 
-                    "uri": "http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2513/"
+                    "uri": "https://publishing-cdn.elifesciences.org/17219/http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2513/", 
+                    "filename": ""
                 }, 
                 {
                     "id": "data-ro3", 
@@ -422,7 +542,8 @@
                     ], 
                     "title": "Electron cryo-microscopy of human mitochondrial large ribosomal subunit", 
                     "details": "Publicly available at EBI Protein Data Bank in Europe (accession no: EMD-2762)", 
-                    "uri": "http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2762"
+                    "uri": "https://publishing-cdn.elifesciences.org/17219/http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2762", 
+                    "filename": "EMD-2762"
                 }
             ]
         }, 
@@ -436,7 +557,7 @@
         "doi": "10.7554/eLife.17219", 
         "authorLine": "Ray Yu-Ruei Wang et al", 
         "title": "Automated structure refinement of macromolecular assemblies from cryo-EM maps using Rosetta", 
-        "published": "2016-09-26T00:00:00", 
+        "published": "2016-09-26T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e17219", 
         "pdf": "https://publishing-cdn.elifesciences.org/17219/elife-17219-v2.pdf", 
@@ -722,14 +843,120 @@
                 "competingInterests": "The other authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "R01GM098672", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yifan Cheng", 
+                                "index": "Cheng, Yifan"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P50GM082250", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yifan Cheng", 
+                                "index": "Cheng, Yifan"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "1P01GM111126", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yifan Cheng", 
+                                "index": "Cheng, Yifan"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM110580", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "James S Fraser", 
+                                "index": "Fraser, James S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "STC-1231306", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "James S Fraser", 
+                                "index": "Fraser, James S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.17219.019", 
                 "id": "SD2-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Input files to carry out the TRPV1 structure refinement described in the manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Structure refinement of TRPV1 using Rosetta involves two steps: (1) refinement of only the transmembrane regions, and (2) refinement of the full system, including the Ankyrin repeat domains. The package includes two folders, one for each of the two steps with the command lines and input files necessary to run TRPV1 structure refinement."
+                    }
+                ], 
                 "mediaType": "application/x-gzip", 
-                "uri": "elife-17219-supp1-v2.gz", 
+                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-supp1-v2.gz", 
                 "filename": "elife-17219-supp1-v2.gz"
             }, 
             {
@@ -737,8 +964,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Input files to carry out the Frh structure refinement described in the manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Structure refinement of Frh using Rosetta involves three steps: (1) refinement of the asymmetric unit without ligands present, (2) local refinement of the asymmetric unit with the ligands present, and (3) local refinement the full symmetric complex with ligands present. The package includes three folders, one for each of the three steps with the command lines and input files necessary to run Frh structure refinement."
+                    }
+                ], 
                 "mediaType": "application/x-gzip", 
-                "uri": "elife-17219-supp2-v2.gz", 
+                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-supp2-v2.gz", 
                 "filename": "elife-17219-supp2-v2.gz"
             }, 
             {
@@ -746,8 +979,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Input files to carry out the Mitoribosome structure refinement described in the manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Structure refinement of the case of Mitoribosome using Rosetta involves in two steps: (1) refinement of individual chains, and (2) local refinement the whole assembly. The package includes two folders, one for each of the two steps with the command lines and input files necessary to run Mitoribosome structure refinement."
+                    }
+                ], 
                 "mediaType": "application/x-gzip", 
-                "uri": "elife-17219-supp3-v2.gz", 
+                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-supp3-v2.gz", 
                 "filename": "elife-17219-supp3-v2.gz"
             }
         ], 
@@ -776,7 +1015,8 @@
                     ], 
                     "title": "Structure of the capsaicin receptor, TRPV1, determined by single particle electron cryo-microscopy", 
                     "details": "Publicly available at EBI Protein Data Bank in Europe (accession no: EMD-5778)", 
-                    "uri": "https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-5778"
+                    "uri": "https://publishing-cdn.elifesciences.org/17219/https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-5778", 
+                    "filename": "EMD-5778"
                 }, 
                 {
                     "id": "data-ro2", 
@@ -805,7 +1045,8 @@
                     ], 
                     "title": "Electron cryo-microscopy of F420-reducing [NiFe] hydrogenase Frh", 
                     "details": "Publicly available at EBI Protein Data Bank in Europe (accession no: EMD-2513)", 
-                    "uri": "http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2513/"
+                    "uri": "https://publishing-cdn.elifesciences.org/17219/http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2513/", 
+                    "filename": ""
                 }, 
                 {
                     "id": "data-ro3", 
@@ -846,7 +1087,8 @@
                     ], 
                     "title": "Electron cryo-microscopy of human mitochondrial large ribosomal subunit", 
                     "details": "Publicly available at EBI Protein Data Bank in Europe (accession no: EMD-2762)", 
-                    "uri": "http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2762"
+                    "uri": "https://publishing-cdn.elifesciences.org/17219/http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-2762", 
+                    "filename": "EMD-2762"
                 }
             ]
         }, 
@@ -890,7 +1132,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-17219-fig1-v2", 
+                        "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig1-v2", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -905,7 +1147,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig1-figsupp1-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig1-figsupp1-v2", 
+                                "filename": "elife-17219-fig1-figsupp1-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -920,7 +1163,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig1-figsupp2-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig1-figsupp2-v2", 
+                                "filename": "elife-17219-fig1-figsupp2-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -935,7 +1179,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig1-figsupp3-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig1-figsupp3-v2", 
+                                "filename": "elife-17219-fig1-figsupp3-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -950,9 +1195,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig1-figsupp4-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig1-figsupp4-v2", 
+                                "filename": "elife-17219-fig1-figsupp4-v2"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-17219-fig1-v2"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1028,7 +1275,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig2-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig2-v2", 
+                                "filename": "elife-17219-fig2-v2"
                             }
                         ]
                     }, 
@@ -1091,7 +1339,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig3-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig3-v2", 
+                                "filename": "elife-17219-fig3-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -1106,7 +1355,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig4-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig4-v2", 
+                                "filename": "elife-17219-fig4-v2"
                             }, 
                             {
                                 "type": "table", 
@@ -1194,7 +1444,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig5-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig5-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1209,9 +1459,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17219-fig5-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig5-figsupp1-v2", 
+                                        "filename": "elife-17219-fig5-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17219-fig5-v2"
                             }
                         ]
                     }, 
@@ -1245,7 +1497,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17219-fig6-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig6-v2", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.17219.014", 
@@ -1253,7 +1505,7 @@
                                         "label": "Figure 6\u2014source data 1.", 
                                         "title": "Mitoribosome per-chain refinement results.", 
                                         "mediaType": "application/docx", 
-                                        "uri": "elife-17219-fig6-data1-v2.docx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig6-data1-v2.docx", 
                                         "filename": "elife-17219-fig6-data1-v2.docx"
                                     }
                                 ], 
@@ -1271,7 +1523,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17219-fig6-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig6-figsupp1-v2", 
+                                        "filename": "elife-17219-fig6-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1286,9 +1539,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17219-fig6-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17219/elife-17219-fig6-figsupp2-v2", 
+                                        "filename": "elife-17219-fig6-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17219-fig6-v2"
                             }, 
                             {
                                 "type": "paragraph", 

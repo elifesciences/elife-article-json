@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.11351", 
         "authorLine": "Christopher M Ciarleglio et al", 
         "title": "Multivariate analysis of electrophysiological diversity of <i>Xenopus</i> visual neurons during development and plasticity", 
-        "published": "2015-11-14T00:00:00", 
+        "published": "2015-11-14T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e11351", 
         "pdf": "https://publishing-cdn.elifesciences.org/11351/elife-11351-v2.pdf", 
@@ -249,14 +249,96 @@
                 "text": "Animal experimentation: All handling of animals was approved by Brown University IACUC in accordance with NIH guidelines. The animal protocol used for these experiments is \"Regulation of Neural Excitability and Synaptic Function by Experience in the Developing Visual System (#1308000008C002)\"."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "Institutional T32", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Christopher M Ciarleglio", 
+                                "index": "Ciarleglio, Christopher M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "IOS 1353044", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Arseny S Khakhalin", 
+                                "index": "Khakhalin, Arseny S"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carlos D Aizenman", 
+                                "index": "Aizenman, Carlos D"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100006418", 
+                        "name": [
+                            "Brown University"
+                        ]
+                    }, 
+                    "awardId": "Fox postdoctoral fellowship, UTRA Program", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Christopher M Ciarleglio", 
+                                "index": "Ciarleglio, Christopher M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Arseny S Khakhalin", 
+                                "index": "Khakhalin, Arseny S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11351.011", 
                 "id": "SD1-data", 
                 "label": "Supplementary\u00a0file 1.", 
                 "title": "Table describing the variables measured from each cell.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "33 variables were extracted from this dataset, the table describes the name of the variables, units. average value and brief description. For more details about each variable please see Materials\u00a0and\u00a0methods."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11351-supp1-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-supp1-v2.docx", 
                 "filename": "elife-11351-supp1-v2.docx"
             }, 
             {
@@ -264,8 +346,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Spreadsheet containing data table of parameters extracted from every cell.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This spreadsheet contains the extracted parameters from every cell in this study. These data was used for generating principal component analysis and other statistical measures."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11351-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-supp2-v2.xlsx", 
                 "filename": "elife-11351-supp2-v2.xlsx"
             }, 
             {
@@ -273,8 +361,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Average values for different stages and experimental conditions.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The data in this table describes the average values of each measured variable across several cells grouped by developmental stage and experimental condition."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11351-supp3-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-supp3-v2.docx", 
                 "filename": "elife-11351-supp3-v2.docx"
             }, 
             {
@@ -282,8 +376,14 @@
                 "id": "SD4-data", 
                 "label": "Source code 1.", 
                 "title": "Matlab and R scripts used to analyze data.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This set of custom functions was not designed for public use, so many aspects of data analysis in these functions are hard-coded (usually as a global variable explicitly defined in the beginning of each script). Note also that at the submission stage we transformed all raw data for this paper from pClamp ABF files to Matlab MAT-file format, and this is how the data was uploaded to Dryad. The original scripts however worked with our original data files that were mostly stored in either ABF or Microsoft Excel formats."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-11351-code1-v2.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-code1-v2.zip", 
                 "filename": "elife-11351-code1-v2.zip"
             }
         ], 
@@ -320,7 +420,8 @@
                     ], 
                     "title": "Data from: Multivariate analysis of electrophysiological diversity of Xenopus visual neurons during development and plasticity", 
                     "details": "Available at Dryad Digital Repository under a CC0 Public Domain Dedication", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.18kk6"
+                    "uri": "https://publishing-cdn.elifesciences.org/11351/http://dx.doi.org/10.5061/dryad.18kk6", 
+                    "filename": "dryad.18kk6"
                 }
             ]
         }, 
@@ -334,7 +435,7 @@
         "doi": "10.7554/eLife.11351", 
         "authorLine": "Christopher M Ciarleglio et al", 
         "title": "Multivariate analysis of electrophysiological diversity of <i>Xenopus</i> visual neurons during development and plasticity", 
-        "published": "2015-11-14T00:00:00", 
+        "published": "2015-11-14T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e11351", 
         "pdf": "https://publishing-cdn.elifesciences.org/11351/elife-11351-v2.pdf", 
@@ -571,14 +672,96 @@
                 "text": "Animal experimentation: All handling of animals was approved by Brown University IACUC in accordance with NIH guidelines. The animal protocol used for these experiments is \"Regulation of Neural Excitability and Synaptic Function by Experience in the Developing Visual System (#1308000008C002)\"."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "Institutional T32", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Christopher M Ciarleglio", 
+                                "index": "Ciarleglio, Christopher M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "IOS 1353044", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Arseny S Khakhalin", 
+                                "index": "Khakhalin, Arseny S"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carlos D Aizenman", 
+                                "index": "Aizenman, Carlos D"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100006418", 
+                        "name": [
+                            "Brown University"
+                        ]
+                    }, 
+                    "awardId": "Fox postdoctoral fellowship, UTRA Program", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Christopher M Ciarleglio", 
+                                "index": "Ciarleglio, Christopher M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Arseny S Khakhalin", 
+                                "index": "Khakhalin, Arseny S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11351.011", 
                 "id": "SD1-data", 
                 "label": "Supplementary\u00a0file 1.", 
                 "title": "Table describing the variables measured from each cell.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "33 variables were extracted from this dataset, the table describes the name of the variables, units. average value and brief description. For more details about each variable please see Materials\u00a0and\u00a0methods."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11351-supp1-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-supp1-v2.docx", 
                 "filename": "elife-11351-supp1-v2.docx"
             }, 
             {
@@ -586,8 +769,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Spreadsheet containing data table of parameters extracted from every cell.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This spreadsheet contains the extracted parameters from every cell in this study. These data was used for generating principal component analysis and other statistical measures."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11351-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-supp2-v2.xlsx", 
                 "filename": "elife-11351-supp2-v2.xlsx"
             }, 
             {
@@ -595,8 +784,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Average values for different stages and experimental conditions.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The data in this table describes the average values of each measured variable across several cells grouped by developmental stage and experimental condition."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11351-supp3-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-supp3-v2.docx", 
                 "filename": "elife-11351-supp3-v2.docx"
             }, 
             {
@@ -604,8 +799,14 @@
                 "id": "SD4-data", 
                 "label": "Source code 1.", 
                 "title": "Matlab and R scripts used to analyze data.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This set of custom functions was not designed for public use, so many aspects of data analysis in these functions are hard-coded (usually as a global variable explicitly defined in the beginning of each script). Note also that at the submission stage we transformed all raw data for this paper from pClamp ABF files to Matlab MAT-file format, and this is how the data was uploaded to Dryad. The original scripts however worked with our original data files that were mostly stored in either ABF or Microsoft Excel formats."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-11351-code1-v2.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-code1-v2.zip", 
                 "filename": "elife-11351-code1-v2.zip"
             }
         ], 
@@ -642,7 +843,8 @@
                     ], 
                     "title": "Data from: Multivariate analysis of electrophysiological diversity of Xenopus visual neurons during development and plasticity", 
                     "details": "Available at Dryad Digital Repository under a CC0 Public Domain Dedication", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.18kk6"
+                    "uri": "https://publishing-cdn.elifesciences.org/11351/http://dx.doi.org/10.5061/dryad.18kk6", 
+                    "filename": "dryad.18kk6"
                 }
             ]
         }, 
@@ -725,7 +927,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig1-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig1-v2.tif", 
+                                "filename": "elife-11351-fig1-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -744,7 +947,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig2-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig2-v2.tif", 
+                                "filename": "elife-11351-fig2-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -778,7 +982,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig3-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig3-v2.tif", 
+                                "filename": "elife-11351-fig3-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -812,7 +1017,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig4-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig4-v2.tif", 
+                                "filename": "elife-11351-fig4-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -835,7 +1041,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig5-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig5-v2.tif", 
+                                "filename": "elife-11351-fig5-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -858,7 +1065,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig6-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig6-v2.tif", 
+                                "filename": "elife-11351-fig6-v2.tif"
                             }
                         ]
                     }, 
@@ -888,7 +1096,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig7-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig7-v2.tif", 
+                                "filename": "elife-11351-fig7-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -934,7 +1143,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11351-fig8-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/11351/elife-11351-fig8-v2.tif", 
+                                "filename": "elife-11351-fig8-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 

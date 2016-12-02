@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.15657", 
         "authorLine": "Dave T Gerrard et al", 
         "title": "An integrative transcriptomic atlas of organogenesis in human embryos", 
-        "published": "2016-08-24T00:00:00", 
-        "versionDate": "2016-08-24T00:00:00", 
+        "published": "2016-08-24T00:00:00Z", 
+        "versionDate": "2016-08-24T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e15657", 
         "pdf": "https://publishing-cdn.elifesciences.org/15657/elife-15657-v1.pdf", 
@@ -273,14 +273,141 @@
                 "text": "Human subjects: Human embryonic material was collected under ethical approval, informed consent and according to the Codes of Practice of the Human Tissue Authority (protocols number 13/NW/0205)."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100004440", 
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "WT088566MA", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Dave T Gerrard", 
+                                "index": "Gerrard, Dave T"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Andrew A Berry", 
+                                "index": "Berry, Andrew A"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/501100000308", 
+                        "name": [
+                            "British Council"
+                        ]
+                    }, 
+                    "awardId": "MR/J003352/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Karen Piper Hanley", 
+                                "index": "Piper Hanley, Karen"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100000265", 
+                        "name": [
+                            "Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "MR/L009986/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nicoletta Bobola", 
+                                "index": "Bobola, Nicoletta"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100004440", 
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "WT097820MF", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/501100000308", 
+                        "name": [
+                            "British Council"
+                        ]
+                    }, 
+                    "awardId": "14BX15NHBG", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.15657.014", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Supplementary tables.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(<b>A</b>)\u00a0Samples used in this study.\u00a0Details on the material derived from individual human embryos (each listed according to the Carnegie Stage (CS)) used in the biological replicates and the sequencing statistics for each sample. A conversion of Carnegie Stage to an approximate days post-conception is available in <a href=\"#bib16\">Jennings et al. (2015)</a> (open access). Gene level read counts are available for download as a TSV file in <a href=\"#SD2-data\">Supplementary file 2</a>. (<b>B</b>)\u00a0Differential gene expression between paired embryonic and fetal RNA-seq data. The R package edgeR (<a href=\"#bib22\">Robinson et al., 2010</a>) was used to test for differential gene expression between embryonic and fetal (<a href=\"#bib21\">Roadmap Epigenomics Consortium, 2015</a>) datasets.\u00a0Shared tissues were adrenal gland, heart, lung, stomach, kidney, upper limb, lower limb and testis. The table is sorted by FDR (column H) and can be filtered by log fold change (column E) to give embryo-enriched genes (negative values) or fetal-enriched genes (positive values). (<b>C</b>)\u00a0Gene Ontology (GO) terms and the genes underlying them for embryonic vs.fetal (Roadmap) up-regulated genes.\u00a0Genes up-regulated in embryonic tissues versus fetal tissues (edgeR, FDR <span class=\"underline\">&lt;\u00a0</span>0.05, see <a href=\"#SD1-data\">Supplementary file 1B</a>) were tested for GO term enrichment using Fisher\u2019s exact test and the elimination algorithm implemented in the R package topGO (<a href=\"#bib1\">Alexa and Rahnenfuhrer, 2010</a>). Separate tests were run for embryo up-regulated and fetal up-regulated genes. The table is sorted by enrichment in embryonic genes. (<b>D</b>)\u00a0Tissue-specific genes contributing to metagenes.\u00a0All genes with relative basis contribution (across metagenes) greater than 0.8 are listed.\u00a0(<b>E</b>)\u00a0The most extreme 1000 genes (high and low) for all principal components (PC1-31) of the LgPCA.\u00a0The dataset is derived from genes annotated in GENCODE18. Raw gene-level loadings for each principal component are available for download as a TSV file in <a href=\"#SD3-data\">Supplementary file 3</a>. (<b>F</b>)\u00a0Gene Ontology (GO) terms and the genes underlying them for organ and tissue-specific transcriptomic signatures from the extremes of the LgPCA.\u00a0GO terms were identified as enriched in extreme scoring genes (annotated in GENCODE 18) in the principal components (PCs) of the LgPCA. Due to the very large number of terms returned at p&lt;0.0001 by Wilcoxon test (the topGO 'elim' method, see Materials and methods) an illustrative selection are listed with raw gene-level loadings available for download in <a href=\"#SD3-data\">Supplementary file 3</a>. (<b>G</b>)\u00a0Transcription factors in the extremes of the LgPCA and their links to developmental morbidity.\u00a0The most extreme 1000 annotated genes (GENCODE 18) of the LgPCA dataset were filtered for transcription factors based on KEGG and PHANTOM5 annotations and for read counts &gt;500. To identify disease associations each gene was entered as a search term in OMIM (<a href=\"http://www.ncbi.nlm.nih.gov/omim\">www.ncbi.nlm.nih.gov/omim</a>) and in PubMed. Batch queries were undertaken at Mouse Genome Informatics (MGI, <a href=\"http://www.informatics.jax.org\">www.informatics.jax.org</a>) with 'Mammalian phenotype' as the output.\u00a0(<b>H</b>) LgPCA predictions of causal genes for critical regions in either solved or unsolved developmental disorders.\u00a0Fifty-three developmental disorders (Column A, 'solved') with causally associated transcription factors identified in the appropriate transcriptomic signature of <a href=\"#SD1-data\">Supplementary file 1G</a> were originally defined by critical regions (Column C with hyperlink). These critical regions were identified by searching OMIM and usually derived from mapping data on affected families or chromosomal deletions in affected patients. Larger critical regions were preferentially selected to test more meaningfully whether the LgPCA model could have pinpointed the causal gene based solely on transcriptomic signatures that involved an affected organ(s) or tissue(s) (Column B). The average critical region was 13.7\u00a0Mb (Column D) and contained an average of 111 protein-coding genes (Column E; identified from searching BIOMART on ENSEMBL). In 48/53 instances (91%), LgPCA narrowed the field down to three or fewer transcription factors and in 37 instances (73%) excluded all except the correct transcription factor. Therefore, the same approach was applied to 13 unsolved developmental disorders (mostly deletion syndromes) with predictions made in each case for any type of protein-coding gene (Column H) and transcription factor(s) (Column I). In many instances the transcription factor in Column I possesses an appropriate mutant mouse phenotype. (<b>I</b>)\u00a06251 unannotated transcripts identified during human organogenesis.\u00a0These are the 6251 novel and distinct transcripts underlying <a href=\"#fig4\">Figure 4</a> of the main text, which also describes the transcript classification: Anti-sense (AS), Overlapping (OT), Bidirectional (BI), Long-intergenic non-coding (LINC) and / or Transcripts of uncertain coding potential (TUCP) (based on <a href=\"#bib19\">Mattick and Rinn, 2015</a>). Intergenic transcripts are numbered sequentially within each chromosome. Exon lengths and starts (blocks) are recorded here in UCSC BED12 format. Correlations in expression profile were calculated for annotated genes with transcript transcriptional start sites situated within 1\u00a0Mb of the novel transcript TSS; the total number of genes in this window is listed. Columns AF-AT (organs and tissues) represent mean, quantile-normalised read counts across tissue replicates. Correlations (and distance) are shown for the closest, best correlated or best anti-correlated genes and were generated using only embryonic RNA-seq data. The pipeline to generate transcripts, distinguish them from previous annotations, name, characterise and filter is described in the Materials and methods. (<b>J</b>)\u00a0NIH roadmap samples (<a href=\"#bib21\">Kundaje et al., 2015</a>) used in this study."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-15657-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp1-v1.xlsx", 
                 "filename": "elife-15657-supp1-v1.xlsx"
             }, 
             {
@@ -288,8 +415,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Gene level non-normalised RNA-seq read counts by sample for 42,423 gene annotations in GENCODE18.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Gene details are given plus the minimum, maximum, median and standard deviation of read counts. Additionally, tissue-specificity is scored using Tau (<a href=\"#bib28\">Yanai et al., 2005</a>) where \u20180\u2019 is equally expressed across all organs and tissues and \u20181\u2019 indicates absolute specificity to one site."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-15657-supp2-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp2-v1.zip", 
                 "filename": "elife-15657-supp2-v1.zip"
             }, 
             {
@@ -297,8 +430,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "LgPCA scores.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Raw gene-level scores for each principal component of the LgPCA."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-15657-supp3-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp3-v1.zip", 
                 "filename": "elife-15657-supp3-v1.zip"
             }, 
             {
@@ -306,8 +445,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Unfiltered novel transcripts.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Prior to filtering a total of 9180 transcripts were detected during human organogenesis that are not annotated in GENCODE 18. The 6251 transcripts summarised in <a href=\"#fig4\">Figure 4</a> of the main text and listed in <a href=\"#SD1-data\">Supplementary file 1I</a> (Excel file) are marked by column \u2018filter_score\u2019. The data include quantile normalized read counts for all embryonic samples in this study and a mean for each organ or tissue type. In addition to the correlations in <a href=\"#SD1-data\">Supplementary file 1I</a>, the distances to, and correlations with, both the closest upstream transcription termination site (TTS) and downstream transcription start sites (TSS) of adjacent, same-strand genes are given to aid filtering for potential 5\u2019 and 3\u2019 run-ons. For comparison, the NIH Roadmap sample (adult and fetal) with most reads for each novel transcript is listed separately."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-15657-supp4-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp4-v1.zip", 
                 "filename": "elife-15657-supp4-v1.zip"
             }, 
             {
@@ -315,8 +460,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "Transcription factor atlas of human organogenesis (high resolution).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "High resolution version of <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> where each individual transcription factor is text searchable. (Please note that this opens at 25 x 200 inches / 64 x 508 cm)."
+                    }
+                ], 
                 "mediaType": "application/pdf", 
-                "uri": "elife-15657-supp5-v1.pdf", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp5-v1.pdf", 
                 "filename": "elife-15657-supp5-v1.pdf"
             }
         ], 
@@ -353,7 +504,8 @@
                     ], 
                     "title": "An integrative transcriptomic atlas of organogenesis in human embryos", 
                     "details": "Publicly available at EBI ArrayExpress (accession no: E-MTAB-3928)", 
-                    "uri": "http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3928/"
+                    "uri": "https://publishing-cdn.elifesciences.org/15657/http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3928/", 
+                    "filename": ""
                 }
             ], 
             "used": [
@@ -384,7 +536,8 @@
                     ], 
                     "title": "TEAD and YAP regulate the enhancer network of human embryonic pancreatic progenitors", 
                     "details": "Publicly available at EBI ArrayExpress (accession no: E-MTAB-3061)", 
-                    "uri": "http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3061/"
+                    "uri": "https://publishing-cdn.elifesciences.org/15657/http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3061/", 
+                    "filename": ""
                 }
             ]
         }, 
@@ -398,8 +551,8 @@
         "doi": "10.7554/eLife.15657", 
         "authorLine": "Dave T Gerrard et al", 
         "title": "An integrative transcriptomic atlas of organogenesis in human embryos", 
-        "published": "2016-08-24T00:00:00", 
-        "versionDate": "2016-08-24T00:00:00", 
+        "published": "2016-08-24T00:00:00Z", 
+        "versionDate": "2016-08-24T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e15657", 
         "pdf": "https://publishing-cdn.elifesciences.org/15657/elife-15657-v1.pdf", 
@@ -659,14 +812,141 @@
                 "text": "Human subjects: Human embryonic material was collected under ethical approval, informed consent and according to the Codes of Practice of the Human Tissue Authority (protocols number 13/NW/0205)."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100004440", 
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "WT088566MA", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Dave T Gerrard", 
+                                "index": "Gerrard, Dave T"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Andrew A Berry", 
+                                "index": "Berry, Andrew A"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/501100000308", 
+                        "name": [
+                            "British Council"
+                        ]
+                    }, 
+                    "awardId": "MR/J003352/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Karen Piper Hanley", 
+                                "index": "Piper Hanley, Karen"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100000265", 
+                        "name": [
+                            "Medical Research Council"
+                        ]
+                    }, 
+                    "awardId": "MR/L009986/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nicoletta Bobola", 
+                                "index": "Bobola, Nicoletta"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100004440", 
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "WT097820MF", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/501100000308", 
+                        "name": [
+                            "British Council"
+                        ]
+                    }, 
+                    "awardId": "14BX15NHBG", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Neil A Hanley", 
+                                "index": "Hanley, Neil A"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.15657.014", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Supplementary tables.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(<b>A</b>)\u00a0Samples used in this study.\u00a0Details on the material derived from individual human embryos (each listed according to the Carnegie Stage (CS)) used in the biological replicates and the sequencing statistics for each sample. A conversion of Carnegie Stage to an approximate days post-conception is available in <a href=\"#bib16\">Jennings et al. (2015)</a> (open access). Gene level read counts are available for download as a TSV file in <a href=\"#SD2-data\">Supplementary file 2</a>. (<b>B</b>)\u00a0Differential gene expression between paired embryonic and fetal RNA-seq data. The R package edgeR (<a href=\"#bib22\">Robinson et al., 2010</a>) was used to test for differential gene expression between embryonic and fetal (<a href=\"#bib21\">Roadmap Epigenomics Consortium, 2015</a>) datasets.\u00a0Shared tissues were adrenal gland, heart, lung, stomach, kidney, upper limb, lower limb and testis. The table is sorted by FDR (column H) and can be filtered by log fold change (column E) to give embryo-enriched genes (negative values) or fetal-enriched genes (positive values). (<b>C</b>)\u00a0Gene Ontology (GO) terms and the genes underlying them for embryonic vs.fetal (Roadmap) up-regulated genes.\u00a0Genes up-regulated in embryonic tissues versus fetal tissues (edgeR, FDR <span class=\"underline\">&lt;\u00a0</span>0.05, see <a href=\"#SD1-data\">Supplementary file 1B</a>) were tested for GO term enrichment using Fisher\u2019s exact test and the elimination algorithm implemented in the R package topGO (<a href=\"#bib1\">Alexa and Rahnenfuhrer, 2010</a>). Separate tests were run for embryo up-regulated and fetal up-regulated genes. The table is sorted by enrichment in embryonic genes. (<b>D</b>)\u00a0Tissue-specific genes contributing to metagenes.\u00a0All genes with relative basis contribution (across metagenes) greater than 0.8 are listed.\u00a0(<b>E</b>)\u00a0The most extreme 1000 genes (high and low) for all principal components (PC1-31) of the LgPCA.\u00a0The dataset is derived from genes annotated in GENCODE18. Raw gene-level loadings for each principal component are available for download as a TSV file in <a href=\"#SD3-data\">Supplementary file 3</a>. (<b>F</b>)\u00a0Gene Ontology (GO) terms and the genes underlying them for organ and tissue-specific transcriptomic signatures from the extremes of the LgPCA.\u00a0GO terms were identified as enriched in extreme scoring genes (annotated in GENCODE 18) in the principal components (PCs) of the LgPCA. Due to the very large number of terms returned at p&lt;0.0001 by Wilcoxon test (the topGO 'elim' method, see Materials and methods) an illustrative selection are listed with raw gene-level loadings available for download in <a href=\"#SD3-data\">Supplementary file 3</a>. (<b>G</b>)\u00a0Transcription factors in the extremes of the LgPCA and their links to developmental morbidity.\u00a0The most extreme 1000 annotated genes (GENCODE 18) of the LgPCA dataset were filtered for transcription factors based on KEGG and PHANTOM5 annotations and for read counts &gt;500. To identify disease associations each gene was entered as a search term in OMIM (<a href=\"http://www.ncbi.nlm.nih.gov/omim\">www.ncbi.nlm.nih.gov/omim</a>) and in PubMed. Batch queries were undertaken at Mouse Genome Informatics (MGI, <a href=\"http://www.informatics.jax.org\">www.informatics.jax.org</a>) with 'Mammalian phenotype' as the output.\u00a0(<b>H</b>) LgPCA predictions of causal genes for critical regions in either solved or unsolved developmental disorders.\u00a0Fifty-three developmental disorders (Column A, 'solved') with causally associated transcription factors identified in the appropriate transcriptomic signature of <a href=\"#SD1-data\">Supplementary file 1G</a> were originally defined by critical regions (Column C with hyperlink). These critical regions were identified by searching OMIM and usually derived from mapping data on affected families or chromosomal deletions in affected patients. Larger critical regions were preferentially selected to test more meaningfully whether the LgPCA model could have pinpointed the causal gene based solely on transcriptomic signatures that involved an affected organ(s) or tissue(s) (Column B). The average critical region was 13.7\u00a0Mb (Column D) and contained an average of 111 protein-coding genes (Column E; identified from searching BIOMART on ENSEMBL). In 48/53 instances (91%), LgPCA narrowed the field down to three or fewer transcription factors and in 37 instances (73%) excluded all except the correct transcription factor. Therefore, the same approach was applied to 13 unsolved developmental disorders (mostly deletion syndromes) with predictions made in each case for any type of protein-coding gene (Column H) and transcription factor(s) (Column I). In many instances the transcription factor in Column I possesses an appropriate mutant mouse phenotype. (<b>I</b>)\u00a06251 unannotated transcripts identified during human organogenesis.\u00a0These are the 6251 novel and distinct transcripts underlying <a href=\"#fig4\">Figure 4</a> of the main text, which also describes the transcript classification: Anti-sense (AS), Overlapping (OT), Bidirectional (BI), Long-intergenic non-coding (LINC) and / or Transcripts of uncertain coding potential (TUCP) (based on <a href=\"#bib19\">Mattick and Rinn, 2015</a>). Intergenic transcripts are numbered sequentially within each chromosome. Exon lengths and starts (blocks) are recorded here in UCSC BED12 format. Correlations in expression profile were calculated for annotated genes with transcript transcriptional start sites situated within 1\u00a0Mb of the novel transcript TSS; the total number of genes in this window is listed. Columns AF-AT (organs and tissues) represent mean, quantile-normalised read counts across tissue replicates. Correlations (and distance) are shown for the closest, best correlated or best anti-correlated genes and were generated using only embryonic RNA-seq data. The pipeline to generate transcripts, distinguish them from previous annotations, name, characterise and filter is described in the Materials and methods. (<b>J</b>)\u00a0NIH roadmap samples (<a href=\"#bib21\">Kundaje et al., 2015</a>) used in this study."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-15657-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp1-v1.xlsx", 
                 "filename": "elife-15657-supp1-v1.xlsx"
             }, 
             {
@@ -674,8 +954,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Gene level non-normalised RNA-seq read counts by sample for 42,423 gene annotations in GENCODE18.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Gene details are given plus the minimum, maximum, median and standard deviation of read counts. Additionally, tissue-specificity is scored using Tau (<a href=\"#bib28\">Yanai et al., 2005</a>) where \u20180\u2019 is equally expressed across all organs and tissues and \u20181\u2019 indicates absolute specificity to one site."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-15657-supp2-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp2-v1.zip", 
                 "filename": "elife-15657-supp2-v1.zip"
             }, 
             {
@@ -683,8 +969,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "LgPCA scores.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Raw gene-level scores for each principal component of the LgPCA."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-15657-supp3-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp3-v1.zip", 
                 "filename": "elife-15657-supp3-v1.zip"
             }, 
             {
@@ -692,8 +984,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Unfiltered novel transcripts.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Prior to filtering a total of 9180 transcripts were detected during human organogenesis that are not annotated in GENCODE 18. The 6251 transcripts summarised in <a href=\"#fig4\">Figure 4</a> of the main text and listed in <a href=\"#SD1-data\">Supplementary file 1I</a> (Excel file) are marked by column \u2018filter_score\u2019. The data include quantile normalized read counts for all embryonic samples in this study and a mean for each organ or tissue type. In addition to the correlations in <a href=\"#SD1-data\">Supplementary file 1I</a>, the distances to, and correlations with, both the closest upstream transcription termination site (TTS) and downstream transcription start sites (TSS) of adjacent, same-strand genes are given to aid filtering for potential 5\u2019 and 3\u2019 run-ons. For comparison, the NIH Roadmap sample (adult and fetal) with most reads for each novel transcript is listed separately."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-15657-supp4-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp4-v1.zip", 
                 "filename": "elife-15657-supp4-v1.zip"
             }, 
             {
@@ -701,8 +999,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "Transcription factor atlas of human organogenesis (high resolution).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "High resolution version of <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> where each individual transcription factor is text searchable. (Please note that this opens at 25 x 200 inches / 64 x 508 cm)."
+                    }
+                ], 
                 "mediaType": "application/pdf", 
-                "uri": "elife-15657-supp5-v1.pdf", 
+                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-supp5-v1.pdf", 
                 "filename": "elife-15657-supp5-v1.pdf"
             }
         ], 
@@ -739,7 +1043,8 @@
                     ], 
                     "title": "An integrative transcriptomic atlas of organogenesis in human embryos", 
                     "details": "Publicly available at EBI ArrayExpress (accession no: E-MTAB-3928)", 
-                    "uri": "http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3928/"
+                    "uri": "https://publishing-cdn.elifesciences.org/15657/http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3928/", 
+                    "filename": ""
                 }
             ], 
             "used": [
@@ -770,7 +1075,8 @@
                     ], 
                     "title": "TEAD and YAP regulate the enhancer network of human embryonic pancreatic progenitors", 
                     "details": "Publicly available at EBI ArrayExpress (accession no: E-MTAB-3061)", 
-                    "uri": "http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3061/"
+                    "uri": "https://publishing-cdn.elifesciences.org/15657/http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3061/", 
+                    "filename": ""
                 }
             ]
         }, 
@@ -829,7 +1135,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-15657-fig1-v1", 
+                        "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig1-v1", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -844,7 +1150,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig1-figsupp1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig1-figsupp1-v1", 
+                                "filename": "elife-15657-fig1-figsupp1-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -859,7 +1166,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig1-figsupp2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig1-figsupp2-v1", 
+                                "filename": "elife-15657-fig1-figsupp2-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -874,7 +1182,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig1-figsupp3-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig1-figsupp3-v1", 
+                                "filename": "elife-15657-fig1-figsupp3-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -889,7 +1198,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig1-figsupp4-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig1-figsupp4-v1", 
+                                "filename": "elife-15657-fig1-figsupp4-v1"
                             }, 
                             {
                                 "type": "image", 
@@ -904,9 +1214,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig1-figsupp5-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig1-figsupp5-v1", 
+                                "filename": "elife-15657-fig1-figsupp5-v1"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-15657-fig1-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -929,7 +1241,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-15657-fig2-v1", 
+                        "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig2-v1", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -944,9 +1256,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig2-figsupp1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig2-figsupp1-v1", 
+                                "filename": "elife-15657-fig2-figsupp1-v1"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-15657-fig2-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -965,7 +1279,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-15657-fig3-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig3-v1", 
+                        "filename": "elife-15657-fig3-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -988,7 +1303,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-15657-fig4-v1", 
+                        "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig4-v1", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -1003,9 +1318,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-15657-fig4-figsupp1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/15657/elife-15657-fig4-figsupp1-v1", 
+                                "filename": "elife-15657-fig4-figsupp1-v1"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-15657-fig4-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1140,7 +1457,8 @@
                 ], 
                 "title": "Bioconductor", 
                 "details": "Bioconductor, topGO: topGO: Enrichment Analysis for Gene Ontology, http://bioconductor.org/packages/topGO/", 
-                "uri": "http://bioconductor.org/packages/topGO/"
+                "uri": "https://publishing-cdn.elifesciences.org/15657/http://bioconductor.org/packages/topGO/", 
+                "filename": ""
             }, 
             {
                 "type": "unknown", 
@@ -1157,7 +1475,8 @@
                 ], 
                 "title": "Bioconductor", 
                 "details": "Bioconductor, preprocessCore: A Collection of Pre-Processing Functions, http://bioconductor.org/packages/preprocessCore/", 
-                "uri": "http://bioconductor.org/packages/preprocessCore/"
+                "uri": "https://publishing-cdn.elifesciences.org/15657/http://bioconductor.org/packages/preprocessCore/", 
+                "filename": ""
             }, 
             {
                 "type": "journal", 

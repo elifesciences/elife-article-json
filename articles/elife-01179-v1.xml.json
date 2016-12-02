@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.01179", 
         "authorLine": "Joshua G Dunn et al", 
         "title": "Ribosome profiling reveals pervasive and regulated stop codon readthrough in <i>Drosophila melanogaster</i>", 
-        "published": "2013-12-03T00:00:00", 
-        "versionDate": "2013-12-03T00:00:00", 
+        "published": "2013-12-03T00:00:00Z", 
+        "versionDate": "2013-12-03T00:00:00Z", 
         "volume": 2, 
         "elocationId": "e01179", 
         "pdf": "https://publishing-cdn.elifesciences.org/01179/elife-01179-v1.pdf", 
@@ -332,14 +332,131 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joshua G Dunn", 
+                                "index": "Dunn, Joshua G"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Catherine K Foo", 
+                                "index": "Foo, Catherine K"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Jonathan S Weissman", 
+                                "index": "Weissman, Jonathan S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "Graduate Research Fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joshua G Dunn", 
+                                "index": "Dunn, Joshua G"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM061107", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nicolette G Belletier", 
+                                "index": "Belletier, Nicolette G"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Elizabeth R Gavis", 
+                                "index": "Gavis, Elizabeth R"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P50 GM102706", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joshua G Dunn", 
+                                "index": "Dunn, Joshua G"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Catherine K Foo", 
+                                "index": "Foo, Catherine K"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Jonathan S Weissman", 
+                                "index": "Weissman, Jonathan S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.01179.023", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Alignment statistics.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Provides statistics on read alignments by sample and genomic region (e.g., CDS, 5\u2019 UTR, 3\u2019 UTR, intergenic, etc; <b>A</b>), as well as by sample and alignment type (e.g., chromosomal, spliced, unaligned; <b>B</b>)."
+                    }
+                ], 
                 "mediaType": "application/xls", 
-                "uri": "elife-01179-supp1-v1.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-supp1-v1.xls", 
                 "filename": "elife-01179-supp1-v1.xls"
             }, 
             {
@@ -347,8 +464,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Oligonucleotides used in this study.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "For readers who wish to implement the <i>Drosophila</i> ribosome profiling protocol."
+                    }
+                ], 
                 "mediaType": "application/xls", 
-                "uri": "elife-01179-supp2-v1.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-supp2-v1.xls", 
                 "filename": "elife-01179-supp2-v1.xls"
             }
         ], 
@@ -375,7 +498,8 @@
                     ], 
                     "title": "Ribosome profiling reveals pervasive and regulated stop codon readthrough in <i>Drosophila melanogaster</i>", 
                     "details": "Publicly available at NCBI GEO (<a href=\"http://www.ncbi.nlm.nih.gov/geo/\">http://www.ncbi.nlm.nih.gov/geo/</a>).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49197"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49197", 
+                    "filename": "acc.cgi?acc=GSE49197"
                 }, 
                 {
                     "id": "dataro2", 
@@ -419,7 +543,8 @@
                     ], 
                     "title": "Data from: Ribosome profiling reveals pervasive and regulated stop codon readthrough in <i>Drosophila melanogaster</i>", 
                     "details": "Supplementary tables 1\u20134 publicly available at Dryad (<a href=\"http://www.datadryad.org/\">http://www.datadryad.org</a>).", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.6nr73"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://dx.doi.org/10.5061/dryad.6nr73", 
+                    "filename": "dryad.6nr73"
                 }
             ], 
             "used": [
@@ -434,7 +559,8 @@
                     ], 
                     "title": "Data from: 50 Genomes - release 1.0", 
                     "details": "Freely available online. Downloaded from Ensembl on 23 August.", 
-                    "uri": "ftp://ftp.ensembl.org/pub/release-67/variation/gvf/drosophila_melanogaster/Drosophila_melanogaster.gvf.gz"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/ftp://ftp.ensembl.org/pub/release-67/variation/gvf/drosophila_melanogaster/Drosophila_melanogaster.gvf.gz", 
+                    "filename": "Drosophila_melanogaster.gvf.gz"
                 }, 
                 {
                     "id": "dataro4", 
@@ -446,7 +572,8 @@
                     ], 
                     "title": "Data from: <i>D. melanogaster</i> genome annotation revision 5.43", 
                     "details": "Freely available online.", 
-                    "uri": "ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.43_FB2012_01/gff/dmel-all-no-analysis-r5.43.gff.gz"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.43_FB2012_01/gff/dmel-all-no-analysis-r5.43.gff.gz", 
+                    "filename": "dmel-all-no-analysis-r5.43.gff.gz"
                 }, 
                 {
                     "id": "dataro5", 
@@ -511,7 +638,8 @@
                     ], 
                     "title": "Data from: Evidence of abundant stop codon readthrough in <i>Drosophila</i> and other metazoa (<i>Genome Res.</i> 2011 21: 2096-2113)", 
                     "details": "Freely available online through the <i>Genome Research</i> Open Access option (<a href=\"http://genome.cshlp.org/content/suppl/2011/09/28/gr.119974.110.DC1/Data1_DmelReadthroughCandidates.txt\">Supp Data1.txt</a>).", 
-                    "uri": "http://genome.cshlp.org/content/suppl/2011/09/28/gr.119974.110.DC1/Data1_DmelReadthroughCandidates.txt"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://genome.cshlp.org/content/suppl/2011/09/28/gr.119974.110.DC1/Data1_DmelReadthroughCandidates.txt", 
+                    "filename": "Data1_DmelReadthroughCandidates.txt"
                 }, 
                 {
                     "id": "dataro6", 
@@ -548,7 +676,8 @@
                     ], 
                     "title": "Data from: Global analyses of mRNA translational control during early <i>Drosophila</i> embryogenesis (<i>Genome Biology</i> doi:10.1186/gb-2007-8-4-r63)", 
                     "details": "Open data from <i>Genome Biology</i> (Additional data file 1).", 
-                    "uri": "http://genomebiology.com/content/supplementary/gb-2007-8-4-r63-s1.xls"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://genomebiology.com/content/supplementary/gb-2007-8-4-r63-s1.xls", 
+                    "filename": "gb-2007-8-4-r63-s1.xls"
                 }, 
                 {
                     "id": "dataro7", 
@@ -561,7 +690,8 @@
                     ], 
                     "title": "Data from: Genome Release R64-1-1 and corresponding gene annotation", 
                     "details": "Freely available online. Downloaded 22 January.", 
-                    "uri": "http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff", 
+                    "filename": "saccharomyces_cerevisiae.gff"
                 }
             ]
         }, 
@@ -575,8 +705,8 @@
         "doi": "10.7554/eLife.01179", 
         "authorLine": "Joshua G Dunn et al", 
         "title": "Ribosome profiling reveals pervasive and regulated stop codon readthrough in <i>Drosophila melanogaster</i>", 
-        "published": "2013-12-03T00:00:00", 
-        "versionDate": "2013-12-03T00:00:00", 
+        "published": "2013-12-03T00:00:00Z", 
+        "versionDate": "2013-12-03T00:00:00Z", 
         "volume": 2, 
         "elocationId": "e01179", 
         "pdf": "https://publishing-cdn.elifesciences.org/01179/elife-01179-v1.pdf", 
@@ -895,14 +1025,131 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joshua G Dunn", 
+                                "index": "Dunn, Joshua G"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Catherine K Foo", 
+                                "index": "Foo, Catherine K"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Jonathan S Weissman", 
+                                "index": "Weissman, Jonathan S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "Graduate Research Fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joshua G Dunn", 
+                                "index": "Dunn, Joshua G"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM061107", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nicolette G Belletier", 
+                                "index": "Belletier, Nicolette G"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Elizabeth R Gavis", 
+                                "index": "Gavis, Elizabeth R"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P50 GM102706", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joshua G Dunn", 
+                                "index": "Dunn, Joshua G"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Catherine K Foo", 
+                                "index": "Foo, Catherine K"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Jonathan S Weissman", 
+                                "index": "Weissman, Jonathan S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.01179.023", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Alignment statistics.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Provides statistics on read alignments by sample and genomic region (e.g., CDS, 5\u2019 UTR, 3\u2019 UTR, intergenic, etc; <b>A</b>), as well as by sample and alignment type (e.g., chromosomal, spliced, unaligned; <b>B</b>)."
+                    }
+                ], 
                 "mediaType": "application/xls", 
-                "uri": "elife-01179-supp1-v1.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-supp1-v1.xls", 
                 "filename": "elife-01179-supp1-v1.xls"
             }, 
             {
@@ -910,8 +1157,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Oligonucleotides used in this study.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "For readers who wish to implement the <i>Drosophila</i> ribosome profiling protocol."
+                    }
+                ], 
                 "mediaType": "application/xls", 
-                "uri": "elife-01179-supp2-v1.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-supp2-v1.xls", 
                 "filename": "elife-01179-supp2-v1.xls"
             }
         ], 
@@ -938,7 +1191,8 @@
                     ], 
                     "title": "Ribosome profiling reveals pervasive and regulated stop codon readthrough in <i>Drosophila melanogaster</i>", 
                     "details": "Publicly available at NCBI GEO (<a href=\"http://www.ncbi.nlm.nih.gov/geo/\">http://www.ncbi.nlm.nih.gov/geo/</a>).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49197"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49197", 
+                    "filename": "acc.cgi?acc=GSE49197"
                 }, 
                 {
                     "id": "dataro2", 
@@ -982,7 +1236,8 @@
                     ], 
                     "title": "Data from: Ribosome profiling reveals pervasive and regulated stop codon readthrough in <i>Drosophila melanogaster</i>", 
                     "details": "Supplementary tables 1\u20134 publicly available at Dryad (<a href=\"http://www.datadryad.org/\">http://www.datadryad.org</a>).", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.6nr73"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://dx.doi.org/10.5061/dryad.6nr73", 
+                    "filename": "dryad.6nr73"
                 }
             ], 
             "used": [
@@ -997,7 +1252,8 @@
                     ], 
                     "title": "Data from: 50 Genomes - release 1.0", 
                     "details": "Freely available online. Downloaded from Ensembl on 23 August.", 
-                    "uri": "ftp://ftp.ensembl.org/pub/release-67/variation/gvf/drosophila_melanogaster/Drosophila_melanogaster.gvf.gz"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/ftp://ftp.ensembl.org/pub/release-67/variation/gvf/drosophila_melanogaster/Drosophila_melanogaster.gvf.gz", 
+                    "filename": "Drosophila_melanogaster.gvf.gz"
                 }, 
                 {
                     "id": "dataro4", 
@@ -1009,7 +1265,8 @@
                     ], 
                     "title": "Data from: <i>D. melanogaster</i> genome annotation revision 5.43", 
                     "details": "Freely available online.", 
-                    "uri": "ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.43_FB2012_01/gff/dmel-all-no-analysis-r5.43.gff.gz"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.43_FB2012_01/gff/dmel-all-no-analysis-r5.43.gff.gz", 
+                    "filename": "dmel-all-no-analysis-r5.43.gff.gz"
                 }, 
                 {
                     "id": "dataro5", 
@@ -1074,7 +1331,8 @@
                     ], 
                     "title": "Data from: Evidence of abundant stop codon readthrough in <i>Drosophila</i> and other metazoa (<i>Genome Res.</i> 2011 21: 2096-2113)", 
                     "details": "Freely available online through the <i>Genome Research</i> Open Access option (<a href=\"http://genome.cshlp.org/content/suppl/2011/09/28/gr.119974.110.DC1/Data1_DmelReadthroughCandidates.txt\">Supp Data1.txt</a>).", 
-                    "uri": "http://genome.cshlp.org/content/suppl/2011/09/28/gr.119974.110.DC1/Data1_DmelReadthroughCandidates.txt"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://genome.cshlp.org/content/suppl/2011/09/28/gr.119974.110.DC1/Data1_DmelReadthroughCandidates.txt", 
+                    "filename": "Data1_DmelReadthroughCandidates.txt"
                 }, 
                 {
                     "id": "dataro6", 
@@ -1111,7 +1369,8 @@
                     ], 
                     "title": "Data from: Global analyses of mRNA translational control during early <i>Drosophila</i> embryogenesis (<i>Genome Biology</i> doi:10.1186/gb-2007-8-4-r63)", 
                     "details": "Open data from <i>Genome Biology</i> (Additional data file 1).", 
-                    "uri": "http://genomebiology.com/content/supplementary/gb-2007-8-4-r63-s1.xls"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://genomebiology.com/content/supplementary/gb-2007-8-4-r63-s1.xls", 
+                    "filename": "gb-2007-8-4-r63-s1.xls"
                 }, 
                 {
                     "id": "dataro7", 
@@ -1124,7 +1383,8 @@
                     ], 
                     "title": "Data from: Genome Release R64-1-1 and corresponding gene annotation", 
                     "details": "Freely available online. Downloaded 22 January.", 
-                    "uri": "http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
+                    "uri": "https://publishing-cdn.elifesciences.org/01179/http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff", 
+                    "filename": "saccharomyces_cerevisiae.gff"
                 }
             ]
         }, 
@@ -1232,7 +1492,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig1-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig1-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1247,7 +1507,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig1-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig1-figsupp1-v1.tif", 
+                                        "filename": "elife-01179-fig1-figsupp1-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1262,7 +1523,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig1-figsupp2-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig1-figsupp2-v1.tif", 
+                                        "filename": "elife-01179-fig1-figsupp2-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1277,7 +1539,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig1-figsupp3-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig1-figsupp3-v1.tif", 
+                                        "filename": "elife-01179-fig1-figsupp3-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1292,9 +1555,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig1-figsupp4-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig1-figsupp4-v1.tif", 
+                                        "filename": "elife-01179-fig1-figsupp4-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01179-fig1-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1328,7 +1593,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig2-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig2-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1343,7 +1608,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig2-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig2-figsupp1-v1.tif", 
+                                        "filename": "elife-01179-fig2-figsupp1-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1358,7 +1624,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig2-figsupp2-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig2-figsupp2-v1.tif", 
+                                        "filename": "elife-01179-fig2-figsupp2-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1373,9 +1640,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig2-figsupp3-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig2-figsupp3-v1.tif", 
+                                        "filename": "elife-01179-fig2-figsupp3-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01179-fig2-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1409,7 +1678,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig3-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig3-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1424,9 +1693,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig3-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig3-figsupp1-v1.tif", 
+                                        "filename": "elife-01179-fig3-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01179-fig3-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1460,7 +1731,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig4-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig4-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1475,9 +1746,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig4-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig4-figsupp1-v1.tif", 
+                                        "filename": "elife-01179-fig4-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01179-fig4-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1569,7 +1842,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig5-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig5-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1584,9 +1857,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig5-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig5-figsupp1-v1.tif", 
+                                        "filename": "elife-01179-fig5-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01179-fig5-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1620,7 +1895,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig6-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig6-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1635,9 +1910,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01179-fig6-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig6-figsupp1-v1.tif", 
+                                        "filename": "elife-01179-fig6-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01179-fig6-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1742,7 +2019,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01179-fig7-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01179/elife-01179-fig7-v1.tif", 
+                                "filename": "elife-01179-fig7-v1.tif"
                             }
                         ]
                     }

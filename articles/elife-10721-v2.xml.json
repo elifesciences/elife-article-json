@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.10721", 
         "authorLine": "Mehmet Neset \u00d6zel et al", 
         "title": "Filopodial dynamics and growth cone stabilization in <i>Drosophila</i> visual circuit development", 
-        "published": "2015-10-29T00:00:00", 
+        "published": "2015-10-29T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e10721", 
         "pdf": "https://publishing-cdn.elifesciences.org/10721/elife-10721-v2.pdf", 
@@ -250,14 +250,131 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000053", 
+                        "name": [
+                            "National Eye Institute"
+                        ]
+                    }, 
+                    "awardId": "EY018884", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "P Robin Hiesinger", 
+                                "index": "Hiesinger, P Robin"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "Freie Universit\u00e4t Berlin"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "P Robin Hiesinger", 
+                                "index": "Hiesinger, P Robin"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "University of Leuven"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/501100004727", 
+                        "name": [
+                            "Vlaams Instituut voor Biotechnologie"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/501100003043", 
+                        "name": [
+                            "EMBO"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "name": [
+                            "Marie Curie program"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10721.026", 
                 "id": "SD1-data", 
                 "label": "Source code 1.", 
                 "title": "The MATLAB function for analysis of the filopodial dynamics.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This function takes as input the Excel files including the length and orientation data for all filopodia segmented across 60 time points within a 1 hour period. \"TrackID\"s are also required to identify the same filopodia across different time points. The function then calculates for each TrackID the number of extension and retraction events it experienced during that filopodium's lifetime, as well as the mean and standard deviation for extension, retraction and combined speeds. The user is asked for an input (in \u03bcm) defining the amount of extension/retraction length (default=0.3 \u03bcm) that will be considered insignificant, i.e. the filopodium will be assumed static for that 1 minute step. The function then outputs the number of extension and retraction events above that threshold (\"filtered\"), as well as speeds calculated from only these (above-threshold) events. The function also calculates the mean and standard deviation of a filopodium's length (\u03bcm) during its lifetime. These parameters are written in a new Excel file. Finally, the function creates the heat-maps used (and explained) in <a href=\"#fig4\">Figure 4</a>."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-10721-code1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-code1.zip", 
                 "filename": "elife-10721-code1.zip"
             }
         ], 
@@ -286,7 +403,8 @@
                     ], 
                     "title": "Filopodial dynamics and growth cone stabilization in Drosophila visual circuit development", 
                     "details": "Publicly available at Zenodo (https://zenodo.org)", 
-                    "uri": "https://zenodo.org/record/33141"
+                    "uri": "https://publishing-cdn.elifesciences.org/10721/https://zenodo.org/record/33141", 
+                    "filename": "33141"
                 }
             ]
         }, 
@@ -300,7 +418,7 @@
         "doi": "10.7554/eLife.10721", 
         "authorLine": "Mehmet Neset \u00d6zel et al", 
         "title": "Filopodial dynamics and growth cone stabilization in <i>Drosophila</i> visual circuit development", 
-        "published": "2015-10-29T00:00:00", 
+        "published": "2015-10-29T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e10721", 
         "pdf": "https://publishing-cdn.elifesciences.org/10721/elife-10721-v2.pdf", 
@@ -538,14 +656,131 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000053", 
+                        "name": [
+                            "National Eye Institute"
+                        ]
+                    }, 
+                    "awardId": "EY018884", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "P Robin Hiesinger", 
+                                "index": "Hiesinger, P Robin"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "Freie Universit\u00e4t Berlin"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "P Robin Hiesinger", 
+                                "index": "Hiesinger, P Robin"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "University of Leuven"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/501100004727", 
+                        "name": [
+                            "Vlaams Instituut voor Biotechnologie"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/501100003043", 
+                        "name": [
+                            "EMBO"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "name": [
+                            "Marie Curie program"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Bassem A Hassan", 
+                                "index": "Hassan, Bassem A"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10721.026", 
                 "id": "SD1-data", 
                 "label": "Source code 1.", 
                 "title": "The MATLAB function for analysis of the filopodial dynamics.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This function takes as input the Excel files including the length and orientation data for all filopodia segmented across 60 time points within a 1 hour period. \"TrackID\"s are also required to identify the same filopodia across different time points. The function then calculates for each TrackID the number of extension and retraction events it experienced during that filopodium's lifetime, as well as the mean and standard deviation for extension, retraction and combined speeds. The user is asked for an input (in \u03bcm) defining the amount of extension/retraction length (default=0.3 \u03bcm) that will be considered insignificant, i.e. the filopodium will be assumed static for that 1 minute step. The function then outputs the number of extension and retraction events above that threshold (\"filtered\"), as well as speeds calculated from only these (above-threshold) events. The function also calculates the mean and standard deviation of a filopodium's length (\u03bcm) during its lifetime. These parameters are written in a new Excel file. Finally, the function creates the heat-maps used (and explained) in <a href=\"#fig4\">Figure 4</a>."
+                    }
+                ], 
                 "mediaType": "application/zip", 
-                "uri": "elife-10721-code1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-code1.zip", 
                 "filename": "elife-10721-code1.zip"
             }
         ], 
@@ -574,7 +809,8 @@
                     ], 
                     "title": "Filopodial dynamics and growth cone stabilization in Drosophila visual circuit development", 
                     "details": "Publicly available at Zenodo (https://zenodo.org)", 
-                    "uri": "https://zenodo.org/record/33141"
+                    "uri": "https://publishing-cdn.elifesciences.org/10721/https://zenodo.org/record/33141", 
+                    "filename": "33141"
                 }
             ]
         }, 
@@ -658,7 +894,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig1-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig1-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -673,7 +909,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig1-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig1-figsupp1-v2.tif", 
+                                        "filename": "elife-10721-fig1-figsupp1-v2.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -688,9 +925,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig1-figsupp2-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig1-figsupp2-v2.tif", 
+                                        "filename": "elife-10721-fig1-figsupp2-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10721-fig1-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -708,7 +947,26 @@
                                         "text": "All photoreceptors are labeled with CD4-tdGFP. Two live imaging sessions (30\u00a0min intervals) starting at P + 24% (19\u2009hr) and at P + 40% (18\u2009hr) are shown. Four developmental processes (i) lamina rotation (ii) lamina column expansion (iii) first-stage separation of R7 and R8 terminals and iv) Final layer formation of R7 and R8 terminals, are shown."
                                     }
                                 ], 
-                                "uri": "elife-10721-media1.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media1.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media1.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media1.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media1.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media1.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media1.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media1.webm"
+                                    }
+                                ]
                             }
                         ]
                     }, 
@@ -734,7 +992,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig2-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig2-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -749,7 +1007,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig2-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig2-figsupp1-v2.tif", 
+                                        "filename": "elife-10721-fig2-figsupp1-v2.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -764,9 +1023,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig2-figsupp2-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig2-figsupp2-v2.tif", 
+                                        "filename": "elife-10721-fig2-figsupp2-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10721-fig2-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -800,7 +1061,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig3-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig3-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -815,9 +1076,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig3-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig3-figsupp1-v2.tif", 
+                                        "filename": "elife-10721-fig3-figsupp1-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10721-fig3-v2.tif"
                             }, 
                             {
                                 "type": "video", 
@@ -831,7 +1094,26 @@
                                         "text": "All photoreceptors are labeled with myr-tdTomato and R7 photoreceptors are sparsely labeled with CD4-tdGFP using GMR-FLP. Three live imaging sessions (30\u00a0min intervals) starting at P + 22% (21\u2009hr), P + 42% (19\u2009hr) and P + 55% (15\u2009hr) are shown. The development of the filopodial structure of R7 growth cones are shown throughout layer and synapse formation."
                                     }
                                 ], 
-                                "uri": "elife-10721-media2.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media2.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media2.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media2.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media2.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media2.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media2.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media2.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -869,7 +1151,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig4-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig4-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -884,7 +1166,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig4-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig4-figsupp1-v2.tif", 
+                                        "filename": "elife-10721-fig4-figsupp1-v2.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -899,9 +1182,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig4-figsupp2-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig4-figsupp2-v2.tif", 
+                                        "filename": "elife-10721-fig4-figsupp2-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10721-fig4-v2.tif"
                             }, 
                             {
                                 "type": "video", 
@@ -915,7 +1200,26 @@
                                         "text": "All photoreceptors are labeled with myr-mRFP and R7 photoreceptors are sparsely labeled with CD4-tdGFP using GMR-FLP. Live imaging started P + 28% and continued for 20\u2009hr. We used an alternating slow (30min intervals) imaging of the general structure and fast (1min interval) imaging of two growth cones at higher resolution at three different time points. Fast filopodial dynamics of the same two growth cones at P + 28%, P + 40% and P + 55% are shown."
                                     }
                                 ], 
-                                "uri": "elife-10721-media3.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media3.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media3.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media3.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media3.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media3.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media3.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media3.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -929,7 +1233,26 @@
                                         "text": "All photoreceptors are labeled with myr-mRFP and R7 photoreceptors are sparsely labeled with CD4-tdGFP using GMR-FLP. Two live imaging sessions starting at P + 40% (22\u2009hr) and P + 52% (9\u2009hr) are shown. We used an alternating slow (30\u00a0min intervals) imaging of the general structure and fast (1\u00a0min interval) imaging of two growth cones at higher resolution at different time points. Fast filopodial dynamics of the same two growth cones at P + 40%, P + 50% and P + 60% and fast filopodial dynamics of another three growth cones at P + 52% and P + 62% are shown."
                                     }
                                 ], 
-                                "uri": "elife-10721-media4.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media4.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media4.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media4.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media4.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media4.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media4.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media4.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -967,7 +1290,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig5-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig5-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -982,9 +1305,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig5-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig5-figsupp1-v2.tif", 
+                                        "filename": "elife-10721-fig5-figsupp1-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10721-fig5-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1002,7 +1327,26 @@
                                         "text": "Two live imaging experiments are shown. (1) All photoreceptors are labeled with myr-mRFP and R7 photoreceptors are sparsely labeled with CD4-tdGFP using GMR-FLP. Imaging started at P + 30% and continued for 18\u2009hr, with 30\u00a0min intervals. Two R7 growth cone tips (red arrow) were followed. At the 2.5\u2009hr mark a varicosity starts to develop from the axon shaft and expands over the next 15\u2009hr, contributing to the elongation of the R7 axon. Note that being able to follow the same growth cone tip based on its unique filopodial structure allows us to verify lack of active extension without a stationary landmark. (2) R7 and R8 photoreceptors were sparsely labeled with CD4-tdGP using hs-FLP. Imaging started at P42% and continued for 21\u2009hr. We used an alternating slow (30\u00a0min intervals) imaging of the general structure and fast (1\u00a0min interval) imaging of two neighboring R7 and R8 growth cones at higher resolution at different time points. R8 axon relocates to its final layer by sending a single filopodia proximally, which is initially very dynamic but later stabilizes and expands in the new layer, forming the new R8 terminal. In contrast, R7 terminal elongates along the axon shaft, but no directed extension activity is observed on the growth cone."
                                     }
                                 ], 
-                                "uri": "elife-10721-media5.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media5.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media5.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media5.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media5.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media5.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media5.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media5.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1040,7 +1384,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig6-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig6-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1055,9 +1399,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10721-fig6-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig6-figsupp1-v2.tif", 
+                                        "filename": "elife-10721-fig6-figsupp1-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10721-fig6-v2.tif"
                             }, 
                             {
                                 "type": "video", 
@@ -1071,7 +1417,26 @@
                                         "text": "All photoreceptors are labeled with myr-mRFP and approximately 10% of R7 photoreceptors were made mutant for <i>CadN</i> and labeled with CD4-tdGFP using GMR-FLP through MARCM. Three live imaging sessions are shown. (1) Starting at P + 24% (17\u2009hr). R7 axons arrive correctly to their target layer but they gradually retract from it, preceded by growth cone collapse. (2) Starting at P + 53% (20\u2009hr). Retractions continue despite the wild-type photoreceptors reached their final layer configurations. (3) Starting at P + 42% (11\u2009hr). Some of the R7 axons that retracted at the earlier stages re-extend back into the distal medulla. Note that the growth cones are streamlined during active movement but show expansion while the axons attempt to re-innervate various medulla layers."
                                     }
                                 ], 
-                                "uri": "elife-10721-media6.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media6.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media6.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media6.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media6.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media6.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media6.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media6.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1109,7 +1474,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10721-fig7-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/10721/elife-10721-fig7-v2.tif", 
+                                "filename": "elife-10721-fig7-v2.tif"
                             }, 
                             {
                                 "type": "video", 
@@ -1123,7 +1489,26 @@
                                         "text": "Representative wild type and <i>cadN</i> mutant R7 growth cones are shown at P + 28%. Extraction of individual filopodia reveals reduced dynamics over the same time period (1 hr with 1 min time lapse) as shown in the quantifications in <a href=\"#fig7\">Figure 7</a>."
                                     }
                                 ], 
-                                "uri": "elife-10721-media7.mp4"
+                                "width": 640, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media7.jpg", 
+                                "height": 480, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-10721-media7.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media7.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media7.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media7.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-10721-media7.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10721/https://static-movie-usa.glencoesoftware.com/webm/10.7554/970/b87f2247888cf1351064cc8f57ec4e47c48a68f9/elife-10721-media7.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 

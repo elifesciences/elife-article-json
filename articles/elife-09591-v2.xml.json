@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.09591", 
         "authorLine": "Todd Blevins et al", 
         "title": "Identification of Pol IV and RDR2-dependent precursors of 24 nt siRNAs guiding de novo DNA methylation in Arabidopsis", 
-        "published": "2015-10-02T00:00:00", 
+        "published": "2015-10-02T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e09591", 
         "pdf": "https://publishing-cdn.elifesciences.org/09591/elife-09591-v2.pdf", 
@@ -421,14 +421,81 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM077590", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Craig S Pikaard", 
+                                "index": "Pikaard, Craig S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Craig S Pikaard", 
+                                "index": "Pikaard, Craig S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000936", 
+                        "name": [
+                            "Gordon and Betty Moore Foundation"
+                        ]
+                    }, 
+                    "awardId": "GBMF3036", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Craig S Pikaard", 
+                                "index": "Pikaard, Craig S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.09591.018", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Table showing the coordinates and normalized read counts for 24 nt small interfering RNA\u00a0(siRNAs) and P4R2 RNAs detected in wild-type (Col-0), <i>dcl2/3/4, pol IV</i> and <i>rdr2</i> within 100 bp windows.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Data for two independent RNA sequencing\u00a0(RNA-seq) replicates for each genotype are provided."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-09591-supp1-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-supp1-v2.xls", 
                 "filename": "elife-09591-supp1-v2.xls"
             }, 
             {
@@ -436,8 +503,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Pol IV/RDR2-dependent RNAs (P4R2 RNAs) overlap with Pol IV-dependent transcript loci identified by Li et al, 2015.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "P4R2 RNAs detected in the <i>dcl2 dcl3 dcl4</i> (<i>dcl2/3/4</i>) triple mutant were compared to a set of 22 Pol IV-dependent transcript loci verified by reverse transcription-polymerase chain reaction (RT-PCR) in the study of Li et al., 2015. The number of P4R2 RNAs \u2265 26 nt overlapping each Pol IV locus is shown for <i>dcl2/3/4</i> replicate 1 and 2 RNA sequencing\u00a0(RNA-seq) datasets. Unique reads are those that map to only one genomic location. Total reads include reads that can map to two or more genomic loci."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-09591-supp2-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-supp2-v2.xls", 
                 "filename": "elife-09591-supp2-v2.xls"
             }
         ], 
@@ -462,7 +535,8 @@
                     ], 
                     "title": "Pol IV and RDR2-dependent precursors of 24 nt siRNAs", 
                     "details": "Publicly available at the NCBI Sequence Read Archive (Accession no: SRP059814).", 
-                    "uri": "http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?study=SRP059814"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?study=SRP059814", 
+                    "filename": "sra.cgi?study=SRP059814"
                 }, 
                 {
                     "id": "dataro2", 
@@ -483,7 +557,8 @@
                     ], 
                     "title": "Col-0 Rep 1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075815).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070790"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070790", 
+                    "filename": "SRX1070790"
                 }, 
                 {
                     "id": "dataro3", 
@@ -504,7 +579,8 @@
                     ], 
                     "title": "dcl2 dcl3 dcl4 Rep1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075816).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070791"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070791", 
+                    "filename": "SRX1070791"
                 }, 
                 {
                     "id": "dataro4", 
@@ -525,7 +601,8 @@
                     ], 
                     "title": "nrpd1-3 Rep 1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505369).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282091"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282091", 
+                    "filename": "SRX1282091"
                 }, 
                 {
                     "id": "dataro5", 
@@ -546,7 +623,8 @@
                     ], 
                     "title": "rdr2-1 Rep 1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505433).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282116"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282116", 
+                    "filename": "SRX1282116"
                 }, 
                 {
                     "id": "dataro6", 
@@ -567,7 +645,8 @@
                     ], 
                     "title": "Col-0 Rep 2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075819).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070795"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070795", 
+                    "filename": "SRX1070795"
                 }, 
                 {
                     "id": "dataro7", 
@@ -588,7 +667,8 @@
                     ], 
                     "title": "dcl2 dcl3 dcl4 Rep2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075821).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070796"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070796", 
+                    "filename": "SRX1070796"
                 }, 
                 {
                     "id": "dataro8", 
@@ -609,7 +689,8 @@
                     ], 
                     "title": "nrpd1-3 Rep 2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505408).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282096"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282096", 
+                    "filename": "SRX1282096"
                 }, 
                 {
                     "id": "dataro9", 
@@ -630,7 +711,8 @@
                     ], 
                     "title": "rdr2-1 Rep 2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505479).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282131"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282131", 
+                    "filename": "SRX1282131"
                 }
             ]
         }, 
@@ -644,7 +726,7 @@
         "doi": "10.7554/eLife.09591", 
         "authorLine": "Todd Blevins et al", 
         "title": "Identification of Pol IV and RDR2-dependent precursors of 24 nt siRNAs guiding de novo DNA methylation in Arabidopsis", 
-        "published": "2015-10-02T00:00:00", 
+        "published": "2015-10-02T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e09591", 
         "pdf": "https://publishing-cdn.elifesciences.org/09591/elife-09591-v2.pdf", 
@@ -1053,14 +1135,81 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM077590", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Craig S Pikaard", 
+                                "index": "Pikaard, Craig S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Craig S Pikaard", 
+                                "index": "Pikaard, Craig S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000936", 
+                        "name": [
+                            "Gordon and Betty Moore Foundation"
+                        ]
+                    }, 
+                    "awardId": "GBMF3036", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Craig S Pikaard", 
+                                "index": "Pikaard, Craig S"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.09591.018", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Table showing the coordinates and normalized read counts for 24 nt small interfering RNA\u00a0(siRNAs) and P4R2 RNAs detected in wild-type (Col-0), <i>dcl2/3/4, pol IV</i> and <i>rdr2</i> within 100 bp windows.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Data for two independent RNA sequencing\u00a0(RNA-seq) replicates for each genotype are provided."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-09591-supp1-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-supp1-v2.xls", 
                 "filename": "elife-09591-supp1-v2.xls"
             }, 
             {
@@ -1068,8 +1217,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Pol IV/RDR2-dependent RNAs (P4R2 RNAs) overlap with Pol IV-dependent transcript loci identified by Li et al, 2015.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "P4R2 RNAs detected in the <i>dcl2 dcl3 dcl4</i> (<i>dcl2/3/4</i>) triple mutant were compared to a set of 22 Pol IV-dependent transcript loci verified by reverse transcription-polymerase chain reaction (RT-PCR) in the study of Li et al., 2015. The number of P4R2 RNAs \u2265 26 nt overlapping each Pol IV locus is shown for <i>dcl2/3/4</i> replicate 1 and 2 RNA sequencing\u00a0(RNA-seq) datasets. Unique reads are those that map to only one genomic location. Total reads include reads that can map to two or more genomic loci."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-09591-supp2-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-supp2-v2.xls", 
                 "filename": "elife-09591-supp2-v2.xls"
             }
         ], 
@@ -1094,7 +1249,8 @@
                     ], 
                     "title": "Pol IV and RDR2-dependent precursors of 24 nt siRNAs", 
                     "details": "Publicly available at the NCBI Sequence Read Archive (Accession no: SRP059814).", 
-                    "uri": "http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?study=SRP059814"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?study=SRP059814", 
+                    "filename": "sra.cgi?study=SRP059814"
                 }, 
                 {
                     "id": "dataro2", 
@@ -1115,7 +1271,8 @@
                     ], 
                     "title": "Col-0 Rep 1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075815).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070790"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070790", 
+                    "filename": "SRX1070790"
                 }, 
                 {
                     "id": "dataro3", 
@@ -1136,7 +1293,8 @@
                     ], 
                     "title": "dcl2 dcl3 dcl4 Rep1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075816).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070791"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070791", 
+                    "filename": "SRX1070791"
                 }, 
                 {
                     "id": "dataro4", 
@@ -1157,7 +1315,8 @@
                     ], 
                     "title": "nrpd1-3 Rep 1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505369).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282091"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282091", 
+                    "filename": "SRX1282091"
                 }, 
                 {
                     "id": "dataro5", 
@@ -1178,7 +1337,8 @@
                     ], 
                     "title": "rdr2-1 Rep 1", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505433).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282116"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282116", 
+                    "filename": "SRX1282116"
                 }, 
                 {
                     "id": "dataro6", 
@@ -1199,7 +1359,8 @@
                     ], 
                     "title": "Col-0 Rep 2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075819).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070795"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070795", 
+                    "filename": "SRX1070795"
                 }, 
                 {
                     "id": "dataro7", 
@@ -1220,7 +1381,8 @@
                     ], 
                     "title": "dcl2 dcl3 dcl4 Rep2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2075821).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1070796"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1070796", 
+                    "filename": "SRX1070796"
                 }, 
                 {
                     "id": "dataro8", 
@@ -1241,7 +1403,8 @@
                     ], 
                     "title": "nrpd1-3 Rep 2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505408).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282096"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282096", 
+                    "filename": "SRX1282096"
                 }, 
                 {
                     "id": "dataro9", 
@@ -1262,7 +1425,8 @@
                     ], 
                     "title": "rdr2-1 Rep 2", 
                     "details": "Publicly available at NCBI Sequence Read Archive (Accession no: SRR2505479).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/sra/SRX1282131"
+                    "uri": "https://publishing-cdn.elifesciences.org/09591/http://www.ncbi.nlm.nih.gov/sra/SRX1282131", 
+                    "filename": "SRX1282131"
                 }
             ]
         }, 
@@ -1319,7 +1483,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-09591-fig1-v2.tif"
+                        "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig1-v2.tif", 
+                        "filename": "elife-09591-fig1-v2.tif"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1362,7 +1527,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig2-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig2-v2.tif", 
+                                "filename": "elife-09591-fig2-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1428,7 +1594,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig3-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig3-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1443,9 +1609,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-09591-fig3-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig3-figsupp1-v2.tif", 
+                                        "filename": "elife-09591-fig3-figsupp1-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-09591-fig3-v2.tif"
                             }, 
                             {
                                 "type": "image", 
@@ -1460,7 +1628,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig4-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig4-v2.tif", 
+                                "filename": "elife-09591-fig4-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1479,7 +1648,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig5-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig5-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1494,9 +1663,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-09591-fig5-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig5-figsupp1-v2.tif", 
+                                        "filename": "elife-09591-fig5-figsupp1-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-09591-fig5-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1515,7 +1686,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig6-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig6-v2.tif", 
+                                "filename": "elife-09591-fig6-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1545,7 +1717,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig7-v2.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig7-v2.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1560,9 +1732,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-09591-fig7-figsupp1-v2.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig7-figsupp1-v2.tif", 
+                                        "filename": "elife-09591-fig7-figsupp1-v2.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-09591-fig7-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1596,7 +1770,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig8-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig8-v2.tif", 
+                                "filename": "elife-09591-fig8-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1626,7 +1801,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09591-fig9-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig9-v2.tif", 
+                                "filename": "elife-09591-fig9-v2.tif"
                             }
                         ]
                     }, 
@@ -1677,7 +1853,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-09591-fig10-v2.tif"
+                        "uri": "https://publishing-cdn.elifesciences.org/09591/elife-09591-fig10-v2.tif", 
+                        "filename": "elife-09591-fig10-v2.tif"
                     }
                 ]
             }, 
@@ -2168,7 +2345,8 @@
                     }
                 ], 
                 "title": "Pol IV and RDR2- dependent precursors of 24 nt siRNAs NCBI sequence read archive <i>SRP059814, accession PRJNA287854</i>", 
-                "uri": "http://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP059814"
+                "uri": "https://publishing-cdn.elifesciences.org/09591/http://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP059814", 
+                "filename": "?study=SRP059814"
             }, 
             {
                 "type": "journal", 

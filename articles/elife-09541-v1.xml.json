@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.09541", 
         "authorLine": "Melih Sener et al", 
         "title": "Overall energy conversion efficiency of a photosynthetic vesicle", 
-        "published": "2016-08-26T00:00:00", 
-        "versionDate": "2016-08-26T00:00:00", 
+        "published": "2016-08-26T00:00:00Z", 
+        "versionDate": "2016-08-26T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e09541", 
         "pdf": "https://publishing-cdn.elifesciences.org/09541/elife-09541-v1.pdf", 
@@ -270,14 +270,146 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100000268", 
+                        "name": [
+                            "Biotechnology and Biological Sciences Research Council"
+                        ]
+                    }, 
+                    "awardId": "BB/M000265/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "C Neil Hunter", 
+                                "index": "Hunter, C Neil"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000015", 
+                        "name": [
+                            "U.S. Department of Energy"
+                        ]
+                    }, 
+                    "awardId": "DE-SC0001035", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "C Neil Hunter", 
+                                "index": "Hunter, C Neil"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100000781", 
+                        "name": [
+                            "European Research Council"
+                        ]
+                    }, 
+                    "awardId": "338895", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "C Neil Hunter", 
+                                "index": "Hunter, C Neil"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "PHY0822613", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "NIH 9P41GM104601", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "MCB1157615", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.09541.010", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "BChl groups of the chromatophore and the corresponding transition dipole moments needed to determine the effective Hamiltonian: LH2 complexes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(file: Vesicle30BCLdipoleLH2.pdb) Here we provide the transition dipole moments of all 2577 chromatophore BChls defining the effective Hamiltonian in <a href=\"#equ2 equ3\">Equations (2,3)</a> of the main text, needed for evaluation of the excitation transfer rates through <a href=\"#equ4\">Equation (4)</a>. The reader is referred to (<a href=\"#bib12\">Cartron et al., 2014</a>; <a href=\"#bib109\">\u015eener et al., 2007</a>, <a href=\"#bib107\">2010</a>) for the construction of the underlying chromatophore structural model.The three PDB files listed here contain the coordinates for the MG, NB, ND atoms of the BChls in the chromatophore model (Cartron et al., 2014) that define the transition dipole moment unit vectors as discussed in the text and given according to <a href=\"#equ1\">Equation (S1)</a> below. These coordinate files correspond to the following protein complexes: <i>LH2</i> : [Vesicle30BCLdipoleLH2.pdb], <i>dimeric RC-LH1</i> : [Vesicle30BCLdipoleLH1RCdimer.pdb], <i>monomeric RC-LH1</i> : [Vesicle30BCLdipoleLH1RCdimer.pdb], where coordinates of multiple complexes of the same type are concatenated into one file for each complex type.The BChls of the chromatophore can be divided into the following groups: (i) B800 BChls of LH2 : labeled as [resid=307] in the file [Vesicle30BCLdipoleLH2.pdb] (resid is used here as an abbreviation for residue sequence number in the PDB file format); named after the absorption peak of 800 nm; (ii) B850 BChls of LH2 : labeled as [resid=301, 302] in the file [Vesicle30BCLdipoleLH2.pdb]; named after the absorption peak of 850 nm; (iii) B875 BChls of LH1-RC (both monomer and dimer) : labeled as [resid=100-155] in the files [Vesicle30BCLdipoleLH1RCdimer.pdb] and [Vesicle30BCLdipoleLH1RCmonomer.pdb]; named after the absorption peak of 875 nm; (iv) reaction center (RC) BChls of LH1-RC (both monomer and dimer) : labeled as [resid=301, 302, 303, 304] in the files [Vesicle30BCLdipoleLH1RCdimer.pdb] and [Vesicle30BCLdipoleLH1RCmonomer.pdb]; the so-called special pair BChls where electron transport is initiated are labeled by [resid\u00a0=\u00a0302, 303]. Of the aforementioned BChl clusters, the three, namely, LH2 B850, LH1 B875, and RC BChls, form strongly coupled excitonic states; the LH2 B800 BChls do not share excitation energy between themselves, transfering it rapidly (within 0.5 ps) (<a href=\"#bib109\">\u015eener et al., 2007</a>; <a href=\"#bib95\">Ritz et al., 2001</a>) to the B850 ring of the same LH2. The theory of excitation transfer between the BChl clusters listed above is described in Supplementary materials."
+                    }
+                ], 
                 "mediaType": "chemical/x-pdb", 
-                "uri": "elife-09541-supp1-v1.pdb", 
+                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-supp1-v1.pdb", 
                 "filename": "elife-09541-supp1-v1.pdb"
             }, 
             {
@@ -285,8 +417,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "BChl groups of the chromatophore and the corresponding transition dipole moments needed to determine the effective Hamiltonian: RC-LH1 dimer complexes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(file: Vesicle30BCLdipoleLH1RCdimer.pdb) As explained for <a href=\"#SD1-data\">Supplementary file 1</a>, but for BChls belonging to RC-LH1 dimers."
+                    }
+                ], 
                 "mediaType": "chemical/x-pdb", 
-                "uri": "elife-09541-supp2-v1.pdb", 
+                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-supp2-v1.pdb", 
                 "filename": "elife-09541-supp2-v1.pdb"
             }, 
             {
@@ -294,8 +432,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "BChl groups of the chromatophore and the corresponding transition dipole moments needed to determine the effective Hamiltonian: RC-LH1 monomer complexes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(file: Vesicle30BCLdipoleLH1RCmonomer.pdb) As explained for <a href=\"#SD1-data\">Supplementary file 1</a>, but for BChls belonging to RC-LH1 monomers."
+                    }
+                ], 
                 "mediaType": "chemical/x-pdb", 
-                "uri": "elife-09541-supp3-v1.pdb", 
+                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-supp3-v1.pdb", 
                 "filename": "elife-09541-supp3-v1.pdb"
             }
         ], 
@@ -309,8 +453,8 @@
         "doi": "10.7554/eLife.09541", 
         "authorLine": "Melih Sener et al", 
         "title": "Overall energy conversion efficiency of a photosynthetic vesicle", 
-        "published": "2016-08-26T00:00:00", 
-        "versionDate": "2016-08-26T00:00:00", 
+        "published": "2016-08-26T00:00:00Z", 
+        "versionDate": "2016-08-26T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e09541", 
         "pdf": "https://publishing-cdn.elifesciences.org/09541/elife-09541-v1.pdf", 
@@ -567,14 +711,146 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100000268", 
+                        "name": [
+                            "Biotechnology and Biological Sciences Research Council"
+                        ]
+                    }, 
+                    "awardId": "BB/M000265/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "C Neil Hunter", 
+                                "index": "Hunter, C Neil"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000015", 
+                        "name": [
+                            "U.S. Department of Energy"
+                        ]
+                    }, 
+                    "awardId": "DE-SC0001035", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "C Neil Hunter", 
+                                "index": "Hunter, C Neil"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/501100000781", 
+                        "name": [
+                            "European Research Council"
+                        ]
+                    }, 
+                    "awardId": "338895", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "C Neil Hunter", 
+                                "index": "Hunter, C Neil"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "PHY0822613", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "NIH 9P41GM104601", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "MCB1157615", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Klaus Schulten", 
+                                "index": "Schulten, Klaus"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.09541.010", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "BChl groups of the chromatophore and the corresponding transition dipole moments needed to determine the effective Hamiltonian: LH2 complexes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(file: Vesicle30BCLdipoleLH2.pdb) Here we provide the transition dipole moments of all 2577 chromatophore BChls defining the effective Hamiltonian in <a href=\"#equ2 equ3\">Equations (2,3)</a> of the main text, needed for evaluation of the excitation transfer rates through <a href=\"#equ4\">Equation (4)</a>. The reader is referred to (<a href=\"#bib12\">Cartron et al., 2014</a>; <a href=\"#bib109\">\u015eener et al., 2007</a>, <a href=\"#bib107\">2010</a>) for the construction of the underlying chromatophore structural model.The three PDB files listed here contain the coordinates for the MG, NB, ND atoms of the BChls in the chromatophore model (Cartron et al., 2014) that define the transition dipole moment unit vectors as discussed in the text and given according to <a href=\"#equ1\">Equation (S1)</a> below. These coordinate files correspond to the following protein complexes: <i>LH2</i> : [Vesicle30BCLdipoleLH2.pdb], <i>dimeric RC-LH1</i> : [Vesicle30BCLdipoleLH1RCdimer.pdb], <i>monomeric RC-LH1</i> : [Vesicle30BCLdipoleLH1RCdimer.pdb], where coordinates of multiple complexes of the same type are concatenated into one file for each complex type.The BChls of the chromatophore can be divided into the following groups: (i) B800 BChls of LH2 : labeled as [resid=307] in the file [Vesicle30BCLdipoleLH2.pdb] (resid is used here as an abbreviation for residue sequence number in the PDB file format); named after the absorption peak of 800 nm; (ii) B850 BChls of LH2 : labeled as [resid=301, 302] in the file [Vesicle30BCLdipoleLH2.pdb]; named after the absorption peak of 850 nm; (iii) B875 BChls of LH1-RC (both monomer and dimer) : labeled as [resid=100-155] in the files [Vesicle30BCLdipoleLH1RCdimer.pdb] and [Vesicle30BCLdipoleLH1RCmonomer.pdb]; named after the absorption peak of 875 nm; (iv) reaction center (RC) BChls of LH1-RC (both monomer and dimer) : labeled as [resid=301, 302, 303, 304] in the files [Vesicle30BCLdipoleLH1RCdimer.pdb] and [Vesicle30BCLdipoleLH1RCmonomer.pdb]; the so-called special pair BChls where electron transport is initiated are labeled by [resid\u00a0=\u00a0302, 303]. Of the aforementioned BChl clusters, the three, namely, LH2 B850, LH1 B875, and RC BChls, form strongly coupled excitonic states; the LH2 B800 BChls do not share excitation energy between themselves, transfering it rapidly (within 0.5 ps) (<a href=\"#bib109\">\u015eener et al., 2007</a>; <a href=\"#bib95\">Ritz et al., 2001</a>) to the B850 ring of the same LH2. The theory of excitation transfer between the BChl clusters listed above is described in Supplementary materials."
+                    }
+                ], 
                 "mediaType": "chemical/x-pdb", 
-                "uri": "elife-09541-supp1-v1.pdb", 
+                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-supp1-v1.pdb", 
                 "filename": "elife-09541-supp1-v1.pdb"
             }, 
             {
@@ -582,8 +858,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "BChl groups of the chromatophore and the corresponding transition dipole moments needed to determine the effective Hamiltonian: RC-LH1 dimer complexes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(file: Vesicle30BCLdipoleLH1RCdimer.pdb) As explained for <a href=\"#SD1-data\">Supplementary file 1</a>, but for BChls belonging to RC-LH1 dimers."
+                    }
+                ], 
                 "mediaType": "chemical/x-pdb", 
-                "uri": "elife-09541-supp2-v1.pdb", 
+                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-supp2-v1.pdb", 
                 "filename": "elife-09541-supp2-v1.pdb"
             }, 
             {
@@ -591,8 +873,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "BChl groups of the chromatophore and the corresponding transition dipole moments needed to determine the effective Hamiltonian: RC-LH1 monomer complexes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(file: Vesicle30BCLdipoleLH1RCmonomer.pdb) As explained for <a href=\"#SD1-data\">Supplementary file 1</a>, but for BChls belonging to RC-LH1 monomers."
+                    }
+                ], 
                 "mediaType": "chemical/x-pdb", 
-                "uri": "elife-09541-supp3-v1.pdb", 
+                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-supp3-v1.pdb", 
                 "filename": "elife-09541-supp3-v1.pdb"
             }
         ], 
@@ -652,7 +940,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-09541-fig1-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-fig1-v1", 
+                        "filename": "elife-09541-fig1-v1"
                     }, 
                     {
                         "type": "video", 
@@ -666,7 +955,26 @@
                                 "text": "A movie that shows a detailed structural model for the low-light adapted chromatophore vesicle as displayed in <a href=\"#fig1\">Figure 1</a> (<a href=\"#bib12\">Cartron et al., 2014</a>). Presented is a rotating view of the vesicle comprising LH2 complexes (green), dimeric RC-LH1-PufX complexes (red-blue-lime green), dimeric cyt<math id=\"inf8\"><mrow><mi>b</mi><mo>\u2062</mo><msub><mi>c</mi><mn>1</mn></msub></mrow></math> complexes (magenta), and ATP synthases (orange). For half of the model, proteins are shown in solid surface representation, and for the other half, proteins are shown as transparent surfaces with bacteriochlorophylls (BChls), represented by their porphyrin rings, shown as solid surfaces."
                             }
                         ], 
-                        "uri": "elife-09541-media1.mp4"
+                        "width": 800, 
+                        "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/522/11cea1cddb6d74346bbc97d6e9f4253bdcc7afca/elife-09541-media1.jpg", 
+                        "height": 800, 
+                        "sources": [
+                            {
+                                "filename": "elife-09541-media1.mp4", 
+                                "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/522/11cea1cddb6d74346bbc97d6e9f4253bdcc7afca/elife-09541-media1.mp4"
+                            }, 
+                            {
+                                "filename": "elife-09541-media1.ogv", 
+                                "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/522/11cea1cddb6d74346bbc97d6e9f4253bdcc7afca/elife-09541-media1.ogv"
+                            }, 
+                            {
+                                "filename": "elife-09541-media1.webm", 
+                                "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/https://static-movie-usa.glencoesoftware.com/webm/10.7554/522/11cea1cddb6d74346bbc97d6e9f4253bdcc7afca/elife-09541-media1.webm"
+                            }
+                        ]
                     }, 
                     {
                         "type": "paragraph", 
@@ -741,7 +1049,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09541-fig2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-fig2-v1", 
+                                "filename": "elife-09541-fig2-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -799,7 +1108,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09541-fig3-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-fig3-v1", 
+                                "filename": "elife-09541-fig3-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -887,7 +1197,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09541-fig4-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-fig4-v1", 
+                                "filename": "elife-09541-fig4-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -926,7 +1237,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-09541-fig5-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/09541/elife-09541-fig5-v1", 
+                                "filename": "elife-09541-fig5-v1"
                             }
                         ]
                     }, 

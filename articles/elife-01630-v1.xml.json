@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.01630", 
         "authorLine": "Tony Ly et al", 
         "title": "A proteomic chronology of gene expression through the cell cycle in human myeloid leukemia cells", 
-        "published": "2014-03-04T00:00:00", 
-        "versionDate": "2014-03-04T00:00:00", 
+        "published": "2014-03-04T00:00:00Z", 
+        "versionDate": "2014-03-04T00:00:00Z", 
         "volume": 3, 
         "elocationId": "e01630", 
         "pdf": "https://publishing-cdn.elifesciences.org/01630/elife-01630-v1.pdf", 
@@ -281,14 +281,164 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "083524/Z/07/Z, 097945/B/11/Z, 073980/Z/03/Z, 081361/Z/03/Z", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Tony Ly", 
+                                "index": "Ly, Tony"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasmeen Ahmad", 
+                                "index": "Ahmad, Yasmeen"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "European Union FP7 Prospects Network"
+                        ]
+                    }, 
+                    "awardId": "HEALTH-F4-2008-201648", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Tony Ly", 
+                                "index": "Ly, Tony"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasmeen Ahmad", 
+                                "index": "Ahmad, Yasmeen"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "Biotechnology and Biological Sciences Research Council"
+                        ]
+                    }, 
+                    "awardId": "BB/K003801/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "098051", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Adam Shlien", 
+                                "index": "Shlien, Adam"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Michael R Stratton", 
+                                "index": "Stratton, Michael R"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "name": [
+                            "EpiGeneSys Network"
+                        ]
+                    }, 
+                    "awardId": "HEALTH-F4-2010-257082", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Tony Ly", 
+                                "index": "Ly, Tony"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasmeen Ahmad", 
+                                "index": "Ahmad, Yasmeen"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.01630.021", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Proteomics data set.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file summarizes the proteins identified and quantified in asynchronous NB4 cells and in the fractions produced by elutriation, and includes the following data for each protein identification: protein and gene identifiers, protein descriptions, sequence coverage, the number of supporting peptides, the posterior error probabilities (PEPs), the extracted ion chromatogram (XIC) intensities, the LFQ-normalized intensities, the iBAQ-scaled intensities, and mapped transcript FPKM values from the RNA-Seq data."
+                    }
+                ], 
                 "mediaType": "application/txt", 
-                "uri": "elife-01630-supp1-v1.txt", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp1-v1.txt", 
                 "filename": "elife-01630-supp1-v1.txt"
             }, 
             {
@@ -296,8 +446,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Cell line proteome meta-analysis.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Comparison of the proteomic data set obtained for NB4, a human promyelocytic leukemia cell line that grows in suspension culture, with other recent examples of in depth proteomic analysis of different human cell lines, most of which are adherent tumor cell lines of either fibroblast or epithelial origin. In total, the meta-analysis included protein data from 14 cell line proteomes: 3 \u00d7 HeLa, 2 \u00d7 U2OS, A549, GAMG, HEK293, K562, LnCap, MCF7, RKO, HepG2, and Jurkat-T (<a href=\"#bib45\">Lundberg et al., 2010</a>; <a href=\"#bib6\">Beck et al., 2011</a>; <a href=\"#bib56\">Nagaraj et al., 2011</a>; <a href=\"#bib23\">Geiger et al., 2012</a>), which were consolidated and mapped to Ensembl Genes prior to comparison. The combined data set provides evidence of protein-level expression of over 11,000 genes. Of these, a common set of \u223c3000 genes are identified by protein data from all these cell lines, defining a core, shared proteome (Columns D and E), and &gt;1000 genes are uniquely detected in this analysis of NB4 cells (Columns A and B). A focused comparison of NB4, K562, Jurkat-T, HeLa and MCF7 cell line proteomes reveals \u223c90 genes that are specifically expressed in myeloid cell lines NB4 and K562 (Columns G and H)."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-01630-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp2-v1.xlsx", 
                 "filename": "elife-01630-supp2-v1.xlsx"
             }, 
             {
@@ -305,8 +461,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Proteins whose Abundance is cell cycle regulated.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "For quantitation, the proteomic data set was filtered to only include proteins that were detected in asynchronous cells and all six elutriation fractions. Of these \u223c6500 proteins, 358 (\u223c5.5%) are proteins whose abundance is cell cycle regulated (i.e., varies in abundance by at least two-fold across the fractions). These proteins vary in expression profile, and cluster into seven distinct groups that differ primarily in peak fraction. Gene and protein identifiers, cluster membership, and motifs that are predicted to modulate post-translational regulation are provided below. Other than the Dbox (R-x-x-L from King et. al, Mol. Biol. Cell 1996, 7, 1343-1357), motif sequences were obtained from the Eukaryotic Linear Motif resource (ELM)."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-01630-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp3-v1.xlsx", 
                 "filename": "elife-01630-supp3-v1.xlsx"
             }, 
             {
@@ -314,8 +476,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Phosphopeptide dataset.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file summarizes the \u223c2700 phosphopeptides identified and quantified in asynchronous NB4 cells and in the fractions produced by elutriation, and includes the following data for each phosphopeptide identification: protein and gene identifiers, protein descriptions, the phosphopeptide sequence, localization scores and probabilities, posterior error probabilities (PEPs), the Andromeda search scores, the mass error, and the extracted ion chromatogram (XIC) intensity."
+                    }
+                ], 
                 "mediaType": "application/txt", 
-                "uri": "elife-01630-supp4-v1.txt", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp4-v1.txt", 
                 "filename": "elife-01630-supp4-v1.txt"
             }, 
             {
@@ -323,8 +491,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "Proteins whose phosphorylation is cell cycle regulated.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file summarizes the cell cycle varying phosphopeptides that were identified without phospho-specific enrichment. These phosphosites were filtered to only include phosphopeptides that were independently identified in asynchronous cells and in all elutriation fractions. A minor fraction of these phosphopeptides (89 phosphopeptides, or 3% of the total phosphopeptides identified in this data set, corresponding to 79 phosphoproteins) vary by at least two-fold across the elutriation fractions. Cell cycle regulated phosphopeptides are listed below with Andromeda database search scores, localization probabilities, posterior error probabilities (PEPs), and intensities in each fraction."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-01630-supp5-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp5-v1.xlsx", 
                 "filename": "elife-01630-supp5-v1.xlsx"
             }, 
             {
@@ -332,8 +506,14 @@
                 "id": "SD6-data", 
                 "label": "Supplementary file 6.", 
                 "title": "RNA-Seq data set.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file provides gene identifiers, counts, and data quality markers for protein coding genes identified in any of the elutriated samples. The six elutriated fractions were pooled into three samples (F1+F2, F3+F4, F5+F6). mRNA was then separately extracted from these pooled samples using oligo dT beads, fragmented, then reverse transcribed using random hexamers. The cDNA was then sequenced using paired ends reads at a length of 75 bp. Each sample was run on a single lane of an Illumina HiSeq, to improve coverage of lower abundance transcripts. The paired-end RNA-Seq data were then aligned to the human genome (build hg19), using TopHat, without providing a gene reference (to avoid forced mappings). Following duplicate removal using Picard\u2019s MarkDuplicate (<a href=\"http://picard.sourceforge.net\">http://picard.sourceforge.net</a>), we quantified the gene expression of known protein coding genes using Cufflinks (<a href=\"#bib78\">Trapnell et al., 2013</a>). Genes with low data quality were removed from subsequent data analysis."
+                    }
+                ], 
                 "mediaType": "application/txt", 
-                "uri": "elife-01630-supp6-v1.txt", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp6-v1.txt", 
                 "filename": "elife-01630-supp6-v1.txt"
             }
         ], 
@@ -402,7 +582,8 @@
                     ], 
                     "title": "Peptide Evidence", 
                     "details": "Publicly available at Dryad (<a href=\"http://datadryad.org/\">http://datadryad.org/</a>). This compressed file contains a tab-delimited table listing the peptide evidence generated by processing the raw MS and MS/MS data using the MaxQuant software package, which includes a built-in database search engine called Andromeda. The spectra were searched against the UniProt Human Reference Proteome, accessed on August 2012. The table includes all instances of peptide identifications and quantitations, and their database search scores and posterior error probabilities.", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.2r79q"
+                    "uri": "https://publishing-cdn.elifesciences.org/01630/http://dx.doi.org/10.5061/dryad.2r79q", 
+                    "filename": "dryad.2r79q"
                 }, 
                 {
                     "id": "dataro2", 
@@ -468,7 +649,8 @@
                     "title": "Raw Mass Spectra", 
                     "dataId": "PX000678", 
                     "details": "Publicly available at the EBI PRIDE database (<a href=\"http://www.ebi.ac.uk/pride/archive/\">http://www.ebi.ac.uk/pride/archive/</a>).", 
-                    "uri": "http://www.ebi.ac.uk/pride/archive/projects/PXD000678"
+                    "uri": "https://publishing-cdn.elifesciences.org/01630/http://www.ebi.ac.uk/pride/archive/projects/PXD000678", 
+                    "filename": "PXD000678"
                 }, 
                 {
                     "id": "dataro3", 
@@ -534,7 +716,8 @@
                     "title": "RNA-Sequencing Reads", 
                     "dataId": "EGAD00001000736", 
                     "details": "Publicly available at the EBI European Genome-phenome Archive (<a href=\"https//www.ebi.ac.uk/ega/home\">https://www.ebi.ac.uk/ega/home</a>).", 
-                    "uri": "https://www.ebi.ac.uk/ega/datasets/EGAD00001000736"
+                    "uri": "https://publishing-cdn.elifesciences.org/01630/https://www.ebi.ac.uk/ega/datasets/EGAD00001000736", 
+                    "filename": "EGAD00001000736"
                 }
             ]
         }, 
@@ -548,8 +731,8 @@
         "doi": "10.7554/eLife.01630", 
         "authorLine": "Tony Ly et al", 
         "title": "A proteomic chronology of gene expression through the cell cycle in human myeloid leukemia cells", 
-        "published": "2014-03-04T00:00:00", 
-        "versionDate": "2014-03-04T00:00:00", 
+        "published": "2014-03-04T00:00:00Z", 
+        "versionDate": "2014-03-04T00:00:00Z", 
         "volume": 3, 
         "elocationId": "e01630", 
         "pdf": "https://publishing-cdn.elifesciences.org/01630/elife-01630-v1.pdf", 
@@ -817,14 +1000,164 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "083524/Z/07/Z, 097945/B/11/Z, 073980/Z/03/Z, 081361/Z/03/Z", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Tony Ly", 
+                                "index": "Ly, Tony"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasmeen Ahmad", 
+                                "index": "Ahmad, Yasmeen"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "European Union FP7 Prospects Network"
+                        ]
+                    }, 
+                    "awardId": "HEALTH-F4-2008-201648", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Tony Ly", 
+                                "index": "Ly, Tony"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasmeen Ahmad", 
+                                "index": "Ahmad, Yasmeen"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "Biotechnology and Biological Sciences Research Council"
+                        ]
+                    }, 
+                    "awardId": "BB/K003801/1", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "098051", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Adam Shlien", 
+                                "index": "Shlien, Adam"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Michael R Stratton", 
+                                "index": "Stratton, Michael R"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "name": [
+                            "EpiGeneSys Network"
+                        ]
+                    }, 
+                    "awardId": "HEALTH-F4-2010-257082", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Tony Ly", 
+                                "index": "Ly, Tony"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Yasmeen Ahmad", 
+                                "index": "Ahmad, Yasmeen"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Angus I Lamond", 
+                                "index": "Lamond, Angus I"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.01630.021", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Proteomics data set.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file summarizes the proteins identified and quantified in asynchronous NB4 cells and in the fractions produced by elutriation, and includes the following data for each protein identification: protein and gene identifiers, protein descriptions, sequence coverage, the number of supporting peptides, the posterior error probabilities (PEPs), the extracted ion chromatogram (XIC) intensities, the LFQ-normalized intensities, the iBAQ-scaled intensities, and mapped transcript FPKM values from the RNA-Seq data."
+                    }
+                ], 
                 "mediaType": "application/txt", 
-                "uri": "elife-01630-supp1-v1.txt", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp1-v1.txt", 
                 "filename": "elife-01630-supp1-v1.txt"
             }, 
             {
@@ -832,8 +1165,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Cell line proteome meta-analysis.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Comparison of the proteomic data set obtained for NB4, a human promyelocytic leukemia cell line that grows in suspension culture, with other recent examples of in depth proteomic analysis of different human cell lines, most of which are adherent tumor cell lines of either fibroblast or epithelial origin. In total, the meta-analysis included protein data from 14 cell line proteomes: 3 \u00d7 HeLa, 2 \u00d7 U2OS, A549, GAMG, HEK293, K562, LnCap, MCF7, RKO, HepG2, and Jurkat-T (<a href=\"#bib45\">Lundberg et al., 2010</a>; <a href=\"#bib6\">Beck et al., 2011</a>; <a href=\"#bib56\">Nagaraj et al., 2011</a>; <a href=\"#bib23\">Geiger et al., 2012</a>), which were consolidated and mapped to Ensembl Genes prior to comparison. The combined data set provides evidence of protein-level expression of over 11,000 genes. Of these, a common set of \u223c3000 genes are identified by protein data from all these cell lines, defining a core, shared proteome (Columns D and E), and &gt;1000 genes are uniquely detected in this analysis of NB4 cells (Columns A and B). A focused comparison of NB4, K562, Jurkat-T, HeLa and MCF7 cell line proteomes reveals \u223c90 genes that are specifically expressed in myeloid cell lines NB4 and K562 (Columns G and H)."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-01630-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp2-v1.xlsx", 
                 "filename": "elife-01630-supp2-v1.xlsx"
             }, 
             {
@@ -841,8 +1180,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Proteins whose Abundance is cell cycle regulated.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "For quantitation, the proteomic data set was filtered to only include proteins that were detected in asynchronous cells and all six elutriation fractions. Of these \u223c6500 proteins, 358 (\u223c5.5%) are proteins whose abundance is cell cycle regulated (i.e., varies in abundance by at least two-fold across the fractions). These proteins vary in expression profile, and cluster into seven distinct groups that differ primarily in peak fraction. Gene and protein identifiers, cluster membership, and motifs that are predicted to modulate post-translational regulation are provided below. Other than the Dbox (R-x-x-L from King et. al, Mol. Biol. Cell 1996, 7, 1343-1357), motif sequences were obtained from the Eukaryotic Linear Motif resource (ELM)."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-01630-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp3-v1.xlsx", 
                 "filename": "elife-01630-supp3-v1.xlsx"
             }, 
             {
@@ -850,8 +1195,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Phosphopeptide dataset.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file summarizes the \u223c2700 phosphopeptides identified and quantified in asynchronous NB4 cells and in the fractions produced by elutriation, and includes the following data for each phosphopeptide identification: protein and gene identifiers, protein descriptions, the phosphopeptide sequence, localization scores and probabilities, posterior error probabilities (PEPs), the Andromeda search scores, the mass error, and the extracted ion chromatogram (XIC) intensity."
+                    }
+                ], 
                 "mediaType": "application/txt", 
-                "uri": "elife-01630-supp4-v1.txt", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp4-v1.txt", 
                 "filename": "elife-01630-supp4-v1.txt"
             }, 
             {
@@ -859,8 +1210,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "Proteins whose phosphorylation is cell cycle regulated.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file summarizes the cell cycle varying phosphopeptides that were identified without phospho-specific enrichment. These phosphosites were filtered to only include phosphopeptides that were independently identified in asynchronous cells and in all elutriation fractions. A minor fraction of these phosphopeptides (89 phosphopeptides, or 3% of the total phosphopeptides identified in this data set, corresponding to 79 phosphoproteins) vary by at least two-fold across the elutriation fractions. Cell cycle regulated phosphopeptides are listed below with Andromeda database search scores, localization probabilities, posterior error probabilities (PEPs), and intensities in each fraction."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-01630-supp5-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp5-v1.xlsx", 
                 "filename": "elife-01630-supp5-v1.xlsx"
             }, 
             {
@@ -868,8 +1225,14 @@
                 "id": "SD6-data", 
                 "label": "Supplementary file 6.", 
                 "title": "RNA-Seq data set.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "This file provides gene identifiers, counts, and data quality markers for protein coding genes identified in any of the elutriated samples. The six elutriated fractions were pooled into three samples (F1+F2, F3+F4, F5+F6). mRNA was then separately extracted from these pooled samples using oligo dT beads, fragmented, then reverse transcribed using random hexamers. The cDNA was then sequenced using paired ends reads at a length of 75 bp. Each sample was run on a single lane of an Illumina HiSeq, to improve coverage of lower abundance transcripts. The paired-end RNA-Seq data were then aligned to the human genome (build hg19), using TopHat, without providing a gene reference (to avoid forced mappings). Following duplicate removal using Picard\u2019s MarkDuplicate (<a href=\"http://picard.sourceforge.net\">http://picard.sourceforge.net</a>), we quantified the gene expression of known protein coding genes using Cufflinks (<a href=\"#bib78\">Trapnell et al., 2013</a>). Genes with low data quality were removed from subsequent data analysis."
+                    }
+                ], 
                 "mediaType": "application/txt", 
-                "uri": "elife-01630-supp6-v1.txt", 
+                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-supp6-v1.txt", 
                 "filename": "elife-01630-supp6-v1.txt"
             }
         ], 
@@ -938,7 +1301,8 @@
                     ], 
                     "title": "Peptide Evidence", 
                     "details": "Publicly available at Dryad (<a href=\"http://datadryad.org/\">http://datadryad.org/</a>). This compressed file contains a tab-delimited table listing the peptide evidence generated by processing the raw MS and MS/MS data using the MaxQuant software package, which includes a built-in database search engine called Andromeda. The spectra were searched against the UniProt Human Reference Proteome, accessed on August 2012. The table includes all instances of peptide identifications and quantitations, and their database search scores and posterior error probabilities.", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.2r79q"
+                    "uri": "https://publishing-cdn.elifesciences.org/01630/http://dx.doi.org/10.5061/dryad.2r79q", 
+                    "filename": "dryad.2r79q"
                 }, 
                 {
                     "id": "dataro2", 
@@ -1004,7 +1368,8 @@
                     "title": "Raw Mass Spectra", 
                     "dataId": "PX000678", 
                     "details": "Publicly available at the EBI PRIDE database (<a href=\"http://www.ebi.ac.uk/pride/archive/\">http://www.ebi.ac.uk/pride/archive/</a>).", 
-                    "uri": "http://www.ebi.ac.uk/pride/archive/projects/PXD000678"
+                    "uri": "https://publishing-cdn.elifesciences.org/01630/http://www.ebi.ac.uk/pride/archive/projects/PXD000678", 
+                    "filename": "PXD000678"
                 }, 
                 {
                     "id": "dataro3", 
@@ -1070,7 +1435,8 @@
                     "title": "RNA-Sequencing Reads", 
                     "dataId": "EGAD00001000736", 
                     "details": "Publicly available at the EBI European Genome-phenome Archive (<a href=\"https//www.ebi.ac.uk/ega/home\">https://www.ebi.ac.uk/ega/home</a>).", 
-                    "uri": "https://www.ebi.ac.uk/ega/datasets/EGAD00001000736"
+                    "uri": "https://publishing-cdn.elifesciences.org/01630/https://www.ebi.ac.uk/ega/datasets/EGAD00001000736", 
+                    "filename": "EGAD00001000736"
                 }
             ]
         }, 
@@ -1162,7 +1528,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig1-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig1-v1.tif", 
+                                "filename": "elife-01630-fig1-v1.tif"
                             }
                         ]
                     }, 
@@ -1188,7 +1555,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig2-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig2-v1.tif", 
+                                "filename": "elife-01630-fig2-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1241,7 +1609,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig3-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig3-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1256,7 +1624,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01630-fig3-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig3-figsupp1-v1.tif", 
+                                        "filename": "elife-01630-fig3-figsupp1-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1271,9 +1640,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01630-fig3-figsupp2-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig3-figsupp2-v1.tif", 
+                                        "filename": "elife-01630-fig3-figsupp2-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01630-fig3-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1319,7 +1690,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig4-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig4-v1.tif", 
+                                "filename": "elife-01630-fig4-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1353,7 +1725,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig5-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig5-v1.tif", 
+                                "filename": "elife-01630-fig5-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1439,7 +1812,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig6-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig6-v1.tif", 
+                                "filename": "elife-01630-fig6-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1481,7 +1855,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig7-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig7-v1.tif", 
+                                "filename": "elife-01630-fig7-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1523,7 +1898,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig8-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig8-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1538,7 +1913,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01630-fig8-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig8-figsupp1-v1.tif", 
+                                        "filename": "elife-01630-fig8-figsupp1-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1553,9 +1929,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01630-fig8-figsupp2-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig8-figsupp2-v1.tif", 
+                                        "filename": "elife-01630-fig8-figsupp2-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01630-fig8-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1616,7 +1994,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig9-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig9-v1.tif", 
+                                "filename": "elife-01630-fig9-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1646,7 +2025,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig10-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig10-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1661,9 +2040,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-01630-fig10-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig10-figsupp1-v1.tif", 
+                                        "filename": "elife-01630-fig10-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-01630-fig10-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1701,7 +2082,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig11-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig11-v1.tif", 
+                                "filename": "elife-01630-fig11-v1.tif"
                             }
                         ]
                     }
@@ -1830,7 +2212,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-01630-fig12-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/01630/elife-01630-fig12-v1.tif", 
+                                "filename": "elife-01630-fig12-v1.tif"
                             }
                         ]
                     }, 

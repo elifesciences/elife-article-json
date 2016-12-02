@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.08851", 
         "authorLine": "Katia Ancelin et al", 
         "title": "Maternal LSD1/KDM1A is an essential regulator of chromatin and transcription landscapes during zygotic genome activation", 
-        "published": "2016-02-02T00:00:00", 
+        "published": "2016-02-02T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e08851", 
         "pdf": "https://publishing-cdn.elifesciences.org/08851/elife-08851-v2.pdf", 
@@ -634,14 +634,79 @@
                 "text": "Animal experimentation: All mice used were handled with care and according to approved institutional animal care and use committee of the Institut Curie (CEEA-IC) protocols(C 75-05-18). The work has also been conducted under the approval from the French Ministry of Higher Education and Research for the use of Genetically Modified Organisms (agreement number 5549CA-I)."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "EU FP7 MODHEP EU"
+                        ]
+                    }, 
+                    "awardId": "259743", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Edith Heard", 
+                                "index": "Heard, Edith"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "Labex DEEP"
+                        ]
+                    }, 
+                    "awardId": "ANR-11-LBX-0044", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Edith Heard", 
+                                "index": "Heard, Edith"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "IDEX idx PSL"
+                        ]
+                    }, 
+                    "awardId": "ANR-10-IDEX-001-02 PSL", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Edith Heard", 
+                                "index": "Heard, Edith"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.08851.016", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Summary of RNA seq data for control and maternally depleted oocytes or two-cell stage embryos.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Statistical analysis of all the single oocyte or individual two-cell stage embryo RNA-seq used in this study. Datasets are available from GEO under access number GSE75054 and GSE68139."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-08851-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-supp1-v2.xlsx", 
                 "filename": "elife-08851-supp1-v2.xlsx"
             }, 
             {
@@ -649,8 +714,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Differential gene expression at the two-cell stage and oocyte stage upon loss of maternal KDM1A.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The DESeq R package was used to normalize and identify the differentially expressed genes between control and mutant embryos. Genes with 0 counts in all samples were filtered out and only the 60% of the top expressed genes were used for the analysis Differentially expressed genes were identified using a minimum Log2&gt;1 (upregulation) or &lt;-1 (downregulation) fold change (FC) and with an adjusted p-value lower than \u03b1\u00a0=\u00a00.05."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-08851-supp2-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-supp2-v2.xls", 
                 "filename": "elife-08851-supp2-v2.xls"
             }
         ], 
@@ -679,7 +750,8 @@
                     ], 
                     "title": "LSD1 is an essential regulator of the chromatin and transcriptional landscapes during the maternal-to-zygotic", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE68139).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68139"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68139", 
+                    "filename": "acc.cgi?acc=GSE68139"
                 }, 
                 {
                     "id": "dataro2", 
@@ -704,7 +776,8 @@
                     ], 
                     "title": "LSD1 is an essential regulator of the chromatin and transcriptional landscapes during the maternal-to-zygotic", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE75054).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75054"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75054", 
+                    "filename": "acc.cgi?acc=GSE75054"
                 }
             ], 
             "used": [
@@ -743,7 +816,8 @@
                     ], 
                     "title": "Inferring the choreography of parental genomes during fertilization from ultralarge-scale whole-transcriptome analysis", 
                     "details": "Publicly available at the DDBJ Sequence Read Archive (accession no: DRA001066).", 
-                    "uri": "http://trace.ddbj.nig.ac.jp/DRASearch/submission?acc=DRA001066"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/http://trace.ddbj.nig.ac.jp/DRASearch/submission?acc=DRA001066", 
+                    "filename": "submission?acc=DRA001066"
                 }
             ]
         }, 
@@ -757,7 +831,7 @@
         "doi": "10.7554/eLife.08851", 
         "authorLine": "Katia Ancelin et al", 
         "title": "Maternal LSD1/KDM1A is an essential regulator of chromatin and transcription landscapes during zygotic genome activation", 
-        "published": "2016-02-02T00:00:00", 
+        "published": "2016-02-02T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e08851", 
         "pdf": "https://publishing-cdn.elifesciences.org/08851/elife-08851-v2.pdf", 
@@ -1379,14 +1453,79 @@
                 "text": "Animal experimentation: All mice used were handled with care and according to approved institutional animal care and use committee of the Institut Curie (CEEA-IC) protocols(C 75-05-18). The work has also been conducted under the approval from the French Ministry of Higher Education and Research for the use of Genetically Modified Organisms (agreement number 5549CA-I)."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "EU FP7 MODHEP EU"
+                        ]
+                    }, 
+                    "awardId": "259743", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Edith Heard", 
+                                "index": "Heard, Edith"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "Labex DEEP"
+                        ]
+                    }, 
+                    "awardId": "ANR-11-LBX-0044", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Edith Heard", 
+                                "index": "Heard, Edith"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "IDEX idx PSL"
+                        ]
+                    }, 
+                    "awardId": "ANR-10-IDEX-001-02 PSL", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Edith Heard", 
+                                "index": "Heard, Edith"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.08851.016", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Summary of RNA seq data for control and maternally depleted oocytes or two-cell stage embryos.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Statistical analysis of all the single oocyte or individual two-cell stage embryo RNA-seq used in this study. Datasets are available from GEO under access number GSE75054 and GSE68139."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-08851-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-supp1-v2.xlsx", 
                 "filename": "elife-08851-supp1-v2.xlsx"
             }, 
             {
@@ -1394,8 +1533,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Differential gene expression at the two-cell stage and oocyte stage upon loss of maternal KDM1A.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The DESeq R package was used to normalize and identify the differentially expressed genes between control and mutant embryos. Genes with 0 counts in all samples were filtered out and only the 60% of the top expressed genes were used for the analysis Differentially expressed genes were identified using a minimum Log2&gt;1 (upregulation) or &lt;-1 (downregulation) fold change (FC) and with an adjusted p-value lower than \u03b1\u00a0=\u00a00.05."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-08851-supp2-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-supp2-v2.xls", 
                 "filename": "elife-08851-supp2-v2.xls"
             }
         ], 
@@ -1424,7 +1569,8 @@
                     ], 
                     "title": "LSD1 is an essential regulator of the chromatin and transcriptional landscapes during the maternal-to-zygotic", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE68139).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68139"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68139", 
+                    "filename": "acc.cgi?acc=GSE68139"
                 }, 
                 {
                     "id": "dataro2", 
@@ -1449,7 +1595,8 @@
                     ], 
                     "title": "LSD1 is an essential regulator of the chromatin and transcriptional landscapes during the maternal-to-zygotic", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE75054).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75054"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75054", 
+                    "filename": "acc.cgi?acc=GSE75054"
                 }
             ], 
             "used": [
@@ -1488,7 +1635,8 @@
                     ], 
                     "title": "Inferring the choreography of parental genomes during fertilization from ultralarge-scale whole-transcriptome analysis", 
                     "details": "Publicly available at the DDBJ Sequence Read Archive (accession no: DRA001066).", 
-                    "uri": "http://trace.ddbj.nig.ac.jp/DRASearch/submission?acc=DRA001066"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/http://trace.ddbj.nig.ac.jp/DRASearch/submission?acc=DRA001066", 
+                    "filename": "submission?acc=DRA001066"
                 }
             ]
         }, 
@@ -1580,7 +1728,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-08851-fig1-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig1-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1595,7 +1743,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig1-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig1-figsupp1-v2", 
+                                        "filename": "elife-08851-fig1-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1610,9 +1759,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig1-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig1-figsupp2-v2", 
+                                        "filename": "elife-08851-fig1-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-08851-fig1-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1669,7 +1820,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-08851-fig2-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig2-v2", 
+                                "filename": "elife-08851-fig2-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1703,7 +1855,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-08851-fig3-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig3-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1718,9 +1870,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig3-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig3-figsupp1-v2", 
+                                        "filename": "elife-08851-fig3-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-08851-fig3-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1750,7 +1904,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-08851-fig4-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig4-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1765,7 +1919,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig4-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig4-figsupp1-v2", 
+                                        "filename": "elife-08851-fig4-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1780,9 +1935,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig4-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig4-figsupp2-v2", 
+                                        "filename": "elife-08851-fig4-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-08851-fig4-v2"
                             }, 
                             {
                                 "type": "table", 
@@ -1848,7 +2005,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-08851-fig5-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig5-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1863,7 +2020,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig5-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig5-figsupp1-v2", 
+                                        "filename": "elife-08851-fig5-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1878,9 +2036,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-08851-fig5-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-fig5-figsupp2-v2", 
+                                        "filename": "elife-08851-fig5-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-08851-fig5-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -6483,7 +6643,8 @@
                         }
                     ], 
                     "alt": "", 
-                    "uri": "elife-08851-resp-fig1-v2"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-resp-fig1-v2", 
+                    "filename": "elife-08851-resp-fig1-v2"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6560,7 +6721,8 @@
                     "label": "Author response image 2.", 
                     "title": "Author response image 2.", 
                     "alt": "", 
-                    "uri": "elife-08851-resp-fig2-v2"
+                    "uri": "https://publishing-cdn.elifesciences.org/08851/elife-08851-resp-fig2-v2", 
+                    "filename": "elife-08851-resp-fig2-v2"
                 }, 
                 {
                     "type": "paragraph", 

@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.00473", 
         "authorLine": "Polly Yingshan Hsu et al", 
         "title": "Accurate timekeeping is controlled by a cycling activator in <i>Arabidopsis</i>", 
-        "published": "2013-04-30T00:00:00", 
-        "versionDate": "2013-04-30T00:00:00", 
+        "published": "2013-04-30T00:00:00Z", 
+        "versionDate": "2013-04-30T00:00:00Z", 
         "volume": 2, 
         "elocationId": "e00473", 
         "pdf": "https://publishing-cdn.elifesciences.org/00473/elife-00473-v1.pdf", 
@@ -132,14 +132,61 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM069418", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Stacey Harmer", 
+                                "index": "Harmer, Stacey"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "Taiwan Merit Scholarship"
+                        ]
+                    }, 
+                    "awardId": "NSC-095-SAF-I-564-014-TMS", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Polly Yingshan Hsu", 
+                                "index": "Hsu, Polly Yingshan"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.00473.014", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "RNA-seq analysis of RVE8-regulated genes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(<b>A</b>) Pipeline and summary of RNA-seq data analysis. (<b>B</b>) Pseudo-normalized counts for visualization. Counts for each library were normalized (<a href=\"#bib54\">Robinson et al., 2010</a>) according to the library size and represented as counts per million. (<b>C</b>) Genes identified as significantly induced by RVE8 by RNA-seq. Genes significantly differentially expressed (adjusted p&lt;0.01) between <i>RVE8:GR</i> + DEX and <i>RVE8:GR</i> + mock or between <i>RVE8:GR</i> + DEX and <i>rve8</i> + DEX, but not between <i>rve8</i> + DEX and <i>rve8</i> + mock, are defined as RVE8-induced or RVE8-repressed targets. (<b>D</b>) Genes identified as significantly repressed by RVE8 by RNA-seq. Genes significantly differentially expressed (adjusted p&lt;0.01) between <i>RVE8:GR</i> + DEX and <i>RVE8:GR</i> + mock or between <i>RVE8:GR</i> + DEX and <i>rve8</i> + DEX, but not between <i>rve8</i> + DEX and <i>rve8</i> + mock, are defined as RVE8-induced or RVE8-repressed targets. (<b>E</b>) Genes identified as significantly induced by DEX by RNA-seq. Genes significantly differentially expressed between <i>rve8</i> + DEX and <i>rve8</i> + mock are defined as DEX-induced or DEX-repressed genes (adjusted p&lt;0.01). (<b>F</b>) Genes identified as significantly repressed by DEX by RNA-seq. Genes significantly differentially expressed between <i>rve8</i> + DEX and <i>rve8</i> + mock are defined as DEX-induced or DEX-repressed genes (adjusted p&lt;0.01). (<b>G</b>) Clock genes identified as RVE8 targets in the RNA-seq experiment. Genes found to be differentially expressed in response to RVE8 induction (adjusted p&lt;0.01). Evening-phased genes are highlighted in yellow. (<b>H</b>) Significantly overrepresented functional classifications among RVE8-induced genes. The enrichment of the functional terms was identified using BioMaps in Virtual Plant 1.2 (<a href=\"http://virtualplant.bio.nyu.edu/cgi-bin/vpweb/\">http://virtualplant.bio.nyu.edu/cgi-bin/vpweb/</a>) (<a href=\"#bib28\">Katari et al., 2010</a>). Functional classifications were provided by the Munich Information Center for Protein Sequences (MIPS) (<a href=\"#bib57\">Schoof et al., 2005</a>). All genes classified as expressed in the RNA-seq experiment were used for the background. Fisher's exact test (with FDR correction) was performed and the cut-off value for statistical significance was set to 0.01."
+                    }
+                ], 
                 "mediaType": "application/xls", 
-                "uri": "elife-00473-supp1-v1.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-supp1-v1.xls", 
                 "filename": "elife-00473-supp1-v1.xls"
             }, 
             {
@@ -147,8 +194,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Promoter motifs overrepresented in RVE8-regulated CCGs (related to <a href=\"#tbl1\">Table 1</a>).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Promoters were defined as the 1500 bp region upstream of the translational start site and motifs were identified using the <i>SCOPE</i> motif finder (<a href=\"#bib5\">Carlson et al., 2007</a>). Both strands were considered for calculation of significance. Background frequency was determined using all genes in the genome. (<b>A</b>) Up-regulated CCGs (376 genes). (<b>B</b>) Down-regulated CCGs (525 genes)."
+                    }
+                ], 
                 "mediaType": "application/doc", 
-                "uri": "elife-00473-supp2-v1.doc", 
+                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-supp2-v1.doc", 
                 "filename": "elife-00473-supp2-v1.doc"
             }, 
             {
@@ -157,7 +210,7 @@
                 "label": "Supplementary file 3.", 
                 "title": "Primers used in this study.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-00473-supp3-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-supp3-v1.docx", 
                 "filename": "elife-00473-supp3-v1.docx"
             }
         ], 
@@ -185,7 +238,8 @@
                     "title": "Identification of RVE8 target genes", 
                     "dataId": "GSE38879", 
                     "details": "Publicly available at the Gene Expression Omnibus database (GEO) (<a href=\"http://www.ncbi.nlm.nih.gov/geo\">http://www.ncbi.nlm.nih.gov/geo</a>).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE38879"
+                    "uri": "https://publishing-cdn.elifesciences.org/00473/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE38879", 
+                    "filename": "acc.cgi?acc=GSE38879"
                 }
             ]
         }, 
@@ -199,8 +253,8 @@
         "doi": "10.7554/eLife.00473", 
         "authorLine": "Polly Yingshan Hsu et al", 
         "title": "Accurate timekeeping is controlled by a cycling activator in <i>Arabidopsis</i>", 
-        "published": "2013-04-30T00:00:00", 
-        "versionDate": "2013-04-30T00:00:00", 
+        "published": "2013-04-30T00:00:00Z", 
+        "versionDate": "2013-04-30T00:00:00Z", 
         "volume": 2, 
         "elocationId": "e00473", 
         "pdf": "https://publishing-cdn.elifesciences.org/00473/elife-00473-v1.pdf", 
@@ -319,14 +373,61 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "GM069418", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Stacey Harmer", 
+                                "index": "Harmer, Stacey"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "name": [
+                            "Taiwan Merit Scholarship"
+                        ]
+                    }, 
+                    "awardId": "NSC-095-SAF-I-564-014-TMS", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Polly Yingshan Hsu", 
+                                "index": "Hsu, Polly Yingshan"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.00473.014", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "RNA-seq analysis of RVE8-regulated genes.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "(<b>A</b>) Pipeline and summary of RNA-seq data analysis. (<b>B</b>) Pseudo-normalized counts for visualization. Counts for each library were normalized (<a href=\"#bib54\">Robinson et al., 2010</a>) according to the library size and represented as counts per million. (<b>C</b>) Genes identified as significantly induced by RVE8 by RNA-seq. Genes significantly differentially expressed (adjusted p&lt;0.01) between <i>RVE8:GR</i> + DEX and <i>RVE8:GR</i> + mock or between <i>RVE8:GR</i> + DEX and <i>rve8</i> + DEX, but not between <i>rve8</i> + DEX and <i>rve8</i> + mock, are defined as RVE8-induced or RVE8-repressed targets. (<b>D</b>) Genes identified as significantly repressed by RVE8 by RNA-seq. Genes significantly differentially expressed (adjusted p&lt;0.01) between <i>RVE8:GR</i> + DEX and <i>RVE8:GR</i> + mock or between <i>RVE8:GR</i> + DEX and <i>rve8</i> + DEX, but not between <i>rve8</i> + DEX and <i>rve8</i> + mock, are defined as RVE8-induced or RVE8-repressed targets. (<b>E</b>) Genes identified as significantly induced by DEX by RNA-seq. Genes significantly differentially expressed between <i>rve8</i> + DEX and <i>rve8</i> + mock are defined as DEX-induced or DEX-repressed genes (adjusted p&lt;0.01). (<b>F</b>) Genes identified as significantly repressed by DEX by RNA-seq. Genes significantly differentially expressed between <i>rve8</i> + DEX and <i>rve8</i> + mock are defined as DEX-induced or DEX-repressed genes (adjusted p&lt;0.01). (<b>G</b>) Clock genes identified as RVE8 targets in the RNA-seq experiment. Genes found to be differentially expressed in response to RVE8 induction (adjusted p&lt;0.01). Evening-phased genes are highlighted in yellow. (<b>H</b>) Significantly overrepresented functional classifications among RVE8-induced genes. The enrichment of the functional terms was identified using BioMaps in Virtual Plant 1.2 (<a href=\"http://virtualplant.bio.nyu.edu/cgi-bin/vpweb/\">http://virtualplant.bio.nyu.edu/cgi-bin/vpweb/</a>) (<a href=\"#bib28\">Katari et al., 2010</a>). Functional classifications were provided by the Munich Information Center for Protein Sequences (MIPS) (<a href=\"#bib57\">Schoof et al., 2005</a>). All genes classified as expressed in the RNA-seq experiment were used for the background. Fisher's exact test (with FDR correction) was performed and the cut-off value for statistical significance was set to 0.01."
+                    }
+                ], 
                 "mediaType": "application/xls", 
-                "uri": "elife-00473-supp1-v1.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-supp1-v1.xls", 
                 "filename": "elife-00473-supp1-v1.xls"
             }, 
             {
@@ -334,8 +435,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Promoter motifs overrepresented in RVE8-regulated CCGs (related to <a href=\"#tbl1\">Table 1</a>).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Promoters were defined as the 1500 bp region upstream of the translational start site and motifs were identified using the <i>SCOPE</i> motif finder (<a href=\"#bib5\">Carlson et al., 2007</a>). Both strands were considered for calculation of significance. Background frequency was determined using all genes in the genome. (<b>A</b>) Up-regulated CCGs (376 genes). (<b>B</b>) Down-regulated CCGs (525 genes)."
+                    }
+                ], 
                 "mediaType": "application/doc", 
-                "uri": "elife-00473-supp2-v1.doc", 
+                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-supp2-v1.doc", 
                 "filename": "elife-00473-supp2-v1.doc"
             }, 
             {
@@ -344,7 +451,7 @@
                 "label": "Supplementary file 3.", 
                 "title": "Primers used in this study.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-00473-supp3-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-supp3-v1.docx", 
                 "filename": "elife-00473-supp3-v1.docx"
             }
         ], 
@@ -372,7 +479,8 @@
                     "title": "Identification of RVE8 target genes", 
                     "dataId": "GSE38879", 
                     "details": "Publicly available at the Gene Expression Omnibus database (GEO) (<a href=\"http://www.ncbi.nlm.nih.gov/geo\">http://www.ncbi.nlm.nih.gov/geo</a>).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE38879"
+                    "uri": "https://publishing-cdn.elifesciences.org/00473/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE38879", 
+                    "filename": "acc.cgi?acc=GSE38879"
                 }
             ]
         }, 
@@ -458,7 +566,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-00473-fig1-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig1-v1.tif", 
+                                "filename": "elife-00473-fig1-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -488,7 +597,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-00473-fig2-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig2-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -503,9 +612,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-00473-fig2-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig2-figsupp1-v1.tif", 
+                                        "filename": "elife-00473-fig2-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-00473-fig2-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -577,7 +688,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-00473-fig3-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig3-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -592,9 +703,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-00473-fig3-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig3-figsupp1-v1.tif", 
+                                        "filename": "elife-00473-fig3-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-00473-fig3-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -624,7 +737,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-00473-fig4-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig4-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -639,9 +752,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-00473-fig4-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig4-figsupp1-v1.tif", 
+                                        "filename": "elife-00473-fig4-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-00473-fig4-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -679,7 +794,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-00473-fig5-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig5-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -694,9 +809,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-00473-fig5-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig5-figsupp1-v1.tif", 
+                                        "filename": "elife-00473-fig5-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-00473-fig5-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -730,7 +847,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-00473-fig6-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/00473/elife-00473-fig6-v1.tif", 
+                                "filename": "elife-00473-fig6-v1.tif"
                             }
                         ]
                     }
@@ -3396,7 +3514,8 @@
                 ], 
                 "title": "R: A language and environment for statistical computing", 
                 "details": "R: A language and environment for statistical computing, Vienna, R Foundation for Statistical Computing, http://www.R-project.org/", 
-                "uri": "http://www.R-project.org/"
+                "uri": "https://publishing-cdn.elifesciences.org/00473/http://www.R-project.org/", 
+                "filename": ""
             }, 
             {
                 "type": "journal", 

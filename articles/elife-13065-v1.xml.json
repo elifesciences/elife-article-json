@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.13065", 
         "authorLine": "Jeffrey R Moffitt et al", 
         "title": "Spatial organization shapes the turnover of a bacterial transcriptome", 
-        "published": "2016-05-20T00:00:00", 
-        "versionDate": "2016-05-20T00:00:00", 
+        "published": "2016-05-20T00:00:00Z", 
+        "versionDate": "2016-05-20T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e13065", 
         "pdf": "https://publishing-cdn.elifesciences.org/13065/elife-13065-v1.pdf", 
@@ -281,14 +281,63 @@
                 "competingInterests": "XZ: Reviewing editor, <i>eLife.</i>"
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000057", 
+                        "name": [
+                            "National Institute of General Medical Sciences"
+                        ]
+                    }, 
+                    "awardId": "GM096450", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Xiaowei Zhuang", 
+                                "index": "Zhuang, Xiaowei"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "awardId": "HHMI", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Xiaowei Zhuang", 
+                                "index": "Zhuang, Xiaowei"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.13065.022", 
                 "id": "SD4-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Template sequences of the complex FISH probe sets.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2018Library name\u2019 specifies whether the probes are for testing the role of the proteome organization or the genome organization. \u2018Experiment number\u2019 is a unique number for each experiment. \u2018Location\u2019 specifies either the location of the encoded protein or the location of the genomic locus. \u2018Abundance\u2019 specifies the abundance range for the targeted RNA in copies/cell. \u2018Polycistronic with inner membrane proteins\u2019 specifies whether the gene is a member of a polycistronic mRNA with a gene that encodes an inner-membrane protein (Y) or not (N). \u2018Gene name\u2019 is the name of the gene. \u2018Probe location\u2019 is the location of the 5\u2019 end of the target region in nucleotides from the start codon of the specified gene. \u2018Template sequence\u2019 is the sequence of the oligonucleotide used as a template for that FISH probe, which concatenates the index primers, the reverse transcription primer, and the targeting sequence in the order depicted in <a href=\"#fig1\">Figure 1</a>. \u2018Index primer 1\u2019 and \u2018Index primer 2\u2019 are the sequences of the primers used to amplify the subset of probes that includes the specified probe."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13065-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-supp1-v1.xlsx", 
                 "filename": "elife-13065-supp1-v1.xlsx"
             }, 
             {
@@ -296,8 +345,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Sequences of the N-terminal fusion constructs used to create the large-scale signal-peptide libraries.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2018Gene name\u2019 is the name of the gene from which the signal peptide was derived. \u2018Signal-peptide type\u2019 specifies whether the signal peptide is a SRP, SecB, or cytoplasmic control peptide. \u2018Encoding\u2019 specifies the type of the encoding of the signal peptide. Native indicates that the nucleotide sequence is the native <i>E. coli</i> sequence; Synthetic indicates that the native <i>E. coli</i> codons have been exchanged at random with synonymous codons; and \u2018No translation\u2019 indicates that the first two codons, including the start codon, of the native <i>E. coli</i> sequence have been replaced with stop codons. \u2018Oligo sequence\u2019 specifies the sequence of the oligonucleotide used to create the specific fusion."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13065-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-supp2-v1.xlsx", 
                 "filename": "elife-13065-supp2-v1.xlsx"
             }, 
             {
@@ -305,8 +360,14 @@
                 "id": "SD6-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Plasmids and <i>E. coli</i> strains used in this work.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2018Strain\u2019 is the name of the strain or strain library. \u2018Description\u2019 is a brief description of the strain and its purpose in this study. \u2018Parent strain\u2019 lists the strain used to generate each strain where appropriate. \u2018Genotype\u2019 provides a compact description of the modifications to the strain. \u2018Plasmid\u2019 lists the name of the plasmids contained by each strain where appropriate. libJMXX represents a complex plasmid library. pZS*32 follows the naming convention of the pZ plasmids (Lutz and Bujard, 1997). SCS31 represents a selection-counter-selection cassette employing pRhaB-ccdB and the chloramphenicol resistance gene cat."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13065-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-supp3-v1.xlsx", 
                 "filename": "elife-13065-supp3-v1.xlsx"
             }, 
             {
@@ -315,7 +376,7 @@
                 "label": "Source code 1.", 
                 "title": "Matlab functions for the identification of bacterial cell boundaries and the rendering of STORM images.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-13065-code1-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-code1-v1.zip", 
                 "filename": "elife-13065-code1-v1.zip"
             }
         ], 
@@ -336,7 +397,8 @@
                     ], 
                     "title": "RNA life time measurements in E. coli", 
                     "details": "Publicly available at Gene Expression Omnibus (accession no: GSE75818)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75818"
+                    "uri": "https://publishing-cdn.elifesciences.org/13065/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75818", 
+                    "filename": "acc.cgi?acc=GSE75818"
                 }
             ]
         }, 
@@ -350,8 +412,8 @@
         "doi": "10.7554/eLife.13065", 
         "authorLine": "Jeffrey R Moffitt et al", 
         "title": "Spatial organization shapes the turnover of a bacterial transcriptome", 
-        "published": "2016-05-20T00:00:00", 
-        "versionDate": "2016-05-20T00:00:00", 
+        "published": "2016-05-20T00:00:00Z", 
+        "versionDate": "2016-05-20T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e13065", 
         "pdf": "https://publishing-cdn.elifesciences.org/13065/elife-13065-v1.pdf", 
@@ -619,14 +681,63 @@
                 "competingInterests": "XZ: Reviewing editor, <i>eLife.</i>"
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000057", 
+                        "name": [
+                            "National Institute of General Medical Sciences"
+                        ]
+                    }, 
+                    "awardId": "GM096450", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Xiaowei Zhuang", 
+                                "index": "Zhuang, Xiaowei"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "awardId": "HHMI", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Xiaowei Zhuang", 
+                                "index": "Zhuang, Xiaowei"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.13065.022", 
                 "id": "SD4-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Template sequences of the complex FISH probe sets.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2018Library name\u2019 specifies whether the probes are for testing the role of the proteome organization or the genome organization. \u2018Experiment number\u2019 is a unique number for each experiment. \u2018Location\u2019 specifies either the location of the encoded protein or the location of the genomic locus. \u2018Abundance\u2019 specifies the abundance range for the targeted RNA in copies/cell. \u2018Polycistronic with inner membrane proteins\u2019 specifies whether the gene is a member of a polycistronic mRNA with a gene that encodes an inner-membrane protein (Y) or not (N). \u2018Gene name\u2019 is the name of the gene. \u2018Probe location\u2019 is the location of the 5\u2019 end of the target region in nucleotides from the start codon of the specified gene. \u2018Template sequence\u2019 is the sequence of the oligonucleotide used as a template for that FISH probe, which concatenates the index primers, the reverse transcription primer, and the targeting sequence in the order depicted in <a href=\"#fig1\">Figure 1</a>. \u2018Index primer 1\u2019 and \u2018Index primer 2\u2019 are the sequences of the primers used to amplify the subset of probes that includes the specified probe."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13065-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-supp1-v1.xlsx", 
                 "filename": "elife-13065-supp1-v1.xlsx"
             }, 
             {
@@ -634,8 +745,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Sequences of the N-terminal fusion constructs used to create the large-scale signal-peptide libraries.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2018Gene name\u2019 is the name of the gene from which the signal peptide was derived. \u2018Signal-peptide type\u2019 specifies whether the signal peptide is a SRP, SecB, or cytoplasmic control peptide. \u2018Encoding\u2019 specifies the type of the encoding of the signal peptide. Native indicates that the nucleotide sequence is the native <i>E. coli</i> sequence; Synthetic indicates that the native <i>E. coli</i> codons have been exchanged at random with synonymous codons; and \u2018No translation\u2019 indicates that the first two codons, including the start codon, of the native <i>E. coli</i> sequence have been replaced with stop codons. \u2018Oligo sequence\u2019 specifies the sequence of the oligonucleotide used to create the specific fusion."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13065-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-supp2-v1.xlsx", 
                 "filename": "elife-13065-supp2-v1.xlsx"
             }, 
             {
@@ -643,8 +760,14 @@
                 "id": "SD6-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Plasmids and <i>E. coli</i> strains used in this work.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2018Strain\u2019 is the name of the strain or strain library. \u2018Description\u2019 is a brief description of the strain and its purpose in this study. \u2018Parent strain\u2019 lists the strain used to generate each strain where appropriate. \u2018Genotype\u2019 provides a compact description of the modifications to the strain. \u2018Plasmid\u2019 lists the name of the plasmids contained by each strain where appropriate. libJMXX represents a complex plasmid library. pZS*32 follows the naming convention of the pZ plasmids (Lutz and Bujard, 1997). SCS31 represents a selection-counter-selection cassette employing pRhaB-ccdB and the chloramphenicol resistance gene cat."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-13065-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-supp3-v1.xlsx", 
                 "filename": "elife-13065-supp3-v1.xlsx"
             }, 
             {
@@ -653,7 +776,7 @@
                 "label": "Source code 1.", 
                 "title": "Matlab functions for the identification of bacterial cell boundaries and the rendering of STORM images.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-13065-code1-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-code1-v1.zip", 
                 "filename": "elife-13065-code1-v1.zip"
             }
         ], 
@@ -674,7 +797,8 @@
                     ], 
                     "title": "RNA life time measurements in E. coli", 
                     "details": "Publicly available at Gene Expression Omnibus (accession no: GSE75818)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75818"
+                    "uri": "https://publishing-cdn.elifesciences.org/13065/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75818", 
+                    "filename": "acc.cgi?acc=GSE75818"
                 }
             ]
         }, 
@@ -763,7 +887,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig1-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig1-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -778,7 +902,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig1-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig1-figsupp1-v1", 
+                                        "filename": "elife-13065-fig1-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -793,9 +918,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig1-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig1-figsupp2-v1", 
+                                        "filename": "elife-13065-fig1-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13065-fig1-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -833,7 +960,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig2-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig2-v1", 
+                                "filename": "elife-13065-fig2-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -867,7 +995,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig3-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig3-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -882,9 +1010,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig3-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig3-figsupp1-v1", 
+                                        "filename": "elife-13065-fig3-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13065-fig3-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -922,15 +1052,21 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig4-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig4-v1", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.13065.010", 
                                         "id": "SD1-data", 
                                         "label": "Figure 4\u2014source data 1.", 
                                         "title": "RNA abundance measurements versus time and half-lives derived from these data for wild-type <i>E. coli</i> in the presence and absence of kasugamycin.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "\u2018Sample\u2019 specifies the strain, the presence or absence of kasugamycin, and the biological replicate (one of two). \u2018Predicted location\u2019 is the predicted location of the protein as determined by the PsortB 3.0 server. \u2018Gene name\u2019 specifies the <i>E. coli</i> gene or small RNA name. \u2018Abundance N min\u2019 provides the copy number of the specific RNA per cell at the specified time point. \u2018Decay rate\u2019 provides the measured decay rate, e.g. log(2) / half-life, in units of 1 per minute. \u201895% Confidence interval\u2019 is the 95% confidence interval of the decay rate. The decay rate and its confidence interval are only provided if the accuracy in the determination of specific decay rates met our criteria: the error as estimated from the 95% confidence interval range is less than one half of the fit value."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-13065-fig4-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig4-data1-v1.xlsx", 
                                         "filename": "elife-13065-fig4-data1-v1.xlsx"
                                     }
                                 ], 
@@ -948,7 +1084,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig4-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig4-figsupp1-v1", 
+                                        "filename": "elife-13065-fig4-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -963,9 +1100,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig4-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig4-figsupp2-v1", 
+                                        "filename": "elife-13065-fig4-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13065-fig4-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -995,15 +1134,21 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig5-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig5-v1", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.13065.014", 
                                         "id": "SD2-data", 
                                         "label": "Figure 5\u2014source data 1.", 
                                         "title": "RNA abundance measurements versus time and half-lives derived from these data for all signal-peptide fusions.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "\u2018Test gene\u2019 is the name of the fusion gene. \u2018Signal-peptide gene\u2019 is the gene from which the signal peptide was derived. \u2018Signal-peptide type\u2019 is the type of signal peptide. If 'Spike-In RNA' is listed, then the data are for one of the four spike in RNAs. \u2018Encoding\u2019 specifies the encoding of the signal peptide. Native indicates that the nucleotide sequence is the native <i>E. coli</i> sequence; Synthetic indicates that the native <i>E. coli</i> codons have been exchanged at random with synonymous codons; and \u2018No translation\u2019 indicates that the first two codons, including the start codon, of the native <i>E. coli</i> sequence have been replaced with stop codons. \u2018Abundance N min\u2019 provides the average copy number of the specific RNA per cell at the specified time point. \u2018Decay rate\u2019 provides the measured decay rate, e.g. log(2) / half-life, in units of 1 per minute. \u201895% Confidence interval\u2019 is the 95% confidence interval of the decay rate. The decay rate and its confidence interval are only provided if the accuracy in the determination of specific decay rates met our criteria: the error as estimated from the 95% confidence interval range is less than one half of the fit value."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-13065-fig5-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig5-data1-v1.xlsx", 
                                         "filename": "elife-13065-fig5-data1-v1.xlsx"
                                     }
                                 ], 
@@ -1021,7 +1166,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig5-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig5-figsupp1-v1", 
+                                        "filename": "elife-13065-fig5-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1036,9 +1182,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig5-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig5-figsupp2-v1", 
+                                        "filename": "elife-13065-fig5-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13065-fig5-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1084,15 +1232,21 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig6-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig6-v1", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.13065.018", 
                                         "id": "SD3-data", 
                                         "label": "Figure 6\u2014source data 1.", 
                                         "title": "RNA abundance measurements versus time and half-lives derived from these data for the mutant <i>E. coli</i> strain.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "\u2018Sample\u2019 specifies the strain and the biological replicate (one of two). \u2018Predicted location\u2019 is the predicted location of the protein as determined by the PsortB 3.0 server. \u2018Gene name\u2019 specifies the <i>E. coli</i> gene or small RNA name. \u2018Abundance N min\u2019 provides the average copy number of the specific RNA per cell at the specified time point. \u2018Decay rate\u2019 provides the measured decay rate, e.g. log(2) / half-life, in units of 1 per minute. \u201895% Confidence interval\u2019 is the 95% confidence interval of the decay rate. The decay rate and its confidence interval are only provided if the accuracy in the determination of specific decay rates met our criteria: the error as estimated from the 95% confidence interval range is less than one half of the fit value."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-13065-fig6-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig6-data1-v1.xlsx", 
                                         "filename": "elife-13065-fig6-data1-v1.xlsx"
                                     }
                                 ], 
@@ -1110,7 +1264,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig6-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig6-figsupp1-v1", 
+                                        "filename": "elife-13065-fig6-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1125,9 +1280,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-13065-fig6-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig6-figsupp2-v1", 
+                                        "filename": "elife-13065-fig6-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-13065-fig6-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1146,7 +1303,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-13065-fig7-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/13065/elife-13065-fig7-v1", 
+                                "filename": "elife-13065-fig7-v1"
                             }
                         ]
                     }

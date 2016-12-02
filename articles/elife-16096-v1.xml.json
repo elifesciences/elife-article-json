@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.16096", 
         "authorLine": "Joel M Swenson et al", 
         "title": "The composition and organization of <i>Drosophila</i> heterochromatin are heterogeneous and dynamic", 
-        "published": "2016-08-11T00:00:00", 
-        "versionDate": "2016-08-11T00:00:00", 
+        "published": "2016-08-11T00:00:00Z", 
+        "versionDate": "2016-08-11T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e16096", 
         "pdf": "https://publishing-cdn.elifesciences.org/16096/elife-16096-v1.pdf", 
@@ -238,14 +238,150 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "Lawrence Berkeley National Laboratory"
+                        ]
+                    }, 
+                    "awardId": "LB11015", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joel M Swenson", 
+                                "index": "Swenson, Joel M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Sylvain V Costes", 
+                                "index": "Costes, Sylvain V"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gary H Karpen", 
+                                "index": "Karpen, Gary H"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "NRSA Trainee appointment, T32 GM 007232", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joel M Swenson", 
+                                "index": "Swenson, Joel M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "Ruth Kirchstein NIH Postdoctoral Fellowship, 1F32GM086111", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Serafin U Colmenares", 
+                                "index": "Colmenares, Serafin U"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "Graduate Research Fellowship, DGE 1106400", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Amy R Strom", 
+                                "index": "Strom, Amy R"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "RO1, GM086613", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gary H Karpen", 
+                                "index": "Karpen, Gary H"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-7", 
+                    "source": {
+                        "name": [
+                            "Reshetko Family Scholarship in the College of Letters & Science"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joel M Swenson", 
+                                "index": "Swenson, Joel M"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.16096.035", 
                 "id": "SD7-data", 
                 "label": "Supplementary file 1.", 
                 "title": "GO enrichment analysis of HPips.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "135 HPips were analyzed using DAVID for enrichment of GO terms.\u00a0The GO enrichment category is shown along with the p-value and the HPips that belong to that GO enrichment category. Some redundant GO categories were removed for ease of viewing by selecting a representative GO category for each Functional Annotation Cluster reported by DAVID. Blue GO enrichment categories indicate that the categories belonged to the same Functional Annotation Cluster. GO categories representing ribosomal subunits and structural constituents of cytoskeleton were enriched, but are not displayed since they are considered common contaminants."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp1-v1.xlsx", 
                 "filename": "elife-16096-supp1-v1.xlsx"
             }, 
             {
@@ -253,8 +389,14 @@
                 "id": "SD8-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Description of imaging features extracted from images.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Using custom Matlab scripts, the number of nuclei per well were counted and 32 imaging features were measured per nucleus and averaged per well.\u00a0These averaged imaging features combined with the number of nuclei yields an 'imaging signature' for each well."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp2-v1.xlsx", 
                 "filename": "elife-16096-supp2-v1.xlsx"
             }, 
             {
@@ -262,8 +404,14 @@
                 "id": "SD9-data", 
                 "label": "Supplementary file 3.", 
                 "title": "564 genes putatively down-regulate HP1a.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Gene depletions that led to an increase in HP1a mean and max intensity are listed (HP1a negative regulators)."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp3-v1.xlsx", 
                 "filename": "elife-16096-supp3-v1.xlsx"
             }, 
             {
@@ -271,8 +419,14 @@
                 "id": "SD10-data", 
                 "label": "Supplementary file 4.", 
                 "title": "GO enrichment analysis on all RNAi hits.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "All hits were analyzed using DAVID for enrichment of GO terms.\u00a0The GO enrichment category is shown along with the p-value and the gene that belongs to that GO enrichment category. Redundant GO categories were removed by selecting a representative GO category for each Functional Annotation Cluster as reported by DAVID. Red indicates a GO category that was not significantly enriched but was deemed to be of interest."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp4-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp4-v1.xlsx", 
                 "filename": "elife-16096-supp4-v1.xlsx"
             }, 
             {
@@ -280,8 +434,14 @@
                 "id": "SD11-data", 
                 "label": "Supplementary file 5.", 
                 "title": "A summary of the data presented in this manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Unless otherwise noted the data presented here was generated as part of this study.\u00a0Not all proteins that colocalized with HP1a as part of the 'low-resolution' imaging screen were tested for effects on PEV or imaged at higher resolution. If these proteins were previously studied for PEV effects or localization, references are provided. See the main text for details."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp5-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp5-v1.xlsx", 
                 "filename": "elife-16096-supp5-v1.xlsx"
             }, 
             {
@@ -289,8 +449,14 @@
                 "id": "SD12-data", 
                 "label": "Supplementary file 6.", 
                 "title": "A list of primers used in this manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "All sequences are in 5' to 3' orientation; genic sequences are shown in upper case; flanking sequences containing restriction sites are shown in lower case."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp6-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp6-v1.xlsx", 
                 "filename": "elife-16096-supp6-v1.xlsx"
             }
         ], 
@@ -319,7 +485,8 @@
                     ], 
                     "title": "Genome-wide RNAi Screen to Identify Regulators of Heterochromatin Recruitment or Maintenance", 
                     "details": "Publicly available at the Flyrnai website (Project ID: 151)", 
-                    "uri": "http://www.flyrnai.org/cgi-bin/DRSC_screen_csv.pl?project_id=151"
+                    "uri": "https://publishing-cdn.elifesciences.org/16096/http://www.flyrnai.org/cgi-bin/DRSC_screen_csv.pl?project_id=151", 
+                    "filename": "DRSC_screen_csv.pl?project_id=151"
                 }, 
                 {
                     "id": "data-ro2", 
@@ -344,7 +511,8 @@
                     ], 
                     "title": "Genome-wide RNAi Screen to Identify Regulators of Heterochromatin Recruitment or Maintenance", 
                     "details": "Publicly available at the the NCBI PubChem website (AID: 1159615)", 
-                    "uri": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=1159615"
+                    "uri": "https://publishing-cdn.elifesciences.org/16096/https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=1159615", 
+                    "filename": "assay.cgi?aid=1159615"
                 }, 
                 {
                     "id": "data-ro3", 
@@ -365,7 +533,8 @@
                     ], 
                     "title": "HP1a IP-MS", 
                     "details": "Publicly available at ProteomeXchange (accession no: PXD003780)", 
-                    "uri": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD003780"
+                    "uri": "https://publishing-cdn.elifesciences.org/16096/http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD003780", 
+                    "filename": "GetDataset?ID=PXD003780"
                 }
             ]
         }, 
@@ -379,8 +548,8 @@
         "doi": "10.7554/eLife.16096", 
         "authorLine": "Joel M Swenson et al", 
         "title": "The composition and organization of <i>Drosophila</i> heterochromatin are heterogeneous and dynamic", 
-        "published": "2016-08-11T00:00:00", 
-        "versionDate": "2016-08-11T00:00:00", 
+        "published": "2016-08-11T00:00:00Z", 
+        "versionDate": "2016-08-11T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e16096", 
         "pdf": "https://publishing-cdn.elifesciences.org/16096/elife-16096-v1.pdf", 
@@ -605,14 +774,150 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "name": [
+                            "Lawrence Berkeley National Laboratory"
+                        ]
+                    }, 
+                    "awardId": "LB11015", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joel M Swenson", 
+                                "index": "Swenson, Joel M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Sylvain V Costes", 
+                                "index": "Costes, Sylvain V"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gary H Karpen", 
+                                "index": "Karpen, Gary H"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "NRSA Trainee appointment, T32 GM 007232", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joel M Swenson", 
+                                "index": "Swenson, Joel M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "Ruth Kirchstein NIH Postdoctoral Fellowship, 1F32GM086111", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Serafin U Colmenares", 
+                                "index": "Colmenares, Serafin U"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-5", 
+                    "source": {
+                        "funderId": "10.13039/100000001", 
+                        "name": [
+                            "National Science Foundation"
+                        ]
+                    }, 
+                    "awardId": "Graduate Research Fellowship, DGE 1106400", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Amy R Strom", 
+                                "index": "Strom, Amy R"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-6", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "RO1, GM086613", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gary H Karpen", 
+                                "index": "Karpen, Gary H"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-7", 
+                    "source": {
+                        "name": [
+                            "Reshetko Family Scholarship in the College of Letters & Science"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Joel M Swenson", 
+                                "index": "Swenson, Joel M"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.16096.035", 
                 "id": "SD7-data", 
                 "label": "Supplementary file 1.", 
                 "title": "GO enrichment analysis of HPips.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "135 HPips were analyzed using DAVID for enrichment of GO terms.\u00a0The GO enrichment category is shown along with the p-value and the HPips that belong to that GO enrichment category. Some redundant GO categories were removed for ease of viewing by selecting a representative GO category for each Functional Annotation Cluster reported by DAVID. Blue GO enrichment categories indicate that the categories belonged to the same Functional Annotation Cluster. GO categories representing ribosomal subunits and structural constituents of cytoskeleton were enriched, but are not displayed since they are considered common contaminants."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp1-v1.xlsx", 
                 "filename": "elife-16096-supp1-v1.xlsx"
             }, 
             {
@@ -620,8 +925,14 @@
                 "id": "SD8-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Description of imaging features extracted from images.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Using custom Matlab scripts, the number of nuclei per well were counted and 32 imaging features were measured per nucleus and averaged per well.\u00a0These averaged imaging features combined with the number of nuclei yields an 'imaging signature' for each well."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp2-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp2-v1.xlsx", 
                 "filename": "elife-16096-supp2-v1.xlsx"
             }, 
             {
@@ -629,8 +940,14 @@
                 "id": "SD9-data", 
                 "label": "Supplementary file 3.", 
                 "title": "564 genes putatively down-regulate HP1a.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Gene depletions that led to an increase in HP1a mean and max intensity are listed (HP1a negative regulators)."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp3-v1.xlsx", 
                 "filename": "elife-16096-supp3-v1.xlsx"
             }, 
             {
@@ -638,8 +955,14 @@
                 "id": "SD10-data", 
                 "label": "Supplementary file 4.", 
                 "title": "GO enrichment analysis on all RNAi hits.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "All hits were analyzed using DAVID for enrichment of GO terms.\u00a0The GO enrichment category is shown along with the p-value and the gene that belongs to that GO enrichment category. Redundant GO categories were removed by selecting a representative GO category for each Functional Annotation Cluster as reported by DAVID. Red indicates a GO category that was not significantly enriched but was deemed to be of interest."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp4-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp4-v1.xlsx", 
                 "filename": "elife-16096-supp4-v1.xlsx"
             }, 
             {
@@ -647,8 +970,14 @@
                 "id": "SD11-data", 
                 "label": "Supplementary file 5.", 
                 "title": "A summary of the data presented in this manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Unless otherwise noted the data presented here was generated as part of this study.\u00a0Not all proteins that colocalized with HP1a as part of the 'low-resolution' imaging screen were tested for effects on PEV or imaged at higher resolution. If these proteins were previously studied for PEV effects or localization, references are provided. See the main text for details."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp5-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp5-v1.xlsx", 
                 "filename": "elife-16096-supp5-v1.xlsx"
             }, 
             {
@@ -656,8 +985,14 @@
                 "id": "SD12-data", 
                 "label": "Supplementary file 6.", 
                 "title": "A list of primers used in this manuscript.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "All sequences are in 5' to 3' orientation; genic sequences are shown in upper case; flanking sequences containing restriction sites are shown in lower case."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-16096-supp6-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-supp6-v1.xlsx", 
                 "filename": "elife-16096-supp6-v1.xlsx"
             }
         ], 
@@ -686,7 +1021,8 @@
                     ], 
                     "title": "Genome-wide RNAi Screen to Identify Regulators of Heterochromatin Recruitment or Maintenance", 
                     "details": "Publicly available at the Flyrnai website (Project ID: 151)", 
-                    "uri": "http://www.flyrnai.org/cgi-bin/DRSC_screen_csv.pl?project_id=151"
+                    "uri": "https://publishing-cdn.elifesciences.org/16096/http://www.flyrnai.org/cgi-bin/DRSC_screen_csv.pl?project_id=151", 
+                    "filename": "DRSC_screen_csv.pl?project_id=151"
                 }, 
                 {
                     "id": "data-ro2", 
@@ -711,7 +1047,8 @@
                     ], 
                     "title": "Genome-wide RNAi Screen to Identify Regulators of Heterochromatin Recruitment or Maintenance", 
                     "details": "Publicly available at the the NCBI PubChem website (AID: 1159615)", 
-                    "uri": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=1159615"
+                    "uri": "https://publishing-cdn.elifesciences.org/16096/https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=1159615", 
+                    "filename": "assay.cgi?aid=1159615"
                 }, 
                 {
                     "id": "data-ro3", 
@@ -732,7 +1069,8 @@
                     ], 
                     "title": "HP1a IP-MS", 
                     "details": "Publicly available at ProteomeXchange (accession no: PXD003780)", 
-                    "uri": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD003780"
+                    "uri": "https://publishing-cdn.elifesciences.org/16096/http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD003780", 
+                    "filename": "GetDataset?ID=PXD003780"
                 }
             ]
         }, 
@@ -804,7 +1142,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-16096-fig1-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig1-v1", 
+                        "filename": "elife-16096-fig1-v1"
                     }
                 ]
             }, 
@@ -843,8 +1182,14 @@
                                         "id": "SD1-data", 
                                         "label": "Table 1\u2014source data 1.", 
                                         "title": "2-Step HP1a IP-MS.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "HP1a was purified in the absence of ionizing\u00a0radiation\u00a0(IR) (A), and 10 min (B) and 60 (C) minutes after 10 Gy exposure. Number of unique peptides per protein are listed. The HPips identified did not change significantly with respect to irradiation, therefore we used all purifications to identify candidate hits."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-16096-table1-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-table1-data1-v1.xlsx", 
                                         "filename": "elife-16096-table1-data1-v1.xlsx"
                                     }, 
                                     {
@@ -852,8 +1197,14 @@
                                         "id": "SD2-data", 
                                         "label": "Table 1\u2014source data 2.", 
                                         "title": "1-Step HP1a IP-MS.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "HP1a was purified in the absence of IR (A, Mock and FS-HP1a), and 10 (B, FS-HP1a) and 60 (C, FS-HP1a) minutes after 10 Gy exposure. Number of unique peptides per protein is listed. The HPips identified did not change significantly with respect to irradiation, therefore we used all purifications to identify candidate hits."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-16096-table1-data2-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-table1-data2-v1.xlsx", 
                                         "filename": "elife-16096-table1-data2-v1.xlsx"
                                     }, 
                                     {
@@ -861,8 +1212,14 @@
                                         "id": "SD3-data", 
                                         "label": "Table 1\u2014source data 3.", 
                                         "title": "HP1a interacts with a large set of proteins.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Silver-stained gel of a single step purification from S2 cells stably expressing FS-HP1a (lanes 1\u20133) or WT (lane 4) S2 cells. HP1a was purified in the absence of IR (lane 1), and 10 (lane 2) and 60 (lane 3) minutes after 10 Gy exposure. The HPips identified did not change significantly with respect to irradiation, therefore all purifications were used to identify candidate hits."
+                                            }
+                                        ], 
                                         "mediaType": "application/pdf", 
-                                        "uri": "elife-16096-table1-data3-v1.pdf", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-table1-data3-v1.pdf", 
                                         "filename": "elife-16096-table1-data3-v1.pdf"
                                     }
                                 ]
@@ -895,15 +1252,21 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-fig2-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig2-v1", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.16096.009", 
                                         "id": "SD4-data", 
                                         "label": "Figure 2\u2014source data 1.", 
                                         "title": "374 genes putatively regulate heterochromatin.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Genes identified from the RNAi screen whose depletion results in reduced HP1a levels or phenocopies HP1a or Su(var)3\u20139 depletions (HP1a positive regulators, HPprs) and the method used to identify them are listed."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-16096-fig2-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig2-data1-v1.xlsx", 
                                         "filename": "elife-16096-fig2-data1-v1.xlsx"
                                     }
                                 ], 
@@ -921,9 +1284,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig2-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig2-figsupp1-v1", 
+                                        "filename": "elife-16096-fig2-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16096-fig2-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -977,18 +1342,25 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-fig3-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig3-v1", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.16096.013", 
                                         "id": "SD5-data", 
                                         "label": "Figure 3\u2014source data 1.", 
                                         "title": "Identification of candidates that co-localize with HP1a.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Proteins were selected from the HP1a IP-MS or the RNAi screen, tagged with GFP and analyzed for localization with respect to mCherry-tagged HP1a. GFP-tagged HP1a was used as a positive control. Cells shaded red were found to have a significant increase in the Pearson correlation coefficient (PCC) between GFP-mod (dark green shading) and GFP-ORF PCC using the two-sided unpaired Mann-Whitney test (p-value&lt;0.05)."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-16096-fig3-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig3-data1-v1.xlsx", 
                                         "filename": "elife-16096-fig3-data1-v1.xlsx"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16096-fig3-v1"
                             }
                         ]
                     }, 
@@ -1014,18 +1386,25 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-fig4-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig4-v1", 
                                 "sourceData": [
                                     {
                                         "doi": "10.7554/eLife.16096.015", 
                                         "id": "SD6-data", 
                                         "label": "Figure 4\u2014source data 1.", 
                                         "title": "HPips and RNAi screen candidates are suppressors of variegation.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Fly mutants and RNAi lines were tested for white variegation in <i>y, w, KV108</i> males and are grouped with the appropriate positive and negative control(s). Mutants were only tested for dominant effects if they were recessive lethal. See legend of <a href=\"#fig4\">Figure 4</a> for additional details."
+                                            }
+                                        ], 
                                         "mediaType": "application/xlsx", 
-                                        "uri": "elife-16096-fig4-data1-v1.xlsx", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig4-data1-v1.xlsx", 
                                         "filename": "elife-16096-fig4-data1-v1.xlsx"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16096-fig4-v1"
                             }
                         ]
                     }, 
@@ -1117,7 +1496,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-fig5-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig5-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1132,9 +1511,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig5-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig5-figsupp1-v1", 
+                                        "filename": "elife-16096-fig5-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16096-fig5-v1"
                             }
                         ]
                     }, 
@@ -1179,7 +1560,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-fig6-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig6-v1", 
+                                "filename": "elife-16096-fig6-v1"
                             }, 
                             {
                                 "type": "video", 
@@ -1193,7 +1575,26 @@
                                         "text": "HP2 partially overlaps and is enriched at the boundary of HP1a in G2, released from chromatin during mitosis and broadly colocalized with HP1a during G1. Mitosis is used to discriminate G1 from G2. mCherry-tagged HP1a is in red, GFP-tagged HP2 is in green. Scale bar is 10\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media1.mp4"
+                                "width": 981, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media1.jpg", 
+                                "height": 1024, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media1.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media1.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media1.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media1.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media1.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media1.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -1207,7 +1608,26 @@
                                         "text": "SuUR colocalizes with HP1a during G2 and G1, and colocalizes with PCNA during S-phase. Mitosis is used to discriminate G1 from G2, while PCNA foci indicate S-phase. Cerulean-tagged HP1a is in blue, YFP-tagged SuUR is in green, mCherry-tagged PCNA is in red. Scale bar is 5\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media2.mp4"
+                                "width": 738, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media2.jpg", 
+                                "height": 1024, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media2.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media2.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media2.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media2.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media2.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media2.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1225,7 +1645,26 @@
                                         "text": "ADD1-PB forms focal subdomains that abut and overlap HP1a, b not overlap with the centromeric or telomeric markers CID and HOAP (data not shown), respectively. In G2 ADD1-PB is predominantly focal at the heterochromatin boundary. A small amount of discrete signal remains on chromatin during mitosis and persists at low levels into G1, before eventually increasing in intensity, which suggests loading at the end of G1 or during S-phase. Mitosis is used to discriminate G1 from G2. mCherry-tagged HP1a is in red, GFP-tagged ADD1-PB is in green. Scale bar is 5\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media3.mp4"
+                                "width": 1033, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media3.jpg", 
+                                "height": 997, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media3.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media3.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media3.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media3.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media3.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media3.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -1239,7 +1678,26 @@
                                         "text": "Odj broadly co-localizes with HP1a at the end of G2 and disperses from chromosomes during mitosis. It reforms as a focal subdomain after mitosis that gradually increases in size, until it broadly overlaps HP1a again. Mitosis is used to discriminate G1 from G2. mCherry-tagged HP1a is in red, GFP-tagged Odj is in green. Scale bar is 5\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media4.mp4"
+                                "width": 1365, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media4.jpg", 
+                                "height": 1002, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media4.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media4.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media4.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media4.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media4.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media4.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -1253,7 +1711,26 @@
                                         "text": "FK506-bp1 narrowly co-localizes with HP1a throughout much of the cell cycle and loses co-localization with HP1a 20 min to 1\u2009hr before HP1a is released from chromosomes (prophase). After mitosis, the narrow co-localization pattern of FK506-bp1 is restored, with a weak ring around the nucleolus, which is located adjacent to the HP1a domain. FK506-bp1 foci then begin to accumulate outside of heterochromatin until just before prophase, when they disappear prior to HP1a removal. Foci do not track with PCNA (replication), CID (centromeres) or HOAP (telomeres) foci (data not shown). Mitosis is used to discriminate G1 from G2. mCherry-tagged HP1a is in red, GFP-tagged FK506-bp1 is in green. Scale bar is 10\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media5.mp4"
+                                "width": 1128, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media5.jpg", 
+                                "height": 969, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media5.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media5.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media5.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media5.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media5.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media5.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1271,7 +1748,26 @@
                                         "text": "Lhr broadly co-localizes with HP1a and is released from chromatin during mitosis. Mitosis is used to discriminate G1 from G2. mCherry-tagged HP1a is in red, GFP-tagged Lhr is in green. Scale bar is 5\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media6.mp4"
+                                "width": 1011, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media6.jpg", 
+                                "height": 1024, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media6.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media6.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media6.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media6.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media6.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media6.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -1285,7 +1781,26 @@
                                         "text": "XNP colocalizes with a portion of HP1a in G2. The majority of XNP is removed during mitosis, however 1-2 foci remain chromatin-bound. In G1 XNP is focal within the HP1a domain but gradually accumulates\u00a0in\u00a0size and colocalizes with more HP1a. Mitosis is used to discriminate G1 from G2. mCherry-tagged HP1a is in red, GFP-tagged XNP is in green. Scale bar is 5\u00a0\u00b5m."
                                     }
                                 ], 
-                                "uri": "elife-16096-media7.mp4"
+                                "width": 940, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media7.jpg", 
+                                "height": 1024, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-16096-media7.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media7.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media7.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media7.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-16096-media7.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/https://static-movie-usa.glencoesoftware.com/webm/10.7554/773/6e45bb3d75f648adb24bd1dd50419329c248a799/elife-16096-media7.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1304,7 +1819,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-fig7-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1319,7 +1834,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig7-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-figsupp1-v1", 
+                                        "filename": "elife-16096-fig7-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1334,7 +1850,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig7-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-figsupp2-v1", 
+                                        "filename": "elife-16096-fig7-figsupp2-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1349,7 +1866,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig7-figsupp3-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-figsupp3-v1", 
+                                        "filename": "elife-16096-fig7-figsupp3-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1364,7 +1882,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig7-figsupp4-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-figsupp4-v1", 
+                                        "filename": "elife-16096-fig7-figsupp4-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1379,7 +1898,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig7-figsupp5-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-figsupp5-v1", 
+                                        "filename": "elife-16096-fig7-figsupp5-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1394,9 +1914,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-16096-fig7-figsupp6-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig7-figsupp6-v1", 
+                                        "filename": "elife-16096-fig7-figsupp6-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-16096-fig7-v1"
                             }
                         ]
                     }
@@ -1452,7 +1974,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-16096-fig8-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-fig8-v1", 
+                        "filename": "elife-16096-fig8-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -9581,7 +10104,8 @@
                 ], 
                 "title": "R: A Language and Environment for Statistical Computing", 
                 "details": "R: A Language and Environment for Statistical Computing, Vienna, Austria, R Foundation for Statistical Computing, http://www.r-project.org/", 
-                "uri": "http://www.r-project.org/"
+                "uri": "https://publishing-cdn.elifesciences.org/16096/http://www.r-project.org/", 
+                "filename": ""
             }, 
             {
                 "type": "journal", 
@@ -12259,7 +12783,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-16096-app1-fig1-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/16096/elife-16096-app1-fig1-v1", 
+                                "filename": "elife-16096-app1-fig1-v1"
                             }, 
                             {
                                 "type": "paragraph", 

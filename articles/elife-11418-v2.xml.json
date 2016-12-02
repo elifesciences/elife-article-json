@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.11418", 
         "authorLine": "Marius Walter et al", 
         "title": "An epigenetic switch ensures transposon repression upon dynamic loss of DNA methylation in embryonic stem cells", 
-        "published": "2016-01-27T00:00:00", 
+        "published": "2016-01-27T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e11418", 
         "pdf": "https://publishing-cdn.elifesciences.org/11418/elife-11418-v2.pdf", 
@@ -381,6 +381,49 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100000781", 
+                        "name": [
+                            "European Research Council"
+                        ]
+                    }, 
+                    "awardId": "Consolidator", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "D\u00e9borah Bourc'his", 
+                                "index": "Bourc'his, D\u00e9borah"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/501100001665", 
+                        "name": [
+                            "Agence Nationale de la Recherche"
+                        ]
+                    }, 
+                    "awardId": "11-LBX0044", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "D\u00e9borah Bourc'his", 
+                                "index": "Bourc'his, D\u00e9borah"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11418.025", 
@@ -388,7 +431,7 @@
                 "label": "Supplementary file 1.", 
                 "title": "WGBS, RNA-seq and ChIP-seq statistics", 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11418-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-supp1-v2.xlsx", 
                 "filename": "elife-11418-supp1-v2.xlsx"
             }, 
             {
@@ -396,8 +439,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "(A) Number and percentage of active transposable elements at D0, D6 and D13 during conversion from serum to 2i+vitC.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Elements were considered as 'active' when they were covered by at least 10 uniquely mapped reads at one of the time point. Percentages represent the proportion of active copies relative to the total number of elements in a given family, as estimated from the reconstructed version of RepeatMasker. For ERVs, solo-LTRs were excluded and numbers represent only elements containing internal sequences. (B) Gene Ontology enrichment analysis for genes specifically up-regulated between D0 and D6. Gene ontology analysis for biological processes and molecular functions was performed for the 156 genes that were significantly up-regulated between D0 and D6 but with no significant differences between D0 and D13. The ten most significant terms are shown. (C) List of chimeric transcripts identified during conversion from serum to 2i+vitC. The 30 genes with the highest number of chimeric reads at D6 are ranked here. Numbers represent the absolute read count at the junction between the transposon (first exon) and the second exon of the gene, and the normalized read count of the whole transcript in RPKM. (D) Primer and sequence list. (E) Antibody list."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11418-supp2-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-supp2-v2.docx", 
                 "filename": "elife-11418-supp2-v2.docx"
             }
         ], 
@@ -426,7 +475,8 @@
                     ], 
                     "title": "An epigenetic switch ensures transposon repression upon acute loss of DNA methylation in ES cells", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE71593).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71593"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71593", 
+                    "filename": "acc.cgi?acc=GSE71593"
                 }
             ], 
             "used": [
@@ -477,7 +527,8 @@
                     ], 
                     "title": "The dynamics of genome-wide DNA methylation reprogramming in mouse primordial germ cells", 
                     "details": "Publicly available at the EBI European Nucleotide Archive (Accession no: ERP001953).", 
-                    "uri": "http://www.ebi.ac.uk/ena/data/view/ERP001953"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ebi.ac.uk/ena/data/view/ERP001953", 
+                    "filename": "ERP001953"
                 }, 
                 {
                     "id": "dataro3", 
@@ -554,7 +605,8 @@
                     ], 
                     "title": "Whole-genome bisulfite sequencing of two distinct interconvertible DNA methylomes of mouse embryonic stem cells", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE41923).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41923"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41923", 
+                    "filename": "acc.cgi?acc=GSE41923"
                 }, 
                 {
                     "id": "dataro4", 
@@ -607,7 +659,8 @@
                     ], 
                     "title": "Sequential ChIP-bisulfite sequencing enables direct genome-scale investigation of chromatin and DNA methylation cross-talk", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE28254).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28254"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28254", 
+                    "filename": "acc.cgi?acc=GSE28254"
                 }
             ]
         }, 
@@ -621,7 +674,7 @@
         "doi": "10.7554/eLife.11418", 
         "authorLine": "Marius Walter et al", 
         "title": "An epigenetic switch ensures transposon repression upon dynamic loss of DNA methylation in embryonic stem cells", 
-        "published": "2016-01-27T00:00:00", 
+        "published": "2016-01-27T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e11418", 
         "pdf": "https://publishing-cdn.elifesciences.org/11418/elife-11418-v2.pdf", 
@@ -990,6 +1043,49 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100000781", 
+                        "name": [
+                            "European Research Council"
+                        ]
+                    }, 
+                    "awardId": "Consolidator", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "D\u00e9borah Bourc'his", 
+                                "index": "Bourc'his, D\u00e9borah"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/501100001665", 
+                        "name": [
+                            "Agence Nationale de la Recherche"
+                        ]
+                    }, 
+                    "awardId": "11-LBX0044", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "D\u00e9borah Bourc'his", 
+                                "index": "Bourc'his, D\u00e9borah"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11418.025", 
@@ -997,7 +1093,7 @@
                 "label": "Supplementary file 1.", 
                 "title": "WGBS, RNA-seq and ChIP-seq statistics", 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11418-supp1-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-supp1-v2.xlsx", 
                 "filename": "elife-11418-supp1-v2.xlsx"
             }, 
             {
@@ -1005,8 +1101,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "(A) Number and percentage of active transposable elements at D0, D6 and D13 during conversion from serum to 2i+vitC.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Elements were considered as 'active' when they were covered by at least 10 uniquely mapped reads at one of the time point. Percentages represent the proportion of active copies relative to the total number of elements in a given family, as estimated from the reconstructed version of RepeatMasker. For ERVs, solo-LTRs were excluded and numbers represent only elements containing internal sequences. (B) Gene Ontology enrichment analysis for genes specifically up-regulated between D0 and D6. Gene ontology analysis for biological processes and molecular functions was performed for the 156 genes that were significantly up-regulated between D0 and D6 but with no significant differences between D0 and D13. The ten most significant terms are shown. (C) List of chimeric transcripts identified during conversion from serum to 2i+vitC. The 30 genes with the highest number of chimeric reads at D6 are ranked here. Numbers represent the absolute read count at the junction between the transposon (first exon) and the second exon of the gene, and the normalized read count of the whole transcript in RPKM. (D) Primer and sequence list. (E) Antibody list."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11418-supp2-v2.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-supp2-v2.docx", 
                 "filename": "elife-11418-supp2-v2.docx"
             }
         ], 
@@ -1035,7 +1137,8 @@
                     ], 
                     "title": "An epigenetic switch ensures transposon repression upon acute loss of DNA methylation in ES cells", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE71593).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71593"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71593", 
+                    "filename": "acc.cgi?acc=GSE71593"
                 }
             ], 
             "used": [
@@ -1086,7 +1189,8 @@
                     ], 
                     "title": "The dynamics of genome-wide DNA methylation reprogramming in mouse primordial germ cells", 
                     "details": "Publicly available at the EBI European Nucleotide Archive (Accession no: ERP001953).", 
-                    "uri": "http://www.ebi.ac.uk/ena/data/view/ERP001953"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ebi.ac.uk/ena/data/view/ERP001953", 
+                    "filename": "ERP001953"
                 }, 
                 {
                     "id": "dataro3", 
@@ -1163,7 +1267,8 @@
                     ], 
                     "title": "Whole-genome bisulfite sequencing of two distinct interconvertible DNA methylomes of mouse embryonic stem cells", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE41923).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41923"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41923", 
+                    "filename": "acc.cgi?acc=GSE41923"
                 }, 
                 {
                     "id": "dataro4", 
@@ -1216,7 +1321,8 @@
                     ], 
                     "title": "Sequential ChIP-bisulfite sequencing enables direct genome-scale investigation of chromatin and DNA methylation cross-talk", 
                     "details": "Publicly available at the NCBI Gene Expression Omnibus (Accession no: GSE28254).", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28254"
+                    "uri": "https://publishing-cdn.elifesciences.org/11418/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28254", 
+                    "filename": "acc.cgi?acc=GSE28254"
                 }
             ]
         }, 
@@ -1314,7 +1420,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig1-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig1-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1329,9 +1435,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig1-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig1-figsupp1-v2", 
+                                        "filename": "elife-11418-fig1-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig1-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1369,7 +1477,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig2-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig2-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1384,7 +1492,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig2-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig2-figsupp1-v2", 
+                                        "filename": "elife-11418-fig2-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1399,7 +1508,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig2-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig2-figsupp2-v2", 
+                                        "filename": "elife-11418-fig2-figsupp2-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1414,7 +1524,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig2-figsupp3-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig2-figsupp3-v2", 
+                                        "filename": "elife-11418-fig2-figsupp3-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1429,9 +1540,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig2-figsupp4-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig2-figsupp4-v2", 
+                                        "filename": "elife-11418-fig2-figsupp4-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig2-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1492,7 +1605,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig3-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig3-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1507,9 +1620,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig3-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig3-figsupp1-v2", 
+                                        "filename": "elife-11418-fig3-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig3-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1543,7 +1658,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig4-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig4-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1558,7 +1673,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig4-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig4-figsupp1-v2", 
+                                        "filename": "elife-11418-fig4-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1573,7 +1689,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig4-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig4-figsupp2-v2", 
+                                        "filename": "elife-11418-fig4-figsupp2-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1588,9 +1705,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig4-figsupp3-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig4-figsupp3-v2", 
+                                        "filename": "elife-11418-fig4-figsupp3-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig4-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1640,7 +1759,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig5-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig5-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1655,7 +1774,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig5-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig5-figsupp1-v2", 
+                                        "filename": "elife-11418-fig5-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1670,9 +1790,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig5-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig5-figsupp2-v2", 
+                                        "filename": "elife-11418-fig5-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig5-v2"
                             }
                         ]
                     }, 
@@ -1725,7 +1847,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig6-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig6-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1740,7 +1862,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig6-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig6-figsupp1-v2", 
+                                        "filename": "elife-11418-fig6-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -1755,9 +1878,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig6-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig6-figsupp2-v2", 
+                                        "filename": "elife-11418-fig6-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig6-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -1772,7 +1897,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11418-fig7-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig7-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1787,9 +1912,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11418-fig7-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig7-figsupp1-v2", 
+                                        "filename": "elife-11418-fig7-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11418-fig7-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1829,7 +1956,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-11418-fig8-v2"
+                        "uri": "https://publishing-cdn.elifesciences.org/11418/elife-11418-fig8-v2", 
+                        "filename": "elife-11418-fig8-v2"
                     }, 
                     {
                         "type": "paragraph", 

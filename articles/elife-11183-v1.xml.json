@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.11183", 
         "authorLine": "William E Barry, Carl S Thummel", 
         "title": "The <i>Drosophila</i> HNF4 nuclear receptor promotes glucose-stimulated insulin secretion and mitochondrial function in adults", 
-        "published": "2016-05-17T00:00:00", 
-        "versionDate": "2016-05-17T00:00:00", 
+        "published": "2016-05-17T00:00:00Z", 
+        "versionDate": "2016-05-17T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e11183", 
         "pdf": "https://publishing-cdn.elifesciences.org/11183/elife-11183-v1.pdf", 
@@ -108,14 +108,63 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "DK075607", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carl S Thummel", 
+                                "index": "Thummel, Carl S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "5T32 HD07491", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "William E Barry", 
+                                "index": "Barry, William E"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11183.019", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "List of genes identified by RNA-seq that display differential abundance between <i>dHNF4</i> mutant adult males and matched controls, meeting an FDR cutoff of 20 (1%) and Log2 ratio of \u00b1 0.6 (&gt;1.5 fold change).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Transcripts that show reduced abundance in <i>dHNF4</i> mutants are marked in beige, while those with increased abundance are colored blue."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11183-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-supp1-v1.xlsx", 
                 "filename": "elife-11183-supp1-v1.xlsx"
             }, 
             {
@@ -123,8 +172,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "List of the gene ontology categories (determined using GOstat) represented in the top 500 down-regulated and 500 up-regulated genes in <i>dHNF4</i> mutant adults.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The top 10-16 GO categories for each gene set are listed in order of significance along with the number of genes affected in that category, the total number of genes in that category (in parentheses), and the statistical significance of the match."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11183-supp2-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-supp2-v1.docx", 
                 "filename": "elife-11183-supp2-v1.docx"
             }, 
             {
@@ -132,8 +187,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "List of genes with transcription start sites (TSS) within 10 kb of dHNF4 enrichment peaks determined by ChIP-seq analysis, meeting an FDR 20 cutoff (1%).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The chromosomal region and coordinates are indicated for each enrichment peak with neighboring genes listed below each region. Genes are listed from proximal to distal, where the distance reported represents the number of base pairs from the TSS to the middle of the enrichment peak. Gene symbols and corresponding FlyBase gene ID numbers are reported, along with chromosomal location, gene start and stop sites, strand, and TSS position. Neighboring genes also identified by RNA-seq as being either up- or down-regulated in <i>dHNF4</i> mutants are highlighted in blue and beige, respectively."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11183-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-supp3-v1.xlsx", 
                 "filename": "elife-11183-supp3-v1.xlsx"
             }
         ], 
@@ -154,7 +215,8 @@
                     ], 
                     "title": "RNA-seq analysis of dHNF4 mutants", 
                     "details": "Publicly available at NCBI Gene Expression Omnibus (accession no: GSE73523)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73523"
+                    "uri": "https://publishing-cdn.elifesciences.org/11183/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73523", 
+                    "filename": "acc.cgi?acc=GSE73523"
                 }, 
                 {
                     "id": "data-ro2", 
@@ -171,7 +233,8 @@
                     ], 
                     "title": "ChIP-seq analysis of dHNF4", 
                     "details": "Publicly available at NCBI Gene Expression Omnibus (accession no: GSE73675)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73675"
+                    "uri": "https://publishing-cdn.elifesciences.org/11183/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73675", 
+                    "filename": "acc.cgi?acc=GSE73675"
                 }, 
                 {
                     "id": "data-ro3", 
@@ -188,7 +251,8 @@
                     ], 
                     "title": "Data from: Drosophila HNF4 promotes glucose-stimulated insulin secretion and increased mitochondrial function in adults", 
                     "details": "Available at Dryad Digital Repository under a CC0 Public Domain Dedication", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.8h8q5"
+                    "uri": "https://publishing-cdn.elifesciences.org/11183/http://dx.doi.org/10.5061/dryad.8h8q5", 
+                    "filename": "dryad.8h8q5"
                 }
             ]
         }, 
@@ -202,8 +266,8 @@
         "doi": "10.7554/eLife.11183", 
         "authorLine": "William E Barry, Carl S Thummel", 
         "title": "The <i>Drosophila</i> HNF4 nuclear receptor promotes glucose-stimulated insulin secretion and mitochondrial function in adults", 
-        "published": "2016-05-17T00:00:00", 
-        "versionDate": "2016-05-17T00:00:00", 
+        "published": "2016-05-17T00:00:00Z", 
+        "versionDate": "2016-05-17T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e11183", 
         "pdf": "https://publishing-cdn.elifesciences.org/11183/elife-11183-v1.pdf", 
@@ -298,14 +362,63 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "DK075607", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carl S Thummel", 
+                                "index": "Thummel, Carl S"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "5T32 HD07491", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "William E Barry", 
+                                "index": "Barry, William E"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11183.019", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "List of genes identified by RNA-seq that display differential abundance between <i>dHNF4</i> mutant adult males and matched controls, meeting an FDR cutoff of 20 (1%) and Log2 ratio of \u00b1 0.6 (&gt;1.5 fold change).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Transcripts that show reduced abundance in <i>dHNF4</i> mutants are marked in beige, while those with increased abundance are colored blue."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11183-supp1-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-supp1-v1.xlsx", 
                 "filename": "elife-11183-supp1-v1.xlsx"
             }, 
             {
@@ -313,8 +426,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "List of the gene ontology categories (determined using GOstat) represented in the top 500 down-regulated and 500 up-regulated genes in <i>dHNF4</i> mutant adults.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The top 10-16 GO categories for each gene set are listed in order of significance along with the number of genes affected in that category, the total number of genes in that category (in parentheses), and the statistical significance of the match."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11183-supp2-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-supp2-v1.docx", 
                 "filename": "elife-11183-supp2-v1.docx"
             }, 
             {
@@ -322,8 +441,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "List of genes with transcription start sites (TSS) within 10 kb of dHNF4 enrichment peaks determined by ChIP-seq analysis, meeting an FDR 20 cutoff (1%).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The chromosomal region and coordinates are indicated for each enrichment peak with neighboring genes listed below each region. Genes are listed from proximal to distal, where the distance reported represents the number of base pairs from the TSS to the middle of the enrichment peak. Gene symbols and corresponding FlyBase gene ID numbers are reported, along with chromosomal location, gene start and stop sites, strand, and TSS position. Neighboring genes also identified by RNA-seq as being either up- or down-regulated in <i>dHNF4</i> mutants are highlighted in blue and beige, respectively."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-11183-supp3-v1.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-supp3-v1.xlsx", 
                 "filename": "elife-11183-supp3-v1.xlsx"
             }
         ], 
@@ -344,7 +469,8 @@
                     ], 
                     "title": "RNA-seq analysis of dHNF4 mutants", 
                     "details": "Publicly available at NCBI Gene Expression Omnibus (accession no: GSE73523)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73523"
+                    "uri": "https://publishing-cdn.elifesciences.org/11183/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73523", 
+                    "filename": "acc.cgi?acc=GSE73523"
                 }, 
                 {
                     "id": "data-ro2", 
@@ -361,7 +487,8 @@
                     ], 
                     "title": "ChIP-seq analysis of dHNF4", 
                     "details": "Publicly available at NCBI Gene Expression Omnibus (accession no: GSE73675)", 
-                    "uri": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73675"
+                    "uri": "https://publishing-cdn.elifesciences.org/11183/http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73675", 
+                    "filename": "acc.cgi?acc=GSE73675"
                 }, 
                 {
                     "id": "data-ro3", 
@@ -378,7 +505,8 @@
                     ], 
                     "title": "Data from: Drosophila HNF4 promotes glucose-stimulated insulin secretion and increased mitochondrial function in adults", 
                     "details": "Available at Dryad Digital Repository under a CC0 Public Domain Dedication", 
-                    "uri": "http://dx.doi.org/10.5061/dryad.8h8q5"
+                    "uri": "https://publishing-cdn.elifesciences.org/11183/http://dx.doi.org/10.5061/dryad.8h8q5", 
+                    "filename": "dryad.8h8q5"
                 }
             ]
         }, 
@@ -463,7 +591,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11183-fig1-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig1-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -478,7 +606,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig1-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig1-figsupp1-v1", 
+                                        "filename": "elife-11183-fig1-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -493,9 +622,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig1-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig1-figsupp2-v1", 
+                                        "filename": "elife-11183-fig1-figsupp2-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11183-fig1-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -529,7 +660,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11183-fig2-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig2-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -544,9 +675,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig2-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig2-figsupp1-v1", 
+                                        "filename": "elife-11183-fig2-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11183-fig2-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -576,7 +709,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11183-fig3-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig3-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -591,7 +724,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig3-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig3-figsupp1-v1", 
+                                        "filename": "elife-11183-fig3-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -606,7 +740,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig3-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig3-figsupp2-v1", 
+                                        "filename": "elife-11183-fig3-figsupp2-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -621,9 +756,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig3-figsupp3-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig3-figsupp3-v1", 
+                                        "filename": "elife-11183-fig3-figsupp3-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11183-fig3-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -661,7 +798,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11183-fig4-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig4-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -676,7 +813,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig4-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig4-figsupp1-v1", 
+                                        "filename": "elife-11183-fig4-figsupp1-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -691,7 +829,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig4-figsupp2-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig4-figsupp2-v1", 
+                                        "filename": "elife-11183-fig4-figsupp2-v1"
                                     }, 
                                     {
                                         "type": "image", 
@@ -706,9 +845,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig4-figsupp3-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig4-figsupp3-v1", 
+                                        "filename": "elife-11183-fig4-figsupp3-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11183-fig4-v1"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -738,7 +879,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11183-fig5-v1", 
+                                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig5-v1", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -753,9 +894,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-11183-fig5-figsupp1-v1"
+                                        "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig5-figsupp1-v1", 
+                                        "filename": "elife-11183-fig5-figsupp1-v1"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-11183-fig5-v1"
                             }
                         ]
                     }, 
@@ -781,7 +924,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11183-fig6-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/11183/elife-11183-fig6-v1", 
+                                "filename": "elife-11183-fig6-v1"
                             }, 
                             {
                                 "type": "paragraph", 

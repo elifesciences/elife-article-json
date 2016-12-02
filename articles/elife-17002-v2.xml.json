@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.17002", 
         "authorLine": "Rachel H Roberts-Galbraith et al", 
         "title": "A functional genomics screen in planarians reveals regulators of whole-brain regeneration", 
-        "published": "2016-09-09T00:00:00", 
+        "published": "2016-09-09T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e17002", 
         "pdf": "https://publishing-cdn.elifesciences.org/17002/elife-17002-v2.pdf", 
@@ -141,14 +141,79 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Phillip A Newmark", 
+                                "index": "Newmark, Phillip A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100001033", 
+                        "name": [
+                            "Jane Coffin Childs Memorial Fund for Medical Research"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Rachel H Roberts-Galbraith", 
+                                "index": "Roberts-Galbraith, Rachel H"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "Canadian Mennonite University"
+                        ]
+                    }, 
+                    "awardId": "Faculty Research Grant", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "John L Brubacher", 
+                                "index": "Brubacher, John L"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.17002.026", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "All gene expression data from this study.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Read mapping and expression levels are given for each contig in our transcriptome. Column explanations are listed in the second tab in this spreadsheet."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-17002-supp1-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-supp1-v2.xls", 
                 "filename": "elife-17002-supp1-v2.xls"
             }, 
             {
@@ -156,8 +221,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Clustering analysis for gene expression during regeneration.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Mapped reads were analyzed independently for weighted gene correlation network analysis (WGCNA). Column explanations are listed in the second tab in this spreadsheet, but the modules for each differentially expressed contig are in column C. A greater number of genes were identified as being significantly upregulated in this analysis compared to our initial study because this list also includes genes differentially regulated in either direction (upregulation or downregulation) between any two samples. Also, the thresholds for fold-change and significance were not as strict."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-17002-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-supp2-v2.xlsx", 
                 "filename": "elife-17002-supp2-v2.xlsx"
             }, 
             {
@@ -166,7 +237,7 @@
                 "label": "Supplementary file 3.", 
                 "title": "(<b>A</b>) Expression patterns of upregulated genes cloned in this study. Expression patterns are as follows: BB- brain branch; Ep- epithelial; Ey- eyespots; G- gut; GC- germ cell; H- head; L- lateral margin; M- mesenchymal (parenchymal) expression pattern (could include muscle-like or neoblast-like patterns); N- neural; N+- neural plus another expression pattern (including neural with background); NS- neural subset; Ph- pharynx; Pol- polar expression; Pr- protonephridia; Pu- punctate; U- ubiquitous. (<b>B</b>) Genes with functions in regeneration. Includes genes with small brain regeneration phenotypes, plus <i>arrowhead</i> and <i>SP6</i> which functions in eye regeneration. The results of ISH experiments, phenotype (including whether significant result was found in brain regeneration quantification), and follow-up RNAi experiments with <i>sFRP-1</i> and <i>smedwi-1</i> are shown. For <i>sFRP-1</i> and <i>smedwi-</i>1 experiments, the results are summarized as follows: P- signal present; R- signal reduced; A- signal absent. For each contig, results from clustering analysis, expression in FACs analysis (<a href=\"#bib60\">Labb\u00c9Labb\u00e9 et al., 2012</a>), and time points for significant upregulation vs. cut control (\u22652x, p\u22640.01) are also shown. BLAST hits and other annotation are also presented. (<b>C</b>) Genes with functions in homeostasis. Includes 26 genes that caused phenotypes during homeostasis in RNAi experiments. The table includes similar information given in <a href=\"#SD3-data\">Supplementary file 3B</a>. (<b>D</b>) Genes with no phenotypes. Summary of all other genes from this analysis, including those that gave no detectable phenotype after RNAi. (<b>E</b>) List of genes used for qPCR experiments in this study. (<b>F</b>) Total preliminary and final qPCR results from <a href=\"#fig3\">Figure 3</a>. Each tab includes results for one gene in our study. (<b>G</b>) Homologs of genes from this study. (<b>H</b>) Gene expression pattern for downregulated genes. Here we present a list of 71 downregulated genes from this study, including the expression patterns for these genes. (<b>I</b>) Annotation information and primers for genes described in this study.", 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-17002-supp3-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-supp3-v2.xlsx", 
                 "filename": "elife-17002-supp3-v2.xlsx"
             }
         ], 
@@ -191,7 +262,8 @@
                     ], 
                     "title": "Illumina Sequencing of transcripts during regeneration", 
                     "details": "Publicly available at the Sequence Read Archive (accession no: PRJNA319973)", 
-                    "uri": "https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA319973"
+                    "uri": "https://publishing-cdn.elifesciences.org/17002/https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA319973", 
+                    "filename": "?term=PRJNA319973"
                 }
             ]
         }, 
@@ -205,7 +277,7 @@
         "doi": "10.7554/eLife.17002", 
         "authorLine": "Rachel H Roberts-Galbraith et al", 
         "title": "A functional genomics screen in planarians reveals regulators of whole-brain regeneration", 
-        "published": "2016-09-09T00:00:00", 
+        "published": "2016-09-09T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e17002", 
         "pdf": "https://publishing-cdn.elifesciences.org/17002/elife-17002-v2.pdf", 
@@ -334,14 +406,79 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000011", 
+                        "name": [
+                            "Howard Hughes Medical Institute"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Phillip A Newmark", 
+                                "index": "Newmark, Phillip A"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100001033", 
+                        "name": [
+                            "Jane Coffin Childs Memorial Fund for Medical Research"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Rachel H Roberts-Galbraith", 
+                                "index": "Roberts-Galbraith, Rachel H"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "Canadian Mennonite University"
+                        ]
+                    }, 
+                    "awardId": "Faculty Research Grant", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "John L Brubacher", 
+                                "index": "Brubacher, John L"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.17002.026", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "All gene expression data from this study.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Read mapping and expression levels are given for each contig in our transcriptome. Column explanations are listed in the second tab in this spreadsheet."
+                    }
+                ], 
                 "mediaType": "application/excel", 
-                "uri": "elife-17002-supp1-v2.xls", 
+                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-supp1-v2.xls", 
                 "filename": "elife-17002-supp1-v2.xls"
             }, 
             {
@@ -349,8 +486,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Clustering analysis for gene expression during regeneration.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Mapped reads were analyzed independently for weighted gene correlation network analysis (WGCNA). Column explanations are listed in the second tab in this spreadsheet, but the modules for each differentially expressed contig are in column C. A greater number of genes were identified as being significantly upregulated in this analysis compared to our initial study because this list also includes genes differentially regulated in either direction (upregulation or downregulation) between any two samples. Also, the thresholds for fold-change and significance were not as strict."
+                    }
+                ], 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-17002-supp2-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-supp2-v2.xlsx", 
                 "filename": "elife-17002-supp2-v2.xlsx"
             }, 
             {
@@ -359,7 +502,7 @@
                 "label": "Supplementary file 3.", 
                 "title": "(<b>A</b>) Expression patterns of upregulated genes cloned in this study. Expression patterns are as follows: BB- brain branch; Ep- epithelial; Ey- eyespots; G- gut; GC- germ cell; H- head; L- lateral margin; M- mesenchymal (parenchymal) expression pattern (could include muscle-like or neoblast-like patterns); N- neural; N+- neural plus another expression pattern (including neural with background); NS- neural subset; Ph- pharynx; Pol- polar expression; Pr- protonephridia; Pu- punctate; U- ubiquitous. (<b>B</b>) Genes with functions in regeneration. Includes genes with small brain regeneration phenotypes, plus <i>arrowhead</i> and <i>SP6</i> which functions in eye regeneration. The results of ISH experiments, phenotype (including whether significant result was found in brain regeneration quantification), and follow-up RNAi experiments with <i>sFRP-1</i> and <i>smedwi-1</i> are shown. For <i>sFRP-1</i> and <i>smedwi-</i>1 experiments, the results are summarized as follows: P- signal present; R- signal reduced; A- signal absent. For each contig, results from clustering analysis, expression in FACs analysis (<a href=\"#bib60\">Labb\u00c9Labb\u00e9 et al., 2012</a>), and time points for significant upregulation vs. cut control (\u22652x, p\u22640.01) are also shown. BLAST hits and other annotation are also presented. (<b>C</b>) Genes with functions in homeostasis. Includes 26 genes that caused phenotypes during homeostasis in RNAi experiments. The table includes similar information given in <a href=\"#SD3-data\">Supplementary file 3B</a>. (<b>D</b>) Genes with no phenotypes. Summary of all other genes from this analysis, including those that gave no detectable phenotype after RNAi. (<b>E</b>) List of genes used for qPCR experiments in this study. (<b>F</b>) Total preliminary and final qPCR results from <a href=\"#fig3\">Figure 3</a>. Each tab includes results for one gene in our study. (<b>G</b>) Homologs of genes from this study. (<b>H</b>) Gene expression pattern for downregulated genes. Here we present a list of 71 downregulated genes from this study, including the expression patterns for these genes. (<b>I</b>) Annotation information and primers for genes described in this study.", 
                 "mediaType": "application/xlsx", 
-                "uri": "elife-17002-supp3-v2.xlsx", 
+                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-supp3-v2.xlsx", 
                 "filename": "elife-17002-supp3-v2.xlsx"
             }
         ], 
@@ -384,7 +527,8 @@
                     ], 
                     "title": "Illumina Sequencing of transcripts during regeneration", 
                     "details": "Publicly available at the Sequence Read Archive (accession no: PRJNA319973)", 
-                    "uri": "https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA319973"
+                    "uri": "https://publishing-cdn.elifesciences.org/17002/https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA319973", 
+                    "filename": "?term=PRJNA319973"
                 }
             ]
         }, 
@@ -448,7 +592,7 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-17002-fig1-v2", 
+                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig1-v2", 
                         "supplements": [
                             {
                                 "type": "image", 
@@ -463,7 +607,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig1-figsupp1-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig1-figsupp1-v2", 
+                                "filename": "elife-17002-fig1-figsupp1-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -478,9 +623,11 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig1-figsupp2-v2"
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig1-figsupp2-v2", 
+                                "filename": "elife-17002-fig1-figsupp2-v2"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-17002-fig1-v2"
                     }, 
                     {
                         "type": "paragraph", 
@@ -542,7 +689,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig2-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig2-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -557,7 +704,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig2-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig2-figsupp1-v2", 
+                                        "filename": "elife-17002-fig2-figsupp1-v2"
                                     }, 
                                     {
                                         "type": "image", 
@@ -572,9 +720,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig2-figsupp2-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig2-figsupp2-v2", 
+                                        "filename": "elife-17002-fig2-figsupp2-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig2-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -593,7 +743,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig3-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig3-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -608,9 +758,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig3-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig3-figsupp1-v2", 
+                                        "filename": "elife-17002-fig3-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig3-v2"
                             }, 
                             {
                                 "type": "image", 
@@ -625,7 +777,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig4-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig4-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -640,9 +792,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig4-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig4-figsupp1-v2", 
+                                        "filename": "elife-17002-fig4-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig4-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -678,7 +832,26 @@
                                         "id": "media1", 
                                         "label": "Video 1.", 
                                         "title": "Live imaging of <i>control(RNAi)</i> animals.", 
-                                        "uri": "elife-17002-media1.mp4"
+                                        "width": 864, 
+                                        "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media1.jpg", 
+                                        "height": 648, 
+                                        "sources": [
+                                            {
+                                                "filename": "elife-17002-media1.mp4", 
+                                                "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media1.mp4"
+                                            }, 
+                                            {
+                                                "filename": "elife-17002-media1.ogv", 
+                                                "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media1.ogv"
+                                            }, 
+                                            {
+                                                "filename": "elife-17002-media1.webm", 
+                                                "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/webm/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media1.webm"
+                                            }
+                                        ]
                                     }, 
                                     {
                                         "type": "video", 
@@ -686,7 +859,26 @@
                                         "id": "media2", 
                                         "label": "Video 2.", 
                                         "title": "Live imaging of <i>soxB2-2(RNAi)</i> animals.", 
-                                        "uri": "elife-17002-media2.mp4"
+                                        "width": 864, 
+                                        "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media2.jpg", 
+                                        "height": 648, 
+                                        "sources": [
+                                            {
+                                                "filename": "elife-17002-media2.mp4", 
+                                                "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media2.mp4"
+                                            }, 
+                                            {
+                                                "filename": "elife-17002-media2.ogv", 
+                                                "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media2.ogv"
+                                            }, 
+                                            {
+                                                "filename": "elife-17002-media2.webm", 
+                                                "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/webm/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media2.webm"
+                                            }
+                                        ]
                                     }, 
                                     {
                                         "type": "paragraph", 
@@ -759,7 +951,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig5-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig5-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -774,9 +966,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig5-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig5-figsupp1-v2", 
+                                        "filename": "elife-17002-fig5-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig5-v2"
                             }
                         ]
                     }, 
@@ -802,7 +996,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig6-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig6-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -817,9 +1011,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig6-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig6-figsupp1-v2", 
+                                        "filename": "elife-17002-fig6-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig6-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -853,7 +1049,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig7-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig7-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -868,9 +1064,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig7-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig7-figsupp1-v2", 
+                                        "filename": "elife-17002-fig7-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig7-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -889,7 +1087,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-17002-fig8-v2", 
+                                "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig8-v2", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -904,9 +1102,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-17002-fig8-figsupp1-v2"
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/elife-17002-fig8-figsupp1-v2", 
+                                        "filename": "elife-17002-fig8-figsupp1-v2"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-17002-fig8-v2"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -926,7 +1126,26 @@
                                 "id": "media3", 
                                 "label": "Video 3.", 
                                 "title": "Electron micrographs of the glial cell shown in <a href=\"#fig8\">Figure 8H</a> through serial sections.", 
-                                "uri": "elife-17002-media3.mp4"
+                                "width": 1656, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media3.jpg", 
+                                "height": 964, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-17002-media3.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media3.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-17002-media3.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media3.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-17002-media3.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/webm/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media3.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -934,7 +1153,26 @@
                                 "id": "media4", 
                                 "label": "Video 4.", 
                                 "title": "Rotation of the reconstruction shown in <a href=\"#fig8\">Figure 8I</a>.", 
-                                "uri": "elife-17002-media4.mp4"
+                                "width": 1034, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media4.jpg", 
+                                "height": 1002, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-17002-media4.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media4.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-17002-media4.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media4.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-17002-media4.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/webm/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media4.webm"
+                                    }
+                                ]
                             }, 
                             {
                                 "type": "video", 
@@ -942,7 +1180,26 @@
                                 "id": "media5", 
                                 "label": "Video 5.", 
                                 "title": "Close-up from serial sections showing electron-dense projections of glial cells among axons in the neuropil.", 
-                                "uri": "elife-17002-media5.mp4"
+                                "width": 1656, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media5.jpg", 
+                                "height": 964, 
+                                "sources": [
+                                    {
+                                        "filename": "elife-17002-media5.mp4", 
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/mp4/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media5.mp4"
+                                    }, 
+                                    {
+                                        "filename": "elife-17002-media5.ogv", 
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/ogv/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media5.ogv"
+                                    }, 
+                                    {
+                                        "filename": "elife-17002-media5.webm", 
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/17002/https://static-movie-usa.glencoesoftware.com/webm/10.7554/113/f8f16c474637074726950d3ffcb7685599e3647f/elife-17002-media5.webm"
+                                    }
+                                ]
                             }
                         ]
                     }

@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.11305", 
         "authorLine": "Claire M Gillan et al", 
         "title": "Characterizing a psychiatric symptom dimension related to deficits in goal-directed control", 
-        "published": "2016-03-01T00:00:00", 
-        "versionDate": "2016-03-01T00:00:00", 
+        "published": "2016-03-01T00:00:00Z", 
+        "versionDate": "2016-03-01T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e11305", 
         "pdf": "https://publishing-cdn.elifesciences.org/11305/elife-11305-v1.pdf", 
@@ -290,14 +290,82 @@
                 "text": "Human subjects: Participants provided their consent online after reading the study information and consent language in accordance with procedures approved by the New York University Committee on Activates Involving Human Subjects."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100004440", 
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "101521/Z/12/Z", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Claire M Gillan", 
+                                "index": "Gillan, Claire M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000026", 
+                        "name": [
+                            "National Institute on Drug Abuse"
+                        ]
+                    }, 
+                    "awardId": "1R01DA038891", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nathaniel D Daw", 
+                                "index": "Daw, Nathaniel D"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000913", 
+                        "name": [
+                            "James S. McDonnell Foundation"
+                        ]
+                    }, 
+                    "awardId": "Scholar Award", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nathaniel D Daw", 
+                                "index": "Daw, Nathaniel D"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11305.011", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "(A) Questionnaire Total Scores in Experiments 1 and 2.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "<sup>a</sup> For the purposes of comparison across studies using the EAT, responses on the 6-point scale are converted as follows: (1:0, 2:0, 3:0, 4:1, 5:2, 6:3) and totaled to produce the mean reported above (Everitt and Robbins, 2005). For analysis purposes (including correlations reported above), however, the continuous (i.e. 1,2,3,4,5,6) values were used (M=33.31, SD=17.36). Likewise, for LSAS, the mean reported above corresponds to the summed total of the full questionnaire - i.e. including answers to both avoidance and fear/anxiety probes. However, for the purposes of analyses, we used the average of the avoidance and fear/anxiety answers for each item. <sup>b</sup> Positive t-values indicate higher scores among males, while negative t-values indicate higher scores in females. (B) Results from Basic Logistic Regression Model in Experiment 1 (N=548) and Experiment 2 (N=1413) with Age, Gender and IQ as fixed effects predictors. *p&lt;0.05 ** p&lt;0.01 ***p&lt;0.001SE=standard error. (C) Questionnaire Total Scores and Model-Free Learning*p&lt;0.05 ** p&lt;0.01 ***p&lt;0.001SE=standard error. Each row reflects the results from an independent analysis where each questionnaire total score (z-transformed) was entered as SymptomScorez in the following model: glmer(Stay ~ Reward * Transition * SymptomScorez + Reward * Transition * (IQz + Agez + Gender) + (Reward * Transition + 1 | Subject)). Model-free statistics refer to the following interaction: SymptomScorez x Reward. For each, positive \u03b2 values indicate that the symptom score is associated with greater model-free learning, while negative \u03b2 values indicate that the symptom score is associated with reduced model-free learning."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp1-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp1-v1.docx", 
                 "filename": "elife-11305-supp1-v1.docx"
             }, 
             {
@@ -305,8 +373,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "(A) \u2018Top loading items on \u2018Anxious-Depression\u2019 factor", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Summary of item loadings onto \u2018Anxious-Depression\u2019 factor. The top loading items from each questionnaire are displayed in descending order, provided they are above a threshold loading of +/- 0.25. Words in parentheses, e.g. \u201c(do not)\u201d are added here (but were not presented to participants) to facilitate interpretation of the direction of effects for items that are reverse-coded. (B) \u2018Top loading items on \u2018Compulsive Behavior and Intrusive Thought\u2019. Summary of item loadings onto \u2018Compulsive Behavior and Intrusive Thought\u2019 factor. The top loading items from each questionnaire are displayed in descending order, provided they are above a threshold loading of +/- 0.25. (C) \u2018Top loading items on \u2018Social Withdrawal\u2019 factorSummary of item loadings onto \u2018Social Withdrawal\u2019 factor. The top loading items from each questionnaire are displayed in descending order, provided they are above a threshold loading of +/- 0.25. Words in parentheses, e.g. '(do not)' are added here (but were not presented to participants) to facilitate interpretation of the direction of effects for items that are reverse-coded."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp2-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp2-v1.docx", 
                 "filename": "elife-11305-supp2-v1.docx"
             }, 
             {
@@ -314,8 +388,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "The relationship between model-based learning and Factor 2 is broadly consistent across \u2018putative patients\u2019 (top 25%) and subjects scoring in the normal range (bottom 75%).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Plotted here are regression lines indicating the strength of the relationship between model-based deficits and Factor 2 (\u2018Compulsive Behavior and Intrusive Thought\u2019) in putative patients (top 25%, blue) and in subjects in the normal range (bottom 75%, red). Each subplot reflects a different subset of the population, based on that clinical questionnaire. Eighteen independent analyses were subsequently carried out (i.e. two per subplot)."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp3-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp3-v1.docx", 
                 "filename": "elife-11305-supp3-v1.docx"
             }, 
             {
@@ -323,8 +403,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Significant Predictors of Goal-Directed (Model-Based) Learning from Supervised Analysis", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Features that are significantly associated with model-based learning identified using elastic net regularization with tenfold cross-validation, observed in &gt;95% of 100 iterations tested. Index refers to the item number from the questionnaire of origin. Beta refers to the coefficient from the regularized regression model. Words in parentheses, e.g. '(do not)' are added here (but were not presented to participants) to facilitate interpretation of the direction of effects for items that are reverse coded. The last column 'FA Loadings' indicates the significant overlap in terms of loading on Factors F1 (\u2018Anxious-Depression\u2019), F2 (\u2018Compulsive Behavior and Intrusive Thought\u2019) or F3 (\u2018Social Withdrawal), in the positive (+) or negative (-) direction using a cut-off at loadings &gt;= 0.25."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp4-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp4-v1.docx", 
                 "filename": "elife-11305-supp4-v1.docx"
             }, 
             {
@@ -332,8 +418,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "(A) Association between questionnaire total scores and model-based learning defined using full computational model.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "*p&lt;0.05 ** p&lt;0.01 ***p&lt;0.001. Each row reflects the results from an independent analysis where each questionnaire total score (z-transformed) was entered as SymptomScorez in the following model: lm(Model-Based-Learning ~ IQz + Agez + Gender + SymptomScorez). Statistics refer to the main effect of SymptomScorez on Model-Based-Learning, i.e. the extent to which that questionnaire total score is associated with changes in model-based learning (which was defined for each participant using the full computational model). (B) Comparing the predictive power of model-based learning defined using the computational model versus one-trial back regression analysis. Each row reflects the results from an independent analysis where each questionnaire total score (z-transformed) was entered as SymptomScorez in the following model: lm(SymptomScorez ~ ModelBasedScore). Prior to conducting these analyses, we regressed out the effects of age, gender and IQ so that we could directly compare the r<sup>2</sup> of the models. ModelBasedScore was derived from the one-trial back regression (first three columns) or the computational model (last three columns results). For each, positive \u03b2 values indicate that the ModelBasedScore is associated with fewer symptoms, whereas negative \u03b2 values indicate that the symptom score is associated with increased symptoms. The difference between the two approaches is negligible. However the computational model did produce nominally higher r<sup>2</sup> and lower <i>p</i>-values for the relationship between clinical scores and model-based learning."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp5-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp5-v1.docx", 
                 "filename": "elife-11305-supp5-v1.docx"
             }
         ], 
@@ -347,8 +439,8 @@
         "doi": "10.7554/eLife.11305", 
         "authorLine": "Claire M Gillan et al", 
         "title": "Characterizing a psychiatric symptom dimension related to deficits in goal-directed control", 
-        "published": "2016-03-01T00:00:00", 
-        "versionDate": "2016-03-01T00:00:00", 
+        "published": "2016-03-01T00:00:00Z", 
+        "versionDate": "2016-03-01T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e11305", 
         "pdf": "https://publishing-cdn.elifesciences.org/11305/elife-11305-v1.pdf", 
@@ -625,14 +717,82 @@
                 "text": "Human subjects: Participants provided their consent online after reading the study information and consent language in accordance with procedures approved by the New York University Committee on Activates Involving Human Subjects."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100004440", 
+                        "name": [
+                            "Wellcome Trust"
+                        ]
+                    }, 
+                    "awardId": "101521/Z/12/Z", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Claire M Gillan", 
+                                "index": "Gillan, Claire M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000026", 
+                        "name": [
+                            "National Institute on Drug Abuse"
+                        ]
+                    }, 
+                    "awardId": "1R01DA038891", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nathaniel D Daw", 
+                                "index": "Daw, Nathaniel D"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000913", 
+                        "name": [
+                            "James S. McDonnell Foundation"
+                        ]
+                    }, 
+                    "awardId": "Scholar Award", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Nathaniel D Daw", 
+                                "index": "Daw, Nathaniel D"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.11305.011", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "(A) Questionnaire Total Scores in Experiments 1 and 2.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "<sup>a</sup> For the purposes of comparison across studies using the EAT, responses on the 6-point scale are converted as follows: (1:0, 2:0, 3:0, 4:1, 5:2, 6:3) and totaled to produce the mean reported above (Everitt and Robbins, 2005). For analysis purposes (including correlations reported above), however, the continuous (i.e. 1,2,3,4,5,6) values were used (M=33.31, SD=17.36). Likewise, for LSAS, the mean reported above corresponds to the summed total of the full questionnaire - i.e. including answers to both avoidance and fear/anxiety probes. However, for the purposes of analyses, we used the average of the avoidance and fear/anxiety answers for each item. <sup>b</sup> Positive t-values indicate higher scores among males, while negative t-values indicate higher scores in females. (B) Results from Basic Logistic Regression Model in Experiment 1 (N=548) and Experiment 2 (N=1413) with Age, Gender and IQ as fixed effects predictors. *p&lt;0.05 ** p&lt;0.01 ***p&lt;0.001SE=standard error. (C) Questionnaire Total Scores and Model-Free Learning*p&lt;0.05 ** p&lt;0.01 ***p&lt;0.001SE=standard error. Each row reflects the results from an independent analysis where each questionnaire total score (z-transformed) was entered as SymptomScorez in the following model: glmer(Stay ~ Reward * Transition * SymptomScorez + Reward * Transition * (IQz + Agez + Gender) + (Reward * Transition + 1 | Subject)). Model-free statistics refer to the following interaction: SymptomScorez x Reward. For each, positive \u03b2 values indicate that the symptom score is associated with greater model-free learning, while negative \u03b2 values indicate that the symptom score is associated with reduced model-free learning."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp1-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp1-v1.docx", 
                 "filename": "elife-11305-supp1-v1.docx"
             }, 
             {
@@ -640,8 +800,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "(A) \u2018Top loading items on \u2018Anxious-Depression\u2019 factor", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Summary of item loadings onto \u2018Anxious-Depression\u2019 factor. The top loading items from each questionnaire are displayed in descending order, provided they are above a threshold loading of +/- 0.25. Words in parentheses, e.g. \u201c(do not)\u201d are added here (but were not presented to participants) to facilitate interpretation of the direction of effects for items that are reverse-coded. (B) \u2018Top loading items on \u2018Compulsive Behavior and Intrusive Thought\u2019. Summary of item loadings onto \u2018Compulsive Behavior and Intrusive Thought\u2019 factor. The top loading items from each questionnaire are displayed in descending order, provided they are above a threshold loading of +/- 0.25. (C) \u2018Top loading items on \u2018Social Withdrawal\u2019 factorSummary of item loadings onto \u2018Social Withdrawal\u2019 factor. The top loading items from each questionnaire are displayed in descending order, provided they are above a threshold loading of +/- 0.25. Words in parentheses, e.g. '(do not)' are added here (but were not presented to participants) to facilitate interpretation of the direction of effects for items that are reverse-coded."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp2-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp2-v1.docx", 
                 "filename": "elife-11305-supp2-v1.docx"
             }, 
             {
@@ -649,8 +815,14 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "The relationship between model-based learning and Factor 2 is broadly consistent across \u2018putative patients\u2019 (top 25%) and subjects scoring in the normal range (bottom 75%).", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Plotted here are regression lines indicating the strength of the relationship between model-based deficits and Factor 2 (\u2018Compulsive Behavior and Intrusive Thought\u2019) in putative patients (top 25%, blue) and in subjects in the normal range (bottom 75%, red). Each subplot reflects a different subset of the population, based on that clinical questionnaire. Eighteen independent analyses were subsequently carried out (i.e. two per subplot)."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp3-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp3-v1.docx", 
                 "filename": "elife-11305-supp3-v1.docx"
             }, 
             {
@@ -658,8 +830,14 @@
                 "id": "SD4-data", 
                 "label": "Supplementary file 4.", 
                 "title": "Significant Predictors of Goal-Directed (Model-Based) Learning from Supervised Analysis", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Features that are significantly associated with model-based learning identified using elastic net regularization with tenfold cross-validation, observed in &gt;95% of 100 iterations tested. Index refers to the item number from the questionnaire of origin. Beta refers to the coefficient from the regularized regression model. Words in parentheses, e.g. '(do not)' are added here (but were not presented to participants) to facilitate interpretation of the direction of effects for items that are reverse coded. The last column 'FA Loadings' indicates the significant overlap in terms of loading on Factors F1 (\u2018Anxious-Depression\u2019), F2 (\u2018Compulsive Behavior and Intrusive Thought\u2019) or F3 (\u2018Social Withdrawal), in the positive (+) or negative (-) direction using a cut-off at loadings &gt;= 0.25."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp4-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp4-v1.docx", 
                 "filename": "elife-11305-supp4-v1.docx"
             }, 
             {
@@ -667,8 +845,14 @@
                 "id": "SD5-data", 
                 "label": "Supplementary file 5.", 
                 "title": "(A) Association between questionnaire total scores and model-based learning defined using full computational model.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "*p&lt;0.05 ** p&lt;0.01 ***p&lt;0.001. Each row reflects the results from an independent analysis where each questionnaire total score (z-transformed) was entered as SymptomScorez in the following model: lm(Model-Based-Learning ~ IQz + Agez + Gender + SymptomScorez). Statistics refer to the main effect of SymptomScorez on Model-Based-Learning, i.e. the extent to which that questionnaire total score is associated with changes in model-based learning (which was defined for each participant using the full computational model). (B) Comparing the predictive power of model-based learning defined using the computational model versus one-trial back regression analysis. Each row reflects the results from an independent analysis where each questionnaire total score (z-transformed) was entered as SymptomScorez in the following model: lm(SymptomScorez ~ ModelBasedScore). Prior to conducting these analyses, we regressed out the effects of age, gender and IQ so that we could directly compare the r<sup>2</sup> of the models. ModelBasedScore was derived from the one-trial back regression (first three columns) or the computational model (last three columns results). For each, positive \u03b2 values indicate that the ModelBasedScore is associated with fewer symptoms, whereas negative \u03b2 values indicate that the symptom score is associated with increased symptoms. The difference between the two approaches is negligible. However the computational model did produce nominally higher r<sup>2</sup> and lower <i>p</i>-values for the relationship between clinical scores and model-based learning."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-11305-supp5-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-supp5-v1.docx", 
                 "filename": "elife-11305-supp5-v1.docx"
             }
         ], 
@@ -741,7 +925,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-11305-fig1-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-fig1-v1", 
+                        "filename": "elife-11305-fig1-v1"
                     }
                 ]
             }, 
@@ -809,7 +994,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-11305-fig2-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-fig2-v1", 
+                        "filename": "elife-11305-fig2-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -862,7 +1048,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-11305-fig3-v1"
+                        "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-fig3-v1", 
+                        "filename": "elife-11305-fig3-v1"
                     }, 
                     {
                         "type": "paragraph", 
@@ -1073,7 +1260,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11305-fig4-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-fig4-v1", 
+                                "filename": "elife-11305-fig4-v1"
                             }
                         ]
                     }, 
@@ -1126,7 +1314,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-11305-fig5-v1"
+                                "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-fig5-v1", 
+                                "filename": "elife-11305-fig5-v1"
                             }
                         ]
                     }, 
@@ -4236,7 +4425,8 @@
                     "name": [
                         "Kluwer"
                     ]
-                }
+                }, 
+                "date": "2000"
             }, 
             {
                 "type": "journal", 
@@ -4690,7 +4880,8 @@
                     "label": "Author response image 1.", 
                     "title": "Plotted are the regression lines for 18 different analyses, where the population was split into the top 25% and bottom 75% for each of the nine clinical questionnaires.", 
                     "alt": "", 
-                    "uri": "elife-11305-resp-fig1-v1"
+                    "uri": "https://publishing-cdn.elifesciences.org/11305/elife-11305-resp-fig1-v1", 
+                    "filename": "elife-11305-resp-fig1-v1"
                 }, 
                 {
                     "type": "paragraph", 

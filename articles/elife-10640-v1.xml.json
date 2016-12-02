@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.10640", 
         "authorLine": "Beth M Stadtmueller et al", 
         "title": "The structure and dynamics of secretory component and its interactions with polymeric immunoglobulins", 
-        "published": "2016-03-04T00:00:00", 
-        "versionDate": "2016-03-04T00:00:00", 
+        "published": "2016-03-04T00:00:00Z", 
+        "versionDate": "2016-03-04T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e10640", 
         "pdf": "https://publishing-cdn.elifesciences.org/10640/elife-10640-v1.pdf", 
@@ -278,14 +278,141 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000060", 
+                        "name": [
+                            "National Institute of Allergy and Infectious Diseases"
+                        ]
+                    }, 
+                    "awardId": "AI04123", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Beth M Stadtmueller", 
+                                "index": "Stadtmueller, Beth M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Kathryn E Huey-Tubman", 
+                                "index": "Huey-Tubman, Kathryn E"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Pamela J Bjorkman", 
+                                "index": "Bjorkman, Pamela J"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000884", 
+                        "name": [
+                            "Cancer Research Institute"
+                        ]
+                    }, 
+                    "awardId": "Irving Postdoctoral Fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Beth M Stadtmueller", 
+                                "index": "Stadtmueller, Beth M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "The Jules Stein Professorship Endowment"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carlos J L\u00f3pez", 
+                                "index": "L\u00f3pez, Carlos J"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Zhongyu Yang", 
+                                "index": "Yang, Zhongyu"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Wayne L Hubbell", 
+                                "index": "Hubbell, Wayne L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "EY005216", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carlos J L\u00f3pez", 
+                                "index": "L\u00f3pez, Carlos J"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Zhongyu Yang", 
+                                "index": "Yang, Zhongyu"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Wayne L Hubbell", 
+                                "index": "Hubbell, Wayne L"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10640.016", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Crystallographic data collection and refinement statistics.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Values in parenthesis refer to the highest-resolution shell. <sup>a</sup>R-meas, redundancy-independent merging R-factor (Diederichs and Karplus, 1997). <sup>b</sup>CC1/2, correlation of one half of the reflections to the other half. <b><sup>c</sup>CC*,</b> CC1/2 modification showing the correlation of the observed data to unknown true intensities (Karplus and Diederichs, 2012). <sup>d</sup>Rcryst = (\u03a3 Fobs-Fcalc)/(\u03a3 Fobs) and Rfree = Rcryst calculated for 5\u201310% of reflections from each structure that were excluded from refinement. <sup>e</sup>RMS = Root mean square deviation from ideal value. <sup>f</sup>Determined by Molprobity (<a href=\"#bib12\">Chen et al., 2010</a>)."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-10640-supp1-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-supp1-v1.docx", 
                 "filename": "elife-10640-supp1-v1.docx"
             }, 
             {
@@ -293,8 +420,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Expression constructs used in this study.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Table listing the name, residue numbers, mutation(s) (endogenous sequence -&gt; mutated sequence) and mature protein sequence for all protein expression constructs used in this study. Residue numbering is based on the mature hSC and tSC sequences and abbreviations used are: SP (Signal peptide), 6HIS (hexahistidine affinity tag), Strep II (Strep II affinity tag), C-&gt;A (C468A; C502A mutation)."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-10640-supp2-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-supp2-v1.docx", 
                 "filename": "elife-10640-supp2-v1.docx"
             }
         ], 
@@ -315,7 +448,8 @@
                     ], 
                     "title": "Crystal structure of the human polymeric Ig receptor ectodomain", 
                     "details": "Publicly available at the RCSB Protien Data Bank (accession no. 5D4K)", 
-                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=5D4K"
+                    "uri": "https://publishing-cdn.elifesciences.org/10640/http://www.rcsb.org/pdb/explore/explore.do?structureId=5D4K", 
+                    "filename": "explore.do?structureId=5D4K"
                 }, 
                 {
                     "id": "dataro2", 
@@ -332,7 +466,8 @@
                     ], 
                     "title": "Crystal structure of the teleost fish polymeric Ig receptor ectodomain", 
                     "details": "Publicly available at the RCSB Protien Data Bank (accession no. 5F1S)", 
-                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=5F1S"
+                    "uri": "https://publishing-cdn.elifesciences.org/10640/http://www.rcsb.org/pdb/explore/explore.do?structureId=5F1S", 
+                    "filename": "explore.do?structureId=5F1S"
                 }
             ]
         }, 
@@ -346,8 +481,8 @@
         "doi": "10.7554/eLife.10640", 
         "authorLine": "Beth M Stadtmueller et al", 
         "title": "The structure and dynamics of secretory component and its interactions with polymeric immunoglobulins", 
-        "published": "2016-03-04T00:00:00", 
-        "versionDate": "2016-03-04T00:00:00", 
+        "published": "2016-03-04T00:00:00Z", 
+        "versionDate": "2016-03-04T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e10640", 
         "pdf": "https://publishing-cdn.elifesciences.org/10640/elife-10640-v1.pdf", 
@@ -612,14 +747,141 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100000060", 
+                        "name": [
+                            "National Institute of Allergy and Infectious Diseases"
+                        ]
+                    }, 
+                    "awardId": "AI04123", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Beth M Stadtmueller", 
+                                "index": "Stadtmueller, Beth M"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Kathryn E Huey-Tubman", 
+                                "index": "Huey-Tubman, Kathryn E"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Pamela J Bjorkman", 
+                                "index": "Bjorkman, Pamela J"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000884", 
+                        "name": [
+                            "Cancer Research Institute"
+                        ]
+                    }, 
+                    "awardId": "Irving Postdoctoral Fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Beth M Stadtmueller", 
+                                "index": "Stadtmueller, Beth M"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "name": [
+                            "The Jules Stein Professorship Endowment"
+                        ]
+                    }, 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carlos J L\u00f3pez", 
+                                "index": "L\u00f3pez, Carlos J"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Zhongyu Yang", 
+                                "index": "Yang, Zhongyu"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Wayne L Hubbell", 
+                                "index": "Hubbell, Wayne L"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "EY005216", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Carlos J L\u00f3pez", 
+                                "index": "L\u00f3pez, Carlos J"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Zhongyu Yang", 
+                                "index": "Yang, Zhongyu"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Wayne L Hubbell", 
+                                "index": "Hubbell, Wayne L"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10640.016", 
                 "id": "SD1-data", 
                 "label": "Supplementary file 1.", 
                 "title": "Crystallographic data collection and refinement statistics.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Values in parenthesis refer to the highest-resolution shell. <sup>a</sup>R-meas, redundancy-independent merging R-factor (Diederichs and Karplus, 1997). <sup>b</sup>CC1/2, correlation of one half of the reflections to the other half. <b><sup>c</sup>CC*,</b> CC1/2 modification showing the correlation of the observed data to unknown true intensities (Karplus and Diederichs, 2012). <sup>d</sup>Rcryst = (\u03a3 Fobs-Fcalc)/(\u03a3 Fobs) and Rfree = Rcryst calculated for 5\u201310% of reflections from each structure that were excluded from refinement. <sup>e</sup>RMS = Root mean square deviation from ideal value. <sup>f</sup>Determined by Molprobity (<a href=\"#bib12\">Chen et al., 2010</a>)."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-10640-supp1-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-supp1-v1.docx", 
                 "filename": "elife-10640-supp1-v1.docx"
             }, 
             {
@@ -627,8 +889,14 @@
                 "id": "SD2-data", 
                 "label": "Supplementary file 2.", 
                 "title": "Expression constructs used in this study.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Table listing the name, residue numbers, mutation(s) (endogenous sequence -&gt; mutated sequence) and mature protein sequence for all protein expression constructs used in this study. Residue numbering is based on the mature hSC and tSC sequences and abbreviations used are: SP (Signal peptide), 6HIS (hexahistidine affinity tag), Strep II (Strep II affinity tag), C-&gt;A (C468A; C502A mutation)."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-10640-supp2-v1.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-supp2-v1.docx", 
                 "filename": "elife-10640-supp2-v1.docx"
             }
         ], 
@@ -649,7 +917,8 @@
                     ], 
                     "title": "Crystal structure of the human polymeric Ig receptor ectodomain", 
                     "details": "Publicly available at the RCSB Protien Data Bank (accession no. 5D4K)", 
-                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=5D4K"
+                    "uri": "https://publishing-cdn.elifesciences.org/10640/http://www.rcsb.org/pdb/explore/explore.do?structureId=5D4K", 
+                    "filename": "explore.do?structureId=5D4K"
                 }, 
                 {
                     "id": "dataro2", 
@@ -666,7 +935,8 @@
                     ], 
                     "title": "Crystal structure of the teleost fish polymeric Ig receptor ectodomain", 
                     "details": "Publicly available at the RCSB Protien Data Bank (accession no. 5F1S)", 
-                    "uri": "http://www.rcsb.org/pdb/explore/explore.do?structureId=5F1S"
+                    "uri": "https://publishing-cdn.elifesciences.org/10640/http://www.rcsb.org/pdb/explore/explore.do?structureId=5F1S", 
+                    "filename": "explore.do?structureId=5F1S"
                 }
             ]
         }, 
@@ -723,7 +993,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-10640-fig1-v1.tif"
+                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig1-v1.tif", 
+                        "filename": "elife-10640-fig1-v1.tif"
                     }, 
                     {
                         "type": "paragraph", 
@@ -781,7 +1052,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10640-fig2-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig2-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -796,9 +1067,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10640-fig2-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig2-figsupp1-v1.tif", 
+                                        "filename": "elife-10640-fig2-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10640-fig2-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -828,7 +1101,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10640-fig3-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig3-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -843,7 +1116,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10640-fig3-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig3-figsupp1-v1.tif", 
+                                        "filename": "elife-10640-fig3-figsupp1-v1.tif"
                                     }, 
                                     {
                                         "type": "image", 
@@ -858,9 +1132,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10640-fig3-figsupp2-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig3-figsupp2-v1.tif", 
+                                        "filename": "elife-10640-fig3-figsupp2-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10640-fig3-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -898,7 +1174,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10640-fig4-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig4-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -913,9 +1189,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10640-fig4-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig4-figsupp1-v1.tif", 
+                                        "filename": "elife-10640-fig4-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10640-fig4-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -953,7 +1231,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10640-fig5-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig5-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -968,9 +1246,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10640-fig5-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig5-figsupp1-v1.tif", 
+                                        "filename": "elife-10640-fig5-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10640-fig5-v1.tif"
                             }
                         ]
                     }, 
@@ -996,7 +1276,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10640-fig6-v1.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig6-v1.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -1011,9 +1291,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10640-fig6-figsupp1-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig6-figsupp1-v1.tif", 
+                                        "filename": "elife-10640-fig6-figsupp1-v1.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-10640-fig6-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -1061,7 +1343,8 @@
                             }
                         ], 
                         "alt": "", 
-                        "uri": "elife-10640-fig7-v1.tif"
+                        "uri": "https://publishing-cdn.elifesciences.org/10640/elife-10640-fig7-v1.tif", 
+                        "filename": "elife-10640-fig7-v1.tif"
                     }, 
                     {
                         "type": "paragraph", 
