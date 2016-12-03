@@ -300,257 +300,264 @@
         }, 
         "body": [
             {
-                "type": "paragraph", 
-                "text": "The information that determines protein sequence is stored in the genome, but that information must be transcribed by RNA polymerase and translated by the ribosome before reaching its final form. DNA polymerase error rates have been well characterized in a variety of species and environmental conditions, and are low\u00a0\u2013 on the order of one mutation per 10<sup>8</sup>\u201310<sup>10</sup> bases per generation (<a href=\"#bib23\">Lynch, 2011</a>;\u00a0<a href=\"#bib17\">Lang and Murray, 2008</a>;\u00a0<a href=\"#bib38\">Zhu et al., 2014</a>). In contrast, RNA polymerase errors are uniquely positioned to generate phenotypic diversity. Error rates are high (10<sup>-6</sup>\u201310<sup>-5</sup>) <a href=\"#bib7\">(Gout et al., 2013</a>; <a href=\"#bib22\">Lynch, 2010</a>; <a href=\"#bib34\">Shaw et al., 2002</a>; <a href=\"#bib28\">de Mercoyrol et al., 1992</a>), and each mRNA molecule is translated into 2000\u20134000 molecules of protein (<a href=\"#bib33\">Schwanh\u00e4usser et al., 2011</a>; <a href=\"#bib4\">Futcher et al., 1999</a>), resulting in the\u00a0amplification of any errors. Likewise, because many RNAs are present at\u00a0an\u00a0average\u00a0of less than one molecule per cell in microbes (<a href=\"#bib30\">Pelechano et al., 2010</a>) and in embryonic stem cells (<a href=\"#bib11\">Islam et al., 2011</a>), an RNA with an error may be the only RNA for that gene; all newly translated protein will contain this error. Despite the fact that transient errors can result in altered phenotypes (<a href=\"#bib5\">Gordon et al., 2013</a><a href=\"#bib12\">, 2015</a>), the genetics and environmental factors that affect RNA polymerase fidelity are poorly understood. This is because current methods for measuring polymerase fidelity are technically challenging (<a href=\"#bib7\">Gout et al., 2013</a>), require specialized organism-specific genetic constructs (<a href=\"#bib10\">Irvin et al., 2014</a>), and can only measure error rates at specific loci (<a href=\"#bib9\">Imashimizu et al., 2013</a>)."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "To overcome these obstacles I developed MORPhEUS (Measurement Of RNA Polymerase Errors Using Sequencing), which enables measurement of differential RNA polymerase fidelity using existing RNA-seq data (<a href=\"#fig1\">Figure 1</a>). The input is a set of RNA-seq fastq files and a reference genome, and the output is the error rate at each position in the genome. I find that RNA polymerase errors result in intron retention and that cellular mRNA quality control may reduce the effective RNA polymerase error rate. Moreover, my analyses suggest that the expression\u00a0level of the RPB9 Pol II subunits\u00a0Rpb9\u00a0and\u00a0Dst1\u00a0(TFIIS) determines RNA polymerase fidelity in\u00a0vivo. Because it can be run on any existing RNA-seq data, MORPhEUS enables the exploration of a previously unexplored source of biological diversity in microbes and mammals."
-            }, 
-            {
-                "type": "image", 
-                "doi": "10.7554/eLife.09945.003", 
-                "id": "fig1", 
-                "label": "Figure 1.", 
-                "title": "A computational framework to measure relative changes in RNA polymerase fidelity.", 
-                "caption": [
-                    {
-                        "type": "paragraph", 
-                        "text": "<b>(a)</b> Pipeline to identify potential RNA polymerase errors in RNA-seq data. High quality full-length RNA-seq reads are mapped to the reference genome or transcriptome using bwa, and only reads that map completely with two or fewer mismatches are kept. <b>(b)</b> Then 10\u00a0bp from the front and 10\u00a0bp from the end of the read are discarded as these regions have high error rates and are prone to poor quality local alignments. <b>(c)</b> Errors that occur multiple times (purple boxes) are discarded, as these are likely due to subclonal DNA mutations or motifs that sequence poorly on the HiSeq. Unique errors in the middle of reads (cyan box) are kept and counted."
-                    }
-                ], 
-                "alt": "", 
-                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig1-v2.tif", 
-                "supplements": [
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.09945.004", 
-                        "id": "fig1s1", 
-                        "label": "Figure 1\u2014figure supplement 1.", 
-                        "title": "Cycle-specific error rates and better differentiation of genetically determined error rates using base quality value cutoffs.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "Six yeast RNA-cDNA libraries were sequenced on the same lane in a HiSeq. <b>(a)</b> The average mismatch rate (across the six cDNA libraries) to the reference genome at each position was determined using different minimum base-quality thresholds using GATK ErrorRatePerCycle. Independent of the quality threshold, cycles at the ends, as well as some cycles in the middle, have high error rates. <b>(b)</b> The measured error rate for each sample using a minimum base quality of 10. <b>(c)</b> The measured error rate for each sample using a minimum base quality of 39."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig1-figsupp1-v2.tif", 
-                        "filename": "elife-09945-fig1-figsupp1-v2.tif"
-                    }, 
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.09945.005", 
-                        "id": "fig1s2", 
-                        "label": "Figure 1\u2014figure supplement 2.", 
-                        "title": "RNA-seq data are enriched for mismatches to the reference genome that occur far more often than expected.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "<b>(a)</b> At each coverage (x-axis), a point is shown if there is any position in the genome with the observed number of errors (y-axis) (small black dots). The diagonal lines show mismatch frequencies of 100%, 10%, 1%, and 0.1% \u2013 any point falling on these lines has the given mismatch frequency. With large grey circles are shown simulated data in which the same coverage as the yeast RNA-seq data are used, but with a mismatch frequency identical to the measured overall mismatch frequency of the yeast data. Locations in the graph in which a black point occurs but there is no grey point are locations in which there are more mismatches than expected by change. Note that at a coverage of &lt;100, we expect to see no mismatches more than twice, and 0.5% of positions with two observances of identical mismatches. <b>(b)</b> Identical to (a) but with the simulated mismatch frequency five times the observed. <b>(c)</b> Shown are measured mismatch frequencies for the yeast RPB9 and DST1 induction data at different \u03b2-estradiol\u00a0concentrations, at different filters for the maximal allowed number of observed identical mismatches. The dashed lines show the average mismatch frequency for the 0\u00a0nM condition. For all filters, low \u03b2-estradiol conditions have higher RNA-seq mismatch frequencies. <b>(d)</b> The coverage of the yeast RNA-seq data; ~95% of the genome is covered by &lt;100 reads. <b>(e)</b> Shown are the fraction of positions in the genome (y-axis) with X errors (x-axis) for the yeast RNA-seq data (cyan) and simulated data (blue). Also shown are the same data for positions of the genome with different coverage. For positions covered by &lt;1000 reads (95% of the genome) the expectation is 0 or 1 sequence mismatch (blue and orange lines). Positions with far greater numbers of mismatches are likely due to subclonal mutations and technical bias."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig1-figsupp2-v2.tif", 
-                        "filename": "elife-09945-fig1-figsupp2-v2.tif"
-                    }
-                ], 
-                "filename": "elife-09945-fig1-v2.tif"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Technical errors from reverse transcription and sequencing, and biological errors from RNA polymerase look identical (single-nucleotide differences from the reference genome). Therefore, a major challenge in identifying single-nucleotide polymorphisms (SNPs) and in measuring changes in polymerase fidelity is the reduction of technical errors (<a href=\"#bib15\">Kleinman and Majewski, 2012</a>;\u00a0<a href=\"#bib31\">Pickrell et al., 2012</a>; <a href=\"#bib20\">Li et al., 2011</a>) (<a href=\"#fig1\">Figure 1</a>). First, I map full-length (untrimmed) reads to the genome and discard reads with indels, with more than two mismatches, that map to multiple locations in the genome, and that do not map end\u00a0to\u00a0end along the full length of the read. Next, I trim the ends of the mapped reads, as alignments are of lower quality along the ends, and the mismatch rate is higher, especially at splice junctions. I also discard any cycles within the run with abnormally high error rates, and bases with low Illumina quality scores (<a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>). Finally, using the remaining bases, I count the number of matches and mismatches to the reference genome at each position in the genome. I discard positions with identical mismatches that are present more than once, as these are likely due to subclonal DNA polymorphisms or sequences that Illumina miscalls in a systematic manner (<a href=\"#bib27\">Meacham et al., 2011</a>) (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>). The result is a set of mismatches, many of which are technical errors and some of which are RNA polymerase errors. In order to determine if RNA-seq mismatches are due to RNA polymerase errors, it is necessary to identify sequence locations in which RNA polymerase errors are expected to have a measurable effect, or situations in which RNA polymerase fidelity is expected to vary."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "I reasoned that RNA polymerase errors that alter positions necessary for splicing should result in intron retention, while sequencing errors should not affect the final structure of the mRNA (<a href=\"#fig2\">Figure 2a</a>). However, mutations in the donor and acceptor splice sites also result in decreased expression (<a href=\"#bib12\">Jung et al., 2015</a>), and therefore are difficult to measure using RNA-seq. Therefore, I used chromatin-associated and nuclear RNA from Hela and Huh7 cells (<a href=\"#bib1\">Dhir et al., 2015</a>), and extracted all reads that span an exon\u2013intron junction for introns with canonical GT and AG splice sites, and measured the RNA-seq mismatch rate at each position. I find that errors at the G and U in the 5\u2019 donor site and at the A in the acceptor site are significantly enriched relative to errors at other positions (<a href=\"#fig2\">Figure 2b</a>), and to errors in\u00a0exonic\u00a0trinucleotides at splicing motifs in the human genome (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>) suggesting that RNA polymerase mismatches can result in changes in transcript isoforms. The ability of RNA polymerase errors to significantly affect splicing has been proposed (<a href=\"#bib3\">Fox-Walsh and Hertel, 2009</a>) but never previously measured."
-            }, 
-            {
-                "type": "image", 
-                "doi": "10.7554/eLife.09945.006", 
-                "id": "fig2", 
-                "label": "Figure 2.", 
-                "title": "RNA polymerase errors cause intron retention and error rates are correlated with RPB9 expression.", 
-                "caption": [
-                    {
-                        "type": "paragraph", 
-                        "text": "<b>(a)</b> RNA polymerase errors at the splice junction should result in intron retention, as DNA mutations at the 5\u2019 donor site are known to cause intron retention. <b>(b)</b> Shown are the RNA-seq mismatch rates at each position relative to the 5\u2019 donor splice site, for sequencing reads that span an exon\u2013intron junction. Mismatch rates from chromatin-associated and nuclear RNAs are higher at the 5\u2019 and 3\u2019 splice sites, suggesting that RNA polymerase errors at this site result in intron retention. <b>(c)</b> For all ENCODE cell lines, RPB9 expression was determined from whole-cell RNA-seq data, and the RNA-seq error rate was measured separately for the cytoplasmic and nuclear fractions. <b>(d)</b> The RNA-seq error rate is higher (paired t-test, p=0.0019) in the nuclear than the cytoplasmic fraction, suggesting that quality-control mechanism may block nuclear export of low quality mRNAs."
-                    }
-                ], 
-                "alt": "", 
-                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig2-v2.tif", 
-                "supplements": [
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.09945.007", 
-                        "id": "fig2s1", 
-                        "label": "Figure 2\u2014figure supplement 1.", 
-                        "title": "RNA-seq mismatch rates for all trinucleotides in chromatin-associated and nuclear RNAs.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "<b>(a,b)</b> The 5\u2019 and 3\u2019 splicing motifs in the human genome. <b>(c)</b> The RNA-seq mismatch frequencies for all single nucleotides. <b>(d)</b> The RNA-seq mismatch rate to the reference genome for each trinucleotide, normalized to the average mismatch rate across all trinucleotides. For each trinucleotide, red shows the mismatch frequency at the first base, blue at the second, and green at the third. Error bars are standard deviation across all samples."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig2-figsupp1-v2.tif", 
-                        "filename": "elife-09945-fig2-figsupp1-v2.tif"
-                    }, 
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.09945.008", 
-                        "id": "fig2s2", 
-                        "label": "Figure 2\u2014figure supplement 2.", 
-                        "title": "RBP9 expression negatively correlates with RNA-seq mismatch rates.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "The mismatch frequency is shown across all cells lines. <b>(a)</b> RPB9 mRNA expression is normalized by the median expression level of all subunits. <b>(b)</b> RPB9 mRNA expression is normalized by RBP3 (POLR2C) expression."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig2-figsupp2-v2.tif", 
-                        "filename": "elife-09945-fig2-figsupp2-v2.tif"
-                    }
-                ], 
-                "filename": "elife-09945-fig2-v2.tif"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "RPB9 is known to be involved in RNA polymerase fidelity in vitro and in vivo (<a href=\"#bib10\">Irvin et al., 2014</a>; <a href=\"#bib16\">Knippa and Peterson, 2013</a>). Therefore, I reasoned that cell lines expressing low levels of RPB9 would have higher RNA polymerase error rates. Consistent with this, I find that RPB9 expression varies eightfold across the ENCODE cell lines, and this expression variation is correlated with the RNA-seq error rate (<a href=\"#fig2\">Figure 2c</a>, <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>). This suggests that low RPB9 expression may cause decreased polymerase fidelity in\u00a0vivo."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "In addition, export of mRNAs from the nucleus involves a quality-control mechanism that checks if mRNAs are fully spliced and have properly formed 5\u2019 and 3\u2019 ends (<a href=\"#bib21\">Lykke-Andersen, 2001</a>). I hypothesized that mRNA export may involve a quality control that removes mRNAs with errors. I used the ENCODE dataset in which nuclear and cytoplasmic poly-A + mRNAs were sequenced; thus I can compare nuclear and cytoplasmic fractions from the same cell line grown in the same conditions and processed in the same manner. I find that the nuclear fraction has a higher RNA polymerase error rate than does the cytoplasmic fraction (<a href=\"#fig2\">Figure 2c,d</a>), suggesting that either that nuclear RNA-seq has a higher technical error rate or that the cell has mechanisms for reducing the effective polymerase error rate by preventing the export of mRNAs that contain errors."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Rpb9 and Dst1 are known to be involved in RNA polymerase fidelity in\u00a0vitro, yet there is conflicting evidence as to the role of Dst1 in\u00a0vivo(<a href=\"#bib34\">Shaw et al., 2002</a>; <a href=\"#bib10\">Irvin et al., 2014</a>; <a href=\"#bib16\">Knippa and Peterson, 2013</a>;\u00a0<a href=\"#bib29\">Nesser et al., 2006</a>; <a href=\"#bib37\">Walmacq et al., 2009</a>; <a href=\"#bib14\">Kireeva et al., 2008</a>). Part of these conflicts may result from the fact that the only available assays for RNA polymerase fidelity are special reporter strains that rely on DNA sequences known to increase the frequency of RNA polymerase errors. While I found that RPB9 expression correlates with RNA-seq error rates in mammalian cells, correlation is not causation. Furthermore, differences in RNA levels do not necessitate differences in stoichiometry among the subunits in active Pol II complexes. In order to determine if differential expression of RPB9 or DST1 are causative for differences in RNA polymerase fidelity in\u00a0vivo, I constructed two yeast strains in which I can alter the expression of either RPB9 or DST1 using \u03b2-estradiol and a synthetic transcription factor that has no effect on growth rate or the expression of any other genes (<a href=\"#bib26\">Mcisaac et al., 2014</a><a href=\"#bib25\">, 2013</a>). I grew these two strains (Z<sub>3</sub>EV<sub>pr</sub>-RPB9 and Z<sub>3</sub>EV<sub>pr</sub>-DST1) in different concentrations of \u03b2-estradiol and performed RNA-seq. I find that cells expressing low levels of RPB9 have high RNA polymerase error rates (<a href=\"#fig3\">Figure 3a</a>). Likewise, cells with low DST1 have high error rates (<a href=\"#fig3\">Figure 3a</a>). The increase in errors rate is not a property of cells defective for transcription elongation (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). The increase in error rates due to mutations in Rpb9 and Dst1 have not been robustly measured, however, there are some rough numbers. Here, the measured increase in error rate is 13%, while the measured effect of Rpb9 deletion in\u00a0vitro is fivefold (<a href=\"#bib37\">Walmacq et al., 2009</a>) and in\u00a0vivo following reverse transcription is 30% (<a href=\"#bib29\">Nesser et al., 2006</a>). If 2% of the observed mismatches are due to RNA polymerase errors, a fivefold increase in polymerase error rate results in a 10% increase in measured mismatch frequency; this is consistent with RNA polymerase fidelity of 10<sup>-6</sup>\u201310<sup>-5</sup> and overall RNA-seq error rates of 10<sup>-4</sup>. Note that in our assay cells still express low levels or RPB9, and we therefore expect the increase in error rate to be lower, suggesting that RNA polymerase errors constitute 5\u201310% of the measured mismatches. Our ability to genetically control the expression of DST1 and RPB9, and measure changes in RNA-seq error rates is consistent with MORPhEUS measuring RNA polymerase fidelity. In addition, we observe more single-nucleotide insertions in the RNA-seq data from the high error rate samples, suggesting that depletion of RPB9 and DST1 results in increased insertions in transcripts, but not increased deletions (<a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a>). Finally, genetic reduction in RNA polymerase fidelity results in increased intron retention, consistent with RNA polymerase errors causing reduced splicing efficiency (<a href=\"#fig3\">Figure 3b</a>)."
-            }, 
-            {
-                "type": "image", 
-                "doi": "10.7554/eLife.09945.009", 
-                "id": "fig3", 
-                "label": "Figure 3.", 
-                "title": "RNA polymerase error rate is determined by the expression level of RPB9 and DST1.", 
-                "caption": [
-                    {
-                        "type": "paragraph", 
-                        "text": "<b>(a)</b> RNA-seq error rates I re-measured for two strains (Z<sub>3</sub>EVpr-RPB9, black points, Z<sub>3</sub>EVpr-DST1, blue points) grown at different concentrations of \u03b2-estradiol. The points show the relationship between RPB9 expression levels (determined by RNA-seq) and RNA-seq error rates. The blue points show RPB9 expression levels for the Z<sub>3</sub>EVpr-DST1 strain, in which DST1 expression ranges from 16 fragments per kilobase per million (FPKM) at 0\u00a0nM \u03b2-estradiol to 120 FPKM native expression to 756 FPKM at 25\u00a0nM \u03b2-estradiol. Low induction of both DST1 or RPB9 results in high RNA-seq error rates (red box), while wild-type and higher induction levels result in low RNA-seq error rates (black box). <b>(b)</b> Across all genes, the intron retention rate is higher in conditions with low RNA polymerase fidelity (t-test between high and low error rate samples, p=0.029), consistent with the hypothesis that RNA polymerase errors result in splicing defects. <b>(c)</b> The error rate for each of the 12 single base changes are shown for induction experiments that gave high (red) or low (black) RNA-seq error rates. Transitions (G&lt;\u2013&gt;A, C&lt;\u2013&gt;U) are marked with green boxes and transversions (A&lt;\u2013&gt;C,\u00a0G&lt;\u2013&gt;U) with purple."
-                    }
-                ], 
-                "alt": "", 
-                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig3-v2.tif", 
-                "supplements": [
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.09945.010", 
-                        "id": "fig3s1", 
-                        "label": "Figure 3\u2014figure supplement 1.", 
-                        "title": "Mutations that affect transcription elongation do not affect measured RNA-seq mismatch frequencies.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "Two separate experiments were performed with wild-type controls and mutants involved in transcription elongation. Individual bars show the RNA-seq mismatch frequency of biological replicates."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig3-figsupp1-v2.tif", 
-                        "filename": "elife-09945-fig3-figsupp1-v2.tif"
-                    }, 
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.09945.011", 
-                        "id": "fig3s2", 
-                        "label": "Figure 3\u2014figure supplement 2.", 
-                        "title": "Decreases in RPB9 and DST1 expression in yeast results in more single base insertions in RNA-seq data.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "For each RNA-seq dataset, the number of inserts (+N) or deletions (\u2013N) in the mpileup output (N is the number of\u00a0bases in the indel) were counted, and this number divided by the total number of mapped reads in each sample. On the right are the same data but zoomed in on each metric to better show the comparison between the two sets of samples."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig3-figsupp2-v2.tif", 
-                        "filename": "elife-09945-fig3-figsupp2-v2.tif"
-                    }
-                ], 
-                "filename": "elife-09945-fig3-v2.tif"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "A unique advantage of MORPhEUS is that it measures thousands of RNA polymerase errors across the entire transcriptome in a single experiment, and thus enables he complete characterization of the mutation spectrum and biases of RNA polymerase. I asked how altered RPB9 and DST1 expression levels affect each type of single-nucleotide change. I find that, with decreasing polymerase fidelity, transitions increase more than transversions, and that C\u2192U errors are the most common (<a href=\"#fig3\">Figure 3c</a>). This result, along with other sequencing based results (<a href=\"#bib7\">Gout et al., 2013</a>), have shown that DNA and RNA polymerase have broadly similar error profiles (<a href=\"#bib38\">Zhu et al., 2014</a>); it will be interesting to see if all polymerases share the same mutation spectra, and if this is due to deamination of the template base, or is a structural property of the polymerase itself. Interestingly, I find that coding sequences have evolved so that errors are less likely to produce in-frame stop codons than out-of-frame stop codons, suggesting that natural selection may act to minimize the effect of polymerase errors (<a href=\"#fig4\">Figure 4</a>)."
-            }, 
-            {
-                "type": "image", 
-                "doi": "10.7554/eLife.09945.012", 
-                "id": "fig4", 
-                "label": "Figure 4.", 
-                "title": "In-frame stop codons are less likely to be created by polymerase errors.", 
-                "caption": [
-                    {
-                        "type": "paragraph", 
-                        "text": "For all genes in yeast, I calculated the number of codons which are one polymerase error from a stop codon. <b>(a)</b> Fewer in-frame codons can be turned into a stop codon by a single-nucleotide change, compared to out-of-frame codons. <b>(b)</b> Codons that are one error away from generating an in-frame stop codon are more likely to be found at the ends of the open reading frames (ORFs), compared to the beginning of the ORF."
-                    }
-                ], 
-                "alt": "", 
-                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig4-v2.tif", 
-                "filename": "elife-09945-fig4-v2.tif"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Here I have presented proof that relative changes in RNA polymerase error rates can be measured using standard Illumina RNA-seq data. Consistent with previous work in\u00a0vivo and in\u00a0vitro, I find that depletion of RPB9 or Dst1 results in higher RNA polymerase error rates. Furthermore, I find that expression of RPB9 negatively correlates with RNA-seq error rates in human cell lines, suggesting that differential expression of RPB9 may regulate RNA polymerase fidelity in\u00a0vivo in humans. In addition, consistent with the errors detected by MORPhEUS being due to RNA polymerase and not technical errors, in reads spanning an exon\u2013intron junction, the measured error rate is higher at the 5\u2019 donor splice site, suggesting that RNA polymerase errors result in intron retention. Because it can be run on existing RNA-seq data, I expect MORPhEUS to enable many future discoveries regarding both the molecular determinants of RNA polymerase error rates and the relationship between RNA polymerase fidelity and phenotype."
-            }, 
-            {
                 "type": "section", 
-                "id": "s1", 
-                "title": "Materials and methods", 
+                "id": "s0", 
+                "title": "Main text", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s1-1", 
-                        "title": "Counting RNA polymerase errors in already aligned ENCODE data", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "Much existing RNA-seq data is available as bam files aligned to the human genome. In order to bypass alignment, which\u00a0is\u00a0the most computationally expensive step of the pipeline, I developed a method capable of using RNA-seq reads aligned with spliced aligners. First, in order to avoid increased mismatch rates at splice junctions due to alignment problems with both spliced and unspliced reads, I used SAMtools (<a href=\"#bib18\">Li et al., 2009</a>) and awk to remove all alignments that do\u00a0not align along the full length of the genome (e.g., for 76\u00a0bp reads, only reads with a CIGAR flag of 76\u00a0M). The remaining reads weretrimmed (bamUtil, trimBam) to convert the first and last 10\u00a0bp of each read to Ns and set the quality strings to \u2018!\u2019. I then used samtools mpileup (-q30 \u2013C50 \u2013Q30) and custom perl code to count the number of reads and number of errors at each position in genome. Positions with too many errors (e.g., more than one read of the same nonreference base) were not counted."
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "The information that determines protein sequence is stored in the genome, but that information must be transcribed by RNA polymerase and translated by the ribosome before reaching its final form. DNA polymerase error rates have been well characterized in a variety of species and environmental conditions, and are low\u00a0\u2013 on the order of one mutation per 10<sup>8</sup>\u201310<sup>10</sup> bases per generation (<a href=\"#bib23\">Lynch, 2011</a>;\u00a0<a href=\"#bib17\">Lang and Murray, 2008</a>;\u00a0<a href=\"#bib38\">Zhu et al., 2014</a>). In contrast, RNA polymerase errors are uniquely positioned to generate phenotypic diversity. Error rates are high (10<sup>-6</sup>\u201310<sup>-5</sup>) <a href=\"#bib7\">(Gout et al., 2013</a>; <a href=\"#bib22\">Lynch, 2010</a>; <a href=\"#bib34\">Shaw et al., 2002</a>; <a href=\"#bib28\">de Mercoyrol et al., 1992</a>), and each mRNA molecule is translated into 2000\u20134000 molecules of protein (<a href=\"#bib33\">Schwanh\u00e4usser et al., 2011</a>; <a href=\"#bib4\">Futcher et al., 1999</a>), resulting in the\u00a0amplification of any errors. Likewise, because many RNAs are present at\u00a0an\u00a0average\u00a0of less than one molecule per cell in microbes (<a href=\"#bib30\">Pelechano et al., 2010</a>) and in embryonic stem cells (<a href=\"#bib11\">Islam et al., 2011</a>), an RNA with an error may be the only RNA for that gene; all newly translated protein will contain this error. Despite the fact that transient errors can result in altered phenotypes (<a href=\"#bib5\">Gordon et al., 2013</a><a href=\"#bib12\">, 2015</a>), the genetics and environmental factors that affect RNA polymerase fidelity are poorly understood. This is because current methods for measuring polymerase fidelity are technically challenging (<a href=\"#bib7\">Gout et al., 2013</a>), require specialized organism-specific genetic constructs (<a href=\"#bib10\">Irvin et al., 2014</a>), and can only measure error rates at specific loci (<a href=\"#bib9\">Imashimizu et al., 2013</a>)."
                     }, 
                     {
-                        "type": "section", 
-                        "id": "s1-2", 
-                        "title": "Measurement of error rates at splice junctions", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "I used the University of California Santa Cruz (UCSC) table browser (<a href=\"#bib13\">Karolchik, 2004</a>) to download two bed files: hg19 EnsemblGenes introns with -10\u00a0bp flanking from each side, and another file with the introns and +10\u00a0bp flanking on either side. I then used bedtools (<a href=\"#bib32\">Quinlan and Hall, 2010</a>) (bedtools flank -b 20 -l 0 and bedtools flank -l 20 -b 0) to generate bed files with intervals that contain the splicing donor and acceptor sites, respectively. In addition, I used bedtools getfasta on the +10\u00a0bp flanking bed file to keep only introns flanked by GT and AG donor and acceptor sites. The final result is a pair of bam files with intervals centered on the splicing donor or acceptor sites. I used this new bed file to count error rates around each splice junction. The error rate at each position (e.g., -10, -9, -8, etc. from the G at the 5\u2019 donor site) is the sum of all errors at that position, divided by the sum of all reads. Positions are relative to the splicing feature, not to the genome, as error rates at any single genomic position are dominated by sampling bias. Per mono-, di-, and trinucleotide background error rates were-calculated using the same scripts, but without limiting mpileup to the splice junctions."
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "To overcome these obstacles I developed MORPhEUS (Measurement Of RNA Polymerase Errors Using Sequencing), which enables measurement of differential RNA polymerase fidelity using existing RNA-seq data (<a href=\"#fig1\">Figure 1</a>). The input is a set of RNA-seq fastq files and a reference genome, and the output is the error rate at each position in the genome. I find that RNA polymerase errors result in intron retention and that cellular mRNA quality control may reduce the effective RNA polymerase error rate. Moreover, my analyses suggest that the expression\u00a0level of the RPB9 Pol II subunits\u00a0Rpb9\u00a0and\u00a0Dst1\u00a0(TFIIS) determines RNA polymerase fidelity in\u00a0vivo. Because it can be run on any existing RNA-seq data, MORPhEUS enables the exploration of a previously unexplored source of biological diversity in microbes and mammals."
                     }, 
                     {
-                        "type": "section", 
-                        "id": "s1-3", 
-                        "title": "Strain construction and RNA sequencing for RPB9 and DST1 strains", 
-                        "content": [
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.003", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "A computational framework to measure relative changes in RNA polymerase fidelity.", 
+                        "caption": [
                             {
                                 "type": "paragraph", 
-                                "text": "The parental strain DBY12394 (<a href=\"#bib25\">Mcisaac et al., 2013</a>) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX) was transformed with a polymerase chain reaction (PCR) product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143) or DST1 (LCY142). To induce various levels of expression, strains were re-grown in YPD + 0-,\u00a03-,\u00a06-,\u00a012-, or 25-nM \u03b2-estradiol (Sigma,\u00a0St.\u00a0Louis,\u00a0MO,\u00a0USA, E4389) for more than 12 hr to a final OD<sub>600</sub> of 0.1 \u2013 0.4. Cellular RNA was extracted using the Epicenter MasterPure RNA Purification Kit, and Illumina sequencing libraries were prepared using the Truseq Stranded mRNA kit, and sequenced on an HiSeq2000 with at least 20,000,000 50\u00a0bp sequencing reads per sample."
+                                "text": "<b>(a)</b> Pipeline to identify potential RNA polymerase errors in RNA-seq data. High quality full-length RNA-seq reads are mapped to the reference genome or transcriptome using bwa, and only reads that map completely with two or fewer mismatches are kept. <b>(b)</b> Then 10\u00a0bp from the front and 10\u00a0bp from the end of the read are discarded as these regions have high error rates and are prone to poor quality local alignments. <b>(c)</b> Errors that occur multiple times (purple boxes) are discarded, as these are likely due to subclonal DNA mutations or motifs that sequence poorly on the HiSeq. Unique errors in the middle of reads (cyan box) are kept and counted."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig1-v2.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09945.004", 
+                                "id": "fig1s1", 
+                                "label": "Figure 1\u2014figure supplement 1.", 
+                                "title": "Cycle-specific error rates and better differentiation of genetically determined error rates using base quality value cutoffs.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Six yeast RNA-cDNA libraries were sequenced on the same lane in a HiSeq. <b>(a)</b> The average mismatch rate (across the six cDNA libraries) to the reference genome at each position was determined using different minimum base-quality thresholds using GATK ErrorRatePerCycle. Independent of the quality threshold, cycles at the ends, as well as some cycles in the middle, have high error rates. <b>(b)</b> The measured error rate for each sample using a minimum base quality of 10. <b>(c)</b> The measured error rate for each sample using a minimum base quality of 39."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig1-figsupp1-v2.tif", 
+                                "filename": "elife-09945-fig1-figsupp1-v2.tif"
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "I used bwa (<a href=\"#bib19\">Li and Durbin, 2009</a>) (-n 2, to permit no more than two mismatches in a read) to align the yeast RNA-seq reads to the reference genome, and trimBam from bamUtil to mask the first and last 10\u00a0bp of each read. I used samtools mpileup (<a href=\"#bib18\">Li et al., 2009</a>) (-q 30 -d 100000 -C50 \u2013Q39) to count the number of reads and mismatches at each position in the genome, discarding low confidence mapping, reads that map to multiple positions, and low quality reads. Duplicate reads can be removed from the fastq file if the coverage is low enough so that all reads\u00a0that\u00a0map\u00a0to\u00a0identical\u00a0\u00a0genome\u00a0coordinates\u00a0are expected be\u00a0PCR\u00a0duplicates\u00a0from\u00a0the same RNA fragment. This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads."
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09945.005", 
+                                "id": "fig1s2", 
+                                "label": "Figure 1\u2014figure supplement 2.", 
+                                "title": "RNA-seq data are enriched for mismatches to the reference genome that occur far more often than expected.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<b>(a)</b> At each coverage (x-axis), a point is shown if there is any position in the genome with the observed number of errors (y-axis) (small black dots). The diagonal lines show mismatch frequencies of 100%, 10%, 1%, and 0.1% \u2013 any point falling on these lines has the given mismatch frequency. With large grey circles are shown simulated data in which the same coverage as the yeast RNA-seq data are used, but with a mismatch frequency identical to the measured overall mismatch frequency of the yeast data. Locations in the graph in which a black point occurs but there is no grey point are locations in which there are more mismatches than expected by change. Note that at a coverage of &lt;100, we expect to see no mismatches more than twice, and 0.5% of positions with two observances of identical mismatches. <b>(b)</b> Identical to (a) but with the simulated mismatch frequency five times the observed. <b>(c)</b> Shown are measured mismatch frequencies for the yeast RPB9 and DST1 induction data at different \u03b2-estradiol\u00a0concentrations, at different filters for the maximal allowed number of observed identical mismatches. The dashed lines show the average mismatch frequency for the 0\u00a0nM condition. For all filters, low \u03b2-estradiol conditions have higher RNA-seq mismatch frequencies. <b>(d)</b> The coverage of the yeast RNA-seq data; ~95% of the genome is covered by &lt;100 reads. <b>(e)</b> Shown are the fraction of positions in the genome (y-axis) with X errors (x-axis) for the yeast RNA-seq data (cyan) and simulated data (blue). Also shown are the same data for positions of the genome with different coverage. For positions covered by &lt;1000 reads (95% of the genome) the expectation is 0 or 1 sequence mismatch (blue and orange lines). Positions with far greater numbers of mismatches are likely due to subclonal mutations and technical bias."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig1-figsupp2-v2.tif", 
+                                "filename": "elife-09945-fig1-figsupp2-v2.tif"
                             }
-                        ]
+                        ], 
+                        "filename": "elife-09945-fig1-v2.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Technical errors from reverse transcription and sequencing, and biological errors from RNA polymerase look identical (single-nucleotide differences from the reference genome). Therefore, a major challenge in identifying single-nucleotide polymorphisms (SNPs) and in measuring changes in polymerase fidelity is the reduction of technical errors (<a href=\"#bib15\">Kleinman and Majewski, 2012</a>;\u00a0<a href=\"#bib31\">Pickrell et al., 2012</a>; <a href=\"#bib20\">Li et al., 2011</a>) (<a href=\"#fig1\">Figure 1</a>). First, I map full-length (untrimmed) reads to the genome and discard reads with indels, with more than two mismatches, that map to multiple locations in the genome, and that do not map end\u00a0to\u00a0end along the full length of the read. Next, I trim the ends of the mapped reads, as alignments are of lower quality along the ends, and the mismatch rate is higher, especially at splice junctions. I also discard any cycles within the run with abnormally high error rates, and bases with low Illumina quality scores (<a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>). Finally, using the remaining bases, I count the number of matches and mismatches to the reference genome at each position in the genome. I discard positions with identical mismatches that are present more than once, as these are likely due to subclonal DNA polymorphisms or sequences that Illumina miscalls in a systematic manner (<a href=\"#bib27\">Meacham et al., 2011</a>) (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>). The result is a set of mismatches, many of which are technical errors and some of which are RNA polymerase errors. In order to determine if RNA-seq mismatches are due to RNA polymerase errors, it is necessary to identify sequence locations in which RNA polymerase errors are expected to have a measurable effect, or situations in which RNA polymerase fidelity is expected to vary."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "I reasoned that RNA polymerase errors that alter positions necessary for splicing should result in intron retention, while sequencing errors should not affect the final structure of the mRNA (<a href=\"#fig2\">Figure 2a</a>). However, mutations in the donor and acceptor splice sites also result in decreased expression (<a href=\"#bib12\">Jung et al., 2015</a>), and therefore are difficult to measure using RNA-seq. Therefore, I used chromatin-associated and nuclear RNA from Hela and Huh7 cells (<a href=\"#bib1\">Dhir et al., 2015</a>), and extracted all reads that span an exon\u2013intron junction for introns with canonical GT and AG splice sites, and measured the RNA-seq mismatch rate at each position. I find that errors at the G and U in the 5\u2019 donor site and at the A in the acceptor site are significantly enriched relative to errors at other positions (<a href=\"#fig2\">Figure 2b</a>), and to errors in\u00a0exonic\u00a0trinucleotides at splicing motifs in the human genome (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>) suggesting that RNA polymerase mismatches can result in changes in transcript isoforms. The ability of RNA polymerase errors to significantly affect splicing has been proposed (<a href=\"#bib3\">Fox-Walsh and Hertel, 2009</a>) but never previously measured."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.006", 
+                        "id": "fig2", 
+                        "label": "Figure 2.", 
+                        "title": "RNA polymerase errors cause intron retention and error rates are correlated with RPB9 expression.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>(a)</b> RNA polymerase errors at the splice junction should result in intron retention, as DNA mutations at the 5\u2019 donor site are known to cause intron retention. <b>(b)</b> Shown are the RNA-seq mismatch rates at each position relative to the 5\u2019 donor splice site, for sequencing reads that span an exon\u2013intron junction. Mismatch rates from chromatin-associated and nuclear RNAs are higher at the 5\u2019 and 3\u2019 splice sites, suggesting that RNA polymerase errors at this site result in intron retention. <b>(c)</b> For all ENCODE cell lines, RPB9 expression was determined from whole-cell RNA-seq data, and the RNA-seq error rate was measured separately for the cytoplasmic and nuclear fractions. <b>(d)</b> The RNA-seq error rate is higher (paired t-test, p=0.0019) in the nuclear than the cytoplasmic fraction, suggesting that quality-control mechanism may block nuclear export of low quality mRNAs."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig2-v2.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09945.007", 
+                                "id": "fig2s1", 
+                                "label": "Figure 2\u2014figure supplement 1.", 
+                                "title": "RNA-seq mismatch rates for all trinucleotides in chromatin-associated and nuclear RNAs.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<b>(a,b)</b> The 5\u2019 and 3\u2019 splicing motifs in the human genome. <b>(c)</b> The RNA-seq mismatch frequencies for all single nucleotides. <b>(d)</b> The RNA-seq mismatch rate to the reference genome for each trinucleotide, normalized to the average mismatch rate across all trinucleotides. For each trinucleotide, red shows the mismatch frequency at the first base, blue at the second, and green at the third. Error bars are standard deviation across all samples."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig2-figsupp1-v2.tif", 
+                                "filename": "elife-09945-fig2-figsupp1-v2.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09945.008", 
+                                "id": "fig2s2", 
+                                "label": "Figure 2\u2014figure supplement 2.", 
+                                "title": "RBP9 expression negatively correlates with RNA-seq mismatch rates.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The mismatch frequency is shown across all cells lines. <b>(a)</b> RPB9 mRNA expression is normalized by the median expression level of all subunits. <b>(b)</b> RPB9 mRNA expression is normalized by RBP3 (POLR2C) expression."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig2-figsupp2-v2.tif", 
+                                "filename": "elife-09945-fig2-figsupp2-v2.tif"
+                            }
+                        ], 
+                        "filename": "elife-09945-fig2-v2.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "RPB9 is known to be involved in RNA polymerase fidelity in vitro and in vivo (<a href=\"#bib10\">Irvin et al., 2014</a>; <a href=\"#bib16\">Knippa and Peterson, 2013</a>). Therefore, I reasoned that cell lines expressing low levels of RPB9 would have higher RNA polymerase error rates. Consistent with this, I find that RPB9 expression varies eightfold across the ENCODE cell lines, and this expression variation is correlated with the RNA-seq error rate (<a href=\"#fig2\">Figure 2c</a>, <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>). This suggests that low RPB9 expression may cause decreased polymerase fidelity in\u00a0vivo."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In addition, export of mRNAs from the nucleus involves a quality-control mechanism that checks if mRNAs are fully spliced and have properly formed 5\u2019 and 3\u2019 ends (<a href=\"#bib21\">Lykke-Andersen, 2001</a>). I hypothesized that mRNA export may involve a quality control that removes mRNAs with errors. I used the ENCODE dataset in which nuclear and cytoplasmic poly-A + mRNAs were sequenced; thus I can compare nuclear and cytoplasmic fractions from the same cell line grown in the same conditions and processed in the same manner. I find that the nuclear fraction has a higher RNA polymerase error rate than does the cytoplasmic fraction (<a href=\"#fig2\">Figure 2c,d</a>), suggesting that either that nuclear RNA-seq has a higher technical error rate or that the cell has mechanisms for reducing the effective polymerase error rate by preventing the export of mRNAs that contain errors."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Rpb9 and Dst1 are known to be involved in RNA polymerase fidelity in\u00a0vitro, yet there is conflicting evidence as to the role of Dst1 in\u00a0vivo(<a href=\"#bib34\">Shaw et al., 2002</a>; <a href=\"#bib10\">Irvin et al., 2014</a>; <a href=\"#bib16\">Knippa and Peterson, 2013</a>;\u00a0<a href=\"#bib29\">Nesser et al., 2006</a>; <a href=\"#bib37\">Walmacq et al., 2009</a>; <a href=\"#bib14\">Kireeva et al., 2008</a>). Part of these conflicts may result from the fact that the only available assays for RNA polymerase fidelity are special reporter strains that rely on DNA sequences known to increase the frequency of RNA polymerase errors. While I found that RPB9 expression correlates with RNA-seq error rates in mammalian cells, correlation is not causation. Furthermore, differences in RNA levels do not necessitate differences in stoichiometry among the subunits in active Pol II complexes. In order to determine if differential expression of RPB9 or DST1 are causative for differences in RNA polymerase fidelity in\u00a0vivo, I constructed two yeast strains in which I can alter the expression of either RPB9 or DST1 using \u03b2-estradiol and a synthetic transcription factor that has no effect on growth rate or the expression of any other genes (<a href=\"#bib26\">Mcisaac et al., 2014</a><a href=\"#bib25\">, 2013</a>). I grew these two strains (Z<sub>3</sub>EV<sub>pr</sub>-RPB9 and Z<sub>3</sub>EV<sub>pr</sub>-DST1) in different concentrations of \u03b2-estradiol and performed RNA-seq. I find that cells expressing low levels of RPB9 have high RNA polymerase error rates (<a href=\"#fig3\">Figure 3a</a>). Likewise, cells with low DST1 have high error rates (<a href=\"#fig3\">Figure 3a</a>). The increase in errors rate is not a property of cells defective for transcription elongation (<a href=\"#fig3s1\">Figure 3\u2014figure supplement 1</a>). The increase in error rates due to mutations in Rpb9 and Dst1 have not been robustly measured, however, there are some rough numbers. Here, the measured increase in error rate is 13%, while the measured effect of Rpb9 deletion in\u00a0vitro is fivefold (<a href=\"#bib37\">Walmacq et al., 2009</a>) and in\u00a0vivo following reverse transcription is 30% (<a href=\"#bib29\">Nesser et al., 2006</a>). If 2% of the observed mismatches are due to RNA polymerase errors, a fivefold increase in polymerase error rate results in a 10% increase in measured mismatch frequency; this is consistent with RNA polymerase fidelity of 10<sup>-6</sup>\u201310<sup>-5</sup> and overall RNA-seq error rates of 10<sup>-4</sup>. Note that in our assay cells still express low levels or RPB9, and we therefore expect the increase in error rate to be lower, suggesting that RNA polymerase errors constitute 5\u201310% of the measured mismatches. Our ability to genetically control the expression of DST1 and RPB9, and measure changes in RNA-seq error rates is consistent with MORPhEUS measuring RNA polymerase fidelity. In addition, we observe more single-nucleotide insertions in the RNA-seq data from the high error rate samples, suggesting that depletion of RPB9 and DST1 results in increased insertions in transcripts, but not increased deletions (<a href=\"#fig3s2\">Figure 3\u2014figure supplement 2</a>). Finally, genetic reduction in RNA polymerase fidelity results in increased intron retention, consistent with RNA polymerase errors causing reduced splicing efficiency (<a href=\"#fig3\">Figure 3b</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.009", 
+                        "id": "fig3", 
+                        "label": "Figure 3.", 
+                        "title": "RNA polymerase error rate is determined by the expression level of RPB9 and DST1.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>(a)</b> RNA-seq error rates I re-measured for two strains (Z<sub>3</sub>EVpr-RPB9, black points, Z<sub>3</sub>EVpr-DST1, blue points) grown at different concentrations of \u03b2-estradiol. The points show the relationship between RPB9 expression levels (determined by RNA-seq) and RNA-seq error rates. The blue points show RPB9 expression levels for the Z<sub>3</sub>EVpr-DST1 strain, in which DST1 expression ranges from 16 fragments per kilobase per million (FPKM) at 0\u00a0nM \u03b2-estradiol to 120 FPKM native expression to 756 FPKM at 25\u00a0nM \u03b2-estradiol. Low induction of both DST1 or RPB9 results in high RNA-seq error rates (red box), while wild-type and higher induction levels result in low RNA-seq error rates (black box). <b>(b)</b> Across all genes, the intron retention rate is higher in conditions with low RNA polymerase fidelity (t-test between high and low error rate samples, p=0.029), consistent with the hypothesis that RNA polymerase errors result in splicing defects. <b>(c)</b> The error rate for each of the 12 single base changes are shown for induction experiments that gave high (red) or low (black) RNA-seq error rates. Transitions (G&lt;\u2013&gt;A, C&lt;\u2013&gt;U) are marked with green boxes and transversions (A&lt;\u2013&gt;C,\u00a0G&lt;\u2013&gt;U) with purple."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig3-v2.tif", 
+                        "supplements": [
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09945.010", 
+                                "id": "fig3s1", 
+                                "label": "Figure 3\u2014figure supplement 1.", 
+                                "title": "Mutations that affect transcription elongation do not affect measured RNA-seq mismatch frequencies.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Two separate experiments were performed with wild-type controls and mutants involved in transcription elongation. Individual bars show the RNA-seq mismatch frequency of biological replicates."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig3-figsupp1-v2.tif", 
+                                "filename": "elife-09945-fig3-figsupp1-v2.tif"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.09945.011", 
+                                "id": "fig3s2", 
+                                "label": "Figure 3\u2014figure supplement 2.", 
+                                "title": "Decreases in RPB9 and DST1 expression in yeast results in more single base insertions in RNA-seq data.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For each RNA-seq dataset, the number of inserts (+N) or deletions (\u2013N) in the mpileup output (N is the number of\u00a0bases in the indel) were counted, and this number divided by the total number of mapped reads in each sample. On the right are the same data but zoomed in on each metric to better show the comparison between the two sets of samples."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig3-figsupp2-v2.tif", 
+                                "filename": "elife-09945-fig3-figsupp2-v2.tif"
+                            }
+                        ], 
+                        "filename": "elife-09945-fig3-v2.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "A unique advantage of MORPhEUS is that it measures thousands of RNA polymerase errors across the entire transcriptome in a single experiment, and thus enables he complete characterization of the mutation spectrum and biases of RNA polymerase. I asked how altered RPB9 and DST1 expression levels affect each type of single-nucleotide change. I find that, with decreasing polymerase fidelity, transitions increase more than transversions, and that C\u2192U errors are the most common (<a href=\"#fig3\">Figure 3c</a>). This result, along with other sequencing based results (<a href=\"#bib7\">Gout et al., 2013</a>), have shown that DNA and RNA polymerase have broadly similar error profiles (<a href=\"#bib38\">Zhu et al., 2014</a>); it will be interesting to see if all polymerases share the same mutation spectra, and if this is due to deamination of the template base, or is a structural property of the polymerase itself. Interestingly, I find that coding sequences have evolved so that errors are less likely to produce in-frame stop codons than out-of-frame stop codons, suggesting that natural selection may act to minimize the effect of polymerase errors (<a href=\"#fig4\">Figure 4</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.09945.012", 
+                        "id": "fig4", 
+                        "label": "Figure 4.", 
+                        "title": "In-frame stop codons are less likely to be created by polymerase errors.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "For all genes in yeast, I calculated the number of codons which are one polymerase error from a stop codon. <b>(a)</b> Fewer in-frame codons can be turned into a stop codon by a single-nucleotide change, compared to out-of-frame codons. <b>(b)</b> Codons that are one error away from generating an in-frame stop codon are more likely to be found at the ends of the open reading frames (ORFs), compared to the beginning of the ORF."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/09945/elife-09945-fig4-v2.tif", 
+                        "filename": "elife-09945-fig4-v2.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Here I have presented proof that relative changes in RNA polymerase error rates can be measured using standard Illumina RNA-seq data. Consistent with previous work in\u00a0vivo and in\u00a0vitro, I find that depletion of RPB9 or Dst1 results in higher RNA polymerase error rates. Furthermore, I find that expression of RPB9 negatively correlates with RNA-seq error rates in human cell lines, suggesting that differential expression of RPB9 may regulate RNA polymerase fidelity in\u00a0vivo in humans. In addition, consistent with the errors detected by MORPhEUS being due to RNA polymerase and not technical errors, in reads spanning an exon\u2013intron junction, the measured error rate is higher at the 5\u2019 donor splice site, suggesting that RNA polymerase errors result in intron retention. Because it can be run on existing RNA-seq data, I expect MORPhEUS to enable many future discoveries regarding both the molecular determinants of RNA polymerase error rates and the relationship between RNA polymerase fidelity and phenotype."
                     }, 
                     {
                         "type": "section", 
-                        "id": "s1-4", 
-                        "title": "Pre-existing RNA-seq datasets", 
+                        "id": "s1", 
+                        "title": "Materials and methods", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "For the intron retention analysis in human cells, data are from NCBI SRA PRJNA253670. Data for the elc4 and spt4 analysis are from PRJNA167772 and PRJNA148851, respectively. For RPB9 correlation, undefined data (SRA PRJNA30709) are all from the Gingeras lab at CSHL."
+                                "type": "section", 
+                                "id": "s1-1", 
+                                "title": "Counting RNA polymerase errors in already aligned ENCODE data", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Much existing RNA-seq data is available as bam files aligned to the human genome. In order to bypass alignment, which\u00a0is\u00a0the most computationally expensive step of the pipeline, I developed a method capable of using RNA-seq reads aligned with spliced aligners. First, in order to avoid increased mismatch rates at splice junctions due to alignment problems with both spliced and unspliced reads, I used SAMtools (<a href=\"#bib18\">Li et al., 2009</a>) and awk to remove all alignments that do\u00a0not align along the full length of the genome (e.g., for 76\u00a0bp reads, only reads with a CIGAR flag of 76\u00a0M). The remaining reads weretrimmed (bamUtil, trimBam) to convert the first and last 10\u00a0bp of each read to Ns and set the quality strings to \u2018!\u2019. I then used samtools mpileup (-q30 \u2013C50 \u2013Q30) and custom perl code to count the number of reads and number of errors at each position in genome. Positions with too many errors (e.g., more than one read of the same nonreference base) were not counted."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s1-2", 
+                                "title": "Measurement of error rates at splice junctions", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "I used the University of California Santa Cruz (UCSC) table browser (<a href=\"#bib13\">Karolchik, 2004</a>) to download two bed files: hg19 EnsemblGenes introns with -10\u00a0bp flanking from each side, and another file with the introns and +10\u00a0bp flanking on either side. I then used bedtools (<a href=\"#bib32\">Quinlan and Hall, 2010</a>) (bedtools flank -b 20 -l 0 and bedtools flank -l 20 -b 0) to generate bed files with intervals that contain the splicing donor and acceptor sites, respectively. In addition, I used bedtools getfasta on the +10\u00a0bp flanking bed file to keep only introns flanked by GT and AG donor and acceptor sites. The final result is a pair of bam files with intervals centered on the splicing donor or acceptor sites. I used this new bed file to count error rates around each splice junction. The error rate at each position (e.g., -10, -9, -8, etc. from the G at the 5\u2019 donor site) is the sum of all errors at that position, divided by the sum of all reads. Positions are relative to the splicing feature, not to the genome, as error rates at any single genomic position are dominated by sampling bias. Per mono-, di-, and trinucleotide background error rates were-calculated using the same scripts, but without limiting mpileup to the splice junctions."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s1-3", 
+                                "title": "Strain construction and RNA sequencing for RPB9 and DST1 strains", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The parental strain DBY12394 (<a href=\"#bib25\">Mcisaac et al., 2013</a>) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX) was transformed with a polymerase chain reaction (PCR) product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143) or DST1 (LCY142). To induce various levels of expression, strains were re-grown in YPD + 0-,\u00a03-,\u00a06-,\u00a012-, or 25-nM \u03b2-estradiol (Sigma,\u00a0St.\u00a0Louis,\u00a0MO,\u00a0USA, E4389) for more than 12 hr to a final OD<sub>600</sub> of 0.1 \u2013 0.4. Cellular RNA was extracted using the Epicenter MasterPure RNA Purification Kit, and Illumina sequencing libraries were prepared using the Truseq Stranded mRNA kit, and sequenced on an HiSeq2000 with at least 20,000,000 50\u00a0bp sequencing reads per sample."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "I used bwa (<a href=\"#bib19\">Li and Durbin, 2009</a>) (-n 2, to permit no more than two mismatches in a read) to align the yeast RNA-seq reads to the reference genome, and trimBam from bamUtil to mask the first and last 10\u00a0bp of each read. I used samtools mpileup (<a href=\"#bib18\">Li et al., 2009</a>) (-q 30 -d 100000 -C50 \u2013Q39) to count the number of reads and mismatches at each position in the genome, discarding low confidence mapping, reads that map to multiple positions, and low quality reads. Duplicate reads can be removed from the fastq file if the coverage is low enough so that all reads\u00a0that\u00a0map\u00a0to\u00a0identical\u00a0\u00a0genome\u00a0coordinates\u00a0are expected be\u00a0PCR\u00a0duplicates\u00a0from\u00a0the same RNA fragment. This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s1-4", 
+                                "title": "Pre-existing RNA-seq datasets", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For the intron retention analysis in human cells, data are from NCBI SRA PRJNA253670. Data for the elc4 and spt4 analysis are from PRJNA167772 and PRJNA148851, respectively. For RPB9 correlation, undefined data (SRA PRJNA30709) are all from the Gingeras lab at CSHL."
+                                    }
+                                ]
                             }
                         ]
                     }

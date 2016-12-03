@@ -208,67 +208,62 @@
         ], 
         "body": [
             {
-                "type": "paragraph", 
-                "text": "<b>Related research article</b> Neher RA, Russell CA, Shraiman BI. 2014. Predicting evolution from the shape of genealogical trees. <i>eLife</i> <b>3</b>:e03568. doi: <a href=\"http://dx.doi.org/10.7554/eLife.03568\">10.7554/eLife.03568</a>"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "<b>Image</b> In an adapting population, today's individuals descend from high-fitness ancestors"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "<inline-graphic xlink:href=\"elife-05060-inf1-v1\"></inline-graphic>"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Darwinian evolution is a dynamical principle that connects the past and the future. According to this principle, fitness differences between the individuals in a population are an important driving force of evolution. Biologists have long used fitness effects to explain observed evolutionary changes. For good reasons, however, they have been hesitant to make predictions about the future of a species. Given the bewildering complexity of what is possible in evolution, attempting to say what will happen in a specific instance may appear futile. Moreover, we cannot test any predictions, because we have not seen the evolutionary past and will not see the future."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Recently, however, evolutionary biology is gaining predictive power in an increasing number of systems, which include viruses, bacteria and populations of cancer cells. In these systems, high mutation rates make evolution happen in front of our eyes. Every year, for example, the human influenza virus replaces 2% of the amino acids in the protein domains that interact with the immune system of its host. Using modern genome sequencing, we can now monitor the genetic history of entire populations and reconstruct their genealogical trees. Such trees show how the individuals of today's populations are connected to their evolutionary ancestors. Now, in <i>eLife</i>, Richard Neher, Colin Russell and Boris Shraiman investigate how much these trees can tell us about the future of a population (<a href=\"#bib6\">Neher et al., 2014</a>)."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Inferring evolutionary patterns from genealogical trees has a long history. Geneticists use probabilistic methods to map mutations onto specific tree branches (<a href=\"#fig1\">Figure 1A</a>). Counting how often these mutations appear in different lineages tells us which fitness effects are predominant in a population (<a href=\"#bib5\">McDonald and Kreitman, 1991</a>; <a href=\"#bib9\">Strelkowa and L\u00e4ssig, 2012</a>). From the statistics of the genealogical tree itself, epidemiologists infer the growth rate of pathogen populations and use that information to predict the future course of an epidemic (<a href=\"#fig1\">Figure 1B</a>, <a href=\"#bib8\">Stadler, 2010</a>). Neher, Russell and Shraiman\u2014who are at the Max Planck Institute for Developmental Biology, the University of Cambridge, and the University of California at Santa Barbara, respectively\u2014extend this genealogy-based inference to genetic changes within a population (<a href=\"#fig1\">Figure 1C</a>). This required developing new ways to extract information from genealogical trees: predictions must now be made for clades of genetically similar individuals, so we need a model that captures growth rate differences between different clades within one genealogical tree."
-            }, 
-            {
-                "type": "image", 
-                "id": "fig1", 
-                "label": "Figure 1.", 
-                "title": "Fitness inference from genealogical trees.", 
-                "caption": [
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
                     {
                         "type": "paragraph", 
-                        "text": "Lineages in these trees connect the individuals in a population sample and their evolutionary ancestors, which are the nodes of the tree. Evolutionarily successful lineages have descendants in the far future and are marked by thick lines; all other lineages are lost in the evolutionary process. (<b>A</b>) The relative numbers of mutations in successful and in lost lineages measure the predominant fitness effects in a population (orange dots: amino acid changes, blue dots: synonymous mutations). (<b>B</b>) The global statistics of nodes and branches measures the absolute rate of exponential population growth (indicated by the shaded area). (<b>C</b>) The local statistics of nodes and branches measures growth rate differences between clades. Neher and colleagues use this information to predict clade evolution."
+                        "text": "Darwinian evolution is a dynamical principle that connects the past and the future. According to this principle, fitness differences between the individuals in a population are an important driving force of evolution. Biologists have long used fitness effects to explain observed evolutionary changes. For good reasons, however, they have been hesitant to make predictions about the future of a species. Given the bewildering complexity of what is possible in evolution, attempting to say what will happen in a specific instance may appear futile. Moreover, we cannot test any predictions, because we have not seen the evolutionary past and will not see the future."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Recently, however, evolutionary biology is gaining predictive power in an increasing number of systems, which include viruses, bacteria and populations of cancer cells. In these systems, high mutation rates make evolution happen in front of our eyes. Every year, for example, the human influenza virus replaces 2% of the amino acids in the protein domains that interact with the immune system of its host. Using modern genome sequencing, we can now monitor the genetic history of entire populations and reconstruct their genealogical trees. Such trees show how the individuals of today's populations are connected to their evolutionary ancestors. Now, in <i>eLife</i>, Richard Neher, Colin Russell and Boris Shraiman investigate how much these trees can tell us about the future of a population (<a href=\"#bib6\">Neher et al., 2014</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Inferring evolutionary patterns from genealogical trees has a long history. Geneticists use probabilistic methods to map mutations onto specific tree branches (<a href=\"#fig1\">Figure 1A</a>). Counting how often these mutations appear in different lineages tells us which fitness effects are predominant in a population (<a href=\"#bib5\">McDonald and Kreitman, 1991</a>; <a href=\"#bib9\">Strelkowa and L\u00e4ssig, 2012</a>). From the statistics of the genealogical tree itself, epidemiologists infer the growth rate of pathogen populations and use that information to predict the future course of an epidemic (<a href=\"#fig1\">Figure 1B</a>, <a href=\"#bib8\">Stadler, 2010</a>). Neher, Russell and Shraiman\u2014who are at the Max Planck Institute for Developmental Biology, the University of Cambridge, and the University of California at Santa Barbara, respectively\u2014extend this genealogy-based inference to genetic changes within a population (<a href=\"#fig1\">Figure 1C</a>). This required developing new ways to extract information from genealogical trees: predictions must now be made for clades of genetically similar individuals, so we need a model that captures growth rate differences between different clades within one genealogical tree."
+                    }, 
+                    {
+                        "type": "image", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Fitness inference from genealogical trees.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Lineages in these trees connect the individuals in a population sample and their evolutionary ancestors, which are the nodes of the tree. Evolutionarily successful lineages have descendants in the far future and are marked by thick lines; all other lineages are lost in the evolutionary process. (<b>A</b>) The relative numbers of mutations in successful and in lost lineages measure the predominant fitness effects in a population (orange dots: amino acid changes, blue dots: synonymous mutations). (<b>B</b>) The global statistics of nodes and branches measures the absolute rate of exponential population growth (indicated by the shaded area). (<b>C</b>) The local statistics of nodes and branches measures growth rate differences between clades. Neher and colleagues use this information to predict clade evolution."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/05060/elife-05060-fig1-v1.tif", 
+                        "filename": "elife-05060-fig1-v1.tif"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To meet this challenge, Neher and colleagues build on a formalism that is rooted in statistical physics and has become a major new development in population genetics (<a href=\"#bib10\">Tsimring et al., 1996</a>; <a href=\"#bib7\">Rouzine et al., 2003</a>; <a href=\"#bib2\">Desai and Fisher, 2007</a>). The basic idea is simple. Given that fitness differences within a population are carried by genetic mutations, we can imagine splitting each mutation and its fitness effect into ever-smaller pieces. This leads to a model in which the overall fitness variation of a population is made up of many small-effect mutations. By the law of large numbers, the fitness distribution then becomes bell-shaped. Such distributions are called travelling fitness waves (<a href=\"#bib10\">Tsimring et al., 1996</a>). In a given lineage, the accumulation of many small fitness effects follows a diffusive random walk. This picture applies to fast adaptive processes in asexual populations where the expansion of a successful clade is fuelled by multiple beneficial mutations\u2014for example, when viruses evolve to escape their hosts' immune defences."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Neher and colleagues link their fitness wave model to simpler heuristic measures of growth, which can easily be used to analyse data from a large genealogical tree. Specifically, they look at the local tree \u2018volume\u2019 <i>\u03bb</i>(<i>\u03c4</i>), which sums all tree branches in the vicinity of a given node with a discounting scale <i>\u03c4</i>. This quantity provides a (nonlinear) measure of how fast the number of individuals grows around that node. For example, in a subtree growing exponentially with rate <i>r</i>, the volume <i>\u03bb</i>(<i>\u03c4</i>) equals simply <i>\u03c4</i>/(1\u2013<i>\u03c4</i><i>r</i>). By interpreting this growth rate as fitness, Neher and colleagues obtain a measure of fitness differences between clades. A substantial fraction of the local tree volume is generated by small-effect mutations \u2018hitch-hiking\u2019 in successful clades (for example synonymous mutations, which do not change a protein). This explains why the local tree volume is closely related to fitness measures used in previous prediction schemes (<a href=\"#bib4\">\u0141uksza and L\u00e4ssig, 2014</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The key strength of this method is that it uses only the information contained in a genealogical tree. Thus, it can be applied in cases where we do not know which functions undergo adaptive evolution or where in the genome they are encoded. This feature is also important for interpreting the results: genealogy-based inference reveals growth rate differences within a population sample, but it remains agnostic about their cause. In the fitness wave model, adaptive evolution is that cause, but the demographic structure of a population or variations in sampling density may generate a similar signal in tree data."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Neher and colleagues apply their method to predict the evolution of the human influenza virus A/H3N2. This is a challenging problem: one year in advance, we need to forecast the prevalent clades circulating in a given winter season. Despite the simplicity of their method, Neher and colleagues predict the ancestor sequence of next year's clades with remarkable accuracy for the majority of northern winters between 1995 and 2013."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We do not yet know in detail how the genetic evolution of the influenza virus is related to its interactions with the human immune system. These \u2018antigenic\u2019 properties determine how effective influenza vaccines are. They depend on a smaller number of mutations, some of which have individually large effects (<a href=\"#bib3\">Koel et al., 2013</a>). Thus, prediction schemes geared towards antigenic properties must go beyond examining the overall sequence genealogies and weigh mutations by their antigenic effect (<a href=\"#bib1\">Bedford et al., 2014</a>; <a href=\"#bib4\">\u0141uksza and L\u00e4ssig, 2014</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Altogether, as Neher and colleagues show, current predictions reach about halfway between random picks and optimal predictions. This poses big conceptual and practical questions: How much can future methods improve on that score? And where does the inherent unpredictability of evolution start? Prediction is the ultimate test of any dynamical principle. Quantitative evolutionary science is being put to that test now."
                     }
-                ], 
-                "alt": "", 
-                "uri": "https://publishing-cdn.elifesciences.org/05060/elife-05060-fig1-v1.tif", 
-                "filename": "elife-05060-fig1-v1.tif"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "To meet this challenge, Neher and colleagues build on a formalism that is rooted in statistical physics and has become a major new development in population genetics (<a href=\"#bib10\">Tsimring et al., 1996</a>; <a href=\"#bib7\">Rouzine et al., 2003</a>; <a href=\"#bib2\">Desai and Fisher, 2007</a>). The basic idea is simple. Given that fitness differences within a population are carried by genetic mutations, we can imagine splitting each mutation and its fitness effect into ever-smaller pieces. This leads to a model in which the overall fitness variation of a population is made up of many small-effect mutations. By the law of large numbers, the fitness distribution then becomes bell-shaped. Such distributions are called travelling fitness waves (<a href=\"#bib10\">Tsimring et al., 1996</a>). In a given lineage, the accumulation of many small fitness effects follows a diffusive random walk. This picture applies to fast adaptive processes in asexual populations where the expansion of a successful clade is fuelled by multiple beneficial mutations\u2014for example, when viruses evolve to escape their hosts' immune defences."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Neher and colleagues link their fitness wave model to simpler heuristic measures of growth, which can easily be used to analyse data from a large genealogical tree. Specifically, they look at the local tree \u2018volume\u2019 <i>\u03bb</i>(<i>\u03c4</i>), which sums all tree branches in the vicinity of a given node with a discounting scale <i>\u03c4</i>. This quantity provides a (nonlinear) measure of how fast the number of individuals grows around that node. For example, in a subtree growing exponentially with rate <i>r</i>, the volume <i>\u03bb</i>(<i>\u03c4</i>) equals simply <i>\u03c4</i>/(1\u2013<i>\u03c4</i><i>r</i>). By interpreting this growth rate as fitness, Neher and colleagues obtain a measure of fitness differences between clades. A substantial fraction of the local tree volume is generated by small-effect mutations \u2018hitch-hiking\u2019 in successful clades (for example synonymous mutations, which do not change a protein). This explains why the local tree volume is closely related to fitness measures used in previous prediction schemes (<a href=\"#bib4\">\u0141uksza and L\u00e4ssig, 2014</a>)."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "The key strength of this method is that it uses only the information contained in a genealogical tree. Thus, it can be applied in cases where we do not know which functions undergo adaptive evolution or where in the genome they are encoded. This feature is also important for interpreting the results: genealogy-based inference reveals growth rate differences within a population sample, but it remains agnostic about their cause. In the fitness wave model, adaptive evolution is that cause, but the demographic structure of a population or variations in sampling density may generate a similar signal in tree data."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Neher and colleagues apply their method to predict the evolution of the human influenza virus A/H3N2. This is a challenging problem: one year in advance, we need to forecast the prevalent clades circulating in a given winter season. Despite the simplicity of their method, Neher and colleagues predict the ancestor sequence of next year's clades with remarkable accuracy for the majority of northern winters between 1995 and 2013."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "We do not yet know in detail how the genetic evolution of the influenza virus is related to its interactions with the human immune system. These \u2018antigenic\u2019 properties determine how effective influenza vaccines are. They depend on a smaller number of mutations, some of which have individually large effects (<a href=\"#bib3\">Koel et al., 2013</a>). Thus, prediction schemes geared towards antigenic properties must go beyond examining the overall sequence genealogies and weigh mutations by their antigenic effect (<a href=\"#bib1\">Bedford et al., 2014</a>; <a href=\"#bib4\">\u0141uksza and L\u00e4ssig, 2014</a>)."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Altogether, as Neher and colleagues show, current predictions reach about halfway between random picks and optimal predictions. This poses big conceptual and practical questions: How much can future methods improve on that score? And where does the inherent unpredictability of evolution start? Prediction is the ultimate test of any dynamical principle. Quantitative evolutionary science is being put to that test now."
+                ]
             }
         ], 
         "references": [

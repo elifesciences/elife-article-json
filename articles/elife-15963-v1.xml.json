@@ -209,71 +209,66 @@
         ], 
         "body": [
             {
-                "type": "paragraph", 
-                "text": "<b>Related research article</b> Sadacca BF, Jones JL, Schoenbaum G. 2016. Midbrain dopamine neurons compute inferred and cached value prediction errors in a common framework. <i>eLife</i> <b>5</b>:e13665. doi: <a href=\"http://doi.org/10.7554/eLife.13665\">10.7554/eLife.13665</a>"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "<b>Image</b> Rats can learn to associate a clicker with a reward without experiencing the two at the same time"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "<inline-graphic mime-subtype=\"jpeg\" mimetype=\"image\" xlink:href=\"elife-15963-inf1-v1\"></inline-graphic>"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "As any kindergarten instructor will tell you, reward is one of the most powerful teachers. Some of the earliest and most iconic examples of behavioral psychology concern how animals learn, from experience, which stimuli or actions accompany reward (<a href=\"#bib10\">Thorndike, 1898</a>; <a href=\"#bib7\">Pavlov, 1927</a>). A century later, computational neuroscientists have described neural circuits that underpin such learning. These are based on the mutual interactions between neurons that contain the neuromodulator dopamine and other neurons they connect with, particularly those in a brain region called the striatum. The dopaminergic neurons receive information about predicted rewards, and report back the mismatch between those expectations and the rewards actually received. These \u201creward prediction errors,\u201d in turn, allow the predictions to be updated, a computation known as model-free learning."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "The problem with this well-studied framework is that humans and rodents can learn about rewards in many ways other than by direct experience (<a href=\"#bib11\">Tolman, 1948</a>). Computationally, these capabilities have been understood in terms of \u201cmodel-based\u201d learning methods, which draw on knowledge of task structure to anticipate possible rewards that have never been directly experienced. Due in part to the support for a tidy, closed-loop picture of dopamine\u2019s involvement in reward prediction, researchers have tended to assume that such capabilities arise from some separate, more sophisticated brain system. Now, in eLife, Brian Sadacca, Joshua Jones and Geoffrey Schoenbaum indicate that these more sophisticated learning capabilities instead arise within \u2013 or at least impinge upon \u2013 the dopaminergic learning circuit itself (<a href=\"#bib8\">Sadacca et al., 2016</a>)."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Sadacca et al. \u2013 who are based at the National Institute on Drug Abuse, University of Maryland School of Medicine and Johns Hopkins School of Medicine \u2013 recorded spiking from dopaminergic neurons while rats performed a task designed to defeat simple model-free learning. The task, called sensory preconditioning, assesses the rats\u2019 ability to associate a stimulus (for example, a clicker) with a reward without ever experiencing the two together (<a href=\"#fig1\">Figure 1</a>). To do so, a rat needs to integrate experiences from two separate training phases. First, in a \u201cpre-conditioning\u201d phase, the clicker was paired with another neutral stimulus (for example, a tone); then, in a \u201cconditioning\u201d phase, the tone (but not the clicker) was paired with a reward. Not only was the clicker never paired with the reward, it was not even paired with a reward-predicting stimulus, since the tone\u2019s relationship with reward was established at a later stage."
-            }, 
-            {
-                "type": "image", 
-                "id": "fig1", 
-                "label": "Figure 1.", 
-                "title": "The activity of dopaminergic neurons helps rats to integrate separate experiences to predict when a reward will be given.", 
-                "caption": [
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
                     {
                         "type": "paragraph", 
-                        "text": "(<b>A</b>) Schematic of the task used by Sadacca et al. In the pre-conditioning phase, rats learn to associate a clicker with a tone. In a subsequent conditioning phase, the rats learn to link the tone with a food reward. In the final test phase, the rats hear the clicker, and behave as if they expect a reward. (<b>B</b>) Three potential associative retrieval mechanisms that might support integrative inference about the stimulus. Left: during the conditioning phase, presenting the tone could call the clicker to mind, allowing both stimuli to be linked to a reward. Middle: after conditioning, the mental replay of experiences may permit the relationships between separate sets of stimuli to be learned. Right: in the test phase, the rats may make new inferences that cause the rats to expect a reward when they hear the clicker."
+                        "text": "As any kindergarten instructor will tell you, reward is one of the most powerful teachers. Some of the earliest and most iconic examples of behavioral psychology concern how animals learn, from experience, which stimuli or actions accompany reward (<a href=\"#bib10\">Thorndike, 1898</a>; <a href=\"#bib7\">Pavlov, 1927</a>). A century later, computational neuroscientists have described neural circuits that underpin such learning. These are based on the mutual interactions between neurons that contain the neuromodulator dopamine and other neurons they connect with, particularly those in a brain region called the striatum. The dopaminergic neurons receive information about predicted rewards, and report back the mismatch between those expectations and the rewards actually received. These \u201creward prediction errors,\u201d in turn, allow the predictions to be updated, a computation known as model-free learning."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The problem with this well-studied framework is that humans and rodents can learn about rewards in many ways other than by direct experience (<a href=\"#bib11\">Tolman, 1948</a>). Computationally, these capabilities have been understood in terms of \u201cmodel-based\u201d learning methods, which draw on knowledge of task structure to anticipate possible rewards that have never been directly experienced. Due in part to the support for a tidy, closed-loop picture of dopamine\u2019s involvement in reward prediction, researchers have tended to assume that such capabilities arise from some separate, more sophisticated brain system. Now, in eLife, Brian Sadacca, Joshua Jones and Geoffrey Schoenbaum indicate that these more sophisticated learning capabilities instead arise within \u2013 or at least impinge upon \u2013 the dopaminergic learning circuit itself (<a href=\"#bib8\">Sadacca et al., 2016</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Sadacca et al. \u2013 who are based at the National Institute on Drug Abuse, University of Maryland School of Medicine and Johns Hopkins School of Medicine \u2013 recorded spiking from dopaminergic neurons while rats performed a task designed to defeat simple model-free learning. The task, called sensory preconditioning, assesses the rats\u2019 ability to associate a stimulus (for example, a clicker) with a reward without ever experiencing the two together (<a href=\"#fig1\">Figure 1</a>). To do so, a rat needs to integrate experiences from two separate training phases. First, in a \u201cpre-conditioning\u201d phase, the clicker was paired with another neutral stimulus (for example, a tone); then, in a \u201cconditioning\u201d phase, the tone (but not the clicker) was paired with a reward. Not only was the clicker never paired with the reward, it was not even paired with a reward-predicting stimulus, since the tone\u2019s relationship with reward was established at a later stage."
+                    }, 
+                    {
+                        "type": "image", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "The activity of dopaminergic neurons helps rats to integrate separate experiences to predict when a reward will be given.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) Schematic of the task used by Sadacca et al. In the pre-conditioning phase, rats learn to associate a clicker with a tone. In a subsequent conditioning phase, the rats learn to link the tone with a food reward. In the final test phase, the rats hear the clicker, and behave as if they expect a reward. (<b>B</b>) Three potential associative retrieval mechanisms that might support integrative inference about the stimulus. Left: during the conditioning phase, presenting the tone could call the clicker to mind, allowing both stimuli to be linked to a reward. Middle: after conditioning, the mental replay of experiences may permit the relationships between separate sets of stimuli to be learned. Right: in the test phase, the rats may make new inferences that cause the rats to expect a reward when they hear the clicker."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/15963/elife-15963-fig1-v1", 
+                        "filename": "elife-15963-fig1-v1"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Nevertheless, in a test phase, rats demonstrated (by visiting a food cup where a reward had previously been delivered) that they associated the clicker with reward. This capability is well known; more surprising was that these reward predictions could also be seen in the responses of dopaminergic neurons to the clicker. This result complicates dual-system explanations, which state that model-based inference occurs separately from the dopaminergic reward learning system. It also speaks against the traditional closed-loop account of dopaminergic learning, in which the circuit should only know about reward predictions it has taught itself via direct pairings."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "This result adds to a series of studies suggesting that responses in dopaminergic neurons and associated areas report more sophisticated reward predictions than theory suggests (<a href=\"#bib1\">Bromberg-Martin et al., 2010</a>; <a href=\"#bib2\">Daw et al., 2011</a>). Key challenges going forward are to understand how this information gets into the circuit, and what neural computations produce the information in the first place."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "These questions might have the same answer if at least some of an animal\u2019s sophisticated learning capacities actually build upon a dopaminergic foundation. This perspective is supported by work in humans that suggests that the dopamine system also helps to produce similar integrative inferences about rewards (<a href=\"#bib3\">Deserno et al., 2015</a>; <a href=\"#bib9\">Sharp et al., 2015</a>; <a href=\"#bib5\">Doll et al., 2016</a>). There are several (not mutually exclusive) possibilities for how dopaminergic learning might contribute to these integrative predictions."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "One possibility is that inferences made during the test phase cause the rats to expect a reward when they hear the clicker. Model-based learning theories envision that the brain retrieves successor stimuli (here, the clicker would evoke the tone) as a sort of mental simulation that helps to predict reward. Evidence of such retrieval has been demonstrated using fMRI in humans (<a href=\"#bib4\">Doll et al., 2015</a>). Though this mechanism need not involve dopamine, it could: the usual dopaminergic learning circuit could map the evoked representations to a reward."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The association of the clicker with the reward could also have already been made earlier in the experiment. Though Sadacca et al. believe this is unlikely in their study, two broadly applicable mechanisms for this process have been suggested. One possibility, supported by a human fMRI study of a similar sensory preconditioning task (<a href=\"#bib12\">Wimmer and Shohamy, 2012</a>), is that associations between the clicker and reward could already form in the conditioning phase (during which the rats learn to associate a tone with a reward). If presenting the tone called to mind the clicker, which preceded the tone in the first training phase, dopaminergic learning could associate the reward that followed with both stimuli."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Mentally rehearsing clicker-tone and tone-reward sequences after the conditioning phase (but before testing) could also allow the brain to learn the relationship between the clicker and reward. Replay of previously experienced events has been observed in neural recordings during sleep and quiet rest. If the brain treated such mock experiences like real ones \u2013 allowing them to drive dopaminergic responding and learning \u2013 this too could drive the integrative association (<a href=\"#bib6\">Gershman et al., 2014</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In all, the venerable framework of dopaminergic reward learning may have more explanatory power than originally thought, as the results of Sadacca et al. suggest that it might point toward explanations even for cases that were thought to challenge it."
                     }
-                ], 
-                "alt": "", 
-                "uri": "https://publishing-cdn.elifesciences.org/15963/elife-15963-fig1-v1", 
-                "filename": "elife-15963-fig1-v1"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Nevertheless, in a test phase, rats demonstrated (by visiting a food cup where a reward had previously been delivered) that they associated the clicker with reward. This capability is well known; more surprising was that these reward predictions could also be seen in the responses of dopaminergic neurons to the clicker. This result complicates dual-system explanations, which state that model-based inference occurs separately from the dopaminergic reward learning system. It also speaks against the traditional closed-loop account of dopaminergic learning, in which the circuit should only know about reward predictions it has taught itself via direct pairings."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "This result adds to a series of studies suggesting that responses in dopaminergic neurons and associated areas report more sophisticated reward predictions than theory suggests (<a href=\"#bib1\">Bromberg-Martin et al., 2010</a>; <a href=\"#bib2\">Daw et al., 2011</a>). Key challenges going forward are to understand how this information gets into the circuit, and what neural computations produce the information in the first place."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "These questions might have the same answer if at least some of an animal\u2019s sophisticated learning capacities actually build upon a dopaminergic foundation. This perspective is supported by work in humans that suggests that the dopamine system also helps to produce similar integrative inferences about rewards (<a href=\"#bib3\">Deserno et al., 2015</a>; <a href=\"#bib9\">Sharp et al., 2015</a>; <a href=\"#bib5\">Doll et al., 2016</a>). There are several (not mutually exclusive) possibilities for how dopaminergic learning might contribute to these integrative predictions."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "One possibility is that inferences made during the test phase cause the rats to expect a reward when they hear the clicker. Model-based learning theories envision that the brain retrieves successor stimuli (here, the clicker would evoke the tone) as a sort of mental simulation that helps to predict reward. Evidence of such retrieval has been demonstrated using fMRI in humans (<a href=\"#bib4\">Doll et al., 2015</a>). Though this mechanism need not involve dopamine, it could: the usual dopaminergic learning circuit could map the evoked representations to a reward."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "The association of the clicker with the reward could also have already been made earlier in the experiment. Though Sadacca et al. believe this is unlikely in their study, two broadly applicable mechanisms for this process have been suggested. One possibility, supported by a human fMRI study of a similar sensory preconditioning task (<a href=\"#bib12\">Wimmer and Shohamy, 2012</a>), is that associations between the clicker and reward could already form in the conditioning phase (during which the rats learn to associate a tone with a reward). If presenting the tone called to mind the clicker, which preceded the tone in the first training phase, dopaminergic learning could associate the reward that followed with both stimuli."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Mentally rehearsing clicker-tone and tone-reward sequences after the conditioning phase (but before testing) could also allow the brain to learn the relationship between the clicker and reward. Replay of previously experienced events has been observed in neural recordings during sleep and quiet rest. If the brain treated such mock experiences like real ones \u2013 allowing them to drive dopaminergic responding and learning \u2013 this too could drive the integrative association (<a href=\"#bib6\">Gershman et al., 2014</a>)."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "In all, the venerable framework of dopaminergic reward learning may have more explanatory power than originally thought, as the results of Sadacca et al. suggest that it might point toward explanations even for cases that were thought to challenge it."
+                ]
             }
         ], 
         "references": [

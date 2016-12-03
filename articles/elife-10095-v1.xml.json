@@ -166,78 +166,85 @@
         ], 
         "body": [
             {
-                "type": "paragraph", 
-                "text": "Cheng CY, Chou FC, Kladwang W, Tian S, Cordero P, Das R. 2015. Consistent global structures of complex RNA states through multidimensional chemical mapping. <i>eLife</i> <b>4</b>:e07600. doi: <a href=\"http://dx.doi.org/10.7554/eLife.07600\">10.7554/eLife.07600</a>"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Published 2 June 2015"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Table 1 has been corrected. The original manuscript used a previously published formula from Hajdin et al. <i>RNA</i> (2010) for estimating the p-value of a 3D RNA structure prediction but calculated these p-values using the incorrect mean RMSD values. When the correct parameters are used, the p-values of our predictions decrease, i.e. the estimated significances are increased. The conclusions of the manuscript are unchanged."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "The corrected table is shown here, with changes highlighted:"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Table 1 Corrected. Benchmark of multidimensional chemical mapping on RNAs with crystal structures"
-            }, 
-            {
-                "type": "table", 
-                "id": "tblu1", 
-                "tables": [
-                    "<table><thead><tr><th rowspan=\"2\">RNA</th><th rowspan=\"2\">Length</th><th colspan=\"2\">M<sup>2</sup>/Rosetta (no MOHCA, control)</th><th colspan=\"2\">MCM</th></tr><tr><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th></tr></thead><tbody><tr><td><i>Tetrahymena</i> ribozyme P4\u2013P6 domain</td><td>158</td><td>38.3</td><td>&gt;0.9</td><td>8.6</td><td><named-content content-type=\"author-callout-style2\">&lt;1.0 \u00d7 10<sup>\u221216</sup></named-content></td></tr><tr><td>V. cholerae cyclic-di-GMP riboswitch aptamer, ligand-bound*</td><td>89</td><td>11.3</td><td><named-content content-type=\"author-callout-style2\">2.6 \u00d7 10<sup>\u22123</sup></named-content></td><td>7.6</td><td><named-content content-type=\"author-callout-style2\">6.3 \u00d7 10<sup>\u22127</sup></named-content></td></tr><tr><td>F. nucleatum double glycine riboswitch ligand-binding domain, ligand-bound*</td><td>159</td><td>30.5</td><td>&gt;0.9</td><td>7.9</td><td><named-content content-type=\"author-callout-style2\">&lt;1.0 \u00d7 10<sup>\u221216</sup></named-content></td></tr><tr><td>S. thermophilum adenosylcobalamin riboswitch aptamer, ligand-bound*</td><td>168</td><td>17.1\u2020</td><td><named-content content-type=\"author-callout-style2\">5.3 \u00d7 10<sup>\u22127</sup></named-content></td><td>11.9</td><td><named-content content-type=\"author-callout-style2\">4.0 \u00d7 10<sup>\u221215</sup></named-content></td></tr><tr><td>Class I ligase</td><td>127</td><td>26.3</td><td>&gt;0.9</td><td>14.5</td><td><named-content content-type=\"author-callout-style2\">6.8 \u00d7 10<sup>\u22125</sup></named-content></td></tr><tr><td>Class I ligase, core domain\u2021</td><td>87</td><td>14.0</td><td><named-content content-type=\"author-callout-style2\">0.13</named-content></td><td>11.1</td><td><named-content content-type=\"author-callout-style2\">3.1 \u00d7 10<sup>\u22123</sup></named-content></td></tr><tr><td>D. iridis lariat-capping ribozyme</td><td>188</td><td>9.6\u2020</td><td><named-content content-type=\"author-callout-style2\">&lt;1.0 \u00d7 10<sup>\u221216</sup></named-content></td><td>8.2</td><td>&lt;1.0 \u00d7 10<sup>\u221216</sup></td></tr><tr><td><i>D. iridis</i> lariat-capping ribozyme, MCM refined regions\u2021</td><td>69</td><td>17.0\u2020</td><td>n.a.\u00a7</td><td>11.2</td><td>n.a.\u00a7</td></tr></tbody></table>"
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Cheng CY, Chou FC, Kladwang W, Tian S, Cordero P, Das R. 2015. Consistent global structures of complex RNA states through multidimensional chemical mapping. <i>eLife</i> <b>4</b>:e07600. doi: <a href=\"http://dx.doi.org/10.7554/eLife.07600\">10.7554/eLife.07600</a>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Published 2 June 2015"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Table 1 has been corrected. The original manuscript used a previously published formula from Hajdin et al. <i>RNA</i> (2010) for estimating the p-value of a 3D RNA structure prediction but calculated these p-values using the incorrect mean RMSD values. When the correct parameters are used, the p-values of our predictions decrease, i.e. the estimated significances are increased. The conclusions of the manuscript are unchanged."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The corrected table is shown here, with changes highlighted:"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Table 1 Corrected. Benchmark of multidimensional chemical mapping on RNAs with crystal structures"
+                    }, 
+                    {
+                        "type": "table", 
+                        "id": "tblu1", 
+                        "tables": [
+                            "<table><thead><tr><th rowspan=\"2\">RNA</th><th rowspan=\"2\">Length</th><th colspan=\"2\">M<sup>2</sup>/Rosetta (no MOHCA, control)</th><th colspan=\"2\">MCM</th></tr><tr><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th></tr></thead><tbody><tr><td><i>Tetrahymena</i> ribozyme P4\u2013P6 domain</td><td>158</td><td>38.3</td><td>&gt;0.9</td><td>8.6</td><td><named-content content-type=\"author-callout-style2\">&lt;1.0 \u00d7 10<sup>\u221216</sup></named-content></td></tr><tr><td>V. cholerae cyclic-di-GMP riboswitch aptamer, ligand-bound*</td><td>89</td><td>11.3</td><td><named-content content-type=\"author-callout-style2\">2.6 \u00d7 10<sup>\u22123</sup></named-content></td><td>7.6</td><td><named-content content-type=\"author-callout-style2\">6.3 \u00d7 10<sup>\u22127</sup></named-content></td></tr><tr><td>F. nucleatum double glycine riboswitch ligand-binding domain, ligand-bound*</td><td>159</td><td>30.5</td><td>&gt;0.9</td><td>7.9</td><td><named-content content-type=\"author-callout-style2\">&lt;1.0 \u00d7 10<sup>\u221216</sup></named-content></td></tr><tr><td>S. thermophilum adenosylcobalamin riboswitch aptamer, ligand-bound*</td><td>168</td><td>17.1\u2020</td><td><named-content content-type=\"author-callout-style2\">5.3 \u00d7 10<sup>\u22127</sup></named-content></td><td>11.9</td><td><named-content content-type=\"author-callout-style2\">4.0 \u00d7 10<sup>\u221215</sup></named-content></td></tr><tr><td>Class I ligase</td><td>127</td><td>26.3</td><td>&gt;0.9</td><td>14.5</td><td><named-content content-type=\"author-callout-style2\">6.8 \u00d7 10<sup>\u22125</sup></named-content></td></tr><tr><td>Class I ligase, core domain\u2021</td><td>87</td><td>14.0</td><td><named-content content-type=\"author-callout-style2\">0.13</named-content></td><td>11.1</td><td><named-content content-type=\"author-callout-style2\">3.1 \u00d7 10<sup>\u22123</sup></named-content></td></tr><tr><td>D. iridis lariat-capping ribozyme</td><td>188</td><td>9.6\u2020</td><td><named-content content-type=\"author-callout-style2\">&lt;1.0 \u00d7 10<sup>\u221216</sup></named-content></td><td>8.2</td><td>&lt;1.0 \u00d7 10<sup>\u221216</sup></td></tr><tr><td><i>D. iridis</i> lariat-capping ribozyme, MCM refined regions\u2021</td><td>69</td><td>17.0\u2020</td><td>n.a.\u00a7</td><td>11.2</td><td>n.a.\u00a7</td></tr></tbody></table>"
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "* MCM modeling was performed with MOHCA-seq constraints from datasets collected on the ligand-bound state; ligands were not included during Rosetta modeling."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2020 M<sup>2</sup>/Rosetta statistics are reported for RNA-puzzle submission rank 1 models, which included subdomains built by homology modeling."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2021 Calculated over core domain residues or refined regions after alignment using MAMMOTH (Ortiz et al., 2002); see \u2018Materials and methods\u2019."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u00a7 p-value computed using analytical formula for secondary-structure-constrained 3D modeling in (Hajdin et al., 2010); it is not applicable to peripheral domains. Value above 0.9 are not well-determined and are presented as &gt; 0.9."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The originally published table is also shown for reference:"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Table 1 Original. Benchmark of multidimensional chemical mapping on RNAs with crystal structures"
+                    }, 
+                    {
+                        "type": "table", 
+                        "id": "tblu2", 
+                        "tables": [
+                            "<table><thead><tr><th rowspan=\"2\">RNA</th><th rowspan=\"2\">Length</th><th colspan=\"2\">M<sup>2</sup>/Rosetta</th><th colspan=\"2\">MCM</th></tr><tr><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th></tr></thead><tbody><tr><td><i>Tetrahymena</i> ribozyme P4\u2013P6 domain</td><td>158</td><td>38.3</td><td>1.0</td><td>8.6</td><td>5.1 \u00d7 10<sup>\u221212</sup></td></tr><tr><td><i>V. cholerae</i> cyclic-di-GMP riboswitch aptamer, ligand-bound*</td><td>89</td><td>11.3</td><td>0.28</td><td>7.6</td><td>4.3 \u00d7 10<sup>\u22123</sup></td></tr><tr><td><i>F. nucleatum</i> double glycine riboswitch ligand-binding domain, ligand-bound*</td><td>159</td><td>30.5</td><td>1.0</td><td>7.9</td><td>2.1 \u00d7 10<sup>\u221213</sup></td></tr><tr><td><i>S. thermophilum</i> adenosylcobalamin riboswitch aptamer, ligand-bound*</td><td>168</td><td>17.1\u2020</td><td>3.9 \u00d7 10<sup>\u22123</sup></td><td>11.9</td><td>1.5 \u00d7 10<sup>\u22128</sup></td></tr><tr><td>Class I ligase</td><td>127</td><td>26.3</td><td>1.0</td><td>14.5</td><td>5.6 \u00d7 10<sup>\u22122</sup></td></tr><tr><td>Class I ligase, core domain\u2021</td><td>87</td><td>14.0</td><td>0.86</td><td>11.1</td><td>0.30</td></tr><tr><td><i>D. iridis</i> lariat-capping ribozyme</td><td>188</td><td>9.6\u2020</td><td>1.2 \u00d7 10<sup>\u221215</sup></td><td>8.2</td><td>&lt;1.0 \u00d7 10<sup>\u221216</sup></td></tr><tr><td><i>D. iridis</i> lariat-capping ribozyme, MCM refined regions\u2021</td><td>69</td><td>17.0\u2020</td><td>n.a.\u00a7</td><td>11.2</td><td>n.a.\u00a7</td></tr></tbody></table>"
+                        ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "* MCM modeling was performed with MOHCA-seq constraints from datasets collected on the ligand-bound state; ligands were not included during Rosetta modeling."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2020 M<sup>2</sup>/Rosetta statistics are reported for RNA-puzzle submission rank 1 models, which included subdomains built by homology modeling."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u2021 Calculated over core domain residues or refined regions after alignment using MAMMOTH (Ortiz et al., 2002); see \u2018Materials and methods\u2019."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u00a7 p-value computed using analytical formula for secondary-structure-constrained 3D modeling in (Hajdin et al., 2010); it is not applicable to peripheral domains."
+                    }
                 ]
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "* MCM modeling was performed with MOHCA-seq constraints from datasets collected on the ligand-bound state; ligands were not included during Rosetta modeling."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "\u2020 M<sup>2</sup>/Rosetta statistics are reported for RNA-puzzle submission rank 1 models, which included subdomains built by homology modeling."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "\u2021 Calculated over core domain residues or refined regions after alignment using MAMMOTH (Ortiz et al., 2002); see \u2018Materials and methods\u2019."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "\u00a7 p-value computed using analytical formula for secondary-structure-constrained 3D modeling in (Hajdin et al., 2010); it is not applicable to peripheral domains. Value above 0.9 are not well-determined and are presented as &gt; 0.9."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "The originally published table is also shown for reference:"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Table 1 Original. Benchmark of multidimensional chemical mapping on RNAs with crystal structures"
-            }, 
-            {
-                "type": "table", 
-                "id": "tblu2", 
-                "tables": [
-                    "<table><thead><tr><th rowspan=\"2\">RNA</th><th rowspan=\"2\">Length</th><th colspan=\"2\">M<sup>2</sup>/Rosetta</th><th colspan=\"2\">MCM</th></tr><tr><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th><th>RMSD to crystal (\u00c5) (accuracy)</th><th>p-value\u00a7</th></tr></thead><tbody><tr><td><i>Tetrahymena</i> ribozyme P4\u2013P6 domain</td><td>158</td><td>38.3</td><td>1.0</td><td>8.6</td><td>5.1 \u00d7 10<sup>\u221212</sup></td></tr><tr><td><i>V. cholerae</i> cyclic-di-GMP riboswitch aptamer, ligand-bound*</td><td>89</td><td>11.3</td><td>0.28</td><td>7.6</td><td>4.3 \u00d7 10<sup>\u22123</sup></td></tr><tr><td><i>F. nucleatum</i> double glycine riboswitch ligand-binding domain, ligand-bound*</td><td>159</td><td>30.5</td><td>1.0</td><td>7.9</td><td>2.1 \u00d7 10<sup>\u221213</sup></td></tr><tr><td><i>S. thermophilum</i> adenosylcobalamin riboswitch aptamer, ligand-bound*</td><td>168</td><td>17.1\u2020</td><td>3.9 \u00d7 10<sup>\u22123</sup></td><td>11.9</td><td>1.5 \u00d7 10<sup>\u22128</sup></td></tr><tr><td>Class I ligase</td><td>127</td><td>26.3</td><td>1.0</td><td>14.5</td><td>5.6 \u00d7 10<sup>\u22122</sup></td></tr><tr><td>Class I ligase, core domain\u2021</td><td>87</td><td>14.0</td><td>0.86</td><td>11.1</td><td>0.30</td></tr><tr><td><i>D. iridis</i> lariat-capping ribozyme</td><td>188</td><td>9.6\u2020</td><td>1.2 \u00d7 10<sup>\u221215</sup></td><td>8.2</td><td>&lt;1.0 \u00d7 10<sup>\u221216</sup></td></tr><tr><td><i>D. iridis</i> lariat-capping ribozyme, MCM refined regions\u2021</td><td>69</td><td>17.0\u2020</td><td>n.a.\u00a7</td><td>11.2</td><td>n.a.\u00a7</td></tr></tbody></table>"
-                ]
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "* MCM modeling was performed with MOHCA-seq constraints from datasets collected on the ligand-bound state; ligands were not included during Rosetta modeling."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "\u2020 M<sup>2</sup>/Rosetta statistics are reported for RNA-puzzle submission rank 1 models, which included subdomains built by homology modeling."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "\u2021 Calculated over core domain residues or refined regions after alignment using MAMMOTH (Ortiz et al., 2002); see \u2018Materials and methods\u2019."
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "\u00a7 p-value computed using analytical formula for secondary-structure-constrained 3D modeling in (Hajdin et al., 2010); it is not applicable to peripheral domains."
             }
         ]
     }

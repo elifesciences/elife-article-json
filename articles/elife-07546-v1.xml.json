@@ -786,197 +786,204 @@
         ], 
         "body": [
             {
-                "type": "paragraph", 
-                "text": "Xu H, He X, Zheng H, Huang LJ, Hou F, Yu Z, de la Cruz MJ, Borkowski B, Zhang X, Chen ZJ, Jiang Q-X. 2014. Structural basis for the prion-like MAVS filaments in antiviral innate immunity. <i>eLife</i> <b>3</b>:e01489. doi: <a href=\"http://dx.doi.org/10.7554/eLife.01489\">10.7554/eLife.01489</a>"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Published 25 February 2014"
-            }, 
-            {
-                "type": "paragraph", 
-                "text": "Reviewing editor: Wesley I Sundquist, University of Utah School of Medicine, United States"
-            }, 
-            {
                 "type": "section", 
-                "id": "s1", 
-                "title": "Introduction", 
+                "id": "s0", 
+                "title": "Main text", 
                 "content": [
                     {
                         "type": "paragraph", 
-                        "text": "Mitochondrial antiviral signaling (MAVS) protein forms prion-like aggregates mediated by the N-terminal caspase activation and recruitment domain (CARD) and activates antiviral signaling cascades. Purified MAVS CARD from culture cells self-assembles into filaments. Previously, we reported a low-resolution cryoEM structure of MAVS CARD filament, which exhibits a C3 symmetry with a rotation of \u221253.6\u00b0 and an axial rise of 16.8 \u00c5 for every unit in the filament (<a href=\"#bib10\">Xu et al., 2014</a>). Recently, a cryoEM reconstruction of MAVS CARD filaments at 3.6 \u00c5 resolution was reported with a C1 helical symmetry of a rotation of \u2212101.1\u00b0 and an axial rise of 5.1 \u00c5 per subunit (<a href=\"#bib9\">Wu et al., 2014</a>). The differences in these two models were carefully analyzed recently (<a href=\"#bib3\">Egelman, 2014</a>), which suggested that the helical ambiguity in helical reconstruction was not fully resolved in our previous analysis (<a href=\"#bib10\">Xu et al., 2014</a>). We recently collected a new dataset at higher resolutions. Using a newly developed method for analysis of helical filaments (<a href=\"#bib1\">Clemens et al., 2015</a>), we obtained a 4.2 \u00c5 resolution reconstruction of MAVS CARD filaments purified from mammalian cells under native conditions. The new model shows that the MAVS CARD filament exhibits a C1 helical symmetry in agreement with <a href=\"#bib9\">Wu et al. (2014)</a>."
-                    }
-                ]
-            }, 
-            {
-                "type": "section", 
-                "id": "s2", 
-                "title": "Results and discussion", 
-                "content": [
-                    {
-                        "type": "paragraph", 
-                        "text": "CryoEM images of Flag-tagged MAVS CARD (residues 1\u2013100) protein, which was expressed in HEK293T cells and purified as described previously (<a href=\"#bib10\">Xu et al., 2014</a>), were collected using automated data acquisition in a Titan Krios with a Falcon II direct electron detector (<a href=\"#fig1\">Figure 1A</a>; see \u2018Materials and methods\u2019 section for detail). Fourier transforms of motion-corrected raw images showed Thon rings up to \u223c3 \u00c5 (<a href=\"#fig1\">Figure 1B\u2013C</a>). After CTF fitting, the selected raw images were phase-flipped, and individual filaments were selected interactively using EMAN2 Helixboxer (<a href=\"#bib6\">Ludtke et al., 1999</a>). Selected filaments were segmented using individual boxes that had 90% overlap between neighboring ones. Segmented filament images were high-pass filtered at 120 \u00c5 to suppress the low-resolution variations in optical density across individual images as well as the contribution of low-resolution noise to particle alignment. The filament datasets were processed using a customized version of Relion 1.2 (<a href=\"#bib8\">Scheres, 2012</a>; <a href=\"#bib1\">Clemens et al., 2015</a>). This \u2018helical\u2019 Relion implemented the Iterative Helical Real Space Reconstruction (IHRSR) method (<a href=\"#bib2\">Egelman, 2010</a>) within the framework of Relion 1.2. For 3D classification and auto-refinement, the helical symmetry was refined by the re-implemented IHRSR module <i>hsearch</i> and applied in real space to the 3D volume by the re-implemented IHRSR module <i>himpose</i>. The helically symmetrized volume was masked and used as the reference volume in the next iteration (<a href=\"#bib1\">Clemens et al., 2015</a>)."
-                    }, 
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.07546.001", 
-                        "id": "fig1", 
-                        "label": "Figure 1.", 
-                        "title": "Analyses of high-resolution cryoEM images of MAVS CARD filaments.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "(<b>A</b>) A representative EM image after motion correction. (<b>B</b>) The power spectrum of a motion-corrected image showing Thon rings up to \u223c3 \u00c5 (bottom arrow), with the CTF fittings (white concentric rings) exhibited as white flat annuli over the power spectrum. The CTF fitting was done with CTFFIND4. (<b>C</b>) The quality of the CTF fitting was evaluated by comparing the rotationally averaged amplitudes from the Thon rings (green trace) with the averaged amplitudes of the fitted CTF function (dashed yellow trace). The Thon rings are visible to \u223c3 \u00c5, and the fitting is good to at least \u223c4 \u00c5\u00a0(top arrow in B). (<b>D</b>) Representative class averages of the new dataset showing some fine structural features. The classification was done with Relion 2D classification. (<b>E</b>) Summed power spectra of filaments with less than 5\u00b0 of out-of-plane tilt in the last step of refinement. Layer lines 9 and 32 (meridional) are labeled (yellow arrows). The contrast is enhanced to show layer line 32. The middle portion of the power spectrum is shown as a zoomed-in view to the top with layer lines 4 and 9 labeled. (<b>F</b>) Summed power of projections from the C1 map along 360 different directions normal to its helical axis."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/07546/elife-07546-fig1-v1.tif", 
-                        "filename": "elife-07546-fig1-v1.tif"
+                        "text": "Xu H, He X, Zheng H, Huang LJ, Hou F, Yu Z, de la Cruz MJ, Borkowski B, Zhang X, Chen ZJ, Jiang Q-X. 2014. Structural basis for the prion-like MAVS filaments in antiviral innate immunity. <i>eLife</i> <b>3</b>:e01489. doi: <a href=\"http://dx.doi.org/10.7554/eLife.01489\">10.7554/eLife.01489</a>"
                     }, 
                     {
                         "type": "paragraph", 
-                        "text": "Particle images were first subjected to reference-free 2D classification and images in good classes showing fine structural details were selected for 3D classification and refinement (<a href=\"#fig1\">Figure 1D</a>). 15,600 out of 27,915 boxed filament segments were used to calculate the final refined map. The summed power spectrum of those filaments showing less than 5\u00b0 of out-of-plane tilting in the final refinement step (<a href=\"#fig1\">Figure 1E</a>) was calculated and compared with the summed power of the C1 map projections from 360 different directions normal to its helical axis (<a href=\"#fig1\">Figure 1F</a>), and the layerline patterns were similar."
+                        "text": "Published 25 February 2014"
                     }, 
                     {
                         "type": "paragraph", 
-                        "text": "Due to possible symmetry ambiguity, we tested two sets of starting parameters for helical reconstruction (see \u2018Materials and methods\u2019 section for detail). Reference models of C1 and C3 symmetries were calculated from our SPIDER-based analysis using sorted fractions of filament particles from the four datasets in our previous paper (<a href=\"#bib10\">Xu et al., 2014</a>). They were filtered to 60 \u00c5 and then refined against the new dataset in helical Relion. We found that the new dataset converged better to the C1 symmetry. To reduce model bias, we also calculated a reconstruction by imposing the C1 symmetry for the first five runs of refinement to a C3 model obtained from our original analysis (<a href=\"#bib10\">Xu et al., 2014</a>). The initial C1 symmetry parameters of a twist angle (\u0394\u03a6) = \u2212101.25\u00b0 and an axial rise (\u0394z) = 4.75 \u00c5 (from our old datasets and adjusted to 4.95 \u00c5 due to the change of the imaging system) were derived from the corresponding selection rule defined by indexing the power spectrum. After the fifth run, the refinement was continued to optimize the helical parameters and converged to (\u0394\u03a6 = \u2212101.21\u00b0 and \u0394z = 5.06 \u00c5) (<a href=\"#fig2\">Figure 2A</a>), close to the C1 symmetry reported by <a href=\"#bib9\">Wu et al. (2014)</a>. The final map has an overall resolution of 4.18 \u00c5, estimated from the gold-standard Fourier Shell Correlation (FSC) calculated between two maps that were refined independently against the top and bottom halves of the dataset (<a href=\"#fig2\">Figure 2B</a>; see \u2018Materials and methods\u2019 section). To examine the resolution with an independent method, we generated a B-factor weighted map based on the PDB model from <a href=\"#bib9\">Wu et al. (2014)</a> (PDB ID: 3J6J), and used it to calculate FSC against the experimental map. A 0.5 threshold found an estimated resolution of 4.25 \u00c5 (<a href=\"#fig2\">Figure 2C</a>), close to the one estimated by using two halves of experimental data (<a href=\"#fig2\">Figure 2B</a>). The new map showed clear grooves in \u03b1-helices and multiple bulky side chains (<a href=\"#fig2\">Figure 2D</a>, <a href=\"#media1\">Video 1</a>)."
-                    }, 
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.07546.002", 
-                        "id": "fig2", 
-                        "label": "Figure 2.", 
-                        "title": "Molecular modeling based on the near-atomic resolution cryoEM map.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "(<b>A</b>) A side view of the cryoEM map with an atomic model of human MAVS CARD docked as a rigid body (blue: atomic model of residues 1\u201397, PDB: 3J6J). The N- and C- termini face the periphery of the filament. (<b>B</b>) Gold-standard Fourier Shell Correlation (FSC) curve between maps calculated from the top and bottom two halves of the selected data. The dashed line points to the estimated resolution of 4.18 \u00c5 at FSC = 0.143. (<b>C</b>) FSC between the segmented cryoEM map of one CARD and the map calculated from the atomic model (PDB: 3J6J, residues 1\u201397). The 0.5 thresholding yielded an estimated resolution of 4.25 \u00c5. (<b>D</b>) Zoomed-in views of the six \u03b1-helices with side chains shown as stick models and superimposed with the EM density (grey mesh)."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/07546/elife-07546-fig2-v1.tif", 
-                        "filename": "elife-07546-fig2-v1.tif"
-                    }, 
-                    {
-                        "type": "video", 
-                        "doi": "10.7554/eLife.07546.003", 
-                        "id": "media1", 
-                        "label": "Video 1.", 
-                        "title": "CryoEM structure of the MAVS CARD filament.", 
-                        "width": 650, 
-                        "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.jpg", 
-                        "height": 600, 
-                        "sources": [
-                            {
-                                "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
-                                "uri": "https://static-movie-usa.glencoesoftware.com/mp4/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.mp4"
-                            }, 
-                            {
-                                "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
-                                "uri": "https://static-movie-usa.glencoesoftware.com/ogv/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.ogv"
-                            }, 
-                            {
-                                "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
-                                "uri": "https://static-movie-usa.glencoesoftware.com/webm/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.webm"
-                            }
-                        ]
-                    }, 
-                    {
-                        "type": "paragraph", 
-                        "text": "The crystal structure of MAVS CARD (<a href=\"#bib7\">Potter et al., 2008</a>) was docked into the density by rigid-body fitting. While the six \u03b1-helices of the crystal structure of MAVS CARD monomer (PDB: 2VGQ, residues 3\u201393) fitted into the EM map well, multiple bulky side chains and those residues in the loop between H4 and H5 needed adjustment. The atomic model reported previously (PDB: 3J6J, residues 1\u201397, <a href=\"#bib9\">Wu et al., 2014</a>) fit into the density well except for some unoccupied densities next to the N- and C-termini of the docked CARD model (<a href=\"#fig2\">Figure 2A,D</a>). These extra densities may be due to the residues from the N-terminal Flag tag and the additional three residues at the C-terminus of the protein used for preparing the cryoEM specimens; these extra residues are not present in the protein sequence shown in the atomic models."
-                    }, 
-                    {
-                        "type": "paragraph", 
-                        "text": "From the high resolution C1 map, each MAVS CARD monomer interacts with six nearby monomers using three types of intermolecular interfaces (I, II and III) (<a href=\"#fig3\">Figure 3A</a>; <a href=\"#bib9\">Wu et al., 2014</a>)."
-                    }, 
-                    {
-                        "type": "image", 
-                        "doi": "10.7554/eLife.07546.004", 
-                        "id": "fig3", 
-                        "label": "Figure 3.", 
-                        "title": "Molecular interfaces of the pseudoatomic model based on the C1 map.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "(<b>A</b>) A model of the MAVS CARD filament based on the cryoEM map, showing three helical turns. Each MAVS CARD interacts with six nearest neighbors: two neighbors along the helical trajectory (grey and yellow), and four neighbors between helical turns (grey and cyan, grey and orange). (<b>B</b>, <b>C</b>) Details of interactions at type I and II interfaces. Residues at the interfaces are shown as stick models. (<b>D</b>) The segmented cryoEM map with two MAVS CARD molecules and a magnified view of type II interface with clear EM density for W56 and R43. (<b>E</b>) Important residues at type III interface shown as stick models."
-                            }
-                        ], 
-                        "alt": "", 
-                        "uri": "https://publishing-cdn.elifesciences.org/07546/elife-07546-fig3-v1.tif", 
-                        "filename": "elife-07546-fig3-v1.tif"
-                    }, 
-                    {
-                        "type": "paragraph", 
-                        "text": "At interface I, the positive and negative charges are distributed at two opposite ends of each CARD subunit, indicating that this interface is mainly mediated by electrostatic interactions (<a href=\"#fig3\">Figure 3B</a>). The positively charged residues R37 and R41 in H3, R64 and R65 in the loop between H4 and H5 from one CARD molecule (grey in <a href=\"#fig3\">Figure 3B</a>) are in close proximity to the negatively charged residues D23 in the loop between H1b and H2 and E26 in H2 of another CARD molecule (cyan in <a href=\"#fig3\">Figure 3B</a>). Compared with the wild-type MAVS, which potently induced IFN\u03b2 in a dose-dependent manner, D23A showed significantly decreased activity and mutations of other charged residues (E26, R37, R41, R64 and R65) at the interface to alanine or residues with reversed charge almost completely abolished MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>)."
-                    }, 
-                    {
-                        "type": "paragraph", 
-                        "text": "In the crystal structure of MAVS CARD, the aromatic chain of W56 adopts two alternative conformations, with a major conformer (60% occupancy) exposed to solvent and stacked against the ring structure of residue F16 in immediate vicinity (<a href=\"#bib7\">Potter et al., 2008</a>). In the cryoEM map, the density of one conformer is resolved (<a href=\"#fig2 fig3\">Figures 2D, 3D</a>) and there appears density corresponding to the side chain of R43 from an adjacent CARD (<a href=\"#fig3\">Figure 3D</a>), suggesting a possible cation\u2013pi interaction between these two residues, as reported previously (<a href=\"#bib9\">Wu et al., 2014</a>). Alanine substitution of R43 almost completely abolished MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>). Besides W56, the ring structures of residues F16 and Y30 also appear to be important for filament assembly. Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity, while substitutions with different ring-containing residues to these positions, such as F16H, W56F, W56Y, Y30F and Y30H, were able to largely retain MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>). Another residue involved in stabilizing the interface is R52, whose replacement by alanine significantly decreased its activity (<a href=\"#bib10\">Xu et al., 2014</a>)."
-                    }, 
-                    {
-                        "type": "paragraph", 
-                        "text": "Interface III mediates the interactions between adjacent monomers along the helical trajectory. Close to the central pore of the helical filament, residue L48 from each MAVS CARD monomer contributes to the formation of a hydrophobic core with G50 and A44 in close proximity (<a href=\"#fig3\">Figure 3A</a>, top view and <a href=\"#fig3\">Figure 3E</a>). Substitution of L48 with charged residues (D or K), but not alanine, completely abolished MAVS activity in HEK293T cells (<a href=\"#bib10\">Xu et al., 2014</a>). It is interesting to note that L48 is not conserved, and is R or Q in MAVS from multiple other species. The filaments might need to rearrange in order to accommodate such substitutions. The small side chain or hydrophobicity of A44 may be important for the packing at this hydrophobic interface because its mutation to T impaired MAVS CARD filament formation in vitro (<a href=\"#bib10\">Xu et al., 2014</a>). Charged residues R37, R41, D40 and D53 are located at the outer rim of the filament forming electrostatic interactions together with charged residues at type I interface. Single alanine substitution of these residues almost completely abolished MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>)."
-                    }, 
-                    {
-                        "type": "paragraph", 
-                        "text": "Overall, the loss-of-function mutation data are consistent with both the C1 map reported here and the C3 map obtained previously (<a href=\"#bib10\">Xu et al., 2014</a>). However, although key residues involved in the interactions are almost identical in the two models, the detailed interactions at the interfaces are different according to the two maps, indicating that mutagenesis analyses alone cannot distinguish one model from the other."
+                        "text": "Reviewing editor: Wesley I Sundquist, University of Utah School of Medicine, United States"
                     }, 
                     {
                         "type": "section", 
-                        "id": "s2-1", 
-                        "title": "Conclusions", 
+                        "id": "s1", 
+                        "title": "Introduction", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "MAVS CARD filaments from our new dataset converged to almost the same C1 symmetry as reported by <a href=\"#bib9\">Wu et al. (2014)</a>, not the C3 symmetry as we reported previously (<a href=\"#bib10\">Xu et al., 2014</a>). The heterogeneity of the samples and the limited resolution of images were likely among the factors that led to the exclusion of the C1 model in the original analysis. We wish to correct this mistake and apologize for any confusion it might have caused. We stand by all other data in the paper, including in vitro mapping of the oligomerization interface, cell-based mutational analyses, super-resolution SIM imaging of MAVS aggregates in virus-infected cells, and the crystal structures. These experiments for the first time identified most of the key residues involved in MAVS polymerization, leading to an extensive mapping of the molecular surfaces for forming the MAVS filament."
-                            }
-                        ]
-                    }
-                ]
-            }, 
-            {
-                "type": "section", 
-                "id": "s3", 
-                "title": "Materials and methods", 
-                "content": [
-                    {
-                        "type": "section", 
-                        "id": "s3-1", 
-                        "title": "Sample preparation", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "Flag-MAVS CARD (1\u2013100) expressed in HEK293T cells was purified in a buffer containing 50 mM NaCl. Freshly purified protein was processed for EM experiments to minimize bending and overlapping of filaments on cryoEM grids. To prepare cryo-EM specimens, 2.5 \u03bcl freshly purified MAVS CARD (0.1 mg/ml) filaments in suspension were applied to a glow-discharged Quantifoil R2/2 holey carbon grid (Quantifoil Micro Tools GmbH, Jena, Germany) coated with a thin carbon film and plunge-frozen inside a Vitrobot (FEI, Hillsboro, OR)."
+                                "text": "Mitochondrial antiviral signaling (MAVS) protein forms prion-like aggregates mediated by the N-terminal caspase activation and recruitment domain (CARD) and activates antiviral signaling cascades. Purified MAVS CARD from culture cells self-assembles into filaments. Previously, we reported a low-resolution cryoEM structure of MAVS CARD filament, which exhibits a C3 symmetry with a rotation of \u221253.6\u00b0 and an axial rise of 16.8 \u00c5 for every unit in the filament (<a href=\"#bib10\">Xu et al., 2014</a>). Recently, a cryoEM reconstruction of MAVS CARD filaments at 3.6 \u00c5 resolution was reported with a C1 helical symmetry of a rotation of \u2212101.1\u00b0 and an axial rise of 5.1 \u00c5 per subunit (<a href=\"#bib9\">Wu et al., 2014</a>). The differences in these two models were carefully analyzed recently (<a href=\"#bib3\">Egelman, 2014</a>), which suggested that the helical ambiguity in helical reconstruction was not fully resolved in our previous analysis (<a href=\"#bib10\">Xu et al., 2014</a>). We recently collected a new dataset at higher resolutions. Using a newly developed method for analysis of helical filaments (<a href=\"#bib1\">Clemens et al., 2015</a>), we obtained a 4.2 \u00c5 resolution reconstruction of MAVS CARD filaments purified from mammalian cells under native conditions. The new model shows that the MAVS CARD filament exhibits a C1 helical symmetry in agreement with <a href=\"#bib9\">Wu et al. (2014)</a>."
                             }
                         ]
                     }, 
                     {
                         "type": "section", 
-                        "id": "s3-2", 
-                        "title": "Data collection and analysis", 
+                        "id": "s2", 
+                        "title": "Results and discussion", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "Movie data were collected in a FEI Titan Krios microscope equipped with a Falcon II detector at the HHMI Janelia Farm Research Campus. The microscope was equipped with a Cs corrector (Cs = 0.01 mm) and operated at 300 kV. EPU (FEI) was run to control automatic data collection across multiple preselected holes in the holey grids. Images were taken using a defocus range of \u22122.5 to \u22124.0 microns at a nominal magnification of 59,000\u00d7, which corresponds to a calibrated pixel size of 1.05 \u00c5 at the specimen level. Images were taken with a total dose of 35 e<sup>\u2212</sup>/\u00c5<sup>2</sup> distributed over 16 frames. The movie data were processed using the program dosefgpu_driftcorr (<a href=\"#bib5\">Li et al., 2013</a>). Frames 3\u201312 of every movie were summed together as the corrected image (<a href=\"#fig1\">Figure 1A</a>). The carbon-support of our filaments made the motion between consecutive frames very small (mostly less than 2 pixels) and we therefore did not do motion correction for individual filaments (polishing) in Relion. We started with 27,916 filaments. After 2D classification, 15,600 filaments were selected. During the 3D classification into two different classes, there was a negligible fraction of the filaments conforming to a different volume with poor alignment statistics. We therefore kept all 15,600 filaments for final map calculation, which correspond to \u223c80,000 images of individual CARD units."
+                                "text": "CryoEM images of Flag-tagged MAVS CARD (residues 1\u2013100) protein, which was expressed in HEK293T cells and purified as described previously (<a href=\"#bib10\">Xu et al., 2014</a>), were collected using automated data acquisition in a Titan Krios with a Falcon II direct electron detector (<a href=\"#fig1\">Figure 1A</a>; see \u2018Materials and methods\u2019 section for detail). Fourier transforms of motion-corrected raw images showed Thon rings up to \u223c3 \u00c5 (<a href=\"#fig1\">Figure 1B\u2013C</a>). After CTF fitting, the selected raw images were phase-flipped, and individual filaments were selected interactively using EMAN2 Helixboxer (<a href=\"#bib6\">Ludtke et al., 1999</a>). Selected filaments were segmented using individual boxes that had 90% overlap between neighboring ones. Segmented filament images were high-pass filtered at 120 \u00c5 to suppress the low-resolution variations in optical density across individual images as well as the contribution of low-resolution noise to particle alignment. The filament datasets were processed using a customized version of Relion 1.2 (<a href=\"#bib8\">Scheres, 2012</a>; <a href=\"#bib1\">Clemens et al., 2015</a>). This \u2018helical\u2019 Relion implemented the Iterative Helical Real Space Reconstruction (IHRSR) method (<a href=\"#bib2\">Egelman, 2010</a>) within the framework of Relion 1.2. For 3D classification and auto-refinement, the helical symmetry was refined by the re-implemented IHRSR module <i>hsearch</i> and applied in real space to the 3D volume by the re-implemented IHRSR module <i>himpose</i>. The helically symmetrized volume was masked and used as the reference volume in the next iteration (<a href=\"#bib1\">Clemens et al., 2015</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.07546.001", 
+                                "id": "fig1", 
+                                "label": "Figure 1.", 
+                                "title": "Analyses of high-resolution cryoEM images of MAVS CARD filaments.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) A representative EM image after motion correction. (<b>B</b>) The power spectrum of a motion-corrected image showing Thon rings up to \u223c3 \u00c5 (bottom arrow), with the CTF fittings (white concentric rings) exhibited as white flat annuli over the power spectrum. The CTF fitting was done with CTFFIND4. (<b>C</b>) The quality of the CTF fitting was evaluated by comparing the rotationally averaged amplitudes from the Thon rings (green trace) with the averaged amplitudes of the fitted CTF function (dashed yellow trace). The Thon rings are visible to \u223c3 \u00c5, and the fitting is good to at least \u223c4 \u00c5\u00a0(top arrow in B). (<b>D</b>) Representative class averages of the new dataset showing some fine structural features. The classification was done with Relion 2D classification. (<b>E</b>) Summed power spectra of filaments with less than 5\u00b0 of out-of-plane tilt in the last step of refinement. Layer lines 9 and 32 (meridional) are labeled (yellow arrows). The contrast is enhanced to show layer line 32. The middle portion of the power spectrum is shown as a zoomed-in view to the top with layer lines 4 and 9 labeled. (<b>F</b>) Summed power of projections from the C1 map along 360 different directions normal to its helical axis."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07546/elife-07546-fig1-v1.tif", 
+                                "filename": "elife-07546-fig1-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "In order to calculate a gold-standard FSC from truly independent datasets, we divided the 15,600 filaments into the top and bottom two halves. These two datasets had negligible overlap. Two separate C1 models were generated using the SPIDER-based method from a small sorted fraction (\u223c13%) of filaments out of our old datasets as described before (<a href=\"#bib10\">Xu et al., 2014</a>), and imposed with diagonally varied symmetry parameters (5.22 \u00c5, \u2212102.2\u00b0) and (4.82 \u00c5, \u2212100.2\u00b0), respectively. These two models were used as initial models and separately refined against the two half datasets in helical Relion. The two refinements converged to almost the same symmetry parameters, (5.05 \u00c5, \u2212101.25\u00b0) and (5.08 \u00c5, \u2212101.20\u00b0), respectively. The two volumes were post-processed in EMAN2 and aligned in CHIMERA. The map calculated from the top half of the dataset was rotated \u22122.4\u00b0 and shifted by \u22121.05 pixels before being compared with the one from the bottom half to calculate a gold-standard FSC using e2proc3d.py in EMAN2. The calculations in the final refinement steps were done in the <i>largemem</i> nodes of the STAMPEDE supercomputer at the Texas Advanced Computer Center (TACC) in Austin, Texas. Molecular modeling was done in CHIMERA and Coot (<a href=\"#bib4\">Emsley et al., 2010</a>)."
+                                "text": "Particle images were first subjected to reference-free 2D classification and images in good classes showing fine structural details were selected for 3D classification and refinement (<a href=\"#fig1\">Figure 1D</a>). 15,600 out of 27,915 boxed filament segments were used to calculate the final refined map. The summed power spectrum of those filaments showing less than 5\u00b0 of out-of-plane tilting in the final refinement step (<a href=\"#fig1\">Figure 1E</a>) was calculated and compared with the summed power of the C1 map projections from 360 different directions normal to its helical axis (<a href=\"#fig1\">Figure 1F</a>), and the layerline patterns were similar."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Due to possible symmetry ambiguity, we tested two sets of starting parameters for helical reconstruction (see \u2018Materials and methods\u2019 section for detail). Reference models of C1 and C3 symmetries were calculated from our SPIDER-based analysis using sorted fractions of filament particles from the four datasets in our previous paper (<a href=\"#bib10\">Xu et al., 2014</a>). They were filtered to 60 \u00c5 and then refined against the new dataset in helical Relion. We found that the new dataset converged better to the C1 symmetry. To reduce model bias, we also calculated a reconstruction by imposing the C1 symmetry for the first five runs of refinement to a C3 model obtained from our original analysis (<a href=\"#bib10\">Xu et al., 2014</a>). The initial C1 symmetry parameters of a twist angle (\u0394\u03a6) = \u2212101.25\u00b0 and an axial rise (\u0394z) = 4.75 \u00c5 (from our old datasets and adjusted to 4.95 \u00c5 due to the change of the imaging system) were derived from the corresponding selection rule defined by indexing the power spectrum. After the fifth run, the refinement was continued to optimize the helical parameters and converged to (\u0394\u03a6 = \u2212101.21\u00b0 and \u0394z = 5.06 \u00c5) (<a href=\"#fig2\">Figure 2A</a>), close to the C1 symmetry reported by <a href=\"#bib9\">Wu et al. (2014)</a>. The final map has an overall resolution of 4.18 \u00c5, estimated from the gold-standard Fourier Shell Correlation (FSC) calculated between two maps that were refined independently against the top and bottom halves of the dataset (<a href=\"#fig2\">Figure 2B</a>; see \u2018Materials and methods\u2019 section). To examine the resolution with an independent method, we generated a B-factor weighted map based on the PDB model from <a href=\"#bib9\">Wu et al. (2014)</a> (PDB ID: 3J6J), and used it to calculate FSC against the experimental map. A 0.5 threshold found an estimated resolution of 4.25 \u00c5 (<a href=\"#fig2\">Figure 2C</a>), close to the one estimated by using two halves of experimental data (<a href=\"#fig2\">Figure 2B</a>). The new map showed clear grooves in \u03b1-helices and multiple bulky side chains (<a href=\"#fig2\">Figure 2D</a>, <a href=\"#media1\">Video 1</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.07546.002", 
+                                "id": "fig2", 
+                                "label": "Figure 2.", 
+                                "title": "Molecular modeling based on the near-atomic resolution cryoEM map.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) A side view of the cryoEM map with an atomic model of human MAVS CARD docked as a rigid body (blue: atomic model of residues 1\u201397, PDB: 3J6J). The N- and C- termini face the periphery of the filament. (<b>B</b>) Gold-standard Fourier Shell Correlation (FSC) curve between maps calculated from the top and bottom two halves of the selected data. The dashed line points to the estimated resolution of 4.18 \u00c5 at FSC = 0.143. (<b>C</b>) FSC between the segmented cryoEM map of one CARD and the map calculated from the atomic model (PDB: 3J6J, residues 1\u201397). The 0.5 thresholding yielded an estimated resolution of 4.25 \u00c5. (<b>D</b>) Zoomed-in views of the six \u03b1-helices with side chains shown as stick models and superimposed with the EM density (grey mesh)."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07546/elife-07546-fig2-v1.tif", 
+                                "filename": "elife-07546-fig2-v1.tif"
+                            }, 
+                            {
+                                "type": "video", 
+                                "doi": "10.7554/eLife.07546.003", 
+                                "id": "media1", 
+                                "label": "Video 1.", 
+                                "title": "CryoEM structure of the MAVS CARD filament.", 
+                                "width": 650, 
+                                "image": "https://static-movie-usa.glencoesoftware.com/jpg/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.jpg", 
+                                "height": 600, 
+                                "sources": [
+                                    {
+                                        "mediaType": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"", 
+                                        "uri": "https://static-movie-usa.glencoesoftware.com/mp4/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.mp4"
+                                    }, 
+                                    {
+                                        "mediaType": "video/ogg; codecs=\"theora, vorbis\"", 
+                                        "uri": "https://static-movie-usa.glencoesoftware.com/ogv/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.ogv"
+                                    }, 
+                                    {
+                                        "mediaType": "video/webm; codecs=\"vp8.0, vorbis\"", 
+                                        "uri": "https://static-movie-usa.glencoesoftware.com/webm/10.7554/917/57e9eaccaf5630ed2905cd61f048b3665829223a/elife-07546-media1.webm"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The crystal structure of MAVS CARD (<a href=\"#bib7\">Potter et al., 2008</a>) was docked into the density by rigid-body fitting. While the six \u03b1-helices of the crystal structure of MAVS CARD monomer (PDB: 2VGQ, residues 3\u201393) fitted into the EM map well, multiple bulky side chains and those residues in the loop between H4 and H5 needed adjustment. The atomic model reported previously (PDB: 3J6J, residues 1\u201397, <a href=\"#bib9\">Wu et al., 2014</a>) fit into the density well except for some unoccupied densities next to the N- and C-termini of the docked CARD model (<a href=\"#fig2\">Figure 2A,D</a>). These extra densities may be due to the residues from the N-terminal Flag tag and the additional three residues at the C-terminus of the protein used for preparing the cryoEM specimens; these extra residues are not present in the protein sequence shown in the atomic models."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "From the high resolution C1 map, each MAVS CARD monomer interacts with six nearby monomers using three types of intermolecular interfaces (I, II and III) (<a href=\"#fig3\">Figure 3A</a>; <a href=\"#bib9\">Wu et al., 2014</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.07546.004", 
+                                "id": "fig3", 
+                                "label": "Figure 3.", 
+                                "title": "Molecular interfaces of the pseudoatomic model based on the C1 map.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "(<b>A</b>) A model of the MAVS CARD filament based on the cryoEM map, showing three helical turns. Each MAVS CARD interacts with six nearest neighbors: two neighbors along the helical trajectory (grey and yellow), and four neighbors between helical turns (grey and cyan, grey and orange). (<b>B</b>, <b>C</b>) Details of interactions at type I and II interfaces. Residues at the interfaces are shown as stick models. (<b>D</b>) The segmented cryoEM map with two MAVS CARD molecules and a magnified view of type II interface with clear EM density for W56 and R43. (<b>E</b>) Important residues at type III interface shown as stick models."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07546/elife-07546-fig3-v1.tif", 
+                                "filename": "elife-07546-fig3-v1.tif"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "At interface I, the positive and negative charges are distributed at two opposite ends of each CARD subunit, indicating that this interface is mainly mediated by electrostatic interactions (<a href=\"#fig3\">Figure 3B</a>). The positively charged residues R37 and R41 in H3, R64 and R65 in the loop between H4 and H5 from one CARD molecule (grey in <a href=\"#fig3\">Figure 3B</a>) are in close proximity to the negatively charged residues D23 in the loop between H1b and H2 and E26 in H2 of another CARD molecule (cyan in <a href=\"#fig3\">Figure 3B</a>). Compared with the wild-type MAVS, which potently induced IFN\u03b2 in a dose-dependent manner, D23A showed significantly decreased activity and mutations of other charged residues (E26, R37, R41, R64 and R65) at the interface to alanine or residues with reversed charge almost completely abolished MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the crystal structure of MAVS CARD, the aromatic chain of W56 adopts two alternative conformations, with a major conformer (60% occupancy) exposed to solvent and stacked against the ring structure of residue F16 in immediate vicinity (<a href=\"#bib7\">Potter et al., 2008</a>). In the cryoEM map, the density of one conformer is resolved (<a href=\"#fig2 fig3\">Figures 2D, 3D</a>) and there appears density corresponding to the side chain of R43 from an adjacent CARD (<a href=\"#fig3\">Figure 3D</a>), suggesting a possible cation\u2013pi interaction between these two residues, as reported previously (<a href=\"#bib9\">Wu et al., 2014</a>). Alanine substitution of R43 almost completely abolished MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>). Besides W56, the ring structures of residues F16 and Y30 also appear to be important for filament assembly. Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity, while substitutions with different ring-containing residues to these positions, such as F16H, W56F, W56Y, Y30F and Y30H, were able to largely retain MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>). Another residue involved in stabilizing the interface is R52, whose replacement by alanine significantly decreased its activity (<a href=\"#bib10\">Xu et al., 2014</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Interface III mediates the interactions between adjacent monomers along the helical trajectory. Close to the central pore of the helical filament, residue L48 from each MAVS CARD monomer contributes to the formation of a hydrophobic core with G50 and A44 in close proximity (<a href=\"#fig3\">Figure 3A</a>, top view and <a href=\"#fig3\">Figure 3E</a>). Substitution of L48 with charged residues (D or K), but not alanine, completely abolished MAVS activity in HEK293T cells (<a href=\"#bib10\">Xu et al., 2014</a>). It is interesting to note that L48 is not conserved, and is R or Q in MAVS from multiple other species. The filaments might need to rearrange in order to accommodate such substitutions. The small side chain or hydrophobicity of A44 may be important for the packing at this hydrophobic interface because its mutation to T impaired MAVS CARD filament formation in vitro (<a href=\"#bib10\">Xu et al., 2014</a>). Charged residues R37, R41, D40 and D53 are located at the outer rim of the filament forming electrostatic interactions together with charged residues at type I interface. Single alanine substitution of these residues almost completely abolished MAVS activity (<a href=\"#bib10\">Xu et al., 2014</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Overall, the loss-of-function mutation data are consistent with both the C1 map reported here and the C3 map obtained previously (<a href=\"#bib10\">Xu et al., 2014</a>). However, although key residues involved in the interactions are almost identical in the two models, the detailed interactions at the interfaces are different according to the two maps, indicating that mutagenesis analyses alone cannot distinguish one model from the other."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s2-1", 
+                                "title": "Conclusions", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "MAVS CARD filaments from our new dataset converged to almost the same C1 symmetry as reported by <a href=\"#bib9\">Wu et al. (2014)</a>, not the C3 symmetry as we reported previously (<a href=\"#bib10\">Xu et al., 2014</a>). The heterogeneity of the samples and the limited resolution of images were likely among the factors that led to the exclusion of the C1 model in the original analysis. We wish to correct this mistake and apologize for any confusion it might have caused. We stand by all other data in the paper, including in vitro mapping of the oligomerization interface, cell-based mutational analyses, super-resolution SIM imaging of MAVS aggregates in virus-infected cells, and the crystal structures. These experiments for the first time identified most of the key residues involved in MAVS polymerization, leading to an extensive mapping of the molecular surfaces for forming the MAVS filament."
+                                    }
+                                ]
                             }
                         ]
-                    }
-                ]
-            }, 
-            {
-                "type": "section", 
-                "id": "s4", 
-                "title": "Funding", 
-                "content": [
+                    }, 
                     {
-                        "type": "table", 
-                        "id": "tblu1", 
-                        "tables": [
-                            "<table><thead><tr><th>Funder</th><th>Grant reference</th><th>Author</th></tr></thead><tbody><tr><td>National Institutes of Health</td><td>R01GM088745</td><td>Hui Xu, Brian Borkowski, Qiu-Xing Jiang</td></tr><tr><td>National Institutes of Health</td><td>R01GM093271</td><td>Hui Xu, Brian Borkowski, Qiu-Xing Jiang</td></tr><tr><td>National Institutes of Health</td><td>R01GM088197</td><td>Xiaojing He, Xuewu Zhang</td></tr><tr><td>National Institutes of Health</td><td>1S10RR027972</td><td>Qiu-Xing Jiang</td></tr><tr><td>American Heart Association</td><td>12IRG9400019</td><td>Qiu-Xing Jiang</td></tr><tr><td>Welch</td><td>I-1684, I-1389, and I-1702</td><td>Hui Zheng, Qiu-Xing Jiang, Hui Xu, Zhijian J Chen, Xuewu Zhang</td></tr><tr><td>Cancer Prevention Research Institute of Texas</td><td>RP120474</td><td>Hui Xu, Qiu-Xing Jiang</td></tr><tr><td>National Institutes of Health</td><td>R01AI093967</td><td>Zhijian J Chen</td></tr><tr><td>Howard Hughes Medical Institute</td><td></td><td>Zhiheng Yu, Michael Jason de la Cruz, Zhijian J Chen</td></tr><tr><td>National Institutes of Health</td><td>C06RR30414</td><td>Hui Xu, Hui Zheng, Lily J Huang, Brian Borkowski, Qiu-Xing Jiang</td></tr></tbody></table>"
+                        "type": "section", 
+                        "id": "s3", 
+                        "title": "Materials and methods", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s3-1", 
+                                "title": "Sample preparation", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Flag-MAVS CARD (1\u2013100) expressed in HEK293T cells was purified in a buffer containing 50 mM NaCl. Freshly purified protein was processed for EM experiments to minimize bending and overlapping of filaments on cryoEM grids. To prepare cryo-EM specimens, 2.5 \u03bcl freshly purified MAVS CARD (0.1 mg/ml) filaments in suspension were applied to a glow-discharged Quantifoil R2/2 holey carbon grid (Quantifoil Micro Tools GmbH, Jena, Germany) coated with a thin carbon film and plunge-frozen inside a Vitrobot (FEI, Hillsboro, OR)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s3-2", 
+                                "title": "Data collection and analysis", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Movie data were collected in a FEI Titan Krios microscope equipped with a Falcon II detector at the HHMI Janelia Farm Research Campus. The microscope was equipped with a Cs corrector (Cs = 0.01 mm) and operated at 300 kV. EPU (FEI) was run to control automatic data collection across multiple preselected holes in the holey grids. Images were taken using a defocus range of \u22122.5 to \u22124.0 microns at a nominal magnification of 59,000\u00d7, which corresponds to a calibrated pixel size of 1.05 \u00c5 at the specimen level. Images were taken with a total dose of 35 e<sup>\u2212</sup>/\u00c5<sup>2</sup> distributed over 16 frames. The movie data were processed using the program dosefgpu_driftcorr (<a href=\"#bib5\">Li et al., 2013</a>). Frames 3\u201312 of every movie were summed together as the corrected image (<a href=\"#fig1\">Figure 1A</a>). The carbon-support of our filaments made the motion between consecutive frames very small (mostly less than 2 pixels) and we therefore did not do motion correction for individual filaments (polishing) in Relion. We started with 27,916 filaments. After 2D classification, 15,600 filaments were selected. During the 3D classification into two different classes, there was a negligible fraction of the filaments conforming to a different volume with poor alignment statistics. We therefore kept all 15,600 filaments for final map calculation, which correspond to \u223c80,000 images of individual CARD units."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In order to calculate a gold-standard FSC from truly independent datasets, we divided the 15,600 filaments into the top and bottom two halves. These two datasets had negligible overlap. Two separate C1 models were generated using the SPIDER-based method from a small sorted fraction (\u223c13%) of filaments out of our old datasets as described before (<a href=\"#bib10\">Xu et al., 2014</a>), and imposed with diagonally varied symmetry parameters (5.22 \u00c5, \u2212102.2\u00b0) and (4.82 \u00c5, \u2212100.2\u00b0), respectively. These two models were used as initial models and separately refined against the two half datasets in helical Relion. The two refinements converged to almost the same symmetry parameters, (5.05 \u00c5, \u2212101.25\u00b0) and (5.08 \u00c5, \u2212101.20\u00b0), respectively. The two volumes were post-processed in EMAN2 and aligned in CHIMERA. The map calculated from the top half of the dataset was rotated \u22122.4\u00b0 and shifted by \u22121.05 pixels before being compared with the one from the bottom half to calculate a gold-standard FSC using e2proc3d.py in EMAN2. The calculations in the final refinement steps were done in the <i>largemem</i> nodes of the STAMPEDE supercomputer at the Texas Advanced Computer Center (TACC) in Austin, Texas. Molecular modeling was done in CHIMERA and Coot (<a href=\"#bib4\">Emsley et al., 2010</a>)."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s4", 
+                        "title": "Funding", 
+                        "content": [
+                            {
+                                "type": "table", 
+                                "id": "tblu1", 
+                                "tables": [
+                                    "<table><thead><tr><th>Funder</th><th>Grant reference</th><th>Author</th></tr></thead><tbody><tr><td>National Institutes of Health</td><td>R01GM088745</td><td>Hui Xu, Brian Borkowski, Qiu-Xing Jiang</td></tr><tr><td>National Institutes of Health</td><td>R01GM093271</td><td>Hui Xu, Brian Borkowski, Qiu-Xing Jiang</td></tr><tr><td>National Institutes of Health</td><td>R01GM088197</td><td>Xiaojing He, Xuewu Zhang</td></tr><tr><td>National Institutes of Health</td><td>1S10RR027972</td><td>Qiu-Xing Jiang</td></tr><tr><td>American Heart Association</td><td>12IRG9400019</td><td>Qiu-Xing Jiang</td></tr><tr><td>Welch</td><td>I-1684, I-1389, and I-1702</td><td>Hui Zheng, Qiu-Xing Jiang, Hui Xu, Zhijian J Chen, Xuewu Zhang</td></tr><tr><td>Cancer Prevention Research Institute of Texas</td><td>RP120474</td><td>Hui Xu, Qiu-Xing Jiang</td></tr><tr><td>National Institutes of Health</td><td>R01AI093967</td><td>Zhijian J Chen</td></tr><tr><td>Howard Hughes Medical Institute</td><td></td><td>Zhiheng Yu, Michael Jason de la Cruz, Zhijian J Chen</td></tr><tr><td>National Institutes of Health</td><td>C06RR30414</td><td>Hui Xu, Hui Zheng, Lily J Huang, Brian Borkowski, Qiu-Xing Jiang</td></tr></tbody></table>"
+                                ]
+                            }
                         ]
                     }
                 ]
