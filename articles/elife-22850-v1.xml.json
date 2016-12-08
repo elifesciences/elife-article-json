@@ -1,0 +1,906 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "22850", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.22850", 
+        "authorLine": "Laura Le Breton, Matthias P Mayer", 
+        "title": "A model for handling cell stress", 
+        "titlePrefix": "Heat shock response", 
+        "published": "2016-11-29T00:00:00Z", 
+        "versionDate": "2016-11-29T00:00:00Z", 
+        "volume": 5, 
+        "elocationId": "e22850", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22850/elife-22850-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The heat shock response in yeast is regulated by the interaction between a chaperone protein and a heat shock transcription factor, and fine-tuned by phosphorylation."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Le Breton et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Laura Le Breton", 
+                    "index": "Le Breton, Laura"
+                }, 
+                "orcid": "0000-0002-5599-3244", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Molecular Biology Heidelberg University", 
+                            "DKFZ-ZMBH-Alliance"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Heidelberg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Heidelberg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Matthias P Mayer", 
+                    "index": "Mayer, Matthias P"
+                }, 
+                "orcid": "0000-0002-7859-3112", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Molecular Biology Heidelberg University", 
+                            "DKFZ-ZMBH-Alliance"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Heidelberg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Heidelberg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "M.Mayer@zmbh.uni-heidelberg.de"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "22850", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.22850", 
+        "authorLine": "Laura Le Breton, Matthias P Mayer", 
+        "title": "A model for handling cell stress", 
+        "titlePrefix": "Heat shock response", 
+        "published": "2016-11-29T00:00:00Z", 
+        "versionDate": "2016-11-29T00:00:00Z", 
+        "volume": 5, 
+        "elocationId": "e22850", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22850/elife-22850-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "S. cerevisiae"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "The heat shock response in yeast is regulated by the interaction between a chaperone protein and a heat shock transcription factor, and fine-tuned by phosphorylation."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Le Breton et al", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Laura Le Breton", 
+                    "index": "Le Breton, Laura"
+                }, 
+                "orcid": "0000-0002-5599-3244", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Molecular Biology Heidelberg University", 
+                            "DKFZ-ZMBH-Alliance"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Heidelberg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Heidelberg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Matthias P Mayer", 
+                    "index": "Mayer, Matthias P"
+                }, 
+                "orcid": "0000-0002-7859-3112", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Center for Molecular Biology Heidelberg University", 
+                            "DKFZ-ZMBH-Alliance"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Heidelberg", 
+                                "Germany"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Heidelberg"
+                                ], 
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "M.Mayer@zmbh.uni-heidelberg.de"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "heat shock response", 
+            "Hsf1", 
+            "Hsp70", 
+            "phosphorylation", 
+            "chaperone", 
+            "systems modeling"
+        ], 
+        "relatedArticles": [
+            "18638"
+        ], 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Cells are subjected to frequent assaults either from their environment or as a consequence of development or disease. Such stresses \u2013 which can be caused by a range of conditions, including changes in temperature and mechanical stresses \u2013 are damaging to proteins, so cells mount the so-called heat shock response. This response is an evolutionarily conserved transcriptional program that is orchestrated in eukaryotic cells by a protein called Hsf1 (short for heat shock factor 1; <a href=\"#bib6\">Morimoto, 1998</a>). Three copies of this protein combine to form trimers that bind to the promoters of Hsf1-dependent genes, which leads to higher levels of heat shock proteins inside the cell. These proteins include the chaperones that refold misfolded proteins or target them for degradation. Once the effects of the stress have been dealt with, cells reduce the production of heat shock proteins to normal levels."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The heat shock response has been studied for more than 30 years, mainly in yeast and animal cells, and different models have been proposed to explain it (<a href=\"#bib1\">Anckar and Sistonen, 2011</a>). The intrinsic response model, which assumes that Hsf1 directly senses increasing temperature (and potentially other stresses), relies on Hsf1 transitioning from a monomer to a trimer (<a href=\"#bib12\">Zhong et al., 1998</a>; <a href=\"#bib5\">Hentze et al., 2016</a>). This model can only apply to animal cells because Hsf1 forms trimers in yeast under all conditions, even in the absence of heat shock (<a href=\"#bib9\">Sorger et al., 1987</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The chaperone titration model assumes that Hsf1 is kept inactive in unstressed cells by its interactions with chaperones; the presence of misfolded proteins then activates Hsf1 by attracting (or \u201ctitrating\u201d) the chaperones away from Hsf1. Although there is evidence to support such a model, it was unclear which \u2013 if any \u2013 of the chaperones is the main regulator of the Hsf1 activity cycle. (<a href=\"#bib8\">Shi et al., 1998</a>; <a href=\"#bib7\">Rabindran et al., 1994</a>; <a href=\"#bib4\">Guo et al., 2001</a>). In addition, Hsf1 is subject to a large number of post-translational modifications, such as phosphorylation, but the influence of these modifications on the heat shock response is a topic of controversy (<a href=\"#bib2\">Budzy\u0144ski et al., 2015</a>; <a href=\"#bib10\">Xia and Voellmy, 1997</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Now, in eLife, David Pincus and coworkers from the Whitehead Institute for Biomedical Research, Boston University and Harvard University \u2013 including Xu Zheng and Joanna Krakowiak as joint first authors \u2013 report how they have used a combination of mathematical modeling and cell biology experiments in yeast to address these issues (<a href=\"#bib11\">Zheng et al., 2016</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Initial experimental results demonstrated that a chaperone called Hsp70 \u2013 which is thought to damp down the heat shock response \u2013 binds to Hsf1 under non-stress conditions and is released upon a sudden increase in temperature. From these findings, Zheng et al. simulated how the expression of Hsf1-dependent genes changes in response to interactions between Hsp70, Hsf1 and misfolded proteins. Further support for the chaperone titration model came from experiments in which yeast cells expressed two types of Hsf1: wild-type Hsf1 and \u201cdecoy\u201d Hsf1 (which can bind to Hsp70 but cannot activate the transcription of the Hsf1-dependent genes). These data are the strongest evidence to date that Hsp70 feedback regulates the heat shock response by directly associating with Hsf1, as happens in the chaperone titration model (<a href=\"#fig1\">Figure 1</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "The chaperone titration model of the heat shock response.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Clockwise from top: The chaperone protein Hsp70 binds to the heat shock transcription factor Hsf1, repressing its transcriptional activity. Upon a sudden increase in temperature or other stresses (red lightning bolt), fewer proteins maintain their correct shape (rectangles); misfolded proteins (stars) therefore accumulate in the cell. These misfolded proteins draw Hsp70 away from Hsf1, activating its transcriptional activity. As a result, more Hsf1-dependent genes (HDG) are expressed, leading to an increase in the number of chaperones and proteases \u2013 among them Hsp70 \u2013 in the cell. The action of the chaperones and proteases ensures that proteins can be correctly folded again; this also liberates Hsp70, which can then repress Hsf1. Middle: Hyperphosphorylation of Hsf1 (the width of the triangle represents the extent of phosphorylation) partially activates Hsf1 and sensitizes the regulatory feedback circuit."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/22850/elife-22850-fig1-v1.jpg", 
+                        "filename": "elife-22850-fig1-v1.jpg"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The overexpression of Hsf1 under otherwise unstressed conditions impairs the growth of yeast cells by over-activating the transcription of Hsf1-dependent genes. Elevating the levels of Hsp70 or one of its co-chaperones in such cells rescues growth and represses the transcription of Hsf1-dependent genes. In contrast, Hsp90 \u2013 a chaperone that was believed to repress Hsf1 under non-stress conditions (<a href=\"#bib3\">Duina et al., 1998</a>; <a href=\"#bib13\">Zou et al., 1998</a>) \u2013 had no effect on growth or the transcription of Hsf1-dependent genes in these cells. This argues against Hsp90 playing a major role in down-regulating Hsf1 activity. Thus, the effects of the down-regulation of Hsp90 or its co-chaperones on the heat shock response might be indirect in yeast."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Zheng et al. also investigated how the hyperphosphorylation of Hsf1 helps to regulate the heat shock response. They performed <i>en masse</i> mutations of Hsf1 by either removing all 152 potential phosphorylation sites, or mimicking phosphorylation at up to 116 sites. Unexpectedly, completely abolishing phosphorylation only mildly reduces Hsf1 activity upon heat shock, indicating that phosphorylation <i>per se</i> is not required to activate Hsf1. On the other hand, mimicking hyperphosphorylation activates Hsf1 even under non-stress conditions. Moreover, the activity of Hsf1 increases further upon heat shock, which means that hyperphosphorylation only partially overwrites the repression of Hsf1 by Hsp70. Phosphorylation is thus a dose-dependent mechanism for fine-tuning the activity of Hsf1 that mainly occurs after the initial phase of the heat shock response, enhancing and prolonging it. This also means that if the stress response is activated for developmental or other reasons, the cell is still able to react to acute assaults."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "It will be important in the future to assess whether these findings also apply to animal Hsf1, which interacts with chaperones such as Hsp70 and Hsp90 while in its inactive monomeric form under non-stress conditions (<a href=\"#bib8\">Shi et al., 1998</a>; <a href=\"#bib13\">Zou et al., 1998</a>). It also remains to be discovered how these chaperones integrate with the ability of Hsf1 to directly sense stress (<a href=\"#bib12\">Zhong et al., 1998</a>; <a href=\"#bib5\">Hentze et al., 2016</a>)."
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Anckar", 
+                            "index": "Anckar, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Sistonen", 
+                            "index": "Sistonen, L"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of HSF1 function in the heat stress response: implications in aging and disease", 
+                "journal": {
+                    "name": [
+                        "Annual Review of Biochemistry"
+                    ]
+                }, 
+                "volume": "80", 
+                "pages": {
+                    "first": "1089", 
+                    "last": "1115", 
+                    "range": "1089\u20131115"
+                }, 
+                "doi": "10.1146/annurev-biochem-060809-095203", 
+                "pmid": 21417720
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Budzy\u0144ski", 
+                            "index": "Budzy\u0144ski, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MC Puustinen", 
+                            "index": "Puustinen, MC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Joutsen", 
+                            "index": "Joutsen, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Sistonen", 
+                            "index": "Sistonen, L"
+                        }
+                    }
+                ], 
+                "articleTitle": "Uncoupling stress-inducible phosphorylation of heat shock factor 1 from its activation", 
+                "journal": {
+                    "name": [
+                        "Molecular and Cellular Biology"
+                    ]
+                }, 
+                "volume": "35", 
+                "pages": {
+                    "first": "2530", 
+                    "last": "2540", 
+                    "range": "2530\u20132540"
+                }, 
+                "doi": "10.1128/MCB.00816-14", 
+                "pmid": 25963659
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Duina", 
+                            "index": "Duina, AA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HM Kalton", 
+                            "index": "Kalton, HM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RF Gaber", 
+                            "index": "Gaber, RF"
+                        }
+                    }
+                ], 
+                "articleTitle": "Requirement for Hsp90 and a CyP-40-type cyclophilin in negative regulation of the heat shock response", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "273", 
+                "pages": {
+                    "first": "18974", 
+                    "last": "18978", 
+                    "range": "18974\u201318978"
+                }, 
+                "doi": "10.1074/jbc.273.30.18974", 
+                "pmid": 9668076
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2001", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Guo", 
+                            "index": "Guo, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Guettouche", 
+                            "index": "Guettouche, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Fenna", 
+                            "index": "Fenna, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Boellmann", 
+                            "index": "Boellmann, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WB Pratt", 
+                            "index": "Pratt, WB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DO Toft", 
+                            "index": "Toft, DO"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DF Smith", 
+                            "index": "Smith, DF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Voellmy", 
+                            "index": "Voellmy, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Evidence for a mechanism of repression of heat shock factor 1 transcriptional activity by a multichaperone complex", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "276", 
+                "pages": {
+                    "first": "45791", 
+                    "last": "45799", 
+                    "range": "45791\u201345799"
+                }, 
+                "doi": "10.1074/jbc.M105931200", 
+                "pmid": 11583998
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Hentze", 
+                            "index": "Hentze, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Le Breton", 
+                            "index": "Le Breton, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Wiesner", 
+                            "index": "Wiesner, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Kempf", 
+                            "index": "Kempf, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MP Mayer", 
+                            "index": "Mayer, MP"
+                        }
+                    }
+                ], 
+                "articleTitle": "Molecular mechanism of thermosensory function of human heat shock transcription factor Hsf1", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e11576", 
+                "doi": "10.7554/eLife.11576", 
+                "pmid": 26785146
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RI Morimoto", 
+                            "index": "Morimoto, RI"
+                        }
+                    }
+                ], 
+                "articleTitle": "Regulation of the heat shock transcriptional response: cross talk between a family of heat shock factors, molecular chaperones, and negative regulators", 
+                "journal": {
+                    "name": [
+                        "Genes & Development"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "3788", 
+                    "last": "3796", 
+                    "range": "3788\u20133796"
+                }, 
+                "doi": "10.1101/gad.12.24.3788", 
+                "pmid": 9869631
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "1994", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SK Rabindran", 
+                            "index": "Rabindran, SK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Wisniewski", 
+                            "index": "Wisniewski, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Li", 
+                            "index": "Li, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GC Li", 
+                            "index": "Li, GC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Wu", 
+                            "index": "Wu, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Interaction between heat shock factor and hsp70 is insufficient to suppress induction of DNA-binding activity in vivo", 
+                "journal": {
+                    "name": [
+                        "Molecular and Cellular Biology"
+                    ]
+                }, 
+                "volume": "14", 
+                "pages": {
+                    "first": "6552", 
+                    "last": "6560", 
+                    "range": "6552\u20136560"
+                }, 
+                "doi": "10.1128/MCB.14.10.6552", 
+                "pmid": 7935376
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Shi", 
+                            "index": "Shi, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DD Mosser", 
+                            "index": "Mosser, DD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RI Morimoto", 
+                            "index": "Morimoto, RI"
+                        }
+                    }
+                ], 
+                "articleTitle": "Molecular chaperones as HSF1-specific transcriptional repressors", 
+                "journal": {
+                    "name": [
+                        "Genes & Development"
+                    ]
+                }, 
+                "volume": "12", 
+                "pages": {
+                    "first": "654", 
+                    "last": "666", 
+                    "range": "654\u2013666"
+                }, 
+                "doi": "10.1101/gad.12.5.654", 
+                "pmid": 9499401
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "1987", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PK Sorger", 
+                            "index": "Sorger, PK"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MJ Lewis", 
+                            "index": "Lewis, MJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HR Pelham", 
+                            "index": "Pelham, HR"
+                        }
+                    }
+                ], 
+                "articleTitle": "Heat shock factor is regulated differently in yeast and HeLa cells", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "329", 
+                "pages": {
+                    "first": "81", 
+                    "last": "84", 
+                    "range": "81\u201384"
+                }, 
+                "doi": "10.1038/329081a0", 
+                "pmid": 3306402
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "1997", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Xia", 
+                            "index": "Xia, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Voellmy", 
+                            "index": "Voellmy, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Hyperphosphorylation of heat shock transcription factor 1 is correlated with transcriptional competence and slow dissociation of active factor trimers", 
+                "journal": {
+                    "name": [
+                        "Journal of Biological Chemistry"
+                    ]
+                }, 
+                "volume": "272", 
+                "pages": {
+                    "first": "4094", 
+                    "last": "4102", 
+                    "range": "4094\u20134102"
+                }, 
+                "doi": "10.1074/jbc.272.7.4094", 
+                "pmid": 9020119
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "X Zheng", 
+                            "index": "Zheng, X"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Krakowiak", 
+                            "index": "Krakowiak, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Patel", 
+                            "index": "Patel, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Beyzavi", 
+                            "index": "Beyzavi, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Ezike", 
+                            "index": "Ezike, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AS Khalil", 
+                            "index": "Khalil, AS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Pincus", 
+                            "index": "Pincus, D"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamic control of Hsf1 during heat shock by a chaperone switch and phosphorylation", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e18638", 
+                "doi": "10.7554/eLife.18638", 
+                "pmid": 27831465
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib12", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Zhong", 
+                            "index": "Zhong, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Orosz", 
+                            "index": "Orosz, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C Wu", 
+                            "index": "Wu, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "Direct sensing of heat and oxidation by Drosophila heat shock transcription factor", 
+                "journal": {
+                    "name": [
+                        "Molecular Cell"
+                    ]
+                }, 
+                "volume": "2", 
+                "pages": {
+                    "first": "101", 
+                    "last": "108", 
+                    "range": "101\u2013108"
+                }, 
+                "doi": "10.1016/S1097-2765(00)80118-5", 
+                "pmid": 9702196
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib13", 
+                "date": "1998", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Zou", 
+                            "index": "Zou, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Guo", 
+                            "index": "Guo, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Guettouche", 
+                            "index": "Guettouche, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DF Smith", 
+                            "index": "Smith, DF"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "R Voellmy", 
+                            "index": "Voellmy, R"
+                        }
+                    }
+                ], 
+                "articleTitle": "Repression of heat shock transcription factor HSF1 activation by HSP90 (HSP90 complex) that forms a stress-sensitive complex with HSF1", 
+                "journal": {
+                    "name": [
+                        "Cell"
+                    ]
+                }, 
+                "volume": "94", 
+                "pages": {
+                    "first": "471", 
+                    "last": "480", 
+                    "range": "471\u2013480"
+                }, 
+                "doi": "10.1016/S0092-8674(00)81588-3", 
+                "pmid": 9727490
+            }
+        ]
+    }
+}

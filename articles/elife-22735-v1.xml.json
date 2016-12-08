@@ -1,0 +1,485 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "22735", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.22735", 
+        "authorLine": "Mark D Humphries", 
+        "title": "The Goldilocks zone in neural circuits", 
+        "titlePrefix": "Motor networks", 
+        "published": "2016-12-02T00:00:00Z", 
+        "versionDate": "2016-12-02T00:00:00Z", 
+        "volume": 5, 
+        "elocationId": "e22735", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22735/elife-22735-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Other"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "How do networks of neurons remain both stable and sensitive to new inputs?"
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Humphries", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Mark D Humphries", 
+                    "index": "Humphries, Mark D"
+                }, 
+                "orcid": "0000-0002-1906-2581", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Faculty of Biology, Medicine and Health", 
+                            "University of Manchester"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Manchester", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Manchester"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "mark.humphries@manchester.ac.uk"
+                ], 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ]
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "22735", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.22735", 
+        "authorLine": "Mark D Humphries", 
+        "title": "The Goldilocks zone in neural circuits", 
+        "titlePrefix": "Motor networks", 
+        "published": "2016-12-02T00:00:00Z", 
+        "versionDate": "2016-12-02T00:00:00Z", 
+        "volume": 5, 
+        "elocationId": "e22735", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22735/elife-22735-v1.pdf", 
+        "subjects": [
+            {
+                "id": "neuroscience", 
+                "name": "Neuroscience"
+            }
+        ], 
+        "researchOrganisms": [
+            "Other"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "How do networks of neurons remain both stable and sensitive to new inputs?"
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Humphries", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Mark D Humphries", 
+                    "index": "Humphries, Mark D"
+                }, 
+                "orcid": "0000-0002-1906-2581", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Faculty of Biology, Medicine and Health", 
+                            "University of Manchester"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Manchester", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Manchester"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "mark.humphries@manchester.ac.uk"
+                ], 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "keywords": [
+            "motor networks", 
+            "lognormal", 
+            "spinal cord", 
+            "motor control", 
+            "neuronal ensemble", 
+            "CPG"
+        ], 
+        "relatedArticles": [
+            "18805"
+        ], 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Networks of neurons are tough beasts to control. If too many of the connections between the neurons are excitatory, the network becomes hyperactive, driven by feedback from neuron to neuron. But if too many of the connections are inhibitory, the network goes silent, save for a few blips of activity, mercilessly crushed by inhibition. So how do real neuronal networks stay in the Goldilocks zone between too quiet and too loud? How do they maintain stable activity yet remain sensitive to new inputs?"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "One clue comes from the long-tailed distributions of spiking rates that are seen throughout the\u00a0cortex: a small number of neurons respond strongly to a specific input, but most spike only weakly, and thus remain ready to spike again in response to a new input (<a href=\"#bib6\">Wohrer et al., 2013</a>; <a href=\"#bib1\">Buzs\u00e1ki and Mizuseki, 2014</a>). Another clue comes from the balanced network model: according to this model the excitatory and inhibitory inputs to cortical neurons cancel on average, so the neurons can maintain stable, irregular activity (<a href=\"#bib5\">van Vreeswijk and Sompolinsky, 1996</a>; <a href=\"#bib3\">Renart et al., 2010</a>; see <a href=\"#fig1\">Figure 1A,B</a>). However, we don't know how these two clues fit together to explain how neuronal networks reach the Goldilocks zone: in particular, can balanced networks produce long-tailed distributions of spiking rates?"
+                    }, 
+                    {
+                        "type": "image", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "Long-tailed distributions and balanced networks.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) When a single neuron receives more excitatory input (red) than inhibitory input (blue), its membrane voltage (black line) spikes regularly. In this \"mean-driven\" model the membrane voltage spends much of its time at or near the spiking threshold (see histogram on right), and spiking is driven by the difference between the means of the excitatory and inhibitory inputs. However, most neurons do not spike as rapidly or regularly as predicted by the \"mean-driven\" model. (<b>B</b>) The theory of balanced networks proposes that the inhibitory and excitatory inputs to a neuron have approximately the same mean and the same variance. Consequently, spiking\u00a0is driven by random fluctuations in the inputs, when the excitatory input briefly exceeds the inhibitory input. A signature of this \u201cfluctuation-driven\u201d regime is that the distribution of the membrane voltage is approximately Gaussian (histogram). Fluctuation-driven neurons spike slowly and irregularly, similar to the majority of the neurons in the cortex. (<b>C</b>) The relationship between the input to a neuron (blue curve below the x-axis) and its spiking or firing rate (blue curve to the left of the y-axis) is described by a firing rate versus input (<i>f\u2013i</i>) curve. In 2011 Roxin et al. predicted that an expansive <i>f\u2013i</i> curve (see main text) would convert a Gaussian input into a long-tailed distribution of firing rates in the fluctuation-driven regime. Moreover, according to this theory, if each neuron has a Gaussian input, then the overall population of neurons will also have a Gaussian input, and if each neuron has an expansive <i>f\u2013i</i> curve in the fluctuation-driven regime, then the output of the population will be long-tailed."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/22735/elife-22735-fig1-v1.jpg", 
+                        "filename": "elife-22735-fig1-v1.jpg"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Now, in eLife, Peter Petersen and Rune Berg of the University of Copenhagen report compelling experimental evidence that they can (<a href=\"#bib2\">Petersen and Berg, 2016</a>; <a href=\"#fig1\">Figure 1C</a>). They did this by testing a theoretical model that was published in 2011 (<a href=\"#bib4\">Roxin et al., 2011</a>). The experiments were performed on the spinal network in turtles and combined intracellular and large-scale extracellular recordings of neural activity. The recordings were made during periods of evoked motor behaviour (that is, when the turtle was scratching itself)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Petersen and Berg first showed that the spinal network was balanced. They identified individual neurons in the spinal cord that existed in a regime called the \"fluctuation-driven\" regime that is characteristic of balanced networks. The membrane voltages of these neurons fluctuated widely between spikes, as expected from neurons receiving the same inhibitory and excitatory input on average (<a href=\"#fig1\">Figure 1B</a>). They also identified neurons that existed in the \"mean-driven\" regime (<a href=\"#fig1\">Figure 1A</a>): in these neurons the membrane voltages moved from low values to high values rapidly and directly following each spike. Petersen and Berg then showed that it was possible to switch between the fluctuation-driven and mean-driven regimes by changing the balance between the excitatory and inhibitory inputs to the neurons."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Next they tested a slightly off-the-wall prediction made by Alex Roxin and co-workers for neurons in the fluctuation-driven regime (<a href=\"#bib4\">Roxin et al., 2011</a>). This work predicted that if these neurons have an expansive output curve \u2013 that is, if the output increases faster than linear as the input increases \u2013 then their output spike-rate will have a long-tailed distribution (<a href=\"#fig1\">Figure 1C</a>). Unexpectedly, Petersen and Berg showed that their fluctuation-driven neurons all had such an expansive output curve."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Petersen and Berg then used large-scale population recordings to address the key question: do these expansive output curves give rise to the predicted long-tailed distribution of firing rates across a network? The answer was a resounding yes. The populations they recorded had lognormal distributions of firing rates, and the neurons within each population sat on a continuum between the fluctuation- and mean-driven regimes. Intriguingly, their data suggest that these regimes bore no relation to whether the neurons were inter- or motor-neurons."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Petersen and Berg's work is a rarity in systems neuroscience, an experimental study that tests a computational theory directly, and exhaustively. They have provided compelling evidence that a combination of balanced input and expansive output can hold a network in the Goldilocks zones (that is, keep it both stable and responsive). And by working in the spinal cord networks of the turtle, they were able to show that all these properties exist during ongoing behaviour, and not just during spontaneous neuronal activity. Moreover, they remind us there is nothing privileged about the dynamics of cortical circuits, or the dynamics of neuronal circuits in mammals."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The work also opens up a number of exciting challenges for theory and experiment. Like many behaviours, scratching is a rhythmic action, driven by repeated bursts of spikes. Petersen and Berg focused on the spikes within bursts, but there is silence between bursts. This silence means there must be two timescales for the control of neural activity in the spinal network. Spikes within the bursts arise from fast changes to a neuron's inputs, whether in the fluctuation-driven regime or the mean-driven regime. And the silence between bursts means that the network is able to slowly switch in and out of the driven regimes; that is, it can periodically turn its balanced state on and then off. Clearly we have just started to unpack how neuronal networks control their own activity."
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Buzs\u00e1ki", 
+                            "index": "Buzs\u00e1ki, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "K Mizuseki", 
+                            "index": "Mizuseki, K"
+                        }
+                    }
+                ], 
+                "articleTitle": "The log-dynamic brain: how skewed distributions affect network operations", 
+                "journal": {
+                    "name": [
+                        "Nature Reviews Neuroscience"
+                    ]
+                }, 
+                "volume": "15", 
+                "pages": {
+                    "first": "264", 
+                    "last": "278", 
+                    "range": "264\u2013278"
+                }, 
+                "doi": "10.1038/nrn3687"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "PC Petersen", 
+                            "index": "Petersen, PC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RW Berg", 
+                            "index": "Berg, RW"
+                        }
+                    }
+                ], 
+                "articleTitle": "Lognormal firing rate distribution reveals prominent fluctuation\u2013driven regime in spinal motor networks", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "5", 
+                "pages": "e18805", 
+                "doi": "10.7554/eLife.18805"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2010", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Renart", 
+                            "index": "Renart, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J de la Rocha", 
+                            "index": "de la Rocha, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Bartho", 
+                            "index": "Bartho, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Hollender", 
+                            "index": "Hollender, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Parga", 
+                            "index": "Parga, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Reyes", 
+                            "index": "Reyes, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KD Harris", 
+                            "index": "Harris, KD"
+                        }
+                    }
+                ], 
+                "articleTitle": "The asynchronous state in cortical circuits", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "327", 
+                "pages": {
+                    "first": "587", 
+                    "last": "590", 
+                    "range": "587\u2013590"
+                }, 
+                "doi": "10.1126/science.1179850", 
+                "pmid": 20110507
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Roxin", 
+                            "index": "Roxin, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Brunel", 
+                            "index": "Brunel, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Hansel", 
+                            "index": "Hansel, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Mongillo", 
+                            "index": "Mongillo, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C van Vreeswijk", 
+                            "index": "van Vreeswijk, C"
+                        }
+                    }
+                ], 
+                "articleTitle": "On the distribution of firing rates in networks of cortical neurons", 
+                "journal": {
+                    "name": [
+                        "Journal of Neuroscience"
+                    ]
+                }, 
+                "volume": "31", 
+                "pages": {
+                    "first": "16217", 
+                    "last": "16226", 
+                    "range": "16217\u201316226"
+                }, 
+                "doi": "10.1523/JNEUROSCI.1677-11.2011", 
+                "pmid": 22072673
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "1996", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "C van Vreeswijk", 
+                            "index": "van Vreeswijk, C"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Sompolinsky", 
+                            "index": "Sompolinsky, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Chaos in neuronal networks with balanced excitatory and inhibitory activity", 
+                "journal": {
+                    "name": [
+                        "Science"
+                    ]
+                }, 
+                "volume": "274", 
+                "pages": {
+                    "first": "1724", 
+                    "last": "1726", 
+                    "range": "1724\u20131726"
+                }, 
+                "doi": "10.1126/science.274.5293.1724", 
+                "pmid": 8939866
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2013", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Wohrer", 
+                            "index": "Wohrer, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MD Humphries", 
+                            "index": "Humphries, MD"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CK Machens", 
+                            "index": "Machens, CK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Population-wide distributions of neural activity during perceptual decision-making", 
+                "journal": {
+                    "name": [
+                        "Progress in Neurobiology"
+                    ]
+                }, 
+                "volume": "103", 
+                "pages": {
+                    "first": "156", 
+                    "last": "193", 
+                    "range": "156\u2013193"
+                }, 
+                "doi": "10.1016/j.pneurobio.2012.09.004", 
+                "pmid": 23123501
+            }
+        ]
+    }
+}
