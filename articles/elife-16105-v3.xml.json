@@ -7974,6 +7974,226 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s28", 
+                        "title": "1 Theory of cascade MDFF", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The MDFF potential is given by"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ7", 
+                                "label": "(7)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>U</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">R</mi></mrow><mo stretchy=\"false\">)</mo><mspace width=\"thinmathspace\"></mspace><mo>=</mo><mspace width=\"thinmathspace\"></mspace><munder><mo>\u2211</mo><mrow><mi>i</mi></mrow></munder><msub><mi>w</mi><mrow><mi>i</mi></mrow></msub><msub><mi>V</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub><mo stretchy=\"false\">(</mo><msub><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>i</mi></mrow></msub><mo stretchy=\"false\">)</mo><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf98\"><mi mathvariant=\"bold\">\ud835\udc11</mi></math> is the system configuration, <math id=\"inf99\"><mi>i</mi></math> labels the atoms in the structure, <math id=\"inf100\"><msub><mi>w</mi><mi>i</mi></msub></math> and <math id=\"inf101\"><msub><mi mathvariant=\"bold\">\ud835\udc2b</mi><mi>i</mi></msub></math> are weight and position, respectively, assigned to atom <math id=\"inf102\"><mi>i</mi></math>, and <math id=\"inf103\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub></mrow></mstyle></math> is the potential map obtained from the EM density map."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Subjecting the potential map <math id=\"inf104\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub></mrow></mstyle></math> to a Gaussian blur increases its widths in a manner described as follows. The Gaussian blur process produces a potential map <math id=\"inf105\"><msub><mi>V</mi><mi>\u03c3</mi></msub></math> from the potential map <math id=\"inf106\"><msub><mi>V</mi><mtext>EM</mtext></msub></math> through convolution with a normalized Gaussian of specified width <math id=\"inf107\"><mi>\u03c3</mi></math>:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ8", 
+                                "label": "(8)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mi>\u03c3</mi></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo><mspace width=\"thinmathspace\"></mspace><mo>=</mo><mspace width=\"thinmathspace\"></mspace><mo>\u222b</mo><mi>d</mi><mrow><msup><mi mathvariant=\"bold\">r</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mspace width=\"thinmathspace\"></mspace><mi>G</mi><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mspace width=\"thinmathspace\"></mspace><mo>;</mo><mspace width=\"thinmathspace\"></mspace><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mo>,</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><msub><mi>V</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub><mo stretchy=\"false\">(</mo><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mo stretchy=\"false\">)</mo><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ9", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnalign=\"right left right left right left right left right left right left\" columnspacing=\"0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em\" displaystyle=\"true\" rowspacing=\"3pt\"><mlabeledtr><mtd id=\"mjx-eqn-9_1\"><mtext>(9)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>G</mi><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mspace width=\"thinmathspace\"></mspace><mo>;</mo><mspace width=\"thinmathspace\"></mspace><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mo>,</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext><mspace width=\"thinmathspace\"></mspace></mstyle></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>A</mi><mo stretchy=\"false\">(</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><mi>exp</mi><mo>\u2061</mo><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo>\u2212</mo><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mrow><mo stretchy=\"false\">|</mo></mrow><msup><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>)</mo></mrow><mo>,</mo></mstyle></mtd><mtd></mtd></mlabeledtr><mlabeledtr><mtd id=\"mjx-eqn-10_1\"><mtext>(10)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>A</mi><mo stretchy=\"false\">(</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext><mspace width=\"thinmathspace\"></mspace></mstyle></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">(</mo><mn>2</mn><mi>\u03c0</mi><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup><msup><mo stretchy=\"false\">)</mo><mrow><mn>3</mn><mrow><mo>/</mo></mrow><mn>2</mn></mrow></msup></mrow></mfrac><mspace width=\"thinmathspace\"></mspace><mo>.</mo></mstyle></mtd><mtd></mtd></mlabeledtr></mtable></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "One can characterize the resolution of <math id=\"inf108\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo></mrow></mstyle></math> explicitly by assuming that it can be written as a sum of Gaussians."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ10", 
+                                "label": "(11)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">M</mi></mrow></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext><munder><mo>\u2211</mo><mrow><mi>n</mi></mrow></munder><mspace width=\"thinmathspace\"></mspace><msub><mi>c</mi><mrow><mi>n</mi></mrow></msub><mi>G</mi><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mspace width=\"thinmathspace\"></mspace><mo>;</mo><mspace width=\"thinmathspace\"></mspace><msubsup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo>,</mo><msubsup><mi>\u03c3</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">)</mo><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf109\"><msub><mi>c</mi><mi>n</mi></msub></math> are weighting factors, <math id=\"inf110\"><msubsup><mi mathvariant=\"bold\">\ud835\udc2b</mi><mi>n</mi><mo>\u2032</mo></msubsup></math> and <math id=\"inf111\"><msubsup><mi>\u03c3</mi><mi>n</mi><mo>\u2032</mo></msubsup></math> are, respectively, the centers and widths of the component Gaussians. Substituting the above expression into <a href=\"#equ8\">Equation 8</a> yields"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ11", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnalign=\"right left right left right left right left right left right left\" columnspacing=\"0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em\" displaystyle=\"true\" rowspacing=\"3pt\"><mlabeledtr><mtd id=\"mjx-eqn-12_4\"><mtext>(12)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>V</mi><mrow><mi>\u03c3</mi></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext></mstyle></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo>\u222b</mo><mi>d</mi><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mspace width=\"thinmathspace\"></mspace><mi>G</mi><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mspace width=\"thinmathspace\"></mspace><mo>;</mo><mspace width=\"thinmathspace\"></mspace><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mo>,</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><munder><mo>\u2211</mo><mrow><mi>n</mi></mrow></munder><mspace width=\"thinmathspace\"></mspace><msub><mi>c</mi><mrow><mi>n</mi></mrow></msub><mi>G</mi><mo stretchy=\"false\">(</mo><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mspace width=\"thinmathspace\"></mspace><mo>;</mo><mspace width=\"thinmathspace\"></mspace><msubsup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo>,</mo><msubsup><mi>\u03c3</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">)</mo></mstyle></mtd><mtd></mtd></mlabeledtr><mlabeledtr><mtd id=\"mjx-eqn-13_4\"><mtext>(13)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><munder><mo>\u2211</mo><mrow><mi>n</mi></mrow></munder><msub><mi>c</mi><mrow><mi>n</mi></mrow></msub><mi>A</mi><mo stretchy=\"false\">(</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><msubsup><mi>A</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">(</mo><msubsup><mi>\u03c3</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">)</mo><mo>\u222b</mo><mi>d</mi><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mi>exp</mi><mo>\u2061</mo><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo>\u2212</mo><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mrow><mo stretchy=\"false\">|</mo></mrow><msup><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>\u2212</mo><mfrac><mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mo stretchy=\"false\">|</mo></mrow><msup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup><mo>\u2212</mo><msubsup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mrow><mo stretchy=\"false\">|</mo></mrow><msup><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><msubsup><mrow><msup><mi>\u03c3</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msubsup></mrow></mfrac><mo>)</mo></mrow><mo>,</mo></mstyle></mtd><mtd></mtd></mlabeledtr></mtable></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Evaluation of the above expression gives"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ12", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnalign=\"right left right left right left right left right left right left\" columnspacing=\"0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em\" displaystyle=\"true\" rowspacing=\"3pt\"><mlabeledtr><mtd id=\"mjx-eqn-14_4\"><mtext>(14)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>V</mi><mrow><mi>\u03c3</mi></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext></mstyle></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><munder><mo>\u2211</mo><mrow><mi>n</mi></mrow></munder><msub><mi>C</mi><mrow><mi>n</mi></mrow></msub><mi>exp</mi><mo>\u2061</mo><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo>\u2212</mo><msubsup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mrow><mo stretchy=\"false\">|</mo></mrow><msup><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mo stretchy=\"false\">(</mo><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup><mo>+</mo><msubsup><mrow><msup><mi>\u03c3</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>)</mo></mrow><mo>,</mo></mstyle></mtd><mtd></mtd></mlabeledtr><mlabeledtr><mtd id=\"mjx-eqn-15_4\"><mtext>(15)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>C</mi><mrow><mi>n</mi></mrow></msub><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext><mspace width=\"thinmathspace\"></mspace></mstyle></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>c</mi><mrow><mi>n</mi></mrow></msub><mi>A</mi><mo stretchy=\"false\">(</mo><mi>\u03c3</mi><mo stretchy=\"false\">)</mo><msubsup><mi>A</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">(</mo><msubsup><mi>\u03c3</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>\u03c0</mi><msup><mo stretchy=\"false\">)</mo><mrow><mn>3</mn><mrow><mo>/</mo></mrow><mn>2</mn></mrow></msup><msup><mrow><mo>(</mo><mfrac><mrow><mi>\u03c3</mi><msubsup><mi>\u03c3</mi><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup></mrow><msqrt><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup><mo>+</mo><msubsup><mrow><msup><mi>\u03c3</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msubsup></msqrt></mfrac><mo>)</mo></mrow><mrow><mn>3</mn></mrow></msup></mstyle></mtd><mtd></mtd></mlabeledtr><mlabeledtr><mtd id=\"mjx-eqn-16_4\"><mtext>(16)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext><mspace width=\"thinmathspace\"></mspace></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mi>c</mi><mrow><mi>n</mi></mrow></msub><msup><mrow><mo>[</mo><mn>2</mn><mi>\u03c0</mi><mo stretchy=\"false\">(</mo><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup><mo>+</mo><msubsup><mrow><msup><mi>\u03c3</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">)</mo><mo>]</mo></mrow><mrow><mo>\u2212</mo><mn>3</mn><mrow><mo>/</mo></mrow><mn>2</mn></mrow></msup><mo>.</mo></mstyle></mtd><mtd></mtd></mlabeledtr></mtable></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Note that setting <math id=\"inf112\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>\u03c3</mi><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext><mrow><mover><mi mathvariant=\"normal\">A</mi><mo>\u02da</mo></mover></mrow></mrow></mstyle></math> in (<a href=\"#equ1\">Equations 14\u201316</a>) recovers the expression for the initial map in <a href=\"#equ1\">Equation 11</a>, i.e. <math id=\"inf113\"><mrow><mrow><msub><mi>V</mi><mn>0</mn></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM142\" mathvariant=\"bold\">\ud835\udc2b</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM143\" mathvariant=\"bold\">\ud835\udc2b</mi><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></math>. On the other hand, increasing <math id=\"inf114\"><mi>\u03c3</mi></math> results in an increase in the widths of the component Gaussians, and leads in turn to an increase in the range of the MDFF force <math id=\"inf115\"><mrow><msub><mi mathvariant=\"bold\">\ud835\udc05</mi><mi>\u03c3</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM144\" mathvariant=\"bold\">\ud835\udc2b</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math>, where"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ13", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnalign=\"right left right left right left right left right left right left\" columnspacing=\"0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em\" displaystyle=\"true\" rowspacing=\"3pt\"><mlabeledtr><mtd id=\"mjx-eqn-17_2\"><mtext>(17)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><msub><mrow><mi mathvariant=\"bold\">F</mi></mrow><mrow><mi>\u03c3</mi></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext></mstyle></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo>\u2212</mo><mi mathvariant=\"normal\">\u2207</mi><mspace width=\"thinmathspace\"></mspace><msub><mi>V</mi><mrow><mi>\u03c3</mi></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo stretchy=\"false\">)</mo><mspace width=\"thinmathspace\"></mspace></mstyle></mtd><mtd></mtd></mlabeledtr><mlabeledtr><mtd id=\"mjx-eqn-18_2\"><mtext>(18)</mtext></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mtext>\u00a0</mtext><mo>=</mo><mtext>\u00a0</mtext></mstyle></mtd><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><munder><mo>\u2211</mo><mrow><mi>n</mi></mrow></munder><mfrac><msub><mi>C</mi><mrow><mi>n</mi></mrow></msub><mrow><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup><mo>+</mo><msubsup><mrow><msup><mi>\u03c3</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msubsup></mrow></mfrac><mi>exp</mi><mo>\u2061</mo><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo>\u2212</mo><msubsup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mrow><mo stretchy=\"false\">|</mo></mrow><msup><mrow><mo stretchy=\"false\">|</mo></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mo stretchy=\"false\">(</mo><msup><mi>\u03c3</mi><mrow><mn>2</mn></mrow></msup><mo>+</mo><msubsup><mrow><msup><mi>\u03c3</mi><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msup></mrow><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>)</mo></mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"bold\">r</mi></mrow><mo>\u2212</mo><msubsup><mrow><mi mathvariant=\"bold\">r</mi></mrow><mrow><mi>n</mi></mrow><mrow><mi mathvariant=\"normal\">\u2032</mi></mrow></msubsup><mo stretchy=\"false\">)</mo><mo>.</mo></mstyle></mtd><mtd></mtd></mlabeledtr></mtable></mrow></mstyle></math>"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s29", 
+                        "title": "2 MD simulation setup", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Unless otherwise stated, all simulations reported in the present study used the following MD parameters. MDFF simulations were run in vacuum, maintained at 300 K via a Langevin thermostat and employed a time step of 1 fs. Secondary structure restraints were imposed using NAMD\u2019s Extra Bonds function to prevent loss of secondary structure due to strong MDFF guiding forces."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "MD simulations were prepared using CHARMM-GUI (<a href=\"#bib29\">Jo et al., 2008</a>)\u00a0and run under NPT conditions, maintained at 303.15 K temperature and 1 atm pressure using a Langevin thermostat and barostat. All systems were parametrized using the CHARMM36 force field (<a href=\"#bib32\">Klauda et al., 2010</a>; <a href=\"#bib7\">Best et al., 2012</a>). Structures were solvated in explicit water (TIP3P model) boxes, with at least 15 \u00c5 separation between structure and water box boundaries. Particle-mesh Ewald electrostatics was used and the time step was 2 fs. For simulations of the reported structures of \u03b2-galactosidase, backbone atoms were held fixed while a minimization over 1000 time steps was performed, followed by 32-ns and 40-ns equilibration for the 3.2-\u00c5 and 2.2-\u00c5 structures, respectively. Following the equilibration step, production runs of 30 ns were performed for both structures."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the case of TRPV1, the channel was embedded in a membrane of standard lipid composition POPE, POPC, POPG at ratio 2:1:1. Initial runs involved minimization over 1000 steps and 1-ns equilibration of the lipid tails, with all other atoms fixed. In the following MD run, minimization was performed over 5000 steps and equilibration was performed for 3 ns, with protein backbone atoms held fixed. Finally, the entire system was equilibrated for a further 6.4 ns. During the equilibration, C-terminal residues 752 to 762 were harmonically restrained because a substantial C-terminal segment was missing in the structure."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s30", 
+                        "title": "3 Preparation of initial test structures", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The initial test structure of \u03b2-galactosidase was obtained by subjecting the reported structure (<a href=\"#bib5\">Bartesaghi et al., 2014</a>)\u00a0to a 4-ns MD simulation at a temperature of 300 K in vacuum and using secondary structure restraints. Trajectory frames recorded at 2-ps intervals were evaluated for backbone RMSDs with respect to the reported structure. A frame with an RMSD value of 7.6 \u00c5 (<a href=\"#fig2s2\">Figure 2\u2014figure supplement 2a</a>) and lowest global cross-correlation with respect to the reported map was picked to be the initial test structure. The structural quality measure of this model is provided in <a href=\"#tbl2\">Table 2</a>. A second search model was prepared by repeating the same protocol but at 1000 K. This search model is also characterized by an RMSD of 7.6 \u00c5 but now features a more distorted local structure as measured in terms of increased rotamer and Ramachandran outliers (<a href=\"#SD1-data\">Supplementary file 1F</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The initial test structure of TRPV1 was also derived from a reported structure (<a href=\"#bib41\">Liao et al., 2013</a>). In order to render the disjointed reported structure contiguous for correct structural dynamics during simulation, the missing loop region (residues 503 to 506) was added by hand. Additionally, the substantial ankyrin repeat region (residues 111 to 198) was removed because the corresponding density was missing from the map. For the purpose of testing the robustness of cMDFF and contrasting its performance with that of direct MDFF, the structure was distorted (see <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2b</a>) during an interactive MD (<a href=\"#bib62\">Stone et al., 2001</a>; <a href=\"#bib24\">Grayson et al., 2003</a>)\u00a0simulation, subjecting residues 199 to 430 in one subunit\u2019s extramembrane domain to a series of transformations, consisting roughly of a polar angle change of 15\u00b0 toward the cytoplasmic pole followed by an azimuthal rotation of 30\u00b0, so that the backbone RMSD of the transformed region was about 22 \u00c5 relative to the original structure."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s31", 
+                        "title": "4 Protocol efficiency", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the present study, the convergence of fitting results of TRPV1 and \u03b2-galactosidase for different protocols can be evaluated through RMSD value employing the reported de novo structures as reference. <a href=\"#fig2s3\">Figure 2\u2014figure supplement 3</a> shows the time evolution of RMSD for cMDFF, ReMDFF, and direct MDFF for the two proteins, It should be noted that the plots do not include the final refinement step, which is the same across all three protocols."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "cMDFF and ReMDFF can be seen to reach similar RMSD levels, outperforming direct MDFF. ReMDFF converges more quickly than cMDFF in either example. Of the 6 replicas employed for the ReMDFF of TRPV1 two resulted in poorly fitted structures, having become trapped in density minima even after exchanging with the lowest-resolution map chosen with <math id=\"inf116\"><mi>\u03c3</mi></math> = 5 \u00c5. All replicas can be monitored during the simulation and poorly fitted ones can be discarded by a user. It is also worth noting that the region of the TRPV1 map to which both cMDFF and ReMDFF successfully fitted the model, characterizes a diverse range of local resolutions from 4 \u00c5 to 6 \u00c5 challenging thus the conformational sampling capability of any flexible fitting technique. For the same reason, this region was avoided during Rosetta refinements of TRPV1 (<a href=\"#bib18\">DiMaio et al., 2015</a>)\u00a0but is addressed now via MDFF."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s32", 
+                        "title": "5 Global vs. local measures of fit", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The cross-correlation coefficient calculated over an entire structure, termed global cross-correlation coefficient (GCC), has been a popular indicator of goodness-of-fit of a structure to a corresponding EM density map. However, averaging over the entire structure smears out potentially useful local structure information and in some cases, can be misleading (see <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>), since GCC cannot distinguish between correct and wrong assignments of residues to a given map region as long as the residues are equally well fitted."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Local measures of fit allow one to assess every part of the structure individually. For example, local cross-correlation coefficients (LCCs) (<a href=\"#bib64\">Stone et al., 2014</a>)\u00a0were tracked over the course of the cMDFF simulations of \u03b2-galactosidase and TRPV1 (<a href=\"#fig2s4\">Figure 2\u2014figure supplement 4</a>). The improvement in LCC of the majority of residues in each case lends greater confidence in the fitting result. At the same time, residues that have relatively lower LCCs can be identified and given attention (<a href=\"#bib64\">Stone et al., 2014</a>; <a href=\"#bib48\">McGreevy et al., 2016</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s33", 
+                        "title": "6 Fourier shell coefficients", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Fourier Shell Coefficients (FSCs) can be used as a means of evaluating quality of fit by comparing the degree of similarity between the original map and a simulated map derived from the structure to be evaluated, using the simulated map feature of VMD\u2019s MDFF package (<a href=\"#bib71\">Trabuco et al., 2008</a>, <a href=\"#bib72\">2009</a>) and the same voxel size as the original map."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the present study, FSC curves for fitted TRPV1 and \u03b2-galactosidase structures were calculated via the FSC operation in SPIDER (<a href=\"#bib59\">Shaikh et al., 2008</a>)\u00a0using a shell width of 0.5 reciprocal space units, and resolution cutoff of half the voxel size. In the case of TRPV1, both the full structure and MDFF-fitted region were evaluated. The latter was obtained by applying a mask of the region around residues 199 to 430 in the fitted structure to the simulated map, and in the reported structure to the original map."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As a means of summarizing comparisons by FSC, other studies have used 'integrated FSCs', a numerical measure obtained by integrating under the FSC plot within a predefined resolution interval. Two integrated FSC measures, corresponding to the intervals 3.4 \u00c5 to 10 \u00c5 and 5 \u00c5 to 10 \u00c5, were obtained in the present study and tabulated in <a href=\"#tbl1\">Table 1</a>, and <a href=\"#SD1-data\">Supplementary file 1A and 1C</a>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s34", 
+                        "title": "7 Other simulations of \u03b2-galactosidase", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Beyond the simulations reported in <a href=\"#tbl1\">Table 1</a>, further simulations were performed to explore the performance of MDFF within the contexts of further types of analyses. The first of these simulations was a direct MDFF simulation of the reported \u03b2-galactosidase structure, fitting only backbone atoms to the 3.2-\u00c5 map. The fitted structure was compared to the 'refined de novo' structure reported in Results. It was found that EMRinger scores were lower at 2.35 when only backbone atoms were fitted, compared to 4.23 when non-hydrogen atoms were fitted. This result suggests that even if the backbone is correctly placed, the MD force fields alone (i.e. CHARMM36 (<a href=\"#bib7\">Best et al., 2012</a>)\u00a0here) are incapable of providing sidechain geometries consistent with the map. Refinement of the sidechains will therefore require explicit fitting to the density, above and beyond the orientations captured by the force fields alone."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the second simulation, the resulting structure of the cMDFF simulation was subjected to an equilibrium MD simulation in explicit solvent. As shown in <a href=\"#fig2s6\">Figure 2\u2014figure supplement 6</a>, the equilibrium RMSD fluctuations during this simulation ranged between 3.0 \u00c5 to 3.4 \u00c5 of the starting structure. It is worth noting that these RMSD values agree well with the 3.2 \u00c5 resolution limit of the \u03b2-galactosidase map. Thus, the result indicates that uncertainties of the map resolution reflects quantitatively the structural variations of the cMDFF-fitted \u03b2-galactosidase model at the room temperature. Consequently, this model is representative of the thermodynamic ensemble that the EM map characterizes. Further analysis of the quality of the 3.2-\u00c5 \u03b2-galactosidase model is presented in the Model Validation subsection of Results."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The third set of simulations takes advantage of a unique opportunity, presented by the availability of two different maps of the same structure, at resolutions of 3.2 \u00c5 and 2.2 \u00c5, to compare the results of fitting \u03b2-galactosidase to maps of different resolutions. The reported structures were subjected to direct MDFF simulation for 0.7 and 1 ns for the 3.2-\u00c5 and 2.2-\u00c5 models, respectively. The RMSF for each residue is calculated over consecutive 10-ps windows during the fitting. The RMSF values for all residues, including those for the PETG binding pockets (<a href=\"#bib6\">Bartesaghi et al., 2015</a>)\u00a0are plotted in <a href=\"#fig4s4\">Figure 4\u2014figure supplement 4</a>, reflecting smaller fluctuations during the fitting to the 2.2-\u00c5 map than in the 3.2-\u00c5 one. The relationship between fluctuation and map quality is examined in greater detail in Results, and imply that the RMSF of the fitted structure correlates negatively with the resolution of the corresponding map. Thus, the smaller fluctuations of the 2.2 \u00c5 structure than those of the 3.2 \u00c5 one further validate our proposed RMSF-map quality relationship of <a href=\"#fig4\">Figure 4</a>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s35", 
+                        "title": "8 MDFF refinement for TRPV1", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Similar to the \u03b2-galactosidase results in <a href=\"#tbl1\">Table 1</a>, the refinement of TRPV1 was significantly better with cMDFF and ReMDFF than with direct MDFF, but starting with much poorer search models than what were employed for the \u03b2-galactosidase refinements. The TRPV1 refinement results are summarized in <a href=\"#SD1-data\">Supplementary file 1A</a>: (<b>i</b>) RMSD of the fitted structure with respect to the reported de novo structure is 7.9 \u00c5 for direct MDFF, higher than the 2.4 \u00c5 and 2.5 \u00c5 RMSD values for cMDFF and ReMDFF, respectively (<a href=\"#fig2s3\">Figure 2\u2014figure supplement 3b</a>); (<b>ii</b>) EMRinger scores for cMDFF and ReMDFF are 1.68 and 1.99 respectively, higher than the 1.51 score obtained for direct MDFF; (<b>iii</b>) MolProbity scores (<a href=\"#bib12\">Chen et al., 2010</a>)\u00a0are 2.4 and 2.5 for cMDFF and ReMDFF, smaller than the 7.9 score for direct MDFF, implying fewer, less severe steric clashes and fewer poor rotamers in the former than in the latter; (<b>iv</b>) integrated FSC (iFSC2, for the range 3.4-10 \u00c5 obtained as described in Appendix 1 - Section 6 above), attains higher values of 2.62 and 2.75 for cMDFF and ReMDFF respectively, than the 1.79 value for direct MDFF. iFSC1, corresponding to the lower resolution range of 5-10 \u00c5 is found to behave similarly to iFSC2; and (<b>v</b>) GCCs improve from an initial value of 0.16 to 0.50, 0.54 and 0.53 for direct, cMDFF, and ReMDFF protocols, respectively. Similarly, typical residue LCC values improve from 0 to 0.5 or higher, as shown in <a href=\"#fig2s4\">Figure 2\u2014figure supplement 4b</a>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Measures of structural quality for the above fits are tabulated in <a href=\"#SD1-data\">Supplementary file 1B</a>. Cross-validation with half-maps was also performed on the cMDFF structure, as per the \u03b2-galactosidase simulations, to ensure that it was not overfitted. As in the case of \u03b2-galactosidase, iFSC and EMRinger scores for direct and cross comparisons were similar. FSC analysis results are described in Appendix 1 - Section 11."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s36", 
+                        "title": "9 MDFF fitting of TRPV1 TM domain", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Noting that the transmembrane (TM) region of the TRPV1 map is better resolved than the map for the extramembrane region, we performed 200 ps of MDFF on a truncated TM portion of the structure (residues 381 to 695) to characterize the performance of MDFF in the transmembrane region alone."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The TM region had previously been refined employing Rosetta tools (<a href=\"#bib37\">Leaver-Fay et al., 2011</a>),\u00a0providing an opportunity for comparison. Two MDFF simulations were performed, the first with only non-hydrogen sidechain atoms coupled to the density and harmonic restraints holding backbone atoms in the configuration of the reported structure (<a href=\"#bib41\">Liao et al., 2013</a>)\u00a0and another with all non-hydrogen atoms coupled to the density and the backbone restraints removed."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "MDFF characteristics for fitting the isolated TM region of TRPV1 are summarized in <a href=\"#SD1-data\">Supplementary file 1C</a>. Quality of fit measures, namely EMRinger and iFSC, for the backbone-restrained simulations were lower than those of the Rosetta-derived structure. However, MolProbity scores for the MDFF-derived structures are better than those of Rosetta. Allowing the backbone to be fitted into the map without restraints from the reported structure substantially improved the quality of fit measures so that they are comparable to those of Rosetta\u2019s, while maintaining a lower MolProbity score."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s37", 
+                        "title": "10 RMSF as a local measure of map quality", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Per-residue Root mean square fluctuation (RMSF) has been found to be a good local measure of model fit, decreasing in relation to the increasing quality of fit over a cMDFF simulation, as illustrated in <a href=\"#fig4s1\">Figure 4\u2014figure supplement 1</a>. In addition to being a measure of fit, RMSF values can also be used for the analysis of local map quality. When monitored during MDFF refinement simulations, RMSF values serve as a good measure of local map quality, decreasing linearly with increase in local map resolution, as demonstrated in a number of test cases (<a href=\"#fig4\">Figure 4</a>), including the 20S proteasome (<a href=\"#fig4s3\">Figure 4\u2014figure supplement 3</a>). In contrast to RMSF, other local measures of fit, such as LCC and EMRinger scores, are not necessarily good indicators of local map quality, as is evident from their poor correlation with local map resolution in <a href=\"#fig4s2\">Figure 4\u2014figure supplement 2</a>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s38", 
                         "title": "11 Cross-validation of MDFF-fitted structures", 
                         "content": [

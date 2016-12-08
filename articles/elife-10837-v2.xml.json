@@ -3687,6 +3687,386 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s13", 
+                        "title": "Derivation of active fluid theory", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We introduce a theoretical description of a confined active microtubule-motor gel immersed in a Newtonian fluid. We obtain generic equations of motion for this system closely following the logic outlined in (<a href=\"#bib7\">Doi and Onuki, 1992</a>; <a href=\"#bib19\">Joanny et al., 2007</a>). This generic description is augmented by including a density-dependent active stress, which is derived from a minimal microscopic description of microtubule-dynein interactions. Here, we present the equations of motion for the one dimensional system."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s14", 
+                                "title": "Generic theory for an immersed active gel", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We begin by stating the conservation laws an active gel permeated by a Newtonian fluid obeys. The system shall be incompressible such that the total density <math id=\"inf156\"><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub><mo>=</mo><mi>\u03c1</mi><mo>+</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub></math> is a constant. Here <math id=\"inf157\"><mi>\u03c1</mi></math> and <math id=\"inf158\"><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub></math> are the densities of gel and fluid, respectively. The gel density <math id=\"inf159\"><mi>\u03c1</mi></math> obeys the continuity equation,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "label": "(7)", 
+                                        "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>t</mi></mrow></msub><mi>\u03c1</mi><mo>=</mo><mo>-</mo><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf160\"><mi>v</mi></math> is the velocity of the gel. Similarly the fluid permeating the gel obeys,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "label": "(8)", 
+                                        "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>t</mi></mrow></msub><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub><mo>=</mo><mo>-</mo><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf161\"><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub></math> and <math id=\"inf162\"><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub></math> are the fluid density and velocity fields, respectively. Since the overall system is incompressible <math id=\"inf163\"><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mi>v</mi><mo>+</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>.</mo></math> Force balance in the gel requires"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "label": "(9)", 
+                                        "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><msup><mrow><mi>\u03c3</mi></mrow><mrow><mi>g</mi><mi>e</mi><mi>l</mi></mrow></msup><mo>=</mo><mover accent=\"true\"><mrow><mi>\u03b3</mi></mrow><mo>\u0304</mo></mover><mi>v</mi><mo>+</mo><mi>\u03bb</mi><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><mi>v</mi><mo>-</mo><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></mfenced><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the gel stress <math id=\"inf164\"><msup><mrow><mi>\u03c3</mi></mrow><mrow><mi>g</mi><mi>e</mi><mi>l</mi></mrow></msup><mo>=</mo><mi>\u03b7</mi><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mi>v</mi><mo>-</mo><mi>\u03c3</mi><mo>+</mo><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mo>\u2215</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow><mi>P</mi></math> consists of a viscous stress <math id=\"inf165\"><mi>\u03b7</mi><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mi>v</mi></math>, an active stress <math id=\"inf166\"><mi>\u03c3</mi></math>, and a hydrostatic pressure <math id=\"inf167\"><mi>P</mi></math>. The friction coefficient <math id=\"inf168\"><mover accent=\"true\"><mrow><mi>\u03b3</mi></mrow><mo>\u0304</mo></mover></math> quantifies the momentum transfer between the gel and its confinement and <math id=\"inf169\"><mi>\u03bb</mi></math> quantifies the momentum transfer between and the gel and the fluid. The momentum continuity equation of the permeating fluid is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "label": "(10)", 
+                                        "mathml": "<math><mn>0</mn><mo>=</mo><msub><mrow><mi>\u03b7</mi></mrow><mrow><mi>f</mi></mrow></msub><msubsup><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msubsup><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub><mo>-</mo><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mfenced close=\"]\" open=\"[\" separators=\"\"><mrow><mrow><mo>(</mo><mrow><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub><mo>\u2215</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow><mi>P</mi></mrow></mfenced><mo>+</mo><mi>\u03bb</mi><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><mi>v</mi><mo>-</mo><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></mfenced><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf170\"><msub><mrow><mi>\u03b7</mi></mrow><mrow><mi>f</mi></mrow></msub></math> is the fluid viscosity. In our experiments, changing the height of the chamber does not appreciably change the timescale <math id=\"inf171\"><mi>\u03c4</mi></math> of the observed contractions, see <a href=\"#fig3\">Figure 3F</a>. Furthermore, there is little observed motion of the extract surrounding the film. Presumably <math id=\"inf172\"><msub><mrow><mi>v</mi></mrow><mrow><mi>f</mi></mrow></msub><mo>\u226a</mo><mi>v</mi></math> since the system is relatively dilute, i.e. <math id=\"inf173\"><mi>\u03c1</mi><mo>\u226a</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub></math>, and the length-scale <math id=\"inf174\"><msqrt><mrow><msub><mrow><mi>\u03b7</mi></mrow><mrow><mi>f</mi></mrow></msub><mo>\u2215</mo><mi>\u03bb</mi></mrow></msqrt></math> is large compared to the chamber height. We thus simplify <a href=\"#equ10\">Equation (9)</a> to"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ12", 
+                                        "label": "(11)", 
+                                        "mathml": "<math><mi>\u03b7</mi><msubsup><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mi>v</mi><mo>-</mo><mi>\u03b3</mi><mi>v</mi><mo>=</mo><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>x</mi></mrow></msub><mi>\u03c3</mi><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf175\"><mi>\u03b3</mi><mo>=</mo><mi>\u03bb</mi><mo>+</mo><mover accent=\"true\"><mrow><mi>\u03b3</mi></mrow><mo>\u0304</mo></mover></math>. <a href=\"#equ12\">Equation (11)</a> is the force balance equation we henceforth use for the gel to quantitatively capture the experimental dynamics. Note that <math id=\"inf176\"><mi>\u03c1</mi><mo>\u226a</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>f</mi></mrow></msub></math> also allowed us to neglect the hydrostatic pressure in the gel. We complement <a href=\"#equ12\">Equation (11)</a> by the stress boundary condition at the edges of the film at <math id=\"inf177\"><mi>x</mi><mo>=</mo> <mo>\u00b1</mo> <mi>W</mi><mrow><mo>(</mo><mrow><mi>t</mi></mrow><mo>)</mo></mrow><mo>\u2215</mo><mn>2</mn></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ13", 
+                                        "label": "(12)", 
+                                        "mathml": "<math><msub><mfenced close=\"]\" open=\"[\"><mrow><mi>\u03b7</mi><msub><mi>\u2202</mi><mi>x</mi></msub><mi>v</mi><mo>-</mo><mi>\u03c3</mi></mrow></mfenced><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>\u00b1</mo><mi>W</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mn>2</mn></mfrac></mrow></msub><mo>=</mo><mn>0</mn><mo>.</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The width of the film obeys"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ14", 
+                                        "label": "(13)", 
+                                        "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>t</mi></mrow></msub><mi>W</mi><mrow><mo>(</mo><mrow><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>v</mi><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><mi>W</mi><mrow><mo>(</mo><mrow><mi>t</mi></mrow><mo>)</mo></mrow><mo>\u2215</mo><mn>2</mn></mrow></mfenced><mo>-</mo><mi>v</mi><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><mo>-</mo><mi>W</mi><mrow><mo>(</mo><mrow><mi>t</mi></mrow><mo>)</mo></mrow><mo>\u2215</mo><mn>2</mn></mrow></mfenced><mo>.</mo></math>"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s15", 
+                                "title": "Active stresses from dynein-mediated microtubule interactions", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We next seek to obtain an expression for the active stress by coarse-graining a microscopic model of interactions between dynein molecular motors and microtubules. Here, we assume that dynein builds up near microtubule minus ends as previously suggested (<a href=\"#bib8\">Elting et al., 2014</a>; <a href=\"#bib45\">Surrey et al., 2001</a>), and hence forces are exchanged between microtubules through the microtubules\u2019 minus ends. We introduce the positions of microtubule minus ends <math id=\"inf178\"><msub><mrow><mi>x</mi></mrow><mrow><mi>i</mi></mrow></msub></math>, such that the film density can be written as"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ15", 
+                                        "label": "(14)", 
+                                        "mathml": "<math><mi>\u03c1</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><munder><mo>\u2211</mo><mi>i</mi></munder><mi>\u03b4</mi><mrow><mo>(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></mrow><mo>.</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The force exerted by the <math id=\"inf179\"><mi>i</mi></math>-th on the <math id=\"inf180\"><mi>j</mi></math>-th filament is <math id=\"inf181\"><msub><mrow><mi>F</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math>, with <math id=\"inf182\"><msub><mrow><mi>F</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mo>-</mo><msub><mrow><mi>F</mi></mrow><mrow><mi>j</mi><mi>i</mi></mrow></msub></math> as required by momentum conservation. The active stress <math id=\"inf183\"><mi>\u03c3</mi></math> generated in this context is defined by the force balance equation"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ16", 
+                                        "label": "(15)", 
+                                        "mathml": "<math><msub><mi>\u2202</mi><mi>x</mi></msub><mi>\u03c3</mi><mo>=</mo><munder><mo>\u2211</mo><mi>i</mi></munder><mi>\u03b4</mi><mrow><mo>(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></mrow><munder><mo>\u2211</mo><mi>j</mi></munder><msub><mi>F</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "up to an arbitrary constant of integration. Note that averaging <a href=\"#equ16\">Equation (15)</a> over an appropriate mesoscopic volume yields the well-known Kirkwood formula. To model microtubule-dynein interactions, we propose that <math id=\"inf184\"><msub><mrow><mi>F</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mrow><mi>A</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mrow><mi>R</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math>, where <math id=\"inf185\"><msub><mrow><mi>A</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> is a dynein-mediated attractive force between minus ends, and <math id=\"inf186\"><msub><mrow><mi>R</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> is a repulsive force from steric interactions between nearby filaments (<a href=\"#fig4\">Figure 4</a>). Generically, <math id=\"inf187\"><msub><mrow><mi>A</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> and <math id=\"inf188\"><msub><mrow><mi>R</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> depend on the relative positions and orientations of microtubules <math id=\"inf189\"><mi>i</mi></math> and <math id=\"inf190\"><mi>j</mi></math>. Since we are concerned with a disordered assembly of microtubules in which all orientations occur with the same likelihood it is sufficient for our purposes to only think of microtubule positions, and orientation effects average out. The average attractive force <math id=\"inf191\"><msub><mrow><mi>A</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> that motors bound to the minus end of filament <math id=\"inf192\"><mi>i</mi></math> exert on filament <math id=\"inf193\"><mi>j</mi></math> can be expressed locally as the product"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ17", 
+                                        "label": "(16)", 
+                                        "mathml": "<math><msub><mrow><mi>A</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mrow><mo>(</mo><mrow><msub><mrow><mi>P</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mrow><mi>P</mi></mrow><mrow><mi>j</mi><mi>i</mi></mrow></msub></mrow><mo>)</mo></mrow><msub><mrow><mi>a</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf194\"><msub><mrow><mi>P</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> is the probability that a motor connects the minus end of filament <math id=\"inf195\"><mi>i</mi></math> to filament <math id=\"inf196\"><mi>j</mi></math> and <math id=\"inf197\"><msub><mrow><mi>a</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> is the force which the motor exerts if a connection is made. Since each dynein can link at most two filaments,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ18", 
+                                        "label": "(17)", 
+                                        "mathml": "<math><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>m</mi><mfrac><mrow><mn>1</mn><mo>-</mo><mi>\u0398</mi><mrow><mo>(</mo><mfenced close=\"|\" open=\"|\"><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><mo>\u00a0</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfenced><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><mi>\u0393</mi><mo>)</mo></mrow></mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mrow><mi>k</mi><mo>\u2260</mo><mi>i</mi></mrow></munder><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>\u0398</mi><mrow><mo>(</mo><mfenced close=\"|\" open=\"|\"><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><mo>\u00a0</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></mfenced><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><mi>\u0393</mi><mo>)</mo></mrow><mo>)</mo></mrow></mstyle></mfrac><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf198\"><mi>m</mi></math> is the fraction of filaments that carry an active motor at their minus end and <math id=\"inf199\"><mi>\u0393</mi></math> is a typical interaction distance. Here, <math id=\"inf200\"><mi>\u0398</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow></math> denotes the Heaviside function which is equal to one for positive <math id=\"inf201\"><mi>x</mi></math> and zero otherwise. If <math id=\"inf202\"><msub><mrow><mi>a</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> is an odd function of the separation vector <math id=\"inf203\"><msub><mrow><mi>x</mi></mrow><mrow><mi>i</mi></mrow></msub><mo>-</mo><msub><mrow><mi>x</mi></mrow><mrow><mi>j</mi></mrow></msub></math>, it can be expressed by the series <math id=\"inf204\"><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><munder><munder><mo>\u2211</mo><mrow><mi>n</mi><mo>\u2265</mo><mn>1</mn></mrow></munder><mrow></mrow></munder><msub><mi>A</mi><mi>n</mi></msub><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math>. Using <a href=\"#equ15\">Equation (14)</a>, the force density field generated by motor contractions becomes to lowest order in <math id=\"inf205\"><mi>\u0393</mi></math>,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ19", 
+                                        "label": "(18)", 
+                                        "mathml": "<math><munder><mrow><mo>\u2211</mo><mo>\u00a0</mo></mrow><mi>i</mi></munder><mi>\u03b4</mi><mo>\u00a0</mo><mo>(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo><mo>\u00a0</mo><munder><mrow><mo>\u2211</mo><mo>\u00a0</mo></mrow><mi>j</mi></munder><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>m</mi><msub><mi>A</mi><mn>1</mn></msub><mfrac><mrow><mn>2</mn><msup><mi>\u0393</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac><msub><mo>\u2202</mo><mi>x</mi></msub><mi>\u03c1</mi><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo><mi>O</mi><mo>(</mo><msup><mi>\u0393</mi><mn>4</mn></msup><mo>)</mo><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which corresponds to an active stress contribution <math id=\"inf206\"><mrow><mo>(</mo><mrow><mn>2</mn><mo>\u2215</mo><mn>3</mn></mrow><mo>)</mo></mrow><mi>m</mi><msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub><msup><mrow><mi>\u0393</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>\u03c1</mi></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We next discuss the average steric force that filament <math id=\"inf207\"><mi>i</mi></math> exerts on filament <math id=\"inf208\"><mi>j</mi></math>. Given the force <math id=\"inf209\"><msub><mrow><mi>r</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></math> of a collision event we find"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ20", 
+                                        "label": "(19)", 
+                                        "mathml": "<math><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>m</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi>\u0398</mi><mo>(</mo><mo>\u00a0</mo><mfenced close=\"|\" open=\"|\"><mrow><mo>\u00a0</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>\u00a0</mo></mrow></msub><mo>-</mo><mo>\u00a0</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>\u00a0</mo></mrow></msub></mrow></mfenced><mo>\u00a0</mo><mo>-</mo><mi>\u0393</mi><mo>)</mo><mo>)</mo><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>.</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#equ20\">Equation (19)</a> is linear in the motor density <math id=\"inf210\"><mi>m</mi></math>, since only filaments that are being actively moved will sterically displace their neighbors. Note that here we chose the typical interaction distance <math id=\"inf211\"><mi>\u0393</mi></math> to be the same in <a href=\"#equ20\">Equation (19)</a> and <a href=\"#equ17\">Equation (16)</a> for simplicity. If <math id=\"inf212\"><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><munder><munder><mo>\u2211</mo><mrow><mi>n</mi><mo>\u2265</mo><mn>1</mn></mrow></munder><mrow></mrow></munder><msub><mi>R</mi><mi>n</mi></msub><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math> is an odd function of the displacement between the microtubule ends <math id=\"inf213\"><mi>i</mi></math> and <math id=\"inf214\"><mi>j</mi></math> the force density field generated by steric interactions is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ21", 
+                                        "label": "(20)", 
+                                        "mathml": "<math><munder><mrow><mo>\u2211</mo><mo>\u00a0</mo></mrow><mi>i</mi></munder><mi>\u03b4</mi><mo>\u00a0</mo><mo>(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo><mo>\u00a0</mo><munder><mrow><mo>\u2211</mo><mo>\u00a0</mo></mrow><mi>j</mi></munder><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>m</mi><msub><mi>R</mi><mn>1</mn></msub><mfrac><mrow><mn>2</mn><msup><mi>\u0393</mi><mn>3</mn></msup></mrow><mn>3</mn></mfrac><mi>\u03c1</mi><msub><mo>\u2202</mo><mi>x</mi></msub><mi>\u03c1</mi><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo><mi>O</mi><mo>(</mo><msup><mi>\u0393</mi><mn>5</mn></msup><mo>)</mo><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which corresponds to an active stress contribution <math id=\"inf215\"><mi>m</mi><msub><mrow><mi>R</mi></mrow><mrow><mn>1</mn></mrow></msub><msup><mrow><mi>\u0393</mi></mrow><mrow><mn>3</mn></mrow></msup><msup><mrow><mi>\u03c1</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>\u2215</mo><mn>3</mn></math>. The total active stress is thus given by,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ22", 
+                                        "label": "(21)", 
+                                        "mathml": "<math><mi>\u03c3</mi><mo>=</mo><mi>s</mi><mi>\u03c1</mi><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mo>-</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "with <math id=\"inf216\"><mi>s</mi><mo>=</mo><mo>-</mo><mi>m</mi><msub><mrow><mi>R</mi></mrow><mrow><mn>1</mn></mrow></msub><msup><mrow><mi>\u0393</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>\u2215</mo><mn>3</mn></math> and <math id=\"inf217\"><msub><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>=</mo><mo>-</mo><mn>2</mn><msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>\u2215</mo><mrow><mo>(</mo><mrow><msub><mrow><mi>R</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>\u0393</mi></mrow><mo>)</mo></mrow></math>. Together with <a href=\"#equ8 equ12 equ22\">Equations (7,11,21)</a> are the equations of motions of our system."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s16", 
+                        "title": "Scaling analysis of the equations of motion", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We asked how the characteristic time of contractions scales as a function of the width <math id=\"inf218\"><msub><mrow><mi>W</mi></mrow><mrow><mn>0</mn></mrow></msub></math> of the confining chamber, according to our theory. For this, we rewrite the equations of motion, <a href=\"#equ8 equ12\">Equations (7,11)</a>, in dimensionless form"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ23", 
+                                "label": "(22)", 
+                                "mathml": "<math><msup><mi>\u03b4</mi><mn>2</mn></msup><msubsup><mi>\u2202</mi><mover><mi>x</mi><mo>^</mo></mover><mn>2</mn></msubsup><mover><mi>v</mi><mo>^</mo></mover><mo>-</mo><mover><mi>v</mi><mo>^</mo></mover><mo>=</mo><msub><mi>\u2202</mi><mover><mi>x</mi><mo>^</mo></mover></msub><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>-1))</mtext></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ24", 
+                                "label": "(23)", 
+                                "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>t</mi></mrow><mo>^</mo></mover></mrow></msub><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>^</mo></mover><mo>=</mo><mo>-</mo><msub><mrow><mi>\u2202</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>x</mi></mrow><mo>^</mo></mover></mrow></msub><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>^</mo></mover><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>^</mo></mover></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf219\"><mover accent=\"true\"><mrow><mi>x</mi></mrow><mo>^</mo></mover><mo>=</mo><mi>x</mi><mo>\u2215</mo><msub><mrow><mi>W</mi></mrow><mrow><mn>0</mn></mrow></msub></math>, <math id=\"inf220\"><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>^</mo></mover><mo>=</mo><mi>v</mi><mi>T</mi><mo>\u2215</mo><msub><mrow><mi>W</mi></mrow><mrow><mn>0</mn></mrow></msub></math>, <math id=\"inf221\"><mi>\u03b4</mi><mo>=</mo><mi>l</mi><mo>\u2215</mo><msub><mi>W</mi><mn>0</mn></msub></math>, <math id=\"inf222\"><mi>l</mi><mo>=</mo><msqrt><mi>\u03b7</mi><mo>\u2215</mo><mi>\u03b3</mi></msqrt></math> and <math id=\"inf223\"><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>^</mo></mover><mo>=</mo><mi>\u03c1</mi><mo>\u2215</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow></msub></math> and <math id=\"inf224\"><mi>T</mi><mo>=</mo><mi>\u03b3</mi><msubsup><mrow><mi>W</mi></mrow><mrow><mn>0</mn></mrow><mrow><mn>2</mn></mrow></msubsup><mo>\u2215</mo><mrow><mo>(</mo><mrow><mi>s</mi><msubsup><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow><mrow><mn>2</mn></mrow></msubsup></mrow><mo>)</mo></mrow></math>. The boundary condition then becomes"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ25", 
+                                "label": "(24)", 
+                                "mathml": "<math><msub><mfenced close=\"]\" open=\"[\"><mrow><msub><mi>\u2202</mi><mover><mi>x</mi><mo>^</mo></mover></msub><mover><mi>v</mi><mo>^</mo></mover><mo>-</mo><mfrac><mn>1</mn><msup><mi>\u03b4</mi><mn>2</mn></msup></mfrac><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>-1))</mtext></mrow></mfenced><mrow><mover><mi>x</mi><mo>^</mo></mover><mo>=</mo><mfrac><mrow><mo>\u00b1</mo><mover><mi>w</mi><mo>^</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mn>2</mn></mfrac></mrow></msub><mo>=</mo><mn>0</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "with <math id=\"inf225\"><mover><mi>w</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mi>W</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2215</mo><msub><mi>W</mi><mn>0</mn></msub></math>. To further simplify our analysis, we move to the 'Lagrangian' frame defined by <math id=\"inf226\"><mi>\u03c7</mi><mo>=</mo><mover><mi>x</mi><mo>^</mo></mover><mo>\u2215</mo><mrow><mo>(</mo><mn>2</mn><mover><mi>w</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>)</mo></mrow></math>, where the equations of motion become"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ26", 
+                                "label": "(25)", 
+                                "mathml": "<math><msup><mi>\u03b4</mi><mn>2</mn></msup><msubsup><mi>\u2202</mi><mi>\u03c7</mi><mn>2</mn></msubsup><mover><mi>v</mi><mo>^</mo></mover><mo>-</mo><mfrac><mrow><mover><mi>w</mi><mo>^</mo></mover><msup><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mover><mi>v</mi><mo>^</mo></mover><mo>=</mo><mfrac><mrow><mover><mi>w</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><msub><mi>\u2202</mi><mi>\u03c7</mi></msub><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>-1))</mtext></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ27", 
+                                "label": "(26)", 
+                                "mathml": "<math><msub><mo>\u2202</mo><mover><mi>t</mi><mo>^</mo></mover></msub><mover accent=\"true\"><mi>\u03c1</mi><mo>^</mo></mover><mo>=</mo><mo>-</mo><mfrac><mn>2</mn><mrow><mover accent=\"true\"><mi>w</mi><mo>^</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mfrac><msub><mo>\u2202</mo><mi>\u03c7</mi></msub><mfenced><mrow><mover accent=\"true\"><mi>\u03c1</mi><mo>^</mo></mover><mover accent=\"true\"><mi>v</mi><mo>^</mo></mover><mo>-</mo><mfrac><mrow><mi>X</mi><msub><mo>\u2202</mo><mover><mi>t</mi><mo>^</mo></mover></msub><mover accent=\"true\"><mi>w</mi><mo>^</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mn>2</mn></mfrac><mover accent=\"true\"><mi>\u03c1</mi><mo>^</mo></mover></mrow></mfenced><mo>-</mo><mover accent=\"true\"><mi>\u03c1</mi><mo>^</mo></mover><mfrac><mrow><msub><mo>\u2202</mo><mover><mi>t</mi><mo>^</mo></mover></msub><mover accent=\"true\"><mi>w</mi><mo>^</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mover accent=\"true\"><mi>w</mi><mo>^</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "with the boundary conditions"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ28", 
+                                "label": "(27)", 
+                                "mathml": "<math><msub><mfenced close=\"]\" open=\"[\"><mrow><msub><mi>\u2202</mi><mi>\u03c7</mi></msub><mover><mi>v</mi><mo>^</mo></mover><mo>-</mo><mfrac><mrow><mover><mi>w</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mn>2</mn><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></mfrac><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>(</mtext><mover><mi>p</mi><mo>^</mo></mover><mtext>-1))</mtext></mrow></mfenced><mrow><mi>\u03c7</mi><mo>=</mo><mo>\u00b1</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "This system of equations has steady-states for <math id=\"inf227\"><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>^</mo></mover><mo>=</mo><mn>1</mn></math>, <math id=\"inf228\"><mover><mi>w</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mi>w</mi></math>, <math id=\"inf229\"><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>^</mo></mover><mo>=</mo><mn>0</mn></math>, where <math id=\"inf230\"><mi>w</mi></math> is the final width of the film. We next linearize around this steady state, i.e., choose <math id=\"inf231\"><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>^</mo></mover><mo>=</mo><mn>1</mn><mo>+</mo><mi>\u03b5</mi><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover></math>, <math id=\"inf232\"><mover><mi>w</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mi>w</mi><mo>+</mo><mi>\u03b5</mi><mover><mi>w</mi><mo>\u00af</mo></mover></math>, <math id=\"inf233\"><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>^</mo></mover><mo>=</mo><mi>\u03b5</mi><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>\u0304</mo></mover></math>, where <math id=\"inf234\"><mi>\u03b5</mi></math> is a small quantity. To linear order the equations of motion then become"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ29", 
+                                "label": "(28)", 
+                                "mathml": "<math><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup><msubsup><mrow><mi>\u2202</mi></mrow><mrow><mi>\u03c7</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>\u0304</mo></mover><mo>-</mo><mfrac><mrow><msup><mrow><mi>w</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>4</mn></mrow></mfrac><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>\u0304</mo></mover><mo>=</mo><mfrac><mrow><mi>w</mi></mrow><mrow><mn>2</mn></mrow></mfrac><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>\u03c7</mi></mrow></msub><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ30", 
+                                "label": "(29)", 
+                                "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>t</mi></mrow><mo>^</mo></mover></mrow></msub><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover><mo>=</mo><mo>-</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mi>w</mi></mrow></mfrac><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>\u03c7</mi></mrow></msub><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>\u0304</mo></mover></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "and"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ31", 
+                                "label": "(30)", 
+                                "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mi>\u03c7</mi></mrow></msub><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>\u0304</mo></mover><mo>=</mo><mfrac><mrow><mi>w</mi></mrow><mrow><mn>2</mn><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover><mspace width=\"1em\"></mspace><mi>at</mi><mspace width=\"1em\"></mspace><mi>\u03c7</mi> <mo>\u00b1</mo> <mn>1</mn><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Using <a href=\"#equ29 equ30\">Equations (28,29)</a>, we find"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ32", 
+                                "label": "(31)", 
+                                "mathml": "<math><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup><msubsup><mrow><mi>\u2202</mi></mrow><mrow><mi>\u03c7</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mo>-</mo><mfrac><mrow><msup><mrow><mi>w</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>4</mn></mrow></mfrac></mrow></mfenced><msub><mrow><mi>\u2202</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>t</mi></mrow><mo>^</mo></mover></mrow></msub><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover><mo>=</mo><mo>-</mo><msubsup><mrow><mi>\u2202</mi></mrow><mrow><mi>\u03c7</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "and the boundary condition"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ33", 
+                                "label": "(32)", 
+                                "mathml": "<math><msub><mrow><mi>\u2202</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>t</mi></mrow><mo>^</mo></mover></mrow></msub><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover><mo>=</mo><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover><mspace width=\"1em\"></mspace><mi>at</mi><mspace width=\"1em\"></mspace><mi>\u03c7</mi> <mo>\u00b1</mo> <mn>1</mn><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We solve this equation by making the Ansatz <math id=\"inf235\"><mover><mi>\u03c1</mi><mo>\u00af</mo></mover><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><munderover><mo>\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>\u221e</mi></munderover><msub><mi>\u03c1</mi><mi>k</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>cos</mo><mfenced><mrow><mrow><mo>(</mo><mn>2</mn><mi>k</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mfrac><mi>\u03c0</mi><mn>2</mn></mfrac><mi>\u03c7</mi></mrow></mfenced><mo>+</mo><msub><mi>\u03c1</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></msup><mo>,</mo></math> and find"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ34", 
+                                "label": "(33)", 
+                                "mathml": "<math><msub><mi>A</mi><mi>k</mi></msub><msub><mover><mi>p</mi><mo>\u02d9</mo></mover><mi>k</mi></msub><mo>+</mo><msub><mi>B</mi><mi>k</mi></msub><msub><mi>\u03c1</mi><mi>k</mi></msub><mo>=</mo><msub><mi>C</mi><mi>k</mi></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></msup><mo>,</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "with <math id=\"inf236\"><msub><mrow><mi>A</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>=</mo><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mi>\u03c0</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>w</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced><mo>\u2215</mo><mn>4</mn></math>, <math id=\"inf237\"><msub><mrow><mi>B</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>=</mo><msup><mrow><mi>\u03c0</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>\u2215</mo><mn>4</mn></math> and <math id=\"inf238\"><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>=</mo><mo>-</mo><msub><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow></msub><msup><mrow><mi>w</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mrow><mo>(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mi>k</mi></mrow></msup><mo>\u2215</mo><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>\u03c0</mi><mrow><mo>(</mo><mrow><mn>2</mn><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mfenced></math>. Thus,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ35", 
+                                "label": "(34)", 
+                                "mathml": "<math><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mrow><msub><mrow><mi>B</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>\u2215</mo><msub><mrow><mi>A</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>-</mo><mn>1</mn><mo>\u2215</mo><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><msup><mrow><mi>e</mi></mrow><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></msup><mo>-</mo><msub><mrow><mi>K</mi></mrow><mrow><mi>k</mi></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo>-</mo><mrow><mo>(</mo><mrow><msub><mrow><mi>B</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>\u2215</mo><msub><mrow><mi>A</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>,</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf239\"><msub><mrow><mi>K</mi></mrow><mrow><mi>k</mi></mrow></msub></math> is an integration constant determined from the initial condition. In the following we shall consider the case <math id=\"inf240\"><msub><mrow><mi>\u03c1</mi></mrow><mrow><mi>k</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></math>, i.e. we start with a uniformly stretched film, for which <math id=\"inf241\"><msub><mrow><mi>K</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mrow><msub><mrow><mi>B</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>\u2215</mo><msub><mrow><mi>A</mi></mrow><mrow><mi>k</mi></mrow></msub><mo>-</mo><mn>1</mn><mo>\u2215</mo><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac></math>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine the timescale of the width contractions we need to remember the conservation of mass"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ36", 
+                                "label": "(35)", 
+                                "mathml": "<math><mi>M</mi><mo>=</mo><munderover accent=\"false\" accentunder=\"false\"><mrow> <mo>\u222b</mo> </mrow><mrow><mo>-</mo><mn>1</mn></mrow><mrow><mn>1</mn></mrow></munderover><mi>d</mi><mi>\u03c7</mi><mfrac><mrow><mi>w</mi><mo>+</mo><mover accent=\"true\"><mrow><mi>w</mi></mrow><mo>\u0304</mo></mover></mrow><mrow><mn>2</mn></mrow></mfrac><mfenced close=\")\" open=\"(\" separators=\"\"><mrow><mi>\u03c1</mi><mo>+</mo><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover></mrow></mfenced></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "which yields"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ37", 
+                                "label": "(36)", 
+                                "mathml": "<math><mover accent=\"true\"><mrow><mi>w</mi></mrow><mo>\u0304</mo></mover><mo>=</mo><mi>w</mi><munderover accent=\"false\" accentunder=\"false\"><mrow><mo>\u222b</mo> </mrow><mrow><mo>-</mo><mn>1</mn></mrow><mrow><mn>1</mn></mrow></munderover><mi>d</mi><mi>\u03c7</mi><mover accent=\"true\"><mrow><mi>\u03c1</mi></mrow><mo>\u0304</mo></mover><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We determine the timescale <math id=\"inf242\"><mi>\u03c4</mi></math> of contractions from <math id=\"inf243\"><mi>T</mi><mo>\u2215</mo><mi>\u03c4</mi><mo>=</mo><mo>-</mo><mover accent=\"true\"><mover accent=\"true\"><mi>w</mi><mo>\u00af</mo></mover><mo>\u02d9</mo></mover><mo>\u2215</mo><mover><mi>w</mi><mo>\u00af</mo></mover></math> and find"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ38", 
+                                "label": "(37)", 
+                                "mathml": "<math><mi>\u03c4</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mo>\u221e</mo></munderover><msub><mi>K</mi><mi>k</mi></msub><mfenced><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></msup><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mo>(</mo><mrow><msub><mi>B</mi><mi>k</mi></msub><mo>\u2215</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfenced><mfrac><mrow><mn>4</mn><msup><mrow><mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mi>\u03c0</mi><mrow><mo>(</mo><mn>2</mn><mi>k</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow></mfrac><mo>+</mo><mn>2</mn><msub><mi>\u03c1</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></msup></mstyle><mrow><mo>\u00a0</mo><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mo>\u221e</mo></munderover></mstyle><msub><mi>K</mi><mi>k</mi></msub><mfenced><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></msup><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mo>(</mo><mrow><msub><mi>B</mi><mi>k</mi></msub><mo>\u2215</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mrow><mo>(</mo><mrow><msub><mi>B</mi><mi>k</mi></msub><mo>\u2215</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow></mfenced><mfrac><mrow><mn>4</mn><msup><mrow><mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mi>\u03c0</mi><mrow><mo>(</mo><mn>2</mn><mi>k</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><msub><mi>\u03c1</mi><mn>0</mn></msub></mrow><msup><mi>\u03b4</mi><mn>2</mn></msup></mfrac><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>\u2215</mo><msup><mi>\u03b4</mi><mn>2</mn></msup></mrow></msup></mrow></mfrac><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Thus, the dynamics is governed by multiple relaxation processes with varying timescales. In particular"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ39", 
+                                "label": "(38)", 
+                                "mathml": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mi>T</mi></mrow></mfrac><munder><mrow><mo>lim</mo></mrow><mrow><mi>t</mi><mo>\u2192</mo><mn>0</mn></mrow></munder><mi>\u03c4</mi><mrow><mo>(</mo><mrow><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>w</mi><mo>\u2215</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "and"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ40", 
+                                "label": "(39)", 
+                                "mathml": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mi>T</mi></mrow></mfrac><munder><mrow><mo>lim</mo></mrow><mrow><mi>t</mi><mo>\u2192</mo><mi>\u221e</mi></mrow></munder><mi>\u03c4</mi><mrow><mo>(</mo><mrow><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><msup><mrow><mi>\u03b4</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mfrac><mrow><msup><mrow><mi>w</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><msup><mrow><mi>\u03c0</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the experimental parameter regime, the timescale we measure is presumably intermediate,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ41", 
+                                "label": "(40)", 
+                                "mathml": "<math><mi>\u03c4</mi><mo>=</mo><mi>\u03b1</mi><mfrac><mrow><mi>\u03b7</mi></mrow><mrow><mi>s</mi><msubsup><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow><mrow><mn>2</mn></mrow></msubsup></mrow></mfrac><mo>+</mo><mi>\u03b2</mi><mfrac><mrow><mi>\u03b3</mi></mrow><mrow><mi>s</mi><msubsup><mrow><mi>\u03c1</mi></mrow><mrow><mn>0</mn></mrow><mrow><mn>2</mn></mrow></msubsup></mrow></mfrac><msubsup><mrow><mi>W</mi></mrow><mrow><mn>0</mn></mrow><mrow><mn>2</mn></mrow></msubsup><mo>,</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf244\"><mi>\u03b1</mi></math> and <math id=\"inf245\"><mi>\u03b2</mi></math> are dimensionless quantities which we determine numerically. To obtain <math id=\"inf246\"><mi>\u03b1</mi></math> and <math id=\"inf247\"><mi>\u03b2</mi></math> for a given set of input parameters, we numerically solve <a href=\"#equ8 equ12 equ14\">Equations (7,11,13)</a> and extract the timescale <math id=\"inf248\"><mi>\u03c4</mi><mrow><mo>(</mo><mrow><msub><mrow><mi>W</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mo>)</mo></mrow></math> for several initial widths. We then fit the results to the functional form of <a href=\"#equ41\">Equation (40)</a>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the experimental regime, using the parameters for which the theoretical contraction profiles best agree with the numerical one (see <a href=\"#fig5\">Figure 5B</a>), we estimate <math id=\"inf249\"><mi>\u03b1</mi><mo>\u2243</mo><mn>2</mn><mo>.</mo><mn>2</mn> <mo>\u00b1</mo> <mn>0</mn><mo>.</mo><mn>05</mn></math> and <math id=\"inf250\"><mi>\u03b2</mi><mo>\u2243</mo><mn>0</mn><mo>.</mo><mn>085</mn> <mo>\u00b1</mo> <mn>0</mn><mo>.</mo><mn>006</mn></math>. The error estimates were obtained by sampling <math id=\"inf251\"><mi>\u03b1</mi></math> and <math id=\"inf252\"><mi>\u03b2</mi></math> over a range of input parameters between half and twice the best fit values, and evaluating a standard error on the computed values."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s17", 
                         "title": "Numerical treatment", 
                         "content": [

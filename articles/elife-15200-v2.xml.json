@@ -5623,6 +5623,89 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s17", 
+                        "title": "An analytical model for the incoherent feed-forward lLoop", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#bib41\">Mangan and Alon (2003)</a> initially classified the different types of feedforward loop architectures and pointed out that\u00a0Type 3 IFFLs can robustly generate pulses in gene expression. Here, we present a simple analytical model of the specific type 3 IFFL introduced in the main text, following an approach outlined by <a href=\"#bib67\">Shvartsman and Baker (2012)</a>. The purpose of this model is to provide an intuition for the origin of the bandpass behavior that we observed in our experiments, rather than to give a detailed mechanistic study of the actual signaling cascade. We only consider three species in our model, namely Fus3, Ste12 and GFP. Fus3 is activated (indirectly) by \u03b1-factor and phosphorylates Ste12. Phosphorylated Ste12 acts as a transcriptional activator for GFP. Through a synthetic interaction Fus3 also directly phosphorylates the Tec1 phosphodegron fused to GFP, triggering the degradation of GFP."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "For both Ste12 and Fus3 we only explicitly model the phosphorylated, active form. We use saturating functions to describe the phosphorylation and hence activation of Fus3 by \u03b1-factor and of Ste12 by Fus3. A similar function is used to model the production of GFP in response to Ste12. Degradation of GFP can be due to\u00a0the interaction with Fus3 or due to other causes and the two processes are modeled independently. The full model is given by:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ1", 
+                                "label": "(1)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo>]</mo></mrow><mo>=</mo><msub><mi>\u03b2</mi><mrow><mn>3</mn></mrow></msub><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mi>\u03b1</mi></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>\u2212</mo><msub><mi>\u03b3</mi><mrow><mn>3</mn></mrow></msub><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo stretchy=\"false\">]</mo><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ2", 
+                                "label": "(2)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><mo>]</mo></mrow><mo>=</mo><msub><mi>\u03b2</mi><mrow><mn>12</mn></mrow></msub><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mn>3</mn></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>\u2212</mo><msub><mi>\u03b3</mi><mrow><mn>12</mn></mrow></msub><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><mo stretchy=\"false\">]</mo><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ3", 
+                                "label": "(3)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mi>G</mi><mi>F</mi><mi>P</mi><mo>]</mo></mrow><mo>=</mo><msub><mi>\u03b2</mi><mrow><mi>G</mi><mi>F</mi><mi>P</mi></mrow></msub><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mn>12</mn></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>\u2212</mo><msub><mi>\u03b3</mi><mrow><mi>G</mi><mi>F</mi><mi>P</mi></mrow></msub><mo stretchy=\"false\">[</mo><mi>G</mi><mi>F</mi><mi>P</mi><mo stretchy=\"false\">]</mo><mo>\u2212</mo><mi mathvariant=\"normal\">\u0393</mi><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">[</mo><mi>G</mi><mi>F</mi><mi>P</mi><mo stretchy=\"false\">]</mo><mo>.</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Here,\u00a0<math id=\"inf6\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03b2</mi><mrow><mn>3</mn></mrow></msub></mrow></mstyle></math>, <math id=\"inf7\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03b2</mi><mrow><mn>12</mn></mrow></msub></mrow></mstyle></math>\u00a0and\u00a0<math id=\"inf8\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03b2</mi><mrow><mi>G</mi><mi>F</mi><mi>P</mi></mrow></msub></mrow></mstyle></math> are the maximal production rates while, <math id=\"inf9\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03b3</mi><mrow><mn>3</mn></mrow></msub></mrow></mstyle></math>,\u00a0<math id=\"inf10\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03b3</mi><mrow><mn>12</mn></mrow></msub></mrow></mstyle></math>\u00a0and <math id=\"inf11\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03b3</mi><mrow><mi>G</mi><mi>F</mi><mi>P</mi></mrow></msub></mrow></mstyle></math> are degradation rates. The paramter\u00a0<math id=\"inf12\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi mathvariant=\"normal\">\u0393</mi></mrow></mstyle></math> measures the strength of the Fus3-mediated degradation. If we assume that the system is in steady state we obtain three coupled equations for the three variables:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ4", 
+                                "label": "(4)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mo>[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo>]</mo></mrow><mrow><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mi>\u03b1</mi></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ5", 
+                                "label": "(5)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mo>[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><mo>]</mo></mrow><mrow><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mn>3</mn></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>,</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ6", 
+                                "label": "(6)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mo>[</mo><mi>G</mi><mi>F</mi><mi>P</mi><mo>]</mo></mrow><mrow><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>G</mi><mi>F</mi><mi>P</mi><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi mathvariant=\"normal\">\u0393</mi><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><msub><mo stretchy=\"false\">]</mo><mrow><mi>s</mi><mi>s</mi></mrow></msub></mrow><msub><mi>\u03b3</mi><mrow><mi>G</mi><mi>F</mi><mi>P</mi></mrow></msub></mfrac></mrow></mfrac><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><msub><mo stretchy=\"false\">]</mo><mrow><mi>s</mi><mi>s</mi></mrow></msub></mrow><mrow><msub><mi>K</mi><mrow><mn>12</mn></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><msub><mo stretchy=\"false\">]</mo><mrow><mi>s</mi><mi>s</mi></mrow></msub></mrow></mfrac><mo>.</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We can combine these equations to obtain the steady state value of GFP as a function of\u00a0<math id=\"inf13\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>\u03b1</mi></mrow></mstyle></math> factor:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ7", 
+                                "label": "(7)", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mo>[</mo><mi>G</mi><mi>F</mi><mi>P</mi><mo>]</mo></mrow><mrow><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><munder><mrow><munder><mrow><mo stretchy=\"false\">[</mo><mi>G</mi><mi>F</mi><mi>P</mi><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub></mrow><mrow><msub><mi>K</mi><mrow><mn>3</mn></mrow></msub><msub><mi>K</mi><mrow><mn>12</mn></mrow></msub></mrow></mfrac><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mi>\u03b1</mi></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub></mrow><msub><mi>K</mi><mrow><mn>3</mn></mrow></msub></mfrac><mo>+</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mi>S</mi><mi>t</mi><mi>e</mi><mn>12</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub></mrow><mrow><msub><mi>K</mi><mrow><mn>3</mn></mrow></msub><msub><mi>K</mi><mrow><mn>12</mn></mrow></msub></mrow></mfrac><mo>)</mo></mrow></mrow></mfrac></mrow><mo>\u23df</mo></munder></mrow><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><mi>\u03b1</mi><mo stretchy=\"false\">)</mo></mrow></munder><munder><mrow><munder><mfrac><mrow><msub><mi>K</mi><mrow><mi>\u03b1</mi></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mrow><mi>\u03b1</mi></mrow></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>\u03b1</mi><mo stretchy=\"false\">]</mo><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mi mathvariant=\"normal\">\u0393</mi><mo stretchy=\"false\">[</mo><mi>F</mi><mi>u</mi><mi>s</mi><mn>3</mn><msub><mo stretchy=\"false\">]</mo><mrow><mn>0</mn></mrow></msub></mrow><msub><mi>\u03b3</mi><mrow><mi>G</mi><mi>F</mi><mi>P</mi></mrow></msub></mfrac><mo>)</mo></mrow></mrow></mfrac><mo>\u23df</mo></munder></mrow><mrow><mi>G</mi><mo stretchy=\"false\">(</mo><mi>\u03b1</mi><mo stretchy=\"false\">)</mo></mrow></munder><mo>.</mo></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<math id=\"inf14\"><mrow><mi>F</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM71\">\u03b1</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> is the steady state level of GFP that would be observed in a linear cascade without the repressive link from Fus3 to GFP (i.e. the system of <a href=\"#fig7\">Figure 7A</a>). This function monotonously increases with increasing <math id=\"inf15\"><mi>\u03b1</mi></math>-factor concentration. <math id=\"inf16\"><mrow><mi>G</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM72\">\u03b1</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> captures the impact of degradation of Fus3 due to GFP."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The steady state level of GFP is thus of the general form"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ8", 
+                                "label": "(8)", 
+                                "mathml": "<math><mrow><mrow><msub><mrow><mo>[</mo><mrow id=\"XM77\"><mi>G</mi><mo>\u2062</mo><mi>F</mi><mo>\u2062</mo><mi>P</mi></mrow><mo>]</mo></mrow><mrow><mi>s</mi><mo>\u2062</mo><mi>s</mi></mrow></msub><mo>=</mo><mrow><mi>B</mi><mo>\u2062</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM73\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>C</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM74\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></mrow></mrow></mfrac><mo>\u2062</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>E</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM75\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>D</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM76\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></mrow></mrow></mfrac></mrow></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where the values of the constants <math id=\"inf17\"><mi>B</mi></math>-<math id=\"inf18\"><mi>E</mi></math> can be derived from <a href=\"#equ7\">Equation 7</a>. This function tends to zero for vanishing <math id=\"inf19\"><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM78\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></math> and asympotically reaches the value <math id=\"inf20\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>B</mi><mi>E</mi><mrow><mo>/</mo></mrow><mo stretchy=\"false\">(</mo><mi>C</mi><mi>D</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math> for <math id=\"inf21\"><mrow><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM80\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow><mo>\u226b</mo><mn>1</mn></mrow></math>. We note that the saturation at a non-zero value is consistent with our experimental observations (<a href=\"#fig7\">Figure 7B</a>). Moreover, by taking the derivative it can also be shown that this expression has a maximum at an intermediate value of <math id=\"inf22\"><mrow><mo stretchy=\"false\">[</mo><mi id=\"XM81\">\u03b1</mi><mo stretchy=\"false\">]</mo></mrow></math>, consistent with the observed band-pass behavior."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s18", 
                         "title": "Data fitting", 
                         "content": [

@@ -5073,6 +5073,505 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s6", 
+                        "title": "Mean-field approach", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We use the mean-field approach (see for example, <a href=\"#bib49\">Krapivsky et al., 2010</a>), which approximates the behaviour of a system consisting of many cells, so that the effects of stochasticity are averaged, and an intermediate state is described by a set of ordinary differential equations."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-1", 
+                                "title": "Master equations", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We write master equations to track the probability <i>P</i><sub><i>ij</i></sub>(<i>t</i>) that a randomly chosen cell from a population of tumour cells is of type (<i>i</i>, <i>j</i>) at time <i>t</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The temporal dynamics of probabilities <i>P</i><sub><i>ij</i></sub>(<i>t</i>), <i>i</i> = 0, 1, \u2026, <i>N</i>, where <i>N</i> is the maximal number of additionally acquired drivers and <i>j</i> = 0, 1, are described by:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mtext>d</mtext><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><mi>u</mi><msubsup><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></msubsup><mo>+</mo><mi>v</mi><msubsup><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo>(</mo><mi>v</mi><mo>)</mo></mrow></msubsup><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, the right-hand side is a superposition of probabilistic in- and out-flows from different mutational states to the current one (<i>i</i>, <i>j</i>). The function \u2119<sub><i>ij</i></sub> describes the growth of subclone (<i>i</i>, <i>j</i>) and is proportional to the probability <i>P</i><sub><i>ij</i></sub>(<i>t</i>), multiplied by the difference between fitness <i>f</i><sub><i>ij</i></sub> and its average value over the whole population <math id=\"inf3\"><mrow><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><msub><mi>f</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></math>. Functions <math id=\"inf4\"><mrow><msubsup><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></msubsup></mrow></math> and <math id=\"inf5\"><mrow><msubsup><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo>(</mo><mi>v</mi><mo>)</mo></mrow></msubsup></mrow></math> represent the probabilistic flows of mutations. For <math id=\"inf6\"><mrow><msubsup><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></msubsup></mrow></math>, a driver is added from class (<i>i</i> \u2212 1, <i>j</i>) to (<i>i</i>, <i>j</i>) in proportion to the probability <math id=\"inf7\"><mrow><msub><mi>P</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>,</mo><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></math>, the probability of cell birth <i>b</i><sub><i>i</i>\u22121,<i>j</i></sub>, and the probability of a zero locus being chosen from <i>N</i> total loci consisting of (<i>N</i> \u2212 (<i>i</i> \u2212 1)) other zero loci. A similar approach is used to define the outflow term for the probability from class (<i>i</i>, <i>j</i>) to (<i>i</i> + 1, <i>j</i>). The second term <math id=\"inf8\"><mrow><msubsup><mi mathvariant=\"double-struck\">P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo>(</mo><mi>v</mi><mo>)</mo></mrow></msubsup></mrow></math> is the probability of mutating to therapeutic resistance (<i>i</i>, <i>j</i> = 0) to (<i>i</i>, <i>j</i> = 1) and is proportional to <i>P</i><sub><i>i</i>0</sub>(<i>t</i>) and birth rate <i>b</i><sub><i>i</i>0</sub>. Finally, all terms are summed, taking into account the initial conditions: <i>P</i><sub>00</sub>(0) = 1 \u2212 <i>\u03ba</i>, <i>P</i><sub>01</sub>(0) = <i>\u03ba</i>, and <i>P</i><sub><i>ij</i></sub> = 0 for any other <i>i</i> or <i>j</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The above elements lead to the following system of ordinary differential equations (ODEs):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>(</mo><mrow><msub><mi>f</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><mi>u</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mfrac><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>,</mo><mi>j</mi></mrow></msub></mrow><mn>2</mn></mfrac><msub><mi>P</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>,</mo><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mfrac><mi>i</mi><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mn>2</mn></mfrac><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>\u2212</mo><mi>v</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mn>2</mn><mi>j</mi></mrow><mo>)</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub></mrow><mn>2</mn></mfrac><msub><mi>P</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where some probabilities <i>P</i><sub><i>ij</i></sub>(<i>t</i>) could, theoretically, take on negative values, for example, <i>P</i><sub>\u22121,<i>j</i></sub>(<i>t</i>), when <i>i</i> = 0, in which case, they are set to zero."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A simple transformation,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "mathml": "<math><mrow><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mo>\u2009</mo><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mn>0</mn><mi>t</mi></munderover><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mtext>d</mtext><mi>r</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "allows omitting the term <math id=\"inf9\"><mrow><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2009</mo></mrow></math> from <a href=\"#equ3\">Equation 1</a> and to linearize the latter with respect to the new \u2018transformed\u2019 probabilities <i>p</i><sub><i>ij</i></sub>(<i>t</i>). This gives:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>f</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><mi>u</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mfrac><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>,</mo><mi>j</mi></mrow></msub></mrow><mn>2</mn></mfrac><msub><mi>p</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>,</mo><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mfrac><mi>i</mi><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mn>2</mn></mfrac><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>+</mo><mi>v</mi><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub></mrow><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><mi>j</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mi>j</mi><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where, for convenience, we write (<i>jp</i><sub><i>i</i>,<i>j</i>\u22121</sub>(<i>t</i>) + (<i>j</i> \u2212 1)<i>p</i><sub><i>ij</i></sub>(<i>t</i>)) instead of (1 \u2212 2<i>j</i>)<i>p</i><sub><i>i</i>0</sub>(<i>t</i>)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-2", 
+                                "title": "Probability generating function approach", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "With <a href=\"#equ5\">Equation 2</a> we apply the probability generating function (p.g.f.) method (<a href=\"#bib27\">Gardiner, 2004</a>; <a href=\"#bib4\">Assaf, 2010</a>) to transform the system of (2<i>N</i> + 1) ODEs to a Hamilton\u2013Jacobi (HJ) equation, that is, a first order partial differential equation."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We define the p.g.f. as the polynomial over all modified probabilities <i>p</i><sub><i>ij</i></sub>(<i>t</i>) of the form:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>N</mi></munderover><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mn>1</mn></munderover><msup><mi>\u03be</mi><mi>i</mi></msup><msup><mi>\u03b7</mi><mi>j</mi></msup><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>\u03be</i> and <i>\u03b7</i> are the variables that can be viewed as the momentum of an auxiliary Hamiltonian system governing the leading-order stochastic dynamics of the system (<a href=\"#bib19\">Elgart and Kamenev, 2004</a>). Notice that the function <i>G</i>(<i>\u03be</i>, <i>\u03b7</i>, <i>t</i>) is linear with respect to <i>\u03b7</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Suppose that the function <i>G</i>(<i>\u03be</i>, <i>\u03b7</i>, <i>t</i>) is defined. One can then obtain all characteristics of the stochastic process, such as the average tumour size <i>n</i>(<i>t</i>) and the average frequency <i>n</i><sub><i>res</i></sub>(<i>t</i>)/<i>n</i>(<i>t</i>) of resistant cells within a tumour. The former quantity is:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mtext>d</mtext><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Using the normalization condition for the probability: <math id=\"inf10\"><mrow><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>, we obtain:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "mathml": "<math><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>\u03b7</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>exp</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mn>0</mn><mi>t</mi></munderover><mrow><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow></mrow><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mtext>d</mtext><mi>r</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "and then:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "label": "(4)", 
+                                        "mathml": "<math><mrow><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>M</mi><mn>0</mn></msub><mo>\u2009</mo><mi>exp</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mn>0</mn><mi>t</mi></munderover><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mtext>d</mtext><mi>r</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>M</mi><mn>0</mn></msub><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>\u03b7</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the initial tumour size <i>n</i>(0) = <i>M</i><sub>0</sub> is sufficiently large. The frequency of resistant cells is defined as follows:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "label": "(5)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><msub><mi>n</mi><mrow><mi>r</mi><mi>e</mi><mi>s</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>N</mi></munderover><msub><mi>P</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>N</mi></munderover><msub><mi>p</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo><mrow><mo>\u2212</mo><munderover><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mn>0</mn><mi>t</mi></munderover><mrow><mover accent=\"true\"><mi>f</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mtext>d</mtext><mi>r</mi></mrow><mo>)</mo></mrow><mo>=</mo><mo>\u2009</mo><msub><mrow><mrow><mrow><mfrac><mrow><mo>\u2202</mo><mi>G</mi><mo>/</mo><mo>\u2202</mo><mi>\u03b7</mi></mrow><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow><mo>|</mo></mrow></mrow><mrow><mtable><mtr><mtd><mrow><mi>\u03be</mi><mo>=</mo><mn>1</mn><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi>\u03b7</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Initial conditions yield <i>p</i><sub>00</sub>(0) = 1 \u2212 <i>\u03ba</i>, <i>p</i><sub>01</sub>(0) = <i>\u03ba</i>, and <i>p</i><sub><i>ij</i></sub>(0) = 0 for any other <i>i</i> and <i>j</i>, so that <i>G</i>(<i>\u03be</i>, <i>\u03b7</i>, <i>t</i> = 0) = 1 \u2212 <i>\u03ba</i> + <i>\u03ba\u03b7</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To obtain the HJ equation related to the p.g.f. <i>G</i>(<i>\u03be</i>, <i>\u03b7</i>, <i>t</i>), we multiply <a href=\"#equ5\">Equation 2</a> with <i>\u03be</i><sup><i>i</i></sup><i>\u03b7</i><sup><i>j</i></sup> and sum up all equations for <i>i</i> = 0, 1,\u2026,<i>N</i> and <i>j</i> = 0, 1. After some algebra, we obtain:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "label": "(6)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mo>\u2202</mo><mi>G</mi></mrow><mrow><mo>\u2202</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>[</mo><mrow><mi>s</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mfrac><mo>\u2202</mo><mrow><mo>\u2202</mo><mi>\u03be</mi></mrow></mfrac><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>\u03c3</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03b7</mi><mfrac><mo>\u2202</mo><mrow><mo>\u2202</mo><mi>\u03b7</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>c</mi><mi>\u03b7</mi><mfrac><mo>\u2202</mo><mrow><mo>\u2202</mo><mi>\u03b7</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>u</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mfrac><mi>\u03be</mi><mi>N</mi></mfrac><mfrac><mo>\u2202</mo><mrow><mo>\u2202</mo><mi>\u03be</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mi>v</mi><mrow><mo>(</mo><mrow><mi>\u03b7</mi><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03b7</mi><mfrac><mo>\u2202</mo><mrow><mo>\u2202</mo><mi>\u03b7</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mi>G</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where only terms of order greater than or equal to <i>u</i>, <i>v</i> are retained, meaning that terms composed of the products <i>s</i>, <i>c</i>, and <i>u</i>, <i>v</i> are omitted."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#equ11\">Equation 6</a> is solved by the method of characteristics such that the HJ equation is transformed into a system of ordinary differential equations (i.e., the system of characteristics, see e.g., <a href=\"#bib55\">Melikyan, 1998</a>)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-3", 
+                                "title": "Time-varied treatment schedule", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We find the characteristics for the variables <i>\u03be</i> and <i>\u03b7</i> using (<a href=\"#equ11\">Equation 6</a>):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ12", 
+                                        "label": "(7)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><mi>\u03be</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>\u2212</mo><mi>s</mi><mi>\u03be</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mi>u</mi><mi>\u03be</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>\u03be</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mo>,</mo><mo>\u2009</mo><mfrac><mrow><mtext>d</mtext><mi>\u03b7</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>(</mo><mrow><mi>c</mi><mo>\u2212</mo><mi>\u03c3</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mi>\u03b7</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mi>v</mi><mi>\u03b7</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>\u03b7</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>\u03c3</i>(<i>t</i>) is a given function of time."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The p.g.f. <i>G</i>(<i>\u03be</i>, <i>\u03b7</i>, <i>t</i>) changes along the characteristic <a href=\"#equ12\">Equation 7</a> according to the following ODE:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ13", 
+                                        "label": "(8)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mtext>d</mtext><mi>G</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi><mo>+</mo><mfrac><mrow><mi>u</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>v</mi><mrow><mo>(</mo><mrow><mi>\u03b7</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mi>G</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which is straightforward to integrate. Indeed, if we use <a href=\"#equ12\">Equation 7</a>, this yields dln<i>G</i> = (<i>s</i>(<i>N</i> + 1) \u2212 <i>c</i>)d<i>t</i> + <i>N</i>dln<i>\u03be</i> + dln<i>\u03b7</i>. Thus,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ14", 
+                                        "label": "(9)", 
+                                        "mathml": "<math><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>[</mo><mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mi>s</mi><mrow><mo>(</mo><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi><mo>\u2212</mo><mi>N</mi><mo>\u2009</mo><mi>ln</mi><mo>\u2009</mo><mi>\u03be</mi><mo>\u2212</mo><mi>ln</mi><mo>\u2009</mo><mi>\u03b7</mi></mrow><mo>]</mo></mrow><mo>=</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>s</mi><mi>t</mi><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Recall that the quantity on the left hand side remains constant only along the characteristic curve (<a href=\"#equ12\">Equation 7</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To obtain <i>G</i>(<i>\u03be</i> = 1, <i>\u03b7</i> = 1, <i>t</i>), we need to solve <a href=\"#equ12\">Equation 7</a> subject to <i>\u03be</i>(<i>t</i>) = <i>\u03b7</i>(<i>t</i>) = 1 and find <i>\u03be</i>(0) and <i>\u03b7</i>(0). Then, given the initial condition <i>G</i>(<i>\u03be</i>(0),<i>\u03b7</i>(0),0) = 1 \u2212 <i>\u03ba</i> + <i>\u03ba\u03b7</i>(0), <i>\u03ba</i> is a level of resistance within a tumour (<i>\u03ba</i> \u2208 [0,1]), we can define <i>G</i>(<i>\u03be</i>, <i>\u03b7</i>, <i>t</i>) using <a href=\"#equ14\">Equation 9</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, we use <a href=\"#equ9\">Equation 4</a> to derive the dynamics of <i>n</i>(<i>t</i>). To obtain the mean frequency of resistant cells within a tumour, we first write \u2202<i>G</i>/\u2202<i>\u03b7</i>, using <a href=\"#equ14\">Equation 9</a> with the right hand side implicitly dependent on <i>\u03b7</i> and then substitute it into <a href=\"#equ10\">Equation 5</a>. (Note that time <i>t</i> is measured in cell cycles, which are assumed to be of 4 days on average. To derive all necessary equations with respect to the actual time, we need to divide <i>t</i> by the length of the cell-cycle and substitute it in the equations.)"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-4", 
+                                "title": "Constant treatment", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We study the case for constant <i>\u03c3</i>. Notice that this includes the case of no treatment (<i>\u03c3</i> = 0)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "First, we find the characteristics for the variables <i>\u03be</i> and <i>\u03b7</i>. Namely, the solution of <a href=\"#equ12\">Equation 7</a> gives:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ15", 
+                                        "label": "(10)", 
+                                        "mathml": "<math><mrow><mi>\u03be</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>s</mi><mo>+</mo><mi>u</mi><mo>/</mo><mrow><mo>(</mo><mn>2</mn><mi>N</mi><mo>)</mo></mrow></mrow><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi>s</mi><mo>+</mo><mi>u</mi><mo>/</mo><mrow><mo>(</mo><mn>2</mn><mi>N</mi><mo>)</mo></mrow></mrow><mrow><mi>\u03be</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mo>\u2212</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mi>s</mi><mo>+</mo><mi>u</mi><mo>/</mo><mrow><mo>(</mo><mn>2</mn><mi>N</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac></mrow></mfrac><mo>,</mo><mo>\u2009</mo><mi>\u03b7</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi><mo>+</mo><mi>v</mi><mo>/</mo><mn>2</mn></mrow><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi><mo>+</mo><mi>v</mi><mo>/</mo><mn>2</mn></mrow><mrow><mi>\u03b7</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mo>\u2212</mo><mfrac><mi>v</mi><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi><mo>+</mo><mi>v</mi><mo>/</mo><mn>2</mn></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The subsequent substitution of <a href=\"#equ15\">Equation 10</a> into <a href=\"#equ13\">Equation 8</a> leads to:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ16", 
+                                        "mathml": "<math><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mi>\u03b7</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi><mo>\u2212</mo><mfrac><mrow><mi>u</mi><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mi>t</mi><mo>+</mo><mi>N</mi><mo>\u2009</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03be</mi><mi>u</mi></mrow><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>+</mo><mi>u</mi><mo>/</mo><mrow><mo>(</mo><mn>2</mn><mi>N</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>s</mi><mo>+</mo><mi>u</mi><mo>/</mo><mrow><mo>(</mo><mn>2</mn><mi>N</mi><mo>)</mo></mrow></mrow></mfrac><mo>\u2009</mo></mrow><mo>)</mo></mrow><mo>+</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03b7</mi><mi>v</mi></mrow><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi><mo>+</mo><mi>v</mi><mo>/</mo><mn>2</mn></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi><mo>+</mo><mi>v</mi><mo>/</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Taking into account <i>u</i>, <i>v</i> \u226a <i>s</i>, <i>c</i> and assuming <i>v</i> \u226a <i>\u03c3</i> \u2212 <i>c</i>, we simplify further and write its approximate form:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ17", 
+                                        "mathml": "<math><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>\u2245</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi><mo>+</mo><mfrac><mrow><mi>\u03ba</mi><mi>\u03b7</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03b7</mi><mi>v</mi></mrow><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow><mi>t</mi><mo>+</mo><mi>N</mi><mo>\u2009</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03be</mi><mi>u</mi></mrow><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac><mo>\u2009</mo></mrow><mo>)</mo></mrow><mo>+</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03b7</mi><mi>v</mi></mrow><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which can be also written in the form:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ18", 
+                                        "label": "(11)", 
+                                        "mathml": "<math><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>,</mo><mi>\u03b7</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>\u2245</mo><mo>\u2009</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03b7</mi><mi>v</mi></mrow><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><mi>\u03b7</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow><mi>t</mi><mo>+</mo><mi>N</mi><mo>\u2009</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03be</mi><mi>u</mi></mrow><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac><mo>\u2009</mo></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As expected <a href=\"#equ18\">Equation 11</a> is linear with respect to <i>\u03b7</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Thus, we derive an analytical expression for the dynamics <i>n</i>(<i>t</i>). Namely, we use <a href=\"#equ9\">Equations 4</a> and <a href=\"#equ18\">11</a> and substitute <i>\u03be</i> = <i>\u03b7</i> = 1, to obtain:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ19", 
+                                        "label": "(12)", 
+                                        "mathml": "<math><mrow><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>M</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow><mi>t</mi><mo>+</mo><mi>N</mi><mo>\u2009</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#equ19\">Equation 12</a> is simplified for two limiting cases. In the early stages of tumour growth, the value <i>n</i>(<i>t</i>) changes according to a hyper-exponential law:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ20", 
+                                        "mathml": "<math><mrow><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2245</mo><msub><mi>M</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow><mi>t</mi><mo>+</mo><mfrac><mi>u</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "while at later stages, the most aggressive subclone persists, being sensitive if <i>\u03c3</i> &lt; <i>c</i> (<i>n</i>(<i>t</i>) \u221d <i>e</i><sup><i>s</i>(<i>N</i>+1)<i>t</i></sup>) and resistant otherwise (<i>n</i>(<i>t</i>) \u221d <i>e</i><sup>(<i>s</i>(<i>N</i> + 1) \u2212 <i>c</i>)<i>t</i></sup>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To compute the frequency of resistant cells within a tumour (<a href=\"#equ10\">Equation 5</a>), we derive \u2202<i>G</i>/\u2202<i>\u03b7</i> using <a href=\"#equ18\">Equation 11</a>:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ21", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mo>\u2202</mo><mi>G</mi></mrow><mrow><mo>\u2202</mo><mi>\u03b7</mi></mrow></mfrac><mo>=</mo><mo>\u2009</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mi>s</mi><mo>\u2212</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow><mi>t</mi><mo>+</mo><mi>N</mi><mo>\u2009</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>\u03be</mi><mi>u</mi></mrow><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac><mo>\u2009</mo></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "so that:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ22", 
+                                        "mathml": "<math><mrow><mfrac><mrow><msub><mi>n</mi><mrow><mi>r</mi><mi>e</mi><mi>s</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2009</mo></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#fig7\">Appendix 1\u2014figure 1</a> shows the excellent correspondence between numerical experiments and analytical results for <i>\u03c3</i> on the order of <i>s</i>. <a href=\"#fig8\">Appendix 1\u2014figure 2</a> provides additional details on distribution of tumour sizes depending on the applied treatment intensity (points <i>B</i> and <i>C</i>)."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.06266.025", 
+                                        "id": "fig7", 
+                                        "label": "Appendix 1\u2014figure 1.", 
+                                        "title": "Mean field dynamics concord with numerical simulations.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Effect of treatment level and observation time on mean tumour size. (<b>Inset</b>) Mean frequency of resistant cells within tumours corresponding to three of the cases in <b>A</b>. Lines are analytically computed mean-field trajectories, while dots are numerical simulations (see <a href=\"#app1\">Appendix 1</a> for details). (<b>B</b>) Dynamics of mean and median tumour size, and percentiles around the median (shaded areas), assuming a fixed constant arresting effect of 0.15% / day. Treatments start at <i>t</i> = 0, and the maximal number of additionally accumulated drivers is 3. See <a href=\"#tbl1\">Table 1</a> for other parameter values."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/06266/elife-06266-app1-fig1-v2.tif", 
+                                        "filename": "elife-06266-app1-fig1-v2.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.06266.026", 
+                                        "id": "fig8", 
+                                        "label": "Appendix 1\u2014figure 2.", 
+                                        "title": "Trade-off between growth and resistance under different treatment regimes.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(<b>A</b>) Analytically derived times for a tumour to reach 10<sup>9</sup> cells (see <a href=\"#equ19\">Equation 12</a>). (<b>B</b>) and (<b>C</b>) Sample distributions in relative frequencies, adjusted for bins over periods of 0.5 in logarithmic scale for corresponding points <i>B</i> and <i>C</i>, shown in plot <b>A</b>. Dashed black line is the mean and the dashed-and-dotted line is the median. The bottom panel shows the mean number of additionally accumulated drivers for all detected tumours over the same intervals of 3 months. The colour-code indicates the level of resistance in detected tumours over these intervals. Maximal number of additionally accumulated drivers is 5. Parameters otherwise as in <a href=\"#tbl1\">Table 1</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/06266/elife-06266-app1-fig2-v2.tif", 
+                                        "filename": "elife-06266-app1-fig2-v2.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-5", 
+                                "title": "Distribution of subclones within an exponentially growing tumour", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The p.g.f. <i>G</i>(<i>\u03be, \u03b7, t</i>) is used to derive expressions for all <i>P</i><sub><i>ij</i></sub>(<i>t</i>), which are the probabilities of selecting a cell of type (<i>i</i>, <i>j</i>) from a tumour at time moment <i>t</i>. Namely, we need to differentiate the p.g.f. with respect to <i>\u03be</i> and <i>\u03b7</i>, so that:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ23", 
+                                        "mathml": "<math><mrow><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>i</mi><mo>!</mo><mi>G</mi><mrow><mo>(</mo><mrow><mi>\u03be</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>\u03b7</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mfrac><mrow><msup><mo>\u2202</mo><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup><mi>G</mi><mrow><mo>(</mo><mi>\u03be</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>\u03b7</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mo>\u2202</mo><msup><mi>\u03be</mi><mi>i</mi></msup><mo>\u2202</mo><msup><mi>\u03b7</mi><mi>j</mi></msup></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>i</i> = 0, 1,\u2026 and <i>j</i> = 0, 1. Thus, we write:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ24", 
+                                        "mathml": "<math><mrow><msub><mi>P</mi><mrow><mn>00</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mi>N</mi></mrow></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ25", 
+                                        "mathml": "<math><mrow><mo>\u2009</mo><msub><mi>P</mi><mrow><mn>01</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mo>\u2202</mo><mi>G</mi><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow><mo>/</mo><mo>\u2202</mo><mi>\u03b7</mi></mrow><mrow><mi>G</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mi>N</mi></mrow></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "then:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ26", 
+                                        "mathml": "<math><mrow><msub><mi>P</mi><mrow><mn>10</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mo>\u2202</mo><mi>G</mi><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mo>/</mo><mo>\u2202</mo><mi>\u03be</mi></mrow><mrow><mi>G</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><mo>\u2009</mo><mfrac><mi>u</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mi>N</mi></mrow></msup><mo>\u2009</mo><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ27", 
+                                        "mathml": "<math><mrow><mo>\u2009</mo><msub><mi>P</mi><mrow><mn>11</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>G</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mrow><msup><mo>\u2202</mo><mn>2</mn></msup><mi>G</mi><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mo>\u2202</mo><mi>\u03be</mi><mo>\u2202</mo><mi>\u03b7</mi></mrow></mfrac><mo>=</mo><mo>\u2009</mo><mfrac><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><mfrac><mi>u</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mi>N</mi></mrow></msup><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The general formula is written as follows:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ28", 
+                                        "mathml": "<math><mrow><msub><mi>P</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>i</mi><mo>!</mo><mi>G</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mrow><msup><mo>\u2202</mo><mi>i</mi></msup><mi>G</mi><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mo>\u2202</mo><msup><mi>\u03be</mi><mi>i</mi></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><msub><mi>P</mi><mrow><mi>i</mi><mo>\u2217</mo></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2009</mo><mo>,</mo><mo>\u2009</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ29", 
+                                        "mathml": "<math><mrow><msub><mi>P</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>i</mi><mo>!</mo><mi>G</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mrow><msup><mo>\u2202</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>G</mi><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo>)</mo></mrow></mrow><mrow><mo>\u2202</mo><msup><mi>\u03be</mi><mi>i</mi></msup><mo>\u2202</mo><mi>\u03b7</mi></mrow></mfrac><mo>=</mo><mo>\u2009</mo><mfrac><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>v</mi><mn>2</mn></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>\u03ba</mi><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>\u03c3</mi><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mfrac><msub><mi>P</mi><mrow><mi>i</mi><mo>\u2217</mo></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>i</i> = 0, 1, \u2026<i>N</i>, and the function:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ30", 
+                                        "mathml": "<math><mrow><msub><mi>P</mi><mrow><mi>i</mi><mo>\u2217</mo></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>N</mi></mtd></mtr><mtr><mtd><mi>i</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mi>i</mi></msup><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mfrac><mrow><msup><mi>e</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo>\u2212</mo><mn>1</mn></mrow><mi>s</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mi>N</mi></mrow></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "defines the probability to pick a cell with <i>i</i> drivers independently of resistant status, <math id=\"inf11\"><mrow><msub><mi>P</mi><mrow><mi>i</mi><mo>\u2217</mo></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u225c</mo><msub><mi>P</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>P</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></math>, where <math id=\"inf12\"><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>N</mi></mtd></mtr><mtr><mtd><mi>i</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></math> denotes a binomial coefficient, equal <math id=\"inf13\"><mrow><mfrac><mrow><mi>N</mi><mo>!</mo></mrow><mrow><mi>i</mi><mo>!</mo><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi></mrow><mo>)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The distribution <i>P</i><sub><i>i</i>\u2217</sub>(<i>t</i>) for a particular case of <i>N</i> = 6 is shown in <a href=\"#fig9\">Appendix 1\u2014figure 3</a>."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.06266.027", 
+                                        "id": "fig9", 
+                                        "label": "Appendix 1\u2014figure 3.", 
+                                        "title": "Maximal tumour heterogeneity in terms of driver subclones occurs at intermediate times after initial lesion.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/06266/elife-06266-app1-fig3-v2.tif", 
+                                        "filename": "elife-06266-app1-fig3-v2.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We now derive the mean time period when a given subclone with <i>i</i> additionally accumulated drivers dominates within a tumour."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Defining the time moments <i>t</i> = <i>t</i><sub><i>i</i></sub> for which <i>P</i><sub><i>i</i>\u22121,\u2217</sub>(<i>t</i><sub><i>i</i></sub>) = <i>P</i><sub><i>i</i>\u2217</sub>(<i>t</i><sub><i>i</i></sub>) (<i>i</i> = 0, 1, 2,\u2026,<i>N</i>) gives:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ31", 
+                                        "mathml": "<math><mrow><msub><mi>t</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mi>s</mi><mi>N</mi><mi>i</mi></mrow><mrow><mi>u</mi><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>\u2248</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mi>ln</mi><mfrac><mrow><mn>2</mn><mi>s</mi><mi>N</mi><mi>i</mi></mrow><mrow><mi>u</mi><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where we assume <i>u</i> \u226a <i>s</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The time period when the subclone with <i>i</i> drivers prevails in a cell population is defined by the following expression:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ32", 
+                                        "mathml": "<math><mrow><mtext>\u0394</mtext><msub><mi>t</mi><mi>i</mi></msub><mo>=</mo><msub><mi>t</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u2212</mo><msub><mi>t</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mrow><mo>[</mo><mrow><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mi>s</mi><mi>N</mi><mrow><mo>(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mrow><mrow><mi>u</mi><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mi>s</mi><mi>N</mi><mi>i</mi></mrow><mrow><mi>u</mi><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>\u2248</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mi>ln</mi><mfrac><mrow><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mrow><mrow><mrow><mo>(</mo><mrow><mi>N</mi><mo>\u2212</mo><mi>i</mi></mrow><mo>)</mo></mrow><mi>i</mi></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>i</i> \u2260 0. For <i>i</i> = 0, we have:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ33", 
+                                        "mathml": "<math><mrow><mtext>\u0394</mtext><msub><mi>t</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mi>ln</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mi>s</mi></mrow><mi>u</mi></mfrac></mrow><mo>)</mo></mrow><mo>\u2248</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mi>ln</mi><mfrac><mrow><mn>2</mn><mi>s</mi></mrow><mi>u</mi></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The latter formula has been previously reported (see Equation S7 in reference <a href=\"#bib11\">Bozic et al., 2010</a>)."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s7", 
+                        "title": "Varying mutation rate and initial tumour size", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To understand better how the inflection points emerge around <i>\u03c3</i> = <i>qs</i> (<i>q</i> = 1, 2, 3,\u2026), we first consider a much simpler case than the main text. Suppose that no additional driver mutation is acquired during tumourigenesis, <i>u</i> = 0. Any treatment regime of constant intensity that lowers the selective advantage (<i>\u03c3</i> &lt; <i>s</i>) only slows tumour growth. In such cases, the median detection time increases with <i>\u03c3</i> (see <a href=\"#fig6\">Figure 6</a>). Assuming that resistance is not obtained, the median time to detection approaches a vertical asymptote at <i>\u03c3</i> = <i>s</i>, whereas the tumour is always eradicated for <i>\u03c3</i> &gt; <i>s</i>. If <i>v</i> &gt; 0, then the tumour relapses following the appearance of the resistance mutation, and the median detection time approaches the horizontal asymptote for <i>\u03c3</i> \u226b <i>s</i>. Thus, the final result for the median detection time will be a line with an inflection point near \u03c3 = <i>s</i>, consisting of two effects: higher treatment levels resulting in the control of sensitive clones with ever higher numbers of drivers (blue colouring), and the lack of control of costly resistant clones (red colouring) (<a href=\"#fig6\">Figure 6</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the general case (<i>u</i> &gt; 0, <i>v</i> &gt; 0), the median follows from the different elements cited above, consisting of several possible branches (e.g., <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1D</a>) or none, where the latter case depends on the relation between the mutation rate <i>u</i> and the initial cell number <i>M</i><sub>0</sub> (e.g., for <i>M</i><sub>0</sub> = 10<sup>7</sup> see <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<a href=\"#fig10\">Appendix 1\u2014figure 4</a> shows an example. Panel A shows a case when <i>u</i> is varied and <i>M</i><sub>0</sub> remains fixed. We identify the key parameter for the appearance of the inflection points as <i>M</i><sub>0</sub><i>u</i>. It defines the emergence probability of the next subclone with one additional driver. Hence, the inflection points are more apparent for smaller values of <i>M</i><sub>0</sub><i>u</i> and vanish for larger values of <i>M</i><sub>0</sub><i>u</i>. This same tendency can be seen in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a>, where <i>M</i><sub>0</sub> is varied and <i>u</i> is fixed. Panels B, C, and D provide more details on the interplay between <i>M</i><sub>0</sub><i>u</i> and the inflection points."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.06266.028", 
+                                "id": "fig10", 
+                                "label": "Appendix 1\u2014figure 4.", 
+                                "title": "Sensitivity analysis of (<b>A</b>) the mutation rate to acquire drivers and (<b>B</b>\u2013<b>D</b>) initial tumour size.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Thick lines indicate the median and shaded areas with dashed boundaries the 90% confidence intervals of detection times. (<b>A</b>) Initial tumour size is fixed at 10<sup>6</sup> cells and mutation rate is varied. (<b>B</b>\u2013<b>D</b>) Initial tumour size is varied and mutation rate is fixed at (<b>B</b>) 10<sup>\u22126</sup>, (<b>C</b>) 3.4 \u00d7 10<sup>\u22125</sup>, (<b>D</b>) 10<sup>\u22123</sup>. The colour code for points indicates the average level of resistance within tumours (see the inset in <b>B</b>). Parameter values as in <a href=\"#tbl1\">Table 1</a> except those being varied."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/06266/elife-06266-app1-fig4-v2.tif", 
+                                "filename": "elife-06266-app1-fig4-v2.tif"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s8", 
                         "title": "A simple form of drug addiction for resistant cell-lines", 
                         "content": [

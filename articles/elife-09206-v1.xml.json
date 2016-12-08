@@ -4149,154 +4149,165 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s6-1", 
-                        "title": "The model", 
+                        "id": "s6", 
+                        "title": "Physical modeling of the <i>Ciona</i> cortical flows", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "We model the cell cortex as a thin cylindrical layer of an actomyosin gel of length <i>L</i> with principal axis <i>z</i> \u2208 [\u2212<i>L</i>/2,<i>L</i>/2]. In order to capture the most basic aspects of ring formation and positioning, we use a one-dimensional description and do not resolve the radial direction which has been studied in (<a href=\"#bib26\">Joanny et al., 2013</a>). Therefore, all equations are invariant in the orthoradial direction. We will start by considering separately actin filaments and monomers and attached myosin motors, viewing the motors as being in solution in the actin solute."
+                                "text": "This text contains technical derivations regarding the model of ring migration as well as quantitative connections with the experiments."
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "We denote by <i>a</i>(<i>z</i>,<i>t</i>) the concentration of actin filaments, by <i>m</i>(<i>z</i>,<i>t</i>) the concentration of actin monomers and by <i>c</i>(<i>z</i>,<i>t</i>) the concentration of motors (or to be more accurate bipolar filaments including 20\u201330 motors) performing power stroke on the actin filaments. Following (<a href=\"#bib31\">Kruse et al., 2005</a>), the conservation equations then read,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ1", 
-                                "label": "(1)", 
-                                "mathml": "<math><mrow><mtable><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>a</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>a</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>k</mi><mtext>p</mtext></msub><mi>m</mi><mo>\u2212</mo><msub><mi>k</mi><mtext>d</mtext></msub><mi>a</mi></mrow></mtd></mtr><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>m</mi><mo>\u2212</mo><msub><mi>D</mi><mi>m</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>m</mi><mo>=</mo><mo>\u2212</mo><msub><mi>k</mi><mtext>p</mtext></msub><mi>m</mi><mo>+</mo><msub><mi>k</mi><mtext>d</mtext></msub><mi>a</mi></mrow></mtd></mtr><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>c</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>c</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>D</mi><mi>c</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>c</mi><mo>=</mo><msub><mi>k</mi><mrow><mtext>on</mtext></mrow></msub><mo>\u2212</mo><msub><mi>k</mi><mrow><mtext>off</mtext></mrow></msub><mi>c</mi></mrow></mtd></mtr></mtable><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The velocity of actin filaments is <i>v</i>(<i>z</i>,<i>t</i>). Actin polymerizes (resp. depolymerizes) with fixed rates <i>k</i><sub>p</sub> (resp. <i>k</i><sub>d</sub>), and monomers are free to diffuse in the cytoplasm with a coefficient <i>D</i><sub><i>m</i></sub>. We assume that motors are advected with actin but can also thermally diffuse with a diffusion coefficient <i>D</i><sub><i>c</i></sub>. Microscopic derivation from a two state motor (<a href=\"#bib27\">Julicher et al., 1997</a>) of such type of macroscopic equation is given in <a href=\"#bib62\">Zeldovich et al. (2005</a>). On top of this, motors can also attach and detach away from the actin filaments again following a first order kinetic which involves rates <i>k</i><sub>on</sub> and <i>k</i><sub>off</sub>. We also suppose that there is a large pool of free motors."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "To begin with, we assume that the polymerization/depolymerization reaction is close to equilibrium such that can write:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ2", 
-                                "label": "(2)", 
-                                "mathml": "<math><mrow><mi>m</mi><mo>=</mo><mi>K</mi><mi>a</mi><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <i>K</i> is the reaction constant. Combining the first and second equation of <a href=\"#equ1\">(Equation 1)</a>, we obtain:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ3", 
-                                "label": "(3)", 
-                                "mathml": "<math><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi>K</mi></mrow><mo>)</mo></mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>a</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>a</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>K</mi><msub><mi>D</mi><mi>m</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>a</mi><mo>=</mo><mn>0.</mn></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Supposing that <i>K</i> \u226a 1 while <i>D</i><sub><i>a</i></sub> = <i>KD</i><sub><i>m</i></sub> remains finite, we have \u2202<sub><i>t</i></sub><i>a</i> + \u2202<sub><i>z</i></sub>(<i>av</i>) \u2212 <i>D</i><sub><i>a</i></sub>\u2202<sub><i>zz</i></sub><i>a</i> = 0."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Thus, <i>D</i><sub><i>a</i></sub> is an effective diffusion of actin filaments that accounts for actin filament production and degradation. We rewrite <a href=\"#equ1\">Equation (1)</a> as a set a reaction-advection-diffusion equations."
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ4", 
-                                "label": "(4)", 
-                                "mathml": "<math><mrow><mtable><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>a</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>a</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>D</mi><mi>a</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>a</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>c</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>c</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>D</mi><mi>c</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>c</mi><mo>=</mo><msub><mi>k</mi><mrow><mtext>on</mtext></mrow></msub><mo>\u2212</mo><msub><mi>k</mi><mrow><mtext>off</mtext></mrow></msub><mi>c</mi></mrow></mtd></mtr></mtable></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Added to this, we assume that the friction forces stemming from the membrane and the permeation friction forces (<a href=\"#bib50\">Rubinstein et al., 2009</a>; <a href=\"#bib26\">Joanny et al., 2013</a>) with the cytosol are negligible. To check this hypothesis, we compared experimentally the anterior and posterior angles between lateral and basal sides (<i>n</i> = 10), around 19\u201320 hpf, during ring migration towards the center. If friction was significant, these angles would be expected to be different for an anterior-positioned ring, as basal tension would not be constant throughout the basal cortex (more precisely, the difference would be <math id=\"inf1\"><mrow><mi>\u03c3</mi><mrow><mo>(</mo><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>\u03c3</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mi>\u03be</mi><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>v</mi><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mtext>d</mtext><mi>z</mi></mrow></mrow></mstyle></mrow></math> where <i>\u03be</i> is the friction coefficient of the cortex against the extra-cellular matrix, and <i>\u03c3</i> is the internal stress in the actomyosin network). Nevertheless, we could not find a statistically significant difference between these two angles. Thus, force balance reads,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ5", 
-                                "label": "(5)", 
-                                "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>z</mi></msub><mi>\u03c3</mi><mo>=</mo><mn>0.</mn></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "and <math id=\"inf2\"><mrow><mi>\u03c3</mi><mo>\u2261</mo><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow></mrow></math> is the homogeneous stress inside the acto-myosin cortex which is imposed by neighbouring cells."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Finally, the behaviour law for stress in the actomyosin network is given by <a href=\"#bib28\">Julicher et al. (2007)</a>,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ6", 
-                                "label": "(6)", 
-                                "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow><mo>=</mo><mi>\u03b7</mi><msub><mo>\u2202</mo><mi>z</mi></msub><mi>v</mi><mo>+</mo><msup><mi>\u03c7</mi><mn>0</mn></msup><msup><mi>a</mi><mn>2</mn></msup><mi>m</mi><mo>\u2212</mo><mi>E</mi><mi>a</mi><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <i>\u03b7</i> is the viscosity of actomyosin, and <i>E</i> is a compressibility modulus. We have assumed a simple model for the active stress, where one myosin motor needs to interact with two actin filaments to perform a power stroke, with a positive contractility coefficient <i>\u03c7</i><sup>0</sup>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "To further simplify our description, we effectively treat actin and myosin as a single species of density <i>\u03c1</i> of acto-myosin satisfying a reaction-drift-diffusion equation (<a href=\"#bib43\">Peskin et al., 1993</a>; <a href=\"#bib38\">Mogilner and Oster, 1996</a>; <a href=\"#bib18\">George et al., 2013</a>; <a href=\"#bib14\">Dierkes et al., 2014</a>):"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ7", 
-                                "label": "(7)", 
-                                "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>\u03c1</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>D</mi><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>\u03c1</mi><mo>=</mo><mfrac><mrow><msub><mi>\u03c1</mi><mn>0</mn></msub><mo>\u2212</mo><mi>\u03c1</mi></mrow><mi>\u03c4</mi></mfrac><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <i>D</i> is an effective diffusion coefficient of acto-myosin, <i>\u03c1</i><sub>0</sub> a target density, and <i>\u03c4</i> a turnover time. To linear order, the behavior law simply becomes,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ8", 
-                                "label": "(8)", 
-                                "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow><mo>=</mo><mi>\u03b7</mi><msub><mo>\u2202</mo><mi>z</mi></msub><mi>v</mi><mo>+</mo><mi>\u03c7</mi><mi>\u03c1</mi><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <i>\u03c7</i> is the effective contractility coefficient. In the main text, we show that \u2202<sub><i>z</i></sub><i>v</i> decays linearly with actin fluorescence intensity. This further indicates that <math id=\"inf3\"><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow></math> in <a href=\"#equ8\">Equation (8)</a> can indeed be considered as constant and the friction coefficient with the extra-cellular matrix can indeed be considered negligible."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Notice that our <a href=\"#equ7 equ8\">Equations (7, 8)</a> are generic in the sense they may be obtained with a slightly different interpretation. Starting from (4)<sub>2</sub>, we may directly write the contraction term in the behavior law (6) in a linear way <i>\u03c7c</i> as done in (<a href=\"#bib2\">Bois et al. (2011</a>; <a href=\"#bib61\">Wolgemuth et al., 2011</a>) and thus obtain the same set of equation where the concentration field is the one of motors instead of acto-myosin. The turnover time 1/<i>k</i><sub>off</sub> thus represents the one of attachment\u2013detachment of motors which is experimentally found to be close to the one of actin. Assuming infinite compressibility, the actin concentration uncouples from the rest of the problem and can be reconstructed post-factum from (4)<sub>1</sub> as done in <a href=\"#bib46\">Recho et al. (2013</a>, <a href=\"#bib47\">2014</a>) once the velocity field is known."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Finally, we turn to boundary conditions. Actomyosin can be produced locally at the anterior and posterior boundaries. Thus denoting the flux,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ9", 
-                                "label": "(9)", 
-                                "mathml": "<math><mrow><mi>J</mi><mo>=</mo><mi>\u03c1</mi><mi>v</mi><mo>\u2212</mo><mi>D</mi><msub><mo>\u2202</mo><mi>z</mi></msub><mi>\u03c1</mi><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "we have,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ10", 
-                                "label": "(10)", 
-                                "mathml": "<math><mrow><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>J</mi><mi>a</mi></msub><mtext>\u2009</mtext><mo>\u2009</mo><mtext>and\u2009</mtext><mo>\u2009</mo><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>J</mi><mi>p</mi></msub><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Notice that this flux contains the effective diffusion coefficient stemming from actin filaments turnover. Thus, PIV does measure the velocity of filaments <i>v</i> and not the flux <i>J</i> which is related to mass balance."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "One mechanical condition is still missing because the system is friction free, so all rigid body motions are allowed. To eliminate these modes, we additionally set:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ11", 
-                                "label": "(11)", 
-                                "mathml": "<math><mrow><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>v</mi><mrow><mo>(</mo><mrow><mi>z</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mi>d</mi><mi>z</mi><mo>=</mo><mn>0</mn></mrow></mrow></mstyle><mtext>.</mtext></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "It is in agreement with imposing that the stress is the same at both sides in the presence of friction (integration of \u2202<sub><i>z</i></sub><i>\u03c3</i> = <i>\u03bev</i>)."
+                                "type": "section", 
+                                "id": "s6-1", 
+                                "title": "The model", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We model the cell cortex as a thin cylindrical layer of an actomyosin gel of length <i>L</i> with principal axis <i>z</i> \u2208 [\u2212<i>L</i>/2,<i>L</i>/2]. In order to capture the most basic aspects of ring formation and positioning, we use a one-dimensional description and do not resolve the radial direction which has been studied in (<a href=\"#bib26\">Joanny et al., 2013</a>). Therefore, all equations are invariant in the orthoradial direction. We will start by considering separately actin filaments and monomers and attached myosin motors, viewing the motors as being in solution in the actin solute."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We denote by <i>a</i>(<i>z</i>,<i>t</i>) the concentration of actin filaments, by <i>m</i>(<i>z</i>,<i>t</i>) the concentration of actin monomers and by <i>c</i>(<i>z</i>,<i>t</i>) the concentration of motors (or to be more accurate bipolar filaments including 20\u201330 motors) performing power stroke on the actin filaments. Following (<a href=\"#bib31\">Kruse et al., 2005</a>), the conservation equations then read,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ1", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mrow><mtable><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>a</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>a</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>k</mi><mtext>p</mtext></msub><mi>m</mi><mo>\u2212</mo><msub><mi>k</mi><mtext>d</mtext></msub><mi>a</mi></mrow></mtd></mtr><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>m</mi><mo>\u2212</mo><msub><mi>D</mi><mi>m</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>m</mi><mo>=</mo><mo>\u2212</mo><msub><mi>k</mi><mtext>p</mtext></msub><mi>m</mi><mo>+</mo><msub><mi>k</mi><mtext>d</mtext></msub><mi>a</mi></mrow></mtd></mtr><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>c</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>c</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>D</mi><mi>c</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>c</mi><mo>=</mo><msub><mi>k</mi><mrow><mtext>on</mtext></mrow></msub><mo>\u2212</mo><msub><mi>k</mi><mrow><mtext>off</mtext></mrow></msub><mi>c</mi></mrow></mtd></mtr></mtable><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The velocity of actin filaments is <i>v</i>(<i>z</i>,<i>t</i>). Actin polymerizes (resp. depolymerizes) with fixed rates <i>k</i><sub>p</sub> (resp. <i>k</i><sub>d</sub>), and monomers are free to diffuse in the cytoplasm with a coefficient <i>D</i><sub><i>m</i></sub>. We assume that motors are advected with actin but can also thermally diffuse with a diffusion coefficient <i>D</i><sub><i>c</i></sub>. Microscopic derivation from a two state motor (<a href=\"#bib27\">Julicher et al., 1997</a>) of such type of macroscopic equation is given in <a href=\"#bib62\">Zeldovich et al. (2005</a>). On top of this, motors can also attach and detach away from the actin filaments again following a first order kinetic which involves rates <i>k</i><sub>on</sub> and <i>k</i><sub>off</sub>. We also suppose that there is a large pool of free motors."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To begin with, we assume that the polymerization/depolymerization reaction is close to equilibrium such that can write:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mrow><mi>m</mi><mo>=</mo><mi>K</mi><mi>a</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>K</i> is the reaction constant. Combining the first and second equation of <a href=\"#equ1\">(Equation 1)</a>, we obtain:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi>K</mi></mrow><mo>)</mo></mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>a</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>a</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>K</mi><msub><mi>D</mi><mi>m</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>a</mi><mo>=</mo><mn>0.</mn></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Supposing that <i>K</i> \u226a 1 while <i>D</i><sub><i>a</i></sub> = <i>KD</i><sub><i>m</i></sub> remains finite, we have \u2202<sub><i>t</i></sub><i>a</i> + \u2202<sub><i>z</i></sub>(<i>av</i>) \u2212 <i>D</i><sub><i>a</i></sub>\u2202<sub><i>zz</i></sub><i>a</i> = 0."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Thus, <i>D</i><sub><i>a</i></sub> is an effective diffusion of actin filaments that accounts for actin filament production and degradation. We rewrite <a href=\"#equ1\">Equation (1)</a> as a set a reaction-advection-diffusion equations."
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "label": "(4)", 
+                                        "mathml": "<math><mrow><mtable><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>a</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>a</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>D</mi><mi>a</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>a</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>c</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>c</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>D</mi><mi>c</mi></msub><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>c</mi><mo>=</mo><msub><mi>k</mi><mrow><mtext>on</mtext></mrow></msub><mo>\u2212</mo><msub><mi>k</mi><mrow><mtext>off</mtext></mrow></msub><mi>c</mi></mrow></mtd></mtr></mtable></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Added to this, we assume that the friction forces stemming from the membrane and the permeation friction forces (<a href=\"#bib50\">Rubinstein et al., 2009</a>; <a href=\"#bib26\">Joanny et al., 2013</a>) with the cytosol are negligible. To check this hypothesis, we compared experimentally the anterior and posterior angles between lateral and basal sides (<i>n</i> = 10), around 19\u201320 hpf, during ring migration towards the center. If friction was significant, these angles would be expected to be different for an anterior-positioned ring, as basal tension would not be constant throughout the basal cortex (more precisely, the difference would be <math id=\"inf1\"><mrow><mi>\u03c3</mi><mrow><mo>(</mo><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>\u03c3</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mi>\u03be</mi><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>v</mi><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mtext>d</mtext><mi>z</mi></mrow></mrow></mstyle></mrow></math> where <i>\u03be</i> is the friction coefficient of the cortex against the extra-cellular matrix, and <i>\u03c3</i> is the internal stress in the actomyosin network). Nevertheless, we could not find a statistically significant difference between these two angles. Thus, force balance reads,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(5)", 
+                                        "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>z</mi></msub><mi>\u03c3</mi><mo>=</mo><mn>0.</mn></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "and <math id=\"inf2\"><mrow><mi>\u03c3</mi><mo>\u2261</mo><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow></mrow></math> is the homogeneous stress inside the acto-myosin cortex which is imposed by neighbouring cells."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, the behaviour law for stress in the actomyosin network is given by <a href=\"#bib28\">Julicher et al. (2007)</a>,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "label": "(6)", 
+                                        "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow><mo>=</mo><mi>\u03b7</mi><msub><mo>\u2202</mo><mi>z</mi></msub><mi>v</mi><mo>+</mo><msup><mi>\u03c7</mi><mn>0</mn></msup><msup><mi>a</mi><mn>2</mn></msup><mi>m</mi><mo>\u2212</mo><mi>E</mi><mi>a</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>\u03b7</i> is the viscosity of actomyosin, and <i>E</i> is a compressibility modulus. We have assumed a simple model for the active stress, where one myosin motor needs to interact with two actin filaments to perform a power stroke, with a positive contractility coefficient <i>\u03c7</i><sup>0</sup>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To further simplify our description, we effectively treat actin and myosin as a single species of density <i>\u03c1</i> of acto-myosin satisfying a reaction-drift-diffusion equation (<a href=\"#bib43\">Peskin et al., 1993</a>; <a href=\"#bib38\">Mogilner and Oster, 1996</a>; <a href=\"#bib18\">George et al., 2013</a>; <a href=\"#bib14\">Dierkes et al., 2014</a>):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "label": "(7)", 
+                                        "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>\u03c1</mi><mo>+</mo><msub><mo>\u2202</mo><mi>z</mi></msub><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mi>v</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>D</mi><msub><mo>\u2202</mo><mrow><mi>z</mi><mi>z</mi></mrow></msub><mi>\u03c1</mi><mo>=</mo><mfrac><mrow><msub><mi>\u03c1</mi><mn>0</mn></msub><mo>\u2212</mo><mi>\u03c1</mi></mrow><mi>\u03c4</mi></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>D</i> is an effective diffusion coefficient of acto-myosin, <i>\u03c1</i><sub>0</sub> a target density, and <i>\u03c4</i> a turnover time. To linear order, the behavior law simply becomes,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "label": "(8)", 
+                                        "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow><mo>=</mo><mi>\u03b7</mi><msub><mo>\u2202</mo><mi>z</mi></msub><mi>v</mi><mo>+</mo><mi>\u03c7</mi><mi>\u03c1</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>\u03c7</i> is the effective contractility coefficient. In the main text, we show that \u2202<sub><i>z</i></sub><i>v</i> decays linearly with actin fluorescence intensity. This further indicates that <math id=\"inf3\"><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow></math> in <a href=\"#equ8\">Equation (8)</a> can indeed be considered as constant and the friction coefficient with the extra-cellular matrix can indeed be considered negligible."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Notice that our <a href=\"#equ7 equ8\">Equations (7, 8)</a> are generic in the sense they may be obtained with a slightly different interpretation. Starting from (4)<sub>2</sub>, we may directly write the contraction term in the behavior law (6) in a linear way <i>\u03c7c</i> as done in (<a href=\"#bib2\">Bois et al. (2011</a>; <a href=\"#bib61\">Wolgemuth et al., 2011</a>) and thus obtain the same set of equation where the concentration field is the one of motors instead of acto-myosin. The turnover time 1/<i>k</i><sub>off</sub> thus represents the one of attachment\u2013detachment of motors which is experimentally found to be close to the one of actin. Assuming infinite compressibility, the actin concentration uncouples from the rest of the problem and can be reconstructed post-factum from (4)<sub>1</sub> as done in <a href=\"#bib46\">Recho et al. (2013</a>, <a href=\"#bib47\">2014</a>) once the velocity field is known."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, we turn to boundary conditions. Actomyosin can be produced locally at the anterior and posterior boundaries. Thus denoting the flux,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "label": "(9)", 
+                                        "mathml": "<math><mrow><mi>J</mi><mo>=</mo><mi>\u03c1</mi><mi>v</mi><mo>\u2212</mo><mi>D</mi><msub><mo>\u2202</mo><mi>z</mi></msub><mi>\u03c1</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "we have,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "label": "(10)", 
+                                        "mathml": "<math><mrow><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>J</mi><mi>a</mi></msub><mtext>\u2009</mtext><mo>\u2009</mo><mtext>and\u2009</mtext><mo>\u2009</mo><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>J</mi><mi>p</mi></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Notice that this flux contains the effective diffusion coefficient stemming from actin filaments turnover. Thus, PIV does measure the velocity of filaments <i>v</i> and not the flux <i>J</i> which is related to mass balance."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "One mechanical condition is still missing because the system is friction free, so all rigid body motions are allowed. To eliminate these modes, we additionally set:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "label": "(11)", 
+                                        "mathml": "<math><mrow><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>v</mi><mrow><mo>(</mo><mrow><mi>z</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow><mi>d</mi><mi>z</mi><mo>=</mo><mn>0</mn></mrow></mrow></mstyle><mtext>.</mtext></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It is in agreement with imposing that the stress is the same at both sides in the presence of friction (integration of \u2202<sub><i>z</i></sub><i>\u03c3</i> = <i>\u03bev</i>)."
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -4308,16 +4319,47 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s7-1", 
-                        "title": "Assumptions", 
+                        "id": "s7", 
+                        "title": "Rescaling", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "We set the posterior actin flux to zero considering that the anterior flux is much larger at least in the control case. The robustness of such assumption will be numerically checked."
+                                "text": "Non-dimensionalizing spacial variables by <math id=\"inf4\"><mrow><msqrt><mrow><mi>D</mi><mi>\u03c4</mi></mrow></msqrt></mrow></math>, time by <i>\u03c4</i>, stress by <i>\u03b7</i>/<i>\u03c4</i> and density by <i>\u03c1</i><sub>0</sub>, denoting <i>x</i> = <i>z</i>/<i>L</i> \u2208 [\u22121/2,1/2], we get from <a href=\"#equ7 equ8\">Equations (7, 8)</a>,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ12", 
+                                "label": "(12)", 
+                                "mathml": "<math><mrow><mtable><mtr><mtd><mrow><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><msub><mo>\u2202</mo><mi>x</mi></msub><mi>v</mi><mo>=</mo><mi mathvariant=\"script\">S</mi><mo>\u2212</mo><mi mathvariant=\"script\">C</mi><mi>\u03c1</mi></mrow></mtd></mtr><mtr><mtd><mrow><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><msub><mo>\u2202</mo><mi>t</mi></msub><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">L</mi><mi>\u03c1</mi></mrow><mo>)</mo></mrow><mo>+</mo><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><msub><mo>\u2202</mo><mi>x</mi></msub><mi>J</mi><mo>=</mo><mn>1</mn><mo>\u2212</mo><mi>\u03c1</mi></mrow></mtd></mtr><mtr><mtd><mrow><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><msub><mo>\u2202</mo><mi>x</mi></msub><mi>\u03c1</mi><mo>=</mo><mi>\u03c1</mi><mrow><mo>(</mo><mrow><mi>v</mi><mo>\u2212</mo><mi>x</mi><mfrac><mrow><mi>d</mi><mi mathvariant=\"script\">L</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>J</mi></mrow></mtd></mtr></mtable><mo>,</mo></mrow></math>"
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "Added to this, as an homogeneous steady state <i>\u03c1</i> \u2261 1 is expected in the absence of anterior flux for low contractilities, we necessarily have to set <math id=\"inf9\"><mrow><mi mathvariant=\"script\">S</mi><mo>=</mo><mi mathvariant=\"script\">C</mi></mrow></math> to ensure such steady state. Physically, this condition states that the external stress <math id=\"inf10\"><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow></math> applied by neighboring cells balances the active contractile stress <i>\u03c7\u03c1</i><sub>0</sub> to maintain the shape."
+                                "text": "with boundary conditions,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ13", 
+                                "label": "(13)", 
+                                "mathml": "<math><mrow><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>,</mo><mo>\u2009</mo><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>\u2009</mo><mtext>\u2009and\u2009</mtext><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>v</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow></mrow></mstyle><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The five non-dimensional parameters entering the problem are, the contractility, <math id=\"inf5\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mrow><mrow><mi>\u03c7</mi><msub><mi>\u03c1</mi><mn>0</mn></msub><mi>\u03c4</mi></mrow><mo>/</mo><mi>\u03b7</mi></mrow></mrow></math>, the residual stress <math id=\"inf6\"><mrow><mi mathvariant=\"script\">S</mi><mo>=</mo><mrow><mrow><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow><mi>\u03c4</mi></mrow><mo>/</mo><mi>\u03b7</mi></mrow></mrow></math>, the normalized length of the cell, <math id=\"inf7\"><mrow><mi mathvariant=\"script\">L</mi><mo>=</mo><mrow><mi>L</mi><mo>/</mo><mrow><msqrt><mrow><mi>D</mi><mi>\u03c4</mi></mrow></msqrt></mrow></mrow></mrow></math> and the fluxes <math id=\"inf8\"><mrow><msub><mi mathvariant=\"script\">J</mi><mrow><mi>a</mi><mo>,</mo><mi>p</mi></mrow></msub><mo>=</mo><mrow><mrow><msub><mi>J</mi><mrow><mi>a</mi><mo>,</mo><mi>p</mi></mrow></msub></mrow><mo>/</mo><mrow><msub><mi>\u03c1</mi><mn>0</mn></msub><msqrt><mrow><mrow><mi>\u03c4</mi><mo>/</mo><mi>D</mi></mrow></mrow></msqrt></mrow></mrow></mrow></math>. After these five parameters and an initial data is provided, system (<a href=\"#equ12\">Equation 12</a>) can be solved numerically using a finite volume discretization stencil (<a href=\"#bib33\">LeVeque, 2002</a>)."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-1", 
+                                "title": "Assumptions", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We set the posterior actin flux to zero considering that the anterior flux is much larger at least in the control case. The robustness of such assumption will be numerically checked."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Added to this, as an homogeneous steady state <i>\u03c1</i> \u2261 1 is expected in the absence of anterior flux for low contractilities, we necessarily have to set <math id=\"inf9\"><mrow><mi mathvariant=\"script\">S</mi><mo>=</mo><mi mathvariant=\"script\">C</mi></mrow></math> to ensure such steady state. Physically, this condition states that the external stress <math id=\"inf10\"><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u00af</mo></mover></mrow></math> applied by neighboring cells balances the active contractile stress <i>\u03c7\u03c1</i><sub>0</sub> to maintain the shape."
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -4329,44 +4371,126 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s8-2", 
-                        "title": "Influence of the anterior flux", 
+                        "id": "s8", 
+                        "title": "Steady states", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "Introducing the anterior mass flux brings a bias inside the problem and breaks the pitchfork bifurcation into a saddle node one as generically explained in <a href=\"#bib1\">Arnold et al. (1994)</a> (<a href=\"#fig8\">Appendix figure 1</a>)."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The biasing favors the formation of an actin ring at the anterior pole. Indeed, one can solve <a href=\"#equ14\">Equation 14</a>, when <math id=\"inf20\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>0</mn></mrow></math>, to find,"
+                                "text": "At steady state, density does not vary in time (\u2202<sub><i>t</i></sub><i>\u03c1</i> \u2261 0) and length increase also vanishes <math id=\"inf11\"><mrow><mrow><mo>(</mo><mrow><mrow><mrow><mi>d</mi><mi mathvariant=\"script\">L</mi></mrow><mo>/</mo><mrow><mi>d</mi><mi>t</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow></math>. The flux of actomyosin then satisfies,"
                             }, 
                             {
                                 "type": "mathml", 
-                                "id": "equ18", 
-                                "label": "(18)", 
-                                "mathml": "<math><mrow><msub><mi>J</mi><mrow><msub><mi mathvariant=\"script\">C</mi><mn>0</mn></msub></mrow></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mfrac><mrow><mi>sinh</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">L</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2212</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mi>sinh</mi><mrow><mo>(</mo><mi mathvariant=\"script\">L</mi><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
+                                "id": "equ14", 
+                                "label": "(14)", 
+                                "mathml": "<math><mrow><mo>\u2212</mo><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>2</mn></mrow></msup><msub><mo>\u2202</mo><mrow><mi>x</mi><mi>x</mi></mrow></msub><mi>J</mi><mo>=</mo><mi mathvariant=\"script\">C</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><msub><mo>\u2202</mo><mi>x</mi></msub><mi>J</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>J</mi><mo>\u2212</mo><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>J</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mtext>d</mtext><mi>u</mi></mrow></mrow></mstyle></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>J</mi></mrow></math>"
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "and thus,"
+                                "text": "with <math id=\"inf12\"><mrow><mi>J</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math>, and <i>J</i>(1/2) = 0. <a href=\"#equ14\">Equation (14)</a> has a long range interaction with a quadratic non linearity structure."
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ19", 
-                                "label": "(19)", 
-                                "mathml": "<math><mrow><msub><mi>\u03c1</mi><mrow><msub><mi mathvariant=\"script\">C</mi><mn>0</mn></msub></mrow></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mfrac><mrow><mi>cosh</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">L</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2212</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mi>sinh</mi><mrow><mo>(</mo><mi mathvariant=\"script\">L</mi><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s8-1", 
+                                "title": "No flux case", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When <math id=\"inf13\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn></mrow></math>, <i>J</i> \u2261 0 is a trivial solution of <a href=\"#equ14\">Equation (14)</a>. However, an increase of contractility can destabilize this homogeneous configuration which stops to be stable when the critical contractility threshold,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ15", 
+                                        "label": "(15)", 
+                                        "mathml": "<math><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mn>4</mn><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>2</mn></mrow></msup><msup><mi>\u03c0</mi><mn>2</mn></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "is reached. At <math id=\"inf14\"><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></math>, the stable solution bifurcates from the homogeneous one in a pitchfork supercritical way (second order phase transition) and we have"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ16", 
+                                        "label": "(16)", 
+                                        "mathml": "<math><mrow><msqrt><mrow><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><mrow><mi>J</mi><msup><mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mn>2</mn></msup><mtext>d</mtext><mi>x</mi></mrow></mrow></mstyle></mrow></msqrt><mrow><munder><mo stretchy=\"true\">~</mo><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></munder></mrow><mo>\u00b1</mo><msqrt><mrow><mfrac><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">C</mi><mo>\u2212</mo><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow><mo>)</mo></mrow></mrow><mrow><msubsup><mi mathvariant=\"script\">C</mi><mi>c</mi><mn>2</mn></msubsup></mrow></mfrac></mrow></msqrt><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The bifurcation eigenmode is thus"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ17", 
+                                        "label": "(17)", 
+                                        "mathml": "<math><mrow><msub><mi>J</mi><mi>c</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><munder><mo stretchy=\"true\">~</mo><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></munder></mrow><mo>\u00b1</mo><msqrt><mrow><mfrac><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">C</mi><mo>\u2212</mo><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow><mo>)</mo></mrow></mrow><mrow><msubsup><mi mathvariant=\"script\">C</mi><mi>c</mi><mn>2</mn></msubsup></mrow></mfrac></mrow></msqrt><mtext>\u2009sin</mtext><mrow><mo>(</mo><mrow><mn>2</mn><mi>\u03c0</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which concentrates actin either in the center or on the edges depending on the prefactor sign."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Notice that upon increase of <math id=\"inf15\"><mi mathvariant=\"script\">C</mi></math>, there is a infinite number of bifurcation branches branching at points <math id=\"inf16\"><mrow><mn>1</mn><mo>+</mo><mn>4</mn><msup><mi>n</mi><mn>2</mn></msup><msup><mi mathvariant=\"script\">L</mi><mrow><mo>\u2212</mo><mn>2</mn></mrow></msup><msup><mi>\u03c0</mi><mn>2</mn></msup></mrow></math>where <i>n</i> \u2265 2; however, all these branches were numerically found to be unstable. So the situation is that if <math id=\"inf17\"><mrow><mi mathvariant=\"script\">C</mi><mo>&lt;</mo><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></math>, the homogeneous solution is the global attractor while when <math id=\"inf18\"><mrow><mi mathvariant=\"script\">C</mi><mo>&gt;</mo><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></math>, the global attractor is the solution localizing (more and more with increase of <math id=\"inf19\"><mi mathvariant=\"script\">C</mi></math>) to the center or the poles (see <a href=\"#fig8\">Appendix figure 1</a>)"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.09206.017", 
+                                        "id": "fig8", 
+                                        "label": "Appendix figure 1.", 
+                                        "title": "A supercritical pitchfork bifurcation is broken into a saddle one upon introduction of a non symmetrical perturbation.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Dotted lines indicate that the branch is linearly unstable."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app3-fig1-v1.tif", 
+                                        "filename": "elife-09206-app3-fig1-v1.tif"
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "The density of actin clearly localizes to the anterior pole over a characteristic length <math id=\"inf21\"><mi mathvariant=\"script\">L</mi></math>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "In the general case, upon increase of contractility, the distribution then switches from localization at the anterior pole when <math id=\"inf22\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>0</mn></mrow></math> to a localization close to the center when <math id=\"inf23\"><mi mathvariant=\"script\">C</mi></math>is large."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Notice that the branch localizing the motors on both poles is still locally stable. However, it is disconnected from the other one where there is a switch from the side to the center. Also we numerically find that the basin of attraction of this branch is getting smaller as <math id=\"inf24\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math>increase. As a result, it is probably difficult to observe experimentally even when polarity is impaired."
+                                "type": "section", 
+                                "id": "s8-2", 
+                                "title": "Influence of the anterior flux", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Introducing the anterior mass flux brings a bias inside the problem and breaks the pitchfork bifurcation into a saddle node one as generically explained in <a href=\"#bib1\">Arnold et al. (1994)</a> (<a href=\"#fig8\">Appendix figure 1</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The biasing favors the formation of an actin ring at the anterior pole. Indeed, one can solve <a href=\"#equ14\">Equation 14</a>, when <math id=\"inf20\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>0</mn></mrow></math>, to find,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ18", 
+                                        "label": "(18)", 
+                                        "mathml": "<math><mrow><msub><mi>J</mi><mrow><msub><mi mathvariant=\"script\">C</mi><mn>0</mn></msub></mrow></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mfrac><mrow><mi>sinh</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">L</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2212</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mi>sinh</mi><mrow><mo>(</mo><mi mathvariant=\"script\">L</mi><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "and thus,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ19", 
+                                        "label": "(19)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c1</mi><mrow><msub><mi mathvariant=\"script\">C</mi><mn>0</mn></msub></mrow></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mfrac><mrow><mi>cosh</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">L</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2212</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mi>sinh</mi><mrow><mo>(</mo><mi mathvariant=\"script\">L</mi><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The density of actin clearly localizes to the anterior pole over a characteristic length <math id=\"inf21\"><mi mathvariant=\"script\">L</mi></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the general case, upon increase of contractility, the distribution then switches from localization at the anterior pole when <math id=\"inf22\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>0</mn></mrow></math> to a localization close to the center when <math id=\"inf23\"><mi mathvariant=\"script\">C</mi></math>is large."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Notice that the branch localizing the motors on both poles is still locally stable. However, it is disconnected from the other one where there is a switch from the side to the center. Also we numerically find that the basin of attraction of this branch is getting smaller as <math id=\"inf24\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math>increase. As a result, it is probably difficult to observe experimentally even when polarity is impaired."
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -4378,35 +4502,115 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s9-3", 
-                        "title": "Parameter <math id=\"inf32\"><mi mathvariant=\"script\">C</mi></math>", 
+                        "id": "s9", 
+                        "title": "Rough estimates of model parameters", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "We begin with a estimate of <math id=\"inf33\"><mi mathvariant=\"script\">C</mi></math> when the ring is formed. From relation (<a href=\"#equ8\">Equation 8</a>), we have that,"
+                                "text": "To begin with, we estimated the typical scales of time and space."
+                            }, 
+                            {
+                                "type": "list", 
+                                "prefix": "bullet", 
+                                "items": [
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "FRAP experiments allow to estimate <i>\u03c4</i> = 90 s."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "An approximation of the effective diffusion of acto-myosin can be found from (<a href=\"#bib38\">Mogilner and Oster, 1996</a>; <a href=\"#bib37\">Mogilner and Edelstein-Keshet, 2002</a>). The diffusion coefficient of actin monomers in the cytoplasm is 20 \u03bcm<sup>2</sup> s<sup>\u22121</sup> and <i>k</i><sub><i>d</i></sub>/<i>k</i><sub><i>p</i></sub> \u2248 1/100. This leads to <i>D</i> \u2248 0.2 \u03bcm<sup>2</sup> s<sup>\u22121</sup>. We then obtain,"
+                                        }
+                                    ]
+                                ]
                             }, 
                             {
                                 "type": "mathml", 
-                                "id": "equ21", 
-                                "mathml": "<math><mrow><mi>\u03b7</mi><mfrac><mrow><mtext>\u0394</mtext><mi>v</mi></mrow><mrow><mtext>\u0394</mtext><mi>L</mi></mrow></mfrac><mo>\u223c</mo><mi>\u03c7</mi><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mo>\u2212</mo><msub><mi>\u03c1</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                "id": "equ20", 
+                                "mathml": "<math><mrow><msqrt><mrow><mi>D</mi><mi>\u03c4</mi></mrow></msqrt><mo>\u2248</mo><mn>3</mn><mo>.</mo><mn>16</mn><mtext>\u2009\u03bcm</mtext><mo>.</mo></mrow></math>"
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "Maximal velocity estimated by PIV is of the order of <i>v</i> \u2248 50 nm s<sup>\u22121</sup> and decays to zero over roughly a fourth of the cell length that is 3 \u03bcm. Over the same length, intensity of actin fluorescence can increase roughly of one half of its base value leading <i>\u03c1</i> \u2212 <i>\u03c1</i><sub>0</sub> \u223c 0.5<i>\u03c1</i><sub>0</sub>. We thus obtain (<i>\u03c7\u03c1</i><sub>0</sub>)/<i>\u03b7</i> \u2248 0.03 s<sup>\u22121</sup>. This ratio is in agreement with the estimates of (<a href=\"#bib28\">Julicher et al., 2007</a>; <a href=\"#bib50\">Rubinstein et al., 2009</a>), which suggest <i>\u03c7\u03c1</i><sub>0</sub> \u2248 10<sup>3</sup> Pa, <i>\u03b7</i> \u2248 10<sup>4</sup>\u201310<sup>5</sup> Pa \u00b7 s. We then obtain <math id=\"inf34\"><mrow><mi mathvariant=\"script\">C</mi><mo>\u2248</mo><mn>3</mn></mrow></math>. For the numerical model, to fit the experimental data, we postulated that <i>C</i> increases linearly in time from <math id=\"inf35\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>1</mn></mrow></math> to <math id=\"inf36\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>3</mn><mo>.</mo><mn>3</mn></mrow></math> thus assuming an increase of the (homogeneous) cortical tension of roughly 1.5 as measured experimentally during the course of development (see <a href=\"#fig12\">Appendix figure 5B</a> of the main text where an elongation of 72% is related to an increase of the rescaled tension from 1.2 to 1.8, hence the assumed 1.5 increase). Notice that this is this increase that dictates the ring migration dynamic. Indeed, from the average filament velocity <i>v</i> \u2248 30 nm s<sup>\u22121</sup>, it would take \u223c3 min for the ring to migrate from the side to center position (a \u223c6 \u03bcm distance) if the internal flow were driving the ring positioning."
+                                "text": "We estimate below the non dimensional parameters of the model."
                             }, 
                             {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.09206.020", 
-                                "id": "fig11", 
-                                "label": "Appendix figure 4.", 
-                                "title": "Comparison of the model and experimental anterior and posterior lateral domains during normal development blebbistatin treatment.", 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app4-fig3-v1.tif", 
-                                "filename": "elife-09206-app4-fig3-v1.tif"
+                                "type": "section", 
+                                "id": "s9-1", 
+                                "title": "Parameter <math id=\"inf25\"><mi mathvariant=\"script\">L</mi></math>", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "From experiments, averaging over a number of 7 cells, we estimate the length of cell to increase during the ring migration from <i>L</i> \u2248 7 \u03bcm to <i>L</i> \u2248 12 \u03bcm. This implies for the non dimensional length an increase from <math id=\"inf26\"><mrow><mi mathvariant=\"script\">L</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>6</mn></mrow></math> to <math id=\"inf27\"><mrow><mi mathvariant=\"script\">L</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>8</mn></mrow></math>. As we show on <a href=\"#fig9\">Appendix figure 2</a>, the trend of the stretch (defined as the current length over the final length) is roughly linear and for simplicity, we implement this trend in the numerical simulations of the theoretical model. After the migration, length can be considered to be roughly constant. We show of <a href=\"#fig10\">Appendix figure 3</a> the evolution of length after a blebbistatin treatment at time = 0 min."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.09206.018", 
+                                        "id": "fig9", 
+                                        "label": "Appendix figure 2.", 
+                                        "title": "Stretch of the cell during the ring migration.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app4-fig1-v1.tif", 
+                                        "filename": "elife-09206-app4-fig1-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.09206.019", 
+                                        "id": "fig10", 
+                                        "label": "Appendix figure 3.", 
+                                        "title": "Stretch of the cell during after ring migration subsequent to a blebbistatin treatment.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app4-fig2-v1.tif", 
+                                        "filename": "elife-09206-app4-fig2-v1.tif"
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "After blebbsitatin treatment, we assume that <math id=\"inf37\"><mi mathvariant=\"script\">C</mi></math>exponentially decreases to a value <math id=\"inf38\"><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub><mo>=</mo><mn>0</mn></mrow></math> after a characteristic time <i>\u03c4</i><sub><i>b</i></sub> = 15 min. The effect of the blebbistatin dose has not been quantified experimentally, and we shall present its effect by changing <math id=\"inf39\"><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub></mrow></math> in the robustness section."
+                                "type": "section", 
+                                "id": "s9-2", 
+                                "title": "Parameter <math id=\"inf28\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math>", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "PIV as well as kymographs reveals that the average velocity of actin filaments is <i>v</i> \u2248 30 nm s<sup>\u22121</sup>. <math id=\"inf98\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math>/<i>\u03c1</i><sub>0</sub> should therefore have a comparable order of magnitude. Using estimates of <i>\u03c4</i> and <i>D</i>, this leads to <math id=\"inf29\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>\u2248</mo><mn>0.6</mn></mrow></math>. To fit the data, we take a slightly smaller value <math id=\"inf30\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>\u2248</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></math> which is also confirmed by the intensity profiles after blebbistatin treatment which value at the anterior side is <math id=\"inf31\"><mrow><mn>1</mn><mo>+</mo><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math> (see <a href=\"#equ19\">Equation 19</a>)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s9-3", 
+                                "title": "Parameter <math id=\"inf32\"><mi mathvariant=\"script\">C</mi></math>", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We begin with a estimate of <math id=\"inf33\"><mi mathvariant=\"script\">C</mi></math> when the ring is formed. From relation (<a href=\"#equ8\">Equation 8</a>), we have that,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ21", 
+                                        "mathml": "<math><mrow><mi>\u03b7</mi><mfrac><mrow><mtext>\u0394</mtext><mi>v</mi></mrow><mrow><mtext>\u0394</mtext><mi>L</mi></mrow></mfrac><mo>\u223c</mo><mi>\u03c7</mi><mrow><mo>(</mo><mrow><mi>\u03c1</mi><mo>\u2212</mo><msub><mi>\u03c1</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Maximal velocity estimated by PIV is of the order of <i>v</i> \u2248 50 nm s<sup>\u22121</sup> and decays to zero over roughly a fourth of the cell length that is 3 \u03bcm. Over the same length, intensity of actin fluorescence can increase roughly of one half of its base value leading <i>\u03c1</i> \u2212 <i>\u03c1</i><sub>0</sub> \u223c 0.5<i>\u03c1</i><sub>0</sub>. We thus obtain (<i>\u03c7\u03c1</i><sub>0</sub>)/<i>\u03b7</i> \u2248 0.03 s<sup>\u22121</sup>. This ratio is in agreement with the estimates of (<a href=\"#bib28\">Julicher et al., 2007</a>; <a href=\"#bib50\">Rubinstein et al., 2009</a>), which suggest <i>\u03c7\u03c1</i><sub>0</sub> \u2248 10<sup>3</sup> Pa, <i>\u03b7</i> \u2248 10<sup>4</sup>\u201310<sup>5</sup> Pa \u00b7 s. We then obtain <math id=\"inf34\"><mrow><mi mathvariant=\"script\">C</mi><mo>\u2248</mo><mn>3</mn></mrow></math>. For the numerical model, to fit the experimental data, we postulated that <i>C</i> increases linearly in time from <math id=\"inf35\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>1</mn></mrow></math> to <math id=\"inf36\"><mrow><mi mathvariant=\"script\">C</mi><mo>=</mo><mn>3</mn><mo>.</mo><mn>3</mn></mrow></math> thus assuming an increase of the (homogeneous) cortical tension of roughly 1.5 as measured experimentally during the course of development (see <a href=\"#fig12\">Appendix figure 5B</a> of the main text where an elongation of 72% is related to an increase of the rescaled tension from 1.2 to 1.8, hence the assumed 1.5 increase). Notice that this is this increase that dictates the ring migration dynamic. Indeed, from the average filament velocity <i>v</i> \u2248 30 nm s<sup>\u22121</sup>, it would take \u223c3 min for the ring to migrate from the side to center position (a \u223c6 \u03bcm distance) if the internal flow were driving the ring positioning."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.09206.020", 
+                                        "id": "fig11", 
+                                        "label": "Appendix figure 4.", 
+                                        "title": "Comparison of the model and experimental anterior and posterior lateral domains during normal development blebbistatin treatment.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app4-fig3-v1.tif", 
+                                        "filename": "elife-09206-app4-fig3-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After blebbsitatin treatment, we assume that <math id=\"inf37\"><mi mathvariant=\"script\">C</mi></math>exponentially decreases to a value <math id=\"inf38\"><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub><mo>=</mo><mn>0</mn></mrow></math> after a characteristic time <i>\u03c4</i><sub><i>b</i></sub> = 15 min. The effect of the blebbistatin dose has not been quantified experimentally, and we shall present its effect by changing <math id=\"inf39\"><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub></mrow></math> in the robustness section."
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -4418,50 +4622,246 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s10-3", 
-                        "title": "Development of aimless embryos followed by blebbistatin treatment", 
+                        "id": "s10", 
+                        "title": "Model predictions", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "For aimless embryos, <math id=\"inf56\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math> is considerably lowered and has the same order of magnitude as <math id=\"inf57\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>b</mi></msub></mrow></math>. If the two fluxes are exactly zero, when contractility increases above <math id=\"inf58\"><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub><mo>\u2248</mo><mn>6</mn></mrow></math>, starting from an almost homogeneous distribution of actin, the model predicts the formation of a central ring directly in the center. The configuration where actin is localized at the poles is most probably never observed because of the small remaining anterior and posterior actin fluxes. As a consequence of such fluxes, the threshold of appearance of the ring is also not exactly <math id=\"inf59\"><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></math>."
+                                "text": "Having estimated the parameters of the model, we turn to its quantitative predictions and compare numerical results of the model simulation with experiments."
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "To model the dynamic of this situation, we consider small stochastic actin fluxes of the order of <math id=\"inf60\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>\u223c</mo><mo>\u2212</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>\u223c</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math>. The dynamic of length and contractility remains unchanged from the control case. We show on <a href=\"#fig17\">Appendix figure 10</a> the resulting anterior and posterior lateral domains positions and average filaments velocity. Observe that as <math id=\"inf61\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>\u223c</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub></mrow></math> are small, we now start from a nearly homogeneous density. When contractility increases, a ring forms in the middle of the cell as observed experimentally. The duration of the ring formation remains unchanged as it is driven by the contractility increase. However, the average filament velocity is considerably lowered. If <math id=\"inf62\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math> and <math id=\"inf63\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub></mrow></math> are strictly the same, the dynamic of the anterior and posterior fronts are symmetric but a small imbalance (either to the posterior or anterior side) is sufficient to trigger a side to middle migration as in <a href=\"#fig17\">Appendix figure 10</a> though the density of actin is much more homogeneous then in the control case."
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.09206.026", 
-                                "id": "fig17", 
-                                "label": "Appendix figure 10.", 
-                                "title": "Ring migration in the aimless case.", 
-                                "caption": [
+                                "type": "section", 
+                                "id": "s10-1", 
+                                "title": "Development of normal embryos followed by blebbistatin treatment", 
+                                "content": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "Parameters are <math id=\"inf64\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> and <math id=\"inf65\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>02</mn><mo>.</mo></mrow></math>"
+                                        "text": "For the control case, as mentioned in the previous section, we suppose that in the course of ring migration which average (over 7 cells) duration is \u223c110 min, <math id=\"inf40\"><mi mathvariant=\"script\">C</mi></math> increases linearly from 2.1 to 3.3 while <math id=\"inf41\"><mi mathvariant=\"script\">L</mi></math> increases linearly from 1.6 to 2.8. After the ring forms, we apply a blebbistatin treatment and predict a migration back to the anterior pole. The average time of such migration (over 5 cells) is 67 min. During this repositioning process, we assume accordingly with experimental data that the cell length remains roughly constant (see <a href=\"#fig10\">Appendix figure 3</a>) while <math id=\"inf42\"><mi mathvariant=\"script\">C</mi></math> drops exponentially over 15 min. We start the simulation from an initial actin density distribution with no contractility (<a href=\"#equ19\">Equation 19</a>) and iterate from few time steps keeping initial parameters constant to obtain the real starting profile for non zero <math id=\"inf43\"><mi mathvariant=\"script\">C</mi></math>."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-1-1", 
+                                        "title": "Dynamics of the anterior and posterior domains", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We show on <a href=\"#fig11\">Appendix figure 4</a> the model and experimental anterior and posterior lateral domains dynamics which are in very good agreement. The theoretical lateral domains are defined by considering the domain where the actin intensity is superior to the minimal value plus 50% of difference between maximal and minimal intensity. Distances are normalized by the total cell length for a more convenient representation. Here, 0 corresponds to the cell anterior while 1 is the cell posterior. Both the anterior and posterior lateral domains are well captured by the model during the ring migration of normal embryos as well as after the ring repositioning subsequent to a blebbistatin treatment happening at the end of the migration at a time = 110 min. Notice that accordingly with experiments, the location of the ring at the end of the migration at time = 110 is systematically slightly shifted to the anterior side, revealing the essential asymmetry between the two sides which we interpret in the model in term of an anterior production flux. The ring shifts back to the anterior pole at a velocity much higher the original one as observed experimentally."
+                                            }, 
+                                            {
+                                                "type": "image", 
+                                                "doi": "10.7554/eLife.09206.021", 
+                                                "id": "fig12", 
+                                                "label": "Appendix figure 5.", 
+                                                "title": "Comparison of the model and experimental filament average velocity during development and blebbistatin repositioning.", 
+                                                "caption": [
+                                                    {
+                                                        "type": "paragraph", 
+                                                        "text": "Black arrow indicates the blebbistatin treatment."
+                                                    }
+                                                ], 
+                                                "alt": "", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig1-v1.tif", 
+                                                "filename": "elife-09206-app5-fig1-v1.tif"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-1-2", 
+                                        "title": "Average value of the actin filaments velocity", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The average value of the actin filaments velocity is computed from experiments by summing absolute values of velocities at several locations of the ring during the ring relocation after blebbistatin treatment. The value,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ22", 
+                                                "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>V</mi><mo>\u00af</mo></mover></mrow><mo>=</mo><mfrac><mn>1</mn><mi>L</mi></mfrac><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mrow><mrow><mo>|</mo><mrow><mi>v</mi><mrow><mo>(</mo><mrow><mi>z</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>|</mo></mrow><mi>d</mi><mi>z</mi></mrow></mrow></mstyle><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "obtained from the model is also monitored and compared against available experimental on <a href=\"#fig12\">Appendix figure 5</a>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The agreement is again quite remarkable for the velocity of the actin filaments at the end of migration (29 nm s<sup>\u22121</sup>) and the sharp decrease of the filament velocity upon blebbistatin treatment is nicely captured."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-1-3", 
+                                        "title": "Scaling of the ring size", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Another prediction of the model in agreement with experiments is the scaling of ring size with the cell size up to a threshold length. See <a href=\"#fig13\">Appendix figure 6C</a> of the main text and <a href=\"#fig13\">Appendix figure 6</a>."
+                                            }, 
+                                            {
+                                                "type": "image", 
+                                                "doi": "10.7554/eLife.09206.022", 
+                                                "id": "fig13", 
+                                                "label": "Appendix figure 6.", 
+                                                "title": "Numerical simulation of ring size as a function of the cell size for three different diffusion coefficients.", 
+                                                "alt": "", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig2-v1.tif", 
+                                                "filename": "elife-09206-app5-fig2-v1.tif"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We observed a linear scaling of the ring size with respect to the cell size followed by a saturation and a linear increase again. The qualitative reason of the saturation can be understood for small enough <math id=\"inf44\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math> where one may speculate that the saturation size corresponds to the critical cell size:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ23", 
+                                                "mathml": "<math><mrow><msub><mi>L</mi><mi>c</mi></msub><mo>=</mo><mn>2</mn><mi>\u03c0</mi><msqrt><mrow><mfrac><mrow><mi>D</mi><mi>\u03c4</mi></mrow><mrow><mi mathvariant=\"script\">C</mi><mo>\u2212</mo><mn>1</mn></mrow></mfrac></mrow></msqrt><mo>.</mo></mrow></math>"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-1-4", 
+                                        "title": "Intensity and velocity profiles", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We show on <a href=\"#fig13\">Appendix figure 6D</a> and <a href=\"#fig13\">Appendix figure 6F</a> of the main text, a comparison of the experimental and theoretical density of actin filaments for several time frames during the course of normal migration and blebbistatin treatment. The profiles of fluorescence obtained experimentally compare well to the theoretical one."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Added to this, we also show on <a href=\"#fig12\">Appendix figure 5</a> of the main text the velocity found by PIV analysis at the end of migration which shape is very similar to the one predicted by the model. The maximal velocity of actin filaments (50 nm s<sup>\u22121</sup>) found theoretically is also almost the same as the experimentally measured ones. This validates post factum the procedure we used to assign values to non dimensional parameters explained in the previous section."
+                                            }
+                                        ]
                                     }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig6-v1.tif", 
-                                "filename": "elife-09206-app5-fig6-v1.tif"
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "After a time of 110 min, depending on the importance of the impairment of contractility or polarity, the ring may shift to the anterior or posterior pole depending on which (anterior or posterior) flux dominates the other. In most cases, both anterior and posterior fluxes will be of about the same magnitude and the ring central position (defined as the middle of the anterior and posterior lateral domains) will thus stay in the center. To illustrate this case, we show on <a href=\"#fig18\">Appendix figure 11</a>, three typical cases with blebbistatin treatment <math id=\"inf66\"><mrow><mrow><mo>(</mo><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub><mo>=</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math> corresponding to <math id=\"inf67\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> and <math id=\"inf68\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>02</mn></mrow></math>, <math id=\"inf69\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>02</mn></mrow></math> and <math id=\"inf70\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> and finally <math id=\"inf71\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mo>\u2212</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math>."
+                                "type": "section", 
+                                "id": "s10-2", 
+                                "title": "Robustness analysis", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We now check the robustness of our results with respect to few hypothesis."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-2-1", 
+                                        "title": "Posterior flux", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Firstly, we show that the anterior and posterior domains dynamic are not importantly altered (see <a href=\"#fig14\">Appendix figure 7</a>) if we add a small posterior flux <math id=\"inf45\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> ten times lower than <math id=\"inf46\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>4</mn></mrow></math>. Generically, such a non-zero flux could be expected. In fact, the agreement with the experimental ring dynamic is even better in such case and we may speculate that such flux indeed exists."
+                                            }, 
+                                            {
+                                                "type": "image", 
+                                                "doi": "10.7554/eLife.09206.023", 
+                                                "id": "fig14", 
+                                                "label": "Appendix figure 7.", 
+                                                "title": "Robustness of the anterior and posterior fronts dynamics and average filament velocity during the ring migration in control case with <math id=\"inf47\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math>.", 
+                                                "alt": "", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig3-v1.tif", 
+                                                "filename": "elife-09206-app5-fig3-v1.tif"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-2-2", 
+                                        "title": "Boundary tension", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The neighboring cells may not always apply a tension such that <math id=\"inf48\"><mrow><mi mathvariant=\"script\">S</mi><mo>=</mo><mi mathvariant=\"script\">C</mi></mrow></math> though this choice is the most natural one as it ensures a homogeneous cortex if the active processes of maintaining contraction and polarity are turned off."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "If we suppose that <math id=\"inf49\"><mi mathvariant=\"script\">S</mi></math> is less than <math id=\"inf50\"><mi mathvariant=\"script\">C</mi></math> leading to the condition <math id=\"inf51\"><mrow><mi mathvariant=\"script\">S</mi><mo>=</mo><mi>\u03b1</mi><mi mathvariant=\"script\">C</mi></mrow></math> where <i>\u03b1</i> &lt; 1, we show below the effect of a small deviation <i>\u03b1</i> = 0.95. See <a href=\"#fig15\">Appendix figure 8</a>. While the anterior and posterior dynamics is still correctly captured, the agreement of the average filament velocity is not good any more even though the order of magnitude is still correct. The system is thus sensitive to this condition. However, if the condition is modified by assuming a certain value of <i>\u03b1</i>, by changing other parameters of the model, we can still obtain a good agreement with the experimental data. What this analysis suggests, if the model is correct, is that a change of externally applied tension would strongly affect the internal cortical flow, a fact which awaits experimental verification in the present setting."
+                                            }, 
+                                            {
+                                                "type": "image", 
+                                                "doi": "10.7554/eLife.09206.024", 
+                                                "id": "fig15", 
+                                                "label": "Appendix figure 8.", 
+                                                "title": "Robustness of the anterior and posterior fronts dynamics and average filament velocity during the ring migration in control case with <math id=\"inf52\"><mrow><mi mathvariant=\"script\">S</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>95</mn><mi mathvariant=\"script\">C</mi></mrow></math>.", 
+                                                "alt": "", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig4-v1.tif", 
+                                                "filename": "elife-09206-app5-fig4-v1.tif"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s10-2-3", 
+                                        "title": "Blebbistatin dose dependence", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "To mimic the fact that the dynamic of the shift is blebbistatin dose dependent, we assume that after the ring has migrated, contractility <math id=\"inf53\"><mi mathvariant=\"script\">C</mi></math> decreases to a value <math id=\"inf54\"><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow></math>. We show on <a href=\"#fig16\">Appendix figure 9</a> how the dynamic of the shift back to the anterior pole is affected. A more modest impairment of contractility slows down the ring migration velocity as observed experimentally."
+                                            }, 
+                                            {
+                                                "type": "image", 
+                                                "doi": "10.7554/eLife.09206.025", 
+                                                "id": "fig16", 
+                                                "label": "Appendix figure 9.", 
+                                                "title": "Effect of a blebbistatin treatment at time = 110 min on the ring dynamic with <math id=\"inf55\"><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>.</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>.</mo><mn>5</mn></mrow></math>.", 
+                                                "alt": "", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig5-v1.tif", 
+                                                "filename": "elife-09206-app5-fig5-v1.tif"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.09206.027", 
-                                "id": "fig18", 
-                                "label": "Appendix figure 11.", 
-                                "title": "Ring middle position and average filament velocity during migration of the ring and after blebbistatin treatment at time = 110 min in the three cases mentioned in the text.", 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig7-v1.tif", 
-                                "filename": "elife-09206-app5-fig7-v1.tif"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "In agreement with experiments, in all three cases, the ring migrates towards the middle of the cell during development. Then, after blebbistatin treatment, depending over which flux slightly dominates, the ring re-positions in the central region or at one of the sides randomly."
+                                "type": "section", 
+                                "id": "s10-3", 
+                                "title": "Development of aimless embryos followed by blebbistatin treatment", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For aimless embryos, <math id=\"inf56\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math> is considerably lowered and has the same order of magnitude as <math id=\"inf57\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>b</mi></msub></mrow></math>. If the two fluxes are exactly zero, when contractility increases above <math id=\"inf58\"><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub><mo>\u2248</mo><mn>6</mn></mrow></math>, starting from an almost homogeneous distribution of actin, the model predicts the formation of a central ring directly in the center. The configuration where actin is localized at the poles is most probably never observed because of the small remaining anterior and posterior actin fluxes. As a consequence of such fluxes, the threshold of appearance of the ring is also not exactly <math id=\"inf59\"><mrow><msub><mi mathvariant=\"script\">C</mi><mi>c</mi></msub></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To model the dynamic of this situation, we consider small stochastic actin fluxes of the order of <math id=\"inf60\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>\u223c</mo><mo>\u2212</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>\u223c</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math>. The dynamic of length and contractility remains unchanged from the control case. We show on <a href=\"#fig17\">Appendix figure 10</a> the resulting anterior and posterior lateral domains positions and average filaments velocity. Observe that as <math id=\"inf61\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>\u223c</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub></mrow></math> are small, we now start from a nearly homogeneous density. When contractility increases, a ring forms in the middle of the cell as observed experimentally. The duration of the ring formation remains unchanged as it is driven by the contractility increase. However, the average filament velocity is considerably lowered. If <math id=\"inf62\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub></mrow></math> and <math id=\"inf63\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub></mrow></math> are strictly the same, the dynamic of the anterior and posterior fronts are symmetric but a small imbalance (either to the posterior or anterior side) is sufficient to trigger a side to middle migration as in <a href=\"#fig17\">Appendix figure 10</a> though the density of actin is much more homogeneous then in the control case."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.09206.026", 
+                                        "id": "fig17", 
+                                        "label": "Appendix figure 10.", 
+                                        "title": "Ring migration in the aimless case.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Parameters are <math id=\"inf64\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> and <math id=\"inf65\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>02</mn><mo>.</mo></mrow></math>"
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig6-v1.tif", 
+                                        "filename": "elife-09206-app5-fig6-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After a time of 110 min, depending on the importance of the impairment of contractility or polarity, the ring may shift to the anterior or posterior pole depending on which (anterior or posterior) flux dominates the other. In most cases, both anterior and posterior fluxes will be of about the same magnitude and the ring central position (defined as the middle of the anterior and posterior lateral domains) will thus stay in the center. To illustrate this case, we show on <a href=\"#fig18\">Appendix figure 11</a>, three typical cases with blebbistatin treatment <math id=\"inf66\"><mrow><mrow><mo>(</mo><mrow><msub><mi mathvariant=\"script\">C</mi><mrow><mtext>bleb</mtext></mrow></msub><mo>=</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math> corresponding to <math id=\"inf67\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> and <math id=\"inf68\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>02</mn></mrow></math>, <math id=\"inf69\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>02</mn></mrow></math> and <math id=\"inf70\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mo>\u2212</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math> and finally <math id=\"inf71\"><mrow><msub><mi mathvariant=\"script\">J</mi><mi>a</mi></msub><mo>=</mo><mo>\u2212</mo><msub><mi mathvariant=\"script\">J</mi><mi>p</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>04</mn></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.09206.027", 
+                                        "id": "fig18", 
+                                        "label": "Appendix figure 11.", 
+                                        "title": "Ring middle position and average filament velocity during migration of the ring and after blebbistatin treatment at time = 110 min in the three cases mentioned in the text.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/09206/elife-09206-app5-fig7-v1.tif", 
+                                        "filename": "elife-09206-app5-fig7-v1.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In agreement with experiments, in all three cases, the ring migrates towards the middle of the cell during development. Then, after blebbistatin treatment, depending over which flux slightly dominates, the ring re-positions in the central region or at one of the sides randomly."
+                                    }
+                                ]
                             }
                         ]
                     }

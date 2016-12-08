@@ -5648,6 +5648,152 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s31", 
+                        "title": "1.1. Tactile Braille reading speed", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Braille word reading speed prior to the onset of the course.</i></b> To make sure that our subjects were na\u00efve in tactile Braille prior to the onset of the course, subjects were tested with the tactile Braille reading test before the first fMRI session (Materials and methods). From the 29 subjects that were included in the data analysis, 26 subjects were unable to read even a single word during the 60 s allowed in the test. One subject managed to read one word and two subjects read two words."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Single-letter recognition speed prior to the onset of the course.</i></b> Additionally, we tested single Braille letter recognition, in a manner similar to that used for word reading (Materials and methods). The median number of Braille letters read per minute was 0 (mean=2.28), with individual scores ranging from 0 to 7 letters per minute. These results confirm that at the beginning of the course, the great majority of our subjects were utterly unable to read Braille by touch. In fact, their capacity to recognize even single Braille letters was also very limited."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Braille word reading speed after the course</i></b> The distribution of final reading speed was normal (Shapiro-Wilk (29)=0.94, p = 0.123), with the mean=6.21, SD=3.94, median=5, mode=4, range 0-17. There were 2 subjects who read 0 words per minute at the end of the braille course."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Single-letter reading speed after the course</i></b>. After the course, the subjects reached a mean performance of 18.41 single tactile letters read per minute (SD = 4.81). However, there was a large degree of variability in performance, with results ranging from 10 to 29 letters per minute."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Demographic background and tactile Braille reading speed.</i></b> We tested if progress in tactile Braille reading was modulated by the demographic background of the subjects. To this end, we divided the subjects into three groups \u2013 Braille teachers/professionals (14 subjects), special education students specializing in blindness and related disabilities (11 subjects) and close relatives of blind people (4 subjects) \u2013 and entered this division into a regression analysis with final tactile Braille word reading speed as the dependent variable. However, we did not find any significant effect in the analysis (all p&gt;0.2). To check if this insignificance was due to the evidence for the null hypothesis, or the insensitivity of the data, we computed Bayes factor with BayesFactor package implemented in R (<a href=\"#bib55\">Rouder and Morey, 2012</a>). The lmBF function in the BayesFactor package estimates linear models and returns the Bayes factor (BF) of the model relative to a null model that predicts the data by the intercept alone. BF values greater than 1 would indicate evidence for the alternative over a null hypothesis, values less than 1 the converse, and BF close to 1 would indicate that data is insensitive (<a href=\"#bib10\">Dienes, 2014</a>). BF equalled 0.35, therefore we can assume that there is a strong evidence towards the null hypothesis. We thus conclude that demographic background cannot predict the progress in tactile reading in our participants."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s32", 
+                        "title": "1.2. Visual Braille reading speed", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "While all of our participants were na\u00efve in tactile Braille, most of them knew how to read Braille visually. Moreover, the course curriculum included learning to recognize Braille letters by sight. As a result, subjects also improved their visual Braille reading speed."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We measured our subjects\u2019 visual Braille reading speed with a lexical decision task in visual Braille (Materials and methods). The test was administered at the beginning and at the end of the course. Only subjects whose accuracy in each session was higher than 60% (chance level was 50%) were included in the reaction time analysis. On this basis, 3 subjects were excluded from the reaction time analysis. Moreover, one subject was excluded from both the accuracy and reaction time analysis due to missing data from the second testing session. Thus, the accuracy analysis was performed on 28 subjects and the reaction time analysis, on 25 subjects."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The mean accuracy (calculated as the mean of the individual subjects\u2019 medians) was 78.25% (SD = 13.91%) at the beginning and 88.14% (SD = 8.75%) at the end of the course. The mean reaction time (RT) was 4587 ms (SD = 1071 ms) at the beginning and 3799 ms (SD = 846 ms) at the end of the course."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The difference between testing sessions was significant, both in the case of accuracy (t(27) = 4.72, p &lt; 0.001) and of reaction time (t(24) = 7.05, p &lt; 0.001). This result indicates that subjects also progressed in visual Braille reading during the Braille course."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Additionally, we transformed the reaction times for visual Braille words into a word per minute (WPM) measure to compare the effect of visual and tactile Braille proficiency on brain activity (Appendix 1.4). For this reason, we calculated each subject\u2019s median RT (as it is more robust to outliers than the mean) in visual Braille reading, and then we divided 60 s by this median RT. This measure resulted in an estimated number of words that the subject could read in one minute. This measure was then implemented in an SPM regression model."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s33", 
+                        "title": "1.3. Main experiment \u2013 activations to visual Braille and visual words", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Before the course, visual word reading resulted in a cluster of activity within the left ventral visual stream, covering the inferior temporal gyrus, fusiform gyrus and the middle occipital gyrus (<a href=\"#fig1s3\">Figure 1\u2014figure supplement 3A</a>, <a href=\"#tbl2\">Table 2</a>). Interestingly, we found much more robust activity during visual Braille reading. Apart from the activity in the bilateral ventral occipital stream, this condition elicited activation in the bilateral frontal and parietal areas, predominantly in the left hemisphere, including the inferior frontal and precentral gyri, precuneus and middle temporal gyri (<a href=\"#fig1s3\">Figure 1\u2014figure supplement 3B</a>, <a href=\"#tbl2\">Table 2</a>). The VWFA activity for visual Braille reading was stronger than for visual words, similar to previously reported responses to novel visual alphabets (<a href=\"#bib70\">Vogel et al., 2014</a>; <a href=\"#bib76\">Xue et al., 2006</a>) Accordingly, the aforementioned visual Braille lexical decision task (see section 1.2) revealed a very slow recognition speed for visual Braille reading (detailed results will be published elsewhere)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The pattern of activity for visual words remained intact across the tactile Braille reading course. We found no suprathreshold voxels in the contrast of visual word reading after versus before the course, even at an exploratory threshold of p=0.01. The same comparison for visual Braille (before<after (<a=\"\" activation=\"\" after-course=\"\" an=\"\" and=\"\" areas=\"\" bilateral=\"\" course)=\"\" frontal=\"\" gyrus,=\"\" href=\"#fig1s3\" in=\"\" increase=\"\" lobules=\"\" mesial=\"\" middle=\"\" parietal=\"\" precuneus,=\"\" revealed=\"\" temporal=\"\" the=\"\">Figure 1\u2014figure supplement 3C</after>, <a href=\"#tbl2\">Table 2</a>). All of those areas are nodes of the default mode network (<a href=\"#bib51\">Raichle et al., 2001</a>) and showed profound de-activation for all of the tasks in our experiment. Their increased engagement in visual Braille reading could suggest increased cognitive control over the process."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s34", 
+                        "title": "1.4. fMRI-behavior correlations", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We used the behavioral measurements of tactile and visual Braille reading speed to see how proficiency in Braille reading can modulate the fMRI signal when performing a given reading task. We performed the following correlations:"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Tactile Braille reading activations \u2013 tactile Braille reading speed.</i></b> The result is reported in the main text (<a href=\"#fig1\">Figure 1G</a>, <a href=\"#tbl3\">Table 3</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Tactile Braille reading activations \u2013\u00a0TB single-letter recognition speed.</i> </b>We checked for signal modulation in tactile Braille reading after the course using the performance in single tactile letter reading. We found that tactile single-letter reading speed correlated positively with the activations localized only in the left ventral visual pathway, including the lingual gyrus, middle and inferior occipital gyri, and the fusiform gyrus (<a href=\"#fig1s3\">Figure 1\u2014figure supplement 3D</a>, <a href=\"#tbl3\">Table 3</a>). This result further confirms the engagement of the left ventral visual stream in tactile reading."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Tactile Braille reading activations \u2013 visual Braille reading speed.</i></b> Visual Braille reading speed did not significantly modulate any tactile Braille reading activations in the visual system."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Tactile Braille imagery activations \u2013 tactile Braille reading speed.</i> </b>We found no correlations between tactile Braille proficiency and the signal when it was imagined, even at an exploratory threshold of p=0.01 voxel-wise."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Visual Braille imagery activations \u2013 tactile Braille reading speed.</i> </b>Tactile Braille proficiency did not modulate activity during visual Braille imagery even at an exploratory threshold of p=0.01 voxelwise."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s35", 
+                        "title": "1.5. Control imagery experiment \u2013 fMRI results", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In addition to the main experiment, our subjects also completed a control experiment aiming at exploring the imagery processes accompanying the process of tactile reading (see Materials and methods, and <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1A,B,D</a>). In this experiment, their task was to read or imagine visual words, visual Braille words and tactile Braille words and to touch or imagine every-day-use objects."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Tactile and visual Braille imagery.</i></b> Imagining tactile Braille words vs. rest after the course elicited robust activation in the bilateral cerebellum, bilateral precentral and postcentral gyri (predominantly in the left hemisphere), the left inferior and middle frontal gyri, the bilateral superior temporal sulcus and finally the left fusiform gyrus (MNI -45 -61 -12, BA37, Z = 5.95, p&lt;0.001, <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2A</a>, <a href=\"#tbl4\">Table 4</a>). A very similar pattern of activation was found for visual Braille imagine vs. rest after the course (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2B</a>, <a href=\"#tbl4\">Table 4</a>). Here, the fusiform peak was localized slightly more anteriorly: MNI -45 -58 -12 (BA37, Z = 6.38, p&lt;0.001)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We then compared the two imagery conditions. For the visual Braille imagery vs. tactile Braille imagery contrast, we found no suprathreshold voxels, even at an exploratory level of p=0.01 voxel-wise). However, relative to visual Braille imagery, tactile Braille imagery caused more robust activation of the motor and somatosensory areas, the bilateral inferior parietal lobules and the cerebellum (<a href=\"#fig1s2\">Figure 1\u2014figure supplement 2C</a>). This finding is in accordance with data showing that motor imagery activates the primary motor and somatosensory cortices (<a href=\"#bib35\">Lotze and Halsband, 2006</a>; <a href=\"#bib46\">Porro et al., 1996</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Visual words imagery.</i></b> Imagining visual words before and after the course elicited activations in the medial frontal gyrus, left precentral gyrus and Broca\u2019s area (left inferior frontal gyrus, BA44) as well as in the left inferior parietal lobule and the right cerebellum. When we lowered the threshold to p=0.005, uncorrected, we found also a cluster in the left occipital lobe, peaking in the fusiform gyrus (MNI -45 -58 -12, BA37, Z = 4.73)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Object imagery.</i> </b>Imagining objects before and after the course activated primary visual areas (BA18, BA19) bilaterally, the bilateral precentral and postcentral gyri and bilateral frontal areas, including the medial frontal gyrus and inferior frontal gyri. Temporal activations were also bilateral, with a peak in the right superior temporal gyrus."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Object touch vs. rest.</i></b> In the contrast of touching objects vs. rest, we found bilateral lateral occipital activations, which peaked in the middle occipital gyrus (left: MNI -51 -64 -9, BA 19, Z=5.19; right: MNI 51 -64 12, BA37, Z=4.77, <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2D</a>). This result confirms the existence of a visuo-haptic area called the lateral occipital tactile-visual (LOtv) area reported by Amedi and colleagues (<a href=\"#bib1\">Amedi et al., 2001</a>). This area is known to be activated in visual and tactile object recognition tasks. Recently, it has also been shown to respond to shape information conveyed via the auditory modality through sensory substitution devices (<a href=\"#bib3\">Amedi et al., 2007</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b><i>Effects of the Braille course on imagery.</i></b> Finally, none of the responses to the three imagery conditions showed any changes following the tactile Braille course. Interactions of the tactile Braille imagery, visual Braille imagery, and visual Word imagery contrasts with the after- vs. before-course states showed no suprathreshold voxels (neither positive nor negative), even at an exploratory threshold of p=0.01."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s36", 
+                        "title": "1.6. Representation similarity analysis: ANOVA results", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Statistical analysis was performed on Fisher z-transformed correlation coefficients (z(r)) \u2013 see Materials and Methods. The main effect of scripts\u2019 pairs was highly significant (F(2,56)=14.53, p&lt;0.001). Simple effects of scripts\u2019 pairs were assessed using post-hoc tests with Bonferroni correction. The correlation between the two Braille conditions (mean z(r)=0.59, SD=0.08) was significantly higher than the correlation between tactile Braille and visual Words (mean z(r)=0.28, SD=0.09, p&lt;0.001) and visual Braille and visual Words (mean z(r)=0.11, SD=0.07, p=0.020). The correlation between visual Braille and visual words was higher than the correlation between tactile Braille and visual Words, however this result was only marginally significant (p=0.063)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s37", 
                         "title": "1.7. Supplementary RS-fMRI analysis", 
                         "content": [

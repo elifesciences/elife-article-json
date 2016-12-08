@@ -2644,6 +2644,194 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s39", 
+                        "title": "Numerical models", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s40", 
+                                "title": "Cortical model", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The region of visual cortex that was stimulated by the flickering annulus was modelled by a ring of excitatory (E) and inhibitory (I) cells using an existing model of flicker-induced illusory patterns (<a href=\"#bib27\">Rule et al., 2011</a>). Each cell in the model represents the average firing rate activity of a local population of neurons. Changes in firing rate followed the Wilson-Cowan equations (<a href=\"#bib19\">Kilpatrick, 2013</a>; <a href=\"#bib35\">Wilson and Cowan, 1972</a>, <a href=\"#bib36\">Wilson and Cowan, 1973</a>)"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ1", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03c4</mi><mrow><mi>e</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><mrow><mover><msub><mi>U</mi><mrow><mi>e</mi></mrow></msub><mo>\u02d9</mo></mover></mrow><mo>=</mo><mo>\u2212</mo><msub><mi>U</mi><mrow><mi>e</mi></mrow></msub><mo>+</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>V</mi><mrow><mi>e</mi></mrow></msub><mo>+</mo><mi>J</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03c4</mi><mrow><mi>i</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><mrow><mover><msub><mi>U</mi><mrow><mi>i</mi></mrow></msub><mo>\u02d9</mo></mover></mrow><mo>=</mo><mo>\u2212</mo><msub><mi>U</mi><mrow><mi>i</mi></mrow></msub><mo>+</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>V</mi><mrow><mi>i</mi></mrow></msub><mo>+</mo><mi>J</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf1\"><mrow><msub><mi>U</mi><mi>e</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM5\">x</mi><mo>,</mo><mi id=\"XM6\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> and <math id=\"inf2\"><mrow><msub><mi>U</mi><mi>i</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM7\">x</mi><mo>,</mo><mi id=\"XM8\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> represent the spatio-temporal activity of the excitatory and inhibitory cells respectively. Parameters <math id=\"inf3\"><msub><mi>\u03c4</mi><mi>e</mi></msub></math> and <math id=\"inf4\"><msub><mi>\u03c4</mi><mi>i</mi></msub></math> are the time constants of excitation and inhibition. The sigmoidal function,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><mrow><mrow><mi>F</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM9\">V</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM12\"><mn>1</mn><mo>+</mo><mrow><mi id=\"XM10\">exp</mi><mo>\u2061</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM11\"><mo>-</mo><mi>V</mi></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "defines the firing rate of the cell where <math id=\"inf5\"><mi>V</mi></math> represents the net synaptic bombardment. Flicker stimulation was defined as <math id=\"inf6\"><mrow><mrow><mi>J</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM13\">x</mi><mo>,</mo><mi id=\"XM14\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mi>H</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow><mi id=\"XM15\">sin</mi><mo>\u2061</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM19\"><mn>2</mn><mo>\u2062</mo><mi>\u03c0</mi><mo>\u2062</mo><msub><mi>f</mi><mi>t</mi></msub><mo>\u2062</mo><mi>t</mi></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></math> where <math id=\"inf7\"><mi>H</mi></math> is the Heaviside function. Whereas the standing wave stimulus was defined as <math id=\"inf8\"><mrow><mrow><mi>J</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM21\">x</mi><mo>,</mo><mi id=\"XM22\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mi>H</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM32\"><mrow><mi id=\"XM23\">sin</mi><mo>\u2061</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM30\"><mn>2</mn><mo>\u2062</mo><mi>\u03c0</mi><mo>\u2062</mo><msub><mi>f</mi><mi>t</mi></msub><mo>\u2062</mo><mi>t</mi></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mo>\u2062</mo><mrow><mi id=\"XM25\">sin</mi><mo>\u2061</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM31\"><mn>2</mn><mo>\u2062</mo><mi>\u03c0</mi><mo>\u2062</mo><msub><mi>f</mi><mi>x</mi></msub><mo>\u2062</mo><mi>x</mi></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></math>. The excitatory and inhibitory cells both received stimulation in equal amounts."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Cortical connection densities were assumed to be Gaussian with distance,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "label": "(4)", 
+                                        "mathml": "<math><mrow><mrow><mrow><mi>K</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM33\">x</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>\u03c3</mi><mo>\u2062</mo><msqrt><mi>\u03c0</mi></msqrt></mrow></mfrac><mo>\u2062</mo><mrow><mi id=\"XM34\">exp</mi><mo>\u2061</mo><mrow><mo>(</mo><mfrac id=\"XM35\"><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><msup><mi>\u03c3</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf9\"><mi>\u03c3</mi></math> (mm) is the spatial spread. The net synaptic bombardment of each cell type was thus,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(5)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mi>e</mi></mrow></msub><mo>=</mo><msub><mi>a</mi><mrow><mi>e</mi><mi>e</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><msub><mi>K</mi><mrow><mi>e</mi></mrow></msub><mo>\u2297</mo><msub><mi>U</mi><mrow><mi>e</mi></mrow></msub><mo>\u2212</mo><msub><mi>a</mi><mrow><mi>e</mi><mi>i</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><msub><mi>K</mi><mrow><mi>i</mi></mrow></msub><mo>\u2297</mo><msub><mi>U</mi><mrow><mi>i</mi></mrow></msub><mo>\u2212</mo><msub><mi>b</mi><mrow><mi>e</mi></mrow></msub></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "label": "(6)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>V</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>e</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><msub><mi>K</mi><mrow><mi>e</mi></mrow></msub><mo>\u2297</mo><msub><mi>U</mi><mrow><mi>e</mi></mrow></msub><mo>\u2212</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><msub><mi>K</mi><mrow><mi>i</mi></mrow></msub><mo>\u2297</mo><msub><mi>U</mi><mrow><mi>i</mi></mrow></msub><mo>\u2212</mo><msub><mi>b</mi><mrow><mi>i</mi></mrow></msub></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the convolution operator,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "label": "(7)", 
+                                        "mathml": "<math><mrow><mrow><mrow><mrow><mrow><mi>K</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM36\">x</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>\u2297</mo><mi>U</mi></mrow><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM37\">x</mi><mo>,</mo><mi id=\"XM38\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mo largeop=\"true\" symmetric=\"true\">\u222b</mo><mrow><mi>K</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM39\"><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo rspace=\"4.2pt\" stretchy=\"false\">)</mo></mrow><mo>\u2062</mo><mi>U</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM40\">x</mi><mo>,</mo><mi id=\"XM41\">t</mi><mo rspace=\"4.2pt\" stretchy=\"false\">)</mo></mrow><mo>\u2062</mo><mi>d</mi><mo>\u2062</mo><mi>y</mi></mrow></mrow></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.17072.009", 
+                                        "id": "A1-tbl1", 
+                                        "label": "Appendix 1\u2014table 1.", 
+                                        "title": "Parameters of the cortical model.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Parameters of the cortical model."
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><math id=\"inf10\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>U</mi><mrow><mi>e</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math></td><td>Excitatory activation state</td></tr><tr><th><math id=\"inf11\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>U</mi><mrow><mi>i</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math></th><td>Inhibitory activation state</td></tr><tr><th><math id=\"inf12\"><mrow><mi>J</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM49\">x</mi><mo>,</mo><mi id=\"XM50\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math></th><td>Spatio-temporal stimulus</td></tr><tr><th><math id=\"inf13\"><mrow><mi>K</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM51\">x</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math></th><td>Spatial coupling kernel</td></tr><tr><th><math id=\"inf14\"><mrow><msub><mi>\u03c3</mi><mi>e</mi></msub><mo>=</mo><mn>0.8</mn></mrow></math></th><td>Spread of excitation (mm)</td></tr><tr><th><math id=\"inf15\"><mrow><msub><mi>\u03c3</mi><mi>i</mi></msub><mo>=</mo><mn>2</mn></mrow></math></th><td>Spread of inhibition (mm)</td></tr><tr><th><math id=\"inf16\"><mrow><msub><mi>a</mi><mrow><mi>e</mi><mo>\u2062</mo><mi>e</mi></mrow></msub><mo>=</mo><mn>10</mn></mrow></math></th><td>Coupling weight (<math id=\"inf17\"><mi>e</mi></math> to <math id=\"inf18\"><mi>e</mi></math>)</td></tr><tr><th><math id=\"inf19\"><mrow><msub><mi>a</mi><mrow><mi>e</mi><mo>\u2062</mo><mi>i</mi></mrow></msub><mo>=</mo><mn>8.5</mn></mrow></math></th><td>Coupling weight (<math id=\"inf20\"><mi>i</mi></math> to <math id=\"inf21\"><mi>e</mi></math>)</td></tr><tr><th><math id=\"inf22\"><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>e</mi></mrow></msub><mo>=</mo><mn>12</mn></mrow></math></th><td>Coupling weight (<math id=\"inf23\"><mi>e</mi></math> to <math id=\"inf24\"><mi>i</mi></math>)</td></tr><tr><th><math id=\"inf25\"><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>i</mi></mrow></msub><mo>=</mo><mn>3</mn></mrow></math></th><td>Coupling weight (<math id=\"inf26\"><mi>i</mi></math> to <math id=\"inf27\"><mi>i</mi></math>)</td></tr><tr><th><math id=\"inf28\"><mrow><msub><mi>b</mi><mi>e</mi></msub><mo>=</mo><mn>2</mn></mrow></math></th><td>Excitatory firing threshold</td></tr><tr><th><math id=\"inf29\"><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>=</mo><mn>3</mn></mrow></math></th><td>Inhibitory firing threshold</td></tr><tr><th><math id=\"inf30\"><mrow><msub><mi>\u03c4</mi><mi>e</mi></msub><mo>=</mo><mn>10</mn></mrow></math></th><td>Excitatory time constant (ms)</td></tr><tr><th><math id=\"inf31\"><mrow><msub><mi>\u03c4</mi><mi>i</mi></msub><mo>=</mo><mn>30</mn></mrow></math></th><td>Inhibitory time constant (ms)</td></tr><tr><th><math id=\"inf32\"><mrow><mi>L</mi><mo>=</mo><mn>100</mn></mrow></math></th><td>Ring length (mm)</td></tr><tr><th><math id=\"inf33\"><mrow><mrow><mi>d</mi><mo>\u2062</mo><mi>x</mi></mrow><mo>=</mo><mn>0.1</mn></mrow></math></th><td>Spatial resolution (mm)</td></tr><tr><th><math id=\"inf34\"><mrow><mrow><mi>d</mi><mo>\u2062</mo><mi>t</mi></mrow><mo>=</mo><mn>0.1</mn></mrow></math></th><td>Integration time step (ms)</td></tr><tr><th><math id=\"inf35\"><msub><mi>f</mi><mi>x</mi></msub></math></th><td>Spatial frequency (cycles/mm)</td></tr><tr><th><math id=\"inf36\"><msub><mi>f</mi><mi>t</mi></msub></math></th><td>Temporal frequency (cycles/ms)</td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "represents the spatial summation of neural activity <math id=\"inf37\"><mrow><mi>U</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM42\">x</mi><mo>,</mo><mi id=\"XM43\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> according to the Gaussian coupling density <math id=\"inf38\"><mrow><mi>K</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM44\">x</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math>. The coupling was also weighted by cell type, such that parameter <math id=\"inf39\"><msub><mi>a</mi><mrow><mi>e</mi><mo>\u2062</mo><mi>i</mi></mrow></msub></math> denotes the weight of the connection from cell type <math id=\"inf40\"><mi>i</mi></math> to cell type <math id=\"inf41\"><mi>e</mi></math>. Parameters <math id=\"inf42\"><msub><mi>b</mi><mi>e</mi></msub></math> and <math id=\"inf43\"><msub><mi>b</mi><mi>i</mi></msub></math> are firing thresholds. See <a href=\"#A1-tbl1\">Appendix\u00a01\u2014table 1</a> for parameter values."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s41", 
+                                "title": "Motion-energy model", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Motion detection in the cortical activity was simulated using the motion-energy model (<a href=\"#bib3\">Anderson et al., 1991</a>). Specifically, the spatio-temporal response of a bank of motion detectors was defined as"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "label": "(8)", 
+                                        "mathml": "<math><mrow><mrow><mi>M</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM52\">x</mi><mo>,</mo><mi id=\"XM53\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mi>R</mi><mi>a</mi><mn>2</mn></msubsup><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM54\">x</mi><mo>,</mo><mi id=\"XM55\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>+</mo><mrow><msubsup><mi>R</mi><mi>b</mi><mn>2</mn></msubsup><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM56\">x</mi><mo>,</mo><mi id=\"XM57\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "label": "(9)", 
+                                        "mathml": "<math><mrow><mrow><mrow><mi>R</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM58\">x</mi><mo>,</mo><mi id=\"XM59\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mo largeop=\"true\" symmetric=\"true\">\u222b</mo><mrow><mi>G</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM60\"><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo rspace=\"4.2pt\" stretchy=\"false\">)</mo></mrow><mo>\u2062</mo><msub><mi>U</mi><mi>e</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM61\">x</mi><mo>,</mo><mi id=\"XM62\">t</mi><mo rspace=\"4.2pt\" stretchy=\"false\">)</mo></mrow><mo>\u2062</mo><mi>d</mi><mo>\u2062</mo><mi>y</mi></mrow></mrow></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "defines the response of a simple receptive field with a preferred orientation and spatial wavelength. The squaring operation rectifies the response of the simple receptive field to approximate the frequency-doubled response a complex receptive field (<a href=\"#bib17\">Hubel and Wiesel, 1962</a>). The simple receptive field is characterized by the two-dimensional Gabor function,"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "label": "(10)", 
+                                        "mathml": "<math><mrow><mrow><mrow><mi>G</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM63\">x</mi><mo>,</mo><mi id=\"XM64\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width=\"+1.7pt\"><mfrac><mn>1</mn><mrow><mi>\u03c3</mi><mo>\u2062</mo><msqrt><mi>\u03c0</mi></msqrt></mrow></mfrac></mpadded><mo>\u2062</mo><mrow><mi id=\"XM65\">exp</mi><mo>\u2061</mo><mrow><mo>(</mo><mrow id=\"XM66\"><mfrac><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>\u2062</mo><msubsup><mi>\u03c3</mi><mi>x</mi><mn>2</mn></msubsup></mrow></mfrac><mo>+</mo><mfrac><mrow><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>\u2062</mo><msubsup><mi>\u03c3</mi><mi>t</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>\u2062</mo><mrow><mi id=\"XM67\">cos</mi><mo>\u2061</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM68\"><mrow><mrow><mn>2</mn><mo>\u2062</mo><mi>\u03c0</mi><mo>\u2062</mo><msub><mi>f</mi><mi>x</mi></msub><mo>\u2062</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>\u2062</mo><mi>\u03c0</mi><mo>\u2062</mo><msub><mi>f</mi><mi>t</mi></msub><mo>\u2062</mo><mi>t</mi></mrow></mrow><mo>-</mo><mi>\u03d5</mi></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf44\"><mrow><msub><mi>\u03c3</mi><mi>x</mi></msub><mo>=</mo><mn>4</mn></mrow></math> (mm), <math id=\"inf45\"><mrow><msub><mi>\u03c3</mi><mi>t</mi></msub><mo>=</mo><mn>30</mn></mrow></math> (ms), <math id=\"inf46\"><mrow><msub><mi>f</mi><mi>x</mi></msub><mo>=</mo><mn>0.11</mn></mrow></math> (cycles/mm) and <math id=\"inf47\"><mrow><msub><mi>f</mi><mi>t</mi></msub><mo>=</mo><mn>5.5</mn></mrow></math> (Hz). The phase offset <math id=\"inf48\"><mi>\u03d5</mi></math> (rad) determines the directional preference of the motion detector. Leftwards (anticlockwise) motion is detected with <math id=\"inf49\"><mrow><msub><mi>\u03d5</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn></mrow></math> and <math id=\"inf50\"><mrow><msub><mi>\u03d5</mi><mi>b</mi></msub><mo>=</mo><mrow><mi>\u03c0</mi><mo>/</mo><mn>2</mn></mrow></mrow></math> whereas rightwards (clockwise) motion is detected with <math id=\"inf51\"><mrow><msub><mi>\u03d5</mi><mi>a</mi></msub><mo>=</mo><mn>0</mn></mrow></math> and <math id=\"inf52\"><mrow><msub><mi>\u03d5</mi><mi>b</mi></msub><mo>=</mo><mrow><mo>-</mo><mrow><mi>\u03c0</mi><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math>. The cortical activity was rescaled to <math id=\"inf53\"><mrow><mo stretchy=\"false\">[</mo><mrow id=\"XM69\"><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mrow id=\"XM70\"><mo>+</mo><mn>1</mn></mrow><mo stretchy=\"false\">]</mo></mrow></math> prior to Gabor filtering by transforming <math id=\"inf54\"><mrow><msub><mi>U</mi><mi>e</mi></msub><mo>\u2190</mo><mrow><mrow><mn>2</mn><mo>\u2062</mo><msub><mi>U</mi><mi>e</mi></msub></mrow><mo>-</mo><mn>1</mn></mrow></mrow></math>."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s42", 
+                                "title": "Perceptual rivalry model", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The net responses of the left and right motion detectors (<a href=\"#bib25\">Passie et al., 2008</a>) were pooled into separate neural populations (labelled LEFT and RIGHT in <a href=\"#fig3\">Figure 3B</a>) that competed for dominance via mutual inhibition. Spontaneous switching between opposing motion percepts was governed by slow spike rate adaptation (<a href=\"#bib29\">Shpiro et al., 2007</a>). The activity in each neural population was governed by the dynamical equations"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "label": "(11)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03c4</mi><mrow><mi>p</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><msub><mrow><mover><mi>P</mi><mo>\u02d9</mo></mover></mrow><mrow><mi>l</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><msub><mi>P</mi><mrow><mi>l</mi></mrow></msub><mo>+</mo><mi>F</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03b3</mi><msub><mi>P</mi><mrow><mi>r</mi></mrow></msub><mo>\u2212</mo><mi>g</mi><msub><mi>Z</mi><mrow><mi>l</mi></mrow></msub><mo>+</mo><msub><mrow><mover><mi>M</mi><mo stretchy=\"false\">\u00af</mo></mover></mrow><mrow><mi>l</mi></mrow></msub><mo>\u2212</mo><mi>\u03b8</mi><mo>+</mo><mi>\u03c3</mi><mspace width=\"thinmathspace\"></mspace><mi>\u03b6</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>)</mo></mrow></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ12", 
+                                        "label": "(12)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03c4</mi><mrow><mi>p</mi></mrow></msub><mspace width=\"thinmathspace\"></mspace><msub><mrow><mover><mi>P</mi><mo>\u02d9</mo></mover></mrow><mrow><mi>r</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><msub><mi>P</mi><mrow><mi>r</mi></mrow></msub><mo>+</mo><mi>F</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03b3</mi><msub><mi>P</mi><mrow><mi>l</mi></mrow></msub><mo>\u2212</mo><mi>g</mi><msub><mi>Z</mi><mrow><mi>r</mi></mrow></msub><mo>+</mo><msub><mrow><mover><mi>M</mi><mo stretchy=\"false\">\u00af</mo></mover></mrow><mrow><mi>r</mi></mrow></msub><mo>\u2212</mo><mi>\u03b8</mi><mo>+</mo><mi>\u03c3</mi><mspace width=\"thinmathspace\"></mspace><mi>\u03b6</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>)</mo></mrow></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf55\"><mrow><msub><mi>P</mi><mi>l</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM79\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> and <math id=\"inf56\"><mrow><msub><mi>P</mi><mi>r</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM80\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> represent the firing rate of the LEFT and RIGHT neural populations, respectively. The two neural populations had identical time constants <math id=\"inf57\"><mrow><msub><mi>\u03c4</mi><mi>p</mi></msub><mo>=</mo><mn>0.1</mn></mrow></math> (s) and firing thresholds <math id=\"inf58\"><mrow><mi>\u03b8</mi><mo>=</mo><mn>0.2</mn></mrow></math>. Both were also subject to independent Weiner noise <math id=\"inf59\"><mrow><mi>\u03b6</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM81\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> with variance <math id=\"inf60\"><mrow><mi>\u03c3</mi><mo>=</mo><mn>0.002</mn></mrow></math>. The strength of mutual inhibition was <math id=\"inf61\"><mrow><mi>\u03b3</mi><mo>=</mo><mn>0.7</mn></mrow></math> and the strength of adaptation was <math id=\"inf62\"><mrow><mi>g</mi><mo>=</mo><mn>0.3</mn></mrow></math>. The firing rate function <math id=\"inf63\"><mrow><mrow><mi>F</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM82\">V</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM85\"><mn>1</mn><mo>+</mo><mrow><mi id=\"XM83\">exp</mi><mo>\u2061</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM84\"><mo>-</mo><mrow><mi>k</mi><mo>\u2062</mo><mi>V</mi></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></math> had slope parameter <math id=\"inf64\"><mrow><mi>k</mi><mo>=</mo><mn>10</mn></mrow></math>. The input to each population was the spatial average of its bank of motion detectors, namely <math id=\"inf65\"><mrow><mrow><mover accent=\"true\"><mi>M</mi><mo stretchy=\"false\">\u00af</mo></mover><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM86\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop=\"true\" symmetric=\"true\">\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mrow><mi>M</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM87\">x</mi><mo>,</mo><mi id=\"XM88\">t</mi><mo rspace=\"4.2pt\" stretchy=\"false\">)</mo></mrow><mo>\u2062</mo><mi>d</mi><mo>\u2062</mo><mi>x</mi></mrow></mrow></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Firing rate adaptation was governed by the dynamical equations"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ13", 
+                                        "label": "(13)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03c4</mi><mrow><mi>z</mi></mrow></msub><mrow><mover><msub><mi>Z</mi><mrow><mi>l</mi></mrow></msub><mo>\u02d9</mo></mover></mrow><mo>=</mo><msub><mi>P</mi><mrow><mi>l</mi></mrow></msub><mo>\u2212</mo><msub><mi>Z</mi><mrow><mi>l</mi></mrow></msub><mo>+</mo><mi>\u03c3</mi><mi>\u03b6</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ14", 
+                                        "label": "(14)", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>\u03c4</mi><mrow><mi>z</mi></mrow></msub><mrow><mover><msub><mi>Z</mi><mrow><mi>r</mi></mrow></msub><mo>\u02d9</mo></mover></mrow><mo>=</mo><msub><mi>P</mi><mrow><mi>r</mi></mrow></msub><mo>\u2212</mo><msub><mi>Z</mi><mrow><mi>r</mi></mrow></msub><mo>+</mo><mi>\u03c3</mi><mi>\u03b6</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf66\"><mrow><msub><mi>Z</mi><mi>l</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM93\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> and <math id=\"inf67\"><mrow><msub><mi>Z</mi><mi>r</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM94\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> represent the adaptation of LEFT and RIGHT neural populations according to the slow time constant <math id=\"inf68\"><mrow><msub><mi>\u03c4</mi><mi>z</mi></msub><mo>=</mo><mn>5</mn></mrow></math> (s). The adaptation variables were likewise subject to independent Weiner noise <math id=\"inf69\"><mrow><mi>\u03b6</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM95\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> with variance <math id=\"inf70\"><mrow><mi>\u03c3</mi><mo>=</mo><mn>0.002</mn></mrow></math>."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s43", 
                         "title": "Supplementary results", 
                         "content": [

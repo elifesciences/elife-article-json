@@ -4085,78 +4085,113 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s6-1", 
-                        "title": "Predictions for the effects of lesions and for place cell activity", 
+                        "id": "s6", 
+                        "title": "Range of location coding in a grid system", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "In the grid coding scheme that we propose there is a hierarchy of grid periods governed by a geometric progression. The alternative schemes of <a href=\"#bib21\">Fiete et al. (2008)</a>; <a href=\"#bib51\">Sreenivasan and Fiete (2011)</a> are designed to produce a large range of representation from grids with <i>similar</i> periods. These two alternatives make very different predictions for the effects of lesions in the entorhinal cortex on location coding. In a hierarchical scheme, losing a grid module produces location ambiguities that increase in size with the period of the missing module. In the alternative scheme of <a href=\"#bib21\">Fiete et al. (2008)</a>; <a href=\"#bib51\">Sreenivasan and Fiete (2011)</a> lesions of a module produce periodic ambiguities that are sporadically tied to the missing period. An illustrative example is shown in <a href=\"#fig7\">Appendix figure 2</a>."
+                                "text": "The main text describes hierarchical grid coding schemes where the larger periods resolve ambiguity and smaller periods give precision in location coding. We took the largest grid period to be comparable to the behavioral range. In fact, if the periods <i>\u03bb</i><sub><i>i</i></sub> of the different modules are incommensurate with each other (i.e., they do not share common integer factors), it should be possible to resolve location over ranges larger than the largest grid period (<a href=\"#bib21\">Fiete et al., 2008</a>; <a href=\"#bib51\">Sreenivasan and Fiete, 2011</a>). The grid schemes that we predict share this virtue since they predict scale ratios that are not simple rational numbers. However, the precise maximum range will also depend on the widths of the grid fields <i>l</i><sub><i>i</i></sub> relative to the period and on the number of grid cells <i>n</i><sub><i>i</i></sub> in each module. In the probabilistic decoding scheme described in the main text, these parameters determine the standard deviation <i>\u03c3</i><sub><i>i</i></sub> of the periodic peaks in the likelihood of position given the activity in module <i>i</i>. The full range of unambiguous location representation depends on the ratios <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03c3</i><sub><i>i</i></sub>. Increasing this ratio will tend to increase the range of unambiguous representation, but at the cost of increasing the number of cells in each module."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To illustrate, consider a one-dimensional grid system with four modules with a ratio of 2.7 between adjacent scales (this is close to the optimal ratio predicted by our analysis). Suppose the animal's true location is at 0. We can calculate the overall probability of the animal's location by multiplying together the likelihood functions resulting from activity in each individual module (see main text for details). We will examine the extent to which location can be decoded unambiguously over a range (\u22123<i>\u03bb</i><sub><i>max</i></sub>, 3<i>\u03bb</i><sub><i>max</i></sub>) where <i>\u03bb</i><sub>max</sub> is the larges period. When <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03c3</i><sub><i>i</i></sub> is close to the value of 9.1 predicted by the probabilistic analysis in Optimizing the grid system: probabilistic decoder, \u2018Materials and methods\u2019, the overall likelihood shows substantial ambiguity over this range because of secondary peaks in the likelihood distribution (<a href=\"#fig6\">Appendix figure 1A</a>). As <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03c3</i><sub><i>i</i></sub> increases (requiring more neurons in each module), these secondary peaks decrease in amplitude. In <a href=\"#fig6\">Appendix figure 1B</a>, we show that when <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03c3</i><sub><i>i</i></sub> = 30, the 4-module grid system can represent location at least within the range (\u22123<i>\u03bb</i><sub><i>max</i></sub>, 3<i>\u03bb</i><sub><i>max</i></sub>)."
                             }, 
                             {
                                 "type": "image", 
-                                "doi": "10.7554/eLife.08362.009", 
-                                "id": "fig7", 
-                                "label": "Appendix figure 2.", 
-                                "title": "The effect of lesioning grid modules on the distribution over location for hierarchical vs non-hierarchical grid schemes.", 
+                                "doi": "10.7554/eLife.08362.008", 
+                                "id": "fig6", 
+                                "label": "Appendix figure 1.", 
+                                "title": "Encoding range can exceed the period of the largest grid module at a cost in the number of neurons.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "For the hierarchical scheme, we assume that four one-dimensional grid modules are related by a scale factor <i>r</i> (<i>r</i> = 2.7), that is, <math id=\"inf2\"><mrow><mfrac><mrow><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow><mrow><msub><mi>\u03bb</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mfrac><mo>=</mo><mn>2.7</mn></mrow></math>, <i>i</i> = 1, 2, 3, and the ratio <math id=\"inf3\"><mrow><mfrac><mrow><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow><mrow><msub><mi>\u03c3</mi><mi>i</mi></msub></mrow></mfrac><mo>=</mo><mn>9.1</mn></mrow></math>, i = 1, 2, 3, 4. We assume that the animal is at <i>x</i> = 0 and construct the probability distribution over location given the activity in each grid module as described in Optimizing the grid system: probabilistic decoder, \u2018Materials and methods\u2019. For the non-hierarchical scheme, we again assume four grid modules and set the periods of the four modules to be 1/105 (fourth), 1/70 (third), 1/42 (second), 1/30 (first) of the whole range, respectively. We set the width of the composite likelihood after combining all four modules to be 1/210 of the range [\u22125000, 5000]."
+                                        "text": "Assume that the animal is located is at 0. (<b>A</b>) Top, the likelihood resulting from the largest grid module, where the standard deviation of the Gaussian peaks is <math id=\"inf13\"><mrow><mfrac><mn>1</mn><mrow><mn>9.1</mn></mrow></mfrac></mrow></math> of the grid period (<i>\u03bb</i><sub><i>max</i></sub> = 1000). Bottom, the inferred distribution over location after pooling over 4-grid modules related by a scale factor of 2.7. As shown, this 4-module grid system shows ambiguities in location coding outside the range [<i>\u03bb</i><sub><i>max</i></sub>, <i>\u03bb</i><sub><i>max</i></sub>]. (<b>B</b>) Top, the likelihood resulting from the largest grid module, where the standard deviation of the Gaussian peaks is <math id=\"inf14\"><mrow><mfrac><mn>1</mn><mrow><mn>30</mn></mrow></mfrac></mrow></math> of the grid period (<i>\u03bb</i><sub><i>max</i></sub> = 1000). Bottom, the inferred distribution over location after pooling over four grid modules related by a scale factor of 2.7. As shown, this 4-module grid system provides a good representation over a range of at least [\u22123000, 3000] = [\u22123<i>\u03bb</i><sub><i>max</i></sub>, 3<i>\u03bb</i><sub><i>max</i></sub>]."
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/08362/elife-08362-app1-fig2-v2.tif", 
-                                "filename": "elife-08362-app1-fig2-v2.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/08362/elife-08362-app1-fig1-v2.tif", 
+                                "filename": "elife-08362-app1-fig1-v2.tif"
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "The grid cell representation of space in the entorhinal cortex is related in a complex manner to the hippocampal place cell representation (<a href=\"#bib11\">Bush et al., 2014</a>; <a href=\"#bib46\">Sasaki et al., 2015</a>). Simplistic models of this transformation assume that grid cells are pooled in the hippocampus and that some form of synaptic plasticity selects inputs with the same spatial phase (<a href=\"#bib49\">Solstad et al., 2006</a>). In the context of such a model (which does not reflect many aspects of the known physiology), our grid scheme makes specific predictions for the effects of module lesions on place fields."
+                                "text": "If there is a biological limitation to the largest period possible in a grid system, and if the organism must represent very large ranges without grid remapping, it may prove beneficial to add neurons to expand range. Analyzing this trade-off requires knowledge of the range, biophysical limits on grid periods, and the degree of ambiguity (the maximum heights of secondary peaks in the probability of position) that can be behaviorally tolerated. This information is not currently available for any species, and so we do not attempt the analysis."
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "We use a firing rate model for both place cells and grid cells. The 1-d grid cell firing rate is modeled as a periodic sum of truncated Gaussians (a full Gaussian mixture model gives similar results but the truncated model is easier to handle numerically). We will consider four grid modules with module periods <i>\u03bb</i><sub><i>i</i></sub>, Gaussian standard deviations <i>\u03c3</i><sub><i>i</i></sub> of the bump of the grid cell tuning curve, and ratios <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03c3</i><sub><i>i</i></sub> = 9.1. The grid periods follow a scaling <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03bb</i><sub><i>i</i> + 1</sub> = 2.7, and we examine place coding over the range set by the biggest period <i>\u03bb</i><sub>1</sub>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The place cell response is modeled via linear pooling of grid cells with the same phase followed by a threshold and an exponential nonlinearity:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ36", 
-                                "mathml": "<math><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>\u221d</mo><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mn>1</mn><mn>4</mn></munderover><mtext>\u2009</mtext><msub><mi>g</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>c</mi><mo>\u2217</mo><mi>m</mi><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Here, <i>g</i><sub><i>i</i></sub>(<i>x</i>) is the grid cell firing rate, <i>c</i> = 0.3 sets the threshold and <math id=\"inf15\"><mrow><mi>m</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mtext>\u2009</mtext><mrow><mo>{</mo><mrow><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle></mrow><mn>1</mn><mn>4</mn></msubsup><msub><mi>g</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>}</mo></mrow></mrow></math> is the maximum activation. This is a simplified description of the essential features of many models of the grid-place transformation (see, e.g., [<a href=\"#bib49\">Solstad et al., 2006</a>; <a href=\"#bib1\">de Almeida et al., 2009</a>] and the review [<a href=\"#bib26\">Giocomo et al., 2011b</a>]). To model the effect of lesioning grid module <i>i</i>, we set the <i>g</i><sub><i>i</i></sub>(<i>x</i>) = 0. The results are shown in the <a href=\"#fig8\">Appendix figure 3</a>. Qualitatively, lesioning the smallest grid module increases the place cell width, while lesioning the largest grid module leads to increased firing in locations outside the main place fields. In general, lesioning different grid modules along the hierarchy leads to different effects on the place field. This is a testable prediction in future experiments. Note that lesions of dorsal-ventral bands are not a direct test\u2014multiple grid modules co-exist in each location along the dorsal-ventral axis (<a href=\"#bib52\">Stensola et al., 2012</a>)."
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.08362.010", 
-                                "id": "fig8", 
-                                "label": "Appendix figure 3.", 
-                                "title": "The effect of lesioning individual grid modules on place cell activity in a simple grid-place transformation model.", 
-                                "caption": [
+                                "type": "section", 
+                                "id": "s6-1", 
+                                "title": "Predictions for the effects of lesions and for place cell activity", 
+                                "content": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "Lesioning different modules leads to qualitatively different effects on the place cell response in the hierarchical coding scheme we proposed, as compared to a non-hierarchical scheme. See \u2018Predictions for the effects of lesions and for place cell activity\u2019, <a href=\"#app1\">Appendix 1</a> for details."
+                                        "text": "In the grid coding scheme that we propose there is a hierarchy of grid periods governed by a geometric progression. The alternative schemes of <a href=\"#bib21\">Fiete et al. (2008)</a>; <a href=\"#bib51\">Sreenivasan and Fiete (2011)</a> are designed to produce a large range of representation from grids with <i>similar</i> periods. These two alternatives make very different predictions for the effects of lesions in the entorhinal cortex on location coding. In a hierarchical scheme, losing a grid module produces location ambiguities that increase in size with the period of the missing module. In the alternative scheme of <a href=\"#bib21\">Fiete et al. (2008)</a>; <a href=\"#bib51\">Sreenivasan and Fiete (2011)</a> lesions of a module produce periodic ambiguities that are sporadically tied to the missing period. An illustrative example is shown in <a href=\"#fig7\">Appendix figure 2</a>."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.08362.009", 
+                                        "id": "fig7", 
+                                        "label": "Appendix figure 2.", 
+                                        "title": "The effect of lesioning grid modules on the distribution over location for hierarchical vs non-hierarchical grid schemes.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For the hierarchical scheme, we assume that four one-dimensional grid modules are related by a scale factor <i>r</i> (<i>r</i> = 2.7), that is, <math id=\"inf2\"><mrow><mfrac><mrow><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow><mrow><msub><mi>\u03bb</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mfrac><mo>=</mo><mn>2.7</mn></mrow></math>, <i>i</i> = 1, 2, 3, and the ratio <math id=\"inf3\"><mrow><mfrac><mrow><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow><mrow><msub><mi>\u03c3</mi><mi>i</mi></msub></mrow></mfrac><mo>=</mo><mn>9.1</mn></mrow></math>, i = 1, 2, 3, 4. We assume that the animal is at <i>x</i> = 0 and construct the probability distribution over location given the activity in each grid module as described in Optimizing the grid system: probabilistic decoder, \u2018Materials and methods\u2019. For the non-hierarchical scheme, we again assume four grid modules and set the periods of the four modules to be 1/105 (fourth), 1/70 (third), 1/42 (second), 1/30 (first) of the whole range, respectively. We set the width of the composite likelihood after combining all four modules to be 1/210 of the range [\u22125000, 5000]."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/08362/elife-08362-app1-fig2-v2.tif", 
+                                        "filename": "elife-08362-app1-fig2-v2.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The grid cell representation of space in the entorhinal cortex is related in a complex manner to the hippocampal place cell representation (<a href=\"#bib11\">Bush et al., 2014</a>; <a href=\"#bib46\">Sasaki et al., 2015</a>). Simplistic models of this transformation assume that grid cells are pooled in the hippocampus and that some form of synaptic plasticity selects inputs with the same spatial phase (<a href=\"#bib49\">Solstad et al., 2006</a>). In the context of such a model (which does not reflect many aspects of the known physiology), our grid scheme makes specific predictions for the effects of module lesions on place fields."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We use a firing rate model for both place cells and grid cells. The 1-d grid cell firing rate is modeled as a periodic sum of truncated Gaussians (a full Gaussian mixture model gives similar results but the truncated model is easier to handle numerically). We will consider four grid modules with module periods <i>\u03bb</i><sub><i>i</i></sub>, Gaussian standard deviations <i>\u03c3</i><sub><i>i</i></sub> of the bump of the grid cell tuning curve, and ratios <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03c3</i><sub><i>i</i></sub> = 9.1. The grid periods follow a scaling <i>\u03bb</i><sub><i>i</i></sub>/<i>\u03bb</i><sub><i>i</i> + 1</sub> = 2.7, and we examine place coding over the range set by the biggest period <i>\u03bb</i><sub>1</sub>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The place cell response is modeled via linear pooling of grid cells with the same phase followed by a threshold and an exponential nonlinearity:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ36", 
+                                        "mathml": "<math><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>\u221d</mo><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mn>1</mn><mn>4</mn></munderover><mtext>\u2009</mtext><msub><mi>g</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>c</mi><mo>\u2217</mo><mi>m</mi><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, <i>g</i><sub><i>i</i></sub>(<i>x</i>) is the grid cell firing rate, <i>c</i> = 0.3 sets the threshold and <math id=\"inf15\"><mrow><mi>m</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mtext>\u2009</mtext><mrow><mo>{</mo><mrow><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle></mrow><mn>1</mn><mn>4</mn></msubsup><msub><mi>g</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>}</mo></mrow></mrow></math> is the maximum activation. This is a simplified description of the essential features of many models of the grid-place transformation (see, e.g., [<a href=\"#bib49\">Solstad et al., 2006</a>; <a href=\"#bib1\">de Almeida et al., 2009</a>] and the review [<a href=\"#bib26\">Giocomo et al., 2011b</a>]). To model the effect of lesioning grid module <i>i</i>, we set the <i>g</i><sub><i>i</i></sub>(<i>x</i>) = 0. The results are shown in the <a href=\"#fig8\">Appendix figure 3</a>. Qualitatively, lesioning the smallest grid module increases the place cell width, while lesioning the largest grid module leads to increased firing in locations outside the main place fields. In general, lesioning different grid modules along the hierarchy leads to different effects on the place field. This is a testable prediction in future experiments. Note that lesions of dorsal-ventral bands are not a direct test\u2014multiple grid modules co-exist in each location along the dorsal-ventral axis (<a href=\"#bib52\">Stensola et al., 2012</a>)."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.08362.010", 
+                                        "id": "fig8", 
+                                        "label": "Appendix figure 3.", 
+                                        "title": "The effect of lesioning individual grid modules on place cell activity in a simple grid-place transformation model.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Lesioning different modules leads to qualitatively different effects on the place cell response in the hierarchical coding scheme we proposed, as compared to a non-hierarchical scheme. See \u2018Predictions for the effects of lesions and for place cell activity\u2019, <a href=\"#app1\">Appendix 1</a> for details."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/08362/elife-08362-app1-fig3-v2.tif", 
+                                        "filename": "elife-08362-app1-fig3-v2.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For comparison purposes, we also simulated a non-hierarchical model where grid periods are similar but incommensurate. In this model, the place cell response is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ32", 
+                                        "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>f</mi><mo>~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>\u221d</mo><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mn>1</mn><mn>4</mn></munderover><mtext>\u2009</mtext><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>c</mi><mo>~</mo></mover></mrow><mtext>\u2217</mtext><mrow><mover accent=\"true\"><mi>m</mi><mo>~</mo></mover></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf16\"><mrow><mi>c</mi><mo>=</mo><mrow><mover accent=\"true\"><mn>0</mn><mo stretchy=\"true\">~</mo></mover></mrow><mn>.35</mn></mrow></math> is a threshold, <math id=\"inf17\"><mrow><mrow><mover accent=\"true\"><mi>m</mi><mo>~</mo></mover></mrow><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mtext>\u2009</mtext><mrow><mo>{</mo><mrow><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle></mrow><mn>1</mn><mn>4</mn></msubsup><mtext>\u2009</mtext><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>}</mo></mrow></mrow></math>, and <math id=\"inf18\"><mrow><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math> is the grid cell firing rate again modeled as a sum of truncated Gaussians. In each module, we took the standard deviation of the Gaussians to be 1/210 of the whole range. The periods of the grids in the four modules were 1/105 (forth), 1/70 (third), 1/42 (second), 1/30 (first) of the whole range respectively. Again, to model the effect of lesioning grid module <i>i</i>, we set the <math id=\"inf19\"><mrow><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>. In this grid scheme, lesioning any grid module leads to qualitatively similar effects on the place cell activity, as they all lead to the emergence of several place fields (<a href=\"#fig8\">Appendix figure 3</a>). This is in contrast with the hierarchical scheme, in which lesioning the largest scale leads to an expansion of place fields rather than an increase in the number of fields."
                                     }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/08362/elife-08362-app1-fig3-v2.tif", 
-                                "filename": "elife-08362-app1-fig3-v2.tif"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "For comparison purposes, we also simulated a non-hierarchical model where grid periods are similar but incommensurate. In this model, the place cell response is"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ32", 
-                                "mathml": "<math><mrow><mrow><mover accent=\"true\"><mi>f</mi><mo>~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>\u221d</mo><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mn>1</mn><mn>4</mn></munderover><mtext>\u2009</mtext><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>c</mi><mo>~</mo></mover></mrow><mtext>\u2217</mtext><mrow><mover accent=\"true\"><mi>m</mi><mo>~</mo></mover></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <math id=\"inf16\"><mrow><mi>c</mi><mo>=</mo><mrow><mover accent=\"true\"><mn>0</mn><mo stretchy=\"true\">~</mo></mover></mrow><mn>.35</mn></mrow></math> is a threshold, <math id=\"inf17\"><mrow><mrow><mover accent=\"true\"><mi>m</mi><mo>~</mo></mover></mrow><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mtext>\u2009</mtext><mrow><mo>{</mo><mrow><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle></mrow><mn>1</mn><mn>4</mn></msubsup><mtext>\u2009</mtext><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>}</mo></mrow></mrow></math>, and <math id=\"inf18\"><mrow><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math> is the grid cell firing rate again modeled as a sum of truncated Gaussians. In each module, we took the standard deviation of the Gaussians to be 1/210 of the whole range. The periods of the grids in the four modules were 1/105 (forth), 1/70 (third), 1/42 (second), 1/30 (first) of the whole range respectively. Again, to model the effect of lesioning grid module <i>i</i>, we set the <math id=\"inf19\"><mrow><mrow><mover accent=\"true\"><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy=\"true\">~</mo></mover></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>. In this grid scheme, lesioning any grid module leads to qualitatively similar effects on the place cell activity, as they all lead to the emergence of several place fields (<a href=\"#fig8\">Appendix figure 3</a>). This is in contrast with the hierarchical scheme, in which lesioning the largest scale leads to an expansion of place fields rather than an increase in the number of fields."
+                                ]
                             }
                         ]
                     }

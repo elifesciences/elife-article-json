@@ -7337,16 +7337,78 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s26", 
-                        "title": "Method", 
+                        "id": "s24", 
+                        "title": "Enrichment of the DTT-NIC1 in the regulatory region of the <i>Nicotiana</i> EDS genes", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "We performed <i>de novo</i> motif identification using HOMER (<a href=\"#bib43\">Heinz et al., 2010</a>), which identifies motifs that are significantly enriched in the test dataset in comparison to background datasets. The genes from the M4 module and leaf expressed genes that were not involved in the M4 module were used as positive and negative datasets, respectively. To reduce false positives, we performed additional analysis by identifying enriched motifs from 100 randomly selected subsets of genes from the negative dataset. These were then compared with the enriched motifs in the M4 module. We considered all of the enriched motifs from the M4 module that occurred in more than 5% of motifs identified from the random selected dataset as noise and removed them from downstream analysis. Using this approach, we identified seven 8\u00a0bp motifs\u00a0(<a href=\"#A1-tbl2\">Appendix 1\u2014table 2</a>) that are significantly enriched in the regulatory region of M4 genes (p&lt;1e-10). The presence and absence of the identified W-box motif in the <i>N. attenuata</i> genome were analyzed using the \u2018scanMotifGenomeWide\u2019 function from the HOMER package (<a href=\"#bib43\">Heinz et al., 2010</a>)."
+                                "type": "section", 
+                                "id": "s25", 
+                                "title": "Results", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In addition to gene duplications, we further analyzed the putative role of TE insertions on the evolution of EDS in <i>Nicotiana</i>. Our previous work had revealed that several miniature inverted-repeat transposable elements (MITE) families, including DTT-NIC1, a Solanaceae-specific subgroup of the Tc1/Mariner family, expanded in <i>Nicotiana</i> (Xu et al, submitted). Permutation tests showed that insertions sites of annotated MITE families are enriched more than four times at 1kb upstream of genes compared to random chance (p&lt;0.001, permutation test). To examine the role of MITE insertions on the evolution of the HAE-induced EDS, we compared the probability of genes recruited to the EDS that contain MITE insertions within 1\u00a0kb upstream to the genome-wide pattern. The results showed that MITE insertions into the 1\u00a0kb upstream regions significantly increased the probability of genes being recruited into the M4 module (odd ratio = 1.3, p=\u00a0.0E-3, exact binomial test, <a href=\"#A1-tbl1\">Appendix 1\u2014table 1</a>)."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.19531.021", 
+                                        "id": "A1-tbl1", 
+                                        "label": "Appendix 1\u2014table 1.", 
+                                        "title": "Insertions of the MITEs family DTT-NIC1 is significantly enriched in 1kb upstream region of M4 module genes. p-values were calculated based on exact binomial test. Superfamilies are represented using different letters in the names: DTT for Tc1/Mariner, DTM for Mutator, DTA for hAT, DTH for PIF/Harbinger. Statistically significant one is highlighted in red.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Insertions of the MITEs family DTT-NIC1 is significantly enriched in 1kb upstream region of M4 module genes. p-values were calculated based on exact binomial test. Superfamilies are represented using different letters in the names: DTT for Tc1/Mariner, DTM for Mutator, DTA for hAT, DTH for PIF/Harbinger. Statistically significant one is highlighted in red."
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>MITEs name</th><th>Number of insertions to regulatory region of M4 module genes</th><th>Odd ratio</th><th>p-value</th></tr></thead><tbody><tr><td valign=\"top\">DTA_NIC1</td><td valign=\"top\">4</td><td valign=\"top\">0.54</td><td valign=\"top\">0.32</td></tr><tr><td valign=\"top\">DTA_NIC2</td><td valign=\"top\">3</td><td valign=\"top\">1.14</td><td valign=\"top\">0.75</td></tr><tr><td valign=\"top\">DTA_NIC3</td><td valign=\"top\">22</td><td valign=\"top\">1.38</td><td valign=\"top\">0.16</td></tr><tr><td valign=\"top\">DTA_NIC4</td><td valign=\"top\">3</td><td valign=\"top\">0.55</td><td valign=\"top\">0.49</td></tr><tr><td valign=\"top\">DTA_NIC5</td><td valign=\"top\">1</td><td valign=\"top\">0.23</td><td valign=\"top\">0.19</td></tr><tr><td valign=\"top\">DTA_NIC6</td><td valign=\"top\">4</td><td valign=\"top\">0.68</td><td valign=\"top\">0.66</td></tr><tr><td valign=\"top\">DTA_NIC7</td><td valign=\"top\">1</td><td valign=\"top\">0.72</td><td valign=\"top\">1.00</td></tr><tr><td valign=\"top\">DTA_NIC8</td><td valign=\"top\">1</td><td valign=\"top\">0.61</td><td valign=\"top\">1.00</td></tr><tr><td valign=\"top\">DTA_NIC9</td><td valign=\"top\">12</td><td valign=\"top\">1.42</td><td valign=\"top\">0.28</td></tr><tr><td valign=\"top\">DTH_NIC1</td><td valign=\"top\">23</td><td valign=\"top\">1.53</td><td valign=\"top\">0.063</td></tr><tr><td valign=\"top\">DTH_NIC2</td><td valign=\"top\">23</td><td valign=\"top\">1.14</td><td valign=\"top\">0.56</td></tr><tr><td valign=\"top\">DTH_NIC3</td><td valign=\"top\">11</td><td valign=\"top\">1.28</td><td valign=\"top\">0.38</td></tr><tr><td valign=\"top\">DTT_NIC1</td><td valign=\"top\">65</td><td valign=\"top\">1.63</td><td valign=\"top\">0.0049</td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Analyses on the insertion of each individual MITE family separately revealed that the increased probability of EDS recruitment was mainly due to DTT-NIC1 to 1kb upstream region of genes (<a href=\"#A1-tbl2\">Appendix 1\u2014table 2</a> and <a href=\"#SD1-data\">Supplementary file 1C</a>). In contrast, DTT-NIC1 insertions into downstream regions did not increase the likelihood of genes being recruited to the EDS (odd ratio = 1.1, p=0.5). Analyses of the genes that were significantly induced by FAC elicitation in all three FAC-responding species, <i>N. attenuata, N. acuminata</i> and <i>N. linearis</i>, showed similar patterns but had an even higher odd ratio (<a href=\"#A1-tbl1\">Appendix 1\u2014table 1</a>).These data suggest that insertions of DTT-NIC1 into gene regulatory regions significantly contributed to the recruitment of genes to the <i>Nicotiana</i> HAE-induced EDS."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.19531.022", 
+                                        "id": "A1-tbl2", 
+                                        "label": "Appendix 1\u2014table 2.", 
+                                        "title": "Seven DNA motifs are significantly enriched in the 1kb upstream region of M4 module genes. The presence of the motif in sequences and <i>p</i>-values were obtained using the HOMER package. Motif sequences were annotated by searching the plant <i>cis</i>-regulatory sequence database in PlantPan2 (<a href=\"http://plantpan2.itps.ncku.edu.tw/\">http://plantpan2.itps.ncku.edu.tw/</a>).", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Seven DNA motifs are significantly enriched in the 1kb upstream region of M4 module genes. The presence of the motif in sequences and <i>p</i>-values were obtained using the HOMER package. Motif sequences were annotated by searching the plant <i>cis</i>-regulatory sequence database in PlantPan2 (<a href=\"http://plantpan2.itps.ncku.edu.tw/\">http://plantpan2.itps.ncku.edu.tw/</a>)."
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Motif sequence</th><th>Annotation</th><th>Presence in M4 module genes (%)</th><th>Presence in background dataset (%)</th><th><b>p value</b></th></tr></thead><tbody><tr><td>AGTCAACG</td><td>W-box1</td><td>60.5</td><td>38.5</td><td>1.0E-53</td></tr><tr><td>TTGACCWT</td><td>W-box2</td><td>69.0</td><td>48.4</td><td>1.0E-47</td></tr><tr><td>NNACGCGT</td><td>unknown</td><td>19.7</td><td>10.0</td><td>1.0E-23</td></tr><tr><td>TTCACACG</td><td>unknown</td><td>18.7</td><td>11.6</td><td>1.0E-12</td></tr><tr><td>GTCGGCTG</td><td>unknown</td><td>39.5</td><td>29.7</td><td>1.0E-12</td></tr><tr><td>CGAAGACT</td><td>unknown</td><td>32.0</td><td>23.3</td><td>1.0E-11</td></tr><tr><td>TTTCCACG</td><td>unknown</td><td>34.3</td><td>25.9</td><td>1.0E-10</td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "One of the mechanisms by which DTT-NIC1 insertions could contribute to the recruitment of a gene to the HAE-induced EDS is the introduction of promoter binding motifs. To examine this potential mechanism, we performed de novo identifications of enriched transcription factor binding motifs from regulatory regions among HAE-induced EDS genes. Within the 1kb upstream region sequences, seven significantly enriched motifs (p&lt;1E-10) were found among the M4 module genes in comparison to the genome-wide background (<a href=\"#SD1-data\">Supplementary file 1D</a>). Among them, two W-box motifs (W-box1: AGTCAACG and W-box2: TTGACCWT) were the most statistically significant. These conserved motifs are known to be bound by WRKY transcription factors that are induced by biotic stresses (<a href=\"#bib13\">Chen et al., 2012</a>; <a href=\"#bib29\">Gao et al., 2016</a>; <a href=\"#bib112\">Zou et al., 2011</a>). W-box1 and W-box2 box were found in the 1kb upstream regions of more than 60.5% and 69.0% of M4 module genes, respectively. A similar pattern was also found for the EDS genes that were induced by FAC in all three FAC-responding species."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Interestingly, at the genome-wide level, the distribution of the W-box1 motif in the <i>N. attenuata</i> genome is significantly associated with the insertions of DTT-NIC1 (p&lt;0.001, based on 1000 permutation test). Analyzing the consensus sequence of the DTT-NIC1 in <i>N. attenuata</i> also showed that DTT-NIC1 contains the W-box1 motif. Further comparisons of insertion sites of DTT-NIC1 and motif locations in the 1kb upstream region of <i>N. attenuata</i> HAE-induced EDS genes revealed that at least 44.4% of the DTT-NIC1 insertions introduced W-box1 to the regulatory region of adjacent genes. These results suggest that DTT-NIC1 mediated W-box insertions into the regulatory region of genes might have contributed to the recruitment of genes to the HAE-induced EDS network in <i>Nicotiana</i>."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "Insertions sites of DTT-NIC1 to the regulatory region of genes were identified as described in (Xu et al, submitted). In brief, using all of the MITE consensus sequences as a library, we searched the 1kp upstream region of genes with RepeatMasker. The parameters '-nolow -no_is -s -cutoff 250' were used. The enrichment analysis of MITEs in 1kb upstream region of M4 module genes and associations between the MITEs and identified motifs were analyzed using permutation tests. For this, we randomly shuffled the insertion sites of MITEs 1000 times using the \u2018shuffle\u2019 function from the BEDTOOLS package (<a href=\"#bib76\">Quinlan and Hall, 2010</a>). We then calculated the null models of MITEs insertion sites and overlaps between MITEs insertions and motif locations in the <i>N. attenuata</i> genome. These null models were then used to determine the enrichment significance of observed insertions of MITEs families in the 1\u00a0kb upstream region of M4 module genes as well as observed associations between locations of MITEs families and motifs."
+                                "type": "section", 
+                                "id": "s26", 
+                                "title": "Method", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We performed <i>de novo</i> motif identification using HOMER (<a href=\"#bib43\">Heinz et al., 2010</a>), which identifies motifs that are significantly enriched in the test dataset in comparison to background datasets. The genes from the M4 module and leaf expressed genes that were not involved in the M4 module were used as positive and negative datasets, respectively. To reduce false positives, we performed additional analysis by identifying enriched motifs from 100 randomly selected subsets of genes from the negative dataset. These were then compared with the enriched motifs in the M4 module. We considered all of the enriched motifs from the M4 module that occurred in more than 5% of motifs identified from the random selected dataset as noise and removed them from downstream analysis. Using this approach, we identified seven 8\u00a0bp motifs\u00a0(<a href=\"#A1-tbl2\">Appendix 1\u2014table 2</a>) that are significantly enriched in the regulatory region of M4 genes (p&lt;1e-10). The presence and absence of the identified W-box motif in the <i>N. attenuata</i> genome were analyzed using the \u2018scanMotifGenomeWide\u2019 function from the HOMER package (<a href=\"#bib43\">Heinz et al., 2010</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Insertions sites of DTT-NIC1 to the regulatory region of genes were identified as described in (Xu et al, submitted). In brief, using all of the MITE consensus sequences as a library, we searched the 1kp upstream region of genes with RepeatMasker. The parameters '-nolow -no_is -s -cutoff 250' were used. The enrichment analysis of MITEs in 1kb upstream region of M4 module genes and associations between the MITEs and identified motifs were analyzed using permutation tests. For this, we randomly shuffled the insertion sites of MITEs 1000 times using the \u2018shuffle\u2019 function from the BEDTOOLS package (<a href=\"#bib76\">Quinlan and Hall, 2010</a>). We then calculated the null models of MITEs insertion sites and overlaps between MITEs insertions and motif locations in the <i>N. attenuata</i> genome. These null models were then used to determine the enrichment significance of observed insertions of MITEs families in the 1\u00a0kb upstream region of M4 module genes as well as observed associations between locations of MITEs families and motifs."
+                                    }
+                                ]
                             }
                         ]
                     }

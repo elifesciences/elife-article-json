@@ -5914,193 +5914,349 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s31", 
-                        "title": "2.3.2 Normal mixture model", 
+                        "id": "s26", 
+                        "title": "Statistical analysis of DNA/RNA association", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "Firstly, we conditioned on DNA measurements {<i>x</i><sub><i>g</i></sub>}, as is common in regression analysis. We treated the RNA vectors {<i>y</i><sub><i>g</i></sub>} as the realization of Gaussian random vectors {<i>Y</i><sub><i>g</i></sub>}, whose mean and covariance depended on latent classes in operation for the different genes. To develop this further, we supposed,"
+                                "type": "section", 
+                                "id": "s27", 
+                                "title": "2.1 Initial Data Processing", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The data analysis pipeline for each strain panel involved a series of preprocessing steps to prepare data for the mixture-model-based cluster analysis."
+                                    }, 
+                                    {
+                                        "type": "list", 
+                                        "prefix": "number", 
+                                        "items": [
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Generation:</i> The sequencing facility at the UW Biotechnology Center aligned raw reads and produced read counts per yeast gene for both DNA and RNA from a number of samples in each strain panel."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Coverage filter</i>: We removed genes for which mean (over different experimental cells) RNA counts per gene &lt;5. This cutoff was defined empirically based on reproducibility across the strain panels."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Zeros:</i> Where RNA or DNA count was 0, we replaced by 1/2 to avoid downstream log errors."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>DNA/RNA Alignment:</i> Genomic DNA counts were measured in biological duplicate. The replicates were averaged for each strain, and then the average normalized DNA counts per gene were used as the reference point for all three biological RNA measurements for that strain."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Library size adjustment:</i> For each profile, we summed over all chromosome library sizes and corrected for library size. I.e., we divided counts by profile-specific (whole genome) library size."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Reference normalization:</i> We divided each experimental profile from the aneroid strains by its associated (via replicate) euploid control profile."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Log transform:</i> We transformed relative counts to natural logarithm scale."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Aneuploid filter:</i> We restricted to chromosome 8 genes (for West African strain NCYC110) or to chromosome 12 genes (for the YPS panel)."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Nonlinear filter:</i> We filtered genes showing nonlinear DNA/RNA relationship on the transformed scale (see non-linear filter, below)."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<i>Output:</i> We sent the processed data to the mixture of linear regression (MLR) clustering calculation."
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ4", 
-                                "label": "(3)", 
-                                "mathml": "<math><mrow><msub><mi>Y</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>+</mo><msub><mi>\u03b2</mi><mi>g</mi></msub><msub><mi>x</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>+</mo><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub><mtext> for\u2009</mtext><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><msub><mi>n</mi><mi>g</mi></msub><mo>,</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s28", 
+                                "title": "2.2 Non-linear filter", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We had 9 DNA measurements (3 repeated measures for 2n, 3n, and 4n, respectively) and 9 RNA measurements, for each gene under study and for both strain panels. From above, these measurements were on a logarithmic scale, and normalized to a reference strain. Owing to design of the controls, the DNA values were identical across the three replicate samples within each strain, and recorded changes in the relative DNA copy number. If RNA/DNA followed a linear regression line (as in <a href=\"#fig11\">Appendix 1\u2014Figure 1</a>), then,"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.05462.017", 
+                                        "id": "fig11", 
+                                        "label": "Appendix 1\u2014Figure 1.", 
+                                        "title": "Relative DNA and RNA values follow a linear regression.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/05462/elife-05462-app1-fig1-v3.jpg", 
+                                        "filename": "elife-05462-app1-fig1-v3.jpg"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ1", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mtext>B</mtext><mo>\u2212</mo><mtext>A</mtext></mrow><mrow><mtext>C</mtext><mo>\u2212</mo><mtext>A</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mtext>n</mtext><mo>\u2212</mo><mn>2</mn><mtext>n</mtext></mrow><mrow><mn>4</mn><mtext>n</mtext><mo>\u2212</mo><mn>2</mn><mtext>n</mtext></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A non-linear relationship would violate this rule. To test rule (1), we fit an ANOVA model:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mrow><mtext>RNA</mtext><mi>\u223c</mi><mtext>Aneuploid\u2009type\u2009</mtext><mrow><mo>(</mo><mrow><mtext>a\u2009factor\u2009with\u2009three\u2009levels</mtext><mo>:</mo><mtext>\u2009</mtext><mn>2</mn><mtext>n</mtext><mo>,</mo><mtext>\u2009</mtext><mn>3</mn><mtext>n,\u2009and </mtext><mn>4</mn><mtext>n</mtext></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "and observed that 1 is equivalent to<math id=\"inf1\"><mrow><mfrac><mrow><mtext>coeff</mtext><mo>_</mo><mn>3</mn><mtext>n</mtext></mrow><mrow><mtext>coeff</mtext><mo>_</mo><mn>4</mn><mtext>n</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mtext>n</mtext><mo>\u2212</mo><mn>2</mn><mtext>n</mtext></mrow><mrow><mn>4</mn><mtext>n</mtext><mo>\u2212</mo><mn>2</mn><mtext>n</mtext></mrow></mfrac></mrow></math>. That is, the coefficients of model 2 satisfied (4n \u2212 2n)coeff_3n \u2212 (3n \u2212 2n)coeff_4n = 0. We deployed the test with the help of the R package car (<a href=\"#bib22\">Fox and Weisberg, 2011</a>), taking care with the order of the DNA values. The normal-theory p-value is:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "mathml": "<math><mrow><mtext>linear\u2009hypothesis\u2009</mtext><mrow><mo>(</mo><mrow><mtext>lm</mtext><mrow><mo>(</mo><mrow><mtext>RNA</mtext><mi>\u223c</mi><mtext>Aneuploid\u2009type</mtext><mo>,</mo><mtext>\u2009c</mtext><mrow><mo>(</mo><mrow><mtext>0</mtext><mo>,</mo><mtext>\u2009</mtext><mn>4</mn><mtext>n</mtext><mo>\u2212</mo><mn>2</mn><mtext>n</mtext><mo>,</mo><mtext>\u2009</mtext><mo>\u2212</mo><mrow><mo>(</mo><mrow><mn>3</mn><mtext>n</mtext><mo>\u2212</mo><mn>2</mn><mtext>n</mtext></mrow><mo>)</mo></mrow><mo>,</mo><mtext>\u20090</mtext></mrow><mo>)</mo></mrow><mo>\\</mo><mtext>$</mtext><mo>'</mo><mtext>Pr</mtext><mrow><mo>(</mo><mrow><mtext>$</mtext><mo>&gt;</mo><mtext>$F</mtext></mrow><mo>)</mo></mrow><mo>'</mo><mrow><mo>[</mo><mn>2</mn><mo>]</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Genes were flagged as possibly having a non-linear relationship if this p-value was less than 0.05."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "where <i>\u03b1</i><sub><i>g</i></sub> and <i>\u03b2</i><sub><i>g</i></sub> were the gene-specific intercept and slope, respectively, and where <math id=\"inf2\"><mrow><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow></math> was a mean zero Gaussian random error that had variance <math id=\"inf3\"><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></math>. Five distinct hypotheses (classes, clusters) were considered:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ5", 
-                                "mathml": "<math><mrow><mn>1</mn><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ6", 
-                                "mathml": "<math><mrow><mn>2</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&lt;</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ7", 
-                                "mathml": "<math><mrow><mn>2</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&gt;</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ8", 
-                                "mathml": "<math><mrow><mn>3</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>&lt;</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ9", 
-                                "mathml": "<math><mrow><mn>3</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>&gt;</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Cases 2<i>b</i> and 3<i>b</i> were entertained for completeness, though they were expected to be less intepretable than the primary classes of interest: 1, 2<i>a</i>, and 3<i>a</i>. In classes 3<i>a</i> and 3<i>b</i>, the intercept was not constrained. The model was strengthened by not requiring that we fix or estimate parameters {<i>\u03b1</i><sub><i>g</i></sub>, <i>\u03b2</i><sub><i>g</i></sub>}. Specifically, we treated these as random effects, governed by suitably constrained Gaussian distributions that respect the class structure. The random-effects distribution was as follows:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ10", 
-                                "mathml": "<math><mrow><mn>1</mn><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ11", 
-                                "mathml": "<math><mrow><mn>2</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u221e</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ12", 
-                                "mathml": "<math><mrow><mn>2</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mi>\u221e</mi></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ13", 
-                                "mathml": "<math><mrow><mn>3</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u221e</mi><mo>,</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ14", 
-                                "mathml": "<math><mrow><mn>3</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mi>\u221e</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "These class-specific distributions were governed by two variance components <math id=\"inf4\"><mrow><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow></math> and <math id=\"inf5\"><mrow><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup></mrow></math>, which we estimated from the data. They express variation within each class and across genes in the specific values of intercepts and slopes. Formally, we assumed mutual independence among all {<i>\u03b1</i><sub><i>g</i></sub>}, {<i>\u03b2</i><sub><i>g</i></sub>} and errors <math id=\"inf6\"><mrow><mrow><mo>{</mo><mrow><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow><mo>}</mo></mrow></mrow></math>. The mixture model was fully specified by introducing discrete latent class random variables {<i>Z</i><sub><i>g</i></sub>} and parameters <i>\u03bb</i> = (<i>\u03bb</i><sub><i>j</i></sub>), to be estimated from the data, defined,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ15", 
-                                "label": "(4)", 
-                                "mathml": "<math><mrow><mi>P</mi><mrow><mo>(</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>\u03bb</mi><mi>j</mi></msub><mtext> </mtext><mi>j</mi><mo>\u2208</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>a</mi><mo>,</mo><mn>2</mn><mi>b</mi><mo>,</mo><mn>3</mn><mi>a</mi><mo>,</mo><mn>3</mn><mi>b</mi><mo>}</mo></mrow><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "After parameter estimation, model-based clustering was based on the posterior probabilities:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ16", 
-                                "label": "(5)", 
-                                "mathml": "<math><mrow><mi>P</mi><mrow><mo>(</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msub><mi>y</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><mtext>constant</mtext><mo>\u00d7</mo><msub><mi>\u03bb</mi><mi>j</mi></msub><mo>\u00d7</mo><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "with the constant computed by normalizing the probabilities to sum to one. The key ingredients in (5) were the class-specific probability densities <math id=\"inf7\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math>, which measured how well the data were explained by each class <i>j</i>. Note that <math id=\"inf8\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> is a multivariate joint density, since <i>y</i><sub><i>g</i></sub> is a vector of RNA measurements, and it is also a marginal density, because the latent random effects <i>\u03b1</i><sub><i>g</i></sub> and <i>\u03b2</i><sub><i>g</i></sub> were integrated away. An interesting element of the proposed approach was that the densities <math id=\"inf9\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> were available analytically, in much the same way as marginal compound Gamma distributions were computed in <a href=\"#bib48\">Newton et al. (2004)</a>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<b>Class 1</b>: there was no randomness in the intercept slope in this class, so the RNA vector <i>Y</i><sub><i>g</i></sub> satisfied:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ17", 
-                                "label": "(6)", 
-                                "mathml": "<math><mrow><msub><mi>Y</mi><mi>g</mi></msub><mo>\u223c</mo><msub><mrow><mtext>Normal</mtext></mrow><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <i>I</i> is the <i>n</i><sub><i>g</i></sub> \u00d7 <i>n</i><sub><i>g</i></sub> identity matrix. Then <math id=\"inf10\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> is the ordinate of the multivariate normal density in (6): up to a constant across classes,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ18", 
-                                "label": "(7)", 
-                                "mathml": "<math><mrow><mtext>log\u2009</mtext><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow><mn>2</mn></mfrac><mtext>log</mtext><mrow><mo>(</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mi>t</mi></msup><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<b>Classes 2a, 2b</b>: in these classes, it was convenient to introduce a related vector <math id=\"inf11\"><mrow><msub><mrow><mover accent=\"true\"><mi>Y</mi><mo>\u02dc</mo></mover></mrow><mi>g</mi></msub></mrow></math> based on having no constraints on <i>\u03b1</i><sub><i>g</i></sub>; that is taking <math id=\"inf12\"><mrow><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>.</mo><mtext>\u2009</mtext></mrow></math> Without the ordering constraint, it was immediate that,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ19", 
-                                "label": "(8)", 
-                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>Y</mi><mo>\u02dc</mo></mover></mrow><mi>g</mi></msub><mo>\u223c</mo><msub><mrow><mtext>Normal</mtext></mrow><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup><mi>e</mi><msup><mi>e</mi><mi>t</mi></msup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <i>e</i> is an <i>n</i><sub><i>g</i></sub> \u00d7 1 vector of <math id=\"inf13\"><mrow><mn>1</mn><mo>\u2032</mo><mi>s</mi></mrow></math>. If <math id=\"inf14\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub></mrow></math> denotes the density of the multivariate normal in (8), then we found:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ20", 
-                                "label": "(9)", 
-                                "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>2</mn><mi>a</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mtext>\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&lt;</mo><mn>0</mn><mo>|</mo><msub><mi>y</mi><mi>g</mi></msub><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ21", 
-                                "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>2</mn><mi>b</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mtext>\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&gt;</mo><mn>0</mn><mo>|</mo><msub><mi>y</mi><mi>g</mi></msub><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Here, the probabilities involving <math id=\"inf15\"><mrow><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub></mrow></math> refer to conditional probabilities about the random intercept in the <i>unconstrained</i> model for <i>\u03b1</i><sub><i>g</i></sub>. From standard conjugate Bayesian analysis, the unconstrained posterior for <i>\u03b1</i><sub><i>g</i></sub> was,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ22", 
-                                "label": "(10)", 
-                                "mathml": "<math><mrow><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>|</mo><msub><mi>y</mi><mi>g</mi></msub><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mi>e</mi><mi>t</mi></msup><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mfrac><mo>,</mo><mfrac><mn>1</mn><mrow><mfrac><mn>1</mn><mrow><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "and so the ordering factors on the right side of (9) were readily computed from univariate Gaussian CDF's. As to the unconstrained ordinate <math id=\"inf16\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub></mrow></math>, following (7),"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ23", 
-                                "label": "(11)", 
-                                "mathml": "<math><mrow><mtext>log\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>log\u2009det\u2009</mtext><msub><mtext>\u03a3</mtext><mn>2</mn></msub><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow><mi>t</mi></msup><msubsup><mtext>\u03a3</mtext><mn>2</mn><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <math id=\"inf17\"><mrow><msub><mtext>\u03a3</mtext><mn>2</mn></msub><mo>=</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup><mi>e</mi><msup><mi>e</mi><mi>t</mi></msup></mrow></math> as in (8). Using Woodbury's formula, this log density was readily computed in terms of summary statistics from gene <i>g</i>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<b>Classes 3a, 3b</b>: here, the constraints were on the slopes <i>\u03b2</i><sub><i>g</i></sub>, but randomness in both slopes and intercepts must be accounted for. Again we computed ordinates by considering a model in which there were no constraints on <i>\u03b2</i><sub><i>g</i></sub>. (Call it <math id=\"inf18\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub></mrow></math>.) In comparison with (8),"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ24", 
-                                "label": "(12)", 
-                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>Y</mi><mo>\u02dc</mo></mover></mrow><mi>g</mi></msub><mo>\u223c</mo><msub><mrow><mtext>Normal</mtext></mrow><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow></msub><mrow><mo>(</mo><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msub><mtext>\u03a3</mtext><mn>3</mn></msub><mo>=</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup><mi>e</mi><msup><mi>e</mi><mi>t</mi></msup><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup><msub><mi>x</mi><mi>g</mi></msub><msubsup><mi>x</mi><mi>g</mi><mi>t</mi></msubsup><mo>)</mo></mrow><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "To compute <math id=\"inf19\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>3</mn><mi>a</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> (for example), we required the normal mass <math id=\"inf20\"><mrow><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub><mrow><mo>(</mo><mi>\u03b2</mi><mo>&lt;</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msub><mi>y</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> from the unconstrained model as well as the unconstrained ordinate <math id=\"inf21\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow></math>, which was,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ25", 
-                                "label": "(13)", 
-                                "mathml": "<math><mrow><mtext>log\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>log\u2009det\u2009</mtext><msub><mtext>\u03a3</mtext><mn>3</mn></msub><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow><mi>t</mi></msup><msubsup><mtext>\u03a3</mtext><mn>3</mn><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Convenient formulas for these quantities were available in terms of gene-level statistics."
+                                "type": "section", 
+                                "id": "s29", 
+                                "title": "2.3 Clustering by MLR", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s30", 
+                                        "title": "2.3.1 Overview", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For a number of yeast genes {<i>g</i>} we had measurements on the relative abundance of genomic DNA <i>x</i><sub><i>g</i></sub> = (<i>x</i><sub><i>g,i</i></sub>) and matched RNA <i>y</i><sub><i>g</i></sub> = (<i>y</i><sub><i>g,i</i></sub>) in cultured cells. Here <i>i</i> indexes the specific measurement, running from <i>i</i> = 1 to the number of samples <i>n</i><sub><i>g</i></sub> in the strain panel. Having removed genes exhibiting a non-linear DNA/RNA relationship, our goal was to cluster genes according to the pattern of their linear relationship. Phenomena related to dosage compensation may be reflected in this relationship, and by clustering genes we hoped to gain further insight into these phenomena."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We sought to cluster according to several underlying patterns: (1) intercept 0, slope 1, (2) intercept negative, slope 1, (3) slope less than one. These patterns, when considered on the relative measurement scale, refer to three basic regulatory regimes of interest. We developed a method based on treating the data as a mixture of normal components, and within a specific probability model we computed the posterior probability that each gene arose from any of these components, following the prescripts of model-based mixture clustering (<a href=\"#bib46\">McLachlan and Peel, 2000</a>). An approximate EM algorithm was constructed to compute these probabilities and thus determine the clustering of genes according to their probable regime of linear DNA/RNA relationship."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s31", 
+                                        "title": "2.3.2 Normal mixture model", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Firstly, we conditioned on DNA measurements {<i>x</i><sub><i>g</i></sub>}, as is common in regression analysis. We treated the RNA vectors {<i>y</i><sub><i>g</i></sub>} as the realization of Gaussian random vectors {<i>Y</i><sub><i>g</i></sub>}, whose mean and covariance depended on latent classes in operation for the different genes. To develop this further, we supposed,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ4", 
+                                                "label": "(3)", 
+                                                "mathml": "<math><mrow><msub><mi>Y</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>+</mo><msub><mi>\u03b2</mi><mi>g</mi></msub><msub><mi>x</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>+</mo><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub><mtext> for\u2009</mtext><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><msub><mi>n</mi><mi>g</mi></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <i>\u03b1</i><sub><i>g</i></sub> and <i>\u03b2</i><sub><i>g</i></sub> were the gene-specific intercept and slope, respectively, and where <math id=\"inf2\"><mrow><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow></math> was a mean zero Gaussian random error that had variance <math id=\"inf3\"><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></math>. Five distinct hypotheses (classes, clusters) were considered:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ5", 
+                                                "mathml": "<math><mrow><mn>1</mn><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ6", 
+                                                "mathml": "<math><mrow><mn>2</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&lt;</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ7", 
+                                                "mathml": "<math><mrow><mn>2</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&gt;</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ8", 
+                                                "mathml": "<math><mrow><mn>3</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>&lt;</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ9", 
+                                                "mathml": "<math><mrow><mn>3</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>&gt;</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Cases 2<i>b</i> and 3<i>b</i> were entertained for completeness, though they were expected to be less intepretable than the primary classes of interest: 1, 2<i>a</i>, and 3<i>a</i>. In classes 3<i>a</i> and 3<i>b</i>, the intercept was not constrained. The model was strengthened by not requiring that we fix or estimate parameters {<i>\u03b1</i><sub><i>g</i></sub>, <i>\u03b2</i><sub><i>g</i></sub>}. Specifically, we treated these as random effects, governed by suitably constrained Gaussian distributions that respect the class structure. The random-effects distribution was as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ10", 
+                                                "mathml": "<math><mrow><mn>1</mn><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mtext>\u2009</mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ11", 
+                                                "mathml": "<math><mrow><mn>2</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u221e</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ12", 
+                                                "mathml": "<math><mrow><mn>2</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mi>\u221e</mi></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ13", 
+                                                "mathml": "<math><mrow><mn>3</mn><mi>a</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u221e</mi><mo>,</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ14", 
+                                                "mathml": "<math><mrow><mn>3</mn><mi>b</mi><mo>.</mo><mtext> </mtext><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><msub><mi>\u03b2</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mtext>\u2009restricted\u2009to\u2009</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mi>\u221e</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "These class-specific distributions were governed by two variance components <math id=\"inf4\"><mrow><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow></math> and <math id=\"inf5\"><mrow><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup></mrow></math>, which we estimated from the data. They express variation within each class and across genes in the specific values of intercepts and slopes. Formally, we assumed mutual independence among all {<i>\u03b1</i><sub><i>g</i></sub>}, {<i>\u03b2</i><sub><i>g</i></sub>} and errors <math id=\"inf6\"><mrow><mrow><mo>{</mo><mrow><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow><mo>}</mo></mrow></mrow></math>. The mixture model was fully specified by introducing discrete latent class random variables {<i>Z</i><sub><i>g</i></sub>} and parameters <i>\u03bb</i> = (<i>\u03bb</i><sub><i>j</i></sub>), to be estimated from the data, defined,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ15", 
+                                                "label": "(4)", 
+                                                "mathml": "<math><mrow><mi>P</mi><mrow><mo>(</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>\u03bb</mi><mi>j</mi></msub><mtext> </mtext><mi>j</mi><mo>\u2208</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>a</mi><mo>,</mo><mn>2</mn><mi>b</mi><mo>,</mo><mn>3</mn><mi>a</mi><mo>,</mo><mn>3</mn><mi>b</mi><mo>}</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "After parameter estimation, model-based clustering was based on the posterior probabilities:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ16", 
+                                                "label": "(5)", 
+                                                "mathml": "<math><mrow><mi>P</mi><mrow><mo>(</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msub><mi>y</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><mtext>constant</mtext><mo>\u00d7</mo><msub><mi>\u03bb</mi><mi>j</mi></msub><mo>\u00d7</mo><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "with the constant computed by normalizing the probabilities to sum to one. The key ingredients in (5) were the class-specific probability densities <math id=\"inf7\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math>, which measured how well the data were explained by each class <i>j</i>. Note that <math id=\"inf8\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> is a multivariate joint density, since <i>y</i><sub><i>g</i></sub> is a vector of RNA measurements, and it is also a marginal density, because the latent random effects <i>\u03b1</i><sub><i>g</i></sub> and <i>\u03b2</i><sub><i>g</i></sub> were integrated away. An interesting element of the proposed approach was that the densities <math id=\"inf9\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mi>j</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> were available analytically, in much the same way as marginal compound Gamma distributions were computed in <a href=\"#bib48\">Newton et al. (2004)</a>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<b>Class 1</b>: there was no randomness in the intercept slope in this class, so the RNA vector <i>Y</i><sub><i>g</i></sub> satisfied:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ17", 
+                                                "label": "(6)", 
+                                                "mathml": "<math><mrow><msub><mi>Y</mi><mi>g</mi></msub><mo>\u223c</mo><msub><mrow><mtext>Normal</mtext></mrow><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <i>I</i> is the <i>n</i><sub><i>g</i></sub> \u00d7 <i>n</i><sub><i>g</i></sub> identity matrix. Then <math id=\"inf10\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> is the ordinate of the multivariate normal density in (6): up to a constant across classes,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ18", 
+                                                "label": "(7)", 
+                                                "mathml": "<math><mrow><mtext>log\u2009</mtext><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow><mn>2</mn></mfrac><mtext>log</mtext><mrow><mo>(</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mi>t</mi></msup><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<b>Classes 2a, 2b</b>: in these classes, it was convenient to introduce a related vector <math id=\"inf11\"><mrow><msub><mrow><mover accent=\"true\"><mi>Y</mi><mo>\u02dc</mo></mover></mrow><mi>g</mi></msub></mrow></math> based on having no constraints on <i>\u03b1</i><sub><i>g</i></sub>; that is taking <math id=\"inf12\"><mrow><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>.</mo><mtext>\u2009</mtext></mrow></math> Without the ordering constraint, it was immediate that,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ19", 
+                                                "label": "(8)", 
+                                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>Y</mi><mo>\u02dc</mo></mover></mrow><mi>g</mi></msub><mo>\u223c</mo><msub><mrow><mtext>Normal</mtext></mrow><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup><mi>e</mi><msup><mi>e</mi><mi>t</mi></msup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <i>e</i> is an <i>n</i><sub><i>g</i></sub> \u00d7 1 vector of <math id=\"inf13\"><mrow><mn>1</mn><mo>\u2032</mo><mi>s</mi></mrow></math>. If <math id=\"inf14\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub></mrow></math> denotes the density of the multivariate normal in (8), then we found:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ20", 
+                                                "label": "(9)", 
+                                                "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>2</mn><mi>a</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mtext>\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&lt;</mo><mn>0</mn><mo>|</mo><msub><mi>y</mi><mi>g</mi></msub><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ21", 
+                                                "mathml": "<math><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>2</mn><mi>b</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mtext>\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>&gt;</mo><mn>0</mn><mo>|</mo><msub><mi>y</mi><mi>g</mi></msub><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here, the probabilities involving <math id=\"inf15\"><mrow><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub></mrow></math> refer to conditional probabilities about the random intercept in the <i>unconstrained</i> model for <i>\u03b1</i><sub><i>g</i></sub>. From standard conjugate Bayesian analysis, the unconstrained posterior for <i>\u03b1</i><sub><i>g</i></sub> was,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ22", 
+                                                "label": "(10)", 
+                                                "mathml": "<math><mrow><msub><mi>\u03b1</mi><mi>g</mi></msub><mo>|</mo><msub><mi>y</mi><mi>g</mi></msub><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>\u223c</mo><mtext>Normal</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mi>e</mi><mi>t</mi></msup><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mfrac><mo>,</mo><mfrac><mn>1</mn><mrow><mfrac><mn>1</mn><mrow><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow><mrow><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup></mrow></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "and so the ordering factors on the right side of (9) were readily computed from univariate Gaussian CDF's. As to the unconstrained ordinate <math id=\"inf16\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub></mrow></math>, following (7),"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ23", 
+                                                "label": "(11)", 
+                                                "mathml": "<math><mrow><mtext>log\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>2</mn></msub><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>log\u2009det\u2009</mtext><msub><mtext>\u03a3</mtext><mn>2</mn></msub><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow><mi>t</mi></msup><msubsup><mtext>\u03a3</mtext><mn>2</mn><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <math id=\"inf17\"><mrow><msub><mtext>\u03a3</mtext><mn>2</mn></msub><mo>=</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup><mi>e</mi><msup><mi>e</mi><mi>t</mi></msup></mrow></math> as in (8). Using Woodbury's formula, this log density was readily computed in terms of summary statistics from gene <i>g</i>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<b>Classes 3a, 3b</b>: here, the constraints were on the slopes <i>\u03b2</i><sub><i>g</i></sub>, but randomness in both slopes and intercepts must be accounted for. Again we computed ordinates by considering a model in which there were no constraints on <i>\u03b2</i><sub><i>g</i></sub>. (Call it <math id=\"inf18\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub></mrow></math>.) In comparison with (8),"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ24", 
+                                                "label": "(12)", 
+                                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>Y</mi><mo>\u02dc</mo></mover></mrow><mi>g</mi></msub><mo>\u223c</mo><msub><mrow><mtext>Normal</mtext></mrow><mrow><msub><mi>n</mi><mi>g</mi></msub></mrow></msub><mrow><mo>(</mo><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msub><mtext>\u03a3</mtext><mn>3</mn></msub><mo>=</mo><msubsup><mi>\u03c3</mi><mi>g</mi><mn>2</mn></msubsup><mi>I</mi><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b1</mi><mn>2</mn></msubsup><mi>e</mi><msup><mi>e</mi><mi>t</mi></msup><mo>+</mo><msubsup><mi>\u03c3</mi><mi>\u03b2</mi><mn>2</mn></msubsup><msub><mi>x</mi><mi>g</mi></msub><msubsup><mi>x</mi><mi>g</mi><mi>t</mi></msubsup><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "To compute <math id=\"inf19\"><mrow><mi>p</mi><mrow><mo>(</mo><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>Z</mi><mi>g</mi></msub><mo>=</mo><mn>3</mn><mi>a</mi><mo>,</mo><msub><mi>x</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> (for example), we required the normal mass <math id=\"inf20\"><mrow><msub><mrow><mover accent=\"true\"><mi>P</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub><mrow><mo>(</mo><mi>\u03b2</mi><mo>&lt;</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub><mo>,</mo><msub><mi>y</mi><mi>g</mi></msub><mo>)</mo></mrow></mrow></math> from the unconstrained model as well as the unconstrained ordinate <math id=\"inf21\"><mrow><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow></math>, which was,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ25", 
+                                                "label": "(13)", 
+                                                "mathml": "<math><mrow><mtext>log\u2009</mtext><msub><mrow><mover accent=\"true\"><mi>p</mi><mo>\u02dc</mo></mover></mrow><mn>3</mn></msub><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>|</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>log\u2009det\u2009</mtext><msub><mtext>\u03a3</mtext><mn>3</mn></msub><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow></mrow><mi>t</mi></msup><msubsup><mtext>\u03a3</mtext><mn>3</mn><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>g</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mi>g</mi></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Convenient formulas for these quantities were available in terms of gene-level statistics."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }

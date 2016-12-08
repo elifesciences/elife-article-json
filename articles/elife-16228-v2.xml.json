@@ -5699,24 +5699,241 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s35", 
-                        "title": "Production and Purification of recombinant protein for affinity measurement", 
+                        "id": "s24", 
+                        "title": "Supplementary methods", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "The monovalent hs2dAb were produced in bacterial periplasm. Briefly, XL1blue E.coli transformed with pHEN-hs2dAb-CBD-2S-6his or pHEN-Hs2dAB-6his were grown in TB-ampicillin (100 \u00b5g/mL) medium supplemented with 1% glucose in the growth phase and with 0.1% glucose during induction with 1\u00a0mM IPTG. After 16\u00a0hr of expression at 28\u00b0C, the cells were harvested and periplasmic proteins were extracted in TES (Tris 100\u00a0mM pH 8, EDTA 1\u00a0mM, Sucrose 500\u00a0mM) after osmotic shock.hs2dAb were purified in batch using IMAC affinity chromatography using Ni-NTA beads CompleteHis resin (Roche\u00a0Life\u00a0Science) following manufacturer indications. Elution were dialyzed in PBS 10%glycerol."
+                                "type": "section", 
+                                "id": "s25", 
+                                "title": "Plasmids and cloning", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "myc-Tags synthetic gene inserted in pHen2 vector: NotI-HHHHHHGAAEQKLISEEDLNGAAEQKLISEEDLNGAAEQKLISEEDLNGAA*(tag)-pIII-BamHI."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "p53: TP53 hMDM2 interacting domain (aa 1 to aa 83 ref NP_000537) has been cloned in pEB23, a pEMBL41 derivative in which MBP have been replaced by SNAP tag (New England Biolabs France). Fusion protein has been purified using Talon resin (Takara\u00a0-\u00a0Clontech) from 100 mL LB culture induced for 2\u2009hr at 37\u00b0C with 1\u00a0mM IPTG. One \u00b5M of purified protein was biotinylated using 1\u00a0\u00b5M of SNAP-biotin (S9110S, New England Biolabs) for 2\u2009hr at 25\u00b0C and purified by G50."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s26", 
+                                        "title": "Production of RHO GTPases amino terminal fusion construct.", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Chitin binding domain (CBD) was amplified from pTYB2 (New England Biolabs) using the following oligos: CBDAgeIfw 5\u2019-TACATTCAACCGGTCGCCACCATGACAAATCCTGGTGTATCCGCTTGG-3\u2019 and CBDTevRev 5\u2019-CGAACTGAAAGTACAGATTCTCGCTGCCTTGAAGCTGCCA CAAGGCAGG-3\u2019. RHOB cDNA was amplified from pGST-RHOBQ63L with the upstream primer TevAccRHOB Fw 5\u2019-GAGAATCTGT ACTTTCAGTT CGGCGGTACC GCGGCCATCC GCAAGAAGCT GG-3\u2019. A single step PCR created the CBDtevRHOB fusion product that was cloned in a pEYFP-RHOB (1) after digestion AgeI /BamHI, creating the pCBD-RHOB mammalian expression vector, RHOB was further exchanged by RHOAQ63L or RHOA T19N using Acc65I/BamHI cloning sites. The amino terminal CBD tag was replaced by either a dual Streptag (2S) or the superfolder GFP using AgeI and KpnI cloning sites. A 2S tag corresponding to a tandem repeat of the streptagII (IBA) separated by a flexible linker was gene synthesized (Geneart - ThermoFisher Biosciences). Superfolder GFP was amplified from pSuperfolder (gift from Cabantous S) using the AgeISFGFPFw 5\u2019-AATGACATACCGGTCGCCACCATGGTGAGCAAGGGCGAGGAG-3\u2019 and SFGFPKpnIRev 5\u2019-AAGTCAGGTACCGCCACCGCTGCCGCCACCCTTGTACAGCTCGTCCATGCCG-3\u2019. The constructs pCBD-RHOA N19 or L63 were used in co-immunoprecipitation with GFP-hsdAb experiments, and the pSFGFP-RHOA N19 or L63 mutants were used to monitor H12 immunofluorescence experiments."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "A CBS-2S dual tag was PCR amplified and cloned at the NotI site downstream of hs2dAb in pHEN6 vector, in order to produce pHEN- hs2dAb-CBD2S-6his. Purified hs2dAbs from this construct were used in RHOA pull down experiments."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s27", 
+                                        "title": "Construction of Fbox/NoFbox- hs2dAb-6Hismyc-IRES-MTS-FP expressing vectors.", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "A PCR was performed to extract the Fbox and noFbox sequences from the plasmids NSlmb-VHHGFP4 and NSnoFbox-VHHGFP4 using BspHIFboxFw (5\u2019 GTTCATGTCATGATGAAAAT GGAGACTG ACAAAATAATGG 3\u2019) and FboxNcoRev (5\u2019 CAAGATCCCATGGCGAGGTGGCGGCCAGTCCGCCAGTTG 3\u2019) primers. These fragments were inserted in the p-Ib plasmid (intrabodies expression vector with CMV promotor) by digesting with BspHI and NcoI. The vectors pIB-VHHGFP4, pIb-Fbox-VHHGFP4 and pIb-NoFboxVHHGFP4 were obtained. Then IRES-MTS-fluorescent protein was inserted by PCR downstream of the VHH. IRES was amplified from pCCEY (<a href=\"#bib39\">Olichon et al., 2007b</a>) with insertion of flanking downstream restriction sites AgeI, NheI and Acc65I. Then a mitochondrial targeting sequence (MTS) from subunit VIII of human cytochrome c oxidase (pEYFP-MTS, Takara\u00a0-\u00a0Clontech) was inserted between NheI / AgeI, followed by mCherry between AgeI / Acc65I, thus creating the p-F-Ib_IRES_mito-mCherry; p-noF-Ib_IRES_mito-mCherry; p-Ib_IRES_mito-mCherry in which any hs2dAb can be inserted by NcoI and NotI cloning sites."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "Bivalent hs2dAb were produced as fusion proteins with the Fc domain of human IgG2 as described (<a href=\"#bib32\">Moutel et al 2009</a>). hs2dAb were sub-cloned in pFuse-hIgG-Fc2 plasmid (NcoI/NotI) inframe between the interleukin-2 (IL2) secretion signal and the Fc domain. 4 days after transient transfection in CHO cells, supernatants were recovered and used directly for immunofluorescence staining of cells or for Western blot analysis. Hs2dAb-Fc were then revealed using anti-Human Fc fluorescent or HRP secondary antibodies (Jakson ImmunoResearch Laboratories,\u00a0West Grove,\u00a0United\u00a0States)."
+                                "type": "section", 
+                                "id": "s28", 
+                                "title": "CAT filter assay", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Previously selected VHHs from na\u00efve or immune libraries were subcloned into pAOCAT (<a href=\"#bib31\">Monegal et al., 2012</a>) using the NcoI and NotI restriction sites. Chloramphenicol resistance assay was performed using BL21(DE3) cells transformed with the pAOCAT-VHH fusion constructs. Bacteria were used for inoculating 500 \u00b5L of LB containing kanamycin (35 \u00b5g/mL) and glucose (0.2%) and were grown at 37\u00b0C until OD<sub>600</sub> was 0.8. The cytoplasmic expression of the VHH-CAT-fusion proteins was induced for 2\u2009hr by the addition of 0.2 mM IPTG. At the end of the induction period, bacteria aliquots of 4 \u00b5L were plated on LB-agar plates containing IPTG (0.1 mM) and increasing chloramphenicol concentrations ranging from 0 to 500 \u00b5g/mL. Bacteria were incubated at 30\u00b0C for 20\u2009hr before quantification of the colony formation. The resistance level was evaluated according to the colony growth rate at the different chloramphenicol concentrations. Several VHHs that were giving colonies up to 500 \u00b5g/mL were compared to previously characterized intrabodies raised against GFP (nb GFP4) or Lamin (Lam) obtained by gene synthesis (GeneArt - ThermoFisher BioSciences) as well as to a thermostable VHH Re3. Liquid culture induced as above during 2\u2009hr were diluted by serial dilution and 10 \u00b5L of each dilution were spotted on agar plates containing 250 \u00b5g/mL chloramphenicol (Cam) and 35 \u00b5g/mL kanamycin and incubated at 30\u00b0C for 20\u2009hr. Colony were imaged using ChemiDoc MP imaging system (Biorad\u00a0France)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The D10 clone was further subcloned into the pHEN6 expression vector, leading to a periplasmic expression higher than 5 mg/L of culture in E coli Xl1blue strain."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "GST-GFP or GST-mCherry were expressed in the cytosol by overnight induction in 1 liter of <i>E.coli</i> BL21 cells by addition of 100 \u03bcM IPTG. After centrifugation and freezing, the bacterial pellet was resuspended in 50 mM Tris-HCl, pH 8.5, 150 mM NaCl, 5 mM MgCl2, 1% Triton X-100, 10 mM dithiothreitol, 0.1 mg/ml DNase I, and protease inhibitors (Sigma-Aldrich). After centrifugation, the supernatant fraction was bound to 500 \u03bcl of pre-washed glutathione-Sepharose beads and purified in batch according to manufacturer instructions (GE Healthcare)."
+                                "type": "section", 
+                                "id": "s29", 
+                                "title": "Library construction", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The amino acids residues chosen for each position of the synthetic CDR loops were determined after analyzing the natural diversity existing at each position on natural VHH and following the rules indicated bellow (see <a href=\"#fig1s3\">Figure 1\u2014figure supplement 3</a> for diversity comparison between natural VHH and hs2dAb)"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 1: Y, R, S, T, F, G, A, or D [Y,S, F were the most frequent amino acid]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 2: Y, S, T, F, G, T, or T [T was the most frequent amino acid so we imposed a 3 fold higher stoichiometry for T at that position]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 3: Y, S, S, S F, or W [S was the most frequent amino acid so we imposed a 3 fold higher stoichiometry for T at that position]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 4: Y, R, S, T, F, G, A, W, D, E, K or N [natural diversity respected while avoiding hydrophobic residues]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 5: S, T, F, G, A, W, D, E, N, I, H, R, Q, or L [natural diversity respected. Because the frequency of hydrophobic I was high at this position in natural VHH, some hydrophobic amino acids were accepted]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 6: S, T, Y, D, or E [S, T, and Y were the most frequently found amino acids in natural VHH]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR1 position 7: S, T, G, A, D, E, N, I, or V [a high frequency of hydrophobic I or V was observed in natural VHH but their proportion was reduced here by adding polar residues]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 1: R, S, F, G, A, W, D, E, or Y [D and E were added to help for solubility and W for specific interaction in hydrophobic pockets]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 2: S, T, F, G, A, W, D, E, N, H, R, Q, L or Y [introducing strong diversity]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 3: S, T, F, G, A, W, D, E, N, H, Q, P [introducing strong diversity]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 4: G, S, T, N, or D [G, S, T and N where the most frequent]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 5: S, T, F, G, A, Y, D, E, N, I, H, R, Q, L, P, V, W, K or M [allowing full diversity]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 6: S, T, F, G, A, Y, D, E, N, I, H, R, Q, L, P, V, W, or K [allowing strong diversity]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR2 position 7: S, T, F, G, A, Y, D, E, N, I, H, R, Q, L, P, or V [allowing strong diversity]"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "at CDR3 for every position: S, T, F, G, A, Y, D, E, N, I, H, R, Q, L, P, V, W, K or M [introducing full diversity] CDR 3 length have been designed in order to produce 4 different subtype of hs2dAb with 9, 12, 15 or 18 residues in CDR3."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "20 times, 1 \u00b5L (10\u00a0ng) of the synthesis (corresponding to 1.10<sup>10</sup> molcules) were amplified by PCR in a total volume of 50\u00a0\u00b5L using 1\u00a0\u00b5L of Phusion DNA polymerase (New England Biolabs) with an equimolar mixture of the following primers: 5\u2019-AACATGCCATCACTCAGATTCTCG-3\u2019 and 5\u2019-GTTAGTCCATATTCAGTATTATCG-3\u2019 PCR protocol consisted of an initial denaturation step at 98\u00b0C for 45\u00a0s followed by 20 cycles of 98\u00b0C for 10\u00a0s, 55\u00b0C for 30\u00a0s and 72\u00b0C for 30\u00a0s, and a final step extension at 72\u00b0C for 10 min. 7\u00a0\u00d7\u00a0150\u00a0\u00b5L of PCR were purified on 7 columns of a PCR clean-up kit (Macherey-Nagel). 55\u00a0\u00b5g of the resulting purified fragment of PCR and 80\u00a0\u00b5g of the pHEN2-ccdB-3myc phagemid were digested for 2\u00a0hr at 37\u00b0C with NcoI and NotI (New\u00a0England\u00a0Biolabs) in a total volume of 500\u00a0\u00b5L. A dephosphorylation step was added for the phagemid with a Calf intestinal alkaline phosphatase (Sigma-Aldrich) 30\u00a0min at 37\u00b0C. Digestions were purified on gel with respectively 4 and 6 columns of a gel extraction kit (Macherey-Nagel\u00a0Sarl,\u00a0France) in a final volume of 80 and 120\u00a0\u00b5L. Then, purified PCR fragment was ligated into pHEN2-ccdB-3myc, between the PelB leader signal and the pIII gene. 50\u00a0\u00b5g of phagemid and 19,2\u00a0\u00b5g of insert were ligated overnight at 16\u00b0C with 10\u00a0\u00b5L of high concentration T4 DNA ligase (New England Biolabs) in a total volume of 400\u00a0\u00b5L. Ligation was purified on 6 columns (Macherey-Nagel) with a total volume of 150\u00a0\u00b5L. The ligated DNA material was used to transform electrocompetent <i>E. coli</i> TG1 cells (Lucigen). 20 electroporations with 1\u00a0\u00b5L of ligation were performed according to the manufacturer\u2019s instructions (1800\u00a0V; 10\u00a0\u00b5F; 600\u00a0\u03a9). Each electroporation was resuspended with 1\u00a0mL of warm 2XYT, 1% glucose medium and incubated with a shaking agitation for 1\u2009hr at 37\u00b0C. 380\u00a0mL of 2XYT, 1%glucose was added to the suspension and plated on 430 2xYT-ampicillin agar dishes (140\u00a0mm) overnight at 37\u00b0C. Library size was calculated by plating serial dilution aliquots. The colonies were scraped from the plates with liquid 2xTY and library was stored in the presence of 30% of glycerol at \u221280\u00b0C with 1\u00a0mL aliquots at OD\u00a0=\u00a038,4. 3.10<sup>9</sup> individual recombinant clones were obtained."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "RHOA CA or DN mutants as well as RAC1 CA tagged with the twin Streptag II (IBA) were expressed in the cytosol of BL21 Star (DE3) pRARE <i>E.coli</i> cells from a pET vector and purified in the same buffer as GST-GFP but on the streptactin resin (IBA) according to manufacturer instructions."
+                                "type": "section", 
+                                "id": "s30", 
+                                "title": "Phage display selections", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Various methods outlined below were used to screen NaLi-H1 library. Three general advices can be given here: (1) In roughly 70% of the screen, specific clones were obtained. In many case, when not specific binders were recovered, we identified the antigen that was used as the principal cause of failure. It is often a good idea to insist and use an alternative target preparation and ensure its proper display during the selection phases. (2) A key step to obtain specific clones is the washing step. They should be extensive, numerous and in large volume, changing tubes several times. While it is always a good idea to start washing as quickly as possible, if the affinity of the hs2dAb obtained is too low then extended washing steps may be used in a subsequent screening to select for a low k<sub>off</sub>. (3) We usually test for binders after the second and third rounds of selection, and more rarely after a fourth round. The method used to identify binders at the end of the selection should to be as close as possible to plan usage of the recombinant antibody. If immunofluorescence is planned, it ideally should be used to identify specific binders. If western blotting is the major application, It should be the preferred method to be used."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Immunotubes (Nunc) were coated with \u03b2Actin at a concentration of 20 \u00b5g/mL in PBS overnight at 4\u00b0C. Immunotubes were then rinsed with PBS and blocked for 2\u2009hr at room temperature with 2% w/v BSA or casein in PBS. After rinsing with PBS, &gt; 10<sup>12</sup> phage particles in 2% BSA or casein were added to the immunotubes. The immunotubes were first incubated on shaker for 1 hr and then for 1 hr standing upright at room temperature. Unbound phage was washed away by rinsing the immunotubes fifteen times with PBS, 0.1% Tween 20 and five times with PBS. The bound phage fraction was eluted in 1 mL of 1 mg mL<sup>\u22121</sup> trypsin and inverting the tube for 10 min and then in 1 mL of 100 mM triethylamine and inverting the tube for 10 min. Triethylamine was neutralized by adding 0.5 mL 1\u00a0M Tris-HCl pH 7.4. The eluted phages were used for the infection of exponentially growing <i>E.coli</i> TG1."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Biotinylated antigens or SBP-antigen were diluted to obtain a 10\u201320 nM (1 mL final) and recovered on 50 \u00b5L streptavidin-coated magnetic beads (Dynal). As a reference, 10 nM of a 25-kDa protein like GFP represents 250 ng protein/mL (quantity used per round of selection). Efficient recovery was checked analyzing fractions of bound and unbound samples by Western blot using streptavidin-HRP or anti-AviTag antibodies. Antigen coated beads were incubated for 2 hr with the phage library (10<sup>13</sup> phages diluted in 1 mL of PBS + 0.1% Tween 20 + 2% non-fat milk). Phages were previously adsorbed on naked streptavidin-coated magnetic beads (to remove nonspecific binders). Phages bound to streptavidin-coated beads were recovered on a magnet and beads were washed 10 times (round 1) or 20 times (round 2 and 3) with PBS+Tween 0.1% on a magnet. Bound phages were eluted using triethylamine (TEA.100 mM) for 10 min and neutralized using 1\u00a0M Tris pH 7.4. The elution was done twice. <i>E. coli</i> (TG1) were infected with the eluted phages and plated on ampicillin containing agarose. For round 2 and round 3, only 10<sup>12</sup> phages were used as input."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Chitin binding domain from chitinase A1 (CBD) or 2strep tag (IBA) fusion of RHOA GTPase active mutant (RHOA<sub>L63</sub>) were expressed transiently during 24\u2009hr in HEK293 cells and captured freshly after cell lysis on magnetic beads before incubation with the library phages. Chitin magnetic beads ()New England Biolabs or streptactin coated magStrep HC (IBA\u00a0Gmbh,\u00a0Germany) were use in a similar way as described above with streptavidin beads. A phage display panning alternating rounds on chitin beads with rounds on streptactin beads was performed for 4 rounds. From the second round of panning, a depletion step on GDP loaded wild type RHOA or N19 inactive mutant was included."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When characterizing selected antibodies, various Non Relevant (NR) hs2dAb were used as controls. The one shown here are: A non-binding clone selected against FITC (in <a href=\"#fig5\">Figure 5B\u2013D</a> and <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>) and a non-binding clone selected against mCherry (in <a href=\"#fig5\">Figure 5A</a> and <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a>)"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s31", 
+                                "title": "Enzyme-linked immunosorbent assay (ELISA)", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Briefly, individual clones from a master plate and harboring phagemids were inoculated into 250 \u00b5L of media (2xTY, 1% glucose, 100 \u00b5g mL<sup>\u22121</sup> ampicillin) and grown overnight at 37\u00b0C. Ten \u00b5L of this culture were inoculated into 250 \u00b5L of fresh media for 3 hr. The culture was infected with KM13 helper phage and grown overnight in 200 \u00b5L 2xTY medium supplemented with 100 \u00b5g mL<sup>\u22121</sup> of ampicillin and 75 \u00b5g mL<sup>\u22121</sup> of kanamycin at 25\u00b0C. Supernatants from these cultures were used in phage ELISA assays. Maxisorp ELISA plate were coated with 100 \u00b5L per well of protein antigen in 100 mM carbonate buffer pH 8.6 for 2\u00a0hr at room temperature (RT) or overnight (OVN) at 4\u00b0C. Usually, 1 \u00b5g to 10 \u00b5g of antigen were used per well. A control plate was coated with BSA. Wells were rinsed once with PBS Tween 0.1% and blocked with 200 \u00b5L per well of 2% Milk + PBS Tween 0.1% for 1\u00a0hr at RT or OVN 4\u00b0C. Wells were rinsed 5 times in PBS. Twenty \u00b5L of PBS Tween 0.1% Milk and 80 \u00b5L of the phage containing supernatant were added to each well in both phage ELISA plate (antigen-coated and BSA control) for 1\u00a0hr. Wells were washed 3 times with PBS Tween 0.1% and 3 times with PBS. HRP-anti-pIII antibody (GE Healthcare) was added at 1:5.000 in PBS Tween 0.1% + 2% milk and incubated for 40\u00a0min. Wells were washed 3 times with PBS Tween 0.1% and 3 times with PBS. Reaction was developed with 100 \u00b5L of HRP substrate solution (e.g. ABTS in citrate buffer) at RT for 15\u00a0min and the optic density was read at 405\u00a0nm. RHO-GTPases ELISA were performed as previously described."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s32", 
+                                "title": "Cells", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "All cells are regularly tested for mycoplasma contamination. The HeLa cells (RRID:<a href=\"https://scicrunch.org/resolver/CVCL_0030\">CVCL_0030</a>) used in the study has been obtained from the B. Goud lab (Institut Curie). SNP characterisation has been carried out and may be shared upon request. The H2B-GFP cell line has been obtained from the lab of E. Nigg and has been described in <a href=\"#bib47\">Sillj\u00e9 et al. (2006)</a>. RPE-1 immortalized by the expression of hTert (RRID:<a href=\"https://scicrunch.org/resolver/CVCL_4388\">CVCL_4388</a>) has well as the CHO cells have been obtained from the ATCC."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s33", 
+                                "title": "Immunofluorescence and real-time imaging", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "HeLa cells were either fixed in 3% paraformaldehyde and permeabilized with PBS (plus 0.05% saponin and 0.2% BSA) or fixed and permeabilized with ice cold methanol for 4 min at \u221220\u00b0C. When needed, nocodazole (10 \u00b5M, 90 min) or cytochalasin D (5\u00a0\u00b5M, 60 min) were added before fixation. To activate p53 (<a href=\"#fig2s2\">Figure 2\u2014figure supplement 2</a>), cells were irradiated using a Stratagene UV crosslinker (100 joules/m<sup>2</sup>) 24\u00a0hr before fixation. hs2dAb secreted in 600 \u00b5L 2xTY cultures (produced in 96-deep well plates) after overnight induction with 1 mM IPTG at 30\u00b0C were used undiluted without purification. hs2dAbs were co-incubated with 9E10 anti-myc monoclonal for 90 min on cells. Cells were then washed quickly twice and incubated with secondary antibodies for 30 min (Invitrogen\u00a0-\u00a0Thermofisher). The actin cytoskeleton was stained with Alexa594 phalloidin (1/1000). Cells were grown on coverslip and transfected with F-construct 48\u00a0hr following the manufacturer\u2018s recommendation. Cells were fixed in 3.7% paraformaldehyde for 7 min then rinsed twice with PBS and mounted in Mowiol. Data acquisition was carried out on a Nikon Eclipse 90i (Nikon,\u00a0France)and image processing with NIS Elements v3 software or using a Leica DM6000 B microscope equipped with a CoolSnap HQ2 camera controlled by Metamorph (Molecular Device\u00a0Limited,\u00a0UK, RRID:<a href=\"https://scicrunch.org/resolver/SCR_002368\">SCR_002368</a>)"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For time-lapse imaging, Hela cells seeded on glass the day before were transfected using calcium phosphate with mCherry-Rab6 and GFP-tagged anti-cherry expression plasmids. After 24\u2009hr, medium is replaced by pre-warmed carbonate independent Leibovitz\u2019s medium (Invitrogen), and cells were imaged using an inverted microscope TiE (Nikon) equipped with spinning disk confocal head (PerkinElmer, Waltham, United States) and a CoolSnapHQ2 camera (Roper Scientific,\u00a0France). Time-lapse images were acquired using a 63X objective and MetaMorph software (Molecular Device, RRID:<a href=\"https://scicrunch.org/resolver/SCR_002368\">SCR_002368</a>) every 2 s for 4 min."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s34", 
+                                "title": "Pull down", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Pull down of endogenous RHO proteins loaded in active or inactive state were adapted from well-established GST-RBD pull down. HeLa cell (5.10<sup>6</sup> per immunoprecipitate) were lysed in buffer (50 mM Tris pH 7.4, 500 mM NaCl, 10 mM MgCl<sub>2</sub>, 0.5% TritonX100). Crude protein lysates Extract was loaded with 0.2 mM GTP\u03b3S or 2 mM GDP in buffer supplemented with 10 mM EDTA for 30 min at 30\u00b0C. Reaction was stopped by adding 30 mM MgCl2. For immunoprecipitation, beads bound by freshly captured CBD tag hs2dAb (4 \u00b5g) or GST-RBD (40 \u00b5g) positive control were incubated with loaded protein suspension for 45 min at 4\u00b0C. Beads were washed 3 times with 50 mM Tris-HCl. pH 7.5. 150 mM NaCl. 10 mM MgCl2. 0.1% Tween20 and denatured in 2X Laemmli reducing sample buffer, boiled for 5 min and separated on 12.5% SDS-PAGE for Western Blot analysis with anti-RHOA followed by HRP-conjugated secondary antibodies."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Co-precipitations of intrabodies (myc- tagged hs2dAb) with RHOA CA active or DN inactive mutants were performed after transient co-transfection of pCBD-RHOAQ63L or pCBD-RHOAT19N with pIb-myc in HeLa cells. After 24\u00a0hr, crude cell lysates containing CBD-RHO mutants in buffer (50 mM Tris pH 7.4. 150\u00a0mM NaCl / 10\u00a0mM MgCl2 / 0.5% TritonX100 / 10% glycerol) were incubated with chitin beads for 1\u2009hr at 4\u00b0C. Co precipitation was revealed by RHOA antibody and myc antibody."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s35", 
+                                "title": "Production and Purification of recombinant protein for affinity measurement", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The monovalent hs2dAb were produced in bacterial periplasm. Briefly, XL1blue E.coli transformed with pHEN-hs2dAb-CBD-2S-6his or pHEN-Hs2dAB-6his were grown in TB-ampicillin (100 \u00b5g/mL) medium supplemented with 1% glucose in the growth phase and with 0.1% glucose during induction with 1\u00a0mM IPTG. After 16\u00a0hr of expression at 28\u00b0C, the cells were harvested and periplasmic proteins were extracted in TES (Tris 100\u00a0mM pH 8, EDTA 1\u00a0mM, Sucrose 500\u00a0mM) after osmotic shock.hs2dAb were purified in batch using IMAC affinity chromatography using Ni-NTA beads CompleteHis resin (Roche\u00a0Life\u00a0Science) following manufacturer indications. Elution were dialyzed in PBS 10%glycerol."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Bivalent hs2dAb were produced as fusion proteins with the Fc domain of human IgG2 as described (<a href=\"#bib32\">Moutel et al 2009</a>). hs2dAb were sub-cloned in pFuse-hIgG-Fc2 plasmid (NcoI/NotI) inframe between the interleukin-2 (IL2) secretion signal and the Fc domain. 4 days after transient transfection in CHO cells, supernatants were recovered and used directly for immunofluorescence staining of cells or for Western blot analysis. Hs2dAb-Fc were then revealed using anti-Human Fc fluorescent or HRP secondary antibodies (Jakson ImmunoResearch Laboratories,\u00a0West Grove,\u00a0United\u00a0States)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "GST-GFP or GST-mCherry were expressed in the cytosol by overnight induction in 1 liter of <i>E.coli</i> BL21 cells by addition of 100 \u03bcM IPTG. After centrifugation and freezing, the bacterial pellet was resuspended in 50 mM Tris-HCl, pH 8.5, 150 mM NaCl, 5 mM MgCl2, 1% Triton X-100, 10 mM dithiothreitol, 0.1 mg/ml DNase I, and protease inhibitors (Sigma-Aldrich). After centrifugation, the supernatant fraction was bound to 500 \u03bcl of pre-washed glutathione-Sepharose beads and purified in batch according to manufacturer instructions (GE Healthcare)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "RHOA CA or DN mutants as well as RAC1 CA tagged with the twin Streptag II (IBA) were expressed in the cytosol of BL21 Star (DE3) pRARE <i>E.coli</i> cells from a pET vector and purified in the same buffer as GST-GFP but on the streptactin resin (IBA) according to manufacturer instructions."
+                                    }
+                                ]
                             }
                         ]
                     }

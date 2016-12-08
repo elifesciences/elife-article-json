@@ -3927,6 +3927,836 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s21", 
+                        "title": "1.0 Outline of document", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In this Supplementary Information document, we augment the main manuscript by providing additional details on the data and modelling architecture developed in this study to allow prediction of insecticide treated bednet coverage, system efficiency and future needs. In Section S2, we describe the acquisition and processing protocols for data from national household surveys, NMCPs and ITN manufacturers. In Section 3, we describe the Bayesian compartment model which estimates, at quarterly intervals, the total number of ITNs in households in each country (the <i>net crop</i>). In Section 4, we describe a second modelling stage that predicts national-level ITN coverage indicators as a function of predicted net crop. Finally, in Section 5, we describe the use of the modelling framework to predict future ITN coverage levels under a range of hypothetical ITN delivery volumes and efficiency scenarios."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s22", 
+                        "title": "2.0 Data collection", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The various modelling stages were fitted to data from three principal sources."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s23", 
+                                "title": "2.1 ITN manufacturer reports", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Manufacturer reports provided information on the number of LLINs delivered to each country each year by international manufacturers. These data were provided to the WHO by Milliner Global Associates and were complete for each country from 2000 to 2013 inclusive."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s24", 
+                                "title": "2.2 National malaria control program reports", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "NMCP reports provided information about the number of LLINs and cITNs distributed in a county within a given year. These data were provided to WHO by NMCPs and were available for 365 of the 560 country-years addressed in the study. We treated these data as only partial records of distribution activities because the extent to which NMCP reporting captures distribution by non-government agencies is not known for all countries."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s25", 
+                                "title": "2.3 Household survey reports", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We identified and obtained data for the ownership and use of ITNs from household surveys conducted in sub-Saharan countries since 2000, including DHS, MIS, MICS, AIDS indicator surveys (AIS) and a malaria and anaemia prevalence survey (EA &amp; P) (<a href=\"#SD1-data\">Supplementary file 1</a>). Data at the household level were acquired from 95 national surveys from 39 countries from 2001 to 2014. In addition, we acquired national level data from four household survey reports for which we were unable to obtain the household level dataset. The range and number of the household survey data collected is depicted in <a href=\"#fig15\">Appendix Figure 7</a>. For those surveys where household-level data were available on the type of nets owned (see <a href=\"#SD1-data\">Supplementary file 1</a>), the number of ITNs owned was determined by the sum of each ITN in the household. A net was considered an ITN if it was an LLIN, or a pre-treated net obtained within the past 12 months, or a net that has been soaked with insecticide within the past 12 months. ITNs were then subdivided into the two classes, LLINs and cITNs."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For the surveys where data on the type of net was only available for one net in each household (see <a href=\"#SD1-data\">Supplementary file 1</a>), the overall survey-level proportion of total nets for each net classification (non-ITN, LLIN, cITN) was determined and multiplied by the number of nets in the surveyed households to estimate the number of LLINs and conventional ITNs owned by each surveyed households."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s26", 
+                        "title": "3.0 Compartment model", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s27", 
+                                "title": "3.1 Introduction", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "This section describes our implementation of a Bayesian hierarchical model to impute, at quarter-annual intervals, the total number of insecticide-treated bed nets (which can be LLINs or cITNs) in a given country."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To achieve this goal, we built a model incorporating the three distinct sources of information on ITNs described in the preceding section: manufacturer reports on ITNs delivered to countries, NMCP reports on ITNs distributed to households within countries, and household survey data providing direct cross-sectional estimates of net crop in households at a given time point."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The key challenge in our model was linking the delivery and distribution data sources to the net crop measurements. <a href=\"#fig2\">Figure 2</a> shows our schematic representation of the system and the evidence synthesis of these three data sources. In a given year, a given volume of nets are delivered to a country from manufacturers (Appendix figure 8, green arrows), giving rise to a (as yet undistributed) country stock (Appendix figure 8, orange arrow). Nets from this stock then may be distributed to households in that or subsequent years, as captured by NMCP distribution data (Appendix figure 8, blue arrows). To link the NMCP distributed nets to the direct estimates of the net crop existing within households, we needed to account for the rate of loss of nets from households. That is, once nets are distributed, they remain within households for a given length of time until they are discarded. By tracking the net loss from NMCP deliveries (Appendix figure 8, brown arrows), we were able to estimate the total number of nets in a country at a given time point (e.g. in 2008, when a household survey was conducted [ Appendix figure 8, red arrow] by summing the nets of all ages [Appendix figure 8, purple line]). The compartment model was therefore calibrated by parameterising the loss function in such a way that the net crop observed in each national survey was consistent with the known influx of nets to households (following manufacturer delivery and NMCP distribution) and an estimated rate of loss from households. Our loss function was modelled to be temporally varying for a given country and parameterises the proportion of nets discarded through time."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s28", 
+                                "title": "3.2 Model specification", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.1 <i><b>Observed data</b></i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.1.1 <b>Observations of net crop from household surveys</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Household survey reports provided a direct measure of how many ITNs, of any age, existed in households in a country over a sampling period. For use in fitting the compartment model, household-level survey data on ITN ownership needed to be translated into a representative estimate for the total number of nets in a given country. To accomplish this, we summarised each household survey into two variables: the average number of LLINs and cITNs per household and the average household size (i.e. number of residents). The total number of ITNs was then calculated as the product of the population of the country at the time of the survey and the estimated ITNs per-capita as observed in the survey data, taking into account the survey weighting to ensure the arithmetic mean was nationally representative. The calculation of the total number of nets was completed by specifying probability distributions that allowed propagation of uncertainty from the household surveys."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To estimate national <i>net crop</i> (total ITNs in households) from each national survey, three summary statistics were required:"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "a) The average household size, <math id=\"inf1\"><mi>h</mi><mo>\u00a0</mo><msub><mi>h</mi><mrow><mi>\u03bc</mi><mo>,</mo></mrow></msub></math>, with an associated standard error, <math id=\"inf2\"><mi>h</mi><msubsup><mi>h</mi><mi>\u03c3</mi><mn>2</mn></msubsup></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "b) The average number of LLINs per household, <math id=\"inf3\"><mi>A</mi><mi>v</mi><mi>g</mi><mi>L</mi><mi>L</mi><mi>I</mi><msub><mi>N</mi><mrow><mi>\u03bc</mi><mo>'</mo></mrow></msub></math>, with an associated standard error, <math id=\"inf4\"><mi>A</mi><mi>v</mi><mi>g</mi><mi>L</mi><mi>L</mi><mi>I</mi><msubsup><mi>N</mi><mi>\u03c3</mi><mn>2</mn></msubsup></math> ."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "c) The average number of cITNs per household, <math id=\"inf5\"><mi>A</mi><mi>v</mi><mi>g</mi><mi>c</mi><mi>I</mi><mi>T</mi><msub><mi>N</mi><mrow><mi>\u03bc</mi><mo>'</mo></mrow></msub></math>, with an associated standard error, <math id=\"inf6\"><mi>A</mi><mi>v</mi><mi>g</mi><mi>c</mi><mi>I</mi><mi>T</mi><msubsup><mi>N</mi><mi>\u03c3</mi><mn>2</mn></msubsup></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It should be noted here that, throughout this Supplementary document, we use the term standard error when referring to the standard deviation of the sample mean or the variability of an estimator."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Survey data came from four different sources\u2014DHS Program, MICS4, MICS3 and other surveys for which only the published report (and not underlying data) were available, mainly MIS undertaken unilaterally by NMCPs or supporting partners. Different protocols were required to obtain summary statistics (a), (b), and (c) above for each survey type."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>DHS and MICS4 data:</i> These household survey reports provided direct data about the number of LLINs and cITNs per household and the household size. Therefore, means across all households were calculated using a weighted average that incorporated the published survey sample weights and the standard errors obtained through Taylor linearization (<a href=\"#bib14\">Kish and sampling, 1965</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>MICS3 data:</i> These household surveys provided direct data about the household size and number of bed nets per household, but did not provide information on the type of each net observed (e.g. LLINs, cITNs or untreated bet nets). The surveys did, however, provide a full description of <i>a single</i> net within each household. Therefore, across all such single nets in each survey, we determined the mean proportion of nets that were LLINs, cITNs or untreated nets along with the standard errors. We then multiplied these proportions with the computed average number of nets (of any kind) to determine the average number of LLINs and cITNs per household. Propagation of uncertainty was achieved using MCMC sampling\u00a0(<a href=\"#bib24\">Plummer, 2003</a>; <a href=\"#bib9\">Gelman et al., 2013</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Other reports:</i> These surveys contained no disaggregated household data and only reported the averages of household size and numbers of LLIN and cITN nets with no standard errors. We therefore assumed a small 1% error on these estimates, consistent with the magnitude of sampling errors seen in other surveys."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Using metrics (a), (b) and (c) obtained from the 95 processed surveys, the total number of LLINs and associated standard error in a country reported by a survey were defined probabilistically as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ1", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><msub><mi>\u03bc</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><msub><mi>Y</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>=</mo><mtext>\u0395</mtext><mrow><mo>[</mo><mo></mo><mi>P</mi><mi>o</mi><mi>p</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><msub><mi>n</mi><mrow><mo>\u00a0</mo><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub><mfrac bevelled=\"true\"><mrow><mtext>Normal</mtext><mtext>(</mtext><mi>A</mi><mi>v</mi><mi>g</mi><mi>L</mi><mi>L</mi><mi>I</mi><msub><mi>N</mi><mi>\u03bc</mi></msub><mo>,</mo><mo></mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>L</mi><mi>L</mi><mi>I</mi><msubsup><mi>N</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mrow><mtext>Normal</mtext><mo>(</mo><mi>h</mi><msub><mi>h</mi><mi>\u03bc</mi></msub><mo>,</mo><mo></mo><mi>h</mi><msubsup><mi>h</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mfrac><mo>]</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><msub><mi>\u03c3</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><msub><mi>Y</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>=</mo><msqrt><mtext>VAR</mtext><mrow><mo>[</mo><mo></mo><mi>P</mi><mi>o</mi><mi>p</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><msub><mi>n</mi><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub><mfrac bevelled=\"true\"><mrow><mtext>Normal</mtext><mo>(</mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>L</mi><mi>L</mi><mi>I</mi><msub><mi>N</mi><mi>\u03bc</mi></msub><mo>,</mo><mo></mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>L</mi><mi>L</mi><mi>I</mi><msubsup><mi>N</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mrow><mtext>Normal</mtext><mo>(</mo><mi>h</mi><msub><mi>h</mi><mi>\u03bc</mi></msub><mo>,</mo><mo></mo><mi>h</mi><msubsup><mi>h</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mfrac><mo>]</mo></mrow></msqrt></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "And similarly the total number of cITNs:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><msub><mi>\u03bc</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><msub><mi>Y</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>=</mo><mi>E</mi><mfenced close=\"]\" open=\"[\"><mrow><mi>P</mi><mi>o</mi><mi>p</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><msub><mi>n</mi><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub><mfrac bevelled=\"true\"><mrow><mtext>Normal</mtext><mo>(</mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>c</mi><mi>I</mi><mi>T</mi><msub><mi>N</mi><mi>\u03bc</mi></msub><mo>,</mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>c</mi><mi>I</mi><mi>T</mi><msubsup><mi>N</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mrow><mtext>Normal</mtext><mo>(</mo><mi>h</mi><msub><mi>h</mi><mi>\u03bc</mi></msub><mo>,</mo><mo>\u00a0</mo><mi>h</mi><msubsup><mi>h</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mfrac></mrow></mfenced></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "label": "(4)", 
+                                        "mathml": "<math><msub><mi>\u03c3</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><msub><mi>Y</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>=</mo><msqrt><mi>VAR</mi><mfenced close=\"]\" open=\"[\"><mrow><mi>P</mi><mi>o</mi><mi>p</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><msub><mi>n</mi><mrow><mover><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub><mfrac bevelled=\"true\"><mrow><mtext>Normal</mtext><mo>(</mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>c</mi><mi>I</mi><mi>T</mi><msub><mi>N</mi><mi>\u03bc</mi></msub><mo>,</mo><mi>A</mi><mi>v</mi><mi>g</mi><mi>c</mi><mi>I</mi><mi>T</mi><msubsup><mi>N</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mrow><mtext>Normal</mtext><mo>(</mo><mi>h</mi><msub><mi>h</mi><mi>\u03bc</mi></msub><mo>,</mo><mi>h</mi><msubsup><mi>h</mi><mi>\u03c3</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mfrac></mrow></mfenced></msqrt></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where <math id=\"inf7\"><mrow><mtext>\u0395</mtext><mrow><mo>[</mo><mo>\u2219</mo><mo>]</mo></mrow></mrow></math> is the expected value, <math id=\"inf8\"><mrow><msqrt><mrow><mtext>VAR</mtext><mrow><mo>[</mo><mo>\u2219</mo><mo>]</mo></mrow></mrow></msqrt></mrow></math> is the standard error, <i>c</i> is a given country and <math id=\"inf9\"><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover></math> is the mean sampling time of the survey. <a href=\"#equ1 equ2 equ3 equ4\">Equations 1\u20134</a> <math id=\"inf10\"><mrow><msub><mi>\u03bc</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>,</mo><mo></mo><msub><mi>\u03c3</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub></mrow></math>,<math id=\"inf11\"><mrow><mo></mo><msub><mi>\u03bc</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub></mrow></math> and\u00a0<math id=\"inf12\"><mrow><mo></mo><msub><mi>\u03c3</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub></mrow></math>\u00a0were therefore observed data inputs into the compartment model."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<b>3.2.1.2 Manufacturer reports of LLIN deliveries</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As shown in Appendix figure 8, manufacturer reports provided data on the number of LLINs delivered to a country in a given year. There were no corresponding reports for cITNs."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The main purpose of the manufacturer data was to determine stock levels and \u2018cap\u2019 estimated NMCP distributions in each year (i.e. more nets could not be distributed than were potentially available in country stock). The manufacturer reports were complete (no missing values) and assumed to be of high fidelity. We therefore modelled the likelihood of the manufacturer data in a given country-year as a normally distributed random variable. The manufacturer reports did not report standard errors in the delivery numbers and therefore we assumed a uniformly distributed prior probability on the error. Because the manufacturer data served only to inform stock and cap NMCP distributions, no considerations of sub-annual timing were required."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We define <math id=\"inf13\"><mi>M</mi><mi>a</mi><mi>n</mi><mi>u</mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>e</mi><msub><mi>r</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math>\u00a0(<i>observed data</i>) as the number of manufacturer LLIN nets delivered to a country <i>c</i> at year <i>t</i>. The number of manufacturer LLIN nets sent (<math id=\"inf14\"><mrow><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math>) was modelled as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(5)", 
+                                        "mathml": "<math><mi>M</mi><mi>a</mi><mi>n</mi><mi>u</mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>e</mi><msub><mi>r</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo>(</mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><mi>M</mi><mi>a</mi><mi>n</mi><mi>u</mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>e</mi><msub><mi>r</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><msubsup><mi>\u03c3</mi><mrow><mi>m</mi><mo>,</mo><mi>t</mi></mrow><mn>2</mn></msubsup><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "With error <math id=\"inf15\"><msub><mi>\u03c3</mi><mrow><mi>m</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>0.075</mn><mo>)</mo></math>0.3"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<b>3.2.1.3 NMCP reports of ITN distributions</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As shown in Appendix figure 8, NMCP reports provided information on the number of both LLIN and cITNs nets distributed in a given country <i>c</i> at year <i>t</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As with the manufacturer data, the NMCP reports were assumed to be of reasonably high fidelity. Unfortunately, NMCP reports were not complete and contained missing values where countries failed to report the number of nets distributed in a year. To impute these missing values, we defined an informative prior probability distribution on the NMCP distributions for both LLINs and cITNs. We tested multiple different parameterisations of NMCP prior distributions, and evaluated performance of parameterisations using out-of-sample cross validation to choose the best model."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Our final choice of NMCP prior distributions was data-driven, using combined reports across all African country-years that had NMCP data. We scaled the reports to per-capita NMCP distributions to remove country-specific differences. We observed that this combined per-capita distribution approximately followed an exponential distribution with a zero inflation hurdle (to account for no deliveries). Additionally, when looking at the combined reports across time, it was clear that combined distribution varied temporally. We therefore modelled NMCP LLINs and cITNs separately for each year by disaggregating the continent wide per-capita distribution temporally into separate exponentials with zero inflation. Finally, to account for variability due to sample size, we fitted splines through these time series."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We defined <math id=\"inf16\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>LLIN</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math>\u00a0(<i>observed data</i>), <math id=\"inf17\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>ITNc</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math>\u00a0(<i>observed data</i>) and <math id=\"inf18\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>TOTAL</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math>\u00a0(<i>observed data</i>) as the number of NMCP LLIN nets, NMCP cITN nets and the sum of LLIN and ITN NMCP nets reported distributed in a country <i>c</i> at time <i>t</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As described above, the NMCP reports did not have standard errors and contained missing values. We therefore defined informative prior distributions on <math id=\"inf19\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>LLIN</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math> and <math id=\"inf20\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>cITN</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math>. First, we defined two sets <math id=\"inf21\"><mrow><msub><mi>\u2112</mi><mi>t</mi></msub></mrow></math> and <math id=\"inf22\"><mrow><msub><mi>\u2110</mi><mi>t</mi></msub></mrow></math> as the combined set of per-capita rates of NMCP LLIN and cITN across all African countries at times <i>t</i> respectively. The sets <math id=\"inf23\"><msub><mi>\u2112</mi><mi>T</mi></msub><mo>\u00a0</mo><mtext>and\u00a0</mtext><msub><mi>\u2110</mi><mi>T</mi></msub></math> with <math id=\"inf24\"><mrow><mi>T</mi><mo>\u2208</mo><mo stretchy=\"false\">[</mo><mn>2000</mn><mo>,</mo><mn>2001</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><mo></mo><mn>2012</mn><mo stretchy=\"false\">]</mo></mrow></math> therefore contained all NMCP LLIN and cITN distributions across all country-years."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To characterise the hurdle exponential distribution, we used two parameters: the zero inflated components (<math id=\"inf25\"><mrow><msub><mi>p</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mn>0</mn><mi>t</mi></msub></mrow></math>,<math id=\"inf26\"><mrow><mo></mo><msub><mi>p</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mn>0</mn><mi>t</mi></msub></mrow></math>), which defined the probability that in a given country-year no nets were distributed, and the exponential component (<math id=\"inf27\"><mrow><msub><mi>p</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mn>1</mn><mi>t</mi></msub><mo>,</mo><msub><mi>p</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mn>1</mn><mi>t</mi></msub></mrow></math>) which, given some distribution of nets took place, gave the per-capita rate of distribution (i.e. how many nets per-capita were distributed)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We therefore define the proportion of zero NMCP deliveries for LLINs and cITNs as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "label": "(6)", 
+                                        "mathml": "<math><msub><mi>p</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mn>0</mn><mi>t</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>\u2112</mi><mi>t</mi></msub></mrow></msub><msub><mn>1</mn><mrow><msub><mi>\u2112</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></msub></mstyle><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>\u2112</mi><mi>t</mi></msub></mrow></msub><msub><mn>1</mn><msub><mi>\u2112</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></msub></mstyle></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "label": "(7)", 
+                                        "mathml": "<math><msub><mi>p</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mn>0</mn><mi>t</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>I</mi><mi>t</mi></msub></mrow></msub><msub><mn>1</mn><mrow><msub><mi>I</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></msub></mstyle><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>I</mi><mi>t</mi></msub></mrow></msub><msub><mn>1</mn><msub><mi>\u2112</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></msub></mstyle></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "And the mean delivery rate at time <i>t</i> as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "label": "(8)", 
+                                        "mathml": "<math><msub><mi>p</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mn>1</mn><mi>t</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>\u2112</mi><mi>t</mi></msub></mrow></msub><msub><mi>\u2112</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mn>1</mn><mrow><msub><mi>\u2112</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>\u2260</mo><mn>0</mn></mrow></msub></mstyle><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>\u2112</mi><mi>t</mi></msub></mrow></msub><msub><mn>1</mn><mrow><msub><mi>\u2112</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>\u2260</mo><mn>0</mn></mrow></msub></mstyle></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "label": "(9)", 
+                                        "mathml": "<math><msub><mi>p</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mn>1</mn><mi>t</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>I</mi><mi>t</mi></msub></mrow></msub><msub><mi>I</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mn>1</mn><mrow><msub><mi>I</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>\u2260</mo><mn>0</mn></mrow></msub></mstyle><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><msub><mi>I</mi><mi>t</mi></msub></mrow></msub><msub><mn>1</mn><mrow><msub><mi>I</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>\u2260</mo><mn>0</mn></mrow></msub></mstyle></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Using these two parameters we then defined the prior distributions on NMCP LLIN and NMCP cITN as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "label": "(10)", 
+                                        "mathml": "<math><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mfenced close=\"\" open=\"{\"><mtable columnalign=\"left\"><mtr><mtd><mi>E</mi><mi>x</mi><mi>p</mi><mi>o</mi><mi>n</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>i</mi><mi>a</mi><mi>l</mi><mo>(</mo><mfrac><mn>1</mn><mrow><msub><mi>p</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mn>1</mn><mi>t</mi></msub></mrow></mfrac><mo>)</mo><mo>,</mo><msub><mi>\u03a9</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mn>0</mn><mo>,</mo><mo>\u00a0</mo><mi>o</mi><mi>t</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>w</mi><mi>i</mi><mi>s</mi><mi>e</mi></mtd></mtr></mtable></mfenced></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "label": "(11)", 
+                                        "mathml": "<math><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mfenced close=\"\" open=\"{\"><mtable columnalign=\"left\"><mtr><mtd><mi>E</mi><mi>x</mi><mi>p</mi><mi>o</mi><mi>n</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>i</mi><mi>a</mi><mi>l</mi><mo>(</mo><mfrac><mn>1</mn><mrow><msub><mi>p</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mn>1</mn><mi>t</mi></msub></mrow></mfrac><mo>)</mo><mo>,</mo><mo>\u00a0</mo><msub><mi>\u03a9</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mn>0</mn><mo>,</mo><mo>\u00a0</mo><mi>o</mi><mi>t</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>w</mi><mi>i</mi><mi>s</mi><mi>e</mi></mtd></mtr></mtable></mfenced></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ12", 
+                                        "label": "(12)", 
+                                        "mathml": "<math><msub><mi>\u03a9</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>B</mi><mi>e</mi><mi>r</mi><mi>n</mi><mi>o</mi><mi>u</mi><mi>l</mi><mi>i</mi><mo>(</mo><msub><mi>p</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mn>0</mn><mi>t</mi></msub><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ13", 
+                                        "label": "(13)", 
+                                        "mathml": "<math><msub><mi>\u03a9</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>B</mi><mi>e</mi><mi>r</mi><mi>n</mi><mi>o</mi><mi>u</mi><mi>l</mi><mi>i</mi><mo>(</mo><msub><mi>p</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mn>0</mn><mi>t</mi></msub><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The terms <math id=\"inf28\"><mrow><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> and <math id=\"inf29\"><mrow><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> therefore characterised the prior distribution on the per-capita rates of NMCP LLIN and cITN distributions, respectively. The values of terms <math id=\"inf30\"><mrow><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> and <math id=\"inf31\"><mrow><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> also contained missing values for some years and showed variability due to different sample sizes. Therefore, we fitted penalised regression splines through the time series for each parameter to create smooth prior parameters. The spline fitting was done using restricted maximum likelihood with rigorous selection done to find the optimal number of basis functions for the spline (see <a href=\"#fig9\">Appendix figure 1</a> for the spline fits)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To form the likelihoods, these prior rates needed to be scaled by the population in a given country-year. Therefore, we defined terms <math id=\"inf32\"><mrow><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>P</mi><mi>o</mi><mi>p</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><msub><mi>n</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> and <math id=\"inf33\"><mrow><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>P</mi><mi>o</mi><mi>p</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><msub><mi>n</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mi>r</mi><mi>a</mi><mi>t</mi><msub><mi>e</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> as the final prior distribution on the NMCP distributions (not per-capita)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Using these prior distributions and allowing for some uncertainty, we model the likelihoods for the observed <math id=\"inf34\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>LLIN</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math>, <math id=\"inf35\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>ITNc</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math> and <math id=\"inf36\"><mtext>NMCP</mtext><mi>_</mi><msub><mtext>TOTAL</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math> as random normal variables with added error:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ14", 
+                                        "label": "(14)", 
+                                        "mathml": "<math><mtext>NMCP</mtext><mi>_</mi><msub><mtext>LLIN</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo>(</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mrow><mi>d</mi><mn>1</mn><mo>,</mo><mi>t</mi></mrow><mn>2</mn></msubsup><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ15", 
+                                        "label": "(15)", 
+                                        "mathml": "<math><mtext>NMCP</mtext><mi>_</mi><msub><mtext>cITN</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo>(</mo><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mrow><mi>d</mi><mn>2</mn><mo>,</mo><mi>t</mi></mrow><mn>2</mn></msubsup><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ16", 
+                                        "label": "(16)", 
+                                        "mathml": "<math><mtext>NMCP</mtext><mi>_</mi><msub><mtext>TOTAL</mtext><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo>(</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub> <mo></mo><mo>+</mo><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msubsup><mi>\u03c3</mi><mrow><mi>d</mi><mn>3</mn><mo>,</mo><mi>t</mi></mrow><mn>2</mn></msubsup><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where <math id=\"inf37\"><mrow><msub><mi>\u03c3</mi><mrow><mi>d</mi><mn>1</mn><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>\u03c3</mi><mrow><mi>d</mi><mn>2</mn><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>\u03c3</mi><mrow><mi>d</mi><mn>3</mn><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mn>0.01</mn><mo stretchy=\"false\">)</mo></mrow></math>. Additionally, all distributions (<a href=\"#equ14\">equations 14</a> and <a href=\"#equ16\">16</a>) were zero truncated to prevent negative numbers of nets."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It should be noted that NMCP distribution numbers are not always accurate and potentially under- or over-estimate the number of nets distributed. This may result, for example, from nets being distributed through other sources and therefore not contributing to the total NMCP distribution sum. To account for this uncertainty, we allow the number of nets distributed to take a uniformly distributed value with a lower bound of the NMCP distribution and an upper bound of the number of nets able to be distributed (found from the net stock\u2014see <a href=\"#equ22\">Equation 22</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.2 <i><b>Compartment model structure</b></i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Following the methods outlined above, we arrived at a set of observed data, with standard errors, of the number of nets delivered for all country-years (manufacturer), the number of nets distributed within-country for all country-year (NMCP) and sparse estimates of the number of nets of any age in households (i.e. net crop) in 95 country-years with available surveys"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Our compartment model linked all these processes together by modelling four different processes. (i) Using delivery and distribution information to allow for LLIN net stock to accumulate, thereby allowing for more LLIN nets to be distributed than were delivered in a country-year. (ii) Disaggregating the total nets delivered in a country-year into quarter-yearly intervals to allow for a more realistic modelling of the temporal dynamics. (iii) Linking year-by-year distributions through a loss function that accounted for the rate of nets being lost from households after distribution as a function of the time from distribution. (iv) Calibrating the compartment model quarter-yearly estimates on the observed survey reports. These four modelled processes are now described in turn."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.2.1 <b>Accumulation of LLIN net stock</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Following the methodology described in Flaxman et al (2010)\u00a0(<a href=\"#bib8\">Flaxman et al., 2010</a>), we define a net stock variable <math id=\"inf38\"><mrow><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> for a given country-year. <math id=\"inf39\"><mrow><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> links together LLIN manufacturer deliveries and NMCP LLIN distributions by allowing for a surplus of nets to be built up in a country. Essentially, <math id=\"inf40\"><mrow><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> added a \u2018cap\u2019 on the number of nets NMCPs report to be delivered, and therefore created an upper bound on erroneously reported deliveries."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We also allowed for NMCP data to represent an under-estimate of true distribution levels. This could occur, for example, if the NMCP reporting system did not capture those nets being distributed by non-governmental agencies. To accommodate this uncertainty, we specified the number of nets distributed in a given year as a range, with all available country stock as one extreme (the maximum nets that could be delivered) and the NMCP-reported value (the assumed minimum distribution level) as the other. It should be noted that due to the lack of manufacturer data for cITNs, this uncertainty was only incorporated for LLINs."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "First we define <math id=\"inf41\"><mrow><msub><mover accent=\"true\"><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math>, the adjusted <math id=\"inf42\"><mrow><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math>, as the modelled parameter for the number of NMCP LLIN nets delivered in a country-year. We define <math id=\"inf43\"><mrow><msub><mover accent=\"true\"><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub></mrow></math> and <math id=\"inf44\"><mrow><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub></mrow></math> at the first time point\u00a0<math id=\"inf45\"><mrow><mo></mo><msub><mi>t</mi><mn>0</mn></msub><mo>=</mo><mn>2000</mn></mrow></math> as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ17", 
+                                        "label": "(17)", 
+                                        "mathml": "<math><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>~</mo><mfenced close=\"\" open=\"{\"><mtable columnalign=\"left\"><mtr><mtd><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>&gt;</mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo></mtd></mtr><mtr><mtd><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mi>O</mi><mi>t</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>w</mi><mi>i</mi><mi>s</mi><mi>e</mi></mtd></mtr></mtable></mfenced></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ18", 
+                                        "label": "(18)", 
+                                        "mathml": "<math><mrow><msubsup><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msubsup><mo>~</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo stretchy=\"false\">(</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>,</mo><mo></mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo stretchy=\"false\">)</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ19", 
+                                        "label": "(19)", 
+                                        "mathml": "<math><mrow><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>=</mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow></msub><mo>\u2212</mo><msubsup><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msubsup></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "And then define <math id=\"inf46\"><mrow><msub><mover accent=\"true\"><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> and <math id=\"inf47\"><mrow><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> at subsequent time points recursively as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ20", 
+                                        "label": "(20)", 
+                                        "mathml": "<math><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mrow><mfenced close=\"\" open=\"{\"><mtable columnalign=\"left\"><mtr><mtd><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub> <mo></mo><mo>+</mo><mo>\u00a0</mo><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>&gt;</mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub> <mo></mo><mo>+</mo><mo>\u00a0</mo><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi><mo>\u2212</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mi>O</mi><mi>t</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>w</mi><mi>i</mi><mi>s</mi><mi>e</mi></mtd></mtr></mtable></mfenced><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ21", 
+                                        "label": "(21)", 
+                                        "mathml": "<math><msubsup><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msubsup><mo>~</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>(</mo><msub><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><mo></mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub> <mo></mo><mo>+</mo><mo>\u00a0</mo><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ22", 
+                                        "label": "(22)", 
+                                        "mathml": "<math><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>S</mi><mi>t</mi><mi>o</mi><mi>c</mi><msub><mi>k</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo>+</mo> <mo></mo><msub><mi>\u03bc</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msubsup></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As shown in the above equations, if a country did not distribute as many nets as were delivered, stock levels can increase, but with a limit that a country cannot deliver more nets than stock permits. <math id=\"inf48\"><mrow><msub><mover accent=\"true\"><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><mo></mo></mrow></math>\u00a0has a probabilistic interpretation reflecting our uncertainty about whether the NMCP values reported the total number of LLINs that were able to be distributed or if the calibration of the stock and flow model on the survey data required more nets to be delivered. For cITNs, it was not possible to include a stock component in the compartment model as there were no manufacturer reports for cITNs."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.2.2 <b>Temporal disaggregation of NMCP LLIN and cITN deliveries</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Modelled variables <math id=\"inf49\"><mrow><msub><mover accent=\"true\"><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> and <math id=\"inf50\"><mrow><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> defined the number of LLINs and cITNs distributed within a country-year. However, these variables were modelled on data that did not provide any information about when in the given year nets were distributed. This led to the potential for temporal inconsistency when calibrating survey estimates at an average time in a country-year against NMCP distribution information with no-sub annual temporal resolution. Therefore, we needed to specify a prior on when NMCP distributions occurred within a given country-year. In striving to keep the model as parsimonious as possible, we first modelled a scenario where <i>all</i> NMCP nets were distributed at either the start or end of the year. This, however, did not represent reality adequately, and led to poor calibrations with survey estimates in some instances. We then relaxed this assumption to allow <i>all</i> nets to be delivered at a random point in the year, but again this led to poor calibrations. Finally, we opted for a more realistic distribution scenario where we disaggregated distributions to a quarter- yearly temporal resolution. We then assigned priors on NMCP quarterly net distributions to allow any proportion of nets to be delivered at the start, first quarter, second quarter, third quarter or end of the year. This scheme allowed for maximum flexibility in the model with minimal subjective prior assumptions, and yielded excellent calibrations with survey estimates."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We disaggregated modelled variables <math id=\"inf51\"><mrow><msub><mover accent=\"true\"><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> and <math id=\"inf52\"><mrow><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> (the number of LLINs and cITNs distributed within a country-year) into intervals <math id=\"inf53\"><mrow><mi>Q</mi><mo>\u2208</mo><mo stretchy=\"false\">[</mo><mn>0.25</mn><mo>,</mo><mn>0.5</mn><mo>,</mo><mn>0.75</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow></math>, representing the number of nets distributed by the first, second, and\u00a0third quarter or end of a given year. We defined the proportions of <math id=\"inf54\"><msub><mover><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math> and <math id=\"inf55\"><mrow><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math> in each interval as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ23", 
+                                        "label": "(23)", 
+                                        "mathml": "<math><msub><mi>g</mi><mi>i</mi></msub><mo>~</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ24", 
+                                        "label": "(24)", 
+                                        "mathml": "<math><msub><mi>q</mi><mi>i</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><msub><mi>g</mi><mi>i</mi></msub><mstyle displaystyle=\"true\"><msub><mo>\u2211</mo><mrow><mi>j</mi><mo>\u2208</mo><mi>Q</mi></mrow></msub><msub><mi>g</mi><mi>j</mi></msub></mstyle></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where <math id=\"inf56\"><mrow><mi>i</mi><mo>\u2208</mo><mi>Q</mi></mrow></math> and <math id=\"inf57\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><mi>Q</mi><mo>\u00a0</mo></mrow></msub><msub><mi>q</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn></math> and of course <math id=\"inf58\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><mi>Q</mi></mrow></msub><mo>\u00a0</mo><msub><mover><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mi>q</mi><mrow><mi>i</mi><mo>\u00a0</mo></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><msub><mover><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math> and <math id=\"inf59\"><msub><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><mi>Q</mi></mrow></msub><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mi>q</mi><mi>i</mi></msub><mo>=</mo><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub></math> i.e. the sum across the year is preserved."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.2.3 <b>Rate of net loss</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Our compartment model estimates NMCP distributions at quarterly intervals through time from manufacturer delivery data and the estimated stock accumulation. The final link to calibrate these quarterly distributions with survey observations of net crop is the rate of net loss. We model the net loss function as a smooth compactly supported function defined previously as part of the NetCALC tool\u00a0(<a href=\"#bib11\">Koenker et al., 2013</a>). We also model the loss function as non stationary in time, and represent this change through time using a moving average. By using a moving average as opposed to individual loss functions for each year, or quarter, we were able to learn temporal changes given the sparse data and not over represent the prior."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We tried several different functional forms for net loss (Weibull, exponential, hill) and decided on specifying the form using a smooth-compact function defined previously\u00a0(<a href=\"#bib11\">Koenker et al., 2013</a>):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ25", 
+                                        "label": "(25)", 
+                                        "mathml": "<math><mi>L</mi><mi>o</mi><mi>s</mi><mi>s</mi><mrow><mo>(</mo><mi>t</mi><mo>,</mo><mi>k</mi><mo>,</mo><mi>L</mi><mo>)</mo></mrow><mo>=</mo><mfenced close=\"\" open=\"{\"><mtable columnalign=\"left\"><mtr><mtd><msup><mi>e</mi><mrow><mi>k</mi><mo>-</mo><mi>k</mi><mo>/</mo><mo>(</mo><mn>1</mn><mo>-</mo><mo>(</mo><mi>t</mi><mo>/</mo><mi>l</mi><msup><mo>)</mo><mn>2</mn></msup><mo>)</mo></mrow></msup><mo>,</mo><mo>\u00a0</mo><mi>t</mi><mo>\u00a0</mo><mo>&lt;</mo><mo>\u00a0</mo><mi>L</mi></mtd></mtr><mtr><mtd><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mn>0</mn><mo>,</mo><mo>\u00a0</mo><mi>O</mi><mi>t</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>w</mi><mi>i</mi><mi>s</mi><mi>e</mi></mtd></mtr></mtable></mfenced></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where <i>k</i> and <i>L</i> are loss function parameters with <math id=\"inf60\"><mrow><mi>k</mi><mo>,</mo><mi>L</mi><mo>&gt;</mo><mn>0</mn></mrow></math>. The smooth-compact loss function produced models with a the lowest information criteria (DIC) from the other forms and has been validated in previous studies\u00a0(<a href=\"#bib11\">Koenker et al., 2013</a>; <a href=\"#bib37\">Yukich et al., 2013</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For both LLINs and ITNs we use the same functional form in <a href=\"#equ25\">Equation 25</a> but restrict the bounds on parameter <i>k</i> as uniform priors on this parameter produced strongly non-uniform functions\u00a0(<a href=\"#bib2\">Bornkamp, 2012</a>). Therefore, to achieve a diffuse uniform prior on the loss functions, we allowed <i>L</i> to vary within large bounds, thereby producing priors that allowed candidate loss functions with half-lives from 0.7 to 5 years. These priors were necessarily vague to allow for adequate flexibility in fitting country-specific loss functions."
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ26", 
+                                        "label": "(26)", 
+                                        "mathml": "<math><mtable><mtr><mtd><mi>k</mi><mo>~</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>(</mo><mn>16</mn><mo>,</mo><mn>18</mn><mo>)</mo></mtd></mtr><mtr><mtd><mi>L</mi><mo>~</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>(</mo><mn>4</mn><mo>,</mo><mn>20.7</mn><mo>)</mo></mtd></mtr></mtable></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To model the loss function through time, we define a moving average on parameters <i>k</i> and <i>L</i>. Therefore the moving average on the loss function for both LLINs and cITNs is defined as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ27", 
+                                        "label": "(27)", 
+                                        "mathml": "<math><msub><mi>k</mi><mrow><mi>m</mi><mi>v</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>k</mi><mi>t</mi></msub><mo>\u00a0</mo><mo>+</mo> <mo></mo><msub><mi>k</mi><mrow><mi>t</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo>+</mo> <mo></mo><mo>\u2026</mo> <mo></mo><mo>+</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>\u2212</mo><mo>(</mo><mi>n</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow></msub></mrow><mi>n</mi></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ28", 
+                                        "label": "(28)", 
+                                        "mathml": "<math><msub><mi>L</mi><mrow><mi>m</mi><mi>v</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>L</mi><mi>t</mi></msub><mo>\u00a0</mo><mo>+</mo> <mo></mo><msub><mi>L</mi><mrow><mi>t</mi><mo>\u2212</mo><mn>1</mn></mrow></msub> <mo></mo><mo>+</mo><mo>\u00a0</mo><mo>\u2026</mo> <mo></mo><mo>+</mo><mo>\u00a0</mo><msub><mi>L</mi><mrow><mi>t</mi><mo>\u2212</mo><mo>(</mo><mi>n</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow></msub></mrow><mi>n</mi></mfrac></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where <i>n</i> is the moving average lag and <math id=\"inf61\"><mrow><mi>t</mi><mo>\u2208</mo><mrow><mo>[</mo><mrow><mn>2000</mn><mo>,</mo><mn>2001</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><mo></mo><mn>2013</mn></mrow><mo>]</mo></mrow></mrow></math>, and any terms with <math id=\"inf62\"><mrow><mi>t</mi><mo>&lt;</mo><mn>2000</mn></mrow></math> are ignored. From out-of-sample cross validation we found the optimal lag to be <math id=\"inf63\"><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow></math>, i.e. a balance between over- and under-smoothing. It should be noted that <i>t</i> is restricted to the range <math id=\"inf64\"><mrow><mn>2000</mn><mo>\u2264</mo><mi>t</mi><mo>\u2264</mo><mn>2013</mn></mrow></math>, which is the range for which we have real data on NMCP reports, manufacturer reports and household surveys. For the future scenario predictions (described later), we assume any future net loss behaviour is the same as that occurring in 2013,\u00a0that\u00a0is:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ29", 
+                                        "label": "(29)", 
+                                        "mathml": "<math><mrow><msub><mi>k</mi><mrow><mi>m</mi><mi>v</mi><mo>,</mo><mi>t</mi><mo>&gt;</mo><mn>2013</mn></mrow></msub><mo>=</mo><msub><mi>k</mi><mrow><mi>m</mi><mi>v</mi><mo>,</mo><mi>t</mi><mo>=</mo><mn>2013</mn></mrow></msub></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ30", 
+                                        "label": "(30)", 
+                                        "mathml": "<math><mrow><msub><mi>L</mi><mrow><mi>m</mi><mi>v</mi><mo>,</mo><mi>t</mi><mo>&gt;</mo><mn>2013</mn></mrow></msub><mo>=</mo><msub><mi>L</mi><mrow><mi>m</mi><mi>v</mi><mo>,</mo><mi>t</mi><mo>=</mo><mn>2013</mn></mrow></msub></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3.2.2.4 <b>Calibrating the compartment model against survey information</b>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Conceptual description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Given the net distributions defined at quarterly intervals and the temporally varying loss function, a continuous prediction of the number of nets of any age in a country could be found at quarterly intervals simply by summing across nets of all ages for a given quarter. These quarterly predictions of the number of nets of any age were then calibrated in a likelihood of the observed survey estimates. In the presence of observed survey estimates, this likelihood helped \u2018learn\u2019 values for all the prior probability parameters outlined in the compartment model. In the absence of survey information, the model defaulted to the prior probabilities for all parameters and relied on the NMCP and Manufacturer reports."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<i>Formal description</i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Consider the stock and flow model evaluated over a period 2000:2017, which yielded 73 quarterly intervals. Now consider two 73\u00d7 73 matrices labelled <math id=\"inf65\"><mrow><msub><mi>M</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub></mrow></math> and <math id=\"inf66\"><mrow><msub><mi>M</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub></mrow></math>. The rows and columns of these matrices represent the entire time period in quarterly intervals."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Consider the stock and flow model progressing column wise through these matrices, at year <i>t</i> and quarter <math id=\"inf67\"><mrow><mover accent=\"true\"><mi>t</mi><mo>^</mo></mover><mo>\u2208</mo><mi>Q</mi></mrow></math>, the column and row index <math id=\"inf68\"><mi>i</mi><mi>n</mi><mi>d</mi><mo>=</mo><mn>4</mn><mi>t</mi><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo> <mo></mo><mover><mi>t</mi><mo>^</mo></mover></math>\u00a0(e.g 2004.5 or year 5 quarter 3 would be index 23) stores <math id=\"inf69\"><msub><mover><mi>\u03b4</mi><mo>^</mo></mover><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mi>q</mi><mover><mi>t</mi><mo>^</mo></mover></msub></math> and <math id=\"inf70\"><mrow><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mi>q</mi><mover accent=\"true\"><mi>t</mi><mo>^</mo></mover></msub><mo></mo></mrow></math> (LLINs and cITNs in year <i>t</i> and quarter <math id=\"inf71\"><mrow><mover accent=\"true\"><mi>t</mi><mo>^</mo></mover><mtext></mtext><mo>\u2208</mo><mi>Q</mi></mrow></math>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Then for each quarter after the distributions <math id=\"inf72\"><mrow><msubsup><mi>\u03b4</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msubsup><msub><mi>q</mi><mover accent=\"true\"><mi>t</mi><mo>^</mo></mover></msub></mrow></math> and <math id=\"inf73\"><mrow><msub><mi>\u03c0</mi><mrow><mi>c</mi><mo>,</mo><mi>t</mi></mrow></msub><msub><mi>q</mi><mover accent=\"true\"><mi>t</mi><mo>^</mo></mover></msub><mo></mo></mrow></math>, the remaining nets in subsequent quarters were filled row wise according to the loss function defined in <a href=\"#equ25\">Equation 25</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "By summarising the stock and flow process in this manner, the total number of LLIN and cITN nets of all ages in a given quarterly time period was simply the column sums <math id=\"inf74\"><msubsup><mo>\u2211</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>73</mn></msubsup><msub><mi>M</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi><mo>,</mo><mi>i</mi><mi>n</mi><mi>d</mi></mrow></msub></math>, <math id=\"inf75\"><msubsup><mo>\u2211</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>73</mn></msubsup><msub><mi>M</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi><mo>,</mo><mi>i</mi><mi>n</mi><mi>d</mi></mrow></msub></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, we calibrated estimates of the total number of nets of all ages, against those reported from the household survey reports:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ31", 
+                                        "label": "(31)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03bc</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo stretchy=\"false\">(</mo><msub><mi>P</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><mo>,</mo><mo></mo><msub><mi>\u03c3</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub><mo stretchy=\"false\">)</mo></mrow></msub></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ32", 
+                                        "label": "(32)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03bc</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub></mrow></msub><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo stretchy=\"false\">(</mo><msub><mi>P</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><mo>,</mo><mo></mo><msub><mi>\u03c3</mi><mrow><mi>S</mi><mi>U</mi><mi>R</mi><mi>V</mi><mi>E</mi><msub><mi>Y</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub><msub><mrow></mrow><mrow><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover><mo>,</mo><mi>c</mi></mrow></msub><mo stretchy=\"false\">)</mo></mrow></msub></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Where the normal standard deviation is given by those found from the survey reports (<a href=\"#equ2 equ4\">Equations 2 and 4</a>). Additionally, <math id=\"inf76\"><mrow><msub><mi>P</mi><mrow><mi>L</mi><mi>L</mi><mi>I</mi><mi>N</mi></mrow></msub></mrow></math> and <math id=\"inf77\"><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>I</mi><mi>T</mi><mi>N</mi></mrow></msub></mrow></math> was defined as a linear interpolation between the two closest quarters and the average survey time <math id=\"inf78\"><mover accent=\"true\"><mi>t</mi><mo>\u00af</mo></mover></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It should be noted that, when calculating the nets per-capita, two scalings were used: (1) Countries with the proportion of population at risk being less than 1 were scaled according to the WHO-defined populations at risk proportion. (2) Countries partially dependant on IRS as a means of vector control were scaled as the proportion of the population at risk targeted with ITNs."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s29", 
+                        "title": "4.0 Indicators model", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s30", 
+                                "title": "4.1 Introduction", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Section 2 provides details on how, using yearly data on manufacturer deliveries and NMCP distributions calibrated using household survey reports, we estimated the number of LLINs and cITNs in households in each country-year at quarterly intervals. From these net crop estimates, we used population information to derive the nets per-capita for LLINs and cITNs. Standardized ITN coverage indicators (<a href=\"#bib12\">Kilian et al., 2013</a>) were then estimated from net crop by leveraging the household survey information with the estimates of nets per capita to derive a set of indicators on net ownership and usage. These were:"
+                                    }, 
+                                    {
+                                        "type": "list", 
+                                        "prefix": "bullet", 
+                                        "items": [
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Indicator 1: <i>% households with at least one ITN</i>"
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Indicator 2: <i>% households with at least one ITN for every two people</i>"
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Indicator 3: <i>% population with access to an ITN within their household</i>"
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Indicator 4: <i>% population who slept under an ITN the previous night</i>"
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Indicator 5: <i>The ratio of population use to access or the \u2018ownership gap\u2019</i>"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s31", 
+                                "title": "4.2 Indicator model structure", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Previous models attempting to evaluate total nets and nets per-capita have utilised negative binomial models unstratified by household size to estimate Indicator 1\u00a0(<a href=\"#bib8\">Flaxman et al., 2010</a>). However, using these previous approaches, it was impossible to estimate Indicators 2\u20135. Here we introduce a new zero-truncated Poisson model stratified by household size, which has the ability to estimate all Indicators 1\u20135 with excellent precision."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To begin the model derivation, consider a household survey <math id=\"inf79\"><mi>H</mi></math>. Contained within <math id=\"inf80\"><mi>H</mi></math> we were able to calculate a density/histogram of the number of households with a given number of ITNs (both LLINs and cITNs). <a href=\"#fig10\">Appendix figure 2</a> summarises this density plot, and it is clear that Indicator 1 is trivially calculated (sum of the red bars divided by the total) from this histogram, but Indicators 2\u20135 are not. Previous modelling approaches\u00a0(<a href=\"#bib8\">Flaxman et al., 2010</a>) used this unstratified density and assigned a probability distribution (e.g negative binomial or Poisson) parameterised such that the observed density could be recreated using a small number of model parameters (for the negative binomial 2 and Poisson 1)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "There are two key problems with this approach, first as highlighted above Indicators 2\u20135, which provide additional richness of information for decision makers, cannot be directly calculated from this one-dimensional histogram. Second, after experimenting with a large suite of probability\u00a0distributions, we found that fitting two-dimensional summary histograms to household survey data often provided very poor fits. The key to these poor fits is the lack of stratification of the number of ITNs by household size, the absence of which ignores an important determinant on the number of ITNs per household. A more useful summary of <math id=\"inf81\"><mi>H</mi></math> is the inclusions of a second dimension for household size (<a href=\"#fig11\">Appendix figure 3</a>). From this two-dimensional model, it becomes possible to estimate Indicators 1\u20133 (<a href=\"#fig12\">Appendix figure 4</a>). However, the problem remains: how do we recreate this two-dimensional density when we have no household survey information?"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To accomplish this, we developed a model which, given a household size distribution, translates an estimate of nets per-capita (derived from the compartment model) into an accurate realisation of the three-dimensional histogram."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "4.2.1 <i><b>Zero truncated poisson model</b></i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The most logical model to recreate the three-dimensional densities for a given household strata is the Poisson distribution (or a negative binomial distribution for added over dispersion). However, we found that these models did not recreate the observed pattern accurately. We tried more complicated zero-inflated versions but these did not improve fits."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After looking across all 83 surveys for which we had all the relevant information to recreate the three-dimensional histograms, we realised the process to create the histograms had to be separated into two processes: (a) a process which, for a given household strata, gave the density of households with no nets <math id=\"inf82\"><mrow><mo stretchy=\"false\">(</mo><msub><mi>P</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo></mrow></math>, and (b) a process which, for a given household strata owning nets, gave the density of a given number of nets (1,2,3\u2026) <math id=\"inf83\"><mrow><mo stretchy=\"false\">(</mo><msub><mi>P</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></mrow></math>. To think about this intuitively, consider a process that first fills the zero category of ITNs per household in <a href=\"#fig11\">Appendix figure 3</a>, and then fills the categories 1,2,3 etc."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Consider a household strata <math id=\"inf84\"><mi>h</mi></math> (e.g. households of size three persons) from <math id=\"inf85\"><mi>H</mi></math>, it is easy to calculate the proportion of households with no nets. This is the <math id=\"inf86\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> parameter. Of the remaining households owning one or more nets, we calculated <math id=\"inf87\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> as the average number of nets in a household strata. The most logical probability distribution to fill the densities given <math id=\"inf88\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> is again the Poisson distribution as <math id=\"inf89\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> is simply the mean of the Poisson."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "However, because we have already filled the household with no nets density, the correct distribution is a zero truncated Poisson distribution. Unfortunately, the mean of the zero truncated Poisson distribution is now no longer just <math id=\"inf90\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> but <math id=\"inf91\"><mrow><mi>\u03bc</mi><mo>=</mo><mi>\u03bb</mi><mo>/</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>\u2212</mo><msup><mi>e</mi><mi>\u03bb</mi></msup><mo stretchy=\"false\">)</mo></mrow></math>, which does not have the same useful interpretation. Therefore, we solved (using a simple root finding) for the value of <math id=\"inf92\"><mi>\u03bb</mi></math> that gave a zero truncated Poisson with the same mean as a standard Poisson with mean <math id=\"inf93\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math>, but excluded a zero category."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Using this model, parameterised by just two parameters per household strata <math id=\"inf94\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> and <math id=\"inf95\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math>, we evaluated Indicators 1\u20133 across the 83 relevant surveys with correlation values of more than 0.98 showing that the model reproduced the complex density pattern in the two-dimensional histograms with excellent accuracy."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "4.2.2 <i><b>Zero truncated poisson model in the absence of survey information</b></i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The zero truncated Poisson is a probabilistic distribution that translates <math id=\"inf96\"><mi>\u210b</mi></math> into parameters <math id=\"inf97\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> and <math id=\"inf98\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math>\u00a0that were able to re-create the two-dimensional densities in <a href=\"#fig12\">Appendix figure 4</a> from which Indicators 1\u20133 could be calculated. However,\u00a0we still needed to estimate <math id=\"inf99\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> and <math id=\"inf100\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> for country years without survey information."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Given the logical dependence of <math id=\"inf101\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> and <math id=\"inf102\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> on the underlying nets per-capita, we created two functions which, given a household strata, <i>h</i>, translated nets per-capita, <i>npc</i>, into <math id=\"inf103\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> and <math id=\"inf104\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math>. i.e.:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ33", 
+                                        "label": "(33)", 
+                                        "mathml": "<math><msub><mi>f</mi><mn>0</mn></msub><mrow><mo>(</mo><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mi>and</mi><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>f</mi><mn>1</mn></msub><mrow><mo>(</mo><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After experimenting with non parametric spline models, we found that simple polynomial surfaces worked remarkably well and had the added benefits of computational efficiency and compatibility with the compartment model."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We divided household sizes into 10 sizes <math id=\"inf105\"><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mo>\u2265</mo><mn>10</mn></mrow><mo>)</mo></mrow></mrow></math> and then modelled <math id=\"inf106\"><mrow><msub><mi>f</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math> as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ34", 
+                                        "label": "(34)", 
+                                        "mathml": "<math><msub><mi>f</mi><mn>0</mn></msub><mrow><mo>(</mo><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>\u03b1</mi><mn>0</mn></msub> <mo></mo><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo><msub><mi>\u03b2</mi><mn>1</mn></msub><mi>h</mi><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo> <mo></mo><mo></mo><msub><mi>\u03b2</mi><mn>2</mn></msub><msup><mi>h</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo> <mo></mo><msub><mi>\u03b2</mi><mn>3</mn></msub><mi>n</mi><mi>p</mi><mi>c</mi> <mo></mo><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo><msub><mi>\u03b2</mi><mn>4</mn></msub><mi>n</mi><mi>p</mi><msup><mi>c</mi><mn>2</mn></msup> <mo></mo><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo><msub><mi>\u03b2</mi><mn>5</mn></msub><mi>n</mi><mi>p</mi><msup><mi>c</mi><mn>3</mn></msup></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "and <math id=\"inf107\"><mrow><msub><mi>f</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math> as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ35", 
+                                        "label": "(35)", 
+                                        "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mrow><mo>(</mo><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>\u03b1</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub><mo>\u00a0</mo><mo>+</mo><mo>\u00a0</mo> <mo></mo><msub><mi>\u03b2</mi><mrow><mn>6</mn><mo>,</mo><mi>h</mi></mrow></msub><mi>n</mi><mi>p</mi><mi>c</mi></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The model for <math id=\"inf108\"><mrow><msub><mi>f</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math> is therefore a two-dimensional surface that varies according to household size but the model for <math id=\"inf109\"><mrow><msub><mi>f</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math> is a separate linear straight line function for each household category."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#equ34\">Equations 34</a> and <a href=\"#equ35\">35</a> were fitted using Bayesian linear regression with the uncertainty in the coefficients being propagated through the compartment model."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When performing 10-fold out-of sample cross validation (leaving out entire surveys), we found that <math id=\"inf110\"><mrow><msub><mi>f</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math> predicted <math id=\"inf111\"><mrow><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> with a correlation of 0.98 and <math id=\"inf112\"><mrow><msub><mi>f</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mi>n</mi><mi>p</mi><mi>c</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math> predicted <math id=\"inf113\"><mrow><msub><mi>P</mi><mrow><mn>1</mn><mo>,</mo><mi>h</mi></mrow></msub></mrow></math> with a correlation of 0.97, indicating extremely good fits."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Given these two functions, which parameterise the zero truncated Poisson model, we can calculate Indicators 1\u20133 from an estimate of nets per-capita for a country-year (whether we have a survey or not) from the resulting two-dimensional density."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "4.2.3 <i><b>Estimating\u00a0% population who slept under an ITN the previous night and the 'ownership gap'</b></i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The proportion of people who slept under an ITN (Indicator 4) was highly correlated with the proportion of people with access to an ITN (the \u2018use gap\u2019, Indicator 5). Therefore, to evaluate Indicator 4, we used a simple linear relationship between access and use evaluated across all 83 surveys with the relevant information (see <a href=\"#fig13\">Appendix figure 5</a>). Therefore, all that was required to evaluate Indicator 4 was to take Indicator 3 (which contained all the rich information about household size strata) and translate it through a linear relationship with noise:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ36", 
+                                        "label": "(36)", 
+                                        "mathml": "<math><mi>I</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>c</mi><mi>a</mi><mi>t</mi><mi>o</mi><mi>r</mi><mo>\u00a0</mo><mn>4</mn><mo>~</mo><mi>N</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>l</mi><mo>(</mo><mn>0.8838889</mn><mo>*</mo><mi>I</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>c</mi><mi>a</mi><mi>t</mi><mi>o</mi><mi>r</mi><mo>\u00a0</mo><mtext>3,0.06258131^2</mtext></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, Indicator 5 (the ownership gap) was calculated as 1\u2013(Indicator 4/Indicator3)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "4.2.4 <i><b>Additional note on household sizes</b></i>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It should be noted that one missing piece in this analysis is the distribution of household sizes for every country-year. This information does not exist and is very difficult to model. Therefore, we make two assumptions. First, while the populations are known to change over time, we assume that in the 13-year window of our analysis the distribution of household sizes stays constant within each country. This assumption is, to some degree, warranted as countries with serially sampled surveys showed extremely similar household size distribution patterns, and the resulting indicators do not change significantly if a different time point household size distribution is used. Second, for countries with no household size information (due to no relevant surveys), we use an average across all surveys."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s32", 
+                        "title": "5.0 Future predictions", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Using the methods described in sections 2 and 3, we were also able to simulate the\u00a0delivery of any volume of ITNs to a given country over a given future time period to predict the nets per-capita and full suite of indicators. Additionally, we were able to change the dynamics of this simulated future period to allow nets to be retained for a longer period (by varying the net loss function prior) and account for over-allocation of nets (where there is a skewed distribution of net distributions in households with some households having too many nets and some too few)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "When simulating forwards in time from 2013, we made several assumptions:"
+                            }, 
+                            {
+                                "type": "list", 
+                                "prefix": "number", 
+                                "items": [
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "No cITNs were distributed or delivered. This is a justifiable as, with the\u00a0exception of Gabon in 2013, none of the 40 countries in our analysis delivered or distributed any ITNs in 2012 or 2013. Therefore, it is reasonable to assume that for future years, these countries continued using LLINs exclusively. This assumption also follows country recommendation by the WHO to distribute LLINs and not cITNs (<a href=\"#bib19\">Measure, 2014</a>)."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "Because only projected information on manufacturer data is known, we assume that all nets delivered to a county are distributed. It should be noted that the long-term consequences of this assumption are insignificant as data from 2000\u20132013 show that nets that are delivered are ultimately distributed, however, short-term particulars of how many nets are distributed and how many are retained as stock are not captured."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "Given a number of nets delivered to all of Africa during the period 2014\u20132017 (e.g. 500 million LLINs), we use the yearly proportions defined by the harmonisation working group (RBM-HWG) to determine how many nets a country gets in a given year. The working group estimates represent the most reliable projection estimates available."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "If the loss function was chosen to be that fitted within the model, we assume the loss function for future years was fixed to that learnt for 2013. We justify this assumption by looking at the changes in loss function on fitted data from 2000\u20132013, which suggests that the loss function does not vary dramatically and is stable temporally."
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s33", 
                         "title": "5.1 Future scenarios", 
                         "content": [

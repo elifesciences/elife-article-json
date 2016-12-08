@@ -4226,34 +4226,414 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s10-2", 
-                        "title": "The caveat of the analysis", 
+                        "id": "s6", 
+                        "title": "Supplementary mathematical methods", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "<a href=\"#equ5\">Equation 2</a> holds for general signaling systems with arbitrary input signals given that the backward reaction can be neglected. If the input is weak, the maximal concentration of <i>AB</i> is"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ6", 
-                                "mathml": "<math><mrow><mtext>max</mtext><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>=</mo><mfrac><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow></mrow><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mo>\u2212</mo></msub></mrow></mfrac><msub><mi>B</mi><mn>0</mn></msub><mo>.</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "For a cell with a given amount of receptors (<i>B</i><sub>0</sub>), if max[<i>AB</i>] &lt; [<i>AB</i>]<sub><i>th</i></sub>, the cell is not able to activate regardless of the input area. Similarly, given a population of cells, the maximal fraction of activation is"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ7", 
-                                "mathml": "<math><mrow><mtext>max</mtext><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>\u2265</mo><msub><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><msub><mi>B</mi><mn>0</mn></msub><mo>\u2265</mo><msub><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msub><mfrac><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mo>\u2212</mo></msub></mrow><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
-                            }, 
+                                "text": "This appendix contains the supplementary information for the mathematical model in the main paper. Firstly, we summarize existing experimental findings about the LPS-mediated NF-\u03baB signaling pathway. Then, we introduce assumptions to simplify the pathway and construct the mathematical model. Finally, we describe the routine to fit the parameters and provide the values used in the model."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s7", 
+                        "title": "Experimental findings of the LPS-mediated NF-\u03baB pathway", 
+                        "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "A longer duration of input will not increase the fraction of activation over this value. Therefore, the \u2018high dose\u2019 requirement illustrates a caveat of this analysis."
+                                "text": "The LPS-mediated NF-\u03baB pathway has been extensively studied experimentally, and <a href=\"#fig8\">Appendix figure 1</a> provides a schematic view of the current understanding. The pathway consists of two branches, namely the TLR4-MyD88-dependent branch and the TLR4-TRIF-dependent branch. Both branches converge at IKK, where they activate IKK and trigger the release of NF-\u03baB molecules. The pathway downstream of the IKK activation (core NF-\u03baB module) is well-studied and has been modeled extensively (a review is available in <a href=\"#bib8\">Cheong et al. (2008)</a> and our previous work is <a href=\"#bib49\">Tay et al. (2010)</a>). Hence, we focus on the upstream part, or how the cell recognizes LPS molecules and activates IKK."
                             }, 
                             {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.08931.022", 
+                                "id": "fig8", 
+                                "label": "Appendix figure 1.", 
+                                "title": "Schematic view of the LPS-mediated NF-\u03baB pathway.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Text: species; arrows: reactions. Blue: existing species and reactions in the model in <a href=\"#bib49\">Tay et al. (2010)</a>; Red: newly introduced species and reactions; Gray: neglected species and reactions."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/08931/elife-08931-app1-fig1-v1.tif", 
+                                "filename": "elife-08931-app1-fig1-v1.tif"
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-1", 
+                                "title": "TLR4-MyD88-dependent branch", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "This branch is well-understood and has been systematically reviewed in <a href=\"#bib30\">Lu et al. (2008)</a>, <a href=\"#bib35\">Newton and Dixit (2012)</a>. LPS molecules first bind CD14 on the membrane, then bind the TLR4 receptors to form complexes. The LPS.CD14.TLR4 complexes recruit TIRAP, MyD88, and other factors to activate TRAF6, which is in the form of clusters (<a href=\"#bib53\">Yin et al., 2009</a>). The activated TRAF6 molecules then phosphorylate TAK1, which will activate IKK and trigger the response of NF-\u03baB. It has been shown that the TLR4-MyD88-dependent branch induces the early response."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-2", 
+                                "title": "TLR4-TRIF-dependent branch", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "CD14 has been reported to facilitate the endocytosis of TLR4 receptors (<a href=\"#bib54\">Zanoni et al., 2011</a>), and the LPS.CD14.TLR4 complexes can also trigger the innate immunity in the cytoplasm. The current reviews about the TLR4-TRIF-dependent branch are conflicting. Lu et al. and Newton et al. claim that the LPS.CD14.TLR4 complexes first recruit TRIF through the adapter TRAM. Then, RIP1 is activated and TAK1 is phosphorylated. Finally, the phosphorylated TAK1 molecules activate IKK and trigger the response of NF-\u03baB (<a href=\"#bib30\">Lu et al., 2008</a>; <a href=\"#bib35\">Newton and Dixit, 2012</a>). O'Neill et al. states that the RIP1 molecules first get activated by the LPS.CD14.TLR4 complexes, then TRAF6 is activated by RIP1, and finally TAK1 is phosphorylated by TRAF6 (<a href=\"#bib36\">O'Neill et al., 2013</a>). Meanwhile, Kawai et al. claims that both RIP1 and TRAF6 can be activated by the LPS.CD14.TLR4 complexes and can both phosphorylate TAK1 (<a href=\"#bib19\">Kawai and Akira, 2010</a>). The TLR4-TRIF-dependent branch is shown to induce the late response."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In addition to these three views, Covert et al. proposed that the TLR4-TRIF-dependent branch activates NF-\u03baB indirectly (<a href=\"#bib9\">Covert et al., 2005</a>; <a href=\"#bib26\">Lee et al., 2009</a>). The claim is that the TLR4-TRIF-dependent branch first activates the production of TNF<i>\u03b1</i>, then TNF<i>\u03b1</i> activates the response of NF-\u03baB through the well-known TNF<i>\u03b1</i> signaling pathway. The time required for activating the TNF<i>\u03b1</i> production is the cause for the delay in the NF-\u03baB response. However, we do not observe such phenomenon in our experiments and therefore ignore this mechanism when constructing the mathematical model."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s8", 
+                        "title": "Model construction and simplification", 
+                        "content": [
+                            {
                                 "type": "paragraph", 
-                                "text": "It is worth mentioning that the term \u2018high dose\u2019 here indicates that a dose where the backward reaction is neglected, while \u2018high dose\u2019 in the main paper indicates a dose where nearly all the cells are activated. The analysis is also applicable to many doses where only the minority of cells are activated (for example <a href=\"#fig6\">Figure 6B</a>)."
+                                "text": "In this section, we describe the procedure for constructing the mathematical model based on the existing experimental knowledge. We construct the model based on our previous TNF<i>\u03b1</i> model in <a href=\"#bib49\">Tay et al. (2010)</a> whose performance has been constantly validated by the experiments in our group. In order to provide with a unified framework, we model the reactions in the LPS-mediated NF-\u03baB pathway in the same fashion: the equations for the core NF-\u03baB module are identical to the ones in the TNF<i>\u03b1</i> model, and the equations for the pathways upstream of the IKK activation are described as follows."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s8-1", 
+                                "title": "TLR4-MyD88-dependent branch", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We model the concentrations of LPS, CD14, LPS.CD14 complex, LPS.CD14.TLR4 complex, and TRAF6, and the reactions in this branch are shown in <a href=\"#tbl1\">Appendix table 1</a>. In the model, we attribute the cell\u2013cell variability upstream of the IKK activation to the receptor-level, as we assume the abundances of CD14 and TLR4 follow lognormal distributions. We use mass action laws to model the association and dissociation of the ligands and receptors (LPS, CD14, and TLR4). The internalization and the externalization processes are modeled by mass action laws as well. We assume the activity of MyD88 is proportional to the concentration of LPS.CD14.TLR4 complex, therefore, the activation rate of TRAF6 is proportional to the product of the concentrations of LPS.CD14.TLR4 and TRAF6. We also use a Michaelis-Menten term to model the inhibitory effect of A20, as in the TNF<i>\u03b1</i> model. The inactivation of TRAF6a is modeled by a mass action law. Finally, we use a Hill term to model the clustering of activated TRAF6, with <i>n</i> representing the cluster sizes and <i>K</i><sub><i>IKKK</i></sub> representing a critical level, in order to illustrate the effect of clustering explicitly. The activation rate of IKK is then proportional to the product of the Hill term and the concentration of IKKn."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.08931.023", 
+                                        "id": "tbl1", 
+                                        "label": "Appendix table 1.", 
+                                        "title": "The reactions in the TLR4-MyD88-dependent branch", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The reactions in the TLR4-MyD88-dependent branch"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Reaction/Description</th><th>Rate laws</th></tr></thead><tbody><tr><td><i>LPS</i> \u2192 \u2205</td><td><i>l</i><sub><i>d</i></sub>[<i>LPS</i>]</td></tr><tr><td colspan=\"2\">\u2003Degradation of LPS</td></tr><tr><td><i>LPS</i> + <i>CD</i>14 \u2192 <i>LPS</i>.<i>CD</i>14</td><td><i>l</i><sub><i>b</i>,<i>CD</i>14</sub>[<i>LPS</i>][<i>CD</i>14]</td></tr><tr><td colspan=\"2\">\u2003Association of LPS and CD14</td></tr><tr><td><i>LPS</i>.<i>CD</i>14 \u2192 <i>LPS</i> + <i>CD</i>14</td><td><i>l</i><sub><i>f</i>,<i>CD</i>14</sub>[<i>LPS</i>.<i>CD</i>14]</td></tr><tr><td colspan=\"2\">\u2003Dissociation of LPS.CD14</td></tr><tr><td><i>LPS</i>.<i>CD</i>14 \u2192 <i>LPS</i>.<i>CD</i>14.<i>int</i></td><td><i>l</i><sub><i>in</i>,<i>CD</i>14</sub>[<i>LPS</i>.<i>CD</i>14]</td></tr><tr><td colspan=\"2\">\u2003Internalization of LPS.CD14</td></tr><tr><td><i>LPS</i>.<i>CD</i>14.<i>int</i> \u2192 <i>LPS</i>.<i>CD</i>14</td><td><i>l</i><sub><i>out</i>,<i>CD</i>14</sub>[<i>LPS</i>.<i>CD</i>14.<i>int</i>]</td></tr><tr><td colspan=\"2\">\u2003Externalization of LPS.CD14.int</td></tr><tr><td><i>LPS</i>.<i>CD</i>14 + <i>TLR</i>4 \u2192 <i>LPS</i>.<i>CD</i>14.<i>TLR</i>4</td><td><i>l</i><sub><i>b</i></sub>[<i>LPS</i>.<i>CD</i>14][<i>TLR</i>4]</td></tr><tr><td colspan=\"2\">\u2003Association of LPS.CD14 and TLR4</td></tr><tr><td><i>LPS</i>.<i>CD</i>14.<i>TLR</i>4 \u2192 <i>LPS</i>.<i>CD</i>14 + <i>TLR</i>4</td><td><i>l</i><sub><i>f</i></sub>[<i>LPS</i>.<i>CD</i>14.<i>TLR</i>4]</td></tr><tr><td colspan=\"2\">\u2003Dissociation of LPS.CD14.TLR4</td></tr><tr><td><i>TRAF</i>6 \u2192 <i>TRAF</i>6<i>a</i></td><td><math id=\"inf1\"><mrow><msub><mi>l</mi><mi>a</mi></msub><mrow><mo>[</mo><mrow><mi>L</mi><mi>P</mi><mi>S</mi><mo>.</mo><mi>C</mi><mi>D</mi><mn>14.</mn><mi>T</mi><mi>L</mi><mi>R</mi><mn>4</mn></mrow><mo>]</mo></mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn></mrow><mo>]</mo></mrow><mfrac><mrow><msub><mi>k</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi><mn>20</mn></mrow></msub></mrow><mrow><msub><mi>k</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi><mn>20</mn></mrow></msub><mo>+</mo><mrow><mo>[</mo><mrow><mi>A</mi><mn>20</mn></mrow><mo>]</mo></mrow></mrow></mfrac></mrow></math></td></tr><tr><td colspan=\"2\">\u2003Activation of TRAF6 by LPS.CD14.TLR4</td></tr><tr><td><i>TRAF</i>6<i>a</i> \u2192 <i>TRAF</i>6</td><td><i>l</i><sub><i>i</i></sub>[<i>TRAF</i>6<i>a</i>]</td></tr><tr><td colspan=\"2\">\u2003Inactivation of TRAF6</td></tr><tr><td><i>IKK</i><sub><i>n</i></sub> \u2192 <i>IKK</i><sub><i>a</i></sub></td><td><math id=\"inf2\"><mrow><msub><mi>c</mi><mn>1</mn></msub><mfrac><mrow><msup><mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn><mi>a</mi></mrow><mo>]</mo></mrow></mrow><mi>n</mi></msup></mrow><mrow><msup><mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn><mi>a</mi></mrow><mo>]</mo></mrow></mrow><mi>n</mi></msup><mo>+</mo><msubsup><mi>K</mi><mrow><mi>I</mi><mi>K</mi><mi>K</mi><mi>K</mi></mrow><mi>n</mi></msubsup></mrow></mfrac><mrow><mo>[</mo><mrow><mi>I</mi><mi>K</mi><mi>K</mi><mi>n</mi></mrow><mo>]</mo></mrow></mrow></math></td></tr><tr><td colspan=\"2\">\u2003Activation of IKK by TRAF6a</td></tr></tbody></table>"
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s8-2", 
+                                "title": "TLR4-TRIF-dependent branch", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "As mentioned previously, there are at least three conflicting views about this branch. Here, we do not distinguish RIP1 from TRAF6 and assume internalized LPS.CD14.TLR4 complexes activate TRAF6 directly, since this assumption can be compensated by the parameter values. We model the reactions in this branch in the same fashion as the TLR4-MyD88-dependent branch, and the equations (in addition to the ones in the TLR4-MyD88-dependent branch) are listed in <a href=\"#tbl2\">Appendix table 2</a>. Here, we assume that the Michaelis-Menten constant for the repressed activation of TRAF6 by the internalized LPS.CD14.TLR4 is the same as the one in the TLR4-MyD88-dependent branch. The underlying reason is that A20 functions by removing the ubiquitin chains, and it can be assumed irrelevant to the sources of activation."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.08931.024", 
+                                        "id": "tbl2", 
+                                        "label": "Appendix table 2.", 
+                                        "title": "The additional reactions in the TLR4-TRIF-dependent branch", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The additional reactions in the TLR4-TRIF-dependent branch"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Reaction/Description</th><th>Rate laws</th></tr></thead><tbody><tr><td><i>LPS</i>.<i>CD</i>14.<i>TLR</i>4 \u2192 <i>LPS</i>.<i>CD</i>14.<i>TLR</i>4.<i>int</i></td><td><i>l</i><sub><i>in</i></sub>[<i>LPS</i>.<i>CD</i>14.<i>TLR</i>4]</td></tr><tr><td colspan=\"2\">\u2003Internalization of LPS.CD14.TLR4</td></tr><tr><td><i>LPS</i>.<i>CD</i>14.<i>TLR</i>4.<i>int</i> \u2192 <i>LPS</i>.<i>CD</i>14.<i>TLR</i>4</td><td><i>l</i><sub><i>out</i></sub>[<i>LPS</i>.<i>CD</i>14.<i>TLR</i>4.<i>int</i>]</td></tr><tr><td colspan=\"2\">\u2003Externalization of LPS.CD14.TLR4.int</td></tr><tr><td><i>TRAF</i>6 \u2192 <i>TRAF</i>6<i>a</i></td><td><math id=\"inf3\"><mrow><msub><mi>l</mi><mrow><mi>a</mi><mo>,</mo><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub><mrow><mo>[</mo><mrow><mi>L</mi><mi>P</mi><mi>S</mi><mo>.</mo><mi>C</mi><mi>D</mi><mn>14.</mn><mi>T</mi><mi>L</mi><mi>R</mi><mn>4.</mn><mi>i</mi><mi>n</mi><mi>t</mi></mrow><mo>]</mo></mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn></mrow><mo>]</mo></mrow><mfrac><mrow><msub><mi>k</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi><mn>20</mn></mrow></msub></mrow><mrow><msub><mi>k</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi><mn>20</mn></mrow></msub><mo>+</mo><mrow><mo>[</mo><mrow><mi>A</mi><mn>20</mn></mrow><mo>]</mo></mrow></mrow></mfrac></mrow></math></td></tr><tr><td colspan=\"2\">\u2003Activation of TRAF6 by LPS.CD14.TLR4.int</td></tr></tbody></table>"
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s8-3", 
+                                "title": "Model simplification", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In principle, the model has the potential to describe the dynamical behavior of the LPS-mediated NF-\u03baB pathway accurately. However, the model has approximately 20 free parameters, and it is practically impossible to perform a large-scale sampling in the parameter space. Hence, we introduce two assumptions to simplify the model."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-3-1", 
+                                        "title": "Removing CD14 from the model", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In humans, the quantity of CD14 is approximately 6.2 \u00d7 10<sup>5</sup> molecules per cell, and the quantity of TLR4 is approximately 10<sup>2</sup>\u201310<sup>3</sup> molecules per cell (<a href=\"#bib24\">Kitchens and Munford, 1998</a>), (<a href=\"#bib39\">Pawelczyk et al., 2010</a>). Although to the authors' knowledge, there is no extensive measurement of the numbers in mouse NIH3T3 cells, we make the assumption that CD14 is excessive and the variability of CD14 abundance is not the main source of cell\u2013cell variability. Hence, we remove CD14 from the model and assume LPS directly binds TLR4 receptors. We also assume that TLR4 abundance accounts for all the cell\u2013cell variability upstream of the IKK activation. It is worth mentioning that the effect of CD14 can be compensated by the binding and unbinding rates and the effect of the internalization of LPS.CD14 can be compensated by a higher degradation rate of LPS. Therefore, this assumption will not restrict the performance of the model."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-3-2", 
+                                        "title": "Removing the TLR4-TRIF-dependent branch", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In our model, the TLR4-MyD88-dependent branch and the TLR4-TRIF-dependent branch are identical in structure. Since the two branches have the same function of activating TRAF6, and we focus on the overall dynamical behavior of the LPS-mediated NF-\u03baB pathway, it is not necessary to distinguish the two branches explicitly. To reduce the complexity the model, we assume the LPS.TLR4 complexes do not internalize and remove the TLR4-TRIF-dependent branch. In addition, except for the constantly perfused LPS experiments, we mostly focus on the first peak of the NF-\u03baB response and such peak is triggered by the TLR4-MyD88-dependent branch. So only modeling this branch will not sacrifice the quality of the model with respect to predictive power in our experimental settings."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-3-3", 
+                                        "title": "Final model", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "With the two simplifications, we reduce the complexity of the full model and the number of free parameters is reduced to around 10. The structure of the model is highlighted in red and blue in <a href=\"#fig8\">Appendix figure 1</a>. The newly introduced reactions (in red) are listed in <a href=\"#tbl3\">Appendix table 3</a>. The final model significantly simplifies the pathway upstream of the IKK activation, and this simplification can be justified from the perspective of information flow. The two steps in the model, namely the binding/unbinding of ligands and receptors and the activation/inactivation of TRAF6, correspond to two important processing of the information flow: the first step encodes the cell\u2013cell variability into the information flow, and the second step allows the analog information flow to trigger a digital decision. The reactions that are not covered in the final model process the information flow in a less important manner, so the final model can be justified within our scope of study."
+                                            }, 
+                                            {
+                                                "type": "table", 
+                                                "doi": "10.7554/eLife.08931.025", 
+                                                "id": "tbl3", 
+                                                "label": "Appendix table 3.", 
+                                                "title": "The reactions upstream of IKK activation in the final model", 
+                                                "caption": [
+                                                    {
+                                                        "type": "paragraph", 
+                                                        "text": "The reactions upstream of IKK activation in the final model"
+                                                    }
+                                                ], 
+                                                "tables": [
+                                                    "<table><thead><tr><th>Reaction/Description</th><th>Rate laws</th></tr></thead><tbody><tr><td><i>LPS</i> \u2192 \u2205</td><td><i>l</i><sub><i>d</i></sub>[<i>LPS</i>]</td></tr><tr><td colspan=\"2\">\u2003Degradation of LPS</td></tr><tr><td><i>LPS</i> + <i>TLR</i>4 \u2192 <i>LPS</i>.<i>TLR</i>4</td><td><i>l</i><sub><i>b</i></sub>[<i>LPS</i>][<i>TLR</i>4]</td></tr><tr><td colspan=\"2\">\u2003Association of LPS and TLR4</td></tr><tr><td><i>LPS</i>.<i>TLR</i>4 \u2192 <i>LPS</i> + <i>TLR</i>4</td><td><i>l</i><sub><i>f</i></sub>[<i>LPS</i>.<i>TLR</i>4]</td></tr><tr><td colspan=\"2\">\u2003Dissociation of LPS and TLR4</td></tr><tr><td><i>TRAF</i>6 \u2192 <i>TRAF</i>6<i>a</i></td><td><math id=\"inf4\"><mrow><msub><mi>l</mi><mi>a</mi></msub><mrow><mo>[</mo><mrow><mi>L</mi><mi>P</mi><mi>S</mi><mo>.</mo><mi>T</mi><mi>L</mi><mi>R</mi><mn>4</mn></mrow><mo>]</mo></mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn></mrow><mo>]</mo></mrow><mfrac><mrow><msub><mi>k</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi><mn>20</mn></mrow></msub></mrow><mrow><msub><mi>k</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi><mn>20</mn></mrow></msub><mo>+</mo><mrow><mo>[</mo><mrow><mi>A</mi><mn>20</mn></mrow><mo>]</mo></mrow></mrow></mfrac></mrow></math></td></tr><tr><td colspan=\"2\">\u2003Activation of TRAF6 by LPS.TLR4</td></tr><tr><td><i>TRAF</i>6<i>a</i> \u2192 <i>TRAF</i>6</td><td><i>l</i><sub><i>i</i></sub>[<i>TRAF</i>6<i>a</i>]</td></tr><tr><td colspan=\"2\">\u2003Inactivation of TRAF6a</td></tr><tr><td><i>IKKn</i> \u2192 <i>IKKa</i></td><td><math id=\"inf5\"><mrow><msub><mi>c</mi><mn>1</mn></msub><mfrac><mrow><msup><mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn><mi>a</mi></mrow><mo>]</mo></mrow></mrow><mi>n</mi></msup></mrow><mrow><msup><mrow><mrow><mo>[</mo><mrow><mi>T</mi><mi>R</mi><mi>A</mi><mi>F</mi><mn>6</mn><mi>a</mi></mrow><mo>]</mo></mrow></mrow><mi>n</mi></msup><mo>+</mo><msubsup><mi>K</mi><mrow><mi>I</mi><mi>K</mi><mi>K</mi><mi>K</mi></mrow><mi>n</mi></msubsup></mrow></mfrac><mrow><mo>[</mo><mrow><mi>I</mi><mi>K</mi><mi>K</mi><mi>n</mi></mrow><mo>]</mo></mrow></mrow></math></td></tr><tr><td colspan=\"2\">\u2003Activation of IKKn by TRAF6a</td></tr></tbody></table>"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s9", 
+                        "title": "Parameter estimation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Despite simplification, the complexity of the model is high and the model is stochastic in its nature. Hence, we use a combined approach to determine the parameter values. Firstly, we fix the distribution of the number of TLR4 receptors and convert the measurement of LPS from concentration to molecular number. Then, we iterate over automatic and manual sampling of the parameter space to determine the final values."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s9-1", 
+                                "title": "Description of approaches", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s9-1-1", 
+                                        "title": "Distribution of TLR4 abundance", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "As with the TNF<i>\u03b1</i> model in <a href=\"#bib49\">Tay et al. (2010)</a>, the total number of TLR4 receptors on the cell membrane follows a lognormal distribution. To our knowledge, there is no accurate measurement on mouse NIH3T3 cells, but the intuition is that the number is in the magnitude of 10<sup>3</sup>. Here, we assume that the parameters for the lognormal distributions are <i>\u03bc</i> = 8.0 and <i>\u03c3</i> = 0.8. Therefore, the expected number of TLR4 receptors is 4.1 \u00d7 10<sup>3</sup>, the standard deviation is 3.9 \u00d7 10<sup>3</sup>, the median is 3.0 \u00d7 10<sup>3</sup>, and the mode is 1.6 \u00d7 10<sup>3</sup>. An illustration of the distribution is available in <a href=\"#fig9\">Appendix figure 2</a>."
+                                            }, 
+                                            {
+                                                "type": "image", 
+                                                "doi": "10.7554/eLife.08931.026", 
+                                                "id": "fig9", 
+                                                "label": "Appendix figure 2.", 
+                                                "title": "The distribution of the number of TLR4 receptors in the model.", 
+                                                "caption": [
+                                                    {
+                                                        "type": "paragraph", 
+                                                        "text": "The number follows lognormal distribution with parameters <i>\u03bc</i> = 8.0 and <i>\u03c3</i> = 0.8."
+                                                    }
+                                                ], 
+                                                "alt": "", 
+                                                "uri": "https://publishing-cdn.elifesciences.org/08931/elife-08931-app1-fig2-v1.tif", 
+                                                "filename": "elife-08931-app1-fig2-v1.tif"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s9-1-2", 
+                                        "title": "Converting LPS concentrations to molecular numbers", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The experiments use concentrations to characterize the abundance of LPS while the model uses molecular numbers. Here, we perform a conversion to unify the units used in the model. The molecular weight of LPS is approximately 10 kDa (<a href=\"#bib55\">Sigma-Aldrich, 2008</a>) and the size of each chamber in the microfluidic device is 1.12 mm \u00d7 0.9 mm \u00d7 0.040 mm (<a href=\"#bib12\">G\u00f3mez-Sj\u00f6berg et al., 2007</a>). Since there are around 100 cells in each chamber, for 1 ng/ml LPS, the average number of ligands each cell can interact with is 2.4 \u00d7 10<sup>4</sup>. Therefore, we can produce a conversion table for LPS, as shown in <a href=\"#tbl4\">Appendix table 4</a>."
+                                            }, 
+                                            {
+                                                "type": "table", 
+                                                "doi": "10.7554/eLife.08931.027", 
+                                                "id": "tbl4", 
+                                                "label": "Appendix table 4.", 
+                                                "title": "The conversion table of LPS between concentrations and molecular numbers", 
+                                                "caption": [
+                                                    {
+                                                        "type": "paragraph", 
+                                                        "text": "The conversion table of LPS between concentrations and molecular numbers"
+                                                    }
+                                                ], 
+                                                "tables": [
+                                                    "<table><thead><tr><th>Concentrations (<math id=\"inf6\"><mrow><mtext>/ng</mtext><mo>\u22c5</mo><msup><mrow><mtext>ml</mtext></mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup></mrow></math>)</th><th>Molecular numbers</th></tr></thead><tbody><tr><td>500</td><td>1.2 \u00d7 10<sup>7</sup></td></tr><tr><td>100</td><td>2.4 \u00d7 10<sup>6</sup></td></tr><tr><td>50</td><td>1.2 \u00d7 10<sup>6</sup></td></tr><tr><td>10</td><td>2.4 \u00d7 10<sup>5</sup></td></tr><tr><td>5</td><td>1.2 \u00d7 10<sup>5</sup></td></tr><tr><td>1</td><td>2.4 \u00d7 10<sup>4</sup></td></tr><tr><td>0.5</td><td>1.2 \u00d7 10<sup>4</sup></td></tr><tr><td>0.25</td><td>6.0 \u00d7 10<sup>3</sup></td></tr></tbody></table>"
+                                                ]
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s9-1-3", 
+                                        "title": "Iterative approach of parameter estimation", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The automatic and manual methods share the same objective. For each set of parameter values, we perform the simulation 200 times, each time with newly sampled numbers of TLR4 and NF-\u03baB from the two distributions. One cell is considered activated if the amplitude of the first peak is at least 10% of the total number of NF-\u03baB. Then, the fractions of activated cells for all the input conditions are calculated and the set of parameter values is appropriate if the L2-norm error between the estimated fractions and the experimentally measured fractions is small."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The automatic method first samples the values of the parameter equidistantly in the log-scale. Then, the script calculates the fractions of activation for all the sets of parameter values. Finally, the set with the least L2-norm error is selected. This approach is objective, but a large amount of computation power is required. Meanwhile, the manual approach is to change the parameter value manually and this method is good for obtaining intuition about the model. Here, we integrate the two methods by iterating them, and the parameter values are able to be determined in a reasonable time and accuracy."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s9-2", 
+                                "title": "Parameter values", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The estimated parameter values for the model are listed in <a href=\"#tbl5\">Appendix table 5</a>, and the remaining parameters take the values in the TNF<i>\u03b1</i> model in <a href=\"#bib49\">Tay et al. (2010)</a>."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.08931.028", 
+                                        "id": "tbl5", 
+                                        "label": "Appendix table 5.", 
+                                        "title": "The parameter values used in the model", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The parameter values used in the model"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Parameters</th><th>Biological meanings</th><th>Values</th><th>Remarks</th></tr></thead><tbody><tr><td><i>l</i><sub><i>d</i></sub></td><td>Degradation rate of LPS</td><td>5 \u00d7 10<sup>\u22124</sup></td><td>Fitted</td></tr><tr><td><i>l</i><sub><i>b</i></sub></td><td>Binding rate of LPS and TLR4</td><td>5 \u00d7 10<sup>\u22129</sup></td><td>Fitted</td></tr><tr><td><i>l</i><sub><i>f</i></sub></td><td>Unbinding rate of LPS.TLR4</td><td>4.5 \u00d7 10<sup>\u22124</sup></td><td>Fitted</td></tr><tr><td><i>l</i><sub><i>a</i></sub></td><td>Activation rate of TRAF6</td><td>1 \u00d7 10<sup>\u22127</sup></td><td>Fitted</td></tr><tr><td><i>k</i><sub><i>M</i>,<i>A</i>20</sub></td><td>Constant for repressed TRAF6 activation</td><td>1 \u00d7 10<sup>5</sup></td><td>Assume same as <a href=\"#bib49\">Tay et al. (2010)</a></td></tr><tr><td><i>l</i><sub><i>i</i></sub></td><td>Inactivation rate of TRAF6a</td><td>1 \u00d7 10<sup>\u22122</sup></td><td>Assume same as <a href=\"#bib49\">Tay et al. (2010)</a></td></tr><tr><td><i>c</i><sub>1</sub></td><td>Activation rate of IKK</td><td>2 \u00d7 10<sup>\u22122</sup></td><td>Fitted</td></tr><tr><td><i>K</i><sub><i>IKKK</i></sub></td><td>Dissociation constant for IKK activation</td><td>3.5 \u00d7 10<sup>3</sup></td><td>Fitted</td></tr><tr><td><i>n</i></td><td>Hill coefficient</td><td>4</td><td>Fitted, with support from <a href=\"#bib53\">Yin et al. (2009)</a></td></tr><tr><td><i>M</i><sub><i>IKKK</i></sub></td><td>Total number of TRAF6</td><td>10<sup>5</sup></td><td>Assume same as <a href=\"#bib49\">Tay et al. (2010)</a></td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To illustrate the effect of clustering, we also construct a model with Hill coefficient <i>n</i> = 1. We perform the same procedure to estimate the parameter values, and the new values for <i>c</i><sub>1</sub> and <i>K</i><sub><i>IKKK</i></sub> are 2 \u00d7 10<sup>\u22124</sup> and 7.5 \u00d7 10<sup>3</sup>, respectively. The remaining parameters are not modified."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s10", 
+                        "title": "Dose-duration relationship", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Activation of cells by LPS treatment requires a high dose and a long duration. In this section, we analyze the relationship between the fraction of activated cells (population response) and the dose/duration of the LPS input."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s10-1", 
+                                "title": "Analytical expression of the fraction of activation", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For simplicity, consider one elementary reversible reaction"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ1", 
+                                        "mathml": "<math><mrow><mi>A</mi><mo>+</mo><mi>B</mi><munderover><mo>\u21cc</mo><mrow><msub><mi>k</mi><mo>+</mo></msub></mrow><mrow><msub><mi>k</mi><mo>\u2212</mo></msub></mrow></munderover><mi>A</mi><mi>B</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the input signal <i>A</i> binds the receptor <i>B</i> to form a complex <i>AB</i> with a forward kinetic constant <i>k</i><sub>+</sub> and <i>AB</i> dissociates with a backward kinetic constant <i>k</i><sub>\u2212</sub>. The amount of receptors is conserved ([<i>B</i>] + [<i>AB</i>] = <i>B</i><sub>0</sub> is a constant) and <i>A</i> is an arbitrary non-negative function of time <i>t</i> to illustrate a general input profile. The concentration of <i>AB</i> follows"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mtext>d</mtext><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>B</mi><mn>0</mn></msub><mo>\u2212</mo><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>k</mi><mo>\u2212</mo></msub><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "and the closed-form solution of [<i>AB</i>] is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>=</mo><mtext>exp</mtext><mrow><mo>{</mo><mrow><mo>\u2212</mo><msubsup><mrow><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup></mrow><mn>0</mn><mi>t</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mo>\u2212</mo></msub></mrow><mo>)</mo></mrow><mtext>d</mtext><mi>\u03c4</mi></mrow><mo>}</mo></mrow><mrow><mo>{</mo><mrow><msubsup><mrow><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup></mrow><mn>0</mn><mi>t</mi></msubsup><msup><mtext>e</mtext><mrow><msubsup><mrow><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup></mrow><mn>0</mn><mi>\u03c4</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mo>\u2212</mo></msub></mrow><mo>)</mo></mrow><mtext>d</mtext><mi>\u03c4</mi><mo>\u2032</mo></mrow></msup><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><msub><mi>B</mi><mn>0</mn></msub><mtext>d</mtext><mi>\u03c4</mi></mrow><mo>}</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "assuming the initial condition [<i>B</i>](0) = <i>B</i><sub>0</sub>. The maximum value of [<i>AB</i>] should be greater than the threshold value [<i>AB</i>]<sub><i>th</i></sub> to active the cells."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When the dose of the input <i>A</i> is high such that the backward reaction can be neglected, by defining the total area under the input from time 0 to <i>t</i> as <math id=\"inf7\"><mrow><mi>S</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msubsup><mrow><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup></mrow><mn>0</mn><mi>t</mi></msubsup><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mi>d</mi><mi>\u03c4</mi></mrow></math>, <a href=\"#equ3\">Equation 1</a> becomes"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "mathml": "<math><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>=</mo><msub><mi>B</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><msup><mtext>e</mtext><mrow><mo>\u2212</mo><msub><mi>k</mi><mo>+</mo></msub><mi>S</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We assume that <i>B</i><sub>0</sub> follows a probability distribution to illustrate the receptor-level variability, the fraction of activation given an input area <i>S</i> is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>\u2265</mo><msub><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><msub><mi>B</mi><mn>0</mn></msub><mo>\u2265</mo><mfrac><mrow><msub><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msub></mrow><mrow><mn>1</mn><mo>\u2212</mo><msup><mtext>e</mtext><mrow><mo>\u2212</mo><msub><mi>k</mi><mo>+</mo></msub><mi>S</mi></mrow></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Since the forward kinetic constant <i>k</i><sub>+</sub> and the receptor-level variability is known, the fraction of activation therefore is only dependent on the area under the input <i>S</i>."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s10-2", 
+                                "title": "The caveat of the analysis", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#equ5\">Equation 2</a> holds for general signaling systems with arbitrary input signals given that the backward reaction can be neglected. If the input is weak, the maximal concentration of <i>AB</i> is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "mathml": "<math><mrow><mtext>max</mtext><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>=</mo><mfrac><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow></mrow><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mo>\u2212</mo></msub></mrow></mfrac><msub><mi>B</mi><mn>0</mn></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For a cell with a given amount of receptors (<i>B</i><sub>0</sub>), if max[<i>AB</i>] &lt; [<i>AB</i>]<sub><i>th</i></sub>, the cell is not able to activate regardless of the input area. Similarly, given a population of cells, the maximal fraction of activation is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "mathml": "<math><mrow><mtext>max</mtext><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow><mo>\u2265</mo><msub><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><msub><mi>B</mi><mn>0</mn></msub><mo>\u2265</mo><msub><mrow><mrow><mo>[</mo><mrow><mi>A</mi><mi>B</mi></mrow><mo>]</mo></mrow></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msub><mfrac><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mo>\u2212</mo></msub></mrow><mrow><msub><mi>k</mi><mo>+</mo></msub><mrow><mo>[</mo><mi>A</mi><mo>]</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A longer duration of input will not increase the fraction of activation over this value. Therefore, the \u2018high dose\u2019 requirement illustrates a caveat of this analysis."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It is worth mentioning that the term \u2018high dose\u2019 here indicates that a dose where the backward reaction is neglected, while \u2018high dose\u2019 in the main paper indicates a dose where nearly all the cells are activated. The analysis is also applicable to many doses where only the minority of cells are activated (for example <a href=\"#fig6\">Figure 6B</a>)."
+                                    }
+                                ]
                             }
                         ]
                     }

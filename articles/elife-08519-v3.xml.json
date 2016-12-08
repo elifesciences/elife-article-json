@@ -6452,6 +6452,1121 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s35", 
+                        "title": "A Introduction", 
+                        "content": [
+                            {
+                                "type": "section", 
+                                "id": "s36", 
+                                "title": "A.1 Scalar vs tensor measurements", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Once the cells have been segmented and tracked throughout the movie (see \u2018Materials and methods\u2019 for details), our goal is to extract useful quantitative information on divisions, rearrangements, cell size and shape changes and apoptoses, and quantify the relative importance of these cell-scale events in complex morphogenetic processes. Several descriptive terms, such as cell or tissue polarity, oriented cell divisions, convergence-extension, or intercalation, have an underlying common point: their quantitative description refers to an amplitude, an anisotropy and a direction. The mathematically robust objects that encompass simultaneously these informations are the tensors, which also offer the advantage to be valid in spaces of two, three or any dimensions. Using tensors is particularly important in a heterogeneous tissue like the notum, where morphogenetic flows of various amplitude, direction and anisotropy occur at different locations."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For instance, counting the divisions results in integer numbers,\u00a0and statistics on cell division directions results in angle distributions. While these classical descriptions of the cell division rate and orientation are essential, we need to quantitatively determine to which extent they contribute to tissue morphogenesis. Characterizing divisions using tensors can result in a better description of oriented cell divisions and a better understanding of their effects. Similarly, if a cell rearrangement is followed immediately by its inverse (which often occurs either in reality, or as an artifact when segmenting a short junction), this leads back to the initial state, and their opposite effects cancel out; while if two rearrangements occur in the same direction, their effects cumulate. Counting cell rearrangements as integer numbers leads to <math id=\"inf502\"><mrow><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>2</mn></mrow></math> rearrangements in both examples, while a tensor analysis better captures in each case its actual impact to morphogenesis."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "There is a need for a formalism with the following requirements : it should include a self-consistent, rigorous definition of the tensors used for measurements; enable a decomposition of tissue deformation into the sum of contributions coming from elementary cell processes; the tensors should be significantly measurable with a good signal-to-noise ratio, and visually representable; the formalism should be purely descriptive, in the sense that it should quantify observed morphogenetic changes independently of the biological or physical origin of the forces that drive these changes, whether they are internal forces such as active cytoskeletal forces, viscous dissipation or cytoplasm pressure, or external forces such as interaction with another cell layer or solid substrate."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s37", 
+                                "title": "A.2 Previous approaches", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We aim here to generalize and take further the approaches used in four articles which have begun to apply this type of methods to developmental biology, enabling quantitative comparison between experiments and simulations:"
+                                    }, 
+                                    {
+                                        "type": "list", 
+                                        "prefix": "bullet", 
+                                        "items": [
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<a href=\"#bib58\">Rauzi et al. (2008)</a> used a matrix called \u2018texture\u2019 as defined in Equation 6 of (<a href=\"#bib27\">Graner et al., 2008</a>) to quantify cell shape changes (see their Figures 5a and S4). It is based on the links connecting each cell center with the centers of its neighbors: it expresses, in \u03bcm<sup>2</sup>, the variance of link length in each direction. Separately, rearrangements were counted and quantified as integer numbers."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<a href=\"#bib1\">Aigouy et al. (2010)</a> used a former version of the texture as defined in the Equation 1 of (<a href=\"#bib5\">Aubouy et al., 2003</a>), which expressed the variance of the cell junctions in each direction. More precisely, they called \u2018cell elongation\u2019 (defined in their Eq. S25) the deviatoric part of the texture. Rearrangements were quantified separately, and as integer numbers (see their Figure 4)."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "<a href=\"#bib15\">Butler et al. (2009)</a> used their own method (introduced in [<a href=\"#bib10\">Blanchard et al., 2009</a>]). They computed the contribution of cell shape changes to flow. They then subtracted the cell shape change rate from the tissue shape change rate. They thus indirectly inferred the contribution of all types of topological changes to morphogenesis as tensors, i.e. including their amplitude and their direction."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "In a preceding paper (<a href=\"#bib11\">Bosveld et al., 2012</a>), we adapted the formalism of <a href=\"#bib27\">Graner et al., 2008</a>, already validated on non-biological cellular networks (<a href=\"#bib17\">Cheddadi et al., 2011</a>), to quantify tensorially the contributions of cell shape changes and rearrangements to tissue shape changes in the Drosophila scutellum, a subpart of the dorsal thorax. We took advantage of averages over several animals to improve the signal-to-noise ratio, and to subtract a mutant from a wild-type tissue, evidencing the effect of the mutation and determining at which place the difference was significant. In (<a href=\"#bib8\">Bardet et al., 2013</a>) we used a similar approach in an intervein of the Drosophila wing."
+                                                }
+                                            ]
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Two additional formalisms have also been proposed recently. <a href=\"#bib21\">Economou et al. (2013)</a> use scalars (rather than tensors) to analyze the one-dimensional elongation of a developing mouse tissue. <a href=\"#bib22\">Etournay et al. (2015)</a> is based on the estimation of the local tissue deformation at the sub-cellular scale of triangles formed by three contiguous links surrounding each tricellular junction (three-fold vertex) and analyses the pupal wing development in details, using a tensorial approach."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s38", 
+                                "title": "A.3 Present approach", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The formalism presented here is tensorial, to take into account the variable orientations of cell processes. It accounts for processes like cell divisions, apoptoses or delaminations which can drastically modify cell\u00a0number in a proliferative tissue. We made it complete by including the remaining processes that can occur in other tissues, or because of segmentation mistakes, or simply because of the limited field of acquisition of the microscope: coalescences (fusions) and new cell integrations, as well as fluxes of cells through the boundary of the tissue of interest or of the microscope field of view."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In a cellular material such as a living tissue, the material states can be characterized by the links joining the centers of mass of neighboring cells, thereby tiling the tissue with an irregular triangular networks of links (<a href=\"#fig1\">Figure 1</a>, <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a>, <a href=\"#media1\">Video 1</a>). Then, by keeping track of those links over time, the geometrical and topological changes in the tissue can also be characterized, and related to the elementary cell processes (cell kinematics) (<a href=\"#media1\">Video 1</a>) (<a href=\"#bib27\">Graner et al., 2008</a>; <a href=\"#bib22\">Etournay et al., 2015</a>; <a href=\"#bib63\">Tlili et al., 2015</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Therefore, as a starting point, we use a statistical definition similar to (<a href=\"#bib27\">Graner et al., 2008</a>) to characterize the state and the deformation of the material network of links. Each change regarding a link (appearance, disappearance, change of orientation or length) is assigned to one and only one process, guaranteeing that the morphogenetic events are decomposed into individual processes and that these processes add up to tissue growth and morphogenesis.\u00a0One of our main goals is to obtain a balance equation relating the local tissue deformation to the elementary cell processes making up this deformation, thereby connecting the cell and tissue scales."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To quantify tissue deformation and all cell processes, we aim at defining dimensionless tensors in order unify their characterizations, but also to relate their statistical descriptions to quantities used in continuum mechanics. Indeed, the continuum mechanics description facilitates comparison between different experiments, or between experiments, simulations and theory. It requires to treat the tissue as continuous, that is, describe cell patches without any explicit signature of each individual cell size. Cell processes are described statistically rather than with details. For each cell process, it is possible to construct a biologically relevant continuous counterpart of the statistical quantity, namely a quantity which is dimensionless (or a rate), with no size."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The procedure presented here improves and generalizes the ones presented in (<a href=\"#bib27\">Graner et al., 2008</a>; <a href=\"#bib11\">Bosveld et al., 2012</a>; <a href=\"#bib8\">Bardet et al., 2013</a>). One of the main difficulties to overcome is that biological processes such as divisions or delaminations can change drastically the number of cells and links on the image in proliferative tissues. If we had directly adapted the formalism presented in the above papers (Section A.2), the tensor describing cell shape and size changes would have been strongly affected by the changes in cell and link numbers, and would thus have lost a clear interpretation. In addition, divisions and delaminations would have been mixed with rearrangements."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The formalism presented here provides a unified quantitative characterization of tissue deformation and of all cell processes making up this deformation. All these quantities are characterized with dimensionless symmetric tensors that quantify the tissue strain and the elementary strains associated with each cell process, independantly of rigid body movements. It provides a simple balance equation where the tissue strain is equal to the sum of the cell process strains. Each tensor remains biologically interpretable as a separate contribution to the tissue morphogenesis. Importantly, the formalism is valid at arbitrarily large and heterogeneous deformations, whether the tissue is highly proliferative or not, and it is defined in a space of arbitrary dimension, and is therefore directly implementable in two or three dimensions."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After having briefly recalled some basic definitions of deformation in\u00a0continuum mechanics and of the statistical description of a cellular material that constitute our starting points, we define a coarse-grained deformation gradient tensor <math id=\"inf503\"><mi mathvariant=\"bold\">F</mi></math> for a general deformable cellular material (section B). Then we define a coarse-grained strain tensor to quantify the total strain in the cellular material <math id=\"inf504\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>, and we relate it to the strains associated with elementary cell processes (<math id=\"inf505\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>,</mo><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math>) with a simple and general balance equation (section C). Incidentally, this enables us to define the material geometrical (<math id=\"inf506\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math>) and topological (<math id=\"inf507\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math>) strains. Finally, we compare our approach with the ones previously published (section D)."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s39", 
+                        "title": "B Deformation gradient in a cellular material", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Before introducing our statistical description of a general deformable cellular material, we recall some basic notions of finite deformation in\u00a0continuum mechanics (<a href=\"#bib43\">Malvern, 1969</a>). They are used for comparison only, and not used for measurements (section B.1). Then we show how we can define a coarse-grained deformation gradient tensor for such material, and how it is related to our statistical description (section B.2)."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s40", 
+                                "title": "B.1 Continuum mechanics versus statistical description", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s41", 
+                                        "title": "B.1.1 Continuum mechanics of deformable materials", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "A point of the material in its initial or reference configuration is characterized by the vector <math id=\"inf508\"><mover accent=\"true\"><mi>X</mi><mo>\u2192</mo></mover></math>, while <math id=\"inf509\"><mover accent=\"true\"><mi>x</mi><mo>\u2192</mo></mover></math> defines the position of this point in the final or current configuration of the material (at time <math id=\"inf510\"><mi>t</mi></math>). The displacement of this point is <math id=\"inf511\"><mrow><mover accent=\"true\"><mi>u</mi><mo>\u2192</mo></mover><mo>=</mo><mrow><mover accent=\"true\"><mi>x</mi><mo>\u2192</mo></mover><mo>-</mo><mover accent=\"true\"><mi>X</mi><mo>\u2192</mo></mover></mrow></mrow></math>. Rigid body displacements such as translations or rotations of the material moving as a whole obviously generate displacements <math id=\"inf512\"><mrow><mover accent=\"true\"><mi>u</mi><mo>\u2192</mo></mover><mo>\u2260</mo><mn>0</mn></mrow></math>, but do not however generate any stress in the material. It is therefore crucial to define quantities that characterize the material deformation or strain independently of rigid body movements, and especially rotations that can wrongfully contribute to the material strain if they are not treated properly. For this purpose, one must therefore define quantities characterizing the material deformation rather than its displacement, which is done by defining tensors based on the gradient of the displacement, whether adopting a Lagrangian or an Eulerian description, as explained in the following."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Lagrangian quantities refer to <math id=\"inf513\"><mover accent=\"true\"><mi>X</mi><mo>\u2192</mo></mover></math>, as does the Lagrangian gradient <math id=\"inf514\"><mo>\u2207</mo><mo>=</mo><mo>\u2202</mo><mo>/</mo><mo>\u2202</mo><mover><mi>X</mi><mo>\u2192</mo></mover></math>. The displacement gradient <math id=\"inf515\"><mo>\u2207</mo><mover><mi>u</mi><mo>\u2192</mo></mover></math> vanishes for an arbitrary rigid body translation, but not for an arbitrary rigid body rotation. When it is infinitesimal, its symmetrical part determines the infinitesimal deformation <math id=\"inf516\"><mi>\u03b5</mi></math> (also called \u2018infinitesimal strain\u2019):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ25", 
+                                                "label": "(19)", 
+                                                "mathml": "<math><mi>\u03b5</mi><mo>=</mo><mfrac><mrow><mo>\u2207</mo><mover><mi>u</mi><mo>\u2192</mo></mover><mo>+</mo><mo>\u2207</mo><msup><mover><mi>u</mi><mo>\u2192</mo></mover><mi mathvariant=\"normal\">T</mi></msup></mrow><mn>2</mn></mfrac></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "More generally, an arbitrary finite deformation is classically characterized by the \u2018deformation gradient\u2019 tensor:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ26", 
+                                                "label": "(20)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">F</mi><mo>=</mo><mfrac><mrow><mo>\u2202</mo><mover><mi>x</mi><mo>\u2192</mo></mover></mrow><mrow><mo>\u2202</mo><mover><mi>X</mi><mo>\u2192</mo></mover></mrow></mfrac><mo>=</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi><mo>+</mo><mo>\u2207</mo><mover><mi>u</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<math id=\"inf517\"><mi mathvariant=\"bold\">F</mi></math> relates any infinitesimal vector <math id=\"inf518\"><mi>d</mi><mover><mi>X</mi><mo>\u2192</mo></mover></math> of the undeformed material to its deformed state <math id=\"inf519\"><mi>d</mi><mover><mi>x</mi><mo>\u2192</mo></mover></math>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ27", 
+                                                "label": "(21)", 
+                                                "mathml": "<math><mrow><mrow><mi>d</mi><mo>\u2062</mo><mover accent=\"true\"><mi>x</mi><mo>\u2192</mo></mover></mrow><mo>=</mo><mrow><mi mathvariant=\"bold\">F</mi><mo>\u2062</mo><mi>d</mi><mo>\u2062</mo><mover accent=\"true\"><mi>X</mi><mo>\u2192</mo></mover></mrow></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The polar decomposition theorem enables to decompose <math id=\"inf520\"><mi mathvariant=\"bold\">F</mi></math> into the product of a rotation tensor <math id=\"inf521\"><mi mathvariant=\"bold\">\u0398</mi></math> and of a symmetric tensor <math id=\"inf522\"><mi mathvariant=\"bold\">U</mi></math> called the \u2018right stretch tensor\u2019: <math id=\"inf523\"><mrow><mi mathvariant=\"bold\">F</mi><mo>=</mo><mrow><mi mathvariant=\"bold\">\u0398</mi><mo>\u2062</mo><mi mathvariant=\"bold\">U</mi></mrow></mrow></math>. This means that any finite deformation <math id=\"inf524\"><mi mathvariant=\"bold\">F</mi></math> can be decomposed as a stretch of a material (<math id=\"inf525\"><mi mathvariant=\"bold\">U</mi></math>) followed by its rotation (<math id=\"inf526\"><mi mathvariant=\"bold\">\u0398</mi></math>). To quantify the material deformation independently of rigid body movements (translation and rotation), several symmetric deformation tensors (also called \u2018strain tensors\u2019) based on <math id=\"inf527\"><mi mathvariant=\"bold\">F</mi></math> can be defined. A proper strain tensor must be dimensionless, vanish for rigid body movements, and coincide with <math id=\"inf528\"><mi>\u03b5</mi></math> for small deformations. The Green-Lagrange strain tensor <math id=\"inf529\"><mi mathvariant=\"bold\">E</mi></math> involves the right Cauchy-Green strain <math id=\"inf530\"><msup><mi mathvariant=\"bold\">F</mi><mtext>T</mtext></msup><mo>\u2062</mo><mi mathvariant=\"bold\">F</mi><mo>=</mo><msup><mi mathvariant=\"bold\">U</mi><mn>2</mn></msup></math>, and is commonly used:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ28", 
+                                                "label": "(22)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><msup><mi mathvariant=\"bold\">F</mi><mtext>T</mtext></msup><mo>\u2062</mo><mi mathvariant=\"bold\">F</mi><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi><mo>)</mo></mrow><mo>=</mo><mi>\u03b5</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2207</mo><msup><mover><mi>u</mi><mo>\u2192</mo></mover><mtext>T</mtext></msup><mo>\u2207</mo><mover><mi>u</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Equivalently, one can alternatively decompose <math id=\"inf531\"><mi mathvariant=\"bold\">F</mi></math> in the symmetric tensor <math id=\"inf532\"><mi mathvariant=\"bold\">V</mi></math> called the \u2018left stretch tensor\u2019 and the rotation tensor <math id=\"inf533\"><mi mathvariant=\"bold\">\u0398</mi></math>, as <math id=\"inf534\"><mrow><mi mathvariant=\"bold\">F</mi><mo>=</mo><mrow><mi mathvariant=\"bold\">V</mi><mo>\u2062</mo><mi mathvariant=\"bold\">\u0398</mi></mrow></mrow></math>. In this equivalent formulation, the material is this time first rotated with same rotation (<math id=\"inf535\"><mi mathvariant=\"bold\">\u0398</mi></math>), then stretched (<math id=\"inf536\"><mi mathvariant=\"bold\">V</mi></math>). It defines another acceptable strain tensor, this time involving the left Cauchy-Green strain <math id=\"inf537\"><msup><mi mathvariant=\"bold\">FF</mi><mtext>T</mtext></msup><mo>=</mo><msup><mi mathvariant=\"bold\">V</mi><mn>2</mn></msup></math>, as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ29", 
+                                                "label": "(23)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">E</mi><mo>*</mo></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mfenced><mrow><msup><mi mathvariant=\"bold\">FF</mi><mtext>T</mtext></msup><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi></mrow></mfenced><mo>=</mo><mi>\u03b5</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2207</mo><mover><mi>u</mi><mo>\u2192</mo></mover><mo>\u2207</mo><msup><mover><mi>u</mi><mo>\u2192</mo></mover><mi mathvariant=\"normal\">T</mi></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Note that here, as well as throughout this appendix, we use a <math id=\"inf538\"><mo>*</mo></math> to indicate the dimensionless symmetric tensors we use to characterize the strain of the cellular material, and the strains associated to the contributions of each cell process making up the material strain (<a href=\"#equ81\">Equation 75</a>)."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Eulerian quantities refer to <math id=\"inf539\"><mover accent=\"true\"><mi>x</mi><mo>\u2192</mo></mover></math>. This includes kinematic quantities such as the velocity gradient <math id=\"inf540\"><mrow><mi>grad</mi><mo>\u2062</mo><mover accent=\"true\"><mi>v</mi><mo>\u2192</mo></mover></mrow></math>, where <math id=\"inf541\"><mi>grad</mi><mo>=</mo><mo>\u2202</mo><mo>/</mo><mo>\u2202</mo><mover><mi>x</mi><mo>\u2192</mo></mover></math>. The symmetrized velocity gradient is the total deformation rate, which combines the rate of geometrical deformation (related to size and shape changes) and the rate of topological deformation (related to divisions, delaminations and rearrangements)."
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ30", 
+                                                "label": "(24)", 
+                                                "mathml": "<math><mi>grad</mi><mo>\u2062</mo><msup><mover><mi>v</mi><mo>\u2192</mo></mover><mtext>S</mtext></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mrow><mo>(</mo><mi>grad</mi><mo>\u2062</mo><mover><mi>v</mi><mo>\u2192</mo></mover><mo>+</mo><mi>grad</mi><mo>\u2062</mo><msup><mover><mi>v</mi><mo>\u2192</mo></mover><mtext>T</mtext></msup><mo>)</mo></mrow></math>"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s42", 
+                                        "title": "B.1.2 Statistical description of deformable cellular materials", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We now introduce statistical methods actually used for measurements. Their role is to extract, from cell-level details, the relevant information for a continuum mechanics description. These measurement definitions are valid in both two and three dimensions."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s43", 
+                                        "title": "Texture", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The first step consists in defining a texture tensor which statistically characterizes the pattern itself (a \u2018state function\u2019), whose changes correspond to cell processes. Here <math id=\"inf542\"><mi>k</mi></math> labels a neighbor of cell <math id=\"inf543\"><mi>i</mi></math>, the vector <math id=\"inf544\"><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub></math> is the link between the centers of cells <math id=\"inf545\"><mi>i</mi></math> and <math id=\"inf546\"><mi>k</mi></math>. For column vectors, the tensor (or outer) product of <math id=\"inf547\"><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub></math> by itself reads:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ31", 
+                                                "label": "(25)", 
+                                                "mathml": "<math><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>\u2297</mo><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>=</mo><mo>\u2062</mo><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><msubsup><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow><mi>T</mi></msubsup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "while for row vectors <math id=\"inf548\"><mrow><mrow><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>\u2297</mo><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub></mrow><mo>=</mo><mrow><msubsup><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow><mi>T</mi></msubsup><mo>\u2062</mo><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub></mrow></mrow></math>. The total texture <math id=\"inf549\"><mi mathvariant=\"bold\">M</mi></math> of a cell patch <math id=\"inf550\"><mi mathvariant=\"script\">\u2118</mi></math> is defined as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ32", 
+                                                "label": "(26)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">M</mi><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mrow><mi>i</mi><mo>\u2208</mo><mi mathvariant=\"script\">\u2118</mi></mrow></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>k</mi></mfenced></munder></mstyle><msub><mi>w</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>\u2062</mo><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>\u2297</mo><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>N</mi></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mi>w</mi><mo>\u2062</mo><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The texture thus expresses the variance of link length in all directions. Here <math id=\"inf551\"><mrow><mi>i</mi><mo>\u2208</mo><mi mathvariant=\"script\">\u2118</mi></mrow></math> means cells belonging to the cell patch <math id=\"inf552\"><mi mathvariant=\"script\">\u2118</mi></math>, <math id=\"inf553\"><mrow><mo>\u27e8</mo><mi>k</mi><mo>\u27e9</mo></mrow></math> indicates a sum over cells <math id=\"inf554\"><mi>k</mi></math> neighboring cell <math id=\"inf555\"><mi>i</mi></math>, and <math id=\"inf556\"><mi>N</mi></math> is the number of half-links in the patch, in the sense that <math id=\"inf557\"><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub></math> and <math id=\"inf558\"><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>k</mi><mo>\u2062</mo><mi>i</mi></mrow></msub></math> are two \u2018halves\u2019 of the same link connecting the centers of cells <math id=\"inf559\"><mi>i</mi></math> and <math id=\"inf560\"><mi>k</mi></math>. The factor <math id=\"inf561\"><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></math> therefore avoids counting twice each link, and naturally assigns a weight <math id=\"inf562\"><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></math> to a link <math id=\"inf563\"><msub><mover accent=\"true\"><mi mathvariant=\"normal\">\u2113</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub></math> involving a cell <math id=\"inf564\"><mi>i</mi></math> at the patch boundary and having its neighbor <math id=\"inf565\"><mi>k</mi></math> in the neighboring patch. Similarly, if a link belongs to a four-fold vertex at time <math id=\"inf566\"><mi>t</mi></math>, it is counted with a weight <math id=\"inf567\"><mrow><msub><mi>w</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></math>, otherwise <math id=\"inf568\"><mrow><msub><mi>w</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></msub><mo>=</mo><mn>1</mn></mrow></math>. By doing so, when a link is in the process of appearing or disappearing around time <math id=\"inf569\"><mi>t</mi></math>, the associated topological change is attributed half to time interval before <math id=\"inf570\"><mi>t</mi></math> and half to time interval after <math id=\"inf571\"><mi>t</mi></math>. In order to use lighter notations, we drop the <math id=\"inf572\"><mrow><mi>i</mi><mo>\u2062</mo><mi>k</mi></mrow></math> subscripts and rather use sum over half-links like in the last part of <a href=\"#equ32\">Equation 26</a>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The cell texture defined in Equation 3 of (<a href=\"#bib27\">Graner et al., 2008</a>) was divided by the number of links in the cell patch, to be an intensive quantity; this had no drawback in foams or in non-proliferative tissues, as the number of links was constant in good approximation. Conversely, most developing tissues proliferates as they deform, and their number of links can change dramatically. We therefore first define the texture as an extensive quantity (<a href=\"#equ32\">Equation 26</a>)."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s44", 
+                                        "title": "Decomposition of texture changes", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Throughout the appendix, any quantity \u2018Q\u2019 in its initial and final states is labeled with upper and lower cases, respectively namely <math id=\"inf573\"><mi>Q</mi></math> and <math id=\"inf574\"><mi>q</mi></math>, thereby keeping the convention used in continuum mechanics. We write <math id=\"inf575\"><mi mathvariant=\"normal\">\u0394</mi></math> the difference between these two states, final minus initial, and write <math id=\"inf576\"><mi>\u03b4</mi></math> the difference between two successive images of the movie:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ33", 
+                                                "label": "(27)", 
+                                                "mathml": "<math><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi>Q</mi><mo>=</mo><mi>q</mi><mo>-</mo><mi>Q</mi><mo>=</mo><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mi>i</mi><mi>f</mi></munderover></mstyle><mi>\u03b4</mi><mo>\u2062</mo><mi>Q</mi></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Between the initial and final states, due to processes of many different types, the texture of the cell patch <math id=\"inf577\"><mi mathvariant=\"script\">\u2118</mi></math> varies:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ34", 
+                                                "label": "(28)", 
+                                                "mathml": "<math><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi mathvariant=\"bold\">M</mi><mo>=</mo><mi mathvariant=\"bold\">m</mi><mo>-</mo><mi mathvariant=\"bold\">M</mi><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">n</mi></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mi>w</mi><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>-</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">N</mi></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mi>W</mi><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Some links (labeled with subscript 'c' ) are conserved between initial and final states, but their geometry (length and/or direction) may have changed. Conversely, some links in the cell patch have appeared (subscript 'a' ) or disappeared (subscript 'd'), thereby changing the topology of the link network, due to processes such as divisions, apoptoses/delaminations, rearrangements, integrations/nucleation, fusions/coalescences and inward/outward fluxes through the image boundaries. We now split the sums in <a href=\"#equ34\">Equation 28</a> according to these categories and use the fact that for conserved links, <math id=\"inf578\"><mrow><msub><mi>n</mi><mi>c</mi></msub><mo>=</mo><msub><mi>N</mi><mi>c</mi></msub></mrow></math> and <math id=\"inf579\"><mrow><msub><mi>w</mi><mi>c</mi></msub><mo>=</mo><msub><mi>W</mi><mi>c</mi></msub></mrow></math>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ35", 
+                                                "label": "(29)", 
+                                                "mathml": "<math><mo>\u2206</mo><mi mathvariant=\"bold\">M</mi><mo>=</mo><munder><mrow><munder accentunder=\"true\"><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi mathvariant=\"normal\">c</mi></msub></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo mathvariant=\"italic\">\u2062</mo><msub><mi>w</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>-</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi mathvariant=\"normal\">c</mi></msub></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>w</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></mrow><mo>\u23df</mo></munder></mrow><mi mathvariant=\"bold\">G</mi></munder><mo>+</mo><munder><mrow><munder accentunder=\"true\"><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi mathvariant=\"normal\">a</mi></msub></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>w</mi><mi mathvariant=\"normal\">a</mi></msub><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>-</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>N</mi><mi mathvariant=\"normal\">d</mi></msub></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>W</mi><mi mathvariant=\"normal\">d</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo mathvariant=\"italic\">\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></mrow><mo>\u23df</mo></munder></mrow><mi mathvariant=\"bold\">T</mi></munder></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The first term in <a href=\"#equ35\">Equation 29</a> quantifies the total change of texture due to geometrical changes <math id=\"inf580\"><mrow><mo>(</mo><mi mathvariant=\"bold\">G</mi><mo>)</mo></mrow></math> and is measured by the difference of texture calculated over conserved half-links only (number <math id=\"inf581\"><msub><mi>n</mi><mi>c</mi></msub></math>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ36", 
+                                                "label": "(30)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">G</mi><mo>=</mo><msub><mi mathvariant=\"bold\">m</mi><mi mathvariant=\"normal\">c</mi></msub><mo>-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The second term in <a href=\"#equ35\">Equation 29</a> quantifies the total change of texture due to topological changes in the link network <math id=\"inf582\"><mrow><mo>(</mo><mi mathvariant=\"bold\">T</mi><mo>)</mo></mrow></math> and is measured by the difference of texture calculated over appeared and disappeared half-links only (numbers <math id=\"inf583\"><msub><mi>n</mi><mi mathvariant=\"normal\">a</mi></msub></math> and <math id=\"inf584\"><msub><mi>N</mi><mi mathvariant=\"normal\">d</mi></msub></math>, respectively):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ37", 
+                                                "label": "(31)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">T</mi><mo>=</mo><msub><mi mathvariant=\"bold\">m</mi><mi mathvariant=\"normal\">a</mi></msub><mo>-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">d</mi></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<math id=\"inf585\"><mi mathvariant=\"bold\">T</mi></math> can be further broken down by gathering the terms corresponding to the topological changes associated with each specific elementary cell process <math id=\"inf586\"><mo>'</mo><mi>P</mi><mo>'</mo></math> quantified with tensor <math id=\"inf587\"><mi mathvariant=\"bold\">P</mi></math>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ38", 
+                                                "label": "(32)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">T</mi><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder></mstyle><mi mathvariant=\"bold\">P</mi></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ39", 
+                                                "label": "(33)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">P</mi><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi mathvariant=\"normal\">P</mi></msub></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><msub><mi>w</mi><mi mathvariant=\"normal\">P</mi></msub><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>-</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><msub><mi>W</mi><mi mathvariant=\"normal\">P</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <math id=\"inf588\"><msub><mi>n</mi><mi mathvariant=\"normal\">P</mi></msub></math> and <math id=\"inf589\"><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></math> represent the numbers of half-links that respectively appeared and disappeared through cell process <math id=\"inf590\"><mi mathvariant=\"normal\">P</mi></math> between initial and final states. Note that <math id=\"inf591\"><mi mathvariant=\"normal\">P</mi></math> is a mute variable here that either designate <math id=\"inf592\"><mi mathvariant=\"normal\">D</mi></math> (divisions), <math id=\"inf593\"><mi mathvariant=\"normal\">R</mi></math> (rearrangements), <math id=\"inf594\"><mi mathvariant=\"normal\">A</mi></math> (apoptoses/delaminations), <math id=\"inf595\"><mi mathvariant=\"normal\">N</mi></math> (integrations/nucleation), <math id=\"inf596\"><mi mathvariant=\"normal\">C</mi></math> (fusions /coalescences), and <math id=\"inf597\"><mi mathvariant=\"normal\">J</mi></math> (inward/outward fluxes), see <a href=\"#equ21\">Equation 15</a>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Both <math id=\"inf598\"><mi mathvariant=\"bold\">G</mi></math> and <math id=\"inf599\"><mi mathvariant=\"bold\">T</mi></math> are discussed below. Together, they encompass all changes in texture, so that the balance equation reads:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ40", 
+                                                "label": "(34)", 
+                                                "mathml": "<math><mrow><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi mathvariant=\"bold\">M</mi></mrow><mo>=</mo><mrow><mi mathvariant=\"bold\">G</mi><mo>+</mo><mi mathvariant=\"bold\">T</mi></mrow></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The change of texture of the patch of cells between two states therefore contains all the information about geometrical and topological changes at scales ranging for the individual cell to the entire cell patch. The extraction of this information relies on our ability to track the time evolution of every link between the two states and to categorize them."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s45", 
+                                "title": "B.2 Coarse-grained deformation gradient tensor: <math id=\"inf600\"><mi mathvariant=\"bold\">F</mi></math>", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In a cellular material, the material state can be characterized by the discrete links joining the centers of mass of neighbor cells. Together, these links constitute a network of irregular triangles (<a href=\"#media1\">Video 1c</a>). By following those links over time, the material deformation can be characterized as well, and related with elementary cell processes (<a href=\"#media1\">Video 1c\u2013h</a>) (<a href=\"#bib27\">Graner et al., 2008</a>; <a href=\"#bib22\">Etournay et al., 2015</a>; <a href=\"#bib63\">Tlili et al., 2015</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "During growth and morphogenesis, the tissue patches change in shape and size, and their deformation can be characterized in situ by the changes in length and direction of the links that are conserved between successive images."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We now show how we can relate continuum mechanics quantities and the statistical description of a deformable cellular material by building a deformation gradient tensor <math id=\"inf601\"><mi mathvariant=\"bold\">F</mi></math>, not at the cell scale, but rather directly coarse-grained at the cell patch scale (based on the changes of the material links between two states) to quantify the deformation of the material, and by relating it to <math id=\"inf602\"><mi mathvariant=\"bold\">G</mi></math>."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s46", 
+                                        "title": "B.2.1 A simple example: homogeneous geometric deformation", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We now want to detail how we determine the average deformation gradient tensor of a deforming cell patch <math id=\"inf603\"><mi mathvariant=\"bold\">F</mi></math> in the general case, <a href=\"#equ58\">Equation 52</a>. For that purpose, we first illustrate our approach on the simple, hypothetical case of a homogeneous patch deformation, <a href=\"#equ46\">Equation 40</a>. We emphasize that our approach is general and does not rely on such simplification."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In the present paragraph, for the sake of pedagogy, we temporarily assume that the deformation gradient, noted <math id=\"inf604\"><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub></math>, is constant over the whole patch, and that all links are conserved between the initial and final states, implying the conservation of their numbers (<math id=\"inf605\"><mrow><mi>N</mi><mo>=</mo><mi>n</mi></mrow></math>) and weights (<math id=\"inf606\"><mrow><mi>W</mi><mo>=</mo><mi>w</mi></mrow></math> for each link). In this very specific case, the final and initial configurations of each link of the patch are simply related as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ41", 
+                                                "label": "(35)", 
+                                                "mathml": "<math><mover><mi>l</mi><mo>\u2192</mo></mover><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "which is the discrete equivalent of <a href=\"#equ27\">Equation 21</a>. Therefore, multiplying both sides to the right by\u00a0<math id=\"inf607\"><mi>w</mi><msup><mover><mi>l</mi><mo>\u2192</mo></mover><mrow><mo>\u00a0</mo><mi mathvariant=\"normal\">T</mi></mrow></msup></math>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ42", 
+                                                "label": "(36)", 
+                                                "mathml": "<math><mi>w</mi><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>=</mo><mi>w</mi><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo rspace=\"7.5pt\">\u21d2</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mi>w</mi><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mi>w</mi><mo>\u00a0</mo><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "after having summed over all half-links of the patch. Then, <math id=\"inf608\"><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub></math> being here\u00a0constant over the patch, it can be factored out of the sum:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ43", 
+                                                "label": "(37)", 
+                                                "mathml": "<math><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mi>w</mi><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub><mo>\u2062</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mi>w</mi><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Using <a href=\"#equ41\">Equation 35</a> in the right hand side, multiplying by <math id=\"inf609\"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, factoring again <math id=\"inf610\"><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub></math> out of the sum and using the conservation of link numbers and weights yields:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ44", 
+                                                "label": "(38)", 
+                                                "mathml": "<math><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mi>w</mi><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub><mo>\u2062</mo><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>N</mi></munder></mstyle><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mi>W</mi><mo>\u2062</mo><mo>\u00a0</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></mrow></mfenced><mo>\u2062</mo><msubsup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">T</mi></msubsup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "On the left and right hand sides, we now have <math id=\"inf611\"><mi mathvariant=\"bold\">m</mi></math> and <math id=\"inf612\"><mi mathvariant=\"bold\">M</mi></math>, respectively:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ45", 
+                                                "label": "(39)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">m</mi><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mtext>h</mtext></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">MF</mi><mtext>h</mtext></msub><mtext>T</mtext></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Therefore, <math id=\"inf613\"><msub><mi mathvariant=\"bold\">F</mi><mtext>h</mtext></msub></math> fully determines the final texture <math id=\"inf614\"><mi mathvariant=\"bold\">m</mi></math>, like it determines the tensor of geometric changes <math id=\"inf615\"><mi mathvariant=\"bold\">G</mi></math> (<a href=\"#equ36\">Equation 30</a>)"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ46", 
+                                                "label": "(40)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">G</mi><mo>=</mo><msub><mi mathvariant=\"bold\">m</mi><mtext>c</mtext></msub><mo>-</mo><msub><mi mathvariant=\"bold\">M</mi><mtext>c</mtext></msub><mo>=</mo><mi mathvariant=\"bold\">m</mi><mo>-</mo><mi mathvariant=\"bold\">M</mi><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mtext>h</mtext></msub><msubsup><mi mathvariant=\"bold\">MF</mi><mtext>h</mtext><mtext>T</mtext></msubsup><mo>-</mo><mi mathvariant=\"bold\">M</mi></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Note that in this very simple example, the total textures <math id=\"inf616\"><mrow><mi mathvariant=\"bold\">M</mi><mo>,</mo><mi mathvariant=\"bold\">m</mi></mrow></math> and the conserved textures <math id=\"inf617\"><msub><mi mathvariant=\"bold\">M</mi><mtext>c</mtext></msub><mo>,</mo><msub><mi mathvariant=\"bold\">m</mi><mtext>c</mtext></msub></math> coincide since we assumed no topological changes. It is important to note that <math id=\"inf618\"><msub><mi mathvariant=\"bold\">F</mi><mtext>h</mtext></msub></math> can be obtained from the knowledge of the initial and final configurations of the link network in the patch (<a href=\"#equ43\">Equation 37</a>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ47", 
+                                                "label": "(41)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">h</mi></msub><mo>=</mo><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mi>w</mi><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></mrow></mfenced><mo>\u2062</mo><mo>\u00a0</mo><msup><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi>n</mi></munder></mstyle><mi>w</mi><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></mrow></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s47", 
+                                        "title": "B.2.2 General deformation of a cellular material", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In a general deformation of a patch of cells, the deformation is not homogeneous over the patch and some links appear and disappear during the process. In this realistic case, we show here that it is still possible to define a deformation gradient tensor <math id=\"inf619\"><mi mathvariant=\"bold\">F</mi></math> characterizing the patch deformation between the initial and final states, provided that a significant fraction of the links are conserved."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "As mentioned earlier, we do not try to estimate the deformation at the triangle level but we rather directly define a coarse-grained deformation tensor at the patch scale. To do so, in a first step, we generalize <a href=\"#equ47\">Equation 41</a> by defining a tensor <math id=\"inf620\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math> through the following relationship:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ48", 
+                                                "label": "(42)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>=</mo><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi>c</mi></msub></munder></mstyle><msub><mi>w</mi><mi>c</mi></msub><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></mrow></mfenced><mo>\u00a0</mo><mo>\u2062</mo><msup><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi>c</mi></msub></munder></mstyle><msub><mi>w</mi><mi>c</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></mrow></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Importantly, the sum here is only carried out over conserved half-links for which we have <math id=\"inf621\"><mrow><msub><mi>n</mi><mi>c</mi></msub><mo>=</mo><msub><mi>N</mi><mi>c</mi></msub></mrow></math> and <math id=\"inf622\"><mrow><msub><mi>w</mi><mi>c</mi></msub><mo>=</mo><msub><mi>W</mi><mi>c</mi></msub></mrow></math> for each link. Note that <math id=\"inf623\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math> definition both involves final and initial links <math id=\"inf624\"><mover accent=\"true\"><mi>l</mi><mo>\u2192</mo></mover></math> and <math id=\"inf625\"><mover accent=\"true\"><mi>L</mi><mo>\u2192</mo></mover></math>, but it breaks the symmetry between them, <math id=\"inf626\"><mover accent=\"true\"><mi>l</mi><mo>\u2192</mo></mover></math> appearing three times, <math id=\"inf627\"><mover accent=\"true\"><mi>L</mi><mo>\u2192</mo></mover></math> only once. In a second step, we define a similar tensor <math id=\"inf628\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math>, that mirrors the symmetry breaking in <math id=\"inf629\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math> as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ49", 
+                                                "label": "(43)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>=</mo><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi>c</mi></msub></munder></mstyle><msub><mi>w</mi><mi>c</mi></msub><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></mrow></mfenced><mo>\u2062</mo><mo>\u00a0</mo><msup><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mi>c</mi></msub></munder></mstyle><msub><mi>w</mi><mi>c</mi></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></mrow></mfenced><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In <math id=\"inf630\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> expression, <math id=\"inf631\"><mover accent=\"true\"><mi>L</mi><mo>\u2192</mo></mover></math> appears three times, <math id=\"inf632\"><mover accent=\"true\"><mi>l</mi><mo>\u2192</mo></mover></math> only once. <math id=\"inf633\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and <math id=\"inf634\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math> enable the derivation of the final conserved texture <math id=\"inf635\"><msub><mi mathvariant=\"bold\">m</mi><mi>c</mi></msub></math> from the initial one <math id=\"inf636\"><msub><mi mathvariant=\"bold\">M</mi><mi>c</mi></msub></math>, whatever <math id=\"inf637\"><msub><mi mathvariant=\"bold\">M</mi><mi>c</mi></msub></math>. Using successively <a href=\"#equ48 equ49\">Equations 42,43</a>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ50", 
+                                                "label": "(44)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">m</mi><mtext>c</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mtext>c</mtext></msub></munder></mstyle><msub><mi>w</mi><mtext>c</mtext></msub><mo>\u2062</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2062</mo><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mtext>c</mtext></msub></munder></mstyle><msub><mi>w</mi><mtext>c</mtext></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>l</mi><mo>\u2192</mo></mover></mrow></mfenced><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mfenced><mrow><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><msub><mi>n</mi><mtext>c</mtext></msub></munder></mstyle><msub><mi>W</mi><mtext>c</mtext></msub><mo>\u2062</mo><mover><mi>L</mi><mo>\u2192</mo></mover><mo>\u2297</mo><mover><mi>L</mi><mo>\u2192</mo></mover></mrow></mfenced><mo>\u2062</mo><mo>\u00a0</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mtext>T</mtext></msup><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mtext>c</mtext></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mtext>T</mtext></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<math id=\"inf638\"><msub><mi mathvariant=\"bold\">m</mi><mi>c</mi></msub></math> and <math id=\"inf639\"><msub><mi mathvariant=\"bold\">M</mi><mi>c</mi></msub></math> being symmetric tensors, one has:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ51", 
+                                                "label": "(45)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">m</mi><mtext>c</mtext></msub><mo>=</mo><msup><mrow><mo>(</mo><msub><mi mathvariant=\"bold\">m</mi><mtext>c</mtext></msub><mo>)</mo></mrow><mtext>T</mtext></msup><mo>=</mo><msup><mrow><mo>(</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mtext>c</mtext></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mtext>T</mtext></msup><mo>)</mo></mrow><mtext>T</mtext></msup><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mtext>T</mtext></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Therefore"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ52", 
+                                                "label": "(46)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mi mathvariant=\"normal\">T</mi></msup><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mi mathvariant=\"normal\">T</mi></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Both expressions in <a href=\"#equ52\">Equation 46</a> are quite similar to <a href=\"#equ45\">Equation 39</a>, but not as symmetric. We now aim at defining a deformation gradient tensor\u00a0<math id=\"inf640\"><mi mathvariant=\"bold\">F</mi></math>\u00a0restoring this symmetry. We introduce\u00a0<math id=\"inf641\"><mi mathvariant=\"bold\">F</mi></math> as\u00a0the\u00a0intermediate between <math id=\"inf642\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and <math id=\"inf643\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>\u00a0such that it satisfies:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ53", 
+                                                "label": "(47)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">F</mi><mn>2</mn></msup><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<a href=\"#equ52\">Equation 46</a> being true for any symmetric matrix\u00a0<math id=\"inf644\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>, let us temporarily assume that\u00a0<math id=\"inf645\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> can vary independently of <math id=\"inf646\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and\u00a0<math id=\"inf647\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>.\u00a0In that specific case, one can show that <a href=\"#equ52\">Equation 46</a> implies that\u00a0<math id=\"inf648\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and\u00a0<math id=\"inf649\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math> are proportional, namely that:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ54", 
+                                                "label": "(48)", 
+                                                "mathml": "<math><mfrac><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">1</mn></msub><mrow><mo mathvariant=\"bold\">\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">1</mn></msub><mo mathvariant=\"bold\">\u2225</mo></mrow></mfrac><mo mathvariant=\"bold\">=</mo><mfrac><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">0</mn></msub><mrow><mo mathvariant=\"bold\">\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">0</mn></msub><mo mathvariant=\"bold\">\u2225</mo></mrow></mfrac></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Using <a href=\"#equ53\"> <a href=\"#equ54\">Equation 48</a>\u00a0in <a href=\"#equ53\">Equation 47</a> yields:</a>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ55", 
+                                                "label": "(49)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">F</mi><mo>=</mo><msup><mfenced><mfrac><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2225</mo></mrow><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2225</mo></mrow></mfrac></mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>=</mo><msup><mfenced><mfrac><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2225</mo></mrow><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2225</mo></mrow></mfrac></mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>\u00a0</mo><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Then, using <a href=\"#equ55\">Equation 49</a> in <a href=\"#equ50\">Equation 44</a>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ56", 
+                                                "label": "(50)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">m</mi><mi mathvariant=\"normal\">c</mi></msub><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mi mathvariant=\"normal\">T</mi></msup><mo>=</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u00a0</mo><msup><mfenced><mrow><mfrac><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2225</mo></mrow><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2225</mo></mrow></mfrac><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></mrow></mfenced><mi mathvariant=\"normal\">T</mi></msup><mo>=</mo><mfenced close=\"]\" open=\"[\"><mrow><msup><mfenced><mfrac><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2225</mo></mrow><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2225</mo></mrow></mfrac></mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></mrow></mfenced><mo>\u00a0</mo><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><mo>\u00a0</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><msup><mfenced><mfrac><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub><mo>\u2225</mo></mrow><mrow><mo>\u2225</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub><mo>\u2225</mo></mrow></mfrac></mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>\u2062</mo><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></mrow></mfenced><mi mathvariant=\"normal\">T</mi></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Using <a href=\"#equ55\">Equation 49</a>, we finally get:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ57", 
+                                                "label": "(51)", 
+                                                "mathml": "<math><msub><mi mathvariant=\"bold\">m</mi><mi mathvariant=\"normal\">c</mi></msub><mo>=</mo><msub><mi mathvariant=\"bold\">FM</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "and the symmetry in <math id=\"inf650\"><mi mathvariant=\"bold\">F</mi></math>\u00a0of <a href=\"#equ45\">Equation 39</a>\u00a0has been restored. Therefore, knowing the initial conserved texture <math id=\"inf651\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>, <math id=\"inf652\"><mi mathvariant=\"bold\">F</mi></math> fully determines the final conserved texture <math id=\"inf653\"><msub><mi mathvariant=\"bold\">m</mi><mi mathvariant=\"normal\">c</mi></msub></math>, like it determines the tensor of geometric changes <math id=\"inf654\"><mi mathvariant=\"bold\">G</mi></math> (<a href=\"#equ36\">Equation 30</a>)"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ58", 
+                                                "label": "(52)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">G</mi><mo>=</mo><msub><mi mathvariant=\"bold\">m</mi><mi mathvariant=\"normal\">c</mi></msub><mo>-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>=</mo><msub><mi mathvariant=\"bold\">FM</mi><mi mathvariant=\"normal\">c</mi></msub><mo>\u2062</mo><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><mo>-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Although the structure of the cellular network (characterized by <math id=\"inf655\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>), and its deformation (characterized by <math id=\"inf656\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and <math id=\"inf657\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>), are independent (imagine a medium undergoing the same deformation with\u00a0different tilings of it), here\u00a0<math id=\"inf658\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math>\u00a0and <math id=\"inf659\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math> are not independent of <math id=\"inf660\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>\u00a0because their definitions involve\u00a0the links of\u00a0the cellular patch in its initial configuration,\u00a0<math id=\"inf661\"><msub><mover><mi>L</mi><mo>\u2192</mo></mover><mrow><mi>i</mi><mi>k</mi></mrow></msub></math>. Therefore, for a general deformation,\u00a0<math id=\"inf662\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and <math id=\"inf663\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>\u00a0do not necessarily satisfy <a href=\"#equ54\">Equation 48</a>, and the last equality of <a href=\"#equ58\">Equation 52</a> is only approximate.\u00a0Interestingly, in the particular case of small deformations (<math id=\"inf664\"><mfenced close=\"||\" open=\"||\"><mrow><mi mathvariant=\"bold\">F</mi><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi></mrow></mfenced><mo>\u226a</mo><mn>1</mn></math>), <a href=\"#equ57 equ58\">Equations 51 and 52</a> become\u00a0exact to\u00a0linear order, as\u00a0<math id=\"inf665\"><mi mathvariant=\"bold\">F</mi><mo mathvariant=\"bold\">\u00a0</mo><mo mathvariant=\"bold\">=</mo><mo mathvariant=\"bold\">\u00a0</mo><msub><mi mathvariant=\"bold\">F</mi><mi>small</mi></msub></math>\u00a0with <math id=\"inf666\"><msub><mi mathvariant=\"bold\">F</mi><mi>small</mi></msub><mo mathvariant=\"bold\">\u00a0</mo><mo mathvariant=\"bold\">=</mo><mo mathvariant=\"bold\">\u00a0</mo><mfenced><mrow><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">0</mn></msub><mo mathvariant=\"bold\">+</mo><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">1</mn></msub></mrow></mfenced><mo mathvariant=\"bold\">/</mo><mn mathvariant=\"bold\">2</mn></math>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "To implement <a href=\"#equ58\">Equation 52</a> which is later used in <a href=\"#equ65\">Equation 59</a>, and in the following, we define <math id=\"inf667\"><mi mathvariant=\"bold\">F</mi></math> as\u00a0the geometric average of <math id=\"inf668\"><msub><mi mathvariant=\"bold\">F</mi><mn>0</mn></msub></math> and <math id=\"inf669\"><msub><mi mathvariant=\"bold\">F</mi><mn>1</mn></msub></math>, namely\u00a0<math id=\"inf670\"><mi mathvariant=\"bold\">F</mi><mo mathvariant=\"bold\">=</mo><mo mathvariant=\"bold\">\u00a0</mo><msup><mfenced><mrow><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">0</mn></msub><msub><mi mathvariant=\"bold\">F</mi><mn mathvariant=\"bold\">1</mn></msub></mrow></mfenced><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></math>, and calculate it numerically with\u00a0Matlab. We checked that <math id=\"inf671\"><mi mathvariant=\"bold\">F</mi></math> is always real and yields results that are comparable to its approximated version <math id=\"inf672\"><msub><mi mathvariant=\"bold\">F</mi><mi>small</mi></msub></math>, but more accurate as deformations are finite rather than infinitesimal. Indeed, we found that <a href=\"#equ58\">Equation 52</a> is satisfied in very good approximation: defining the error in a given patch at a given\u00a0time as\u00a0<math id=\"inf673\"><mi>\u03b4</mi><mo>=</mo><mfenced close=\"||\" open=\"||\"><mrow><mi mathvariant=\"bold\">G</mi><mo>-</mo><mo>(</mo><msub><mi mathvariant=\"bold\">FM</mi><mi mathvariant=\"normal\">c</mi></msub><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><mo mathvariant=\"bold\">-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"bold\">c</mi></msub><mo>)</mo></mrow></mfenced><mo>/</mo><mfenced close=\"||\" open=\"||\"><mi mathvariant=\"bold\">G</mi></mfenced></math>, we found <math id=\"inf674\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>\u03b4</mi></mfenced><mo>=</mo><mn>2</mn><mo>.</mo><mn>2</mn><mo>\u00a0</mo><msup><mn>10</mn><mrow><mo>\u2212</mo><mn>4</mn></mrow></msup></math>, while we found <math id=\"inf675\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>\u03b4</mi></mfenced><mo>=</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>\u00a0</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></math> when\u00a0using\u00a0<math id=\"inf676\"><msub><mi mathvariant=\"bold\">F</mi><mi>small</mi></msub></math>\u00a0(averages performed over space and time on the dorsal thorax of <a href=\"#media3\">Videos 3</a>,<a href=\"#media4\">4</a>)."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<a href=\"#equ54\">Equation 48</a>\u00a0therefore defines a coarse-grained deformation gradient tensor of the cell patch between the initial and final states, <math id=\"inf677\"><mi mathvariant=\"bold\">F</mi></math>. It is defined for a general deformation that can be large, heterogeneous over the patch and involving topological changes. Being solely based on the conserved links, it only requires that enough links are conserved between the initial and final states.\u00a0Note that <math id=\"inf678\"><mi mathvariant=\"bold\">F</mi></math> is not symmetric in general; it characterizes both the stretch and the rotation of the deforming cell patch."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Although similar to <a href=\"#equ46\">Equation 40</a> obtained in the simple case of homogeneous geometric deformations, <a href=\"#equ58\">Equation 52</a> has a much broader range of application since it characterizes a general deformation of the cell patch.\u00a0<a href=\"#equ58\">Equation 52</a> relates the <math id=\"inf679\"><mi mathvariant=\"bold\">G</mi></math> tensor to the coarse-grained deformation gradient tensor <math id=\"inf680\"><mi mathvariant=\"bold\">F</mi></math> that characterizes the deformation of a cellular material and that was derived from our statistical description. In the following, starting from <math id=\"inf681\"><mi mathvariant=\"bold\">G</mi></math> which has units in squared length, we show how we can build a dimensionless quantity analogous to a strain tensor to quantify the local deformation of a patch of cellular material.\u00a0Importantly, the balance between <math id=\"inf682\"><mi mathvariant=\"bold\">G</mi></math> and the tensors quantifying the contribution of cell processes (<a href=\"#equ21\">Equation 15</a>) is independent of the approximation in <a href=\"#equ58\">Equation 52</a> and\u00a0remains exact at arbitrary finite deformations and regardless of the size of the cell patch."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s48", 
+                        "title": "C Defining and linking material strains to cell process strains", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In the previous section, we have introduced a statistical description based on the links connecting cell elements to define a coarsed-grained deformation gradient tensor <math id=\"inf683\"><mi mathvariant=\"bold\">F</mi></math> quantifying the deformation of a patch of cellular material (<a href=\"#equ53\">Equation 47</a>). However, there is no simple relationship between <math id=\"inf684\"><mi mathvariant=\"bold\">F</mi></math> and the elementary cell processes making up the patch deformation."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the present section, thanks to the relationship linking the change in texture <math id=\"inf685\"><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi mathvariant=\"bold\">M</mi></mrow></math> to geometrical <math id=\"inf686\"><mrow><mo>(</mo><mi mathvariant=\"bold\">G</mi><mo>)</mo></mrow></math> and topological <math id=\"inf687\"><mrow><mo>(</mo><mi mathvariant=\"bold\">T</mi><mo>)</mo></mrow></math> changes in the cellular material (<a href=\"#equ40\">Equation 34</a>) and the relationship between <math id=\"inf688\"><mi mathvariant=\"bold\">G</mi></math> and <math id=\"inf689\"><mi mathvariant=\"bold\">F</mi></math> (<a href=\"#equ58\">Equation 52</a>), we define a proper strain tensor <math id=\"inf690\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> to characterize the total material strain (section C.1) and to relate it to the elementary cell processes making up material deformation, namely cell size and shape changes, divisions, rearrangements, apoptoses/delaminations, integrations, fusions, and inward/outward fluxes (section C.2). To do so, we define dimensionless symmetric tensors <math id=\"inf691\"><mo>(</mo><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup><mo>)</mo></math> that quantify the strains associated with each cell process <math id=\"inf692\"><mi>P</mi></math>. We obtain a balance equation where the cell process strains <math id=\"inf693\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> add up to the total material strain <math id=\"inf694\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>, which incidentally enables to identify the material geometrical (<math id=\"inf695\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math>) and topological (<math id=\"inf696\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math>) strains (section C.3)."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s49", 
+                                "title": "C.1 Strain tensor in a deformable cellular material: <math id=\"inf697\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s50", 
+                                        "title": "C.1.1 Building dimensionless symmetric tensors", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For any tensor <math id=\"inf698\"><mi mathvariant=\"bold\">Q</mi></math> expressed in length squared, such as the terms in <a href=\"#equ38 equ40\">Equations 32,34</a> which typically scale with the number of cells and their squared size, we can define its dimensionless counterpart rescaled by the initial conserved texture of the cell patch <math id=\"inf699\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">QM</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. Note that the factor <math id=\"inf700\"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> is due to the identification with continuum mechanics quantities such as deformation (see <a href=\"#equ29 equ58\">Equations 23,52</a> ). Note also that even when both <math id=\"inf701\"><mi mathvariant=\"bold\">Q</mi></math> and <math id=\"inf702\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> are symmetric, in general <math id=\"inf703\"><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi mathvariant=\"bold\">QM</mi><mi mathvariant=\"normal\">c</mi></msub><msup><mo>\u2062</mo><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> is not, and that two non-parallel conserved links are sufficient to make <math id=\"inf704\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> invertible."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In this work, we focus on relating the changes in tissue size and shape to cell processes.The tissue rotation, which is not studied nor required in the present study, could be addressed as well if needed. Based on our statistical description (34), we therefore aim at defining a symmetric strain tensor for the tissue, and relate it to symmetric tensors characterizing the contribution of each elementary cell process to tissue strain. We therefore directly build a\u00a0dimensionless symmetric tensor corresponding to quantity <math id=\"inf705\"><mi mathvariant=\"bold\">Q</mi></math> as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ59", 
+                                                "label": "(53)", 
+                                                "mathml": "<math><mover><mi mathvariant=\"bold\">Q</mi><mo>~</mo></mover><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>\u2062</mo><mrow><mo>[</mo><msup><msub><mi mathvariant=\"bold\">QM</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>+</mo><mo>\u00a0</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>\u2062</mo><msup><mi mathvariant=\"bold\">Q</mi><mi mathvariant=\"normal\">T</mi></msup><mo>]</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Like a deformation, <math id=\"inf706\"><mover accent=\"true\"><mi mathvariant=\"bold\">Q</mi><mo>~</mo></mover></math> is now expressed without units, e.g. as percents."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s51", 
+                                        "title": "C.1.2 Building <math id=\"inf707\"><mi mathvariant=\"bold\">F</mi></math> based tensors", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We define here three additional tensors based on the coarse-grained deformation gradient <math id=\"inf708\"><mi mathvariant=\"bold\">F</mi></math> that will naturally appear in what follows: <math id=\"inf709\"><mover accent=\"true\"><mi mathvariant=\"bold\">F</mi><mo>\u00af</mo></mover></math>, <math id=\"inf710\"><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow></math> and <math id=\"inf711\"><mi mathvariant=\"bold\">\u03a8</mi></math>. Although <math id=\"inf712\"><mi mathvariant=\"bold\">F</mi></math> is already dimensionless, in the following it will be convenient to have defined the following quantity:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ60", 
+                                                "label": "(54)", 
+                                                "mathml": "<math><mover><mi mathvariant=\"bold\">F</mi><mo>\u00af</mo></mover><mo>=</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><msup><mo>\u2062</mo><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>\u00a0</mo><mi mathvariant=\"bold\">F</mi><mo>\u2062</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "By isolating <math id=\"inf713\"><mi mathvariant=\"bold\">F</mi></math> and using the commutator of two tensors <math id=\"inf714\"><mrow><mo>[</mo><mi mathvariant=\"bold\">A</mi><mo>,</mo><mo>\u00a0</mo><mi mathvariant=\"bold\">B</mi><mo>]</mo></mrow><mo>=</mo><mi mathvariant=\"bold\">AB</mi><mo>-</mo><mi mathvariant=\"bold\">BA</mi></math>, we get:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ61", 
+                                                "label": "(55)", 
+                                                "mathml": "<math><mstyle><mtable columnalign=\"left left left\"><mtr><mtd><menclose notation=\"top\"><mi mathvariant=\"bold\">F</mi></menclose></mtd><mtd><mo mathvariant=\"bold\">=</mo></mtd><mtd><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><msup><mo>\u2062</mo><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>\u00a0</mo><mfenced><mrow><msub><mi mathvariant=\"bold\">FM</mi><mi mathvariant=\"normal\">c</mi></msub><mo mathvariant=\"bold\">\u00a0</mo><mo>+</mo><mo>\u00a0</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mi mathvariant=\"bold\">F</mi><mo>-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mi mathvariant=\"bold\">F</mi></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd><mo mathvariant=\"bold\">=</mo></mtd><mtd><mi mathvariant=\"bold\">F</mi><mo mathvariant=\"bold\">\u00a0</mo><mo mathvariant=\"bold\">+</mo><mo mathvariant=\"bold\">\u00a0</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo mathvariant=\"bold\">\u00a0</mo><mfenced><mrow><msub><mi mathvariant=\"bold\">FM</mi><mi mathvariant=\"normal\">c</mi></msub><mo mathvariant=\"bold\">-</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mi mathvariant=\"bold\">F</mi></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd><mo mathvariant=\"bold\">=</mo></mtd><mtd><mi mathvariant=\"bold\">F</mi><mo mathvariant=\"bold\">\u00a0</mo><mo mathvariant=\"bold\">+</mo><mo mathvariant=\"bold\">\u00a0</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>\u00a0</mo><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>,</mo><mo>\u00a0</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>]</mo></mtd></mtr><mtr><mtd></mtd><mtd><mo mathvariant=\"bold\">=</mo></mtd><mtd><mi mathvariant=\"bold\">F</mi><mo mathvariant=\"bold\">\u00a0</mo><mo mathvariant=\"bold\">+</mo><mo mathvariant=\"bold\">\u00a0</mo><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mtd></mtr></mtable></mstyle></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where we have introduced the new quantity:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ62", 
+                                                "label": "(56)", 
+                                                "mathml": "<math><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow><mo>=</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><msup><mo>\u2062</mo><mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mo>\u00a0</mo><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>,</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>]</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<math id=\"inf715\"><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow></math> is therefore a dimensionless tensor which represents the difference between <math id=\"inf716\"><mover accent=\"true\"><mi mathvariant=\"bold\">F</mi><mo>\u00af</mo></mover></math> and <math id=\"inf717\"><mi mathvariant=\"bold\">F</mi></math>. It only vanishes non trivially when <math id=\"inf718\"><mi mathvariant=\"bold\">F</mi></math> and <math id=\"inf719\"><msub><mi mathvariant=\"bold\">M</mi><mi>c</mi></msub></math> commute, and it will be used in <a href=\"#equ65 equ68\">Equations 59, 62</a>. Note that:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ63", 
+                                                "label": "(57)", 
+                                                "mathml": "<math><msup><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow><mi mathvariant=\"normal\">T</mi></msup><mo>=</mo><msup><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>,</mo><mo>\u00a0</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>]</mo></mrow><mi mathvariant=\"normal\">T</mi></msup><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo mathvariant=\"bold\">-</mo><mn mathvariant=\"bold\">1</mn></mrow></msup><mo>=</mo><mrow><mo>[</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>,</mo><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><mo rspace=\"4.2pt\">]</mo></mrow><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo mathvariant=\"bold\">-</mo><mn mathvariant=\"bold\">1</mn></mrow></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Finally, we define the tensor <math id=\"inf720\"><mi mathvariant=\"bold\">\u03a8</mi></math>, a quantity with the same unit as <math id=\"inf721\"><mi mathvariant=\"bold\">G</mi></math> which expresses this commutator and that\u00a0will be used in <a href=\"#equ69\"> <a href=\"#equ66 equ67 equ68 equ69\">Equations 60\u201363</a>:</a>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ64", 
+                                                "label": "(58)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">\u03a8</mi><mo>=</mo><mi mathvariant=\"bold\">F</mi><mo>\u2062</mo><mrow><mo>[</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>,</mo><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><mo>]</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Like <math id=\"inf722\"><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow></math>, <math id=\"inf723\"><mi mathvariant=\"bold\">\u03a8</mi></math> is linked to the non-commutation between <math id=\"inf724\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> and <math id=\"inf725\"><mi mathvariant=\"bold\">F</mi></math>, which occurs when <math id=\"inf726\"><mi mathvariant=\"bold\">F</mi></math> contains some rotation or when its stretch is not aligned with the initial direction of cell elongation, namely with <math id=\"inf727\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> eigenvectors. One can show that it also contains a part of a \u2018corotational derivative\u2019 which makes the rotational transport of deformation objective (<a href=\"#bib43\">Malvern, 1969</a>). It is not symmetric and not dimensionless, having the same units as <math id=\"inf728\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>, namely square length."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s52", 
+                                        "title": "C.1.3 Total material strain <math id=\"inf729\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We now derive our final expression of the total tissue strain tensor <math id=\"inf730\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> that will be used throughout this study to quantify local deformation of the tissue. Note that \u2018total\u2019 here means that <math id=\"inf731\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> will quantify the tissue strain regardless of its origin, namely gathering geometrical and topological strains together. Using <a href=\"#equ58\">Equations 52,\u00a057</a>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ65", 
+                                                "label": "(59)", 
+                                                "mathml": "<math><mstyle><mtable columnalign=\"left left left\"><mtr><mtd><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><msub><mi mathvariant=\"bold\">GM</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup></mtd><mtd><mo>\u2248</mo></mtd><mtd><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><msub><mi mathvariant=\"bold\">FM</mi><mi mathvariant=\"normal\">c</mi></msub><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><mi mathvariant=\"bold\">F</mi><mo>\u2062</mo><msup><mover><mi mathvariant=\"bold\">F</mi><mo>\u00af</mo></mover><mi mathvariant=\"normal\">T</mi></msup><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><msup><mi mathvariant=\"bold\">FF</mi><mi mathvariant=\"normal\">T</mi></msup><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi></mrow></mfenced><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi mathvariant=\"bold\">F</mi><mo>[</mo><mi mathvariant=\"bold\">F</mi><msup><mo>]</mo><mi mathvariant=\"normal\">T</mi></msup></mtd></mtr></mtable><mo>\u00a0</mo></mstyle></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Using <a href=\"#equ29 equ63 equ64\">Equations 23,57,58</a>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ66", 
+                                                "label": "(60)", 
+                                                "mathml": "<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">GM</mi><mi mathvariant=\"bold\">c</mi></msub><mrow><mo mathvariant=\"bold\">-</mo><mn mathvariant=\"bold\">1</mn></mrow></msup><mo mathvariant=\"bold\">\u00a0</mo><mo mathvariant=\"bold\">\u2248</mo><mo mathvariant=\"bold\">\u00a0</mo><msup><mi mathvariant=\"bold\">E</mi><mo>*</mo></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mrow><mo>(</mo><mi mathvariant=\"bold\">F</mi><mo>\u2062</mo><mrow><mo>[</mo><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mo>,</mo><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><mo>]</mo></mrow><mo>)</mo></mrow><mo>\u2062</mo><mo>\u00a0</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo mathvariant=\"bold\">-</mo><mn mathvariant=\"bold\">1</mn></mrow></msup><mo>=</mo><msup><mi mathvariant=\"bold\">E</mi><mo>*</mo></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mi mathvariant=\"bold\">\u03a8</mi><mo>\u2062</mo><msup><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub><mrow><mo mathvariant=\"bold\">-</mo><mn mathvariant=\"bold\">1</mn></mrow></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Finally, using definition (53), we get:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ67", 
+                                                "label": "(61)", 
+                                                "mathml": "<math><mover><mi mathvariant=\"bold\">G</mi><mo mathvariant=\"bold\">~</mo></mover><mo>\u00a0</mo><mo>\u2248</mo><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">E</mi><mo>*</mo></msup><mo>+</mo><mover><mi mathvariant=\"bold\">\u03a8</mi><mo mathvariant=\"bold\">~</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We find that <math id=\"inf732\"><mover accent=\"true\"><mi mathvariant=\"bold\">G</mi><mo>~</mo></mover></math> is the sum of an actual strain tensor <math id=\"inf733\"><msup><mi mathvariant=\"bold\">E</mi><mo>*</mo></msup></math> (<a href=\"#equ29\">Equation 23</a>) and of the dimensionless symmetric version of <math id=\"inf734\"><mi mathvariant=\"bold\">\u03a8</mi></math>, namely <math id=\"inf735\"><mover accent=\"true\"><mi mathvariant=\"bold\">\u03a8</mi><mo>\u0303</mo></mover></math> which reads:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ68", 
+                                                "label": "(62)", 
+                                                "mathml": "<math><mover><mi mathvariant=\"bold\">\u03a8</mi><mo>~</mo></mover><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>\u2062</mo><mrow><mo>(</mo><mi mathvariant=\"bold\">F</mi><mo>\u2062</mo><msup><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow><mi mathvariant=\"normal\">T</mi></msup><mo>+</mo><mrow><mo>[</mo><mi mathvariant=\"bold\">F</mi><mo>]</mo></mrow><mo>\u2062</mo><msup><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"normal\">T</mi></msup><mo>)</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<math id=\"inf736\"><mover accent=\"true\"><mi mathvariant=\"bold\">\u03a8</mi><mo>\u0303</mo></mover></math>\u00a0vanishes when <math id=\"inf737\"><mi mathvariant=\"bold\">F</mi></math> and <math id=\"inf738\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> commute, which occurs when <math id=\"inf739\"><mi mathvariant=\"bold\">F</mi></math> both has its rotation tensor equal to <math id=\"inf740\"><mi mathvariant=\"double-struck\">\ud835\udfd9</mi></math>, and its stretch tensor commutes, i.e. shares the same eigenvectors, with <math id=\"inf741\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math>. In other words, <math id=\"inf742\"><mover accent=\"true\"><mi mathvariant=\"bold\">\u03a8</mi><mo>\u0303</mo></mover></math> vanishes when <math id=\"inf743\"><mi mathvariant=\"bold\">F</mi></math> both contains no rotation and has its stretch along the same axis as the average cell elongation axis within the patch."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Therefore, in order to use an actual strain tensor to properly quantify local changes in size and shape of the cellular material, namely independently of rigid body movements including rotation, we define the <math id=\"inf744\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> tensor as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ69", 
+                                                "label": "(63)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><mover><mi mathvariant=\"bold\">G</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">\u03a8</mi><mo>~</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "and from <a href=\"#equ67\">Equation 61</a> we have:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ70", 
+                                                "label": "(64)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>\u00a0</mo><mo>\u2248</mo><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">E</mi><mo>*</mo></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>\u2062</mo><mrow><mo>(</mo><msup><mi mathvariant=\"bold\">FF</mi><mi mathvariant=\"normal\">T</mi></msup><mo>-</mo><mi mathvariant=\"double-struck\">\ud835\udfd9</mi><mo>)</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "<math id=\"inf745\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> is therefore a proper strain tensor, formally very similar to\u00a0the widely used Green-Lagrange strain tensor (<a href=\"#equ28 equ29\">Equations 22,23</a>). When deformations are small\u00a0(<math id=\"inf746\"><mo>\u2225</mo><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>\u2225</mo><mo>\u226a</mo><mn>1</mn></math>), <a href=\"#equ70\">Equation 64</a> becomes exact to linear order, and\u00a0<math id=\"inf747\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> isotropic part (its trace) quantifies the dilation of the patch of cellular material between its initial and its final states, namely tissue change in size. Its anisotropic part (its deviator) quantifies the local contraction-elongation (CE) (or shear) of the cellular material, and we call it tissue morphogenesis in our case."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s53", 
+                                "title": "C.2 Linking material strain to cell processes", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In this section, we relate the newly defined tissue strain tensor <math id=\"inf748\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>\u00a0(<a href=\"#equ69\">Equation 63</a>)\u00a0to all elementary cell processes, namely cell size and shape changes, divisions, rearrangements, apoptoses/delaminations, integrations, fusions, and inward/outward fluxes. This will enable the definition of meaningful tensors to characterize quantitatively the strains associated with each cell process."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "First, now that we have shown that one can build a proper strain tensor to characterize tissue deformation based on <math id=\"inf749\"><mi mathvariant=\"bold\">G</mi></math>, we rewrite <a href=\"#equ40\">Equation 34</a> using <a href=\"#equ38\">Equation 32</a>, and we use <a href=\"#equ59\">Equation 53</a> to make all symmetric tensors dimensionless:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ71", 
+                                        "label": "(65)", 
+                                        "mathml": "<math><mover><mi mathvariant=\"bold\">G</mi><mo>~</mo></mover><mo>=</mo><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>-</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder></mstyle><mover><mi mathvariant=\"bold\">P</mi><mo>~</mo></mover></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Using <a href=\"#equ69\">Equation 63</a> to make <math id=\"inf750\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> appear, we get:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ72", 
+                                        "label": "(66)", 
+                                        "mathml": "<math><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><mi mathvariant=\"normal\">\u0394</mi><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">\u03a8</mi><mo mathvariant=\"bold\">~</mo></mover><mo>-</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder><mover><mi mathvariant=\"bold\">P</mi><mo>~</mo></mover></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Now we have a first balance equation linking the tissue strain <math id=\"inf751\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> to tensors quantifying cell processes. Indeed, <math id=\"inf752\"><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mover accent=\"true\"><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover></mrow></math> is related to the cell size and shape changes in the patch between the initial and final states (<a href=\"#bib27\">Graner et al., 2008</a>), while the tensors <math id=\"inf753\"><mover accent=\"true\"><mi mathvariant=\"bold\">P</mi><mo>~</mo></mover></math> quantify the changes in the link network topology due to each cell process <math id=\"inf754\"><mi>P</mi></math>. However, to have tensors that meaningfully and unambiguously characterize the contribution of each elementary cell process to tissue strain requires some additional steps detailed below."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When the number of half-links in the patch varies from <math id=\"inf755\"><mi>N</mi></math> to <math id=\"inf756\"><mi>n</mi></math> between the initial and final states, the variation in texture has two entangled contributions, one due to the cell size and shape changes, and one due to the changes in number of half-links. They can be disentangled by rewriting <math id=\"inf757\"><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mover accent=\"true\"><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover></mrow></math> as follows:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ73", 
+                                        "label": "(67)", 
+                                        "mathml": "<math><mi mathvariant=\"normal\">\u0394</mi><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>=</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>=</mo><mrow><mo>(</mo><mfrac><mi>N</mi><mi>n</mi></mfrac><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mfrac><mrow><mi>n</mi><mo>-</mo><mi>N</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The first term in <a href=\"#equ73\">Equation 67</a>, by renormalizing the final texture <math id=\"inf758\"><mover accent=\"true\"><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover></math> by the ratio <math id=\"inf759\"><mfrac><mi>N</mi><mi>n</mi></mfrac></math>, quantifies the cell size and shape changes independently of the changes in half-link number in the patch. The second term in <a href=\"#equ73\">Equation 67</a> involves the total difference in half-link numbers in the cell patch between the initial and final states, <math id=\"inf760\"><mrow><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi>N</mi></mrow><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mi>N</mi></mrow></mrow></math>. Importantly, this difference can be decomposed into the sum of the changes in half-link number due to each elementary cell process <math id=\"inf761\"><mi>P</mi></math> that impacts the network topology <math id=\"inf762\"><mo>(</mo><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub><mo>=</mo><msub><mi>n</mi><mi mathvariant=\"normal\">P</mi></msub><mo>-</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub><mo>)</mo></math>:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ74", 
+                                        "label": "(68)", 
+                                        "mathml": "<math><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi>N</mi><mo>=</mo><mi>n</mi><mo>-</mo><mi>N</mi><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder></mstyle><mrow><mo>(</mo><msub><mi>n</mi><mi mathvariant=\"normal\">P</mi></msub><mo>-</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder></mstyle><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<math id=\"inf763\"><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></math> therefore quantifies the contribution of each topological process to the total change in half-link number within the cell patch. <math id=\"inf764\"><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub><mo>&gt;</mo><mn>0</mn></math> for divisions, integrations or inward fluxes since those cell processes correspond to a net creation of half-links; <math id=\"inf765\"><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub><mo>&lt;</mo><mn>0</mn></math> for apoptoses/delaminations, fusions or outward fluxes since those cell processes correspond to a net loss of half-links; and <math id=\"inf766\"><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub><mo>\u00a0</mo><mo>\u2248</mo><mo>\u00a0</mo><mn>0</mn></math> for rearrangements since they mostly conserve the number of links, the only exception involving cells at the image boundaries."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Combining <a href=\"#equ73 equ74\">Equations 67,68</a> one\u00a0can therefore rewrite <a href=\"#equ72\">Equation 66</a> as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ75", 
+                                        "label": "(69)", 
+                                        "mathml": "<math><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><munder><munder accentunder=\"true\"><mfenced><mrow><mfrac><mi>N</mi><mi>n</mi></mfrac><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">\u03a8</mi><mo mathvariant=\"bold\">~</mo></mover></mrow></mfenced><mo>\u23df</mo></munder><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></munder><mo>+</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder></mstyle><munder><munder accentunder=\"true\"><mfenced><mrow><mfrac><mrow><mi mathvariant=\"normal\">\u0394</mi><mo mathvariant=\"italic\">\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></mrow><mi>n</mi></mfrac><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">P</mi><mo>~</mo></mover></mrow></mfenced><mo>\u23df</mo></munder><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></munder></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where each <math id=\"inf767\"><mfrac><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></mrow><mi>n</mi></mfrac><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover></math> term related to the change in half-link number due to each topological process <math id=\"inf768\"><mi>P</mi></math> has been gathered with its corresponding tensor <math id=\"inf769\"><mover accent=\"true\"><mi mathvariant=\"bold\">P</mi><mo>~</mo></mover></math> in the sum, thereby gathering all terms impacted by topological changes."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We can now define our final expressions for the tensors representing the strains of elementary cell processes contributing to tissue strain:"
+                                    }, 
+                                    {
+                                        "type": "list", 
+                                        "prefix": "bullet", 
+                                        "items": [
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "the first term of <a href=\"#equ75\">Equation 69</a> defines the tensor quantifying the contribution of changes of cell size and shape to the tissue strain <math id=\"inf770\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>. It represents the geometrical strain in the tissue and is called <math id=\"inf771\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> (see section C.3.1)."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "the second term of <a href=\"#equ75\">Equation 69</a> represents the total topological strain in the tissue and is called <math id=\"inf772\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math>. Each term of the sum over topological processes defines the tensor <math id=\"inf773\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> quantifying the contribution of the cell process <math id=\"inf774\"><mi>P</mi></math> to total tissue topological strain <math id=\"inf775\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math> (see section C.3.2)."
+                                                }
+                                            ]
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "With those new notations <a href=\"#equ38 equ75\">Equations 32,69</a> therefore read:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ76", 
+                                        "label": "(70)", 
+                                        "mathml": "<math><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo mathvariant=\"bold\">=</mo><mo mathvariant=\"bold\">\u00a0</mo><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ77", 
+                                        "label": "(71)", 
+                                        "mathml": "<math><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup><mo mathvariant=\"bold\">=</mo><mstyle displaystyle=\"true\"><munder><mo mathvariant=\"bold\">\u2211</mo><mi mathvariant=\"bold\">P</mi></munder></mstyle><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The total tissue strain tensor <math id=\"inf776\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> can therefore be expressed as the sum of the geometrical strain tensor <math id=\"inf777\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> and of the total topological strain tensor <math id=\"inf778\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math>. The latter can be further broken down into elementary topological strains tensors <math id=\"inf779\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> associated with each cell process changing the link network topology. We detail and comment these new definitions in the next sections."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s54", 
+                                "title": "C.3 Material geometrical and topological strains, cell process strains", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s55", 
+                                        "title": "C.3.1 Geometrical strain <math id=\"inf780\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math>", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The first term in <a href=\"#equ75\">Equation 69</a> defines the <math id=\"inf781\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> tensor as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ78", 
+                                                "label": "(72)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>=</mo><mfrac><mi>N</mi><mi>n</mi></mfrac><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">M</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">\u03a8</mi><mo>~</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "This tensor quantifies the average cell size and shape changes in the patch (via its trace and deviator, respectively) and their contribution to the total patch deformation (or strain), between the initial and final states. Being solely impacted by the changes of cell size and shape in the patch, <math id=\"inf782\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> therefore represents the geometrical strain of the tissue, in opposition to the topological strain (<math id=\"inf783\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math>) that is solely impacted by changes of cell topology in the patch (see section C.3.2). Thus, in cases where tissue deformation solely arises from\u00a0cell shape and size changes (or geometrical deformations), one has the exact equality <math id=\"inf784\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math>, as illustrated in simulations of <a href=\"#fig2\">Figure 2a</a>, <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1e</a> and <a href=\"#media2\">Video 2a,j</a>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "As explained in section C.2, <math id=\"inf785\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> is independent of changes in the numbers of links or cells. This point is well illustrated by our simulations of cell patches deforming through divisions, delaminations, integrations, significantly changing the number of cells in the patch, but where cell sizes and shapes almost totally recovered to their initial states, one finds <math id=\"inf786\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>\u2248</mo><mo>\u00a0</mo><mn>0</mn></math> (<a href=\"#fig2\">Figure 2b,d</a> and <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1a</a>, <a href=\"#media2\">Video 2b-e</a>)."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Importantly, <math id=\"inf787\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> is independent of rigid body movements including rotations, as a strain tensor should. This means that in the case of a pure rotation, <math id=\"inf788\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> vanishes; in the case of a stretch plus a rotation, <math id=\"inf789\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> is the same as for a pure stretch. A direct consequence of this property is that <math id=\"inf790\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> depends on the path followed between the initial and final states. These two properties are illustrated by our last two simulations where: (i) a patch elongated along the <math id=\"inf791\"><mi>x</mi></math> axis made of cells elongated in the same direction is rotated anti-clockwise to result in the exact same patch oriented along the <math id=\"inf792\"><mi>y</mi></math> axis (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1d</a>, <a href=\"#media2\">Video 2i</a>); (ii) The same initial patch of case (i) now undergoes a contraction-elongation along the <math id=\"inf793\"><mi>y</mi></math> axis, resulting in a patch with same aspect ratio but now oriented along the <math id=\"inf794\"><mi>y</mi></math> axis, very similar to the rotated one in (ii) (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1e</a>, <a href=\"#media2\">Video 2j</a>). Although the initial and final states of those two simulations are almost identical, in case (i) both tissue strain <math id=\"inf795\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> and geometrical strain <math id=\"inf796\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> are null (within segmentation errors), in sharp contrast to case (ii) where significant tissue and geometrical strains are measured leading to <math id=\"inf797\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> (within segmentation errors). <math id=\"inf798\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math> definition (<a href=\"#equ78\">Equation 72</a>) is therefore one of the main innovations and improvements of this formalism. This new definition also has important consequences on the definitions of all other processes, as described in Section C.3.2."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s56", 
+                                        "title": "C.3.2 Topological strain <math id=\"inf799\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math> and cell process strains <math id=\"inf800\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math>", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The second term in <a href=\"#equ75\">Equation 69</a> defines the <math id=\"inf801\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> tensors as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ79", 
+                                                "label": "(73)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>N</mi><mi>P</mi></msub></mrow><mi>n</mi></mfrac><mo>\u2062</mo><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover><mo>-</mo><mover><mi mathvariant=\"bold\">P</mi><mo>~</mo></mover></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <math id=\"inf802\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> designate the tensor quantifying the strains associated to the topological changes in the link network associated with either divisions (<math id=\"inf803\"><msup><mi mathvariant=\"bold\">D</mi><mo>*</mo></msup></math>), rearrangements (<math id=\"inf804\"><msup><mi mathvariant=\"bold\">R</mi><mo>*</mo></msup></math>), apoptoses/delaminations (<math id=\"inf805\"><msup><mi mathvariant=\"bold\">A</mi><mo>*</mo></msup></math>), integrations (<math id=\"inf806\"><msup><mi mathvariant=\"bold\">N</mi><mo>*</mo></msup></math>), fusions (<math id=\"inf807\"><msup><mi mathvariant=\"bold\">C</mi><mo>*</mo></msup></math>) and inward/outward fluxes (<math id=\"inf808\"><msup><mi mathvariant=\"bold\">J</mi><mo>*</mo></msup></math>) between initial and final states. <a href=\"#equ75\">Equation 69</a> shows that each of these tensors represents the contribution of each cell process to the total tissue strain <math id=\"inf809\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Importantly, in order to fully disentangle cell size and shape changes from topology changes in the patch, our definition of <math id=\"inf810\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math>correctly\u00a0characterizes changes in\u00a0cell shapes and sizes, regardless of changes in cell numbers (<a href=\"#equ73\">Equation 67</a>). For each tensor quantifying topological cell process <math id=\"inf811\"><mi>P</mi></math>, this resulted in the extra term <math id=\"inf812\"><mfrac><mrow><mi mathvariant=\"normal\">\u0394</mi><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></mrow><mi>n</mi></mfrac><mover><mi mathvariant=\"bold\">m</mi><mo>~</mo></mover></math> related to the change in half-link number due to this cell processes <math id=\"inf813\"><mi mathvariant=\"normal\">\u0394</mi><msub><mi>N</mi><mi mathvariant=\"normal\">P</mi></msub></math> (<a href=\"#equ74\">Equation 68</a>). Each tensor <math id=\"inf814\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> thereby gathers all \u2018topological\u2019 terms due to process <math id=\"inf815\"><mi>P</mi></math> (<a href=\"#equ79\">Equation 73</a>)."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "All these contributions add up to the tensor <math id=\"inf816\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math> that therefore gathers all the topological changes in the link network between initial and final states, regardless of their origin (<a href=\"#equ77\">Equation 71</a>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ80", 
+                                                "label": "(74)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup><mo>=</mo><mstyle displaystyle=\"true\"><munder><mo>\u2211</mo><mi mathvariant=\"normal\">P</mi></munder></mstyle><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">D</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">R</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">A</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">N</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">C</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">J</mi><mo>*</mo></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where we have made explicit every tensor in the sum. Being solely impacted by the changes of cell topology in the patch, <math id=\"inf817\"><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup></math> therefore represents the topological strain of the tissue, in opposition to the geometrical strain (<math id=\"inf818\"><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup></math>) that is solely impacted by changes of cell size and shape in the patch (see section C.3.1). Together with the geometrical strain, it amounts to the total strain of the patch of cellular material (<a href=\"#equ76\">Equation 70</a>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ81", 
+                                                "label": "(75)", 
+                                                "mathml": "<math><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">D</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">R</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">A</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">N</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">C</mi><mo>*</mo></msup><mo>+</mo><msup><mi mathvariant=\"bold\">J</mi><mo>*</mo></msup></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "This balance equation is the key equation of our formalism as it simply expresses the tissue strain between two arbitrary states as the sum of tensors quantifying the respective strains due to all cell processes: cell size and shape changes, cell divisions, cell rearrangements, cell apoptoses/delaminations, cell integrations/nucleations, cell coalescences/fusions and cell inward/outward fluxes. Note that all tensors, including <math id=\"inf819\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>, are determined separately, and that we always check that the balance of <a href=\"#equ81\">Equation 75</a> is satisfied."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Finally, since by construction each change in links is attributed to one and only one process, each cell process tensor is unambiguously disentangled from the others; this constitutes the last major improvement of this formalism. Indeed, directly resulting from the additivity of each contribution <math id=\"inf820\"><msup><mi mathvariant=\"bold\">P</mi><mo>*</mo></msup></math> to the total topological strain, when the cell patch deforms solely through one topological cell process, this process equals <math id=\"inf821\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math>. Taking the apoptoses/delaminatione <math id=\"inf822\"><msup><mi mathvariant=\"bold\">A</mi><mo>*</mo></msup></math> as example, one has <math id=\"inf823\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">T</mi><mo>*</mo></msup><mo>=</mo><msup><mi mathvariant=\"bold\">A</mi><mo>*</mo></msup><mo>\u00a0</mo><mi>and</mi><mo>\u00a0</mo><msup><mi mathvariant=\"bold\">S</mi><mo>*</mo></msup><mo>=</mo><mn>0</mn></math>. In this example, the tissue strain is all accounted for by the topological strain due to apoptoses/delaminations, the geometrical strain being null. This point is illustrated for each process in\u00a0our simulations by\u00a0testing their measurement (<a href=\"#fig2\">Figure 2</a> and <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>, <a href=\"#media2\">Video 2</a>). Note that most of our simulations being disordered to be realistic, we cannot prevent some occurrences of rearrangements and cell size and shape changes, hence their residual measured contributions in our balances."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Below, we comment each cell process strain more specifically:"
+                                            }, 
+                                            {
+                                                "type": "list", 
+                                                "prefix": "bullet", 
+                                                "items": [
+                                                    [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "the contribution of divisions. It includes the newly appeared link between the two \u2018sister\u2019 cells (link in dark green in <a href=\"#fig1\">Figure 1a,b</a>), as well as the changes in link network topology that involve the neighboring cells (links in green in <a href=\"#fig1\">Figure 1a,b</a>). Note that, in parallel to <math id=\"inf824\"><msup><mi mathvariant=\"bold\">D</mi><mo>*</mo></msup></math>, we build the tensor <math id=\"inf825\"><msubsup><mi mathvariant=\"bold\">D</mi><mn>0</mn><mo>*</mo></msubsup></math> which is solely based on the links between sister cells. <math id=\"inf826\"><msubsup><mi mathvariant=\"bold\">D</mi><mn mathvariant=\"bold\">0</mn><mo mathvariant=\"bold\">*</mo></msubsup></math> is not a contribution of divisions to morphogenesis but rather a way to quantify tensorially (ie, with amplitude, anisotropy and direction) the average orientation of cell divisions. When many cells divide in the same direction, <math id=\"inf827\"><msubsup><mi mathvariant=\"bold\">D</mi><mn mathvariant=\"bold\">0</mn><mo mathvariant=\"bold\">*</mo></msubsup></math> is represented with a large bar in this direction. Conversely, a small bar for <math id=\"inf828\"><msubsup><mi mathvariant=\"bold\">D</mi><mn mathvariant=\"bold\">0</mn><mo mathvariant=\"bold\">*</mo></msubsup></math> reflects either a low proliferation, or a disorder in division orientation."
+                                                        }
+                                                    ], 
+                                                    [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "the contribution of links which rearrange. If needed, this can be subdivided into a sub-process associated with simple rearrangements with 4 cells, a sub-process for rearrangements involving rosettes with 5 cells, and so on for 6 or more cells. Their contributions naturally add up, by construction of the formalism. This is one of the main reasons to have chosen links, which are the very objects whose creation and disappearance do define and characterize a cell rearrangement."
+                                                        }
+                                                    ], 
+                                                    [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "the contribution of delaminations and apoptoses. If needed, this can be subdivided into sub-processes, each associated with a different biological origin, for instance to distinguish simple extrusions from extrusions associated to apoptoses; or apoptoses which occur for cells with 3, 4 or more sides. Their contributions naturally add up, by construction of our formalism."
+                                                        }
+                                                    ], 
+                                                    [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "the contribution of new cell integrations or nucleations, which occur here only due to segmentation and tracking mistakes. We check that this term is much smaller than the main contributions, which shows that the segmentation and tracking are accurate enough for the present purpose."
+                                                        }
+                                                    ], 
+                                                    [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "the contribution of cell fusions, which occur here only due to segmentation and tracking mistakes. Again, we check that this term is much smaller than the main contributions, which shows that the segmentation and tracking are accurate enough for the present purpose."
+                                                        }
+                                                    ], 
+                                                    [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "the changes in links due to cells exiting or entering the region where they are visible. However, since this term exists only at the sample boundary, where all other processes are barely studied anyway (since their weights vanish, see <a href=\"#equ9\">Equation 4</a>), <math id=\"inf829\"><msup><mi mathvariant=\"bold\">J</mi><mo>*</mo></msup></math> is not important for the results presented here. Note that our formalism leaves the choice between Eulerian and Lagrangian descriptions. An Eulerian description would add at each grid compartment a flux contribution across the compartment boundaries, and our formalism enables to measure it separately (<math id=\"inf830\"><msub><mi mathvariant=\"bold\">J</mi><mi mathvariant=\"normal\">c</mi></msub></math> in <a href=\"#equ85\">Equation 78</a>). A Lagrangian description based on patch tracking, which we choose here, does not have such flux. Note also that the formalism is meant to extract relevant information from cell-cell links, to apply to a confluent cell assembly. Still, <math id=\"inf831\"><msup><mi mathvariant=\"bold\">J</mi><mo>*</mo></msup></math> systematically takes into account all links between cells at the tissue boundary, and all their possible changes. The formalism is thus designed to rigorously take into account all links between cells, and all their possible changes, whether these cells are at the tissue boundary or not. It applies to tissues with boundaries, even with internal ones like in the case of actual holes in the tissue, or in the case of holes in the skeletonized images due to segmentation problems."
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s57", 
+                                        "title": "C.3.3 Defining strain rate tensors", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "So far, we have defined dimensionless strain tensors to quantify the deformation of the cellular material between two arbitrary initial and final states, and we have related it to elementary cell processes. Because the time during which these deformations occur matters, we now define rate tensors that will be expressed in h<sup>-1</sup>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Although what precedes is valid for an arbitrary tissue deformation or proliferation, the accuracy in <math id=\"inf832\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> determination is improved by maximizing the number of links conserved between the two images compared. We thus first determine it between two successive images (separated by a time interval <math id=\"inf833\"><mi>\u03b4</mi><mo>\u2062</mo><mi>t</mi></math>, here 5 min). This is an acceptable choice since here <math id=\"inf834\"><mi>\u03b4</mi><mo>\u2062</mo><mi>t</mi></math> is a small enough sampling time that most links are conserved, <math id=\"inf835\"><msub><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"normal\">c</mi></msub></math> is always well defined and invertible (except at boundaries), <math id=\"inf836\"><msup><mi mathvariant=\"bold\">G</mi><mo>*</mo></msup></math> can be accurately determined, the tracking is reliable, and each process is correctly described."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For any quantity <math id=\"inf837\"><mi>Q</mi></math>, we determine <math id=\"inf838\"><mrow><mi>\u03b4</mi><mo>\u2062</mo><mi>Q</mi></mrow></math>, as the difference between two successive images, then define the rate <math id=\"inf839\"><mover accent=\"true\"><mi>Q</mi><mo>\u02d9</mo></mover></math> as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ82", 
+                                                "label": "(76)", 
+                                                "mathml": "<math><mover><mi>Q</mi><mo>\u02d9</mo></mover><mo>=</mo><mfrac><mrow><mi>\u03b4</mi><mi>Q</mi></mrow><mrow><mi>\u03b4</mi><mi>t</mi></mrow></mfrac></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We then average those rates over a morphogenetic timescale. Here we average them over typically 2\u00a0h (<a href=\"#fig4\">Figure 4h\u2013k</a>, <a href=\"#media4\">Videos 4</a> and <a href=\"#media5\">5</a>), or otherwise 14\u00a0h to visualize the average rates of tissue strain and of contributions of elementary cell processes over the whole studied period. Calling <math id=\"inf840\"><mo>\u27e8</mo><mover><mi>Q</mi><mo>\u02d9</mo></mover><mo>\u27e9</mo></math> the time average of <math id=\"inf841\"><mover accent=\"true\"><mi>Q</mi><mo>\u02d9</mo></mover></math> over a given period, and using <a href=\"#equ81\">Equation 75</a>, we get:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ83", 
+                                                "label": "(77)", 
+                                                "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">G</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>=</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">S</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>+</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">D</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>+</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">R</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>+</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">A</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>+</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">N</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>+</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">C</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced><mo>+</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mover accent=\"true\"><mi mathvariant=\"bold\">J</mi><mo>\u02d9</mo></mover><mo>*</mo></msup></mfenced></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For legibility, in the main text and in the Figure captions we only keep the tensor letter, and write <a href=\"#equ83\">Equation 77</a> under a simplified form (<a href=\"#equ21\">Equation 15</a>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ84", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">G</mi><mo>=</mo><mi mathvariant=\"bold\">S</mi><mo>+</mo><mi mathvariant=\"bold\">D</mi><mo>+</mo><mi mathvariant=\"bold\">R</mi><mo>+</mo><mi mathvariant=\"bold\">A</mi><mo>+</mo><mi mathvariant=\"bold\">N</mi><mo>+</mo><mi mathvariant=\"bold\">C</mi><mo>+</mo><mi mathvariant=\"bold\">J</mi></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Note that in practice, to analyze our movies, we can choose between two descriptions: Eulerian or Lagrangian. We choose a Lagrangian description, with each cell patch <math id=\"inf842\"><mi mathvariant=\"script\">\u2118</mi></math> being tracked during its deformation (<a href=\"#fig3\">Figure 3d</a> and <a href=\"#fig5\">5a</a>, <a href=\"#media3\">Video 3c</a> and <a href=\"#media5\">5b</a>), and calculations of instantaneous deformations rates being made between two successive images. When using an Eulerian grid to perform our analysis, we find\u00a0an extra contribution from the inward/outward flux of links from each grid compartments (<math id=\"inf843\"><msub><mi mathvariant=\"bold\">J</mi><mi mathvariant=\"bold\">c</mi></msub></math>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ85", 
+                                                "label": "(78)", 
+                                                "mathml": "<math><mi mathvariant=\"bold\">G</mi><mo>=</mo><mi mathvariant=\"bold\">S</mi><mo>+</mo><mi mathvariant=\"bold\">D</mi><mo>+</mo><mi mathvariant=\"bold\">R</mi><mo>+</mo><mi mathvariant=\"bold\">A</mi><mo>+</mo><mi mathvariant=\"bold\">N</mi><mo>+</mo><mi mathvariant=\"bold\">C</mi><mo>+</mo><mi mathvariant=\"bold\">J</mi><mo>+</mo><msub><mi mathvariant=\"bold\">J</mi><mi mathvariant=\"normal\">c</mi></msub></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "This additional term having no biological meaning,\u00a0in this work\u00a0we rather use Lagrangian grids for which <math id=\"inf844\"><msub><mi mathvariant=\"bold\">J</mi><mi mathvariant=\"normal\">c</mi></msub></math>\u00a0vanishes, thereby making the balance equation (<a href=\"#equ21\">Equation 15</a>)\u00a0easier to interpret."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s58", 
+                        "title": "D Advantages and comparison with literature", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To summarize, our formalism quantifies the observed size and shape changes of a deformable cellular material independently of the biological or physical origin of the forces that drive these changes. These forces can be internal ones such as active cytoskeletal forces, viscous dissipation or cytoplasm pressure, or external ones such as interactions with another cell layer or solid substrate. It is written as part of classical mechanics of deformable materials; the latter describes the deformation of patches (usually called \u2018Representative volume elements\u2019 or RVE), large enough that the material appears continuous (i.e. without signatures of cell-scale correlations at patch scale), and small enough so that each measurement is rather homogeneous over the patch, and that it represents a small fraction of the whole material. In this spirit, we determine the deformation self-consistently at the patch scale, i.e. coarse-grained over several cells, through statistics over links between neighbor cell centers. Our formalism is directly written for arbitrary finite deformation, in both 2D and 3D, in analogy with classical continuum mechanics; it is not restricted to homogeneous or small deformations, or to small or large numbers of cells. As they should, deformation measurements vanish for rigid body movements, namely if the tissue translates or rotates as a whole."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As a consequence of our choice, each link change is distributed into one and only one biological process. Each measurement meaningfully and unambiguously quantifies its associated biological process (<a href=\"#fig1\">Figures 1</a> and <a href=\"#fig2\">2</a>). Our measurements of tissue and cell process strains are obtained by averaging over the relevant biological space and time scales. The quantities we define, expressed in the same relevant unit (dimensionless strain or rate of deformation per unit time), can be separately measured. These quantities add up to yield the growth and morphogenesis at the patch scale (enabling to reconstruct the development at the tissue scale), as reflected in the balance equation (<a href=\"#equ21\">Equation 15</a>) where the total material deformation rate is expressed as sum of the respective deformation rates associated with each individual cell process. In addition, since links are the very objects whose creation and disappearance define a change in neighbor relationships (such as cell divisions, rearrangements, or apoptoses/delaminations), our description of these processes is versatile, enabling to deal with four-fold or higher vertices, distinguish cell rearrangements which involve four or more cells, and similarly distinguish apoptoses/delaminations which involve four or more cells."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Our choice has been triply validated. First, by detailed comparison with theoretical predictions for cell shape changes and rearrangements on non-biological cellular networks (<a href=\"#bib17\">Cheddadi et al., 2011</a>). Second, by reanalyzing processes (rearrangements, cell shape changes) which conserve cell numbers, in data already published in the preceding paper (<a href=\"#bib11\">Bosveld et al., 2012</a>); the present formalism which is more general since it supports changes in the number of cells, recovers the same results. Third, by numerical simulations of cell patches purely deforming via each individual cell process tested one by one (<a href=\"#fig2\">Figure 2</a>, <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "After averaging over space, time and movies, in the present study each patch represents a large number of links (in the initial image, about 30 cells per patch <math id=\"inf845\"><mo>\u00d7</mo></math> 3 links per cell on average <math id=\"inf846\"><mo>\u00d7</mo></math> 24 images <math id=\"inf847\"><mo>\u00d7</mo></math> 5 movies \u223c10<math id=\"inf848\"><msup><mi></mi><mn>4</mn></msup></math> links, and even more in the following images), so that statistics are good and deformation measurements are accurate. Our measurements vary smoothly in time and space, and in the notum the symmetry of the maps with respect to the midline shows the quality of the signal-to-noise ratio in each measurement (<a href=\"#fig3\">Figure 3</a>, <a href=\"#fig3s1\">Figure 3\u2014figure supplements 1</a>, <a href=\"#fig3s2\">2</a> and <a href=\"#media4\">Video 4</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "While each of the published approaches, including our preceding articles, has its own advantages, we argue that the present one offers the following advantages. With respect to (<a href=\"#bib21\">Economou et al., 2013</a>), which is a complete and rigorous formalism in 1D, we take into account the variable orientations of cell processes by using tensor measurements. With respect to (<a href=\"#bib27\">Graner et al., 2008</a>; <a href=\"#bib58\">Rauzi et al., 2008</a>; <a href=\"#bib10\">Blanchard et al., 2009</a>; <a href=\"#bib1\">Aigouy et al., 2010</a>; <a href=\"#bib11\">Bosveld et al., 2012</a>), we now measure separately and take into account all processes, including those which vary cell numbers like cell divisions or apoptoses/delaminations."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "While the present manuscript was under review, a formalism by (<a href=\"#bib22\">Etournay et al., 2015</a>) has been published. Like ours, it estimates the deformations associated with several cell processes, including cell divisions and apoptoses/delaminations which change the cell number. However, there are some differences with our approach, some of which\u00a0are\u00a0detailed below."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In (<a href=\"#bib22\">Etournay et al., 2015</a>), to estimate tissue deformation and the contributions of cell processes the authors choose to use the sub-cellular unit made by the triangle connecting the three centers of cells sharing a three-fold (or tricellular) vertex. Their motivation is that the deformation of such a triangle can be unambiguously defined and determined.\u00a0Currently, their formalism has been developed in 2D with triangles, and it could in principle be generalized to 3D using tetrahedrons. Our formalism, although we used it here to study 2D epithelial tissues, has been directly written in a way which is independent of the space dimension, and is therefore valid in both 2D and 3D."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "An important difference with our formalism is the existence of an additional term in their balance equation relating local tissue CE (or shear) to cell processes. This term is related to\u00a0correlations between cell elongation and tissue rotation, or between cell elongation and cell area change.\u00a0It captures local inhomogeneities of shear in the patch and arises for instance when neighboring cell rows slide with respect to each other. This correlation term appears when averaging over the triangles tiling a patch of tissue. Indeed, in the simple case of tissue patch deforming in the absence of topological changes, the shear of a given triangle is exactly equal to its (corotational) change of elongation. When averaging the shears and elongations of triangles over the patch, the tissue shear (defined as the average triangle shear over the patch) is now equal to the (corotational) change of average triangle elongation, plus this extra correlation term. Therefore, this\u00a0term already exists without topological changes occurring and remains even when averaging at large scale. When this correlation term contributes significantly to tissue shear, their formalism and ours should yield different measurements of the other terms quantifying cell processes."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Another difference with our approach is that in (<a href=\"#bib22\">Etournay et al., 2015</a>) the authors, to simplify the equations, write them in the case of small deformations. Since the time interval between two images is finite rather than infinitesimal, deformations are finite rather than infinitesimal; treating deformations as small might result in errors which accumulate when cumulating deformations over several time intervals. This is why we built our formalism with tensor measurements directly defined for finite\u00a0deformations."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Finally, when measurements are performed in fixed compartments of a square grid (Eulerian treatment),\u00a0the inward and outward flux of cells across each compartment boundary adds an additional term in the\u00a0balance equation (<math id=\"inf849\"><msub><mi mathvariant=\"bold\">J</mi><mi mathvariant=\"normal\">c</mi></msub></math> in <a href=\"#equ85\">Equation 78</a>\u00a0in our case) that\u00a0has no biological meaning. The authors of <a href=\"#bib22\">Etournay et al., 2015</a> used such\u00a0measurements in their Figure 5 and Videos 6 and 7, and found the convective contribution to be negligible. On the other hand, we found that it contributes significantly to the balance. Like us, they also perform their measurements over moving and deforming tracked patches (Lagrangian treatment) which conserve the same set of cells (and their offspring)\u00a0over time\u00a0(in Figures 3, 6 and 8 for instance). By doing so, there is therefore no inward and outward flux of cells across each compartment boundary, the only fluxes being at the animal or image boundaries (our\u00a0<a href=\"#fig3s1\">Figure 3\u2014figure supplements 1h</a>,<a href=\"#fig3s2\">2h</a>), and the balance equation is easier to interpret without this term (<a href=\"#equ21\">Equation 15</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In the future, it should be possible to compare our approach with that of (<a href=\"#bib22\">Etournay et al., 2015</a>). For instance, it would be relevant to quantify the difference between our respective results for each of our simulations, for a same tissue, or alternatively for tissues with a large number of four-fold or higher vertices, of cell rearrangements which involve four or more cells, and of delaminations which involve four or more cells. It would also be useful to compare the impact on the balance equation of cell fluxes either occurring at the boundaries of the tissue, of the field of view, or of each Eulerian grid compartment (for different compartment sizes). Lastly, by performing on their Video 6 an averaging over time, space and animals similar to ours, it would be interesting to compare their analysis of wing morphogenesis and their signal-to-noise ratio with ours (<a href=\"#media5\">Video 5</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s59", 
                         "title": "E Glossary for segmentation and tracking", 
                         "content": [

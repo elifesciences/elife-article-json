@@ -4984,6 +4984,586 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s14", 
+                        "title": "Appendix, further details on lattice building, worm modeling, and untwisting", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The untwisting algorithm is a semi-automatic process involving automatic segmentation of the seam cell nuclei and automatic lattice-building combined with user-interactive reviewing and editing phases. This procedure results in a lattice that bends and twists in the 3D volume, capturing the structure of the worm embryo. The lattice sets the parameters for generating the worm model, which in turn defines how the worm is untwisted."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s15", 
+                        "title": "Pipeline overview", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The pipeline processes the series of volumes in batch mode, then presents the results to the user for viewing and editing. The user can quickly step through the results making changes as necessary then proceed with the next batch process. The pipeline automatically switches to the next step in the process once the current step has completed. Steps are:"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "1. Automatic seam cell nuclei segmentation"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "2. Review and edit seam cell nuclei (the user adds an optional nose marker or seam cell segmentations)"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "3. Automatic lattice-building"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "4. Review and edit lattice (the user adds optional lattice points to better follow the curvature of the worm)"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "5. User interactively places annotations marking points of interest"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "6. Automatic model-building and untwisting"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "7. Review straightened volumes"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s16", 
+                        "title": "Automatic seam cell segmentation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Several standard segmentation and clustering algorithms have been tried; to date the most accurate segmentation algorithm clusters regions of uniform intensity into seam cell nuclei. The algorithm searches for clusters with diameters in the range of 2.5\u20134.8 microns. This criterion prevents regions of the worm digestive tract from being labeled as a seam cell nucleus - even though the high intensity and near-spherical appearance of the digestive tract matches the seam cell nuclei, the digestive tract is less uniform throughout its structure."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "There are several challenges to producing an accurate segmentation of the seam cell nuclei. The algorithm must segment nuclei with very different intensity threshold values, sizes and shapes. Not all seam cell nuclei are spherical due to motion blur. The algorithm must distinguish between seam cell nuclei and other features of the worm similar to the seam cell nuclei, for example the valves in the worm\u2019s digestive tract. Often the nose of the worm is labeled a seam cell nucleus while the 10<sup>th</sup> pair of seam cell nuclei, because they appear much fainter and are closer together than all other pairs, are combined into a single marker or simply not segmented at all. Accurate segmentation is complicated by division of the 8<sup>th</sup> pair of seam cell nuclei (QV5) at the later stages of the embryo\u2019s growth. During subdivision the QV5 pair is difficult to detect, and they may divide at different times, which causes the algorithm to detect 21 cells instead of 20 or 22\u00a0(<a href=\"#fig7\">Appendix figure 1</a>). These factors imply that the user must review and edit the seam cell nuclei placements."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The user experience during the editing phase in turn influences the segmentation algorithm. Users have found that it is quicker and easier to add missing seam cell nuclei than to delete extra seam cell nuclei. This feedback caused us to modify the segmentation algorithm, erring on the side of more accurate segmentation that detects fewer seam cell nuclei, rather than labeling extra regions as seam cell nuclei in the attempt to detect all 20\u00a0(<a href=\"#fig7\">Appendix figure 1</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s17", 
+                        "title": "Review and edit", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "When the automatic seam cell nuclei segmentation is complete, the user can view each file and edit the segmentations\u00a0(<a href=\"#fig8\">Appendix figure 2</a>). The user also has the option to add an additional point to mark the nose of the worm, which increases the accuracy of automated lattice-building\u00a0(<a href=\"#fig9\">Appendix figure 3</a>). Editing is accomplished by clicking in the volume view pane with the mouse."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Selecting a 3D position in the volume with the 2D mouse input device is accomplished by mapping the mouse position to a 3D position in space using the maximum intensity in the volume that falls under the mouse location. The model transformations (translations, rotations), viewing transformation (zoom), and projection transformations are used to generate a 3D ray originating at the 2D mouse position. The ray passes through the 3D volume along the viewing direction. The 3D volume position (voxel) along the ray with the maximum intensity determines the selected point in 3D."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Because the automatic lattice-building algorithm takes as input either 20 or 22 unordered seam cell nuclei, the user is encouraged to ensure that after editing the correct number of seam cell nuclei are labeled. To help the user achieve this goal, the color of the seam cell nuclei markers change to indicate if the target number has been reached. All seam cell nuclei are colored yellow when there are either 21 seam cell nuclei marked or fewer than 20 nuclei marked\u00a0(<a href=\"#fig7\">Appendix figure 1</a>). If exactly 20 or 22 seam cell nuclei are marked they are colored green\u00a0(<a href=\"#fig8\">Appendix figure 2</a>). Anytime more than 22 seam cell nuclei are labeled all are colored red. This feature provides a visual clue to the user if there are too few or too many seam cell nuclei, and that editing is not complete."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The following example images show results from the automatic seam cell nuclei segmentation algorithm followed by the edited segmentations:"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s18", 
+                        "title": "Automatic lattice-building", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The automatic lattice building algorithm generates a lattice representation of the worm. The algorithm takes as input a set of up to 22 unordered points in the 3D volume, as well as an (optional) nose point. The algorithm automatically generates lattices based on the relative positions of those points and sets of threshold values that were determined empirically from hand-generated lattices, i.e. from priors determined directly from measurements on untwisted worm volumes. The output is the 5 highest-rank lattices where the lattices are evaluated based on minimizing the overall curvature of the lattice as well as minimizing the amount each lattice self-intersects. The algorithm for automatically generating lattices from the collection of 3D points is described in detail below."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Given a set of up to 22 unordered seam cell nuclei positions in 3D, the algorithm generates pairs of seam cell nuclei and outputs an ordered sequence of those pairs. The ordered sequence forms a lattice from the head of the worm to the tail of the worm. If the nose of the worm is included in the set of points it is incorporated into the lattice and used at the evaluation and ranking stages."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The algorithm works in a stepwise fashion, first identifying the T seam cells and then working nosewards from them to build potential lattices. Lattices are checked both during construction and after completion for compliance with a series of parameters experimentally determined from hand-built lattices; lattices that pass all checks are displayed to the user for final selection and editing. The steps in the lattice-building process are described in more detail below."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>Step 1:</b> Find and label all possible 10<sup>th</sup> pairs. The 10<sup>th</sup> seam cell nuclei pair is located at the tail of the worm. It is distinct from the 9 other seam cell nuclei pairs as it is much closer together. The minimum and maximum distances between seam cells for the 10<sup>th</sup> pair are set to 1 and 5 microns. In contrast, the minimum and maximum distances for all other pairs are set to 5 to 15 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Pairs of points that fall within the minimum and maximum thresholds for the 10<sup>th</sup> pair are evaluated using a mid-point test. The test calculates the mid-point between the two seam cell nuclei and if there is another seam cell nucleus that is closer to the mid-point than the potential pair, the pair is ruled out. If the pair passes all mid-point tests it is labeled as a potential 10<sup>th</sup> pair."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>Step 2</b>: For each potential 10<sup>th</sup> pair, build all possible sequences starting at the 10<sup>th</sup> pair and work backward to the head of the worm."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "a. The first step in building sequences from a given 10<sup>th</sup> pair is to generate the set of all potential pairs with the remaining points. Pairs must fall within the minimum and maximum threshold values of 5-15 microns. In addition each pair must pass the mid-point test, ensuring that no other point is closer to the mid-point of the pair."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "b. For a given set of pairs, the set is searched to determine if any point occurs only in one pair. This pair is deemed an \u2018essential pair\u2019, as not including it would mean excluding the point found only in that pair. For each essential pair the remaining pairs are examined and all pairs with the partner of the unique point are eliminated. This process of elimination can generate other essential pairs so this step is repeated until no more essential pairs are found."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "c. Once the pair set is determined, sequences are built from the 10<sup>th</sup> pair until a complete lattice is formed. If at any point in the lattice-building process the lattice in progress fails to meet criteria it is eliminated from the set of potential lattices."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Given a sequence of pairs in a lattice, a new pair is added to the lattice if the following criteria (determined from analysis of hand-built lattices) are met:"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "i. The angle between the left-edge and right-edge from the last pair in the sequence to the current pair (the amount of twist) is less than 90 degrees."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "ii. The difference in length between the left-edge and right-edge sequences is less than 12 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "iii. The distance from the mid-point between last pair and the mid-point of the current pair is greater than 4 microns and below 30 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "iv. The distance between the last left-edge point and the current left point is greater than 4 microns and less than 25 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "v. The distance between the last right-edge point and the current right point is greater than 4 microns and less than 25 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>Step 3</b>: When a sequence reaches a length of 10 (or 11) pairs it is evaluated. Sequences that fail to reach the target length are eliminated. A sequence is accepted if it meets the following criteria:"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "a. For each pair in the lattice no other point is closer to the pair mid-point\u00a0(<a href=\"#fig10\">Appendix figure 4</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "b. The average width of the first 4 lattice pairs is wider than the average width of the last 5 lattice pairs."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "c. The maximum width occurs in the first 4 lattice pairs."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "d. The curvature of the lattice is between 2 (540 degrees of bend) and 4 folds."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "e. The total length of the lattice, calculated by summing the mid-point distances is greater than 100 microns and less than 140 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "f. The distances between the mid-points of lattice pairs fall within threshold values, with a minimum distance of 5 microns and a maximum distance of 25 microns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<b>Step 4:</b> Lattices are ranked to determine the top 5 lattices. Ranking is determined by minimizing the following two values:"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "a. Lattice curvature, which is a measure of the total amount of bend as calculated by measuring the angle from one mid-point on the lattice to the next."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "b. Amount of lattice self-intersection, which is approximated by intersecting the bounding boxes formed around sequential lattice pairs."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "As an example, the algorithm starts with a set of 20 unordered seam cell nuclei positions in 3D. Two pairs were categorized as being a possible 10<sup>th</sup> pair. For the first of the possible 10<sup>th</sup> pairs, the remaining 18 seam cell nuclei, which unconstrained would generated a set of (18!) possible pairs, instead produced 100 pairs that fell within the minimum/maximum distance threshold, of which only 31 met the mid-point test. After eliminating pairs based on the \u2018essential pair\u2019 criteria only 27 potential pairs remained. For the second of the possible 10<sup>th</sup> pairs, with 18 remaining seam cells only 104 possible pairs met the minimum/maximum distance threshold and of those only 33 pairs satisfied the mid-point test. Eliminating pairs based on the \u2018essential pair\u2019 criteria further reduced the pool of potential pairs to 28. 27 choose 9 is 4,686,825 lattices and 28 choose 9 is 6,906,900 lattices; too many to evaluate. However, automatically eliminating lattices during the building process reduced this number to 22,916 lattices that reached the target length of 10 pairs. Of those only 21 lattices passed the evaluation phase. After ranking the 21 lattices, the correct lattice was listed at the top-ranked lattice\u00a0(<a href=\"#fig11\">Appendix figure 5</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s19", 
+                        "title": "Review and edit lattice", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "During the review and edit phase the user steps through the selected volumes. For each volume up to 5 of the highest-ranked lattices are presented to the user, enabling the user to select the lattice that best fits the data. In some cases the algorithm finds less than 5 lattices and presents all those found. The user has the option to modify the selected lattice by adjusting the placement of points in the lattice or by adding points to the lattice so that the model better matches the worm. Once the user has finished editing the lattice it is saved for future reference\u00a0(<a href=\"#fig12\">Appendix figure 6</a>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s20", 
+                        "title": "Building the lattice manually", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "When the automatic lattice-building algorithm fails, the user has the option to build the entire lattice by hand, marking the points of the lattice with the mouse."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The user creates a lattice for a worm volume interactively in the volume view of the plugin. The volume view enables the user to rotate the volume in 3D to view it from different angles, or to view the volume at different scales. The user selects points in the 3D volume by clicking with the mouse."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The user starts at the head of the worm and interactively selects points in the 3D volume as left-right pairs, building the lattice as they go. The left-right markers visible along the sides of the worm (consisting of fluorescently-labeled seam cells and junctions between epidermal calls) are used to build the lattice. Because the volume appears mostly transparent except for the seam cell markers, the left-right markers are easy to select in 3D. The user can also interactively move points in the lattice after they are placed to better fit the data. Undo and redo features are also part of the lattice-building interface."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "There are 10 pairs of seam cells along the left and right sides of the worm body. While these cells act as the primary markers when building the lattice, they are spaced too far apart to capture every bend in the worm. Labeled contacts between epidermal cells provide another set of markers which can be selected by the user to create additional pairs. This enables the user to better define the curve of the worm. <a href=\"#fig13\">Appendix figures 7</a>\u2013<a href=\"#fig15\">9</a> show lattice building in progress."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.039", 
+                                "id": "fig7", 
+                                "label": "Appendix figure 1.", 
+                                "title": "Output of the automatic seam cell nucleus detection algorithm shown before editing starts.\u00a0", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The markers are yellow, indicating that fewer than 20 seam cell nuclei have been labeled."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig1-v2.jpg", 
+                                "filename": "elife-10070-app1-fig1-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.040", 
+                                "id": "fig8", 
+                                "label": "Appendix figure 2.", 
+                                "title": "User editing.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The user shifts seam cell nucleus #9 over, adds markers for both of the 10<sup>th</sup> seam cell nuclei, shifts nucleus #6 over and adds nucleus #20. There are now 20 seam cell nuclei marked, as indicated by the green color."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig2-v2.jpg", 
+                                "filename": "elife-10070-app1-fig2-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.041", 
+                                "id": "fig9", 
+                                "label": "Appendix figure 3.", 
+                                "title": "Nose labeling.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The user has increased the opacity of the volume to better enhance the appearance of the nose, now labeled in yellow."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig3-v2.jpg", 
+                                "filename": "elife-10070-app1-fig3-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.042", 
+                                "id": "fig10", 
+                                "label": "Appendix figure 4.", 
+                                "title": "Pairing quality control.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A potential pair is found, with the mid-point marked in red. A third seam cell nucleus is found closer to the mid-point than the pair, invalidating the pair."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig4-v2.jpg", 
+                                "filename": "elife-10070-app1-fig4-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.043", 
+                                "id": "fig11", 
+                                "label": "Appendix figure 5.", 
+                                "title": "Automatic lattice-building output.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The correct lattice is listed first as it had the highest rank."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig5-v2.jpg", 
+                                "filename": "elife-10070-app1-fig5-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.044", 
+                                "id": "fig12", 
+                                "label": "Appendix figure 6.", 
+                                "title": "The lattice after editing by the user.", 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig6-v2.jpg", 
+                                "filename": "elife-10070-app1-fig6-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.045", 
+                                "id": "fig13", 
+                                "label": "Appendix figure 7.", 
+                                "title": "The user has started building the lattice starting at the head of the worm.", 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig7-v2.jpg", 
+                                "filename": "elife-10070-app1-fig7-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.046", 
+                                "id": "fig14", 
+                                "label": "Appendix figure 8.", 
+                                "title": "More points are added to the lattice.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The user rotates the volume to get a better view during this phase. The magenta, red, and green curves represent the left- hand curve, center-line curve, and right-hand curves respectively. The curves are natural splines which are guaranteed to pass through the user-selected lattice points while minimizing bending to produce a smooth curve that matches the shape of the worm fairly accurately."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig8-v2.jpg", 
+                                "filename": "elife-10070-app1-fig8-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.047", 
+                                "id": "fig15", 
+                                "label": "Appendix figure 9.", 
+                                "title": "The final lattice.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Each of the 10 seam-cell pairs is marked, and 8 additional pairs have been added to capture the curve of the worm."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig9-v2.jpg", 
+                                "filename": "elife-10070-app1-fig9-v2.jpg"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s21", 
+                        "title": "Interactively placing annotations", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The program also features the ability to add annotation points, for which the program records the X, Y, and Z-coordinate in relation to a user-defined origin point (typically the nose), and then outputs that location information in a spreadsheet file. The annotation points can be used to define the position of a cell or cellular structure in each worm volume so spatial displacement can be measured over time. Thus a user can examine the position of a specific cell or structure of interest in multiple worm volumes, to determine how stereotyped the position of that cell is during embryo development (<a href=\"#fig16\">Appendix figure 10</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.048", 
+                                "id": "fig16", 
+                                "label": "Appendix figure 10.", 
+                                "title": "Annotations added to the worm volume labeling parts of the neuron.", 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig10-v2.jpg", 
+                                "filename": "elife-10070-app1-fig10-v2.jpg"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "An integrated rendering capability, which graphically displays the position of the annotation points over time, enables a user to directly visualize how the various annotation points relate to each other in the developing embryo ( <a href=\"#fig17\">Appendix figure 11</a>). This capability allows a user to identify the position of a neuron or cell of interest throughout development, and display how that position relates to the rest of the worm and changes over time."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.049", 
+                                "id": "fig17", 
+                                "label": "Appendix figure 11.", 
+                                "title": "Annotation visualization tool displays changes in positions over time.", 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig11-v2.jpg", 
+                                "filename": "elife-10070-app1-fig11-v2.jpg"
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s22", 
+                        "title": "Automated model-building", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Once the lattice for a worm volume is created, the next step in untwisting the worm volume is to generate a 3D model of the worm from the lattice. The goal is to capture as accurately as possible the 3D shape of the worm. For places where the worm folds back on top of itself and the outer surfaces of the worm touch this is a difficult challenge due to the transparent nature of the worm and lack of a clear boundary between the inside and outside of the worm. This section describes building the worm model and algorithms that attempt to account for overlapping sections of the worm."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Modeling the worm is done automatically, but the user has the option to view the model and interactively modify the lattice to improve the model's accuracy."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To build the worm model, the algorithm interpolates between the lattice points, creating two smooth curves from head to tail along the left and right-hand sides of the worm body. A third curve down the center-line of the worm body is also generated. Eventually, the center-line curve will be used to determine the number of sample points along the length of the straightened worm, and therefore the final length of the straightened worm volume (<a href=\"#fig18\">Appendix figure 12</a>)."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.050", 
+                                "id": "fig18", 
+                                "label": "Appendix figure 12.", 
+                                "title": "The initial ellipse-based model of the worm.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The ellipses fit within the boundaries of the natural spline curves."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig12-v2.jpg", 
+                                "filename": "elife-10070-app1-fig12-v2.jpg"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Given the center-line curve and left and right-side curves, a series of planes is defined. The center-line curve is uniformly sampled with a spacing of one voxel. This point serves as the center of the plane, while the first derivative to the curve serves as the plane normal. The plane horizontal axis is the vector between the corresponding points on the left and right-hand curves. The plane vertical axis is constrained to the axis perpendicular to both the plane normal and horizontal axis. This way the three curves fully define the sample plane in 3D."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Once 2D sampling planes have been determined, each sampling plane is constrained by an elliptical model of the worm cross-section with limits defined by the left- and right-side curves. The elliptical model is tested for regions of the worm where the ellipses overlap and all voxels that fall into overlapping areas are removed, producing a set of new contours. The new contours are then expanded outward from the center, until they either contact an expanding contour line from another region of the worm or reach the limit of the sample plane. This process defines the 2D sampling planes and contours within the planes that are used to create the worm model. <a href=\"#fig18\">Appendix figure 12</a> shows the original elliptical model of the worm, <a href=\"#fig19\">Appendix figure 13</a> shows the corrected and expanded contours, and <a href=\"#fig20\">Appendix figures 14</a>\u2013<a href=\"#fig22\">16</a> show a solid version of the worm model."
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.051", 
+                                "id": "fig19", 
+                                "label": "Appendix figure 13.", 
+                                "title": "The expanded worm model.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The original ellipses are expanded until they contact an adjacent surface of the worm or they reach the boundary of the sample plane."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig13-v2.jpg", 
+                                "filename": "elife-10070-app1-fig13-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.052", 
+                                "id": "fig20", 
+                                "label": "Appendix figure 14.", 
+                                "title": "A solid representation of the worm surface.", 
+                                "caption": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The outlines in the bottom three panels show how the surface encapsulates the volume data."
+                                    }
+                                ], 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig14-v2.jpg", 
+                                "filename": "elife-10070-app1-fig14-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.053", 
+                                "id": "fig21", 
+                                "label": "Appendix figure 15.", 
+                                "title": "A semi-transparent view of the worm surface model, with the lattice shown inside.", 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig15-v2.jpg", 
+                                "filename": "elife-10070-app1-fig15-v2.jpg"
+                            }, 
+                            {
+                                "type": "image", 
+                                "doi": "10.7554/eLife.10070.054", 
+                                "id": "fig22", 
+                                "label": "Appendix figure 16.", 
+                                "title": "A semi-transparent view of the worm surface model displaying lattice curves, fluorescently- labeled seam cell nuclei, and neuron.", 
+                                "alt": "", 
+                                "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig16-v2.jpg", 
+                                "filename": "elife-10070-app1-fig16-v2.jpg"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "During the expansion process a segmented model of the left-right fluorescent markers is used to improve accuracy (<a href=\"#fig23\">Appendix figure 17</a>). The segmented marker image labels all voxels that fall inside the fluorescent markers with a unique marker ID. This helps distinguish adjacent edges of the worm where markers may come into contact, prevents one edge of the model from expanding and capturing data from a contacting surface instead of stopping at the correct surface boundary, and ensures that the entire segmented marker is included in the worm model. The image-based corrections require that data from all color channels be processed simultaneously."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s23", 
+                                "title": "Further details in a step-by-step format", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "1. All lattices as well as any annotation statistics are saved to file for future analysis."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "2. The fluorescent markers in the worm volume are automatically labeled with a corresponding marker ID. (<a href=\"#fig23\">Appendix figure 17</a>)"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10070.055", 
+                                        "id": "fig23", 
+                                        "label": "Appendix figure 17.", 
+                                        "title": "Labeled fluorescent markers.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Each pair has a unique color value, indicating which pairs belong on the same slice in the final straightened image. Labeling the lattice pairs this way helps disambiguate voxels with potential conflicts."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig17-v2.jpg", 
+                                        "filename": "elife-10070-app1-fig17-v2.jpg"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "3. The center line of the worm is calculated from the midpoint between the left and right points of the lattice."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "4. Three curves are generated from the three sets of points (left, center, right) using natural splines to fit the points. Natural splines generate curves that pass through the control points, have continuous first and second derivatives and minimize the bending between points (<a href=\"#fig15\">Appendix figure 9</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "5. The center curve is uniformly sampled along the length of the curve. The step size is set to be one voxel. This determines the length of the final straightened image and ensures that each slice in the straightened image is equally spaced. The points along the curve are the center-points of the output slices."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "6. Each spline can be parameterized with the parameter <i>t</i>, where the start of the curve has <i>t</i> = 0 and the end of the curve has <i>t</i> = 1. <i>t</i> is calculated on the center curve, and used to determine the corresponding locations on the left and right hand curves, which may be longer or shorter than the center curve, depending on how the worm bends. Using the parameterization ensures that the left and right hand curves are sampled the same number of times as the center curve and that the points from start to end on all curves are included."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "7. Given the current point on the center curve and the corresponding positions on the left and right hand curves, the 2D sampling plane can be defined. The center point of the plane is the current point on the center curve. The plane normal is the first derivative of the center line spline. The plane horizontal axis is the vector from the position on the left hand curve to the position on the right hand curve. The plane vertical axis is the cross-product of the plane normal with the plane horizontal axis. This method fully defines the sample plane location and orientation as it sweeps through the 3D volume of the worm."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "8. Once the sample planes are defined, the worm cross-section within each plane needs to be determined. Without a model of the worm cross-section the sample planes will overlap in areas where the worm folds back on itself. The first step in modeling the worm cross-section is to define an ellipse within each sample plane, centered in the plane. The long axis of the ellipse is parallel to the horizontal axis of the sample plane. The length is the distance between the left and right hand points. The ellipse short axis is in the direction of the plane vertical axis; the length is set to 1/2 the length of the ellipse long axis. This ellipse-based model approximates the overall shape of the worm, however it cannot model how the worm shape changes where sections of the worm press against each other. The next step of the algorithm attempts to solve this problem. (<a href=\"#fig18\">Appendix figure 12</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "9. The set of ellipses from the head of the worm to the tail defines an approximate outer boundary of the worm in 3D. The centers of each ellipse are spaced one voxel apart along the center line curve of the worm, and each ellipse corresponds to a single output slice in the final straightened image. This step generates a model of the worm where each voxel that falls within one of the ellipses is labeled with the corresponding output slice value. Voxels where multiple ellipses intersect are labeled as conflict voxels. Once all ellipses have been evaluated, the conflict voxels are removed from the model."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "10. The marker segmentation image is used to resolve conflicts where multiple ellipses overlap. Each slice in the output image should extend only to the edges of the left-right markers for the corresponding region of the worm volume. This prevents a slice from extending beyond the worm boundary and capturing the adjacent worm region. Because the marker segmentation image only segments the left-right markers, it is not possible to resolve all possible conflicts."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "11. The last step is an attempt to ensure that as much of the worm data is captured by the algorithm as possible. Using the marker segmentation image where possible as a guide to the worm boundary, each slice of worm model is grown outward. The points on the boundary are expanded in an iterative process until the point comes in contact with another edge of the worm. For areas of the worm where it folds back on itself, this process results in a flattened cross-section where the folds press against each other, matching images observed in electron microscopy data (<a href=\"#fig24\">Appendix figure 18</a>). For areas of the worm where the cross-section does not contact other sections of the worm, the 2D contour extends outward until it reaches the edge of the sample plane, capturing as much data as possible."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10070.056", 
+                                        "id": "fig24", 
+                                        "label": "Appendix figure 18.", 
+                                        "title": "An EM image of the worm shows the worm body is flattened where overlapping segments come into contact.", 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10070/elife-10070-app1-fig18-v2.jpg", 
+                                        "filename": "elife-10070-app1-fig18-v2.jpg"
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s24", 
                         "title": "Untwisting the worm", 
                         "content": [

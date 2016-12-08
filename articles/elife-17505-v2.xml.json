@@ -4682,6 +4682,294 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s19", 
+                        "title": "Molecular modeling and system preparation", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We used the crystal structure of T4L L99A (PDB ID code 3DMV) as starting point for simulations of the G state of L99A. For the E state of L99A and the G state of the L99A, G113A, R119P triple-mutant we used the CS-ROSETTA structures with PDB ID code 2LCB and 2LC9, respectively."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Each protein was solvated in a dodecahedral box of TIP3P water molecules with periodic boundary conditions. The protein-solvent box had a distance of 10 \u00c5 from the solute to the box boundary in each dimension, which results in approximately 10,000 water molecules and more than 32,000 atoms. Chloride counter-ions were included to neutralize the overall electric charge of the system. We used the CHARMM22* force field (<a href=\"#bib46\">Piana et al., 2011</a>)\u00a0for most of our simulations, but also used the Amber ff99SB*-ILDN (<a href=\"#bib25\">Hornak et al., 2006</a>; <a href=\"#bib4\">Best and Hummer, 2009</a>; <a href=\"#bib31\">Lindorff-Larsen et al., 2010</a>) for some simulations to examine the dependency of the results on the choice of force field."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The van der Waals interactions were smoothly shifted to zero between 0.8 and 1.0 nm, and the long-range electrostatic interactions were calculated by means of the particle mesh Ewald (PME) algorithm with a 0.12 nm mesh spacing combined with a switch function for the direct space between 0.8 and 1.0 nm. The bonds involving hydrogen atoms were constrained using the LINCS algorithm. We employed the V-rescale thermostat (<a href=\"#bib11\">Bussi et al., 2007</a>)\u00a0to\u00a0control the temperatureand simulated the system in the canonical ensemble."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s20", 
+                        "title": "Reference transition path and path collective variables", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We used path collective variables both to enhance sampling in path driven metadynamics (see below) as well as to represent the conformational landscape sampled by other means. Path collective variables have previously been shown to be very useful in finding free energy channels connecting two metastable states, and also able to construct the global free energy surfaces even far away from the initial path (<a href=\"#bib10\">Branduardi et al., 2007</a>). A reference path is defined by a set of conformations along the path, and the progress along this path can be described mathematically as:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ1", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>S</mi><mrow><mi>p</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi></mrow></munderover><mi>i</mi><msup><mi>e</mi><mrow><mo>\u2212</mo><mi>\u03bb</mi><msub><mi>M</mi><mrow><mi>i</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow></msup></mrow><mrow><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi></mrow></munderover><msup><mi>e</mi><mrow><mo>\u2212</mo><mi>\u03bb</mi><msub><mi>M</mi><mrow><mi>i</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow></msup></mrow></mfrac></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Here X are the coordinates of the instantaneous protein conformer sampled by MD simulations, N is the number of frames used to describe the reference path (often dependent on the length scale of the conformational transition process), <math id=\"inf169\"><mrow><msub><mi>M</mi><mi>i</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM8\">X</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> is the mean-square deviation (after optimal alignment) of a subset of the atoms from the reference structure of <math id=\"inf170\"><mi>i</mi></math>\u00a0th frame, and <math id=\"inf171\"><mi>\u03bb</mi></math> is a smoothing parameter whose value should roughly be proportional to the inverse of the average mean square displacement between two successive frames along the reference path. With this definition, <math id=\"inf172\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> quantifies how far the instantaneous conformer, <math id=\"inf173\"><mi>X</mi></math>, is from the reactant state and the product state, thus monitoring the progress of the system along the conformational transition channel."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Using <math id=\"inf174\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> as the sole CV would assume that the initial reference path contains a sufficient description of the important degrees of freedom between the two states. It is, however, rarely possible to guess such a path because determining the actual pathway taken is a goal of the simulation. Thus, <math id=\"inf175\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> is supplemented by a second CV, <math id=\"inf176\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math>, which measures the deviation away from the structures on the reference path. I.e. if <math id=\"inf177\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> quantifies the progress along the path, <math id=\"inf178\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> measures the distance away from the reference path:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ2", 
+                                "mathml": "<math><mrow><mrow><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM10\">X</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mi>\u03bb</mi></mfrac><mo>\u2062</mo><mi>l</mi><mo>\u2062</mo><mi>n</mi><mo>\u2062</mo><mrow><munderover><mo largeop=\"true\" movablelimits=\"false\" symmetric=\"true\">\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>\u03bb</mi><mo>\u2062</mo><msub><mi>M</mi><mi>i</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM9\">X</mi><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></msup></mrow></mrow></mrow></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The combination of <math id=\"inf179\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> and <math id=\"inf180\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> thus maps the entire conformational landscape to a two-dimensional projection, which can also be thought of as a tube connecting the two end states, and where <math id=\"inf181\"><mi>S</mi></math> measures the progress along the tube and <math id=\"inf182\"><mi>Z</mi></math> the width of the tube. The usefulness of the path CVs is, however, dependent on the quality of reference path, which is determined amongst other things by two factors: (1) the relative accuracy of the reference path and (2) how uniform reference structures are distributed along the path. Because of the explosion in number of possible conformations as one progresses along <math id=\"inf183\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math>, simulations are mostly enhanced when <math id=\"inf184\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> provides a relatively good description of the pathway taken. Further, if reference structures are only placed sparsely along the path, one looses resolution of the free energy surface and also decreases the ability to enhance sampling."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To obtain a good reference path, without knowing beforehand the mechanism of conversion, we here\u00a0used a method to construct snapshots along a possible initial path. Taking <math id=\"inf185\"><msub><mi>G</mi><mrow><mi>X</mi><mo>\u2062</mo><mi>r</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>y</mi></mrow></msub></math> and <math id=\"inf186\"><msub><mi>E</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow></msub></math> as initial and final structures, we calculated the optimal reaction paths between them with the MOIL software (<a href=\"#bib18\">Elber et al., 1995</a>) which has previously been used to explore the mechanism of conformational change of proteins (<a href=\"#bib67\">Wang et al., 2011</a>) . After minimizing endpoint structures, we employed the minimum-energy-path self-penalty walk (SPW) (<a href=\"#bib15\">Czerminski and Elber, 1990</a>) functional embedded in the CHMIN module to obtain an initial guess for the conformational transition path. This path was subsequently optimized in the SDP (steepest descent path) module by minimizing the target function <math id=\"inf187\"><mi>T</mi></math> consisting of two terms <math id=\"inf188\"><mi>S</mi></math> and <math id=\"inf189\"><mi>C</mi></math>. <math id=\"inf190\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>S</mi></mrow></mstyle></math>\u00a0is an action function that provides approximate most probable Brownian trajectories connecting the reactant and product states, while <math id=\"inf191\"><mi>C</mi></math> is a restraint function aimed to distribute frames\u00a0approximately uniformly along the path. They can be expressed by:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ3", 
+                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnalign=\"right left right left right left right left right left right left\" columnspacing=\"0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em\" displaystyle=\"true\" rowspacing=\"3pt\"><mtr><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>S</mi><mo>=</mo><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi><mo>\u2212</mo><mn>1</mn></mrow></munderover><msqrt><msub><mi>H</mi><mrow><mi>s</mi></mrow></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mfrac><mrow><mi mathvariant=\"normal\">\u2202</mi><mi>U</mi></mrow><mrow><mi mathvariant=\"normal\">\u2202</mi><msub><mi>x</mi><mrow><mi>i</mi></mrow></msub></mrow></mfrac><msup><mo stretchy=\"false\">)</mo><mrow><mn>2</mn></mrow></msup></msqrt><mrow><mo stretchy=\"false\">|</mo></mrow><msub><mi>x</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u2212</mo><msub><mi>x</mi><mrow><mi>i</mi></mrow></msub><mrow><mo stretchy=\"false\">|</mo></mrow></mstyle></mtd><mtd></mtd></mtr><mtr><mtd><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>C</mi><mo>=</mo><mi>\u03bb</mi><munder><mo>\u2211</mo><mrow><mi>i</mi></mrow></munder><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">\u0394</mi><msub><mi>l</mi><mrow><mi>i</mi><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u2212</mo><mo>&lt;</mo><mtext>\u00a0</mtext><mi mathvariant=\"normal\">\u0394</mi><mi>l</mi><mtext>\u00a0</mtext><mo>&gt;</mo><msup><mo stretchy=\"false\">)</mo><mrow><mn>2</mn></mrow></msup></mstyle></mtd><mtd></mtd></mtr></mtable></mrow></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf192\"><mi>N</mi></math> is the number of frames along the reference path, <math id=\"inf193\"><msub><mi>x</mi><mi>i</mi></msub></math> is the entire vector of conformational coordinates of frame <math id=\"inf194\"><mi>i</mi></math>, <math id=\"inf195\"><mi>U</mi></math> is a potential energy as a function of the mass-weighted coordinate vector, <math id=\"inf196\"><msub><mi>H</mi><mi>s</mi></msub></math> is a constant with an arbitrary positive value, which can be tuned to generate the optimal paths with different thermal energies. <math id=\"inf197\"><mrow><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><msub><mi>l</mi><mrow><mi id=\"XM23\">i</mi><mo>,</mo><mrow id=\"XM24\"><mi>i</mi><mo>+</mo><mn>1</mn></mrow></mrow></msub></mrow><mo>=</mo><mrow><msup><mi>M</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>\u2062</mo><mrow><mo stretchy=\"false\">|</mo><mrow id=\"XM25\"><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy=\"false\">|</mo></mrow></mrow></mrow></math> is the arc-length between consecutive frames. <math id=\"inf198\"><mi>\u03bb</mi></math> controls the strength of the restraint function <math id=\"inf199\"><mi>C</mi></math>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The SDP or minimum energy path is the limiting path in which the action <math id=\"inf200\"><mi>S</mi></math> is optimized with <math id=\"inf201\"><mrow><msub><mi>H</mi><mi>s</mi></msub><mo>\u2192</mo><mn>0</mn></mrow></math>. An important advantage of an SDP is that it is capable of giving a good guess of the minimal energy path which can reflect the major mechanism, only with inexpensive computation. Further details can be found in Refs. (<a href=\"#bib67\">Wang et al., 2011</a>; <a href=\"#bib35\">Majek et al., 2008</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The SDP was approximated as 31 discrete conformations. Most regions of the <math id=\"inf202\"><msub><mi>G</mi><mrow><mi>X</mi><mo>\u2062</mo><mi>r</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>y</mi></mrow></msub></math> and <math id=\"inf203\"><msub><mi>E</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow></msub></math> structures are very similar, with the exception of the cavity-related atoms whose movement determines the conformational transitions between the G and E states. To minimize computations, we used only a subset of heavy atoms around the cavity from amino acid residues 99 to 126 to define <math id=\"inf204\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> and <math id=\"inf205\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math>, resulting a \u2018light version\u2019 of the reference path which included only 212 atoms. We used the <math id=\"inf206\"><msub><mi>C</mi><mi>\u03b1</mi></msub></math> atoms of the C-terminal\u00a0domain\u00a0to align the molecule. It is important to note that by focusing only on atoms surrounding the cavity in the calculation of the path-variables we only enhance sampling of the conformational changes relating to the cavity. We used <math id=\"inf207\"><mrow><mi>\u03bb</mi><mo>=</mo><mn>56.0</mn></mrow></math> based on the consideration that smooth change of the function of <math id=\"inf208\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> can be achieved when <math id=\"inf209\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msup><mi>e</mi><mrow><mo>\u2212</mo><mi>\u03bb</mi><mo>&lt;</mo><msub><mi>M</mi><mrow><mi>i</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>&gt;</mo></mrow></msup><mo>\u2265</mo><mn>0.1</mn></mrow></mstyle></math> (<a href=\"#bib61\">Tribello et al., 2014</a>)."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We defined <math id=\"inf210\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> and <math id=\"inf211\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> using the SDP as described above. The equidistant requirement of the path is satisfied by the penalty function as is evident from the RMSD matrix for path frames which has a gullwing shape\u00a0(<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>, indicating that each frame is closest to its neighbor and more different from all other reference frames."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s21", 
+                        "title": "Metadynamics simulations", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Metadynamics discourages the system from sampling already visited conformational regions by continuously adding an external history-dependent repulsive potential at the present value of the reaction coordinates or CVs, which are assumed to include the slowly varying degrees of freedom and thus describe the main features of the dynamics (<a href=\"#bib30\">Laio and Parrinello, 2002</a>). The biasing potential in metadynamics results in an artificial (enhanced) dynamics but makes it possible to reconstruct the free energy surfaces by removing the bias introduced. The bias is typically added as Gaussians at regular time intervals, <math id=\"inf212\"><msub><mi>\u03c4</mi><mi>G</mi></msub></math>, and is given by:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ4", 
+                                "mathml": "<math><mrow><mrow><msub><mi>V</mi><mi>G</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM29\">S</mi><mo>,</mo><mi id=\"XM30\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop=\"true\" movablelimits=\"false\" symmetric=\"true\">\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mrow><mo stretchy=\"false\">|</mo><mrow id=\"XM28\"><mi>t</mi><mo>/</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">|</mo></mrow></munderover><mrow><msub><mi>\u03c9</mi><mi>k</mi></msub><mo>\u2062</mo><mi>\u03b4</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM34\"><mi>S</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM31\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>,</mo><mrow id=\"XM35\"><mi>S</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM33\"><mi>k</mi><mo>\u22c5</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Here <math id=\"inf213\"><mi>S</mi></math> denotes the CVs, <math id=\"inf214\"><mi>k</mi></math> is the index of the individual Gaussians, <math id=\"inf215\"><msub><mi>\u03c9</mi><mi>k</mi></msub></math> is the height of the <math id=\"inf216\"><mi>k</mi></math>\u2019th Gaussian, and <math id=\"inf217\"><mrow><mi>\u03b4</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM39\"><mi>S</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM36\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>,</mo><mrow id=\"XM40\"><mi>S</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM38\"><mi>k</mi><mo>\u22c5</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></math> is a short-ranged kernel function of the CVs:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ5", 
+                                "mathml": "<math><mrow><mrow><mi>\u03b4</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM47\"><mi>S</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM44\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>,</mo><mrow id=\"XM48\"><mi>S</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM46\"><mi>k</mi><mo>\u22c5</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mstyle displaystyle=\"false\"><msubsup><mo largeop=\"true\" symmetric=\"true\">\u2211</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mstyle><mo>-</mo><mfrac><msup><mrow><mo stretchy=\"false\">|</mo><mrow id=\"XM43\"><mrow><msub><mi>s</mi><mi>j</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM41\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>-</mo><mrow><msub><mi>s</mi><mi>j</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM42\"><mi>k</mi><mo>\u22c5</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></mrow><mo stretchy=\"false\">|</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><mo>\u2062</mo><msubsup><mi>\u03c3</mi><mrow><mi>k</mi><mo>\u2062</mo><mi>j</mi></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow></msup></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf218\"><mi>n</mi></math> is the number of CV, <math id=\"inf219\"><mi>j</mi></math> is the index of a CV, and <math id=\"inf220\"><msub><mi>\u03c3</mi><mrow><mi>k</mi><mo>\u2062</mo><mi>j</mi></mrow></msub></math> and <math id=\"inf221\"><mrow><msub><mi>s</mi><mi>j</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM49\"><mi>k</mi><mo>\u22c5</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">)</mo></mrow></mrow></math> are the width and the position of the Gaussian hills, respectively."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We here used a range of different metadynamics approaches to determine the free energy landscape, and the mechanism and kinetics of conformational exchange (see below)."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s22", 
+                                "title": "Well-tempered metadynamics", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the well-tempered version of metadynamics, the height of the individual Gaussians, <math id=\"inf222\"><msub><mi>\u03c9</mi><mi>k</mi></msub></math>, is decreased as the total bias accumulates over time, in order to improve the convergence of the free energy:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c9</mi><mi>k</mi></msub><mo>=</mo><mrow><msub><mi>\u03c9</mi><mn>0</mn></msub><mo>\u2062</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mrow><mi>\u03b3</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>\u2062</mo><mfrac><mrow><msub><mi>V</mi><mi>G</mi></msub><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM50\">S</mi><mo>,</mo><mrow id=\"XM51\"><mi>k</mi><mo>\u22c5</mo><msub><mi>\u03c4</mi><mi>G</mi></msub></mrow><mo stretchy=\"false\">)</mo></mrow></mrow><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>\u2062</mo><mi>T</mi></mrow></mfrac></mrow></mrow></msup></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here <math id=\"inf223\"><msub><mi>\u03c9</mi><mn>0</mn></msub></math> is the initial height, <math id=\"inf224\"><mrow><mi>\u03b3</mi><mo>=</mo><mrow><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM52\"><mi>T</mi><mo>+</mo><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi>T</mi></mrow></mrow><mo stretchy=\"false\">)</mo></mrow><mo>/</mo><mi>T</mi></mrow></mrow></math> is referred as the bias factor, which can be tuned to control the speed of convergence and diminish the time spent in lesser-relevant, high-energy states. Thus, the quantity <math id=\"inf225\"><mrow><mi>T</mi><mo>+</mo><mrow><mi mathvariant=\"normal\">\u0394</mi><mo>\u2062</mo><mi>T</mi></mrow></mrow></math> is often referred as the fictitious CV temperature."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s23", 
+                                "title": "Adaptive-width metadynamics", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In contrast to standard metadynamics in which the width of the Gaussians is constant, the adaptive-width version of metadynamics updates the Gaussian width <math id=\"inf226\"><msub><mi>\u03c3</mi><mrow><mi>k</mi><mo>\u2062</mo><mi>j</mi></mrow></msub></math> on the fly according to local properties of the underlying free-energy surface on the basis of local diffusivity of the CVs or the local geometrical properties\u00a0(<a href=\"#bib9\">Branduardi et al., 2012</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the region of conformational space near the endpoints of the path CVs many conformations are compressed on similar CV values, leading to high-density but low-fluctuation boundaries. It is apparent that the use of a fixed width might give an inaccurate estimation of the free energy profile in the boundaries where the free energy basins of reactant and product states are located, also makes it more difficult for the simulations to converge. Therefore, the feature of shape adaptive of Gaussian potential is particularly helpful for the case of using path CVs that have significant boundary effects."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s24", 
+                                "title": "Metadynamics with path variables (PathMetaD)", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We sampled the free energy landscape along <math id=\"inf227\"><msub><mi>S</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math> and <math id=\"inf228\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math>, as defined above, using adaptive-width metadynamics, which resulted in a finer resolution and faster convergence of the free energy landscape, in particular near the path boundaries, than standard metadynamics. The production simulations were performed at 298K in well-tempered ensemble (<a href=\"#AP-tbl1\">Appendix 1\u2014table 1</a>: RUN1 and RUN2)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s25", 
+                                "title": "Reconnaissance metadynamics", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To explore the mechanism of conformational exchange we used reconnaissance metadynamics\u00a0(<a href=\"#bib62\">Tribello et al., 2010</a>). This is a \u2018self-learning\u2019 approach which combines of a machine learning technique to automatically identify the locations of free energy minima by periodically clustering the trajectory and a dimensional reduction technique that can reduce the complex locations to a locally-defined one-dimensional CV by using information collected during the clustering. It has previously been shown that reconnaissance metadynamics makes it possible to determine a path from a large set of input collective variables (<a href=\"#bib55\">S\u00f6derhjelm et al., 2012</a>; <a href=\"#bib63\">Tribello et al., 2011</a>)."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s26", 
+                                "title": "Infrequent Metadynamics (InMetaD)", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We used the recently described \u2018infrequent metadynamics\u2019 (InMetaD) to obtain the rates of the conformational exchange process\u00a0(<a href=\"#bib60\">Tiwary and Parrinello, 2013</a>). In standard metadynamics simulations it is very difficult to obtain kinetic properties because the biasing potential is added both to the free energy basins as well as the barriers that separate them. While it is potentially possible to determine the rates from the height of the free energy barriers, this requires both that the CVs used represent the entire set of slowly varying degrees of freedom, and also a good estimate of the pre-exponential factor to convert barrier height to a rate."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The key idea in InMetaD to circumvent these problems is to attempt to add the bias to the system more slowly than the barrier crossing time but faster than the slow inter-basin relaxation time, so that the transition state region has a lower risk of being biased, and therefore the transitions are less affected. By filling up a free energy basin by a known amount it is possible to determine how much the barrier has been decreased, and hence remove this bias from the rates determined. Thus, as described in more detail below, the approach works by performing a large number of individual simulations to obtain first passage times between the individual basins, which are then corrected by the known enhancement factors to obtain estimates of the unbiased rates. This method has been successfully used to reproduce the kinetics of conformational change of alanine dipeptide (<a href=\"#bib60\">Tiwary and Parrinello, 2013</a>) unbinding of the inhibitor benzamidine from trypsin (<a href=\"#bib58\">Tiwary et al., 2015a</a>) and slow unbinding of a simple hydrophobic cavity-ligand model system (<a href=\"#bib59\">Tiwary et al., 2015b</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In these simulations we used a deposition frequency of 80 or 100 ps (see parameters in <a href=\"#AP-tbl1\">Appendix 1\u2014table 1</a>), a value much lower than the deposition frequency of 1 ps used in the PathMetaD simulations described above. In this way we lower the risk of substantially corrupting the transition state region. In addition, a tight upper wall potential on <math id=\"inf229\"><msub><mi>Z</mi><mrow><mi>p</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>t</mi><mo>\u2062</mo><mi>h</mi></mrow></msub></math>=0.10 nm<sup>2</sup> is used to confine the sampling based on our converged free energy surface which shows the conformational change mostly occurs within this region."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "With these parameters we collected dozens of trajectories that have a state-to-state transition in the G-to-E and E-to-G directions. The passage times observed in each of these were then corrected for the metadynamics bias as follows."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "First, we calculate the acceleration factor <math id=\"inf230\"><mi>\u03b1</mi></math> from:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>\u03b1</mi><mo>=</mo><mi>\u03c4</mi><mrow><mo>/</mo></mrow><msub><mi>\u03c4</mi><mrow><mi>M</mi></mrow></msub><mo>=&lt;</mo><msup><mi>e</mi><mrow><mi>V</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mrow><mo>/</mo></mrow><mi>k</mi><mi>T</mi></mrow></msup><msub><mo>&gt;</mo><mrow><mi>M</mi></mrow></msub></mrow></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the anguluar brackets denote an average over a metadynamics run before the first transition, and <math id=\"inf231\"><mrow><mi>V</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM56\">s</mi><mo>,</mo><mi id=\"XM57\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> is the metadynamics time-depedent bias. The evolution of the acceleration factor <math id=\"inf232\"><mrow><mi>\u03b1</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM58\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow></math> can be expressed by:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "mathml": "<math><mrow><mrow><mi>\u03b1</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM61\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM62\"><mn>1</mn><mo>/</mo><mi>t</mi></mrow><mo stretchy=\"false\">)</mo></mrow><mo>\u2062</mo><mrow><msubsup><mo largeop=\"true\" symmetric=\"true\">\u222b</mo><mn>0</mn><mi>t</mi></msubsup><mrow><mi>d</mi><mo>\u2062</mo><msup><mi>t</mi><mo>\u2032</mo></msup><mo>\u2062</mo><msup><mi>e</mi><mrow><mrow><mrow><mi>V</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM59\">s</mi><mo>,</mo><msup id=\"XM60\"><mi>t</mi><mo>\u2032</mo></msup><mo stretchy=\"false\">)</mo></mrow></mrow><mo>/</mo><mi>k</mi></mrow><mo>\u2062</mo><mi>T</mi></mrow></msup></mrow></mrow></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Then the observed passage time, <math id=\"inf233\"><mi>t</mi></math>, is reweighted by:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c4</mi><mrow><mi>t</mi><mo>\u2062</mo><mi>r</mi><mo>\u2062</mo><mi>u</mi><mo>\u2062</mo><mi>e</mi></mrow></msub><mo>=</mo><mrow><mrow><mi>\u03b1</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM65\">t</mi><mo stretchy=\"false\">)</mo></mrow></mrow><mo>*</mo><mi>t</mi></mrow><mo>=</mo><mrow><msubsup><mo largeop=\"true\" symmetric=\"true\">\u222b</mo><mn>0</mn><mi>t</mi></msubsup><mrow><mi>d</mi><mo>\u2062</mo><msup><mi>t</mi><mo>\u2032</mo></msup><mo>\u2062</mo><msup><mi>e</mi><mrow><mrow><mrow><mi>V</mi><mo>\u2062</mo><mrow><mo stretchy=\"false\">(</mo><mi id=\"XM63\">s</mi><mo>,</mo><msup id=\"XM64\"><mi>t</mi><mo>\u2032</mo></msup><mo stretchy=\"false\">)</mo></mrow></mrow><mo>/</mo><mi>k</mi></mrow><mo>\u2062</mo><mi>T</mi></mrow></msup></mrow></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In principle, the transition time should be a Poisson-distributed random variable, and its mean, <math id=\"inf234\"><mi>\u03bc</mi></math>, standard deviation <math id=\"inf235\"><mi>\u03c3</mi></math> and median <math id=\"inf236\"><mrow><mrow><msub><mi>t</mi><mi>m</mi></msub><mo>/</mo><mi>l</mi></mrow><mo>\u2062</mo><mi>n</mi><mo>\u2062</mo><mn>2</mn></mrow></math> all should be equal to each other. In practice, however, they are somewhat sensitive to insufficient sampling (<a href=\"#bib52\">Salvalaglio et al., 2014</a>). So rather than simply calculating averages of the individual times, we estimated the average rate and transition time <math id=\"inf237\"><mi>\u03c4</mi></math> from a fit of the empirical cumulative distribution function (ECDF) with the theoretical cumulative distribution function (TCDF):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "mathml": "<math><mrow><mrow><mi>T</mi><mo>\u2062</mo><mi>C</mi><mo>\u2062</mo><mi>D</mi><mo>\u2062</mo><mi>F</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mfrac><mi>t</mi><mi>\u03c4</mi></mfrac></mrow></msup></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It has previously been shown that <math id=\"inf238\"><mi>\u03c4</mi></math> estimated in this way converges more quickly than the simple average, <math id=\"inf239\"><mi>\u03bc</mi></math>. This is also consistent with our observation, and we find that 10\u201315 samples appear sufficient to get a reasonably accurate estimation of the transition time. We used a bootstrap approach to estimate the errors."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To examine whether the observed times indeed follow the expected Poisson distribution we used a Kolmogorov-Smirnov (KS) test to obtain a p-value that quantifies the similarity between the empirical and theoretical distributions. Traditionally, a threshold value typically of 0.05 or 0.01 (the significance level of the test) is used to judge if the theoretical (TCDF) and empirical (ECDF) distributions are in agreement. If the p-value is equal to or larger than the threshold value, it suggests that the estimated transition time is quite reliable. If (a) the transition regions were perturbed significantly with infrequent biasing or (b) there are hidden unidentified timescales at play (e.g. the CVs do not capture the slow degrees of freedom) the KS test for time-homogeneous Poisson statistics would fail."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s27", 
+                                "title": "CS-restrained replica-averaged simulation", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The simulation methods described above constitute different ways of exploring the thermodynamics (PathMetaD), kinetics (InMetaD) and mechanism (Reconnaissance metadynamics) of conformational exchange. In all of these simulations, sampling is determined by the molecular energy function (force field), and the experimental information on T4L is used only in the construction of the path variables. When additional experimental information is available, one may introduce an additional energy term so as to bias the simulations to be in agreement with this information (<a href=\"#bib49\">Robustelli et al., 2010</a>). As the experimental values are ensemble averages we apply these restraints only to averages calculated over a number of \u2018replicas\u2019 that are simulated in parallel. In this way, the information from the experimental data is incorporated into the simulation as a perturbation following the maximum entropy principle\u00a0(<a href=\"#bib47\">Pitera and Chodera, 2012</a>; <a href=\"#bib50\">Roux and Weare, 2013</a>; <a href=\"#bib13\">Cavalli et al., 2013</a>; <a href=\"#bib7\">Boomsma et al., 2014</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We used this approach to obtain conformational ensembles that include not only information from the molecular force field, but also experimental NMR chemical shifts (CS). In particular, we used either the chemical shifts of the E state of L99A obtained from the analysis of the CPMG experiments, or the native state chemical shifts of a triple mutant that populates the same state as its ground state\u00a0(<a href=\"#bib8\">Bouvignies et al., 2011</a>). The CS restraints were imposed by adding a pseudo-energy term (<math id=\"inf240\"><msub><mi>E</mi><mrow><mi>C</mi><mo>\u2062</mo><mi>S</mi></mrow></msub></math>) to a standard molecular-mechanics force field (<math id=\"inf241\"><msub><mi>E</mi><mrow><mi>F</mi><mo>\u2062</mo><mi>F</mi></mrow></msub></math>)."
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "mathml": "<math><mrow><msub><mi>E</mi><mrow><mi>C</mi><mo>\u2062</mo><mi>S</mi></mrow></msub><mo>=</mo><mrow><msub><mi>\u03f5</mi><mrow><mi>C</mi><mo>\u2062</mo><mi>S</mi></mrow></msub><mo>\u2062</mo><mrow><munderover><mo largeop=\"true\" movablelimits=\"false\" symmetric=\"true\">\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><munderover><mo largeop=\"true\" movablelimits=\"false\" symmetric=\"true\">\u2211</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>6</mn></munderover><msup><mrow><mo stretchy=\"false\">(</mo><mrow id=\"XM66\"><msubsup><mi>\u03b4</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>j</mi></mrow><mrow><mi>E</mi><mo>\u2062</mo><mi>x</mi><mo>\u2062</mo><mi>p</mi></mrow></msubsup><mo>-</mo><mrow><mfrac><mn>1</mn><mi>M</mi></mfrac><mo>\u2062</mo><mrow><munderover><mo largeop=\"true\" movablelimits=\"false\" symmetric=\"true\">\u2211</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>M</mi></munderover><msubsup><mi>\u03b4</mi><mrow><mi>i</mi><mo>\u2062</mo><mi>j</mi><mo>\u2062</mo><mi>k</mi></mrow><mrow><mi>S</mi><mo>\u2062</mo><mi>i</mi><mo>\u2062</mo><mi>m</mi></mrow></msubsup></mrow></mrow></mrow><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here <math id=\"inf242\"><msub><mi>\u03f5</mi><mrow><mi>C</mi><mo>\u2062</mo><mi>S</mi></mrow></msub></math> is strength of the CS restraints, <math id=\"inf243\"><mi>i</mi></math> indicates the residue number (total of <math id=\"inf244\"><mi>N</mi></math>), <math id=\"inf245\"><mi>j</mi></math> indicates each of the six backbone atoms whose chemical shifts were used (<math id=\"inf246\"><msub><mi>C</mi><mi>\u03b1</mi></msub></math>, <math id=\"inf247\"><msub><mi>C</mi><mi>\u03b2</mi></msub></math>, <math id=\"inf248\"><msup><mi>C</mi><mo>\u2032</mo></msup></math>, <math id=\"inf249\"><msub><mi>H</mi><mi>\u03b1</mi></msub></math>, HN and N), <math id=\"inf250\"><mi>k</mi></math> is an index for the total of <math id=\"inf251\"><mi>M</mi></math> replicas, and <math id=\"inf252\"><msup><mi>\u03b4</mi><mrow><mi>E</mi><mo>\u2062</mo><mi>x</mi><mo>\u2062</mo><mi>p</mi></mrow></msup></math> and <math id=\"inf253\"><msup><mi>\u03b4</mi><mrow><mi>S</mi><mo>\u2062</mo><mi>i</mi><mo>\u2062</mo><mi>m</mi></mrow></msup></math> are the experimental and simulated CSs, respectively. The latter quantity, <math id=\"inf254\"><msup><mi>\u03b4</mi><mrow><mi>S</mi><mo>\u2062</mo><mi>i</mi><mo>\u2062</mo><mi>m</mi></mrow></msup></math>, was calculated by CamShift (<a href=\"#bib23\">Fu et al., 2014</a>) as a plugin of PLUMED. The CS values of Pro, Gly, Asp, Glu, His and terminal residues were not included because the accuracy in their predictions are too low to contain sufficient information in this approach (<a href=\"#bib23\">Fu et al., 2014</a>). We set <math id=\"inf255\"><msub><mi>\u03f5</mi><mrow><mi>C</mi><mo>\u2062</mo><mi>S</mi></mrow></msub></math>=24 kJ mol<sup>\u22121</sup>\u00a0ppm<sup>\u22122</sup> and used M=4 replicas. In principle, the number of replicas is a free parameter that should be set as large as possible when the experimental data and the method for calculating it is noise free (<a href=\"#bib7\">Boomsma et al., 2014</a>). In practice, one uses a finite set of replicas and it has been shown that M=4 replicas is sufficient to capture the dynamics accurately (<a href=\"#bib12\">Camilloni et al., 2013</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We performed replica-averaged CS restrained MD simulations using GROMACS4.6 and the PLUMED2.1 plugin at 298\u00a0K. The equilibrated structures of <math id=\"inf256\"><msub><mi>E</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow></msub></math> and <math id=\"inf257\"><msubsup><mi>G</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow><mrow><mi>T</mi><mo>\u2062</mo><mi>r</mi><mo>\u2062</mo><mi>i</mi><mo>\u2062</mo><mi>p</mi><mo>\u2062</mo><mi>l</mi><mo>\u2062</mo><mi>e</mi></mrow></msubsup></math> were used as the starting configuration (of each of the four replicas) in the CS-restrained simulations of L99A and the L99A,G113A,R119P triple mutant, respectively. The CS data for <math id=\"inf258\"><msub><mi>E</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow></msub></math> and <math id=\"inf259\"><msubsup><mi>G</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow><mrow><mi>T</mi><mo>\u2062</mo><mi>r</mi><mo>\u2062</mo><mi>i</mi><mo>\u2062</mo><mi>p</mi><mo>\u2062</mo><mi>l</mi><mo>\u2062</mo><mi>e</mi></mrow></msubsup></math> were obtained from the Biological Magnetic Resonance Bank (BMRB) database (<a href=\"#bib64\">Ulrich et al., 2008</a>) with entries 17604 and 17603, respectively."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s28", 
+                                "title": "PT-WT-MetaD failed to get the converged free energy landscape", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In practice, the choice of CVs plays a fundamental role in determining the accuracy, convergence and efficiency of metadynamics simulations. If an important CV is missing, the exploration of the free energy landscape will be difficult due to hysteresis. Finding a minimal set of CVs that include all important degrees of freedom is a highly nontrivial task and one often has to proceed by several rounds of trial simulations."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "At the beginning, we followed a strategy which had previously been successfully used in the exploration of protein conformational transitions (<a href=\"#bib56\">Sutto and Gervasio, 2013</a>; <a href=\"#bib45\">Papaleo et al., 2014</a>) to design a set of CVs on the basis of static structural comparison between <math id=\"inf260\"><msub><mi>G</mi><mrow><mi>X</mi><mo>\u2062</mo><mi>r</mi><mo>\u2062</mo><mi>a</mi><mo>\u2062</mo><mi>y</mi></mrow></msub></math> and <math id=\"inf261\"><msub><mi>E</mi><mrow><mi>R</mi><mo>\u2062</mo><mi>O</mi><mo>\u2062</mo><mi>S</mi><mo>\u2062</mo><mi>E</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>T</mi><mo>\u2062</mo><mi>A</mi></mrow></msub></math>. In particular, by comparing these two structures we defined several CVs that described structural differences by individual dihedral angles and hydrogen bonds, as well as dihedral correlation and coordination number (state-specific contact map) (<a href=\"#bib5\">Bonomi et al., 2009</a>) (summarized in <a href=\"#AP-tbl1\">Appendix 1\u2014table 1</a>). We combined these in a multiple-replica, parallel tempering approach in the well-tempered ensemble (PT-WT-metaD) (<a href=\"#bib6\">Bonomi and Parrinello, 2010</a>)\u00a0to further enhance the sampling. In PT-WT-metaD, the energy fluctuations are enlarged by using energy as a biased CV but the average energy is the same as the canonical ensemble, allowing the use of a larger spacing between temperatures and a much fewer number of replicas than normal PT simulations\u00a0(<a href=\"#bib3\">Barducci et al., 2015</a>). Coordinate exchange with high temperature replicas can enhance the sampling of all the degrees of freedom, even those not included in the biased CVs, and one may include a \u2018neutral\u2019 replica (without energy bias, at 298\u00a0K). We performed a series of simulations with different combinations of CVs starting from the G state of L99A (<a href=\"#AP-tbl2\">Appendix 1\u2014table 2</a>). However, unfortunately, we only observed partial G-to-E transitions, even in a relatively long trajectory of about 1\u00a0\u03bcs for each replica. This negative result suggested that these manually chosen CVs did not contain all the necessary slow degrees of freedom."
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s29", 
+                        "title": "Tunnel analysis", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "We used CAVER3 (<a href=\"#bib14\">Chovancova et al., 2012</a>)\u00a0to analyse the structures and CAVER Analyst1.0 (<a href=\"#bib29\">Kozlikova et al., 2014</a>)(<a href=\"http://www.caver.cz/\">http://www.caver.cz/</a>, see also parameters in <a href=\"#AP-tbl4\">Appendix 1\u2014table 4</a>) to separate the tunnels into different clusters. CAVER Analyst is a standalone program based on CAVER3.0 algorithm (<a href=\"#bib14\">Chovancova et al., 2012</a>). The settings for the tunnel calculations can be set through the Tunnel Computation window, while the advanced parameters can be set in the Tunnel Advanced Settings window. We used the center of mass of the cavity-related region (residue 93-124) as the position of the starting point. Average-link hierarchical clustering algorithm is performed to build a tree hierarchy of tunnel axes based on their pairwise distances. The size of the resulting clusters is dependent on the Clustering threshold parameter which specifies the level of detail at which the tree hierarchy of tunnel clusters will be cut. We used the default value so that the tree hierarchy of tunnel clusters is cut at the value of 3.5."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s30", 
                         "title": "Adiabatic bias molecular dynamics", 
                         "content": [

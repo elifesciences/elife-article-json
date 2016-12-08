@@ -5729,62 +5729,530 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s6-6", 
-                        "title": "Characterization of wing blade anisotropy", 
+                        "id": "s6", 
+                        "title": "Shear decomposition using triangles.", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "Here, we define the wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> plotted in <a href=\"#fig6s1\">Figure 6\u2014figure supplement 1B</a>. To this end, we first define a matrix"
+                                "text": "Here we define the average pure shear rate of a tissue region and its decomposition into cellular contributions (<a href=\"#bib42\">Merkel, 2014</a>). The cellular network of the tissue region is triangulated (\u2018Triangulated cellular networks\u2019). Averaging triangle deformations over all triangles within the region yields expressions for the large-scale shear rate and the shear rate contributions by different cellular processes (\u2018Decomposition of the large-scale tissue shear rate\u2019). The determination of spatial patterns of shear (<a href=\"#fig5\">Figure 5</a>, <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a>) and rotation (<a href=\"#fig6\">Figure 6C,D,F,G</a>) are discussed in \u2018Spatially resolved shear patterns\u2019 and \u2018Power spectrum of local tissue rotation\u2019."
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ44", 
-                                "label": "(44)", 
-                                "mathml": "<math><mrow><mi mathvariant=\"bold-italic\">M</mi><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>M</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>M</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>M</mi><mrow><mi>y</mi><mi>x</mi></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>M</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s6-1", 
+                                "title": "Triangulated cellular networks", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, we first describe the tiling of the cellular network in detail before defining deformation and elongation of a single triangle."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s6-1-1", 
+                                        "title": "Triangulation procedure", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "To define a triangulation of a given cellular network, we consider all vertices of the network that are not located at the margin. Each of these inner vertices abuts at least three cells. If a given inner vertex <i>m</i> abuts exactly three cells <i>\u03b1</i>, <i>\u03b2</i>, and <i>\u03b3</i>, we define a single triangle <i>m</i> that has its corners at the centers <b><i>R</i></b><sup><i>\u03b1</i></sup>, <b><i>R</i></b><sup><i>\u03b2</i></sup>, and <b><i>R</i></b><sup><i>\u03b3</i></sup> of the abutting cells. Here, <b><i>R</i></b><sup><i>\u03b1</i></sup> denotes the area center of cell <i>\u03b1</i>: <math id=\"inf46\"><mrow><msup><mi mathvariant=\"bold-italic\">R</mi><mi>\u03b1</mi></msup><mo>=</mo><mrow><mo>(</mo><mrow><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup><mi mathvariant=\"bold-italic\">r</mi><msup><mtext>d</mtext><mn>2</mn></msup><mi>r</mi></mrow><mo>)</mo></mrow><mo>/</mo><msup><mi>A</mi><mi>\u03b1</mi></msup></mrow></math>, where the integral runs over the projected area <i>A</i><sup><i>\u03b1</i></sup> of cell <i>\u03b1</i>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For an inner vertex <i>m</i> that abuts <i>N</i> &gt; 3 cells <i>\u03b1</i><sub>1</sub>,\u2026,<i>\u03b1</i><sub><i>N</i></sub>, we define <i>N</i> triangles <i>m</i><sub>1</sub>,\u2026,<i>m</i><sub><i>N</i></sub>. The corners of each of these triangles are defined as follows. One corner of each triangle is defined by the average position <math id=\"inf47\"><mrow><mi mathvariant=\"bold-italic\">C</mi><mo>=</mo><mrow><mo>(</mo><mrow><msup><mi mathvariant=\"bold-italic\">R</mi><mrow><msub><mi>\u03b1</mi><mn>1</mn></msub></mrow></msup><mo>+</mo><mo>\u2026</mo><mo>+</mo><msup><mi mathvariant=\"bold-italic\">R</mi><mrow><msub><mi>\u03b1</mi><mi>N</mi></msub></mrow></msup></mrow><mo>)</mo></mrow><mo>/</mo><mi>N</mi></mrow></math> of all <i>N</i> cell centers. The other two corners of a given triangle <i>m</i><sub><i>i</i></sub> with <i>i</i> = 1,\u2026,<i>N</i> are defined by the cell centers <math id=\"inf48\"><mrow><msup><mi mathvariant=\"bold-italic\">R</mi><mrow><msub><mi>\u03b1</mi><mi>i</mi></msub></mrow></msup></mrow></math> and <math id=\"inf49\"><mrow><msup><mi mathvariant=\"bold-italic\">R</mi><mrow><msub><mi>\u03b1</mi><mrow><mrow><mo>(</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></msub></mrow></msup></mrow></math> (<math id=\"inf50\"><mrow><msup><mi mathvariant=\"bold-italic\">R</mi><mrow><msub><mi>\u03b1</mi><mrow><mrow><mo>(</mo><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></msub></mrow></msup></mrow></math> corresponds to <math id=\"inf51\"><mrow><msup><mi mathvariant=\"bold-italic\">R</mi><mrow><msub><mi>\u03b1</mi><mn>1</mn></msub></mrow></msup></mrow></math>). Applying these two rules to all inner vertices, we obtain a tiling of the whole network without gaps or overlaps, leaving out only a small stripe at the margin of the network, which is ca. half a cell diameter wide."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s6-1-2", 
+                                        "title": "Triangle deformation", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We characterize the deformation of a given triangle <i>m</i> occurring during a time interval \u0394<i>t</i> by a tensor <math id=\"inf52\"><mrow><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math>. The Latin indices <i>i</i>, <i>j</i>,\u2026 denote dimension indices of vectors, tensors, and matrices. For matrices, the first index is the row index and the second index is the column index. To define <math id=\"inf53\"><mrow><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math>, we denote the initial and the final positions of the triangle corners by <b><i>R</i></b><sup>1</sup>, <b><i>R</i></b><sup>2</sup>, <b><i>R</i></b><sup>3</sup> and <b><i>R</i></b>\u2032<sup>1</sup>, <b><i>R</i></b>\u2032<sup>2</sup>, <b><i>R</i></b>\u2032<sup>3</sup>, respectively. Then, the triangle side vectors before and after the deformation read <b>\u0394<i>R</i></b><sup><i>\u03b2\u03b1</i></sup> = <b><i>R</i></b><sup><i>\u03b2</i></sup> \u2212 <b><i>R</i></b><sup><i>\u03b1</i></sup> and <b>\u0394<i>R</i></b>\u2032<sup><i>\u03b2\u03b1</i></sup> = <b><i>R</i></b>\u2032<sup><i>\u03b2</i></sup> \u2212 <b><i>R</i></b>\u2032<sup><i>\u03b1</i></sup> for <i>\u03b1</i>, <i>\u03b2</i> \u2208 {1, 2, 3}. Now, there is a unique affine transformation defined by the tensor <math id=\"inf54\"><mrow><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> that maps the initial side vectors to the final side vectors:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ14", 
+                                                "label": "(14)", 
+                                                "mathml": "<math><mrow><mtext>\u0394</mtext><msubsup><mi>R</mi><mi>i</mi><mrow><mo>\u2032</mo><mi>\u03b2</mi><mi>\u03b1</mi></mrow></msubsup><mo>=</mo><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mtext>\u0394</mtext><msubsup><mi>R</mi><mi>j</mi><mrow><mi>\u03b2</mi><mi>\u03b1</mi></mrow></msubsup><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "for any combination <i>\u03b1</i>, <i>\u03b2</i> \u2208 {1, 2, 3}. Equal indices on one side of the equation imply a summation over the two spatial dimensions. From standard linear algebra follows that the tensor <math id=\"inf55\"><mrow><msup><mi mathvariant=\"bold-italic\">M</mi><mi>m</mi></msup><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow><mo>)</mo></mrow></mrow></math> has the following unique matrix representation:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ15", 
+                                                "label": "(15)", 
+                                                "mathml": "<math><mrow><msup><mi mathvariant=\"bold-italic\">M</mi><mi>m</mi></msup><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>x</mi><mrow><mo>\u2032</mo><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>x</mi><mrow><mo>\u2032</mo><mn>31</mn></mrow></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>y</mi><mrow><mo>\u2032</mo><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>y</mi><mrow><mo>\u2032</mo><mn>31</mn></mrow></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>\u22c5</mo><msup><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>x</mi><mrow><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>x</mi><mrow><mn>31</mn></mrow></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>y</mi><mrow><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>y</mi><mrow><mn>31</mn></mrow></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In this equation the dot denotes the matrix product."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Based on the affine transformation tensor <math id=\"inf56\"><mrow><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math>, we compute a discrete velocity gradient tensor <math id=\"inf57\"><mrow><msubsup><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> for the triangle <i>m</i>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ16", 
+                                                "label": "(16)", 
+                                                "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>(</mo><mrow><msubsup><mi>M</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>m</mi></msubsup><mo>\u2212</mo><msub><mi>\u03b4</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here, the <i>\u03b4</i><sub><i>ij</i></sub> symbol denotes the Kronecker symbol. Note that the tensor <math id=\"inf58\"><mrow><msubsup><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> enters transposed into this equation. This leads to a discrete velocity gradient <math id=\"inf59\"><mrow><msubsup><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> that approximates the local velocity gradient <i>v</i><sub><i>ij</i></sub> = \u2202<sub><i>i</i></sub>v<sub><i>j</i></sub> in the continuum limit, where <b>v</b>(<b><i>r</i></b>) denotes the velocity field."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Finally, we decompose the discrete triangle velocity gradient into trace <math id=\"inf60\"><mrow><msubsup><mi>v</mi><mrow><mi>k</mi><mi>k</mi></mrow><mi>m</mi></msubsup></mrow></math>, traceless, symmetric part <math id=\"inf61\"><mrow><msubsup><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math>, and antisymmetric part <i>\u03c9</i><sup><i>m</i></sup>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ17", 
+                                                "label": "(17)", 
+                                                "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>v</mi><mrow><mi>k</mi><mi>k</mi></mrow><mi>m</mi></msubsup><msub><mi>\u03b4</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msubsup><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mo>\u2212</mo><msup><mi>\u03c9</mi><mi>m</mi></msup><msub><mi>\u03f5</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "with the generator of rotations defined by"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ18", 
+                                                "label": "(18)", 
+                                                "mathml": "<math><mi>\u03f5</mi><mtext>=</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mtext>0</mtext></mtd><mtd><mrow><mo>\u2212</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>.</mo></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The trace <math id=\"inf62\"><mrow><msubsup><mi>v</mi><mrow><mi>k</mi><mi>k</mi></mrow><mi>m</mi></msubsup></mrow></math> represents the relative area expansion rate of the triangle, the traceless, symmetric part <math id=\"inf63\"><mrow><msubsup><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> represents a discrete triangle shear rate, and the antisymmetric part <i>\u03c9</i><sup><i>m</i></sup> represents a triangle rotation rate."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s6-1-3", 
+                                        "title": "Triangle elongation", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We characterize triangle shape by an affine transformation tensor <math id=\"inf64\"><mrow><msubsup><mi>S</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> with respect to a universal reference triangle. This reference triangle is equilateral, and it has a fixed orientation and a fixed area <i>A</i><sub>0</sub>. The corners of the reference triangle are denoted by <b><i>C</i></b><sup>1</sup>, <b><i>C</i></b><sup>2</sup>, and <b><i>C</i></b><sup>3</sup>. At some fixed time point, we denote the corners of a given triangle <i>m</i> by <b><i>R</i></b><sup>1</sup>, <b><i>R</i></b><sup>2</sup>, and <b><i>R</i></b><sup>3</sup>. Like above, we denote the respective triangle side vectors by <b>\u0394<i>C</i></b><sup><i>\u03b2\u03b1</i></sup> = <b><i>C</i></b><sup><i>\u03b2</i></sup> \u2212 <b><i>C</i></b><sup><i>\u03b1</i></sup> and <b>\u0394<i>R</i></b><sup><i>\u03b2\u03b1</i></sup> = <b><i>R</i></b><sup><i>\u03b2</i></sup> \u2212 <b><i>R</i></b><sup><i>\u03b1</i></sup> for <i>\u03b1</i>, <i>\u03b2</i> \u2208 {1, 2, 3}. Then, we define the tensor <math id=\"inf65\"><mrow><msup><mi mathvariant=\"bold-italic\">S</mi><mi>m</mi></msup><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>S</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow><mo>)</mo></mrow></mrow></math> via the following matrix representation:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ19", 
+                                                "label": "(19)", 
+                                                "mathml": "<math><mrow><msup><mi mathvariant=\"bold-italic\">S</mi><mi>m</mi></msup><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>x</mi><mrow><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>x</mi><mrow><mn>31</mn></mrow></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>y</mi><mrow><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>R</mi><mi>y</mi><mrow><mn>31</mn></mrow></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>\u22c5</mo><msup><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>C</mi><mi>x</mi><mrow><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>C</mi><mi>x</mi><mrow><mn>31</mn></mrow></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><mi>\u0394</mi><msubsup><mi>C</mi><mi>y</mi><mrow><mn>21</mn></mrow></msubsup></mrow></mtd><mtd><mrow><mi>\u0394</mi><msubsup><mi>C</mi><mi>y</mi><mrow><mn>31</mn></mrow></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow><mrow><mi>\u2212</mi><mn>1</mn></mrow></msup><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The so-defined tensor <math id=\"inf66\"><mrow><msubsup><mi>S</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow></math> maps the side vectors of the reference triangle to the side vectors of the triangle <i>m</i>, analogously to <a href=\"#equ14\">Equation 14</a>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "To extract shape properties from the tensor <math id=\"inf67\"><mrow><msup><mi mathvariant=\"bold-italic\">S</mi><mi>m</mi></msup><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>S</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow><mo>)</mo></mrow></mrow></math>, we use the following polar decomposition (<a href=\"#bib33\">Kaballo, 2013</a>):"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ20", 
+                                                "label": "(20)", 
+                                                "mathml": "<math><mrow><msup><mi mathvariant=\"bold-italic\">S</mi><mi>m</mi></msup><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mrow><mrow><msup><mi>A</mi><mi>m</mi></msup></mrow><mo>/</mo><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>\u2009</mo><mi>exp</mi><mrow><mo>(</mo><mrow><msup><mi mathvariant=\"bold-italic\">Q</mi><mi>m</mi></msup></mrow><mo>)</mo></mrow><mo>\u22c5</mo><mi mathvariant=\"bold\">Rot</mi><mrow><mo>(</mo><mrow><msup><mo>\u0398</mo><mi>m</mi></msup></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here, <i>A</i><sup><i>m</i></sup> denotes the area of triangle <i>m</i>. This equation uniquely defines the symmetric, traceless 2 \u00d7 2 tensor <b><i>Q</i></b><sup><i>m</i></sup>, where the exponential of a tensor is defined by the Taylor series of the exponential function, and <b>Rot</b>(\u0398<sup><i>m</i></sup>) denotes the matrix describing a counter-clockwise rotation by the angle \u0398<sup><i>m</i></sup>. The symmetric, traceless tensor <b><i>Q</i></b><sup><i>m</i></sup> denotes the elongation of triangle <i>m</i> and the angle \u0398<sup><i>m</i></sup> denotes a triangle orientation angle."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "where"
+                                "type": "section", 
+                                "id": "s6-2", 
+                                "title": "Decomposition of the large-scale tissue shear rate", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In this subsection, we consider the deformation of the cellular network during a finite time interval \u0394<i>t</i> between two consecutive video frames. We denote the observed states of the cellular network corresponding to these two video frames by <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>, where <i>n</i> is an integer. We explain how we quantify the overall tissue shear rate between these two video frames and how we decompose it into cellular contributions. To separate the shear by topological changes from the shear by pure cellular deformation, we first introduce virtual intermediate network states between the two observed states <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s6-2-1", 
+                                        "title": "Intermediate network states", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Intermediate network states are introduced for the following reasons. First, topological changes occur instantaneously, and as a consequence of this, no tissue shear can occur <i>during</i> a topological transition. Second, topological transitions involve the addition/removal of triangles to/from the network (<a href=\"#fig4\">Figure 4L-O</a>). Third, we cannot determine the exact time at which a topological transition occurred during the interval \u0394<i>t</i> between two observed network states <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "To separate different types of changes between <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>, we introduce three virtual intermediate network states denoted <i>I</i><sub>1</sub>, <i>I</i><sub>2</sub>, and <i>I</i><sub>3</sub>. This is illustrated by the following scheme:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ21", 
+                                                "label": "(21)", 
+                                                "mathml": "<math><mrow><msub><mi>O</mi><mi>n</mi></msub><mrow><mover accent=\"true\"><mo>\u2192</mo><mrow><mtext>T</mtext><mn>2</mn><mtext>\u2009transitions</mtext></mrow></mover></mrow><msub><mi>I</mi><mn>1</mn></msub><mrow><mover accent=\"true\"><mo>\u2192</mo><mrow><mtext>pure\u2009deformation</mtext></mrow></mover></mrow><msub><mi>I</mi><mn>2</mn></msub><mrow><mover accent=\"true\"><mo>\u2192</mo><mrow><mtext>T</mtext><mn>1</mn><mtext>\u2009transitions</mtext></mrow></mover></mrow><msub><mi>I</mi><mn>3</mn></msub><mrow><mover accent=\"true\"><mo>\u2192</mo><mrow><mtext>cell\u2009divisions</mtext></mrow></mover></mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We first define the intermediate state <i>I</i><sub>3</sub> by starting from the observed state <i>O</i><sub><i>n</i> + 1</sub>. To this end, we fuse in <i>I</i><sub>3</sub> all pairs of daughter cells in <i>O</i><sub><i>n</i> + 1</sub>. This corresponds to undoing the cell divisions occurring during the time interval \u0394<i>t</i>. The position of the mother cell center in <i>I</i><sub>3</sub> is defined as the midpoint between the daughter cell centers in <i>O</i><sub><i>n</i> + 1</sub>. We then define the intermediate state <i>I</i><sub>1</sub> from the state <i>O</i><sub><i>n</i></sub> by removing all cells that will undergo a T2 transition during the time interval \u0394<i>t</i>. As a consequence, <i>I</i><sub>1</sub> and <i>I</i><sub>3</sub> contain the same set of cells. However, the topology and the cell center positions are different between these two states. Finally, we construct the state <i>I</i><sub>2</sub> from the state <i>I</i><sub>1</sub> by displacing each cell center to the position it attains in state <i>I</i><sub>3</sub>. Thus, the intermediate state <i>I</i><sub>2</sub> has the same topology as the state <i>I</i><sub>1</sub>, but cell center positions correspond to those in <i>I</i><sub>3</sub>. As a consequence of all these definitions, all T2 transitions occur between states <i>O</i><sub><i>n</i></sub> and <i>I</i><sub>1</sub>, any deformation (without topological changes) occurs between <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub>, all T1 transitions occur between <i>I</i><sub>2</sub> and <i>I</i><sub>3</sub>, and all cell divisions occur between <i>I</i><sub>3</sub> and <i>O</i><sub><i>n</i> + 1</sub> (compare <a href=\"#equ21\">scheme (21)</a>). Furthermore, since topological transitions occur instantaneously, the pure deformation between states <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub> coorresponds to the time interval \u0394<i>t</i>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The scheme in (<a href=\"#equ21\">21</a>) is the basis for the computation of the shear rate and all cellular contributions to it. In the following, we will separately discuss shear in the absence of topological transitions (i.e., between the states <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub>) and the shear by topological transitions."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s6-2-2", 
+                                        "title": "Large-scale shear in the absence of topological transitions", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The overall tissue shear rate <math id=\"inf68\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math> between the states <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub> is computed as the average triangle shear rate:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ22", 
+                                                "label": "(22)", 
+                                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In this equation, the average corresponds to an area-weighted average over all triangles, where the area weights are taken from state <i>I</i><sub>1</sub>. More generally, for any triangle-based quantity <i>q</i><sup><i>m</i></sup>, we define such an average by"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ23", 
+                                                "label": "(23)", 
+                                                "mathml": "<math><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msup><mi>q</mi><mi>m</mi></msup></mrow><mo>\u232a</mo></mrow></mrow><mi>X</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>A</mi><mi>X</mi></msub></mrow></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>m</mi></munder><msubsup><mi>A</mi><mi>X</mi><mi>m</mi></msubsup><msup><mi>q</mi><mi>m</mi></msup><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here, the sum runs over all triangles <i>m</i> of the network, <math id=\"inf69\"><mrow><msubsup><mi>A</mi><mi>X</mi><mi>m</mi></msubsup></mrow></math> denotes the area of triangle <i>m</i> in state <i>X</i> \u2208 {<i>O</i><sub><i>n</i></sub>, <i>I</i><sub>1</sub>, <i>I</i><sub>2</sub>, <i>I</i><sub>3</sub>, <i>O</i><sub><i>n</i> + 1</sub>}, and <i>A</i><sub><i>X</i></sub> is the total area of the triangulation in state <i>X</i>: <math id=\"inf70\"><mrow><msub><mi>A</mi><mi>X</mi></msub><mo>=</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>m</mi></munder><msubsup><mi>A</mi><mi>X</mi><mi>m</mi></msubsup></mrow></math>. The index <i>X</i> is necessary, because the triangle areas generally change between two states. The average quantity <i>q</i><sup><i>m</i></sup> may be evaluated for a network state <i>Y</i> different from <i>X</i> if both contain the same set of triangles. Interestingly, the large-scale shear rate <math id=\"inf71\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math> can equally be computed from margin displacements alone (<a href=\"#bib42\">Merkel, 2014</a>; Merkel et al., in preparation). Furthermore, since there is no shear occurring during topological transitions, the average shear rate <math id=\"inf72\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math> between the intermediate states <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub> also corresponds to the average shear rate between the observed states <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The overall tissue shear rate between the intermediate states <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub> can be expressed in terms of the average triangle elongation change during that time:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ24", 
+                                                "label": "(24)", 
+                                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub></mrow><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mo>+</mo><msub><mi>J</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here,"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ25", 
+                                                "label": "(25)", 
+                                                "mathml": "<math><mrow><msub><mi>J</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><msub><mi>\u03f5</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><msub><mrow><mrow><mo>\u2329</mo><mrow><msup><mi>\u03c9</mi><mi>m</mi></msup></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>Q</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "is a corotational term and we have introduced the correlation contribution to shear <i>D</i><sub><i>ij</i></sub>, which can be approximated as"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ26", 
+                                                "label": "(26)", 
+                                                "mathml": "<math><mtable columnalign=\"left\"><mtr><mtd><msub><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2243</mo><mfrac><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow></msub></mrow><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac></mtd></mtr><mtr><mtd><mtext>\u2003\u2003</mtext><mo>\u2212</mo><msub><mi>\u03f5</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msup><mi>\u03c9</mi><mi>m</mi></msup><mrow><mo>[</mo><mrow><msub><mi>Q</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>Q</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msup><mi>\u03c9</mi><mi>m</mi></msup></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>Q</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub></mrow><mo>)</mo></mrow><mo>.</mo></mtd></mtr></mtable></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In <a href=\"#equ26\">Equation 26</a>, the first term captures effects of area expansion rate correlation with cell elongation, while the second term corresponds to correlations of rotation rate with cell elongation (<a href=\"#fig6\">Figure 6E</a>). Here, we neglected higher order terms in the deformation and in the cell elongation. An exact decomposition of <math id=\"inf73\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math> in the limit of small time intervals \u0394<i>t</i> can also be obtained (<a href=\"#bib42\">Merkel, 2014</a>; Merkel et al., in preparation)."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s6-2-3", 
+                                        "title": "Contributions to shear by topological changes", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Between the two states <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>, we define the contributions of topological changes to the shear rate as follows:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ27", 
+                                                "label": "(27)", 
+                                                "mathml": "<math><mrow><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow></msub></mrow><mo>]</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ28", 
+                                                "label": "(28)", 
+                                                "mathml": "<math><mrow><msub><mi>C</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></msub></mrow><mo>]</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ29", 
+                                                "label": "(29)", 
+                                                "mathml": "<math><mrow><msub><mi>E</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>O</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>O</mi><mi>n</mi></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></msub></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The total change of the average triangle elongation between the observed video states is <math id=\"inf74\"><mrow><mtext>\u0394</mtext><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>O</mi><mi>n</mi></msub><mo>,</mo><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>O</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mrow><msub><mi>O</mi><mi>n</mi></msub></mrow></msub></mrow></math>. Putting everything together, we obtain <a href=\"#equ2\">Equation 2</a> from the main text:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ30", 
+                                                "label": "(30)", 
+                                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><mtext>D</mtext><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mtext>D</mtext><mi>t</mi></mrow></mfrac><mo>+</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "with <i>R</i><sub><i>ij</i></sub> = <i>T</i><sub><i>ij</i></sub> + <i>C</i><sub><i>ij</i></sub> + <i>E</i><sub><i>ij</i></sub> + <i>D</i><sub><i>ij</i></sub>. The corotational derivative D<i>Q</i><sub><i>ij</i></sub>/D<i>t</i> is defined by"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ31", 
+                                                "label": "(31)", 
+                                                "mathml": "<math><mrow><mfrac><mrow><mtext>D</mtext><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mtext>D</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mtext>\u0394</mtext><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>O</mi><mi>n</mi></msub><mo>,</mo><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mo>+</mo><msub><mi>J</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "and the quantities <math id=\"inf75\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, <i>J</i><sub><i>ij</i></sub>, and <i>D</i><sub><i>ij</i></sub> are defined in the previous subsection."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ45", 
-                                "label": "(45)", 
-                                "mathml": "<math><mrow><msub><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mi>A</mi></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mi>A</mi></munder><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>\u2212</mo><msubsup><mi>r</mi><mi>i</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>j</mi></msub><mo>\u2212</mo><msubsup><mi>r</mi><mi>j</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mtext>d</mtext><mi>x</mi><mtext>d</mtext><mi>y</mi><mo>.</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s6-3", 
+                                "title": "Spatially resolved shear patterns", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To visualize the spatial patterns of shear contributions, we divided the entire wing into a fixed grid of non-overlapping boxes, sized 26 \u03bcm \u00d7 26 \u03bcm. Then, each triangle is assigned to the box that contains the triangle center. This allows for the computation of average triangle quantities within each of these boxes. As in the previous section, for a given time interval \u0394<i>t</i> between two consecutive video frames <i>O</i><sub><i>n</i></sub> and <i>O</i><sub><i>n</i> + 1</sub>, we created intermediate states <i>I</i><sub>1</sub>, <i>I</i><sub>2</sub>, and <i>I</i><sub>3</sub> (compare <a href=\"#equ21\">scheme (21)</a>). Note that the set of triangles associated to a given box depends not only on the time interval <i>n</i>, but also on the state considered (<i>O</i><sub><i>n</i></sub>, <i>I</i><sub>1</sub>, <i>I</i><sub>2</sub>, <i>I</i><sub>3</sub>, or <i>O</i><sub><i>n</i> + 1</sub>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The five shear patterns shown in <a href=\"#fig5\">Figure 5</a> and <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a> were computed as follows. The total shear rate <math id=\"inf76\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, the corotational term <i>J</i><sub><i>ij</i></sub>, and the correlations <i>D</i><sub><i>ij</i></sub> in a given box were computed using <a href=\"#equ22 equ25 equ26\">Equations 22, 25, 26</a>, respectively, where for each average appearing in these expressions, only those triangles associated to the given box in state <i>I</i><sub>1</sub> were included. The remaining quantities were computed as follows:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ32", 
+                                        "label": "(32)", 
+                                        "mathml": "<math><mrow><msup><mrow><mrow><mo>[</mo><mrow><mfrac><mrow><mtext>D</mtext><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mtext>D</mtext><mi>t</mi></mrow></mfrac></mrow><mo>]</mo></mrow></mrow><mi>b</mi></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>O</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub></mrow><mo>]</mo></mrow><mo>+</mo><msubsup><mi>J</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>b</mi></msubsup><mtext>\u2003(cell\u2009elong.\u2009shear),</mtext></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ33", 
+                                        "label": "(33)", 
+                                        "mathml": "<math><mrow><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>b</mi></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub></mrow><mo>]</mo></mrow><mtext>\u2003(T1\u2009shear),</mtext></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ34", 
+                                        "label": "(34)", 
+                                        "mathml": "<math><mrow><msubsup><mi>C</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>b</mi></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>\u0394</mtext><mi>t</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub><mo>\u2212</mo><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub></mrow><mo>]</mo></mrow><mtext>\u2003(CD\u2009shear)</mtext><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, <i>b</i> denotes the box index. The averaging bracket <math id=\"inf77\"><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub></mrow></math> denotes an average of the triangle elongation in state <i>X</i> over all triangles <i>m</i> that are assigned to box <i>b</i> in state <i>X</i> with area weights from state <i>X</i>, where <i>X</i> \u2208 {<i>O</i><sub><i>n</i></sub>, <i>I</i><sub>1</sub>, <i>I</i><sub>2</sub>, <i>I</i><sub>3</sub>, <i>O</i><sub><i>n</i> + 1</sub>}:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ35", 
+                                        "label": "(35)", 
+                                        "mathml": "<math><mrow><msub><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></mrow><mo>\u232a</mo></mrow></mrow><mi>b</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>A</mi><mi>X</mi></msub></mrow></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>m</mi></munder><msubsup><mi>A</mi><mi>X</mi><mi>m</mi></msubsup><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>m</mi></msubsup><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, the sums runs over all triangles <i>m</i> that are associated to box <i>b</i> in state <i>X</i>. The contributions by T2 transitions were negligible."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For the pattern of corotational cell elongation change, we neglected convective contributions. To evaluate, how much this affected the shown patterns, we compared our results to an alternative implementation that tracks patches of tissue over time. Here, the fixed grid was only used for the initialization of the patches at the beginning of the video. For this alternative implementation, including a convective contribution is not necessary since each patch of tissue is followed over time. However after all, visual comparison of both implementations yielded a good agreement (not shown). Thus, the patterns in <a href=\"#fig5\">Figure 5</a> and <a href=\"#fig5s1\">Figure 5\u2014figure supplement 1</a> were not essentially affected by neglecting the convective term."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "Here, <i>A</i> denotes the total area of the wing blade and <math id=\"inf88\"><mrow><msubsup><mi>r</mi><mi>i</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup></mrow></math> denotes its area center:"
+                                "type": "section", 
+                                "id": "s6-4", 
+                                "title": "Power spectrum of local tissue rotation", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, we explain how we computed the spatial power spectrum of the local tissue rotation rate shown in <a href=\"#fig6\">Figure 6D</a>. For a given time interval between two consecutive video frames, the triangle rotation rates <i>\u03c9</i><sup><i>m</i></sup> are computed as described by <a href=\"#equ17\">Equation 17</a> and \u2018Decomposition of the large-scale tissue shear rate\u2019. This yields a piecewisely constant field of local rotation rates <i>\u03c9</i>(<b><i>r</i></b>): at a given position <b><i>r</i></b> that lies within a triangle <i>m</i>, the value of the field is defined by the triangle rotation rate <i>\u03c9</i>(<b><i>r</i></b>) = <i>\u03c9</i><sup><i>m</i></sup>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The power spectrum <math id=\"inf78\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mi mathvariant=\"script\">F</mi><mrow><mo>[</mo><mi>\u03c9</mi><mo>]</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">q</mi><mo>)</mo></mrow></mrow></math> of this field is then computed as the squared norm of following Fourier transform:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ36", 
+                                        "label": "(36)", 
+                                        "mathml": "<math><mrow><mi mathvariant=\"script\">F</mi><mrow><mo>[</mo><mi>\u03c9</mi><mo>]</mo></mrow><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">q</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>\u03c0</mi><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>L</mi><mi>x</mi></msub><msub><mi>L</mi><mi>y</mi></msub><mi>W</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup><msub><mtext>w</mtext><mrow><mn>2</mn><mtext>D</mtext></mrow></msub><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">r</mi><mo>)</mo></mrow><mi>\u03c9</mi><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">r</mi><mo>)</mo></mrow><msup><mi>e</mi><mrow><mtext>i</mtext><mi mathvariant=\"bold-italic\">q</mi><mo>\u22c5</mo><mi mathvariant=\"bold-italic\">r</mi></mrow></msup><msup><mtext>d</mtext><mn>2</mn></msup><mi>r</mi><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The integration in this expression was carried out over a squared region with a side length of <i>L</i><sub><i>x</i></sub> = <i>L</i><sub><i>y</i></sub> = 800 pixels (164 \u03bcm) that is located in the center of the wing, covering parts of the longitudinal veins 2 to 4. The product in the exponential is a dot product. The components of the wave vector <b><i>q</i></b> = (<i>q</i><sub><i>x</i></sub>, <i>q</i><sub><i>y</i></sub>) could take values <i>q</i><sub><i>x</i></sub> = 2<i>\u03c0n</i><sub><i>x</i></sub>/<i>L</i><sub><i>x</i></sub> and <i>q</i><sub><i>y</i></sub> = 2<i>\u03c0n</i><sub><i>y</i></sub>/<i>L</i><sub><i>y</i></sub>, where <i>n</i><sub><i>x</i></sub> and <i>n</i><sub><i>y</i></sub> are integers with \u2212<i>N</i>/2 \u2264 <i>n</i><sub><i>x</i></sub>, <i>n</i><sub><i>y</i></sub> &lt; <i>N</i>/2. We set <i>N</i> = 100. The function w<sub>2D</sub>(<b><i>r</i></b>) is a window function defined on the squared region. With the position <b><i>r</i></b> = (<i>r</i><sub><i>x</i></sub>, <i>r</i><sub><i>y</i></sub>) measured relative to the bottom-left corner of the squared region, it reads"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ37", 
+                                        "label": "(37)", 
+                                        "mathml": "<math><mrow><msub><mtext>w</mtext><mrow><mn>2</mn><mtext>D</mtext></mrow></msub><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">r</mi><mo>)</mo></mrow><mo>=</mo><msub><mtext>w</mtext><mrow><mtext>BH</mtext></mrow></msub><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>r</mi><mi>x</mi></msub></mrow><mrow><msub><mi>L</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><msub><mtext>w</mtext><mrow><mtext>BH</mtext></mrow></msub><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>r</mi><mi>y</mi></msub></mrow><mrow><msub><mi>L</mi><mi>y</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, w<sub>BH</sub>(<i>z</i>) denotes the one-dimensional Blackman Harris Window, which is defined by"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ38", 
+                                        "label": "(38)", 
+                                        "mathml": "<math><mrow><msub><mtext>w</mtext><mrow><mtext>BH</mtext></mrow></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>a</mi><mn>0</mn></msub><mo>\u2212</mo><msub><mi>a</mi><mn>1</mn></msub><mtext>cos</mtext><mrow><mo>(</mo><mrow><mn>2</mn><mi>\u03c0</mi><mi>z</mi></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mtext>cos</mtext><mrow><mo>(</mo><mrow><mn>4</mn><mi>\u03c0</mi><mi>z</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>a</mi><mn>3</mn></msub><mtext>cos</mtext><mrow><mo>(</mo><mrow><mn>6</mn><mi>\u03c0</mi><mi>z</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "with <i>a</i><sub>0</sub> = 0.35875, <i>a</i><sub>1</sub> = 0.48829, <i>a</i><sub>2</sub> = 0.14128, and <i>a</i><sub>3</sub> = 0.01168. The scalar <i>W</i> is defined by"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ39", 
+                                        "label": "(39)", 
+                                        "mathml": "<math><mrow><mi>W</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mn>0</mn><mn>1</mn></msubsup></mrow></mstyle><msubsup><mtext>w</mtext><mrow><mtext>BH</mtext></mrow><mn>2</mn></msubsup><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mtext>d</mtext><mi>z</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>\u2248</mo><mn>0</mn><mo>.</mo><mn>067</mn><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "It corresponds to the average value of the squared window function <math id=\"inf79\"><mrow><mi>W</mi><mo>=</mo><mrow><mo>\u2329</mo><mrow><msubsup><mtext>w</mtext><mrow><mn>2</mn><mtext>D</mtext></mrow><mn>2</mn></msubsup></mrow><mo>\u232a</mo></mrow></mrow></math>. <i>W</i> is used in the normalization factor in <a href=\"#equ36\">Equation 36</a> in order to ensure that the second moment of <i>\u03c9</i> corresponds to the integrated power spectrum"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ40", 
+                                        "label": "(40)", 
+                                        "mathml": "<math><mrow><mrow><mo>\u2329</mo><mrow><msup><mi>\u03c9</mi><mn>2</mn></msup></mrow><mo>\u232a</mo></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mi>\u03c0</mi></mrow><mrow><msub><mi>L</mi><mi>x</mi></msub></mrow></mfrac><mfrac><mrow><mn>2</mn><mi>\u03c0</mi></mrow><mrow><msub><mi>L</mi><mi>y</mi></msub></mrow></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi mathvariant=\"bold-italic\">q</mi></munder><msup><mrow><mrow><mo>|</mo><mrow><mi mathvariant=\"script\">F</mi><mrow><mo>[</mo><mi>\u03c9</mi><mo>]</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">q</mi><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "in the limit <i>N</i> \u2192 \u221e and in the absence of any correlation between the averaging window w<sub>2D</sub>(<b><i>r</i></b>) and <i>\u03c9</i>(<b><i>r</i></b>) such that <math id=\"inf80\"><mrow><mrow><mo>\u2329</mo><mrow><msubsup><mtext>w</mtext><mrow><mn>2</mn><mtext>D</mtext></mrow><mn>2</mn></msubsup><msup><mi>\u03c9</mi><mn>2</mn></msup></mrow><mo>\u232a</mo></mrow><mo>=</mo><mrow><mo>\u2329</mo><mrow><msubsup><mtext>w</mtext><mrow><mn>2</mn><mtext>D</mtext></mrow><mn>2</mn></msubsup></mrow><mo>\u232a</mo></mrow><mrow><mo>\u2329</mo><mrow><msup><mi>\u03c9</mi><mn>2</mn></msup></mrow><mo>\u232a</mo></mrow></mrow></math>. Here, the average of any spatially varying function <i>q</i>(<b><i>r</i></b>) is defined by the area average over the squared region: <math id=\"inf81\"><mrow><mrow><mo>\u2329</mo><mi>q</mi><mo>\u232a</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><msup><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mtext>\u200b</mtext></msup><mi>q</mi><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">r</mi><mo>)</mo></mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>r</mi></mrow><mo>)</mo></mrow><mo>/</mo><msub><mi>L</mi><mi>x</mi></msub><msub><mi>L</mi><mi>y</mi></msub></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We numerically evaluated the Fourier transform using the following expression:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ41", 
+                                        "label": "(41)", 
+                                        "mathml": "<math><mrow><mi mathvariant=\"script\">F</mi><mrow><mo>[</mo><mi>\u03c9</mi><mo>]</mo></mrow><mrow><mo>(</mo><mi mathvariant=\"bold-italic\">q</mi><mo>)</mo></mrow><mo>\u2243</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>\u03c0</mi><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>L</mi><mi>x</mi></msub><msub><mi>L</mi><mi>y</mi></msub><mi>W</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>m</mi></munder><msub><mtext>w</mtext><mrow><mn>2</mn><mtext>D</mtext></mrow></msub><mrow><mo>(</mo><mrow><msubsup><mi mathvariant=\"bold-italic\">r</mi><mi>c</mi><mi>m</mi></msubsup></mrow><mo>)</mo></mrow><msup><mi>\u03c9</mi><mi>m</mi></msup><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mrow><msup><mi>A</mi><mi>m</mi></msup></mrow></munder><msup><mi>e</mi><mrow><mtext>i</mtext><mi mathvariant=\"bold-italic\">q</mi><mo>\u22c5</mo><mi mathvariant=\"bold-italic\">r</mi></mrow></msup><msup><mtext>d</mtext><mn>2</mn></msup><mi>r</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where we used the fact that the window function w<sub>2D</sub>(<b><i>r</i></b>) varied only little over the size of a single triangle. Here, the vector <math id=\"inf82\"><mrow><msubsup><mi mathvariant=\"bold-italic\">r</mi><mi>c</mi><mi>m</mi></msubsup></mrow></math> denotes the center position of triangle <i>m</i> and the integral is carried out over the area of triangle <i>m</i>. For a triangle <i>m</i> with corners <b><i>r</i></b><sub>0</sub> = (<i>x</i><sub>0</sub>, <i>y</i><sub>0</sub>), <b><i>r</i></b><sub>1</sub> = (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), and <b><i>r</i></b><sub>2</sub> = (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>) in counter-clockwise order, the integral over triangle area <i>A</i><sup><i>m</i></sup> can be expressed as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ42", 
+                                        "label": "(42)", 
+                                        "mathml": "<math><mrow><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mrow><msup><mi>A</mi><mi>m</mi></msup></mrow></munder><msup><mi>e</mi><mrow><mtext>i</mtext><mi mathvariant=\"bold-italic\">q</mi><mo>\u22c5</mo><mi mathvariant=\"bold-italic\">r</mi></mrow></msup><msup><mtext>d</mtext><mn>2</mn></msup><mi>r</mi><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mn>2</mn></munderover><msup><mi>e</mi><mrow><mtext>i</mtext><mi mathvariant=\"bold-italic\">q</mi><mo>\u22c5</mo><msub><mi mathvariant=\"bold-italic\">r</mi><mi>i</mi></msub></mrow></msup><mfrac><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>\u2212</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u2212</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u2212</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>\u2212</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mo>(</mo><mrow><mi mathvariant=\"bold-italic\">q</mi><mo>\u22c5</mo><mrow><mo>[</mo><mrow><msub><mi mathvariant=\"bold-italic\">r</mi><mi>i</mi></msub><mo>\u2212</mo><msub><mi mathvariant=\"bold-italic\">r</mi><mrow><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow></msub></mrow><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi mathvariant=\"bold-italic\">q</mi><mo>\u22c5</mo><mrow><mo>[</mo><mrow><msub><mi mathvariant=\"bold-italic\">r</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u2212</mo><msub><mi mathvariant=\"bold-italic\">r</mi><mi>i</mi></msub></mrow><mo>]</mo></mrow></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In this expression, indices are taken modulo three such that <i>i</i> = 3 corresponds to <i>i</i> = 0 and <i>i</i> = \u22121 corresponds to <i>i</i> = 2."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#fig6\">Figure 6D</a> results from averaging the power spectra <math id=\"inf83\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mi mathvariant=\"script\">F</mi><mrow><mo>[</mo><mi>\u03c9</mi><mo>]</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></math> computed from the 11 time intervals in between 12 consecutive video frames. From <a href=\"#fig6\">Figure 6D</a>, we can extract the width of the observed rotation bands. This width corresponds to the position of the dominant mode in the power spectrum, which we observe at <b><i>q</i></b><sub>peak</sub> \u2248 (0, \u00b10.3<i>d</i><sub>0</sub>/2<i>\u03c0</i>), where <i>d</i><sub>0</sub> = 4 \u03bcm denotes the typical cell diameter at 21 hAPF. This mode corresponds to a wave length of ca. 3<i>d</i><sub>0</sub>, and thus to a width of the bands of ca. 1.5<i>d</i><sub>0</sub>."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ46", 
-                                "label": "(46)", 
-                                "mathml": "<math><mrow><msubsup><mi>r</mi><mi>i</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup><mo>=</mo><mfrac><mn>1</mn><mi>A</mi></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mi>A</mi></munder><msub><mi>r</mi><mi>i</mi></msub><mtext>d</mtext><mi>x</mi><mtext>d</mtext><mi>y</mi><mo>.</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s6-5", 
+                                "title": "Role of T1 transitions in the correlation-induced shear", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We have divided all triangles in the blade region in a WT wing into two groups. The first group contains all triangles that will disappear due to a T1 transition during the next 9 frames of the video, corresponding to about 45 min. The second group contains all other triangles. The correlation contribution to the total tissue shear can be approximately written as"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ43", 
+                                        "label": "(43)", 
+                                        "mathml": "<math><mrow><msub><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2248</mo><mfrac><mrow><msub><mi>A</mi><mrow><mi>T</mi><mn>1</mn></mrow></msub></mrow><mi>A</mi></mfrac><msubsup><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mi>T</mi><mn>1</mn></mrow></msubsup><mo>+</mo><mfrac><mrow><msub><mi>A</mi><mrow><mover accent=\"true\"><mrow><mi>T</mi><mn>1</mn></mrow><mo stretchy=\"true\">\u00af</mo></mover></mrow></msub></mrow><mi>A</mi></mfrac><msubsup><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>T</mi><mn>1</mn></mrow><mo stretchy=\"true\">\u00af</mo></mover></mrow></msubsup><mtext>\u2003</mtext><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, <i>A</i><sub><i>T</i>1</sub> and <math id=\"inf84\"><mrow><msub><mi>A</mi><mrow><mover accent=\"true\"><mrow><mi>T</mi><mn>1</mn></mrow><mo stretchy=\"true\">\u00af</mo></mover></mrow></msub></mrow></math> are the areas and <math id=\"inf85\"><mrow><msubsup><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mi>T</mi><mn>1</mn></mrow></msubsup></mrow></math> and <math id=\"inf86\"><mrow><msubsup><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mover accent=\"true\"><mrow><mi>T</mi><mn>1</mn></mrow><mo stretchy=\"true\">\u00af</mo></mover></mrow></msubsup></mrow></math> are the correlation contributions to shear of the first and the second group of triangles, respectively. The area of the blade region is denoted by <i>A</i>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the inset of <a href=\"#fig6\">Figure 6I</a> we show that the area of the first group of cells <i>A</i><sub><i>T1</i></sub> (green line) is only a small fraction of the total blade area <i>A</i> (blue line). On average, the ratio is <i>A</i><sub><i>T1</i></sub>/<i>A</i> = 15.3%. Despite this, we show in <a href=\"#fig6\">Figure 6I</a> that the measured contribution of the first group projected onto the PD axis <math id=\"inf87\"><mrow><msub><mi>A</mi><mrow><mi>T</mi><mn>1</mn></mrow></msub><mo>/</mo><mi>A</mi><msubsup><mi>D</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mi>T</mi><mn>1</mn></mrow></msubsup></mrow></math> (blue line) accounts for a significant amount of shear due to correlation effects <i>D</i><sub><i>xx</i></sub> (magenta line)."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "Note that the matrix <b><i>M</i></b> is symmetric. Now, the wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> is uniquely defined by the following relation:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ47", 
-                                "label": "(47)", 
-                                "mathml": "<math><mrow><msup><mi>e</mi><mrow><mn>2</mn><msup><mi mathvariant=\"bold-italic\">Q</mi><mi>t</mi></msup></mrow></msup><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mtext>det</mtext><mi mathvariant=\"bold-italic\">M</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mi mathvariant=\"bold-italic\">M</mi><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Here, det<b> <i>M</i></b> denotes the determinant of <b><i>M</i></b> and the exponential of a matrix is defined by the Taylor series of the exponential function. The unique tensor <b><i>Q</i></b><sup><i>t</i></sup> that fulfills <a href=\"#equ47\">Equation 47</a> has to be symmetric and traceless (compare <a href=\"#equ20\">Equation 20</a> and [<a href=\"#bib42\">Merkel, 2014</a>; Merkel et al., in preparation]). Put differently, it is a nematic tensor like the total shear rate <math id=\"inf89\"><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">v</mi><mo>\u223c</mo></mover></mrow></math> or the average cell elongation <b><i>Q</i></b>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Note that in general, the change of wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> can not directly be computed from the total tissue shear rate <math id=\"inf90\"><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">v</mi><mo>\u223c</mo></mover></mrow></math>. However, for the special case where shear occurs homogeneously over the entire wing area and where the axes of the shear rate tensor <math id=\"inf91\"><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">v</mi><mo>\u223c</mo></mover></mrow></math> and of wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> are either parallel or perpendicular to each other, one obtains for the tensor component along the <i>x</i> axis:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ48", 
-                                "label": "(48)", 
-                                "mathml": "<math><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>t</mi></msubsup><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>t</mi></msubsup><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>+</mo><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mn>0</mn><mi>t</mi></msubsup></mrow></mstyle><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>x</mi><mi>x</mi></mrow></msub><mtext>d</mtext><mi>t</mi><mo>\u2032</mo><mo>.</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s6-6", 
+                                "title": "Characterization of wing blade anisotropy", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, we define the wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> plotted in <a href=\"#fig6s1\">Figure 6\u2014figure supplement 1B</a>. To this end, we first define a matrix"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ44", 
+                                        "label": "(44)", 
+                                        "mathml": "<math><mrow><mi mathvariant=\"bold-italic\">M</mi><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>M</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>M</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>M</mi><mrow><mi>y</mi><mi>x</mi></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>M</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ45", 
+                                        "label": "(45)", 
+                                        "mathml": "<math><mrow><msub><mi>M</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mi>A</mi></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mi>A</mi></munder><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>\u2212</mo><msubsup><mi>r</mi><mi>i</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>j</mi></msub><mo>\u2212</mo><msubsup><mi>r</mi><mi>j</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mtext>d</mtext><mi>x</mi><mtext>d</mtext><mi>y</mi><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, <i>A</i> denotes the total area of the wing blade and <math id=\"inf88\"><mrow><msubsup><mi>r</mi><mi>i</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup></mrow></math> denotes its area center:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ46", 
+                                        "label": "(46)", 
+                                        "mathml": "<math><mrow><msubsup><mi>r</mi><mi>i</mi><mrow><mi>C</mi><mi>M</mi></mrow></msubsup><mo>=</mo><mfrac><mn>1</mn><mi>A</mi></mfrac><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mi>A</mi></munder><msub><mi>r</mi><mi>i</mi></msub><mtext>d</mtext><mi>x</mi><mtext>d</mtext><mi>y</mi><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Note that the matrix <b><i>M</i></b> is symmetric. Now, the wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> is uniquely defined by the following relation:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ47", 
+                                        "label": "(47)", 
+                                        "mathml": "<math><mrow><msup><mi>e</mi><mrow><mn>2</mn><msup><mi mathvariant=\"bold-italic\">Q</mi><mi>t</mi></msup></mrow></msup><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mtext>det</mtext><mi mathvariant=\"bold-italic\">M</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mi mathvariant=\"bold-italic\">M</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, det<b> <i>M</i></b> denotes the determinant of <b><i>M</i></b> and the exponential of a matrix is defined by the Taylor series of the exponential function. The unique tensor <b><i>Q</i></b><sup><i>t</i></sup> that fulfills <a href=\"#equ47\">Equation 47</a> has to be symmetric and traceless (compare <a href=\"#equ20\">Equation 20</a> and [<a href=\"#bib42\">Merkel, 2014</a>; Merkel et al., in preparation]). Put differently, it is a nematic tensor like the total shear rate <math id=\"inf89\"><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">v</mi><mo>\u223c</mo></mover></mrow></math> or the average cell elongation <b><i>Q</i></b>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Note that in general, the change of wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> can not directly be computed from the total tissue shear rate <math id=\"inf90\"><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">v</mi><mo>\u223c</mo></mover></mrow></math>. However, for the special case where shear occurs homogeneously over the entire wing area and where the axes of the shear rate tensor <math id=\"inf91\"><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">v</mi><mo>\u223c</mo></mover></mrow></math> and of wing blade anisotropy <b><i>Q</i></b><sup><i>t</i></sup> are either parallel or perpendicular to each other, one obtains for the tensor component along the <i>x</i> axis:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ48", 
+                                        "label": "(48)", 
+                                        "mathml": "<math><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>t</mi></msubsup><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>t</mi></msubsup><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>+</mo><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mn>0</mn><mi>t</mi></msubsup></mrow></mstyle><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>x</mi><mi>x</mi></mrow></msub><mtext>d</mtext><mi>t</mi><mo>\u2032</mo><mo>.</mo></mrow></math>"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -5796,48 +6264,252 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s7-4", 
-                        "title": "Effect of delay in topological changes", 
+                        "id": "s7", 
+                        "title": "Hydrodynamic theory of epithelia.", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "We discuss here the delay term for topological changes introduced in <a href=\"#equ4\">Equation 4</a> of the main text. Neglecting non-linearities introduced by convection and rotations, the shear decomposition <a href=\"#equ52\">Equation 52</a> and constitutive <a href=\"#equ61\">Equation 61</a> can be written:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ62", 
-                                "label": "(62)", 
-                                "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ63", 
-                                "label": "(63)", 
-                                "mathml": "<math><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub><msub><mo>\u2202</mo><mi>t</mi></msub><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub></mrow></mfrac><mo>\u2212</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>\u03bb</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                "text": "In this section, we discuss a coarse-grained hydrodynamic theory that describes the mechanics of a two dimensional epithelium, the cells of which can rearrange through topological changes. The hydrodynamic theory describes the evolution of two main physical quantities: the velocity field <i>v</i><sub><i>i</i></sub> within the tissue, and the average cell elongation <i>Q</i><sub><i>ij</i></sub>, treated as an internal variable of the tissue. In addition, we take into account a polarity field <i>q</i><sub><i>ij</i></sub>, which gives a preferred axis in the tissue and allows for internal anisotropic processes to occur."
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "which appear as a dynamical system for the evolution of <i>Q</i><sub><i>ij</i></sub> and <i>R</i><sub><i>ij</i></sub>. This dynamical system evolves towards the fixed point <math id=\"inf107\"><mrow><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, <math id=\"inf108\"><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup><mo>=</mo><mo>\u2212</mo><msub><mi>\u03c4</mi><mi>r</mi></msub><mrow><mo>[</mo><msub><mi>\u03bb</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>]</mo></mrow></mrow></math>. Assuming a constant shear rate <math id=\"inf109\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, deviations around the fixed point follow the equation"
+                                "text": "To obtain a full description of the epithelium mechanics, it is necessary to specify tissue processes that drive the shear created by topological changes. The shear rate <i>R</i><sub><i>ij</i></sub> created by topological changes is a tensorial quantity. In the spirit of hydrodynamic theories, we propose a constitutive relation for this tensor by writing all possible terms compatible with its symmetry, at lowest order in the driving fields. In the following we describe the full hydrodynamic theory."
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ64", 
-                                "label": "(64)", 
-                                "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>\u2212</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac></mrow></mtd><mtd><mrow><mo>\u2212</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s7-1", 
+                                "title": "Tissue strain rate decomposition", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The velocity of the tissue is denoted by the vector <i>v</i><sub><i>i</i></sub>. The tissue strain rate <i>v</i><sub><i>ij</i></sub> = \u00bd(\u2202<sub><i>i</i></sub><i>v</i><sub><i>j</i></sub> + \u2202<sub><i>j</i></sub><i>v</i><sub><i>i</i></sub>) is decomposed in an anisotropic traceless part, <math id=\"inf92\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, and an isotropic part corresponding to the trace of the tissue strain rate:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ49", 
+                                        "label": "(49)", 
+                                        "mathml": "<math><mrow><msub><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>v</mi><mrow><mi>k</mi><mi>k</mi></mrow></msub><msub><mi>\u03b4</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here and in the following summation over identical indices is implied, <math id=\"inf93\"><mrow><msub><mi>v</mi><mrow><mi>k</mi><mi>k</mi></mrow></msub><mo>=</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>k</mi></munder><msub><mi>v</mi><mrow><mi>k</mi><mi>k</mi></mrow></msub></mrow></math>. The trace of the strain rate <i>v</i> = <i>v</i><sub><i>kk</i></sub> describes changes in the area of the tissue. The anisotropic traceless part <math id=\"inf94\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, called shear rate, describes tissue shape changes which conserve the area."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Now we discuss the decomposition of isotropic and anisotropic components of strain rate in distinct cellular processes."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s7-1-1", 
+                                        "title": "Isotropic part", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We denote the average cell area <i>a</i>. The isotropic part of the velocity gradient and the change of cell area are related by the equation"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ50", 
+                                                "label": "(50)", 
+                                                "mathml": "<math><mrow><mi>v</mi><mo>=</mo><mfrac><mn>1</mn><mi>a</mi></mfrac><mfrac><mrow><mi>d</mi><mi>a</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>+</mo><msub><mi>k</mi><mi>d</mi></msub><mo>\u2212</mo><msub><mi>k</mi><mi>e</mi></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "with <i>k</i><sub><i>d</i></sub> the rate of cell division and <i>k</i><sub><i>e</i></sub> the rate of cell extrusion. The derivative <i>d</i>/<i>dt</i> denotes a convected derivative, <i>df</i>/<i>dt</i> = \u2202<sub><i>t</i></sub><i>f</i> + <i>v</i><sub><i>i</i></sub>\u2202<sub><i>i</i></sub><i>f</i>. <a href=\"#equ79\">Equation 79</a> is equivalent to the continuity equation for the cell density <i>\u03c1</i> = 1/<i>a</i>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ51", 
+                                                "label": "(51)", 
+                                                "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mi>\u03c1</mi><mo>+</mo><msub><mo>\u2202</mo><mi>i</mi></msub><mrow><mo>(</mo><mrow><mi>\u03c1</mi><msub><mi>v</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>\u03c1</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mi>d</mi></msub><mo>\u2212</mo><msub><mi>k</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s7-1-2", 
+                                        "title": "Traceless anisotropic part", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The difference between the traceless velocity gradient tensor <math id=\"inf95\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math> and the rate of cell deformation tensor D<i>Q</i><sub><i>ij</i></sub>/D<i>t</i> is accounted for by a tensor of shear due to topological changes <i>R</i><sub><i>ij</i></sub>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ52", 
+                                                "label": "(52)", 
+                                                "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><mtext>D</mtext><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mtext>D</mtext><mi>t</mi></mrow></mfrac><mo>+</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where D/D<i>t</i> denotes a corotational convected derivative, defined for a tensor <i>A</i><sub><i>ij</i></sub> as"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ53", 
+                                                "label": "(53)", 
+                                                "mathml": "<math><mrow><mfrac><mrow><mtext>D</mtext><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mtext>D</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mo>\u2202</mo><mi>t</mi></msub><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>v</mi><mi>k</mi></msub><msub><mo>\u2202</mo><mi>k</mi></msub><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>\u03c9</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><msub><mi>A</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>\u03c9</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><msub><mi>A</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "with <i>\u03c9</i><sub><i>ij</i></sub> = (\u2202<sub><i>i</i></sub><i>v</i><sub><i>j</i></sub> \u2212 \u2202<sub><i>j</i></sub><i>v</i><sub><i>i</i></sub>)/2 the antisymmetric part of the velocity gradient. Following the triangle method described in \u2018Triangulated cellular networks\u2019, the tensor <i>R</i><sub><i>ij</i></sub> can be decomposed into several contributions:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ54", 
+                                                "label": "(54)", 
+                                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>C</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <i>T</i><sub><i>ij</i></sub> is the shear rate tensor created by <i>T</i><sub>1</sub> transitions, <i>C</i><sub><i>ij</i></sub> is the shear rate created by cell division, <i>E</i><sub><i>ij</i></sub> is the shear rate created by cell extrusion, and <i>D</i><sub><i>ij</i></sub> denotes a tensor accounting for correlation effects."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "The dynamics of the system around the fixed point depends on the timescales <i>\u03c4</i><sub><i>r</i></sub> and <i>\u03c4</i><sub><i>d</i></sub>. For a short enough delay <i>\u03c4</i><sub><i>d</i></sub> &lt; <i>\u03c4</i><sub><i>r</i></sub>/4, the eigenvalues of the matrix in <a href=\"#equ64\">Equation 64</a> are real negative, and the system relaxes exponentially to the stable fixed point. For a long enough delay <i>\u03c4</i><sub><i>d</i></sub> &gt; <i>\u03c4</i><sub><i>r</i></sub>/4, the matrix has complex eigenvalues <math id=\"inf110\"><mrow><mo>\u2212</mo><mn>1</mn><mo>/</mo><mn>2</mn><msub><mi>\u03c4</mi><mi>d</mi></msub><mo>\u00b1</mo><mi>i</mi><msqrt><mrow><mn>4</mn><msub><mi>\u03c4</mi><mi>d</mi></msub><msub><mi>\u03c4</mi><mi>r</mi></msub><mo>\u2212</mo><msubsup><mi>\u03c4</mi><mi>r</mi><mn>2</mn></msubsup></mrow></msqrt><mo>/</mo><mn>2</mn><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></math>. In that case, the system behaves as a damped oscillator and relaxes to the fixed point following a spiral in the phase space <i>R</i><sub><i>ij</i></sub>, <i>Q</i><sub><i>ij</i></sub>. The system relaxes towards the fixed point on a timescale 2<i>\u03c4</i><sub><i>d</i></sub>, with a period of oscillations"
+                                "type": "section", 
+                                "id": "s7-2", 
+                                "title": "Constitutive equation for the tissue stress", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The tissue stress can be decomposed into an anisotropic traceless part, <math id=\"inf96\"><mrow><msub><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, and an isotropic part corresponding to a two dimensional tissue pressure <i>P</i>:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ55", 
+                                        "label": "(55)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c3</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><mi>P</mi><msub><mi>\u03b4</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In an elastic tissue, the anisotropic part of the stress and the pressure depends on cell deformation. We therefore write the following constitutive equations for the stress:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ56", 
+                                        "label": "(56)", 
+                                        "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>\u03c3</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>2</mn><mi>K</mi><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>\u03b6</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ57", 
+                                        "label": "(57)", 
+                                        "mathml": "<math><mi>P</mi><mrow><mo>=</mo><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow><mtext>ln</mtext><mfrac><mi>a</mi><mrow><msub><mi>a</mi><mn>0</mn></msub></mrow></mfrac><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow><mfrac><mrow><msub><mi>a</mi><mn>0</mn></msub></mrow><mi>a</mi></mfrac><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mi>a</mi><mrow><msub><mi>a</mi><mn>0</mn></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, <i>K</i> and <math id=\"inf97\"><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow></math> are a shear and an area elastic modulus. The traceless symmetric tensor <i>\u03b6</i><sub><i>ij</i></sub> \u223c <i>q</i><sub><i>ij</i></sub> describes a cell autonomous active stress which can also be interpreted as a spontaneous cell elongation. Here, <math id=\"inf98\"><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow></math> is a cell area viscosity, related to the dissipation associated with changes of cell area. Note that this viscosity was not included in <a href=\"#equ3\">Equation 3</a> in the main text, but is used in the fitting procedure described in \u2018Fitting of the rectangle model to cell and tissue shape in the hinge and blade\u2019."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Cell division is associated with a corresponding rapid reduction of cell area (<a href=\"#fig3\">Figure 3C,D</a>) suggesting that the preferred cell area <i>a</i><sub>0</sub> changes during cell division. We thus express the preferred cell area <i>a</i><sub>0</sub> as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ58", 
+                                        "label": "(58)", 
+                                        "mathml": "<math><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf99\"><mrow><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub></mrow></math> is a cell intrinsic preferred cell area that changes rapidly due to cell division and <math id=\"inf100\"><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow></math> corresponds to an isotropic contractile tension. The contribution <math id=\"inf101\"><mrow><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub></mrow></math> follows the equation"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ59", 
+                                        "label": "(59)", 
+                                        "mathml": "<math><mrow><mfrac><mn>1</mn><mrow><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub></mrow></mfrac><mfrac><mrow><mi>d</mi><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>\u2212</mo><msub><mi>k</mi><mi>d</mi></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which corresponds to halving of <math id=\"inf102\"><mrow><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub></mrow></math> for each round of division. In addition to <a href=\"#equ59\">Equation 59</a> we can choose the value of <math id=\"inf103\"><mrow><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub></mrow></math> at an arbitrary time point. For simplicity we choose <math id=\"inf104\"><mrow><msub><mrow><mover accent=\"true\"><mi>a</mi><mo>\u00af</mo></mover></mrow><mn>0</mn></msub><mrow><mo>(</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>a</mi><mrow><mo>(</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "With the decomposition of the preferred cell area <a href=\"#equ58\">Equation 58</a> and using the isotropic strain rate decomposition <a href=\"#equ50\">Equation 50</a>, the isotropic pressure can be expressed as"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ60", 
+                                        "label": "(60)", 
+                                        "mathml": "<math><mrow><mi>P</mi><mo>=</mo><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mrow><mtext>ln</mtext><mfrac><mi>A</mi><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mi>t</mi></msubsup></mrow></mstyle><msub><mi>k</mi><mi>e</mi></msub><mi>d</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow><mo>\u2212</mo><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mrow><mi>v</mi><mo>+</mo><msub><mi>k</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf105\"><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mi>t</mi></msubsup></mrow></mstyle><mi>v</mi><mi>d</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math> is the change of tissue area between <i>t</i><sub>0</sub> and <i>t</i>, <i>A</i><sub>0</sub> is the tissue area. <a href=\"#equ60\">Equation 60</a> clarifies that the definition of the reference area <a href=\"#equ58\">Equation 58</a> corresponds to a decomposition of the tissue pressure into an elastic part (first term in the right-hand side of <a href=\"#equ60\">Equation 60</a>), a part corresponding to the stress generated by loss of cells by extrusion, isotropic contractility <math id=\"inf106\"><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow></math> driving tissue contraction or expansion, and a viscous part associated with the rate of cell area change."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ65", 
-                                "label": "(65)", 
-                                "mathml": "<math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>\u03c0</mi><mfrac><mrow><mn>2</mn><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow><mrow><msqrt><mrow><mn>4</mn><msub><mi>\u03c4</mi><mi>d</mi></msub><msub><mi>\u03c4</mi><mi>r</mi></msub><mo>\u2212</mo><msubsup><mi>\u03c4</mi><mi>r</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></mfrac><mo>.</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s7-3", 
+                                "title": "Constitutive equations for the shear created by topological changes", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The shear created by topological changes, <i>R</i><sub><i>ij</i></sub>, is a traceless symmetric tensor, whose value must depend on other traceless symmetric tensors in the tissue. Physically, topological changes occur preferentially along a direction set by an external cue. In the hydrodynamic description we propose, such a cue can arise from cell elongation <i>Q</i><sub><i>ij</i></sub> or cell polarity <i>q</i><sub><i>ij</i></sub>. In the spirit of linear response theory, we write that <i>R</i><sub><i>ij</i></sub> depends linearly on the cell deformation tensor"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ61", 
+                                        "label": "(61)", 
+                                        "mathml": "<math><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>\u03c4</mi><mi>d</mi></msub><mfrac><mtext>D</mtext><mrow><mtext>Dt</mtext></mrow></mfrac></mrow><mo>)</mo></mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub></mrow></mfrac><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>\u03bb</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mtext>\u2003</mtext><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Here, D/Dt is the corotational convected derivative (see <a href=\"#equ53\">Equation 53</a>) and <i>\u03c4</i><sub><i>r</i></sub> is a timescale, characterising the rate of shear corresponding to topological changes induced by cell deformation. Note that for simplicty, we neglect nonlinearities arising from the corotational derivative in <a href=\"#equ61\">Equation 61</a> in the main text and in these supplements. The traceless symmetric tensor <i>\u03bb</i><sub><i>ij</i></sub> \u223c <i>q</i><sub><i>ij</i></sub> describes the effect of polarity-induced topological changes. Tissue stability requires <i>\u03c4</i><sub><i>r</i></sub> &gt; 0. The time <i>\u03c4</i><sub><i>d</i></sub> characterizes the delay in the response of topological changes to cell elongation and cell polarity."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "A relaxation resembling a damped oscillator in the phase space <i>R</i><sub><i>xx</i></sub>, <i>Q</i><sub><i>xx</i></sub> is indeed observed experimentally (<a href=\"#fig9\">Figure 9D</a> and <a href=\"#fig9s2\">Figure 9\u2014figure supplement 2</a>). Fitting the relaxation in the phase space <i>R</i><sub><i>xx</i></sub>, <i>Q</i><sub><i>xx</i></sub> to <a href=\"#equ62 equ63\">Equations 62, 63</a> yields a delay <i>\u03c4</i><sub><i>d</i></sub> of the order of a few hours, thus playing a significant role during pupal wing development."
+                                "type": "section", 
+                                "id": "s7-4", 
+                                "title": "Effect of delay in topological changes", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We discuss here the delay term for topological changes introduced in <a href=\"#equ4\">Equation 4</a> of the main text. Neglecting non-linearities introduced by convection and rotations, the shear decomposition <a href=\"#equ52\">Equation 52</a> and constitutive <a href=\"#equ61\">Equation 61</a> can be written:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ62", 
+                                        "label": "(62)", 
+                                        "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ63", 
+                                        "label": "(63)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub><msub><mo>\u2202</mo><mi>t</mi></msub><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub></mrow></mfrac><mo>\u2212</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>\u03bb</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which appear as a dynamical system for the evolution of <i>Q</i><sub><i>ij</i></sub> and <i>R</i><sub><i>ij</i></sub>. This dynamical system evolves towards the fixed point <math id=\"inf107\"><mrow><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup><mo>=</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, <math id=\"inf108\"><mrow><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup><mo>=</mo><mo>\u2212</mo><msub><mi>\u03c4</mi><mi>r</mi></msub><mrow><mo>[</mo><msub><mi>\u03bb</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>]</mo></mrow></mrow></math>. Assuming a constant shear rate <math id=\"inf109\"><mrow><msub><mrow><mover accent=\"true\"><mi>v</mi><mo>\u223c</mo></mover></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></math>, deviations around the fixed point follow the equation"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ64", 
+                                        "label": "(64)", 
+                                        "mathml": "<math><mrow><msub><mo>\u2202</mo><mi>t</mi></msub><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>\u2212</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac></mrow></mtd><mtd><mrow><mo>\u2212</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>Q</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>*</mtext></msubsup></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The dynamics of the system around the fixed point depends on the timescales <i>\u03c4</i><sub><i>r</i></sub> and <i>\u03c4</i><sub><i>d</i></sub>. For a short enough delay <i>\u03c4</i><sub><i>d</i></sub> &lt; <i>\u03c4</i><sub><i>r</i></sub>/4, the eigenvalues of the matrix in <a href=\"#equ64\">Equation 64</a> are real negative, and the system relaxes exponentially to the stable fixed point. For a long enough delay <i>\u03c4</i><sub><i>d</i></sub> &gt; <i>\u03c4</i><sub><i>r</i></sub>/4, the matrix has complex eigenvalues <math id=\"inf110\"><mrow><mo>\u2212</mo><mn>1</mn><mo>/</mo><mn>2</mn><msub><mi>\u03c4</mi><mi>d</mi></msub><mo>\u00b1</mo><mi>i</mi><msqrt><mrow><mn>4</mn><msub><mi>\u03c4</mi><mi>d</mi></msub><msub><mi>\u03c4</mi><mi>r</mi></msub><mo>\u2212</mo><msubsup><mi>\u03c4</mi><mi>r</mi><mn>2</mn></msubsup></mrow></msqrt><mo>/</mo><mn>2</mn><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></math>. In that case, the system behaves as a damped oscillator and relaxes to the fixed point following a spiral in the phase space <i>R</i><sub><i>ij</i></sub>, <i>Q</i><sub><i>ij</i></sub>. The system relaxes towards the fixed point on a timescale 2<i>\u03c4</i><sub><i>d</i></sub>, with a period of oscillations"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ65", 
+                                        "label": "(65)", 
+                                        "mathml": "<math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>\u03c0</mi><mfrac><mrow><mn>2</mn><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow><mrow><msqrt><mrow><mn>4</mn><msub><mi>\u03c4</mi><mi>d</mi></msub><msub><mi>\u03c4</mi><mi>r</mi></msub><mo>\u2212</mo><msubsup><mi>\u03c4</mi><mi>r</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A relaxation resembling a damped oscillator in the phase space <i>R</i><sub><i>xx</i></sub>, <i>Q</i><sub><i>xx</i></sub> is indeed observed experimentally (<a href=\"#fig9\">Figure 9D</a> and <a href=\"#fig9s2\">Figure 9\u2014figure supplement 2</a>). Fitting the relaxation in the phase space <i>R</i><sub><i>xx</i></sub>, <i>Q</i><sub><i>xx</i></sub> to <a href=\"#equ62 equ63\">Equations 62, 63</a> yields a delay <i>\u03c4</i><sub><i>d</i></sub> of the order of a few hours, thus playing a significant role during pupal wing development."
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -5849,12 +6521,170 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s8-2-4", 
-                        "title": "<i>dumpy</i><sup><i>ov1</i></sup> mutants", 
+                        "id": "s8", 
+                        "title": "Rectangle model for pupal wing morphogenesis.", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "In <i>dumpy</i><sup>ov1</sup> mutants the distal margin of the wing detaches from the cuticle similar to laser ablation of ECM on the distal margin (<a href=\"#fig8\">Figure 8A,B</a> and <a href=\"#fig10s1\">Figure 10\u2014figure supplement 1A</a>). We therefore use the boundary condition <a href=\"#equ74\">Equation 74</a> for <i>dumpy</i><sup>ov1</sup> mutants."
+                                "text": "In this section, we use the theoretical framework described in the previous section to obtain a simplified description of the morphogenesis of the pupal wing. We represent the hinge and blade by rectangles, connected by elastic springs to an external fixed frame, corresponding to the cuticle (<a href=\"#fig10\">Figure 10A</a> and <a href=\"#fig10s1\">Figure 10\u2014figure supplement 1</a>)."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s8-1", 
+                                "title": "Geometry and boundary conditions", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-1-1", 
+                                        "title": "Geometry", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For simplicity, we choose to represent the hinge and the blade by two rectangles. The <i>x</i> axis labels the proximal-distal direction, while the <i>y</i> axis labels the anterior-posterior direction. The two rectangles only deform uniformly, and are therefore subjected to a homogeneous velocity gradient with components <i>v</i><sub><i>xx</i></sub> and <i>v</i><sub><i>yy</i></sub>. The position of the interface between the hinge and the blade is denoted <i>x</i><sub>HB</sub>, the heights of the hinge and of the blade <i>h</i><sup>H</sup> and <i>h</i>. In the WT situation, we consider the total length of the wing (including the hinge and the blade) to be constant and equal to <i>L</i>."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-1-2", 
+                                        "title": "Velocity", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Because the proximal distal velocity field <i>v</i><sub><i>x</i></sub> has to be continuous at the contact point <i>x</i><sub>HB</sub> (<a href=\"#fig10s1\">Figure 10\u2014figure supplement 1B</a>), and cancels at the proximal and distal ends, the gradient of flow in the hinge and in the blade can be directly obtained as a function of the velocity of the interface <i>v</i><sub>HB</sub> = <i>dx</i><sub>HB</sub>/<i>dt</i>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ66", 
+                                                "label": "(66)", 
+                                                "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mrow><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow></mfrac><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ67", 
+                                                "label": "(67)", 
+                                                "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>B</mi></msubsup><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>v</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mrow><mi>L</mi><mo>\u2212</mo><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow></mfrac><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Similarly, the gradient of flow in the <i>y</i> direction can be related to the change of heights of the hinge and of the blade:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ68", 
+                                                "label": "(68)", 
+                                                "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow><mtext>H</mtext></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>h</mi><mtext>H</mtext></msup></mrow></mfrac><mfrac><mrow><mi>d</mi><msup><mi>h</mi><mtext>H</mtext></msup></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ69", 
+                                                "label": "(69)", 
+                                                "mathml": "<math><mrow><msub><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mi>h</mi></mfrac><mfrac><mrow><mi>d</mi><mi>h</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>.</mo></mrow></math>"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s8-2", 
+                                "title": "Boundary stresses", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-2-1", 
+                                        "title": "WT wing", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "From force balance, the stresses acting in the hinge <math id=\"inf111\"><mrow><msubsup><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow><mtext>H</mtext></msubsup></mrow></math> and in the blade <i>\u03c3</i><sub><i>xx</i></sub>, integrated along the height, have to be balanced at the interface:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ70", 
+                                                "label": "(70)", 
+                                                "mathml": "<math><mrow><mi>\u03b3</mi><mfrac><mrow><mi>d</mi><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>\u2212</mo><msup><mi>h</mi><mtext>H</mtext></msup><msubsup><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow><mtext>H</mtext></msubsup><mo>+</mo><mi>h</mi><msub><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>k</mi><mrow><mtext>PD</mtext></mrow><mtext>H</mtext></msubsup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub><mo>\u2212</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>k</mi><mrow><mtext>PD</mtext></mrow></msub><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>L</mi><mo>\u2212</mo><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><msub><mi>L</mi><mn>0</mn></msub><mo>\u2212</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here, <i>\u03b3</i> is an effective friction coefficient, reflecting dissipative processes external to the tissue and limiting its velocity. The two elastic moduli constraining the length of the hinge and blade are denoted <math id=\"inf112\"><mrow><msubsup><mi>k</mi><mrow><mtext>PD</mtext></mrow><mtext>H</mtext></msubsup></mrow></math> and <i>k</i><sub>PD</sub>. They reflect external attachments of the tissue to the cuticle (see <a href=\"#fig10\">Figure 10A</a> and <a href=\"#fig10s1\">Figure 10\u2014figure supplement 1A</a>). The initial PD lengths of the hinge and the entire wing are denoted <i>x</i><sub>0</sub> and <i>L</i><sub>0</sub>, respectively."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In addition, we consider the effects of the elastic connections at the anterior and posterior boundaries. These connections resist changes of heights of the two rectangles, and can have a different elastic modulus along the hinge and the blade, denoted <i>k</i><sup>H</sup> and <i>k</i>, respectively. Thus, force balance at the anterior and posterior boundaries in the hinge and in the blade can be written:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ71", 
+                                                "label": "(71)", 
+                                                "mathml": "<math><mrow><msubsup><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow><mtext>H</mtext></msubsup><mo>=</mo><mo>\u2212</mo><msup><mi>k</mi><mtext>H</mtext></msup><mrow><mo>(</mo><mrow><msup><mi>h</mi><mtext>H</mtext></msup><mo>\u2212</mo><msubsup><mi>h</mi><mn>0</mn><mtext>H</mtext></msubsup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ72", 
+                                                "label": "(72)", 
+                                                "mathml": "<math><mrow><msub><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><mi>k</mi><mrow><mo>(</mo><mrow><mi>h</mi><mo>\u2212</mo><msub><mi>h</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Here, <i>h</i><sub>0</sub> and <math id=\"inf113\"><mrow><msubsup><mi>h</mi><mn>0</mn><mtext>H</mtext></msubsup></mrow></math> are the heights where the springs are relaxed in the blade and in the hinge. We take these reference heights to be equal to the initial blade and hinge heights."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-2-2", 
+                                        "title": "Extracellular-matrix ablation at the anterior margin", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Laser cut experiments severing the blade from the cuticle at the anterior margin modify the elastic modulus resisting the deformation of the blade along the <i>y</i> direction (<a href=\"#fig8s3\">Figure 8\u2014figure supplement 3A</a> and <a href=\"#fig10s1\">Figure 10\u2014figure supplement 1A</a>). To reflect this change, we introduce a modified boundary condition for the stress along the anterior posterior direction, replacing <a href=\"#equ72\">Equation 72</a>:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ73", 
+                                                "label": "(73)", 
+                                                "mathml": "<math><mrow><msub><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>=</mo><mn>0.</mn></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Other boundary conditions are not modified and are taken as in the WT case."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-2-3", 
+                                        "title": "Extracellular-matrix ablation at the distal margin", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The distally severed blade retracts distally away from the cuticle (<a href=\"#fig8s3\">Figure 8\u2014figure supplement 3A</a> and <a href=\"#fig10s1\">Figure 10\u2014figure supplement 1A</a>). As a result, the total length of hinge and blade <i>L</i> can change. The dynamics for the evolution of the length of the blade is given by the dynamic equation:"
+                                            }, 
+                                            {
+                                                "type": "mathml", 
+                                                "id": "equ74", 
+                                                "label": "(74)", 
+                                                "mathml": "<math><mrow><mi>\u03b3</mi><mfrac><mrow><mi>d</mi><mi>L</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>\u2212</mo><mi>h</mi><msub><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msub><mi>k</mi><mrow><mtext>PD</mtext></mrow></msub><mrow><mo>(</mo><mrow><mi>L</mi><mo>\u2212</mo><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "where <i>\u03b3</i> is an effective friction coefficient characterising dissipative processes external to the tissue. We use the same coefficient <i>\u03b3</i> in <a href=\"#equ72 equ74\">Equations 72, 74</a>, because we expect that both frictions arise from the same frictional forces acting between the wing and the surrounding cuticle."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s8-2-4", 
+                                        "title": "<i>dumpy</i><sup><i>ov1</i></sup> mutants", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In <i>dumpy</i><sup>ov1</sup> mutants the distal margin of the wing detaches from the cuticle similar to laser ablation of ECM on the distal margin (<a href=\"#fig8\">Figure 8A,B</a> and <a href=\"#fig10s1\">Figure 10\u2014figure supplement 1A</a>). We therefore use the boundary condition <a href=\"#equ74\">Equation 74</a> for <i>dumpy</i><sup>ov1</sup> mutants."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -5866,12 +6696,284 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s9-2-1", 
-                        "title": "Area dependence of <i>\u03bb</i><sub><i>xx</i></sub>", 
+                        "id": "s9", 
+                        "title": "Fitting procedure.", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "We quantified the final cell elongation in unperturbed WT, <i>dumpy</i><sup>ov1</sup> mutant and distally severed WT wings. In addition, we studied a temperature sensitive <i>cdc2</i> mutant in which cell divisions are inhibited. For all perturbations, the final cell elongation <math id=\"inf133\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>f</mi></msubsup></mrow></math> was positive, corresponding to elongation in the PD axis. The magnitude of <math id=\"inf134\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>f</mi></msubsup></mrow></math> varied suggesting that these perturbations alter the internal dynamics of the wing blade. Interestingly, we find that the final cell elongation <math id=\"inf135\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>f</mi></msubsup></mrow></math> is correlated with the final cell area for WT and all perturbed wings (<a href=\"#fig9s1\">Figure 9\u2014figure supplement 1</a>). According to <a href=\"#equ5\">Equation 5</a> in the main text, the final cell elongation is given by \u2212<i>\u03c4</i><sub><i>r</i></sub> <i>\u03bb</i><sub><i>xx</i></sub>. This suggests that the magnitude of polarization-induced topological changes <i>\u03bb</i><sub><i>xx</i></sub> and/or the stress relaxation time <i>\u03c4</i><sub><i>r</i></sub> increase with cell area. In the fit presented in the main text and in <a href=\"#fig10\">Figure 10</a> and <a href=\"#fig9s2\">Figure 9\u2014figure supplement 2</a>, we accounted for this dependency by taking different values of <i>\u03bb</i><sub><i>xx</i></sub> for different conditions."
+                                "text": "In this section, we describe the fitting procedure to experimental measurements. The fitting procedure was performed in two stages:"
+                            }, 
+                            {
+                                "type": "list", 
+                                "prefix": "bullet", 
+                                "items": [
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "First, the constitutive equation for topological changes, <a href=\"#equ5\">Equation 5</a> in the main text, was fitted to experimental data."
+                                        }
+                                    ], 
+                                    [
+                                        {
+                                            "type": "paragraph", 
+                                            "text": "Using the parameters obtained for the fit to <a href=\"#equ18\">Equation 18</a>, the dynamics of cell shape and tissue shape predicted by the rectangle model of section <a href=\"#app3\">Appendix 3</a> was then fitted to experimental data by adjusting the remaining parameters."
+                                        }
+                                    ]
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "We analysed six wings, for which the full blade and a fraction of the hinge were segmented. In this section, tissue flows were measured by PIV analysis rather than by cell tracking (see \u2018Materials and methods\u2019, Data handling and image processing). The six analysed wings were 3 WTs, one <i>dumpy</i><sup>ov1</sup> mutant (Dp), one wing where the extracellular matrix was distally ablated (ECMDistCut) and one wing where the extracellular matrix was anteriorly ablated (ECMAntCut)."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s9-1", 
+                                "title": "Fitting of the constitutive equation for topological changes", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We discuss here the fitting procedure to the constitutive <a href=\"#equ5\">Equation 5</a> in the main text, for the shear rate created by topological changes along the AP axis, for the blade and for the hinge:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ75", 
+                                        "label": "(75)", 
+                                        "mathml": "<math><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>\u03c4</mi><mi>d</mi></msub><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow><mo>)</mo></mrow><msub><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub></mrow></mfrac><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "From a given measured time evolution of <i>Q</i><sub><i>xx</i></sub>, <a href=\"#equ75\">Equation 75</a> can be solved to yield the tensor of shear created by topological changes:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ76", 
+                                        "label": "(76)", 
+                                        "mathml": "<math><mrow><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>th</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><mi>t</mi><mo>,</mo><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><mi>t</mi><mo>\u2212</mo><msub><mi>t</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>/</mo><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></msup><mrow><mo>[</mo><mrow><msub><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mi>t</mi></msubsup></mrow></mstyle><mi>d</mi><mi>t</mi><mo>\u2032</mo><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>t</mi><mo>\u2032</mo><mo>\u2212</mo><msub><mi>t</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>/</mo><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub></mrow></mfrac><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>t</mi><mo>\u2032</mo></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We then define the following objective functions:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ77", 
+                                        "label": "(77)", 
+                                        "mathml": "<math><mrow><msub><mi>S</mi><mi>B</mi></msub><mrow><mo>(</mo><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub><mo>,</mo><msub><mi>\u03c4</mi><mi>d</mi></msub><mo>,</mo><msubsup><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>k</mi></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>k</mi><mo>\u2208</mo><mtext>wings</mtext></mrow></munder><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>n</mi></munder><msup><mrow><mrow><mo>[</mo><mrow><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub><mo>,</mo><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><mn>2</mn></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ78", 
+                                        "label": "(78)", 
+                                        "mathml": "<math><mrow><msub><mi>S</mi><mi>H</mi></msub><mrow><mo>(</mo><mrow><msubsup><mi>\u03c4</mi><mi>r</mi><mi>H</mi></msubsup><mo>,</mo><msubsup><mi>\u03c4</mi><mi>d</mi><mi>H</mi></msubsup><mo>,</mo><msubsup><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mi>H</mi><mo>,</mo><mi>k</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>k</mi><mo>\u2208</mo><mtext>wings</mtext></mrow></munder><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>n</mi></munder><msup><mrow><mrow><mo>[</mo><mrow><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mi>H</mi><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mi>H</mi><mo>,</mo><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub><mo>,</mo><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mi>H</mi><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><mn>2</mn></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>k</i> labels the six wings which were analysed for the fitting procedure and <i>t</i><sub><i>n</i></sub> corresponds to time points of experimental measurements. Components of tensors <math id=\"inf114\"><mrow><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mi>H</mi><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup></mrow></math>, <math id=\"inf115\"><mrow><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup></mrow></math> of shear created by topological changes were quantified by subtracting the time derivative of cell elongation <i>dQ</i><sub><i>ij</i></sub>/<i>dt</i> to the gradient of flow velocity <i>v</i><sub><i>ij</i></sub>, rather than by direct evaluation as described in \u2018Contributions to shear by topological changes\u2019. <math id=\"inf116\"><mrow><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup></mrow></math> is obtained by using <a href=\"#equ76\">Equation 76</a>, with <i>t</i><sub>0</sub> taken as the first time point of the measurements. Different wings are fitted with a single set of values for the timescales <i>\u03c4</i><sub><i>r</i></sub> and <i>\u03c4</i><sub><i>d</i></sub> and different values of <math id=\"inf117\"><mrow><msubsup><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>k</mi></msubsup></mrow></math>. Initial values <i>R</i><sub><i>xx</i></sub>(<i>t</i><sub>0</sub>) were treated as fit parameters."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To minimize the objective function, we use the Levenberg\u2013Marquardt implementation (<a href=\"#bib32\">Jones et al., 2001</a>). The resulting optimal fit parameters are reported in <a href=\"#tbl1\">Table 1</a>. A bootstrapping algorithm was used to estimate parameters uncertainties."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s9-2", 
+                                "title": "Fitting of the rectangle model to cell and tissue shape in the hinge and blade", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We now describe the fitting procedure of the rectangle model described in section <a href=\"#app3\">Appendix 3</a> to experimental measurements. Specifically, we fit the hinge and blade shapes predicted by the rectangle model to measurements of the average strain rate in the hinge and blade. In the WT situation, the dynamics of the rectangle model takes the form of a dynamical system for the cell deformation in the hinge <math id=\"inf118\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup></mrow></math> and blade <i>Q</i><sub><i>xx</i></sub>, the topological changes tensors in the hinge <math id=\"inf119\"><mrow><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup></mrow></math> and blade <i>R</i><sub><i>xx</i></sub>, the blade height <i>h</i> and the position of the hinge\u2013blade interface <i>x</i><sub>HB</sub>. This dynamical system can be written as:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ79", 
+                                        "label": "(79)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msub><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msub><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ80", 
+                                        "label": "(80)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msubsup><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>\u2212</mo><msubsup><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow><mi>H</mi></msubsup></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ81", 
+                                        "label": "(81)", 
+                                        "mathml": "<math><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msub><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><msub><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><msub><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ82", 
+                                        "label": "(82)", 
+                                        "mathml": "<math><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><msubsup><mi>R</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>r</mi></msub><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mi>d</mi></msub></mrow></mfrac><msubsup><mi>\u03bb</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ83", 
+                                        "mathml": "<math><mrow><mi>\u03b3</mi><mfrac><mrow><mi>d</mi><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>\u2212</mo><msup><mi>h</mi><mi>H</mi></msup><msubsup><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>+</mo><mi>h</mi><msub><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msubsup><mi>k</mi><mrow><mtext>PD</mtext></mrow><mi>H</mi></msubsup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub><mo>\u2212</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ84", 
+                                        "label": "(83)", 
+                                        "mathml": "<math><mrow><mo>+</mo><msub><mi>k</mi><mrow><mtext>PD</mtext></mrow></msub><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>L</mi><mo>\u2212</mo><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><mrow><mo>(</mo><mrow><msub><mi>L</mi><mn>0</mn></msub><mo>\u2212</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ85", 
+                                        "label": "(84)", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><mi>h</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>h</mi><msub><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#equ79 equ80\">Equations 79, 80</a> correspond to the strain rate decomposition <a href=\"#equ52\">Equation 52</a> in the hinge and in the blade, <a href=\"#equ81 equ82\">Equations 81, 82</a> to the constitutive <a href=\"#equ61\">Equation 61</a> for the tensor of topological changes in the hinge and in the blade, <a href=\"#equ84\">Equation 83</a> to the force balance <a href=\"#equ70\">Equation 70</a> at the hinge\u2013blade interface, <a href=\"#equ85\">Equation 84</a> to the height kinematic <a href=\"#equ69\">Equation 69</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Solving the dynamical system above requires to compute some components of the strain rate tensor <i>v</i><sub><i>ij</i></sub> and of the stress tensor <i>\u03c3</i><sub><i>ij</i></sub>. These components are obtained by solving the following system of equation for the components of the strain rate <i>v</i><sub><i>xx</i></sub>, <math id=\"inf120\"><mrow><msubsup><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup></mrow></math>, <i>v</i><sub><i>yy</i></sub>, <math id=\"inf121\"><mrow><msubsup><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow><mi>H</mi></msubsup></mrow></math>, of the stress tensor <i>\u03c3</i><sub><i>xx</i></sub>, <math id=\"inf122\"><mrow><msubsup><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup></mrow></math>, <i>\u03c3</i><sub><i>yy</i></sub>, <math id=\"inf123\"><mrow><msubsup><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow><mi>H</mi></msubsup></mrow></math>, and of the hinge pressure <i>P</i><sub><i>H</i></sub>:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ86", 
+                                        "label": "(85)", 
+                                        "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow></mfrac><mfrac><mrow><mi>d</mi><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ87", 
+                                        "label": "(86)", 
+                                        "mathml": "<math><mrow><msub><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><mfrac><mn>1</mn><mrow><mi>L</mi><mo>\u2212</mo><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow></mfrac><mfrac><mrow><mi>d</mi><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ88", 
+                                        "label": "(87)", 
+                                        "mathml": "<math><mrow><msubsup><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>+</mo><msubsup><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>A</mi><mi>H</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mrow><mi>d</mi><msub><mi>A</mi><mi>H</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ89", 
+                                        "label": "(88)", 
+                                        "mathml": "<math><mrow><msubsup><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mn>2</mn><msup><mi>K</mi><mi>H</mi></msup><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>+</mo><msubsup><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>\u2212</mo><msup><mi>P</mi><mi>H</mi></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ90", 
+                                        "label": "(89)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>2</mn><mi>K</mi><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow><mo>+</mo><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mrow><mtext>ln</mtext><mfrac><mi>A</mi><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mrow><mover accent=\"true\"><mrow><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow></munder></mrow><mi>t</mi></mover></mrow><msub><mi>k</mi><mi>e</mi></msub><mi>d</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mrow><msub><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>k</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ91", 
+                                        "label": "(90)", 
+                                        "mathml": "<math><mrow><msubsup><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mo>\u2212</mo><mn>2</mn><msup><mi>K</mi><mi>H</mi></msup><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>\u2212</mo><msubsup><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>H</mi></msubsup><mo>\u2212</mo><msup><mi>P</mi><mi>H</mi></msup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ92", 
+                                        "label": "(91)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><mn>2</mn><mi>K</mi><msub><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msub><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow><mo>+</mo><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mrow><mtext>ln</mtext><mfrac><mi>A</mi><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mrow><mover accent=\"true\"><mrow><munder><mstyle displaystyle=\"true\"><mo>\u222b</mo></mstyle><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow></munder></mrow><mi>t</mi></mover></mrow><msub><mi>k</mi><mi>e</mi></msub><mi>d</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow><mrow><mo>(</mo><mrow><msub><mi>v</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>v</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>k</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ93", 
+                                        "label": "(92)", 
+                                        "mathml": "<math><mrow><msubsup><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow><mi>H</mi></msubsup><mo>=</mo><mo>\u2212</mo><msup><mi>k</mi><mtext>H</mtext></msup><mrow><mo>(</mo><mrow><msup><mi>h</mi><mtext>H</mtext></msup><mo>\u2212</mo><msubsup><mi>h</mi><mn>0</mn><mtext>H</mtext></msubsup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ94", 
+                                        "label": "(93)", 
+                                        "mathml": "<math><mrow><msub><mi>\u03c3</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>=</mo><mo>\u2212</mo><mi>k</mi><mrow><mo>(</mo><mrow><mi>h</mi><mo>\u2212</mo><msub><mi>h</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>A</i> = <i>x</i><sub>HB</sub> <i>h</i> is the blade area, the rate of cell extrusion <i>k</i><sub><i>e</i></sub> in <a href=\"#equ90\">Equation 89</a> is obtained from experimental measurements, <i>dx</i><sub>HB</sub>/<i>dt</i> in <a href=\"#equ85 equ86\">Equations 85, 86</a> can be obtained from <a href=\"#equ83\">Equation 83</a>, and the hinge area <i>A</i><sub><i>H</i></sub> in <a href=\"#equ87\">Equation 87</a> is obtained from experimental measurements. In the system of equations above, <a href=\"#equ85 equ86\">Equations 85, 86</a> correspond to <a href=\"#equ66 equ67\">Equations 66, 67</a>, <a href=\"#equ87\">Equation 87</a> arises from the definition of the hinge area in the rectangle model, <i>A</i><sub><i>H</i></sub> = <i>x</i><sub>HB</sub> <i>h</i><sup><i>H</i></sup>, <a href=\"#equ88\">Equations 88</a>\u2013<a href=\"#equ93\">93</a> arise from the constitutive equations for the stress <a href=\"#equ55\">Equations 55</a>\u2013<a href=\"#equ57\">57</a> in the hinge and blade, and <a href=\"#equ92 equ93\">Equations 92, 93</a> correspond to the stress boundary conditions <a href=\"#equ71 equ72\">Equations 71, 72</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To solve the dynamic equations for the wing where the extracellular matrix was anteriorly ablated (ECM_AntCut), the same system of equations is solved, with the boundary condition <a href=\"#equ93\">Equation 93</a> replaced by the boundary condition given by <a href=\"#equ73\">Equation 73</a>. Additionally, we accounted for the fact that a smaller part of the hinge is visible in the ECM_AntCut wing compared to the WT wing. We added a correction term to the measured length of the ECM_AntCut wing such that its total length is the same as for the WT wing."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "To solve the dynamic equations for the wing where the extracellular matrix was distally ablated (ECM_DistCut) and for <i>dumpy</i><sup>ov1</sup> mutant wings, a new dynamical equation for the length of the wing <i>L</i> is added, <a href=\"#equ74\">Equation 74</a>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ95", 
+                                        "label": "(94)", 
+                                        "mathml": "<math><mrow><mi>\u03b3</mi><mfrac><mrow><mi>d</mi><mi>L</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>\u2212</mo><mi>h</mi><msub><mi>\u03c3</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>P</mi><mi>D</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>L</mi><mo>\u2212</mo><msub><mi>x</mi><mrow><mtext>HB</mtext></mrow></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For the distally ablated wing, all other equations are unchanged. For the <i>dumpy</i><sup>ov1</sup> mutant wing, <a href=\"#equ93\">Equation 93</a> is replaced by the boundary condition <a href=\"#equ73\">Equation 73</a> and all other equations are unchanged."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "From the strain rate in the blade <i>v</i><sub><i>ij</i></sub> and in the hinge <math id=\"inf124\"><mrow><msubsup><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>H</mtext></msubsup></mrow></math>, we obtain the cumulative strain rate <i>u</i><sub><i>ij</i></sub> and <math id=\"inf125\"><mrow><msubsup><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>H</mtext></msubsup></mrow></math>:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ96", 
+                                        "label": "(95)", 
+                                        "mathml": "<math><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mi>t</mi></msubsup><mrow><mi>d</mi><mi>t</mi></mrow></mrow></mstyle><mo>\u2032</mo><msub><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ97", 
+                                        "label": "(96)", 
+                                        "mathml": "<math><mrow><msubsup><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>H</mtext></msubsup><mo>=</mo><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mi>t</mi></msubsup><mrow><mi>d</mi><mi>t</mi></mrow></mrow></mstyle><mo>\u2032</mo><msubsup><mi>v</mi><mrow><mi>i</mi><mi>j</mi></mrow><mtext>H</mtext></msubsup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "with <i>t</i><sub>0</sub> taken as the first time point of experimental observation for each condition."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We then define the following objective function:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ98", 
+                                        "label": "(97)", 
+                                        "mathml": "<math><mtable columnalign=\"left\"><mtr><mtd><mi>S</mi><mrow><mo>(</mo><mrow><mfrac><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msubsup><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow><mtext>H</mtext></msubsup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msup><mi>K</mi><mtext>H</mtext></msup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mi>k</mi><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msup><mi>k</mi><mtext>H</mtext></msup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msubsup><mi>k</mi><mrow><mi>P</mi><mi>D</mi></mrow><mtext>H</mtext></msubsup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>P</mi><mi>D</mi></mrow></msub></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mi>\u03b3</mi><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow><mi>K</mi></mfrac></mrow><mo>)</mo></mrow><mo>=</mo></mtd></mtr><mtr><mtd><mtext>\u2003\u2003\u2003\u2003</mtext><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>k</mi><mo>\u2208</mo><mtext>wings</mtext></mrow></munder><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>n</mi></munder><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd><mtext>\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003</mtext><mo>+</mo><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>th</mtext><mo>,</mo><mtext>k</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mo>,</mo></mtd></mtr></mtable></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the fitted wings are WT #2, ECM_AntCut and ECM_DistCut, and <i>n</i> labels successive time points. The parameter <i>\u03b6</i><sub><i>xx</i></sub>/<i>K</i> was obtained from fitting to circular laser cut experiments (see \u2018Materials and methods\u2019, Analysis of circular laser ablations). We found that the fitting procedure returned small values of the parameters <math id=\"inf126\"><mrow><msubsup><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow><mtext>H</mtext></msubsup><mo>/</mo><mi>K</mi></mrow></math> and <i>K</i><sup>H</sup>/<i>K</i> which were therefore set to zero. The fit function was minimised for the remaining 8 parameters, and the optimal parameters are reported in <a href=\"#tbl2\">Table 2</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A separate fit was performed for Dumpy wings, with the following objective function:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ99", 
+                                        "label": "(98)", 
+                                        "mathml": "<math><mtable columnalign=\"left\"><mtr><mtd><mi>S</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mi>k</mi><mrow><mtext>Dp</mtext></mrow></msup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msup><mi>k</mi><mrow><mtext>H</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msubsup><mi>k</mi><mrow><mi>P</mi><mi>D</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msubsup><mi>k</mi><mrow><mi>P</mi><mi>D</mi></mrow><mrow><mtext>Dp</mtext></mrow></msubsup></mrow><mi>K</mi></mfrac><mo>,</mo><mfrac><mrow><msup><mi>\u03b3</mi><mrow><mtext>Dp</mtext></mrow></msup></mrow><mi>K</mi></mfrac></mrow><mo>)</mo></mrow><mo>=</mo></mtd></mtr><mtr><mtd><mtext>\u2003\u2003\u2003</mtext><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>n</mi></munder><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>th</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>exp</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>th</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd><mtext>\u2003\u2003\u2003\u2003\u2003\u2003</mtext><mo>+</mo><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>th</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>[</mo><mrow><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>exp</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><msubsup><mi>u</mi><mrow><mi>y</mi><mi>y</mi></mrow><mrow><mtext>H</mtext><mo>,</mo><mtext>th</mtext><mo>,</mo><mtext>Dp</mtext></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>t</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mo>,</mo></mtd></mtr></mtable></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the tissue parameters <math id=\"inf127\"><mrow><mrow><mover accent=\"true\"><mi>\u03b6</mi><mo>\u00af</mo></mover></mrow><mo>/</mo><mi>K</mi></mrow></math>, <math id=\"inf128\"><mrow><mrow><mover accent=\"true\"><mi>K</mi><mo>\u00af</mo></mover></mrow><mo>/</mo><mi>K</mi></mrow></math> and <math id=\"inf129\"><mrow><mrow><mover accent=\"true\"><mi>\u03b7</mi><mo>\u00af</mo></mover></mrow><mo>/</mo><mi>K</mi></mrow></math> have the value obtained from WT fits, and <math id=\"inf130\"><mrow><msubsup><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow><mtext>H</mtext></msubsup><mo>/</mo><mi>K</mi></mrow></math> and <math id=\"inf131\"><mrow><msup><mi>K</mi><mtext>H</mtext></msup><mo>/</mo><mi>K</mi></mrow></math> were set to zero as in WT fits. The parameter <math id=\"inf132\"><mrow><msubsup><mi>\u03b6</mi><mrow><mi>x</mi><mi>x</mi></mrow><mrow><mtext>Dp</mtext></mrow></msubsup><mo>/</mo><mi>K</mi></mrow></math> was obtained from fitting to circular laser cut experiments (see \u2018Materials and methods\u2019, Analysis of circular laser ablations). The values of the remaining five fitted parameters are reported in <a href=\"#tbl2\">Table 2</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Reported parameter uncertainties are obtained by evaluating the inverse Hessian associated to the objective functions defined in <a href=\"#equ97 equ98\">Equations 97, 98</a> and estimating measurement errors from the value of the objective function at the minimum."
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s9-2-1", 
+                                        "title": "Area dependence of <i>\u03bb</i><sub><i>xx</i></sub>", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We quantified the final cell elongation in unperturbed WT, <i>dumpy</i><sup>ov1</sup> mutant and distally severed WT wings. In addition, we studied a temperature sensitive <i>cdc2</i> mutant in which cell divisions are inhibited. For all perturbations, the final cell elongation <math id=\"inf133\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>f</mi></msubsup></mrow></math> was positive, corresponding to elongation in the PD axis. The magnitude of <math id=\"inf134\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>f</mi></msubsup></mrow></math> varied suggesting that these perturbations alter the internal dynamics of the wing blade. Interestingly, we find that the final cell elongation <math id=\"inf135\"><mrow><msubsup><mi>Q</mi><mrow><mi>x</mi><mi>x</mi></mrow><mi>f</mi></msubsup></mrow></math> is correlated with the final cell area for WT and all perturbed wings (<a href=\"#fig9s1\">Figure 9\u2014figure supplement 1</a>). According to <a href=\"#equ5\">Equation 5</a> in the main text, the final cell elongation is given by \u2212<i>\u03c4</i><sub><i>r</i></sub> <i>\u03bb</i><sub><i>xx</i></sub>. This suggests that the magnitude of polarization-induced topological changes <i>\u03bb</i><sub><i>xx</i></sub> and/or the stress relaxation time <i>\u03c4</i><sub><i>r</i></sub> increase with cell area. In the fit presented in the main text and in <a href=\"#fig10\">Figure 10</a> and <a href=\"#fig9s2\">Figure 9\u2014figure supplement 2</a>, we accounted for this dependency by taking different values of <i>\u03bb</i><sub><i>xx</i></sub> for different conditions."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }

@@ -7036,36 +7036,64 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s16", 
-                        "title": "Three-component (FG nups/transport proteins/buffer) solutions", 
+                        "id": "s14", 
+                        "title": "Details of the phase separation calculations", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "In mixed solutions of the FG nups and transport proteins, the chemical potentials of each species in the coexisting phases are equal to each other, as is the osmotic pressure in both phases, similar to the two component case above (<a href=\"#bib22\">de Gennes, 1979</a>):"
+                                "type": "section", 
+                                "id": "s15", 
+                                "title": "Two-component (FG nup/buffer) solutions", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In a system where the only solute are the FG Nups without the transport proteins, phase separation occurs for sufficiently high <math id=\"inf256\"><mrow><mo>|</mo><msub id=\"XM1\"><mi>\u03c7</mi><mrow><mi>c</mi><mo>\u2062</mo><mi>r</mi></mrow></msub><mo>|</mo></mrow></math>. The volume fractions of the monomers <math id=\"inf257\"><msub><mi>\u03c8</mi><mn>1</mn></msub></math> and <math id=\"inf258\"><msub><mi>\u03c8</mi><mn>2</mn></msub></math> in the co-existing phases are determined from the equality of the chemical potentials <math id=\"inf259\"><mi>\u03bc</mi></math> and the osmotic pressures <math id=\"inf260\"><mi mathvariant=\"normal\">\u03a0</mi></math> in the separated phases:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mstyle><mtable columnalign=\" left \"><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><msub><mi>\u03bc</mi><mi>\u03c8</mi></msub><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>)</mo></mrow><mo>-</mo><msub><mi>\u03bc</mi><mi>\u03c8</mi></msub><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>d</mi><mo>\u2062</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>\u2062</mo><mi>\u03c8</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>1</mn></msub></mrow></msub><mo>-</mo><mfrac><mrow><mo>\u2202</mo><mo>\u2061</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mo>\u2061</mo><mi>\u03c8</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>2</mn></msub></mrow></msub></mtd></mtr><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>)</mo></mrow><mo>-</mo><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\"><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>)</mo></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mo>-</mo><mi>f</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>)</mo></mrow><mo>+</mo><mi>\u03c8</mi><mo>\u2062</mo><mfrac><mrow><mi>d</mi><mo>\u2062</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>\u2062</mo><mi>\u03c8</mi></mrow></mfrac><mo>,</mo></mtd></mtr></mtable></mstyle></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the free energy <math id=\"inf261\"><mrow><mi>f</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>)</mo></mrow></mrow></math> is given by <a href=\"#equ4\">Equation (4)</a> in the main text with <math id=\"inf262\"><mrow><mi>\u03d5</mi><mo>=</mo><mn>0</mn></mrow></math>. Numerical solution of these equations produces the phase diagram of <a href=\"#fig10\">Figure 10</a> in the main text."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ6", 
-                                "label": "(2)", 
-                                "mathml": "<math><mtable columnalign=\" left \"><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03c8</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub></mrow></msub><mo>-</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03c8</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub></mrow></msub></mtd></mtr><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03d5</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub></mrow></msub><mo>-</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03d5</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub></mrow></msub></mtd></mtr><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub><mo>)</mo></mrow><mo>-</mo><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\"><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>)</mo></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mo>-</mo><mi>f</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>)</mo></mrow><mo>+</mo><mi>\u03c8</mi><mo>\u2062</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03c8</mi></mrow></mfrac><mo>+</mo><mi>\u03d5</mi><mo>\u2062</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03d5</mi></mrow></mfrac><mo>.</mo></mtd></mtr></mtable></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "However, unlike in the two component solution, three <a href=\"#equ6\">Equation (2)</a> in themselves are not sufficient to determine the four unknowns <math id=\"inf263\"><mrow><mo>(</mo><msub id=\"XM63\"><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub id=\"XM64\"><mi>\u03d5</mi><mn>1</mn></msub><mo>)</mo></mrow></math> and <math id=\"inf264\"><mrow><mo>(</mo><msub id=\"XM65\"><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub id=\"XM66\"><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></math>. In the ternary solutions FG nups/transport proteins/buffer, the densities of both components in the coexisting phases depend also on the initial concentrations <math id=\"inf265\"><mi>\u03d5</mi></math> and <math id=\"inf266\"><mi>\u03c8</mi></math> that satisfy the following conservation laws:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ7", 
-                                "label": "(3)", 
-                                "mathml": "<math><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>\u2062</mo><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>\u2062</mo><mi>r</mi><mo>=</mo><mi>\u03c8</mi><mspace linebreak=\"newline\"></mspace><msub><mi>\u03d5</mi><mn>1</mn></msub><mo>\u2062</mo><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>\u2062</mo><mi>r</mi><mo>=</mo><mi>\u03d5</mi><mo>,</mo></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "where <math id=\"inf267\"><mrow><mi>r</mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mi>V</mi><mo>-</mo><msub><mi>V</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mo>/</mo><mi>V</mi></mrow></mrow></math> is the fraction of volume occupied by the phase with <math id=\"inf268\"><mrow><mo>(</mo><msub id=\"XM72\"><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></math>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Together, <a href=\"#equ6 equ7\">Equation (2-3)</a> provide five equations for five variables <math id=\"inf269\"><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub><mo>)</mo></mrow></math>, <math id=\"inf270\"><mrow><mo>(</mo><msub id=\"XM76\"><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></math> and <math id=\"inf271\"><mi>r</mi></math>. Their solution results in the phase diagrams of <a href=\"#fig11\">Figures 11</a>\u2013<a href=\"#fig12\">12</a> in the main text."
+                                "type": "section", 
+                                "id": "s16", 
+                                "title": "Three-component (FG nups/transport proteins/buffer) solutions", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In mixed solutions of the FG nups and transport proteins, the chemical potentials of each species in the coexisting phases are equal to each other, as is the osmotic pressure in both phases, similar to the two component case above (<a href=\"#bib22\">de Gennes, 1979</a>):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mtable columnalign=\" left \"><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03c8</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub></mrow></msub><mo>-</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03c8</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub></mrow></msub></mtd></mtr><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03d5</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub></mrow></msub><mo>-</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03d5</mi></mrow></mfrac><msub><mo>|</mo><mrow><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>=</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub></mrow></msub></mtd></mtr><mtr><mtd columnalign=\"right\"><mn>0</mn></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub><mo>)</mo></mrow><mo>-</mo><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\"><mi mathvariant=\"normal\">\u03a0</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>)</mo></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign=\"left\"><mo>-</mo><mi>f</mi><mo>\u2062</mo><mrow><mo>(</mo><mi>\u03c8</mi><mo>,</mo><mi>\u03d5</mi><mo>)</mo></mrow><mo>+</mo><mi>\u03c8</mi><mo>\u2062</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03c8</mi></mrow></mfrac><mo>+</mo><mi>\u03d5</mi><mo>\u2062</mo><mfrac><mrow><mo>\u2202</mo><mi>f</mi></mrow><mrow><mo>\u2202</mo><mi>\u03d5</mi></mrow></mfrac><mo>.</mo></mtd></mtr></mtable></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "However, unlike in the two component solution, three <a href=\"#equ6\">Equation (2)</a> in themselves are not sufficient to determine the four unknowns <math id=\"inf263\"><mrow><mo>(</mo><msub id=\"XM63\"><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub id=\"XM64\"><mi>\u03d5</mi><mn>1</mn></msub><mo>)</mo></mrow></math> and <math id=\"inf264\"><mrow><mo>(</mo><msub id=\"XM65\"><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub id=\"XM66\"><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></math>. In the ternary solutions FG nups/transport proteins/buffer, the densities of both components in the coexisting phases depend also on the initial concentrations <math id=\"inf265\"><mi>\u03d5</mi></math> and <math id=\"inf266\"><mi>\u03c8</mi></math> that satisfy the following conservation laws:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>\u2062</mo><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>\u03c8</mi><mn>2</mn></msub><mo>\u2062</mo><mi>r</mi><mo>=</mo><mi>\u03c8</mi><mspace linebreak=\"newline\"></mspace><msub><mi>\u03d5</mi><mn>1</mn></msub><mo>\u2062</mo><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>\u2062</mo><mi>r</mi><mo>=</mo><mi>\u03d5</mi><mo>,</mo></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf267\"><mrow><mi>r</mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mi>V</mi><mo>-</mo><msub><mi>V</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mo>/</mo><mi>V</mi></mrow></mrow></math> is the fraction of volume occupied by the phase with <math id=\"inf268\"><mrow><mo>(</mo><msub id=\"XM72\"><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></math>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Together, <a href=\"#equ6 equ7\">Equation (2-3)</a> provide five equations for five variables <math id=\"inf269\"><mrow><mo>(</mo><msub><mi>\u03c8</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>1</mn></msub><mo>)</mo></mrow></math>, <math id=\"inf270\"><mrow><mo>(</mo><msub id=\"XM76\"><mi>\u03c8</mi><mn>2</mn></msub><mo>,</mo><msub><mi>\u03d5</mi><mn>2</mn></msub><mo>)</mo></mrow></math> and <math id=\"inf271\"><mi>r</mi></math>. Their solution results in the phase diagrams of <a href=\"#fig11\">Figures 11</a>\u2013<a href=\"#fig12\">12</a> in the main text."
+                                    }
+                                ]
                             }
                         ]
                     }

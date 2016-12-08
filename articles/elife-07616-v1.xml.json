@@ -4426,6 +4426,65 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s6", 
+                        "title": "Section 1: backwards\u2013forward model selection", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The multi-model selection approach was chosen for its improved capabilities when compared to standard selection approaches, since it allows accounting for and describing the uncertainty in the parameters due to model selection. As a result, this approach and its results for each region are described in the main text. In this section, we describe the methodology and results of additional analyses using a classical forward\u2013backward selection approach. We demonstrate that this selection procedure gives comparable results to those from the multi-model selection described in the main text."
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-1", 
+                                "title": "Methodology", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "A combination of backward and forward procedures based on Akaike's Information Criteria (AIC) and likelihood ratio tests was used to select the final multivariate model. Firstly, all variables were tested individually as fixed effects in univariate binomial regressions with the site of collection as random effect. Those variables showing a significant effect were retained for an initial multivariate model. A backward procedure was then applied on this initial model in order to select, one by one, the variables that did not significantly improve the model (based on likelihood ratio tests) and, among these, we dropped those variables that resulted in the model with the lowest AIC. Secondly, a forward procedure was carried out by adding to this reduced model, one by one, all variables that significantly improved the model (likelihood ratio test) and, among those, those that resulted in the model with the lowest AIC. At each step, we checked whether the addition of the new variable made others insignificant, in which case, we dropped those variables from the model. The final model was obtained when no significant improvement could be achieved with the addition of new variables. Violation of model assumptions was checked in the final models. Colinearity was assessed through graphical exploration of explanatory variables, correlation tests, and variance inflation factors (VIF) in the final model. Independence was assessed by studying the spatial (correlograms) and temporal correlation (cross-correlations) of the model residuals."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-2", 
+                                "title": "Multivariate results", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Similarly to the results obtained with multi-model selection, a combination of seasonal factors, water conditions, and community composition remained in the final models for Akonolinga and Bankim (<a href=\"#tbl5\">Appendix table 1</a>). Firstly, the effect of seasonality remained for Akonolinga after accounting for water parameters and biological factors. Secondly, regarding water conditions, <i>pH</i> had a significant positive effect on <i>MU</i> presence in Akonolinga, whereas in Bankim the negative effect of water flow was evident, with lotic ecosystems being the least positive, followed by lentic ones, which had significantly lower positivity than stagnant ecosystems. Finally, the effect of aquatic communities through total abundance was significant and inversely correlated with <i>MU</i> in Akonolinga, while in Bankim Shannon's diversity showed a positive correlation with <i>MU</i> presence. Individual taxa that remained significant and inversely correlated with <i>MU</i> were Gastropoda, Decapoda, Hemiptera and Anura for Akonolinga; and Ephemeroptera, fish, Diptera and Anura for Bankim. The only taxon positively correlated with <i>MU</i> in the final model was Hirudinea in Akonolinga and Coleoptera for Bankim. In summary, the results obtained from multi-model selection and classical model selection procedures were qualitatively and quantitatively similar."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.07616.011", 
+                                        "id": "tbl5", 
+                                        "label": "Appendix table 1.", 
+                                        "title": "Results of multivariate analyses for Akonolinga (12 months of sampling) and Bankim (4 months of sampling)", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Results of multivariate analyses for Akonolinga (12 months of sampling) and Bankim (4 months of sampling)"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th rowspan=\"2\">Variable</th><th colspan=\"3\">Akonolinga (n = 183)</th><th colspan=\"3\">Bankim (n = 61)</th></tr><tr><th>Effect</th><th>Std. error</th><th>p-value</th><th>Effect</th><th>Std. error</th><th>p-value</th></tr></thead><tbody><tr><td>Model AIC</td><td>400.7</td><td>\u2013</td><td>\u2013</td><td>182.7</td><td>\u2013</td><td>\u2013</td></tr><tr><td>Variance of random effect</td><td>0.20</td><td>\u2013</td><td>\u2013</td><td>1.77</td><td>\u2013</td><td>\u2013</td></tr><tr><td>(Intercept)</td><td>\u221212.56</td><td>4.40</td><td>&lt;0.001</td><td>\u22127.40</td><td>1.97</td><td>&lt;0.001</td></tr><tr><td colspan=\"7\">Seasonality</td></tr><tr><td>\u2003Sine(2pi*Month/12)</td><td>0.34</td><td>0.14</td><td>0.02</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Sine(2pi*Month/4)</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Cos(2pi*Month/12)</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Cos(2pi*Month/4)</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td colspan=\"7\">Physico-chemical parameters</td></tr><tr><td>\u2003Temperature</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003<i>pH</i></td><td>8.63</td><td>2.44</td><td>&lt;0.001</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Dissolved oxygen</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Conductivity</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Iron</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Water flow (Lentic)</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u22122.10</td><td>0.47</td><td>&lt;0.001</td></tr><tr><td>\u2003Water flow (Lotic)</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u22123.18</td><td>0.69</td><td>&lt;0.001</td></tr><tr><td colspan=\"7\">Physico-chemical parameters (PCA)</td></tr><tr><td>\u2003PC1</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003PC2</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003PC3</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td colspan=\"7\">Community</td></tr><tr><td>\u2003Abundance</td><td>\u22120.64</td><td>0.17</td><td>&lt;0.001</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Shannon</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>4.16</td><td>0.97</td><td>&lt;0.001</td></tr><tr><td colspan=\"7\">Orders (%)</td></tr><tr><td>\u2003Fish</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u22121.62</td><td>0.35</td><td>&lt;0.001</td></tr><tr><td>\u2003Anura</td><td>\u22120.34</td><td>0.14</td><td>0.02</td><td>\u22120.84</td><td>0.32</td><td>0.01</td></tr><tr><td>\u2003Gastropoda</td><td>\u22120.64</td><td>0.16</td><td>&lt;0.001</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Decapoda (presence)</td><td>\u22121.37</td><td>0.37</td><td>&lt;0.001</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Odonata</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Ephemeroptera</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u22120.94</td><td>0.21</td><td>&lt;0.001</td></tr><tr><td>\u2003Hemiptera</td><td>\u22120.47</td><td>0.20</td><td>0.02</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Tricoptera</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Oligochaeta (presence)</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Hirudinea (presence)</td><td>0.59</td><td>0.23</td><td>0.01</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Coleoptera</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u2013</td></tr><tr><td>\u2003Diptera</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>1.08</td><td>0.36</td><td>&lt;0.001</td></tr><tr><td>\u2003Hydracarine</td><td>\u2013</td><td>\u2013</td><td>\u2013</td><td>\u22121.58</td><td>0.49</td><td>&lt;0.001</td></tr></tbody></table>"
+                                        ], 
+                                        "footnotes": [
+                                            {
+                                                "text": [
+                                                    {
+                                                        "type": "paragraph", 
+                                                        "text": "The models used are Binomial regressions with random effect site, selected with forward\u2013backwards procedure (see section 1 for details)."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s7", 
                         "title": "Section 2: differences in communities in Akonolinga and Bankim", 
                         "content": [

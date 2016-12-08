@@ -3635,22 +3635,603 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s7-11", 
-                        "title": "Gaussian fitting procedure", 
+                        "id": "s7", 
+                        "title": "Supplementary methods", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "In networks where properties of bump attractors, such as the position and presence of an activity bump, were estimated, we developed a procedure to fit Gaussian functions onto successive snapshots of network activity of E cells. The network activity snapshots were estimated by taking action potential times of all E cells and estimating their immediate firing rate using a 250 ms wide sliding window with a 125 ms time step. For each snapshot, the properties of a bump-like network activity (if it was a bump) were then estimated by fitting a symmetric Gaussian function to the network activity snapshots, using the maximum likelihood estimator under Gaussian noise (the least squares fitting method):"
+                                "type": "section", 
+                                "id": "s7-1", 
+                                "title": "Neuron membrane and synaptic dynamics", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Each neuron's membrane potential (<i>V</i><sub>m</sub>) is governed by the passive membrane equation:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ1", 
+                                        "label": "(1)", 
+                                        "mathml": "<math><mrow><msub><mi>C</mi><mtext>m</mtext></msub><msub><mrow><mover accent=\"true\"><mi>V</mi><mo>\u02d9</mo></mover></mrow><mtext>m</mtext></msub><mo>=</mo><msub><mi>I</mi><mtext>m</mtext></msub><mo>+</mo><msub><mi>I</mi><mtext>syn</mtext></msub><mo>+</mo><msub><mi>I</mi><mtext>ext</mtext></msub><mo>+</mo><mi>\u03b7</mi><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "in which the total membrane current is a sum of four separate components: the trans-membrane current (<i>I</i><sub>m</sub>), the total synaptic current (<i>I</i><sub>syn</sub>), the current injected externally from other brain regions (<i>I</i><sub>ext</sub>) and <math id=\"inf1\"><mrow><mi>\u03b7</mi><mo>\u223c</mo><mi mathvariant=\"script\">N</mi><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mo>\u2009</mo><msup><mi>\u03c3</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></math>, which is the noise current with zero mean and appropriate standard deviation in the range of 0\u2013300 pA."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For E cells, the trans-membrane current"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ2", 
+                                        "label": "(2)", 
+                                        "mathml": "<math><mrow><msub><mi>I</mi><mtext>m</mtext></msub><mo>=</mo><msub><mi>g</mi><mtext>L</mtext></msub><mrow><mo>(</mo><mrow><msub><mi>E</mi><mtext>L</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>g</mi><mtext>AHP</mtext></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>E</mi><mtext>AHP</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>g</mi><mtext>L</mtext></msub><msub><mtext>\u0394</mtext><mtext>T</mtext></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>V</mi><mtext>m</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>T</mtext></msub></mrow><mrow><msub><mtext>\u0394</mtext><mtext>T</mtext></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "contains the leak conductances (\u2018L\u2019 subscript), after-spike hyperpolarisation conductance (\u2018AHP\u2019 subscript) and an exponential part that initiates a spike when the membrane potential gets close to the threshold (<i>V</i><sub>T</sub>). After each spike, there is a reset of membrane potential and the AHP conductance:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "mathml": "<math><mrow><msub><mi>V</mi><mtext>m</mtext></msub><mo>\u2192</mo><msub><mi>V</mi><mtext>r</mtext></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><mrow><msub><mi>g</mi><mtext>AHP</mtext></msub><mo>\u2192</mo><msub><mi>g</mi><mrow><msub><mrow><mtext>AHP</mtext></mrow><mrow><mtext>max</mtext></mrow></msub></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The I cells do not possess an AHP, but instead contain a simple adaptation term. The trans-membrane current has the following form:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "label": "(4)", 
+                                        "mathml": "<math><mrow><msub><mi>I</mi><mtext>m</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow><msub><mi>g</mi><mtext>L</mtext></msub><mo>+</mo><msub><mi>g</mi><mtext>ad</mtext></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>E</mi><mtext>L</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>g</mi><mtext>L</mtext></msub><msub><mtext>\u0394</mtext><mtext>T</mtext></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>V</mi><mtext>m</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>T</mtext></msub></mrow><mrow><msub><mtext>\u0394</mtext><mtext>T</mtext></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The <i>g</i><sub>ad</sub> term adds an extra conductance after each spike, that is, after the spike:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ6", 
+                                        "mathml": "<math><mrow><msub><mi>V</mi><mtext>m</mtext></msub><mo>\u2192</mo><msub><mi>V</mi><mtext>r</mtext></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ7", 
+                                        "label": "(5)", 
+                                        "mathml": "<math><mrow><msub><mi>g</mi><mtext>ad</mtext></msub><mo>\u2192</mo><msub><mi>g</mi><mtext>ad</mtext></msub><mo>+</mo><msub><mi>g</mi><mrow><msub><mrow><mtext>ad</mtext></mrow><mrow><mtext>inc</mtext></mrow></msub></mrow></msub><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We used adaptation for the I cells in order to include refractory properties after each spike. The frequency vs current (F-I) relationship of the standard leaky integrate-and-fire neuron model has a steep slope right after the firing threshold has been crossed. This is an undesirable property because a neuron's firing rate is overly sensitive to small current changes. To linearize the F-I curve we used adaptation. The adaptation was not specifically tuned to produce the current model behavior and other mechanisms could be used as well (e.g., after-spike hyperpolarization as was done in the case of E cells)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Both AHP and adaptation conductances (<i>g</i><sub>AHP</sub> and <i>g</i><sub>ad</sub> respectively) decay exponentially:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ8", 
+                                        "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>g</mi><mo>\u02d9</mo></mover></mrow><mrow><mtext>AHP</mtext></mrow></msub><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>g</mi><mtext>AHP</mtext></msub></mrow><mrow><msub><mi>\u03c4</mi><mtext>AHP</mtext></msub></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ9", 
+                                        "label": "(6)", 
+                                        "mathml": "<math><mrow><msub><mrow><mover accent=\"true\"><mi>g</mi><mo>\u02d9</mo></mover></mrow><mrow><mtext>ad</mtext></mrow></msub><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>g</mi><mtext>ad</mtext></msub></mrow><mrow><msub><mi>\u03c4</mi><mtext>ad</mtext></msub></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In <a href=\"#equ2 equ5\">Equations 2, 4</a>, the term \u0394<sub>T</sub> is defined as the spike slope factor (<a href=\"#bib14\">Fourcaud-Trocm\u00e9 et al., 2003</a>) and it measures the sharpness of the spike initiation. The closer this parameter is to zero, the faster spike initiation will happen when <i>V</i><sub>m</sub> gets close to <i>V</i><sub>T</sub>. For the exponential integrate and fire neuron, in the limit \u0394<sub>T</sub> \u2192 0, the model becomes equivalent to a leaky integrate and fire neuron (<a href=\"#bib14\">Fourcaud-Trocm\u00e9 et al., 2003</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The synaptic current for each neuron is a sum of the AMPA, NMDA and GABA<sub>A</sub> synaptic currents collected from spikes of all other neurons:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ10", 
+                                        "label": "(7)", 
+                                        "mathml": "<math><mrow><msub><mi>I</mi><mtext>syn</mtext></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>g</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>A</mtext></mrow></msub></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>E</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>A</mtext></mrow></msub></mrow></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>g</mi><mtext>AMPA</mtext></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>E</mi><mtext>AMPA</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>g</mi><mtext>NMDA</mtext></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>E</mi><mtext>NMDA</mtext></msub><mo>\u2212</mo><msub><mi>V</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In networks that do not contain recurrent E \u2192 E connections we set <i>g</i><sub>AMPA</sub> = <i>g</i><sub>NMDA</sub> = 0 for the E cells, and <math id=\"inf2\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>A</mtext></mrow></msub></mrow></msub><mo>=</mo><mn>0</mn></mrow></math> for I cells. In other network variants (with E \u2192 E or I \u2192 I connectivity) these synaptic strengths are non-zero. E \u2192 E, as well as E \u2192 I synapses thus both contain the NMDA component. Connections from place cells were modeled as AMPA conductances only (cf. description of place cell inputs). The synaptic conductances <i>g</i><sub>AMPA</sub>, <i>g</i><sub>NMDA</sub> and <math id=\"inf3\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math> of a postsynaptic neuron <i>i</i> were modeled as exponentials with pre-defined time constants (see <a href=\"#tbl1\">Appendix table 1</a> for the parameter values):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ11", 
+                                        "mathml": "<math><mrow><msubsup><mrow><mover accent=\"true\"><mi>g</mi><mo>\u02d9</mo></mover></mrow><mrow><mtext>AMPA</mtext></mrow><mi>i</mi></msubsup><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>g</mi><mrow><mtext>AMPA</mtext></mrow></msub></mrow><mrow><msub><mi>\u03c4</mi><mrow><mtext>AMPA</mtext></mrow></msub></mrow></mfrac><mo>+</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>j</mi></munder><msubsup><mi>w</mi><mrow><mtext>AMPA</mtext></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mi>\u03b4</mi><mrow><mo>(</mo><mrow><mi>t</mi><mo>\u2212</mo><msub><mi>t</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ12", 
+                                        "mathml": "<math><mrow><msubsup><mrow><mover accent=\"true\"><mi>g</mi><mo>\u02d9</mo></mover></mrow><mrow><mtext>\u2009NMDA</mtext></mrow><mi>i</mi></msubsup><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>g</mi><mrow><mtext>NMDA</mtext></mrow></msub></mrow><mrow><msub><mi>\u03c4</mi><mrow><mtext>NMDA</mtext></mrow></msub></mrow></mfrac><mo>+</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>j</mi></munder><msubsup><mi>w</mi><mrow><mtext>\u2009NMDA</mtext></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mi>\u03b4</mi><mrow><mo>(</mo><mrow><mi>t</mi><mo>\u2212</mo><msub><mi>t</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ13", 
+                                        "label": "(8)", 
+                                        "mathml": "<math><mrow><msubsup><mrow><mover accent=\"true\"><mi>g</mi><mo>\u02d9</mo></mover></mrow><mrow><msub><mrow><mtext>\u2009GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow><mi>i</mi></msubsup><mo>=</mo><mo>\u2212</mo><mfrac><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow><mrow><msub><mi>\u03c4</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></mfrac><mo>+</mo><munder><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mi>j</mi></munder><msubsup><mi>w</mi><mrow><msub><mrow><mtext>\u2009GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mi>\u03b4</mi><mrow><mo>(</mo><mrow><mi>t</mi><mo>\u2212</mo><msub><mi>t</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.06444.037", 
+                                        "id": "tbl1", 
+                                        "label": "Appendix table 1.", 
+                                        "title": "Parameter values for synapses", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Parameter values for synapses"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Name</th><th>Units</th><th>Value</th></tr></thead><tbody><tr><td><i>E</i><sub>AMPA</sub></td><td>mV</td><td>0</td></tr><tr><td><i>\u03c4</i><sub>AMPA</sub></td><td>ms</td><td>1</td></tr><tr><td><i>E</i><sub>NMDA</sub></td><td>mV</td><td>0</td></tr><tr><td><i>\u03c4</i><sub>NMDA</sub></td><td>ms</td><td>100</td></tr><tr><td><math id=\"inf23\"><mrow><msub><mi>E</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math></td><td>mV</td><td>\u221275</td></tr><tr><td><math id=\"inf24\"><mrow><msub><mi>\u03c4</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math></td><td>ms</td><td>5</td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "After each spike of a presynaptic neuron <i>j</i>, each corresponding conductance was incremented by <i>w</i><sup><i>ij</i></sup>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In MEC layer II, basket cells receive a potent, NMDA-mediated synaptic excitation (<a href=\"#bib6a\">Jones and Buhl, 1993</a>). These NMDA responses are slow, lasting several tens of ms (<a href=\"#bib6a\">Jones and Buhl, 1993</a>). NMDA synapses in the attractor network are thus represented by an exponentially decaying conductance (<math id=\"inf4\"><mrow><msub><mi>g</mi><mtext>NMDA</mtext></msub></mrow></math>), with a 100 ms time constant (<a href=\"#tbl1\">Appendix table 1</a>). Both the voltage dependence and slow kinetics of NMDA receptors have been suggested to help maintain persistent activity in working memory networks (<a href=\"#bib11a\">Wang, 1999</a>). Here, it is the slow kinetics of <i>g</i><sub>NMDA</sub> that is necessary to maintain the state of the network during consecutive theta cycles. NMDA receptors are known to be of several variants, depending on the types of the subunits the receptors are composed of (<a href=\"#bib7a\">Paoletti et al., 2013</a>). These several receptor variants have different kinetic time scales, and different sensitivity to the concentration of Mg<sup>2+</sup>. In <a href=\"#bib6a\">Jones and Buhl (1993)</a>, the authors do not report, quantitatively, to what extent the amplitude of the NMDA-mediated synaptic responses are dependent on the Mg<sup>2+</sup> concentration. Therefore, we assume here that the slow kinetics of <i>g</i><sub>NMDA</sub> is sufficient to stabilise the activity of the network and do not include voltage-dependence of NMDA conductances."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, the current external to the neuron"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ14", 
+                                        "label": "(9)", 
+                                        "mathml": "<math><mrow><msub><mi>I</mi><mrow><mtext>ext</mtext></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>I</mi><mrow><mtext>const</mtext></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>I</mi><mi>\u03b8</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>I</mi><mrow><mtext>vel</mtext></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>+</mo><msub><mi>I</mi><mrow><mtext>place</mtext></mrow></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "consists of a constant value (<i>I</i><sub>const</sub>), a theta modulated part, modeled as"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ15", 
+                                        "label": "(10)", 
+                                        "mathml": "<math><mrow><msub><mi>I</mi><mi>\u03b8</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><msub><mi>A</mi><mi>\u03b8</mi></msub></mrow><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mtext>sin</mtext><mrow><mo>(</mo><mrow><mn>2</mn><mi>\u03c0</mi><msub><mi>f</mi><mi>\u03b8</mi></msub><mi>t</mi><mo>+</mo><msub><mi>\u03d5</mi><mi>\u03b8</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "the velocity modulated current (<i>I</i><sub>vel</sub>) that simulates a combination of head-direction input and animal speed input, and an input coming from place cells (<i>I</i><sub>place</sub>). The description of the parameters in the equations can be found in <a href=\"#tbl2\">Appendix table 2</a>. The theta current drive is the sum of a constant amplitude positive current (<i>I</i><sub>const</sub>) and a current with sinusoidal waveform (<i>I</i><sub><i>\u03b8</i></sub>). The constant component of the drive is required to activate the circuit. If it is removed then the circuit becomes silent. The sinusoidal waveform has a frequency of 8 Hz. This is chosen to reflect the frequency of theta oscillations in behaving animals. The amplitude is chosen to produce theta modulation of interneuron firing similar to that observed in behaving animals (cf. <a href=\"#bib6\">Chrobak and Buzs\u00e1ki, 1998</a>) and in ex-vivo models of theta-nested gamma activity (cf. <a href=\"#bib30\">Pastoll et al., 2013</a>). While <i>I</i><sub>const</sub> and <i>I</i><sub><i>\u03b8</i></sub> are simple functions of time, the velocity modulated current and place cell current are described separately. The velocity modulated current is described in \u2018Velocity modulated input current\u2019 and the place cell input current in \u2018Place cell input\u2019."
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.06444.038", 
+                                        "id": "tbl2", 
+                                        "label": "Appendix table 2.", 
+                                        "title": "Neuron parameters and their description", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Neuron parameters and their description"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Name</th><th>Description</th><th>Name</th><th>Description</th></tr></thead><tbody><tr><td><i>V</i><sub>m</sub></td><td>Membrane potential</td><td><i>E</i><sub>AMPA</sub></td><td>AMPA reversal potential</td></tr><tr><td><i>C</i><sub>m</sub></td><td>Membrane capacitance</td><td><i>g</i><sub>NMDA</sub></td><td>NMDA conductance</td></tr><tr><td><i>g</i><sub>L</sub></td><td>Leak conductance</td><td><i>E</i><sub>NMDA</sub></td><td>NMDA reversal potential</td></tr><tr><td><i>E</i><sub>L</sub></td><td>Leak reversal potential</td><td><i>I</i><sub>m</sub></td><td>Trans-membrane current</td></tr><tr><td><i>g</i><sub>AHP</sub></td><td>AHP conductance</td><td><i>I</i><sub>syn</sub></td><td>Synaptic current</td></tr><tr><td><i>\u03c4</i><sub>AHP</sub></td><td>AHP time constant</td><td><i>I</i><sub>syn</sub></td><td>Synaptic current</td></tr><tr><td><i>E</i><sub>AHP</sub></td><td>AHP reversal potential</td><td><i>I</i><sub>ext</sub></td><td>External current</td></tr><tr><td>\u0394<sub>T</sub></td><td>Spike initiation width</td><td><i>I</i><sub>const</sub></td><td>Constant current</td></tr><tr><td><i>V</i><sub>T</sub></td><td>Spike initiation threshold</td><td><i>I</i><sub><i>\u03b8</i></sub></td><td>Theta-modulated current</td></tr><tr><td><math id=\"inf15\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math></td><td>GABA conductance</td><td><i>I</i><sub>vel</sub></td><td>Velocity current</td></tr><tr><td><math id=\"inf16\"><mrow><msub><mi>E</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math></td><td>GABA reversal potential</td><td><i>I</i><sub>place</sub></td><td>Place cell current</td></tr><tr><td><i>g</i><sub>AMPA</sub></td><td>AMPA conductance</td><td><i>\u03c4</i><sub>AMPA</sub></td><td>AMPA time constant</td></tr><tr><td><math id=\"inf17\"><mrow><msub><mi>\u03c4</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math></td><td>GABA time constant</td><td><i>\u03c4</i><sub>NMDA</sub></td><td>NMDA time constant</td></tr><tr><td><i>g</i><sub>ad</sub></td><td>Adaptation conductance</td><td><i>\u03c4</i><sub>ad</sub></td><td>Adaptation time constant</td></tr><tr><td><math id=\"inf18\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>AHP</mtext></mrow><mrow><mtext>max</mtext></mrow></msub></mrow></msub></mrow></math></td><td>AHP maximal value</td><td><math id=\"inf19\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>ad</mtext></mrow><mrow><mtext>inc</mtext></mrow></msub></mrow></msub></mrow></math></td><td>Adaptation conductance increase</td></tr><tr><td><i>A</i><sub><i>\u03b8</i></sub></td><td><i>\u03b8</i>-current amplitude</td><td><i>f</i><sub><i>\u03b8</i></sub></td><td><i>\u03b8</i>-current frequency</td></tr><tr><td><i>\u03d5</i><sub><i>\u03b8</i></sub></td><td><i>\u03b8</i>-current phase</td><td>\u2013</td><td>\u2013</td></tr><tr><td><i>w</i><sub>AMPA</sub></td><td>AMPA synaptic weight</td><td><i>w</i><sub>NMDA</sub></td><td>NMDA synaptic weight</td></tr><tr><td><math id=\"inf20\"><mrow><msub><mi>w</mi><mrow><msub><mrow><mtext>GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math></td><td>GABA synaptic weight</td><td>\u2013</td><td>\u2013</td></tr></tbody></table>"
+                                        ], 
+                                        "footnotes": [
+                                            {
+                                                "text": [
+                                                    {
+                                                        "type": "paragraph", 
+                                                        "text": "For the exact values used in the simulations, refer to <a href=\"#tbl1\">Appendix tables 1</a>, <a href=\"#tbl3 tbl4 tbl5\">3\u20135</a>."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.06444.039", 
+                                        "id": "tbl3", 
+                                        "label": "Appendix table 3.", 
+                                        "title": "Single neuron parameter values for all cells", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Single neuron parameter values for all cells"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Name</th><th>Units</th><th>Value (E cells)</th><th>Value (I cells)</th></tr></thead><tbody><tr><td><i>C</i><sub>m</sub></td><td>pF</td><td>211.389</td><td>227.3</td></tr><tr><td><i>E</i><sub>L</sub></td><td>mV</td><td>\u221268.5</td><td>\u221260</td></tr><tr><td><i>V</i><sub>T</sub></td><td>mV</td><td>\u221250</td><td>\u221245</td></tr><tr><td><i>V</i><sub>r</sub></td><td>mV</td><td>\u221268.5</td><td>\u221260</td></tr><tr><td><i>g</i><sub>L</sub></td><td>nS</td><td>22.73</td><td>22.73</td></tr><tr><td>\u0394<sub>T</sub></td><td>mV</td><td>0.4</td><td>0.4</td></tr><tr><td><i>E</i><sub>AHP</sub></td><td>mV</td><td>\u221280</td><td>\u00d7</td></tr><tr><td><i>\u03c4</i><sub>AHP</sub></td><td>ms</td><td>20</td><td>\u00d7</td></tr><tr><td><math id=\"inf21\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>AHP</mtext></mrow><mrow><mtext>max</mtext></mrow></msub></mrow></msub></mrow></math></td><td>nS</td><td>5</td><td>\u00d7</td></tr><tr><td><i>\u03c4</i><sub>ad</sub></td><td>ms</td><td>\u00d7</td><td>7.5</td></tr><tr><td><math id=\"inf22\"><mrow><msub><mi>g</mi><mrow><msub><mrow><mtext>ad</mtext></mrow><mrow><mtext>inc</mtext></mrow></msub></mrow></msub></mrow></math></td><td>nS</td><td>\u00d7</td><td>22.73</td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.06444.040", 
+                                        "id": "tbl4", 
+                                        "label": "Appendix table 4.", 
+                                        "title": "Parameter values for external inputs", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Parameter values for external inputs"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Name</th><th>Units</th><th>Value (E cells)</th><th>Value (I cells)</th></tr></thead><tbody><tr><td><i>I</i><sub>const</sub></td><td>pA</td><td>300</td><td>200</td></tr><tr><td><i>A</i><sub><i>\u03b8</i></sub></td><td>pA</td><td>375</td><td>25</td></tr><tr><td><i>\u03d5</i><sub><i>\u03b8</i></sub></td><td>rad</td><td>\u2212<i>\u03c0</i>/2</td><td>\u2212<i>\u03c0</i>/2</td></tr><tr><td><i>f</i><sub><i>\u03b8</i></sub></td><td>Hz</td><td>8</td><td>8</td></tr></tbody></table>"
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "table", 
+                                        "doi": "10.7554/eLife.06444.041", 
+                                        "id": "tbl5", 
+                                        "label": "Appendix table 5.", 
+                                        "title": "Parameter values for synaptic profiles", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Parameter values for synaptic profiles"
+                                            }
+                                        ], 
+                                        "tables": [
+                                            "<table><thead><tr><th>Name</th><th>Units</th><th>Value</th></tr></thead><tbody><tr><td><i>\u03bc</i></td><td>normalised</td><td>0.433</td></tr><tr><td><i>\u03c3</i><sub>exc</sub></td><td>normalised</td><td>0.0834</td></tr><tr><td><i>\u03c3</i><sub>inh</sub></td><td>normalised</td><td>0.0834</td></tr><tr><td>C</td><td>normalised</td><td>0.03</td></tr><tr><td><i>\u03bb</i><sub>grid</sub></td><td>cm</td><td>60</td></tr></tbody></table>"
+                                        ]
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "mathml", 
-                                "id": "equ28", 
-                                "label": "(22)", 
-                                "mathml": "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi mathvariant=\"bold\">X</mi><mo>)</mo></mrow><mo>=</mo><mi>A</mi><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><mo>|</mo><mo>|</mo><mi mathvariant=\"bold\">X</mi><mo>\u2212</mo><mi mathvariant=\"bold-italic\">\u03bc</mi><mo>|</mo><msup><mo>|</mo><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>\u2009bump</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                "type": "section", 
+                                "id": "s7-2", 
+                                "title": "Synaptic connection profiles", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the majority of the simulations the attractor model simulates only connections from E to I cells and vice versa. Synapse strengths of connections originating from E cells are generated by a Gaussian-like function with values dependent on the distance between a presynaptic (<i>j</i>) and postsynaptic (<i>i</i>) cell on the twisted torus:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ16", 
+                                        "label": "(11)", 
+                                        "mathml": "<math><mrow><msubsup><mi>w</mi><mrow><mtext>AMPA</mtext></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mo>=</mo><msub><mi>g</mi><mtext>E</mtext></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mo>\u2212</mo><msup><mrow><mrow><mo>(</mo><mrow><mi>d</mi><mrow><mo>(</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>C</mi><mo>,</mo><msubsup><mi mathvariant=\"bold\">e</mi><mi>p</mi><mi>j</mi></msubsup></mrow><mo>)</mo></mrow><mo>\u2212</mo><mi>\u03bc</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>\u2009exc</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ17", 
+                                        "label": "(12)", 
+                                        "mathml": "<math><mrow><mi>d</mi><mrow><mo>(</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>C</mi><mo>,</mo><msub><mi mathvariant=\"bold\">e</mi><mi>p</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mrow><mrow><mo>|</mo><mrow><msub><mi mathvariant=\"bold\">u</mi><mi>i</mi></msub><mi>\u2212</mi><msub><mi mathvariant=\"bold\">u</mi><mi>j</mi></msub><mi>\u2212</mi><mi>C</mi><msub><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"italic\">p</mi></msub></mrow><mo>|</mo></mrow></mrow><mrow><mtext>torus</mtext></mrow></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ18", 
+                                        "label": "(13)", 
+                                        "mathml": "<math><mrow><msubsup><mi>w</mi><mrow><mtext>\u2009NMDA</mtext></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mo>=</mo><msub><mi>C</mi><mtext>NMDA</mtext></msub><mtext>\u2009</mtext><msubsup><mi>w</mi><mrow><mtext>\u2009AMPA</mtext></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In these equations, <i>\u03bc</i> is the distance of the excitatory surround from the position of presynaptic neuron, <i>\u03c3</i><sub>exc</sub> is the width of the excitatory surround, <math id=\"inf5\"><mrow><mo>|</mo><mo>\u22c5</mo><msub><mo>|</mo><mrow><mtext>torus</mtext></mrow></msub></mrow></math> is a distance on the twisted torus that takes the boundaries of the torus into account and <i>C</i> is the synaptic profile shift. The excitatory connections are composed of the equivalent amount of NMDA synaptic conductances. The synaptic strengths of NMDA is specified by a fractional constant <i>C</i><sub>NMDA</sub>. In all simulations, the NMDA conductance constituted 2% of the AMPA conductance, which was an amount necessary to retain the information about the position of the bump attractor during consecutive theta cycles, while not too high to prevent generation of nested gamma oscillations. In <a href=\"#equ17\">Equation 12</a>, <b>e</b><sub><i>p</i></sub> determines the shift of the center of the outgoing synaptic strength profile on the torus, and was used to couple the velocity of the bump with the animal velocity (<a href=\"#bib5\">Burak and Fiete, 2009</a>; <a href=\"#bib30\">Pastoll et al., 2013</a>). The velocity modulated input is described in more detail in \u2018Velocity modulated input current\u2019."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Synapse strengths from I cells to E cells in networks with structured connections were generated by a Gaussian function"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ19", 
+                                        "label": "(14)", 
+                                        "mathml": "<math><mrow><msubsup><mi>w</mi><mrow><msub><mrow><mtext>\u2009GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mo>=</mo><msub><mi>g</mi><mtext>\u2009I</mtext></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mo>\u2212</mo><mi>d</mi><msup><mrow><mrow><mo>(</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>\u2009inh</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "that takes a distance between the pre- and post-synaptic neurons (<i>d</i>(<i>i</i>, <i>j</i>, 0, 0)) and a width of the Gaussian (<i>\u03c3</i><sub>inh</sub>) as parameters. As can be seen from <a href=\"#equ19\">Equation 14</a>, inhibitory neurons do not have shifts in their outgoing synaptic profiles. In addition, a distance-independent I \u2192 E inhibitory connectivity was generated for which the probability of connection between the pre- and post-synaptic cell was 0.4 and the weight of a connection was set to <math id=\"inf6\"><mrow><mn>0</mn><mo>.</mo><mn>013</mn><msub><mi>g</mi><mrow><mtext>\u2009I</mtext></mrow></msub></mrow></math>. The total inhibitory synaptic weight was thus a sum of <math id=\"inf7\"><mrow><msub><mi>w</mi><mrow><msub><mrow><mtext>\u2009GABA</mtext></mrow><mrow><mtext>\u2009A</mtext></mrow></msub></mrow></msub></mrow></math> in <a href=\"#equ19\">Equation 14</a> and the distance-independent component. In simulations with recurrent I \u2192 I connectivity (E-I-I networks), I neurons were mutually connected with a connection probability of 0.1 and a constant synaptic weight of 69 pS."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In networks that contain recurrent E \u2192 E connectivity, the connections between E cells were modelled as a Gaussian function, that is, similarly to <a href=\"#equ19\">Equation 14</a>:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ20", 
+                                        "label": "(15)", 
+                                        "mathml": "<math><mrow><msubsup><mi>w</mi><mrow><mtext>\u2009E</mtext><mo>\u2192</mo><mtext>\u2009E</mtext></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><mo>=</mo><msub><mi>g</mi><mrow><mtext>E</mtext><mo>\u2192</mo><mtext>\u2009E</mtext></mrow></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mo>\u2212</mo><mi>d</mi><msup><mrow><mrow><mo>(</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>C</mi><mo>,</mo><msubsup><mi mathvariant=\"bold\">e</mi><mi>p</mi><mi>j</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>\u2009E</mtext><mo>\u2192</mo><mtext>\u2009E</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>C</i>, <b>e</b><sub><i>p</i></sub> and <i>\u03c3</i><sub>E \u2192 E</sub> have the same meaning as in <a href=\"#equ16\">Equation 11</a>. In these simulations, if not stated otherwise, <i>g</i><sub>E \u2192 E</sub> = 0.5 nS."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We also evaluated networks in which E \u2192 I and I \u2192 E synapses were unstructured and have a constant value. Here, the E \u2192 E synaptic weights were set according to <a href=\"#equ20\">Equation 15</a> and the excitatory and inhibitory synaptic weights for E \u2192 I and I \u2192 E synapses were set to <i>g</i><sub>E</sub>/<i>d</i> and <i>g</i><sub>I</sub>/<i>d</i> respectively, where <i>d</i> is a probability of connection between the presynaptic and postsynaptic neuron, set to 0.1. The density factor <i>d</i> was used in order to ensure equivalence of total synaptic input of a postsynaptic cell when compared to networks that have all-to-all connectivity (<a href=\"#equ16 equ19 equ20\">Equations 11, 14, 15</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Finally, in networks where connection strengths were generated probabilistically instead of in an all-to-all way, the synaptic weights from E to I cells and vice versa were all constant and set to <i>g</i><sub>E</sub> and <i>g</i><sub>I</sub> respectively, while the probability of connection between the pre- and post-synaptic neuron was drawn according to <a href=\"#equ16\">Equation 11</a> for E \u2192 I synapses, and <a href=\"#equ19\">Equation 14</a> for I \u2192 E synapses."
+                                    }
+                                ]
                             }, 
                             {
-                                "type": "paragraph", 
-                                "text": "where <i>A</i> was the height of the Gaussian function, <b>X</b> was neuron position on the twisted torus, <b><i>\u03bc</i></b> was the centre of the Gaussian, <i>\u03c3</i><sub>bump</sub> was the width of the Gaussian, and <math id=\"inf14\"><mrow><mo>|</mo><mo>|</mo><mo>\u22c5</mo><mo>|</mo><mo>|</mo></mrow></math> represents a distance metric on the twisted torus. The parameters fitted were <i>A</i>, <b><i>\u03bc</i></b> and <i>\u03c3</i><sub>bump</sub>. These parameters were then used as the basis for further analysis."
+                                "type": "section", 
+                                "id": "s7-3", 
+                                "title": "Velocity modulated input current", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "All simulations of grid fields and estimations of the velocity input gain contain current input modulated by the speed and direction of the simulated animal. Although translational activity can be achieved by inputs to either of the populations (<a href=\"#bib30\">Pastoll et al., 2013</a>), here we have simulated velocity modulated inputs only onto the E cell population. All E cells are assigned a preferred direction vector (<a href=\"#equ17\">Equation 12</a>) that shifts the outgoing synaptic profile in the direction specified by the unit vector <b>e</b><sub><i>p</i></sub> in <a href=\"#equ17\">Equation 12</a>. The preferred directions are drawn from a set of four unit vectors pointing up, down, left and right so that all directions are distributed along the twisted torus."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "During simulated movement of the animal, the velocity modulated current injected into the neuron <i>i</i> is computed as follows (here \u22c5 is a dot product):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ21", 
+                                        "mathml": "<math><mrow><msubsup><mi>I</mi><mrow><mi>v</mi><mi>e</mi><mi>l</mi></mrow><mi>i</mi></msubsup><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>C</mi><mi>v</mi></msub><mi mathvariant=\"bold\">v</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u22c5</mo><msubsup><mi mathvariant=\"bold\">e</mi><mi>p</mi><mi>i</mi></msubsup><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ22", 
+                                        "label": "(16)", 
+                                        "mathml": "<math><mrow><msub><mi>C</mi><mi>v</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mi>x</mi></msub></mrow><mrow><mi>a</mi><msub><mi>\u03bb</mi><mtext>grid</mtext></msub></mrow></mfrac><mo>.</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The gain of the velocity input (<i>C</i><sub><i>v</i></sub>) is determined from the number of neurons the bump needs to translate in order to return to the original position (<i>N</i><sub><i>x</i></sub> [neurons]; on a twisted torus this quantity is effectively the horizontal size of the neural sheet) divided by the product of the expected grid field spacing (<i>\u03bb</i><sub>grid</sub> [cm]) and a slope of the relationship between bump speed and injected velocity current magnitude (<i>a</i> [neurons/s/pA]). Therefore, given a desired spacing between grid fields, the gain of the velocity inputs can be calibrated."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-4", 
+                                "title": "Place cell input", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Because of the finite network size, spiking variability, or imperfections in the synaptic profile functions, the position of bump attractor in the network might drift over time. The simulations of grid firing fields (<a href=\"#fig2 fig6 fig7\">Figures 2, 6D\u2013I, 7A\u2013C</a> and associated figure supplements) and simulations that explored the controllability of the network by place cell input (<a href=\"#fig6s5\">Figure 6\u2014figure supplement 5</a>) included a separate population of cells with place-like firing fields connected to E cells (in all other simulations the input was de-activated). Inputs from these cells opposed drift of the bump attractor."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Place cells were simulated as independent inhomogeneous Poisson processes, whose rate was modulated by a Gaussian function of the simulated animal location. Thus, the firing rate of an <i>i</i>th place cell, <i>r</i><sub><i>i</i></sub> was:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ23", 
+                                        "label": "(17)", 
+                                        "mathml": "<math><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>=</mo><msub><mi>r</mi><mtext>max</mtext></msub><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><msup><mrow><mrow><mo>|</mo><mrow><mi mathvariant=\"bold\">l</mi><mo>\u2212</mo><msub><mi mathvariant=\"bold-italic\">\u03bc</mi><mi>i</mi></msub></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>field</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>r</i><sub>max</sub> is firing rate in the center of the place field, <b>l</b> is an instantaneous position of the simulated animal, <b><i>\u03bc</i></b><sub><i>i</i></sub> is the center of the place field and <i>\u03c3</i><sub>field</sub> is the width of the place field. In all simulations, there were 900 place cells, with <i>r</i><sub>max</sub> = 50 Hz, and <i>\u03c3</i><sub>field</sub> = 20 cm. Spikes emitted by place cells were thus generated by independent Poisson processes with rate <i>r</i><sub><i>i</i></sub>(<i>t</i>) in <a href=\"#equ23\">Equation 17</a>, and the centres of individual place fields were uniformly distributed in the arena the simulated animal was moving in. The connection weights from place cells were arranged in a divergent manner, so that a place cell had strongest connections with grid cells whose firing fields were aligned (in real space) with the firing field of the place cell. The connection weight from place cell <i>i</i> to a grid cell <i>j</i> decayed according to a Gaussian function"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ24", 
+                                        "label": "(18)", 
+                                        "mathml": "<math><mrow><msub><mi>g</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub><mo>=</mo><msubsup><mi>G</mi><mrow><mtext>PC</mtext></mrow><mrow><mtext>max</mtext></mrow></msubsup><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><mo>|</mo><msubsup><mi mathvariant=\"bold-italic\">\u03bc</mi><mrow><mtext>PC</mtext></mrow><mi>i</mi></msubsup><mo>\u2212</mo><msubsup><mi mathvariant=\"bold-italic\">\u03bc</mi><mtext>G</mtext><mi>j</mi></msubsup><msup><mo>|</mo><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>PC</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <math id=\"inf8\"><mrow><msubsup><mi>G</mi><mrow><mtext>PC</mtext></mrow><mrow><mtext>max</mtext></mrow></msubsup></mrow></math> is the maximal connection strength between two fully aligned grid and place fields, <math id=\"inf9\"><mrow><msubsup><mi mathvariant=\"bold-italic\">\u03bc</mi><mrow><mtext>PC</mtext></mrow><mi>i</mi></msubsup></mrow></math> is the centre of the place field of the <i>i</i>th place cell, <math id=\"inf10\"><mrow><msubsup><mi mathvariant=\"bold-italic\">\u03bc</mi><mtext>G</mtext><mi>j</mi></msubsup></mrow></math> is the centre of the grid field of the <i>j</i>th grid cell that is nearest to the place cell, <i>\u03c3</i><sub>PC</sub> is the width of the synaptic profile. The parameters were set to <math id=\"inf11\"><mrow><msubsup><mi>G</mi><mrow><mtext>PC</mtext></mrow><mrow><mtext>max</mtext></mrow></msubsup></mrow></math> = 0.5 nS and <i>\u03c3</i><sub>PC</sub> = 7 cm. Connections from place cells were modelled as AMPA conductances only (<a href=\"#equ13\">Equation 8</a>). This was sufficient for the purpose of opposing drift of the bump attractor and we therefore do not include any more biological detail into these connections."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In simulations where I cells received uncorrelated spatial inputs (<a href=\"#fig2s4\">Figure 2\u2014figure supplement 4</a>), an additional population of place cells was instantiated, with parameters set to <i>r</i><sub>max</sub> = 100 Hz and <i>\u03c3</i><sub>field</sub> = 80 cm. Each I cell received connections from three randomly chosen place cells, with a synaptic weight of 4 nS."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-5", 
+                                "title": "Bump attractor initialisation", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Each simulation contains an initialisation stage that attempts to set the model into the desired state, that is, a bump attractor. During this stage, the theta-modulated input is switched off and the network receives only the constant input source (see <a href=\"#equ14\">Equation 9</a>). The bump attractor might not form spontaneously, and instead the network could persist in a uniform firing rate regime (<a href=\"#bib4a\">Compte et al., 2000</a>). However, it might be possible that when forced into the attractor state, the network will persist (data not shown). Therefore, we used the place cell input as a spatially-tuned input that served (i) as an initialisation input in order to drive the network into an attractor state if this does not happen spontaneously and (ii) to initialise the bump attractor position so that the phase of grid firing fields matched the positions of place fields. The initialisation phase lasted for the first 500 ms of simulation time, during which the firing rate of place cells were doubled, and the strength of connections from place cells to grid cells was increased 10-fold."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-6", 
+                                "title": "Parameter space exploration", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The excitatory and inhibitory parameter space exploration was performed by varying the amount of inhibitory and excitatory synaptic strengths. Since the actual synaptic weights are a function of distance on the twisted torus, we used the maximal conductance of AMPA (<i>g</i><sub>E</sub>, <a href=\"#equ16\">Equation 11</a>) and GABA synapses (<i>g</i><sub>I</sub>, <a href=\"#equ19\">Equation 14</a>) in all the parameter exploration plots. Note that since the amplitude of NMDA conductances was a fixed fraction of that of AMPA, the strength of NMDA was also scaled as a function of <i>g</i><sub>E</sub> in line with the scaling of the AMPA conductance and was thus implicitly counted toward <i>g</i><sub>E</sub>. Additionally, in <a href=\"#fig7s10\">Figure 7\u2014figure supplement 10</a>, parameter exploration simulations were performed in which the <i>g</i><sub>E \u2192 E</sub> synaptic scaling variable, as well as the width of the synaptic profile of E \u2192 E connections (<i>\u03c3</i><sub>E \u2192 E</sub> in <a href=\"#equ20\">Equation 15</a>) was used."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-7", 
+                                "title": "Analysis of spatial firing fields", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Gridness scores were calculated following previous studies (<a href=\"#bib33\">Sargolini et al., 2006</a>), by taking the spatial autocorrelation of each firing field (a region corresponding to a circle with radius <i>\u03bb</i><sub>grid</sub>/2 and a centre in the middle of the autocorrelation function has been removed) and rotating in steps of three degrees. For each rotation a Pearson correlation coefficient was calculated with the original autocorrelation. To calculate the gridness score the maximum of values at 30, 90 and 150\u00b0 rotation was subtracted from the minimum of the values at 60 and 120\u00b0 rotation."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Spatial information (bits/spike) was calculated according to (<a href=\"#bib39\">Skaggs et al., 1996</a>):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ25", 
+                                        "label": "(19)", 
+                                        "mathml": "<math><mrow><mi>I</mi><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mtext>\u2009</mtext><msub><mi>p</mi><mi>i</mi></msub><mfrac><mrow><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow><mi>\u03bb</mi></mfrac><msub><mrow><mtext>log</mtext></mrow><mn>2</mn></msub><mfrac><mrow><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow><mi>\u03bb</mi></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where the environment was divided into <i>N</i> bins and <i>p</i><sub><i>i</i></sub> was the occupancy probability of bin <i>i</i>, <i>\u03bb</i><sub><i>i</i></sub> was the mean firing rate for bin <i>i</i> and <i>\u03bb</i> was the overall mean firing rate of the cell."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Spatial sparsity was calculated following (<a href=\"#bib4\">Buetfering et al., 2014</a>):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ26", 
+                                        "label": "(20)", 
+                                        "mathml": "<math><mrow><mi>S</mi><mo>=</mo><mn>1</mn><mo>\u2212</mo><mfrac><mrow><msup><mrow><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><msub><mi>p</mi><mi>i</mi></msub><msub><mi>\u03bb</mi><mi>i</mi></msub></mrow></mstyle></mrow></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mrow><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><msub><mi>p</mi><mi>i</mi></msub><msubsup><mi>\u03bb</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mstyle></mrow></mrow></mfrac><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>N</i>, <i>p</i><sub><i>i</i></sub> and <i>\u03bb</i><sub><i>i</i></sub> have the same meaning as in <a href=\"#equ25\">Equation 19</a>."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-8", 
+                                "title": "Estimating gain of the velocity-dependent inputs", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In order to estimate the precision of velocity integration in a continuous attractor, we have performed shorter simulations in which a constant velocity input (in a vertical direction) was injected into E cells for a period of 10 s. Based on this set of simulations, the slope of the relationship between bump speed and the injected velocity current was estimated (in units of neurons/s/pA). The estimation was based on the following algorithm:"
+                                    }, 
+                                    {
+                                        "type": "list", 
+                                        "prefix": "number", 
+                                        "items": [
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Estimate the range of bump speeds that need to be covered (<a href=\"#fig8\">Appendix figure 1</a>)."
+                                                }, 
+                                                {
+                                                    "type": "mathml", 
+                                                    "id": "equ27", 
+                                                    "label": "(21)", 
+                                                    "mathml": "<math><mrow><msubsup><mi>s</mi><mrow><mtext>bump</mtext></mrow><mi>i</mi></msubsup><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mi>x</mi></msub></mrow><mrow><msub><mi>\u03bb</mi><mtext>\u2009grid</mtext></msub></mrow></mfrac><msubsup><mi>s</mi><mrow><mtext>animal</mtext></mrow><mi>i</mi></msubsup><mo>,</mo></mrow></math>"
+                                                }, 
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "where <i>s</i><sub><i>i</i></sub> are the speeds of the animal/bump, estimated from forward differences of the trajectory of the simulated animal, <i>N</i><sub><i>x</i></sub> is the horizontal size of the neural sheet (neurons), and <i>\u03bb</i><sub>grid</sub> is the grid field spacing (cm). These speeds will form a distribution of bump speeds that the attractor must achieve in order to path integrate without error (<a href=\"#fig8\">Appendix figure 1B</a>)."
+                                                }, 
+                                                {
+                                                    "type": "image", 
+                                                    "doi": "10.7554/eLife.06444.042", 
+                                                    "id": "fig8", 
+                                                    "label": "Appendix figure 1.", 
+                                                    "title": "(<b>A</b>) Histogram of velocities of a simulated animal.", 
+                                                    "caption": [
+                                                        {
+                                                            "type": "paragraph", 
+                                                            "text": "(<b>B</b>) Histogram of bump speeds derived from the animal velocities estimated in <a href=\"#equ27\">Equation 21</a>, for different grid field spacings."
+                                                        }
+                                                    ], 
+                                                    "alt": "", 
+                                                    "uri": "https://publishing-cdn.elifesciences.org/06444/elife-06444-app1-fig1-v2.tif", 
+                                                    "filename": "elife-06444-app1-fig1-v2.tif"
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Pick a specified percentile from this distribution (here the 99th percentile was used), that is, the maximal speed of the bump, in order to account for the specified fraction of animal velocities, set this as <i>s</i><sub>max</sub>. The range of target bump speeds will be &lt;0, <i>s</i><sub>max</sub>&gt;."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "For each <i>I</i><sub>vel</sub> \u2208 {0, 10,\u2026, 100} pA, estimate the bump speed by tracking its position on the neural sheet, using the \u2018Gaussian fitting procedure\u2019. Repeat this step 10 times. This step acquires data for estimating the relationship between the slope of bump speed and injected velocity current."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "For each <math id=\"inf12\"><mrow><msubsup><mi>I</mi><mrow><mtext>vel</mtext></mrow><mrow><mtext>max</mtext></mrow></msubsup><mo>\u2208</mo><mrow><mo>{</mo><mrow><mn>10</mn><mo>,</mo><mtext>\u2009</mtext><mn>20</mn><mo>,</mo><mo>\u2026</mo><mo>,</mo><mtext>\u2009</mtext><mn>100</mn></mrow><mo>}</mo></mrow></mrow></math> pA, estimate a line fit on data samples with the velocity current in the range of <math id=\"inf13\"><mrow><msub><mi>I</mi><mrow><mtext>vel</mtext></mrow></msub><mo>\u2208</mo><mo>&lt;</mo><mn>0</mn><mo>,</mo><msubsup><mi>I</mi><mrow><mtext>vel</mtext></mrow><mrow><mtext>max</mtext></mrow></msubsup><mo>&gt;</mo></mrow></math>, that is, fit the line to only a subset of velocity current data points."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Remove all fits that do not fit at least &lt;0, <i>s</i><sub>max</sub>&gt; on the bump velocity axis."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "If there are any lines left, select line with the minimal error of fit (normalized by the number of data points used); otherwise select line (from the original list) that covers the maximal range of bump speeds."
+                                                }
+                                            ], 
+                                            [
+                                                {
+                                                    "type": "paragraph", 
+                                                    "text": "Calculate the slope of the selected line and finish."
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-9", 
+                                "title": "Simulation protocols", 
+                                "content": [
+                                    {
+                                        "type": "section", 
+                                        "id": "s7-9-1", 
+                                        "title": "Simulations of animal movement", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Simulations of animal movement were carried out for 600 s of simulated time. Here, for each value of <i>g</i><sub>E</sub> and <i>g</i><sub>I</sub>, the main simulation run was preceded by a number of shorter simulations which determined how much current needs to be injected in order for the bump of activity to track the simulated movement of an animal (\u2018Estimating gain of the velocity-dependent inputs\u2019). This procedure calibrates the gain of the velocity input current in order to produce grid fields with a specified spacing between the peaks in the individual firing fields. The result is a single number in units of neurons/s/pA, which determines the speed of the bump as a function of injected velocity input. The spacing between the individual fields of the grid firing fields was set to 60 cm in all of the simulations."
+                                            }, 
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "During the main simulation run, the animal movement was simulated for 600 s. Each of the runs was repeated four times for simulations in <a href=\"#fig2\">Figure 2</a> and three times for simulations in <a href=\"#fig6\">Figure 6D\u2013I</a> and once for networks that contain additional recurrent synapses between E cells or I cells, as well as in networks with synapses generated probabilistically. These simulations use the estimated velocity response gain in order to calibrate the spacing between the grid firing fields. After the simulation was finished, a neuron in the bottom-left corner of the torus was selected for analysis. For this cell the gridness score of its firing field was computed. The reasoning behind choosing only a single cell to estimate the gridness score is as follows. The grid firing fields in the network are a result of coordination of activity of the network as a whole. If the network forms a bump attractor that is able to accurately track animal movement, all cells in the network will have grid-like firing fields that differ only in their phases. On the other hand, if the bump attractor does not form, is unstable, or does not accurately track the position of the animal, the gridness score of all cells will be low. Thus, the firing field of a single cell in the network represents grid field computation in the network as a whole. Moreover, this cell can be selected arbitrarily. This condition might not hold in simulations where I cells receive uncorrelated spatial inputs and therefore in these simulations firing fields of 100 randomly selected cells from both E and I populations were used to calculate the gridness scores (<a href=\"#fig2s4\">Figure 2\u2014figure supplement 4</a>)."
+                                            }
+                                        ]
+                                    }, 
+                                    {
+                                        "type": "section", 
+                                        "id": "s7-9-2", 
+                                        "title": "Short simulation runs without animal movement", 
+                                        "content": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Some of the simulation runs were used to estimate properties of bump attractors and nested gamma oscillations. In these experiments, instead of simulating animal movement, a shorter, 10 s simulation, was run. The velocity and place cell input were deactivated. Thus, the network is expected to only produce a static bump attractor and does not perform path integration. For each parameter setting (determined by <i>g</i><sub>E</sub>, <i>g</i><sub>I</sub>, and the noise level), five simulations were performed. For each simulation run, post-synaptic currents were recorded from 25 randomly selected excitatory cells in the model by clamping their membrane potential at \u221250 mV (this was done by simulating a separate process for each of the selected neurons, while simulating the original membrane potential according to <a href=\"#equ1\">Equation 1</a>). Thus, on each run, different cells could be picked up for analysis. It is in principle possible to record membrane currents from all the neurons. However, the amount of data generated by such simulations quickly becomes overwhelming (on the order of several terabytes per parameter exploration experiment). Thus the approach chosen here was to sample from the population of neurons and store the recorded state variables of only a subset of these. This allowed for unrestricted analysis and visualisation of the recorded state variables."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-10", 
+                                "title": "Analysis of nested gamma oscillations", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We estimated the properties of nested gamma oscillations by using autocorrelation functions of the inhibitory currents impinging from inhibitory synapses onto excitatory cells. These currents were estimated from 25 randomly selected excitatory cells recorded during the simulation run. For each neuron, the current was then band-pass filtered between 20 and 200 Hz, the autocorrelation function was computed and then used to detect local maxima after excluding the first peak. The positions of local maxima were calculated as those points in the autocorrelation function where the first difference of the signal changed sign from positive to negative and thus approximated points where the first derivative is zero and the second derivative is negative. The power and frequency of the underlying oscillation was then estimated from the correlation value and from the time lag of the first detected autocorrelation peak respectively. Both values were averaged over all 25 recorded neurons and then subsequently averaged over all simulation trials."
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s7-11", 
+                                "title": "Gaussian fitting procedure", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In networks where properties of bump attractors, such as the position and presence of an activity bump, were estimated, we developed a procedure to fit Gaussian functions onto successive snapshots of network activity of E cells. The network activity snapshots were estimated by taking action potential times of all E cells and estimating their immediate firing rate using a 250 ms wide sliding window with a 125 ms time step. For each snapshot, the properties of a bump-like network activity (if it was a bump) were then estimated by fitting a symmetric Gaussian function to the network activity snapshots, using the maximum likelihood estimator under Gaussian noise (the least squares fitting method):"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ28", 
+                                        "label": "(22)", 
+                                        "mathml": "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi mathvariant=\"bold\">X</mi><mo>)</mo></mrow><mo>=</mo><mi>A</mi><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><mo>|</mo><mo>|</mo><mi mathvariant=\"bold\">X</mi><mo>\u2212</mo><mi mathvariant=\"bold-italic\">\u03bc</mi><mo>|</mo><msup><mo>|</mo><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mrow><mtext>\u2009bump</mtext></mrow><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "where <i>A</i> was the height of the Gaussian function, <b>X</b> was neuron position on the twisted torus, <b><i>\u03bc</i></b> was the centre of the Gaussian, <i>\u03c3</i><sub>bump</sub> was the width of the Gaussian, and <math id=\"inf14\"><mrow><mo>|</mo><mo>|</mo><mo>\u22c5</mo><mo>|</mo><mo>|</mo></mrow></math> represents a distance metric on the twisted torus. The parameters fitted were <i>A</i>, <b><i>\u03bc</i></b> and <i>\u03c3</i><sub>bump</sub>. These parameters were then used as the basis for further analysis."
+                                    }
+                                ]
                             }
                         ]
                     }

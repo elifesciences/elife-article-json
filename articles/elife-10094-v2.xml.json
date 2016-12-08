@@ -4168,6 +4168,189 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s36", 
+                        "title": "Movement schema of agent and environment data", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The relevant simulation data used:"
+                            }, 
+                            {
+                                "type": "table", 
+                                "id": "tblu1", 
+                                "tables": [
+                                    "<table><thead><tr><th valign=\"top\">Size of arena 10X10</th><th valign=\"top\">Place cells field width: 0.75</th><th valign=\"top\">Place cells distribution: <break></break>uniform</th></tr></thead><tbody><tr><td valign=\"top\">Velocity: 0.25 (linear), <break></break>0.1-6.3 (angular)</td><td valign=\"top\"># Place cells: 625</td><td valign=\"top\">Learning rate: 1/(t+1e5)</td></tr></tbody></table>"
+                                ]
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The agent was moved around the virtual environment according to:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ50", 
+                                "mathml": "<math><mtable columnalign=\"left\"><mtr><mtd><msup><mi>D</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>modulo</mi><mrow><mo>(</mo><mrow><msup><mi>D</mi><mi>t</mi></msup><mo>+</mo><mi>\u03c9</mi><mo>\u22c5</mo><mi>Z</mi><mo>,</mo><mn>2</mn><mi>\u03c0</mi></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msup><mi>x</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mi>x</mi><mi>t</mi></msup><mo>+</mo><mi>\u03bd</mi><mo>\u22c5</mo><mi>cos</mi><mrow><mo>(</mo><mrow><msup><mi>D</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msup><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mi>y</mi><mi>t</mi></msup><mo>+</mo><mi>\u03bd</mi><mo>\u22c5</mo><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mi>D</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mo>)</mo></mrow></mtd></mtr></mtable></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <math id=\"inf308\"><mrow><msup><mi>D</mi><mi>t</mi></msup></mrow></math> is the current direction angle, <math id=\"inf309\"><mi>\u03c9</mi></math> is the angular velocity, <math id=\"inf310\"><mi>Z</mi><mo>-</mo><mi>N</mi><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></mrow></math>\u00a0where <math id=\"inf311\"><mi>N</mi></math> is the standard normal Gaussian distribution, <math id=\"inf312\"><mi>\u03bd</mi></math> is the linear velocity, and <math id=\"inf313\"><mrow><mrow><mo>(</mo><mrow><msup><mi>x</mi><mi>t</mi></msup><mo>,</mo><msup><mi>y</mi><mi>t</mi></msup></mrow><mo>)</mo></mrow></mrow></math> is the current position of the agent. Edges were treated as periodic \u2013 when agent arrived to one side of box it was teleported to the other side."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s37", 
+                        "title": "Positive-negative disks", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Positive-negative disks are used with the following activity rules:"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ51", 
+                                "mathml": "<math><mo></mo><mrow><mo>(</mo><msubsup><mi>r</mi><mi>j</mi><mi>t</mi></msubsup><mrow><mo>(</mo><msup><mi>x</mi><mi>t</mi></msup><mo>,</mo><msup><mi>y</mi><mi>t</mi></msup><mo>)</mo></mrow><mo>)</mo></mrow><mo>=</mo><mo>{</mo><mtable><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mfrac><msubsup><mi>\u03c1</mi><mn>1</mn><mn>2</mn></msubsup><mrow><msubsup><mi>\u03c1</mi><mn>2</mn><mn>2</mn></msubsup><mo>\u2212</mo><msubsup><mi>\u03c1</mi><mn>1</mn><mn>2</mn></msubsup></mrow></mfrac></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr></mtable><mtable columnalign=\"left\"><mtr><mtd><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><msqrt><msup><mrow><mo>(</mo><msup><mi>x</mi><mi>t</mi></msup><mo>\u2212</mo><msub><mi>c</mi><mrow><mi>x</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msup><mi>y</mi><mi>t</mi></msup><mo>\u2212</mo><msub><mi>c</mi><mrow><mi>y</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt><mo>&lt;</mo><msub><mi>\u03c1</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>\u03c1</mi><mn>1</mn></msub><mo>&lt;</mo><msqrt><msup><mrow><mo>(</mo><msup><mi>x</mi><mi>t</mi></msup><mo>\u2212</mo><msub><mi>c</mi><mrow><mi>x</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msup><mi>y</mi><mi>t</mi></msup><mo>\u2212</mo><msub><mi>c</mi><mrow><mi>y</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt><mo>&lt;</mo><msub><mi>\u03c1</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd><mo>,</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>\u03c1</mi><mn>2</mn></msub><mo>&lt;</mo><msqrt><msup><mrow><mo>(</mo><msup><mi>x</mi><mi>t</mi></msup><mo>\u2212</mo><msub><mi>c</mi><mrow><mi>x</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msup><mi>y</mi><mi>t</mi></msup><mo>\u2212</mo><msub><mi>c</mi><mrow><mi>y</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></mtd></mtr></mtable></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Where\u00a0<math id=\"inf314\"><msub><mi>c</mi><mi>x</mi></msub><mo>,</mo><mo>\u00a0</mo><msub><mi>c</mi><mi>y</mi></msub></math> are the centers of the disks, and <math id=\"inf315\"><msub><mi>\u03c1</mi><mn>1</mn></msub><mo>,</mo><mo>\u00a0</mo><msub><mi>\u03c1</mi><mn>2</mn></msub></math> are the radii of the inner circle and the outer ring, respectively. The constant value in the negative ring was chosen to yield zero integral over the disk."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s38", 
+                        "title": "Fourier transform of the difference of Gaussians function", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Here we prove that if we are given a difference of Gaussians function,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ52", 
+                                "mathml": "<math><mi>r</mi><mrow><mo>(</mo><mtext mathvariant=\"bold\">x</mtext><mo>)</mo></mrow><mo>=</mo><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><msub><mi>c</mi><mrow><mi>i</mi><mo>\u00a0</mo></mrow></msub><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mstyle mathvariant=\"bold\"><mi>x</mi><mo mathvariant=\"normal\">\u00b7</mo><mi>x</mi></mstyle><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow><mo>,</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "in which the appropriate normalization constants for a bounded box are"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<math id=\"inf316\"><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>=</mo><msup><mrow><mrow><mo>[</mo><mrow><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mo>\u2212</mo><mi>L</mi></mrow><mi>L</mi></msubsup><mrow><mi>exp</mi></mrow></mrow></mstyle><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><msup><mi>z</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>d</mi><mi>z</mi></mrow><mo>]</mo></mrow></mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mrow><mrow><mo>[</mo><mrow><msqrt><mrow><mn>2</mn><mi>\u03c0</mi><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt><mrow><mo>[</mo><mrow><mn>2</mn><mi>F</mi><mrow><mo>(</mo><mrow><mi>L</mi><mo>/</mo><msub><mi>\u03c3</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>\u2212</mo><mn>1</mn></mrow><mo>]</mo></mrow></mrow><mo>]</mo></mrow></mrow><mrow><mo>\u2212</mo><mi>D</mi></mrow></msup></mrow></math>,"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "with <math id=\"inf317\"><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>2</mn><mi>\u03c0</mi><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></mfrac><mstyle displaystyle=\"true\"><mrow><msubsup><mo>\u222b</mo><mrow><mo>\u2212</mo><mi>\u221e</mi></mrow><mi>x</mi></msubsup><mrow><mi>exp</mi></mrow></mrow></mstyle><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mrow><msup><mi>z</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>d</mi><mi>z</mi></mrow></math>\u00a0being the cumulative normal distribution, then <math id=\"inf318\"><mo>\u2200</mo><mi mathvariant=\"bold\">k</mi><mo>\u2208</mo><mover><mi>S</mi><mo mathvariant=\"italic\">^</mo></mover><mo>=</mo><msub><mfenced close=\"}\" open=\"{\"><mfenced><mrow><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><mn>2</mn><mi>\u03c0</mi></mrow><mi>L</mi></mfrac><mo>,</mo><mo>\u2026</mo><mo>,</mo><mfrac><mrow><msub><mi>m</mi><mi>D</mi></msub><mn>2</mn><mi>\u03c0</mi></mrow><mi>L</mi></mfrac></mrow></mfenced></mfenced><mrow><mfenced><mrow><msub><mi>m</mi><mn>1</mn></msub><mo mathvariant=\"italic\">,</mo><mo mathvariant=\"italic\">\u2026</mo><mo mathvariant=\"italic\">,</mo><msub><mi>m</mi><mi>D</mi></msub></mrow></mfenced><mo>\u2208</mo><msup><mi mathvariant=\"normal\">\u2124</mi><mi>D</mi></msup></mrow></msub></math>, we have"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ53", 
+                                "mathml": "<math><mover><mi>r</mi><mo>^</mo></mover><mo>(</mo><mtext mathvariant=\"bold\">k</mtext><mo>)</mo><mo>\u225c</mo><mfrac><mn>1</mn><mfenced close=\"|\" open=\"|\"><mi>S</mi></mfenced></mfrac><msub><mo>\u222b</mo><mi>S</mi></msub><mo>\u00a0</mo><mi>r</mi><mo>(</mo><mtext mathvariant=\"bold\">x</mtext><mo>)</mo><mo>\u00a0</mo><msup><mi>e</mi><mrow><mi>i</mi><mtext mathvariant=\"bold\">k</mtext><mo>\u00b7</mo><mtext mathvariant=\"bold\">x</mtext></mrow></msup><mo>\u00a0</mo><mi>d</mi><mtext mathvariant=\"bold\">x</mtext><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mfenced close=\"|\" open=\"|\"><mi>S</mi></mfenced></mfrac><munderover><mo>\u2211</mo><mrow><mi mathvariant=\"normal\">i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><mtext>(</mtext><mo>-</mo><mn>1</mn><msup><mtext>)</mtext><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><mtext>exp</mtext><mo>(</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup><mo>\u00a0</mo><mtext mathvariant=\"bold\">k</mtext><mo mathvariant=\"bold\">\u00b7</mo><mtext mathvariant=\"bold\">k</mtext><mo>)</mo><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Note that the normalization constants <math id=\"inf319\"><mrow><msub><mi>c</mi><mi>i</mi></msub></mrow></math> vanish after the Fourier transform, and that in the limit <math id=\"inf320\"><mrow><mi>L</mi><mo>\u226b</mo><msub><mi>\u03c3</mi><mn>1</mn></msub><mo>,</mo><msub><mi>\u03c3</mi><mn>2</mn></msub></mrow></math> we obtain the standard result for the Fourier transform of an unbounded Gaussian distribution."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Proof: For simplicity of notation, we assume <math id=\"inf321\"><mrow><mi>D</mi><mo>=</mo><mn>2</mn></mrow></math>. However, the calculation is identical for any <math id=\"inf322\"><mi>D</mi></math>."
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ54", 
+                                "mathml": "<math><mstyle><mtable columnalign=\"left left left\"><mtr><mtd><mover><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi mathvariant=\"bold\">k</mi><mo>)</mo></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mn>1</mn><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></mfrac><msub><mo>\u222b</mo><mi>S</mi></msub><mi>r</mi><mrow><mo>(</mo><mi mathvariant=\"bold\">x</mi><mo>)</mo></mrow><msup><mi>e</mi><mrow><mi>i</mi><mi mathvariant=\"bold\">k</mi><mo>\u22c5</mo><mi mathvariant=\"bold\">x</mi></mrow></msup><mi>d</mi><mi mathvariant=\"bold\">x</mi></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mn>1</mn><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><msubsup><mo>\u222b</mo><mrow><mo>\u2212</mo><mi>L</mi></mrow><mi>L</mi></msubsup><mi>d</mi><mi>x</mi><msubsup><mo>\u222b</mo><mrow><mo>\u2212</mo><mi>L</mi></mrow><mi>L</mi></msubsup><mi>d</mi><mi>y</mi><mfenced close=\"]\" open=\"[\"><mrow><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><msub><mi>c</mi><mi>i</mi></msub><mo>\u00a0</mo><mtext>exp</mtext><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mfenced><mtext>exp</mtext><mrow><mo>(</mo><mi>i</mi><mrow><mo>(</mo><msub><mi>k</mi><mi>x</mi></msub><mi>x</mi><mo>+</mo><msub><mi>k</mi><mi>y</mi></msub><mi>y</mi><mo>)</mo></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mn>1</mn><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><mfenced close=\"]\" open=\"[\"><mrow><msubsup><mo>\u222b</mo><mrow><mo>\u2212</mo><mi>L</mi></mrow><mi>L</mi></msubsup><mi>d</mi><mi>x</mi><mfenced close=\"]\" open=\"[\"><mrow><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><msub><mi>c</mi><mi>i</mi></msub><mo>\u00a0</mo><mtext>exp</mtext><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mfenced><mtext>exp</mtext><mrow><mo>(</mo><mi>i</mi><msub><mi>k</mi><mi>x</mi></msub><mi>x</mi><mo>)</mo></mrow></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd></mtd><mtd><mo>\u00a0</mo><mo>\u00b7</mo><mo>\u00a0</mo><mfenced close=\"]\" open=\"[\"><mrow><msubsup><mo>\u222b</mo><mrow><mo>\u2212</mo><mi>L</mi></mrow><mi>L</mi></msubsup><mi>d</mi><mi>y</mi><mfenced close=\"]\" open=\"[\"><mrow><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><mtext>exp</mtext><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mfenced><mtext>exp</mtext><mrow><mo>(</mo><mi>i</mi><msub><mi>k</mi><mi>y</mi></msub><mi>y</mi><mo>)</mo></mrow></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><msup><mn>2</mn><mi>D</mi></msup><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><msub><mi>c</mi><mi>i</mi></msub><munder><mo>\u220f</mo><mrow><mi>z</mi><mo>\u2208</mo><mrow><mo>{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>}</mo></mrow></mrow></munder><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mi>d</mi><mi>z</mi><mo>\u00a0</mo><mtext>exp</mtext><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow><mfenced close=\"]\" open=\"[\"><mrow><mtext>exp</mtext><mrow><mo>(</mo><mi>i</mi><msub><mi>k</mi><mi>z</mi></msub><mi>z</mi><mo>)</mo></mrow><mo>+</mo><mtext>exp</mtext><mrow><mo>(</mo><mo>\u2212</mo><mi>i</mi><msub><mi>k</mi><mi>z</mi></msub><mi>z</mi><mo>)</mo></mrow></mrow></mfenced></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><msup><mn>2</mn><mi>D</mi></msup><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><msub><mi>c</mi><mi>i</mi></msub><munder><mo>\u220f</mo><mrow><mi>z</mi><mo>\u2208</mo><mrow><mo>{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>}</mo></mrow></mrow></munder><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mi>d</mi><mi>z</mi><mo>\u00a0</mo><mtext>exp</mtext><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow><mtext>cos</mtext><mrow><mo>(</mo><msub><mi>k</mi><mi>z</mi></msub><mi>z</mi><mo>)</mo></mrow></mtd></mtr></mtable></mstyle></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To solve this integral, we define"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ55", 
+                                "mathml": "<math><msub><mi>I</mi><mi>i</mi></msub><mo>\u00a0</mo><mo>(</mo><mi>a</mi><mo>)</mo><mo>=</mo><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mo>\u00a0</mo><mi>d</mi><mi>z</mi><mo>\u00a0</mo><mi>exp</mi><mfenced><mrow><mo>-</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac></mrow></mfenced><mo>\u00a0</mo><mi>cos</mi><mo>\u00a0</mo><mo>(</mo><mi>a</mi><mi>z</mi><mo>)</mo><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Its derivative is"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ56", 
+                                "mathml": "<math><mtable columnalign=\"left\"><mtr><mtd><mstyle displaystyle=\"true\"><msub><msup><mi>I</mi><mo>'</mo></msup><mi>i</mi></msub><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mi>d</mi><mi>z</mi><mi>z</mi><mo>\u00a0</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow><mtext>sin</mtext><mrow><mo>(</mo><mi>a</mi><mi>z</mi><mo>)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle=\"true\"><mo>=</mo><msubsup><mrow><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup><mi>e</mi><mi>x</mi><mi>p</mi><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow><mtext>sin</mtext><mrow><mo>(</mo><mi>a</mi><mi>z</mi><mo>)</mo></mrow><mo mathsize=\"15px\">|</mo></mrow><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow><mi>L</mi></msubsup><mo>\u2212</mo><mi>a</mi><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mi>d</mi><mi>z</mi><mo>\u00a0</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow><mi>cos</mi><mrow><mo>(</mo><mi>a</mi><mi>z</mi><mo>)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mo>=</mo><mo>\u2212</mo><mi>a</mi><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup><msub><mi>I</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mtd></mtr></mtable></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where in the last equality we used the fact that <math id=\"inf323\"><mrow><mi>a</mi><mi>L</mi><mo>=</mo><mn>2</mn><mi>\u03c0</mi><mi>n</mi></mrow></math> (where\u00a0<math id=\"inf324\"><mi>n</mi></math> is an integer) if <math id=\"inf325\"><mrow><mi>a</mi><mo>\u2208</mo><mover accent=\"true\"><mi>S</mi><mo>^</mo></mover></mrow></math>. Solving this differential equation, we obtain"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ57", 
+                                "mathml": "<math><mrow><msub><mi>I</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>I</mi><mi>i</mi></msub><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo><mrow><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ58", 
+                                "mathml": "<math><msub><mi>I</mi><mi>i</mi></msub><mo>(</mo><mn>0</mn><mo>)</mo><mo>=</mo><msubsup><mo>\u222b</mo><mn>0</mn><mi>L</mi></msubsup><mi>d</mi><mi>z</mi><mo>\u00a0</mo><mi>exp</mi><mo>(</mo><mo>-</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo><mo>=</mo><msqrt><mn>2</mn><mi>\u03c0</mi><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></msqrt><mo>\u00a0</mo><mfenced close=\"]\" open=\"[\"><mrow><mi>F</mi><mo>(</mo><mfrac><mi>L</mi><msub><mi>\u03c3</mi><mi>i</mi></msub></mfrac><mo>)</mo><mo>-</mo><mi>F</mi><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mfenced><mo>=</mo><msqrt><mn>2</mn><mi>\u03c0</mi><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup></msqrt><mo>\u00a0</mo><mfenced close=\"]\" open=\"[\"><mrow><mi mathvariant=\"normal\">F</mi><mo>(</mo><mfrac><mi>L</mi><msub><mi>\u03c3</mi><mi>i</mi></msub></mfrac><mo>)</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mo>.</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "substituting this into our last expression for <math id=\"inf326\"><mi>r</mi><mrow><mo>(</mo><mi mathvariant=\"bold\">k</mi><mo>)</mo></mrow></math> we obtain"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ59", 
+                                "mathml": "<math><mi>r</mi><mrow><mo>(</mo><mi mathvariant=\"bold\">k</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><msup><mrow><mo>(</mo><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>\u03c3</mi><mi>i</mi><mn>2</mn></msubsup><munder><mo>\u2211</mo><mrow><mi>z</mi><mo>\u2208</mo><mrow><mo>{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>}</mo></mrow></mrow></munder><msubsup><mi>k</mi><mi>z</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mo>,</mo></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "which is what we wanted to prove."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s39", 
+                        "title": "Why the 'unconstrained'\u00a0<math id=\"inf327\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>\u00a0is a lower bound on 'constrained' <math id=\"inf328\"><mrow><msub><mi>k</mi><mo>*</mo></msub></mrow></math>", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "In section 'The PCA solution with a non-negative constraint \u2013 1D Solutions', we mention that the main difference between the Equations (<a href=\"#equ37 equ38\">Equations 33 and 34</a>) is the base frequency, <math id=\"inf329\"><mrow><msub><mi>k</mi><mo>*</mo></msub></mrow></math>, which is slightly different from <math id=\"inf330\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Here we explain how the relation between <math id=\"inf331\"><mrow><msub><mi>k</mi><mo>*</mo></msub></mrow></math> and <math id=\"inf332\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math> depends on the <math id=\"inf333\"><mi>k</mi></math>-lattice discretization, as well as the properties of <math id=\"inf334\"><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow></math>. The discretization effect is similar to the unconstrained case, and can cause a difference of at most <math id=\"inf335\"><mrow><mi>\u03c0</mi><mo>/</mo><mi>L</mi></mrow></math> between <math id=\"inf336\"><mrow><msub><mi>k</mi><mo>*</mo></msub></mrow></math> to <math id=\"inf337\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>. However, even if <math id=\"inf338\"><mrow><mi>L</mi><mo>\u2192</mo><mi>\u221e</mi></mrow></math>, we can expect <math id=\"inf339\"><mrow><msub><mi>k</mi><mo>*</mo></msub></mrow></math> to be slightly smaller than <math id=\"inf340\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>. To see that, suppose we have a solution as described above, with <math id=\"inf341\"><mrow><msub><mi>k</mi><mo>*</mo></msub><mo>=</mo><msub><mi>k</mi><mo>\u2020</mo></msub><mo>+</mo><mi>\u03b4</mi><mi>k</mi></mrow></math> and <math id=\"inf342\"><mrow><mi>\u03b4</mi><mi>k</mi></mrow></math> is a small perturbation (which does not affect the non-negativity constraint). We write the perturbed <math id=\"inf343\"><mi>k</mi></math>-space objective of this solution"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ60", 
+                                "mathml": "<math><mrow><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>m</mi><mo>=</mo><mo>\u2212</mo><mi>\u221e</mi></mrow><mi>\u221e</mi></munderover><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>J</mi><mo>^</mo></mover><mrow><mo>(</mo><mrow><mi>m</mi><msub><mi>k</mi><mo>\u2020</mo></msub></mrow><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mrow><mi>m</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mo>\u2020</mo></msub><mo>+</mo><mi>\u03b4</mi><mi>k</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></mstyle></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Since <math id=\"inf344\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math> is the peak of <math id=\"inf345\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></math>, if <math id=\"inf346\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></math> is monotonically decreasing for <math id=\"inf347\"><mrow><mi>k</mi><mo>&gt;</mo><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math> (as is the case for the difference of Gaussians function), then any positive perturbation <math id=\"inf348\"><mrow><mi>\u03b4</mi><mi>k</mi><mo>&gt;</mo><mn>0</mn></mrow></math> would decrease the objective."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "However, a sufficiently small negative perturbation <math id=\"inf349\"><mrow><mi>\u03b4</mi><mi>k</mi><mo>&lt;</mo><mn>0</mn></mrow></math> would improve the objective. We can see this from the Taylor expansion of the objective,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ61", 
+                                "mathml": "<math><mrow><mstyle displaystyle=\"true\"><munderover><mo>\u2211</mo><mrow><mi>m</mi><mo>=</mo><mo>\u2212</mo><mi>\u221e</mi></mrow><mi>\u221e</mi></munderover><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>J</mi><mo>^</mo></mover><mrow><mo>(</mo><mrow><mi>m</mi><msub><mi>k</mi><mo>\u2020</mo></msub></mrow><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mrow><mi>m</mi><msub><mi>k</mi><mo>\u2020</mo></msub></mrow><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><msub><mrow><mrow><mrow><mfrac><mrow><mi>d</mi><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mi>d</mi><mi>k</mi></mrow></mfrac></mrow><mo>|</mo></mrow></mrow><mrow><mi>k</mi><mo>=</mo><mi>m</mi><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></msub><mi>m</mi><mi>\u03b4</mi><mi>k</mi><mo>+</mo><mi>O</mi><msup><mrow><mrow><mo>(</mo><mrow><mi>\u03b4</mi><mi>k</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mstyle></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "In which the derivative <math id=\"inf350\"><mrow><msub><mrow><mrow><mrow><mfrac><mrow><mi>d</mi><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow><mrow><mi>d</mi><mi>k</mi></mrow></mfrac></mrow><mo>|</mo></mrow></mrow><mrow><mi>k</mi><mo>=</mo><mi>m</mi><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></msub></mrow></math> is zero for <math id=\"inf351\"><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow></math> (since <math id=\"inf352\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math> is the peak of <math id=\"inf353\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></math>) and negative for <math id=\"inf354\"><mrow><mi>m</mi><mo>&gt;</mo><mn>1</mn></mrow></math>, if <math id=\"inf355\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></math> is monotonically decreasing for <math id=\"inf356\"><mrow><mi>k</mi><mo>&gt;</mo><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>. If we gradually increase the magnitude of this negative perturbation <math id=\"inf357\"><mrow><mi>\u03b4</mi><mi>k</mi><mo>&lt;</mo><mn>0</mn></mrow></math>, at some point the objective will stop increasing and start decreasing, because, for the difference of Gaussians function, <math id=\"inf358\"><mrow><msup><mrow><mrow><mo>|</mo><mrow><mover accent=\"true\"><mi>r</mi><mo>^</mo></mover><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup></mrow></math> increases more sharply for <math id=\"inf359\"><mrow><mi>k</mi><mo>&lt;</mo><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math> than it decreases for <math id=\"inf360\"><mrow><mi>k</mi><mo>&gt;</mo><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>. We can thus treat the 'unconstrained'\u00a0<math id=\"inf361\"><mrow><msub><mi>k</mi><mo>\u2020</mo></msub></mrow></math>\u00a0as an upper bound for the 'constrained' <math id=\"inf362\"><mrow><msub><mi>k</mi><mo>*</mo></msub></mrow></math>, if we ignore discretization effects (<i>i.e.</i>, the limit <math id=\"inf363\"><mrow><mi>L</mi><mo>\u2192</mo><mi>\u221e</mi></mrow></math>)."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s40", 
                         "title": "Upper bound on the constrained objective \u2013 2D square lattice", 
                         "content": [

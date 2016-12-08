@@ -12731,6 +12731,40 @@
                 "content": [
                     {
                         "type": "section", 
+                        "id": "s31", 
+                        "title": "Identification of HP1a interaction partners", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "To gain a better understanding of the composition of heterochromatin and to further elucidate the role of HP1a and HPips in the DNA damage response in heterochromatin we performed two sets of HP1a purifications at various time points with respect to DNA double-strand break (DSB) induction. HP1a was purified before IR, at 10 min post-IR (HP1a is expanded and \u03b3H2Av foci are in heterochromatin), and at 60 min post-IR (Rad51 is loaded onto DSBs at the heterochromatin periphery, HP1a is starting to contract) (<a href=\"#bib28\">Chiolo et al., 2011</a>) using S2 cells stably expressing FS-HP1a. To preserve as many HP1a-interacting partners as possible, we performed single-step immunoprecipitations (IP) of FS-HP1a using 3X-FLAG affinity resin (<a href=\"#SD1-data\">Table 1\u2014source data 1</a> and <a href=\"#SD3-data\">3</a>). In addition, tandem affinity purifications were performed using 3X-FLAG and StrepII resins to recover only the most tightly bound HP1a interactors (<a href=\"#SD2-data\">Table 1\u2014source data 2</a>). In both cases purified samples were digested with trypsin and analyzed by liquid chromatography-tandem mass spectrometry (LC-MS/MS) to identify associated proteins."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Based on the bulk of the HPips not being consistently identified at certain time points after IR and the lack of GO pathway enrichment suggesting those HPips are involved in the heterochromatic DNA damage response (DDR), we conclude that bulk HP1a associations do not change significantly in response to DNA damage (<a href=\"#SD1-data\">Table 1\u2014source data 1</a> and <a href=\"#SD2-data\">2</a>), and therefore focused on the rich set of novel HPips identified."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s32", 
+                        "title": "Data normalization of the RNAi screen", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Each of the 120 plates had three mock transfected wells (negative control), four wells transfected with amplicons targeting GFP (negative control), four wells transfected with <i>thread</i> amplicons (in the absence of <i>thread</i> cells die; control for dying cells/knock-down efficiency) and one or two wells transfected with HP1a amplicons (positive control). Positive and negative controls were used to assay the effectiveness of normalization and statistical analyses."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Various normalization approaches have been suggested to allow comparisons of depletions on one plate to depletions on another (<a href=\"#bib12\">Birmingham et al., 2009</a>). In order to optimize the true positive discovery rates and minimize false discovery rates we compared two different normalization techniques: 1. robust z-score (<a href=\"#bib29\">Chung et al., 2008</a>) - normalization based on the median well average\u00a0(wa) of a plate ([wa(sample)- (median(mean of all was))]/median absolute deviation(mean of all wells)) 2. Rank Product (RP) normalization (<a href=\"#bib16\">Breitling et al., 2004</a>) - ranks each well in ascending order and multiplies it by the rank of the corresponding well on the replicate plate which yields a RP. The RP was then ranked (RP-rank) to provide a single value for replicates. Additionally, a rank-product statistic (roughly equivalent to a p-value) was estimated for replicates (<a href=\"#bib16\">Breitling et al., 2004</a>) and used to identify positive hits."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "To determine which normalization technique was optimal we combined all the data for a given normalization technique (robust z-score and RP p-value) for various imaging features (HP1a maximum, HP1a mean and HP1a kurtosis) and plotted the normalized value by rank. We consistently observed that 100% of HP1a controls were detected at a lower rank using the RP p-value compared to the robust z-score. For example, using HP1a mean intensity, all the HP1a controls were detected in the top 2.8% of the screen when normalized by robust z-score, compared to 2.1% by RP p-value (0.7% could represent over 300 unique genes) (<a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>). Additionally, we considered the incorporation of replicate consistency and an estimated p-value to be valuable in determining <i>bona fide</i> hits. Consequently RP normalization was utilized for all further analyses."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
                         "id": "s33", 
                         "title": "Identification of hits from the RNAi screen", 
                         "content": [

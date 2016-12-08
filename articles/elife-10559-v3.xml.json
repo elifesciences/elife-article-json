@@ -2969,104 +2969,296 @@
                 "content": [
                     {
                         "type": "section", 
-                        "id": "s6-4", 
-                        "title": "How parameter combinations affect the treatment\u2013resistance relationship", 
+                        "id": "s6", 
+                        "title": "Between-host model: two ends of a continuum", 
                         "content": [
                             {
-                                "type": "paragraph", 
-                                "text": "In the in-host model, whether a DR strain needs to emerge only after treatment begins, during a rise in bacterial burden in the DS strain, affects the inter-strain dynamics, because pre-existing resistance reduces the positive impact of the DS strain on the DR strain. We repeated the analysis underlying <a href=\"#fig4\">Figure 4</a>, using only the subset with pre-existing resistance, and then only those results without pre-existing resistance. Other parameters ranged over the same intervals."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Discriminant analysis of principle components (<a href=\"#bib23\">Jombart et al., 2010</a>) (DAPC) finds combinations of variables that best separate groups (here, whether treatment increases or decreases resistance, or \u2018neutral\u2019). DAPC results indicated that almost all of the difference between the groups can be accounted for using a single discriminant function, both in the within-host model and the between-host one. <a href=\"#fig13\">Appendix figure 6</a> shows the groups plotted on the first two discriminant axes, illustrating the separation of the groups. The horizontal axis is the first discriminant function whose higher coefficients are given in the main text."
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.10559.016", 
-                                "id": "fig13", 
-                                "label": "Appendix figure 6.", 
-                                "title": "DAPC scatterplot for the within-host model.", 
-                                "caption": [
+                                "type": "section", 
+                                "id": "s6-1", 
+                                "title": "Between-host model: two ends of a continuum", 
+                                "content": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "The x-axis is a linear combination of parameters corresponding to the primary DAPC discriminant function, and the y-axis corresponds to the second. Accordingly, the groups are plotted by their positions on the first two DAPC axes. The relative portions of the variance that these axes capture is illustrated in the DACP eigenvalue plot (bottom right corner). Almost all of the difference between the groups is captured by the x-axis (high gray bar in the bottom left plot, compared to a low gray bar for the variation captured by the second axis). The PCA eigenvalues plot in the bottom right shows the portion of variance retained when keeping <i>k</i> PCA axes. In both models, the neutral group, in which treatment was not strongly correlated with the level of resistance in either direction, lies directly between the aggressive and moderate groups."
-                                    }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig6-v3.tif", 
-                                "filename": "elife-10559-app1-fig6-v3.tif"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<a href=\"#fig14 fig15\">Appendix figures 7, 8</a> show the parameters of the in-host model, selected according to whether an aggressive or a moderate treatment approach is best to minimize resistance. In the top rows, the aggressive policy is preferred (treatment decreases resistance); we see a lower MIC of the DR strain (labeled mR), a stronger immune system (higher <i>k</i><sub><i>p</i></sub> and <i>\u03b7</i> (eta)), a lower \u039b<sub><i>r</i></sub> and also lower \u039b<sub><i>s</i></sub>. The lower \u039b<sub><i>s</i></sub> results in fewer DS bacilli, so fewer DR bacilli are created through mutation, allowing an aggressive policy to prevent their emergence."
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.10559.017", 
-                                "id": "fig14", 
-                                "label": "Appendix figure 7.", 
-                                "title": "Parameters from the two regimes: (a) with the lysis term and (b) without it.", 
-                                "caption": [
+                                        "text": "Here, we compare a model with two very different, independent pathogens circulating in a community, and the 2-strain neutral null model (<a href=\"#bib31\">Lipsitch et al., 2009</a>). Previously (<a href=\"#bib31\">Lipsitch et al., 2009</a>; <a href=\"#bib9\">Colijn et al., 2010</a>), we argued that neutrality is required in order for a model of multiple strains to make biological sense when the strains are identical: in this case, it should not matter which strain an individual or sub-group is infected with. The dynamics of the total prevalence should depend only on the numbers of hosts infected. Furthermore, each strain should have the same ability to cause new infections and should not be comparatively advantaged or disadvantaged by being rare. Otherwise, an arbitrary re-labeling of some cases (all of whom have identical strains by assumption) alters which of these cases seed new infections."
+                                    }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "In each set, the top row shows the parameters under which resistance decreases with increasing dosage, and the bottom row shows those for which resistance increases with increasing dosage. The relationships between the two outcomes (treatment increasing or decreasing resistance) are unaffected by whether the lysis term is included. Removing the term is akin to including lysis in the equation for the resource usage, but with an <i>e</i> coefficient of 0; a more general model could include this with a coefficient <i>e</i><sub><i>l</i></sub> &lt; <i>e</i> which would model the fact that resource consumption and release could happen with different efficiencies. Though we do not know what an appropriate choice for <i>e</i><sub><i>l</i></sub> would be, the results with <i>e</i><sub><i>l</i></sub> = 0 (bottom set of histograms) are the same as those with <i>e</i><sub><i>l</i></sub> = <i>e</i> (original model; top set of histograms)."
-                                    }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig7-v3.tif", 
-                                "filename": "elife-10559-app1-fig7-v3.tif"
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.10559.018", 
-                                "id": "fig15", 
-                                "label": "Appendix figure 8.", 
-                                "title": "Parameters in the two modes showing that the filter defining \u2018effective treatment\u2019 does not change the relationships between parameters and whether treatment increases or decreases resistance.", 
-                                "caption": [
+                                        "text": "These two conditions constrain the equations of any multi-strain model. First, if dual infection can result from re-infection, then re-infection must also be able to out-compete one of the strains in a dually infected host, leading back to single infection. Otherwise, dual infection can protect a rare strain (<a href=\"#bib31\">Lipsitch et al., 2009</a>; <a href=\"#bib9\">Colijn et al., 2010</a>), as was also noted recently in <a href=\"#bib19\">Hansen and Day (2014)</a>. Second, in the limit in which the infections are identical, recovery from one and not the other is not logical; dually infected hosts recover back to susceptible. Finally, dually infected hosts contribute the same <i>total</i> infectiousness to the force of infection, divided equally between the strains (This assumption can be relaxed while preserving neutrality, but doing so requires also modeling hosts with multiple single infections [<a href=\"#bib31\">Lipsitch et al., 2009</a>].). We found (<a href=\"#bib31\">Lipsitch et al., 2009</a>; <a href=\"#bib9\">Colijn et al., 2010</a>) that models that reduce to this neutral interaction when strains are identical also do not promote coexistence of diverse strains."
+                                    }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "We have shown only the parameters whose distributions are different in the two modes (compare to <a href=\"#fig14\">Appendix figure 7</a>)."
-                                    }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig8-v3.tif", 
-                                "filename": "elife-10559-app1-fig8-v3.tif"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<a href=\"#fig16\">Appendix figure 9</a> shows the histograms and scatter plots for the between host model. These illustrate the same points made in the main text but again show the relationships between the parameters that were varied. An aggressive policy is most likely best when the DR strain has a relatively low basic reproductive number <i>R</i><sub>02</sub>, and when the similarity coefficient is low. A low similarity coefficient means that competition is reduced, because the extent to which the strains are interacting is lower than when strains are very similar. Finally, <a href=\"#fig17\">Appendix figure 10</a> shows that the measure of effective competition defined in the main text can predict the relationship between treatment and resistance, in both the within- and between- host models."
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.10559.019", 
-                                "id": "fig16", 
-                                "label": "Appendix figure 9.", 
-                                "title": "Parameters where the two contrasting policies work best in the population level model.", 
-                                "caption": [
+                                        "text": "Here, we have developed a model that incorporates this neutral null limit when the strains are very similar, but which also allows the possibility that strains are very different, to the point of not interacting with each other at all. Different strains might inhabit very different niches within hosts, trigger different immune responses, act over different time periods, be transmitted through different routes, and so on. When strains are independent, new infection events do not displace existing strains, but add to them. Hosts clear strains independently, so that when a dually infected host recovers from one strain, they remain (singly) infected with the other. Finally, dually infected hosts are equally infectious with each strain as they would be if they didn't have the other strain. These requirements also constrain the equations of a model representing the two strains."
+                                    }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "Top row: treatment decreases resistance. Bottom row: treatment increases resistance."
-                                    }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig9-v3.tif", 
-                                "filename": "elife-10559-app1-fig9-v3.tif"
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.10559.020", 
-                                "id": "fig17", 
-                                "label": "Appendix figure 10.", 
-                                "title": "Quality of classification using the instantaneous measure of effective competition to classify a parameter set according to whether treatment will increase or decrease resistance.", 
-                                "caption": [
+                                        "text": "We have developed a model that captures these very different limiting interactions and allows us to explore the continuum between them."
+                                    }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "A random classifier has an AUC of 0.5. We used the sign of the Spearman correlation between treatment and resistance as the \u2018true\u2019 classification (competing if treatment increases resistance), and the value of our effective competition quantity as the \u2018scores\u2019. Curves were created using the perfcurve function in matlab."
+                                        "text": "A (SIS, or susceptible-infected-susceptible) model with two entirely independent strains must look something like this:"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ3", 
+                                        "label": "(3)", 
+                                        "mathml": "<math><mtable columnalign=\"left\"><mtr><mtd><mfrac><mrow><mi>d</mi><mi>S</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>B</mi><mo>\u2212</mo><msub><mi>F</mi><mi>x</mi></msub><mi>S</mi><mo>\u2212</mo><msub><mi>F</mi><mi>y</mi></msub><mi>S</mi><mo>\u2212</mo><mi>u</mi><mi>S</mi><mo>+</mo><msub><mi>u</mi><mi>x</mi></msub><mi>X</mi><mo>+</mo><msub><mi>u</mi><mi>y</mi></msub><mi>Y</mi></mtd></mtr><mtr><mtd><mfrac><mrow><mi>d</mi><mi>X</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>F</mi><mi>x</mi></msub><mi>S</mi><mo>\u2212</mo><msub><mi>F</mi><mi>y</mi></msub><mi>X</mi><mo>+</mo><msub><mi>u</mi><mi>y</mi></msub><mi>D</mi><mo>\u2212</mo><msub><mi>u</mi><mi>x</mi></msub><mi>X</mi></mtd></mtr><mtr><mtd><mfrac><mrow><mi>d</mi><mi>Y</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>F</mi><mi>y</mi></msub><mi>S</mi><mo>\u2212</mo><msub><mi>F</mi><mi>x</mi></msub><mi>Y</mi><mo>+</mo><msub><mi>u</mi><mi>x</mi></msub><mi>D</mi><mo>\u2212</mo><msub><mi>u</mi><mi>y</mi></msub><mi>Y</mi></mtd></mtr><mtr><mtd><mfrac><mrow><mi>d</mi><mi>D</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>F</mi><mi>y</mi></msub><mi>X</mi><mo>+</mo><msub><mi>F</mi><mi>x</mi></msub><mi>Y</mi><mo>\u2212</mo><msub><mi>u</mi><mi>x</mi></msub><mi>D</mi><mo>\u2212</mo><msub><mi>u</mi><mi>y</mi></msub><mi>D</mi><mo>,</mo></mtd></mtr></mtable></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "with <i>F</i><sub><i>x</i></sub> = <i>\u03b2</i><sub><i>x</i></sub>(<i>X</i> + <i>D</i>), <i>F</i><sub><i>y</i></sub> = <i>\u03b2</i><sub><i>y</i></sub>(<i>Y</i> + <i>D</i>) and <i>B</i> a birth term."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "For independence, we require that the total prevalence of each strain evolves as it would without the other strain. For example, the total prevalence of <i>X</i> is <i>T</i><sub><i>x</i></sub> = <i>X</i> + <i>D</i> and the number susceptible to strain <i>X</i> is <i>S</i><sub><i>x</i></sub> = <i>Y</i> + <i>S</i> = 1 \u2212 <i>T</i><sub><i>x</i></sub>. Adding the second and fourth equations of <a href=\"#equ3\">Equation 3</a>, we have"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ4", 
+                                        "mathml": "<math><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>X</mi><mo>+</mo><mi>D</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>\u03b2</mi><mi>x</mi></msub><mrow><mo>(</mo><mrow><mi>X</mi><mo>+</mo><mi>D</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>S</mi><mo>+</mo><mi>Y</mi></mrow><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>u</mi><mi>x</mi></msub><mrow><mo>(</mo><mrow><mi>X</mi><mo>+</mo><mi>D</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "which is"
+                                    }, 
+                                    {
+                                        "type": "mathml", 
+                                        "id": "equ5", 
+                                        "mathml": "<math><mrow><mfrac><mrow><mi>d</mi><msub><mi>T</mi><mi>x</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>\u03b2</mi><mi>x</mi></msub><msub><mi>T</mi><mi>x</mi></msub><msub><mi>S</mi><mi>x</mi></msub><mo>\u2212</mo><msub><mi>u</mi><mi>x</mi></msub><msub><mi>T</mi><mi>x</mi></msub><mo>,</mo></mrow></math>"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "namely exactly the single-strain SIS model. We have the analogous expression for <i>Y</i>. Solving these de-coupled equations for <i>T</i><sub><i>x</i></sub> and <i>T</i><sub><i>y</i></sub> is equivalent to solving <a href=\"#equ3\">Equation 3</a>, so <a href=\"#equ3\">Equation 3</a> describes independent dynamics. Furthermore, <a href=\"#equ2\">Equation 2</a> reduces to <a href=\"#equ3\">Equation 3</a> when the similarity coefficient <i>c</i> is 0 (and <i>T</i> = 0)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When the strains are very similar (<i>c</i> = 1), <a href=\"#equ2\">Equation 2</a> in the main text reduces to Equation 14 of <a href=\"#bib31\">Lipsitch et al. (2009)</a> with (their) <i>c</i> = <i>q</i> = 1/2. That model was shown to be neutral through its equivalence with <a href=\"#equ1\">Equation 1</a> in the same work. This is the origin of the terms in <a href=\"#equ2\">Equation 2</a> with <math id=\"inf5\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>c</mi></mrow></math> in them; when our similarity coefficient is 1, these terms become the relevant terms in Lipsitch's model (14) for (their) <i>c</i> = 1/2."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The models differ in their re-infection from the dual class (0 where the similarity coefficient is 0) and in the clearance terms from the dually infected hosts. To obtain those clearance terms in <a href=\"#equ2\">Equation 2</a>, we interpolate: We have three potential clearance terms: (1) dual to <i>X</i>, (2) dual to <i>Y</i>, and (3) dual to <i>S</i> (not shown in <a href=\"#equ2\">Equation 2</a> because <i>S</i> = 1 \u2212 <i>X</i> \u2212 <i>Y</i> \u2212 <i>D</i>). When <i>c</i> = 0, these terms need to be <i>u</i><sub><i>x</i></sub><i>D</i>, <i>u</i><sub><i>y</i></sub><i>D</i>, and 0, respectively. When <i>c</i> = 1, they need to be 0, 0 and <math id=\"inf6\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>x</mi></msub><mo>+</mo><msub><mi>u</mi><mi>y</mi></msub></mrow><mo>)</mo></mrow><mi>D</mi></mrow></math>, where the latter means that when the strains are identical the clearance is correct. Interpolating (with terms (1), (2), (3) in vector notation), we have these three terms as <math id=\"inf7\"><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>\u00d7</mo><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>x</mi></msub><mi>D</mi><mo>,</mo><msub><mi>u</mi><mi>y</mi></msub><mi>D</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow><mo>+</mo><mi>c</mi><mo>\u00d7</mo><mrow><mo>(</mo><mrow><mn>0,0</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>x</mi></msub><mo>+</mo><msub><mi>u</mi><mi>y</mi></msub></mrow><mo>)</mo></mrow><mi>D</mi></mrow><mo>)</mo></mrow></mrow></math>. This yields the model in <a href=\"#equ2\">Equation 2</a>."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We note that the result of this interpolation is related to recent work on coinfection (<a href=\"#bib19\">Hansen and Day, 2014</a>), in which the authors ask how co-infection may drive increase in resistance (through an increased ability <i>R</i><sub><i>r</i></sub> of the DR strain to invade a DS-strain's equilibrium, in the dynamical sense). They find that co-infection can increase <i>R</i><sub><i>r</i></sub> more when the DR strain is more productive within co-infections (has a higher contribution to the force of infection), and when it has a higher ability to co-infect the DS strain. Our results are consistent with this, but our framing points out that these effects occur because of how these aspects of co-infection modify the net competition between the strains."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We verified numerically that the model has independent SIS dynamics for each strain when <i>c</i> = 0. We also verified that when <i>c</i> = 1, <i>T</i> = 0 and the parameters for the two strains are identical, the model is neutral in the sense of <a href=\"#bib31\">Lipsitch et al. (2009)</a>. When the parameters are not identical but <i>c</i> = 1, the model exhibits competitive exclusion."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "When <i>c</i> = 0, the two infections do not interact with each other\u2014each spreads as it would without the other one present. A hypothetical example might be pneumococcal carriage and human papillomavirus (HPV). They likely do not have much immune response in common, and both can be asymptomatic and would likely not affect each other's transmission. They have very low similarity. This is at one end of a spectrum, and modellers do not choose to model transmission of these infections simultaneously (precisely because they would not affect each other). However, low values of <i>c</i> are implicitly assumed by models (of the same infection with different strains, e.g., resistant and sensitive) that do not take competition into account, for example, by including co-infection in a way that dramatically reduces competition (see also the discussion in <a href=\"#bib33\">Nicoli et al. (2015)</a>)."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "The final model in (2) contains, in the first equation of (2), terms for: entry from susceptibles into <i>X</i> (<i>F</i><sub><i>x</i></sub><i>S</i>), re-infection of <i>X</i> with the <i>Y</i> strain (<i>\u03baF</i><sub><i>y</i></sub><i>X</i>), re-entry to <i>X</i> from duals re-infected with <math id=\"inf8\"><mrow><mi>X</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>\u03ba</mi><mi>t</mi></msub><mi>c</mi><msub><mi>F</mi><mi>x</mi></msub><mi>D</mi></mrow><mo>)</mo></mrow></mrow></math>, clearance of <i>X</i> (<i>u</i><sub><i>x</i></sub><i>X</i>), clearance of the <i>Y</i> strain in duals (1 \u2212 <i>c</i>)<i>u</i><sub><i>y</i></sub><i>D</i>, and acquisition of resistance plus competitive release of resistance due to treatment (<i>\u03bc</i> + <i>Tr</i>)<i>X</i>. The second equation is analagous and the third, for duals, describes their infection, re-infection back to singly infected states and clearance."
                                     }
-                                ], 
-                                "alt": "", 
-                                "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig10-v3.tif", 
-                                "filename": "elife-10559-app1-fig10-v3.tif"
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-2", 
+                                "title": "Implementation", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Models were implemented in Matlab and solved with ode15s, which is a built-in ODE solver in Matlab capable of handling stiff systems. Stiffness was an issue in the within-host model because of the wide range of orders of magnitude of both the variables (with cell numbers reaching 10<sup>10</sup>) and the parameters, together with the sharp threshold on the DR growth at <i>B</i><sub><i>r</i></sub> = 30. This was used to model the possibility of stochastic die-off of low populations of DR, and incidentally also prevents growth from only a fraction of a cell, which would otherwise be possible when using a continuous model to approximate a discrete variable. Parameters were generated uniformly over the ranges shown, except for <i>\u03bc</i> in the within-host model. There, log10(<i>\u03bc</i>) was uniformly distributed, to explore lower mutation rates more deeply than higher ones. The parameter ranges for the within-host model all surround the values used in <a href=\"#bib1\">Ankomah and Levin (2014)</a>. Stratified bar plots and color density plots were created in ggplot2 in R. The smoothing and density estimation analysis for <a href=\"#fig4 fig7\">Figures 4, 7</a> and <a href=\"#fig8\">Appendix figure 1</a> was done with the stat_density2d function in ggplot2."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.011", 
+                                        "id": "fig8", 
+                                        "label": "Appendix figure 1.", 
+                                        "title": "Heatmaps illustrating whether aggressive therapy (yellow), moderate therapy (blue) or neither, conclusively (neutral; green) minimize resistance.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(Top set of panels) Pre-existing resistance means that the \u2018moderate is best\u2019 conclusion is spread out more widely over the parameter space; the DR strain does not benefit as much from DS growth. (Bottom set of panels) Without pre-existing resistance, there is more clear separation between the parameter regimes. Overall, the results are the same as in the main text: a moderate outcome is driven by high effective competition between strains, meaning a higher \u039b<sub><i>R</i></sub>, <i>m</i><sub><i>R</i></sub> and lower values of immune parameters <i>k</i><sub><i>p</i></sub> and <i>\u03b7</i> (eta)."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig1-v3.tif", 
+                                        "filename": "elife-10559-app1-fig1-v3.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-3", 
+                                "title": "Sensitivity analysis", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "We performed single-parameter sensitivity analyses in both models. These demonstrate that most parameters, varied on their own over the permissive ranges we have used in the overall parameter exploration, do not typically move the system from the mode in which treatment decreases resistance to the mode where resistance increases (competition). <a href=\"#fig9 fig10\">Appendix figures 2, 3</a> illustrate single-parameter variation in the in-host model, and <a href=\"#fig11\">Appendix figure 4</a> illustrates it in the between-host model. <a href=\"#fig12\">Appendix figure 5</a> illustrates that in the majority of cases there is a strong correlation between treatment strength and resistance, whether negative or positive."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.012", 
+                                        "id": "fig9", 
+                                        "label": "Appendix figure 2.", 
+                                        "title": "Sensitivity analysis, varying one parameter at a time.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For each value of each parameter, the dosage was increased from 0 to 2.5 \u03bcg/ml per day, and the maximum number of DR bacilli during the infection was recorded. The baseline values of the parameters (when they were not varied) are: \u039b<sub><i>s</i></sub> = 0.5, \u039b<sub><i>r</i></sub> = 0.45, <i>m</i><sub><i>R</i></sub> = 2.8 and the remainder are as in <a href=\"#tbl1\">Table 1</a>."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig2-v3.tif", 
+                                        "filename": "elife-10559-app1-fig2-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.013", 
+                                        "id": "fig10", 
+                                        "label": "Appendix figure 3.", 
+                                        "title": "Sensitivity analysis, varying one parameter at a time.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "For each value of each parameter, the dosage was increased from LOW to HIGH, and the maximum number of DR bacilli during the infection was recorded. The baseline values of the parameters (when they were not varied) are: \u039b<sub><i>s</i></sub> = 0.6, \u039b<sub><i>r</i></sub> = 0.53, <i>m</i><sub><i>R</i></sub> = 3.4. Other parameters are <i>k</i> = 48, <i>k</i><sub><i>p</i></sub> = 2.2<i>e</i><sup>\u22126</sup>, <i>k</i><sub><i>i</i></sub> = 7.2<i>e</i><sup>\u22124</sup>, <i>\u03bc</i> = 4<i>e</i><sup>\u22127</sup>, <i>\u03b1</i> = 0.018, <i>\u03c3</i><sub><i>i</i></sub> = 1000, <i>\u03c3</i><sub><i>p</i></sub> = 10000, <i>\u03b3</i><sub><i>p</i></sub> = 0.001 and the rest as in <a href=\"#tbl1\">Table 1</a>. The approach is the same as that in <a href=\"#fig9\">Appendix figure 2</a>, except that the baseline set of parameters is different."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig3-v3.tif", 
+                                        "filename": "elife-10559-app1-fig3-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.014", 
+                                        "id": "fig11", 
+                                        "label": "Appendix figure 4.", 
+                                        "title": "Sensitivity analysis, varying one parameter at a time in the between-host model over the ranges listed in <a href=\"#tbl1\">Table 1</a>.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Left side: baseline parameter values are <i>\u03b2</i><sub><i>x</i></sub> = 1.5, <i>\u03b2</i><sub><i>y</i></sub> = 1.04, <i>c</i> = 0.05, <i>r</i> = 0, <i>\u03bc</i> = 0.001. Right side: baseline values are <i>\u03b2</i><sub><i>x</i></sub> = 2, <i>\u03b2</i><sub><i>y</i></sub> = 1.1, <i>c</i> = 0.3, <i>r</i> = 0.05, <i>\u03bc</i> = 0.0001."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig4-v3.tif", 
+                                        "filename": "elife-10559-app1-fig4-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.015", 
+                                        "id": "fig12", 
+                                        "label": "Appendix figure 5.", 
+                                        "title": "Spearman correlations between treatment level and maximum resistance in both models.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "(Left) In-host model. Left panel shows all parameters. Right panel shows only those for which treatment succeeds. The difference is that where treatment does not succeed, it drives resistance. (Right) Population-level model."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig5-v3.tif", 
+                                        "filename": "elife-10559-app1-fig5-v3.tif"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "type": "section", 
+                                "id": "s6-4", 
+                                "title": "How parameter combinations affect the treatment\u2013resistance relationship", 
+                                "content": [
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "In the in-host model, whether a DR strain needs to emerge only after treatment begins, during a rise in bacterial burden in the DS strain, affects the inter-strain dynamics, because pre-existing resistance reduces the positive impact of the DS strain on the DR strain. We repeated the analysis underlying <a href=\"#fig4\">Figure 4</a>, using only the subset with pre-existing resistance, and then only those results without pre-existing resistance. Other parameters ranged over the same intervals."
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "Discriminant analysis of principle components (<a href=\"#bib23\">Jombart et al., 2010</a>) (DAPC) finds combinations of variables that best separate groups (here, whether treatment increases or decreases resistance, or \u2018neutral\u2019). DAPC results indicated that almost all of the difference between the groups can be accounted for using a single discriminant function, both in the within-host model and the between-host one. <a href=\"#fig13\">Appendix figure 6</a> shows the groups plotted on the first two discriminant axes, illustrating the separation of the groups. The horizontal axis is the first discriminant function whose higher coefficients are given in the main text."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.016", 
+                                        "id": "fig13", 
+                                        "label": "Appendix figure 6.", 
+                                        "title": "DAPC scatterplot for the within-host model.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "The x-axis is a linear combination of parameters corresponding to the primary DAPC discriminant function, and the y-axis corresponds to the second. Accordingly, the groups are plotted by their positions on the first two DAPC axes. The relative portions of the variance that these axes capture is illustrated in the DACP eigenvalue plot (bottom right corner). Almost all of the difference between the groups is captured by the x-axis (high gray bar in the bottom left plot, compared to a low gray bar for the variation captured by the second axis). The PCA eigenvalues plot in the bottom right shows the portion of variance retained when keeping <i>k</i> PCA axes. In both models, the neutral group, in which treatment was not strongly correlated with the level of resistance in either direction, lies directly between the aggressive and moderate groups."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig6-v3.tif", 
+                                        "filename": "elife-10559-app1-fig6-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#fig14 fig15\">Appendix figures 7, 8</a> show the parameters of the in-host model, selected according to whether an aggressive or a moderate treatment approach is best to minimize resistance. In the top rows, the aggressive policy is preferred (treatment decreases resistance); we see a lower MIC of the DR strain (labeled mR), a stronger immune system (higher <i>k</i><sub><i>p</i></sub> and <i>\u03b7</i> (eta)), a lower \u039b<sub><i>r</i></sub> and also lower \u039b<sub><i>s</i></sub>. The lower \u039b<sub><i>s</i></sub> results in fewer DS bacilli, so fewer DR bacilli are created through mutation, allowing an aggressive policy to prevent their emergence."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.017", 
+                                        "id": "fig14", 
+                                        "label": "Appendix figure 7.", 
+                                        "title": "Parameters from the two regimes: (a) with the lysis term and (b) without it.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "In each set, the top row shows the parameters under which resistance decreases with increasing dosage, and the bottom row shows those for which resistance increases with increasing dosage. The relationships between the two outcomes (treatment increasing or decreasing resistance) are unaffected by whether the lysis term is included. Removing the term is akin to including lysis in the equation for the resource usage, but with an <i>e</i> coefficient of 0; a more general model could include this with a coefficient <i>e</i><sub><i>l</i></sub> &lt; <i>e</i> which would model the fact that resource consumption and release could happen with different efficiencies. Though we do not know what an appropriate choice for <i>e</i><sub><i>l</i></sub> would be, the results with <i>e</i><sub><i>l</i></sub> = 0 (bottom set of histograms) are the same as those with <i>e</i><sub><i>l</i></sub> = <i>e</i> (original model; top set of histograms)."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig7-v3.tif", 
+                                        "filename": "elife-10559-app1-fig7-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.018", 
+                                        "id": "fig15", 
+                                        "label": "Appendix figure 8.", 
+                                        "title": "Parameters in the two modes showing that the filter defining \u2018effective treatment\u2019 does not change the relationships between parameters and whether treatment increases or decreases resistance.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "We have shown only the parameters whose distributions are different in the two modes (compare to <a href=\"#fig14\">Appendix figure 7</a>)."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig8-v3.tif", 
+                                        "filename": "elife-10559-app1-fig8-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "paragraph", 
+                                        "text": "<a href=\"#fig16\">Appendix figure 9</a> shows the histograms and scatter plots for the between host model. These illustrate the same points made in the main text but again show the relationships between the parameters that were varied. An aggressive policy is most likely best when the DR strain has a relatively low basic reproductive number <i>R</i><sub>02</sub>, and when the similarity coefficient is low. A low similarity coefficient means that competition is reduced, because the extent to which the strains are interacting is lower than when strains are very similar. Finally, <a href=\"#fig17\">Appendix figure 10</a> shows that the measure of effective competition defined in the main text can predict the relationship between treatment and resistance, in both the within- and between- host models."
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.019", 
+                                        "id": "fig16", 
+                                        "label": "Appendix figure 9.", 
+                                        "title": "Parameters where the two contrasting policies work best in the population level model.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "Top row: treatment decreases resistance. Bottom row: treatment increases resistance."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig9-v3.tif", 
+                                        "filename": "elife-10559-app1-fig9-v3.tif"
+                                    }, 
+                                    {
+                                        "type": "image", 
+                                        "doi": "10.7554/eLife.10559.020", 
+                                        "id": "fig17", 
+                                        "label": "Appendix figure 10.", 
+                                        "title": "Quality of classification using the instantaneous measure of effective competition to classify a parameter set according to whether treatment will increase or decrease resistance.", 
+                                        "caption": [
+                                            {
+                                                "type": "paragraph", 
+                                                "text": "A random classifier has an AUC of 0.5. We used the sign of the Spearman correlation between treatment and resistance as the \u2018true\u2019 classification (competing if treatment increases resistance), and the value of our effective competition quantity as the \u2018scores\u2019. Curves were created using the perfcurve function in matlab."
+                                            }
+                                        ], 
+                                        "alt": "", 
+                                        "uri": "https://publishing-cdn.elifesciences.org/10559/elife-10559-app1-fig10-v3.tif", 
+                                        "filename": "elife-10559-app1-fig10-v3.tif"
+                                    }
+                                ]
                             }
                         ]
                     }
