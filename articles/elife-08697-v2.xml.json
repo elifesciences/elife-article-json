@@ -3536,216 +3536,209 @@
                 "title": "Appendix 1", 
                 "content": [
                     {
+                        "type": "paragraph", 
+                        "text": "The CG simulation model used in this work has been previously used to study single-spanning membrane proteins (<a href=\"#bib55\">Zhang and Miller, 2012a</a>). Here, the key features of the model are summarized, and the minor modifications introduced in the current work are emphasized."
+                    }, 
+                    {
                         "type": "section", 
-                        "id": "s6", 
+                        "id": "s6-1", 
                         "title": "Coordinate system", 
                         "content": [
                             {
                                 "type": "paragraph", 
-                                "text": "The CG simulation model used in this work has been previously used to study single-spanning membrane proteins (<a href=\"#bib55\">Zhang and Miller, 2012a</a>). Here, the key features of the model are summarized, and the minor modifications introduced in the current work are emphasized."
+                                "text": "The CG model projects all system coordinates onto a 2D plane passing through the LG of the translocon channel. The coordinate system is defined with the x-axis passing through the channel perpendicular to the bilayer and the y-axis running parallel to the bilayer as shown in <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>. The origin is set at the center of the channel such that negative x-values correspond to cytoplasmic locations. The LG is positioned in the positive y-direction and facilitates membrane entry."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s6-2", 
+                        "title": "Interactions", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Interactions in the CG model are defined in terms of the reduced units \u03f5 and <i>\u03c3</i>, where <i>\u03f5</i> = 0.833 <i>kT</i> sets the energy scale and <i>\u03c3</i> = 0.8 nm sets the length scale. <i>\u03c3</i> is equivalent to the diameter of a CG bead. <i>T</i> is equal to 300 K in all simulations and <i>k</i> is the Boltzmann constant."
                             }, 
                             {
-                                "type": "section", 
-                                "id": "s6-1", 
-                                "title": "Coordinate system", 
-                                "content": [
+                                "type": "paragraph", 
+                                "text": "The nascent protein is treated as a freely jointed chain with connectivity enforced by a finite extension nonlinear elastic potential between consecutive beads,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ3", 
+                                "label": "(3)", 
+                                "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>b</mi><mi>o</mi><mi>n</mi><mi>d</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mn>1</mn><mo>/</mo><mn>2</mn><mi>K</mi><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup><mtext>ln</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><msup><mi>r</mi><mn>2</mn></msup><mo>/</mo><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>r</i> is the distance between beads, <i>K</i> = 7<i>\u03f5</i>/<i>\u03c3</i><sup>2</sup> is the spring constant and <i>R</i><sub>0</sub> = 2<i>\u03c3</i>."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Short-ranged nonbonding interactions are modeled using a cutoff Lennard-Jones (LJ) potential,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ4", 
+                                "label": "(4)", 
+                                "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>L</mi><mi>J</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mtable columnalign=\"left\"><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><mn>4</mn><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>[</mo><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>\u03c3</mi><mi>r</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn></mrow></msup><mo>\u2212</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>\u03c3</mi><mi>r</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mn>6</mn></msup></mrow><mo>]</mo></mrow><mo>+</mo><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub></mrow></mtd><mtd columnalign=\"left\"><mrow><msub><mi>r</mi><mrow><mi>c</mi><mi>l</mi></mrow></msub><mo>&lt;</mo><mi>r</mi><mo>\u2264</mo><msub><mi>r</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub></mrow></mtd></mtr><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mn>0</mn></mtd><mtd columnalign=\"left\"><mrow><mi>r</mi><mo>\u2264</mo><msub><mi>r</mi><mrow><mi>c</mi><mi>l</mi></mrow></msub><mo>,</mo><mi>r</mi><mo>&gt;</mo><msub><mi>r</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub></mrow></mtd></mtr></mtable></mrow></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>\u03f5</i><sub><i>ij</i></sub> defines the strength of the interaction between bead <i>i</i> and <i>j</i>, <i>r</i><sub><i>cl</i></sub> is a cutoff at low values of <i>r</i>, and <i>r</i><sub><i>cr</i></sub> is a cutoff at large values of <i>r</i>. <i>\u03f5</i><sub><i>cr</i></sub> is a constant to shift the potential to 0 at <i>r</i><sub><i>cr</i></sub>. The LJ interactions among beads of the nascent protein and between beads of the nascent protein and the ribosome are chosen to be purely repulsive by setting <i>r</i><sub><i>cr</i></sub> = 2<sup>1/6</sup><i>\u03c3</i> and <i>\u03f5</i><sub><i>ij</i></sub> = <i>\u03f5</i>. Weak attractive interactions are included between of the nascent protein and beads in the translocon by setting <i>r</i><sub><i>cr</i></sub> = 2.5<i>\u03c3</i> and <i>\u03f5</i><sub><i>ij</i></sub> = 1.5<i>\u03f5</i>. <i>r</i><sub><i>cl</i></sub> is set to 0 for all interactions between CG beads with the exception of interactions between the nascent protein and the LG in the open state, in which case <i>r</i><sub><i>cl</i></sub> = <i>\u03c3</i> to allow beads to exit the channel and enter the membrane."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "Electrostatic interactions between charged beads are modeled using the Debye-H\u00fcckel potential,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ5", 
+                                "label": "(5)", 
+                                "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>D</mi><mi>H</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mtable columnalign=\"left\"><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><mi>\u03c3</mi><msub><mi>q</mi><mi>i</mi></msub><msub><mi>q</mi><mi>j</mi></msub><msup><mrow><mrow><mo>(</mo><mrow><mi>\u03b2</mi><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>r</mi><mo>/</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign=\"left\"><mrow><mi>r</mi><mo>\u2265</mo><mi>\u03c3</mi></mrow></mtd></mtr><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><msub><mi>q</mi><mi>i</mi></msub><msub><mi>q</mi><mi>j</mi></msub><msup><mi>\u03b2</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03c3</mi><mo>/</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign=\"left\"><mrow><mi>r</mi><mo>&lt;</mo><mi>\u03c3</mi></mrow></mtd></mtr></mtable></mrow></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>\u03ba</i> = 1.4<i>\u03c3</i> approximates the Debye screening length in typical biological media, <i>\u03b2</i> = 1/<i>kT</i>, and <i>q</i> is the charge of a CG bead. The electrostatic potential is capped from below to prevent singularities as beads exit the channel and interact with charges on the open LG."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "The effect of the implicit bilayer is modeled by calculating the solvation energy of CG beads,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ6", 
+                                "label": "(6)", 
+                                "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>s</mi><mi>o</mi><mi>l</mi><mi>v</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>g</mi><mi>i</mi></msub><mi>S</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>;</mo><msub><mi>\u03d5</mi><mi>x</mi></msub><mo>,</mo><msub><mi>\u03c8</mi><mi>x</mi></msub></mrow><mo>)</mo></mrow><mrow><mo>[</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>S</mi><mrow><mo>(</mo><mrow><mi>y</mi><mo>;</mo><msub><mi>\u03d5</mi><mi>y</mi></msub><mo>,</mo><msub><mi>\u03c8</mi><mi>y</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>g</i><sub><i>i</i></sub> is the transfer free energy of bead <i>i</i> and <i>S</i>(<i>x</i>,<i>\u03d5</i>,<i>\u03c8</i>) is a switching function that defines the membrane region,"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ7", 
+                                "label": "(7)", 
+                                "mathml": "<math><mrow><mi>S</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>;</mo><mi>\u03d5</mi><mo>,</mo><mi>\u03c8</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mrow><mo>[</mo><mrow><mn>1</mn><mo>+</mo><mtext>tanh</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mi>x</mi><mo>\u2212</mo><mi>\u03d5</mi></mrow><mrow><mn>0.25</mn><mi>\u03c3</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mtext>\u2009\u2009</mtext><mrow><mo>[</mo><mrow><mn>1</mn><mo>\u2212</mo><mtext>tanh</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mi>x</mi><mo>\u2212</mo><mi>\u03c8</mi></mrow><mrow><mn>0.25</mn><mi>\u03c3</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "This form of the solvation energy and switching function defines the implicit bilayer as the region where <i>\u03d5</i><sub><i>x</i></sub> &lt; <i>x</i> &lt; <i>\u03c8</i><sub><i>x</i></sub> and <i>y</i> &lt; <i>\u03c8</i><sub><i>y</i></sub> or <i>y</i> &gt; <i>\u03d5</i><sub><i>y</i></sub>, where <i>\u03d5</i><sub><i>x</i></sub> = \u22122.0<i>\u03c3</i>, <i>\u03c8</i><sub><i>x</i></sub> = 2.0<i>\u03c3</i>, <i>\u03d5</i><sub><i>y</i></sub> = \u22121.5<i>\u03c3</i>, and <i>\u03c8</i><sub><i>y</i></sub> = 1.5<i>\u03c3</i>. The transfer free energy, <i>g</i>, for each bead type is approximated from the Wimley\u2013White hydrophobicity scale which measures water\u2013octanol transfer free energies (<a href=\"#bib52\">Wimley et al., 1996</a>). Values of <i>g</i> for the different bead types are summarized in <a href=\"#tbl1\">Appendix table 1</a>. Bead types for all EmrE variants studied in this work are listed in <a href=\"#tbl2\">Appendix table 2</a>."
+                            }, 
+                            {
+                                "type": "table", 
+                                "doi": "10.7554/eLife.08697.021", 
+                                "id": "tbl1", 
+                                "label": "Appendix table 1.", 
+                                "title": "CG bead charges (<i>q</i>) and water/membrane transfer free energies (<i>g</i>)", 
+                                "caption": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "The CG model projects all system coordinates onto a 2D plane passing through the LG of the translocon channel. The coordinate system is defined with the x-axis passing through the channel perpendicular to the bilayer and the y-axis running parallel to the bilayer as shown in <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a>. The origin is set at the center of the channel such that negative x-values correspond to cytoplasmic locations. The LG is positioned in the positive y-direction and facilitates membrane entry."
+                                        "text": "CG bead charges (<i>q</i>) and water/membrane transfer free energies (<i>g</i>)"
                                     }
+                                ], 
+                                "tables": [
+                                    "<table><thead><tr><th></th><th>Q</th><th>L</th><th>V</th><th>K</th></tr></thead><tbody><tr><td><i>q</i></td><td>0.0</td><td>0.0</td><td>0.0</td><td>2.0</td></tr><tr><td><i>g</i>/<i>\u03f5</i></td><td>2.0</td><td>\u22124.0</td><td>\u22122.0</td><td>6.0</td></tr></tbody></table>"
                                 ]
                             }, 
                             {
-                                "type": "section", 
-                                "id": "s6-2", 
-                                "title": "Interactions", 
-                                "content": [
+                                "type": "table", 
+                                "doi": "10.7554/eLife.08697.022", 
+                                "id": "tbl2", 
+                                "label": "Appendix table 2.", 
+                                "title": "CG bead sequences for each of the 16 EmrE mutants and the cotranslationally-biased mutant", 
+                                "caption": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "Interactions in the CG model are defined in terms of the reduced units \u03f5 and <i>\u03c3</i>, where <i>\u03f5</i> = 0.833 <i>kT</i> sets the energy scale and <i>\u03c3</i> = 0.8 nm sets the length scale. <i>\u03c3</i> is equivalent to the diameter of a CG bead. <i>T</i> is equal to 300 K in all simulations and <i>k</i> is the Boltzmann constant."
-                                    }, 
+                                        "text": "CG bead sequences for each of the 16 EmrE mutants and the cotranslationally-biased mutant"
+                                    }
+                                ], 
+                                "tables": [
+                                    "<table><thead><tr><th>Protein</th><th>L1</th><th>TMD1</th><th>L2</th><th>TMD2</th><th>L3</th><th>TMD3</th><th>L4</th><th>TMD4</th><th>L5</th></tr></thead><tbody><tr><td>EmrE</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>EmrE(N<sub>cyto</sub>)</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td></tr><tr><td>EmrE(N<sub>peri</sub>)</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">KKK</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">KK</named-content>QQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>K3</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content></b><b>QQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>T28R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">KKK</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>A52K</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQ<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>L85R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">KK</named-content>QQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>R111</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td></tr><tr><td>nEmrE</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nK3</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content></b><b>QQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nT28R<sup>1</sup></td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nT28R<sup>2</sup></td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nT28R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">KKK</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nA52K</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQ<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nL85R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">KK</named-content>QQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nR111</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr></tbody></table>", 
+                                    "<table><thead><tr><th>CB mutant</th><th>L1</th><th>TMD1</th><th>L2</th><th>TMD2</th><th>L3</th><th>TMD3</th><th>L4</th><th>TMD4</th><th>L5</th></tr></thead><tbody><tr><td></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQ</b><b><named-content content-type=\"author-callout-style1\">K</named-content></b></td><td><b>LLLL</b></td><td><b>QQQQQQQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQQQQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td><td><b>LLLL</b></td><td><b>QQQQQQQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQQQQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td></tr></tbody></table>"
+                                ], 
+                                "footnotes": [
                                     {
-                                        "type": "paragraph", 
-                                        "text": "The nascent protein is treated as a freely jointed chain with connectivity enforced by a finite extension nonlinear elastic potential between consecutive beads,"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ3", 
-                                        "label": "(3)", 
-                                        "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>b</mi><mi>o</mi><mi>n</mi><mi>d</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><mo>\u2212</mo><mn>1</mn><mo>/</mo><mn>2</mn><mi>K</mi><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup><mtext>ln</mtext><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><msup><mi>r</mi><mn>2</mn></msup><mo>/</mo><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where <i>r</i> is the distance between beads, <i>K</i> = 7<i>\u03f5</i>/<i>\u03c3</i><sup>2</sup> is the spring constant and <i>R</i><sub>0</sub> = 2<i>\u03c3</i>."
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "Short-ranged nonbonding interactions are modeled using a cutoff Lennard-Jones (LJ) potential,"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ4", 
-                                        "label": "(4)", 
-                                        "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>L</mi><mi>J</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mtable columnalign=\"left\"><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><mn>4</mn><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><mo>[</mo><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>\u03c3</mi><mi>r</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn></mrow></msup><mo>\u2212</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>\u03c3</mi><mi>r</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mn>6</mn></msup></mrow><mo>]</mo></mrow><mo>+</mo><msub><mi mathvariant=\"italic\">\u03f5</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub></mrow></mtd><mtd columnalign=\"left\"><mrow><msub><mi>r</mi><mrow><mi>c</mi><mi>l</mi></mrow></msub><mo>&lt;</mo><mi>r</mi><mo>\u2264</mo><msub><mi>r</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub></mrow></mtd></mtr><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mn>0</mn></mtd><mtd columnalign=\"left\"><mrow><mi>r</mi><mo>\u2264</mo><msub><mi>r</mi><mrow><mi>c</mi><mi>l</mi></mrow></msub><mo>,</mo><mi>r</mi><mo>&gt;</mo><msub><mi>r</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub></mrow></mtd></mtr></mtable></mrow></mrow><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where <i>\u03f5</i><sub><i>ij</i></sub> defines the strength of the interaction between bead <i>i</i> and <i>j</i>, <i>r</i><sub><i>cl</i></sub> is a cutoff at low values of <i>r</i>, and <i>r</i><sub><i>cr</i></sub> is a cutoff at large values of <i>r</i>. <i>\u03f5</i><sub><i>cr</i></sub> is a constant to shift the potential to 0 at <i>r</i><sub><i>cr</i></sub>. The LJ interactions among beads of the nascent protein and between beads of the nascent protein and the ribosome are chosen to be purely repulsive by setting <i>r</i><sub><i>cr</i></sub> = 2<sup>1/6</sup><i>\u03c3</i> and <i>\u03f5</i><sub><i>ij</i></sub> = <i>\u03f5</i>. Weak attractive interactions are included between of the nascent protein and beads in the translocon by setting <i>r</i><sub><i>cr</i></sub> = 2.5<i>\u03c3</i> and <i>\u03f5</i><sub><i>ij</i></sub> = 1.5<i>\u03f5</i>. <i>r</i><sub><i>cl</i></sub> is set to 0 for all interactions between CG beads with the exception of interactions between the nascent protein and the LG in the open state, in which case <i>r</i><sub><i>cl</i></sub> = <i>\u03c3</i> to allow beads to exit the channel and enter the membrane."
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "Electrostatic interactions between charged beads are modeled using the Debye-H\u00fcckel potential,"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ5", 
-                                        "label": "(5)", 
-                                        "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>D</mi><mi>H</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mtable columnalign=\"left\"><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><mi>\u03c3</mi><msub><mi>q</mi><mi>i</mi></msub><msub><mi>q</mi><mi>j</mi></msub><msup><mrow><mrow><mo>(</mo><mrow><mi>\u03b2</mi><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>r</mi><mo>/</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign=\"left\"><mrow><mi>r</mi><mo>\u2265</mo><mi>\u03c3</mi></mrow></mtd></mtr><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><msub><mi>q</mi><mi>i</mi></msub><msub><mi>q</mi><mi>j</mi></msub><msup><mi>\u03b2</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03c3</mi><mo>/</mo><mi>\u03ba</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign=\"left\"><mrow><mi>r</mi><mo>&lt;</mo><mi>\u03c3</mi></mrow></mtd></mtr></mtable></mrow></mrow><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where <i>\u03ba</i> = 1.4<i>\u03c3</i> approximates the Debye screening length in typical biological media, <i>\u03b2</i> = 1/<i>kT</i>, and <i>q</i> is the charge of a CG bead. The electrostatic potential is capped from below to prevent singularities as beads exit the channel and interact with charges on the open LG."
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "The effect of the implicit bilayer is modeled by calculating the solvation energy of CG beads,"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ6", 
-                                        "label": "(6)", 
-                                        "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>s</mi><mi>o</mi><mi>l</mi><mi>v</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>g</mi><mi>i</mi></msub><mi>S</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>;</mo><msub><mi>\u03d5</mi><mi>x</mi></msub><mo>,</mo><msub><mi>\u03c8</mi><mi>x</mi></msub></mrow><mo>)</mo></mrow><mrow><mo>[</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>S</mi><mrow><mo>(</mo><mrow><mi>y</mi><mo>;</mo><msub><mi>\u03d5</mi><mi>y</mi></msub><mo>,</mo><msub><mi>\u03c8</mi><mi>y</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where <i>g</i><sub><i>i</i></sub> is the transfer free energy of bead <i>i</i> and <i>S</i>(<i>x</i>,<i>\u03d5</i>,<i>\u03c8</i>) is a switching function that defines the membrane region,"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ7", 
-                                        "label": "(7)", 
-                                        "mathml": "<math><mrow><mi>S</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>;</mo><mi>\u03d5</mi><mo>,</mo><mi>\u03c8</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mrow><mo>[</mo><mrow><mn>1</mn><mo>+</mo><mtext>tanh</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mi>x</mi><mo>\u2212</mo><mi>\u03d5</mi></mrow><mrow><mn>0.25</mn><mi>\u03c3</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mtext>\u2009\u2009</mtext><mrow><mo>[</mo><mrow><mn>1</mn><mo>\u2212</mo><mtext>tanh</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><mi>x</mi><mo>\u2212</mo><mi>\u03c8</mi></mrow><mrow><mn>0.25</mn><mi>\u03c3</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "This form of the solvation energy and switching function defines the implicit bilayer as the region where <i>\u03d5</i><sub><i>x</i></sub> &lt; <i>x</i> &lt; <i>\u03c8</i><sub><i>x</i></sub> and <i>y</i> &lt; <i>\u03c8</i><sub><i>y</i></sub> or <i>y</i> &gt; <i>\u03d5</i><sub><i>y</i></sub>, where <i>\u03d5</i><sub><i>x</i></sub> = \u22122.0<i>\u03c3</i>, <i>\u03c8</i><sub><i>x</i></sub> = 2.0<i>\u03c3</i>, <i>\u03d5</i><sub><i>y</i></sub> = \u22121.5<i>\u03c3</i>, and <i>\u03c8</i><sub><i>y</i></sub> = 1.5<i>\u03c3</i>. The transfer free energy, <i>g</i>, for each bead type is approximated from the Wimley\u2013White hydrophobicity scale which measures water\u2013octanol transfer free energies (<a href=\"#bib52\">Wimley et al., 1996</a>). Values of <i>g</i> for the different bead types are summarized in <a href=\"#tbl1\">Appendix table 1</a>. Bead types for all EmrE variants studied in this work are listed in <a href=\"#tbl2\">Appendix table 2</a>."
-                                    }, 
-                                    {
-                                        "type": "table", 
-                                        "doi": "10.7554/eLife.08697.021", 
-                                        "id": "tbl1", 
-                                        "label": "Appendix table 1.", 
-                                        "title": "CG bead charges (<i>q</i>) and water/membrane transfer free energies (<i>g</i>)", 
-                                        "caption": [
+                                        "text": [
                                             {
                                                 "type": "paragraph", 
-                                                "text": "CG bead charges (<i>q</i>) and water/membrane transfer free energies (<i>g</i>)"
-                                            }
-                                        ], 
-                                        "tables": [
-                                            "<table><thead><tr><th></th><th>Q</th><th>L</th><th>V</th><th>K</th></tr></thead><tbody><tr><td><i>q</i></td><td>0.0</td><td>0.0</td><td>0.0</td><td>2.0</td></tr><tr><td><i>g</i>/<i>\u03f5</i></td><td>2.0</td><td>\u22124.0</td><td>\u22122.0</td><td>6.0</td></tr></tbody></table>"
-                                        ]
-                                    }, 
-                                    {
-                                        "type": "table", 
-                                        "doi": "10.7554/eLife.08697.022", 
-                                        "id": "tbl2", 
-                                        "label": "Appendix table 2.", 
-                                        "title": "CG bead sequences for each of the 16 EmrE mutants and the cotranslationally-biased mutant", 
-                                        "caption": [
-                                            {
-                                                "type": "paragraph", 
-                                                "text": "CG bead sequences for each of the 16 EmrE mutants and the cotranslationally-biased mutant"
-                                            }
-                                        ], 
-                                        "tables": [
-                                            "<table><thead><tr><th>Protein</th><th>L1</th><th>TMD1</th><th>L2</th><th>TMD2</th><th>L3</th><th>TMD3</th><th>L4</th><th>TMD4</th><th>L5</th></tr></thead><tbody><tr><td>EmrE</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>EmrE(N<sub>cyto</sub>)</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td></tr><tr><td>EmrE(N<sub>peri</sub>)</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">KKK</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">KK</named-content>QQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>K3</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content></b><b>QQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>T28R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">KKK</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>A52K</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQ<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>L85R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">KK</named-content>QQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr><tr><td>R111</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td></tr><tr><td>nEmrE</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nK3</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content></b><b>QQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nT28R<sup>1</sup></td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nT28R<sup>2</sup></td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>Q<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nT28R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b><named-content content-type=\"author-callout-style1\">KKK</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nA52K</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQ<named-content content-type=\"author-callout-style1\">K</named-content>QQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nL85R</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">KK</named-content>QQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td></tr><tr><td>nR111</td><td><b>QQQQQ</b></td><td>VVVV</td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b>QQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQ</b></td></tr></tbody></table>", 
-                                            "<table><thead><tr><th>CB mutant</th><th>L1</th><th>TMD1</th><th>L2</th><th>TMD2</th><th>L3</th><th>TMD3</th><th>L4</th><th>TMD4</th><th>L5</th></tr></thead><tbody><tr><td></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQ</b><b><named-content content-type=\"author-callout-style1\">K</named-content></b></td><td><b>LLLL</b></td><td><b>QQQQQQQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQQQQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td><td><b>LLLL</b></td><td><b>QQQQQQQQQQ</b></td><td><b>LLLL</b></td><td><b><named-content content-type=\"author-callout-style1\">K</named-content>QQQQQQQQ<named-content content-type=\"author-callout-style1\">K</named-content></b></td></tr></tbody></table>"
-                                        ], 
-                                        "footnotes": [
-                                            {
-                                                "text": [
-                                                    {
-                                                        "type": "paragraph", 
-                                                        "text": "Moderately hydrophobic (V), very hydrophobic (L), neutral-hydrophilic (Q) and charged (K) beads are colored as light gray, gray, black, and red respectively. Loops and TMDs are labeled."
-                                                    }
-                                                ]
+                                                "text": "Moderately hydrophobic (V), very hydrophobic (L), neutral-hydrophilic (Q) and charged (K) beads are colored as light gray, gray, black, and red respectively. Loops and TMDs are labeled."
                                             }
                                         ]
                                     }
                                 ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s6-3", 
+                        "title": "System dynamics", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "The time-evolution of the nascent protein is modeled with Brownian dynamics with the equation of motion,"
                             }, 
                             {
-                                "type": "section", 
-                                "id": "s6-3", 
-                                "title": "System dynamics", 
-                                "content": [
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "The time-evolution of the nascent protein is modeled with Brownian dynamics with the equation of motion,"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ8", 
-                                        "label": "(8)", 
-                                        "mathml": "<math><mrow><msub><mi>x</mi><mi>i</mi></msub><mrow><mo>(</mo><mrow><mi>t</mi><mo>+</mo><mtext>\u0394</mtext><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mi>\u03b2</mi><mi>D</mi><mfrac><mrow><mo>\u2202</mo><mi>V</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">x</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2202</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mfrac><mtext>\u0394</mtext><mi>t</mi><mo>+</mo><msqrt><mrow><mn>2</mn><mi>D</mi><mtext>\u0394</mtext><mi>t</mi></mrow></msqrt><msub><mi>\u03b7</mi><mi>i</mi></msub><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where <i>x</i>(<i>t</i>)<sub><i>i</i></sub> is the position (in two dimensions) of bead <i>i</i> at time <i>t</i>, <i>V</i>(<b>x</b>(<i>t</i>)) is the potential energy of the system, <i>D</i> is the isotropic bead diffusion coefficient, \u0394<i>t</i> is the time step, and <i>\u03b7</i><sub><i>i</i></sub> is random noise drawn from a Gaussian distribution with zero mean and a variance of one. Only beads in the nascent protein are subject to Brownian dynamics. <i>D</i> is set to a value of 758.7 nm<sup>2</sup>/s and \u0394<i>t</i> is set to 100 ns."
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "LG dynamics are modeled by attempting to stochastically open or close the LG at every simulation timestep with a probability <i>p</i><sub><i>open</i></sub> = <i>k</i><sub><i>open</i></sub>\u0394<i>t</i> or <i>p</i><sub><i>close</i></sub> = <i>k</i><sub><i>close</i></sub>\u0394<i>t</i>, where"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ9", 
-                                        "label": "(9)", 
-                                        "mathml": "<math><mrow><msub><mi>k</mi><mrow><mi>o</mi><mi>p</mi><mi>e</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mrow><mi>L</mi><mi>G</mi></mrow></msub></mrow></mfrac><mfrac><mrow><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03b2</mi><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03b2</mi><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mfrac><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ10", 
-                                        "label": "(10)", 
-                                        "mathml": "<math><mrow><msub><mi>k</mi><mrow><mi>c</mi><mi>l</mi><mi>o</mi><mi>s</mi><mi>e</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mrow><mi>L</mi><mi>G</mi></mrow></msub></mrow></mfrac><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03b2</mi><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "<i>\u03c4</i><sub><i>LG</i></sub> = 500 ns is the timescale for attempting LG opening/closing and \u0394<i>G</i><sub><i>tot</i></sub> is the change in the free energy for opening the LG. \u0394<i>G</i><sub><i>tot</i></sub> depends on the presence of the nascent protein beads in the channel and is defined as"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ11", 
-                                        "label": "(11)", 
-                                        "mathml": "<math><mrow><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>M</mi></munderover><msub><mi>g</mi><mi>i</mi></msub><mo>+</mo><mtext>\u0394</mtext><mi>E</mi><mo>+</mo><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>e</mi><mi>m</mi><mi>p</mi><mi>t</mi><mi>y</mi></mrow></msub><msub><mi>\u03c7</mi><mrow><mi>e</mi><mi>m</mi><mi>p</mi><mi>t</mi><mi>y</mi></mrow></msub><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where <i>M</i> is the number of beads occupying the translocon, \u0394<i>E</i> is the difference between the total LG/protein LJ interactions in the closed state and total LG/protein LJ interactions in the open state, \u0394<i>G</i><sub><i>empty</i></sub> = 16<i>\u03f5</i> is the free energy cost for opening the LG when there is no nascent protein in the channel, and <i>\u03c7</i><sub><i>empty</i></sub> is the fraction of the channel that is empty for a given timestep. The first term promotes LG opening when hydrophobic beads enter the channel, the second term prevents the LG from closing when occluded by a nascent protein, and the third term promotes LG closing once the nascent protein exits the channel. Additional details on the development and numerical testing of the CG model are provided in <a href=\"#bib55\">Zhang and Miller (2012a)</a>."
-                                    }
-                                ]
+                                "type": "mathml", 
+                                "id": "equ8", 
+                                "label": "(8)", 
+                                "mathml": "<math><mrow><msub><mi>x</mi><mi>i</mi></msub><mrow><mo>(</mo><mrow><mi>t</mi><mo>+</mo><mtext>\u0394</mtext><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>\u2212</mo><mi>\u03b2</mi><mi>D</mi><mfrac><mrow><mo>\u2202</mo><mi>V</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"bold\">x</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mo>\u2202</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mfrac><mtext>\u0394</mtext><mi>t</mi><mo>+</mo><msqrt><mrow><mn>2</mn><mi>D</mi><mtext>\u0394</mtext><mi>t</mi></mrow></msqrt><msub><mi>\u03b7</mi><mi>i</mi></msub><mo>,</mo></mrow></math>"
                             }, 
                             {
-                                "type": "section", 
-                                "id": "s6-4", 
-                                "title": "Wall potential", 
-                                "content": [
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "A modification that appears in the current implementation of the CG model is a wall potential that prevents the nascent protein from returning to the translocon once it completes translation and diffuses a given distance away from the channel. The potential has the form"
-                                    }, 
-                                    {
-                                        "type": "mathml", 
-                                        "id": "equ12", 
-                                        "label": "(12)", 
-                                        "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>w</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mtable columnalign=\"left\"><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><mn>1</mn><mo>/</mo><mn>2</mn><msub><mi>K</mi><mrow><mi>w</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub><msup><mrow><mrow><mo>(</mo><mrow><mi>y</mi><mo>\u2212</mo><mn>10</mn><mi>\u03c3</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mtd><mtd columnalign=\"left\"><mrow><mi>y</mi><mo>&lt;</mo><mn>10</mn><mi>\u03c3</mi></mrow></mtd></mtr><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mn>0</mn></mtd><mtd columnalign=\"left\"><mrow><mi>y</mi><mo>\u2265</mo><mn>10</mn><mi>\u03c3</mi></mrow></mtd></mtr></mtable></mrow></mrow><mo>,</mo></mrow></math>"
-                                    }, 
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "where the spring constant, <i>K</i><sub><i>wall</i></sub>, is set to 10 <i>\u03f5</i>/<i>\u03c3</i><sup>2</sup>. The potential is only added to the system when all beads of the nascent protein have y-positions greater than 12<i>\u03c3</i>. Inclusion of the wall potential was found to avoid artifacts associated with the nascent protein interacting with the translocon long after exiting the channel. These artifacts were expected to be accentuated in the CG model due to its reduced dimensionality; nonetheless, the results are qualitatively unchanged if the wall potential is not included."
-                                    }
-                                ]
+                                "type": "paragraph", 
+                                "text": "where <i>x</i>(<i>t</i>)<sub><i>i</i></sub> is the position (in two dimensions) of bead <i>i</i> at time <i>t</i>, <i>V</i>(<b>x</b>(<i>t</i>)) is the potential energy of the system, <i>D</i> is the isotropic bead diffusion coefficient, \u0394<i>t</i> is the time step, and <i>\u03b7</i><sub><i>i</i></sub> is random noise drawn from a Gaussian distribution with zero mean and a variance of one. Only beads in the nascent protein are subject to Brownian dynamics. <i>D</i> is set to a value of 758.7 nm<sup>2</sup>/s and \u0394<i>t</i> is set to 100 ns."
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "LG dynamics are modeled by attempting to stochastically open or close the LG at every simulation timestep with a probability <i>p</i><sub><i>open</i></sub> = <i>k</i><sub><i>open</i></sub>\u0394<i>t</i> or <i>p</i><sub><i>close</i></sub> = <i>k</i><sub><i>close</i></sub>\u0394<i>t</i>, where"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ9", 
+                                "label": "(9)", 
+                                "mathml": "<math><mrow><msub><mi>k</mi><mrow><mi>o</mi><mi>p</mi><mi>e</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mrow><mi>L</mi><mi>G</mi></mrow></msub></mrow></mfrac><mfrac><mrow><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03b2</mi><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03b2</mi><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mfrac><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ10", 
+                                "label": "(10)", 
+                                "mathml": "<math><mrow><msub><mi>k</mi><mrow><mi>c</mi><mi>l</mi><mi>o</mi><mi>s</mi><mi>e</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>\u03c4</mi><mrow><mi>L</mi><mi>G</mi></mrow></msub></mrow></mfrac><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>\u2212</mo><mi>\u03b2</mi><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "<i>\u03c4</i><sub><i>LG</i></sub> = 500 ns is the timescale for attempting LG opening/closing and \u0394<i>G</i><sub><i>tot</i></sub> is the change in the free energy for opening the LG. \u0394<i>G</i><sub><i>tot</i></sub> depends on the presence of the nascent protein beads in the channel and is defined as"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ11", 
+                                "label": "(11)", 
+                                "mathml": "<math><mrow><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub><mo>=</mo><munderover><mstyle displaystyle=\"true\"><mo>\u2211</mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>M</mi></munderover><msub><mi>g</mi><mi>i</mi></msub><mo>+</mo><mtext>\u0394</mtext><mi>E</mi><mo>+</mo><mtext>\u0394</mtext><msub><mi>G</mi><mrow><mi>e</mi><mi>m</mi><mi>p</mi><mi>t</mi><mi>y</mi></mrow></msub><msub><mi>\u03c7</mi><mrow><mi>e</mi><mi>m</mi><mi>p</mi><mi>t</mi><mi>y</mi></mrow></msub><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where <i>M</i> is the number of beads occupying the translocon, \u0394<i>E</i> is the difference between the total LG/protein LJ interactions in the closed state and total LG/protein LJ interactions in the open state, \u0394<i>G</i><sub><i>empty</i></sub> = 16<i>\u03f5</i> is the free energy cost for opening the LG when there is no nascent protein in the channel, and <i>\u03c7</i><sub><i>empty</i></sub> is the fraction of the channel that is empty for a given timestep. The first term promotes LG opening when hydrophobic beads enter the channel, the second term prevents the LG from closing when occluded by a nascent protein, and the third term promotes LG closing once the nascent protein exits the channel. Additional details on the development and numerical testing of the CG model are provided in <a href=\"#bib55\">Zhang and Miller (2012a)</a>."
+                            }
+                        ]
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s6-4", 
+                        "title": "Wall potential", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "A modification that appears in the current implementation of the CG model is a wall potential that prevents the nascent protein from returning to the translocon once it completes translation and diffuses a given distance away from the channel. The potential has the form"
+                            }, 
+                            {
+                                "type": "mathml", 
+                                "id": "equ12", 
+                                "label": "(12)", 
+                                "mathml": "<math><mrow><msub><mi>U</mi><mrow><mi>w</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mtable columnalign=\"left\"><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mrow><mn>1</mn><mo>/</mo><mn>2</mn><msub><mi>K</mi><mrow><mi>w</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub><msup><mrow><mrow><mo>(</mo><mrow><mi>y</mi><mo>\u2212</mo><mn>10</mn><mi>\u03c3</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mtd><mtd columnalign=\"left\"><mrow><mi>y</mi><mo>&lt;</mo><mn>10</mn><mi>\u03c3</mi></mrow></mtd></mtr><mtr columnalign=\"left\"><mtd columnalign=\"left\"><mn>0</mn></mtd><mtd columnalign=\"left\"><mrow><mi>y</mi><mo>\u2265</mo><mn>10</mn><mi>\u03c3</mi></mrow></mtd></mtr></mtable></mrow></mrow><mo>,</mo></mrow></math>"
+                            }, 
+                            {
+                                "type": "paragraph", 
+                                "text": "where the spring constant, <i>K</i><sub><i>wall</i></sub>, is set to 10 <i>\u03f5</i>/<i>\u03c3</i><sup>2</sup>. The potential is only added to the system when all beads of the nascent protein have y-positions greater than 12<i>\u03c3</i>. Inclusion of the wall potential was found to avoid artifacts associated with the nascent protein interacting with the translocon long after exiting the channel. These artifacts were expected to be accentuated in the CG model due to its reduced dimensionality; nonetheless, the results are qualitatively unchanged if the wall potential is not included."
                             }
                         ]
                     }

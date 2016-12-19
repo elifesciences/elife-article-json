@@ -12,8 +12,8 @@
         "doi": "10.7554/eLife.10167", 
         "authorLine": "C Jeremy Craven", 
         "title": "Evaluation of predictions of the stochastic model of organelle production based on exact distributions", 
-        "published": "2016-01-14T00:00:00", 
-        "versionDate": "2016-01-14T00:00:00", 
+        "published": "2016-01-14T00:00:00Z", 
+        "versionDate": "2016-01-14T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e10167", 
         "pdf": "https://publishing-cdn.elifesciences.org/10167/elife-10167-v1.pdf", 
@@ -78,6 +78,9 @@
                 "competingInterests": "The author declares that no competing interests exist."
             }
         ], 
+        "funding": {
+            "statement": "No external funding was received for this work."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10167.007", 
@@ -85,7 +88,7 @@
                 "label": "Source code 1.", 
                 "title": "Code for calculating time courses via simulation.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-10167-code1-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-code1-v1.zip", 
                 "filename": "elife-10167-code1-v1.zip"
             }, 
             {
@@ -94,7 +97,7 @@
                 "label": "Source code 2.", 
                 "title": "Code for calculating distributions via the recurrence relation.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-10167-code2-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-code2-v1.zip", 
                 "filename": "elife-10167-code2-v1.zip"
             }
         ], 
@@ -108,8 +111,8 @@
         "doi": "10.7554/eLife.10167", 
         "authorLine": "C Jeremy Craven", 
         "title": "Evaluation of predictions of the stochastic model of organelle production based on exact distributions", 
-        "published": "2016-01-14T00:00:00", 
-        "versionDate": "2016-01-14T00:00:00", 
+        "published": "2016-01-14T00:00:00Z", 
+        "versionDate": "2016-01-14T00:00:00Z", 
         "volume": 5, 
         "elocationId": "e10167", 
         "pdf": "https://publishing-cdn.elifesciences.org/10167/elife-10167-v1.pdf", 
@@ -174,6 +177,9 @@
                 "competingInterests": "The author declares that no competing interests exist."
             }
         ], 
+        "funding": {
+            "statement": "No external funding was received for this work."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.10167.007", 
@@ -181,7 +187,7 @@
                 "label": "Source code 1.", 
                 "title": "Code for calculating time courses via simulation.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-10167-code1-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-code1-v1.zip", 
                 "filename": "elife-10167-code1-v1.zip"
             }, 
             {
@@ -190,7 +196,7 @@
                 "label": "Source code 2.", 
                 "title": "Code for calculating distributions via the recurrence relation.", 
                 "mediaType": "application/zip", 
-                "uri": "elife-10167-code2-v1.zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-code2-v1.zip", 
                 "filename": "elife-10167-code2-v1.zip"
             }
         ], 
@@ -307,7 +313,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10167-fig1-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-fig1-v1.tif", 
+                                "filename": "elife-10167-fig1-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -395,7 +402,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-10167-fig2-v1.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-fig2-v1.tif", 
+                                "filename": "elife-10167-fig2-v1.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -479,7 +487,8 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-10167-fig3-v1.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-fig3-v1.tif", 
+                                        "filename": "elife-10167-fig3-v1.tif"
                                     }, 
                                     {
                                         "type": "paragraph", 
@@ -1171,87 +1180,81 @@
                 "title": "Appendix 1: Detailed balance", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s15", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "Consider an ensemble of cells, where cells with for example <i>n\u00a0</i>=\u00a03 organelles can only arise from cells with <i>n\u00a0</i>=\u00a02 or <i>n\u00a0</i>=\u00a04 organelles."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "We can represent the kinetic processes thus"
-                            }, 
-                            {
-                                "type": "table", 
-                                "id": "tblu1", 
-                                "tables": [
-                                    "<table><tbody><tr><td></td><td align=\"center\"><i>R<sub>n=1</sub></i><sub>\u2192<i>n=0</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=2</sub></i><sub>\u2192<i>n=1</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=3</sub></i><sub>\u2192<i>n=2</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=4</sub></i><sub>\u2192<i>n=3</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=5</sub></i><sub>\u2192<i>n=4</i></sub></td><td align=\"center\"></td></tr><tr><td align=\"center\"><i>n\u00a0</i>=\u00a00</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a01</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a02</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a03</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a04</td><td align=\"center\">\u21c6</td><td align=\"center\">etc.</td></tr><tr><td></td><td align=\"center\"><i>R<sub>n=0</sub></i><sub>\u2192<i>n=1</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=1</sub></i><sub>\u2192<i>n=2</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=2</sub></i><sub>\u2192<i>n=3</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=3</sub></i><sub>\u2192<i>n=4</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=4</sub></i><sub>\u2192<i>n=5</i></sub></td><td align=\"center\"></td></tr></tbody></table>"
-                                ]
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Where for example <i>R</i><sub><i>n=2</i>\u2192<i>n=3</i></sub> is the rate of formation of cells with <i>n\u00a0=\u00a03</i> due to cells with <i>n\u00a0</i>=\u00a02 gaining one organelle, and <i>R</i><sub><i>n=3</i>\u2192<i>n=2</i></sub> is the rate of loss of cells with <i>n\u00a0=\u00a03</i> due to such cells losing one organelle."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "If the system is in equilibrium (<i>i.e.</i> the values of <i>f</i><sub>0</sub>, <i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, etc. are not changing) then a form of the principle of detailed balance applies. The principle of detailed balance asserts that for instance"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ6", 
-                                "label": "(6)", 
-                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>3</mn></mrow></msub></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "To show this, consider first the state with <i>n\u00a0</i>=\u00a00. At equilibrium the rate of formation must equal the rate of loss,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ7", 
-                                "label": "(7)", 
-                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Now considering the state with <i>n\u00a0</i>=\u00a01, the equivalent relation contains more terms"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ8", 
-                                "label": "(8)", 
-                                "mathml": "<math><mo></mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>0</mn></mrow></msub> <mo></mo><mo>+</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "But, crucially, by substituting in from <a href=\"#equ7\">Equation 7</a> this simplifies to"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ9", 
-                                "label": "(9)", 
-                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "And by proceeding along the chain the general relationship emerges that"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ10", 
-                                "label": "(10)", 
-                                "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2192</mo><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mi>i</mi></mrow></msub></mrow></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "For <i>i</i>\u00a0= 1, 2, 3, etc."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "In other words at equilibrium every individual reversible process must have balancing rates. The full \u201cprinciple of detailed balance\u201d for molecular systems contains some greater subtleties related to thermodynamics, that allow the principle to be applied to more complex networks."
-                            }
+                        "type": "paragraph", 
+                        "text": "Consider an ensemble of cells, where cells with for example <i>n\u00a0</i>=\u00a03 organelles can only arise from cells with <i>n\u00a0</i>=\u00a02 or <i>n\u00a0</i>=\u00a04 organelles."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We can represent the kinetic processes thus"
+                    }, 
+                    {
+                        "type": "table", 
+                        "id": "tblu1", 
+                        "tables": [
+                            "<table><tbody><tr><td></td><td align=\"center\"><i>R<sub>n=1</sub></i><sub>\u2192<i>n=0</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=2</sub></i><sub>\u2192<i>n=1</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=3</sub></i><sub>\u2192<i>n=2</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=4</sub></i><sub>\u2192<i>n=3</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=5</sub></i><sub>\u2192<i>n=4</i></sub></td><td align=\"center\"></td></tr><tr><td align=\"center\"><i>n\u00a0</i>=\u00a00</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a01</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a02</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a03</td><td align=\"center\">\u21c6</td><td align=\"center\"><i>n\u00a0</i>=\u00a04</td><td align=\"center\">\u21c6</td><td align=\"center\">etc.</td></tr><tr><td></td><td align=\"center\"><i>R<sub>n=0</sub></i><sub>\u2192<i>n=1</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=1</sub></i><sub>\u2192<i>n=2</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=2</sub></i><sub>\u2192<i>n=3</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=3</sub></i><sub>\u2192<i>n=4</i></sub></td><td align=\"center\"></td><td align=\"center\"><i>R<sub>n=4</sub></i><sub>\u2192<i>n=5</i></sub></td><td align=\"center\"></td></tr></tbody></table>"
                         ]
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Where for example <i>R</i><sub><i>n=2</i>\u2192<i>n=3</i></sub> is the rate of formation of cells with <i>n\u00a0=\u00a03</i> due to cells with <i>n\u00a0</i>=\u00a02 gaining one organelle, and <i>R</i><sub><i>n=3</i>\u2192<i>n=2</i></sub> is the rate of loss of cells with <i>n\u00a0=\u00a03</i> due to such cells losing one organelle."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "If the system is in equilibrium (<i>i.e.</i> the values of <i>f</i><sub>0</sub>, <i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, etc. are not changing) then a form of the principle of detailed balance applies. The principle of detailed balance asserts that for instance"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ6", 
+                        "label": "(6)", 
+                        "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>3</mn></mrow></msub></mrow></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To show this, consider first the state with <i>n\u00a0</i>=\u00a00. At equilibrium the rate of formation must equal the rate of loss,"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ7", 
+                        "label": "(7)", 
+                        "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Now considering the state with <i>n\u00a0</i>=\u00a01, the equivalent relation contains more terms"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ8", 
+                        "label": "(8)", 
+                        "mathml": "<math><mo></mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>0</mn></mrow></msub> <mo></mo><mo>+</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "But, crucially, by substituting in from <a href=\"#equ7\">Equation 7</a> this simplifies to"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ9", 
+                        "label": "(9)", 
+                        "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mn>2</mn></mrow></msub></mrow></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "And by proceeding along the chain the general relationship emerges that"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ10", 
+                        "label": "(10)", 
+                        "mathml": "<math><mrow><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2192</mo><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><msub><mi>R</mi><mrow><mi>n</mi><mo>=</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>\u2192</mo><mi>n</mi><mo>=</mo><mi>i</mi></mrow></msub></mrow></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "For <i>i</i>\u00a0= 1, 2, 3, etc."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In other words at equilibrium every individual reversible process must have balancing rates. The full \u201cprinciple of detailed balance\u201d for molecular systems contains some greater subtleties related to thermodynamics, that allow the principle to be applied to more complex networks."
                     }
                 ]
             }, 
@@ -1260,96 +1263,90 @@
                 "title": "Appendix 2: Recurrence example", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s16", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "The recurrence relation can be applied in an algebraic form as in the analysis of the various models in the paper, but can also be used to rapidly calculate numerical distributions directly."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "As an example, consider the model {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a02.0, <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.333; \u03b3\u00a0=\u00a01.0, <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00.0333}"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<a href=\"#equ2\">Equation 2</a> becomes"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ11", 
-                                "label": "(11)", 
-                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.333</mn><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0.0333</mn><mi>n</mi><mo>)</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "We first calculate provisional (un-normalised) values for <i>f</i><sub>0</sub>, <i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, etc."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "First set <i>f</i><sub>0\u00a0</sub>=\u00a01. This is an arbitrary choice and the final results do not depend upon it."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a00,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ12", 
-                                "label": "(12)", 
-                                "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0</mn><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0</mn><mo>)</mo></mrow><mfenced><mn>1</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>1.0</mn><mo>=</mo><mn>2.0</mn></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Then using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a01, and the above value for <i>f<sub>1</sub></i>,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ13", 
-                                "label": "(13)", 
-                                "mathml": "<math><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.333</mn><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0.0333</mn><mo>)</mo></mrow><mfenced><mn>2</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>2.0</mn><mo>=</mo><mn>2.26</mn></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "And again using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a02, and the above value for <i>f<sub>2</sub></i>,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ14", 
-                                "label": "(14)", 
-                                "mathml": "<math><msub><mi>f</mi><mn>3</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.666</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>0666</mn><mo>)</mo><mfenced><mn>3</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>2.26</mn><mo>=</mo><mn>1.88</mn></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "This procedure can be repeated to calculate any number of terms."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "For a model with a limiting distribution then for large <i>n</i> the <i>f<sub>n</sub></i> will become very small, for instance here <i>f</i><sub><i>20</i>\u00a0</sub>=\u00a00.00000008, and so it is not necessary to calculate more terms."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The calculated terms are then summed to give a normalising factor (<i>NF</i>),"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ15", 
-                                "label": "(15)", 
-                                "mathml": "<math><mi>N</mi><mi>F</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1.0</mn><mo>+</mo><mn>2.0</mn><mo>+</mo><mn>2.26</mn><mo>+</mo><mn>1.88</mn><mo>+</mo><mo>\u22ef</mo><mo>+</mo><mn>0.00000008</mn><mo>=</mo><mn>9.89</mn></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The provisional values of <i>f<sub>0</sub>, f<sub>1</sub>, f<sub>2</sub></i>, etc. are divided by <i>NF</i>, which ensures that the fractional populations sum to one, giving"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<i>f</i><sub>0\u00a0</sub>=\u00a00.10, <i>f</i><sub>1</sub>\u00a0=\u00a00.20, <i>f</i><sub>2\u00a0</sub>=\u00a00.23, <i>f</i><sub>3\u00a0</sub>=\u00a00.19,\u00a0<i>f</i><sub>4\u00a0</sub>=\u00a00.13, <i>f</i><sub>5\u00a0</sub>=\u00a00.08, <i>f</i><sub>6\u00a0</sub>=\u00a00.04, etc."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Ideally it should be checked with a longer sequence that, to sufficient precision, the results are independent of the number of terms calculated."
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "The recurrence relation can be applied in an algebraic form as in the analysis of the various models in the paper, but can also be used to rapidly calculate numerical distributions directly."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "As an example, consider the model {<i>k</i><sub><i>de novo</i>\u00a0</sub>=\u00a02.0, <i>k</i><sub><i>fission</i>\u00a0</sub>=\u00a00.333; \u03b3\u00a0=\u00a01.0, <i>k</i><sub><i>fusion</i>\u00a0</sub>=\u00a00.0333}"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "<a href=\"#equ2\">Equation 2</a> becomes"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ11", 
+                        "label": "(11)", 
+                        "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.333</mn><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0.0333</mn><mi>n</mi><mo>)</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We first calculate provisional (un-normalised) values for <i>f</i><sub>0</sub>, <i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, etc."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "First set <i>f</i><sub>0\u00a0</sub>=\u00a01. This is an arbitrary choice and the final results do not depend upon it."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a00,"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ12", 
+                        "label": "(12)", 
+                        "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0</mn><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0</mn><mo>)</mo></mrow><mfenced><mn>1</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>1.0</mn><mo>=</mo><mn>2.0</mn></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Then using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a01, and the above value for <i>f<sub>1</sub></i>,"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ13", 
+                        "label": "(13)", 
+                        "mathml": "<math><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.333</mn><mo>)</mo></mrow><mrow><mrow><mo>(</mo><mn>1.0</mn><mo>+</mo><mn>0.0333</mn><mo>)</mo></mrow><mfenced><mn>2</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>2.0</mn><mo>=</mo><mn>2.26</mn></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "And again using <a href=\"#equ11\">Equation 11</a> with <i>n\u00a0</i>=\u00a02, and the above value for <i>f<sub>2</sub></i>,"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ14", 
+                        "label": "(14)", 
+                        "mathml": "<math><msub><mi>f</mi><mn>3</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mn>2.0</mn><mo>+</mo><mn>0.666</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>0666</mn><mo>)</mo><mfenced><mn>3</mn></mfenced></mrow></mfrac><mo>\u00d7</mo><mn>2.26</mn><mo>=</mo><mn>1.88</mn></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "This procedure can be repeated to calculate any number of terms."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "For a model with a limiting distribution then for large <i>n</i> the <i>f<sub>n</sub></i> will become very small, for instance here <i>f</i><sub><i>20</i>\u00a0</sub>=\u00a00.00000008, and so it is not necessary to calculate more terms."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The calculated terms are then summed to give a normalising factor (<i>NF</i>),"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ15", 
+                        "label": "(15)", 
+                        "mathml": "<math><mi>N</mi><mi>F</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1.0</mn><mo>+</mo><mn>2.0</mn><mo>+</mo><mn>2.26</mn><mo>+</mo><mn>1.88</mn><mo>+</mo><mo>\u22ef</mo><mo>+</mo><mn>0.00000008</mn><mo>=</mo><mn>9.89</mn></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The provisional values of <i>f<sub>0</sub>, f<sub>1</sub>, f<sub>2</sub></i>, etc. are divided by <i>NF</i>, which ensures that the fractional populations sum to one, giving"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "<i>f</i><sub>0\u00a0</sub>=\u00a00.10, <i>f</i><sub>1</sub>\u00a0=\u00a00.20, <i>f</i><sub>2\u00a0</sub>=\u00a00.23, <i>f</i><sub>3\u00a0</sub>=\u00a00.19,\u00a0<i>f</i><sub>4\u00a0</sub>=\u00a00.13, <i>f</i><sub>5\u00a0</sub>=\u00a00.08, <i>f</i><sub>6\u00a0</sub>=\u00a00.04, etc."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Ideally it should be checked with a longer sequence that, to sufficient precision, the results are independent of the number of terms calculated."
                     }
                 ]
             }, 
@@ -1358,66 +1355,60 @@
                 "title": "Appendix 3: Application of recurrence relation to {de novo; decay} model", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s17", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "In the case of the Golgi, the model proposed in the SMOP analysis is a {de novo; decay} model. This model is also often termed an immigration death process. For this model <a href=\"#equ2\">Equation 2</a> becomes"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ16", 
-                                "label": "(16)", 
-                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "So we have"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ17", 
-                                "label": "(17)", 
-                                "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ18", 
-                                "label": "(18)", 
-                                "mathml": "<math><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mn>2</mn></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ19", 
-                                "label": "(19)", 
-                                "mathml": "<math><msub><mi>f</mi><mn>3</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mo>\u00a0</mo><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mn>3</mn></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "etc., and so in general"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ20", 
-                                "label": "(20)", 
-                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mi>n</mi></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "To ensure that the sum of all <i>f<sub>n</sub> </i>equates to one, it is simple to show from the power law definition of the exponential function that <math id=\"inf7\"><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mtext>exp</mtext><mo>(</mo><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>/</mo><mi>\u03b3</mi><mo>)</mo></math>, and hence"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ21", 
-                                "label": "(21)", 
-                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mtext>exp</mtext><mo>(</mo><mo>\u2212</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac><mo>)</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mi>n</mi></msup></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Thus the limiting distribution is a Poisson distribution as stated without proof in the SMOP paper. The mean is given by\u00a0<math id=\"inf8\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math>\u00a0=<i>\u00a0k<sub>de\u00a0novo</sub></i>/<i>\u03b3</i>."
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "In the case of the Golgi, the model proposed in the SMOP analysis is a {de novo; decay} model. This model is also often termed an immigration death process. For this model <a href=\"#equ2\">Equation 2</a> becomes"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ16", 
+                        "label": "(16)", 
+                        "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "So we have"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ17", 
+                        "label": "(17)", 
+                        "mathml": "<math><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ18", 
+                        "label": "(18)", 
+                        "mathml": "<math><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mi>\u03b3</mi><mo></mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mn>1</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mn>2</mn></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ19", 
+                        "label": "(19)", 
+                        "mathml": "<math><msub><mi>f</mi><mn>3</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mo>\u00a0</mo><msub><mi>f</mi><mn>2</mn></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mn>3</mn></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "etc., and so in general"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ20", 
+                        "label": "(20)", 
+                        "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mi>n</mi></msup><mo></mo><msub><mi>f</mi><mn>0</mn></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "To ensure that the sum of all <i>f<sub>n</sub> </i>equates to one, it is simple to show from the power law definition of the exponential function that <math id=\"inf7\"><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mtext>exp</mtext><mo>(</mo><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>/</mo><mi>\u03b3</mi><mo>)</mo></math>, and hence"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ21", 
+                        "label": "(21)", 
+                        "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mtext>exp</mtext><mo>(</mo><mo>\u2212</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac><mo>)</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mfenced><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>\u03b3</mi></mfrac></mfenced><mi>n</mi></msup></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Thus the limiting distribution is a Poisson distribution as stated without proof in the SMOP paper. The mean is given by\u00a0<math id=\"inf8\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math>\u00a0=<i>\u00a0k<sub>de\u00a0novo</sub></i>/<i>\u03b3</i>."
                     }
                 ]
             }, 
@@ -1426,73 +1417,68 @@
                 "title": "Appendix 4: Application of recurrence relation to {fission; fusion} model", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s18", 
-                        "content": [
+                        "type": "paragraph", 
+                        "text": "In the case of vacuoles, the model proposed in the SMOP analysis is a {fission, fusion} model. For this model <a href=\"#equ2\">Equation 2</a> becomes"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ22", 
+                        "label": "(22)", 
+                        "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "<a href=\"#equ16 equ22\">Equations 16,22</a> are identical except for the replacement of the ratio <i>k<sub>de novo</sub></i>/<i>\u03b3</i> by <i>k<sub>fission</sub></i>/<i>k<sub>fusion</sub></i> and therefore <a href=\"#equ22\">Equation 22</a> yields a form of Poisson distribution. It is not a standard Poisson distribution since, as noted in the SMOP paper, such a model cannot reach a state with <i>n\u00a0=</i>\u00a00 from a state with <i>n\u00a0</i>&gt;\u00a00 since the fusion probability is zero when <i>n\u00a0=\u00a0</i>1. This means that <i>f</i><sub>0\u00a0</sub>=\u00a00. The rest of the distribution has the same form as for a regular Poisson distribution (<a href=\"#equ23\">Equation 23</a>), except for a slightly different overall normalising factor. This distribution is known as a <i>truncated</i> (or sometimes <i>zero-truncated</i>) Poisson distribution (<a href=\"#equ24\">Equation 24</a>). We have checked this analysis by direct calculation and simulation using the programs in <a href=\"#SD1-data\">Source code 1</a>,<a href=\"#SD2-data\">2</a>."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The relevant distributions can be defined as (<a href=\"#fig4\">Appendix 4 Figure 1</a>)"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Poisson:"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ23", 
+                        "label": "(23)", 
+                        "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Truncated Poisson:"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ24", 
+                        "label": "(24)", 
+                        "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>\u2212</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mspace linebreak=\"newline\"></mspace><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "\u00a0Shifted Poisson:"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ25", 
+                        "label": "(25)", 
+                        "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mi>exp</mi><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo><mfrac><mn>1</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mspace linebreak=\"newline\"></mspace><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn></math>"
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.10167.009", 
+                        "id": "fig4", 
+                        "label": "Appendix 4 Figure 1.", 
+                        "title": "Comparison of Poisson (black filled circles), shifted Poisson (red filled squares), and truncated Poisson (green open circles) distributions calculated for \u03bb = 2.5.", 
+                        "caption": [
                             {
                                 "type": "paragraph", 
-                                "text": "In the case of vacuoles, the model proposed in the SMOP analysis is a {fission, fusion} model. For this model <a href=\"#equ2\">Equation 2</a> becomes"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ22", 
-                                "label": "(22)", 
-                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo></mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "<a href=\"#equ16 equ22\">Equations 16,22</a> are identical except for the replacement of the ratio <i>k<sub>de novo</sub></i>/<i>\u03b3</i> by <i>k<sub>fission</sub></i>/<i>k<sub>fusion</sub></i> and therefore <a href=\"#equ22\">Equation 22</a> yields a form of Poisson distribution. It is not a standard Poisson distribution since, as noted in the SMOP paper, such a model cannot reach a state with <i>n\u00a0=</i>\u00a00 from a state with <i>n\u00a0</i>&gt;\u00a00 since the fusion probability is zero when <i>n\u00a0=\u00a0</i>1. This means that <i>f</i><sub>0\u00a0</sub>=\u00a00. The rest of the distribution has the same form as for a regular Poisson distribution (<a href=\"#equ23\">Equation 23</a>), except for a slightly different overall normalising factor. This distribution is known as a <i>truncated</i> (or sometimes <i>zero-truncated</i>) Poisson distribution (<a href=\"#equ24\">Equation 24</a>). We have checked this analysis by direct calculation and simulation using the programs in <a href=\"#SD1-data\">Source code 1</a>,<a href=\"#SD2-data\">2</a>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The relevant distributions can be defined as (<a href=\"#fig4\">Appendix 4 Figure 1</a>)"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Poisson:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ23", 
-                                "label": "(23)", 
-                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Truncated Poisson:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ24", 
-                                "label": "(24)", 
-                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>\u2212</mo><mi>exp</mi><mrow><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo></mrow></mrow></mfrac><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mspace linebreak=\"newline\"></mspace><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "\u00a0Shifted Poisson:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ25", 
-                                "label": "(25)", 
-                                "mathml": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mi>exp</mi><mo>(</mo><mo>\u2212</mo><mi>\u03bb</mi><mo>)</mo><mfrac><mn>1</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>!</mo></mrow></mfrac><msup><mrow><mo>(</mo><mi>\u03bb</mi><mo>)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>\u2026</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mspace linebreak=\"newline\"></mspace><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>\u00a0</mo><mo>,</mo><mo>\u00a0</mo><mi>n</mi><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>0</mn></math>"
-                            }, 
-                            {
-                                "type": "image", 
-                                "doi": "10.7554/eLife.10167.009", 
-                                "id": "fig4", 
-                                "label": "Appendix 4 Figure 1.", 
-                                "title": "Comparison of Poisson (black filled circles), shifted Poisson (red filled squares), and truncated Poisson (green open circles) distributions calculated for \u03bb = 2.5.", 
-                                "caption": [
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "The values in a shifted Poisson distribution are the same as in the corresponding Poisson distribution, however the whole distribution is shifted to the right by one unit in <i>n</i>. The value at <i>n\u00a0=</i>\u00a00 is set to zero. In a truncated Poisson the value at <i>n\u00a0=\u00a0</i>0 is set to zero, and the rest of the distribution has the same functional form as the corresponding Poisson distribution. Due to the loss of the <i>n\u00a0=\u00a0</i>0 point then normalisation causes the remaining values to be slightly higher in the truncated Poisson distribution than in the corresponding Poisson distribution."
-                                    }
-                                ], 
-                                "alt": "", 
-                                "uri": "elife-10167-app4-fig1-v1.tif"
+                                "text": "The values in a shifted Poisson distribution are the same as in the corresponding Poisson distribution, however the whole distribution is shifted to the right by one unit in <i>n</i>. The value at <i>n\u00a0=</i>\u00a00 is set to zero. In a truncated Poisson the value at <i>n\u00a0=\u00a0</i>0 is set to zero, and the rest of the distribution has the same functional form as the corresponding Poisson distribution. Due to the loss of the <i>n\u00a0=\u00a0</i>0 point then normalisation causes the remaining values to be slightly higher in the truncated Poisson distribution than in the corresponding Poisson distribution."
                             }
-                        ]
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/10167/elife-10167-app4-fig1-v1.tif", 
+                        "filename": "elife-10167-app4-fig1-v1.tif"
                     }
                 ]
             }, 
@@ -1501,126 +1487,120 @@
                 "title": "Appendix 5: Application of recurrence relation to {de novo, fission; decay} model", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s19", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "In the case of peroxisomes, the model proposed in the SMOP analysis is a {de novo, fission; decay} model. For this model <a href=\"#equ2\">Equation 2</a> becomes"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ26", 
-                                "label": "(26)", 
-                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>\u03b3</mi><mo>)</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "This has the same form as the recurrence relation for the negative binomial distribution. The negative binomial distribution is often expressed as the distribution for the number of successes in a set of trials (probability of success in each trial = <i>p</i>) before a certain number, <i>r</i>, of failures occurs, however the distribution arises in a wide variety of situations (<a href=\"#bib7\">Kotz et al, 1989</a>; <a href=\"#bib15\">Taylor and Karlin, 1998</a>; <a href=\"#bib14\">Scheaffer and Young, 2010</a>; <a href=\"#bib3\">Grimmett and Stirzaker, 2001</a>) and in general there is no restriction that <i>r</i> be an integer. The recurrence relation for the negative binomial distribution is,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ27", 
-                                "label": "(27)", 
-                                "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mi>p</mi><mi>r</mi><mo>+</mo><mi>p</mi><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "and the negative binomial distribution has mean <math id=\"inf9\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>p</mi><mi>r</mi></mrow><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>p</mi><mo>)</mo></mrow></mfrac></math> and variance <math id=\"inf10\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>p</mi><mi>r</mi></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>p</mi><mo>)</mo></mrow><mn>2</mn></msup></mfrac></math>."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Comparing <a href=\"#equ26 equ27\">Equations 26,27</a> we can equate <math id=\"inf11\"><mrow><mi>p</mi><mo>=</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>/</mo><mi>\u03b3</mi></mrow></math> and <math id=\"inf12\"><mi>r</mi><mo>=</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>/</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></math>\u00a0"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Hence"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ28", 
-                                "label": "(28)", 
-                                "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mo>(</mo><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow></mfrac></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "and"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ29", 
-                                "label": "(29)", 
-                                "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mi>\u03b3</mi><mrow><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow></mfrac></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Combining <a href=\"#equ28 equ29\">Equations 28,29</a> gives an alternative form for the Fano factor,"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ30", 
-                                "label": "(30)", 
-                                "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>)</mo></mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub></mfrac></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "We also note that it is possible to derive an expression for the variance (and Fano factor) for the full {de novo, fission; decay, fusion} model as follows."
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "The total net rate of formation of organelles across the whole sample of cells, <i>R<sub>tot</sub></i>, is given by"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ31", 
-                                "label": "(31)", 
-                                "mathml": "<math><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>N</mi><mo>+</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>i</mi><mo>\u2212</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><mi>\u03b3</mi><mi>i</mi><mo>\u2212</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>i</mi><mrow><mo>(</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow></math>"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ32", 
-                                "label": "(32)", 
-                                "mathml": "<math><mo>=</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>N</mi><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mi>N</mi><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u2212</mo><mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>N</mi><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "At equilibrium <i>R<sub>tot</sub></i> is zero, hence we have"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ33", 
-                                "label": "(33)", 
-                                "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Making use of the relationship <math id=\"inf13\"><mfenced close=\"&gt;\" open=\"&lt;\"><mrow><mo>(</mo><mi>n</mi><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><msup><mo>)</mo><mn>2</mn></msup></mrow></mfenced><mo>=</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mn>2</mn></msup><mo>,</mo></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "we have"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ34", 
-                                "label": "(34)", 
-                                "mathml": "<math><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>\u2212</mo><msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mn>2</mn></msup></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "And thus we have the <i>exact</i> result that"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ35", 
-                                "label": "(35)", 
-                                "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow></mfrac><mo>+</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>\u2212</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "This expression can only be applied when <i>k</i><sub>fusion</sub>\u00a0\u2260\u00a00, and it is not evident that it provides significant insight, however it is useful for cross checking other algebraic and computational results. We have been unable to find a useful closed expression for &lt;<i>n</i>&gt;."
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "In the case of peroxisomes, the model proposed in the SMOP analysis is a {de novo, fission; decay} model. For this model <a href=\"#equ2\">Equation 2</a> becomes"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ26", 
+                        "label": "(26)", 
+                        "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>\u03b3</mi><mo>)</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "This has the same form as the recurrence relation for the negative binomial distribution. The negative binomial distribution is often expressed as the distribution for the number of successes in a set of trials (probability of success in each trial = <i>p</i>) before a certain number, <i>r</i>, of failures occurs, however the distribution arises in a wide variety of situations (<a href=\"#bib7\">Kotz et al, 1989</a>; <a href=\"#bib15\">Taylor and Karlin, 1998</a>; <a href=\"#bib14\">Scheaffer and Young, 2010</a>; <a href=\"#bib3\">Grimmett and Stirzaker, 2001</a>) and in general there is no restriction that <i>r</i> be an integer. The recurrence relation for the negative binomial distribution is,"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ27", 
+                        "label": "(27)", 
+                        "mathml": "<math><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mo>(</mo><mi>p</mi><mi>r</mi><mo>+</mo><mi>p</mi><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac><mo></mo><msub><mi>f</mi><mi>n</mi></msub></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "and the negative binomial distribution has mean <math id=\"inf9\"><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>p</mi><mi>r</mi></mrow><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>p</mi><mo>)</mo></mrow></mfrac></math> and variance <math id=\"inf10\"><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><mi>p</mi><mi>r</mi></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>p</mi><mo>)</mo></mrow><mn>2</mn></msup></mfrac></math>."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Comparing <a href=\"#equ26 equ27\">Equations 26,27</a> we can equate <math id=\"inf11\"><mrow><mi>p</mi><mo>=</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>/</mo><mi>\u03b3</mi></mrow></math> and <math id=\"inf12\"><mi>r</mi><mo>=</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>/</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></math>\u00a0"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Hence"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ28", 
+                        "label": "(28)", 
+                        "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><mo>(</mo><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow></mfrac></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "and"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ29", 
+                        "label": "(29)", 
+                        "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mi>\u03b3</mi><mrow><mi>\u03b3</mi><mo>\u2212</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow></mfrac></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Combining <a href=\"#equ28 equ29\">Equations 28,29</a> gives an alternative form for the Fano factor,"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ30", 
+                        "label": "(30)", 
+                        "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>)</mo></mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mo></mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub></mfrac></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "We also note that it is possible to derive an expression for the variance (and Fano factor) for the full {de novo, fission; decay, fusion} model as follows."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The total net rate of formation of organelles across the whole sample of cells, <i>R<sub>tot</sub></i>, is given by"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ31", 
+                        "label": "(31)", 
+                        "mathml": "<math><msub><mi>R</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi></mrow></msub><mo>\u00a0</mo><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>N</mi><mo>+</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>i</mi><mo>\u2212</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><mi>\u03b3</mi><mi>i</mi><mo>\u2212</mo><munder><mo>\u2211</mo><mi>i</mi></munder><msub><mi>f</mi><mi>i</mi></msub><mi>N</mi><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>i</mi><mrow><mo>(</mo><mi>i</mi><mo>\u2212</mo><mn>1</mn><mo>)</mo></mrow></math>"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ32", 
+                        "label": "(32)", 
+                        "mathml": "<math><mo>=</mo><mo>\u00a0</mo><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mi>N</mi><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mi>N</mi><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mo>\u2212</mo><mo></mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mi>N</mi><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "At equilibrium <i>R<sub>tot</sub></i> is zero, hence we have"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ33", 
+                        "label": "(33)", 
+                        "mathml": "<math><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Making use of the relationship <math id=\"inf13\"><mfenced close=\"&gt;\" open=\"&lt;\"><mrow><mo>(</mo><mi>n</mi><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><msup><mo>)</mo><mn>2</mn></msup></mrow></mfenced><mo>=</mo><mfenced close=\"&gt;\" open=\"&lt;\"><msup><mi>n</mi><mn>2</mn></msup></mfenced><mo>\u00a0</mo><mo>-</mo><mo>\u00a0</mo><msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mn>2</mn></msup><mo>,</mo></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "we have"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ34", 
+                        "label": "(34)", 
+                        "mathml": "<math><msup><mi>\u03c3</mi><mn>2</mn></msup><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><mrow><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mo>+</mo><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>\u2212</mo><msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced><mn>2</mn></msup></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "And thus we have the <i>exact</i> result that"
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ35", 
+                        "label": "(35)", 
+                        "mathml": "<math><mfrac><msup><mi>\u03c3</mi><mn>2</mn></msup><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mfrac><mo>\u00a0</mo><mo>=</mo><mo>\u00a0</mo><mfrac><msub><mi>k</mi><mrow><mi>d</mi><mi>e</mi><mo>\u00a0</mo><mi>n</mi><mi>o</mi><mi>v</mi><mi>o</mi></mrow></msub><mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></mrow></mfrac><mo>+</mo><mfrac><mrow><mo>(</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>i</mi><mi>s</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>\u2212</mo><mi>\u03b3</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>)</mo></mrow><msub><mi>k</mi><mrow><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>\u2212</mo><mfenced close=\"&gt;\" open=\"&lt;\"><mi>n</mi></mfenced></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "This expression can only be applied when <i>k</i><sub>fusion</sub>\u00a0\u2260\u00a00, and it is not evident that it provides significant insight, however it is useful for cross checking other algebraic and computational results. We have been unable to find a useful closed expression for &lt;<i>n</i>&gt;."
                     }
                 ]
             }

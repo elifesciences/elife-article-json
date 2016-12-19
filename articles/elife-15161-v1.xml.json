@@ -6277,59 +6277,18 @@
                 "title": "Appendix 1", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s38", 
-                        "title": "Comments", 
-                        "content": [
-                            {
-                                "type": "list", 
-                                "prefix": "number", 
-                                "items": [
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Walz, Lorenzin <i>et al.</i> show that Dox-induced MYC is predominantly localized in U2OS cell nuclei ([<a href=\"#bib47\">Walz et al., 2014</a>], extended data Figure 1B). We therefore consider only the nuclear volume of an U2OS cell. The nucleus dimensions were quantified as approximately 16 \u00b5m in width, 23 \u00b5m in length, and 4 \u00b5m in height (<a href=\"#bib22\">Koch et al., 2014</a>). We assumed an ellipsoid to calculate the volume of an U2OS cell nucleus."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "<i>Genome<sub>total</sub></i> is the number of considered base pairs estimated for the female hypertriploid karyotype of U2OS cells. Total base pairs are counted in the haploid unmasked human reference genome hg19 without taking the Y chromosome into account and excluding 'N' and 'chrN_random-sequences'. The number is multiplied\u00a0by 2 to account for diploid cells and subsequently multiplied by a factor of 1.7 (<a href=\"#bib3\">Ben-Shoshan et al., 2014</a>) to account for the hypertriploid karyotype of U2OS cells (<a href=\"http://www.lgcstandards-atcc.org/products/all/HTB-96.aspx#characteristics\">http://www.lgcstandards-atcc.org/products/all/HTB-96.aspx#characteristics</a>) (<a href=\"#bib20\">Janssen and Medema, 2013</a>)."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "<i>Ebox<sub>total</sub></i> is calculated by counting CACGTG sequences in the human reference genome hg19 without taking the Y chromosome into account and excluding 'N' and 'chrN_random-sequences'. The number is multiplied by 2 and 1.7 to account for the karyotype of U2OS cells."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "The total number of possible hexameric sequences (<i>NNNNNN<sub>total</sub></i>) in the genome of U2OS cells is estimated by subtracting <i>Ebox<sub>total</sub></i> from <i>Genome<sub>total</sub></i>."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "To convert the published values of dissociation constants given in [nM] and [\u00b5M] into [molecules] the average volume of a single U2OS cell nucleus listed in <a href=\"#A1-tbl1\">Appendix 1\u2014table 1</a> is used."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "To obtain <i>Ebox<sub>total</sub>, NNNNNN<sub>total</sub>, EboxWDR5<sub>total</sub></i>, and <i>NNNNNNWDR5<sub>total</sub></i>, we first downloaded processed data of a WDR5-ChIPseq experiment (<a href=\"#bib44\">Thomas et al., 2015</a>) from Gene Expression Omnibus database (GSE60897), which comprised 17,171 WDR5 peaks. Next, we identified 27,853 unique RefSeq-TSS (USCS, hg19.refGene), which enumerated to 22,346 promoters assuming \u20131.5\u00a0kb to +0.5kb as promoter region and joining overlapping promoter regions. 3,408 of these 22,346 promoters contain WDR5 as well as a CACGTG sequence. This number (3,408) is multiplied by 2 and 1.7 to account for the karyotype of U2OS cells yielding <i>EboxWDR5<sub>total</sub>. Ebox<sub>total</sub></i> is given by subtracting <i>EboxWDR5<sub>total</sub></i> from <i>Ebox<sub>total</sub></i> listed in <a href=\"#A1-tbl2\">Appendix 1\u2014table 2</a>. <i>NNNNNNWDR5<sub>total</sub></i> is calculated by subtracting <i>EboxWDR5<sub>total</sub></i> from all called WDR5 peaks (i.e., 17,171 WDR5 peaks multiplied by 2 and 1.7 to account for U2OS cell karyotype). <i>NNNNNN<sub>total</sub></i> results from subtracting the sum of\u00a0<i>Ebox<sub>total</sub>, EboxWDR5<sub>total</sub></i>, and <i>NNNNNNWDR5<sub>total</sub></i> from <i>Genome<sub>total</sub></i>."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "The dissociation constant of MYC and EboxWDR5 is estimated by multiplying the individual dissociation constants of MYC and WDR5 (9.3\u00b710<sup>\u20136</sup> M; [<a href=\"#bib44\">Thomas et al., 2015</a>) as well as MYC and E-boxes (0.1\u00b710<sup>\u20139</sup> M; [<a href=\"#bib15\">Guo et al., 2014</a>]). This approach is based on our presumption that under constant pressure the standard change of Gibbs free energy at equilibrium of reversible binding of MYC to EboxWDR5 is equal to the sum of the standard change of Gibbs free energies at equilibria of reversible MYC-WDR5-association and reversible MYC- CACGTG-association. Similarly, the dissociation constant of MYC and NNNNNNWDR5 is estimated by multiplying the individual dissociation constants of MYC and WDR5 (9.3\u00b710<sup>6</sup> M; (<a href=\"#bib44\">Thomas et al., 2015</a>]) as well as MYC and unspecific DNA (20\u00b710<sup>9</sup> M; [<a href=\"#bib15\">Guo et al., 2014</a>])."
-                                        }
-                                    ]
-                                ]
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "Appendix 1 provides the detailed description of the mathematical models 1 and 2. Schemes of models 1 and 2 are provided in <a href=\"#fig8\">Appendix 1\u2014figure 1</a>."
+                    }, 
+                    {
+                        "type": "image", 
+                        "doi": "10.7554/eLife.15161.019", 
+                        "id": "fig8", 
+                        "label": "Appendix 1\u2014figure\u00a01.", 
+                        "title": "Schemes of models 1 and 2.", 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/15161/elife-15161-app1-fig1-v1.jpg", 
+                        "filename": "elife-15161-app1-fig1-v1.jpg"
                     }
                 ]
             }, 
@@ -6338,42 +6297,8 @@
                 "title": "Appendix 2", 
                 "content": [
                     {
-                        "type": "section", 
-                        "id": "s47", 
-                        "title": "Proof", 
-                        "content": [
-                            {
-                                "type": "paragraph", 
-                                "text": "Using equations 1\u201311 (Appendix 1), we derive the following equation system:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ34", 
-                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mo>|</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mrow><mn>0</mn></mrow><mo>=</mo><mrow><mo>[</mo><mi>M</mi><mi>Y</mi><mi>C</mi><mo>]</mo></mrow><mo>\u22c5</mo><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>K</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>\u22c5</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow><mo>=</mo><mrow><mo>[</mo><mi>M</mi><mi>Y</mi><mi>C</mi><mo>]</mo></mrow><mo>\u22c5</mo><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>)</mo></mrow><mo>\u2212</mo><msub><mi>K</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>\u22c5</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub></mtd></mtr></mtable><mo>|</mo></mrow></mrow></mstyle></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "This yields expressions of <math id=\"inf82\"><mrow><msub><mi>K</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub></mrow></math> and <math id=\"inf83\"><mrow><msub><mi>K</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub></mrow></math>:"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ35", 
-                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><msub><mi>K</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>=</mo><mrow><mo>[</mo><mi>M</mi><mi>Y</mi><mi>C</mi><mo>]</mo></mrow><mo>\u22c5</mo><mfrac><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>)</mo></mrow><mrow><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub></mrow></mfrac></mtd></mtr><mtr><mtd><msub><mi>K</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>=</mo><mrow><mo>[</mo><mi>M</mi><mi>Y</mi><mi>C</mi><mo>]</mo></mrow><mo>\u22c5</mo><mfrac><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>)</mo></mrow><mrow><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub></mrow></mfrac></mtd></mtr></mtable></mrow></mstyle></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Assuming <math id=\"inf84\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>K</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>&gt;</mo><msub><mi>K</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub></mrow></mstyle></math> holds, then"
-                            }, 
-                            {
-                                "type": "mathml", 
-                                "id": "equ36", 
-                                "mathml": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mo stretchy=\"false\">\u21d2</mo><mfrac><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>)</mo></mrow><mrow><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub></mrow></mfrac><mo>&gt;</mo><mfrac><mrow><mo>(</mo><mn>1</mn><mo>\u2212</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>)</mo></mrow><mrow><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub></mrow></mfrac></mtd></mtr><mtr><mtd><mo stretchy=\"false\">\u21d2</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>&gt;</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub></mtd></mtr></mtable></mrow></mstyle></math>"
-                            }, 
-                            {
-                                "type": "paragraph", 
-                                "text": "Similarly it can be proven that if\u00a0<math id=\"inf85\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub><mo>&gt;</mo><mi>o</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>p</mi><mi>a</mi><mi>n</mi><mi>c</mi><msub><mi>y</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub></mrow></mstyle></math> then <math id=\"inf86\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mi>K</mi><mrow><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi><mi>N</mi></mrow></msub><mo>&gt;</mo><msub><mi>K</mi><mrow><mi>E</mi><mi>b</mi><mi>o</mi><mi>x</mi></mrow></msub></mrow></mstyle></math> holds."
-                            }
-                        ]
+                        "type": "paragraph", 
+                        "text": "Appendix 2 provides an extended analysis and discussion of the modelling approach."
                     }
                 ]
             }

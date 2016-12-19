@@ -12,7 +12,7 @@
         "doi": "10.7554/eLife.07454", 
         "authorLine": "Anna Vangone, Alexandre MJJ Bonvin", 
         "title": "Contacts-based prediction of binding affinity in protein\u2013protein complexes", 
-        "published": "2015-07-20T00:00:00", 
+        "published": "2015-07-20T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e07454", 
         "pdf": "https://publishing-cdn.elifesciences.org/07454/elife-07454-v3.pdf", 
@@ -103,6 +103,37 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100004963", 
+                        "name": [
+                            "Seventh Framework Programme"
+                        ]
+                    }, 
+                    "awardId": "WeNMR e-Infrastrure project, grant 261572", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Anna Vangone", 
+                                "index": "Vangone, Anna"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Alexandre MJJ Bonvin", 
+                                "index": "Bonvin, Alexandre MJJ"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funder had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.07454.012", 
@@ -110,7 +141,7 @@
                 "label": "Supplementary file 1.", 
                 "title": "List of entries removed from the original binding affinity benchmark (<a href=\"#bib1\">Alberts, 1998</a>) because of gaps at interface.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-07454-supp1-v3.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp1-v3.docx", 
                 "filename": "elife-07454-supp1-v3.docx"
             }, 
             {
@@ -119,7 +150,7 @@
                 "label": "Supplementary file 2.", 
                 "title": "ICs, NIS and BSA values (and their sub-classification) calculated on the cleaned dataset. Correlations of these to the binding affinity are reported in <a href=\"#tbl2\">Table 2</a>.", 
                 "mediaType": "text/csv", 
-                "uri": "elife-07454-supp2-v3.csv", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp2-v3.csv", 
                 "filename": "elife-07454-supp2-v3.csv"
             }, 
             {
@@ -127,8 +158,23 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Table summarizing the weights (<i>w</i><sub><i>N</i></sub>) and performance (expressed as Pearson's coefficient <i>R</i> and RMSE) of the fourfold cross-validation, repeated 10 times, of the following binding affinity regression model: <disp-formula id=\"equ4\"><math id=\"m4\"><mi>\u0394</mi><msub><mtext>G</mtext><mrow><mtext>calc</mtext></mrow></msub><mo>=</mo><msub><mtext>w</mtext><mn>1</mn></msub><msub><mtext>ICs</mtext><mrow><mtext>charged</mtext><mo>/</mo><mtext>charged</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>2</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>charged_apolar</mtext></mrow></msub><mo>\u2212</mo><msub><mtext>w</mtext><mn>3</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>polar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mtext>4</mtext></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>5</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>6</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>charged</mtext></mrow></msub><mo>+</mo><mtext>Q</mtext><mo>.</mo></math></disp-formula>Each coefficient has been reported as average on the four models trained on the respective folds.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Table summarizing the weights (<i>w</i><sub><i>N</i></sub>) and performance (expressed as Pearson's coefficient <i>R</i> and RMSE) of the fourfold cross-validation, repeated 10 times, of the following binding affinity regression model: "
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ4", 
+                        "mathml": "<math><mi>\u0394</mi><msub><mtext>G</mtext><mrow><mtext>calc</mtext></mrow></msub><mo>=</mo><msub><mtext>w</mtext><mn>1</mn></msub><msub><mtext>ICs</mtext><mrow><mtext>charged</mtext><mo>/</mo><mtext>charged</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>2</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>charged_apolar</mtext></mrow></msub><mo>\u2212</mo><msub><mtext>w</mtext><mn>3</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>polar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mtext>4</mtext></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>5</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>6</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>charged</mtext></mrow></msub><mo>+</mo><mtext>Q</mtext><mo>.</mo></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Each coefficient has been reported as average on the four models trained on the respective folds."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-07454-supp3-v3.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp3-v3.docx", 
                 "filename": "elife-07454-supp3-v3.docx"
             }, 
             {
@@ -137,7 +183,7 @@
                 "label": "Supplementary file 4.", 
                 "title": "Predicted binding affinities based on ICs (this work) and other methods (see \u2018Materials and methods\u2019) for the set of 79 common complexes between the cleaned dataset and the data tested reported by <a href=\"#bib37\">Moal et al. (2011)</a>. Performance results are summarized in <a href=\"#fig4\">Figure 4</a>.", 
                 "mediaType": "text/csv", 
-                "uri": "elife-07454-supp4-v3.csv", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp4-v3.csv", 
                 "filename": "elife-07454-supp4-v3.csv"
             }, 
             {
@@ -146,7 +192,7 @@
                 "label": "Supplementary file 5.", 
                 "title": "List of Fab D3H44 antibody residues in the binding interface of the complex with the Tissue factor (PDB code of the complex: 1JPS). For each residue N, its relative contribution (expressed as a percentage) to the total number of inter-residue contacts made and to the total buried surface area of the Fab is reported. IC<sub>N</sub> and BSA<sub>N</sub> are the interface contacts and the buried surface area of residue N, respectively; IC<sub>total</sub> is 83; BSA<sub>Fab_total</sub> is evaluated as half of the BSA for the complex corresponding to 926 \u00c5<sup>2</sup>.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-07454-supp5-v3.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp5-v3.docx", 
                 "filename": "elife-07454-supp5-v3.docx"
             }
         ], 
@@ -222,7 +268,7 @@
         "doi": "10.7554/eLife.07454", 
         "authorLine": "Anna Vangone, Alexandre MJJ Bonvin", 
         "title": "Contacts-based prediction of binding affinity in protein\u2013protein complexes", 
-        "published": "2015-07-20T00:00:00", 
+        "published": "2015-07-20T00:00:00Z", 
         "volume": 4, 
         "elocationId": "e07454", 
         "pdf": "https://publishing-cdn.elifesciences.org/07454/elife-07454-v3.pdf", 
@@ -313,6 +359,37 @@
                 "competingInterests": "The authors declare that no competing interests exist."
             }
         ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/501100004963", 
+                        "name": [
+                            "Seventh Framework Programme"
+                        ]
+                    }, 
+                    "awardId": "WeNMR e-Infrastrure project, grant 261572", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Anna Vangone", 
+                                "index": "Vangone, Anna"
+                            }
+                        }, 
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Alexandre MJJ Bonvin", 
+                                "index": "Bonvin, Alexandre MJJ"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funder had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
         "additionalFiles": [
             {
                 "doi": "10.7554/eLife.07454.012", 
@@ -320,7 +397,7 @@
                 "label": "Supplementary file 1.", 
                 "title": "List of entries removed from the original binding affinity benchmark (<a href=\"#bib1\">Alberts, 1998</a>) because of gaps at interface.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-07454-supp1-v3.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp1-v3.docx", 
                 "filename": "elife-07454-supp1-v3.docx"
             }, 
             {
@@ -329,7 +406,7 @@
                 "label": "Supplementary file 2.", 
                 "title": "ICs, NIS and BSA values (and their sub-classification) calculated on the cleaned dataset. Correlations of these to the binding affinity are reported in <a href=\"#tbl2\">Table 2</a>.", 
                 "mediaType": "text/csv", 
-                "uri": "elife-07454-supp2-v3.csv", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp2-v3.csv", 
                 "filename": "elife-07454-supp2-v3.csv"
             }, 
             {
@@ -337,8 +414,23 @@
                 "id": "SD3-data", 
                 "label": "Supplementary file 3.", 
                 "title": "Table summarizing the weights (<i>w</i><sub><i>N</i></sub>) and performance (expressed as Pearson's coefficient <i>R</i> and RMSE) of the fourfold cross-validation, repeated 10 times, of the following binding affinity regression model: <disp-formula id=\"equ4\"><math id=\"m4\"><mi>\u0394</mi><msub><mtext>G</mtext><mrow><mtext>calc</mtext></mrow></msub><mo>=</mo><msub><mtext>w</mtext><mn>1</mn></msub><msub><mtext>ICs</mtext><mrow><mtext>charged</mtext><mo>/</mo><mtext>charged</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>2</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>charged_apolar</mtext></mrow></msub><mo>\u2212</mo><msub><mtext>w</mtext><mn>3</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>polar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mtext>4</mtext></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>5</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>6</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>charged</mtext></mrow></msub><mo>+</mo><mtext>Q</mtext><mo>.</mo></math></disp-formula>Each coefficient has been reported as average on the four models trained on the respective folds.", 
+                "caption": [
+                    {
+                        "type": "paragraph", 
+                        "text": "Table summarizing the weights (<i>w</i><sub><i>N</i></sub>) and performance (expressed as Pearson's coefficient <i>R</i> and RMSE) of the fourfold cross-validation, repeated 10 times, of the following binding affinity regression model: "
+                    }, 
+                    {
+                        "type": "mathml", 
+                        "id": "equ4", 
+                        "mathml": "<math><mi>\u0394</mi><msub><mtext>G</mtext><mrow><mtext>calc</mtext></mrow></msub><mo>=</mo><msub><mtext>w</mtext><mn>1</mn></msub><msub><mtext>ICs</mtext><mrow><mtext>charged</mtext><mo>/</mo><mtext>charged</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>2</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>charged_apolar</mtext></mrow></msub><mo>\u2212</mo><msub><mtext>w</mtext><mn>3</mn></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>polar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mtext>4</mtext></msub><msub><mtext>\u2009ICs</mtext><mrow><mtext>polar</mtext><mo>/</mo><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>5</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>apolar</mtext></mrow></msub><mo>+</mo><msub><mtext>w</mtext><mn>6</mn></msub><msub><mtext>\u2009%NIS</mtext><mrow><mtext>charged</mtext></mrow></msub><mo>+</mo><mtext>Q</mtext><mo>.</mo></math>"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Each coefficient has been reported as average on the four models trained on the respective folds."
+                    }
+                ], 
                 "mediaType": "application/docx", 
-                "uri": "elife-07454-supp3-v3.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp3-v3.docx", 
                 "filename": "elife-07454-supp3-v3.docx"
             }, 
             {
@@ -347,7 +439,7 @@
                 "label": "Supplementary file 4.", 
                 "title": "Predicted binding affinities based on ICs (this work) and other methods (see \u2018Materials and methods\u2019) for the set of 79 common complexes between the cleaned dataset and the data tested reported by <a href=\"#bib37\">Moal et al. (2011)</a>. Performance results are summarized in <a href=\"#fig4\">Figure 4</a>.", 
                 "mediaType": "text/csv", 
-                "uri": "elife-07454-supp4-v3.csv", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp4-v3.csv", 
                 "filename": "elife-07454-supp4-v3.csv"
             }, 
             {
@@ -356,7 +448,7 @@
                 "label": "Supplementary file 5.", 
                 "title": "List of Fab D3H44 antibody residues in the binding interface of the complex with the Tissue factor (PDB code of the complex: 1JPS). For each residue N, its relative contribution (expressed as a percentage) to the total number of inter-residue contacts made and to the total buried surface area of the Fab is reported. IC<sub>N</sub> and BSA<sub>N</sub> are the interface contacts and the buried surface area of residue N, respectively; IC<sub>total</sub> is 83; BSA<sub>Fab_total</sub> is evaluated as half of the BSA for the complex corresponding to 926 \u00c5<sup>2</sup>.", 
                 "mediaType": "application/docx", 
-                "uri": "elife-07454-supp5-v3.docx", 
+                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-supp5-v3.docx", 
                 "filename": "elife-07454-supp5-v3.docx"
             }
         ], 
@@ -519,7 +611,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07454-fig1-v3.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-fig1-v3.tif", 
+                                "filename": "elife-07454-fig1-v3.tif"
                             }
                         ]
                     }, 
@@ -579,7 +672,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07454-fig2-v3.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-fig2-v3.tif", 
+                                "filename": "elife-07454-fig2-v3.tif"
                             }
                         ]
                     }, 
@@ -689,7 +783,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07454-fig3-v3.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-fig3-v3.tif", 
+                                "filename": "elife-07454-fig3-v3.tif"
                             }
                         ]
                     }, 
@@ -715,7 +810,8 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07454-fig4-v3.tif"
+                                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-fig4-v3.tif", 
+                                "filename": "elife-07454-fig4-v3.tif"
                             }, 
                             {
                                 "type": "paragraph", 
@@ -745,7 +841,7 @@
                                     }
                                 ], 
                                 "alt": "", 
-                                "uri": "elife-07454-fig5-v3.tif", 
+                                "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-fig5-v3.tif", 
                                 "supplements": [
                                     {
                                         "type": "image", 
@@ -764,9 +860,11 @@
                                             }
                                         ], 
                                         "alt": "", 
-                                        "uri": "elife-07454-fig5-figsupp1-v3.tif"
+                                        "uri": "https://publishing-cdn.elifesciences.org/07454/elife-07454-fig5-figsupp1-v3.tif", 
+                                        "filename": "elife-07454-fig5-figsupp1-v3.tif"
                                     }
-                                ]
+                                ], 
+                                "filename": "elife-07454-fig5-v3.tif"
                             }, 
                             {
                                 "type": "paragraph", 
