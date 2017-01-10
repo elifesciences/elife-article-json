@@ -2523,7 +2523,7 @@
                                         "caption": [
                                             {
                                                 "type": "paragraph", 
-                                                "text": "(<b>A</b>) Reconstruction of the odor gradient displayed in <a href=\"#fig1 fig8\">Figures 1, 8</a> with color-coding in accordance with the scale on the right. Snapshot corresponding to the odor landscape 60 s after the initiation of the diffusion process. Cross-section intersecting the gradient's peak: f(5, <i>y</i>). (<b>B</b>) Same as panel <b>A</b> for the light gradient presented in <a href=\"#fig6\">Figure 6</a>. Cross-section along gradient: g(5, <i>y</i>). (<b>C</b>) Comparison of the cross-sections f and g of the odor and light gradients, respectively. Each profile was normalized by its maximum value reached under the gradient's peak. (<b>D</b>) Comparison of the derivative of the cross-sections of the odor and light gradients: df/d<i>y</i> and dg/d<i>y</i> where y represents the variable associated with the vertical axis. From this analysis, we observe that the slope of the light gradient is considerably steeper than the slope of the odor gradient, which is expected to facilitate chemotaxis."
+                                                "text": "(<b>A</b>) Reconstruction of the odor gradient displayed in <a href=\"#fig1\">Figures 1, 8</a> with color-coding in accordance with the scale on the right. Snapshot corresponding to the odor landscape 60 s after the initiation of the diffusion process. Cross-section intersecting the gradient's peak: f(5, <i>y</i>). (<b>B</b>) Same as panel <b>A</b> for the light gradient presented in <a href=\"#fig6\">Figure 6</a>. Cross-section along gradient: g(5, <i>y</i>). (<b>C</b>) Comparison of the cross-sections f and g of the odor and light gradients, respectively. Each profile was normalized by its maximum value reached under the gradient's peak. (<b>D</b>) Comparison of the derivative of the cross-sections of the odor and light gradients: df/d<i>y</i> and dg/d<i>y</i> where y represents the variable associated with the vertical axis. From this analysis, we observe that the slope of the light gradient is considerably steeper than the slope of the odor gradient, which is expected to facilitate chemotaxis."
                                             }
                                         ], 
                                         "alt": "", 
@@ -2586,7 +2586,7 @@
                     }, 
                     {
                         "type": "paragraph", 
-                        "text": "How relevant are the features encoded by the spiking activity of the <i>Or42a</i> OSN to the behavioral dynamics directing chemotaxis? To address this question, we substituted the odor stimulation with optogenetics-based light stimulation and gained unprecedented control over the spiking activity evoked in a genetically targeted OSN. Under the conditions of open-loop light stimulation, we found that OFF responses (offset inhibition of the OSN firing) promote turning, whereas ON responses (sustained high firing) suppress turning (<a href=\"#fig5\">Figure 5</a>). We applied a GLM to describe the link between the OSN spiking dynamics and the probability of switching from a run to a turn (<a href=\"#fig5\">Figure 5D</a>). The accuracy of the model's output showed a striking dependence on the nonlinear transformation achieved by the olfactory transduction cascade (<a href=\"#fig5s3\">Figure 5\u2014figure supplement 3</a>). Ultimately, we combined the biophysical model for the OSN spiking dynamics with the GLM to make robust predictions about closed-loop behavior in virtual and in real odor gradients (<a href=\"#fig6 fig7 fig8\">Figures 6\u20138</a>)."
+                        "text": "How relevant are the features encoded by the spiking activity of the <i>Or42a</i> OSN to the behavioral dynamics directing chemotaxis? To address this question, we substituted the odor stimulation with optogenetics-based light stimulation and gained unprecedented control over the spiking activity evoked in a genetically targeted OSN. Under the conditions of open-loop light stimulation, we found that OFF responses (offset inhibition of the OSN firing) promote turning, whereas ON responses (sustained high firing) suppress turning (<a href=\"#fig5\">Figure 5</a>). We applied a GLM to describe the link between the OSN spiking dynamics and the probability of switching from a run to a turn (<a href=\"#fig5\">Figure 5D</a>). The accuracy of the model's output showed a striking dependence on the nonlinear transformation achieved by the olfactory transduction cascade (<a href=\"#fig5s3\">Figure 5\u2014figure supplement 3</a>). Ultimately, we combined the biophysical model for the OSN spiking dynamics with the GLM to make robust predictions about closed-loop behavior in virtual and in real odor gradients (<a href=\"#fig6\">Figures 6\u20138</a>)."
                     }, 
                     {
                         "type": "paragraph", 
@@ -2645,7 +2645,7 @@
                                     }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "Throughout the present study, the identification of turns was based on the trajectory of the midpoint (point located on the skeleton at a third of the distance from the head). Due to the high sampling rate of the tracker and the inherent noise of the stepper motors moving the stage holding the camera, the positions of the points of interest were subject to minute jittering. Unless stated otherwise, the trajectories of every point of interest were smoothened with a Savitzky-Golay filter to remove fluctuations on a small spatial scale irrelevant to the motion of the larva. This geometric approach was used to classify the data obtained from the closed-loop experiments (<a href=\"#fig1 fig6 fig7 fig8\">Figures 1, 6\u20138</a>). For the open-loop experiments described in <a href=\"#fig5\">Figure 5</a>, turns were identified by the online classification carried out by the tracker software (see section Tracker, Figure 16)."
+                                        "text": "Throughout the present study, the identification of turns was based on the trajectory of the midpoint (point located on the skeleton at a third of the distance from the head). Due to the high sampling rate of the tracker and the inherent noise of the stepper motors moving the stage holding the camera, the positions of the points of interest were subject to minute jittering. Unless stated otherwise, the trajectories of every point of interest were smoothened with a Savitzky-Golay filter to remove fluctuations on a small spatial scale irrelevant to the motion of the larva. This geometric approach was used to classify the data obtained from the closed-loop experiments (<a href=\"#fig1\">Figures 1, 6\u20138</a>). For the open-loop experiments described in <a href=\"#fig5\">Figure 5</a>, turns were identified by the online classification carried out by the tracker software (see section Tracker, Figure 16)."
                                     }
                                 ]
                             }
@@ -3042,7 +3042,7 @@
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "In the ODE systems presented in <a href=\"#fig4\">Figure 4Bii</a> and <a href=\"#equ2 equ3\">Equations 2, 3</a>, we observe that the time derivative of <i>u</i> can be multiplied by an arbitrary scaling factor reabsorbed by the fitting parameter <i>\u03b2</i><sub><i>3</i></sub> in the time derivative of <i>y.</i> For this reason one is forced to fix one of the eight parameters to a constant value. For numerical convenience we chose to fix <i>\u03b1</i><sub><i>1</i></sub> = 0.1. To infer the actual value of this parameter, one would need to experimentally access the value of the intermediate variable <i>u</i>, whose molecular identity remains unknown. For the pure IFF model, the number of free parameters is therefore seven. In addition to these parameters, we considered the scaling of the firing rate <i>y</i> elicited by individual stimulation protocols via a multiplicative factor accounting for variability across experimental conditions (e.g., minute differences in the positions of the stimulation pipette)."
+                                "text": "In the ODE systems presented in <a href=\"#fig4\">Figure 4Bii</a> and <a href=\"#equ2\">Equations 2, 3</a>, we observe that the time derivative of <i>u</i> can be multiplied by an arbitrary scaling factor reabsorbed by the fitting parameter <i>\u03b2</i><sub><i>3</i></sub> in the time derivative of <i>y.</i> For this reason one is forced to fix one of the eight parameters to a constant value. For numerical convenience we chose to fix <i>\u03b1</i><sub><i>1</i></sub> = 0.1. To infer the actual value of this parameter, one would need to experimentally access the value of the intermediate variable <i>u</i>, whose molecular identity remains unknown. For the pure IFF model, the number of free parameters is therefore seven. In addition to these parameters, we considered the scaling of the firing rate <i>y</i> elicited by individual stimulation protocols via a multiplicative factor accounting for variability across experimental conditions (e.g., minute differences in the positions of the stimulation pipette)."
                             }, 
                             {
                                 "type": "paragraph", 
@@ -3261,7 +3261,7 @@
                                 "content": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "For closed-loop experiments described in <a href=\"#fig6 fig7\">Figures 6, 7</a>, the light intensity was updated based on the position of the head of the larva mapped on a predefined light landscape. The light landscape was loaded and interpolated by the software controller environment from a matrix with a spatial resolution of 1 \u00d7 1 mm. Since the position of the larva was monitored at a higher resolution, the intensity of the spatial landscape was redefined by using a bi-linear interpolation along the <i>x</i>- and <i>y</i>-axis. The position of the center of the light gradient was automatically adjusted at the beginning of the experiment in such a way that every larva started in a direction facing the center of the gradient at a fixed distance of 9.6 mm from the center for the exponential light gradient (<a href=\"#fig6\">Figure 6</a>) and a distance of 17.1 mm for the family of light landscapes (<a href=\"#fig7\">Figure 7</a>). The minority of trajectories from which larvae failed to detect the presence of the light gradient was discarded from the dataset."
+                                        "text": "For closed-loop experiments described in <a href=\"#fig6\">Figures 6, 7</a>, the light intensity was updated based on the position of the head of the larva mapped on a predefined light landscape. The light landscape was loaded and interpolated by the software controller environment from a matrix with a spatial resolution of 1 \u00d7 1 mm. Since the position of the larva was monitored at a higher resolution, the intensity of the spatial landscape was redefined by using a bi-linear interpolation along the <i>x</i>- and <i>y</i>-axis. The position of the center of the light gradient was automatically adjusted at the beginning of the experiment in such a way that every larva started in a direction facing the center of the gradient at a fixed distance of 9.6 mm from the center for the exponential light gradient (<a href=\"#fig6\">Figure 6</a>) and a distance of 17.1 mm for the family of light landscapes (<a href=\"#fig7\">Figure 7</a>). The minority of trajectories from which larvae failed to detect the presence of the light gradient was discarded from the dataset."
                                     }, 
                                     {
                                         "type": "paragraph", 
@@ -3317,7 +3317,7 @@
                                     }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "As shown in <a href=\"#fig17\">Figure 17</a>, the logit transform included in the GLM improved the accuracy of the fit without being essential. The predictive value of the model trained on open-loop behavior was then evaluated when applied to closed-loop experiments such as those described in <a href=\"#fig6 fig7 fig8\">Figures 6\u20138</a>. The performance of the test model was compared to a control model devoid of sensory processing of the OSN. For the control model, relationship (13) became:"
+                                        "text": "As shown in <a href=\"#fig17\">Figure 17</a>, the logit transform included in the GLM improved the accuracy of the fit without being essential. The predictive value of the model trained on open-loop behavior was then evaluated when applied to closed-loop experiments such as those described in <a href=\"#fig6\">Figures 6\u20138</a>. The performance of the test model was compared to a control model devoid of sensory processing of the OSN. For the control model, relationship (13) became:"
                                     }, 
                                     {
                                         "type": "mathml", 
@@ -3375,7 +3375,7 @@
                             {
                                 "type": "section", 
                                 "id": "s4-12-1", 
-                                "title": "Quantification of goodness of fit of the OSN and behavioral models (material pertaining to <a href=\"#tbl2 tbl4\">Tables 2, 4</a>, <a href=\"#fig13 fig18\">Figures 13, 18</a>)", 
+                                "title": "Quantification of goodness of fit of the OSN and behavioral models (material pertaining to <a href=\"#tbl2\">Tables 2, 4</a>, <a href=\"#fig13\">Figures 13, 18</a>)", 
                                 "content": [
                                     {
                                         "type": "paragraph", 
@@ -3416,7 +3416,7 @@
                             {
                                 "type": "section", 
                                 "id": "s4-12-2", 
-                                "title": "Error bars for the PSTHs (material pertaining to <a href=\"#fig2 fig3 fig4 fig5 fig6 fig7 fig8\">Figures 2\u20138</a>)", 
+                                "title": "Error bars for the PSTHs (material pertaining to <a href=\"#fig2\">Figures 2\u20138</a>)", 
                                 "content": [
                                     {
                                         "type": "paragraph", 
@@ -3427,7 +3427,7 @@
                             {
                                 "type": "section", 
                                 "id": "s4-12-3", 
-                                "title": "Error bars for the turn probabilities estimated from open-loop behavioral experiments (material pertaining to <a href=\"#fig5 fig17 fig18\">Figures 5, 17, 18</a>)", 
+                                "title": "Error bars for the turn probabilities estimated from open-loop behavioral experiments (material pertaining to <a href=\"#fig5\">Figures 5, 17, 18</a>)", 
                                 "content": [
                                     {
                                         "type": "paragraph", 
@@ -3460,11 +3460,11 @@
                             {
                                 "type": "section", 
                                 "id": "s4-12-6", 
-                                "title": "Controls for behavioral experiments: closed-loop light and odor stimulation (material pertaining to <a href=\"#fig6 fig8\">Figures 6, 8</a>)", 
+                                "title": "Controls for behavioral experiments: closed-loop light and odor stimulation (material pertaining to <a href=\"#fig6\">Figures 6, 8</a>)", 
                                 "content": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "In closed-loop experiments conducted in light and odor gradients (<a href=\"#fig6 fig8\">Figures 6, 8</a>), the predictions of the integrated stimulus-to-behavior GLM described in <a href=\"#equ13\">equation (13)</a> were analyzed by computing the turn-triggered average of the turn probability. This average time course was compared to two controls. The first control consisted in achieving turn predictions based on a sensory experience whose relation to the corresponding behavior was uncoupled. To this end, we inverted the time course of the light (odor) intensity and associated it with the forward time course of the behavior. This first control preserved the statistics of the stimulus intensity experienced by the larva. The second control was based on the assumption that the OSN firing rate was constant over time and corresponded to the mean activity predicted by a typical trajectory. Given that each larva experienced a different time course of light intensity, the mean OSN firing rate was computed on a trajectory-by-trajectory basis. Note that the control GLM derived in <a href=\"#equ14\">equation (14)</a> for the open-loop light ramps was deemed inadequate to predict closed-loop behaviors in odor gradients due to the mismatch between the dynamic range of the stimulus associated with the light ramps and that experienced in the odor gradient."
+                                        "text": "In closed-loop experiments conducted in light and odor gradients (<a href=\"#fig6\">Figures 6, 8</a>), the predictions of the integrated stimulus-to-behavior GLM described in <a href=\"#equ13\">equation (13)</a> were analyzed by computing the turn-triggered average of the turn probability. This average time course was compared to two controls. The first control consisted in achieving turn predictions based on a sensory experience whose relation to the corresponding behavior was uncoupled. To this end, we inverted the time course of the light (odor) intensity and associated it with the forward time course of the behavior. This first control preserved the statistics of the stimulus intensity experienced by the larva. The second control was based on the assumption that the OSN firing rate was constant over time and corresponded to the mean activity predicted by a typical trajectory. Given that each larva experienced a different time course of light intensity, the mean OSN firing rate was computed on a trajectory-by-trajectory basis. Note that the control GLM derived in <a href=\"#equ14\">equation (14)</a> for the open-loop light ramps was deemed inadequate to predict closed-loop behaviors in odor gradients due to the mismatch between the dynamic range of the stimulus associated with the light ramps and that experienced in the odor gradient."
                                     }
                                 ]
                             }, 
@@ -3482,7 +3482,7 @@
                             {
                                 "type": "section", 
                                 "id": "s4-12-8", 
-                                "title": "Likelihood analysis for behavioral predictions (material pertaining to <a href=\"#fig6 fig8\">Figures 6, 8</a>)", 
+                                "title": "Likelihood analysis for behavioral predictions (material pertaining to <a href=\"#fig6\">Figures 6, 8</a>)", 
                                 "content": [
                                     {
                                         "type": "paragraph", 
@@ -8639,7 +8639,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "1) Statistics. In Materials and methods add a statistics section and write a clear description of the statistical tests used. This is somewhat scattered throughout Materials and methods now. Much of the statistics is in tables and in the figure legends and needs to be made more apparent. <a href=\"#fig6 fig8\">Figures 6F and 8D, E</a> present critical statistical tests that are based on a subset of long run trajectory. The rationale and validity of excluding short runs need to be made more apparent."
+                    "text": "1) Statistics. In Materials and methods add a statistics section and write a clear description of the statistical tests used. This is somewhat scattered throughout Materials and methods now. Much of the statistics is in tables and in the figure legends and needs to be made more apparent. <a href=\"#fig6\">Figures 6F and 8D, E</a> present critical statistical tests that are based on a subset of long run trajectory. The rationale and validity of excluding short runs need to be made more apparent."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8647,7 +8647,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "3) There is the concern that the sensory neuron model is fitted to events on a time scale of less than 10 sec (<a href=\"#fig2 fig3 fig4\">Figure 2, 3, 4</a>, etc.), whereas the dynamics of chemosensory stimuli during behavior in an odor gradient occur on a time scale of about 30 sec. The authors should acknowledge in text any difference in time scale and dynamic range between real odor time courses and the input domain over which the model was fitted."
+                    "text": "3) There is the concern that the sensory neuron model is fitted to events on a time scale of less than 10 sec (<a href=\"#fig2\">Figure 2, 3, 4</a>, etc.), whereas the dynamics of chemosensory stimuli during behavior in an odor gradient occur on a time scale of about 30 sec. The authors should acknowledge in text any difference in time scale and dynamic range between real odor time courses and the input domain over which the model was fitted."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8700,7 +8700,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "The former Figure 1\u2013figure supplement 1, 2 and 3 have now been moved to Materials and methods as <a href=\"#fig9 fig10 fig11 fig12\">Figures 9-12</a>."
+                    "text": "The former Figure 1\u2013figure supplement 1, 2 and 3 have now been moved to Materials and methods as <a href=\"#fig9\">Figures 9-12</a>."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8732,7 +8732,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "Figure 5\u2013figure supplement 1 and 2 have now been moved to Materials and methods as the new <a href=\"#fig15 fig16\">Figures 15 and 16</a>. We propose to keep Figure 5\u2013figure supplement 5 in the main manuscript as it highlights that nonlinear characteristics in the response of the <i>Or42a</i> OSN are behaviorally relevant. This result is part of the main conclusions of the work. We therefore kept Figure 5\u2013figure supplement 5 among the main figures of the manuscript (now labeled as <a href=\"#fig5s3\">Figure 5\u2013figure supplement 3</a>) to permit a direct reference to it."
+                    "text": "Figure 5\u2013figure supplement 1 and 2 have now been moved to Materials and methods as the new <a href=\"#fig15\">Figures 15 and 16</a>. We propose to keep Figure 5\u2013figure supplement 5 in the main manuscript as it highlights that nonlinear characteristics in the response of the <i>Or42a</i> OSN are behaviorally relevant. This result is part of the main conclusions of the work. We therefore kept Figure 5\u2013figure supplement 5 among the main figures of the manuscript (now labeled as <a href=\"#fig5s3\">Figure 5\u2013figure supplement 3</a>) to permit a direct reference to it."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8756,7 +8756,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) Statistics. In Materials and methods add a statistics section and write a clear description of the statistical tests used. This is somewhat scattered throughout Materials and methods now. Much of the statistics is in tables and in the figure legends and needs to be made more apparent.</i> <a href=\"#fig6 fig8\"><i>Figures 6F and 8D, E</i></a> <i>present critical statistical tests that are based on a subset of long run trajectory. The rationale and validity of excluding short runs need to be made more apparent</i>."
+                    "text": "<i>1) Statistics. In Materials and methods add a statistics section and write a clear description of the statistical tests used. This is somewhat scattered throughout Materials and methods now. Much of the statistics is in tables and in the figure legends and needs to be made more apparent.</i> <a href=\"#fig6\"><i>Figures 6F and 8D, E</i></a> <i>present critical statistical tests that are based on a subset of long run trajectory. The rationale and validity of excluding short runs need to be made more apparent</i>."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8764,7 +8764,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "Regarding the previous use of subsets of runs with a duration longer than the median, we have now removed this filtering from the analysis. The rationale behind our initial focus on runs longer than a minimum duration was to reveal a strong trend on a time window preceding a turn where all runs are defined. In <a href=\"#fig6 fig8\">Figures 6 and 8</a>, the predictions of the behavioral model are now plotted for the full set of runs (with a minimum duration of 1 sec). Our conclusions still hold in the absence of this filter, even though the average trend is noisier. Runs shorter than 1 sec could not be considered in the analysis since the turn probability is defined on a time bin of 1 sec."
+                    "text": "Regarding the previous use of subsets of runs with a duration longer than the median, we have now removed this filtering from the analysis. The rationale behind our initial focus on runs longer than a minimum duration was to reveal a strong trend on a time window preceding a turn where all runs are defined. In <a href=\"#fig6\">Figures 6 and 8</a>, the predictions of the behavioral model are now plotted for the full set of runs (with a minimum duration of 1 sec). Our conclusions still hold in the absence of this filter, even though the average trend is noisier. Runs shorter than 1 sec could not be considered in the analysis since the turn probability is defined on a time bin of 1 sec."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8776,7 +8776,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) There is the concern that the sensory neuron model is fitted to events on a time scale of less than 10 sec (</i><a href=\"#fig2 fig3 fig4\"><i>Figure 2, 3, 4</i></a><i>, etc.), whereas the dynamics of chemosensory stimuli during behavior in an odor gradient occur on a time scale of about 30 sec. The authors should acknowledge in text any difference in time scale and dynamic range between real odor time courses and the input domain over which the model was fitted</i>."
+                    "text": "<i>3) There is the concern that the sensory neuron model is fitted to events on a time scale of less than 10 sec (</i><a href=\"#fig2\"><i>Figure 2, 3, 4</i></a><i>, etc.), whereas the dynamics of chemosensory stimuli during behavior in an odor gradient occur on a time scale of about 30 sec. The authors should acknowledge in text any difference in time scale and dynamic range between real odor time courses and the input domain over which the model was fitted</i>."
                 }, 
                 {
                     "type": "paragraph", 
@@ -8784,7 +8784,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "Regarding the input domain over which the model was fitted, we designed the light ramps (<a href=\"#fig4\">Figure 4</a>) to match the intensity domain of the naturalistic light stimulation (<a href=\"#fig6\">Figure 6</a>): both ranges between 0 and 207 W/m<sup>2</sup>. Likewise, the intensity domain of the odor ramps (<a href=\"#fig3 fig4\">Figures 3 and 4</a>) and the naturalistic odor stimulus (<a href=\"#fig8\">Figure 8</a>) were chosen to be comparable: 0\u2014500 \u00b5M for the ramps and 0\u2014120 \u00b5M for the naturalistic stimulus. Consequently, the neural models for the light and odor stimulations were trained on a dataset that included the domain over which the naturalistic patterns of stimulation were predicted."
+                    "text": "Regarding the input domain over which the model was fitted, we designed the light ramps (<a href=\"#fig4\">Figure 4</a>) to match the intensity domain of the naturalistic light stimulation (<a href=\"#fig6\">Figure 6</a>): both ranges between 0 and 207 W/m<sup>2</sup>. Likewise, the intensity domain of the odor ramps (<a href=\"#fig3\">Figures 3 and 4</a>) and the naturalistic odor stimulus (<a href=\"#fig8\">Figure 8</a>) were chosen to be comparable: 0\u2014500 \u00b5M for the ramps and 0\u2014120 \u00b5M for the naturalistic stimulus. Consequently, the neural models for the light and odor stimulations were trained on a dataset that included the domain over which the naturalistic patterns of stimulation were predicted."
                 }, 
                 {
                     "type": "paragraph", 

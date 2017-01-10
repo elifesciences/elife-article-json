@@ -1363,7 +1363,7 @@
                                     }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "where \u0394<i>t</i><sub><i>post</i>\u2212<i>pre</i></sub> is the time between the current postsynaptic spike and the last presynaptic spike, \u0394<i>t</i><sub><i>post</i></sub> is the time between the current postsynaptic spike and the last one, and similarly for \u0394<i>t</i><sub><i>pre</i>\u2212<i>post</i></sub> and \u0394<sub><i>pre</i></sub>. Finally, we also integrated the STP (<a href=\"#equ1 equ2\">Equations 1, 2</a>) between presynaptic spikes <i>k</i> and <i>k</i> + 1, a time \u0394<i>t</i><sub><i>pre</i></sub> apart, yielding"
+                                        "text": "where \u0394<i>t</i><sub><i>post</i>\u2212<i>pre</i></sub> is the time between the current postsynaptic spike and the last presynaptic spike, \u0394<i>t</i><sub><i>post</i></sub> is the time between the current postsynaptic spike and the last one, and similarly for \u0394<i>t</i><sub><i>pre</i>\u2212<i>post</i></sub> and \u0394<sub><i>pre</i></sub>. Finally, we also integrated the STP (<a href=\"#equ1\">Equations 1, 2</a>) between presynaptic spikes <i>k</i> and <i>k</i> + 1, a time \u0394<i>t</i><sub><i>pre</i></sub> apart, yielding"
                                     }, 
                                     {
                                         "type": "mathml", 
@@ -1390,7 +1390,7 @@
                                 "content": [
                                     {
                                         "type": "paragraph", 
-                                        "text": "We fitted the free parameters of the long-term plasticity model <b><i>\u03b8</i></b> = {<i>d</i><sub>\u2212</sub>, <i>\u03c4</i><sub><i>y</i>\u2212</sub>, <i>d</i><sub>+</sub>, <i>\u03c4</i><sub><i>y</i>+</sub>, <i>c</i><sub>+</sub>, <i>\u03c4</i><sub><i>x</i>+</sub>} to the frequency- and timing-dependent slice STDP data of layer-5 pyramidal cells (<a href=\"#bib43\">Sj\u00f6str\u00f6m et al., 2001</a>). Parameters are shown in <a href=\"#tbl1\">Table 1</a>. Rather than fitting to changes in the weight <i>w</i>, we fitted directly to modifications in <i>P</i> and <i>q</i> (see <a href=\"#equ21 equ22\">Equations 21, 22</a> for our estimators of <i>P</i> and <i>q</i>). This was done by minimizing the mean squared error between the data and the experiments for both <i>P</i> and <i>q</i> (as shown in <a href=\"#fig1\">Figure 1</a>)"
+                                        "text": "We fitted the free parameters of the long-term plasticity model <b><i>\u03b8</i></b> = {<i>d</i><sub>\u2212</sub>, <i>\u03c4</i><sub><i>y</i>\u2212</sub>, <i>d</i><sub>+</sub>, <i>\u03c4</i><sub><i>y</i>+</sub>, <i>c</i><sub>+</sub>, <i>\u03c4</i><sub><i>x</i>+</sub>} to the frequency- and timing-dependent slice STDP data of layer-5 pyramidal cells (<a href=\"#bib43\">Sj\u00f6str\u00f6m et al., 2001</a>). Parameters are shown in <a href=\"#tbl1\">Table 1</a>. Rather than fitting to changes in the weight <i>w</i>, we fitted directly to modifications in <i>P</i> and <i>q</i> (see <a href=\"#equ21\">Equations 21, 22</a> for our estimators of <i>P</i> and <i>q</i>). This was done by minimizing the mean squared error between the data and the experiments for both <i>P</i> and <i>q</i> (as shown in <a href=\"#fig1\">Figure 1</a>)"
                                     }, 
                                     {
                                         "type": "mathml", 
@@ -1511,7 +1511,7 @@
                                     }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "The number of release sites <i>N</i> is believed to change only after a few hours (<a href=\"#bib4\">Bolshakov et al., 1997</a>; <a href=\"#bib39\">Saez and Friedlander, 2009</a>). As the slice synaptic plasticity experiments analysed here lasted only up to 1.5 hr (<a href=\"#bib43\">Sj\u00f6str\u00f6m et al., 2001</a>) and we were interested in the relative changes we assumed constant <i>N</i> = 5.5 in our analysis below, as estimated in <a href=\"#bib29\">Markram et al. (1997)</a> using data from the same connection type we used to fit our model. <a href=\"#equ21 equ22\">Equations 21, 22</a> were used to estimate <i>P</i> and <i>q</i> from in vitro plasticity data (see above), respectively (dataset deposited at Dryad data repository at <a href=\"http://dx.doi.org/10.5061/dryad.p286g\">http://dx.doi.org/10.5061/dryad.p286g</a> <a href=\"#bib10\">(Costa et al., 2015</a>)). Note that because the data had to be reanalized in full there are minor differences in the mean weights previously published (<a href=\"#bib43\">Sj\u00f6str\u00f6m et al., 2001</a>)."
+                                        "text": "The number of release sites <i>N</i> is believed to change only after a few hours (<a href=\"#bib4\">Bolshakov et al., 1997</a>; <a href=\"#bib39\">Saez and Friedlander, 2009</a>). As the slice synaptic plasticity experiments analysed here lasted only up to 1.5 hr (<a href=\"#bib43\">Sj\u00f6str\u00f6m et al., 2001</a>) and we were interested in the relative changes we assumed constant <i>N</i> = 5.5 in our analysis below, as estimated in <a href=\"#bib29\">Markram et al. (1997)</a> using data from the same connection type we used to fit our model. <a href=\"#equ21\">Equations 21, 22</a> were used to estimate <i>P</i> and <i>q</i> from in vitro plasticity data (see above), respectively (dataset deposited at Dryad data repository at <a href=\"http://dx.doi.org/10.5061/dryad.p286g\">http://dx.doi.org/10.5061/dryad.p286g</a> <a href=\"#bib10\">(Costa et al., 2015</a>)). Note that because the data had to be reanalized in full there are minor differences in the mean weights previously published (<a href=\"#bib43\">Sj\u00f6str\u00f6m et al., 2001</a>)."
                                     }, 
                                     {
                                         "type": "paragraph", 
@@ -1567,7 +1567,7 @@
                                     }, 
                                     {
                                         "type": "paragraph", 
-                                        "text": "where <i>p</i><sub><i>k</i></sub> and <i>r</i><sub><i>k</i></sub> are given by <a href=\"#equ16 equ15\">Equations 15, 16</a>, respectively. The SNR of the sum of the first <i>K</i> responses, evoked at a given presynaptic firing rate <i>\u03c1</i> therefore equals"
+                                        "text": "where <i>p</i><sub><i>k</i></sub> and <i>r</i><sub><i>k</i></sub> are given by <a href=\"#equ16\">Equations 15, 16</a>, respectively. The SNR of the sum of the first <i>K</i> responses, evoked at a given presynaptic firing rate <i>\u03c1</i> therefore equals"
                                     }, 
                                     {
                                         "type": "mathml", 

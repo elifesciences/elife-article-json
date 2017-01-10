@@ -1386,7 +1386,7 @@
                             }, 
                             {
                                 "type": "paragraph", 
-                                "text": "where the section in round brackets is the inverse logit function. This equation together with <a href=\"#equ2 equ4\">Equations [2] and [4]</a> can be then used to predict the relationship between hut trial mortality in standard and PBO LLINs for a range of areas with different levels of pyrethroid resistance using the following steps (a) to (c) below."
+                                "text": "where the section in round brackets is the inverse logit function. This equation together with <a href=\"#equ2\">Equations [2] and [4]</a> can be then used to predict the relationship between hut trial mortality in standard and PBO LLINs for a range of areas with different levels of pyrethroid resistance using the following steps (a) to (c) below."
                             }, 
                             {
                                 "type": "list", 
@@ -6346,7 +6346,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "The paper is clearly written, the results are explained very well, and the figures clearly convey the key findings. The methods are also well-described (though will be even clearer once code has been made available as is planned). There is one area that I think needs to be improved: while the methods describe clearly what was done, it is not always clear why. In particular, I found the reasons behind a number of modelling choices described in the subsections \u201cQuantifying the impact of standard and PBO LLINs in the presence of insecticide resistance\u201d and \u201cParameterising transmission dynamics model\u201d opaque. For example, why use a 3rd order polynomial when looking at LLIN deterrence? Are there reasons for thinking there should be two change-points? To what extent are the assumptions of normally distributed errors (<a href=\"#equ9\">Equation 9</a>) justified? Can the data motivating the choice of <a href=\"#equ10 equ11\">Equations 10\u201311</a> be shown in a technical appendix? Motivation of <a href=\"#equ12 equ13 equ14\">Equations 12\u201314</a> is also lacking: taking the simplest (<a href=\"#equ13\">Equation 13</a>) it is unclear why s_p0 (the proportion of mosquitoes feeding successfully) should depend on both m_p (the ratio of the number of mosquitoes entering a hut with a LLIN to the number entering a hut without a bednet), and on k_p (the proportion which enter and successfully feed a p-treated hut), given that the latter already includes entering. Moreover, it is claimed that s_p0 is a proportion, so should be constrained between 0 and 1, but if m_p = 1 (so bednets have no effect on entering) then s_p0=k_p/k_0, which is a ratio of two proportions rather than a proportion itself (for plausible parameters values it presumably will be below 1, but it is not necessarily so). I therefore think further motivation is required, which should ideally include some graphical assessments of model assumptions (3rd order polynomial, normally distributed errors, relationship between k_p and mortality) which could go in the appendix."
+                    "text": "The paper is clearly written, the results are explained very well, and the figures clearly convey the key findings. The methods are also well-described (though will be even clearer once code has been made available as is planned). There is one area that I think needs to be improved: while the methods describe clearly what was done, it is not always clear why. In particular, I found the reasons behind a number of modelling choices described in the subsections \u201cQuantifying the impact of standard and PBO LLINs in the presence of insecticide resistance\u201d and \u201cParameterising transmission dynamics model\u201d opaque. For example, why use a 3rd order polynomial when looking at LLIN deterrence? Are there reasons for thinking there should be two change-points? To what extent are the assumptions of normally distributed errors (<a href=\"#equ9\">Equation 9</a>) justified? Can the data motivating the choice of <a href=\"#equ10\">Equations 10\u201311</a> be shown in a technical appendix? Motivation of <a href=\"#equ12\">Equations 12\u201314</a> is also lacking: taking the simplest (<a href=\"#equ13\">Equation 13</a>) it is unclear why s_p0 (the proportion of mosquitoes feeding successfully) should depend on both m_p (the ratio of the number of mosquitoes entering a hut with a LLIN to the number entering a hut without a bednet), and on k_p (the proportion which enter and successfully feed a p-treated hut), given that the latter already includes entering. Moreover, it is claimed that s_p0 is a proportion, so should be constrained between 0 and 1, but if m_p = 1 (so bednets have no effect on entering) then s_p0=k_p/k_0, which is a ratio of two proportions rather than a proportion itself (for plausible parameters values it presumably will be below 1, but it is not necessarily so). I therefore think further motivation is required, which should ideally include some graphical assessments of model assumptions (3rd order polynomial, normally distributed errors, relationship between k_p and mortality) which could go in the appendix."
                 }, 
                 {
                     "type": "paragraph", 
@@ -6491,7 +6491,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Can the data motivating the choice of <a href=\"#equ10 equ11\">Equations 10\u201311</a> be shown in a technical appendix?</i>"
+                    "text": "<i>Can the data motivating the choice of <a href=\"#equ10\">Equations 10\u201311</a> be shown in a technical appendix?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6503,7 +6503,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Motivation of <a href=\"#equ12 equ13 equ14\">Equations 12\u201314</a> is also lacking: taking the simplest (<a href=\"#equ13\">Equation 13</a>) it is unclear why s_p0 (the proportion of mosquitoes feeding successfully) should depend on both m_p (the ratio of the number of mosquitoes entering a hut with a LLIN to the number entering a hut without a bednet), and on k_p (the proportion which enter and successfully feed a p-treated hut), given that the latter already includes entering.</i> "
+                    "text": "<i>Motivation of <a href=\"#equ12\">Equations 12\u201314</a> is also lacking: taking the simplest (<a href=\"#equ13\">Equation 13</a>) it is unclear why s_p0 (the proportion of mosquitoes feeding successfully) should depend on both m_p (the ratio of the number of mosquitoes entering a hut with a LLIN to the number entering a hut without a bednet), and on k_p (the proportion which enter and successfully feed a p-treated hut), given that the latter already includes entering.</i> "
                 }, 
                 {
                     "type": "paragraph", 
