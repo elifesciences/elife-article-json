@@ -1,0 +1,506 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "status": "vor", 
+        "id": "22661", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.22661", 
+        "authorLine": "Chi Van Dang", 
+        "title": "Mixed outcomes for computational predictions", 
+        "titlePrefix": "Reproducibility in cancer biology", 
+        "published": "2017-01-19T00:00:00Z", 
+        "versionDate": "2017-01-19T00:00:00Z", 
+        "volume": 6, 
+        "elocationId": "e22661", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22661/elife-22661-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cancer-biology", 
+                "name": "Cancer Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Experimental efforts to validate the output of a computational model that predicts new uses for existing drugs highlights the inherently complex nature of cancer biology."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Dang", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Chi Van Dang", 
+                    "index": "Dang, Chi Van"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Abramson Cancer Center, Abramson Family Cancer Research Institute", 
+                            "University of Pennsylvania"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Philadelphia", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Philadelphia"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "dangvchi@upenn.edu"
+                ], 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Experimental efforts to validate the output of a computational model that predicts new uses for existing drugs highlights the inherently complex nature of cancer biology."
+    }, 
+    "article": {
+        "status": "vor", 
+        "id": "22661", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.22661", 
+        "authorLine": "Chi Van Dang", 
+        "title": "Mixed outcomes for computational predictions", 
+        "titlePrefix": "Reproducibility in cancer biology", 
+        "published": "2017-01-19T00:00:00Z", 
+        "versionDate": "2017-01-19T00:00:00Z", 
+        "volume": 6, 
+        "elocationId": "e22661", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22661/elife-22661-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cancer-biology", 
+                "name": "Cancer Biology"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Experimental efforts to validate the output of a computational model that predicts new uses for existing drugs highlights the inherently complex nature of cancer biology."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Dang", 
+            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Chi Van Dang", 
+                    "index": "Dang, Chi Van"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Abramson Cancer Center, Abramson Family Cancer Research Institute", 
+                            "University of Pennsylvania"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Philadelphia", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Philadelphia"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "dangvchi@upenn.edu"
+                ], 
+                "competingInterests": "The author declares that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "Experimental efforts to validate the output of a computational model that predicts new uses for existing drugs highlights the inherently complex nature of cancer biology.", 
+        "keywords": [
+            "Reproducibility Project: Cancer Biology", 
+            "replication", 
+            "metascience", 
+            "reproducibility", 
+            "drug retargeting", 
+            "cimetidine"
+        ], 
+        "relatedArticles": [
+            "06847", 
+            "17044"
+        ], 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "In 2011 researchers at Stanford and the Lucile Packard Children's Hospital reported a computational approach for predicting if a drug that was currently approved for the treatment of a certain disease could also be used to treat a form of cancer (<a href=\"#bib7\">Sirota et al., 2011</a>). The researchers derived gene expression signatures for 100 diseases from data available in the Gene Expression Omnibus (GEO) and compared these signatures with gene expression measurements on 164 drugs."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Based on these comparisons Sirota et al. predicted that cimetidine, an antiulcer drug, could be used to treat a form of lung cancer called lung adenocarcinoma, and then went on to demonstrate the efficacy of cimetidine against this form of cancer both in vitro and in vivo (in xenograft experiments in which human tumor cells were transplanted into mice). They also confirmed, as predicted by their computational model, that cimetidine was not effective against renal carcinoma."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In 2015, as part of the Reproducibility Project: Cancer Biology, Kandela et al. published a Registered Report (<a href=\"#bib4\">Kandela et al., 2015</a>) which explained in detail how they would seek to replicate selected experiments from Sirota et al. The results of these experiments have now been published as a Replication Study (<a href=\"#bib5\">Kandela et al., 2017</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In the original work, Sirota et al. demonstrated that cimetidine induced the death of the lung cancer cell line A549. To corroborate this finding, they tested three doses of cimetidine against A549 tumors that had been implanted in mice. While tumors treated with a negative control grew to 3.25 times their original volume, and tumors treated with a positive control (an established cancer drug called doxorubicin) doubled in size, tumors treated with the highest dose of cimetidine grew to 2.3 times their original volume, which was statistically significant. However, xenograft studies are inherently complex \u2013 there is a lot of variability in the length of time it takes a tumor to become established after implantation, and tumors also grow at different rates in different animals \u2013 and the effects of doxorubicin and cimetidine on the growth rates of tumors do not seem very robust from a biological point of view."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In the Replication Study, Kandela et al. found that cimetidine treatment in the lung adenocarcinoma xenograft model resulted in decreased tumor sizes compared to a negative control treatment (<a href=\"#bib5\">Kandela et al., 2017</a>). However, while the effects were in the same direction as those reported by Sirota et al., they were not significant when a Bonferroni correction was used to adjust for multiple comparisons. Treatment with doxorubicin also reduced the size of the lung tumors compared to a control, but again the effects were not significant. In both cases, however, a statistically significant effect was observed when the dataset from the original paper and the dataset from the Replication Study were combined in a meta-analysis."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "The findings of the Replication Study raise issues related to robustness, statistical methods, and effect sizes. Robustness characterizes the consistent response of a system to perturbations: the more robust the system, the less influence these perturbations have on its output. There are many factors that could influence the robustness of the xenograft models used in these experiments: batch effects on the efficacy of the drugs used; changes in the properties of cell lines over time; the strains of the mice used, and also their sex; factors related to microbiome and chow; circadian effects; temperature; and the antimicrobials that might be used in certain facilities."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "It is also possible that Sirota et al. paid too much attention to statistical significance and P values and not enough attention to the actual size of the effect being investigated (<a href=\"#bib6\">Motulsky, 2014</a>). Indeed, the actual tumor sizes observed by Sirota et al. were not diminished by cimetidine at early time points, and the reduction in tumor size at the last time point (the only time point at which the reduction was statistically significant) was only about 30%. This moderate effect size might have contributed to the fact that the effects seen in the replication were similar to those in the original experiments, but not statistically significant (although, as mentioned above, combining data from the two studies did give significant results)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "There have been growing concerns about irreproducibility in the biological literature in recent years (<a href=\"#bib2\">Begley and Ellis, 2012</a>; <a href=\"#bib3\">Errington et al., 2014</a>; <a href=\"#bib1\">Baker, 2016</a>).\u00a0A powerful lesson to emerge from this Replication Study is that reproducibility is not black and white because, like many areas of research, cancer biology\u00a0is nuanced and inherently complex."
+                    }, 
+                    {
+                        "type": "section", 
+                        "id": "s1", 
+                        "title": "Note", 
+                        "content": [
+                            {
+                                "type": "paragraph", 
+                                "text": "Chi Van\u00a0Dang was the eLife Reviewing Editor for the Registered Report (<a href=\"#bib4\">Kandela et al., 2015</a>) and the Replication Study (<a href=\"#bib5\">Kandela et al., 2017</a>)."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Baker", 
+                            "index": "Baker, M"
+                        }
+                    }
+                ], 
+                "articleTitle": "1,500 scientists lift the lid on reproducibility", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "533", 
+                "pages": {
+                    "first": "452", 
+                    "last": "454", 
+                    "range": "452\u2013454"
+                }, 
+                "doi": "10.1038/533452a", 
+                "pmid": 27225100
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2012", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CG Begley", 
+                            "index": "Begley, CG"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LM Ellis", 
+                            "index": "Ellis, LM"
+                        }
+                    }
+                ], 
+                "articleTitle": "Drug development: Raise standards for preclinical cancer research", 
+                "journal": {
+                    "name": [
+                        "Nature"
+                    ]
+                }, 
+                "volume": "483", 
+                "pages": {
+                    "first": "531", 
+                    "last": "533", 
+                    "range": "531\u2013533"
+                }, 
+                "doi": "10.1038/483531a", 
+                "pmid": 22460880
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TM Errington", 
+                            "index": "Errington, TM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "E Iorns", 
+                            "index": "Iorns, E"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "W Gunn", 
+                            "index": "Gunn, W"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "FE Tan", 
+                            "index": "Tan, FE"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Lomax", 
+                            "index": "Lomax, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BA Nosek", 
+                            "index": "Nosek, BA"
+                        }
+                    }
+                ], 
+                "articleTitle": "An open investigation of the reproducibility of cancer biology research", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "e04333", 
+                "doi": "10.7554/eLife.04333"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Kandela", 
+                            "index": "Kandela, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Zervantonakis", 
+                            "index": "Zervantonakis, I"
+                        }
+                    }, 
+                    {
+                        "type": "group", 
+                        "name": "Reproducibility Project: Cancer Biology"
+                    }
+                ], 
+                "articleTitle": "Registered Report: Discovery and preclinical validation of drug indications using compendia of public gene expression data", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "4", 
+                "pages": "e06847", 
+                "doi": "10.7554/eLife.06847", 
+                "pmid": 25939392
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2017", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Kandela", 
+                            "index": "Kandela, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Aird", 
+                            "index": "Aird, F"
+                        }
+                    }, 
+                    {
+                        "type": "group", 
+                        "name": "Reproducibility Project: Cancer Biology"
+                    }
+                ], 
+                "articleTitle": "Replication Study: Discovery and preclinical validation of drug indications using compendia of public gene expression data", 
+                "journal": {
+                    "name": [
+                        "eLife"
+                    ]
+                }, 
+                "volume": "6", 
+                "pages": "e17044", 
+                "doi": "10.7554/eLife.17044"
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2014", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "HJ Motulsky", 
+                            "index": "Motulsky, HJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Common misconceptions about data analysis and statistics", 
+                "journal": {
+                    "name": [
+                        "Journal of Pharmacology and Experimental Therapeutics"
+                    ]
+                }, 
+                "volume": "351", 
+                "pages": {
+                    "first": "200", 
+                    "last": "205", 
+                    "range": "200\u2013205"
+                }, 
+                "doi": "10.1124/jpet.114.219170", 
+                "pmid": 25204545
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "M Sirota", 
+                            "index": "Sirota, M"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JT Dudley", 
+                            "index": "Dudley, JT"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Kim", 
+                            "index": "Kim, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AP Chiang", 
+                            "index": "Chiang, AP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Morgan", 
+                            "index": "Morgan, AA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Sweet-Cordero", 
+                            "index": "Sweet-Cordero, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Sage", 
+                            "index": "Sage, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJ Butte", 
+                            "index": "Butte, AJ"
+                        }
+                    }
+                ], 
+                "articleTitle": "Discovery and preclinical validation of drug indications using compendia of public gene expression data", 
+                "journal": {
+                    "name": [
+                        "Science Translational Medicine"
+                    ]
+                }, 
+                "volume": "3", 
+                "pages": "96ra77", 
+                "doi": "10.1126/scitranslmed.3001318", 
+                "pmid": 21849665
+            }
+        ]
+    }
+}
