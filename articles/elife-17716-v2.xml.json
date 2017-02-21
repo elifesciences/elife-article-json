@@ -3586,13 +3586,15 @@
                 "type": "book", 
                 "id": "bib7", 
                 "date": "1974", 
-                "authors": [
+                "editors": [
                     {
-                        "type": "group", 
-                        "name": "World Health Organization"
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AA Buck", 
+                            "index": "Buck, AA"
+                        }
                     }
                 ], 
-                "authorsType": "editors", 
                 "bookTitle": "Onchocerciasis : Symptomatology, Pathology, Diagnosis", 
                 "publisher": {
                     "name": [
@@ -3608,7 +3610,13 @@
                             ]
                         }
                     }
-                }
+                }, 
+                "authors": [
+                    {
+                        "type": "group", 
+                        "name": "World Health Organization"
+                    }
+                ]
             }, 
             {
                 "type": "journal", 
@@ -5422,7 +5430,6 @@
                         "name": "World Health Organization Department of Epidemic and Pandemic Alert and Response"
                     }
                 ], 
-                "authorsType": "authors", 
                 "bookTitle": "WHO Report on Global Surveillance of Epidemic-Prone Infectious Diseases", 
                 "publisher": {
                     "name": [
