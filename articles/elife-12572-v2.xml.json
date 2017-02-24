@@ -1373,7 +1373,7 @@
                                 "doi": "10.7554/eLife.12572.014", 
                                 "id": "tbl1", 
                                 "label": "Table 1.", 
-                                "title": "Maximum likelihood fits of transition rates in wild type <i>C. elegans</i>. Each cohort was fitted separately; values are expressed as mean \u00b1 sem (<i>n</i> = 5 cohorts). Data from wild type cohorts were obtained on the same days as the experimental cohorts for which they served as controls (<a href=\"#tbl3\">Tables 3</a> and <a href=\"#tbl4\">4</a>), but experimental cohorts in this study were separated by weeks to months. All transition rates were constrained to be \u22650. Transition rates that were calculated using the synaptic constraints (<a href=\"#equ36\">Equation 35</a>) are shaded orange; other constrained values are shaded grey. Mean dwell times and state probabilities were calculated from the transition rates. Column A shows fits using the standard model, which has 8 rate constants with two synaptic constraints, resulting in 6 free parameters that determine the 6 synaptic weights (<a href=\"#fig2\">Figure 2C,D</a>; Materials and methods <a href=\"#equ32\">Equations 31\u201335</a>). Column B shows fits to a model that has only one pause state (X); this model was derived from the standard model by imposing two more constraints: <math id=\"inf87\"><mrow><msub><mi>a</mi><mrow><mi>F</mi><mi>Y</mi></mrow></msub><mo>=</mo><msub><mi>a</mi><mrow><mi>R</mi><mi>Y</mi></mrow></msub><mo>\u2245</mo><mn>0</mn></mrow></math>, yielding 4 free parameters. To allow comparison of models A and B by the likelihood ratio test, which requires that model B be a special case of model A, <math id=\"inf88\"><mrow><msub><mi>a</mi><mrow><mi>R</mi><mi>Y</mi></mrow></msub></mrow></math> and <math id=\"inf89\"><mrow><msub><mi>a</mi><mrow><mi>F</mi><mi>Y</mi></mrow></msub></mrow></math> were set slightly &gt;0 (10<sup>-10</sup> s<sup>-1</sup>), thereby avoiding infinite values for <math id=\"inf90\"><mrow><msub><mi>a</mi><mrow><mi>Y</mi><mi>F</mi></mrow></msub></mrow></math> and <math id=\"inf91\"><mrow><msub><mi>a</mi><mrow><mi>Y</mi><mi>R</mi></mrow></msub></mrow></math> when applying the synaptic constraints, while maintaining a vanishingly small probability of being in state Y (<math id=\"inf92\"><msub><mi>p</mi><mtext>Y</mtext></msub><mo>&lt;</mo></math>\u00a010<sup>-18</sup>). The log<sub>e</sub> likelihood (summed over the 5 cohorts) for model B was 1854 less than for model A, with 30 degrees of freedom for model A (6 per cohort \u00d7 5 cohorts) and 20 degrees of freedom for model B (4 per cohort \u00d7 5 cohorts). Applying the likelihood ratio test, the difference was highly significant (<i>p</i>&lt;10<sup>-100</sup>; <i>p</i>=Chi-squared(2<i>L, df</i>), where <i>L\u00a0</i> =\u00a01854 and <i>df\u00a0</i> =\u00a030\u201320 =10. Model C is the most general 3-state (F, R, P) model, which allows all six transitions between the three states. The fitted transition rates for model C were nearly identical to model B. Likelihood values are relative to model A.", 
+                                "title": "Table 1.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1468,7 +1468,7 @@
                                 "doi": "10.7554/eLife.12572.018", 
                                 "id": "tbl2", 
                                 "label": "Table 2.", 
-                                "title": "Synaptic weights derived from the transition rate constants. The rate constants were taken from <a href=\"#tbl1\">Table 1</a>, column A. Two values of the fundamental switching time, <i>A</i>, corresponding to the minimum (0.40\u00a0Hz) and maximum (0.86\u00a0Hz) values consistent with the ablation results were used in Materials and methods, <a href=\"#equ37\">Equations 36\u201338</a> to calculate the corresponding synaptic weights.", 
+                                "title": "Table 2.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1484,7 +1484,7 @@
                                 "doi": "10.7554/eLife.12572.019", 
                                 "id": "tbl3", 
                                 "label": "Table 3.", 
-                                "title": "Effects of command neuron ablations on undulation frequency, forward velocity and reverse velocity. Values were computed separately for each worm and are shown as mean \u00b1 sem (<i>n</i> = 19\u201329 ). Undulation frequency was estimated as one-half of the reciprocal of the time of the first local minimum in the heading autocorrelation function. All <i>p</i>-values are from two-tailed <i>t</i>-tests and are shown without correction for multiple comparisons. Blue denotes significance at p&lt;0.05. Red denotes significance at p&lt;0.05 after Bonferroni correction for 15 comparisons.", 
+                                "title": "Table 3.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1508,7 +1508,7 @@
                                 "doi": "10.7554/eLife.12572.020", 
                                 "id": "tbl4", 
                                 "label": "Table 4.", 
-                                "title": "Effects of command neuron ablations on model parameters. The sign of the change (\u0394) caused by the ablation is shown as \u201c+\u201d if the value moved away from 0, \u201c\u2013\u201d if the value moved towards 0. Significance was determined using the likelihood ratio test (Weisstein, Eric W. \"Likelihood Ratio.\" From MathWorld--A Wolfram Web Resource. <a href=\"http://mathworld.wolfram.%20com/LikelihoodRatio.html\">http://mathworld.wolfram. com/LikelihoodRatio.html</a>), which is based on the reduction in likelihood caused by constraining one of the parameters to have the same value in both the ablated cohort and the corresponding sham cohort. The unconstrained fit thus had 12 free parameters (6 for each of the 2 cohorts being compared), while the constrained fit had 11 free parameters. For example, to test the significance of the change in the mean dwell time in the pause state (<math id=\"inf193\"><mrow><msub><mi>d</mi><mtext>P</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow><msub><mi>p</mi><mtext>X</mtext></msub><msub><mi>d</mi><mtext>X</mtext></msub><mo>+</mo><msub><mi>p</mi><mtext>Y</mtext></msub><msub><mi>d</mi><mtext>Y</mtext></msub></mrow><mo>)</mo></mrow><mo>/</mo><mrow><mo>(</mo><mrow><msub><mi>p</mi><mtext>X</mtext></msub><mo>+</mo><msub><mi>p</mi><mtext>Y</mtext></msub></mrow><mo>)</mo></mrow></mrow></math>) caused by ablation of the AVA neuron pair, two cohorts (ablated and sham) were grown and tested under identical conditions. The ln likelihood with 12 free parameters was found to be 894794.075. When <math id=\"inf194\"><mrow><msub><mi>d</mi><mtext>P</mtext></msub></mrow></math> was constrained to be the same for both cohorts, the ln likelihood for the 11 parameter fit was found to be 894784.676. The test statistic <math id=\"inf195\"><mrow><mi>D</mi><mo>=</mo><mn>2</mn><mo>\u00d7</mo><mrow><mo>(</mo><mrow><mn>894794.075</mn><mo>\u2212</mo><mn>894784.676</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo></mo><mn>18.798</mn></mrow></math> was assumed to come from a chi-squared distribution with one degree of freedom, which yielded <math id=\"inf196\"><mrow><mi>p</mi><mo>=</mo><mn>1.45</mn><mo>\u00d7</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>\u2212</mo><mn>5</mn></mrow></msup></mrow></math> (shown in the table as <math id=\"inf197\"><mrow><mi>p</mi><mo>&lt;</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>\u2212</mo><mn>4</mn></mrow></msup></mrow></math>). The constrained fitting process was repeated in turn for each ablation/sham pair for each of the 9 rows shown in the table. All <i>p</i>-values are shown without correction for multiple comparisons. Blue denotes significance at p&lt;0.05. Red denotes significance at p&lt;0.05 after Bonferroni correction for 27 comparisons", 
+                                "title": "Table 4.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1570,7 +1570,7 @@
                                 "doi": "10.7554/eLife.12572.022", 
                                 "id": "tbl5", 
                                 "label": "Table 5.", 
-                                "title": "Effects of mutations on mean undulation frequency, mean forward velocity and mean reverse velocity.Values were computed separately for each worm and are shown as mean \u00b1 sem (<i>n</i> = 25\u201331). Undulation frequency was estimated as one-half of the reciprocal of the time of the first local minimum in the heading autocorrelation function. All <i>p</i>-values are from two-tailed <i>t</i>-tests and are shown without correction for multiple comparisons. Blue denotes significance at <i>p</i>&lt;0.05. Red denotes significance at <i>p</i>&lt;0.05 after Bonferroni correction for 15 comparisons.", 
+                                "title": "Table 5.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1638,7 +1638,7 @@
                                 "doi": "10.7554/eLife.12572.024", 
                                 "id": "tbl6", 
                                 "label": "Table 6.", 
-                                "title": "Effects of mutations on model parameters. Significance was determined using the likelihood ratio test as described in <a href=\"#tbl4\">Table 4</a>. The sign of the change (\u0394) caused by the mutation is shown as \u201c+\u201d if the value moved away from 0, \u201c\u2013\u201d if the value moved towards 0. All <i>p</i>-values are shown without correction for multiple comparisons. Blue denotes significance at p&lt;0.05. Red denotes significance at p&lt;0.05 after Bonferroni correction for 27 comparisons.", 
+                                "title": "Table 6.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1745,7 +1745,7 @@
                                 "doi": "10.7554/eLife.12572.028", 
                                 "id": "tbl7", 
                                 "label": "Table 7.", 
-                                "title": "Regulation of search mode. The weights in each subspace were scanned from -6 to 6 weight units in steps of 0.4 with <math id=\"inf352\"><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mrow><mtext>min</mtext></mrow></msub></mrow></math> or <math id=\"inf353\"><mi>A</mi><mo>=</mo><msub><mi>A</mi><mtext>max</mtext></msub></math>. The letter x means that the indicated search mode was present for at least one point in the subspace when <math id=\"inf354\"><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mrow><mtext>min</mtext></mrow></msub></mrow></math> and\u00a0when <math id=\"inf355\"><mi>A</mi><mo>=</mo><msub><mi>A</mi><mtext>max</mtext></msub></math>; the letters y and z mean that the mode was present only when <math id=\"inf356\"><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mrow><mtext>min</mtext></mrow></msub></mrow></math> or <math id=\"inf357\"><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mrow><mtext>max</mtext></mrow></msub></mrow></math>, respectively. See Materials and methods for definitions of search modes. Control-point weights as defined by the theoretical relationship between weights and search scale (<a href=\"#equ6\">Equation 5</a>) are shown in bold. Only the three-weight subspaces are sufficient for producing all three search modes and full coverage of the plane defined by reversal frequency and <math id=\"inf358\"><mrow><msub><mi>m</mi><mtext>F</mtext></msub></mrow></math> plane as shown in <a href=\"#fig8\">Figure 8</a>.", 
+                                "title": "Table 7.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
