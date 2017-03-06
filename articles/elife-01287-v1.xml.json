@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-01287-v1.xml"
+        }, 
         "status": "vor", 
         "id": "01287", 
         "version": 1, 
@@ -443,6 +446,10 @@
         "impactStatement": "The transition to the aggregative stage of Capsaspora owczarzaki, a close unicellular relative to Metazoa, is associated with significant upregulation of orthologs of genes that are important for multicellularity in metazoans."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-01287-v1.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "01287", 
         "version": 1, 
@@ -5722,6 +5729,8 @@
                     "text": "We apologize for the lack of clarity and we have made a significant effort to better explain the methods used. We tested GO enrichment by using Ontologizer, and not by \u201cspecifically looking at genes we were interested in\u201d. What Ontologizer does is to test whether within a particular list of genes (in this case, genes that were found to be significantly overexpressed in one stage vs another) there is an overrepresentation of any GO (tested against the full list of genes and its associated GOs, the null hypothesis thus being that the proportion of genes for a specific GO category in the subset is a representation of the proportion of genes of these category in the complete list). We used the Topology-Weighted option to avoid having to apply a multiple hypothesis correction on the obtained p-values. Then, we used a p-value threshold of 0.01. The cytoscape networks, which seems to concern the reviewer as well, were built after the Ontologizer analysis had been done. That is, the network is only a visualization tool of the results obtained by Ontologizer (including number of genes in each GO, p-values, etc). Therefore, in response to answer the reviewer\u2019s concern, protein kinases are significantly enriched for exon skipping when comparing any random set of genes in the genome."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
     }
 }

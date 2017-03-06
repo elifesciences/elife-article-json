@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-02626-v1.xml"
+        }, 
         "status": "vor", 
         "id": "02626", 
         "version": 1, 
@@ -1559,6 +1562,10 @@
         "impactStatement": "Combinatorial transcription factor binding shared by multiple species enriches for essential biological pathways and coincides with disease-causing regulatory DNA mutations."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-02626-v1.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "02626", 
         "version": 1, 
@@ -15673,6 +15680,8 @@
                     "text": "We implemented two null models to further test the significance of the enrichments we found. First we shuffled the GWAS SNP summary annotation 1,000 times. Using each random set, we annotated CRMs and singletons with the summaries assigned to overlapping SNPs as described for <a href=\"#fig7\">Figure 7</a>. We then calculated the enrichment for each summary term in the various phylogenetic categories. Second, we created a random set of SNPs from the full list of GWAS lead SNPs that matched the minor allele frequency and distance to transcription start site that we observed in our analyses in <a href=\"#fig7\">Figure 7</a>. This was repeated 1,000 times to create a null distribution of p-values. We considered an enrichment significant if less than 5% of the 1,000 p-values obtained from either of the two null models had an enrichment p-value equal or lower to the one obtained using the original GWAS SNPs summary annotation sample before multiple testing correction."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
     }
 }

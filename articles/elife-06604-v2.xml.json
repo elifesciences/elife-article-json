@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-06604-v2.xml"
+        }, 
         "status": "vor", 
         "id": "06604", 
         "version": 2, 
@@ -173,6 +176,10 @@
         "impactStatement": "Building on recent findings that central sensory processing allocates resources according to the informativeness of statistical features (Hermundstad et al., 2014), we identify visual area V2 as the site of the relevant computations for local image statistics, thus providing a common underpinning for diverse aspects of its neuronal selectivity."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-06604-v2.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "06604", 
         "version": 2, 
@@ -2131,6 +2138,9 @@
                     "text": "As the reviewer indicates, the Hermundstad et al. analysis was predicated on binarizing the continuum of gray levels in natural images, and naturally leads to the question of how the analysis would \u201cscale up\u201d to the full continuum of gray levels. But the notion that histogram equalization would make all features equally variable is not correct, on several grounds. First, although it would equalize first\u2010order statistics, it would not equalize higher\u2010order statistics. Second, even for first\u2010order statistics, histogram equalization is only information\u2010preserving if one ignores limitations on discriminating nearby gray levels that are arbitrarily close. We know from the work of Chubb et al. that with only 16 gray levels in play (limiting consideration to first\u2010order statistics), there are only three perceptual coordinates. So something much more interesting than histogram equalization is going on. We\u2019ve begun to look at the three\u2010gray\u2010level case with multipoint statistics. Here, there are 66 possible feature dimensions in a 2x2 local neighborhood, and at least a dozen of these are visually perceptible, but not nearly all 66. In any case, this is a complex and interesting matter, and would take us far beyond the scope of this paper."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z", 
+        "versionDate": "2099-01-01T00:00:00Z"
     }
 }

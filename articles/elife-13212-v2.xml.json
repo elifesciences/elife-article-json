@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-13212-v2.xml"
+        }, 
         "status": "vor", 
         "id": "13212", 
         "version": 2, 
@@ -373,6 +376,10 @@
         "impactStatement": "Tissue-specific temporal regulators impinge on the VEGF/Delta-Notch pathway to vary tip cell selection pace yielding diverse densities of vascular network."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-13212-v2.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "13212", 
         "version": 2, 
@@ -3591,6 +3598,9 @@
                     "text": "However, we agree a lot of models do side step the reality of the time delays and simulate gene expression effects as instantaneously felt at the cell surface, and anyway from a theoretical point of view it is certainly interesting to just see what happens when we do remove the time delays, to explore the null hypothesis that the reviewer suggests. So, even though it must be stressed such an assumption could never be a realistic alternative to the proposed model as it is not biologically plausible for gene expression to happen in an instant, we re-simulated the model with gene expression changes occurring instantaneously (removing D1-D4). As suggested by the reviewer, S needs to then be increased to compensate for the accumulation of Dll4 effects over time when time delays are present. The result is that the system behavior looks almost exactly like that in <a href=\"#media3\">Video 3</a>, where the time delays were instead mismatched. In a KO simulation without time delays (where \u03b4 is high to account for the high S) the cells flash rapidly between high and then low dll4 levels, as big changes in gene expression occur instantaneously every time step, the cells swing rapidly from strong inhibition to release that inhibition and back (when dll4 is high VEGFR-2 expression drops instantaneously at the next timestep driving an instant drop in Dll4 production at the next timestep which breaks the inhibition and allows the VEGFR-2 receptor levels to rise instantaneously) The negative feedback essentially causes an oscillation with period 1 timestep. The phenotypic result is interesting, as can be seen in <a href=\"#media3\">Video 3</a>, no cell is then continually inhibited so every other timestep extension of filopodia can continue, so the phenotype is counter intuitively one of hypersprouting, rather than inhibition. Therefore, we can reject the null hypothesis that a model without time delays in gene expression could still account for the Plexin KO phenotype, which of course does not hypersprout or hyposprout. To clarify this point the text \u201cCalibrating time delay parameters D3 and D4\u201dhas been added to the Methods section on calibrating the time delays."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z", 
+        "versionDate": "2099-01-01T00:00:00Z"
     }
 }

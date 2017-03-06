@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-12677-v4.xml"
+        }, 
         "status": "vor", 
         "id": "12677", 
         "version": 4, 
@@ -930,6 +933,10 @@
         "impactStatement": "Nucleosomes provide a direct and profound block to the activity of the CRISPR effector protein Cas9, suggesting future sophisticated design rules for CRISPR targeting."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-12677-v4.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "12677", 
         "version": 4, 
@@ -8430,6 +8437,9 @@
                     "text": "We have since used the CRISPRi sgRNA activity data generated for this study as training data for a comprehensive machine learning approach. The resulting sgRNA scoring model achieved a Pearson R2 of ~0.32, sufficient to call highly active sgRNAs with a Receiver Operating Characteristic area under the curve (ROC-AUC) value of 0.81. Again, this result is super-imposed on our v1 library design rules; application of the scoring model to our ricin gene tiling dataset, which was not subjected to the v1 rules, achieved an ROC-AUC of 0.91. This approach differs from the linear regression shown here by accounting for non-linear relationships (e.g. MNase values as displayed in <a href=\"#fig1\">Figure 1E</a> are not strictly linear) and by incorporating several other features (e.g. higher order sequence features, sgRNA secondary structure). However, we believe the development, characterization, and validation of this sgRNA activity model which led to the construction and testing of a v2 CRISPRi library, is beyond the scope of this study but have added references to this work in the revised manuscript (subsection \u201cCRISPRi activity is periodic and out-of-phase with nucleosome positioning\u201d, last paragraph)."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z", 
+        "versionDate": "2099-01-01T00:00:00Z"
     }
 }

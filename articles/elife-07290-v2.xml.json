@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-07290-v2.xml"
+        }, 
         "status": "vor", 
         "id": "07290", 
         "version": 2, 
@@ -287,6 +290,10 @@
         "impactStatement": "The first patch-clamp recordings from single cerebellar granule cells during locomotion reveal that the entire step sequence can be predicted from both excitatory synaptic input and output spikes from a single neuron."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-07290-v2.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "07290", 
         "version": 2, 
@@ -3602,6 +3609,9 @@
                     "text": "Finally, we picked stance-to-swing transitions since these sequences of movement can most accurately be resolved in time from our videos. Furthermore, our metric (which requires precise timing and good recall/precision) and our algorithm (which is unsupervised) are quite conservative and it would be very surprising to be able to get close to 100% precision with single cell events. Given that granule cells are known to code for many different sensory modalities, it is surprising\u2014or at the very least non-trivial\u2014to be able to read out discrete motor events in the way we have shown. It is quite likely that if we optimized a supervised learning method to read out the step sequence, we would be able to improve the prediction score, but we feel this is beside the point we are trying to make, namely that the step sequence is represented in the granule cell layer, which is an entirely novel finding. Probably the most principled way to estimate just how much of this information is encoded would be to calculate the mutual information or transfer entropy between the step sequence and the neural activity, but these methods would require very long recording times to converge. Nevertheless we have modified the text to be more conservative in our claims about step prediction in a way we hope will satisfy the reviewer and editor."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z", 
+        "versionDate": "2099-01-01T00:00:00Z"
     }
 }

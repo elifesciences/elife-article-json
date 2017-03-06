@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-00005-v1.xml"
+        }, 
         "status": "vor", 
         "id": "00005", 
         "version": 1, 
@@ -428,6 +431,10 @@
         "impactStatement": "Electron microscopy has been used to produce the first three-dimensional image of the PRC2 gene-silencing complex."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-00005-v1.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "00005", 
         "version": 1, 
@@ -3676,6 +3683,8 @@
                     "text": "We made 20 classes based on the number of tilt pairs we had, since this number could distribute the dataset into classes that had an appropriate number of particles for a reconstruction with enough signal and at a resolution that was sufficient to serve as an initial model for projection matching. Had we made more classes, then the RCT reconstructions would have had much fewer particles, and not been interpretable. As we relied on a good \u201ctomographic\u201d coverage of the views around the long axis of the structure, we were expecting to have a coverage of about 18 degrees from the 20 classes (360/20). We believe this was a good compromise between angular spread and signal. A proof of this principle was that our strategy actually worked, generating an RCT 3D model from which reprojections matched well our reference free 2D classes, and that ultimately aided to refine our untilted data to 21 \u00c5."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
     }
 }

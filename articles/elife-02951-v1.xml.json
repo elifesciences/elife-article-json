@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-02951-v1.xml"
+        }, 
         "status": "vor", 
         "id": "02951", 
         "version": 1, 
@@ -300,6 +303,10 @@
         "impactStatement": "Gaining genetic control over neural modules that drive the grooming of each <i>Drosophila</i> body part reveals how mechanisms for selecting among competing behavioral choices are used to generate sequences of actions."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-02951-v1.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "02951", 
         "version": 1, 
@@ -3923,6 +3930,8 @@
                     "text": "We do use a noise term in our model that varies the initial amount of dust on the cleaning modules in the upper ten percent of the total dust amount (see revised Methods). This causes variability in which modules are selected first when there is no suppression hierarchy (i.e. as in <a href=\"#fig4\">Figure 4B</a>). This is not, however, what causes the alternations among the cleaning movements described by the reviewer. Alternations occur as the activation levels between the movements get closer and closer through cleaning. For example, module 1 occurs first in the sequence and proceeds until the dust level on its corresponding body part is reduced enough that the next dirty module 2 now has a higher relative activation level. Module 1 is not yet clean, but clean enough that its sensory drive is less than module 2. Once module 2 cleans its body part, thus reducing its own sensory drive, the activation level of module 1 is now above 2. These two modules will alternate back and forth until their activation levels fall below module 3. Now these alternations will occur among all three modules. Therefore, the sequence has a sequential nature but, at the point where the activity levels become more similar through cleaning, the behavior takes on this alternating character (we now refer to this as return cleaning in the paper \u2013 i.e. returning to clean previously cleaned parts). This is apparent in the ethograms of actual flies after they are dusted, and in the model (<a href=\"#fig1\">Figure 1E</a>, <a href=\"#fig4\">Figure 4B-D</a>, <a href=\"#fig5\">Figure 5A,C</a>). Although the appearance of the different movements in a particular order (<a href=\"#fig1\">Figure 1F</a>) may be thought of as deterministic, the return cleaning between the cleaning movements is more probabilistic. We added a paragraph to the <a href=\"#fig4\">Figure 4</a> Results section to describe this property of the model."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
     }
 }

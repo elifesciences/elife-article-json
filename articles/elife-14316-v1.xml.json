@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-14316-v1.xml"
+        }, 
         "status": "vor", 
         "id": "14316", 
         "version": 1, 
@@ -314,6 +317,10 @@
         "impactStatement": "When Rhesus monkeys plan reaching movements of which they are not fully confident, a particular area of the brain represents both the chosen action as well as alternate movements, perhaps as an aid for error correction or learning."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-14316-v1.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "14316", 
         "version": 1, 
@@ -3034,6 +3041,8 @@
                     "text": "In assessing decoder performance, we opted not to use the standard variance accounted for metric (VAF) due to non-uniform and significantly different reach distributions across sessions and between uncertainty conditions. VAF normalizes performance with respect to the total variance in the signal (in this case reach direction). This variance could differ quite dramatically between uncertainty conditions, making direct comparisons of performance problematic. Instead, we simply computed performance with respect to the maximum possible circular variance (which always has an upper limit of 1). Subtracting this value from 1 created a useful and intuitive scale between 0 (decoder chooses random directions) and 1 (decoder perfectly decodes reach directions). This metric is unaffected by the distribution of reaches and thus allowed us to compare decoder performance directly across uncertainty conditions."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
     }
 }

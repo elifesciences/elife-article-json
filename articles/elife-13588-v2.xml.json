@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-13588-v2.xml"
+        }, 
         "status": "vor", 
         "id": "13588", 
         "version": 2, 
@@ -222,6 +225,10 @@
         "impactStatement": "In monkeys, the integrity of the magnocellular subdivision of mediodorsal thalamus is important when using recent rewarded choices to promote persistence with a recently sampled choice during changing or uncertain reward guided-learning and decision-making tasks."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-13588-v2.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "13588", 
         "version": 2, 
@@ -3575,6 +3582,9 @@
                     "text": "To calculate the regression weights, in each animal we performed 3 separate logistic regression analyses for each of the 3 potential stimuli (A, B, C). For each individual regression, the stimulus in question (e.g., \u2018A\u2019) would take the value of 1 whenever chosen and 0 whenever one of the other two stimuli (e.g., \u2018B\u2019 or \u2018C\u2019) was chosen. We then formed explanatory variables (EVs) based on all possible combinations of recent past choices and recent past rewards (trials n-1, n-2, \u2026, n-6). Each EV took the value of 1 when, for the particular choice-outcome interaction, the monkey chosen A and was rewarded, \u20131 when the monkey chose B or C and was rewarded, and the 0 when there was no reward. We then fit a standard logistic regression with these 36 EVs (25 EVs of interest and 11 additional confound regressors describing combinations of choice / outcome n-6). This gave us estimates of <math id=\"inf5\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow></mrow><mi>A</mi></msub></mrow></mstyle></math>and <math id=\"inf6\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>A</mi></msub></mrow></mstyle></math>. We then repeated this process for the other two stimuli to give us 3 sets of regression weights, <math id=\"inf7\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>A</mi></msub><mo>,</mo><msub><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>B</mi></msub><mo>,</mo><msub><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>C</mi></msub></mrow></mstyle></math> and three sets of covariances <math id=\"inf8\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><msub><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>A</mi></msub><mo>,</mo><msub><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>B</mi></msub><mo>,</mo><msub><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>C</mi></msub></mrow></mstyle></math>. The regression weights into a single weight vector using a variance-weighted mean:<math id=\"inf9\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mo>=</mo><msup><mrow><mo>(</mo><msubsup><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>A</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mo>+</mo><msubsup><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>B</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mo>+</mo><msubsup><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>C</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><mo>)</mo></mrow><mrow><mo>\u2212</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><msubsup><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>A</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><msub><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>A</mi></msub><mo>+</mo><msubsup><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>B</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><msub><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>B</mi></msub><mo>+</mo><msubsup><mrow><mover><mi>C</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>C</mi><mrow><mo>\u2212</mo><mn>1</mn></mrow></msubsup><msub><mrow><mover><mi>\u03b2</mi><mo stretchy=\"false\">^</mo></mover></mrow><mi>C</mi></msub><mo>)</mo></mrow></mrow></mstyle></math>"
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z", 
+        "versionDate": "2099-01-01T00:00:00Z"
     }
 }

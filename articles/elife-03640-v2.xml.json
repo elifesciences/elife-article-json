@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-03640-v2.xml"
+        }, 
         "status": "vor", 
         "id": "03640", 
         "version": 2, 
@@ -389,6 +392,10 @@
         "impactStatement": "Whole-genome in silico screening for stop codon contexts that produce elevated translational readthrough and peroxisome targeting reveals that in mammals, the amount of lactate dehydrogenase in the peroxisome is controlled by translational readthrough."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-03640-v2.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "03640", 
         "version": 2, 
@@ -4912,6 +4919,9 @@
                     "text": "The BTR readthrough rates are in the low percent range. As detailed above, we provide evidence that these rates are entirely dependent on the SCC and do not require cis-elements or trans-factors. Considering our finding that readthrough of some of the LINfs3 consensus candidates are at least 10-fold above the physiological background, we do not think that, from the perspective of a stop codon and its\u2019 usual function to stop translation, these are low rates. It is clear that the RTP approach would miss any cases of readthrough that is independent of the stop codon, and we now state this more clearly in the Introduction, the Results and in the Discussion. Overfitting: we are aware that the number of 66/81 sequences represents the lower limit for a multivariate regression on 51 dimensions. However, with that knowledge in mind we deliberately restricted our analysis to linear models, applied a rigorous model validation using a leave-one-out strategy and performed a feature selection procedure to further reduce the number of model parameters (to 15 in the case of LINfs3). The fact that we could identify the relevant position of the SCC as well as the consensus motif for high RTP assured us that our model generalizes as good as possible for linear approaches. Furthermore, we pave the way for future extended datasets that now can be built by concentrating on the relevant SCC positions. This reduces the number of experiments for fully specified BTR assessment based on the SCC considerably (from 4^12*3 \u223c 50,000,000 to 4^3*3=192) and will allow the application of nonlinear models for RTP prediction. The additional experiments we have added to test the LINfs3 consensus (<a href=\"#fig2\">Figure 2C</a>) suggest that the predictions derived from one cell type in principle can be applied to another, although the overall level of BTR may differ between cell types."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z", 
+        "versionDate": "2099-01-01T00:00:00Z"
     }
 }

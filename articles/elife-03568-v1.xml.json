@@ -5,6 +5,9 @@
         "issn": "2050-084X"
     }, 
     "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-03568-v1.xml"
+        }, 
         "status": "vor", 
         "id": "03568", 
         "version": 1, 
@@ -201,6 +204,10 @@
         "impactStatement": "A general method for inferring fitness from a sample of nucleotide sequences can predict the progenitor of next year's seasonal influenza."
     }, 
     "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/0bcd8975f2cb7cd58ee81d51ca87bd25d638aee9/articles/elife-03568-v1.xml", 
+            "patched": true
+        }, 
         "status": "vor", 
         "id": "03568", 
         "version": 1, 
@@ -3172,6 +3179,8 @@
                     "text": "The results depend only very weakly (square root of a logarithm) on the sampling size entering the non-sampling factor. Increasing omega (the assumed sampling fraction) by a large factor pushes all fitness estimates down, but has little effect on the relative ranking. When chosen correctly, the fitness estimates of terminal nodes should scatter around 0 consistent with the population distribution. For the simulated data, we know how to set omega, for the influenza data we now use the LBI to rank sequence which does not depend on the sampling fraction. As discussed above, our algorithm is fairly insensitive to sampling bias and we try to avoid sampling bias by down sampling that data to similar numbers of sequences from different geographic regions."
                 }
             ]
-        }
+        }, 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
     }
 }
