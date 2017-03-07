@@ -435,13 +435,8 @@
                                 "type": "table", 
                                 "doi": "10.7554/eLife.10559.009", 
                                 "id": "tbl1", 
-                                "title": "Table 1.", 
-                                "caption": [
-                                    {
-                                        "type": "paragraph", 
-                                        "text": "Parameters and ranges"
-                                    }
-                                ], 
+                                "label": "Table 1.", 
+                                "title": "Parameters and ranges", 
                                 "tables": [
                                     "<table><thead><tr><th>Symbol</th><th>Description</th><th>Range</th><th>Unit</th></tr></thead><tbody><tr><td colspan=\"4\">Within-host model</td></tr><tr><td>\u2003\u039b<sub><i>s</i></sub></td><td>Max growth rate (DS)</td><td>0.4\u20130.8</td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003\u039b<sub><i>r</i></sub></td><td>Max growth rate (DR)</td><td>(0.6\u20131) \u00d7 \u039b<sub><i>s</i></sub></td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>k</i></td><td>Hill coeffient in bacterial growth</td><td>0.5\u201350.5</td><td>\u03bcg/ml</td></tr><tr><td>\u2003<i>u</i><sub><i>s</i></sub>, <i>u</i><sub><i>r</i></sub></td><td>Death rates DS, DR</td><td>0.2</td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>m</i><sub><i>S</i></sub></td><td>MIC (DS)</td><td>1</td><td>\u03bcg/ml</td></tr><tr><td>\u2003<i>m</i><sub><i>R</i></sub></td><td>MIC (DR)</td><td>1\u20138</td><td>\u03bcg/ml</td></tr><tr><td>\u2003<i>k</i><sub><i>p</i></sub></td><td>Rate of innate immune clearance</td><td>10<sup>\u22127</sup> <i>\u2212</i> 10<sup>\u22125</sup></td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>k</i><sub><i>i</i></sub></td><td>Rate of adaptive immune clearance</td><td>10<sup>\u22125</sup> \u2212 10<sup>\u22123</sup></td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>\u03bc</i></td><td>Rate of DR mutation</td><td>5 \u00d7 10<sup>\u22129</sup> \u2212 5 \u00d7 10<sup>\u22127</sup></td><td>#/division</td></tr><tr><td>\u2003<i>\u03b1</i></td><td>Recruitment of adaptive immunity</td><td>0.002\u20130.02</td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>\u03c3</i><sub><i>i</i></sub>, <i>\u03c3</i><sub><i>p</i></sub></td><td>Hill parameter in <i>I</i>, <i>P</i> dynamics</td><td>1000, 10,000</td><td>cells/ml</td></tr><tr><td>\u2003<i>u</i><sub><i>i</i></sub></td><td>Loss rate of <i>I</i></td><td>5 \u00d7 10<sup>\u22125</sup> \u2212 5 \u00d7 10<sup>\u22124</sup></td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>\u03b3</i></td><td>Loss rate of <i>P</i></td><td>5 \u00d7 10<sup>\u22124</sup> \u2212 5 \u00d7 10<sup>\u22123</sup></td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>\u03b7</i></td><td>Recruitment of innate immunity</td><td>10<sup>\u22125</sup> \u2212 9 \u00d7 10<sup>\u22124</sup></td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>w</i></td><td>Washout rate</td><td>0.2</td><td>hr<sup>\u22121</sup></td></tr><tr><td>\u2003<i>C</i><sub><i>R</i></sub></td><td>Resource reservoir concentration</td><td>300\u2013700</td><td>\u03bcg/ml</td></tr><tr><td>\u2003<i>e</i></td><td>Use of resource per unit growth</td><td>5 \u00d7 10<sup>\u22127</sup></td><td>\u03bcg/cell</td></tr><tr><td>\u2003<i>A</i><sub>in</sub></td><td>Antibiotic treatment</td><td>0\u20132.5</td><td>\u03bcg/(ml \u00d7 24 hr)</td></tr><tr><td>\u2003<i>d</i></td><td>Loss rate of antibiotic</td><td>0.1</td><td>hr<sup>\u22121</sup></td></tr><tr><td colspan=\"4\">Between-host model</td></tr><tr><td>\u2003<i>\u03b2</i><sub><i>x</i></sub></td><td>Transmission parameter (DS)</td><td>1\u20134</td><td>months<sup>\u22121</sup></td></tr><tr><td>\u2003<i>\u03b2</i><sub><i>y</i></sub></td><td>Transmission parameter (DR)</td><td>1 \u2212 <i>\u03b2</i><sub><i>x</i></sub></td><td>months<sup>\u22121</sup></td></tr><tr><td>\u2003<i>\u03ba</i></td><td>Partial immunity coefficient</td><td>1</td><td>none</td></tr><tr><td>\u2003<i>\u03ba</i><sub><i>t</i></sub></td><td>Treatment protection from DS</td><td>1 \u2212 0.3<i>T</i></td><td>none</td></tr><tr><td>\u2003<i>c</i></td><td>Similarity coefficient</td><td>0\u20131</td><td>none</td></tr><tr><td>\u2003<i>u</i></td><td>DS clearance without treatment</td><td><math id=\"inf3\"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><msub><mi>\u03b2</mi><mi>x</mi></msub></mrow></math> \u2212 <math id=\"inf4\"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><msub><mi>\u03b2</mi><mi>x</mi></msub></mrow></math></td><td>months<sup>\u22121</sup></td></tr><tr><td>\u2003<i>u</i><sub><i>y</i></sub></td><td>DR clearance</td><td><i>\u03b2</i><sub><i>y</i></sub>/<i>R</i><sub>01</sub> \u2212 <i>\u03b2</i><sub><i>y</i></sub></td><td>months<sup>\u22121</sup></td></tr><tr><td>\u2003<i>T</i></td><td>Intensity of treatment</td><td>0\u20131</td><td>none</td></tr><tr><td>\u2003<i>r</i></td><td>Release of DS through treatment</td><td>0\u20130.1</td><td>months<sup>\u22121</sup></td></tr><tr><td>\u2003<i>u</i><sub>max</sub></td><td>Max clearance DS under treatment</td><td>1.05 <i>\u03b2</i><sub><i>x</i></sub></td><td>months<sup>\u22121</sup></td></tr></tbody></table>"
                                 ], 
@@ -475,8 +470,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.010", 
                                 "id": "fig1", 
-                                "title": "Models at the two ends of the competition independence spectrum (between hosts).", 
                                 "label": "Figure 1.", 
+                                "title": "Models at the two ends of the competition independence spectrum (between hosts).", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -532,8 +527,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.003", 
                                 "id": "fig2", 
-                                "title": "How treatment changes the trajectory of the in-host model.", 
                                 "label": "Figure 2.", 
+                                "title": "How treatment changes the trajectory of the in-host model.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -548,8 +543,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.004", 
                                 "id": "fig3", 
-                                "title": "Frequency of best policies over key parameters.", 
                                 "label": "Figure 3.", 
+                                "title": "Frequency of best policies over key parameters.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -564,8 +559,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.005", 
                                 "id": "fig4", 
-                                "title": "Heatmaps illustrating how best policies depend on key combinations of parameters.", 
                                 "label": "Figure 4.", 
+                                "title": "Heatmaps illustrating how best policies depend on key combinations of parameters.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -580,8 +575,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.006", 
                                 "id": "fig5", 
-                                "title": "Trajectories of the between-host model under varying treatment.", 
                                 "label": "Figure 5.", 
+                                "title": "Trajectories of the between-host model under varying treatment.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -596,8 +591,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.007", 
                                 "id": "fig6", 
-                                "title": "Best policy over parameters in the population-level model.", 
                                 "label": "Figure 6.", 
+                                "title": "Best policy over parameters in the population-level model.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -612,8 +607,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.008", 
                                 "id": "fig7", 
-                                "title": "Best policy over parameter combinations in the population-level model.", 
                                 "label": "Figure 7.", 
+                                "title": "Best policy over parameter combinations in the population-level model.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -2893,8 +2888,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.011", 
                                 "id": "fig8", 
-                                "title": "Heatmaps illustrating whether aggressive therapy (yellow), moderate therapy (blue) or neither, conclusively (neutral; green) minimize resistance.", 
                                 "label": "Appendix figure 1.", 
+                                "title": "Heatmaps illustrating whether aggressive therapy (yellow), moderate therapy (blue) or neither, conclusively (neutral; green) minimize resistance.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -2920,8 +2915,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.012", 
                                 "id": "fig9", 
-                                "title": "Sensitivity analysis, varying one parameter at a time.", 
                                 "label": "Appendix figure 2.", 
+                                "title": "Sensitivity analysis, varying one parameter at a time.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -2936,8 +2931,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.013", 
                                 "id": "fig10", 
-                                "title": "Sensitivity analysis, varying one parameter at a time.", 
                                 "label": "Appendix figure 3.", 
+                                "title": "Sensitivity analysis, varying one parameter at a time.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -2952,8 +2947,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.014", 
                                 "id": "fig11", 
-                                "title": "Sensitivity analysis, varying one parameter at a time in the between-host model over the ranges listed in <a href=\"#tbl1\">Table 1</a>.", 
                                 "label": "Appendix figure 4.", 
+                                "title": "Sensitivity analysis, varying one parameter at a time in the between-host model over the ranges listed in <a href=\"#tbl1\">Table 1</a>.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -2968,8 +2963,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.015", 
                                 "id": "fig12", 
-                                "title": "Spearman correlations between treatment level and maximum resistance in both models.", 
                                 "label": "Appendix figure 5.", 
+                                "title": "Spearman correlations between treatment level and maximum resistance in both models.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -2999,8 +2994,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.016", 
                                 "id": "fig13", 
-                                "title": "DAPC scatterplot for the within-host model.", 
                                 "label": "Appendix figure 6.", 
+                                "title": "DAPC scatterplot for the within-host model.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -3019,8 +3014,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.017", 
                                 "id": "fig14", 
-                                "title": "Parameters from the two regimes: (a) with the lysis term and (b) without it.", 
                                 "label": "Appendix figure 7.", 
+                                "title": "Parameters from the two regimes: (a) with the lysis term and (b) without it.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -3035,8 +3030,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.018", 
                                 "id": "fig15", 
-                                "title": "Parameters in the two modes showing that the filter defining \u2018effective treatment\u2019 does not change the relationships between parameters and whether treatment increases or decreases resistance.", 
                                 "label": "Appendix figure 8.", 
+                                "title": "Parameters in the two modes showing that the filter defining \u2018effective treatment\u2019 does not change the relationships between parameters and whether treatment increases or decreases resistance.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -3055,8 +3050,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.019", 
                                 "id": "fig16", 
-                                "title": "Parameters where the two contrasting policies work best in the population level model.", 
                                 "label": "Appendix figure 9.", 
+                                "title": "Parameters where the two contrasting policies work best in the population level model.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -3071,8 +3066,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.10559.020", 
                                 "id": "fig17", 
-                                "title": "Quality of classification using the instantaneous measure of effective competition to classify a parameter set according to whether treatment will increase or decrease resistance.", 
                                 "label": "Appendix figure 10.", 
+                                "title": "Quality of classification using the instantaneous measure of effective competition to classify a parameter set according to whether treatment will increase or decrease resistance.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 

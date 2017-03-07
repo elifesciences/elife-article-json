@@ -1512,13 +1512,8 @@
                         "type": "table", 
                         "doi": "10.7554/eLife.19571.002", 
                         "id": "tbl1", 
-                        "title": "Table 1.", 
-                        "caption": [
-                            {
-                                "type": "paragraph", 
-                                "text": "List of predictor variables used for modelling the suitability of HPAI H5N1 and H5Nx clade 2.3.4.4 viruses using BRT models."
-                            }
-                        ], 
+                        "label": "Table 1.", 
+                        "title": "List of predictor variables used for modelling the suitability of HPAI H5N1 and H5Nx clade 2.3.4.4 viruses using BRT models", 
                         "tables": [
                             "<table><thead><tr><th><p><b>Set</b></p> </th><th><p><b>Variable full name</b></p> </th><th><p><b>Abbreviation</b></p> </th><th><p> <b>Source</b> </p> </th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td></tr><tr><td colspan=\"4\"><p><b>Set 1: Host Variables</b></p> </td></tr><tr><td></td><td><p>Duck density</p></td><td><p>DuDnLg</p></td><td><p><a href=\"#bib45\">Robinson et al. (2014)</a></p> </td></tr><tr><td></td><td><p>Extensive Chicken Density</p></td><td><p>ChDnLgExt</p></td><td><p><a href=\"#bib19\">Gilbert et al. (2015)</a></p> </td></tr><tr><td></td><td><p>Intensive Chicken Density</p></td><td><p>ChDnLgInt</p></td><td><p><a href=\"#bib19\">Gilbert et al. (2015)</a></p> </td></tr><tr><td></td><td><p>Human Population Density</p></td><td><p>HpDnLg</p></td><td><p><a href=\"#bib33\">Linard et al. (2012)</a>; <a href=\"#bib17\">Gaughan et al. (2013)</a>; <a href=\"#bib51\">Sorichetta et al. (2015)</a>; CIESIN's GPW Database</p></td></tr><tr><td></td><td><p>Vaccination in China</p></td><td><p>IsChina</p></td><td><p>FAO Global Administrative Unit Layers (GAUL) database</p></td></tr><tr><td colspan=\"4\"><p><b>Set 2 - Land Cover Variables</b></p> </td></tr><tr><td></td><td><p>Evergreen Deciduous Needleleaf Trees</p></td><td><p>EDNTrees</p></td><td valign=\"bottom\"><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Evergreen Broadleaf Trees</p></td><td><p>EBTrees</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Deciduous Broadleaf Trees</p></td><td><p>DBTrees</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Mixed/Other Trees</p></td><td><p>MixedTrees</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Shrubs</p></td><td><p>Shrubs</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Herbaceous Vegetation</p></td><td><p>HerbVeg</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Cultivated and Managed Vegetation</p></td><td><p>CultVeg</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Regularly Flooded Vegetation</p></td><td><p>RegFlVeg</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Urban/Built-up</p></td><td><p>UrbanBltp</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Open Water</p></td><td><p>Owat</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Distance to Water</p></td><td><p>Dwat</p></td><td valign=\"bottom\"><p>-</p></td></tr><tr><td></td><td><p>Vaccination in China</p></td><td><p>IsChina</p></td><td><p>FAO Global Administrative Unit Layers (GAUL) database</p></td></tr><tr><td colspan=\"4\"><p><b>Set 3- Eco-climatic Variables</b></p> </td></tr><tr><td></td><td><p>Day LST* Annual mean</p></td><td><p>Tmp</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Day LST Amplitude annual</p></td><td><p>TmpAmp1an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Day LST Amplitude bi-annual</p></td><td><p>TmpAmp2an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Day LST Amplitude tri-annual</p></td><td><p>TmpAmp3an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Day LST Variance annual</p></td><td><p>TmpVar1an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Day LST Variance bi-annual</p></td><td><p>TmpVar2an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Day LST Variance annual, bi and tri-annual</p></td><td><p>TmpVar123an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI<sup>\u2020</sup> Annual mean</p></td><td><p>NDVI</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Amplitude annual</p></td><td><p>NDVIAmp1an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Amplitude bi-annual</p></td><td><p>NDVIAmp2an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Amplitude tri-annual</p></td><td><p>NDVIAmp3an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Variance annual</p></td><td><p>NDVIVar1an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Variance bi-annual</p></td><td><p>NDVIVar2an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Variance tri-annual</p></td><td><p>NDVIVar3an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>NDVI Variance annual, bi and tri-annual</p></td><td><p>NDVIVar123an</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Vaccination in China</p></td><td><p>IsChina</p></td><td><p>FAO Global Administrative Unit Layers (GAUL) database</p></td></tr><tr><td colspan=\"4\"><p><b>Set 4: Risk-based selection of variables</b></p> </td></tr><tr><td valign=\"bottom\"></td><td><p>Duck density</p></td><td><p>DuDnLg</p></td><td><p><a href=\"#bib45\">Robinson et al. (2014)</a></p> </td></tr><tr><td></td><td><p>Extensive Chicken Density</p></td><td><p>ChDnLgExt</p></td><td><p><a href=\"#bib19\">Gilbert et al. (2015)</a></p> </td></tr><tr><td></td><td><p>Intensive Chicken Density</p></td><td><p>ChDnLgInt</p></td><td><p><a href=\"#bib19\">Gilbert et al. (2015)</a></p> </td></tr><tr><td></td><td><p>Human Population Density</p></td><td><p>HpDnLg</p></td><td><p><a href=\"#bib33\">Linard et al. (2012)</a>; <a href=\"#bib17\">Gaughan et al. (2013)</a>; <a href=\"#bib51\">Sorichetta et al. (2015)</a>; CIESIN's GPW Database</p></td></tr><tr><td></td><td><p>Cultivated and Managed Vegetation</p></td><td><p>CultVeg</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Open Water</p></td><td><p>Owat</p></td><td><p><a href=\"#bib54\">Tuanmu and Jetz (2014)</a></p> </td></tr><tr><td></td><td><p>Distance to Water</p></td><td><p>Dwat</p></td><td><p>-</p></td></tr><tr><td></td><td><p>Day LST annual mean</p></td><td><p>Tmp</p></td><td><p><a href=\"#bib47\">Scharlemann et al. (2008)</a></p> </td></tr><tr><td></td><td><p>Vaccination in China</p></td><td><p>IsChina</p></td><td><p>FAO Global Administrative Unit Layers (GAUL) database</p></td></tr></tbody></table>"
                         ], 
@@ -1541,8 +1536,8 @@
                         "type": "image", 
                         "doi": "10.7554/eLife.19571.003", 
                         "id": "fig1", 
-                        "title": "Representation of Area under Receiver Operating Curve (AUC) values for HPAI H5N1 and H5Nx models.", 
                         "label": "Figure 1.", 
+                        "title": "Representation of Area under Receiver Operating Curve (AUC) values for HPAI H5N1 and H5Nx models.", 
                         "caption": [
                             {
                                 "type": "paragraph", 
@@ -1556,8 +1551,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.004", 
                                 "id": "fig1s1", 
-                                "title": "Comparison of AUC values of additional sets (Set 2.1 and Set 3.1) of predictor variables.", 
                                 "label": "Figure 1\u2014figure supplement 1.", 
+                                "title": "Comparison of AUC values of additional sets (Set 2.1 and Set 3.1) of predictor variables.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1583,8 +1578,8 @@
                         "type": "image", 
                         "doi": "10.7554/eLife.19571.005", 
                         "id": "fig2", 
-                        "title": "Summary of mean relative contributions for sets of predictor variables.", 
                         "label": "Figure 2.", 
+                        "title": "Summary of mean relative contributions for sets of predictor variables.", 
                         "caption": [
                             {
                                 "type": "paragraph", 
@@ -1603,8 +1598,8 @@
                         "type": "image", 
                         "doi": "10.7554/eLife.19571.006", 
                         "id": "fig3", 
-                        "title": "Boosted Regression Tree (BRT) profiles of selected predictor variables.", 
                         "label": "Figure 3.", 
+                        "title": "Boosted Regression Tree (BRT) profiles of selected predictor variables.", 
                         "caption": [
                             {
                                 "type": "paragraph", 
@@ -1618,8 +1613,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.007", 
                                 "id": "fig3s1", 
-                                "title": "BRT profiles of Set 2, Set 3 and Set 4 predictor variables.", 
                                 "label": "Figure 3\u2014figure supplement 1.", 
+                                "title": "BRT profiles of Set 2, Set 3 and Set 4 predictor variables.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1634,8 +1629,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.008", 
                                 "id": "fig3s2", 
-                                "title": "Optimal number of trees at which holdout deviance is minimised in BRT models.", 
                                 "label": "Figure 3\u2014figure supplement 2.", 
+                                "title": "Optimal number of trees at which holdout deviance is minimised in BRT models.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1653,8 +1648,8 @@
                         "type": "image", 
                         "doi": "10.7554/eLife.19571.009", 
                         "id": "fig4", 
-                        "title": "Predicted probability of occurrence of HPAI H5N1 and H5Nx clade 2.3.4.4.", 
                         "label": "Figure 4.", 
+                        "title": "Predicted probability of occurrence of HPAI H5N1 and H5Nx clade 2.3.4.4.", 
                         "caption": [
                             {
                                 "type": "paragraph", 
@@ -1688,8 +1683,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.012", 
                                 "id": "fig4s1", 
-                                "title": "Predicted probability of occurrence of HPAI H5N1 (top) and of H5Nx clade 2.3.4.4 (bottom) for the Set 2 variables.", 
                                 "label": "Figure 4\u2014figure supplement 1.", 
+                                "title": "Predicted probability of occurrence of HPAI H5N1 (top) and of H5Nx clade 2.3.4.4 (bottom) for the Set 2 variables.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1704,8 +1699,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.013", 
                                 "id": "fig4s2", 
-                                "title": "Predicted probability of occurrence of HPAI H5N1 (top) and of H5Nx clade 2.3.4.4 (bottom) for the Set 3 variables.", 
                                 "label": "Figure 4\u2014figure supplement 2.", 
+                                "title": "Predicted probability of occurrence of HPAI H5N1 (top) and of H5Nx clade 2.3.4.4 (bottom) for the Set 3 variables.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1720,8 +1715,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.014", 
                                 "id": "fig4s3", 
-                                "title": "Multivariate environmental similarity surfaces (MESS) maps for HPAI H5N1 and H5Nx clade 2.3.4.4.", 
                                 "label": "Figure 4\u2014figure supplement 3.", 
+                                "title": "Multivariate environmental similarity surfaces (MESS) maps for HPAI H5N1 and H5Nx clade 2.3.4.4.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1798,8 +1793,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.015", 
                                 "id": "fig5", 
-                                "title": "Geographic distribution of presence and pseudo-absences of HPAI H5N1 and HPAI H5Nx clade 2.3.4.4.", 
                                 "label": "Figure 5.", 
+                                "title": "Geographic distribution of presence and pseudo-absences of HPAI H5N1 and HPAI H5Nx clade 2.3.4.4.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
@@ -1872,8 +1867,8 @@
                                 "type": "image", 
                                 "doi": "10.7554/eLife.19571.016", 
                                 "id": "fig6", 
-                                "title": "Spatial cross-validation partition for H5N1 HPAI and H5Nx clade 2.3.4.4.", 
                                 "label": "Figure 6.", 
+                                "title": "Spatial cross-validation partition for H5N1 HPAI and H5Nx clade 2.3.4.4.", 
                                 "caption": [
                                     {
                                         "type": "paragraph", 
