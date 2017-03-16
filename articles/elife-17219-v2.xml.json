@@ -41,7 +41,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Wang et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -633,7 +633,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Wang et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -3621,11 +3621,11 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) The improved refinement methods should be compared to standard refinement approaches, since otherwise it is difficult to judge the improvement of the presented over existing methods. They should for example compare with standard phenix.refine real-space simulated-annealing refinement. The amount of computational time for both approaches should also be provided. Finally, the comparison should systematically assess the quality of the model fit throughout the model, not just by subjectively showing particular regions.</i> "
+                    "text": "<i>1) The improved refinement methods should be compared to standard refinement approaches, since otherwise it is difficult to judge the improvement of the presented over existing methods. They should for example compare with standard phenix.refine real-space simulated-annealing refinement. The amount of computational time for both approaches should also be provided. Finally, the comparison should systematically assess the quality of the model fit throughout the model, not just by subjectively showing particular regions.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3633,7 +3633,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) There is clearly a need to find a better estimate of the voxel size. It is tempting to optimize the voxel in the way described here and it has been done in the same way before as published by other groups (these references to previous work should be provided). However, if the model has errors (which it always has), the best model-map correlation is not always obtained for the correct voxel size. One of the reviewers performed a simple test using a PDB structure (PDB ID 4AKE) and simulated a density with voxel size 1.0 \u00c5. Errors were introduced to the model by adding Gaussian noise to the atomic coordinates, here with a \u03c3 of 3 \u00c5. 50 of such randomized models were generated. The model-map correlation was then plotted for different voxel sizes, showing mean and standard deviation for these 50 models. It turns out that the error of the voxel size optimization is of the same order of magnitude as the typical error of the estimate from the microscope (~1%). Thus, the proposed voxel size estimation method may not produce the true voxel size. This issue needs to be addressed in the manuscript.</i> "
+                    "text": "<i>2) There is clearly a need to find a better estimate of the voxel size. It is tempting to optimize the voxel in the way described here and it has been done in the same way before as published by other groups (these references to previous work should be provided). However, if the model has errors (which it always has), the best model-map correlation is not always obtained for the correct voxel size. One of the reviewers performed a simple test using a PDB structure (PDB ID 4AKE) and simulated a density with voxel size 1.0 \u00c5. Errors were introduced to the model by adding Gaussian noise to the atomic coordinates, here with a \u03c3 of 3 \u00c5. 50 of such randomized models were generated. The model-map correlation was then plotted for different voxel sizes, showing mean and standard deviation for these 50 models. It turns out that the error of the voxel size optimization is of the same order of magnitude as the typical error of the estimate from the microscope (~1%). Thus, the proposed voxel size estimation method may not produce the true voxel size. This issue needs to be addressed in the manuscript.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3649,7 +3649,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) <a href=\"#fig4\">Figure 4A</a> is supposed to show the mismatch of the deposited model and density. One of the reviewers downloaded the deposited model (PDB 4CI0) and EM map (EMD-2513) and could not reproduce this figure. The deposited model actually fits well into the deposited map. The authors need to clarify this issue.</i> "
+                    "text": "<i>3) <a href=\"#fig4\">Figure 4A</a> is supposed to show the mismatch of the deposited model and density. One of the reviewers downloaded the deposited model (PDB 4CI0) and EM map (EMD-2513) and could not reproduce this figure. The deposited model actually fits well into the deposited map. The authors need to clarify this issue.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3665,11 +3665,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>A) How to handle maps that have dramatic differences in local resolution. For example, in the TrpV1 channel case, the authors had to refine part of the model in two steps against two parts of the map (which is only mentioned in the Methods).</i> "
+                    "text": "<i>A) How to handle maps that have dramatic differences in local resolution. For example, in the TrpV1 channel case, the authors had to refine part of the model in two steps against two parts of the map (which is only mentioned in the Methods).</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>B) How to determine the sharpening B-factor objectively before real-space refinement. The authors appear to have determined the sharpening B-factor subjectively (as mentioned in the first paragraph of the Methods section). But what criterion was used? This issue may become more difficult when the map has heterogeneous local resolutions.</i> "
+                    "text": "<i>B) How to determine the sharpening B-factor objectively before real-space refinement. The authors appear to have determined the sharpening B-factor subjectively (as mentioned in the first paragraph of the Methods section). But what criterion was used? This issue may become more difficult when the map has heterogeneous local resolutions.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3685,7 +3685,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) How does the method handle missing residues in loops or disordered region that are very difficult to place manually? This would be a very useful tool.</i> "
+                    "text": "<i>5) How does the method handle missing residues in loops or disordered region that are very difficult to place manually? This would be a very useful tool.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3693,7 +3693,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) <a href=\"#fig3\">Figure 3B</a>, right panel. How are these different models of the ensemble selected? By using some map correlation criterion to get the \"best\" fitted models?</i> "
+                    "text": "<i>6) <a href=\"#fig3\">Figure 3B</a>, right panel. How are these different models of the ensemble selected? By using some map correlation criterion to get the \"best\" fitted models?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3701,7 +3701,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) The original and optimized voxel sizes for the F420 example is given in the manuscript as 1.320 and 1.326 \u00c5. The changes in voxel sizes should also be given for the other examples.</i> "
+                    "text": "<i>7) The original and optimized voxel sizes for the F420 example is given in the manuscript as 1.320 and 1.326 \u00c5. The changes in voxel sizes should also be given for the other examples.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3713,11 +3713,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The manuscript has been improved but there is a remaining issue that needs to be addressed before acceptance, as outlined in the following.</i> "
+                    "text": "<i>The manuscript has been improved but there is a remaining issue that needs to be addressed before acceptance, as outlined in the following.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The reviewers found the explanation on the issue previously raised about <a href=\"#fig5\">Figure 5</a> not satisfactory. The shift shown in <a href=\"#fig5\">Figure 5</a> is not a result of voxel size error, but is likely due to the fact that the authors of the F420 structure (PDBID 4ci0) did not carefully generate the biological assembly structure. Maybe there was a slight mismatch in the symmetry operators used to generate the entire assembly. If one fits each subunit rigidly into the density (e.g. in Chimera) then all subunits fit very well (also with the original voxel size of 1.320). <a href=\"#fig5\">Figure 5A</a> and the \"deposited\" items in panels B and C should therefore be removed. The effect of changing the voxel size from 1.320 to 1.326 Ang is much smaller than the current figure suggests.</i> "
+                    "text": "<i>The reviewers found the explanation on the issue previously raised about <a href=\"#fig5\">Figure 5</a> not satisfactory. The shift shown in <a href=\"#fig5\">Figure 5</a> is not a result of voxel size error, but is likely due to the fact that the authors of the F420 structure (PDBID 4ci0) did not carefully generate the biological assembly structure. Maybe there was a slight mismatch in the symmetry operators used to generate the entire assembly. If one fits each subunit rigidly into the density (e.g. in Chimera) then all subunits fit very well (also with the original voxel size of 1.320). <a href=\"#fig5\">Figure 5A</a> and the \"deposited\" items in panels B and C should therefore be removed. The effect of changing the voxel size from 1.320 to 1.326 Ang is much smaller than the current figure suggests.</i>"
                 }, 
                 {
                     "type": "paragraph", 

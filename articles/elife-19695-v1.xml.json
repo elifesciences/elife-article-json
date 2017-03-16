@@ -42,7 +42,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Stringer et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -637,7 +637,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Stringer et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -8524,15 +8524,15 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) Both the chosen statistics and the qualitative comparisons between data and model (e.g. <a href=\"#fig3\">Figure 3</a>) indicate very good agreement. However, one still wonders, how good can the fits be? And, what is the limiting factor, the dynamical repertoire of the model or the amount of data? These are important questions for determining not only the applicability of the model, but also what it would take to improve upon the current results.</i> "
+                    "text": "<i>1) Both the chosen statistics and the qualitative comparisons between data and model (e.g. <a href=\"#fig3\">Figure 3</a>) indicate very good agreement. However, one still wonders, how good can the fits be? And, what is the limiting factor, the dynamical repertoire of the model or the amount of data? These are important questions for determining not only the applicability of the model, but also what it would take to improve upon the current results.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Here is one way such a comparison could be made. The idea is to generate an estimate of the lowest possible error (or cost) given the data, and compare it to the actual error between model and data (for any given recording). To get such limit, divide the recorded data set into two equal parts, A and B (say, the first and second halves of the total recording time), and compare them using the same exact statistics and cost functions used to compare the model and the full data set, autocorrelation function, correlations, etc. If the total error between parts A and B is, say, 0.10, and that between model and data is, say, 0.20 (i.e., 100% larger), then we know that the model probably still has room to improve, i.e., one could fiddle with other parameters or make it more complex in order to generate a better match to the data. In contrast, if the error between model and data is, say, 0.11 (just 10% higher than that between parts A and B), it would suggest that the model is essentially matching the data as well as that can be done given the amount at hand, and the chosen statistics.</i> "
+                    "text": "<i>Here is one way such a comparison could be made. The idea is to generate an estimate of the lowest possible error (or cost) given the data, and compare it to the actual error between model and data (for any given recording). To get such limit, divide the recorded data set into two equal parts, A and B (say, the first and second halves of the total recording time), and compare them using the same exact statistics and cost functions used to compare the model and the full data set, autocorrelation function, correlations, etc. If the total error between parts A and B is, say, 0.10, and that between model and data is, say, 0.20 (i.e., 100% larger), then we know that the model probably still has room to improve, i.e., one could fiddle with other parameters or make it more complex in order to generate a better match to the data. In contrast, if the error between model and data is, say, 0.11 (just 10% higher than that between parts A and B), it would suggest that the model is essentially matching the data as well as that can be done given the amount at hand, and the chosen statistics.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>This, or something like this, would provide a more intuitive sense for how good the model is in relation to how good any model can be under the circumstances. It would indicate how drastic are the simplifications of the model. For instance, if the error between model and data is far higher than the bound found by randomization, it would suggest that less drastic simplifications would be able to capture more variance in the data.</i> "
+                    "text": "<i>This, or something like this, would provide a more intuitive sense for how good the model is in relation to how good any model can be under the circumstances. It would indicate how drastic are the simplifications of the model. For instance, if the error between model and data is far higher than the bound found by randomization, it would suggest that less drastic simplifications would be able to capture more variance in the data.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8544,19 +8544,19 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) The model would be much more useful if the results were more interpretable. Perhaps the authors could unpack one of the areas of simplification and explore how it affects the results. Here are two possibilities.</i> "
+                    "text": "<i>2) The model would be much more useful if the results were more interpretable. Perhaps the authors could unpack one of the areas of simplification and explore how it affects the results. Here are two possibilities.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>One, the findings would be more interpretable if they relied more on naturally occurring cortical states. Not only is the exact pharmacological action of the anesthetics still unclear, there is evidence that some drugs like ketamine act differentially on excitatory and inhibitory neurons, making interpretation of the model difficult. The model would provide a more powerful framework if the authors included recordings where a set of stable, identified neurons was followed across multiple quantified waking states (which could be distinguished by arousal state or EEG/LFP data), or from wakefulness to sleep.</i> "
+                    "text": "<i>One, the findings would be more interpretable if they relied more on naturally occurring cortical states. Not only is the exact pharmacological action of the anesthetics still unclear, there is evidence that some drugs like ketamine act differentially on excitatory and inhibitory neurons, making interpretation of the model difficult. The model would provide a more powerful framework if the authors included recordings where a set of stable, identified neurons was followed across multiple quantified waking states (which could be distinguished by arousal state or EEG/LFP data), or from wakefulness to sleep.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Two, the authors assume that the activity of FS cells represents the state of inhibition in the cortex, and therefore conclude that the level of inhibition is low under some circumstances and higher in others. However, there are several inhibitory-inhibitory connections between different interneuron cell types (PV, SST, VIP etc.). The overall level of inhibition at any given moment may thus remain stable even as the contributing population of interneurons changes. Using a single feedback inhibitory mechanism may not be the most appropriate way to model inhibitory dynamics in the cortex.</i> "
+                    "text": "<i>Two, the authors assume that the activity of FS cells represents the state of inhibition in the cortex, and therefore conclude that the level of inhibition is low under some circumstances and higher in others. However, there are several inhibitory-inhibitory connections between different interneuron cell types (PV, SST, VIP etc.). The overall level of inhibition at any given moment may thus remain stable even as the contributing population of interneurons changes. Using a single feedback inhibitory mechanism may not be the most appropriate way to model inhibitory dynamics in the cortex.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>For instance, one potential pitfall of incorporating a single feedback inhibition mechanism is that tuning might be sharpened simply by an 'iceberg' effect, where nonspecific increases in inhibition simply eliminate small responses to input. This was noted by Lee et al. 2013 and El-Boustani et al. 2014, following the Lee et al. 2012 paper cited by the authors. The authors should address this issue in interpreting the results from <a href=\"#fig5\">Figure 5</a>.</i> "
+                    "text": "<i>For instance, one potential pitfall of incorporating a single feedback inhibition mechanism is that tuning might be sharpened simply by an 'iceberg' effect, where nonspecific increases in inhibition simply eliminate small responses to input. This was noted by Lee et al. 2013 and El-Boustani et al. 2014, following the Lee et al. 2012 paper cited by the authors. The authors should address this issue in interpreting the results from <a href=\"#fig5\">Figure 5</a>.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8572,11 +8572,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) There are several major inconsistencies between the experimental literature and model assumptions that should be discussed.</i> "
+                    "text": "<i>3) There are several major inconsistencies between the experimental literature and model assumptions that should be discussed.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Regarding the claim that cortical activity is generally suppressed during active behaviors, all the papers cited in support of this claim are auditory (subsection \u201cNeuromodulators and inhibitory control of cortical dynamics\u201d). However, the exact opposite result is found in the visual system, in which cortical activity, RS response rate, SNR, and so on are all increased during locomotion. (There are numerous papers on this; Niell/Stryker 2010 is a particularly famous example.) This work doesn't fit with their theory at all! Rather than gloss over this issue, the authors should describe the relevant data both for and against their theory, and explain why their theory is still valuable even if not all its predictions are borne out.</i> "
+                    "text": "<i>Regarding the claim that cortical activity is generally suppressed during active behaviors, all the papers cited in support of this claim are auditory (subsection \u201cNeuromodulators and inhibitory control of cortical dynamics\u201d). However, the exact opposite result is found in the visual system, in which cortical activity, RS response rate, SNR, and so on are all increased during locomotion. (There are numerous papers on this; Niell/Stryker 2010 is a particularly famous example.) This work doesn't fit with their theory at all! Rather than gloss over this issue, the authors should describe the relevant data both for and against their theory, and explain why their theory is still valuable even if not all its predictions are borne out.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8592,7 +8592,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Another example is their suggestion that many FS cells do not respond to stimuli under ketamine anesthesia, and that this silencing is responsible for the tendency of cortical networks to generate Up/Down dynamics under ketamine. The issue of whether FS cells are responsive under ketamine was examined by Moore/Wehr 2013 (who identified PV cells using optotagging in mouse auditory cortex under ketamine anesthesia, and showed that most tagged cells had high spontaneous and evoked firing rates), as well as Cohen/Mizrahi 2013 (who randomly patched neurons in ketamine-anesthetized rat barrel cortex, identified the FS neurons by intracellular current injection, and showed that all FS cells did respond either to ipsi- or contra-lateral whisker stimulation). How is the model consistent with these data \u2013 or if it's not, can the authors discuss why the model is nonetheless worth considering?</i> "
+                    "text": "<i>Another example is their suggestion that many FS cells do not respond to stimuli under ketamine anesthesia, and that this silencing is responsible for the tendency of cortical networks to generate Up/Down dynamics under ketamine. The issue of whether FS cells are responsive under ketamine was examined by Moore/Wehr 2013 (who identified PV cells using optotagging in mouse auditory cortex under ketamine anesthesia, and showed that most tagged cells had high spontaneous and evoked firing rates), as well as Cohen/Mizrahi 2013 (who randomly patched neurons in ketamine-anesthetized rat barrel cortex, identified the FS neurons by intracellular current injection, and showed that all FS cells did respond either to ipsi- or contra-lateral whisker stimulation). How is the model consistent with these data \u2013 or if it's not, can the authors discuss why the model is nonetheless worth considering?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8604,7 +8604,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Regarding waveform classification (subsection \u201cClassifying FS and RS neurons\u201d): There is a genuine debate in the literature regarding the relationship between cell type and extracellularly recorded spike waveform, but one wouldn't get that impression from reading this paragraph: first, because only one paper is cited on the \"exercise caution\" side, and second, because no papers at all are cited to support the preferred estimate of 90-100% correct classification. It would be much better to cite papers on both sides of the debate, since this classification is so central to the analysis.</i> "
+                    "text": "<i>Regarding waveform classification (subsection \u201cClassifying FS and RS neurons\u201d): There is a genuine debate in the literature regarding the relationship between cell type and extracellularly recorded spike waveform, but one wouldn't get that impression from reading this paragraph: first, because only one paper is cited on the \"exercise caution\" side, and second, because no papers at all are cited to support the preferred estimate of 90-100% correct classification. It would be much better to cite papers on both sides of the debate, since this classification is so central to the analysis.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8624,7 +8624,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Regarding whether the FS/RS distinction \"is still effective for approximating the overall levels of inhibitory and excitatory activity in a population\" (subsection \u201cActivity of fast-spiking (FS) neurons is increased during periods of cortical desynchronization with weak noise correlations\u201d): It is not necessarily true that activity of all types of inhibitory cell will be correlated with one another, particularly since inhibitory cells can inhibit one another in targeted, type-specific ways (e.g. Pfeffer/Scanziani 2013), which will tend to produce anticorrelations between activity in the different classes of interneurons. Fanselow/Connors 2008 showed that the states in which somatostatin cells were active tended to be those in which parvalbumin cells were least active, and in fact Tan/Agmon 2008 suggest that non-FS inhibitory cells (somatostatin cells) are the ones most specialized to provide the kind of stabilizing influence the authors' models require.</i> "
+                    "text": "<i>Regarding whether the FS/RS distinction \"is still effective for approximating the overall levels of inhibitory and excitatory activity in a population\" (subsection \u201cActivity of fast-spiking (FS) neurons is increased during periods of cortical desynchronization with weak noise correlations\u201d): It is not necessarily true that activity of all types of inhibitory cell will be correlated with one another, particularly since inhibitory cells can inhibit one another in targeted, type-specific ways (e.g. Pfeffer/Scanziani 2013), which will tend to produce anticorrelations between activity in the different classes of interneurons. Fanselow/Connors 2008 showed that the states in which somatostatin cells were active tended to be those in which parvalbumin cells were least active, and in fact Tan/Agmon 2008 suggest that non-FS inhibitory cells (somatostatin cells) are the ones most specialized to provide the kind of stabilizing influence the authors' models require.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8636,7 +8636,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) Subsection \u201cActivity of fast-spiking (FS) neurons is increased during periods of cortical desynchronization with weak noise correlations\u201d, last paragraph/<a href=\"#fig7\">Figure 7</a> shows differences in the total numbers of thin versus broad spikes under fentanyl versus ketamine anesthesia. Many factors can influence how many units/clusters are recovered from a recording and how well spikes are assigned to their underlying sources, including physical/pulsatile instability of the brain caused by breathing and heart rate, overall activity level of nearby neurons (which influences both cluster quality and SD-based spike thresholds), and correlation/synchrony (most sorters don't properly handle \"collisions\" between spikes in neighboring cells). Anesthesia could change any of these. Even though the physical configuration of the tetrode was the same, it is unclear how one could control for all of these issues when comparing two extracellular recordings.</i> "
+                    "text": "<i>4) Subsection \u201cActivity of fast-spiking (FS) neurons is increased during periods of cortical desynchronization with weak noise correlations\u201d, last paragraph/<a href=\"#fig7\">Figure 7</a> shows differences in the total numbers of thin versus broad spikes under fentanyl versus ketamine anesthesia. Many factors can influence how many units/clusters are recovered from a recording and how well spikes are assigned to their underlying sources, including physical/pulsatile instability of the brain caused by breathing and heart rate, overall activity level of nearby neurons (which influences both cluster quality and SD-based spike thresholds), and correlation/synchrony (most sorters don't properly handle \"collisions\" between spikes in neighboring cells). Anesthesia could change any of these. Even though the physical configuration of the tetrode was the same, it is unclear how one could control for all of these issues when comparing two extracellular recordings.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -8644,7 +8644,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) Regarding <a href=\"#fig6\">Figures 6/7</a>, directly linking the number of spikes evoked during a stimulus to the strength of inhibition/excitation during the stimulus is not entirely straightforward. Short-term synaptic plasticity is an equally important factor in determining a neuron's ability to affect firing in its targets. This could even be a mechanism for maintaining the supralinearity of inhibition; if inhibitory synapses don't depress as much as excitatory synapses do, they'll still be capable of stabilizing the network even when the network is very active, producing an inhibition-stabilized network in which the number of inhibitory spikes doesn't increase faster than the number of excitatory spikes (see e.g. Tan/Agmon 2008). In the converse case, in a network in which excitatory synapses depress less than inhibitory synapses, the network could appear inhibition-stabilized in its spike count and yet not be inhibition-stabilized in terms of the overall magnitude of the inhibitory conductances. Either way, STSP is a key factor and spike rates are only half the story. The question is whether <a href=\"#fig6\">Figure 6</a> really locks down the issue of whether cortical networks are actually inhibition-stabilized. It seems that the relationship between inhibition-stabilized networks and STSP is worth mentioning, even if only briefly.</i> "
+                    "text": "<i>5) Regarding <a href=\"#fig6\">Figures 6/7</a>, directly linking the number of spikes evoked during a stimulus to the strength of inhibition/excitation during the stimulus is not entirely straightforward. Short-term synaptic plasticity is an equally important factor in determining a neuron's ability to affect firing in its targets. This could even be a mechanism for maintaining the supralinearity of inhibition; if inhibitory synapses don't depress as much as excitatory synapses do, they'll still be capable of stabilizing the network even when the network is very active, producing an inhibition-stabilized network in which the number of inhibitory spikes doesn't increase faster than the number of excitatory spikes (see e.g. Tan/Agmon 2008). In the converse case, in a network in which excitatory synapses depress less than inhibitory synapses, the network could appear inhibition-stabilized in its spike count and yet not be inhibition-stabilized in terms of the overall magnitude of the inhibitory conductances. Either way, STSP is a key factor and spike rates are only half the story. The question is whether <a href=\"#fig6\">Figure 6</a> really locks down the issue of whether cortical networks are actually inhibition-stabilized. It seems that the relationship between inhibition-stabilized networks and STSP is worth mentioning, even if only briefly.</i>"
                 }, 
                 {
                     "type": "paragraph", 

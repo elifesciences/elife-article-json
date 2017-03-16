@@ -44,7 +44,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Horns et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -527,7 +527,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Horns et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -5375,7 +5375,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) It is not clear how errors were corrected using the molecular barcodes. You state that you obtained ~261k reads per sample which typically represented 170k distinct molecules (subsection \u201cAntibody Repertoire Sequencing with Subclass Resolution\u201d, first paragraph). This would suggest that most barcodes are represented only once and no consensus sequence of (&gt;=3 sequences) can be computed. Did you use singleton and doubleton barcodes as <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1A</a> suggests? If so, sequencing errors likely contribute to diversity in many of the clonal clusters (the inserts are quite long and the end of the 2nd read often has low sequencing quality, hence sequencing errors are a concern).</i> "
+                    "text": "<i>1) It is not clear how errors were corrected using the molecular barcodes. You state that you obtained ~261k reads per sample which typically represented 170k distinct molecules (subsection \u201cAntibody Repertoire Sequencing with Subclass Resolution\u201d, first paragraph). This would suggest that most barcodes are represented only once and no consensus sequence of (&gt;=3 sequences) can be computed. Did you use singleton and doubleton barcodes as <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1A</a> suggests? If so, sequencing errors likely contribute to diversity in many of the clonal clusters (the inserts are quite long and the end of the 2nd read often has low sequencing quality, hence sequencing errors are a concern).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5387,7 +5387,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) The authors have opted for a custom analysis pipeline using minimal spanning trees instead of phylogenetic reconstruction and probabilistic models of class switching. The analysis doesn't account for the possibility of unsampled ancestors and it is not clear how the assumption that all ancestors are sampled influences the inference of CSR events. The problem of unsampled ancestors is well known when reconstructing transmission histories of viruses (e.g. <a href=\"http://dx.doi.org/10.1371/journal.pcbi.1003397\">http://dx.doi.org/10.1371/journal.pcbi.1003397</a>). The authors performed a number of analysis to validate the CSR inference (presented in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>: restriction to identical VDJs, rarefaction analysis), but some concerns remain. A combination of a Z -&gt; X and a Z -&gt; Y transition with an unsampled Z will be misinterpreted as an X -&gt; Y transition, regardless of whether X and Y are separated by somatic mutations or not. For transitions with a small number of counts, a few such instances could contribute substantially. The rarefaction analysis is not informative for transitions with small rates and few counts.</i> "
+                    "text": "<i>2) The authors have opted for a custom analysis pipeline using minimal spanning trees instead of phylogenetic reconstruction and probabilistic models of class switching. The analysis doesn't account for the possibility of unsampled ancestors and it is not clear how the assumption that all ancestors are sampled influences the inference of CSR events. The problem of unsampled ancestors is well known when reconstructing transmission histories of viruses (e.g. <a href=\"http://dx.doi.org/10.1371/journal.pcbi.1003397\">http://dx.doi.org/10.1371/journal.pcbi.1003397</a>). The authors performed a number of analysis to validate the CSR inference (presented in <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1</a>: restriction to identical VDJs, rarefaction analysis), but some concerns remain. A combination of a Z -&gt; X and a Z -&gt; Y transition with an unsampled Z will be misinterpreted as an X -&gt; Y transition, regardless of whether X and Y are separated by somatic mutations or not. For transitions with a small number of counts, a few such instances could contribute substantially. The rarefaction analysis is not informative for transitions with small rates and few counts.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5411,7 +5411,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) The analysis of concordant class switch events on subtrees of two parents with a common ancestor in the same state which go on to produce progeny of different classes is elegant, but we would like to see an additional control: Is the distance between children to parents correlated with that of parents to the common progenitor? Such correlations could arise due to differential sampling of lineages. In this case, similarities in switching might be due to similar distances of parents to children. In other words: Are the length of branches associated with particular switching events? And if so, are branch length of sisters correlated? This can be readily checked.</i> "
+                    "text": "<i>4) The analysis of concordant class switch events on subtrees of two parents with a common ancestor in the same state which go on to produce progeny of different classes is elegant, but we would like to see an additional control: Is the distance between children to parents correlated with that of parents to the common progenitor? Such correlations could arise due to differential sampling of lineages. In this case, similarities in switching might be due to similar distances of parents to children. In other words: Are the length of branches associated with particular switching events? And if so, are branch length of sisters correlated? This can be readily checked.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5439,7 +5439,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) The caption of <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a> refers to <a href=\"#fig2\">Figure 2A</a>, but <a href=\"#fig2\">Figure 2A</a> doesn't contain similar matrices. The caption of <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2A</a> refers to pies and colored slices, but all pies are mono-chrome. eLife has no limit on the number of figures. We suggest reorganizing the supplementary figures into smaller more coherent units. The current multi-panel figures with very small print and long captions are not helpful.</i> "
+                    "text": "<i>6) The caption of <a href=\"#fig2s1\">Figure 2\u2014figure supplement 1B</a> refers to <a href=\"#fig2\">Figure 2A</a>, but <a href=\"#fig2\">Figure 2A</a> doesn't contain similar matrices. The caption of <a href=\"#fig2s2\">Figure 2\u2014figure supplement 2A</a> refers to pies and colored slices, but all pies are mono-chrome. eLife has no limit on the number of figures. We suggest reorganizing the supplementary figures into smaller more coherent units. The current multi-panel figures with very small print and long captions are not helpful.</i>"
                 }, 
                 {
                     "type": "paragraph", 

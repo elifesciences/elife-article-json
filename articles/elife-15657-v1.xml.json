@@ -45,7 +45,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Gerrard et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -590,7 +590,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Gerrard et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -4483,7 +4483,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) The linkage of the transcriptional data to developmental disorders is not well validated. There is considerable mouse developmental and phenotype data available in databases that could be mined to enhance the value of your findings and help determine whether the genes identified are truly key regulators of tissue development.</i> "
+                    "text": "<i>2) The linkage of the transcriptional data to developmental disorders is not well validated. There is considerable mouse developmental and phenotype data available in databases that could be mined to enhance the value of your findings and help determine whether the genes identified are truly key regulators of tissue development.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4491,7 +4491,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) The claim that novel transcripts are likely lncRNAs was questioned and needs to be analyzed more carefully.</i> "
+                    "text": "<i>3) The claim that novel transcripts are likely lncRNAs was questioned and needs to be analyzed more carefully.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4523,11 +4523,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>There are concerns of the methodology that would require further clarification:</i> "
+                    "text": "<i>There are concerns of the methodology that would require further clarification:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>For the NMF, while the implementation of the methods is likely to be appropriate, there may be a potential flaw in the interpretation of what the analysis may achieved. Regarding \"non-overlapping\" metagenes, by default, genes can be represented in multiple metagenes, based on the Brunet algorithm in the NMF R package (also the default algorithm). The Methods state that this algorithm has been used, so following on from that, the assertion that \"non-overlapping metagenes\" could be extracted from the complete dataset and the \"potential of coordinated deployment of overlapping genes\" is ignored may be incorrect.</i> "
+                    "text": "<i>For the NMF, while the implementation of the methods is likely to be appropriate, there may be a potential flaw in the interpretation of what the analysis may achieved. Regarding \"non-overlapping\" metagenes, by default, genes can be represented in multiple metagenes, based on the Brunet algorithm in the NMF R package (also the default algorithm). The Methods state that this algorithm has been used, so following on from that, the assertion that \"non-overlapping metagenes\" could be extracted from the complete dataset and the \"potential of coordinated deployment of overlapping genes\" is ignored may be incorrect.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4535,7 +4535,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Furthermore, the critique that \"NMF failed to discriminate transcriptional signatures for a number or organs or tissues, or discern the relationships between them\u2026 \" may also apply to the outcome of lgPCA. Therefore, this is not a compelling argument for discarding the NMF.</i> "
+                    "text": "<i>Furthermore, the critique that \"NMF failed to discriminate transcriptional signatures for a number or organs or tissues, or discern the relationships between them\u2026 \" may also apply to the outcome of lgPCA. Therefore, this is not a compelling argument for discarding the NMF.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4543,7 +4543,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The analysis could have been taken further to examine the enrichment of all the metagenes, similarly to the one for liver (<a href=\"#fig1s3\">Figure 1\u2014figure supplement 3B</a>) for all the specific tissue metagenes (\u201cclear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland\u201d), and a similar approach could be taken for the downstream functional analysis of lgPCA.</i> "
+                    "text": "<i>The analysis could have been taken further to examine the enrichment of all the metagenes, similarly to the one for liver (<a href=\"#fig1s3\">Figure 1\u2014figure supplement 3B</a>) for all the specific tissue metagenes (\u201cclear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland\u201d), and a similar approach could be taken for the downstream functional analysis of lgPCA.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4567,7 +4567,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Both NMF and lgPCA are doing similar things, i.e. clustering samples based on gene expression to find which genes drive sample separation. The differences are that NMF can reveal the similarity between gene expression patterns for samples, which are clustered with the same metagenes, in this case kidney and testis to metagene 3, (Figure 2\u2014figure supplement 3B). LgPCA can discern the differences in gene expression between certain samples (for example Brain and liver in PC2 of <a href=\"#fig2\">Figure 2B</a>). If it was intended to include the NMF analysis in this study, a point should be made as the rationale of which samples are to be clustered together and why, before the results may be compared to those from the lgPCA. Alternatively, the NMF analysis can be omitted since the lgPCA method is sufficient to accomplish the data analysis.</i> "
+                    "text": "<i>Both NMF and lgPCA are doing similar things, i.e. clustering samples based on gene expression to find which genes drive sample separation. The differences are that NMF can reveal the similarity between gene expression patterns for samples, which are clustered with the same metagenes, in this case kidney and testis to metagene 3, (Figure 2\u2014figure supplement 3B). LgPCA can discern the differences in gene expression between certain samples (for example Brain and liver in PC2 of <a href=\"#fig2\">Figure 2B</a>). If it was intended to include the NMF analysis in this study, a point should be made as the rationale of which samples are to be clustered together and why, before the results may be compared to those from the lgPCA. Alternatively, the NMF analysis can be omitted since the lgPCA method is sufficient to accomplish the data analysis.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4575,7 +4575,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The analysis presented in <a href=\"#fig1\">Figure 1C</a> compares the authors' data with that presented in the fetal datasets from the NIH Roadmap. The authors claim substantial up-regulation of sets of genes in their dataset but this is not quantified statistically (instead an arbitrary cut-off of &gt;2-fold enrichment was employed). While there is relatively little data from which to perform a rigorous analysis it should be possible to use appropriate models (gaining power across genes such as GSEA) to find enriched categories in a more robust manner than presented here (i.e., this would allow appropriate correction for multiple testing).</i> "
+                    "text": "<i>The analysis presented in <a href=\"#fig1\">Figure 1C</a> compares the authors' data with that presented in the fetal datasets from the NIH Roadmap. The authors claim substantial up-regulation of sets of genes in their dataset but this is not quantified statistically (instead an arbitrary cut-off of &gt;2-fold enrichment was employed). While there is relatively little data from which to perform a rigorous analysis it should be possible to use appropriate models (gaining power across genes such as GSEA) to find enriched categories in a more robust manner than presented here (i.e., this would allow appropriate correction for multiple testing).</i>"
                 }, 
                 {
                     "type": "paragraph", 

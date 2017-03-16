@@ -40,7 +40,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Leo et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -723,7 +723,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Leo et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -7339,15 +7339,15 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #1:</i> "
+                    "text": "<i>Reviewer #1:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The study \"A synergy-based control is encoded in human motor cortical areas\" provides an investigation of the MRI patterns associated with the execution of grasp-like hand shapes. The main finding is that the activity patterns of two left -out postures can be better discriminated when using 5 regressors extracted from kinematic synergies than 5 regressors reflecting the unsigned displacement of individual fingers or 5 regressors picked from features of EMG recording of 5 different hand muscles. The conclusion of the study are largely overlapping with that of an earlier paper from our lab (Ejaz</i> et al.<i>, 2015), but the study adds a number of interesting extra aspects to this line of work, including testing the generalisation of the model to new postures and the investigation of the spatial arrangement of these synergies onto the cortical sheet (but see point 3). The current version of the paper, however, has a number of weaknesses that certainly would need addressing.</i> "
+                    "text": "<i>The study \"A synergy-based control is encoded in human motor cortical areas\" provides an investigation of the MRI patterns associated with the execution of grasp-like hand shapes. The main finding is that the activity patterns of two left -out postures can be better discriminated when using 5 regressors extracted from kinematic synergies than 5 regressors reflecting the unsigned displacement of individual fingers or 5 regressors picked from features of EMG recording of 5 different hand muscles. The conclusion of the study are largely overlapping with that of an earlier paper from our lab (Ejaz</i> et al.<i>, 2015), but the study adds a number of interesting extra aspects to this line of work, including testing the generalisation of the model to new postures and the investigation of the spatial arrangement of these synergies onto the cortical sheet (but see point 3). The current version of the paper, however, has a number of weaknesses that certainly would need addressing.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) The alternative models (individual fingers and muscle) give the appearance of straw men. The individual finger uses the L1 norm of movement of each finger</i> \u2013 <i>so in contrast to the kinematic synergy model, it does not distinguish between finger flexion and finger extension. This decision appears to be somewhat arbitrary. So, it leaves the reader with the question of whether there is something special about taking the absolute value, or about the specific rotation of these 5 factors in representational space. A more convincing line of investigation would be to try to use optimisation to rotated the 5 linear factors in the kinematic space as to get the best possible decoding performance, and then test the closeness of this solution with the one provided by the kinematic synergy model.</i> "
+                    "text": "<i>1) The alternative models (individual fingers and muscle) give the appearance of straw men. The individual finger uses the L1 norm of movement of each finger</i> \u2013 <i>so in contrast to the kinematic synergy model, it does not distinguish between finger flexion and finger extension. This decision appears to be somewhat arbitrary. So, it leaves the reader with the question of whether there is something special about taking the absolute value, or about the specific rotation of these 5 factors in representational space. A more convincing line of investigation would be to try to use optimisation to rotated the 5 linear factors in the kinematic space as to get the best possible decoding performance, and then test the closeness of this solution with the one provided by the kinematic synergy model.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7355,7 +7355,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Matters are worse with the muscle model. The authors recorded 5 muscles only, despite the fact that in our experience it is feasible to get 14 or more distinct signals from hand muscles from surface electrodes (Ejaz</i> et al.<i>, 2015). These may not always reflect individual muscles, but that is hardly important if we only want to obtain a representative picture of the space of muscle activity.</i> "
+                    "text": "<i>Matters are worse with the muscle model. The authors recorded 5 muscles only, despite the fact that in our experience it is feasible to get 14 or more distinct signals from hand muscles from surface electrodes (Ejaz</i> et al.<i>, 2015). These may not always reflect individual muscles, but that is hardly important if we only want to obtain a representative picture of the space of muscle activity.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7415,7 +7415,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The extracted features from the EMG signals appear obscure to me; and ultimately, the ability to distinguish between postures based on this data is very bad, indicating that most of these numbers reflect noise. Given these large a-priori differences in the quality of the models, I think any subsequent difference in how well fMRI activity patterns can be predicted become utterly unconvincing. So I think the authors need to work harder on trying to equate the reliability of their models (for a possible method, see Ejaz</i> et al. <i>2015, supplementary methods).</i> "
+                    "text": "<i>The extracted features from the EMG signals appear obscure to me; and ultimately, the ability to distinguish between postures based on this data is very bad, indicating that most of these numbers reflect noise. Given these large a-priori differences in the quality of the models, I think any subsequent difference in how well fMRI activity patterns can be predicted become utterly unconvincing. So I think the authors need to work harder on trying to equate the reliability of their models (for a possible method, see Ejaz</i> et al. <i>2015, supplementary methods).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7435,11 +7435,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) While I think that some of the techniques used in the paper are interesting and promising, I believe that they are currently not going beyond the RSA analysis presented in Ejaz</i> et al. <i>Unfortunately, in the discussion the authors misconstrue the previous evidence and perpetuate some misunderstandings that are all too common in the synergy field. For example the authors state that \"these findings, however, provide no clue regarding the extent to which the brain may control the hand using functional modules\" and \"their model (hand usage model) was therefore similar to the individual digit model adopted in the present study\", showing that they clearly do not appreciate the tight connection between RSA and the methods chosen here.</i> "
+                    "text": "<i>2) While I think that some of the techniques used in the paper are interesting and promising, I believe that they are currently not going beyond the RSA analysis presented in Ejaz</i> et al. <i>Unfortunately, in the discussion the authors misconstrue the previous evidence and perpetuate some misunderstandings that are all too common in the synergy field. For example the authors state that \"these findings, however, provide no clue regarding the extent to which the brain may control the hand using functional modules\" and \"their model (hand usage model) was therefore similar to the individual digit model adopted in the present study\", showing that they clearly do not appreciate the tight connection between RSA and the methods chosen here.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>It is important to point out that the matrix of pairwise distances contains the same information as the covariance matrix between experimental conditions (and can easily be transformed into it). Extracting PCA factors from this covariance matrix provides a distribution of the same statistical quantity, only that it throws away a certain proportion of the information (and by just considering the principle vectors also disregards the relative importance of the factors). Therefore RSA and extraction of principal components from the covariance reflect highly related information \u2013 and I do not think that the authors have made any convincing case that anything can be learned from the PCA approach that cannot be learned from looking at the whole space. This boils down to the key question in the synergy field of whether there is something special about the principal vectors (or synergies) themselves, or just about the representational space they describe. With the current evidence, the difference between this paper and Ejaz</i> et al. <i>is purely superficial and methodological, but not conceptual.</i> "
+                    "text": "<i>It is important to point out that the matrix of pairwise distances contains the same information as the covariance matrix between experimental conditions (and can easily be transformed into it). Extracting PCA factors from this covariance matrix provides a distribution of the same statistical quantity, only that it throws away a certain proportion of the information (and by just considering the principle vectors also disregards the relative importance of the factors). Therefore RSA and extraction of principal components from the covariance reflect highly related information \u2013 and I do not think that the authors have made any convincing case that anything can be learned from the PCA approach that cannot be learned from looking at the whole space. This boils down to the key question in the synergy field of whether there is something special about the principal vectors (or synergies) themselves, or just about the representational space they describe. With the current evidence, the difference between this paper and Ejaz</i> et al. <i>is purely superficial and methodological, but not conceptual.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7459,11 +7459,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Similarly, our hand use model is not equivalent to the individual finger model used in this paper, but is much closer to the kinematic synergy model (we present a single-finger model in the multi-finger experiment, which is much inferior to the natural statistics model). The authors choose to extract synergies by taking 20 postures that serve as ad-hoc samples of the natural statistics of movement. In our paper we chose to use data sets that are representative samples of the natural statistics of movement. Furthermore, we use the whole covariance matrix of the data to compare to the brain activity patterns, not just the first 5 factors.</i> "
+                    "text": "<i>Similarly, our hand use model is not equivalent to the individual finger model used in this paper, but is much closer to the kinematic synergy model (we present a single-finger model in the multi-finger experiment, which is much inferior to the natural statistics model). The authors choose to extract synergies by taking 20 postures that serve as ad-hoc samples of the natural statistics of movement. In our paper we chose to use data sets that are representative samples of the natural statistics of movement. Furthermore, we use the whole covariance matrix of the data to compare to the brain activity patterns, not just the first 5 factors.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Indeed, in the analysis of the multi-finger experiment in that paper, we started with very similar methods employed by the authors here, but ultimately decided to present only the RSA methods, as we believe that they show the main point of the similarity of representational space more concisely, than the extraction of some arbitrary number of main factors, which then serve as descriptors of the same space.</i> "
+                    "text": "<i>Indeed, in the analysis of the multi-finger experiment in that paper, we started with very similar methods employed by the authors here, but ultimately decided to present only the RSA methods, as we believe that they show the main point of the similarity of representational space more concisely, than the extraction of some arbitrary number of main factors, which then serve as descriptors of the same space.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7487,7 +7487,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) The mapping of synergies on the cortical sheet is an interesting addition and provides a real potential argument that the kinematic synergies are more that statistical descriptors of representation space, but that the factors themselves have special status. The problem, however, is that currently the one single mapping is not evaluated against many other possible mappings. Thus the authors have not shown that there is something special about the synergies extracted. For this, one would need to a) develop a measure of the \"topological orderliness\" of the mapping and b) compare the synergy map systematically against an exhaustive set of alternative rotations in the same space (again using optimisation). We actually attempted this analysis on our multi-finger experiment, but preliminary results were not terribly encouraging, as there seem to be rotations of these factors in the same rotational space which gave similarly orderly mappings. If the authors could show in a stringent and convincing fashion that the particular rotation chosen here is more orderly organised than any other possible rotation in the 3-dimensional space (or even conclude after careful evaluation that this is not the case), I think the paper would really increase in quality. Without such analysis <a href=\"#fig2\">Figure 2</a> remains merely suggestive and anecdotal and the claims not substantiated.</i> "
+                    "text": "<i>3) The mapping of synergies on the cortical sheet is an interesting addition and provides a real potential argument that the kinematic synergies are more that statistical descriptors of representation space, but that the factors themselves have special status. The problem, however, is that currently the one single mapping is not evaluated against many other possible mappings. Thus the authors have not shown that there is something special about the synergies extracted. For this, one would need to a) develop a measure of the \"topological orderliness\" of the mapping and b) compare the synergy map systematically against an exhaustive set of alternative rotations in the same space (again using optimisation). We actually attempted this analysis on our multi-finger experiment, but preliminary results were not terribly encouraging, as there seem to be rotations of these factors in the same rotational space which gave similarly orderly mappings. If the authors could show in a stringent and convincing fashion that the particular rotation chosen here is more orderly organised than any other possible rotation in the 3-dimensional space (or even conclude after careful evaluation that this is not the case), I think the paper would really increase in quality. Without such analysis <a href=\"#fig2\">Figure 2</a> remains merely suggestive and anecdotal and the claims not substantiated.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7519,7 +7519,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #2: 1) Given the data-driven nature of the analyses used, I found some interpretation of the top 3 principal components, and their relation to the topography noted, lacking. Ultimately the insight provided by PCA in neurophysiology rests on being able to directly link the components to neural activity. While I agree that there is some general map of the components in sensorimotor cortex, their organization has no interpretation. Some interpretation of the components (PCs 1-3) and how they relate to cortex organization might be informative on this front. Otherwise, simply saying PCs are mapped onto cortex is fairly impenetrable for the reader.</i> "
+                    "text": "<i>Reviewer #2: 1) Given the data-driven nature of the analyses used, I found some interpretation of the top 3 principal components, and their relation to the topography noted, lacking. Ultimately the insight provided by PCA in neurophysiology rests on being able to directly link the components to neural activity. While I agree that there is some general map of the components in sensorimotor cortex, their organization has no interpretation. Some interpretation of the components (PCs 1-3) and how they relate to cortex organization might be informative on this front. Otherwise, simply saying PCs are mapped onto cortex is fairly impenetrable for the reader.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7547,7 +7547,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) It was unclear to me why, after measuring from five muscles, and thus obtaining five measures (i.e., the same number of components in the synergy and individual digit models), the data was reduced through PCA and then up-sampled again (through cross-validation methods) to achieve 5 components. This should be fully explained, as no such manipulation was done to the individual digit data.</i> "
+                    "text": "<i>3) It was unclear to me why, after measuring from five muscles, and thus obtaining five measures (i.e., the same number of components in the synergy and individual digit models), the data was reduced through PCA and then up-sampled again (through cross-validation methods) to achieve 5 components. This should be fully explained, as no such manipulation was done to the individual digit data.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7555,7 +7555,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) It might be interesting in the supplement to show the results of RSA/MDS for the other models (EMG and individual digit), allowing the reader to make comparisons between all 3 models.</i> "
+                    "text": "<i>4) It might be interesting in the supplement to show the results of RSA/MDS for the other models (EMG and individual digit), allowing the reader to make comparisons between all 3 models.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7563,7 +7563,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) I was initially confused in the Discussion why the authors referred to brain areas that were not apparent in the group maps shown in <a href=\"#fig1\">Figure 1</a> (e.g., ventral premotor cortex). This became apparent, however, after I viewed the actual source data on the MNI-152 brain, as 2-3 subjects show overlap in some of these areas. In any case, the authors should only use the text to refer to what is actually shown in the paper, to avoid such confusion.</i> "
+                    "text": "<i>5) I was initially confused in the Discussion why the authors referred to brain areas that were not apparent in the group maps shown in <a href=\"#fig1\">Figure 1</a> (e.g., ventral premotor cortex). This became apparent, however, after I viewed the actual source data on the MNI-152 brain, as 2-3 subjects show overlap in some of these areas. In any case, the authors should only use the text to refer to what is actually shown in the paper, to avoid such confusion.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7571,7 +7571,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) In the Discussion, I was hoping for some discussion of the bilaterality of the effects observed, which are interesting. I would suggest adding this in a revision.</i> "
+                    "text": "<i>6) In the Discussion, I was hoping for some discussion of the bilaterality of the effects observed, which are interesting. I would suggest adding this in a revision.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7579,7 +7579,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) In addition to the visual control used in the paper (i.e., analysis of visual stimulation evoked time points in the RSA mask), I was thinking that an equally good control to show the selectivity of effects to sensorimotor cortex would be to localize much of visual cortex (e.g., based on visual stimulation response vs. rest) and then perform the exact same encoding analyses on those voxels. Visual cortex is well known to be involved in imagery-a key component of the experimental task-and to see how the kinematic models performs in that area would be of interest. If it does fairly well, it would have some significant bearing on what is actually being measured in sensorimotor cortex as well as its underlying organization.</i> "
+                    "text": "<i>7) In addition to the visual control used in the paper (i.e., analysis of visual stimulation evoked time points in the RSA mask), I was thinking that an equally good control to show the selectivity of effects to sensorimotor cortex would be to localize much of visual cortex (e.g., based on visual stimulation response vs. rest) and then perform the exact same encoding analyses on those voxels. Visual cortex is well known to be involved in imagery-a key component of the experimental task-and to see how the kinematic models performs in that area would be of interest. If it does fairly well, it would have some significant bearing on what is actually being measured in sensorimotor cortex as well as its underlying organization.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7591,7 +7591,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) \"Individual-digit model, based on a somatotopic criterion (Kirsch et al. 2014)\" remains still as obscure as it was before. I urge you to clarify here in the Introduction. There is no notion of somatotopy in the individual-digit model as far as I can see. Somatotopy implies that it matters that the middle finger is closer to the ring than to the pinkie finger. The Individual-finger model treats all finger movements equally and independently \u2013 so it is not \"somatotopic\".</i> "
+                    "text": "<i>1) \"Individual-digit model, based on a somatotopic criterion (Kirsch et al. 2014)\" remains still as obscure as it was before. I urge you to clarify here in the Introduction. There is no notion of somatotopy in the individual-digit model as far as I can see. Somatotopy implies that it matters that the middle finger is closer to the ring than to the pinkie finger. The Individual-finger model treats all finger movements equally and independently \u2013 so it is not \"somatotopic\".</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7599,7 +7599,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) Results section, first paragraph: I found the analysis provided on the additional 4 subjects interesting and thank you for the additional clarification, but would ask you for two things: a) When using temporal averaging of the EMG signal (mean-based EMG analysis), you should use your dimensionality reduction to 5 PCA, as you did for the feature based analysis. This way we can clearly see that your temporal features, and not the dimensionality reduction provide the critical difference between the red and blue curve. Note also that you did not replicate exactly the analysis performed in Ejaz et al. (2011), as you skipped the critical prewhitening step. It is not clear whether this analysis would be sensible here, as your gestures are a ad-hoc sample from the natural statistics, not an equally-spaced sample of possible finger movements b) this analysis should be included as supplementary material and cited from the main text.</i> "
+                    "text": "<i>2) Results section, first paragraph: I found the analysis provided on the additional 4 subjects interesting and thank you for the additional clarification, but would ask you for two things: a) When using temporal averaging of the EMG signal (mean-based EMG analysis), you should use your dimensionality reduction to 5 PCA, as you did for the feature based analysis. This way we can clearly see that your temporal features, and not the dimensionality reduction provide the critical difference between the red and blue curve. Note also that you did not replicate exactly the analysis performed in Ejaz et al. (2011), as you skipped the critical prewhitening step. It is not clear whether this analysis would be sensible here, as your gestures are a ad-hoc sample from the natural statistics, not an equally-spaced sample of possible finger movements b) this analysis should be included as supplementary material and cited from the main text.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7611,7 +7611,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) Supplementary file 15: I think the table should be supplemented by a one-sentence description for each feature that is detailed enough to be able to calculate these features without going onto a wild-goose chase in the cited papers. I urge the authors to start with a clear definition of symbols and then give a concise and unambiguous formula.</i> "
+                    "text": "<i>3) Supplementary file 15: I think the table should be supplemented by a one-sentence description for each feature that is detailed enough to be able to calculate these features without going onto a wild-goose chase in the cited papers. I urge the authors to start with a clear definition of symbols and then give a concise and unambiguous formula.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7619,7 +7619,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) Section \u201cA challenge to individual digit correction representations? The functional topography of hand synergies\u201d: I find this section on functional topography overstated and do believe it requires a major change in tone. Your data shows that there is \"some\" topological organization of the first three synergies, not a \"strict\" one. Furthermore, some somatotopic clustering can also be shown for individual fingers or \u2013 most like for other rotations of the synergy vectors, and you have not provided a quantitative comparison with other possible organizations (see point 11).</i> "
+                    "text": "<i>4) Section \u201cA challenge to individual digit correction representations? The functional topography of hand synergies\u201d: I find this section on functional topography overstated and do believe it requires a major change in tone. Your data shows that there is \"some\" topological organization of the first three synergies, not a \"strict\" one. Furthermore, some somatotopic clustering can also be shown for individual fingers or \u2013 most like for other rotations of the synergy vectors, and you have not provided a quantitative comparison with other possible organizations (see point 11).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7627,7 +7627,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) Section \u201cLimitations and methodological considerations\u201d: The limitation section discusses relatively minor points. Two important weakness should be added: a) the point that while some clustered representation was shown in sensory-motor regions, you did not convincingly show that this specific set of synergies is more clustered than other rotation of the same vectors b) that in comparing the different models, the EMG-model had much less ability to discriminate different gestures and that the disadvantage of the muscle model may simply reflect noise levels on your measurement. These are important limitations that should be pointed out.</i> "
+                    "text": "<i>5) Section \u201cLimitations and methodological considerations\u201d: The limitation section discusses relatively minor points. Two important weakness should be added: a) the point that while some clustered representation was shown in sensory-motor regions, you did not convincingly show that this specific set of synergies is more clustered than other rotation of the same vectors b) that in comparing the different models, the EMG-model had much less ability to discriminate different gestures and that the disadvantage of the muscle model may simply reflect noise levels on your measurement. These are important limitations that should be pointed out.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7639,7 +7639,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) Paragraph two, \u201cModels validation\u201d: Please clarify in the text how the labels of the test set where shuffled. Specifically, if your test set contained 4 repetitions of each of the 20 gestures, did you shuffle the labels of all 80 trials completely randomly, or did you keep the 4 trials for the same gesture together and just give them together a new label (or equivalently shuffle the labels after averaging over the 4 trials)? This difference has important consequences for the variance of your reshuffling statistics.</i> "
+                    "text": "<i>6) Paragraph two, \u201cModels validation\u201d: Please clarify in the text how the labels of the test set where shuffled. Specifically, if your test set contained 4 repetitions of each of the 20 gestures, did you shuffle the labels of all 80 trials completely randomly, or did you keep the 4 trials for the same gesture together and just give them together a new label (or equivalently shuffle the labels after averaging over the 4 trials)? This difference has important consequences for the variance of your reshuffling statistics.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7647,7 +7647,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) \u201cEvery voxel had a score ranging from 0 (if the voxel was never used) to a possible maximum of 380 (if the two left-out patterns could be predicted, for that voxel, in all the 190 iterations).\u201d Please explain this statement better. Do you mean to say the score was the number of times the voxel was included in the 1000 voxels AND got a specific gesture correct?</i> "
+                    "text": "<i>7) \u201cEvery voxel had a score ranging from 0 (if the voxel was never used) to a possible maximum of 380 (if the two left-out patterns could be predicted, for that voxel, in all the 190 iterations).\u201d Please explain this statement better. Do you mean to say the score was the number of times the voxel was included in the 1000 voxels AND got a specific gesture correct?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7655,7 +7655,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>8) Section \u201cAssessment of the accuracy of the encoding analysis\u201d: Please clearly point out in the text that the weights were randomly shuffled within each column. Please also point out explicitly (I assume that this is true) that the new \"PCA\"s were now not orthogonal to each other anymore.</i> "
+                    "text": "<i>8) Section \u201cAssessment of the accuracy of the encoding analysis\u201d: Please clearly point out in the text that the weights were randomly shuffled within each column. Please also point out explicitly (I assume that this is true) that the new \"PCA\"s were now not orthogonal to each other anymore.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7663,7 +7663,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>9) Now that I think that I understand what the single subject maps are, I think the group-level maps also needs some more explanation. The score for each voxel varied between 0 and 380 (as stated above). For each subject, which value was then considered as \"successful\"? Why was it called a \"probability map\"? Probability of what?</i> "
+                    "text": "<i>9) Now that I think that I understand what the single subject maps are, I think the group-level maps also needs some more explanation. The score for each voxel varied between 0 and 380 (as stated above). For each subject, which value was then considered as \"successful\"? Why was it called a \"probability map\"? Probability of what?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -7671,19 +7671,19 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>10) Section \u201cCortial mapping of the three group synergies\u201d: I disagree that using R<sup>2</sup> as a goodness of fit for each individual synergy makes the results invariant to rotations in synergy space. It does not. Maybe we fundamentally misunderstand each other, so I will make my point more concrete. Say, you have 2 \"synergies\" of 5 elements X1 and X2 and a 5-element data series Y.</i> "
+                    "text": "<i>10) Section \u201cCortial mapping of the three group synergies\u201d: I disagree that using R<sup>2</sup> as a goodness of fit for each individual synergy makes the results invariant to rotations in synergy space. It does not. Maybe we fundamentally misunderstand each other, so I will make my point more concrete. Say, you have 2 \"synergies\" of 5 elements X1 and X2 and a 5-element data series Y.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>x1=[-2 -1 0 1 2]';x2=[1 0 -2 0 1]'; Y=[-2 -2 1 2 2]'; Then the R2-values of each of the columns of X can be calculated as R2_1 = Y'*x1*inv(x1'*x1)*x1'*Y/(Y'*Y) = 0.847 R2_2 = Y'*x2*inv(x2'*x2)*x2'*Y/(Y'*Y) = 0.039 Now I rotate R=[cos(0.9) sin(0.9);-sin(0.9) cos(0.9)]; Z=[x1 x2]*R;z1 = Z(:,1);z2 = Z(:,2);</i> "
+                    "text": "<i>x1=[-2 -1 0 1 2]';x2=[1 0 -2 0 1]'; Y=[-2 -2 1 2 2]'; Then the R2-values of each of the columns of X can be calculated as R2_1 = Y'*x1*inv(x1'*x1)*x1'*Y/(Y'*Y) = 0.847 R2_2 = Y'*x2*inv(x2'*x2)*x2'*Y/(Y'*Y) = 0.039 Now I rotate R=[cos(0.9) sin(0.9);-sin(0.9) cos(0.9)]; Z=[x1 x2]*R;z1 = Z(:,1);z2 = Z(:,2);</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Now the individual R<sup>2</sup>-values are changed, and hence a mapwise evaluation criterion would also be changed.</i> "
+                    "text": "<i>Now the individual R<sup>2</sup>-values are changed, and hence a mapwise evaluation criterion would also be changed.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>R2_1 = Y'*z1*inv(z1'*z1)*z1'*Y/(Y'*Y) = 0.6351 R2_2 = Y'*z2*inv(z2'*z2)*z2'*Y/(Y'*Y) = 0.4629 I hope that clarifies my point and why I think a) the sentence stating that individual R<sup>2</sup> values are rotation invariant should be removed and b) any claims regarding a special organisation on the cortex should be made weaker \u2013 for stronger claims you would need to compare the C-metric (which I think would fit this purpose) across many different rotations of the same vectors or ways of picking encoding vectors from the 20-dimensional space.</i> "
+                    "text": "<i>R2_1 = Y'*z1*inv(z1'*z1)*z1'*Y/(Y'*Y) = 0.6351 R2_2 = Y'*z2*inv(z2'*z2)*z2'*Y/(Y'*Y) = 0.4629 I hope that clarifies my point and why I think a) the sentence stating that individual R<sup>2</sup> values are rotation invariant should be removed and b) any claims regarding a special organisation on the cortex should be made weaker \u2013 for stronger claims you would need to compare the C-metric (which I think would fit this purpose) across many different rotations of the same vectors or ways of picking encoding vectors from the 20-dimensional space.</i>"
                 }, 
                 {
                     "type": "paragraph", 

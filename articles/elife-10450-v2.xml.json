@@ -41,7 +41,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Saal et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -269,7 +269,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Saal et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -3279,11 +3279,11 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Although the three reviewers agree that this is an interesting and important study and that the analysis is rigorous, they have raised the following issues. 1) Are the authors able to say where the inferred convergence of inputs from these two classes of mechanoreceptors takes place \u2013 in the cortex or at a subcortical level?</i> "
+                    "text": "<i>Although the three reviewers agree that this is an interesting and important study and that the analysis is rigorous, they have raised the following issues. 1) Are the authors able to say where the inferred convergence of inputs from these two classes of mechanoreceptors takes place \u2013 in the cortex or at a subcortical level?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3295,7 +3295,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) Given that model assessment largely revolves around predictive power and predictive power is impacted by reliability, the measurements of reliability mentioned in the Results (second paragraph) should probably be shown. Perhaps the authors could plot reliability vs accuracy. The authors should clarify how they measured reliability.</i> "
+                    "text": "<i>2) Given that model assessment largely revolves around predictive power and predictive power is impacted by reliability, the measurements of reliability mentioned in the Results (second paragraph) should probably be shown. Perhaps the authors could plot reliability vs accuracy. The authors should clarify how they measured reliability.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3303,7 +3303,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) On a related note, factors unrelated to the stimuli, such as the stochasticity of spike generation, lead to a lack of reliability, which the authors comment on. The reader is told how well the model predicts the total variance (about half), but the model is probably performing better than this since some of the variance is due to the lack of reliability in the responses. The authors should estimate how much of the predictable variance (rather than the total) the model accounts for (e.g. Sahani &amp; Linden 2003 NIPS; Ramirez et al. 2014 Nat Neurosci).</i> "
+                    "text": "<i>3) On a related note, factors unrelated to the stimuli, such as the stochasticity of spike generation, lead to a lack of reliability, which the authors comment on. The reader is told how well the model predicts the total variance (about half), but the model is probably performing better than this since some of the variance is due to the lack of reliability in the responses. The authors should estimate how much of the predictable variance (rather than the total) the model accounts for (e.g. Sahani &amp; Linden 2003 NIPS; Ramirez et al. 2014 Nat Neurosci).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3319,7 +3319,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) The authors report (<a href=\"#fig2\">Figure 2A</a>) that most cortical neurons receive \"significant contributions\" from RA and PC populations. However, if the RA and PC population responses are correlated, a model-fitting algorithm might generate positive weights from a non-connected PC population even though cortical neurons receive input exclusively from RA afferents. It is particularly hard to exclude the possibility that a small (but statistically significant) input might be an artefact. The authors consider this issue in the Materials and methods. They state that the correlations were \"low\" \u2013 but how low? What is the correlation coefficient between the RA and PC population responses as a function of time resolution? Also, the authors use a whitening procedure to attempt to decorrelate (is equation 2 correct? Is the regularizing term not added?), but these procedures are delicate and it is not clear that the correlation issue has been fully dealt with. Further work is needed to address this. It may be useful to use a simulation approach, i.e. simulate cortical neurons with realistic filters that range from single channel to mixed, analyze them with their methods, and test whether their single/mixed nature is accurately recovered. Furthermore, the results (<a href=\"#fig2\">Figure 2A</a>) are based on a statistical test (no details are provided for how this was done or what the critical P value was). Hence, a neuron that counts as convergent might have a strong input from RA together plus a tiny PC input that passes the statistical test, but is functionally irrelevant. Suppose that you define convergent input as where at least 10% of the total input strength comes from each channel, do you still see the same prominent convergence shown in <a href=\"#fig2\">Figure 2A</a>?</i> "
+                    "text": "<i>4) The authors report (<a href=\"#fig2\">Figure 2A</a>) that most cortical neurons receive \"significant contributions\" from RA and PC populations. However, if the RA and PC population responses are correlated, a model-fitting algorithm might generate positive weights from a non-connected PC population even though cortical neurons receive input exclusively from RA afferents. It is particularly hard to exclude the possibility that a small (but statistically significant) input might be an artefact. The authors consider this issue in the Materials and methods. They state that the correlations were \"low\" \u2013 but how low? What is the correlation coefficient between the RA and PC population responses as a function of time resolution? Also, the authors use a whitening procedure to attempt to decorrelate (is equation 2 correct? Is the regularizing term not added?), but these procedures are delicate and it is not clear that the correlation issue has been fully dealt with. Further work is needed to address this. It may be useful to use a simulation approach, i.e. simulate cortical neurons with realistic filters that range from single channel to mixed, analyze them with their methods, and test whether their single/mixed nature is accurately recovered. Furthermore, the results (<a href=\"#fig2\">Figure 2A</a>) are based on a statistical test (no details are provided for how this was done or what the critical P value was). Hence, a neuron that counts as convergent might have a strong input from RA together plus a tiny PC input that passes the statistical test, but is functionally irrelevant. Suppose that you define convergent input as where at least 10% of the total input strength comes from each channel, do you still see the same prominent convergence shown in <a href=\"#fig2\">Figure 2A</a>?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3347,7 +3347,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) The authors claim that cortical (time-averaged) firing rates are due to RA, not PC input. They state that their stimuli \"drove RA and PC to the exclusion of SA1\". On this basis, they consider only RA and PC responses in their study and ignore SA. However, <a href=\"#fig1\">Figures 1</a>\u2013<a href=\"#fig2\">2</a> of the supporting reference (Muniak et al., 2007) do show SA responses to both sinusoidal and noise stimuli. Given these data, it does not seem appropriate to ignore the SA afferents. Do the authors have peripheral recordings of SA1 responses? If so, they could apply their model-fitting approach. If they are correct, the weights from the SA population should turn out to be zero.</i> "
+                    "text": "<i>5) The authors claim that cortical (time-averaged) firing rates are due to RA, not PC input. They state that their stimuli \"drove RA and PC to the exclusion of SA1\". On this basis, they consider only RA and PC responses in their study and ignore SA. However, <a href=\"#fig1\">Figures 1</a>\u2013<a href=\"#fig2\">2</a> of the supporting reference (Muniak et al., 2007) do show SA responses to both sinusoidal and noise stimuli. Given these data, it does not seem appropriate to ignore the SA afferents. Do the authors have peripheral recordings of SA1 responses? If so, they could apply their model-fitting approach. If they are correct, the weights from the SA population should turn out to be zero.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3355,7 +3355,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) For the analyses shown in <a href=\"#fig3\">Figures 3</a>\u2013<a href=\"#fig4\">4</a> where full and RA/PC only models are compared, how were the RA/PC only results obtained? Were the cortical models retrained on only RA/PC input or were the RA/PC contributions in the full model simply set to zero? Given the concern about correlations, the authors should check whether they get the same results using the retraining method if that is not already what they did.</i> "
+                    "text": "<i>6) For the analyses shown in <a href=\"#fig3\">Figures 3</a>\u2013<a href=\"#fig4\">4</a> where full and RA/PC only models are compared, how were the RA/PC only results obtained? Were the cortical models retrained on only RA/PC input or were the RA/PC contributions in the full model simply set to zero? Given the concern about correlations, the authors should check whether they get the same results using the retraining method if that is not already what they did.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3363,7 +3363,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) The conclusion that the precise timing of S1 neurons is mainly driven by PC input depends on how good the models for the RA/PC afferents are. The authors show a single neuron example (<a href=\"#fig4\">Figure 4A</a>) where removing PC input degrades timing precision, but in <a href=\"#fig4\">Figure 4C</a> (right \u2013 the 3 ms resolution case) it is only for a minority of points that PC explains more variance than RA. In fact, for most of the cortical neurons, RA explains more variance. If correct, this seems to undermine the conclusion that PCs drive cortical spike timing. <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> shows that the RA afferent model performs poorly at 3 ms resolution. In this case, how is it possible (in <a href=\"#fig4\">Figure 4C</a> right) that they explain so much variance? (It would be useful to define the R squared measure precisely and exactly what \"variance\" is meant).</i> "
+                    "text": "<i>7) The conclusion that the precise timing of S1 neurons is mainly driven by PC input depends on how good the models for the RA/PC afferents are. The authors show a single neuron example (<a href=\"#fig4\">Figure 4A</a>) where removing PC input degrades timing precision, but in <a href=\"#fig4\">Figure 4C</a> (right \u2013 the 3 ms resolution case) it is only for a minority of points that PC explains more variance than RA. In fact, for most of the cortical neurons, RA explains more variance. If correct, this seems to undermine the conclusion that PCs drive cortical spike timing. <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> shows that the RA afferent model performs poorly at 3 ms resolution. In this case, how is it possible (in <a href=\"#fig4\">Figure 4C</a> right) that they explain so much variance? (It would be useful to define the R squared measure precisely and exactly what \"variance\" is meant).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3379,11 +3379,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>8) The authors report that \"filters optimized to convey information about texture closely matched the filters derived from measured S1 responses\". This is not currently fully convincing. It seems from the Materials and methods that they find the RA and PC filters that maximize mutual information between the stimulus (measured in a 1 ms bin) and the model's response in that bin. They repeat this for 25 different textures. Then they look through these 25 results and pick out the one that looks most like the filters fitted from spike data (this important part of the process is only mentioned in the legend to <a href=\"#fig5\">Figure 5</a> \u2013 it should be in the Materials and methods). There are several concerns with this approach.</i> "
+                    "text": "<i>8) The authors report that \"filters optimized to convey information about texture closely matched the filters derived from measured S1 responses\". This is not currently fully convincing. It seems from the Materials and methods that they find the RA and PC filters that maximize mutual information between the stimulus (measured in a 1 ms bin) and the model's response in that bin. They repeat this for 25 different textures. Then they look through these 25 results and pick out the one that looks most like the filters fitted from spike data (this important part of the process is only mentioned in the legend to <a href=\"#fig5\">Figure 5</a> \u2013 it should be in the Materials and methods). There are several concerns with this approach.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>A) In classic studies of this kind (e.g. Olshausen &amp; Field, Nature, 2006; Attick, Network, 1992), the optimization is carried out by averaging across a bunch of natural stimuli, not on individual stimuli. It is possible that cherry-picking from 25 separate optimizations could result in spurious matches. It would be much more convincing if the optimization was carried out across the whole set of 25 textures.</i> "
+                    "text": "<i>A) In classic studies of this kind (e.g. Olshausen &amp; Field, Nature, 2006; Attick, Network, 1992), the optimization is carried out by averaging across a bunch of natural stimuli, not on individual stimuli. It is possible that cherry-picking from 25 separate optimizations could result in spurious matches. It would be much more convincing if the optimization was carried out across the whole set of 25 textures.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3395,7 +3395,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>B) Even using the texture-picking method, \"close\" matches are only shown for 3 examples in <a href=\"#fig5\">Figure 5A</a>. <a href=\"#fig5\">Figure 5B-D</a> show similarities between the distribution of width and other parameters between real and optimized filters, but do not show how close these values are on a neuron by neuron basis (or even the means, medians or shapes of these distributions). If there really is systematic, close matching (which would be impressive), there should be a high correlation coefficient between e.g. actual and optimized filter width, etc. across neurons. Some test or comparison with other models is needed to justify the conclusion that filters for the recorded cells are/aren't optimal. Perhaps the authors could distort the textures or shuffle them somehow to see whether they can create \"suboptimal\" filters.</i> "
+                    "text": "<i>B) Even using the texture-picking method, \"close\" matches are only shown for 3 examples in <a href=\"#fig5\">Figure 5A</a>. <a href=\"#fig5\">Figure 5B-D</a> show similarities between the distribution of width and other parameters between real and optimized filters, but do not show how close these values are on a neuron by neuron basis (or even the means, medians or shapes of these distributions). If there really is systematic, close matching (which would be impressive), there should be a high correlation coefficient between e.g. actual and optimized filter width, etc. across neurons. Some test or comparison with other models is needed to justify the conclusion that filters for the recorded cells are/aren't optimal. Perhaps the authors could distort the textures or shuffle them somehow to see whether they can create \"suboptimal\" filters.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3415,7 +3415,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>C) For the mutual information calculation, is it correct that stimulus and response are measured in the same simultaneous time bin? Should response latency not be taken into account?</i> "
+                    "text": "<i>C) For the mutual information calculation, is it correct that stimulus and response are measured in the same simultaneous time bin? Should response latency not be taken into account?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3423,7 +3423,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>9) For fitting the afferent models, how did the authors avoid over-fitting? Was cross-validation used when assessing model accuracy in <a href=\"#fig1\">Figure 1</a>\u2014<a href=\"#fig1\">figure 1</a>? Why the unusual approach of sequentially fitting to individual stimulus types \u2013 why not fit on all 3 stimulus sets at once?</i> "
+                    "text": "<i>9) For fitting the afferent models, how did the authors avoid over-fitting? Was cross-validation used when assessing model accuracy in <a href=\"#fig1\">Figure 1</a>\u2014<a href=\"#fig1\">figure 1</a>? Why the unusual approach of sequentially fitting to individual stimulus types \u2013 why not fit on all 3 stimulus sets at once?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -3435,7 +3435,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>10) It is stated in the first paragraph of the Results section that the stimuli for the cortical experiments were \"analogous but not identical\" to the peripheral ones. This is potentially a problem, since statistically fitted, nonlinear models cannot be relied on to extrapolate outside their training set. At present, there are insufficient methodological details to understand how different the stimuli really were. Please detail, in the Materials and methods, exactly what the stimuli were in the two cases. Related to this, it is stated in the Materials and methods that the peripheral recordings were done in anesthetized animals. What about the cortical ones?</i> "
+                    "text": "<i>10) It is stated in the first paragraph of the Results section that the stimuli for the cortical experiments were \"analogous but not identical\" to the peripheral ones. This is potentially a problem, since statistically fitted, nonlinear models cannot be relied on to extrapolate outside their training set. At present, there are insufficient methodological details to understand how different the stimuli really were. Please detail, in the Materials and methods, exactly what the stimuli were in the two cases. Related to this, it is stated in the Materials and methods that the peripheral recordings were done in anesthetized animals. What about the cortical ones?</i>"
                 }, 
                 {
                     "type": "paragraph", 

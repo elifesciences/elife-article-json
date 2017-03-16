@@ -40,7 +40,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Wang et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -427,7 +427,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Wang et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -4306,19 +4306,19 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>[\u2026] Essential revisions:</i> "
+                    "text": "<i>[\u2026] Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The reviewers felt that the method reported here as an extension of array tomography, and analysis methods already published is interesting and the data are compelling. It would be useful to researchers wanting to detect changes in protein distribution of synaptic proteins throughout brain regions caused by disease mutations, or other manipulations. However, for publication in eLife, the manuscript needs to be much more clearly written; it needs to provide more background information; and it needs to address several technical points.</i> "
+                    "text": "<i>The reviewers felt that the method reported here as an extension of array tomography, and analysis methods already published is interesting and the data are compelling. It would be useful to researchers wanting to detect changes in protein distribution of synaptic proteins throughout brain regions caused by disease mutations, or other manipulations. However, for publication in eLife, the manuscript needs to be much more clearly written; it needs to provide more background information; and it needs to address several technical points.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The following major revisions will be necessary:</i> "
+                    "text": "<i>The following major revisions will be necessary:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) It is not made clear in the Abstract or Introduction what parts of the method have already been published and what parts are newly introduced in this manuscript. The authors should state in the Abstract that the method builds on data and analyses provided by ATD. Because the RL deconvolution is used here, and this was referred to as ATD in the authors' previous 2012 publication, the ATD terminology should be used here to avoid confusion. The newly introduced computational method supports alignment of all the synaptic vectors in such a way that the positions of additional proteins can be mapped and averaged over the thousands of synaptic axes identified in a sample.</i> "
+                    "text": "<i>1) It is not made clear in the Abstract or Introduction what parts of the method have already been published and what parts are newly introduced in this manuscript. The authors should state in the Abstract that the method builds on data and analyses provided by ATD. Because the RL deconvolution is used here, and this was referred to as ATD in the authors' previous 2012 publication, the ATD terminology should be used here to avoid confusion. The newly introduced computational method supports alignment of all the synaptic vectors in such a way that the positions of additional proteins can be mapped and averaged over the thousands of synaptic axes identified in a sample.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4326,7 +4326,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) The reviewers had quite a bit of confusion about the axes along which the projections to 2D were made. This is because the explanations in the Results and Materials and methods section are unclear and often ambiguous. The verbal descriptions of <a href=\"#fig2\">Figures 2</a>, <a href=\"#fig3\">3,</a> and <a href=\"#fig4\">4</a>, their respective figure legends, and the work flow described in the methods section all must be thoroughly revised to make more clear the nature of the coordinate systems and the axes along which projections are made. After much re-reading, here is our understanding of what was done. The synaptic vectors formed by connecting the centroids of PSD-95 staining, or gephyrin staining and the centroids of staining for a vesicle protein were aligned in an x,y,z coordinate system. All PSD-95 or gephyrin centroids were placed at the origin of the x,y,z coordinate system, and the centroids of a synaptic vesicle protein in each synapse were each placed at an appropriate position x, along the x-axis. Thus, the x axis is equivalent to the \"synaptic axis\" in the coordinate system. The positions of other protein centroids within a 1 \u00b5m sphere of the origin of each synapse were rotated in the same way to appropriate positions in the x,y,z coordinate system. To provide a visual representation of the 2D distributions of these proteins in the x, y plane, with respect to the synaptic axis, the centroids of proteins were binned in the x-y plane as follows. The x coordinate of a centroid was given as its distance from the origin along the x-axis (<a href=\"#fig3\">Figure 3A</a>). The y coordinate was given as its distance from the origin along the y-axis. The x coordinates of the centroids were binned within semi-circular bins of fixed width centered on the y-axis, and the y-coordinates were binned within semi-circular bins of the same fixed width centered on the x-axis. The semi-circular bins were mirrored along the x-axis (synaptic axis) to produce a circular image (<a href=\"#fig3\">Figure 3B</a>). This creates a projection of centroids with x,y coordinates that are binned into circular bins of fixed width centered on the origin. To correct for the fact that the circular bins effectively draw from spherical bins in 3D, the number of centroids in each bin is divided by the volume of the corresponding spherical bin to give the density of centroids in each bin. This normalization ensures that the random probability of a centroid falling within each bin is equal. If the above description is not correct, the authors need to clarify the work flow further. In several figures, the density distributions are represented on a percentage scale, but the exact calculation by which the percentages were determined needs to be stated explicitly. The explanation of this process in a revised manuscript needs to be as clearly written as explanations of other methods were in earlier papers by the same authors.</i> "
+                    "text": "<i>2) The reviewers had quite a bit of confusion about the axes along which the projections to 2D were made. This is because the explanations in the Results and Materials and methods section are unclear and often ambiguous. The verbal descriptions of <a href=\"#fig2\">Figures 2</a>, <a href=\"#fig3\">3,</a> and <a href=\"#fig4\">4</a>, their respective figure legends, and the work flow described in the methods section all must be thoroughly revised to make more clear the nature of the coordinate systems and the axes along which projections are made. After much re-reading, here is our understanding of what was done. The synaptic vectors formed by connecting the centroids of PSD-95 staining, or gephyrin staining and the centroids of staining for a vesicle protein were aligned in an x,y,z coordinate system. All PSD-95 or gephyrin centroids were placed at the origin of the x,y,z coordinate system, and the centroids of a synaptic vesicle protein in each synapse were each placed at an appropriate position x, along the x-axis. Thus, the x axis is equivalent to the \"synaptic axis\" in the coordinate system. The positions of other protein centroids within a 1 \u00b5m sphere of the origin of each synapse were rotated in the same way to appropriate positions in the x,y,z coordinate system. To provide a visual representation of the 2D distributions of these proteins in the x, y plane, with respect to the synaptic axis, the centroids of proteins were binned in the x-y plane as follows. The x coordinate of a centroid was given as its distance from the origin along the x-axis (<a href=\"#fig3\">Figure 3A</a>). The y coordinate was given as its distance from the origin along the y-axis. The x coordinates of the centroids were binned within semi-circular bins of fixed width centered on the y-axis, and the y-coordinates were binned within semi-circular bins of the same fixed width centered on the x-axis. The semi-circular bins were mirrored along the x-axis (synaptic axis) to produce a circular image (<a href=\"#fig3\">Figure 3B</a>). This creates a projection of centroids with x,y coordinates that are binned into circular bins of fixed width centered on the origin. To correct for the fact that the circular bins effectively draw from spherical bins in 3D, the number of centroids in each bin is divided by the volume of the corresponding spherical bin to give the density of centroids in each bin. This normalization ensures that the random probability of a centroid falling within each bin is equal. If the above description is not correct, the authors need to clarify the work flow further. In several figures, the density distributions are represented on a percentage scale, but the exact calculation by which the percentages were determined needs to be stated explicitly. The explanation of this process in a revised manuscript needs to be as clearly written as explanations of other methods were in earlier papers by the same authors.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4334,7 +4334,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) The authors need to clarify and quantify the rate of false positives and negatives. The authors define a synapse by the presence of two synaptic vesicle markers close to the post-synaptic marker. However, this definition may not always be accurate. For example, in <a href=\"#fig1\">Figure 1D</a>, there is a pair of upper left signals containing juxtaposed PSD95 and vGlut1. However, this pair does not appear to be defined as a synapse because the SYN marker is not present. Since both vGlut1 and synapsin are vesicle markers, how do the authors explain this? Alternatively, the signals in the middle have all three markers, but the presynaptic markers are further away from the PSD95 marker. How well have the authors confirmed their definition of a synapse by the EM conjugate AT method? Is the pair of signals for PSD-95 and vGlut1 at the upper left, a false negative; that is a true synapse that has not been identified by the classification? Approximately what percentage of the synaptic vectors identified using this method actually represents synapses by morphology? If the algorithm used by the authors has been fully verified by the EM conjugate method in a previous publication, the authors need to state this in the Introduction, and give the calculated rate of false positive and false negative synapses identified by the algorithm. They need to summarize their previous studies with respect to choice of antibodies and the percentage of synapses that are actually labeled by the antibodies in the plastic sections. Is there a failure rate for labeling, for example, because of inadequate penetration of the antibody into the center of a section? A discussion of these issues, which may have been resolved in earlier papers, would be important for a tools and methods paper.</i> "
+                    "text": "<i>3) The authors need to clarify and quantify the rate of false positives and negatives. The authors define a synapse by the presence of two synaptic vesicle markers close to the post-synaptic marker. However, this definition may not always be accurate. For example, in <a href=\"#fig1\">Figure 1D</a>, there is a pair of upper left signals containing juxtaposed PSD95 and vGlut1. However, this pair does not appear to be defined as a synapse because the SYN marker is not present. Since both vGlut1 and synapsin are vesicle markers, how do the authors explain this? Alternatively, the signals in the middle have all three markers, but the presynaptic markers are further away from the PSD95 marker. How well have the authors confirmed their definition of a synapse by the EM conjugate AT method? Is the pair of signals for PSD-95 and vGlut1 at the upper left, a false negative; that is a true synapse that has not been identified by the classification? Approximately what percentage of the synaptic vectors identified using this method actually represents synapses by morphology? If the algorithm used by the authors has been fully verified by the EM conjugate method in a previous publication, the authors need to state this in the Introduction, and give the calculated rate of false positive and false negative synapses identified by the algorithm. They need to summarize their previous studies with respect to choice of antibodies and the percentage of synapses that are actually labeled by the antibodies in the plastic sections. Is there a failure rate for labeling, for example, because of inadequate penetration of the antibody into the center of a section? A discussion of these issues, which may have been resolved in earlier papers, would be important for a tools and methods paper.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4342,7 +4342,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) Supplemental Figure 1 is composed of portions of figures that were originally published in Wang and Smith, 2012 (PLoS Computational Biology 8(8): e1002671. doi:10.1371/journal.pcbi.1002671). That supplemental figure could be removed. If the authors feel strongly that it is necessary, all panels need to be properly attributed. The other supplemental figures must be associated with a regular figure, and appropriately named according to eLife instructions to authors.</i> "
+                    "text": "<i>4) Supplemental Figure 1 is composed of portions of figures that were originally published in Wang and Smith, 2012 (PLoS Computational Biology 8(8): e1002671. doi:10.1371/journal.pcbi.1002671). That supplemental figure could be removed. If the authors feel strongly that it is necessary, all panels need to be properly attributed. The other supplemental figures must be associated with a regular figure, and appropriately named according to eLife instructions to authors.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4350,7 +4350,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) The authors need to clarify and quantify the actual resolution of this method. The pixel dimensions are stated as 100 nm voxels in methods. Earlier papers indicate that an actual resolution of about 100 nm is achieved by the RL deconvolution. In the methods section, the authors indicate that statistics and dithering effect create a resolution \"considerably better than 100 nm\". The authors should discuss this issue more thoroughly in the Discussion section and provide an estimate of the actual resolution that is achievable. Is it ~10 nm? ~50 nm? Can this number be calculated?</i> "
+                    "text": "<i>5) The authors need to clarify and quantify the actual resolution of this method. The pixel dimensions are stated as 100 nm voxels in methods. Earlier papers indicate that an actual resolution of about 100 nm is achieved by the RL deconvolution. In the methods section, the authors indicate that statistics and dithering effect create a resolution \"considerably better than 100 nm\". The authors should discuss this issue more thoroughly in the Discussion section and provide an estimate of the actual resolution that is achievable. Is it ~10 nm? ~50 nm? Can this number be calculated?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4374,7 +4374,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) It is difficult to assess the full extent of the 3D distribution of the signals from the 2D max projection. Please provide the 3D volumes as supplementary figures to <a href=\"#fig3\">Figure 3</a>. The authors should also discuss how they exclude the possibility that the defining markers may be located outside of the reconstructed volume. For example, in <a href=\"#fig1\">Figure 1D</a>, would it be possible that the post-synaptic marker is actually outside the imaged volume (vice versa, the presynaptic markers are outside of the imaged volume)? This last question is related to the issue of false negatives.</i> "
+                    "text": "<i>6) It is difficult to assess the full extent of the 3D distribution of the signals from the 2D max projection. Please provide the 3D volumes as supplementary figures to <a href=\"#fig3\">Figure 3</a>. The authors should also discuss how they exclude the possibility that the defining markers may be located outside of the reconstructed volume. For example, in <a href=\"#fig1\">Figure 1D</a>, would it be possible that the post-synaptic marker is actually outside the imaged volume (vice versa, the presynaptic markers are outside of the imaged volume)? This last question is related to the issue of false negatives.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4382,7 +4382,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) There are some puzzling disparities in the data. The probability/ nm^3 is much higher in the 2D density plots than in the corresponding 1D distributions. Why? For example, in <a href=\"#fig4\">Figure 4B</a>, the 2D plot shows a 17% peak, but the 1D plot shows the peak is only ~3.3%. Please explain this.</i> "
+                    "text": "<i>7) There are some puzzling disparities in the data. The probability/ nm^3 is much higher in the 2D density plots than in the corresponding 1D distributions. Why? For example, in <a href=\"#fig4\">Figure 4B</a>, the 2D plot shows a 17% peak, but the 1D plot shows the peak is only ~3.3%. Please explain this.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4390,7 +4390,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>8) In several of the 2D projections, there are periodic \"halo\" bins separated by bins with low density. These are particularly evident for bassoon and synaptophysin in <a href=\"#fig5\">Figure 5C</a>. What is the origin of these apparent artifacts? Could they be coming from inadvertent assigning of signals from neighboring synapses?</i> "
+                    "text": "<i>8) In several of the 2D projections, there are periodic \"halo\" bins separated by bins with low density. These are particularly evident for bassoon and synaptophysin in <a href=\"#fig5\">Figure 5C</a>. What is the origin of these apparent artifacts? Could they be coming from inadvertent assigning of signals from neighboring synapses?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4398,7 +4398,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>9) The criteria and accuracy of the EM conjugate AT experiment in <a href=\"#fig6\">Figure 6</a> need to be better explained. In <a href=\"#fig6\">Figure 6 E and F</a>, there appear to be fluorescent signals that are not marked by arrows. For example, the middle panel in 6E shows both presynaptic and postsynaptic signals. The second panel from the left in 6F shows a second signal just outside of the synapses. What are the criteria that the authors use to decide which signals are associated with the particular synapse?</i> "
+                    "text": "<i>9) The criteria and accuracy of the EM conjugate AT experiment in <a href=\"#fig6\">Figure 6</a> need to be better explained. In <a href=\"#fig6\">Figure 6 E and F</a>, there appear to be fluorescent signals that are not marked by arrows. For example, the middle panel in 6E shows both presynaptic and postsynaptic signals. The second panel from the left in 6F shows a second signal just outside of the synapses. What are the criteria that the authors use to decide which signals are associated with the particular synapse?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4414,11 +4414,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>In the middle figure in 6F, the signal indicated by the arrow does not seem to be in the postsynaptic spine (the smear of the signal is in the post-synaptic terminal, but the bright spot is outside the boundary). In SubSynMAP, this signal will be counted into the postsynaptic bin; how would this affect the rate of false positives and negatives? (Note that the labels in <a href=\"#fig6\">Figure 6F</a> all say L5, but should say L4. Please fix the typos.)</i> "
+                    "text": "<i>In the middle figure in 6F, the signal indicated by the arrow does not seem to be in the postsynaptic spine (the smear of the signal is in the post-synaptic terminal, but the bright spot is outside the boundary). In SubSynMAP, this signal will be counted into the postsynaptic bin; how would this affect the rate of false positives and negatives? (Note that the labels in <a href=\"#fig6\">Figure 6F</a> all say L5, but should say L4. Please fix the typos.)</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>In general, the figure legend and description of this figure is not detailed enough. Are the fluorescence signals max projections of the same volume (210 nm in z) or 2.8 \u00b5m? If 2.8 \u00b5m, some of the signals observed may be from synapses located at a different location in z. The signals should be correlated from the same volume.</i> "
+                    "text": "<i>In general, the figure legend and description of this figure is not detailed enough. Are the fluorescence signals max projections of the same volume (210 nm in z) or 2.8 \u00b5m? If 2.8 \u00b5m, some of the signals observed may be from synapses located at a different location in z. The signals should be correlated from the same volume.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4426,7 +4426,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>10) In <a href=\"#fig7s2\">Figure 7\u2014figure supplement 2</a>, Why is there no signal from vGlut2 in this condition?</i> "
+                    "text": "<i>10) In <a href=\"#fig7s2\">Figure 7\u2014figure supplement 2</a>, Why is there no signal from vGlut2 in this condition?</i>"
                 }, 
                 {
                     "type": "paragraph", 

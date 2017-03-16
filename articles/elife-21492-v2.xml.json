@@ -37,7 +37,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Song et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -253,7 +253,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Song et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -5265,15 +5265,15 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Despite the laudable aspects of the work described above, the reviewers unanimously agreed that more needs to be done to demonstrate that the approach will lead to clear new biological knowledge.</i> "
+                    "text": "<i>Despite the laudable aspects of the work described above, the reviewers unanimously agreed that more needs to be done to demonstrate that the approach will lead to clear new biological knowledge.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>All three reviewers raised the issue that it is not clear that the network learning routine is novel from the machine learning perspective, and yet it is completely clear that assumptions made in the model render it only a distant approximation to a biological learning rule. Hence, the reviewers thought that the manuscript needed to be reframed to be clearer what the contribution was. Less emphasis should be placed on the biological realism of the network, and more emphasis should be placed on the biological utility of training a network based on rewards.</i> "
+                    "text": "<i>All three reviewers raised the issue that it is not clear that the network learning routine is novel from the machine learning perspective, and yet it is completely clear that assumptions made in the model render it only a distant approximation to a biological learning rule. Hence, the reviewers thought that the manuscript needed to be reframed to be clearer what the contribution was. Less emphasis should be placed on the biological realism of the network, and more emphasis should be placed on the biological utility of training a network based on rewards.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5293,11 +5293,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Comments from the reviews that address this point are as follows:</i> "
+                    "text": "<i>Comments from the reviews that address this point are as follows:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>I am having problems assessing novelty. If the main novelty is to provide the first neural implementation of the standard \"actor-critic\" paradigm, then the authors would need to provide an implementation where learning (both in the actor and in the critic) happens through plausible learning rules, which is clearly not the case here (use of backpropagation through time as well as Gated Recurrent Units; the authors acknowledge these limitations in the Discussion). It is not clear that the problem remains learnable (even with the same \"teaching signals\") under more realistic assumptions. If, on the other hand, the aim was to argue that jointly training a critic facilitates learning of the actor, the authors did not need a neural implementation to make that point, and in fact, it is already well known that policy-gradient methods benefit immensely from variance reduction through fine-grained reward prediction. So, this leaves us with a third alternative message, which is to use these insights + their (non-plausible) neural implementations to try and map the algorithm (as opposed to a particular implementation) to specific brain structures/processes by relating model activity to recorded brain activity and behaviour. I think this could have been the main strength of this paper, but is somehow underplayed (in fact, inspection of the activity of the value network is limited to a single page).</i> "
+                    "text": "<i>I am having problems assessing novelty. If the main novelty is to provide the first neural implementation of the standard \"actor-critic\" paradigm, then the authors would need to provide an implementation where learning (both in the actor and in the critic) happens through plausible learning rules, which is clearly not the case here (use of backpropagation through time as well as Gated Recurrent Units; the authors acknowledge these limitations in the Discussion). It is not clear that the problem remains learnable (even with the same \"teaching signals\") under more realistic assumptions. If, on the other hand, the aim was to argue that jointly training a critic facilitates learning of the actor, the authors did not need a neural implementation to make that point, and in fact, it is already well known that policy-gradient methods benefit immensely from variance reduction through fine-grained reward prediction. So, this leaves us with a third alternative message, which is to use these insights + their (non-plausible) neural implementations to try and map the algorithm (as opposed to a particular implementation) to specific brain structures/processes by relating model activity to recorded brain activity and behaviour. I think this could have been the main strength of this paper, but is somehow underplayed (in fact, inspection of the activity of the value network is limited to a single page).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5313,7 +5313,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The network is quasi-biological in the sense that it is technically a neural network, but the biological constraints on architecture, dynamics and synaptic plasticity are really weak. Should we see this as essentially a phenomenological model, or is there deeper significance to the \"neural\" aspect? If the latter, then I think a stronger case needs to be made.</i> "
+                    "text": "<i>The network is quasi-biological in the sense that it is technically a neural network, but the biological constraints on architecture, dynamics and synaptic plasticity are really weak. Should we see this as essentially a phenomenological model, or is there deeper significance to the \"neural\" aspect? If the latter, then I think a stronger case needs to be made.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5325,11 +5325,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>My main criticism with the paper is that some presentation choices might mislead some readers into thinking that the application of the policy gradient method to recurrent neural networks trained with backpropagation through time is novel. In fact, the training method used in this paper is essentially the \"recurrent policy gradient\" algorithm presented among others in one of the papers referenced by the authors (Wierstra et al. 2009). In that paper from the Schmidhuber group the authors utilize LSTMs, instead of GRUs, but otherwise the rest is essentially the same, including the use of a variance reduction method to the estimate of the gradient of the policy function, consisting in a \"baseline value function\". In addition, in both this paper and in Wierstra et al. 2009 the baseline value function is an RNNs (in the paper under review, the input to the value function is the hidden state of the policy network, but this seems arbitrary).</i> "
+                    "text": "<i>My main criticism with the paper is that some presentation choices might mislead some readers into thinking that the application of the policy gradient method to recurrent neural networks trained with backpropagation through time is novel. In fact, the training method used in this paper is essentially the \"recurrent policy gradient\" algorithm presented among others in one of the papers referenced by the authors (Wierstra et al. 2009). In that paper from the Schmidhuber group the authors utilize LSTMs, instead of GRUs, but otherwise the rest is essentially the same, including the use of a variance reduction method to the estimate of the gradient of the policy function, consisting in a \"baseline value function\". In addition, in both this paper and in Wierstra et al. 2009 the baseline value function is an RNNs (in the paper under review, the input to the value function is the hidden state of the policy network, but this seems arbitrary).</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>In fact both ideas</i> \u2013 <i>using backpropagation to estimate the policy gradient and using a baseline reinforcement function to reduce the variance of the gradient estimate</i> \u2013 <i>are already present in the original Williams 1992 paper (referenced by the authors). The second idea was however probably mostly popularized by a series of papers by Baxter and Bartlett (that apply policy gradients to solving POMDPs), and by the VAPS (Value and Policy Search) algorithm by Baird and More (1999). I feel that the authors should cite these papers. I also suggest that the authors explicitly say that they're using (a modified version of) the \"recurrent policy gradient\" algorithm presented in the series of papers by Wierstra et al. Since the algorithm already has a name, it might be beneficial to use it. That would also help make the mentioned connections across the literature most transparent.</i> "
+                    "text": "<i>In fact both ideas</i> \u2013 <i>using backpropagation to estimate the policy gradient and using a baseline reinforcement function to reduce the variance of the gradient estimate</i> \u2013 <i>are already present in the original Williams 1992 paper (referenced by the authors). The second idea was however probably mostly popularized by a series of papers by Baxter and Bartlett (that apply policy gradients to solving POMDPs), and by the VAPS (Value and Policy Search) algorithm by Baird and More (1999). I feel that the authors should cite these papers. I also suggest that the authors explicitly say that they're using (a modified version of) the \"recurrent policy gradient\" algorithm presented in the series of papers by Wierstra et al. Since the algorithm already has a name, it might be beneficial to use it. That would also help make the mentioned connections across the literature most transparent.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5341,23 +5341,23 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Whilst there was clear agreement that the biologically-realistic training regime opened up the possibility of asking new biological questions with the network, and that this was exciting, there was also clear agreement that the biological questions and predictions that you have actually made did not lead to the clear new biological insights that the reviewers were expecting. For example, comments from the reviews that spoke to this issue were:</i> "
+                    "text": "<i>Whilst there was clear agreement that the biologically-realistic training regime opened up the possibility of asking new biological questions with the network, and that this was exciting, there was also clear agreement that the biological questions and predictions that you have actually made did not lead to the clear new biological insights that the reviewers were expecting. For example, comments from the reviews that spoke to this issue were:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>I found the Results section somewhat weak \u2013 the Discussion arrived at the point in the Results that I thought was only the end of the warm-up phase. Up to <a href=\"#fig3\">Figure 3</a>, I thought this is all nice but it looks like a sanity check that their architecture does learn what it's supposed to learn, i.e. a sort of reproduction (albeit in an actor-critic architecture) of the results of Song et al. (2016) where the same authors had used stochastic gradient descent to train RNNs on the same family of tasks. It is only in <a href=\"#fig4\">Figure 4</a> that the authors start inspecting the value network. In light of what I wrote above (namely, knowing that the learning implementation isn't realistic, and that reward prediction is already known to help a lot in policy gradient learning), this was disappointing to me. I was expecting the authors to use their trained value networks to make more specific, experimentally testable predictions about the type of signals you expect to see (and where), the form of synergy predicted between the progress of learning in the task and the quality of reward predictions (by looking at the synergies in the simultaneous training of both nets), etc.</i> "
+                    "text": "<i>I found the Results section somewhat weak \u2013 the Discussion arrived at the point in the Results that I thought was only the end of the warm-up phase. Up to <a href=\"#fig3\">Figure 3</a>, I thought this is all nice but it looks like a sanity check that their architecture does learn what it's supposed to learn, i.e. a sort of reproduction (albeit in an actor-critic architecture) of the results of Song et al. (2016) where the same authors had used stochastic gradient descent to train RNNs on the same family of tasks. It is only in <a href=\"#fig4\">Figure 4</a> that the authors start inspecting the value network. In light of what I wrote above (namely, knowing that the learning implementation isn't realistic, and that reward prediction is already known to help a lot in policy gradient learning), this was disappointing to me. I was expecting the authors to use their trained value networks to make more specific, experimentally testable predictions about the type of signals you expect to see (and where), the form of synergy predicted between the progress of learning in the task and the quality of reward predictions (by looking at the synergies in the simultaneous training of both nets), etc.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The main empirical observation from the section \"Tasks with simple input-output mappings\", apart from the fact that the network learns the tasks, is that it exhibits mixed selectivity. This mixed selectivity observation shows up in several of the other sections, but I feel that it is not a particularly strong argument for this model. Many models could produce mixed selectivity, and in any case the prevalence of mixed selectivity is never quantified. Is this really the only empirical constraint from the neural data?</i> "
+                    "text": "<i>The main empirical observation from the section \"Tasks with simple input-output mappings\", apart from the fact that the network learns the tasks, is that it exhibits mixed selectivity. This mixed selectivity observation shows up in several of the other sections, but I feel that it is not a particularly strong argument for this model. Many models could produce mixed selectivity, and in any case the prevalence of mixed selectivity is never quantified. Is this really the only empirical constraint from the neural data?</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>In general, need more explanation for why the network reproduces particular empirical phenomena. Which assumptions provide explanatory power? If one were to deviate from these assumptions, would the model no longer reproduce these phenomena? What is uniquely explained by this model?</i> "
+                    "text": "<i>In general, need more explanation for why the network reproduces particular empirical phenomena. Which assumptions provide explanatory power? If one were to deviate from these assumptions, would the model no longer reproduce these phenomena? What is uniquely explained by this model?</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The authors mention that the model allows the Markov property to be relaxed. This seems like an important observation, but there's no demonstration of this in simulations. What empirical phenomena speak to this issue?</i> "
+                    "text": "<i>The authors mention that the model allows the Markov property to be relaxed. This seems like an important observation, but there's no demonstration of this in simulations. What empirical phenomena speak to this issue?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5373,11 +5373,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The reward baseline idea is interesting, and the authors mention some empirical data possibly consistent with this idea, but they don't report any simulations of lesions, inactivation or pharmacological manipulations to reproduce these effects with their model.</i> "
+                    "text": "<i>The reward baseline idea is interesting, and the authors mention some empirical data possibly consistent with this idea, but they don't report any simulations of lesions, inactivation or pharmacological manipulations to reproduce these effects with their model.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>All three reviewers reiterated this point as essential in the Discussion. The basic point is that eLife is a biology journal, not a machine learning journal. It needs to be clearer how the new ML advances have led to substantial new biological insight. There was also a clear suggestion in the Discussion that a major advantage of having a network that learns from rewards is the potential to analyse the dynamics of learning itself; the potential to elucidate the limits of task learnability under sparse delayed rewards, and to predict specific patterns of interaction between the learning of the task and the learning of the reward landscape. The reviewers thought that one potential avenue to strengthen the Results section was to focus on these dynamics.</i> "
+                    "text": "<i>All three reviewers reiterated this point as essential in the Discussion. The basic point is that eLife is a biology journal, not a machine learning journal. It needs to be clearer how the new ML advances have led to substantial new biological insight. There was also a clear suggestion in the Discussion that a major advantage of having a network that learns from rewards is the potential to analyse the dynamics of learning itself; the potential to elucidate the limits of task learnability under sparse delayed rewards, and to predict specific patterns of interaction between the learning of the task and the learning of the reward landscape. The reviewers thought that one potential avenue to strengthen the Results section was to focus on these dynamics.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5389,11 +5389,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>There was also a discussion about deference to the existing literature. You can see several points above that demonstrate concerns along these lines. A further point was also raised:</i> "
+                    "text": "<i>There was also a discussion about deference to the existing literature. You can see several points above that demonstrate concerns along these lines. A further point was also raised:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The argument that actor-critic/policy gradient models are \"opposite of the way value functions are usually thought of in neuroscience\" (Discussion) seems extreme, since this only applies to value-based model-free algorithms like Q-learning and sarsa. But there is a long tradition of actor-critic models applied to the basal ganglia; see for example Houk et al. (1995), Dayan &amp; Balleine (2002), Joel et al. (2002), O'Doherty et al. (2004), Takahashi et al. (2008), Maia (2010), to name a few.</i> "
+                    "text": "<i>The argument that actor-critic/policy gradient models are \"opposite of the way value functions are usually thought of in neuroscience\" (Discussion) seems extreme, since this only applies to value-based model-free algorithms like Q-learning and sarsa. But there is a long tradition of actor-critic models applied to the basal ganglia; see for example Houk et al. (1995), Dayan &amp; Balleine (2002), Joel et al. (2002), O'Doherty et al. (2004), Takahashi et al. (2008), Maia (2010), to name a few.</i>"
                 }, 
                 {
                     "type": "paragraph", 

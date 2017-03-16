@@ -44,7 +44,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Silverman et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -625,7 +625,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Silverman et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -5621,7 +5621,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #1:</i> "
+                    "text": "<i>Reviewer #1:</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5645,7 +5645,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #2:</i> "
+                    "text": "<i>Reviewer #2:</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5661,7 +5661,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #3:</i> "
+                    "text": "<i>Reviewer #3:</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5714,11 +5714,11 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) There was consensus among the reviewers that the normalization scheme seemed a bit ad-hoc and poorly justified. We suggest that it is made clear to the readers that the choice of weights used in the manuscript, both on the taxa and on the tips, are preliminary choices and further work will be required to ultimately determine the best weighting scheme. In addition, some further clarification on how sparsity was treated would strengthen the manuscript.</i> "
+                    "text": "<i>1) There was consensus among the reviewers that the normalization scheme seemed a bit ad-hoc and poorly justified. We suggest that it is made clear to the readers that the choice of weights used in the manuscript, both on the taxa and on the tips, are preliminary choices and further work will be required to ultimately determine the best weighting scheme. In addition, some further clarification on how sparsity was treated would strengthen the manuscript.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5734,11 +5734,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) None of the reviewers were entirely satisfied with the demonstration that the proposed transformation was superior to other transformations. It is unclear what it means, for example, that the PhILR technique sometimes produces a stronger clustering signal and sometimes a weaker clustering signal than weighted UNIFRAC (<a href=\"#fig2\">Figure 2B</a>). There was some discussion among the reviewers about whether a comparison to random binary partitions would be appropriate since this could reflect your null model (that phylogenetic binary partition is superior). Reviewer #2 was not enthusiastic about this idea and argued that a change on a tree does not alter (Aitchison) distances between data points. Therefore, results would likely not change no matter which tree has been selected for defining ILR coordinates.</i> "
+                    "text": "<i>2) None of the reviewers were entirely satisfied with the demonstration that the proposed transformation was superior to other transformations. It is unclear what it means, for example, that the PhILR technique sometimes produces a stronger clustering signal and sometimes a weaker clustering signal than weighted UNIFRAC (<a href=\"#fig2\">Figure 2B</a>). There was some discussion among the reviewers about whether a comparison to random binary partitions would be appropriate since this could reflect your null model (that phylogenetic binary partition is superior). Reviewer #2 was not enthusiastic about this idea and argued that a change on a tree does not alter (Aitchison) distances between data points. Therefore, results would likely not change no matter which tree has been selected for defining ILR coordinates.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>In the end, the consensus of the reviewers was that exploring such null models might be of interest, but would not be appropriate as a requirement for revision. Nonetheless, reviewer #1 would have been interested to see if machine learning algorithms in fact performed better on the phylogenetic partition in comparison to random partitions. We leave it up to the authors as to whether they feel such an inclusion would improve their paper or be worth the effort. However, all reviewers felt that paper would be improved by more discussion of how to tell when one normalization procedure is superior to another. It seemed to reviewer #1 that it might be adequate to say that the proposed transformation appears to be doing no harm relative to weighted Unifrac but was providing some compositional safeguards. Reviewer #2 argued that the main benefit of the proposed procedure was in interpretability in yielding a phylogenetically aware transformation that could be utilized for test-statistics.</i> "
+                    "text": "<i>In the end, the consensus of the reviewers was that exploring such null models might be of interest, but would not be appropriate as a requirement for revision. Nonetheless, reviewer #1 would have been interested to see if machine learning algorithms in fact performed better on the phylogenetic partition in comparison to random partitions. We leave it up to the authors as to whether they feel such an inclusion would improve their paper or be worth the effort. However, all reviewers felt that paper would be improved by more discussion of how to tell when one normalization procedure is superior to another. It seemed to reviewer #1 that it might be adequate to say that the proposed transformation appears to be doing no harm relative to weighted Unifrac but was providing some compositional safeguards. Reviewer #2 argued that the main benefit of the proposed procedure was in interpretability in yielding a phylogenetically aware transformation that could be utilized for test-statistics.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5766,7 +5766,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) There was general consensus among the reviewers that <a href=\"#fig4\">Figure 4</a> was unconvincing in that technical (non-biological) features of the algorithm could explain the results more easily than exclusionary dynamics. The authors could likely remove <a href=\"#fig4\">Figure 4</a> without damaging the paper, but if they choose to keep it, they should respond to the concerns below from reviewers #1 and #3 as both reviewers felt that simple lack of association between taxa and stochastic variation in sampling could explain many of the observations in <a href=\"#fig4\">Figure 4</a>.</i> "
+                    "text": "<i>3) There was general consensus among the reviewers that <a href=\"#fig4\">Figure 4</a> was unconvincing in that technical (non-biological) features of the algorithm could explain the results more easily than exclusionary dynamics. The authors could likely remove <a href=\"#fig4\">Figure 4</a> without damaging the paper, but if they choose to keep it, they should respond to the concerns below from reviewers #1 and #3 as both reviewers felt that simple lack of association between taxa and stochastic variation in sampling could explain many of the observations in <a href=\"#fig4\">Figure 4</a>.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5782,7 +5782,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) There was consensus among the reviewers that the authors could provide more guidance to the non-specialists about when this algorithm should be used. As reviewer #3 put it, when and why should a reader choose the PhILR approach and when should it be avoided.</i> "
+                    "text": "<i>4) There was consensus among the reviewers that the authors could provide more guidance to the non-specialists about when this algorithm should be used. As reviewer #3 put it, when and why should a reader choose the PhILR approach and when should it be avoided.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5794,7 +5794,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) The authors should be explicit about what filtering and other pre-processing steps were used and whether those choices substantially impacted the performance of their algorithm.</i> "
+                    "text": "<i>5) The authors should be explicit about what filtering and other pre-processing steps were used and whether those choices substantially impacted the performance of their algorithm.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5826,15 +5826,15 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #1:</i> "
+                    "text": "<i>Reviewer #1:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>[\u2026] Suggestions for improvement follows:</i> "
+                    "text": "<i>[\u2026] Suggestions for improvement follows:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) The mathematical description of the algorithm could be improved in terms of its clarity. For example, it is not always clear how the pluses and minuses in the second equation of the subsection \u201cThe ILR Transform\u201d are defined. It is not made immediately clear that the leftmost term (sqrt(ni+ * ni- / (ni+ + ni-)) in that equation is a correction for branch length. For the equation in the subsection \u201cAddressing sparsity through weighting taxa\u201d, please use parentheses to emphasize that the formula is sqrt(sum(xj)) * ((sum(cj 1\u2026N)) ^ 1/N and not sqrt(sum(xj))^N * sqrt(sum(cj 1\u2026N))</i> "
+                    "text": "<i>1) The mathematical description of the algorithm could be improved in terms of its clarity. For example, it is not always clear how the pluses and minuses in the second equation of the subsection \u201cThe ILR Transform\u201d are defined. It is not made immediately clear that the leftmost term (sqrt(ni+ * ni- / (ni+ + ni-)) in that equation is a correction for branch length. For the equation in the subsection \u201cAddressing sparsity through weighting taxa\u201d, please use parentheses to emphasize that the formula is sqrt(sum(xj)) * ((sum(cj 1\u2026N)) ^ 1/N and not sqrt(sum(xj))^N * sqrt(sum(cj 1\u2026N))</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5842,7 +5842,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) A limitation of working in ratio space in 16S data is what to do with all of the zeros in the spreadsheet (the \"sparse data\" problem). There is nothing inherent to the balancing algorithm that can deal with this problem (the sum in the denominator of the balance obviously can't be zero). The authors therefore require some kind of pseudo-count scheme and they have settled on one (given in the equation in subsection \u201cAddressing sparsity through weighting taxa\u201d) which is a function of the number of samples. If I am reading their formula correctly, the weight given to a taxa with 1 read in one sample and zero in all others would be very close to the sqrt(number of samples). The authors might consider giving this as an example and explicitly noting that their method has some similarity to adding the sqrt(number of samples) as a pseudo-count.</i> "
+                    "text": "<i>2) A limitation of working in ratio space in 16S data is what to do with all of the zeros in the spreadsheet (the \"sparse data\" problem). There is nothing inherent to the balancing algorithm that can deal with this problem (the sum in the denominator of the balance obviously can't be zero). The authors therefore require some kind of pseudo-count scheme and they have settled on one (given in the equation in subsection \u201cAddressing sparsity through weighting taxa\u201d) which is a function of the number of samples. If I am reading their formula correctly, the weight given to a taxa with 1 read in one sample and zero in all others would be very close to the sqrt(number of samples). The authors might consider giving this as an example and explicitly noting that their method has some similarity to adding the sqrt(number of samples) as a pseudo-count.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5850,7 +5850,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) I struggled a bit with the variance analysis which concludes the Results sections. In the second paragraph of the subsection 2Balance variance and microbiota assembly\u201d it is argued that \"When the variance of a balance between two clades approaches zero, the mean abundance of taxa in each of the two clades will be linearly related and thus exhibit shared dynamics across microbial habitats\". While this is true (and must be true mathematically as when the variance approaches zero, the ratio of the two normalized abundances of the clades is constant, which means they will become perfectly linearly related with a positive slope), it's not clear to me that a high variance necessarily means \"exclusionary dynamics across samples\". I don't see how a high variance in this number indicated anything about how direct or indirect the interactions are within the tree. There are lots of reasons two clades could lack perfect linear correlation with a positive slope from direct competition to being completely unrelated biologically with abundances just shifting due to stochastic variation. Also, wouldn't variance have to be lower closer to the tips of the phylogenetic tree as the number of sequences is lower, so the pseudo-count has more of an effect depressing overall variance? Doesn't that explain <a href=\"#fig4\">Figure 4D-F</a>? And if I am reading these graphs correctly, below the species level there are not enough datapoints to support modeling via localized regression one way or another. Although not central to the arguments of the paper, I found <a href=\"#fig4\">Figure 4</a> to be less convincing than other sections of the paper.</i> "
+                    "text": "<i>3) I struggled a bit with the variance analysis which concludes the Results sections. In the second paragraph of the subsection 2Balance variance and microbiota assembly\u201d it is argued that \"When the variance of a balance between two clades approaches zero, the mean abundance of taxa in each of the two clades will be linearly related and thus exhibit shared dynamics across microbial habitats\". While this is true (and must be true mathematically as when the variance approaches zero, the ratio of the two normalized abundances of the clades is constant, which means they will become perfectly linearly related with a positive slope), it's not clear to me that a high variance necessarily means \"exclusionary dynamics across samples\". I don't see how a high variance in this number indicated anything about how direct or indirect the interactions are within the tree. There are lots of reasons two clades could lack perfect linear correlation with a positive slope from direct competition to being completely unrelated biologically with abundances just shifting due to stochastic variation. Also, wouldn't variance have to be lower closer to the tips of the phylogenetic tree as the number of sequences is lower, so the pseudo-count has more of an effect depressing overall variance? Doesn't that explain <a href=\"#fig4\">Figure 4D-F</a>? And if I am reading these graphs correctly, below the species level there are not enough datapoints to support modeling via localized regression one way or another. Although not central to the arguments of the paper, I found <a href=\"#fig4\">Figure 4</a> to be less convincing than other sections of the paper.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5858,19 +5858,19 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #2:</i> "
+                    "text": "<i>Reviewer #2:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The manuscript introduces two new powerful ideas. They are: (a)construction of the sequential binary partition used to define</i> "
+                    "text": "<i>The manuscript introduces two new powerful ideas. They are: (a)construction of the sequential binary partition used to define</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>ILR coordinates on the base of phylogenetic trees; (b) use therecently published balances in weighted compositions to account forphylogenetic distances between OTU's or taxa. Both ideas aredeveloped and applied successfully to benchmark data sets.</i> "
+                    "text": "<i>ILR coordinates on the base of phylogenetic trees; (b) use therecently published balances in weighted compositions to account forphylogenetic distances between OTU's or taxa. Both ideas aredeveloped and applied successfully to benchmark data sets.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>For the originality of main ideas applied to microbiome analysis,the manuscript deserves publication.</i> "
+                    "text": "<i>For the originality of main ideas applied to microbiome analysis,the manuscript deserves publication.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5878,11 +5878,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #3:</i> "
+                    "text": "<i>Reviewer #3:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The manuscript is, in general, written in a clear and logical manner with a minimum of technical jargon. <a href=\"#fig1\">Figures 1</a>, <a href=\"#fig3\">3</a> and <a href=\"#fig4\">4</a> are outstanding examples of data visualization and demonstrate the utility of this approach over others extant in the field. <a href=\"#fig5\">Figure 5</a> seems an afterthought and could be combined with <a href=\"#fig1\">Figure 1</a>, or made supplementary. The binary portion could also be completely described in the Methods without a figure.</i> "
+                    "text": "<i>The manuscript is, in general, written in a clear and logical manner with a minimum of technical jargon. <a href=\"#fig1\">Figures 1</a>, <a href=\"#fig3\">3</a> and <a href=\"#fig4\">4</a> are outstanding examples of data visualization and demonstrate the utility of this approach over others extant in the field. <a href=\"#fig5\">Figure 5</a> seems an afterthought and could be combined with <a href=\"#fig1\">Figure 1</a>, or made supplementary. The binary portion could also be completely described in the Methods without a figure.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5890,11 +5890,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i><a href=\"#fig2\">Figure 2</a>, and the associated descriptive text are somewhat underwhelming demonstrations of the utility of the approach, which, in theory, should clearly outperform all other methods if the compositional data approach is necessary. The use of box-plots probably does not aid the visual appeal.</i> "
+                    "text": "<i><a href=\"#fig2\">Figure 2</a>, and the associated descriptive text are somewhat underwhelming demonstrations of the utility of the approach, which, in theory, should clearly outperform all other methods if the compositional data approach is necessary. The use of box-plots probably does not aid the visual appeal.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>That the ILR based distance can seriously underperform the weighted unifrac metric is puzzling and cause for concern, since PhILR becomes another metric to be 'mined' to achieve the desired outcome.</i> "
+                    "text": "<i>That the ILR based distance can seriously underperform the weighted unifrac metric is puzzling and cause for concern, since PhILR becomes another metric to be 'mined' to achieve the desired outcome.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5902,7 +5902,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Does the PhILR partitioning scheme outperform a simple random binary partition? this is crucial to know.</i> "
+                    "text": "<i>Does the PhILR partitioning scheme outperform a simple random binary partition? this is crucial to know.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5910,7 +5910,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>There needs to be serious guidance given to the reader as to when and why to choose the PhILR approach and when not to. The same can be said for the classification methods shown, where the PhILR generally (but not always) outperforms relative abundance, but not log relative abundance. I am left to wonder if data analysis choices are driving these results.</i> "
+                    "text": "<i>There needs to be serious guidance given to the reader as to when and why to choose the PhILR approach and when not to. The same can be said for the classification methods shown, where the PhILR generally (but not always) outperforms relative abundance, but not log relative abundance. I am left to wonder if data analysis choices are driving these results.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5918,7 +5918,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Finally, I am puzzled as to why the authors chose to take a rigorous variance-based approach (ILR) and analyze it using a distance-based metric. It is established in the CoDa literature that Mahalanobis distances are often more appropriate for clustering based approaches and for outlier detection (see for example: <a href=\"http://www.statistik.tuwien.ac.at/public/filz/papers/2010Compstat.pdf\">http://www.statistik.tuwien.ac.at/public/filz/papers/2010Compstat.pdf</a>). Did the authors examine other distances?</i> "
+                    "text": "<i>Finally, I am puzzled as to why the authors chose to take a rigorous variance-based approach (ILR) and analyze it using a distance-based metric. It is established in the CoDa literature that Mahalanobis distances are often more appropriate for clustering based approaches and for outlier detection (see for example: <a href=\"http://www.statistik.tuwien.ac.at/public/filz/papers/2010Compstat.pdf\">http://www.statistik.tuwien.ac.at/public/filz/papers/2010Compstat.pdf</a>). Did the authors examine other distances?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5926,7 +5926,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>I believe that <a href=\"#fig4\">Figure 4</a> is somewhat over-interpreted. Subsection \u201cBalance variance and microbiota assembly\u201d, last paragraph: There are many technical reasons such as inefficient clustering, etc. that closely related sequences (called bacteria here) could exhibit strong correlations. Reading Lovell (referenced in this manuscript), and the points shown in 4G-L, indicate that an alternative explanation to that given in the text (see aforementioned subsection, end of second paragraph) is that a higher balance variance would be compatible with a model of indifference rather than competition since the vast majority of high variance ratio balances are likely to be non-correlated balances (Lovell 2015). Such non-correlated balances persist even out to the extreme tails and there is as yet no general principled approach to identify negative correlations in compositions.</i> "
+                    "text": "<i>I believe that <a href=\"#fig4\">Figure 4</a> is somewhat over-interpreted. Subsection \u201cBalance variance and microbiota assembly\u201d, last paragraph: There are many technical reasons such as inefficient clustering, etc. that closely related sequences (called bacteria here) could exhibit strong correlations. Reading Lovell (referenced in this manuscript), and the points shown in 4G-L, indicate that an alternative explanation to that given in the text (see aforementioned subsection, end of second paragraph) is that a higher balance variance would be compatible with a model of indifference rather than competition since the vast majority of high variance ratio balances are likely to be non-correlated balances (Lovell 2015). Such non-correlated balances persist even out to the extreme tails and there is as yet no general principled approach to identify negative correlations in compositions.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5934,7 +5934,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Introduction, last paragraph: \u201cthe accuracy of distance\u2026\u201d \u2013 this is a strong statement to make as the underlying standard of truth is assumed, not known from first principles.</i> "
+                    "text": "<i>Introduction, last paragraph: \u201cthe accuracy of distance\u2026\u201d \u2013 this is a strong statement to make as the underlying standard of truth is assumed, not known from first principles.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5946,7 +5946,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Subsection \u201cAddressing sparsity through weighting taxa\u201d, first paragraph: I would argue that total read counts contain information on precision, not variance. It is hard to square this statement with the otherwise compositional approach used in the paper.</i> "
+                    "text": "<i>Subsection \u201cAddressing sparsity through weighting taxa\u201d, first paragraph: I would argue that total read counts contain information on precision, not variance. It is hard to square this statement with the otherwise compositional approach used in the paper.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5954,7 +5954,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Subsection \u201cAddressing sparsity through weighting taxa\u201d, second paragraph: Why use a prior of one. The supplement that I found did not support the assertion that the prior chosen had little effect. This needs to be clarified.</i> "
+                    "text": "<i>Subsection \u201cAddressing sparsity through weighting taxa\u201d, second paragraph: Why use a prior of one. The supplement that I found did not support the assertion that the prior chosen had little effect. This needs to be clarified.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5962,7 +5962,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Subsection \u201cHuman Microbiome Project (HMP)\u201d: What is the effect of filtering and preprocessing on the method? As with many methods papers, the arbitrary choices here have the potential to become the accepted norm later without evidence.</i> "
+                    "text": "<i>Subsection \u201cHuman Microbiome Project (HMP)\u201d: What is the effect of filtering and preprocessing on the method? As with many methods papers, the arbitrary choices here have the potential to become the accepted norm later without evidence.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5970,7 +5970,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Subsection \u201cSupervised Classification\u201d, first paragraph: Were the log-transformed data not scaled? if not, this is a problem since it is not a fair comparison.</i> "
+                    "text": "<i>Subsection \u201cSupervised Classification\u201d, first paragraph: Were the log-transformed data not scaled? if not, this is a problem since it is not a fair comparison.</i>"
                 }, 
                 {
                     "type": "paragraph", 

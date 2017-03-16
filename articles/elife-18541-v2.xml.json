@@ -40,7 +40,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Kleyman et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -529,7 +529,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Kleyman et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -6787,7 +6787,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #1:</i> "
+                    "text": "<i>Reviewer #1:</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6799,7 +6799,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Reviewer #2:</i> "
+                    "text": "<i>Reviewer #2:</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6812,11 +6812,11 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential concerns:</i> "
+                    "text": "<i>Essential concerns:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) All the reviewers felt that the method is only compared to the most trivial baselines (uniform and random). E.g. there is no comparison to even the authors\u2019 own 2005 paper on a closely related setup. There are various existing works on selecting knots for splines. One could use them, for example, by first fitting a spline to all the high-rate data, and then select points for that curve. Does TPS work better than non-trivial baselines? The authors must perform systematic comparisons to related work such as Rosa et al. 2012, Optimal Timepoint Sampling in High-Throughput Gene Expression Experiments. Further, the paragraph in the Discussion section showing the advantage of using TPS over phenotype-based sampling should be moved into the main text and presented clearly as this is a critical part of the paper.</i> "
+                    "text": "<i>1) All the reviewers felt that the method is only compared to the most trivial baselines (uniform and random). E.g. there is no comparison to even the authors\u2019 own 2005 paper on a closely related setup. There are various existing works on selecting knots for splines. One could use them, for example, by first fitting a spline to all the high-rate data, and then select points for that curve. Does TPS work better than non-trivial baselines? The authors must perform systematic comparisons to related work such as Rosa et al. 2012, Optimal Timepoint Sampling in High-Throughput Gene Expression Experiments. Further, the paragraph in the Discussion section showing the advantage of using TPS over phenotype-based sampling should be moved into the main text and presented clearly as this is a critical part of the paper.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6836,11 +6836,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) All the reviewers also felt the manuscript required additional clarity and specific comments are below.</i> "
+                    "text": "<i>2) All the reviewers also felt the manuscript required additional clarity and specific comments are below.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) Since TPS uses an iterative algorithm for solving an optimization problem with many local optima, the initialization procedure is critical. I appreciate the fact the authors tested multiple procedures for initialization, and when using TPS one can try all initialization procedures (and in the end select the one with the best results on the left-out data). It is not clear, however, whether the software implemented by the authors tests all these initialization procedures.</i> "
+                    "text": "<i>3) Since TPS uses an iterative algorithm for solving an optimization problem with many local optima, the initialization procedure is critical. I appreciate the fact the authors tested multiple procedures for initialization, and when using TPS one can try all initialization procedures (and in the end select the one with the best results on the left-out data). It is not clear, however, whether the software implemented by the authors tests all these initialization procedures.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6848,7 +6848,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) In addition, the initialization metrics/methods are confusing. The Methods and Supplementary Methods sections talk about \"uniform\", \"intervals of equal sizes\", \"max distance\", metricA, metricB, and metricC. But it is not clear what initialization method was used in different analyses/figures. What procedure was used in <a href=\"#fig1\">Figure 1</a>? The figure caption should mention that. The authors should decide on specific names for the different initialization methods, and use them consistently throughout the paper. Also, some figures present redundant results. <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> presents results for \"max distance\", metricA, metricB, and metricC. <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a> presents \"max distance\", metricA, metricB, and metric, random points. So <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> could be removed.</i> "
+                    "text": "<i>4) In addition, the initialization metrics/methods are confusing. The Methods and Supplementary Methods sections talk about \"uniform\", \"intervals of equal sizes\", \"max distance\", metricA, metricB, and metricC. But it is not clear what initialization method was used in different analyses/figures. What procedure was used in <a href=\"#fig1\">Figure 1</a>? The figure caption should mention that. The authors should decide on specific names for the different initialization methods, and use them consistently throughout the paper. Also, some figures present redundant results. <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> presents results for \"max distance\", metricA, metricB, and metricC. <a href=\"#fig1s2\">Figure 1\u2014figure supplement 2</a> presents \"max distance\", metricA, metricB, and metric, random points. So <a href=\"#fig1s1\">Figure 1\u2014figure supplement 1</a> could be removed.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6856,7 +6856,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) The \"iterative improvement\" procedures are also confusing. The method presented in Methods optimizes the mean squared error (on the left out data points) by iteratively removing/adding one point at a time. I assume this method was used in <a href=\"#fig1\">Figure 1</a>. Then, in <a href=\"#fig2\">Figure 2A</a>, what does \"absolute difference mean\"? (I assume this refers to an initialization procedure, right?) The way the authors name the combinations of search and initialization procedures in <a href=\"#fig2\">Figure 2</a> is very confusing. Some names reflect an initialization procedure (Uniform Selection), other a search procedure (Simulated Annealing), others an evaluation criterion (Weighted Error). Thus, the results presented in <a href=\"#fig2\">Figure 2B</a> are confusing, and neither the caption nor the main text clarify what is being tested. Similarly for <a href=\"#fig4\">Figure 4</a>.</i> "
+                    "text": "<i>5) The \"iterative improvement\" procedures are also confusing. The method presented in Methods optimizes the mean squared error (on the left out data points) by iteratively removing/adding one point at a time. I assume this method was used in <a href=\"#fig1\">Figure 1</a>. Then, in <a href=\"#fig2\">Figure 2A</a>, what does \"absolute difference mean\"? (I assume this refers to an initialization procedure, right?) The way the authors name the combinations of search and initialization procedures in <a href=\"#fig2\">Figure 2</a> is very confusing. Some names reflect an initialization procedure (Uniform Selection), other a search procedure (Simulated Annealing), others an evaluation criterion (Weighted Error). Thus, the results presented in <a href=\"#fig2\">Figure 2B</a> are confusing, and neither the caption nor the main text clarify what is being tested. Similarly for <a href=\"#fig4\">Figure 4</a>.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6864,7 +6864,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) For the miRNA data, the authors perform a comparison of results using mRNA versus miRNA data for deciding the sampling time points. But the way the results are presented is again confusing. In the main text the authors say: \"The results are presented in <a href=\"#fig4\">Figure 4</a>. In addition to the comparison included in the mRNA figure, the miRNA figure includes the optimal results for using the actual miRNA data (as opposed to mRNA data) to select the points.\" But the results using the miRNA data are not in that figure.</i> "
+                    "text": "<i>6) For the miRNA data, the authors perform a comparison of results using mRNA versus miRNA data for deciding the sampling time points. But the way the results are presented is again confusing. In the main text the authors say: \"The results are presented in <a href=\"#fig4\">Figure 4</a>. In addition to the comparison included in the mRNA figure, the miRNA figure includes the optimal results for using the actual miRNA data (as opposed to mRNA data) to select the points.\" But the results using the miRNA data are not in that figure.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6872,7 +6872,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) It is nice that the project has a website but it looks mostly incomplete. Can the authors make the site a full-fledged web service so novice users and biologists with no programming background can use the software? Users should be able to upload a time series dataset and receive results with interactive visualization.</i> "
+                    "text": "<i>7) It is nice that the project has a website but it looks mostly incomplete. Can the authors make the site a full-fledged web service so novice users and biologists with no programming background can use the software? Users should be able to upload a time series dataset and receive results with interactive visualization.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6880,7 +6880,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>8) There is only one case study. The method is described as a broad method, but since it was applied to one process, it should be stated more carefully that it is a general method. Perhaps the authors should focus on this case study without the need to \"sell\" the method as the primary focus of the study.</i> "
+                    "text": "<i>8) There is only one case study. The method is described as a broad method, but since it was applied to one process, it should be stated more carefully that it is a general method. Perhaps the authors should focus on this case study without the need to \"sell\" the method as the primary focus of the study.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6888,7 +6888,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>9) The examples in <a href=\"#fig6\">Figure 6</a> are impressive. But how typical are they? What is the distribution of MSE across genes with TPS and with predefined timepoints?</i> "
+                    "text": "<i>9) The examples in <a href=\"#fig6\">Figure 6</a> are impressive. But how typical are they? What is the distribution of MSE across genes with TPS and with predefined timepoints?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6896,7 +6896,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>10) Performance curves (<a href=\"#fig2\">Figure 2</a>, <a href=\"#fig4\">4</a>). Is the benefit due to a small number of genes, or consistent across the genome? It would be useful to show scatter plot (across genes) of MSE with TPS and with the best baseline.</i> "
+                    "text": "<i>10) Performance curves (<a href=\"#fig2\">Figure 2</a>, <a href=\"#fig4\">4</a>). Is the benefit due to a small number of genes, or consistent across the genome? It would be useful to show scatter plot (across genes) of MSE with TPS and with the best baseline.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6904,7 +6904,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>11) <a href=\"#fig5\">Figure 5</a>. How were these three genes selected? Are the correlations surprisingly strong when corrected for multiple comparisons? In 5A, the correlation is probably dominated by an outlier (third green marker) otherwise It is hard to see that the two curves are strongly anti-correlated. A similar outlier is also in <a href=\"#fig6s1\">Figure 6\u2014figure supplement 1C</a>. Accompanying with a scatter plot would clarify the relation between the two. Also, compute confidence-interval for that correlation using bootstrap.</i> "
+                    "text": "<i>11) <a href=\"#fig5\">Figure 5</a>. How were these three genes selected? Are the correlations surprisingly strong when corrected for multiple comparisons? In 5A, the correlation is probably dominated by an outlier (third green marker) otherwise It is hard to see that the two curves are strongly anti-correlated. A similar outlier is also in <a href=\"#fig6s1\">Figure 6\u2014figure supplement 1C</a>. Accompanying with a scatter plot would clarify the relation between the two. Also, compute confidence-interval for that correlation using bootstrap.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6916,7 +6916,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>12) <a href=\"#fig2\">Figure 2</a>: Seems that the uniform baseline was omitted from the left panel, please add it. Please also provide error bars for TPS and uniform baseline (on the left panel) by bootstrapping across the set of genes.</i> "
+                    "text": "<i>12) <a href=\"#fig2\">Figure 2</a>: Seems that the uniform baseline was omitted from the left panel, please add it. Please also provide error bars for TPS and uniform baseline (on the left panel) by bootstrapping across the set of genes.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6924,7 +6924,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>13) Subsection \u201cIdentified time points using mRNA data are appropriate for miRNA profiling\u201d, second paragraph: \"Using the selected based on mRNA data [\u2026] random points (p&lt;0.01)\". What is the p-value for the uniform baseline?</i> "
+                    "text": "<i>13) Subsection \u201cIdentified time points using mRNA data are appropriate for miRNA profiling\u201d, second paragraph: \"Using the selected based on mRNA data [\u2026] random points (p&lt;0.01)\". What is the p-value for the uniform baseline?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6932,7 +6932,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>14) There is a line in the paper that says 'performance is very similar [...].0.43 [\u2026] 0.40\". Provide a measure supported by a statistical test.</i> "
+                    "text": "<i>14) There is a line in the paper that says 'performance is very similar [...].0.43 [\u2026] 0.40\". Provide a measure supported by a statistical test.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6944,11 +6944,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below by the referees. We ask that you pay close attention to these specific items, which we call out here, and are in the specific reviews below:</i> "
+                    "text": "<i>The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below by the referees. We ask that you pay close attention to these specific items, which we call out here, and are in the specific reviews below:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) The revised version still has formatting issues. The response refers to Table 5, but no such table is given; figures are not numbered and provided separately from their captions, which makes it hard to follow and comment.</i> "
+                    "text": "<i>1) The revised version still has formatting issues. The response refers to Table 5, but no such table is given; figures are not numbered and provided separately from their captions, which makes it hard to follow and comment.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6956,7 +6956,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) The new <a href=\"#fig5\">Figure 5</a> replaced outlier genes. The main text should explain how the 3 examples shown were selected.</i> "
+                    "text": "<i>2) The new <a href=\"#fig5\">Figure 5</a> replaced outlier genes. The main text should explain how the 3 examples shown were selected.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6964,7 +6964,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) We do not see a benefit in having the left panel of <a href=\"#fig2\">Figure 2</a>. In their response, the authors say they wanted to show the difference between TPS and uniform selection. But panel (A) shows random selection, not uniform selection. Random selection is a made-up baseline designed to make TPS look good. Now that they have better baselines comparisons, the paper does not need it, and panel (A) can be removed.</i> "
+                    "text": "<i>3) We do not see a benefit in having the left panel of <a href=\"#fig2\">Figure 2</a>. In their response, the authors say they wanted to show the difference between TPS and uniform selection. But panel (A) shows random selection, not uniform selection. Random selection is a made-up baseline designed to make TPS look good. Now that they have better baselines comparisons, the paper does not need it, and panel (A) can be removed.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6972,7 +6972,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) <a href=\"#fig3\">Figure 3</a>. Replace \"Rem points\" with \"remaining points\".</i> "
+                    "text": "<i>4) <a href=\"#fig3\">Figure 3</a>. Replace \"Rem points\" with \"remaining points\".</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6980,7 +6980,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) The authors mentioned that they \"improved the caption of <a href=\"#fig1\">Figure 1</a> to explicitly state which initialization method is used for each result\". But <a href=\"#fig1\">Figure 1</a> caption is unchanged. (They did clarify other figure captions.)</i> "
+                    "text": "<i>5) The authors mentioned that they \"improved the caption of <a href=\"#fig1\">Figure 1</a> to explicitly state which initialization method is used for each result\". But <a href=\"#fig1\">Figure 1</a> caption is unchanged. (They did clarify other figure captions.)</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6988,7 +6988,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) The authors added Figure 4\u2014figure supplement 3 to show the performance of TPS trained on miRNA data. But that plot could/should be included directly in <a href=\"#fig4\">Figure 4</a>. Otherwise it is hard for the reader to compare TPS when trained on mRNA versus miRNA data. Also, since there are several versions of TPS, which one was used in Figure 4\u2014figure supplement 3? These kinds of details are still missing.</i> "
+                    "text": "<i>6) The authors added Figure 4\u2014figure supplement 3 to show the performance of TPS trained on miRNA data. But that plot could/should be included directly in <a href=\"#fig4\">Figure 4</a>. Otherwise it is hard for the reader to compare TPS when trained on mRNA versus miRNA data. Also, since there are several versions of TPS, which one was used in Figure 4\u2014figure supplement 3? These kinds of details are still missing.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -6996,7 +6996,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>7) Some of the figures are still of inadequate quality. Some plots have a strange aspect ratio (e.g. <a href=\"#fig5\">Figure 5</a>). Several plots do not have a y-axis label (e.g. <a href=\"#fig3\">Figure 3</a>). Sometimes the labels are incomplete (e.g. \"Error\" in the comparison to Singh et al.; is it mean squared error?) Overall, the paper is still difficult to follow. (The fact that all references appear as \"?\" in the PDF also makes the paper hard to read. I assume the text file was not processed correctly during submission. But shouldn't the author verify that before submitting the paper?)</i> "
+                    "text": "<i>7) Some of the figures are still of inadequate quality. Some plots have a strange aspect ratio (e.g. <a href=\"#fig5\">Figure 5</a>). Several plots do not have a y-axis label (e.g. <a href=\"#fig3\">Figure 3</a>). Sometimes the labels are incomplete (e.g. \"Error\" in the comparison to Singh et al.; is it mean squared error?) Overall, the paper is still difficult to follow. (The fact that all references appear as \"?\" in the PDF also makes the paper hard to read. I assume the text file was not processed correctly during submission. But shouldn't the author verify that before submitting the paper?)</i>"
                 }, 
                 {
                     "type": "paragraph", 

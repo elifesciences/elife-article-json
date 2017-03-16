@@ -40,7 +40,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Bonaiuto et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -273,7 +273,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Bonaiuto et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -5775,7 +5775,7 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>[\u2026] All in all, this is a very solid work piece of work. The reviewers do think that the paper could push things a bit harder to probe the robustness of the model. There is little discussion about alternative models (other than variation in locus of modeled stimulation) and thus it is difficult to evaluate the goodness of their model-it is really evaluated at a qualitative level. In addition, there are some obvious opportunities here to look at predictions from the model and ask if these are supported behaviorally, either using published data or by conducting an additional experiment. We outline recommendations for revision below.</i> "
+                    "text": "<i>[\u2026] All in all, this is a very solid work piece of work. The reviewers do think that the paper could push things a bit harder to probe the robustness of the model. There is little discussion about alternative models (other than variation in locus of modeled stimulation) and thus it is difficult to evaluate the goodness of their model-it is really evaluated at a qualitative level. In addition, there are some obvious opportunities here to look at predictions from the model and ask if these are supported behaviorally, either using published data or by conducting an additional experiment. We outline recommendations for revision below.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5791,11 +5791,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) Simulation effect of inter-trial interval being extended. Obviously, the carryover effect should diminish with an increase in ITI. In fact, with their parameters, the effect of ITI might be quite large over a limited range (e.g., 500 ms to 5 s). We would like to see this simulated and tested in a new behavioral study (or use published data, if appropriate). No need to do tDCS here; a simple behavioral experiment will suffice. However, the current tDCS data could also be analyzed to examine this issue since you have a range of ITIs. For example, a median split into short ITI vs. long ITI. We recognize that since you kept the trial rate constant, ITI is confounded with RT. Moreover, the small ITI range will reduce sensitivity so this re-analysis is unlikely to provide a strong test.</i> "
+                    "text": "<i>1) Simulation effect of inter-trial interval being extended. Obviously, the carryover effect should diminish with an increase in ITI. In fact, with their parameters, the effect of ITI might be quite large over a limited range (e.g., 500 ms to 5 s). We would like to see this simulated and tested in a new behavioral study (or use published data, if appropriate). No need to do tDCS here; a simple behavioral experiment will suffice. However, the current tDCS data could also be analyzed to examine this issue since you have a range of ITIs. For example, a median split into short ITI vs. long ITI. We recognize that since you kept the trial rate constant, ITI is confounded with RT. Moreover, the small ITI range will reduce sensitivity so this re-analysis is unlikely to provide a strong test.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5807,7 +5807,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) The text suggests that the simulations were done with trial-by-trial stimulation whereas the tDCS conditions were blocked in the experiment. If this is correct, it is not obvious if the model would make the same predictions if the simulated stimulation was blocked. The authors should clarify this issue and, if not tested, run a blocked simulation to verify that the trial-by-trial effects persist under this condition. (Perhaps it is obvious from the model parameters that trial-to-trial effects do not persist over neighboring trials because of reset properties-if so, this should be made explicit.)</i> "
+                    "text": "<i>2) The text suggests that the simulations were done with trial-by-trial stimulation whereas the tDCS conditions were blocked in the experiment. If this is correct, it is not obvious if the model would make the same predictions if the simulated stimulation was blocked. The authors should clarify this issue and, if not tested, run a blocked simulation to verify that the trial-by-trial effects persist under this condition. (Perhaps it is obvious from the model parameters that trial-to-trial effects do not persist over neighboring trials because of reset properties-if so, this should be made explicit.)</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5815,7 +5815,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) An alternative model could be tested by removing reciprocal inhibition between the decision units. There are accumulator models that do not make an assumption of this form (independent accumulators) and the finding of partial errors (e.g., the work of B. Burle and colleagues) suggest that there can be pronounced activation in both choices at time of response onset. Does removing the reciprocal inhibition change things in a significant way?</i> "
+                    "text": "<i>3) An alternative model could be tested by removing reciprocal inhibition between the decision units. There are accumulator models that do not make an assumption of this form (independent accumulators) and the finding of partial errors (e.g., the work of B. Burle and colleagues) suggest that there can be pronounced activation in both choices at time of response onset. Does removing the reciprocal inhibition change things in a significant way?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -5823,7 +5823,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) Text does not indicate if the participants made left/right decisions with two fingers of one hand (which one?) or with two fingers from different hands. While this may seem (and be) a trivial point, it also gets at a subtle issue/assumption with the model. The model assumes that both response options are affected by the stimulation. It is reasonable to assume that the level of interaction is the same for all possible response pairs? Would one expect unilateral stimulation to produce similar interactions if effectors were both contralateral to side of stimulation as when only one effector was contralateral to side of stimulation. The authors should clarify how responses were made and make explicit implications of this issue (even if to comment on why they think it isn't important or to comment on predictions to be derived from consideration of this issue).</i> "
+                    "text": "<i>4) Text does not indicate if the participants made left/right decisions with two fingers of one hand (which one?) or with two fingers from different hands. While this may seem (and be) a trivial point, it also gets at a subtle issue/assumption with the model. The model assumes that both response options are affected by the stimulation. It is reasonable to assume that the level of interaction is the same for all possible response pairs? Would one expect unilateral stimulation to produce similar interactions if effectors were both contralateral to side of stimulation as when only one effector was contralateral to side of stimulation. The authors should clarify how responses were made and make explicit implications of this issue (even if to comment on why they think it isn't important or to comment on predictions to be derived from consideration of this issue).</i>"
                 }, 
                 {
                     "type": "paragraph", 

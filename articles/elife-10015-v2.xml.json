@@ -37,7 +37,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Golub et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -342,7 +342,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Golub et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -4398,11 +4398,11 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) First, I admit I am struggling a little bit to understand why I shouldn't adopt the conclusion offered in the Discussion that \"it might be tempting to view an extracted internal model as simply the BMI mapping that should have been identified during calibration.\" The authors give several arguments here but sometimes I don't entirely follow them. The true model here is linear difference equation. The (fitted) internal model also takes the form of a linear difference equation, and accounts for a substantial fraction of the errors. This indicates (if I understand the claims correctly) that if the experimenters had used the learned internal model instead of the \"true\" model to drive cursor position, the BMI performance would have been much better. So I'm puzzled about why the authors don't feel that this is the straightforward conclusion of the paper. (Couldn't this be considered a positive result, i.e., a finding that suggests a much better way to improve BMI training? I suppose a drawback to this framing is that if the paper were pitched as a better way to train BMIs, we would presumably expect to see that it actually works, i.e., show some data where the estimated internal model is used to drive behavior and achieves much lower error).</i> "
+                    "text": "<i>1) First, I admit I am struggling a little bit to understand why I shouldn't adopt the conclusion offered in the Discussion that \"it might be tempting to view an extracted internal model as simply the BMI mapping that should have been identified during calibration.\" The authors give several arguments here but sometimes I don't entirely follow them. The true model here is linear difference equation. The (fitted) internal model also takes the form of a linear difference equation, and accounts for a substantial fraction of the errors. This indicates (if I understand the claims correctly) that if the experimenters had used the learned internal model instead of the \"true\" model to drive cursor position, the BMI performance would have been much better. So I'm puzzled about why the authors don't feel that this is the straightforward conclusion of the paper. (Couldn't this be considered a positive result, i.e., a finding that suggests a much better way to improve BMI training? I suppose a drawback to this framing is that if the paper were pitched as a better way to train BMIs, we would presumably expect to see that it actually works, i.e., show some data where the estimated internal model is used to drive behavior and achieves much lower error).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4418,11 +4418,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) A related concern: the paper asserts that the good performance of the estimated internal model shows that the limits to performance are the observer's inaccurate estimates of the model, as opposed to noise in the neural activity. I'd like to suggest a third possibility: could it possible that it's not noise, but rather systematic problems in producing neural activity patterns needed to optimally drive the BMI? For example, suppose the animal could only produce activity patterns corresponding to motion in the 4 cardinal directions. Then it would to alternate between producing these patterns in order to drive a diagonal cursor movement. Or (more realistically), suppose there were only certain fixed points in neural activity space that M1 can easily visit. These fixed points might be systematically misaligned with the directions needed to optimally drive the controller. Re-estimating the internal model allows the best linear mapping from these allowed neural activity patterns to those that can drive the cursor as needed during the experiment.</i> "
+                    "text": "<i>2) A related concern: the paper asserts that the good performance of the estimated internal model shows that the limits to performance are the observer's inaccurate estimates of the model, as opposed to noise in the neural activity. I'd like to suggest a third possibility: could it possible that it's not noise, but rather systematic problems in producing neural activity patterns needed to optimally drive the BMI? For example, suppose the animal could only produce activity patterns corresponding to motion in the 4 cardinal directions. Then it would to alternate between producing these patterns in order to drive a diagonal cursor movement. Or (more realistically), suppose there were only certain fixed points in neural activity space that M1 can easily visit. These fixed points might be systematically misaligned with the directions needed to optimally drive the controller. Re-estimating the internal model allows the best linear mapping from these allowed neural activity patterns to those that can drive the cursor as needed during the experiment.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>I raise this possibility in part because it seems like this was the conclusion of the Yu &amp; Batista groups' nature paper last year, showing that control within an intrinsic manifold (as defined by the state space explored by the network prior to BMI activity) is much easier than outside this manifold. I realize it is likely that the \"intuitive\" training procedure would latch on to \"out of manifold\" patterns, since it tries to use activity during training to define the controller. But it would still be nice to rule out this kind of effect \u2013 could it be that rather than insufficient knowledge of the controller, the difference results from differences in the ease with which certain network states can be visited?</i> "
+                    "text": "<i>I raise this possibility in part because it seems like this was the conclusion of the Yu &amp; Batista groups' nature paper last year, showing that control within an intrinsic manifold (as defined by the state space explored by the network prior to BMI activity) is much easier than outside this manifold. I realize it is likely that the \"intuitive\" training procedure would latch on to \"out of manifold\" patterns, since it tries to use activity during training to define the controller. But it would still be nice to rule out this kind of effect \u2013 could it be that rather than insufficient knowledge of the controller, the difference results from differences in the ease with which certain network states can be visited?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4442,7 +4442,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) Result one is that compensation for feedback delay indicates the existence of an internal model. My confusion is that, because equation 1 includes cursor velocity as an input, couldn't it be doing this extrapolation all by itself? How does extrapolation provide evidence of an internal model if the external model could be doing it?</i> "
+                    "text": "<i>3) Result one is that compensation for feedback delay indicates the existence of an internal model. My confusion is that, because equation 1 includes cursor velocity as an input, couldn't it be doing this extrapolation all by itself? How does extrapolation provide evidence of an internal model if the external model could be doing it?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4454,7 +4454,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Don't you need to show that the internal model is doing a better job of extrapolation that equation 1 possibly could?</i> "
+                    "text": "<i>Don't you need to show that the internal model is doing a better job of extrapolation that equation 1 possibly could?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4462,11 +4462,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) The second issue is whether it is justified to call equation 2 an approximation of an internal model. The authors discuss reasons why equation 1 and 2 are not identical, that is, why the internal and external models don't match. Let me provide a simplified analogy. Suppose a single scalar were being extracted from u by x = Bu (in other words, ignore A and b for the moment). In the initial \"intuitive BMI mapping\" B is defined by a procedure that is not well explained. Suppose that, on each trial u = u<sub>0</sub> + s, where u<sub>0</sub> would give perfect performance and s is noise. Clearly Bu<sub>0</sub> = x (the correct x), but has B been chosen to minimize the effects of noise? That is, has Bs been minimized? If the noise is correlated, this can be done. What if</i> <math id=\"inf334\"><mover accent=\"true\"><mi>B</mi><mo>\u02dc</mo></mover></math> <i>is simply more orthogonal to the major PCs of s than B? Wouldn't this explain the effect? Even if the parameters of equation 1 are optimal with respect to noise, how do we know that the correlation structure of s has not changed by the time the model of equation 2 was constructed?</i> "
+                    "text": "<i>4) The second issue is whether it is justified to call equation 2 an approximation of an internal model. The authors discuss reasons why equation 1 and 2 are not identical, that is, why the internal and external models don't match. Let me provide a simplified analogy. Suppose a single scalar were being extracted from u by x = Bu (in other words, ignore A and b for the moment). In the initial \"intuitive BMI mapping\" B is defined by a procedure that is not well explained. Suppose that, on each trial u = u<sub>0</sub> + s, where u<sub>0</sub> would give perfect performance and s is noise. Clearly Bu<sub>0</sub> = x (the correct x), but has B been chosen to minimize the effects of noise? That is, has Bs been minimized? If the noise is correlated, this can be done. What if</i> <math id=\"inf334\"><mover accent=\"true\"><mi>B</mi><mo>\u02dc</mo></mover></math> <i>is simply more orthogonal to the major PCs of s than B? Wouldn't this explain the effect? Even if the parameters of equation 1 are optimal with respect to noise, how do we know that the correlation structure of s has not changed by the time the model of equation 2 was constructed?</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>In summary, the paper would be strengthened by a more convincing case that evidence for an internal model has been obtained and that equation 2 can be interpreted as an approximation for this internal model.</i> "
+                    "text": "<i>In summary, the paper would be strengthened by a more convincing case that evidence for an internal model has been obtained and that equation 2 can be interpreted as an approximation for this internal model.</i>"
                 }, 
                 {
                     "type": "paragraph", 

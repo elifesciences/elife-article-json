@@ -44,7 +44,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Dunovan et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -379,7 +379,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Dunovan et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -4272,7 +4272,7 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>This paper does a nice job of bringing together a number of computational and methodological approaches in an effort to better characterize how cognitive control unfolds in a stop signal-like task. The findings themselves have the potential to build on earlier work in important ways, particularly the modeling insights regarding the dependence between execution and braking; the comparisons between onset and drift-based models; and the neural patterns in caudate and thalamus. However, each of these is difficult to interpret properly without comparison to alternative models, which will also require fitting RT distributions rather than individual point estimates. Additional details related to the choice of model/parameters, and imaging assumptions are also needed. Thus a revision will require a good deal of work but we are hopeful that this can be accomplished. 1) Please compare the model to existing alternative models of response inhibition such as Boucher et al. which bears some resemblance to the current model and hence should be acknowledged, and the similarities and differences need to be made more explicit. In particular, the following model comparisons would be greatly useful, particularly \"A\"). While it may be out of scope to rigorously test each of the other alternatives, where possible it would be great if they could at least comment on their viability as an alternative (for example some may be able to be ruled out based on qualitative features of the data without necessarily fitting each model to the entire dataset). This would provide better insight into how wide or narrow the space of models is that could provide a similarly good account of the current data.</i> "
+                    "text": "<i>This paper does a nice job of bringing together a number of computational and methodological approaches in an effort to better characterize how cognitive control unfolds in a stop signal-like task. The findings themselves have the potential to build on earlier work in important ways, particularly the modeling insights regarding the dependence between execution and braking; the comparisons between onset and drift-based models; and the neural patterns in caudate and thalamus. However, each of these is difficult to interpret properly without comparison to alternative models, which will also require fitting RT distributions rather than individual point estimates. Additional details related to the choice of model/parameters, and imaging assumptions are also needed. Thus a revision will require a good deal of work but we are hopeful that this can be accomplished. 1) Please compare the model to existing alternative models of response inhibition such as Boucher et al. which bears some resemblance to the current model and hence should be acknowledged, and the similarities and differences need to be made more explicit. In particular, the following model comparisons would be greatly useful, particularly \"A\"). While it may be out of scope to rigorously test each of the other alternatives, where possible it would be great if they could at least comment on their viability as an alternative (for example some may be able to be ruled out based on qualitative features of the data without necessarily fitting each model to the entire dataset). This would provide better insight into how wide or narrow the space of models is that could provide a similarly good account of the current data.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4320,7 +4320,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>A) An approximation to the Boucher model would be to implement a version of your model in which execution and braking combine into a single decision variable, rather than separate DV's in parallel DDMs (this single-DV model would seem to be even closer to the authors' proposal of integration onto a single pool of neurons, particularly given the presumption that the execution drift is itself a combination of two pathway inputs);</i> "
+                    "text": "<i>A) An approximation to the Boucher model would be to implement a version of your model in which execution and braking combine into a single decision variable, rather than separate DV's in parallel DDMs (this single-DV model would seem to be even closer to the authors' proposal of integration onto a single pool of neurons, particularly given the presumption that the execution drift is itself a combination of two pathway inputs);</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4328,7 +4328,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>B) A model in which the decision threshold for the initial process is altered by the stop-signal, as suggested by Wiecki &amp; Frank's (2013) model in which the Go-NoGo pathways contribute positive and negative evidence for and against alternative responses but where the decision threshold on the Go-NoGo difference is modulated by STN activity given conflicting sources of evidence. This was applied to model various selective response inhibition tasks as well as stop signal tasks, including the cited Schmidt et al. data. (See also Ratcliff &amp; Frank (2012) for DDM simulations linking STN to threshold changes, and various empirical studies showing cortical- &gt;STN involvement in decision threshold regulation in conflict tasks (e.g. Cavanagh et al., 2011, Green et al. 2013)). This is also related to the more general work in psychology and neuroscience suggesting that probabilities affect baseline-threshold distance (e.g. see Carpenter &amp; Williams, 1995; Platt &amp; Glimcher 1999). Thus you could add a model in which the \"colour of the bar\" affects the threshold as an alternative model, and consider the relation to the above findings/models in Discussion.</i> "
+                    "text": "<i>B) A model in which the decision threshold for the initial process is altered by the stop-signal, as suggested by Wiecki &amp; Frank's (2013) model in which the Go-NoGo pathways contribute positive and negative evidence for and against alternative responses but where the decision threshold on the Go-NoGo difference is modulated by STN activity given conflicting sources of evidence. This was applied to model various selective response inhibition tasks as well as stop signal tasks, including the cited Schmidt et al. data. (See also Ratcliff &amp; Frank (2012) for DDM simulations linking STN to threshold changes, and various empirical studies showing cortical- &gt;STN involvement in decision threshold regulation in conflict tasks (e.g. Cavanagh et al., 2011, Green et al. 2013)). This is also related to the more general work in psychology and neuroscience suggesting that probabilities affect baseline-threshold distance (e.g. see Carpenter &amp; Williams, 1995; Platt &amp; Glimcher 1999). Thus you could add a model in which the \"colour of the bar\" affects the threshold as an alternative model, and consider the relation to the above findings/models in Discussion.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4336,7 +4336,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>C) A model in which drift remains constant past the SSD but braking is represented by a sudden change in threshold;</i> "
+                    "text": "<i>C) A model in which drift remains constant past the SSD but braking is represented by a sudden change in threshold;</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4344,7 +4344,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>D) A model in which braking drift rate (v_s) is conditional on SSD;</i> "
+                    "text": "<i>D) A model in which braking drift rate (v_s) is conditional on SSD;</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4352,7 +4352,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>E) A model in which both drift and onset are influenced by proactive parameters (mentioned in the Discussion);</i> "
+                    "text": "<i>E) A model in which both drift and onset are influenced by proactive parameters (mentioned in the Discussion);</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4360,7 +4360,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>F) A single-boundary model. The execution threshold has a straightforward interpretation when considering implementations of the DDM and related models in other domains, but the braking threshold (i.e., commitment to non-action) is less straightforward to interpret. While this has precedent in earlier race models in the action cancellation literature, I think it would be fair for someone to wonder whether it would be more parsimonious to implement the current model with a single absorbing boundary (execution) rather than two? Could the authors comment on the potential value in having this lower boundary as a termination point (rather than, e.g., simply allowing paths to cross it and return, and/or simply imposing this as a minimum on theta values)?</i> "
+                    "text": "<i>F) A single-boundary model. The execution threshold has a straightforward interpretation when considering implementations of the DDM and related models in other domains, but the braking threshold (i.e., commitment to non-action) is less straightforward to interpret. While this has precedent in earlier race models in the action cancellation literature, I think it would be fair for someone to wonder whether it would be more parsimonious to implement the current model with a single absorbing boundary (execution) rather than two? Could the authors comment on the potential value in having this lower boundary as a termination point (rather than, e.g., simply allowing paths to cross it and return, and/or simply imposing this as a minimum on theta values)?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4368,7 +4368,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) All of the reviewers were unsatisfied with the fitting methods which collapsed the RT to a single point estimate (the mean). This collapses across important information in the RT distribution, and the history in modeling choice RT with the full distributions has shown that the shape of these distributions is particularly important for making inferences about underlying cognitive processes (Ratcliff has many excellent papers on this). We would be more comfortable interpreting the conclusions made (e.g. that striatum affects drift rate rather than thresholds) with more serious consideration given to the fitting. And this will likely be especially important for disentangling the various alternatives noted above in point 1. Although you might not have the full likelihood of your model that would easily allow full Bayesian parameter estimation as in the HDDM, there are alternative approaches, the most straightforward of which would be to jointly optimize the quantiles and response proportions (i.e. find parameters that minimize a cost function equal to the summed (and appropriately weighted) differences between the two sets of quantiles, and response probabilities). Another approach would be to construct the likelihood of your model using simulation methods, see a recent PBR paper (by Turner, with code available). Aside from disentangling alternative models with more sensitive RT distributions, there really isn't need for a stochastic model if you only fit the mean, and the bootstrapping process doesn't help here (just effectively puts a kernel over the summary statistics with variance proportional to the number of points you resample). Also please include tables of average fit parameters across the different studies/conditions. Finally when performing model comparisons, why not use model fit statistics instead of paired t-tests?</i> "
+                    "text": "<i>2) All of the reviewers were unsatisfied with the fitting methods which collapsed the RT to a single point estimate (the mean). This collapses across important information in the RT distribution, and the history in modeling choice RT with the full distributions has shown that the shape of these distributions is particularly important for making inferences about underlying cognitive processes (Ratcliff has many excellent papers on this). We would be more comfortable interpreting the conclusions made (e.g. that striatum affects drift rate rather than thresholds) with more serious consideration given to the fitting. And this will likely be especially important for disentangling the various alternatives noted above in point 1. Although you might not have the full likelihood of your model that would easily allow full Bayesian parameter estimation as in the HDDM, there are alternative approaches, the most straightforward of which would be to jointly optimize the quantiles and response proportions (i.e. find parameters that minimize a cost function equal to the summed (and appropriately weighted) differences between the two sets of quantiles, and response probabilities). Another approach would be to construct the likelihood of your model using simulation methods, see a recent PBR paper (by Turner, with code available). Aside from disentangling alternative models with more sensitive RT distributions, there really isn't need for a stochastic model if you only fit the mean, and the bootstrapping process doesn't help here (just effectively puts a kernel over the summary statistics with variance proportional to the number of points you resample). Also please include tables of average fit parameters across the different studies/conditions. Finally when performing model comparisons, why not use model fit statistics instead of paired t-tests?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4392,7 +4392,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) Please clarify the how and why the computational models of the pro-active task make particular predictions for the BOLD signal. In the subsection \u201cModel-Simulated BOLD Activity\u201d: We did not fully understand how the predicted BOLD was obtained. Were the predictions not made for individual trials, but for a type of trials (e.g. with particular bar colour)? If so, we suppose the prediction was made on the basis of simulating the model multiple times and taking average. Please clarify and provide all details of this procedure, e.g. how many times the simulation was repeated, what parameter values were used, etc. In <a href=\"#fig6\">Figure 6</a>, please explain what the dashed lines denote, and how exactly the colour curves were obtained. Finally, could you please provide an intuition for why the models make these particular predictions?</i> "
+                    "text": "<i>3) Please clarify the how and why the computational models of the pro-active task make particular predictions for the BOLD signal. In the subsection \u201cModel-Simulated BOLD Activity\u201d: We did not fully understand how the predicted BOLD was obtained. Were the predictions not made for individual trials, but for a type of trials (e.g. with particular bar colour)? If so, we suppose the prediction was made on the basis of simulating the model multiple times and taking average. Please clarify and provide all details of this procedure, e.g. how many times the simulation was repeated, what parameter values were used, etc. In <a href=\"#fig6\">Figure 6</a>, please explain what the dashed lines denote, and how exactly the colour curves were obtained. Finally, could you please provide an intuition for why the models make these particular predictions?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4400,7 +4400,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) The fMRI results seem to depend non-trivially on assumptions about BOLD signal decay. Can the authors provide clearer justification for the need for a decay term and the specific form it took for the different conditions? This currently comes off a bit ad hoc.</i> "
+                    "text": "<i>4) The fMRI results seem to depend non-trivially on assumptions about BOLD signal decay. Can the authors provide clearer justification for the need for a decay term and the specific form it took for the different conditions? This currently comes off a bit ad hoc.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4408,7 +4408,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) As described, the ROI analyses in the fifth paragraph of subsection \u201cAccumulating Basal Ganglia Output During No-Go Decisions \u201craise concerns about circularity (i.e., the ROIs were essentially selected based on the interactions now being tested: differences in probability modulation by condition). The authors should either provide additional information about these analyses that allays these concerns or use appropriate measures (e.g., leave-one-subject-out extraction) to avoid potential circularities.</i> "
+                    "text": "<i>5) As described, the ROI analyses in the fifth paragraph of subsection \u201cAccumulating Basal Ganglia Output During No-Go Decisions \u201craise concerns about circularity (i.e., the ROIs were essentially selected based on the interactions now being tested: differences in probability modulation by condition). The authors should either provide additional information about these analyses that allays these concerns or use appropriate measures (e.g., leave-one-subject-out extraction) to avoid potential circularities.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4416,7 +4416,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>6) Some important aspects of the experimental details could be referred to earlier. For example, reward structure of successful withholding of response seemed important but was only found in the later methods due to the format.</i> "
+                    "text": "<i>6) Some important aspects of the experimental details could be referred to earlier. For example, reward structure of successful withholding of response seemed important but was only found in the later methods due to the format.</i>"
                 }, 
                 {
                     "type": "paragraph", 

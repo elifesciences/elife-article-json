@@ -44,7 +44,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Blythe et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -394,7 +394,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Blythe et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -4845,11 +4845,11 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>Essential revisions:</i> "
+                    "text": "<i>Essential revisions:</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>1) Greater clarity of presentation for a broad audience. The manuscript was well written but in a short and highly compressed format. Consequently, multiple intellectual and technical issues are handled in a user-unfriendly manner, apparently to save space. Although carrying out new experiments is not necessary, the authors should take advantage of eLife's flexible format to make changes that will render the presentation more accessible to a broad audience. Instead of leaving most discussion to the end of the paper, the manuscript would become more accessible if critical questions of interest were raised first, then the rationale of how the experiments and bioinformatic processing can test the issues was presented, all before describing the results and conclusions.</i> "
+                    "text": "<i>1) Greater clarity of presentation for a broad audience. The manuscript was well written but in a short and highly compressed format. Consequently, multiple intellectual and technical issues are handled in a user-unfriendly manner, apparently to save space. Although carrying out new experiments is not necessary, the authors should take advantage of eLife's flexible format to make changes that will render the presentation more accessible to a broad audience. Instead of leaving most discussion to the end of the paper, the manuscript would become more accessible if critical questions of interest were raised first, then the rationale of how the experiments and bioinformatic processing can test the issues was presented, all before describing the results and conclusions.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4857,7 +4857,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>For example, the ATAC-seq method underlies the entire paper and its strengths and limitations should be discussed in an introductory section. Based on their experiments, and previous knowledge, authors should discuss whether ATAC-seq \"openness\" is mostly a reflection of nucleosome positioning along the primary chromatin fiber. Is there any sensitivity to \"higher order\" structure? If so, it is not currently apparent and should be documented. Whether the binding of regulatory proteins can be detected should be addressed, as transcription factor binding is not currently apparent given that enhancers become more open in association with gene activation.</i> "
+                    "text": "<i>For example, the ATAC-seq method underlies the entire paper and its strengths and limitations should be discussed in an introductory section. Based on their experiments, and previous knowledge, authors should discuss whether ATAC-seq \"openness\" is mostly a reflection of nucleosome positioning along the primary chromatin fiber. Is there any sensitivity to \"higher order\" structure? If so, it is not currently apparent and should be documented. Whether the binding of regulatory proteins can be detected should be addressed, as transcription factor binding is not currently apparent given that enhancers become more open in association with gene activation.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4869,7 +4869,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>It is essential to present real numerical data for the y-axes of <a href=\"#fig1\">Figure 1A</a> that are comparable for all the tracks shown and transparently reveal all data manipulations that were used. Currently, it is not fully clear how the presented data could be reproduced, since there is vague mention of normalization steps, discarding of data and the occasional use of two rather than one embryo (do you divide by 2?).</i> "
+                    "text": "<i>It is essential to present real numerical data for the y-axes of <a href=\"#fig1\">Figure 1A</a> that are comparable for all the tracks shown and transparently reveal all data manipulations that were used. Currently, it is not fully clear how the presented data could be reproduced, since there is vague mention of normalization steps, discarding of data and the occasional use of two rather than one embryo (do you divide by 2?).</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4889,7 +4889,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>As an example of user unfriendly data analysis, <a href=\"#fig3\">Figure 3</a> plots \"mean-scaled heterogeneity in PCNA-EGFP\". There is no explanation why \"mean-scaled heterogeneity\" represents a logical way to summarize DNA replication during the cell cycle (or even what it means). The majority of readers will remain mystified. Several of the authors' later arguments require that DNA replication take place in a highly front-loaded manner during S phase. That way, reductions in nucleosome positioning that persist only during the start of S can be ascribed to DNA replication interference. However, a case that PCNA-EGFP heterogeneity provides such information is not made.</i> "
+                    "text": "<i>As an example of user unfriendly data analysis, <a href=\"#fig3\">Figure 3</a> plots \"mean-scaled heterogeneity in PCNA-EGFP\". There is no explanation why \"mean-scaled heterogeneity\" represents a logical way to summarize DNA replication during the cell cycle (or even what it means). The majority of readers will remain mystified. Several of the authors' later arguments require that DNA replication take place in a highly front-loaded manner during S phase. That way, reductions in nucleosome positioning that persist only during the start of S can be ascribed to DNA replication interference. However, a case that PCNA-EGFP heterogeneity provides such information is not made.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4901,7 +4901,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>One of the most interesting and unique aspects of these data are their implication that rapid replication shortly after M phase represents a significant impediment to establishing/maintaining nucleosome positions and by inference, gene regulation. The authors should raise the issue of interference between replication and nucleosome positioning early in the paper, during analysis of <a href=\"#fig1\">Figure 1</a> data. Existing ATAC-seq peaks should be plotted and shown to double across the cell cycle and fall after M. Discrepancies (such more than a twofold decrease in early S phase) should be quantitated numerically and in duration to provide a quantitative basis for discussing interference. The paper should tout the analysis of NFR both as a mark of promoter opening, as well as a tool for analyzing replication effects and better explain the data processing, modeling and conversion to \"relative NFR.\" Finally, the authors should explain why replication interference would be manifested as a cell cycle dependent oscillation in relative NFR, rather than simply as an oscillation in NFR signal strength without a size change due to essentially random nucleosome removal.</i> "
+                    "text": "<i>One of the most interesting and unique aspects of these data are their implication that rapid replication shortly after M phase represents a significant impediment to establishing/maintaining nucleosome positions and by inference, gene regulation. The authors should raise the issue of interference between replication and nucleosome positioning early in the paper, during analysis of <a href=\"#fig1\">Figure 1</a> data. Existing ATAC-seq peaks should be plotted and shown to double across the cell cycle and fall after M. Discrepancies (such more than a twofold decrease in early S phase) should be quantitated numerically and in duration to provide a quantitative basis for discussing interference. The paper should tout the analysis of NFR both as a mark of promoter opening, as well as a tool for analyzing replication effects and better explain the data processing, modeling and conversion to \"relative NFR.\" Finally, the authors should explain why replication interference would be manifested as a cell cycle dependent oscillation in relative NFR, rather than simply as an oscillation in NFR signal strength without a size change due to essentially random nucleosome removal.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4929,7 +4929,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>2) Too few primary data are shown to appropriately document these findings and address closely related questions. Although carrying out new experiments is not necessary, sample data at NC11-13 from other genomic regions containing well known genes activated in early embryos should be shown to allow the behavior of more peak regions to be observed. These should include a large gene such as Ubx which has been claimed to be too large to transcribe fully prior to MBT. Can ATAC-seq detect heterochromatin formation during NC11-13 in unique sequence centric regions? Including any available data on NC9 and NC10 embryo in <a href=\"#fig1\">Figure 1A</a>, even if of lower resolution, would help reveal more about the onset of the 33% of peaks already present at NC11.</i> "
+                    "text": "<i>2) Too few primary data are shown to appropriately document these findings and address closely related questions. Although carrying out new experiments is not necessary, sample data at NC11-13 from other genomic regions containing well known genes activated in early embryos should be shown to allow the behavior of more peak regions to be observed. These should include a large gene such as Ubx which has been claimed to be too large to transcribe fully prior to MBT. Can ATAC-seq detect heterochromatin formation during NC11-13 in unique sequence centric regions? Including any available data on NC9 and NC10 embryo in <a href=\"#fig1\">Figure 1A</a>, even if of lower resolution, would help reveal more about the onset of the 33% of peaks already present at NC11.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4945,7 +4945,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>3) More biological analysis to enhance the paper's impact for the general community. An important part of the study concerns the grouping of open region peaks into functional categories: promoters, enhancers, insulators, etc. The accuracy and biological meaning of these groupings is not currently presented in a critical or convincing manner. First, enhancers and insulators were identified using ChIP-seq data from much older embryos. What is the relevance of 0-12hr embryo data to NC11-NC13? The definitions used for insulators and enhancers in terms of protein binding and/or chromatin modifications seemed questionable and were not discussed or justified. The authors should prepare a (smaller) dataset of elements that have been functionally validated during NC11-13 and the next two hours of development and determine if they are consistent with conclusions based on their current dataset. The conclusion that (on average) enhancers become open before promoters, is touted in the Abstract, but its meaning and significance are scarcely discussed. Do such conclusions about opening of promoters and enhancers hold up using groups of specific known genes that become active at different times? When do the enhancers and promoters of gap and pair-rule genes become open, for example? How does the observed landscape of chromatin changes relate to what is known about gene action in early embryos?</i> "
+                    "text": "<i>3) More biological analysis to enhance the paper's impact for the general community. An important part of the study concerns the grouping of open region peaks into functional categories: promoters, enhancers, insulators, etc. The accuracy and biological meaning of these groupings is not currently presented in a critical or convincing manner. First, enhancers and insulators were identified using ChIP-seq data from much older embryos. What is the relevance of 0-12hr embryo data to NC11-NC13? The definitions used for insulators and enhancers in terms of protein binding and/or chromatin modifications seemed questionable and were not discussed or justified. The authors should prepare a (smaller) dataset of elements that have been functionally validated during NC11-13 and the next two hours of development and determine if they are consistent with conclusions based on their current dataset. The conclusion that (on average) enhancers become open before promoters, is touted in the Abstract, but its meaning and significance are scarcely discussed. Do such conclusions about opening of promoters and enhancers hold up using groups of specific known genes that become active at different times? When do the enhancers and promoters of gap and pair-rule genes become open, for example? How does the observed landscape of chromatin changes relate to what is known about gene action in early embryos?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4973,7 +4973,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>4) Address issues regarding the maintenance of chromatin states through mitosis. There are three issues here: 1) whether open configurations are maintained through M, 2) whether maintenance is due to an epigenetically based \"transcriptional memory\", and 3) whether maintenance has an actual function- namely to ensure faithful inheritance. The fact open configurations survive M seems clear, since embryos in M phase display no loss of open features. However, is it possible, due to changes in embryonic chromatin during sample preparation, that apparent maintenance might be an artifact of partial progression of some processes into the next cell cycle? Since changing levels of trans acting factors likely cause these chromatin features in the first place, the re-appearance of features after M phase is to be expected whether or not there is any epigenetic \"transcriptional memory.\" None of the data presented by the authors currently presents a convincing case that nucleosome positioning is inherited \"epigenetically\" and beyond that there were no functional tests of the importance of such inheritance. What in this study goes beyond the work of Hsuing and Blobel published this last year? Ramachandran and Henik<sub>off</sub> 2016 should be cited and be clear about their own novelty here.</i> "
+                    "text": "<i>4) Address issues regarding the maintenance of chromatin states through mitosis. There are three issues here: 1) whether open configurations are maintained through M, 2) whether maintenance is due to an epigenetically based \"transcriptional memory\", and 3) whether maintenance has an actual function- namely to ensure faithful inheritance. The fact open configurations survive M seems clear, since embryos in M phase display no loss of open features. However, is it possible, due to changes in embryonic chromatin during sample preparation, that apparent maintenance might be an artifact of partial progression of some processes into the next cell cycle? Since changing levels of trans acting factors likely cause these chromatin features in the first place, the re-appearance of features after M phase is to be expected whether or not there is any epigenetic \"transcriptional memory.\" None of the data presented by the authors currently presents a convincing case that nucleosome positioning is inherited \"epigenetically\" and beyond that there were no functional tests of the importance of such inheritance. What in this study goes beyond the work of Hsuing and Blobel published this last year? Ramachandran and Henik<sub>off</sub> 2016 should be cited and be clear about their own novelty here.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4989,7 +4989,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>5) Address issues regarding the analysis of elements in haploid vs diploid embryos. Haploid embryos are mutant, and may not be entirely normal. The authors describe how many elements responded to N/C ratio (defined by the haploid/diploid test) or not, but the biological importance of this distinction is not well justified. The authors describe how many peaks overlap with binding sites for Zelda or for GAF (not necessarily in NC11-13 embryo cells), and find correlations with N/C dependent or independent classes. While this is consistent with a model in which GAGA factor plays a role in N/C ratio sensing, it is far from proof of such a relationship. It would be useful to see if there is genomic or other data out there on the genes targeted by Zelda and GAF factors in CHIP or knockout studies around the MBT and if the expected genes of the authors are affected.</i> "
+                    "text": "<i>5) Address issues regarding the analysis of elements in haploid vs diploid embryos. Haploid embryos are mutant, and may not be entirely normal. The authors describe how many elements responded to N/C ratio (defined by the haploid/diploid test) or not, but the biological importance of this distinction is not well justified. The authors describe how many peaks overlap with binding sites for Zelda or for GAF (not necessarily in NC11-13 embryo cells), and find correlations with N/C dependent or independent classes. While this is consistent with a model in which GAGA factor plays a role in N/C ratio sensing, it is far from proof of such a relationship. It would be useful to see if there is genomic or other data out there on the genes targeted by Zelda and GAF factors in CHIP or knockout studies around the MBT and if the expected genes of the authors are affected.</i>"
                 }, 
                 {
                     "type": "paragraph", 

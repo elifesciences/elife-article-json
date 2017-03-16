@@ -40,7 +40,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Dann et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -355,7 +355,7 @@
         "copyright": {
             "license": "CC-BY-4.0", 
             "holder": "Dann et al", 
-            "statement": "This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited."
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
         }, 
         "authors": [
             {
@@ -4597,15 +4597,15 @@
             "content": [
                 {
                     "type": "paragraph", 
-                    "text": "<i>Major issues</i> "
+                    "text": "<i>Major issues</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>1) The graph theoretical analysis rests on the validity of the underlying connectivity matrix. The latter consists of estimates of directed functional connectivity, obtained from analysing cross-correlation histograms (CCHs) with regard to signatures of temporal precedence, including a correction for common driving input by subtraction of surrogacy CCHs. While CCHs are not an uncommon statistic in electrophysiology, we wondered whether your specific approach to extract directed functional connectivity estimates from CCHs has been examined and validated in previous literature? If so, it would be helpful if the respective references were provided and the evidence for the validity of this approach was summarised in the paper. If not, validation analyses would be required before the graph-theoretical results can be trusted. Ideally, this would involve \"ground truth\" simulations in which the method is (i) challenged to recover directed functional interactions that are known (face validity) and/or (ii) compared against alternative established measures of directed functional connectivity (construct validity), such as Granger causality.</i>"
+                    "text": "<i>1) The graph theoretical analysis rests on the validity of the underlying connectivity matrix. The latter consists of estimates of directed functional connectivity, obtained from analysing cross-correlation histograms (CCHs) with regard to signatures of temporal precedence, including a correction for common driving input by subtraction of surrogacy CCHs. While CCHs are not an uncommon statistic in electrophysiology, we wondered whether your specific approach to extract directed functional connectivity estimates from CCHs has been examined and validated in previous literature? If so, it would be helpful if the respective references were provided and the evidence for the validity of this approach was summarised in the paper. If not, validation analyses would be required before the graph-theoretical results can be trusted. Ideally, this would involve \"ground truth\" simulations in which the method is (i) challenged to recover directed functional interactions that are known (face validity) and/or (ii) compared against alternative established measures of directed functional connectivity (construct validity), such as Granger causality.</i>"
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": "<i>This issue is important because, as straightforward as the present method may seem, the estimation of directed connectivity is a notoriously difficult issue, and it is now widely accepted that methods of functional/effective connectivity cannot be motivated by theory along but require careful validation.</i> "
+                    "text": "<i>This issue is important because, as straightforward as the present method may seem, the estimation of directed connectivity is a notoriously difficult issue, and it is now widely accepted that methods of functional/effective connectivity cannot be motivated by theory along but require careful validation.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4621,7 +4621,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>2) Following on from the previous point, your method removes effects of common stimulus- or movement-locked inputs (although it needs to be clarified what event is used for aligning in order to generate the PSTHs) because the PSTHs reflect these stimulus- or movement-locked inputs. However, the method does not seem to account for common driving input to the two neurons that is not locked to the stimulus or movement onset.</i> "
+                    "text": "<i>2) Following on from the previous point, your method removes effects of common stimulus- or movement-locked inputs (although it needs to be clarified what event is used for aligning in order to generate the PSTHs) because the PSTHs reflect these stimulus- or movement-locked inputs. However, the method does not seem to account for common driving input to the two neurons that is not locked to the stimulus or movement onset.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4637,7 +4637,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>3) Given that CCHs are sensitive to oscillatory behaviour in the neurons studied, the question arises whether this could induce a bias when comparing the connectional properties (derived from the CCHs) between neuronal units that show oscillatory versus non-oscillatory synchrony? Put differently, if estimates of directed functional connectivity were affected by whether or not the neurons in question show oscillatory activity, would this not lead, by construction, to systematic differences in the connectivity patterns of neurons with oscillatory versus non-oscillatory synchrony?</i> "
+                    "text": "<i>3) Given that CCHs are sensitive to oscillatory behaviour in the neurons studied, the question arises whether this could induce a bias when comparing the connectional properties (derived from the CCHs) between neuronal units that show oscillatory versus non-oscillatory synchrony? Put differently, if estimates of directed functional connectivity were affected by whether or not the neurons in question show oscillatory activity, would this not lead, by construction, to systematic differences in the connectivity patterns of neurons with oscillatory versus non-oscillatory synchrony?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4649,7 +4649,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>4) One unresolved question is whether the oscillatory correlations are cause or consequence of the rich-club network role of the respective neurons. You might be able to address this to some degree. Several previous studies have emphasized that oscillations in frontal and motor cortices have a transient nature (e.g. Murthy &amp; Fetz J Neurophysiol. 1996; Lundqvist, Miller, Neuron, 2016). You could analyze your LFP recordings to dissociate oscillatory from less oscillatory periods and then investigate whether the same neurons still show the same or different rich-club role.</i> "
+                    "text": "<i>4) One unresolved question is whether the oscillatory correlations are cause or consequence of the rich-club network role of the respective neurons. You might be able to address this to some degree. Several previous studies have emphasized that oscillations in frontal and motor cortices have a transient nature (e.g. Murthy &amp; Fetz J Neurophysiol. 1996; Lundqvist, Miller, Neuron, 2016). You could analyze your LFP recordings to dissociate oscillatory from less oscillatory periods and then investigate whether the same neurons still show the same or different rich-club role.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4657,7 +4657,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>5) In the ACHs and CCHs, the energy of a given frequency bin is distributed over all time bins, e.g. a beta rhythm leads to multiple peaks and troughs across the width of the ACH or CCH. This diminishes the sensitivity of the statistical testing for oscillatory correlations. It seems possible to improve the analysis by first performing a Fourier transform on the ACHs or CCHs and then performing statistical testing. Currently, you first statistically test ACHs and CCHs in the time domain, and only forward the correlograms with significant clusters to Fourier transformation and statistical testing in the frequency domain. This approach might miss many significant oscillatory correlations.</i> "
+                    "text": "<i>5) In the ACHs and CCHs, the energy of a given frequency bin is distributed over all time bins, e.g. a beta rhythm leads to multiple peaks and troughs across the width of the ACH or CCH. This diminishes the sensitivity of the statistical testing for oscillatory correlations. It seems possible to improve the analysis by first performing a Fourier transform on the ACHs or CCHs and then performing statistical testing. Currently, you first statistically test ACHs and CCHs in the time domain, and only forward the correlograms with significant clusters to Fourier transformation and statistical testing in the frequency domain. This approach might miss many significant oscillatory correlations.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4673,7 +4673,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>6) Materials and methods section: Network analysis subsection: Oscillatory synchronization with time lag can result in ambiguous CCHs, in which it is not clear which unit is leading and which is lagging. Can you essentially exclude this ambiguity in your data, e.g. because leads/lags are only a small fraction of the cycle, or because maximal peaks exceeded the next higher peaks substantially?</i> "
+                    "text": "<i>6) Materials and methods section: Network analysis subsection: Oscillatory synchronization with time lag can result in ambiguous CCHs, in which it is not clear which unit is leading and which is lagging. Can you essentially exclude this ambiguity in your data, e.g. because leads/lags are only a small fraction of the cycle, or because maximal peaks exceeded the next higher peaks substantially?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4681,7 +4681,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>7) Similarly, it is difficult to understand the interpretation of a cross-correlation peak at time zero as indicative of a bidirectional connection. It seems more likely that this is due to common input from another third neuron. How can one interpret a zero time-lag peak as indicative of bidirectional interactions?</i> "
+                    "text": "<i>7) Similarly, it is difficult to understand the interpretation of a cross-correlation peak at time zero as indicative of a bidirectional connection. It seems more likely that this is due to common input from another third neuron. How can one interpret a zero time-lag peak as indicative of bidirectional interactions?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4693,7 +4693,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>8) You analyze distance dependency by defining distance in categories like \u201csame electrode, \u201csame array\" and \u201csame area\". In an additional analysis, distance should be defined as actual physical distance. <a href=\"#fig3\">Figure 3</a> shows that some electrode pairs between F5 and M1 are closer than some other pairs within M1. Physical distance has been shown before to explain a substantial fraction of the variance in neuronal correlation.</i> "
+                    "text": "<i>8) You analyze distance dependency by defining distance in categories like \u201csame electrode, \u201csame array\" and \u201csame area\". In an additional analysis, distance should be defined as actual physical distance. <a href=\"#fig3\">Figure 3</a> shows that some electrode pairs between F5 and M1 are closer than some other pairs within M1. Physical distance has been shown before to explain a substantial fraction of the variance in neuronal correlation.</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4701,7 +4701,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>9) It would useful to know what kind of time leads/lags were observed among significant cross-correlation histograms. Given that you are looking for significant cross-correlation peaks at time leads/lags spanning +/- 200 ms, if the peaks occurred at very large time leads/lags approaching 200 ms, in what sense are the two neurons interacting physiologically?</i> "
+                    "text": "<i>9) It would useful to know what kind of time leads/lags were observed among significant cross-correlation histograms. Given that you are looking for significant cross-correlation peaks at time leads/lags spanning +/- 200 ms, if the peaks occurred at very large time leads/lags approaching 200 ms, in what sense are the two neurons interacting physiologically?</i>"
                 }, 
                 {
                     "type": "paragraph", 
@@ -4709,7 +4709,7 @@
                 }, 
                 {
                     "type": "paragraph", 
-                    "text": " <i>10) Material and methods section: Frequency analyses subsection: You remove sharp peaks with small delays with the argument that they would cause distortions. However, such sharp peaks constitute important data and must not be removed, unless they are due to artifacts. If you wish to argue that the sharp peaks are artifacts, evidence needs to be provided. Otherwise, they should be included in the analysis.</i>"
+                    "text": "<i>10) Material and methods section: Frequency analyses subsection: You remove sharp peaks with small delays with the argument that they would cause distortions. However, such sharp peaks constitute important data and must not be removed, unless they are due to artifacts. If you wish to argue that the sharp peaks are artifacts, evidence needs to be provided. Otherwise, they should be included in the analysis.</i>"
                 }, 
                 {
                     "type": "paragraph", 
