@@ -1,0 +1,1040 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/d86f51a303f6b6334cf91fa126ad4e0b4accbf8b/articles/elife-25654-v1.xml"
+        }, 
+        "-history": {
+            "received": "2017-03-20T00:00:00Z", 
+            "accepted": "2017-03-20T00:00:00Z"
+        }, 
+        "status": "vor", 
+        "id": "25654", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.25654", 
+        "authorLine": "Xiuwei Zhang, Nir Yosef", 
+        "title": "A new way to build cell lineages", 
+        "titlePrefix": "Systems Biology", 
+        "published": "2017-03-23T00:00:00Z", 
+        "versionDate": "2017-03-23T00:00:00Z", 
+        "volume": 6, 
+        "elocationId": "e25654", 
+        "pdf": "https://publishing-cdn.elifesciences.org/25654/elife-25654-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "developmental-biology-stem-cells", 
+                "name": "Developmental Biology and Stem Cells"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human", 
+            "Mouse"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A combination of single-cell techniques and computational analysis enables the simultaneous discovery of cell states, lineage relationships and the genes that control developmental decisions."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Zhang et al", 
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Xiuwei Zhang", 
+                    "index": "Zhang, Xiuwei"
+                }, 
+                "orcid": "0000-0002-1713-772X", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Electrical Engineering and Computer Science and the Center for Computational Biology", 
+                            "University of California"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Ragon Institute of Massachusetts General Hospital, MIT and Harvard"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Nir Yosef", 
+                    "index": "Yosef, Nir"
+                }, 
+                "orcid": "0000-0001-9004-1225", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Electrical Engineering and Computer Science and the Center for Computational Biology", 
+                            "University of California"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Ragon Institute of Massachusetts General Hospital, MIT and Harvard"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "niryosef@berkeley.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "A combination of single-cell techniques and computational analysis enables the simultaneous discovery of cell states, lineage relationships and the genes that control developmental decisions."
+    }, 
+    "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/d86f51a303f6b6334cf91fa126ad4e0b4accbf8b/articles/elife-25654-v1.xml", 
+            "patched": true
+        }, 
+        "-history": {
+            "received": "2017-03-20T00:00:00Z", 
+            "accepted": "2017-03-20T00:00:00Z"
+        }, 
+        "status": "vor", 
+        "id": "25654", 
+        "version": 1, 
+        "type": "insight", 
+        "doi": "10.7554/eLife.25654", 
+        "authorLine": "Xiuwei Zhang, Nir Yosef", 
+        "title": "A new way to build cell lineages", 
+        "titlePrefix": "Systems Biology", 
+        "published": "2017-03-23T00:00:00Z", 
+        "versionDate": "2017-03-23T00:00:00Z", 
+        "volume": 6, 
+        "elocationId": "e25654", 
+        "pdf": "https://publishing-cdn.elifesciences.org/25654/elife-25654-v1.pdf", 
+        "subjects": [
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }, 
+            {
+                "id": "developmental-biology-stem-cells", 
+                "name": "Developmental Biology and Stem Cells"
+            }
+        ], 
+        "researchOrganisms": [
+            "Human", 
+            "Mouse"
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "A combination of single-cell techniques and computational analysis enables the simultaneous discovery of cell states, lineage relationships and the genes that control developmental decisions."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Zhang et al", 
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Xiuwei Zhang", 
+                    "index": "Zhang, Xiuwei"
+                }, 
+                "orcid": "0000-0002-1713-772X", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Electrical Engineering and Computer Science and the Center for Computational Biology", 
+                            "University of California"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Ragon Institute of Massachusetts General Hospital, MIT and Harvard"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Nir Yosef", 
+                    "index": "Yosef, Nir"
+                }, 
+                "orcid": "0000-0001-9004-1225", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Electrical Engineering and Computer Science and the Center for Computational Biology", 
+                            "University of California"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Berkeley", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Berkeley"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": [
+                            "Ragon Institute of Massachusetts General Hospital, MIT and Harvard"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Cambridge", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Cambridge"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "niryosef@berkeley.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "impactStatement": "A combination of single-cell techniques and computational analysis enables the simultaneous discovery of cell states, lineage relationships and the genes that control developmental decisions.", 
+        "keywords": [
+            "germ layer differentiation", 
+            "context dependence", 
+            "single-cell RNA-seq", 
+            "systems biology", 
+            "Transcriptomics"
+        ], 
+        "-related-articles-internal": [
+            "20488", 
+            "20487"
+        ], 
+        "-related-articles-external": [], 
+        "body": [
+            {
+                "type": "section", 
+                "id": "s0", 
+                "title": "Main text", 
+                "content": [
+                    {
+                        "type": "paragraph", 
+                        "text": "The identity or state of a cell depends on numerous factors. Some of these factors are transient in nature (such as the stage the cell is at in the cell cycle), while others reflect long-lasting commitments, such as those that occur during the development of stem cells (<a href=\"#bib5\">Novershtern et al., 2011</a>, <a href=\"#bib2\">Graf and Enver, 2009</a>). By making the entire transcriptome available, single-cell RNA sequencing is now allowing researchers to systematically investigate these factors (<a href=\"#bib9\">Wagner et al., 2016</a>; <a href=\"#bib8\">Tanay and Regev, 2017</a>). Specifically, single-cell technology opens the way for developmental biologists who work on the transitions between different cell states to explore three outstanding questions: (1) What are the cell states (both transitional and long lasting or terminal) that comprise a developmental process of interest? (2) What transitions take place between these states? (3) How are these transitions regulated?"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Now, in a pair of papers in eLife, researchers at Harvard University and the Allen Institute for Brain Science report a framework that uses whole-genome mRNA expression profiling to address these questions, which they then apply to stem cell differentiation in mouse embryos (<a href=\"#bib1\">Furchtgott et al., 2017</a>; <a href=\"#bib4\">Jang et al., 2017</a>). The basic concept that underlies these two papers concerns the second question, which is about transitions between cell states that have already been defined in advance. Previous attempts to address this question mostly relied on the notion that two cell states are 'close' to each other in their lineage tree if their gene expression profiles are similar (<a href=\"#bib6\">Qiu et al., 2011</a>; <a href=\"#bib7\">Shin et al., 2015</a>). In the first of the papers Leon Furchtgott, Samuel Melton, Vilas Menon and Sharad Ramanathan present an alternative strategy, which was motivated by an investigation of gene expression in B- and T-cells as they developed (<a href=\"#bib1\">Furchtgott et al., 2017</a>)."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Combining this gene expression data with what was already known about the lineage relationship between the different states of the B- and T-cells, Furchtgott et al. identified triplets of cell states that exhibited a consistent pattern. Each triplet contained a precursor state and two descendant states,\u00a0and for many transcription factor genes, the expression in one member of the triplet was much less than in the other two members. Furthermore, the member of the triplet with low levels of gene expression was rarely the 'central' state, which can represent either a common precursor for the two other states, or a transitional state between them (see <a href=\"#fig1\">Figure 1</a>). This finding is consistent with previous work which showed that cell differentiation involves the selective silencing of certain transcription factors (<a href=\"#bib2\">Graf and Enver, 2009</a>; <a href=\"#bib5\">Novershtern et al., 2011</a>), or that transcriptional profiles often exhibit a 'single-pulse' pattern during development (<a href=\"#bib11\">Yosef and Regev, 2011</a>)."
+                    }, 
+                    {
+                        "type": "image", 
+                        "id": "fig1", 
+                        "label": "Figure 1.", 
+                        "title": "A framework for studying developmental processes with single-cell RNA sequencing.", 
+                        "caption": [
+                            {
+                                "type": "paragraph", 
+                                "text": "(<b>A</b>) The first challenge is to identify the different cell states. Jang et al. used single-cell RNA sequencing and other techniques to identify nine different cell states, based on them having similar mRNA profiles, during the early stages of development in a mouse embryo. Here, for the purposes of illustration, we show a system in which there are seven cell states (denoted by A\u2013G), with two, three or four cells in each state. (<b>B</b>) The second challenge is to determine how these states fit into a lineage tree. This process is helped by the fact that the states form triplets (such as D-B-E or B-D-F, where the central state is B and D respectively), with one non-central member of the triplet having low levels of expression for certain 'transitional' transcription factor genes (see boxplot, where E has low levels of gene expression, whereas B and D have high levels). Furchtgott et al. couple these two challenges by an iterative process of first inferring cell sub-populations, then identifying a lineage tree over these sub-populations, and then restarting the process, this time using only the transitional genes to define the cell sub-populations. (<b>C</b>) The third challenge is to understand how transcriptional regulation controls cell development in this system. In the\u00a0example shown here it is assumed that a network of four transcription factor genes (or clusters of co-regulated genes) are involved in regulation. By comparing many possible networks that can be formed by four genes (or clusters of genes) and have seven steady states (one for each of the cell states identified in A), it is possible to make predictions of the interaction between pairs of transcription factors. In this example the state A corresponds to genes 2 and 3 being expressed (1) and genes 1 and 4 not being expressed (0), while state G corresponds to gene 1 being expressed and genes 2,\u00a03 and 4 not being expressed. The expression of a gene is determined by summing over the influences of its expressed neighbors: for example, under some parametrization, gene 3 in this network will be determined as expressed if genes 1 and 4 are on."
+                            }
+                        ], 
+                        "alt": "", 
+                        "uri": "https://publishing-cdn.elifesciences.org/25654/elife-25654-fig1-v1.jpg", 
+                        "image": "elife-25654-fig1-v1", 
+                        "filename": "elife-25654-fig1-v1.jpg"
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Furchtgott et al. then developed a statistical method to test whether a given triplet of states reflects a true developmental progression and, if so, in what order. The method is based on identifying 'transitional' genes that are clearly expressed at low levels in one of the states, and testing whether the overall pattern of transitions (while looking at the entire set of transcription factor genes) is likely due to the presence of a lineage relationship. All the triplets that 'pass' this test are then merged into one global lineage tree. This new strategy opened up the possibility of categorizing all the cells in a single-cell RNA sequencing dataset into developmental states, without knowing in advance what these states were. To achieve this, which essentially involves answering the first of our three questions, Furchtgott et al. developed an iterative algorithm that seeks to partition the cells into clusters (each representing a separate state), such that the overall likelihood of lineage relationships between these clusters is high."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Ramanathan, Sumin Jang and co-workers \u2013 including Jang and Sandeep Choubey as joint first authors \u2013 then used this approach to do two things: first, they identified nine cell states that occur as embryonic stem cells undergo differentiation and eventually become progenitor cells for the different germ layers in a mouse embryo; second, they organized these nine states into a lineage tree (<a href=\"#bib4\">Jang et al., 2017</a>). The next challenge was to find out how transcriptional regulation controlled cell development in this system."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "In the past researchers have focused primarily\u00a0on the transitions between states (see, for example, <a href=\"#bib5\">Novershtern et al., 2011</a>; <a href=\"#bib7\">Shin et al., 2015</a>). However, when Jang et al. used flow cytometry and live-cell microscopy to monitor various biomarkers for the cell state, they found that the different cell states were relatively stable, while the transitions between them occurred more rapidly. This prompted them to focus on the states themselves, rather than the transitions between them. In particular they looked for a network of interactions between sets of transcription factors that could converge to a number of different steady states (<a href=\"#bib3\">Huang et al., 2009</a>), with each of these steady states representing a particular cell state."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "Since the number of networks that exhibit this property is extremely high, Jang et al. were not able to explore all of them. Rather, they explored a sample, looking for relationships between transcription factors that were consistent across many networks. This allowed them to make predictions about the relationships between various transcription factors, and how these relationships depended on the cell state. For example, they predicted (and then experimentally verified) that the expression of Oct4 is more sensitive to the over-expression of Sox2 when a cell is in an epiblast-like state than when it is in a state that is like an embryonic stem cell."
+                    }, 
+                    {
+                        "type": "paragraph", 
+                        "text": "While new tools, particularly single-cell RNA-sequencing, are proving to be highly productive, we could learn much more by measuring other molecular profiles within the cells. For instance, knowing more about the chromatin state of single cells could help a lot when categorizing them into cell states and trying to identify the most active transcription factors (<a href=\"#bib9\">Wagner et al., 2016</a>; <a href=\"#bib8\">Tanay and Regev, 2017</a>). Technologies for lineage tracking can further provide direct observations of cell state transitions (<a href=\"#bib10\">Woodworth et al., 2017</a>). Looking to the future, the ability to collect multiple types of data from single cells, combined with the ability to integrate and interpret all these data in an informative manner, is sure to lead to new insights into how cells change and fate decisions are made during development."
+                    }
+                ]
+            }
+        ], 
+        "references": [
+            {
+                "type": "journal", 
+                "id": "bib1", 
+                "date": "2017", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LA Furchtgott", 
+                            "index": "Furchtgott, LA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Melton", 
+                            "index": "Melton, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Menon", 
+                            "index": "Menon, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ramanathan", 
+                            "index": "Ramanathan, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Discovering sparse transcription factor codes for cell states and state transitions during development", 
+                "journal": "eLife", 
+                "volume": "6", 
+                "pages": "e20488", 
+                "doi": "10.7554/eLife.20488", 
+                "pmid": 28296636
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib2", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Graf", 
+                            "index": "Graf, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Enver", 
+                            "index": "Enver, T"
+                        }
+                    }
+                ], 
+                "articleTitle": "Forcing cells to change lineages", 
+                "journal": "Nature", 
+                "volume": "462", 
+                "pages": {
+                    "first": "587", 
+                    "last": "594", 
+                    "range": "587\u2013594"
+                }, 
+                "doi": "10.1038/nature08533", 
+                "pmid": 19956253
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib3", 
+                "date": "2009", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Huang", 
+                            "index": "Huang, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Ernberg", 
+                            "index": "Ernberg, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Kauffman", 
+                            "index": "Kauffman, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Cancer attractors: a systems view of tumors from a gene network dynamics and developmental perspective", 
+                "journal": "Seminars in Cell & Developmental Biology", 
+                "volume": "20", 
+                "pages": {
+                    "first": "869", 
+                    "last": "876", 
+                    "range": "869\u2013876"
+                }, 
+                "doi": "10.1016/j.semcdb.2009.07.003", 
+                "pmid": 19595782
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib4", 
+                "date": "2017", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Jang", 
+                            "index": "Jang, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Choubey", 
+                            "index": "Choubey, S"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Furchtgott", 
+                            "index": "Furchtgott, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LN Zou", 
+                            "index": "Zou, LN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Doyle", 
+                            "index": "Doyle, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "V Menon", 
+                            "index": "Menon, V"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "EB Loew", 
+                            "index": "Loew, EB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AR Krostag", 
+                            "index": "Krostag, AR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Martinez", 
+                            "index": "Martinez, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "L Madisen", 
+                            "index": "Madisen, L"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BP Levi", 
+                            "index": "Levi, BP"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "S Ramanathan", 
+                            "index": "Ramanathan, S"
+                        }
+                    }
+                ], 
+                "articleTitle": "Dynamics of embryonic stem cell differentiation inferred from single-cell transcriptomics show a series of transitions through discrete cell states", 
+                "journal": "eLife", 
+                "volume": "6", 
+                "pages": "e20487", 
+                "doi": "10.7554/eLife.20487", 
+                "pmid": 28296635
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib5", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Novershtern", 
+                            "index": "Novershtern, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Subramanian", 
+                            "index": "Subramanian, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "LN Lawton", 
+                            "index": "Lawton, LN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RH Mak", 
+                            "index": "Mak, RH"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "WN Haining", 
+                            "index": "Haining, WN"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "ME McConkey", 
+                            "index": "McConkey, ME"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Habib", 
+                            "index": "Habib, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Yosef", 
+                            "index": "Yosef, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CY Chang", 
+                            "index": "Chang, CY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Shay", 
+                            "index": "Shay, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GM Frampton", 
+                            "index": "Frampton, GM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AC Drake", 
+                            "index": "Drake, AC"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "I Leskov", 
+                            "index": "Leskov, I"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "B Nilsson", 
+                            "index": "Nilsson, B"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "F Preffer", 
+                            "index": "Preffer, F"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "D Dombkowski", 
+                            "index": "Dombkowski, D"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JW Evans", 
+                            "index": "Evans, JW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "T Liefeld", 
+                            "index": "Liefeld, T"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JS Smutko", 
+                            "index": "Smutko, JS"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Chen", 
+                            "index": "Chen, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Friedman", 
+                            "index": "Friedman, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "RA Young", 
+                            "index": "Young, RA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "TR Golub", 
+                            "index": "Golub, TR"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Regev", 
+                            "index": "Regev, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "BL Ebert", 
+                            "index": "Ebert, BL"
+                        }
+                    }
+                ], 
+                "articleTitle": "Densely interconnected transcriptional circuits control cell states in human hematopoiesis", 
+                "journal": "Cell", 
+                "volume": "144", 
+                "pages": {
+                    "first": "296", 
+                    "last": "309", 
+                    "range": "296\u2013309"
+                }, 
+                "doi": "10.1016/j.cell.2011.01.004", 
+                "pmid": 21241896
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib6", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "P Qiu", 
+                            "index": "Qiu, P"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "AJ Gentles", 
+                            "index": "Gentles, AJ"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "SK Plevritis", 
+                            "index": "Plevritis, SK"
+                        }
+                    }
+                ], 
+                "articleTitle": "Discovering biological progression underlying microarray samples", 
+                "journal": "PLoS Computational Biology", 
+                "volume": "7", 
+                "pages": "e1001123", 
+                "doi": "10.1371/journal.pcbi.1001123", 
+                "pmid": 21533210
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib7", 
+                "date": "2015", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Shin", 
+                            "index": "Shin, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DA Berg", 
+                            "index": "Berg, DA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "Y Zhu", 
+                            "index": "Zhu, Y"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "JY Shin", 
+                            "index": "Shin, JY"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "J Song", 
+                            "index": "Song, J"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MA Bonaguidi", 
+                            "index": "Bonaguidi, MA"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "G Enikolopov", 
+                            "index": "Enikolopov, G"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "DW Nauen", 
+                            "index": "Nauen, DW"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KM Christian", 
+                            "index": "Christian, KM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "GL Ming", 
+                            "index": "Ming, GL"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "H Song", 
+                            "index": "Song, H"
+                        }
+                    }
+                ], 
+                "articleTitle": "Single-cell RNA-seq with waterfall reveals molecular cascades underlying adult neurogenesis", 
+                "journal": "Cell Stem Cell", 
+                "volume": "17", 
+                "pages": {
+                    "first": "360", 
+                    "last": "372", 
+                    "range": "360\u2013372"
+                }, 
+                "doi": "10.1016/j.stem.2015.07.013", 
+                "pmid": 26299571
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib8", 
+                "date": "2017", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Tanay", 
+                            "index": "Tanay, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Regev", 
+                            "index": "Regev, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Scaling single-cell genomics from phenomenology to mechanism", 
+                "journal": "Nature", 
+                "volume": "541", 
+                "pages": {
+                    "first": "331", 
+                    "last": "338", 
+                    "range": "331\u2013338"
+                }, 
+                "doi": "10.1038/nature21350", 
+                "pmid": 28102262
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib9", 
+                "date": "2016", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Wagner", 
+                            "index": "Wagner, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Regev", 
+                            "index": "Regev, A"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Yosef", 
+                            "index": "Yosef, N"
+                        }
+                    }
+                ], 
+                "articleTitle": "Revealing the vectors of cellular identity with single-cell genomics", 
+                "journal": "Nature Biotechnology", 
+                "volume": "34", 
+                "pages": {
+                    "first": "1145", 
+                    "last": "1160", 
+                    "range": "1145\u20131160"
+                }, 
+                "doi": "10.1038/nbt.3711", 
+                "pmid": 27824854
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib10", 
+                "date": "2017", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "MB Woodworth", 
+                            "index": "Woodworth, MB"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "KM Girskis", 
+                            "index": "Girskis, KM"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "CA Walsh", 
+                            "index": "Walsh, CA"
+                        }
+                    }
+                ], 
+                "articleTitle": "Building a lineage from single cells: Genetic techniques for cell lineage tracking", 
+                "journal": "Nature Reviews Genetics", 
+                "volume": "18", 
+                "pages": {
+                    "first": "230", 
+                    "last": "244", 
+                    "range": "230\u2013244"
+                }, 
+                "doi": "10.1038/nrg.2016.159", 
+                "pmid": 28111472
+            }, 
+            {
+                "type": "journal", 
+                "id": "bib11", 
+                "date": "2011", 
+                "authors": [
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "N Yosef", 
+                            "index": "Yosef, N"
+                        }
+                    }, 
+                    {
+                        "type": "person", 
+                        "name": {
+                            "preferred": "A Regev", 
+                            "index": "Regev, A"
+                        }
+                    }
+                ], 
+                "articleTitle": "Impulse control: Temporal dynamics in gene transcription", 
+                "journal": "Cell", 
+                "volume": "144", 
+                "pages": {
+                    "first": "886", 
+                    "last": "896", 
+                    "range": "886\u2013896"
+                }, 
+                "doi": "10.1016/j.cell.2011.02.015", 
+                "pmid": 21414481
+            }
+        ], 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
+    }
+}

@@ -1,0 +1,439 @@
+{
+    "journal": {
+        "id": "eLife", 
+        "title": "eLife", 
+        "issn": "2050-084X"
+    }, 
+    "snippet": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/d86f51a303f6b6334cf91fa126ad4e0b4accbf8b/articles/elife-22323-v1.xml"
+        }, 
+        "-history": {
+            "received": "2016-10-13T00:00:00Z", 
+            "accepted": "2017-03-10T00:00:00Z"
+        }, 
+        "status": "poa", 
+        "id": "22323", 
+        "version": 1, 
+        "type": "tools-resources", 
+        "doi": "10.7554/eLife.22323", 
+        "authorLine": "Assaf Zaritsky et al", 
+        "title": "Decoupling global biases and local interactions between cell biological variables", 
+        "published": "2017-03-13T00:00:00Z", 
+        "versionDate": "2017-03-13T00:00:00Z", 
+        "volume": 6, 
+        "elocationId": "e22323", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22323/elife-22323-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Analysis of coupled variables is a core concept of cell biological inference, with co-localization of two molecules as a proxy for protein interaction being a ubiquitous example. However, external effectors may influence the observed co-localization independently from the local interaction of two proteins. Such global bias, although biologically meaningful, is often neglected when interpreting co-localization. Here, we describe DeBias, a computational method to quantify and decouple global bias from local interactions between variables by modeling the observed co-localization as the cumulative contribution of a global and a local component. We showcase four applications of DeBias in different areas of cell biology, and demonstrate that the global bias encapsulates fundamental mechanistic insight into cellular behavior. The DeBias software package is freely accessible online via a web-server at https://debias.biohpc.swmed.edu."
+                }
+            ]
+        }
+    }, 
+    "article": {
+        "-meta": {
+            "location": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/d86f51a303f6b6334cf91fa126ad4e0b4accbf8b/articles/elife-22323-v1.xml", 
+            "patched": true
+        }, 
+        "-history": {
+            "received": "2016-10-13T00:00:00Z", 
+            "accepted": "2017-03-10T00:00:00Z"
+        }, 
+        "status": "poa", 
+        "id": "22323", 
+        "version": 1, 
+        "type": "tools-resources", 
+        "doi": "10.7554/eLife.22323", 
+        "authorLine": "Assaf Zaritsky et al", 
+        "title": "Decoupling global biases and local interactions between cell biological variables", 
+        "published": "2017-03-13T00:00:00Z", 
+        "versionDate": "2017-03-13T00:00:00Z", 
+        "volume": 6, 
+        "elocationId": "e22323", 
+        "pdf": "https://publishing-cdn.elifesciences.org/22323/elife-22323-v1.pdf", 
+        "subjects": [
+            {
+                "id": "cell-biology", 
+                "name": "Cell Biology"
+            }, 
+            {
+                "id": "computational-systems-biology", 
+                "name": "Computational and Systems Biology"
+            }
+        ], 
+        "abstract": {
+            "content": [
+                {
+                    "type": "paragraph", 
+                    "text": "Analysis of coupled variables is a core concept of cell biological inference, with co-localization of two molecules as a proxy for protein interaction being a ubiquitous example. However, external effectors may influence the observed co-localization independently from the local interaction of two proteins. Such global bias, although biologically meaningful, is often neglected when interpreting co-localization. Here, we describe DeBias, a computational method to quantify and decouple global bias from local interactions between variables by modeling the observed co-localization as the cumulative contribution of a global and a local component. We showcase four applications of DeBias in different areas of cell biology, and demonstrate that the global bias encapsulates fundamental mechanistic insight into cellular behavior. The DeBias software package is freely accessible online via a web-server at https://debias.biohpc.swmed.edu."
+                }
+            ]
+        }, 
+        "copyright": {
+            "license": "CC-BY-4.0", 
+            "holder": "Zaritsky et al", 
+            "statement": "This article is distributed under the terms of the <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution License</a> permitting unrestricted use and redistribution provided that the original author and source are credited."
+        }, 
+        "authors": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Assaf Zaritsky", 
+                    "index": "Zaritsky, Assaf"
+                }, 
+                "orcid": "0000-0002-1477-5478", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Uri Obolski", 
+                    "index": "Obolski, Uri"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Zoology", 
+                            "University of Oxford"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Oxford", 
+                                "United Kingdom"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Oxford"
+                                ], 
+                                "country": "United Kingdom"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Zhuo Gan", 
+                    "index": "Gan, Zhuo"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Carlos R Reis", 
+                    "index": "Reis, Carlos R"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Zuzana Kadlecova", 
+                    "index": "Kadlecova, Zuzana"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Yi Du", 
+                    "index": "Du, Yi"
+                }, 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Bioinformatics", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Sandra L Schmid", 
+                    "index": "Schmid, Sandra L"
+                }, 
+                "orcid": "0000-0002-1690-7024", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }, 
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Gaudenz Danuser", 
+                    "index": "Danuser, Gaudenz"
+                }, 
+                "orcid": "0000-0001-8583-2014", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "Department of Cell Biology", 
+                            "UT Southwestern Medical Center"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "Dallas", 
+                                "United States"
+                            ], 
+                            "components": {
+                                "locality": [
+                                    "Dallas"
+                                ], 
+                                "country": "United States"
+                            }
+                        }
+                    }
+                ], 
+                "emailAddresses": [
+                    "gaudenz.Danuser@utsouthwestern.edu"
+                ], 
+                "competingInterests": "The authors declare that no competing interests exist."
+            }
+        ], 
+        "reviewers": [
+            {
+                "type": "person", 
+                "name": {
+                    "preferred": "Fabrice Cordeli\u00e8res", 
+                    "index": "Cordeli\u00e8res, Fabrice"
+                }, 
+                "role": "Reviewing editor", 
+                "affiliations": [
+                    {
+                        "name": [
+                            "CNRS"
+                        ], 
+                        "address": {
+                            "formatted": [
+                                "France"
+                            ], 
+                            "components": {
+                                "country": "France"
+                            }
+                        }
+                    }
+                ]
+            }
+        ], 
+        "funding": {
+            "awards": [
+                {
+                    "id": "par-1", 
+                    "source": {
+                        "funderId": "10.13039/100004917", 
+                        "name": [
+                            "Cancer Prevention and Research Institute of Texas"
+                        ]
+                    }, 
+                    "awardId": "R1225", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gaudenz Danuser", 
+                                "index": "Danuser, Gaudenz"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-2", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "P01 GM103723", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gaudenz Danuser", 
+                                "index": "Danuser, Gaudenz"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-3", 
+                    "source": {
+                        "funderId": "10.13039/100000002", 
+                        "name": [
+                            "National Institutes of Health"
+                        ]
+                    }, 
+                    "awardId": "PO1 GM713165", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Gaudenz Danuser", 
+                                "index": "Danuser, Gaudenz"
+                            }
+                        }
+                    ]
+                }, 
+                {
+                    "id": "par-4", 
+                    "source": {
+                        "name": [
+                            "EMBO"
+                        ]
+                    }, 
+                    "awardId": "postdoctoral fellowship", 
+                    "recipients": [
+                        {
+                            "type": "person", 
+                            "name": {
+                                "preferred": "Uri Obolski", 
+                                "index": "Obolski, Uri"
+                            }
+                        }
+                    ]
+                }
+            ], 
+            "statement": "The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication."
+        }, 
+        "additionalFiles": [
+            {
+                "mediaType": "application/zip", 
+                "uri": "https://publishing-cdn.elifesciences.org/22323/elife-22323-supp-v1.zip", 
+                "filename": "elife-22323-supp-v1.zip", 
+                "id": "SD1-data", 
+                "title": "Supplementary file 1."
+            }
+        ], 
+        "stage": "published", 
+        "statusDate": "2099-01-01T00:00:00Z"
+    }
+}
