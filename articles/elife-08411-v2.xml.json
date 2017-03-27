@@ -2020,54 +2020,6 @@
                                     [
                                         {
                                             "type": "paragraph", 
-                                            "text": "model in one piece (calculated with the 60 data points)"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "dry season +\u00a0wet season"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "irrigated field +\u00a0rainfed field"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "dry season +\u00a0irrigated field in the wet season +\u00a0rainfed field in the wet season"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "wet season +\u00a0irrigated field in the dry season +\u00a0rainfed field in the dry season"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "irrigated field +\u00a0rainfed field in the dry season +\u00a0rainfed field in the wet season"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "rainfed field +\u00a0irrigated field in the dry season +\u00a0irrigated field in the wet season"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "irrigated field in the dry season +\u00a0rainfed field in the dry season +\u00a0irrigated field in the wet season +\u00a0rainfed field in the wet season"
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
                                             "text": "In the case of strong differences in ED responses between fields and seasons, the hdi function might not select ED parameters that can fit each field or season using as output the expression data from both seasons and fields. To take that possibility into account, we repeated the hdi parameter selection with season and field subsets of the data, with B = 300, EV = 2, threshold = 0.7 and fraction = 0.7. We repeated the model selection steps described above using first a pool of the parameters selected using the dry and wet season subsets and then a pool of the parameters selected with the rainfed field subset and the irrigated field subset. We used the BIC to choose from the three models selected from these three groups of parameters."
                                         }
                                     ]

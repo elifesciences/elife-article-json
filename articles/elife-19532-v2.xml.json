@@ -1829,36 +1829,6 @@
                                                         ]
                                                     ]
                                                 }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "If the time between the two events is less than a given threshold (we used 2 s), the pair is skipped. Such signals are either multiple readings of a transponder by the same antenna (an animal lingering under an antenna) or events triggered by an animal running through a compartment rather than staying in it."
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "If both events were recorded at the same antenna, and the time between them is greater than the threshold, we determine that the mouse spent that time in the nearest compartment (the animal entered a compartment and left through the same corridor)."
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "If both events were recorded in the same corridor, the pair is skipped. This indicates an animal moving through a corridor."
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "If the two events were recorded in two different corridors adjacent to a compartment, this indicates that the mouse spent the intervening time in the connecting compartment."
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "If the two events were recorded in the opposite (parallel) corridors, the pair is skipped. This is a very rare event (&lt;0.6% of pairs above the 2-s threshold) because it can only happen if a mouse passes at least two antennas unnoticed."
-                                                }
                                             ]
                                         ]
                                     }, 

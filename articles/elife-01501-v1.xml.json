@@ -1588,36 +1588,6 @@
                                                 ]
                                             ]
                                         }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "The start codon was treated as a single separate codon irrespective of its identity."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Only genes with average ribosome density of at least 1 read per codon were considered."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "The ribosome density at the first nucleotide of each codon was assigned as the ribosome density at that codon. For each of the 64 codons and the start codon, read density at the first nucleotide of the codon was averaged across all occurrences of that codon in a single gene and then normalized by the average ribosome density for that gene. Hence a codon without over- or under- representation of ribosome or mRNA density will have a density value equal to 1."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Genome-wide ribosome and mRNA density was calculated as the median of the individual gene read density from Step (3) across all genes that pass the threshold of Step (2)."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Ribosome profiling measurement resulted in a high ribosome density at start and stop codons. It is unclear whether this increase is a true biological signal or caused by the measurement protocol (<a href=\"#bib20\">Ingolia et al., 2011</a>). Hence these codons were excluded from the ribosome density plots shown in <a href=\"#fig2\">Figure 2A,B and 3C</a>. However, the increased ribosome density at these codons resulted in a concomitant decrease in ribosome density at the remaining codons due to normalization by the average ribosome density for each gene (which included the start and stop codons)."
-                                        }
                                     ]
                                 ]
                             }

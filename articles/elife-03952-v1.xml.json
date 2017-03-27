@@ -1468,7 +1468,7 @@
                             }, 
                             {
                                 "type": "list", 
-                                "prefix": "bullet", 
+                                "prefix": "none", 
                                 "items": [
                                     [
                                         {
@@ -1493,18 +1493,6 @@
                                                 ]
                                             ]
                                         }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Instrumental \u2018noise\u2019 connectivity (NSE): subject-specific predicted \u2018noise\u2019 correlations that are assumed to be non-neuronal in nature, and could result from any biases introduced from data acquisition and analyses, as well as the intrinsic spatial signal spread in the BOLD imaging (<a href=\"#bib11\">Bandettini, 2009</a>). The point spread function at 3T has been estimated to be about 3.5 mm (<a href=\"#bib29\">Engel et al., 1997</a>). To simulate the spatial autocorrelation in BOLD imaging at 3T, the timeseries of each voxel was replaced with a randomly generated, un-correlated timeseries for each subject's data, and a Gaussian filter with a kernel of 3.5 mm was applied to the data. These artificial data were passed through the same processing steps as the real data to derive estimated \u2018noise\u2019 correlations for each subject."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Point-to-point RF connectivity (RF): predicted correlations based on overlap of receptive fields in visual space. Due to the log-scaling used for eccentricity mapping, phase measurements were converted to visual degrees for this analysis. The receptive field of each node was calculated using a two-dimensional circular Gaussian spread (<a href=\"#bib28\">Dumoulin and Wandell, 2008</a>):"
-                                        }
                                     ]
                                 ]
                             }, 
@@ -1519,7 +1507,7 @@
                             }, 
                             {
                                 "type": "list", 
-                                "prefix": "bullet", 
+                                "prefix": "none", 
                                 "items": [
                                     [
                                         {
@@ -1543,18 +1531,6 @@
                                                     }
                                                 ]
                                             ]
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Eccentricity connectivity (Ecc): predicted correlations based on radial distance. Bin pairs were assigned a value between 0 and 1; correlations were then assumed to be linearly proportional to the difference in eccentricity representations with iso-eccentricity representations assigned a value of 1."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Polar angle connectivity (Pol): predicted correlations based on angular distance. Bin pairs were assigned a value between 0 and 1; correlations were then assumed to be linearly proportional to the difference in polar angle representations with iso-polar angle representations assigned a value of 1."
                                         }
                                     ]
                                 ]

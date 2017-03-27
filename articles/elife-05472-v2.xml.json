@@ -1106,7 +1106,7 @@
                                         }, 
                                         {
                                             "type": "list", 
-                                            "prefix": "bullet", 
+                                            "prefix": "none", 
                                             "items": [
                                                 [
                                                     {
@@ -1126,23 +1126,11 @@
                                     [
                                         {
                                             "type": "paragraph", 
-                                            "text": "a. For movement on an actin filament, a myosin step increases the tension by <math id=\"inf3\"><mi mathvariant=\"script\">N</mi></math>(<i>\u2206T</i>, 0.1 <i>\u2206T</i>) regardless of motor type, where <math id=\"inf4\"><mi mathvariant=\"script\">N</mi></math>(\u03bc, \u03c3) represents a normal distribution with mean = \u03bc and standard deviation = \u03c3."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "b. For movement on keratocytes, a myosin V step increases the tension by <math id=\"inf5\"><mi mathvariant=\"script\">N</mi></math>(<i>\u2206T</i><sub><i>high</i></sub>, 0.1 <i>\u2206T</i><sub><i>high</i></sub>) whereas a myosin VI step increases the tension by <math id=\"inf6\"><mi mathvariant=\"script\">N</mi></math>(<i>\u2206T</i><sub><i>low</i></sub>, 0.1 <i>\u2206T</i><sub><i>low</i></sub>)."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
                                             "text": "After each motor step, the resulting <i>T</i> is used to modify the dwell time of each motor as follows:"
                                         }, 
                                         {
                                             "type": "list", 
-                                            "prefix": "bullet", 
+                                            "prefix": "none", 
                                             "items": [
                                                 [
                                                     {
@@ -1168,24 +1156,6 @@
                                     [
                                         {
                                             "type": "paragraph", 
-                                            "text": "a. A linear force-speed relationship is assumed for both motors."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "b. <i>T</i> is used to calculate the mean speed (\u03bd) and mean dwell time (\u221d \u03bd<sup>\u22121</sup>) for each motor. The load-dependent speed is given by <i>v</i> = <i>v</i><sub><i>0 </i></sub>(1 \u2212 <i>T/F</i><sub><i>stall</i></sub>), where <i>\u03bd</i><sub><i>o</i></sub> is the zero-strained speed, <i>F</i><sub><i>stall</i></sub> is the stall force of the stepping motor (<i>F</i><sub><i>high</i></sub> or <i>F</i><sub><i>low</i></sub>) and <i>T</i> is the inter-motor tension (0 \u2264 T \u2264 <i>F</i><sub><i>stall</i></sub>)."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "c. The discrete dwell time distribution of each motor is modified in proportion to the estimated mean dwell time after each step."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
                                             "text": "The new discrete dwell time distribution is used to identify the next stepping motor, with a repeat of steps 5-7."
                                         }
                                     ], 
@@ -1202,7 +1172,7 @@
                                         }, 
                                         {
                                             "type": "list", 
-                                            "prefix": "bullet", 
+                                            "prefix": "none", 
                                             "items": [
                                                 [
                                                     {
@@ -1217,18 +1187,6 @@
                                                     }
                                                 ]
                                             ]
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "a. If the stronger motor (<i>F</i><sub><i>high</i></sub>) is the winning motor <i>n</i><sub><i>+</i></sub> <i>= n</i><sub><i>+</i></sub> + 1."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "b. If the weaker motor (<i>F</i><sub><i>low</i></sub>) is the winning motor <i>n</i><sub><i>\u2212</i></sub> <i>= n</i><sub><i>\u2212</i></sub> + 1."
                                         }
                                     ], 
                                     [

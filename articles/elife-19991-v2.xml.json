@@ -1202,12 +1202,6 @@
                                             [
                                                 {
                                                     "type": "paragraph", 
-                                                    "text": "Maximum intensity projection"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
                                                     "text": ") Segmentation of ROI"
                                                 }, 
                                                 {
@@ -1238,24 +1232,6 @@
                                             [
                                                 {
                                                     "type": "paragraph", 
-                                                    "text": "Based on the area delimited by the presynaptic HRP staining"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Threshold, then binarize, the HRP channel using ImageJ\u2019s automatic thresholding algorithm \u2192 \u2018HRP-ROI\u2019"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Expand the HRP-ROI by a constant specific to the protein analyzed. For example, for Syndapin the ROI was expanded by 0.9 um to appropriately capture all synaptic Syndapin even at maximal expression."
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
                                                     "text": "Measurement of synaptic intensity"
                                                 }, 
                                                 {
@@ -1269,12 +1245,6 @@
                                                             }
                                                         ]
                                                     ]
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Intensity measurement limited to the ROI set above"
                                                 }
                                             ], 
                                             [
@@ -1299,18 +1269,6 @@
                                                             }
                                                         ]
                                                     ]
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Delineate a 5.3-um-thick ROI/annulus that is 2 um radius away from HRP-ROI"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Intensity measurement limited to the background ROI"
                                                 }
                                             ], 
                                             [
@@ -1357,12 +1315,6 @@
                                             [
                                                 {
                                                     "type": "paragraph", 
-                                                    "text": "Maximum intensity projection"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
                                                     "text": "Eliminate background and nonsynaptic Brp/GluR signals"
                                                 }, 
                                                 {
@@ -1376,12 +1328,6 @@
                                                             }
                                                         ]
                                                     ]
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Eliminate signals\u00a0~1 um beyond the region covered by the HRP-positive signal (i.e., nerve terminal) safely presumed not to be synaptic"
                                                 }
                                             ], 
                                             [
@@ -1411,18 +1357,6 @@
                                             [
                                                 {
                                                     "type": "paragraph", 
-                                                    "text": "Threshold pixels with intensities between a 255 (maximum) and a constant minimum"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "The minimum is kept constant across images taken during the same imaging session and is determined as a mean minimum based on the intensities at control NMJs."
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
                                                     "text": "Particle analysis"
                                                 }, 
                                                 {
@@ -1442,18 +1376,6 @@
                                                             }
                                                         ]
                                                     ]
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Using ImageJ\u2019s \u2018Analyze Particles\u2026\u2019 command"
-                                                }
-                                            ], 
-                                            [
-                                                {
-                                                    "type": "paragraph", 
-                                                    "text": "Determines number and average size of segmented puncta"
                                                 }
                                             ]
                                         ]

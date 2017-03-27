@@ -1776,24 +1776,6 @@
                                     [
                                         {
                                             "type": "paragraph", 
-                                            "text": "Compute <math id=\"inf130\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><msubsup><mi>g</mi><mrow><mi>i</mi></mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi></mrow></msubsup><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><mi>T</mi><mo>,</mo><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>,</mo><msub><mi>\u03b2</mi><mrow><mi>i</mi></mrow></msub><mo>,</mo><msup><mrow><mo>{</mo><mi>C</mi><mo>}</mo></mrow><mrow><mi>m</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow></mstyle></math> by integrating numerically over <math id=\"inf131\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>\u03bc</mi><mo>,</mo><mo>\u00a0</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow></mrow></math> (<a href=\"#equ6\">Equations 6, 9, and 10</a>)."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Compute <math id=\"inf132\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>T</mi><mo>,</mo><mrow><mo>{</mo><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>}</mo></mrow><mo>,</mo><mrow><mo>{</mo><msub><mi>\u03b2</mi><mrow><mi>i</mi></mrow></msub><mo>}</mo></mrow><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><mrow><mo>{</mo><msubsup><mi>g</mi><mrow><mi>i</mi></mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi></mrow></msubsup><mo>}</mo></mrow><mo>,</mo><msup><mrow><mo>{</mo><mi>C</mi><mo>}</mo></mrow><mrow><mi>m</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow></mstyle></math> using <a href=\"#equ20\">Equations 20 and 29</a>."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Identify mostly likely topology <math id=\"inf133\"><mi>T</mi></math> and set of <math id=\"inf134\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mo>{</mo><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>}</mo></mrow></mrow></mstyle></math> and <math id=\"inf135\"><mrow><mrow><mo>{</mo> <mrow><msub><mi>\u03b2</mi><mi>i</mi></msub></mrow> <mo>}</mo></mrow></mrow></math>."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
                                             "text": "Recluster <math id=\"inf136\"><mrow><mrow><mo>{</mo> <mi>g</mi> <mo>}</mo></mrow></mrow></math> using K-medoids in the space of all <math id=\"inf137\"><mrow><mrow><mo>{</mo> <mrow><msub><mi>\u03b1</mi><mi>i</mi></msub></mrow> <mo>}</mo></mrow></mrow></math> and <math id=\"inf138\"><mrow><mrow><mo>{</mo> <mrow><msub><mi>\u03b2</mi><mi>i</mi></msub></mrow> <mo>}</mo></mrow></mrow></math> for the triplets with probability <math id=\"inf139\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>T</mi><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><mrow><mo>{</mo><msubsup><mi>g</mi><mrow><mi>i</mi></mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi></mrow></msubsup><mo>}</mo></mrow><mo>,</mo><msup><mrow><mo>{</mo><mi>C</mi><mo>}</mo></mrow><mrow><mi>m</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow></mstyle></math>&gt; 0.6 of being non-null. Determine new clustering configuration <math id=\"inf140\"><mrow><msup><mrow><mo>{</mo><mi>C</mi><mo>}</mo></mrow><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></math>."
                                         }
                                     ], 
@@ -2366,30 +2348,6 @@
                                     [
                                         {
                                             "type": "paragraph", 
-                                            "text": "For the prior probability, given that a gene is not a transition gene, that it is an irrelevant gene, our default value was <math id=\"inf341\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><msub><mi>\u03b2</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow></mstyle></math>\u00a0=0.5, but the tree was unchanged for values of <math id=\"inf342\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><mtext>\u00a0</mtext><msub><mi>\u03b2</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext></mrow><mo>)</mo></mrow></mrow></mstyle></math>\u00a0between 0.25 and 0.65."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "For the prior probabilities of different topologies, our default value was <math id=\"inf343\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mi>\u2205</mi><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">\ud835\udc9c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">\u212c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">\ud835\udc9e</mi></mrow><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mn>0.25</mn></mrow></mstyle></math>. We varied <math id=\"inf344\"><mrow><mi>p</mi><mo>(</mo><mo>\u2205</mo><mo>)</mo></mrow></math> while keeping the prior probabilities of the non-null topologies equal: <math id=\"inf345\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>T</mi><mo>\u2260</mo><mi>\u2205</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>p</mi><mrow><mo>(</mo><mi>\u2205</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mstyle></math>. The tree was unchanged for values of <math id=\"inf346\"><mrow><mi>p</mi><mo>(</mo><mo>\u2205</mo><mo>)</mo></mrow></math> between 0.1 and 0.35."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "We used a threshold of 0.6 to consider a triplet significant for the tree-building step. The tree was unchanged for thresholds between 0.5 and 0.65."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "A key input parameter into the algorithm is the expected prior distribution of means and standard deviations <math id=\"inf347\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>\u03bc</mi><mo>,</mo><mo>\u00a0</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow></mrow></math> used in the numeric integration. Our default prior was a uniform prior for both means and standard deviations over reasonable ranges of these parameters. We also implemented an empirical prior <math id=\"inf348\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>\u03bc</mi><mo>,</mo><mo>\u00a0</mo><mi>\u03c3</mi></mrow><mo>)</mo></mrow></mrow></math> by estimating the empirical distribution over all the Immgen cell types, using kernel density estimation (<a href=\"#bib16\">Botev et al., 2010</a>). The resulting hematopoietic lineage tree was identical. Using the kernel-density-estimated empirical prior may provide more stability in future analyses."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
                                             "text": "\u00a0Brain Development"
                                         }, 
                                         {
@@ -2421,30 +2379,6 @@
                                                     }
                                                 ]
                                             ]
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "For the prior probability, given that a gene is not a transition gene, that it is an irrelevant gene, our default value was <math id=\"inf349\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><msub><mi>\u03b2</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext></mrow><mo>)</mo></mrow></mrow></mstyle></math>\u00a0= 0.5, but the tree was unchanged for values of <math id=\"inf350\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><msub><mi>\u03b1</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext><mrow></mrow><mo>|</mo><mrow></mrow><mtext>\u00a0</mtext><msub><mi>\u03b2</mi><mrow><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext>\u00a0</mtext></mrow><mo>)</mo></mrow></mrow></mstyle></math>\u00a0between 0.02 and 0.97."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "For the prior probabilities of different topologies, our default value was <math id=\"inf351\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mi>p</mi><mrow><mo>(</mo><mi>\u2205</mi><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">\ud835\udc9c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">\u212c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mi>p</mi><mrow><mo>(</mo><mrow><mi mathvariant=\"script\">\ud835\udc9e</mi></mrow><mo>)</mo></mrow><mo>=</mo><mtext>\u00a0</mtext><mn>0.25</mn></mrow></mstyle></math>. We varied <math id=\"inf352\"><mrow><mi>p</mi><mo>(</mo><mo>\u2205</mo><mo>)</mo></mrow></math> while keeping the prior probabilities of the non-null topologies equal: <math id=\"inf353\"><mrow><mi>p</mi><mrow><mo>(</mo><mrow><mi>T</mi><mo>\u2260</mo><mo>\u2205</mo></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mrow><mo>(</mo><mrow><mn>1</mn><mo>\u2212</mo><mi>p</mi><mrow><mo>(</mo><mo>\u2205</mo><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>. The tree was unchanged for values of <math id=\"inf354\"><mrow><mi>p</mi><mo>(</mo><mo>\u2205</mo><mo>)</mo></mrow></math> between 0.06 and 0.96."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "We used a threshold of 0.6 to consider a triplet significant for the tree-building step. The tree was unchanged for thresholds between 0.5 and 0.8."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "For the single cell data, we also changed the number of initial seed clusters for the iterative algorithm within a range from 30 to 45. In each case, the tree remained the same, and never more than 23% of the cells were clustered into a different cell type."
                                         }
                                     ]
                                 ]

@@ -1819,24 +1819,6 @@
                                                 ]
                                             ]
                                         }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "For every reaction in the cycle, <math id=\"inf215\"><mi>R</mi></math>, the algorithm checks if it consumes more than one intermediate metabolite of the cycle. If so, <math id=\"inf216\"><mi>C</mi></math> is assumed not to be autocatalytic and the algorithm continues to evaluate the next cycle."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Otherwise, for every reaction in the cycle, <math id=\"inf217\"><mi>R</mi></math>, the algorithm checks if it has more than one product that is an intermediate metabolite of the cycle. If so, then the algorithm lists <math id=\"inf218\"><mi>C</mi></math> as an autocatalytic cycle."
-                                        }
-                                    ], 
-                                    [
-                                        {
-                                            "type": "paragraph", 
-                                            "text": "Finally, the algorithm checks, for every reaction in the cycle, if it has a product that is not an intermediate metabolite of the cycle. If so, denote by <math id=\"inf219\"><msub><mi>M</mi><mi>E</mi></msub></math> such a metabolite. The algorithm proceeds to check if, for every intermediate metabolite of the cycle, <math id=\"inf220\"><msub><mi>M</mi><mi>i</mi></msub></math> a reaction exists from <math id=\"inf221\"><msub><mi>M</mi><mi>E</mi></msub></math> to <math id=\"inf222\"><msub><mi>M</mi><mi>i</mi></msub></math> that does not use any of the reactions of the cycle, and does not consume any of the intermediate metabolites of the cycle. If so then the algorithm lists <math id=\"inf223\"><mi>C</mi></math> as an autocatalytic cycle."
-                                        }
                                     ]
                                 ]
                             }, 
